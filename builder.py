@@ -29,9 +29,9 @@ class DownloadFile:
 		
 		print 'Downloading file \'' + url + '\''
 
-		mp3file = urllib2.urlopen(url)
+		infile = urllib2.urlopen(url)
 		output = open(filename,'wb')
-		output.write(mp3file.read())
+		output.write(infile.read())
 		output.close()
 
 class POFile:
@@ -81,18 +81,33 @@ class ProcessProject():
 
 		findFiles = FindFiles()
 
-		os.system("rm -f tm.po")
 		for filename in findFiles.Find(self.temp_dir, '*.po'):
 
 			print 'Adding file:' + filename + ' to translation memory'
 
 			if (os.path.isfile("tm.po")):
-				os.system("cp tm.po tm-bak.po")
-				os.system("msgcat -tutf-8 --use-first -o tm.po tm-bak.po " + filename)
+				os.system("cp tm.po tm-previous.po")
+				os.system("msgcat -tutf-8 --use-first -o tm.po tm-previous.po " + filename)
 			else:
 				os.system("msgcat -tutf-8 --use-first -o tm.po " + filename)
 
 		os.system("msgfmt -c --statistics tm.po")
+
+	def Uncompress(self):
+
+		os.system("rm -f -r " + self.temp_dir)
+
+		if (self.filename.endswith('zip')):
+			os.system("unzip " + self.filename + " -d " + self.temp_dir)
+		elif (self.filename.endswith('tar.gz')):
+			os.system("mkdir " + self.temp_dir)
+			os.system("tar -xvf " + self.filename + " -C " + self.temp_dir)
+		elif (self.filename.endswith('.po')):
+			os.system("mkdir " + self.temp_dir)
+			os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
+		else:
+			printf("Unsupport file extension")
+
 
 	def Do(self):
 
@@ -100,8 +115,7 @@ class ProcessProject():
 		download = DownloadFile()
 		download.GetFile(self.url, self.filename)
 
-		# Uncompress
-		os.system("unzip libreoffice-help.zip -d " + self.temp_dir)
+		self.Uncompress();
 
 		self.AddComments()
 		self.Build()
@@ -111,7 +125,33 @@ def main():
 
 	print "Translation memory builder version 0.1"
 
-	project = ProcessProject('LibreOffice.org', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip');
+	os.system("rm -f tm.po")
+
+	project = ProcessProject('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po')
+	project.Do()
+
+	project = ProcessProject('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-6/ui.tar.gz', 'gnome-ui.tar.gz')
+	project.Do()
+
+	project = ProcessProject('gnome-office', 'http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz', 'gnome-office.tar.gz')
+	project.Do()
+
+	project = ProcessProject('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras-stable/ui.tar.gz', 'gnome-extras.tar.gz')
+	project.Do()
+
+	project = ProcessProject('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz')
+	project.Do()
+
+	project = ProcessProject('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz')
+	project.Do()
+
+	project = ProcessProject('Terminology Help', 'https://translations.documentfoundation.org/ca/terminology/export/zip', 'terminology.zip');
+	project.Do();
+
+	project = ProcessProject('LibreOffice.org Help', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip');
+	project.Do();
+
+	project = ProcessProject('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip');
 	project.Do();
 
 if __name__ == "__main__":

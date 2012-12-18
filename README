@@ -1,4 +1,14 @@
-Dependencies
+--- Introduction
 
+A program that builds translation memories
 
-python-polib
+Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%C3%A0 effort
+
+--- Dependencies
+
+* python-polib
+
+--- Contact Information
+
+Jordi Mas
+jmas@softcatala.org
