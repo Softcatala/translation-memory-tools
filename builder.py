@@ -75,7 +75,7 @@ class ProcessProject():
 			relative = filename.replace(self.temp_dir, '')
 			print 'Adding source reference to file:' + relative
 			pofile = POFile()
-			pofile.AddCommentToAllEntries(filename, "Translation source: " + relative +  " from project " + self.project)
+			pofile.AddCommentToAllEntries(filename, "Translation source: " + relative +  " from project '" + self.project + "'")
 
 	def Build(self):
 
@@ -120,15 +120,7 @@ class ProcessProject():
 		self.AddComments()
 		self.Build()
 
-
-def main():
-
-	print "Translation memory builder version 0.1"
-
-	os.system("rm -f tm.po")
-
-	project = ProcessProject('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po')
-	project.Do()
+def gnome():
 
 	project = ProcessProject('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-6/ui.tar.gz', 'gnome-ui.tar.gz')
 	project.Do()
@@ -139,11 +131,30 @@ def main():
 	project = ProcessProject('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras-stable/ui.tar.gz', 'gnome-extras.tar.gz')
 	project.Do()
 
+	project = ProcessProject('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz')
+	project.Do()
+
+	project = ProcessProject('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.gz')
+	project.Do()
+
 	project = ProcessProject('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz')
 	project.Do()
 
 	project = ProcessProject('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz')
 	project.Do()
+
+def mozilla():
+
+	project = ProcessProject('mozilla', 'http://pootle.softcatala.org/ca/mozilla/export/zip', 'mozilla.zip')
+	project.Do()
+
+	project = ProcessProject('mozilla-gaia', 'http://pootle.softcatala.org/ca/gaia/export/zip', 'gaia.zip')
+	project.Do()
+
+	project = ProcessProject('mozilla-addons', 'http://localize.mozilla.org/ca/amo/export/zip', 'add-ons.zip')
+	project.Do()
+
+def libreoffice():
 
 	project = ProcessProject('Terminology Help', 'https://translations.documentfoundation.org/ca/terminology/export/zip', 'terminology.zip');
 	project.Do();
@@ -153,6 +164,25 @@ def main():
 
 	project = ProcessProject('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip');
 	project.Do();
+
+def main():
+
+	print "Translation memory builder version 0.1"
+
+	os.system("rm -f tm.po")
+
+	project = ProcessProject('recull', 'file:///home/jordi/dev/translation-memory-builder/recull.po', 'recull-downloaded.po')
+	project.Do()
+
+	gnome()
+
+	mozilla()
+
+	libreoffice()
+
+	project = ProcessProject('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po')
+	project.Do()
+
 
 if __name__ == "__main__":
     main()
