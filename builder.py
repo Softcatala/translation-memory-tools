@@ -106,7 +106,7 @@ class ProcessProject():
 			os.system("mkdir " + self.temp_dir)
 			os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
 		else:
-			printf("Unsupport file extension")
+			print("Unsupport file extension for filename " + self.filename)
 
 
 	def Do(self):
@@ -134,7 +134,7 @@ def gnome():
 	project = ProcessProject('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz')
 	project.Do()
 
-	project = ProcessProject('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.gz')
+	project = ProcessProject('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz')
 	project.Do()
 
 	project = ProcessProject('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz')
