@@ -85,13 +85,17 @@ class ProcessProject():
 
 			print 'Adding file:' + filename + ' to translation memory'
 
-			if (os.path.isfile("tm.po")):
-				os.system("cp tm.po tm-previous.po")
-				os.system("msgcat -tutf-8 --use-first -o tm.po tm-previous.po " + filename)
+			if (os.path.isfile("tm-project.po")):
+				os.system("cp tm-project.po tm-project-previous.po")
+				os.system("msgcat -tutf-8 --use-first -o tm-project.po tm-project-previous.po " + filename)
 			else:
-				os.system("msgcat -tutf-8 --use-first -o tm.po " + filename)
+				os.system("msgcat -tutf-8 --use-first -o tm-project.po " + filename)
 
-		os.system("msgfmt -c --statistics tm.po")
+		if (os.path.isfile("tm.po")):
+			os.system("cp tm.po tm-previous.po")
+			os.system("msgcat -tutf-8 --use-first -o tm.po tm-previous.po tm-project.po")
+		else:
+			os.system("cp tm-project.po tm.po")
 
 	def Uncompress(self):
 
@@ -157,13 +161,13 @@ def mozilla():
 def libreoffice():
 
 	project = ProcessProject('Terminology Help', 'https://translations.documentfoundation.org/ca/terminology/export/zip', 'terminology.zip');
-	project.Do();
+	project.Do()
 
 	project = ProcessProject('LibreOffice.org Help', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip');
-	project.Do();
+	project.Do()
 
 	project = ProcessProject('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip');
-	project.Do();
+	project.Do()
 
 def main():
 
@@ -183,6 +187,7 @@ def main():
 	project = ProcessProject('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po')
 	project.Do()
 
+	os.system("msgfmt -c --statistics tm.po")
 
 if __name__ == "__main__":
     main()
