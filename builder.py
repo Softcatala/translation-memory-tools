@@ -58,7 +58,7 @@ class FindFiles:
                 			filename = os.path.join(root, basename)
                 			yield filename
 	
-class ProcessProject():
+class Project():
 
 	temp_dir = "./tmp"
 
@@ -89,7 +89,7 @@ class ProcessProject():
 				os.system("cp tm-project.po tm-project-previous.po")
 				os.system("msgcat -tutf-8 --use-first -o tm-project.po tm-project-previous.po " + filename)
 			else:
-				os.system("msgcat -tutf-8 --use-first -o tm-project.po " + filename)
+				os.system("cp " + filename + " tm-project.po")
 
 		if (os.path.isfile("tm.po")):
 			os.system("cp tm.po tm-previous.po")
@@ -113,6 +113,9 @@ class ProcessProject():
 			print("Unsupport file extension for filename " + self.filename)
 
 
+
+class CompressedFileProject(Project):
+
 	def Do(self):
 
 		# Download po files
@@ -124,49 +127,75 @@ class ProcessProject():
 		self.AddComments()
 		self.Build()
 
+class BazaarProject(Project):
+
+	def Do(self):
+
+		os.system("rm -r -f tmp")
+		os.system("mkdir tmp")
+		os.system("cd tmp")
+		os.system(self.url + " > ca.po")
+
+		self.Uncompress();
+
+		self.AddComments()
+		self.Build()
+
+
+def ubuntu():
+
+	# https://translations.launchpad.net/ubuntu/quantal/+lang/ca
+
+	project = BazaarProject('ubuntu-software-center', 'bzr cat lp:ubuntu/software-center/po/ca.po', 'ca.po')
+	project.Do()	
+
+	project = BazaarProject('ubuntu-update-manager', 'bzr cat lp:ubuntu/update-manager/po/ca.po', 'ca.po')
+	project.Do()
+
+
 def gnome():
 
-	project = ProcessProject('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-6/ui.tar.gz', 'gnome-ui.tar.gz')
+	project = CompressedFileProject('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-6/ui.tar.gz', 'gnome-ui.tar.gz')
 	project.Do()
 
-	project = ProcessProject('gnome-office', 'http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz', 'gnome-office.tar.gz')
+	project = CompressedFileProject('gnome-office', 'http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz', 'gnome-office.tar.gz')
 	project.Do()
 
-	project = ProcessProject('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras-stable/ui.tar.gz', 'gnome-extras.tar.gz')
+	project = CompressedFileProject('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras-stable/ui.tar.gz', 'gnome-extras.tar.gz')
 	project.Do()
 
-	project = ProcessProject('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz')
+	project = CompressedFileProject('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz')
 	project.Do()
 
-	project = ProcessProject('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz')
+	project = CompressedFileProject('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz')
 	project.Do()
 
-	project = ProcessProject('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz')
+	project = CompressedFileProject('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz')
 	project.Do()
 
-	project = ProcessProject('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz')
+	project = CompressedFileProject('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz')
 	project.Do()
 
 def mozilla():
 
-	project = ProcessProject('mozilla', 'http://pootle.softcatala.org/ca/mozilla/export/zip', 'mozilla.zip')
+	project = CompressedFileProject('mozilla', 'http://pootle.softcatala.org/ca/mozilla/export/zip', 'mozilla.zip')
 	project.Do()
 
-	project = ProcessProject('mozilla-gaia', 'http://pootle.softcatala.org/ca/gaia/export/zip', 'gaia.zip')
+	project = CompressedFileProject('mozilla-gaia', 'http://pootle.softcatala.org/ca/gaia/export/zip', 'gaia.zip')
 	project.Do()
 
-	project = ProcessProject('mozilla-addons', 'http://localize.mozilla.org/ca/amo/export/zip', 'add-ons.zip')
+	project = CompressedFileProject('mozilla-addons', 'http://localize.mozilla.org/ca/amo/export/zip', 'add-ons.zip')
 	project.Do()
 
 def libreoffice():
 
-	project = ProcessProject('Terminology Help', 'https://translations.documentfoundation.org/ca/terminology/export/zip', 'terminology.zip');
+	project = CompressedFileProject('Terminology Help', 'https://translations.documentfoundation.org/ca/terminology/export/zip', 'terminology.zip');
 	project.Do()
 
-	project = ProcessProject('LibreOffice.org Help', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip');
+	project = CompressedFileProject('LibreOffice.org Help', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip');
 	project.Do()
 
-	project = ProcessProject('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip');
+	project = CompressedFileProject('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip');
 	project.Do()
 
 def main():
@@ -174,18 +203,23 @@ def main():
 	print "Translation memory builder version 0.1"
 
 	os.system("rm -f tm.po")
+	os.system("rm -f tm-previous.po")
+	os.system("rm -f tm-project.po")
+	os.system("rm -f tm-project-previous.po")
 
-	project = ProcessProject('recull', 'file:///home/jordi/dev/translation-memory-builder/recull.po', 'recull-downloaded.po')
+	project = CompressedFileProject('recull', 'file:///home/jordi/dev/translation-memory-builder/recull.po', 'recull-downloaded.po')
 	project.Do()
-
-	gnome()
 
 	mozilla()
 
+	gnome()
+
 	libreoffice()
 
-	project = ProcessProject('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po')
-	project.Do()
+	project = CompressedFileProject('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po')
+	project.Do() 
+
+	ubuntu()
 
 	os.system("msgfmt -c --statistics tm.po")
 
