@@ -22,6 +22,7 @@ import urllib2
 import os
 import polib
 import fnmatch
+import time
 
 class DownloadFile:
 
@@ -202,6 +203,8 @@ def main():
 
 	print "Translation memory builder version 0.1"
 
+	start_time = time.time()
+
 	os.system("rm -f tm.po")
 	os.system("rm -f tm-previous.po")
 	os.system("rm -f tm-project.po")
@@ -222,6 +225,8 @@ def main():
 	ubuntu()
 
 	os.system("msgfmt -c --statistics tm.po")
+
+	print "Execution time:", time.time() - start_time, "seconds"
 
 if __name__ == "__main__":
     main()
