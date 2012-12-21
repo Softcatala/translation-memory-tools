@@ -26,17 +26,17 @@ for line in cvsfile:
     if columns:
 		if ((columns[2] == 'm' or columns[2] == 'f') and not '(' in columns[1] and not '|' in columns[1]):
 
-			s = columns[0]
+			s = unicode(columns[0], 'utf-8')
 			columns[0] = s[0].upper() + s[1:]
 
-			s = columns[1]
+			s = unicode(columns[1], 'utf-8')
 			columns[1] = s[0].upper() + s[1:]
 
 	   		print columns[0] + "->" + columns[1] + "->" + columns[2]
 
 			entry = polib.POEntry(
-			msgid=unicode(columns[0], 'utf-8'),
-		    msgstr=unicode(columns[1], 'utf-8'))
+			msgid=columns[0],
+		    msgstr=columns[1])
 			pofile.append(entry)
 
 pofile.save('recull.po');

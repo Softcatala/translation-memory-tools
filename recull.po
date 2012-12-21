@@ -103,7 +103,7 @@ msgid "Adware"
 msgstr "Programari de publicitat"
 
 msgid "Alias"
-msgstr "àlies"
+msgstr "Àlies"
 
 msgid "Aliasing"
 msgstr "Aliàsing"
@@ -124,7 +124,7 @@ msgid "Analyzer"
 msgstr "Analitzador"
 
 msgid "Anchor"
-msgstr "àncora"
+msgstr "Àncora"
 
 msgid "Animatics"
 msgstr "Animació assistida per ordinador"
@@ -211,7 +211,7 @@ msgid "Attribute"
 msgstr "Atribut"
 
 msgid "Audio"
-msgstr "àudio"
+msgstr "Àudio"
 
 msgid "Audio codec"
 msgstr "Còdec d'àudio"
@@ -643,7 +643,7 @@ msgid "Copyright"
 msgstr "Copyright"
 
 msgid "Core"
-msgstr "ànima"
+msgstr "Ànima"
 
 msgid "Coroutine"
 msgstr "Corutina"
@@ -1435,7 +1435,7 @@ msgid "Inch"
 msgstr "Polzada"
 
 msgid "Index"
-msgstr "índex"
+msgstr "Índex"
 
 msgid "Information culture"
 msgstr "Cultura de la informació"
@@ -1906,7 +1906,7 @@ msgid "Office automation"
 msgstr "Ofimàtica"
 
 msgid "Offset"
-msgstr "òfset"
+msgstr "Òfset"
 
 msgid "Online help"
 msgstr "Ajuda en línia"
@@ -2254,7 +2254,7 @@ msgid "Random access"
 msgstr "Accés aleatori"
 
 msgid "Print range"
-msgstr "àrea d'impressió"
+msgstr "Àrea d'impressió"
 
 msgid "Rate"
 msgstr "Velocitat"
@@ -2830,7 +2830,7 @@ msgid "Table"
 msgstr "Taula"
 
 msgid "Table of contents"
-msgstr "índex"
+msgstr "Índex"
 
 msgid "Tagging"
 msgstr "Etiquetatge"
