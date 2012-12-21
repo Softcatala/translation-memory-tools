@@ -67,9 +67,10 @@ def mozilla():
 def libreoffice():
 
 	project = CreateProject("libreoffice-tm.po")
-	project.Add(CompressedFileSet('Terminology Help', 'https://translations.documentfoundation.org/ca/terminology/export/zip', 'terminology.zip'))
-	project.Add(CompressedFileSet('LibreOffice.org Help', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip'))
+	project.Add(CompressedFileSet('LibreOffice.org ajuda', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip'))
 	project.Add(CompressedFileSet('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip'))
+	project.Add(CompressedFileSet('LibreOffice.org lloc web', 'https://translations.documentfoundation.org/ca/website/export/zip', 'website.zip'))
+	project.Add(CompressedFileSet('LibreOffice.org ask bot', 'https://translations.documentfoundation.org/ca/askbot/export/zip', 'askbot.zip'))
 	project.Do()
 
 def main():
