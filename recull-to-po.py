@@ -35,8 +35,9 @@ for line in cvsfile:
 	   		print columns[0] + "->" + columns[1] + "->" + columns[2]
 
 			entry = polib.POEntry(
-			msgid=columns[0],
-		    msgstr=columns[1])
+				msgid=columns[0],
+				msgstr=columns[1])
+
 			pofile.append(entry)
 
 pofile.save('recull.po');
