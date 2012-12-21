@@ -84,7 +84,7 @@ def main():
 	os.system("rm -f tm-project-previous.po")
 
 	project = CreateProject("recull-tm.po")
-	project.Add(CompressedFileSet('recull', 'file:///home/jordi/dev/translation-memory-builder/recull.po', 'recull-downloaded.po'))
+	project.Add(LocalFileSet('recull', 'recull/recull.po', 'recull.po'))
 	project.Do()
 
 	project = CreateProject("abiword-tm.po")

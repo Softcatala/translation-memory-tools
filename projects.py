@@ -37,10 +37,14 @@ class Projects:
 		self.projects.append(project)
 
 	def Do(self):
-		first = False
 
 		for project in self.projects:
-			os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " " + project.GetFilename())
+			if (os.path.isfile(self.tmfile)):
+				os.system("cp " + self.tmfile +" tm-previous.po")
+				os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-previous.po " + project.GetFilename())
+				os.system("rm -f tm-previous.po")
+			else:
+				os.system("cp " + project.GetFilename() + " " + self.tmfile)
 
 		os.system("msgfmt -c --statistics " + self.tmfile)
 

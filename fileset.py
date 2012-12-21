@@ -81,6 +81,12 @@ class FileSet():
 			pofile = POFile()
 			pofile.AddCommentToAllEntries(filename, "Translation source: " + relative +  " from project '" + self.project + "'")
 
+	def CleanUp(self):
+		os.system("cp " + self.tmfile +" tm-project-previous.po")
+		os.system("msgattrib tm-project-previous.po --no-fuzzy --no-obsolete --translated > " + self.tmfile)
+		os.system("rm -f tm-project-previous.po")
+		
+
 	def Build(self):
 
 		findFiles = FindFiles()
@@ -92,15 +98,11 @@ class FileSet():
 			if (os.path.isfile(self.tmfile)):
 				os.system("cp " + self.tmfile +" tm-project-previous.po")
 				os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-project-previous.po " + filename)
+				os.system("rm -f tm-project-previous.po")
 			else:
 				os.system("cp " + filename + " " + self.tmfile)
 
-		if (os.path.isfile("tm.po")):
-			os.system("cp tm.po tm-previous.po")
-			os.system("msgcat -tutf-8 --use-first -o tm.po tm-previous.po " + self.tmfile)
-		else:
-			os.system("cp " + self.tmfile  + " tm.po")
-
+		self.CleanUp()
 
 	def Uncompress(self):
 
@@ -127,7 +129,18 @@ class CompressedFileSet(FileSet):
 		download.GetFile(self.url, self.filename)
 
 		self.Uncompress();
+		self.AddComments()
+		self.Build()
 
+		os.system("rm -f " + self.filename)
+
+class LocalFileSet(FileSet):
+
+	def Do(self):
+
+		os.system("cp " + self.url + " " + self.filename)
+
+		self.Uncompress();
 		self.AddComments()
 		self.Build()
 
@@ -137,16 +150,16 @@ class BazaarFileSet(FileSet):
 
 	def Do(self):
 
-		os.system("rm -r -f tmp")
-		os.system("mkdir tmp")
-		os.system("cd tmp")
+		os.system("rm -r -f " + self.temp_dir)
+		os.system("mkdir " + self.temp_dir)
+		os.system("cd " + self.temp_dir)
 		os.system(self.url + " > ca.po")
 
 		self.Uncompress();
-
 		self.AddComments()
 		self.Build()
 
-		os.system("rm -r -f tmp")
+		os.system("rm -f ca.po")
+		os.system("rm -r -f " + self.temp_dir)
 
 
