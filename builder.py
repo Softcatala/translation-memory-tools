@@ -57,7 +57,7 @@ def gnome():
 	project.Add(CompressedFileSet('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz'))
 	project.Add(CompressedFileSet('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz'))
 	project.Add(CompressedFileSet('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz'))
-	project.Add(BazaarFileSet('gnome-inkscape', 'bzr cat lp:inkscape/trunk/po/ca.po', 'ca.po'))
+	project.Add(BazaarFileSet('gnome-inkscape', 'bzr cat lp:inkscape/po/ca.po', 'ca.po'))
 	project.Do()
 
 def mozilla():
