@@ -160,6 +160,17 @@ class LocalFileSet(FileSet):
 
 		os.system("rm -f " + self.filename)
 
+class LocalDirFileSet(FileSet):
+
+	def Do(self):
+
+		os.system("rm -f " + self.temp_dir)
+		os.system("mkdir " + self.temp_dir)
+		os.system("cp " + self.url + " " + self.temp_dir +  "/" + self.filename)
+
+		self.AddComments()
+		self.Build()
+
 class BazaarFileSet(FileSet):
 
 	def Do(self):

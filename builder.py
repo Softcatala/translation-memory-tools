@@ -95,6 +95,12 @@ def recull():
 	project.Add(LocalFileSet('recull', 'recull/recull.po', 'recull.po'))
 	project.Do()
 
+def mandriva():
+
+	project = CreateProject("mandriva-tm.po")
+	project.Add(LocalDirFileSet('mandriva', 'mandriva-po/*.po', ''))
+	project.Do()
+
 def initLogging():
 
 	logfile = "builder.log"
@@ -122,6 +128,7 @@ def main():
 	gnome()
 	libreoffice()
 	ubuntu()
+	mandriva()
 
 	projects.Do()
 
