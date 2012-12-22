@@ -73,29 +73,33 @@ def libreoffice():
 	project.Add(CompressedFileSet('LibreOffice.org ask bot', 'https://translations.documentfoundation.org/ca/askbot/export/zip', 'askbot.zip'))
 	project.Do()
 
+def abiword():
+
+	project = CreateProject("abiword-tm.po")
+	project.Add(CompressedFileSet('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po'))
+	project.Do()
+
+def fedora():
+
+	project = CreateProject("fedora-tm.po")
+	project.Add(TransifexFileSet('fedora', 'https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/', ''))
+	project.Do()
+
+def recull():
+
+	project = CreateProject("recull-tm.po")
+	project.Add(LocalFileSet('recull', 'recull/recull.po', 'recull.po'))
+	project.Do()
+
 def main():
 
 	print "Translation memory builder version 0.1"
 
 	start_time = time.time()
 
-	os.system("rm -f tm.po")
-	os.system("rm -f tm-previous.po")
-	os.system("rm -f tm-project.po")
-	os.system("rm -f tm-project-previous.po")
-
-	project = CreateProject("recull-tm.po")
-	project.Add(LocalFileSet('recull', 'recull/recull.po', 'recull.po'))
-	project.Do()
-
-	project = CreateProject("abiword-tm.po")
-	project.Add(CompressedFileSet('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po'))
-	project.Do()
-
-	project = CreateProject("fedora-tm.po")
-	project.Add(TransifexFileSet('fedora', 'https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/', ''))
-	project.Do()
-
+	recull()
+	abiword()
+	fedora()
 	mozilla()
 	gnome()
 	libreoffice()
