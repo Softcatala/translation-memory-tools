@@ -7,13 +7,22 @@ Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%
 --- Dependencies
 
 * python-polib
+*  transifex-client
+
+--- Setting up
+
+tx init --host https://fedora.transifex.net
+
+tx set --auto-remote  https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/
+(account is username not e-mail)
+
+tx pull -lca
 
 --- Commands
 
 Merging the translation memory with a new file
 
 msgmerge -N tm.po new-pofile.po  > final-pofile.po
-
 
 --- Contact Information
 

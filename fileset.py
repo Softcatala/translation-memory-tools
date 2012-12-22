@@ -96,7 +96,7 @@ class FileSet():
 			print 'Adding file:' + filename + ' to translation memory'
 
 			if (os.path.isfile(self.tmfile)):
-				os.system("cp " + self.tmfile +" tm-project-previous.po")
+				os.system("cp " + self.tmfile + " tm-project-previous.po")
 				os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-project-previous.po " + filename)
 				os.system("rm -f tm-project-previous.po")
 			else:
@@ -161,5 +161,26 @@ class BazaarFileSet(FileSet):
 
 		os.system("rm -f ca.po")
 		os.system("rm -r -f " + self.temp_dir)
+
+
+class TransifexFileSet(FileSet):
+
+	def Do(self):
+
+		prevdir = os.getcwd()
+
+		os.system("rm -r -f " + self.temp_dir)
+		os.system("mkdir " + self.temp_dir)
+		os.chdir(self.temp_dir)
+		os.system("tx init --host https://fedora.transifex.net")
+		os.system("tx set --auto-remote " + self.url)
+		os.system("tx pull -f -lca")
+		os.chdir(prevdir)
+
+		self.AddComments()
+		self.Build()
+
+		os.system("rm -r -f " + self.temp_dir)
+
 
 

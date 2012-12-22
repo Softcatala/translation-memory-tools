@@ -92,6 +92,10 @@ def main():
 	project.Add(CompressedFileSet('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po'))
 	project.Do()
 
+	project = CreateProject("fedora-tm.po")
+	project.Add(TransifexFileSet('fedora', 'https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/', ''))
+	project.Do()
+
 	mozilla()
 	gnome()
 	libreoffice()
