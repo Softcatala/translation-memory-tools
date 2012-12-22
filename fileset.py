@@ -90,18 +90,32 @@ class FileSet():
 	def Build(self):
 
 		findFiles = FindFiles()
+		localtm = "tm-local.po"
 
+		if (os.path.isfile(localtm)):
+			os.system("rm -f " + localtm)
+
+ 		# Build using a local memory translation file
 		for filename in findFiles.Find(self.temp_dir, '*.po'):
 
 			print 'Adding file:' + filename + ' to translation memory'
 
-			if (os.path.isfile(self.tmfile)):
-				os.system("cp " + self.tmfile + " tm-project-previous.po")
-				os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-project-previous.po " + filename)
+			if (os.path.isfile(localtm)):
+				os.system("cp " + localtm + " tm-project-previous.po")
+				os.system("msgcat -tutf-8 --use-first -o " + localtm + " tm-project-previous.po " + filename)
 				os.system("rm -f tm-project-previous.po")
 			else:
-				os.system("cp " + filename + " " + self.tmfile)
+				os.system("cp " + filename + " " + localtm)
 
+		# Add to the project TM
+		if (os.path.isfile(self.tmfile)):
+			os.system("cp " + self.tmfile + " tm-project-previous.po")
+			os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-project-previous.po " + localtm)
+			os.system("rm -f tm-project-previous.po")
+		else:
+			os.system("cp " + localtm + " " + self.tmfile)
+
+		os.system("rm -f " + localtm)
 		self.CleanUp()
 
 	def Uncompress(self):
