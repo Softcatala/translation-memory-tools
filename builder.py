@@ -124,7 +124,7 @@ def main():
 
 	projects.Do()
 
-	prinf "Execution time:", time.time() - start_time, "seconds"
+	print "Execution time:", time.time() - start_time, "seconds"
 
 if __name__ == "__main__":
     main()
