@@ -24,11 +24,10 @@ from fileset import *
 
 class Projects:
 
-	tmfile = "tm.po"
-	projects = list()
-
 	def __init__(self, filename):
 		self.filename = filename
+		self.tmfile = "tm.po"
+		self.projects = list()
 
 		if (os.path.isfile(filename)):
 			os.system("rm " + filename)
@@ -39,6 +38,7 @@ class Projects:
 	def Do(self):
 
 		for project in self.projects:
+
 			if (os.path.isfile(self.tmfile)):
 				os.system("cp " + self.tmfile +" tm-previous.po")
 				os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-previous.po " + project.GetFilename())

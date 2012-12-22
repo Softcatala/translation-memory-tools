@@ -17,16 +17,19 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import logging
 
 from fileset import *
 from project import *
 from projects import *
 
-
 projects = Projects("tm.po")
+reRecreateTM = True
+
 
 def CreateProject(filename):
 	project = Project(filename)
+	project.SetRecreateTM(reRecreateTM)
 	projects.Add(project)
 	return project
 	
@@ -91,11 +94,25 @@ def recull():
 	project.Add(LocalFileSet('recull', 'recull/recull.po', 'recull.po'))
 	project.Do()
 
+def initLogging():
+
+	logfile = "builder.log"
+
+	if (os.path.isfile(logfile)):
+			os.system("rm " + logfile)
+
+	logging.basicConfig(filename=logfile,level=logging.DEBUG)
+	logger = logging.getLogger('')
+	ch = logging.StreamHandler()
+	logger.addHandler(ch)
+
 def main():
 
 	print "Translation memory builder version 0.1"
 
 	start_time = time.time()
+
+	initLogging()
 
 	recull()
 	abiword()
@@ -107,7 +124,7 @@ def main():
 
 	projects.Do()
 
-	print "Execution time:", time.time() - start_time, "seconds"
+	prinf "Execution time:", time.time() - start_time, "seconds"
 
 if __name__ == "__main__":
     main()

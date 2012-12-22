@@ -19,29 +19,46 @@
 
 
 import os
+import sys
+import logging
 
 from fileset import *
 
 class Project:
 
-	filesets = list()
-
 	def __init__(self, filename):
+		recreateTM = True
 		self.filename = filename
-
-		if (os.path.isfile(filename)):
-			os.system("rm " + filename)
+		self.filesets = list()
 
 	def GetFilename(self):
 		return self.filename;
+
+	def SetRecreateTM(self, recreateTM):
+		self.recreateTM = recreateTM
+
+	def DeletePOFile(self):
+		if (os.path.isfile(self.filename)):
+			os.system("rm " + self.filename)
 
 	def Add(self, fileset):
 		fileset.SetTMFile(self.filename)
 		self.filesets.append(fileset)
 
 	def Do(self):
-		for fileset in self.filesets:
-			fileset.Do()
+		try:
 
+			if (self.recreateTM == False and os.path.isfile(self.filename)):
+				return
+			
+			self.DeletePOFile()
+
+			for fileset in self.filesets:
+				fileset.Do()
+
+		except Exception as detail:
+			logging.error("Project.Do. Cannot complete " + self.filename)
+			logging.error(detail)
+			self.DeletePOFile()
 
 
