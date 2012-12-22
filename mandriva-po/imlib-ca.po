@@ -1,0 +1,227 @@
+# imlib translation to catalan.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Jordi Mas <jmas@softcatala.org>, 2000.
+#
+# Traducció per Softcatalà <info@softcatala.org>
+msgid ""
+msgstr ""
+"Project-Id-Version: imlib 1.9.8\n"
+"POT-Creation-Date: 1999-07-08 22:40+0200\n"
+"PO-Revision-Date: 1999-07-08 22:40+0200\n"
+"Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
+"Language-Team: Catalan <info@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: utils/imlib_config.c:185
+msgid "Imlib Config Editor"
+msgstr "Editor de configuració Imlib"
+
+#: utils/imlib_config.c:948
+msgid "Base Levels"
+msgstr "Nivells base"
+
+#: utils/imlib_config.c:964
+msgid "Red Levels"
+msgstr "Nivells vermells"
+
+#: utils/imlib_config.c:980
+msgid "Green Levels"
+msgstr "Nivells verds"
+
+#: utils/imlib_config.c:996
+msgid "Blue Levels"
+msgstr "Nivells blaus"
+
+#: utils/imlib_config.c:1038
+msgid "Small colour set"
+msgstr "Joc petit de colors"
+
+#: utils/imlib_config.c:1043
+msgid "Medium colour set"
+msgstr "Joc mitjà de colors"
+
+#: utils/imlib_config.c:1048
+msgid "Large colour set"
+msgstr "Joc gran de colors"
+
+#: utils/imlib_config.c:1057
+msgid "Select Palette File"
+msgstr "Seleccioneu el fitxer de paleta"
+
+#: utils/imlib_config.c:1066
+msgid "Select"
+msgstr "Selecciona"
+
+#: utils/imlib_config.c:1081
+msgid "Save"
+msgstr "Desa"
+
+#: utils/imlib_config.c:1113
+msgid "Copy To"
+msgstr "Copia a"
+
+#: utils/imlib_config.c:1118
+msgid "Spread To"
+msgstr "Escampa a"
+
+#: utils/imlib_config.c:1127
+msgid "Set Last"
+msgstr "Estableix l'últim"
+
+#: utils/imlib_config.c:1132
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: utils/imlib_config.c:1372
+msgid "Save User Config"
+msgstr "Desa la configuració de l'usuari"
+
+#: utils/imlib_config.c:1379
+msgid "Save System Config"
+msgstr "Desa la configuració del sistema"
+
+#: utils/imlib_config.c:1385
+msgid "Close"
+msgstr "Tanca"
+
+#: utils/imlib_config.c:1525
+msgid "Color Correction"
+msgstr "Correcció de color"
+
+#: utils/imlib_config.c:1525
+msgid "Colors"
+msgstr "Colors"
+
+#: utils/imlib_config.c:1525
+msgid "Display"
+msgstr "Visualització"
+
+#: utils/imlib_config.c:1525
+msgid "Rendering"
+msgstr "Dibuix"
+
+#: utils/imlib_config.c:1526
+msgid "Select Palette"
+msgstr "Seleccioneu una paleta"
+
+#: utils/imlib_config.c:1527
+msgid "Force Palette"
+msgstr "Imposa la paleta"
+
+#: utils/imlib_config.c:1528
+msgid "Dither in Palette Mode"
+msgstr "Simulació de colors en el mode Paleta"
+
+#: utils/imlib_config.c:1529
+msgid "Fast Remapping in Palette Mode"
+msgstr "Remapatge ràpid en el mode Paleta"
+
+#: utils/imlib_config.c:1530
+msgid "High Quality in 15/16bpp"
+msgstr "Alta qualitat en 15/16 bpp"
+
+#: utils/imlib_config.c:1531
+msgid "Limit Maximum Shared memory Size (bytes)"
+msgstr "Límita la mida de memòria compartida màxima (en octets)"
+
+#: utils/imlib_config.c:1533
+msgid "256 Kb"
+msgstr "256 kB"
+
+#: utils/imlib_config.c:1534 utils/imlib_config.c:1546
+msgid "512 Kb"
+msgstr "512 kB"
+
+#: utils/imlib_config.c:1535
+msgid "1   Mb"
+msgstr "1   MB"
+
+#: utils/imlib_config.c:1536
+msgid "2   Mb"
+msgstr "2   MB"
+
+#: utils/imlib_config.c:1537
+msgid "3   Mb"
+msgstr "3   MB"
+
+#: utils/imlib_config.c:1538
+msgid "4   Mb"
+msgstr "4   MB"
+
+#: utils/imlib_config.c:1539
+msgid "Use Ordered Dithering (Faster)"
+msgstr "Utilitza la simulació de colors ordenada (més ràpid)"
+
+#: utils/imlib_config.c:1540
+msgid "MIT-SHM Shared Memory Enabled"
+msgstr "Memòria compartida MIT-SHM habilitada"
+
+#: utils/imlib_config.c:1541
+msgid "Shared Pixmaps"
+msgstr "Mapes de píxels compartits"
+
+#: utils/imlib_config.c:1542
+msgid "Fast Render"
+msgstr "Dibuix ràpid"
+
+#: utils/imlib_config.c:1543
+msgid "Imagemagick & NETPBM Fallback"
+msgstr "Imagemagick & NETPBM Fallback"
+
+#: utils/imlib_config.c:1544
+msgid "Image Cache (bytes)"
+msgstr "Memòria cau d'imatge (en octets)"
+
+#: utils/imlib_config.c:1547
+msgid "1 Mb"
+msgstr "1 MB"
+
+#: utils/imlib_config.c:1548
+msgid "2 Mb"
+msgstr "2 MB"
+
+#: utils/imlib_config.c:1549
+msgid "4 Mb"
+msgstr "4 MB"
+
+#: utils/imlib_config.c:1550
+msgid "6 Mb"
+msgstr "6 MB"
+
+#: utils/imlib_config.c:1551
+msgid "10 Mb"
+msgstr "10 MB"
+
+#: utils/imlib_config.c:1552
+msgid "Pixmap Cache (bits)"
+msgstr "Memòria cau del mapa de píxels (en bits)"
+
+#: utils/imlib_config.c:1554
+msgid "5120 Kbits"
+msgstr "5120 Kbits"
+
+#: utils/imlib_config.c:1555
+msgid "10 Mbits"
+msgstr "10 Mbits"
+
+#: utils/imlib_config.c:1556
+msgid "20 Mbits"
+msgstr "20 Mbits"
+
+#: utils/imlib_config.c:1557
+msgid "40 Mbits"
+msgstr "40 Mbits"
+
+#: utils/imlib_config.c:1558
+msgid "60 Mbits"
+msgstr "60 Mbits"
+
+#: utils/imlib_config.c:1559
+msgid "100 Mbits"
+msgstr "100 Mbits"
+
+#: utils/imlib_config.c:1560
+msgid "Force Visual ID"
+msgstr "Imposa l'ID visual"

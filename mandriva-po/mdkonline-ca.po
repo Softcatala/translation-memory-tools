@@ -1,0 +1,347 @@
+# mdkonline translation to Catalan.
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Softcatalà <info@softcatala.org>, 2001.
+#
+# Traducció per Softcatalà <info@softcatala.org>
+msgid ""
+msgstr ""
+"Project-Id-Version: mdkonline 0.15\n"
+"POT-Creation-Date: 2003-01-17 19:41+0100\n"
+"PO-Revision-Date: 2001-09-24 20:40+0200\n"
+"Last-Translator: Softcatalà <traddrake@softcatala.org>\n"
+"Language-Team: Catalan <info@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../mdkonline_.c:73
+msgid "Africa"
+msgstr ""
+
+#: ../mdkonline_.c:74
+msgid "Asia"
+msgstr ""
+
+#: ../mdkonline_.c:75
+msgid "Australia"
+msgstr ""
+
+#: ../mdkonline_.c:76
+msgid "Europe"
+msgstr ""
+
+#: ../mdkonline_.c:77
+msgid "North America"
+msgstr ""
+
+#: ../mdkonline_.c:78
+msgid "South America"
+msgstr ""
+
+#: ../mdkonline_.c:98 ../mdkonline_.c:218 ../mdkonline_.c:251
+msgid "Next"
+msgstr "Següent"
+
+#: ../mdkonline_.c:99
+msgid "Finish"
+msgstr "Finalitza"
+
+#: ../mdkonline_.c:100 ../mdkonline_.c:547
+msgid "Quit"
+msgstr "Surt"
+
+#: ../mdkonline_.c:101 ../mdkonline_.c:219 ../mdkonline_.c:253
+#: ../mdkonline_.c:255
+msgid "Back"
+msgstr "Enrere"
+
+#: ../mdkonline_.c:103
+msgid "I don't have a MandrakeOnline account and I want to "
+msgstr "No tinc cap compte de MandrakeOnline i en vull un "
+
+#: ../mdkonline_.c:104
+msgid "Subscribe"
+msgstr "Subscriu-te"
+
+#: ../mdkonline_.c:120
+msgid "Yes I want automated updates"
+msgstr ""
+
+#: ../mdkonline_.c:168
+msgid "Quitting Wizard\n"
+msgstr "S'està sortint de l'auxiliar\n"
+
+#: ../mdkonline_.c:265
+#, fuzzy
+msgid "Warning: No browser specified."
+msgstr "Avís: no s'ha indicat cap navegador"
+
+#: ../mdkonline_.c:292
+#, fuzzy
+msgid "Connecting...\n"
+msgstr "Problema de connexió"
+
+#: ../mdkonline_.c:300 ../mdkonline_.c:368 ../mdkupdate_.c:175
+msgid "Connection problem"
+msgstr "Problema de connexió"
+
+#: ../mdkonline_.c:300 ../mdkonline_.c:368
+#, fuzzy
+msgid "MandrakeOnline could not be contacted, please try again later."
+msgstr ""
+"No s'ha pogut contactar amb MandrakeOnline; si us plau, torneu-ho a provar "
+"més tard"
+
+#: ../mdkonline_.c:312
+msgid "Wrong password"
+msgstr "Contrasenya incorrecta"
+
+#: ../mdkonline_.c:312
+#, fuzzy
+msgid ""
+"Your login or password was wrong.\n"
+" Either you'll have to type it again, or you'll need to create an account on "
+"MandrakeOnline.\n"
+" In the latter case, go back to the first step to connect to "
+"MandrakeOnline.\n"
+" Be aware that you must also provide a machine name \n"
+" (only alphabetical characters are admitted)"
+msgstr ""
+"El nom d'usuari o la contrasenya són incorrectes.\n"
+"Us caldrà tornar-los a escriure, o bé crear un compte a MandrakeOnline.\n"
+" En aquest darrer cas, torneu al primer pas per connectar amb MandrakeOnline."
+
+#: ../mdkonline_.c:376
+msgid "Welcome to MandrakeOnline"
+msgstr "Benvingut a MandrakeOnline"
+
+#: ../mdkonline_.c:377
+#, fuzzy
+msgid ""
+"At this step you are supposed to have an account on MandrakeOnline.\n"
+"This assistant will help you to upload your configuration\n"
+"(packages, hardware configuration) to a centralized database in\n"
+"order to keep you informed about security updates and useful upgrades.\n"
+msgstr ""
+"En aquest pas s'assumeix que teniu un compte a MandrakeOnline.\n"
+"Aquest auxiliar us ajudarà a penjar la vostra configuració\n"
+"(paquets, configuració del maquinari) a una base de dades centralitzada\n"
+"per tal de mantenir-vos informat sobre les actualitzacions de seguretat i "
+"altres millores.\n"
+
+#: ../mdkonline_.c:394
+msgid "Mandrake Privacy Policy"
+msgstr "Normes de privacitat de Mandrake"
+
+#: ../mdkonline_.c:399
+msgid "Authentication"
+msgstr "Autenticació"
+
+#: ../mdkonline_.c:400
+#, fuzzy
+msgid "Enter your MandrakeOnline login, password and machine name:"
+msgstr "Introduïu el vostre nom d'usuari i contrasenya de MandrakeOnline:"
+
+#: ../mdkonline_.c:402
+msgid "Login:"
+msgstr "Nom d'usauri:"
+
+#: ../mdkonline_.c:402
+msgid "Machine Name:"
+msgstr ""
+
+#: ../mdkonline_.c:402
+msgid "Password:"
+msgstr "Contrasenya:"
+
+#: ../mdkonline_.c:407
+msgid "Sending your Configuration"
+msgstr "S'està enviant la vostra configuració"
+
+#: ../mdkonline_.c:408
+#, fuzzy
+msgid ""
+"In order to benefit from MandrakeOnline services,\n"
+"we are about to upload your configuration.\n"
+"\n"
+"The Wizard will now send the following information to MandrakeSoft:\n"
+"1) the list of packages you have installed on your system,\n"
+"2) your hardware configuration.\n"
+"\n"
+"If you feel uncomfortable with this idea, or do not want to benefit from "
+"this service,\n"
+"please press 'Cancel'. By pressing 'Next', you allow us to keep you "
+"informed\n"
+"about security updates and useful upgrades via personalized e-mail alerts.\n"
+"Furthermore, you benefit from discounted paid support services on\n"
+"www.mandrakeexpert.com.\n"
+"Finally, an e-mail alias with your username@mandrakeonline.net will be "
+"provided to you."
+msgstr ""
+"Per poder gaudir dels serveis de MandrakeOnline,\n"
+"ara penjarem la vostra configuració.\n"
+"\n"
+"L'auxiliar enviarà a MandrakeSoft la informació següent:\n"
+"1) la llista de paquets que heu instal·lat al sistema,\n"
+"2) la configuració del maquinari.\n"
+"\n"
+"Si no us agrada la idea, o no voleu gaudir d'aquest servei,\n"
+"feu clic a 'Cancel·la'. Si feu clic a 'Següent', ens autoritzeu a mantenir-"
+"vos informat\n"
+"de les actualitzacions de seguretat i altres millores mitjançant avisos "
+"personalitzats per correu electrònic.\n"
+"A més, gaudireu de descomptes en els serveis de suport de pagament de\n"
+"www.mandrakeexpert.com.\n"
+"Per últim, us facilitarem un àlies de correu electrònic amb el vostre nom "
+"d'usuari@mandrakeonline.net."
+
+#: ../mdkonline_.c:416
+msgid "Error while sending informations"
+msgstr "S'ha produït un error en enviar la informació"
+
+#: ../mdkonline_.c:417
+#, fuzzy
+msgid ""
+"There was an error while sending your personal informations.\n"
+"\n"
+"Press 'Next' to try and send your configuration again."
+msgstr ""
+"S'ha produït un error en enviar la vostra informació personal.\n"
+"\n"
+"Feu clic a Següent per tornar-ho a provar."
+
+#: ../mdkonline_.c:423
+msgid "Finished"
+msgstr "Finalitzat"
+
+#: ../mdkonline_.c:424
+#, fuzzy
+msgid ""
+"From now on you will receive security and update \n"
+"announcements through MandrakeOnline."
+msgstr ""
+"Les dades s'han enviat amb èxit!\n"
+"A partir d'ara, gràcies a MandrakeOnline, rebreu\n"
+"avisos d'actualitzacions i millores de seguretat."
+
+#: ../mdkonline_.c:424
+msgid ""
+"MandrakeOnline offers you the ability to automate the updates.\n"
+"A program will run regulary on your system waiting for new updates\n"
+msgstr ""
+
+#: ../mdkonline_.c:424
+msgid "Your upload was successful!"
+msgstr ""
+
+#: ../mdkonline_.c:429
+msgid "Automated Upgrades"
+msgstr ""
+
+#: ../mdkonline_.c:436
+msgid "Choose your geographical location"
+msgstr ""
+
+#: ../mdkonline_.c:454
+#, fuzzy
+msgid "Reading configuration\n"
+msgstr "S'està enviant la vostra configuració"
+
+#: ../mdkonline_.c:481
+#, c-format
+msgid "Cannot open this file for read: %s"
+msgstr ""
+
+#: ../mdkonline_.c:522
+msgid "OK"
+msgstr "D'acord"
+
+#: ../mdkonline_.c:528 ../mdkonline_.c:554
+msgid "-adobe-times-bold-r-normal--14-*-100-100-p-*-iso8859-*,*-r-*"
+msgstr "-adobe-times-bold-r-normal--14-*-100-100-p-*-iso8859-*,*-r-*"
+
+#: ../mdkonline_.c:543
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../mdkonline_.c:552
+#, fuzzy
+msgid ""
+"Do you really want to abort MandrakeOnline?\n"
+"To return to the Wizard press 'Cancel'.\n"
+"To really quit it press 'Quit'."
+msgstr ""
+"Segur que voleu avortar MandrakeOnline?\n"
+"Per tornar a l'auxiliar, feu clic a 'Cancel·la';\n"
+"per sortir feu clic a 'Surt'."
+
+#: ../mdkonline_.c:556
+msgid "Really abort? - MandrakeOnline"
+msgstr "Segur que voleu avortat? - MandrakeOnline"
+
+#: ../mdkonline_.c:631
+msgid "-adobe-times-bold-r-normal--17-*-100-100-p-*-iso8859-*,*-r-*"
+msgstr "-adobe-times-bold-r-normal--17-*-100-100-p-*-iso8859-*,*-r-*"
+
+#: ../mdkonline_.c:632
+msgid "Welcome"
+msgstr "Benvingut"
+
+#: ../mdkonline_.c:656
+msgid "Close"
+msgstr "Tanca"
+
+#: ../mdkupdate_.c:52
+#, c-format
+msgid ""
+"mdkupdate version %s\n"
+"Copyright (C) 2002 MandrakeSoft.\n"
+"This is free software and may be redistributed under the terms of the GNU "
+"GPL.\n"
+"\n"
+"usage:\n"
+msgstr ""
+
+#: ../mdkupdate_.c:57
+msgid "  --help         - print this help message.\n"
+msgstr ""
+
+#: ../mdkupdate_.c:58
+msgid "  --security     - use only security media.\n"
+msgstr ""
+
+#: ../mdkupdate_.c:59
+msgid "  --update       - update all information.\n"
+msgstr ""
+
+#: ../mdkupdate_.c:60
+msgid "  -v             - verbose mode.\n"
+msgstr ""
+
+#: ../mdkupdate_.c:175
+#, fuzzy
+msgid "MandrakeUpdate could not contact the site, we will try again."
+msgstr ""
+"No s'ha pogut contactar amb MandrakeOnline; si us plau, torneu-ho a provar "
+"més tard"
+
+#: ../mdkupdate_.c:202
+msgid "For any problem send an e-mail to support@mandrakeonline.net\n"
+msgstr ""
+
+#: ../mdkupdate_.c:202
+msgid ""
+"You need to have an account on MandrakeOnline, or update your subscription."
+msgstr ""
+
+#: ../mdkupdate_.c:202
+msgid "Your login or password may be wrong"
+msgstr ""
+
+#: ../mdkupdate_.c:214
+msgid "Unable to create mdkupdate medium.\n"
+msgstr ""
+
+#: ../mdkupdate_.c:216
+msgid "Unable to update packages from mdkupdate medium.\n"
+msgstr ""

@@ -1,0 +1,251 @@
+# Copyright (C) 2000 MandrakeSoft
+# Softcatalà <linux@softcatala.org>, 1999-2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drakcronat\n"
+"POT-Creation-Date: 2003-01-30 03:35+0100\n"
+"PO-Revision-Date: 2003-02-02 03:35+0100\n"
+"Last-Translator: <linux@softcatala.org>\n"
+"Language-Team: Catalan <linux@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../drakcronat_.c:83
+msgid "ROOT MODE"
+msgstr "MODE D'USUARI PRIMARI"
+
+#: ../drakcronat_.c:93
+msgid "Normal Users"
+msgstr "Usuaris normals"
+
+#: ../drakcronat_.c:103
+msgid "OK"
+msgstr "D'acord"
+
+#: ../drakcronat_.c:113 ../drakcronat_.c:365 ../drakcronat_.c:467
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../drakcronat_.c:359
+msgid "Task Modification"
+msgstr "Modificació de la tasca"
+
+#: ../drakcronat_.c:363
+msgid "Change time"
+msgstr "Canvia l'hora"
+
+#: ../drakcronat_.c:364
+msgid "Change command"
+msgstr "Canvia l'ordre"
+
+#: ../drakcronat_.c:375
+msgid "Time modification"
+msgstr "Modificació de l'hora"
+
+#: ../drakcronat_.c:390 ../drakcronat_.c:928
+msgid "Time parameters"
+msgstr "Paràmetres de l'hora"
+
+#: ../drakcronat_.c:391 ../drakcronat_.c:931
+msgid "Periodic task"
+msgstr "Tasca periòdica"
+
+#: ../drakcronat_.c:392
+msgid "Options"
+msgstr "Opcions"
+
+#: ../drakcronat_.c:409 ../drakcronat_.c:450 ../drakcronat_.c:950
+#: ../drakcronat_.c:996
+msgid "Hour:"
+msgstr "Hora:"
+
+#: ../drakcronat_.c:410 ../drakcronat_.c:452 ../drakcronat_.c:951
+#: ../drakcronat_.c:998
+msgid "Minute:"
+msgstr "Minuts:"
+
+#: ../drakcronat_.c:411 ../drakcronat_.c:952
+msgid "Months:"
+msgstr "Mesos:"
+
+#: ../drakcronat_.c:412 ../drakcronat_.c:953
+msgid "Day of Week:"
+msgstr "Dia de la setmana:"
+
+#: ../drakcronat_.c:413 ../drakcronat_.c:954
+msgid "Day of Month:"
+msgstr "Dia del mes:"
+
+#: ../drakcronat_.c:414 ../drakcronat_.c:955
+msgid ""
+"_:all hours\n"
+"All"
+msgstr ""
+"_:totes les hores\n"
+"Totes"
+
+#: ../drakcronat_.c:415 ../drakcronat_.c:956
+msgid ""
+"_:all minutes\n"
+"All"
+msgstr ""
+"_:tots els minuts\n"
+"Tots"
+
+#: ../drakcronat_.c:416 ../drakcronat_.c:957
+msgid ""
+"_:all months\n"
+"All"
+msgstr ""
+"_:tots els mesos\n"
+"Tots"
+
+#: ../drakcronat_.c:417 ../drakcronat_.c:958
+msgid ""
+"_:all weeks\n"
+"All"
+msgstr ""
+"_:totes les setmanes\n"
+"Totes"
+
+#: ../drakcronat_.c:418 ../drakcronat_.c:959
+msgid ""
+"_:all days of month\n"
+"All"
+msgstr ""
+"_:tots els dies del mes\n"
+"Tots"
+
+#: ../drakcronat_.c:419 ../drakcronat_.c:961
+msgid "Activate"
+msgstr "Activa"
+
+#: ../drakcronat_.c:462 ../drakcronat_.c:812 ../drakcronat_.c:1024
+msgid "Spool level:"
+msgstr "Nivell de gestió de cues:"
+
+#: ../drakcronat_.c:464 ../drakcronat_.c:1019
+msgid "Mail"
+msgstr "Correu"
+
+#: ../drakcronat_.c:467
+msgid "Apply"
+msgstr "Aplica"
+
+#: ../drakcronat_.c:487
+msgid "Operation succeeded"
+msgstr "Operació reeixida"
+
+#: ../drakcronat_.c:503 ../drakcronat_.c:1054
+msgid "You will receive a mail"
+msgstr "Rebreu un correu"
+
+#: ../drakcronat_.c:530 ../drakcronat_.c:843
+msgid "WARNING"
+msgstr "AVÍS"
+
+#: ../drakcronat_.c:530
+msgid "You are not allowed to modify this task"
+msgstr "No esteu autoritzat per modificar aquesta tasca"
+
+#: ../drakcronat_.c:572
+msgid "Command modification"
+msgstr "Modificació de l'ordre"
+
+#: ../drakcronat_.c:742
+msgid "File"
+msgstr "Fitxer"
+
+#: ../drakcronat_.c:762
+msgid "DrakCronAt"
+msgstr "DrakCronAt"
+
+#: ../drakcronat_.c:779
+msgid "View"
+msgstr "Visualitza"
+
+#: ../drakcronat_.c:781 ../drakcronat_.c:927
+msgid "Resume"
+msgstr "Continua"
+
+#: ../drakcronat_.c:791
+msgid "User: "
+msgstr "Usuari: "
+
+#: ../drakcronat_.c:797
+msgid "Date"
+msgstr "Data"
+
+#: ../drakcronat_.c:797
+msgid "Hour"
+msgstr "Hora"
+
+#: ../drakcronat_.c:797
+msgid "Level"
+msgstr "Nivell"
+
+#: ../drakcronat_.c:797
+msgid "Status"
+msgstr "Estat"
+
+#: ../drakcronat_.c:797
+msgid "Task"
+msgstr "Tasca"
+
+#: ../drakcronat_.c:797
+msgid "User"
+msgstr "Usuari"
+
+#: ../drakcronat_.c:815
+msgid "Refresh"
+msgstr "Actualitza"
+
+#: ../drakcronat_.c:832 ../drakcronat_.c:1028
+msgid "Add"
+msgstr "Afegeix"
+
+#: ../drakcronat_.c:832
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: ../drakcronat_.c:832
+msgid "Modify"
+msgstr "Modifica"
+
+#: ../drakcronat_.c:843
+msgid "You are not allowed to add a new task"
+msgstr "No esteu autoritzat a afegir una nova tasca"
+
+#: ../drakcronat_.c:929
+msgid "Command"
+msgstr "Ordre"
+
+#: ../drakcronat_.c:930
+msgid "Time"
+msgstr "Hora"
+
+#: ../drakcronat_.c:1008
+msgid "Execute"
+msgstr "Executa"
+
+#: ../drakcronat_.c:1009
+msgid "Quit"
+msgstr "Surt"
+
+#: ../drakcronat_.c:1027
+msgid "Output file:"
+msgstr "Fitxer de sortida:"
+
+#: ../drakcronat_.c:1030
+msgid "Command:"
+msgstr "Ordre:"
+
+#: ../drakcronat_.c:1182
+msgid "Close"
+msgstr "Tanca"
+
+#: ../drakcronat_.c:1398 ../drakcronat_.c:1433
+msgid "You must define a command first!"
+msgstr "Primer heu de definir una ordre!"

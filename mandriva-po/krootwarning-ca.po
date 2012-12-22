@@ -1,0 +1,70 @@
+# Copyright (C) 2000 MandrakeSoft
+# Softcatalà <linux@softcatala.org>, 1999-2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kroowarning\n"
+"POT-Creation-Date: 2001-09-17 15:17+0200\n"
+"PO-Revision-Date: 2002-09-17 15:17+0200\n"
+"Last-Translator: <linux@softcatala.org>\n"
+"Language-Team: Catalan <linux@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Softcatalà"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "linux@softcatala.org"
+
+#: main.cpp:27 main.cpp:41
+msgid "Krootwarning"
+msgstr "Krootwarning"
+
+#: krootwarning.cpp:40
+msgid "Warning"
+msgstr "Avís"
+
+#: krootwarning.cpp:40
+msgid "Logout"
+msgstr "Surt"
+
+#: krootwarning.cpp:40
+msgid "Continue"
+msgstr "Continua"
+
+#: krootwarning.cpp:66
+msgid "You are running a graphical interface as root."
+msgstr "Esteu executant una intefície gràfica com a usuari primari."
+
+#: krootwarning.cpp:67
+msgid ""
+"This is a bad idea because as root, you can damage your system, and nothing "
+"will stop you."
+msgstr ""
+"No és molt bona idea ja que com a usuari primari, podeu danyar el sistema "
+"ires no us aturarà."
+
+#: krootwarning.cpp:68
+msgid "Click on <b>'Continue'</b> if you really know what you are doing."
+msgstr "Feu clic sobre <b>'Continua'</b> si realment sabeu el que esteu fent."
+
+#: krootwarning.cpp:69
+msgid ""
+"Otherwise, please click on <b>'Logout'</b> and read your manual <br>for "
+"instructions to add a non-privileged user account <br>to the system."
+msgstr ""
+"Si no, si us plau, feu clic sobre <b>'Surt'</b> i llegiu les "
+"<br>instruccions del manual per afegir un compte d'usuari no privilegiat "
+"<br>al sistema."
+
+#: krootwarning.cpp:74
+msgid "Show this window again."
+msgstr "Mostra aquesta finestra una altra vegada."

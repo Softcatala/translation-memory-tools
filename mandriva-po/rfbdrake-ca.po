@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Traducció per Softcatalà <linux@softcatala.org>
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rdbdrake\n"
+"POT-Creation-Date: 2003-02-06 19:29+0100\n"
+"PO-Revision-Date: 2002-06-22 08:13+0200\n"
+"Last-Translator: linux@softcatala.org\n"
+"Language-Team: linux@softcatala.org\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: ../rfbdrake_.c:53
+msgid "Rfbdrake"
+msgstr ""
+
+#: ../rfbdrake_.c:56
+msgid "Want to take control (linux client)"
+msgstr "Requerir prendre el control (client linux)"
+
+#: ../rfbdrake_.c:57
+msgid "Allow control of my machine (linux server)"
+msgstr "Permetre el contro de la màquina (servidor linux)"
+
+#: ../rfbdrake_.c:58 ../rfbdrake_.c:99
+msgid "Windows Terminal Services"
+msgstr "Terminal de Serveis de Windows"
+
+#: ../rfbdrake_.c:59
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../rfbdrake_.c:61 ../rfbdrake_.c:71 ../rfbdrake_.c:73
+msgid "Connection"
+msgstr "Connexió"
+
+#: ../rfbdrake_.c:62 ../rfbdrake_.c:115
+msgid "Help"
+msgstr "Ajuda"
+
+#: ../rfbdrake_.c:68
+msgid "Remote Access Configuration"
+msgstr "Configuració d'Accés Remot"
+
+#: ../rfbdrake_.c:69
+msgid "Remote Access Type"
+msgstr "Tipus d'Accés Remot"
+
+#: ../rfbdrake_.c:72
+msgid "Launch server"
+msgstr "Executar el servidor"
+
+#: ../rfbdrake_.c:77
+msgid "Client configuration"
+msgstr "configuració del Client"
+
+#: ../rfbdrake_.c:80
+msgid "Remote server Address"
+msgstr "Adreça del servidor Remot"
+
+#: ../rfbdrake_.c:81
+msgid "Display Number (default = 0)"
+msgstr "Mostrar nombre (per defecte 0)"
+
+#: ../rfbdrake_.c:82
+msgid "Enter Password"
+msgstr "Introduïr Contrassenya"
+
+#: ../rfbdrake_.c:83 ../rfbdrake_.c:105
+msgid "FullScreen"
+msgstr "A pantalla sencera"
+
+#: ../rfbdrake_.c:89
+msgid "Server configuration"
+msgstr "configuració del Servidor"
+
+#: ../rfbdrake_.c:92
+msgid "Set Password"
+msgstr "Especificar Contrassenya"
+
+#: ../rfbdrake_.c:102
+msgid "Windows Hostname"
+msgstr "Nom de l'ordinador central de Windows"
+
+#: ../rfbdrake_.c:103
+msgid "Screen Size"
+msgstr ""
+
+#: ../rfbdrake_.c:104
+msgid "Keyboard Language"
+msgstr ""
+
+#: ../rfbdrake_.c:116
+#, c-format
+msgid " Remote FrameBuffer - Copyright (C) %s MandrakeSoft S.A."
+msgstr "Marc de memòria intermèdia Remota - Copyright (C) %s MandrakeSoft S.A."
+
+#: ../rfbdrake_.c:116
+msgid "Author:"
+msgstr "Autor:"
+
+#: ../rfbdrake_.c:116
+msgid ""
+"It exports the framebuffer of the X server to one or more clients using "
+"strong\n"
+"\t compression and injects keyboard and mouse inputs from the clients into\n"
+"\t the server."
+msgstr ""
+"Per exportar el marc de memòria intermèdia del servidor X a un o més clients "
+"emprant strong\n"
+"\t la compressió i injectant entrades de teclat i ratolí dels clients al\n"
+"\t servidor."
+
+#: ../rfbdrake_.c:116
+msgid ""
+"Rfbdrake allows to initiate a Window Terminal Services session with a\n"
+"\t Windows 2000/XP server."
+msgstr ""
+"Rfbdrake permet iniciar una sessió de finestra de Terminal de Serveis amb\n"
+"\t un servidor Windows 2000/XP."
+
+#: ../rfbdrake_.c:116
+msgid ""
+"The password is encrypted and one should always set it before giving the\n"
+"\t control to a remote client.\n"
+msgstr ""
+"La contrassenya està encriptada i haureu d'especificar-la després de donar "
+"el\n"
+"\t control al client remot.\n"
+
+#: ../rfbdrake_.c:116
+msgid ""
+"The rfbdrake tool is both a client and server desktop remote control utility."
+msgstr ""
+"L'eina rfbdrake és a la vegada un client i una utilitat de control remot de "
+"l'escriptori del servidor"
+
+#: ../rfbdrake_.c:117
+msgid "Click Here to return"
+msgstr "Cliqueu Aqui per tornar"
+
+#: ../rfbdrake_.c:139 ../rfbdrake_.c:179
+msgid "Enter a valid address please!"
+msgstr "Si us plau, introdueix una adreça vàlida"
+
+#: ../rfbdrake_.c:152
+msgid ""
+"\n"
+"You should install vnc client \n"
+"to connect to the server\n"
+msgstr ""
+"\n"
+"Heu d'instal·lar el client vnc \n"
+"per connectar al servidor \n"
+
+#: ../rfbdrake_.c:175
+msgid ""
+"\n"
+"Install the rfb package if you want to export \n"
+"your desktop to a remote client\n"
+msgstr ""
+"\n"
+"Heu d'instal·lar el paquet rfb si voleu exportar \n"
+"el vostre escriptori a un client remot\n"
+
+#: ../rfbdrake_.c:186
+msgid ""
+"\n"
+"Rdesktop is not installed,\n"
+"install it with 'urpmi rdesktop'\n"
+msgstr ""
+"\n"
+"Rdesktop no està instal·lat, \n"
+"instal·leu-lo amb 'urmi rdesktop'\n"
+
+#: ../rfbdrake_.c:212
+#, c-format
+msgid "Opendir error: %s"
+msgstr ""
+
+#: ../rfbdrake_.c:256
+msgid "Close"
+msgstr "Tancar"
+
+#~ msgid "Remote Framebuffer"
+#~ msgstr "Marc de memòria intermèdia Remota"
+
+#~ msgid "OK"
+#~ msgstr "D'acord"
+
+#~ msgid "-adobe-times-bold-r-normal--17-*-100-100-p-*-iso8859-*,*-r-*"
+#~ msgstr "-adobe-times-bold-r-normal--17-*-100-100-p-*-iso8859-*,*-r-*"
+
+#~ msgid "Welcome"
+#~ msgstr "Benvinguts"
+
+#~ msgid ""
+#~ "Remote FrameBuffer %s \n"
+#~ " \n"
+#~ " Copyright (C) %s MandrakeSoft S.A.\n"
+#~ msgstr ""
+#~ "Marc de memòria intermèdia %s \n"
+#~ " \n"
+#~ " Copyright (C) %s MandrakeSoft S.A.\n"
+
+#~ msgid ""
+#~ "Authors: \n"
+#~ "\n"
+#~ " Daouda Lo <daouda\\@mandrakesoft.com> \n"
+#~ "\n"
+#~ msgstr ""
+#~ "Autors: \n"
+#~ "\n"
+#~ " Daouda Lo <daouda\\@mandrakesoft.com> \n"
+#~ "\n"

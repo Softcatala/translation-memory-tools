@@ -1,0 +1,6754 @@
+# Collection of titles/sections of Linux-Mandrake menu's.
+# It's generated from the /usr/lib/menu/* files.
+#
+# Copyright (C) 2000 MandrakeSoft
+# Softcatalà <linux@softcatala.org>, 1999-2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: menu-messages 0.1\n"
+"POT-Creation-Date: 2002-08-06 16:16+0200\n"
+"PO-Revision-Date: 2003-02-07 04:55+0200\n"
+"Last-Translator: Raül Cambeiro <rulet@menta.net>\n"
+"Language-Team: Catalan <linux@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Menu entry for usr/lib/menu/7colors
+msgid "7colors"
+msgstr "7 colors"
+
+#. Menu description for usr/lib/menu/7colors
+msgid "Take over the gaming area with your color"
+msgstr "Ompliu l'àrea de joc amb el vostre color"
+
+#. Menu tree branch (found in usr/lib/menu/7colors)
+msgid "Amusement"
+msgstr "Entreteniments"
+
+#. Menu tree branch (found in usr/lib/menu/7colors)
+msgid "Boards"
+msgstr "Taulers"
+
+#. Menu entry for usr/lib/menu/AfterStep
+msgid "AfterStep"
+msgstr "AfterStep"
+
+#. Menu tree branch (found in usr/lib/menu/AfterStep)
+msgid "Session"
+msgstr "Sessió"
+
+#. Menu tree branch (found in usr/lib/menu/AfterStep)
+msgid "Windowmanagers"
+msgstr "Gestors de finestres"
+
+#. Menu entry for usr/lib/menu/BasiliskII
+msgid "Basilisk II"
+msgstr "Basilisk II"
+
+#. Menu description for usr/lib/menu/BasiliskII
+msgid "A Macintosh Emulator"
+msgstr "Un emulador de Macintosh"
+
+#. Menu tree branch (found in usr/lib/menu/BasiliskII)
+msgid "Applications"
+msgstr "Aplicacions"
+
+#. Menu tree branch (found in usr/lib/menu/BasiliskII)
+msgid "Emulators"
+msgstr "Emuladors"
+
+#. Menu entry for usr/lib/menu/BasiliskII-jit
+msgid "Basilisk II - JIT"
+msgstr "Basilisk II - JIT"
+
+#. Menu description for usr/lib/menu/BomberInstinct
+msgid "Bomberman clone"
+msgstr "Clon del Bomberman"
+
+#. Menu tree branch (found in usr/lib/menu/BomberInstinct)
+msgid "Arcade"
+msgstr "Arcade"
+
+#. Menu entry for usr/lib/menu/DarwinStreamingServer-Admin
+msgid "DarwinStreamingServer-Admin tool"
+msgstr "DarwinStreamingServer - Eina d'administració"
+
+#. Menu description for usr/lib/menu/DarwinStreamingServer-Admin
+msgid ""
+"Web-based administration tool for DarwinStreamingServer, works with every "
+"browser. Set the  environment variable to choose your preferred browser."
+msgstr ""
+"Eina d'administració basada en web per a DarwinStreamingServer, funciona amb "
+"qualsevol navegador. Configureu la variable d'entorn per triar el vostre "
+"navegador preferit."
+
+#. Menu tree branch (found in usr/lib/menu/DarwinStreamingServer-Admin)
+msgid "Configuration"
+msgstr "Configuració"
+
+#. Menu tree branch (found in usr/lib/menu/DarwinStreamingServer-Admin)
+msgid "Networking"
+msgstr "Xarxa"
+
+#. Menu description for usr/lib/menu/GiNaC-utils
+msgid "Ginsh - GiNaC interactive shell"
+msgstr "Ginsh - intèrpret d'ordres interactiu de GiNaC"
+
+#. Menu tree branch (found in usr/lib/menu/GiNaC-utils)
+msgid "Sciences"
+msgstr "Ciències"
+
+#. Menu tree branch (found in usr/lib/menu/GiNaC-utils)
+msgid "Mathematics"
+msgstr "Matemàtiques"
+
+#. Menu description for usr/lib/menu/Gnometab
+msgid "Guitar Tablature editor"
+msgstr "Editor de partitures per a guitarra"
+
+#. Menu tree branch (found in usr/lib/menu/Gnometab)
+msgid "File tools"
+msgstr "Eines de fitxer"
+
+#. Menu entry for usr/lib/menu/LinNeighborhood
+msgid "LinNeighborhood"
+msgstr "LinNeighborhood"
+
+#. Menu description for usr/lib/menu/LinNeighborhood
+msgid "Graphical front end to Samba (LinNeighborhood)"
+msgstr "Frontal gràfic per a Samba (LinNeighborhood)"
+
+#. Menu tree branch (found in usr/lib/menu/LinNeighborhood)
+msgid "Other"
+msgstr "Altres"
+
+#. Menu entry for usr/lib/menu/LinPopUp
+msgid "LinPopUp"
+msgstr "LinPopUp"
+
+#. Menu description for usr/lib/menu/LinPopUp
+msgid "A Linux enhanced port of winpopup"
+msgstr "Una adaptació millorada de winpopup per a Linux"
+
+#. Menu entry for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Calc"
+msgstr "OpenOffice.org Calc"
+
+#. Menu description for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Spreadsheet"
+msgstr "Full de càlcul de l'OpenOffice.org"
+
+#. Menu tree branch (found in usr/lib/menu/OpenOffice.org)
+msgid "Office"
+msgstr "Oficina"
+
+#. Menu tree branch (found in usr/lib/menu/OpenOffice.org)
+msgid "Spreadsheets"
+msgstr "Fulls de càlcul"
+
+#. Menu entry for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Draw"
+msgstr "OpenOffice.org Draw"
+
+#. Menu description for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Drawing"
+msgstr "Eina de dibuix de l'OpenOffice.org"
+
+#. Menu tree branch (found in usr/lib/menu/OpenOffice.org)
+msgid "Graphs"
+msgstr "Gràfics"
+
+#. Menu entry for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Impress"
+msgstr "OpenOffice.org Impress"
+
+#. Menu description for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Presentation"
+msgstr "Eina de presentacions de l'OpenOffice.org"
+
+#. Menu tree branch (found in usr/lib/menu/OpenOffice.org)
+msgid "Presentations"
+msgstr "Presentacions"
+
+#. Menu entry for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Writer"
+msgstr "OpenOffice.org Writer"
+
+#. Menu description for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Word Processing Component"
+msgstr "Processador de textos de l'OpenOffice.org"
+
+#. Menu tree branch (found in usr/lib/menu/OpenOffice.org)
+msgid "Wordprocessors"
+msgstr "Processadors de textos"
+
+#. Menu entry for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Math"
+msgstr "OpenOffice.org Math"
+
+#. Menu description for usr/lib/menu/OpenOffice.org
+msgid "OpenOffice.org Formula Editor"
+msgstr "Editor de fórmules de l'OpenOffice.org"
+
+#. Menu description for usr/lib/menu/RLPlot
+msgid "Data Plotting and Graphing"
+msgstr "Traçatge i elaboració de gràfics de dades"
+
+#. Menu entry for usr/lib/menu/SearchAndRescue
+msgid "Search and Rescue"
+msgstr "Cerca i Rescata"
+
+#. Menu description for usr/lib/menu/SearchAndRescue
+msgid "The Search and Rescue helicopter simulator"
+msgstr "El simulador d'helicòpter Cerca i Rescata"
+
+#. Menu entry for usr/lib/menu/TeXmacs
+msgid "TeXmacs editor"
+msgstr "Editor TeXmacs"
+
+#. Menu description for usr/lib/menu/TeXmacs
+msgid "A WYSIWIG scientific text editor"
+msgstr "Editor científic de text WYSIWYG"
+
+#. Menu tree branch (found in usr/lib/menu/TeXmacs)
+msgid "Editors"
+msgstr "Editors"
+
+#. Menu entry for usr/lib/menu/Ted
+msgid "Ted"
+msgstr "Ted"
+
+#. Menu description for usr/lib/menu/Ted
+msgid "Ted Rich Text Editor"
+msgstr "Editor avançat Ted"
+
+#. Menu description for usr/lib/menu/ToutDoux
+msgid "A project manager"
+msgstr "Un gestor de projectes"
+
+#. Menu tree branch (found in usr/lib/menu/ToutDoux)
+msgid "Tasks management"
+msgstr "Gestió de tasques"
+
+#. Menu entry for usr/lib/menu/Xarchie
+msgid "Xarchie"
+msgstr "Xarchie"
+
+#. Menu tree branch (found in usr/lib/menu/Xarchie)
+msgid "File transfer"
+msgstr "Transferència de fitxers"
+
+#. Menu entry for usr/lib/menu/abiword
+msgid "AbiWord"
+msgstr "AbiWord"
+
+#. Menu description for usr/lib/menu/abiword
+msgid "RTF and Microsoft Word (up to 97) document editor"
+msgstr "Editor de documents RTF i Microsoft Word (fins a 97)"
+
+#. Menu entry for usr/lib/menu/abuse_sdl
+msgid "Abuse"
+msgstr "Abuse"
+
+#. Menu description for usr/lib/menu/abuse_sdl
+msgid "The classic Crack-Dot-Com game"
+msgstr "El joc clàssic de Crack-Dot-Com"
+
+#. Menu entry for usr/lib/menu/aconnectgui
+msgid "AconnectGUI"
+msgstr "AconnectGUI"
+
+#. Menu description for usr/lib/menu/aconnectgui
+msgid "ALSA connection GUI"
+msgstr "Interfície gràfica d'usuari per a la connexió ALSA"
+
+#. Menu tree branch (found in usr/lib/menu/aconnectgui)
+msgid "Multimedia"
+msgstr "Multimèdia"
+
+#. Menu tree branch (found in usr/lib/menu/aconnectgui)
+msgid "Sound"
+msgstr "So"
+
+#. Menu entry for usr/lib/menu/alevt
+msgid "Alevt"
+msgstr "Alevt"
+
+#. Menu description for usr/lib/menu/alevt
+msgid "Teletext/Videotext decoder and browser"
+msgstr "Decodificador i navegador de Teletext/Videotext"
+
+#. Menu tree branch (found in usr/lib/menu/alevt)
+msgid "Video"
+msgstr "Vídeo"
+
+#. Menu entry for usr/lib/menu/alsamixergui
+msgid "AlsaMixerGUI"
+msgstr "AlsaMixerGUI"
+
+#. Menu description for usr/lib/menu/alsamixergui
+msgid "ALSA connection mixer"
+msgstr "Mesclador de la connexió ALSA"
+
+#. Menu description for usr/lib/menu/alsaplayer
+msgid "The Alsa Player"
+msgstr "Reproductor Alsa"
+
+#. Menu entry for usr/lib/menu/amaya-gtk
+msgid "Amaya (gtk)"
+msgstr "Amaya (gtk)"
+
+#. Menu description for usr/lib/menu/amaya-gtk
+msgid "W3C's browser/web authoring tool"
+msgstr "Navegador del W3C / eina de creació de webs"
+
+#. Menu tree branch (found in usr/lib/menu/amaya-gtk)
+msgid "WWW"
+msgstr "WWW"
+
+#. Menu entry for usr/lib/menu/amaya-lesstif
+msgid "Amaya (lesstif)"
+msgstr "Amaya (lesstif)"
+
+#. Menu entry for usr/lib/menu/amphetamine
+msgid "Amphetamine"
+msgstr "Amphetamine"
+
+#. Menu description for usr/lib/menu/amphetamine
+msgid "Arcade games"
+msgstr "Jocs d'arcade"
+
+#. Menu description for usr/lib/menu/anjuta
+msgid "IDE "
+msgstr "IDE "
+
+#. Menu tree branch (found in usr/lib/menu/anjuta)
+msgid "Development"
+msgstr "Desenvolupament"
+
+#. Menu tree branch (found in usr/lib/menu/anjuta)
+msgid "Development environments"
+msgstr "Entorns de desenvolupament"
+
+#. Menu entry for usr/lib/menu/arson
+msgid "Arson"
+msgstr "Arson"
+
+#. Menu description for usr/lib/menu/arson
+msgid "A CD burner, and Audio CD Ripper"
+msgstr "Enregistrador de CD i extractor de CD d'àudio"
+
+#. Menu tree branch (found in usr/lib/menu/arson)
+msgid "Archiving"
+msgstr "Arxivament"
+
+#. Menu tree branch (found in usr/lib/menu/arson)
+msgid "Cd burning"
+msgstr "Enregistrament de CD"
+
+#. Menu entry for usr/lib/menu/audacity
+msgid "Audacity"
+msgstr "Audacity"
+
+#. Menu description for usr/lib/menu/audacity
+msgid "Digital audio waveforms editor"
+msgstr "Editor de formes d'ona d'àudio digital"
+
+#. Menu entry for usr/lib/menu/avifile-player
+msgid "AviPlay"
+msgstr "AviPlay"
+
+#. Menu description for usr/lib/menu/avifile-player
+msgid "Video player for AVI/ASF/WMF files"
+msgstr "Reproductor de vídeo per a fitxers AVI/ASF/WMF"
+
+#. Menu entry for usr/lib/menu/avifile-samples
+msgid "AviRecompress"
+msgstr "AviRecompress"
+
+#. Menu description for usr/lib/menu/avifile-samples
+msgid "Simple editor and recompressor for AVI files"
+msgstr "Editor simple i recompressor per a fitxers AVI"
+
+#. Menu entry for usr/lib/menu/avifile-samples
+msgid "AviCap"
+msgstr "AviCap"
+
+#. Menu description for usr/lib/menu/avifile-samples
+msgid "Video grabber for AVI files"
+msgstr "Capturador de vídeo per a fitxers AVI"
+
+#. Menu entry for usr/lib/menu/bbconf
+msgid "Bbconf"
+msgstr "Bbconf"
+
+#. Menu description for usr/lib/menu/bbconf
+msgid "Bbconf is a complete GUI config tool for blackbox"
+msgstr "Bbconf és una eina gràfica de configuració per a blackbox"
+
+#. Menu entry for usr/lib/menu/bbkeys
+msgid "Bbkeys"
+msgstr "Bbkeys"
+
+#. Menu entry for usr/lib/menu/bigforth
+msgid "bigForth"
+msgstr "bigForth"
+
+#. Menu description for usr/lib/menu/bigforth
+msgid "bigForth language - Shell"
+msgstr "Llenguatge bigForth - Intèrpret d'ordres"
+
+#. Menu tree branch (found in usr/lib/menu/bigforth)
+msgid "Interpreters"
+msgstr "Intèrprets"
+
+#. Menu entry for usr/lib/menu/bombermaze
+msgid "BomberMaze"
+msgstr "BomberMaze"
+
+#. Menu description for usr/lib/menu/bombermaze
+msgid "Gnome bomberman game"
+msgstr "Joc bomberman del Gnome"
+
+#. Menu description for usr/lib/menu/brahms
+msgid "Music sequencer"
+msgstr "Seqüenciador de música"
+
+#. Menu entry for usr/lib/menu/bubblemon
+msgid "BubbleMon"
+msgstr "BubbleMon"
+
+#. Menu description for usr/lib/menu/bubblemon
+msgid "Monitoring-duck-in-a-jar dockapp"
+msgstr "Miniaplicació de monitorització que mostra un ànec en un gerro"
+
+#. Menu tree branch (found in usr/lib/menu/bubblemon)
+msgid "Monitoring"
+msgstr "Monitorització"
+
+#. Menu entry for usr/lib/menu/camstream
+msgid "Camstream"
+msgstr "Camstream"
+
+#. Menu description for usr/lib/menu/camstream
+msgid "Webcam tool"
+msgstr "Eina per a càmeres web"
+
+#. Menu entry for usr/lib/menu/cdrdao-gcdmaster
+msgid "Gcdmaster"
+msgstr "Gcdmaster"
+
+#. Menu description for usr/lib/menu/cdrdao-gcdmaster
+msgid "Graphical front end to cdrdao for composing audio CDs"
+msgstr "Frontal gràfic del cdrdao per a la composició de CD d'àudio"
+
+#. Menu description for usr/lib/menu/celestia
+msgid "An astronomy simultor"
+msgstr "Un simulador astronòmic"
+
+#. Menu tree branch (found in usr/lib/menu/celestia)
+msgid "Astronomy"
+msgstr "Astronomia"
+
+#. Menu description for usr/lib/menu/cheesetracker
+msgid "A program for creating music modules"
+msgstr "Un programa per crear mòduls de música"
+
+#. Menu description for usr/lib/menu/chemtool
+msgid "A program for drawing organic molecules"
+msgstr "Un programa per dibuixar molècules orgàniques"
+
+#. Menu tree branch (found in usr/lib/menu/chemtool)
+msgid "Chemistry"
+msgstr "Química"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "ConMen"
+msgstr "ConMen"
+
+#. Menu description for usr/lib/menu/conmen
+msgid "ConMen is a menu shell"
+msgstr "ConMen és un intèrpret d'ordres en menú"
+
+#. Menu tree branch (found in usr/lib/menu/conmen)
+msgid "Shells"
+msgstr "Intèrprets d'ordres"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "Conmen Homepage"
+msgstr "Pàgina inicial del ConMen"
+
+#. Menu tree branch (found in usr/lib/menu/conmen)
+msgid "Documentation"
+msgstr "Documentació"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "(Un)Mount CD-ROM"
+msgstr "(Des)Muntar un CD-ROM"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "(Un)Mount CD-RW"
+msgstr "(Des)Muntar un CD-RW"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "(Un)Mount Windows C:"
+msgstr "(Des)Muntar Windows C:"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "(Un)Mount Windows D:"
+msgstr "(Des)Muntar Windows D:"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "(Un)Mount DOS Floppy"
+msgstr "(Des)Muntar un disquet DOS"
+
+#. Menu entry for usr/lib/menu/conmen
+msgid "(Un)Mount EXT2 Floppy"
+msgstr "(Des)Muntar un disquet EXT2"
+
+#. Menu entry for usr/lib/menu/crossfire-client-gtk
+msgid "GTK Crossfire Client"
+msgstr "Client Crossfire - GTK"
+
+#. Menu description for usr/lib/menu/crossfire-client-gtk
+msgid "Rogue-like graphical role-playing adventure game"
+msgstr "Joc d'aventura gràfica de rol similar al Rogue"
+
+#. Menu entry for usr/lib/menu/crossfire-client-x11
+msgid "X11 Crossfire Client"
+msgstr "Client Crossfire - X11"
+
+#. Menu entry for usr/lib/menu/d4x
+msgid "Downloader for X"
+msgstr "Baixador per a X"
+
+#. Menu description for usr/lib/menu/d4x
+msgid "Web Downloader for X"
+msgstr "Baixador de web per a X"
+
+#. Menu description for usr/lib/menu/ddd
+msgid "Data Display Debugger"
+msgstr "Depurador de dades gràfic (DDD)"
+
+#. Menu tree branch (found in usr/lib/menu/ddd)
+msgid "Tools"
+msgstr "Eines"
+
+#. Menu entry for usr/lib/menu/dictd-client
+msgid "DICT client"
+msgstr "Client DICT"
+
+#. Menu description for usr/lib/menu/dictd-client
+msgid "Client software implementing the Dictionary Server Protocol"
+msgstr "Programari client que implementa el Protocol de Servidor de Diccionari"
+
+#. Menu tree branch (found in usr/lib/menu/dictd-client)
+msgid "Text tools"
+msgstr "Eines de text"
+
+#. Menu entry for usr/lib/menu/digikam
+msgid "Digikam"
+msgstr "Digikam"
+
+#. Menu description for usr/lib/menu/digikam
+msgid "GPhoto2 KDE3 frontend"
+msgstr "Frontal per a GPhoto2 del KDE3"
+
+#. Menu description for usr/lib/menu/dillo
+msgid "A simple web browser"
+msgstr "Un navegador senzill"
+
+#. Menu entry for usr/lib/menu/dopewars
+msgid "Dopewars"
+msgstr "Dopewars"
+
+#. Menu description for usr/lib/menu/dopewars
+msgid "Make a fortune dealing drugs on the streets of New York..."
+msgstr "Fes una fortuna venent drogues als carrers de Nova York..."
+
+#. Menu tree branch (found in usr/lib/menu/dopewars)
+msgid "Strategy"
+msgstr "Estratègia"
+
+#. Menu description for usr/lib/menu/easytag
+msgid "An utility for viewing/editing MP3 tags with a GTK+ GUI."
+msgstr ""
+"Utilitat per veure/editar les etiquetes MP3, amb interfície gràfica GTK+"
+
+#. Menu entry for usr/lib/menu/egon
+msgid "Egon"
+msgstr "Egon"
+
+#. Menu description for usr/lib/menu/egon
+msgid "Siag Office Egon Animator"
+msgstr "Eina d'animació Egon de Siag Office"
+
+#. Menu entry for usr/lib/menu/elm
+msgid "Elm"
+msgstr "Elm"
+
+#. Menu description for usr/lib/menu/elm
+msgid "Elm the mail reader"
+msgstr "Elm, el client de correu electrònic"
+
+#. Menu tree branch (found in usr/lib/menu/elm)
+msgid "Mail"
+msgstr "Correu"
+
+#. Menu description for usr/lib/menu/emelfm
+msgid "a GTK file manager"
+msgstr "Un gestor GTK de fitxers"
+
+#. Menu description for usr/lib/menu/emma
+msgid "Personal finance management"
+msgstr "Gestió de finances personals"
+
+#. Menu tree branch (found in usr/lib/menu/emma)
+msgid "Finances"
+msgstr "Finances"
+
+#. Menu entry for usr/lib/menu/endeavour
+msgid "Endeavour"
+msgstr "Endeavour"
+
+#. Menu description for usr/lib/menu/endeavour
+msgid "File browser with management support for all types of disk objects"
+msgstr ""
+"Explorador de fitxers amb capacitat de gestió per a tots el tipus d'objectes "
+"de disc"
+
+#. Menu entry for usr/lib/menu/enigma
+msgid "Enigma"
+msgstr "Enigma"
+
+#. Menu description for usr/lib/menu/enigma
+msgid "Enigma is a puzzle game similar to Oxyd"
+msgstr "Enigma és un joc de trencaclosques semblant a l'Oxyd"
+
+#. Menu entry for usr/lib/menu/epic
+msgid "epic"
+msgstr "epic"
+
+#. Menu description for usr/lib/menu/epic
+msgid "EPIC is the (E)nhanced (P)rogrammable (I)RC-II (C)lient."
+msgstr ""
+"EPIC és l'acrònim en anglès de \"client d'IRC-II millorat i programable\"."
+
+#. Menu tree branch (found in usr/lib/menu/epic)
+msgid "Instant messaging"
+msgstr "Missatgeria instantània"
+
+#. Menu entry for usr/lib/menu/ermixer
+msgid "Ermixer"
+msgstr "Ermixer"
+
+#. Menu description for usr/lib/menu/ermixer
+msgid "A full featured OSS mixer"
+msgstr "Un mesclador complet OSS (Open Sound System)"
+
+#. Menu entry for usr/lib/menu/etherape
+msgid "Etherape"
+msgstr "Etherape"
+
+#. Menu description for usr/lib/menu/etherape
+msgid "Graphical network viewer"
+msgstr "Visualitzador gràfic de xarxa"
+
+#. Menu entry for usr/lib/menu/ethereal
+msgid "Ethereal"
+msgstr "Ethereal"
+
+#. Menu description for usr/lib/menu/ethereal
+msgid "A network traffic analyzer"
+msgstr "Un analitzador de tràfic de xarxa"
+
+#. Menu entry for usr/lib/menu/exmh
+msgid "Exmh"
+msgstr "Exmh"
+
+#. Menu description for usr/lib/menu/exmh
+msgid "a tk-based mail reader"
+msgstr "Un lector de correu electrònic basat en tk"
+
+#. Menu entry for usr/lib/menu/extace
+msgid "eXtace"
+msgstr "eXtace"
+
+#. Menu description for usr/lib/menu/extace
+msgid "eXtace - An Extace Waveform Viewer"
+msgstr "eXtace - Visualitzador de fitxers d'ona"
+
+#. Menu entry for usr/lib/menu/fcron
+msgid "Fcrontab"
+msgstr "Fcrontab"
+
+#. Menu description for usr/lib/menu/fcron
+msgid "Edit fcrontab file"
+msgstr "Edita el fitxer fcrontab"
+
+#. Menu entry for usr/lib/menu/fcron
+msgid "Fcron Homepage"
+msgstr "Pàgina inicial de l'Fcron"
+
+#. Menu entry for usr/lib/menu/file-roller
+msgid "File-Roller"
+msgstr "File-Roller"
+
+#. Menu description for usr/lib/menu/file-roller
+msgid "An archive manager for GNOME"
+msgstr "Un gestor d'arxius per a GNOME"
+
+#. Menu tree branch (found in usr/lib/menu/file-roller)
+msgid "Compression"
+msgstr "Compressió"
+
+#. Menu description for usr/lib/menu/firestarter
+msgid "Firewall tool"
+msgstr "Eina per al tallafoc"
+
+#. Menu entry for usr/lib/menu/flightgear
+msgid "FlightGear"
+msgstr "FlightGear"
+
+#. Menu description for usr/lib/menu/flightgear
+msgid "The FlightGear Flight Simulator"
+msgstr "El simulador de vol FlightGear"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "Fluxbox"
+msgstr "Fluxbox"
+
+#. Menu description for usr/lib/menu/fluxbox
+msgid "A window manager based on blackbox with many improvements."
+msgstr "Un gestor de finestres basat en blackbox amb moltes millores"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "/usr/share/fluxbox/styles"
+msgstr "/usr/share/fluxbox/styles"
+
+#. Menu description for usr/lib/menu/fluxbox
+msgid "System Styles"
+msgstr "Estils del sistema"
+
+#. Menu tree branch (found in usr/lib/menu/fluxbox)
+msgid "Setting"
+msgstr "Configuració"
+
+#. Menu tree branch (found in usr/lib/menu/fluxbox)
+msgid "Styles"
+msgstr "Estils"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "~/.fluxbox/styles"
+msgstr "~/.fluxbox/styles"
+
+#. Menu description for usr/lib/menu/fluxbox
+msgid "User Styles"
+msgstr "Estils d'usuari"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "Workspaces"
+msgstr "Àrees de treball"
+
+#. Menu description for usr/lib/menu/fluxbox
+msgid "Config"
+msgstr "Configura"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "Reload Configuration"
+msgstr "Recarrega la configuració"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "Restart"
+msgstr "Torna a iniciar"
+
+#. Menu tree branch (found in usr/lib/menu/fluxbox)
+msgid "fluxbox"
+msgstr "fluxbox"
+
+#. Menu entry for usr/lib/menu/fluxbox
+msgid "Exit"
+msgstr "Surt"
+
+#. Menu entry for usr/lib/menu/fox-adie
+msgid "FOX Adie"
+msgstr "Adie FOX"
+
+#. Menu description for usr/lib/menu/fox-adie
+msgid "A.D.I.E. - Advanced Interactive Editor using the FOX toolkit"
+msgstr "A.D.I.E. - Editor Interactiu Avançat que utilitza el joc d'eines FOX"
+
+#. Menu entry for usr/lib/menu/fox-calculator
+msgid "FOX Calculator"
+msgstr "Calculadora FOX"
+
+#. Menu description for usr/lib/menu/fox-calculator
+msgid "Calculator using the FOX toolkit"
+msgstr "Calculadora que utilitza el joc d'eines FOX"
+
+#. Menu entry for usr/lib/menu/freecraft
+msgid "Freecraft"
+msgstr "Freecraft"
+
+#. Menu description for usr/lib/menu/fsv
+msgid "3D file browser"
+msgstr "Explorador de fitxers en 3D"
+
+#. Menu description for usr/lib/menu/fte
+msgid "Textmode editor for xterm sessions"
+msgstr "Editor en mode text per a sessions xterm"
+
+#. Menu entry for usr/lib/menu/fvwm
+msgid "Fvwm"
+msgstr "Fvwm"
+
+#. Menu description for usr/lib/menu/fvwm
+msgid "FVWM Windows manager"
+msgstr "Gestor de finestres FVWM"
+
+#. Menu entry for usr/lib/menu/fvwm2
+msgid "FVWM 2"
+msgstr "FVWM 2"
+
+#. Menu description for usr/lib/menu/gIDE
+msgid "Gnome IDE"
+msgstr "Entorn de Desenvolumant Integrat del Gnome"
+
+#. Menu entry for usr/lib/menu/gcompris
+msgid "Gcompris"
+msgstr "Gcompris"
+
+#. Menu description for usr/lib/menu/gcompris
+msgid "Educationnal game"
+msgstr "Joc educatiu"
+
+#. Menu description for usr/lib/menu/gdict
+msgid "On-line dictionnary"
+msgstr "Diccionari en línia"
+
+#. Menu description for usr/lib/menu/gentoo
+msgid "A file manager"
+msgstr "Un gestor de fitxers"
+
+#. Menu entry for usr/lib/menu/gfax
+msgid "Gfax"
+msgstr "Gfax"
+
+#. Menu description for usr/lib/menu/gfax
+msgid "Gnome fax"
+msgstr "Fax del Gnome"
+
+#. Menu tree branch (found in usr/lib/menu/gfax)
+msgid "Communications"
+msgstr "Comunicacions"
+
+#. Menu description for usr/lib/menu/gfontview
+msgid "Font browser"
+msgstr "Visualitzador dels tipus de lletra"
+
+#. Menu tree branch (found in usr/lib/menu/gfontview)
+msgid "Publishing"
+msgstr "Edició"
+
+#. Menu entry for usr/lib/menu/gforth
+msgid "GNU Forth"
+msgstr "GNU Forth"
+
+#. Menu description for usr/lib/menu/gforth
+msgid "GNU Forth - Shell"
+msgstr "GNU Forth - Intèrpret d'ordres"
+
+#. Menu description for usr/lib/menu/ghex
+msgid "Gnome Hexadecimal Editor"
+msgstr "Editor hexadecimal del Gnome"
+
+#. Menu entry for usr/lib/menu/giram
+msgid "Giram"
+msgstr "Giram"
+
+#. Menu description for usr/lib/menu/giram
+msgid "Giram Is Really A Modeller"
+msgstr "Eina de modelatge (Guiram Is Really A Modeller)"
+
+#. Menu tree branch (found in usr/lib/menu/giram)
+msgid "Graphics"
+msgstr "Gràfics"
+
+#. Menu description for usr/lib/menu/glabels
+msgid "Create labels and business cards"
+msgstr "Programa per a la creació d'etiquetes i targetes d'empresa"
+
+#. Menu tree branch (found in usr/lib/menu/glabels)
+msgid "Accessories"
+msgstr "Accessoris"
+
+#. Menu description for usr/lib/menu/glame
+msgid "An audio processing tool"
+msgstr "Una eina de processament d'àudio"
+
+#. Menu description for usr/lib/menu/glaxium
+msgid "OpenGL shoot'em up"
+msgstr "Joc OpenGL de disparar"
+
+#. Menu entry for usr/lib/menu/glchess
+msgid "GlChess"
+msgstr "GlChess"
+
+#. Menu description for usr/lib/menu/glchess
+msgid "3d Chess game"
+msgstr "Joc d'escacs en 3D"
+
+#. Menu entry for usr/lib/menu/gltron
+msgid "Gltron"
+msgstr "Gltron"
+
+#. Menu description for usr/lib/menu/gltron
+msgid "3d lightcycle game"
+msgstr "Joc 3D de motos Lightcycle"
+
+#. Menu description for usr/lib/menu/gmemusage
+msgid "Memory usage"
+msgstr "Utilització de la memòria"
+
+#. Menu description for usr/lib/menu/gmysql
+msgid "Graphical interface to mysql databases"
+msgstr "Interfície gràfica per a bases de dades mysql"
+
+#. Menu entry for usr/lib/menu/gnochive
+msgid "Gnochive"
+msgstr "Gnochive"
+
+#. Menu description for usr/lib/menu/gnochive
+msgid "GUI frontend for several archive formats"
+msgstr "Frontal gràfic per a diversos formats d'arxiu"
+
+#. Menu entry for usr/lib/menu/gnofin
+msgid "Gnofin"
+msgstr "Gnofin"
+
+#. Menu description for usr/lib/menu/gnofin
+msgid "A personal finance application for GNOME"
+msgstr "Una aplicació de finances personals per a GNOME"
+
+#. Menu description for usr/lib/menu/gnoise
+msgid "Wave file editor"
+msgstr "Editor de fitxers d'ona (.wav)"
+
+#. Menu description for usr/lib/menu/gnokii-xgnokii
+msgid "Tool suite for Nokia mobile phones"
+msgstr "Paquet d'eines per a telèfons mòbils Nokia"
+
+#. Menu entry for usr/lib/menu/gnomame
+msgid "Gnomame"
+msgstr "Gnomame"
+
+#. Menu description for usr/lib/menu/gnomame
+msgid "GNOME GUI for the mame arcade emulator"
+msgstr "Interfície gràfica de Gnome per a l'emulador MAME"
+
+#. Menu entry for usr/lib/menu/gnome-breakout
+msgid "Gnome-Breakout"
+msgstr "Gnome-Breakout"
+
+#. Menu description for usr/lib/menu/gnome-breakout
+msgid "Gnome breakout"
+msgstr "Breakout de Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-commander
+msgid "Gnome Commander"
+msgstr "Gnome Commander"
+
+#. Menu description for usr/lib/menu/gnome-commander
+msgid "Filemanager similar to the Norton Commander(TM)"
+msgstr "Gestor de fitxers similar al Norton Commander(TM)"
+
+#. Menu description for usr/lib/menu/gnome-find
+msgid "File searching tool"
+msgstr "Eina de cerca de fitxers"
+
+#. Menu description for usr/lib/menu/gnome-pm
+msgid "finance management"
+msgstr "Gestió de finances"
+
+#. Menu entry for usr/lib/menu/gnugo
+msgid "Gnugo"
+msgstr "Gnugo"
+
+#. Menu description for usr/lib/menu/gnugo
+msgid "Go"
+msgstr "Go"
+
+#. Menu description for usr/lib/menu/gnusound
+msgid "Gnu Sound Editor"
+msgstr "Editor de so GNU"
+
+#. Menu description for usr/lib/menu/gocr-gtk
+msgid "Gtk-ocr is a gtk frontend for gocr"
+msgstr "Gtk-ocr és un frontal gtk per a gocr"
+
+#. Menu entry for usr/lib/menu/gpa
+msgid "Gpa"
+msgstr "Gpa"
+
+#. Menu description for usr/lib/menu/gpa
+msgid "A frontend for gnupg"
+msgstr "Frontal per al gnupg"
+
+#. Menu description for usr/lib/menu/gperiodic
+msgid "Periodic table"
+msgstr "Taula periòdica"
+
+#. Menu tree branch (found in usr/lib/menu/gperiodic)
+msgid "Physics"
+msgstr "Física"
+
+#. Menu description for usr/lib/menu/gpgp
+msgid "A front end for Gnupg"
+msgstr "Un frontal per al gnupg"
+
+#. Menu entry for usr/lib/menu/gphone
+msgid "Gphone"
+msgstr "Gphone"
+
+#. Menu description for usr/lib/menu/gphone
+msgid "Internet telephone"
+msgstr "Telefonia per Internet"
+
+#. Menu entry for usr/lib/menu/gpsdrive
+msgid "GpsDrive"
+msgstr "GpsDrive"
+
+#. Menu description for usr/lib/menu/gpsdrive
+msgid "A GPS based navigation tool for Gnome"
+msgstr "Una eina de navegació GPS per a Gnome"
+
+#. Menu description for usr/lib/menu/gqmpeg
+msgid "Frontend to mpg123"
+msgstr "Fontal per a l'mpg123"
+
+#. Menu entry for usr/lib/menu/grace
+msgid "Grace"
+msgstr "Grace"
+
+#. Menu description for usr/lib/menu/grace
+msgid "Graphical visualization of scientific data"
+msgstr "Visualització gràfica de dades científiques"
+
+#. Menu entry for usr/lib/menu/grany
+msgid "Grany"
+msgstr "Grany"
+
+#. Menu description for usr/lib/menu/grany
+msgid "The cellular automaton simulator"
+msgstr "El simulador d'autòmat cel·lular"
+
+#. Menu entry for usr/lib/menu/grass
+msgid "Grass"
+msgstr "Grass"
+
+#. Menu description for usr/lib/menu/grass
+msgid "Geographic Resources Analysis Support System"
+msgstr "Sistema de Suport per a l'Anàlisi de Recursos Geogràfics"
+
+#. Menu tree branch (found in usr/lib/menu/grass)
+msgid "Geosciences"
+msgstr "Ciències de la Terra"
+
+#. Menu description for usr/lib/menu/gretl
+msgid "Econometric analysis"
+msgstr "Anàlisi economètric"
+
+#. Menu description for usr/lib/menu/grpn
+msgid "A RPN calculator"
+msgstr "Una calculadora RPN (notació polonesa inversa)"
+
+#. Menu entry for usr/lib/menu/grustibus
+msgid "Grustibus"
+msgstr "Grustibus"
+
+#. Menu description for usr/lib/menu/grustibus
+msgid "A Gnome frontend for M.A.M.E."
+msgstr "Un frontal de Gnome per a M.A.M.E."
+
+#. Menu entry for usr/lib/menu/gsmssend
+msgid "Gsmssend"
+msgstr "Gsmssend"
+
+#. Menu description for usr/lib/menu/gsmssend
+msgid "GNOME frontend to smssend"
+msgstr "Frontal de GNOME per a smssend"
+
+#. Menu entry for usr/lib/menu/gstreamer-player
+msgid "GStreamer player"
+msgstr "Reproductor GStreamer"
+
+#. Menu description for usr/lib/menu/gstreamer-player
+msgid "GStreamer Streaming media framework player"
+msgstr "Reproductor multimèdia en temps real GStreamer"
+
+#. Menu description for usr/lib/menu/gsx
+msgid "A GTK+ Scour Exchange"
+msgstr "Versió GTK+ de l'Scour Exchange"
+
+#. Menu description for usr/lib/menu/gtaskman
+msgid "Graphical process signaling"
+msgstr "Aplicació gràfica per a la senyalització de processos"
+
+#. Menu entry for usr/lib/menu/gtetrinet
+msgid "Gtetrinet"
+msgstr "Gtetrinet"
+
+#. Menu description for usr/lib/menu/gtetrinet
+msgid "Tetrinet game"
+msgstr "Joc Tetrinet"
+
+#. Menu entry for usr/lib/menu/gthumb
+msgid "The gThumb"
+msgstr "El gThumb"
+
+#. Menu description for usr/lib/menu/gthumb
+msgid "A image viewer showing you thumbnails of image files."
+msgstr "Un visualitzador d'imatges que mostra miniatures dels fitxers d'imatge"
+
+#. Menu description for usr/lib/menu/gtimer
+msgid "Task management application"
+msgstr "Aplicació per a la gestió de tasques"
+
+#. Menu entry for usr/lib/menu/gtk-manix
+msgid "Gtk-manix"
+msgstr "Gtk-manix"
+
+#. Menu description for usr/lib/menu/gtk-manix
+msgid "A multi-level Pacman-style game"
+msgstr "Un joc multinivell de l'estil del Pacman"
+
+#. Menu entry for usr/lib/menu/gtk-theme-switch
+msgid "GTK Theme Switch"
+msgstr "GTK Theme Switch"
+
+#. Menu description for usr/lib/menu/gtk-theme-switch
+msgid "Change GTK1 Theme"
+msgstr "Canvia el tema del GTK1"
+
+#. Menu description for usr/lib/menu/gtkasp2php
+msgid "Gtk frontend to asp2php"
+msgstr "Frontal GTK per a l'asp2php"
+
+#. Menu description for usr/lib/menu/gtkfind
+msgid "Graphical file finding program"
+msgstr "Programa gràfic per cercar fitxers"
+
+#. Menu description for usr/lib/menu/gtkhx
+msgid "Hotline client"
+msgstr "Client per a Hotline"
+
+#. Menu description for usr/lib/menu/gtklp
+msgid "GTK Frontend to CUPS"
+msgstr "Frontal GTK per a CUPS"
+
+#. Menu tree branch (found in usr/lib/menu/gtklp)
+msgid "Printing"
+msgstr "Impressió"
+
+#. Menu description for usr/lib/menu/gtklpq
+msgid "GTK Frontend to GTKlp CUPS Queue"
+msgstr "Frontal GTK per a GTKlp CUPS Queue"
+
+#. Menu description for usr/lib/menu/gtkmotd
+msgid "Gtk version of motd"
+msgstr "Versió Gtk de motd"
+
+#. Menu description for usr/lib/menu/gtktetris
+msgid "A Tetris clone"
+msgstr "Un clon del Tetris"
+
+#. Menu entry for usr/lib/menu/gtranslator
+msgid "gtranslator"
+msgstr "gtranslator"
+
+#. Menu description for usr/lib/menu/gtranslator
+msgid "Comfortable po file editor for GNOME"
+msgstr "Editor de fitxers po per a GNOME"
+
+#. Menu description for usr/lib/menu/guarddog
+msgid "Firewall utility"
+msgstr "Utilitat de tallafoc"
+
+#. Menu description for usr/lib/menu/gwget
+msgid "Frontend for wget"
+msgstr "Frontal per al wget"
+
+#. Menu description for usr/lib/menu/gyach
+msgid "A yahoo chat client"
+msgstr "Un client de xat yahoo"
+
+#. Menu entry for usr/lib/menu/hackxsw-client
+msgid "XShipWars"
+msgstr "XShipWars"
+
+#. Menu description for usr/lib/menu/hackxsw-client
+msgid "XShipWars client (unstable branch)"
+msgstr "Client XShipWars (branca inestable)"
+
+#. Menu description for usr/lib/menu/hh2000
+msgid "a solar system browser"
+msgstr "Un navegador del sistema solar"
+
+#. Menu description for usr/lib/menu/impress
+msgid "WYSIWYG layout program"
+msgstr "Programa WYSIWYG de maquetació gràfica"
+
+#. Menu entry for usr/lib/menu/iv
+msgid "IV"
+msgstr "IV"
+
+#. Menu description for usr/lib/menu/iv
+msgid "Image browser"
+msgstr "Visualitzador d'imatges"
+
+#. Menu description for usr/lib/menu/jahshaka
+msgid "Video editor"
+msgstr "Editor de vídeo"
+
+#. Menu entry for usr/lib/menu/jigdo
+msgid "Jigdo"
+msgstr "Jigdo"
+
+#. Menu description for usr/lib/menu/jigdo
+msgid "Jigsaw Download"
+msgstr "Jigsaw Download"
+
+#. Menu entry for usr/lib/menu/k3b
+msgid "K3b"
+msgstr "K3b"
+
+#. Menu description for usr/lib/menu/k3b
+msgid "CD writing program"
+msgstr "Programa per enregistrar CD"
+
+#. Menu entry for usr/lib/menu/karchiver
+msgid "Karchiver"
+msgstr "Karchiver"
+
+#. Menu description for usr/lib/menu/karchiver
+msgid "Managing archive files"
+msgstr "Gestió de fitxers d'arxivament"
+
+#. Menu entry for usr/lib/menu/kde3-kmag
+msgid "K Magnifier"
+msgstr "K Magnifier"
+
+#. Menu tree branch (found in usr/lib/menu/kde3-kmag)
+msgid "Accessibility"
+msgstr "Accessibilitat"
+
+#. Menu entry for usr/lib/menu/kdevmon
+msgid "Kdevmon"
+msgstr "Kdevmon"
+
+#. Menu entry for usr/lib/menu/keurocalc
+msgid "KEuroCalc"
+msgstr "KEuroCalc"
+
+#. Menu description for usr/lib/menu/keurocalc
+msgid "A cash converter for Euro"
+msgstr "Un convertidor de divises per a l'euro"
+
+#. Menu description for usr/lib/menu/kile
+msgid "Integrated LaTeX Environment for KDE3"
+msgstr "Entorn integrat LaTeX per a KDE3"
+
+#. Menu description for usr/lib/menu/kino
+msgid "Video editor for DV format"
+msgstr "Editor de vídeo per al format DV"
+
+#. Menu entry for usr/lib/menu/klogic
+msgid "Klogic"
+msgstr "Klogic"
+
+#. Menu description for usr/lib/menu/klogic
+msgid "A digital circuit simulation"
+msgstr "Un simulador de circuits digitals"
+
+#. Menu entry for usr/lib/menu/kmasqdialer
+msgid "Kmasqdialer"
+msgstr "Kmasqdialer"
+
+#. Menu description for usr/lib/menu/kmasqdialer
+msgid "KDE Client for the masqdialer modem server"
+msgstr "Client KDE per al servidor de mòdems masqdialer"
+
+#. Menu tree branch (found in usr/lib/menu/kmasqdialer)
+msgid "Remote access"
+msgstr "Accés remot"
+
+#. Menu entry for usr/lib/menu/kmencoder
+msgid "KMEncoder"
+msgstr "KMEncoder"
+
+#. Menu description for usr/lib/menu/kmencoder
+msgid "Video encoder GUI based on MEncoder"
+msgstr "Interfície gràfica per codificar vídeo, basada en MEncoder"
+
+#. Menu description for usr/lib/menu/knetfilter
+msgid "KDE frontend to iptables"
+msgstr "Frontal de KDE per a iptables"
+
+#. Menu entry for usr/lib/menu/knetload
+msgid "KNETLoad"
+msgstr "KNETLoad"
+
+#. Menu description for usr/lib/menu/knetload
+msgid "Network loadmeter for KPanel, works with most devices."
+msgstr ""
+"Mesurador de la càrrega de la xarxa per al KPanel; funciona amb la majoria "
+"de dispositius"
+
+#. Menu entry for usr/lib/menu/knights
+msgid "Knights"
+msgstr "Knights"
+
+#. Menu description for usr/lib/menu/knights
+msgid "A graphical chess interface"
+msgstr "Una interfície gràfica per jugar a escacs"
+
+#. Menu description for usr/lib/menu/knutclient
+msgid "A GUI interface for UPS system NUT"
+msgstr "Una interfície gràfica per al sistema UPS NUT"
+
+#. Menu entry for usr/lib/menu/komba2
+msgid "Komba2"
+msgstr "Komba2"
+
+#. Menu description for usr/lib/menu/komba2
+msgid "Networkbrowser"
+msgstr "Navegador de xarxa"
+
+#. Menu entry for usr/lib/menu/kover
+msgid "Kover"
+msgstr "Kover"
+
+#. Menu description for usr/lib/menu/kover
+msgid "WYSIWYG CD cover printer with CDDB support"
+msgstr "Impressor WYSIWYG de portades de CD amb suport per a la CDDB"
+
+#. Menu entry for usr/lib/menu/krusader
+msgid "Krusader"
+msgstr "Krusader"
+
+#. Menu description for usr/lib/menu/krusader
+msgid "Twin-Panel File Manager"
+msgstr "Gestor de fitxers amb dues finestres"
+
+#. Menu entry for usr/lib/menu/kshowmail
+msgid "Kshowmail"
+msgstr "Kshowmail"
+
+#. Menu description for usr/lib/menu/kshowmail
+msgid "A powerful POP3 mail checker"
+msgstr "Un comprovador de correu POP3 amb moltes opcions"
+
+#. Menu entry for usr/lib/menu/kde3-ksplashml
+msgid "KDE Splash Screen"
+msgstr "Pantalla de presentació de KDE"
+
+#. Menu description for usr/lib/menu/kde3-ksplashml
+msgid "KDE startup screen configuration"
+msgstr "Configuració de la pantalla d'inici de KDE"
+
+#. Menu tree branch (found in usr/lib/menu/kde3-ksplashml)
+msgid "KDE"
+msgstr "KDE"
+
+#. Menu tree branch (found in usr/lib/menu/kde3-ksplashml)
+msgid "LookNFeel"
+msgstr "Aspecte"
+
+#. Menu entry for usr/lib/menu/kvirc
+msgid "IRC client (KVIrc)"
+msgstr "Client IRC (KVIrc)"
+
+#. Menu description for usr/lib/menu/kvirc
+msgid "IRC client"
+msgstr "Client IRC"
+
+#. Menu tree branch (found in usr/lib/menu/kvirc)
+msgid "IRC"
+msgstr "IRC"
+
+#. Menu entry for usr/lib/menu/kwintv
+msgid "KWinTV"
+msgstr "KWinTV"
+
+#. Menu description for usr/lib/menu/kwintv
+msgid "The KDE Video4Linux Stream Capture Viewer"
+msgstr "El visualitzador per a KDE del capturador de sequències de Video4Linux"
+
+#. Menu entry for usr/lib/menu/kxine
+msgid "Kxine"
+msgstr "Kxine"
+
+#. Menu description for usr/lib/menu/kxine
+msgid "Multimedia player based on xine"
+msgstr "Reproductor multimèdia basat en xine"
+
+#. Menu entry for usr/lib/menu/kxmleditor
+msgid "KXMLEditor"
+msgstr "KXMLEditor"
+
+#. Menu description for usr/lib/menu/lats
+msgid "A browser for graphics files"
+msgstr "Navegador de fitxers de gràfics"
+
+#. Menu entry for usr/lib/menu/lavaps
+msgid "Lavaps"
+msgstr "Lavaps"
+
+#. Menu description for usr/lib/menu/lavaps
+msgid "A graphical process viewer"
+msgstr "Un visualitzador gràfic de processos"
+
+#. Menu description for usr/lib/menu/lineakconfig
+msgid "Tools to configure modern keyboard with lineakd"
+msgstr "Eines per configurar teclats moderns amb lineakd"
+
+#. Menu tree branch (found in usr/lib/menu/lineakconfig)
+msgid "Hardware"
+msgstr "Maquinari"
+
+#. Menu entry for usr/lib/menu/linuxsms
+msgid "Linuxsms"
+msgstr "Linuxsms"
+
+#. Menu description for usr/lib/menu/linuxsms
+msgid "Cool script to send SMS"
+msgstr "Script força útil per enviar SMS"
+
+#. Menu entry for usr/lib/menu/liquidwar
+msgid "Liquidwar"
+msgstr "Liquidwar"
+
+#. Menu description for usr/lib/menu/liquidwar
+msgid "A unique multiplayer wargame"
+msgstr "Joc de guerra únic per a diversos jugadors"
+
+#. Menu entry for usr/lib/menu/ltris
+msgid "LTris"
+msgstr "LTris"
+
+#. Menu description for usr/lib/menu/ltris
+msgid "Nice tetris clone"
+msgstr "Un clon del Tetris molt maco"
+
+#. Menu entry for usr/lib/menu/manedit
+msgid "ManEdit"
+msgstr "ManEdit"
+
+#. Menu description for usr/lib/menu/manedit
+msgid "UNIX manual pages editor"
+msgstr "Editor de les pàgines del manual de UNIX"
+
+#. Menu entry for usr/lib/menu/memprof
+msgid "Memprof"
+msgstr "Memprof"
+
+#. Menu description for usr/lib/menu/memprof
+msgid "Tool for memory profiling and leak detection"
+msgstr "Eina per auditar la memòria i detectar-ne pèrdues"
+
+#. Menu entry for usr/lib/menu/metatheme
+msgid "Desktop Theme Selector"
+msgstr "Selector de temes d'escriptori"
+
+#. Menu description for usr/lib/menu/metatheme
+msgid "Selection of GNOME desktop themes"
+msgstr "Selecció de temes d'escriptori de GNOME"
+
+#. Menu tree branch (found in usr/lib/menu/metatheme)
+msgid "Gnome"
+msgstr "Gnome"
+
+#. Menu entry for usr/lib/menu/mlterm
+msgid "mlterm"
+msgstr "mlterm"
+
+#. Menu description for usr/lib/menu/mlterm
+msgid "A multi-lingual terminal emulator"
+msgstr "Emulador de terminal multilingüe"
+
+#. Menu tree branch (found in usr/lib/menu/mlterm)
+msgid "Terminals"
+msgstr "Terminals"
+
+#. Menu entry for usr/lib/menu/moneydrake
+msgid "Moneydrake"
+msgstr "Moneydrake"
+
+#. Menu description for usr/lib/menu/moneydrake
+msgid "Mandrake Currency Converter"
+msgstr "Convertidor de moneda de Mandrake"
+
+#. Menu entry for usr/lib/menu/mplayer-gui
+msgid "MPlayer"
+msgstr "MPlayer"
+
+#. Menu description for usr/lib/menu/mplayer-gui
+msgid "GUI for mplayer"
+msgstr "Interfície gràfica per a l'mplayer"
+
+#. Menu entry for usr/lib/menu/multi-gnome-terminal
+msgid "Multi-Gnome-Terminal"
+msgstr "Terminal Múltiple del Gnome"
+
+#. Menu description for usr/lib/menu/multi-gnome-terminal
+msgid "The Enhanced GNOME Terminal."
+msgstr "El Terminal Millorat del GNOME"
+
+#. Menu entry for usr/lib/menu/nessus-client
+msgid "Nessus"
+msgstr "Nessus"
+
+#. Menu description for usr/lib/menu/nessus-client
+msgid "Nessus Security Scanner"
+msgstr "Escàner de seguretat Nessus"
+
+#. Menu entry for usr/lib/menu/nethack_falconseye
+msgid "NetHack Falcon's Eye"
+msgstr "NetHack Falcon's Eye"
+
+#. Menu tree branch (found in usr/lib/menu/nethack_falconseye)
+msgid "Adventure"
+msgstr "Aventura"
+
+#. Menu entry for usr/lib/menu/netrek-cow
+msgid "COW"
+msgstr "COW"
+
+#. Menu description for usr/lib/menu/netrek-cow
+msgid "Netrek COW client"
+msgstr "Client Netrek COW"
+
+#. Menu entry for usr/lib/menu/netrek-gum
+msgid "Gum"
+msgstr "Gum"
+
+#. Menu description for usr/lib/menu/netrek-gum
+msgid "Netrek Vanilla Server Configuration Program"
+msgstr "Programa de configuració del Servidor Netrek Vanilla"
+
+#. Menu entry for usr/lib/menu/nil
+msgid "NiL"
+msgstr "NiL"
+
+#. Menu description for usr/lib/menu/nil
+msgid "NiL Isn't Liero"
+msgstr "NiL Isn't Liero (NiL no és Liero)"
+
+#. Menu description for usr/lib/menu/nvclock
+msgid "Overclocking tool for NVIDIA graphic boards"
+msgstr ""
+"Eina d'acceleració del rellotge (overclocking) per a targetes gràfiques "
+"NVIDIA"
+
+#. Menu entry for usr/lib/menu/octave
+msgid "Octave"
+msgstr "Octave"
+
+#. Menu description for usr/lib/menu/octave
+msgid "High-level language for numerical computations"
+msgstr "Llenguatge d'alt nivell per a càlculs numèrics"
+
+#. Menu entry for usr/lib/menu/olvwm
+msgid "Olvwm"
+msgstr "Olvwm"
+
+#. Menu description for usr/lib/menu/olvwm
+msgid "OpenLook virtual window manager"
+msgstr "Gestor de finestres virtual OpenLook"
+
+#. Menu tree branch (found in usr/lib/menu/olvwm)
+msgid "WindowManagers"
+msgstr "Gestors de finestres"
+
+#. Menu entry for usr/lib/menu/olwm
+msgid "Olwm"
+msgstr "Olwm"
+
+#. Menu description for usr/lib/menu/olwm
+msgid "OpenLook window manager"
+msgstr "Gestor de finestres OpenLook"
+
+#. Menu entry for usr/lib/menu/oooqs
+msgid "OpenOffice.org Quickstarter"
+msgstr "Inici ràpid de l'OpenOffice.org"
+
+#. Menu description for usr/lib/menu/oooqs
+msgid "A OpenOffice.org quickstart applet for KDE"
+msgstr "Miniaplicació d'inici ràpid de l'OpenOffice.org per a KDE"
+
+#. Menu entry for usr/lib/menu/openuniverse
+msgid "OpenUniverse"
+msgstr "OpenUniverse"
+
+#. Menu description for usr/lib/menu/openuniverse
+msgid "OpenGL Space Simulator"
+msgstr "Simulador espacial OpenGL"
+
+#. Menu tree branch (found in usr/lib/menu/openuniverse)
+msgid "Toys"
+msgstr "Joguines"
+
+#. Menu description for usr/lib/menu/partimage
+msgid "Partimage"
+msgstr "Partimage"
+
+#. Menu description for usr/lib/menu/pavuk
+msgid "WWW file grabber"
+msgstr "Capturador de fitxers de la WWW"
+
+#. Menu entry for usr/lib/menu/penguin-command
+msgid "Penguin Command"
+msgstr "Penguin Command"
+
+#. Menu description for usr/lib/menu/penguin-command
+msgid "A clone of the classic Missile Command game"
+msgstr "Un clon del clàssic joc Missile Command"
+
+#. Menu entry for usr/lib/menu/perf
+msgid "Perf"
+msgstr "Perf"
+
+#. Menu description for usr/lib/menu/perf
+msgid "OpenLook PerfMeter"
+msgstr "Mesurador de la càrrega del sistema d'OpenLook"
+
+#. Menu entry for usr/lib/menu/pfaedit
+msgid "PfaEdit"
+msgstr "PfaEdit"
+
+#. Menu description for usr/lib/menu/pfaedit
+msgid "A font editor"
+msgstr "Un editor de tipus de lletra"
+
+#. Menu description for usr/lib/menu/picview
+msgid "Image viewer"
+msgstr "Visualitzador d'imatges"
+
+#. Menu entry for usr/lib/menu/pingus
+msgid "Pingus"
+msgstr "Pingus"
+
+#. Menu description for usr/lib/menu/pingus
+msgid "Pingus - A free Lemmings clone"
+msgstr "Pingus - Un clon lliure del Lemmings"
+
+#. Menu entry for usr/lib/menu/pixieplus
+msgid "PixiePlus Image Manager"
+msgstr "Gestor d'imatges PixiePlus"
+
+#. Menu description for usr/lib/menu/pixieplus
+msgid "PixiePlus Image Manager and Editor"
+msgstr "Gestor i editor d'imatges PixiePlus"
+
+#. Menu entry for usr/lib/menu/powershell
+msgid "Powershell"
+msgstr "Powershell"
+
+#. Menu description for usr/lib/menu/powershell
+msgid "Powershell X11 Terminal Emulator"
+msgstr "Emulador de terminal per a X11 Powershell"
+
+#. Menu description for usr/lib/menu/pronto
+msgid "GTK Mail Client"
+msgstr "Client de correu electrònic - GTK"
+
+#. Menu entry for usr/lib/menu/protux
+msgid "Protux"
+msgstr "Protux"
+
+#. Menu description for usr/lib/menu/protux
+msgid "Protux Free Professional Audio Tools"
+msgstr "Eines professionals d'àudio Protos"
+
+#. Menu entry for usr/lib/menu/psi
+msgid "PSI"
+msgstr "PSI"
+
+#. Menu description for usr/lib/menu/psi
+msgid "PSI Jabber client using QT3"
+msgstr "PSI - Client Jabber que utilitza QT3"
+
+#. Menu entry for usr/lib/menu/pw
+msgid "Pathetic Writer"
+msgstr "Pathetic Writer"
+
+#. Menu description for usr/lib/menu/pw
+msgid "Siag Office Pathetic writer"
+msgstr "Pathetic Writer de Siag Office"
+
+#. Menu entry for usr/lib/menu/pwm
+msgid "PWM"
+msgstr "PWM"
+
+#. Menu description for usr/lib/menu/pwm
+msgid "PWM - A light window manager"
+msgstr "PWM - Un gestor de finestres lleuger"
+
+#. Menu entry for usr/lib/menu/pybliographer
+msgid "Pybliographic"
+msgstr "Pybliographic"
+
+#. Menu description for usr/lib/menu/pybliographer
+msgid "A tool for managing bibliographic databases"
+msgstr "Una eina per gestionar bases de dades bibliogràfiques"
+
+#. Menu entry for usr/lib/menu/quicklist
+msgid "Quicklist"
+msgstr "Quicklist"
+
+#. Menu description for usr/lib/menu/quicklist
+msgid "Keep track of things"
+msgstr "Seguiment de coses (llistes, factures...)"
+
+#. Menu description for usr/lib/menu/rexgrep
+msgid "A graphical frontend to the grep command."
+msgstr "Un frontal gràfic per a l'ordre grep"
+
+#. Menu entry for usr/lib/menu/rhythmbox
+msgid "Rhythmbox"
+msgstr "Rhythmbox"
+
+#. Menu description for usr/lib/menu/rhythmbox
+msgid "Music Management Application"
+msgstr "Aplicació de gestió musical"
+
+#. Menu entry for usr/lib/menu/ripperX
+msgid "RipperX"
+msgstr "RipperX"
+
+#. Menu description for usr/lib/menu/ripperX
+msgid "RipperX can rip audio cd's and encode them to mp3's"
+msgstr ""
+"RipperX pot extreure les cançons dels CD d'àudio i codificar-les en mp3"
+
+#. Menu description for usr/lib/menu/rox
+msgid "File Manager of the ROX desktop environment"
+msgstr "Gestor de fitxers de l'entorn d'escriptori ROX"
+
+#. Menu entry for usr/lib/menu/sakuraplayer
+msgid "Sakura Player"
+msgstr "Reproductor Sakura"
+
+#. Menu description for usr/lib/menu/sakuraplayer
+msgid "TFMX music player for KDE2"
+msgstr "Reproductor de música TFMX per a KDE2"
+
+#. Menu entry for usr/lib/menu/scigraphica
+msgid "SciGraphica"
+msgstr "SciGraphica"
+
+#. Menu description for usr/lib/menu/scigraphica
+msgid "Data Plotting and Visualization"
+msgstr "Visualització de dades i impressió amb traçador"
+
+#. Menu entry for usr/lib/menu/scilab
+msgid "Scilab"
+msgstr "Scilab"
+
+#. Menu description for usr/lib/menu/scilab
+msgid "Environment for numerical computations"
+msgstr "Entorn per a càlculs numèrics"
+
+#. Menu entry for usr/lib/menu/scribus
+msgid "Scribus"
+msgstr "Scribus"
+
+#. Menu description for usr/lib/menu/scribus
+msgid "Scribus layout program"
+msgstr "Programa de maquetació Scribus"
+
+#. Menu description for usr/lib/menu/sdlbomber
+msgid "A Bomberman clone"
+msgstr "Un clon del Bomberman"
+
+#. Menu description for usr/lib/menu/sdlroids
+msgid "Asteroids game"
+msgstr "Joc semblant a l'Asteroids"
+
+#. Menu entry for usr/lib/menu/seahorse
+msgid "Seahorse"
+msgstr "Seahorse"
+
+#. Menu description for usr/lib/menu/seahorse
+msgid "Front end for gnupg"
+msgstr "Frontal per al gnupg"
+
+#. Menu entry for usr/lib/menu/siag-common
+msgid "Xfiler"
+msgstr "Xfiler"
+
+#. Menu description for usr/lib/menu/siag-common
+msgid "Siag File manager"
+msgstr "Gestor de fitxers de Siag"
+
+#. Menu entry for usr/lib/menu/siag-common
+msgid "Xedplus"
+msgstr "Xedplus"
+
+#. Menu description for usr/lib/menu/siag-common
+msgid "Siag text editor"
+msgstr "Editor de text de Siag"
+
+#. Menu entry for usr/lib/menu/siag-common
+msgid "Gvu"
+msgstr "Gvu"
+
+#. Menu description for usr/lib/menu/siag-common
+msgid "Siag Postscript viewer"
+msgstr "Visor de documents PostScript de Siag"
+
+#. Menu entry for usr/lib/menu/sinek
+msgid "Sinek"
+msgstr "Sinek"
+
+#. Menu description for usr/lib/menu/skipstone
+msgid "Web browser"
+msgstr "Navegador web"
+
+#. Menu description for usr/lib/menu/smurf
+msgid "GPL sound font editor"
+msgstr "Editor de fonts so GPL"
+
+#. Menu description for usr/lib/menu/soundtracker
+msgid "A module tracker"
+msgstr "Un creador de pistes de música amb mòduls"
+
+#. Menu entry for usr/lib/menu/squaroid
+msgid "Squaroid"
+msgstr "Squaroid"
+
+#. Menu description for usr/lib/menu/squaroid
+msgid "A game about making squares"
+msgstr "Un joc que consisteix en fer quadrats"
+
+#. Menu entry for usr/lib/menu/stegdetect
+msgid "Stegdetect"
+msgstr "Stegdetect"
+
+#. Menu description for usr/lib/menu/stegdetect
+msgid "Detects steganographic content in images."
+msgstr "Detecta contingut esteganogràfic en imatges."
+
+#. Menu description for usr/lib/menu/sweep
+msgid "Sound editor"
+msgstr "Editor de so"
+
+#. Menu description for usr/lib/menu/sylpheed
+msgid "A fast GTK+ based Mail client"
+msgstr "Un ràpid client de correu electrònic basat en GTK+"
+
+#. Menu entry for usr/lib/menu/sylpheed-claws
+msgid "Sylpheed Claws"
+msgstr "Sylpheed Claws"
+
+#. Menu description for usr/lib/menu/sylpheed-claws
+msgid "Enhanced version of the Sylpheed e-mail client"
+msgstr "Versió millorada del client de correu electrònic Sylpheed"
+
+#. Menu entry for usr/lib/menu/sysctlconfig
+msgid "Proc Configuration"
+msgstr "Configuració de /proc"
+
+#. Menu description for usr/lib/menu/sysctlconfig
+msgid "A tool for tuning kernel parameters."
+msgstr "Eina per refinar els paràmetres del nucli"
+
+#. Menu entry for usr/lib/menu/teg
+msgid "TEG server"
+msgstr "Servidor TEG"
+
+#. Menu description for usr/lib/menu/teg
+msgid "Clone of a Risk clone (server)"
+msgstr "Clon d'un clon del Risk (servidor)"
+
+#. Menu entry for usr/lib/menu/teg
+msgid "TEG client"
+msgstr "Client TEG"
+
+#. Menu description for usr/lib/menu/teg
+msgid "Clone of a Risk clone (client)"
+msgstr "Clon d'un clon del Risk (client)"
+
+#. Menu entry for usr/lib/menu/tightvnc
+msgid "TightVNC"
+msgstr "TightVNC"
+
+#. Menu description for usr/lib/menu/tightvnc
+msgid "Control a pc from anywhere"
+msgstr "Controleu un PC des de qualsevol lloc"
+
+#. Menu description for usr/lib/menu/tkrat
+msgid "A mail agent"
+msgstr "Un client de correu electrònic"
+
+#. Menu entry for usr/lib/menu/tradeclient
+msgid "TradeClient"
+msgstr "TradeClient"
+
+#. Menu description for usr/lib/menu/tradeclient
+msgid "Email Client with PIM features for X"
+msgstr "Client de correu electrònic amb característiques PIM, per a X"
+
+#. Menu entry for usr/lib/menu/tsiag
+msgid "Siag (text mode)"
+msgstr "Siag (mode text)"
+
+#. Menu description for usr/lib/menu/tsiag
+msgid "Siag Office Scheme-in-a-Grid (text mode)"
+msgstr "Full de càlcul de Siag Office (mode text)"
+
+#. Menu description for usr/lib/menu/tuxkart
+msgid "Karting with tux"
+msgstr "Kàrting amb en Tux"
+
+#. Menu entry for usr/lib/menu/tuxpuck
+msgid "Tuxpuck"
+msgstr "Tuxpuck"
+
+#. Menu description for usr/lib/menu/tuxpuck
+msgid "Clone of ShufflePuck Cafe"
+msgstr "Clon del ShufflePuck Cafe"
+
+#. Menu entry for usr/lib/menu/umlmodeller
+msgid "UML"
+msgstr "UML"
+
+#. Menu description for usr/lib/menu/umlmodeller
+msgid "UML Modeler"
+msgstr "Modelador UML"
+
+#. Menu description for usr/lib/menu/vcd
+msgid "VideoCD player"
+msgstr "Reproductor de VideoCD"
+
+#. Menu entry for usr/lib/menu/vertex
+msgid "Vertex"
+msgstr "Vèrtex"
+
+#. Menu description for usr/lib/menu/vertex
+msgid "3D model assembler"
+msgstr "Assemblador de models 3D"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "C64 Emulator"
+msgstr "Emulador de C64"
+
+#. Menu description for usr/lib/menu/vice
+msgid "Commodore 64 Emulator"
+msgstr "Emulador de Commodore 64"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "C128 Emulator"
+msgstr "Emulador de C128"
+
+#. Menu description for usr/lib/menu/vice
+msgid "Commodore 128 Emulator"
+msgstr "Emulador de Commodore 128"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "PET Emulator"
+msgstr "Emulador de PET"
+
+#. Menu description for usr/lib/menu/vice
+msgid "Commodore PET Emulator"
+msgstr "Emulador de Commodore PET"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "VIC 20 Emulator"
+msgstr "Emulador de VIC 20"
+
+#. Menu description for usr/lib/menu/vice
+msgid "Commodore VIC 20 Emulator"
+msgstr "Emulador de Commodore VIC 20"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "CBM2 Emulator"
+msgstr "Emulador de CBM2"
+
+#. Menu description for usr/lib/menu/vice
+msgid "Commodore BM 2 Emulator"
+msgstr "Emulador de Commodore BM 2"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "CPLUS4 Emulator"
+msgstr "Emulador de CPLUS4"
+
+#. Menu description for usr/lib/menu/vice
+msgid "Commodore PLUS4 Emulator"
+msgstr "Emulador de Commodore PLUS4"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "VICE disk image tool"
+msgstr "Eina VICE per a imatges de disc de Commodore"
+
+#. Menu description for usr/lib/menu/vice
+msgid "C1541 stand alone disk image maintenance program"
+msgstr ""
+"C1541 - Programa independent per al manteniment d'imatges de disc de "
+"Commodore"
+
+#. Menu entry for usr/lib/menu/vice
+msgid "VSID music player"
+msgstr "Reproductor de música VSID"
+
+#. Menu description for usr/lib/menu/vice
+msgid "VICE SID music player for Commodore tunes"
+msgstr "Reproductor de sintonies de Commodore VICE SID"
+
+#. Menu entry for usr/lib/menu/vigor
+msgid "Vigor"
+msgstr "Vigor"
+
+#. Menu description for usr/lib/menu/vigor
+msgid "The popular Unix editor vi with the addition of the Vigor Assistant"
+msgstr "El popular editor de Unix vi amb l'addició de l'auxiliar Vigor"
+
+#. Menu entry for usr/lib/menu/vlc
+msgid "VideoLAN Client"
+msgstr "Client VideoLAN"
+
+#. Menu description for usr/lib/menu/vlc
+msgid "VideoLAN is a free multimedia software solution"
+msgstr "VideoLAN és una solució de programari multimèdia lliure"
+
+#. Menu entry for usr/lib/menu/vlc-gnome
+msgid "Gnome VideoLAN Client"
+msgstr "Client VideoLAN de Gnome"
+
+#. Menu entry for usr/lib/menu/vlc-gtk
+msgid "Gtk VideoLAN Client"
+msgstr "Client VideoLAN - Gtk"
+
+#. Menu entry for usr/lib/menu/volume.app
+msgid "Volume knob"
+msgstr "Botó del volum"
+
+#. Menu description for usr/lib/menu/volume.app
+msgid "Main Volume control dockapp"
+msgstr "Miniaplicació per al control del volum global"
+
+#. Menu entry for usr/lib/menu/w3m
+msgid "w3m"
+msgstr "w3m"
+
+#. Menu description for usr/lib/menu/w3m
+msgid "Text based web browser that supports tables and frames"
+msgstr "Navegador web en text que suporta taules i marcs"
+
+#. Menu description for usr/lib/menu/wedit
+msgid "User-friendly IDE"
+msgstr "Entorn integrat de desenvolupament fàcil d'utilitzar"
+
+#. Menu description for usr/lib/menu/whamp
+msgid "Mp3 player"
+msgstr "Reproductor d'MP3"
+
+#. Menu entry for usr/lib/menu/wmapm
+msgid "WmApm"
+msgstr "WmApm"
+
+#. Menu description for usr/lib/menu/wmapm
+msgid "Battery/Power status monitor in a small icon"
+msgstr ""
+"Monitor de l'estat de la bateria o de l'alimentació en una petita icona"
+
+#. Menu entry for usr/lib/menu/wmcpuload
+msgid "WmCPULoad"
+msgstr "WmCPULoad"
+
+#. Menu description for usr/lib/menu/wmcpuload
+msgid "CPU monitoring in a dockapp"
+msgstr "Miniaplicació de monitorització de la CPU"
+
+#. Menu entry for usr/lib/menu/wmcube
+msgid "WmCube"
+msgstr "WmCube"
+
+#. Menu description for usr/lib/menu/wmcube
+msgid "A realtime rotating 3d-object and CPU load in a small icon"
+msgstr ""
+"Un objecte 3D que rota en temps real i la càrrega de la CPU en una petita "
+"icona"
+
+#. Menu entry for usr/lib/menu/wmfire
+msgid "WmFire"
+msgstr "WmFire"
+
+#. Menu description for usr/lib/menu/wmfire
+msgid "A dock.app that displays CPU load as fire in a small icon"
+msgstr ""
+"Miniaplicació que representa la càrrega de la CPU amb foc en una petita icona"
+
+#. Menu entry for usr/lib/menu/wmfishtime
+msgid "WmFishTime"
+msgstr "WmFishTime"
+
+#. Menu description for usr/lib/menu/wmfishtime
+msgid "Analog clock in a tank fish"
+msgstr "Rellotge analògic en una peixera"
+
+#. Menu entry for usr/lib/menu/wmglobe
+msgid "WmGlobe"
+msgstr "WmGlobe"
+
+#. Menu description for usr/lib/menu/wmglobe
+msgid "A dock.app that displays a rotating Earth in an icon"
+msgstr "Miniaplicació que mostra la rotació de la Terra en una icona"
+
+#. Menu entry for usr/lib/menu/wmix
+msgid "Wmix (OSS)"
+msgstr "Wmix (OSS)"
+
+#. Menu description for usr/lib/menu/wmix
+msgid "Dockapp OSS sound mixer"
+msgstr "Miniaplicació del mesclador de so OSS"
+
+#. Menu entry for usr/lib/menu/wmmemmon
+msgid "WmMemMon"
+msgstr "WmMemMon"
+
+#. Menu description for usr/lib/menu/wmmemmon
+msgid "Mem/Swap monitoring dockapp for WindowMaker"
+msgstr "Miniaplicació de monitorització de la memòria per a WindowMaker"
+
+#. Menu entry for usr/lib/menu/wmnd
+msgid "Wmnd"
+msgstr "Wmnd"
+
+#. Menu description for usr/lib/menu/wmnd
+msgid "Network monitoring dock app"
+msgstr "Miniaplicació de monitorització de la xarxa"
+
+#. Menu entry for usr/lib/menu/wmnetload
+msgid "WmNetLoad"
+msgstr "WmNetLoad"
+
+#. Menu description for usr/lib/menu/wmnetload
+msgid "Network monitoring dockapp for WindowMaker"
+msgstr "Miniaplicació de monitorització de la xarxa per a WindowMaker"
+
+#. Menu entry for usr/lib/menu/wmpop3lb
+msgid "WmPop3lb"
+msgstr "WmPop3lb"
+
+#. Menu description for usr/lib/menu/wmpop3lb
+msgid "Multiple mailbox monitoring via Pop3 in a dockapp"
+msgstr "Miniaplicació de monitorització de múltiples comptes de correu POP3"
+
+#. Menu entry for usr/lib/menu/wmsmixer
+msgid "WmsMixer"
+msgstr "WmsMixer"
+
+#. Menu description for usr/lib/menu/wmsmixer
+msgid "Dockapp sound mixer"
+msgstr "Miniaplicació del mesclador de so"
+
+#. Menu entry for usr/lib/menu/wmsmpmon
+msgid "Wmsmpmon"
+msgstr "Wmsmpmon"
+
+#. Menu description for usr/lib/menu/wmsmpmon
+msgid "System information on dual CPU systems in a small icon"
+msgstr "Informació del sistema en màquines amb CPU dual en una petita icona"
+
+#. Menu entry for usr/lib/menu/wmstock
+msgid "WmStock"
+msgstr "WmStock"
+
+#. Menu description for usr/lib/menu/wmstock
+msgid "A stock quote data display in a small icon"
+msgstr "Visualització de les cotitzacions de borsa en una petita icona"
+
+#. Menu entry for usr/lib/menu/wmwebcam
+msgid "WmWebcam"
+msgstr "WmWebcam"
+
+#. Menu description for usr/lib/menu/wmwebcam
+msgid "Watch your own webcam in a small dockapp window"
+msgstr "Mireu la vostra webcam en una petita finestra d'una miniaplicació"
+
+#. Menu entry for usr/lib/menu/wmxss
+msgid "WmXss"
+msgstr "WmXss"
+
+#. Menu description for usr/lib/menu/wmxss
+msgid "Frontend for xscreensaver in a small icon"
+msgstr "Frontal per a l'xscreensaver en una petita icona"
+
+#. Menu description for usr/lib/menu/worker
+msgid "A GTK file manager, similar to Directory Opus on the AMIGA"
+msgstr "Un gestor de fitxers amb GTK, semblant al Directory Opus d'AMIGA"
+
+#. Menu entry for usr/lib/menu/x3270
+msgid "X3270"
+msgstr "X3270"
+
+#. Menu description for usr/lib/menu/xaos
+msgid "Realtime fractal zoomer"
+msgstr "Zoom fractal en temps real"
+
+#. Menu entry for usr/lib/menu/xarchon
+msgid "Xarchon"
+msgstr "Xarchon"
+
+#. Menu description for usr/lib/menu/xarchon
+msgid "Clone of ARCHON game"
+msgstr "Clon del joc ARCHON"
+
+#. Menu entry for usr/lib/menu/xbill
+msgid "Xbill"
+msgstr "Xbill"
+
+#. Menu description for usr/lib/menu/xbill
+msgid "The famous xbill game"
+msgstr "El famós joc xbill"
+
+#. Menu entry for usr/lib/menu/xblast
+msgid "XBlast"
+msgstr "XBlast"
+
+#. Menu description for usr/lib/menu/xblast
+msgid "The X11 bomberman clone"
+msgstr "El clon del Bomberman per a X11"
+
+#. Menu entry for usr/lib/menu/xcalentool
+msgid "Calentool"
+msgstr "Calentool"
+
+#. Menu description for usr/lib/menu/xcalentool
+msgid "Open Look style calendar program"
+msgstr "Programa d'agenda de l'estil de l'Open Look"
+
+#. Menu tree branch (found in usr/lib/menu/xcalentool)
+msgid "Time management"
+msgstr "Gestió del temps"
+
+#. Menu description for usr/lib/menu/xcoral
+msgid "Xcoral text editor"
+msgstr "Editor de textos Xcoral"
+
+#. Menu description for usr/lib/menu/xdrawchem
+msgid "2D chemical structures drawing tool"
+msgstr "Eina per dibuixar estructures químiques en 2D"
+
+#. Menu description for usr/lib/menu/xgammon
+msgid "Backgammon game"
+msgstr "Joc Backgammon"
+
+#. Menu entry for usr/lib/menu/xgospel
+msgid "Xgospel"
+msgstr "Xgospel"
+
+#. Menu description for usr/lib/menu/xgospel
+msgid "A graphical client for Internet Go Server"
+msgstr "Un client gràfic per a l'Internet Go Server"
+
+#. Menu description for usr/lib/menu/xhippo
+msgid "A mp3 playlist frontend"
+msgstr "Gestor genèric de llistes de reproducció d'MP3"
+
+#. Menu entry for usr/lib/menu/xmame-SDL
+msgid "Xmame (SDL)"
+msgstr "Xmame (SDL)"
+
+#. Menu description for usr/lib/menu/xmame-SDL
+msgid "Arcade emulator"
+msgstr "Emulador de jocs d'arcade"
+
+#. Menu entry for usr/lib/menu/xmame-x11
+msgid "Xmame (X11)"
+msgstr "Xmame (X11)"
+
+#. Menu entry for usr/lib/menu/xmame-xfx
+msgid "Xmame (Glide)"
+msgstr "Xmame (Glide)"
+
+#. Menu entry for usr/lib/menu/xmame-xgl
+msgid "Xmame (OpenGL)"
+msgstr "Xmame (OpenGL)"
+
+#. Menu entry for usr/lib/menu/xmorph
+msgid "Xmorph"
+msgstr "Xmorph"
+
+#. Menu description for usr/lib/menu/xmorph
+msgid "Morphing software"
+msgstr "Programari de metamorfosi"
+
+#. Menu description for usr/lib/menu/xosview
+msgid "OS stats viewer"
+msgstr "Visualitzador d'estadístiques del sistema"
+
+#. Menu entry for usr/lib/menu/xpaint
+msgid "Xpaint"
+msgstr "Xpaint"
+
+#. Menu description for usr/lib/menu/xpaint
+msgid "Paint programm"
+msgstr "Programa de dibuix"
+
+#. Menu entry for usr/lib/menu/xpenguins
+msgid "Xpenguins"
+msgstr "Xpenguins"
+
+#. Menu description for usr/lib/menu/xpenguins
+msgid "Display penguins running on your desktop."
+msgstr "Mostra tot de pingüins corrent per l'escriptori"
+
+#. Menu entry for usr/lib/menu/xpilot
+msgid "Xpilot server"
+msgstr "Servidor Xpilot"
+
+#. Menu description for usr/lib/menu/xpilot
+msgid "Fly/shoot arcade game"
+msgstr "Un joc arcade de pilotar i disparar"
+
+#. Menu entry for usr/lib/menu/xpilot
+msgid "Xpilot - Requires server"
+msgstr "Xpilot - necessita el servidor"
+
+#. Menu entry for usr/lib/menu/xpired
+msgid "X-Pired"
+msgstr "X-Pired"
+
+#. Menu description for usr/lib/menu/xpired
+msgid "Action-puzzle game"
+msgstr "Joc de trencaclosques"
+
+#. Menu description for usr/lib/menu/xrally
+msgid "A clone of the Rally X arcade game"
+msgstr "Un clon del joc d'arcade Rally X"
+
+#. Menu entry for usr/lib/menu/xrn
+msgid "Xrn"
+msgstr "Xrn"
+
+#. Menu description for usr/lib/menu/xrn
+msgid "News reader"
+msgstr "Lector de grups de notícies"
+
+#. Menu tree branch (found in usr/lib/menu/xrn)
+msgid "News"
+msgstr "Notícies"
+
+#. Menu description for usr/lib/menu/xrpm
+msgid "Tool for manipulating software packages"
+msgstr "Eina per manipular paquets de programari"
+
+#. Menu tree branch (found in usr/lib/menu/xrpm)
+msgid "Packaging"
+msgstr "Gestió de paquets"
+
+#. Menu entry for usr/lib/menu/xscavenger
+msgid "X-Scavenger"
+msgstr "X-Scavenger"
+
+#. Menu description for usr/lib/menu/xscavenger
+msgid "Cool arcade/thinking game very much like Lode Runner"
+msgstr "Joc d'arcade de pensar, molt semblant al Lode Runner"
+
+#. Menu entry for usr/lib/menu/xsiag
+msgid "Siag"
+msgstr "Siag"
+
+#. Menu description for usr/lib/menu/xsiag
+msgid "Siag Office spreadsheet"
+msgstr "Full de càlcul de Siag Office"
+
+#. Menu description for usr/lib/menu/xsidplay
+msgid "QT version of the C64 music player"
+msgstr "Versió QT del reproductor de música del C64"
+
+#. Menu description for usr/lib/menu/xsoldier
+msgid "Shoot 'em up game"
+msgstr "Joc de disparar"
+
+#. Menu entry for usr/lib/menu/xstat
+msgid "Xstat"
+msgstr "Xstat"
+
+#. Menu description for usr/lib/menu/xstat
+msgid "GTK statistic generator"
+msgstr "Generador d'estadístiques amb GTK"
+
+#. Menu description for usr/lib/menu/xsw1.34
+msgid "XShipWars universe server (stable version)"
+msgstr "Servidor de l'univers XShipWars (versió estable)"
+
+#. Menu entry for usr/lib/menu/xsw1.34-monitor
+msgid "Monitor"
+msgstr "Monitor"
+
+#. Menu description for usr/lib/menu/xsw1.34-monitor
+msgid "XShipWars universe monitor (stable version)"
+msgstr "Monitor de l'univers XShipWars (versió estable)"
+
+#. Menu entry for usr/lib/menu/xsw1.34-unvedit
+msgid "Unvedit"
+msgstr "Unvedit"
+
+#. Menu description for usr/lib/menu/xsw1.34-unvedit
+msgid "XShipWars universe editor (stable version)"
+msgstr "Editor de l'univers XShipWars (versió estable)"
+
+#. Menu description for usr/lib/menu/xsw1.40
+msgid "XShipWars universe server (unstable version)"
+msgstr "Servidor de l'univers XShipWars (versió inestable)"
+
+#. Menu description for usr/lib/menu/xsw1.40-monitor
+msgid "XShipWars universe monitor (unstable version)"
+msgstr "Monitor de l'univers XShipWars (versió inestable)"
+
+#. Menu description for usr/lib/menu/xsw1.40-unvedit
+msgid "XShipWars universe editor (unstable version)"
+msgstr "Editor de l'univers XShipWars (versió inestable)"
+
+#. Menu description for usr/lib/menu/xtel
+msgid "Minitel emulation"
+msgstr "Emulador de Minitel"
+
+#. Menu entry for usr/lib/menu/xvnews
+msgid "XVNews"
+msgstr "XVNews"
+
+#. Menu description for usr/lib/menu/xvnews
+msgid "Open Look style News Reader"
+msgstr "Lector de grups de notícies de l'estil de l'Open Look"
+
+#. Menu entry for usr/lib/menu/xvprint
+msgid "XVPrint"
+msgstr "XVPrint"
+
+#. Menu description for usr/lib/menu/xvprint
+msgid "Xview XVPrint"
+msgstr "Xview XVPrint"
+
+#. Menu description for usr/lib/menu/xwc
+msgid "A MS-Explorer-like File Manager for X"
+msgstr "Un gestor de fitxers per a X semblant al MS Explorer"
+
+#. Menu entry for usr/lib/menu/yadex
+msgid "Yadex"
+msgstr "Yadex"
+
+#. Menu description for usr/lib/menu/yadex
+msgid "A level editor for DOOM"
+msgstr "Editor de nivells per a DOOM"
+
+#. Menu entry for usr/lib/menu/yank
+msgid "Yank"
+msgstr "Yank"
+
+#. Menu description for usr/lib/menu/yank
+msgid "Yet Another NoteKeeper"
+msgstr "Yet Another NoteKeeper"
+
+#. Menu description for usr/lib/menu/zinf
+msgid "Audio player"
+msgstr "Reproductor d'àudio"
+
+#. Menu description for usr/lib/menu/zsnes
+msgid "Super NES / Super Famicom Emulator"
+msgstr "Emulador de Super Nintendo"
+
+#. Menu description for usr/lib/menu/Eterm
+msgid "Eterm Enlightened Terminal Emulator for X Window"
+msgstr "Emulador de terminal Eterm (Enlightened Terminal) per a X Window"
+
+#. Menu entry for usr/lib/menu/ImageMagick
+msgid "ImageMagick display"
+msgstr "Pantalla ImageMagick"
+
+#. Menu description for usr/lib/menu/ImageMagick
+msgid "Displays any image on X"
+msgstr "Visualitza qualsevol imatge sota X"
+
+#. Menu entry for usr/lib/menu/Mesa-demos
+msgid "Mesa gears"
+msgstr "Mesa gears"
+
+#. Menu description for usr/lib/menu/Mesa-demos
+msgid "Gears 3D demonstration from Mesa 3D"
+msgstr "Demostració de Mesa 3D - Engranatges en 3D"
+
+#. Menu entry for usr/lib/menu/Mesa-demos
+msgid "Mesa reflect"
+msgstr "Mesa reflect"
+
+#. Menu description for usr/lib/menu/Mesa-demos
+msgid "Reflect 3D demonstration from Mesa 3D"
+msgstr "Demostració de Mesa 3D - Reflexions"
+
+#. Menu entry for usr/lib/menu/Mesa-demos
+msgid "Mesa morph"
+msgstr "Mesa morph"
+
+#. Menu description for usr/lib/menu/Mesa-demos
+msgid "Morph 3D demonstration from Mesa 3D"
+msgstr "Demostració de Mesa 3D - Metamorfosi"
+
+#. Menu entry for usr/lib/menu/OpenDX
+msgid "OpenDX"
+msgstr "OpenDX"
+
+#. Menu description for usr/lib/menu/OpenDX
+msgid "Visualization Data Explorer"
+msgstr "Explorador de dades de visualització"
+
+#. Menu entry for usr/lib/menu/R-base
+msgid "R"
+msgstr "R"
+
+#. Menu description for usr/lib/menu/R-base
+msgid "R - a language for statistical computing"
+msgstr "R - un llenguatge per fer càlculs estadístics"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Window Maker"
+msgstr "Window Maker"
+
+#. Menu description for usr/lib/menu/WindowMaker
+msgid "Empty"
+msgstr "Buit"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Desktops"
+msgstr "Escriptoris"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Hide Others"
+msgstr "Amaga els altres"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Workspace"
+msgstr "Àrea de treball"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Show All"
+msgstr "Mostra'ls tots"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Arrange Icons"
+msgstr "Organitza les icones"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Refresh"
+msgstr "Refresca"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Lock"
+msgstr "Bloca"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Save Session"
+msgstr "Desa la sessió"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Clear Session"
+msgstr "Buida la sessió"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Themes"
+msgstr "Temes"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Appearance"
+msgstr "Aparença"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Black"
+msgstr "Negre"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Background"
+msgstr "Fons"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Solid"
+msgstr "Sòlid"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Blue"
+msgstr "Blau"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Indigo"
+msgstr "Indi"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Bleumarine"
+msgstr "Blau marí"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Purple"
+msgstr "Porpra"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Wheat"
+msgstr "Blat"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Dark Gray"
+msgstr "Gris fosc"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Red Wine"
+msgstr "Vi negre"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Sunset"
+msgstr "Posta de sol"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Gradient"
+msgstr "Gradient"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Sky"
+msgstr "Cel"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Blue Shades"
+msgstr "Ombres blaves"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Indigo Shades"
+msgstr "Ombres de color indi"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Purple Shades"
+msgstr "Ombres de color porpra"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Wheat Shades"
+msgstr "Ombres de color de blat"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Grey Shades"
+msgstr "Ombres grises"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Wine Shades"
+msgstr "Ombres de color de vi"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Scaled"
+msgstr "Escalat"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Images"
+msgstr "Imatges"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Tiled"
+msgstr "En mosaic"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Save Theme"
+msgstr "Desa el tema"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Save IconSet"
+msgstr "Desa el joc d'icones"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Preferences Utility"
+msgstr "Utilitat per a les preferències"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Info Panel"
+msgstr "Tauler d'informació"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Legal"
+msgstr "Legal"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Copy"
+msgstr "Còpia"
+
+#. Menu tree branch (found in usr/lib/menu/WindowMaker)
+msgid "Selection"
+msgstr "Selecció"
+
+#. Menu entry for usr/lib/menu/WindowMaker
+msgid "Search in manual"
+msgstr "Cerca al manual"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "Calculator"
+msgstr "Calculadora"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Scientific calculator for X"
+msgstr "Una calculadora científica per a X"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "XDitview"
+msgstr "XDitview"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Ditroff previewer"
+msgstr "Previsualitzador del Ditroff"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "XEdit"
+msgstr "XEdit"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Small editor"
+msgstr "Petit editor"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "XEyes"
+msgstr "XEyes"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Watchful Eyes"
+msgstr "Ulls vigilants"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "ICO"
+msgstr "ICO"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Animate an icosahedron or other polyhedron"
+msgstr "Anima un icosaedre o un altre poliedre"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "Font Selector"
+msgstr "Selector de tipus de lletra"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Select X Fonts"
+msgstr "Selecciona el tipus de lletra per a X"
+
+#. Menu entry for usr/lib/menu/X11R6-contrib
+msgid "XLoad"
+msgstr "XLoad"
+
+#. Menu description for usr/lib/menu/X11R6-contrib
+msgid "Display system load"
+msgstr "Mostra la càrrega del sistema"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Bitmap"
+msgstr "Bitmap"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Bitmap: editor for X bitmap files"
+msgstr "Bitmap: editor de fitxers de mapa de bits d'X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Editres"
+msgstr "Editres"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Editres: resource editor for X Toolkit applications"
+msgstr "Editres: editor de recursos per a les aplicacions del joc d'eines d'X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xclipboard"
+msgstr "Xclipboard"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xclipboard: clipboard for text cut and paste operations in X"
+msgstr "Xclipboard: porta-retalls per a operacions de tallar i enganxar en X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xclock (analog)"
+msgstr "Xclock (analògic)"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xclock (analog): analog clock for X"
+msgstr "Xclock (analògic): rellotge anàlogic per a X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xclock (digital)"
+msgstr "Xclock (digital)"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xclock (digital): digital clock for X"
+msgstr "Xclock (digital): rellotge digital per a X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xconsole"
+msgstr "Xconsole"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xconsole: monitor system console messages with X"
+msgstr "Xconsole: monitoritza els missatges de consola del sistema amb X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xcutsel"
+msgstr "Xcutsel"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xcutsel: interchange between cut buffer and selection in X"
+msgstr ""
+"Xcutsel: intercanvia la memòria intermèdia de tall per la selecció en X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xmag"
+msgstr "Xmag"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xmag: magnify parts of the X screen"
+msgstr "Xmag: augmenta parts de la pantalla X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xkill"
+msgstr "Xkill"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xkill: kill X clients"
+msgstr "Xkill: mata clients X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xlogo"
+msgstr "Xlogo"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xlogo: display X logo"
+msgstr "Xlogo: visualitza el logotip X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Xrefresh"
+msgstr "Xrefresh"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Xrefresh: redraw X screen"
+msgstr "Xrefresh: torna a dibuixar la pantalla X"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "X Window Snapshot"
+msgstr "Instantània d'X Window"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "X Window Snapshot: take snapshot of any X window (xwd|xwud)"
+msgstr ""
+"Instantània d'X Window: fa captures de pantalla de qualsevol finestra X (xwd|"
+"xwud)"
+
+#. Menu entry for usr/lib/menu/XFree86
+msgid "Twm"
+msgstr "Twm"
+
+#. Menu description for usr/lib/menu/XFree86
+msgid "Twm: Tab Window Manager"
+msgstr "Twm: Tab Window Manager (gestor de finestres amb pestanyes)"
+
+#. Menu entry for usr/lib/menu/armagetron
+msgid "ArmageTron"
+msgstr "ArmageTron"
+
+#. Menu description for usr/lib/menu/armagetron
+msgid "Another 3d lightcycle game"
+msgstr "Un altre joc en 3D de motos Lightcycle"
+
+#. Menu entry for usr/lib/menu/aterm
+msgid "ATerm"
+msgstr "ATerm"
+
+#. Menu description for usr/lib/menu/aterm
+msgid "A terminal emulator for the X Window System"
+msgstr "Un emulador de terminal per al sistema de finestres X"
+
+#. Menu entry for usr/lib/menu/aumix
+msgid "Aumix"
+msgstr "Aumix"
+
+#. Menu description for usr/lib/menu/aumix
+msgid "Audio Mixer"
+msgstr "Mesclador d'àudio"
+
+#. Menu entry for usr/lib/menu/balsa
+msgid "Balsa"
+msgstr "Balsa"
+
+#. Menu description for usr/lib/menu/balsa
+msgid "Balsa Mail Client"
+msgstr "Client de correu electrònic Balsa"
+
+#. Menu entry for usr/lib/menu/bcast
+msgid "Broadcast 2000"
+msgstr "Broadcast 2000"
+
+#. Menu description for usr/lib/menu/bcast
+msgid "Broadcast 2000 - Non-linear production environment for audio and video"
+msgstr "Broadcast 2000 - Entorn de producció no lineal per a àudio i vídeo"
+
+#. Menu entry for usr/lib/menu/blackbox
+msgid "Blackbox"
+msgstr "BlackBox"
+
+#. Menu entry for usr/lib/menu/blackbox
+msgid "Reconfigure"
+msgstr "Reconfigura"
+
+#. Menu entry for usr/lib/menu/blackbox
+msgid "/usr/share/blackbox/styles"
+msgstr "/usr/share/blackbox/styles"
+
+#. Menu entry for usr/lib/menu/blackbox
+msgid "~/.blackbox/styles"
+msgstr "~/.blackbox/styles"
+
+#. Menu entry for usr/lib/menu/bluefish
+msgid "BlueFish"
+msgstr "BlueFish"
+
+#. Menu description for usr/lib/menu/bluefish
+msgid "Beautiful GPLized HTML editor"
+msgstr "Bonic editor HTML sota la GPL"
+
+#. Menu entry for usr/lib/menu/bug-buddy
+msgid "Bug-buddy"
+msgstr "Bug-buddy"
+
+#. Menu description for usr/lib/menu/bug-buddy
+msgid "Front end of open source projects bug reporter"
+msgstr ""
+"Frontal gràfic per a l'informador d'errors de projectes de codi font obert"
+
+#. Menu entry for usr/lib/menu/bzflag
+msgid "BZflag"
+msgstr "BZflag"
+
+#. Menu description for usr/lib/menu/bzflag
+msgid "A multiplayer 3D tank battle game"
+msgstr "Joc de guerres de tancs en 3D per a diversos jugadors"
+
+#. Menu entry for usr/lib/menu/chbg
+msgid "ChBg"
+msgstr "ChBg"
+
+#. Menu description for usr/lib/menu/chbg
+msgid "ChBg - Desktop background manager/changer/screensaver"
+msgstr ""
+"ChBg - Gestor del fons, canviador i estalvi de pantalla de l'escriptori"
+
+#. Menu entry for usr/lib/menu/chromium
+msgid "Chromium"
+msgstr "Chromium"
+
+#. Menu description for usr/lib/menu/chromium
+msgid "OpenGL shoot them up"
+msgstr "Joc OpenGL de disparar"
+
+#. Menu entry for usr/lib/menu/chromium-setup
+msgid "Chromium Setup"
+msgstr "Configuració del Chromium"
+
+#. Menu description for usr/lib/menu/chromium-setup
+msgid "Graphical Setup of Chromium"
+msgstr "Configuració en mode gràfic del Chromium"
+
+#. Menu entry for usr/lib/menu/clanbomber
+msgid "ClanBomber"
+msgstr "ClanBomber"
+
+#. Menu description for usr/lib/menu/clanbomber
+msgid "Clanbomber - free (GPL) Bomberman-like multiplayer game"
+msgstr ""
+"Clanbomber - joc lliure (GPL) per a diversos jugadors, semblant al Bomberman"
+
+#. Menu entry for usr/lib/menu/cooledit
+msgid "CoolEdit"
+msgstr "CoolEdit"
+
+#. Menu description for usr/lib/menu/cooledit
+msgid "Powerful programmer's text editor with Python and shell scripting hooks"
+msgstr ""
+"Potent editor de textos per a programadors amb enllaços per a Python i per a "
+"scripts de l'intèrpret d'ordres"
+
+#. Menu entry for usr/lib/menu/csmash
+msgid "Cannon Smash"
+msgstr "Cannon Smash"
+
+#. Menu description for usr/lib/menu/csmash
+msgid "CannonSmash, a 3D tabletennis game"
+msgstr "CannonSmash, un joc de ping-pong en 3D"
+
+#. Menu tree branch (found in usr/lib/menu/csmash)
+msgid "Sports"
+msgstr "Esports"
+
+#. Menu entry for usr/lib/menu/cups
+msgid "CUPS WWW admin tool"
+msgstr "Eina d'administració de CUPS a través de WWW"
+
+#. Menu description for usr/lib/menu/cups
+msgid ""
+"Web-based administration tool for CUPS, works with every browser. Set the  "
+"environment variable to choose your preferred browser."
+msgstr ""
+"Eina d'administració basada en web per al CUPS, funciona amb qualsevol "
+"navegador. Configureu la variable d'entorn per triar el vostre navegador "
+"preferit"
+
+#. Menu entry for usr/lib/menu/cxhextris
+msgid "Cxhextris"
+msgstr "Cxhextris"
+
+#. Menu description for usr/lib/menu/cxhextris
+msgid "Cxhextris: An X Window System color version of xhextris."
+msgstr "Cxhextris: versió en color de l'xhextris per al sistema de finestres X"
+
+#. Menu entry for usr/lib/menu/dia
+msgid "Dia"
+msgstr "Dia"
+
+#. Menu description for usr/lib/menu/dia
+msgid "A gtk+ based diagram creation program"
+msgstr "Programa de creació de diagrames basat en gtk+"
+
+#. Menu description for usr/lib/menu/directory_administrator
+msgid "LDAP directory manager"
+msgstr "Gestor de directoris LDAP"
+
+#. Menu entry for usr/lib/menu/drakconf
+msgid "Mandrake Control Center"
+msgstr "Centre de control Mandrake"
+
+#. Menu description for usr/lib/menu/drakconf
+msgid "System configuration tool"
+msgstr "Eina de configuració del sistema"
+
+#. Menu description for usr/lib/menu/draksync
+msgid "Graphical directory synchronization tool"
+msgstr "Eina gràfica de sincronització de directoris"
+
+#. Menu description for usr/lib/menu/ee
+msgid "Electric Eyes image viewer"
+msgstr "Visualitzador d'imatges Electric Eyes"
+
+#. Menu entry for usr/lib/menu/emacs-X11
+msgid "Emacs"
+msgstr "Emacs"
+
+#. Menu description for usr/lib/menu/emacs-X11
+msgid "Powerfull editor"
+msgstr "Un potent editor de textos"
+
+#. Menu entry for usr/lib/menu/enlightenment
+msgid "Enlightenment"
+msgstr "Enlightenment"
+
+#. Menu entry for usr/lib/menu/eog
+msgid "Eye of Gnome"
+msgstr "Eye of Gnome"
+
+#. Menu description for usr/lib/menu/eog
+msgid "Eye of Gnome Image Viewer"
+msgstr "Visualitzador d'imatges Eye of Gnome"
+
+#. Menu entry for usr/lib/menu/eroaster
+msgid "Eroaster"
+msgstr "Eroaster"
+
+#. Menu description for usr/lib/menu/eroaster
+msgid "GUI CD Burner"
+msgstr "Interfície gràfica d'usuari per enregistrar CD"
+
+#. Menu description for usr/lib/menu/everybuddy
+msgid "Universal Instant Messaging Client"
+msgstr "Client de missatgeria instantània universal"
+
+#. Menu entry for usr/lib/menu/evolution
+msgid "Evolution"
+msgstr "Evolution"
+
+#. Menu description for usr/lib/menu/evolution
+msgid "GNOME mailer, calendar, contact manager and communications tool"
+msgstr ""
+"Gestor de correu, calendari, gestor de contactes i eina de comunicacions del "
+"GNOME"
+
+#. Menu entry for usr/lib/menu/faces
+msgid "Faces"
+msgstr "Faces"
+
+#. Menu description for usr/lib/menu/faces
+msgid "Incoming mail notifier"
+msgstr "Notificador de correu d'entrada"
+
+#. Menu entry for usr/lib/menu/fetchmailconf
+msgid "Fetchmailconf"
+msgstr "Fetchmailconf"
+
+#. Menu description for usr/lib/menu/fetchmailconf
+msgid "Configuration of fetchmail"
+msgstr "Configuració del fetchmail"
+
+#. Menu description for usr/lib/menu/freeciv
+msgid "The Free Civilization Clone"
+msgstr "Clon lliure del Civilization"
+
+#. Menu description for usr/lib/menu/freeciv
+msgid "The Free Civilization Clone (server)"
+msgstr "Clon lliure del Civilization (servidor)"
+
+#. Menu entry for usr/lib/menu/frozen-bubble
+msgid "Frozen-Bubble"
+msgstr "Frozen-Bubble"
+
+#. Menu description for usr/lib/menu/frozen-bubble
+msgid "Frozen Bubble arcade game"
+msgstr "Joc arcade Frozen Bubble"
+
+#. Menu entry for usr/lib/menu/gabber
+msgid "Gabber"
+msgstr "Gabber"
+
+#. Menu description for usr/lib/menu/gabber
+msgid "Gnome client for Jabber Open Source instant messaging system"
+msgstr ""
+"Client del Gnome per al sistema de missatgeria instàntania de codi font "
+"obert Jabber"
+
+#. Menu entry for usr/lib/menu/gaim
+msgid "Gaim"
+msgstr "Gaim"
+
+#. Menu description for usr/lib/menu/gaim
+msgid ""
+"Instant Messenger suporting AIM (Oscar and TOC), ICQ, IRC, Yahoo!, MSN "
+"Messenger, Jabber, Gadu-Gadu, Napster, and Zephyr protocols."
+msgstr ""
+"Missatgeria instantània que funciona amb els protocols AIM (Oscar i TOC), "
+"ICQ, IRC, Yahoo!, MSN Messenger, Jabber, Gadu-Gadu, Napster i Zephyr"
+
+#. Menu entry for usr/lib/menu/galeon
+msgid "Galeon"
+msgstr "Galeon"
+
+#. Menu description for usr/lib/menu/galeon
+msgid "Gnome browser based on Gecko (Mozilla)"
+msgstr "Navegador del Gnome basat en Gecko (Mozilla)"
+
+#. Menu entry for usr/lib/menu/gcombust
+msgid "GCombust"
+msgstr "GCombust"
+
+#. Menu description for usr/lib/menu/gcombust
+msgid "Gtk+ frontend for Cd burning"
+msgstr "Frontal basat en Gtk+ per enregistrar CD"
+
+#. Menu entry for usr/lib/menu/gdb
+msgid "Gdb"
+msgstr "Gdb"
+
+#. Menu description for usr/lib/menu/gdb
+msgid "The GNU debugger"
+msgstr "El depurador de GNU"
+
+#. Menu entry for usr/lib/menu/gdm
+msgid "GDM Configurator"
+msgstr "Configuració del GDM"
+
+#. Menu description for usr/lib/menu/gdm
+msgid "A graphical application for configuring the GNOME Display Manager (GDM)"
+msgstr ""
+"Una aplicació gràfica per configurar el gestor de pantalla del GNOME (GDM)"
+
+#. Menu tree branch (found in usr/lib/menu/gdm)
+msgid "Boot and Init"
+msgstr "Arrencada i inicialització"
+
+#. Menu entry for usr/lib/menu/gdm
+msgid "GDM Photo Setup"
+msgstr "Configuració de les fotos del GDM"
+
+#. Menu description for usr/lib/menu/gdm
+msgid ""
+"Setup the picture that will show in the GDM (login manager) face browser"
+msgstr ""
+"Configureu la imatge que es mostrarà en el navegador GDM (gestor d'entrada)"
+
+#. Menu entry for usr/lib/menu/gdm
+msgid "New login with GDM"
+msgstr "Nova entrada amb GDM"
+
+#. Menu description for usr/lib/menu/gdm
+msgid "Log in as another user without loging out"
+msgstr "Entra amb un altre usuari sense sortir"
+
+#. Menu entry for usr/lib/menu/gdm-Xnest
+msgid "New login in a nested window "
+msgstr "Nova entrada en una finestra imbricada"
+
+#. Menu description for usr/lib/menu/gdm-Xnest
+msgid "New login in a nested window"
+msgstr "Nova entrada en una finestra imbricada"
+
+#. Menu entry for usr/lib/menu/gedit
+msgid "GEdit"
+msgstr "gEdit"
+
+#. Menu description for usr/lib/menu/gedit
+msgid "GEdit is a small but powerful text editor"
+msgstr "El gEdit és un petit però potent editor de textos"
+
+#. Menu entry for usr/lib/menu/gexif
+msgid "GEXIF - View and edit EXIF info in JPEG images"
+msgstr "GEXIF - Visualitza i edita la informació EXIF d'imatges JPEG"
+
+#. Menu description for usr/lib/menu/gexif
+msgid "View and edit the info which digital cameras add to your photos"
+msgstr ""
+"Visualitza i edita la informació que les càmeres digitals afegeixen a les "
+"fotos"
+
+#. Menu entry for usr/lib/menu/gfcc
+msgid "Gfcc"
+msgstr "Gfcc"
+
+#. Menu description for usr/lib/menu/gfcc
+msgid "GTK+ Firewall Control Center"
+msgstr "Centre de control del tallafocs basat en GTK+"
+
+#. Menu description for usr/lib/menu/gftp
+msgid "FTP client for X Windows"
+msgstr "Client FTP per a X Windows"
+
+#. Menu entry for usr/lib/menu/ggv
+msgid "Ggv"
+msgstr "Ggv"
+
+#. Menu description for usr/lib/menu/ggv
+msgid "Gnome Version of ghostview"
+msgstr "Versió per a Gnome del ghostview"
+
+#. Menu entry for usr/lib/menu/gimp
+msgid "The GIMP"
+msgstr "El GIMP"
+
+#. Menu description for usr/lib/menu/gimp
+msgid "The GNU Image Manipulation Program"
+msgstr "El Programa de GNU per a la Manipulació d'Imatges"
+
+#. Menu description for usr/lib/menu/gkrellm
+msgid "A GTK-based monitoring app"
+msgstr "Aplicació per a la monitorització basada en GTK"
+
+#. Menu entry for usr/lib/menu/glade
+msgid "Glade"
+msgstr "Glade"
+
+#. Menu description for usr/lib/menu/glade
+msgid "Gtk/gnome widget builder"
+msgstr "Creador de ginys per a GTK/GNOME"
+
+#. Menu entry for usr/lib/menu/glade2
+msgid "Glade 2"
+msgstr "Glade 2"
+
+#. Menu description for usr/lib/menu/glade2
+msgid "GTK/GNOME 2 Widget Builder"
+msgstr "Creador de ginys per a GTK/GNOME 2"
+
+#. Menu description for usr/lib/menu/glimmer
+msgid "Code editor"
+msgstr "Editor de codi"
+
+#. Menu entry for usr/lib/menu/gnobog
+msgid "Gnobog"
+msgstr "Gnobog"
+
+#. Menu description for usr/lib/menu/gnobog
+msgid "Gnome Bookmarks Organizer"
+msgstr "Organitzador de la llista d'adreces d'interès del Gnome"
+
+#. Menu entry for usr/lib/menu/gnomba
+msgid "Gnome Samba Browser"
+msgstr "Navegador Samba del Gnome"
+
+#. Menu description for usr/lib/menu/gnomba
+msgid "Gnome Samba Machine Browser"
+msgstr "Navegador d'ordinadors amb Samba del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-chess
+msgid "Gnome Chess"
+msgstr "Gnome Chess"
+
+#. Menu description for usr/lib/menu/gnome-chess
+msgid "Gnome Chess game"
+msgstr "Joc d'escacs del Gnome"
+
+#. Menu tree branch (found in usr/lib/menu/gnome-control-center)
+msgid "GNOME"
+msgstr "GNOME"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "AccessX"
+msgstr "AccessX"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Keyboard Accessibility Properties"
+msgstr "Propietats d'accessibilitat del teclat"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Configuration of the desktop's background"
+msgstr "Configuració del fons de l'escriptori"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Configure Gnome's use of sound"
+msgstr "Configureu l'ús del so del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Keyboard"
+msgstr "Teclat"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Keyboard Properties"
+msgstr "Propietats del teclat"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Mouse"
+msgstr "Ratolí"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Mouse Properties"
+msgstr "Propietats del ratolí"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Advanced"
+msgstr "Avançat"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Advanced Settings"
+msgstr "Configuració avançada"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "File Types and Programs"
+msgstr "Tipus de fitxers i programes"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Specify which programs are used to open or view each file type"
+msgstr ""
+"Especifiqueu quins programes es fan servir per obrir o veure cada tipus de "
+"fitxer"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Toolbar and Menu Properties"
+msgstr "Propietats de la barra d'eines i del menú"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Sets the default feel of Gnome applications"
+msgstr "Definiu l'aspecte predeterminat de les aplicacions del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Theme"
+msgstr "Tema"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Select which gtk+ theme to use"
+msgstr "Seleccioneu el tema d'escriptori gtk+ que es farà servir"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Font"
+msgstr "Tipus de lletra"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Change the default fonts used by the desktop and applications"
+msgstr ""
+"Canvieu les fonts per defecte utilitzades per les aplicacions i l'escriptori"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Keyboard Shortcuts"
+msgstr "Dreceres de teclat"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Associate keyboard shortcuts with panel actions"
+msgstr "Associeu dreceres de teclat a accions del plafó"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Network"
+msgstr "Xarxa"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Network Preferences"
+msgstr "Preferències de xarxa"
+
+#. Menu entry for usr/lib/menu/gnome-control-center
+msgid "Preferred Applications"
+msgstr "Aplicacions preferides"
+
+#. Menu description for usr/lib/menu/gnome-control-center
+msgid "Choose the applications ysed by default"
+msgstr "Escolliu les aplicacions que s'utilitzaran per defecte"
+
+#. Menu entry for usr/lib/menu/gnome-db
+msgid "GNOME-DB frontend"
+msgstr "Frontal per al GNOME-DB"
+
+#. Menu description for usr/lib/menu/gnome-db
+msgid "Gnome-DB frontend application"
+msgstr "Frontal gràfic per al Gnome-DB"
+
+#. Menu tree branch (found in usr/lib/menu/gnome-db)
+msgid "Databases"
+msgstr "Bases de dades"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "FreeCell"
+msgstr "FreeCell"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "FreeCell Game"
+msgstr "Joc FreeCell"
+
+#. Menu tree branch (found in usr/lib/menu/gnome-games)
+msgid "Cards"
+msgstr "Cartes"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnome Mines"
+msgstr "Cercamines del Gnome"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Mines game"
+msgstr "Joc de mines del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Same Gnome"
+msgstr "Same Gnome"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome SameGame"
+msgstr "Joc Same del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnome Mahjongg"
+msgstr "Gnome Mahjongg"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "A Mahjongg game for Gnome"
+msgstr "Un joc de Mahjongg per al Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "GTali"
+msgstr "GTali"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Dice game"
+msgstr "Joc de daus del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnobots II"
+msgstr "Gnobots II"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Robots game"
+msgstr "Joc de robots del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Iagno"
+msgstr "Iagno"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Reversi game"
+msgstr "Joc Reversi del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnotravex"
+msgstr "Gnotravex"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Tetravex game"
+msgstr "Joc Tetravex del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnome Stones"
+msgstr "Gnome Stones"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Stones game"
+msgstr "Joc Stones del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "AisleRiot"
+msgstr "AisleRiot"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Card-based Solitaire suite"
+msgstr "Suite de jocs de cartes del solitari"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnibbles"
+msgstr "Gnibbles"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Nibbles Game"
+msgstr "Joc Nibbles del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Glines"
+msgstr "Glines"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome color lines"
+msgstr "Color Lines del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnect"
+msgstr "Gnect"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome four-in-a-row game"
+msgstr "Joc del quatre en ratlla del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gataxx"
+msgstr "Gataxx"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome ataxx game"
+msgstr "Joc ataxx del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnotski"
+msgstr "Gnotski"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Klotski"
+msgstr "Klotski del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-games
+msgid "Gnometris"
+msgstr "Gnometris"
+
+#. Menu description for usr/lib/menu/gnome-games
+msgid "Gnome Tetris"
+msgstr "Tetris del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-iconedit
+msgid "Gnome Icon Editor"
+msgstr "Editor d'icones del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-linuxconf
+msgid "LinuxConf"
+msgstr "LinuxConf"
+
+#. Menu entry for usr/lib/menu/gnome-linuxconf
+msgid "Netconf"
+msgstr "Netconf"
+
+#. Menu entry for usr/lib/menu/gnome-linuxconf
+msgid "Userconf"
+msgstr "Userconf"
+
+#. Menu entry for usr/lib/menu/gnome-media
+msgid "Gnome CD Player"
+msgstr "Reproductor de CD del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-media
+msgid "ESD Volume"
+msgstr "Volum ESD"
+
+#. Menu entry for usr/lib/menu/gnome-media
+msgid "Sound Recorder"
+msgstr "Enregistradora de so"
+
+#. Menu entry for usr/lib/menu/gnome-media
+msgid "CDDB Parameters"
+msgstr "Paràmetres CDDB"
+
+#. Menu entry for usr/lib/menu/gnome-network
+msgid "Synchronize"
+msgstr "Sincronització"
+
+#. Menu description for usr/lib/menu/gnome-network
+msgid "Desktop synchronization application"
+msgstr "Aplicació de sincronització d'escriptoris"
+
+#. Menu entry for usr/lib/menu/gnome-network
+msgid "Gnome Talk"
+msgstr "Talk del Gnome"
+
+#. Menu tree branch (found in usr/lib/menu/gnome-network)
+msgid "Chat"
+msgstr "Xat"
+
+#. Menu entry for usr/lib/menu/gnome-network
+msgid "Gnome ppp"
+msgstr "Gnome ppp"
+
+#. Menu description for usr/lib/menu/gnome-network
+msgid "GNOME PPP dialup utility"
+msgstr "Utilitat de Gnome per fer connexions PPP amb marcatge directe (mòdem)"
+
+#. Menu entry for usr/lib/menu/gnome-panel
+msgid "Panel"
+msgstr "Plafó"
+
+#. Menu description for usr/lib/menu/gnome-panel
+msgid "Select preferences for all your panels"
+msgstr "Seleccioneu les preferències per a tots els plafons"
+
+#. Menu entry for usr/lib/menu/gnome-pilot
+msgid "Pilot link"
+msgstr "Enllaç amb Pilot"
+
+#. Menu tree branch (found in usr/lib/menu/gnome-pilot)
+msgid "Peripherals"
+msgstr "Perifèrics"
+
+#. Menu entry for usr/lib/menu/gnome-pilot
+msgid "Pilot Conduits"
+msgstr "Conductes per a Pilot"
+
+#. Menu entry for usr/lib/menu/gnome-pim
+msgid "Gnome-Cal"
+msgstr "Gnome-Cal"
+
+#. Menu description for usr/lib/menu/gnome-pim
+msgid "Personal calendar and todo list"
+msgstr "Agenda personal i llista de coses per fer"
+
+#. Menu entry for usr/lib/menu/gnome-pim
+msgid "Gnome-Card"
+msgstr "Gnome-Card"
+
+#. Menu description for usr/lib/menu/gnome-pim
+msgid "Contact list of friends and business associates"
+msgstr "Llista d'amics i contactes professionals"
+
+#. Menu tree branch (found in usr/lib/menu/gnome-pim)
+msgid "AddressBooks"
+msgstr "Llibreta d'adreces"
+
+#. Menu entry for usr/lib/menu/gnome-session
+msgid "Sessions"
+msgstr "Sessions"
+
+#. Menu description for usr/lib/menu/gnome-session
+msgid "Configure your sessions"
+msgstr "Configura les sessions"
+
+#. Menu entry for usr/lib/menu/gnome-system-monitor
+msgid "GNOME System monitor"
+msgstr "Monitor del sistema del GNOME"
+
+#. Menu description for usr/lib/menu/gnome-system-monitor
+msgid "View current processes and monitor system state"
+msgstr "Visualitza els processos actuals i monitoritza l'estat del sistema"
+
+#. Menu entry for usr/lib/menu/gnome-telnet
+msgid "Telnet, SSH, and RLogin"
+msgstr "Telnet, SSH i RLogin"
+
+#. Menu description for usr/lib/menu/gnome-telnet
+msgid "A cool front-end for telnet, ssh, and rlogin"
+msgstr "Un fantàstic frontal per a telnet, ssh i rlogin"
+
+#. Menu entry for usr/lib/menu/gnome-terminal
+msgid "Gnome terminal"
+msgstr "Terminal del Gnome"
+
+#. Menu description for usr/lib/menu/gnome-terminal
+msgid "Terminal of the Gnome desktop"
+msgstr "Terminal de l'escriptori Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-toaster
+msgid "Gnome-Toaster"
+msgstr "Gnome-Toaster"
+
+#. Menu description for usr/lib/menu/gnome-toaster
+msgid "A GNOME utility for cd burning"
+msgstr "Una utilitat del GNOME per enregistrar CD"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "Gnome Calc"
+msgstr "Gnome Calc"
+
+#. Menu description for usr/lib/menu/gnome-utils
+msgid "Gnome Calculator"
+msgstr "Calculadora del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "Gnome Character Map"
+msgstr "Mapa de caràcters del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "Gnome Floppy"
+msgstr "Gnome Floppy"
+
+#. Menu description for usr/lib/menu/gnome-utils
+msgid "Gnome Floppy Disk Format Tool"
+msgstr "Eina del Gnome per formatar disquets"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "Gnome Search Tool"
+msgstr "Eina de cerca del Gnome"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "System Log Viewer"
+msgstr "Visualitzador dels registres del sistema"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "Archive Generator"
+msgstr "Generador d'arxius"
+
+#. Menu description for usr/lib/menu/gnome-utils
+msgid "Create compressed archives containing many files"
+msgstr "Crea arxius comprimits que contenen molts fitxers"
+
+#. Menu entry for usr/lib/menu/gnome-utils
+msgid "GNOME Dictionnary"
+msgstr "Diccionari del GNOME"
+
+#. Menu description for usr/lib/menu/gnome-utils
+msgid "Lookup words in an online dictionary"
+msgstr "Busca paraules en un diccionari en línia"
+
+#. Menu description for usr/lib/menu/gnomeicu
+msgid "Gnome ICQ communications program"
+msgstr "Programa de comunicacions ICQ del Gnome"
+
+#. Menu entry for usr/lib/menu/gnomemeeting
+msgid "Gnomemeeting"
+msgstr "Gnomemeeting"
+
+#. Menu entry for usr/lib/menu/gnorpm
+msgid "GnoRPM"
+msgstr "GnoRPM"
+
+#. Menu description for usr/lib/menu/gnorpm
+msgid "A graphical front-end to RPM for GNOME"
+msgstr "Un frontal gràfic del GNOME per a la gestió de paquets RPM"
+
+#. Menu entry for usr/lib/menu/gnozip
+msgid "Gnozip"
+msgstr "Gnozip"
+
+#. Menu description for usr/lib/menu/gnozip
+msgid ""
+"A Winzip(tm) like application which supports gzip and bzip compresssion "
+"format"
+msgstr ""
+"Aplicació tipus Winzip(tm) que pot treballar amb els formats de compressió "
+"gzip i bzip"
+
+#. Menu entry for usr/lib/menu/gnucash
+msgid "GnuCash"
+msgstr "GnuCash"
+
+#. Menu description for usr/lib/menu/gnucash
+msgid "GnuCash Personal finance manager"
+msgstr "Gestor de finances personals GnuCash"
+
+#. Menu entry for usr/lib/menu/gnumeric
+msgid "Gnumeric"
+msgstr "Gnumeric"
+
+#. Menu description for usr/lib/menu/gnumeric
+msgid "A full-featured spreadsheet for Gnome"
+msgstr "Un complet full de càlcul per a Gnome"
+
+#. Menu description for usr/lib/menu/gnuplot
+msgid "The famous function plotting program"
+msgstr "El conegut programa de funcions d'impressió amb traçador"
+
+#. Menu entry for usr/lib/menu/gphoto
+msgid "GPhoto"
+msgstr "GPhoto"
+
+#. Menu description for usr/lib/menu/gphoto
+msgid "A GNU Digital Camera Program"
+msgstr "Un programa GNU per al maneig de càmeres digitals"
+
+#. Menu entry for usr/lib/menu/gpr
+msgid "GPR"
+msgstr "GPR"
+
+#. Menu description for usr/lib/menu/gpr
+msgid "Graphical frontend for printing with various spoolers"
+msgstr "Frontal gràfic per imprimir amb diverses cues d'impressió"
+
+#. Menu entry for usr/lib/menu/gprolog
+msgid "GNU Prolog"
+msgstr "GNU Prolog"
+
+#. Menu entry for usr/lib/menu/gps
+msgid "GPS"
+msgstr "GPS"
+
+#. Menu description for usr/lib/menu/gps
+msgid "Graphical Process Statistics"
+msgstr "eStadístiques Gràfiques de Processos"
+
+#. Menu entry for usr/lib/menu/grip
+msgid "Grip"
+msgstr "Grip"
+
+#. Menu description for usr/lib/menu/grip
+msgid "A gtk-based cd-player and cd-ripper"
+msgstr "Reproductor i extractor de CD basat en gtk"
+
+#. Menu entry for usr/lib/menu/gtkam
+msgid "GTKam (GPhoto 2)"
+msgstr "GTKam (GPhoto 2)"
+
+#. Menu description for usr/lib/menu/gtkam
+msgid "GNU Digital Camera Program, for newer cameras"
+msgstr "Programa GNU per al maneig de càmeres digitals, per a càmeres noves"
+
+#. Menu entry for usr/lib/menu/gtkeyboard
+msgid "GTKeybord"
+msgstr "GTKeyboard"
+
+#. Menu description for usr/lib/menu/gtkeyboard
+msgid "A graphical keyboard for disabled people"
+msgstr "Teclat gràfic per a persones discapacitades"
+
+#. Menu entry for usr/lib/menu/gtkgraph
+msgid "GtkGraph"
+msgstr "GtkGraph"
+
+#. Menu description for usr/lib/menu/gtkgraph
+msgid "Graphic Calculator"
+msgstr "Calculadora gràfica"
+
+#. Menu entry for usr/lib/menu/gtkhtml
+msgid "HTML Viewer"
+msgstr "Visualitzador d'HTML"
+
+#. Menu description for usr/lib/menu/gtkhtml
+msgid "HTML Viewer properties"
+msgstr "Propietats del visualitzador d'HTML"
+
+#. Menu entry for usr/lib/menu/gtktalog
+msgid "GTKtalog"
+msgstr "GTKtalog"
+
+#. Menu description for usr/lib/menu/gtktalog
+msgid "The Gnome disk catalog"
+msgstr "Catalogador de discos del Gnome"
+
+#. Menu entry for usr/lib/menu/gtm
+msgid "Gtm"
+msgstr "Gtm"
+
+#. Menu description for usr/lib/menu/gtm
+msgid "Gnome transfer manager"
+msgstr "Gestor de transferències del Gnome"
+
+#. Menu entry for usr/lib/menu/gv
+msgid "GhostView"
+msgstr "GhostView"
+
+#. Menu description for usr/lib/menu/gv
+msgid "GhostView, PostScript and PDF viewer"
+msgstr "Visualitzador de documents GhostView, PostScript i PDF"
+
+#. Menu entry for usr/lib/menu/harddrake-ui
+msgid "HardDrake"
+msgstr "HardDrake"
+
+#. Menu description for usr/lib/menu/harddrake-ui
+msgid "Hardware Central Configuration/information tool"
+msgstr "Eina principal de configuració/informació del maquinari"
+
+#. Menu entry for usr/lib/menu/howto-html-de
+msgid "Howtos German"
+msgstr "Documents COM ES FA en alemany"
+
+#. Menu description for usr/lib/menu/howto-html-de
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in German"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"alemany"
+
+#. Menu entry for usr/lib/menu/howto-html-el
+msgid "Howtos Greek"
+msgstr "Documents COM ES FA en grec"
+
+#. Menu description for usr/lib/menu/howto-html-el
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Greek"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"grec"
+
+#. Menu entry for usr/lib/menu/howto-html-en
+msgid "Howtos English"
+msgstr "Documents COM ES FA en anglès"
+
+#. Menu description for usr/lib/menu/howto-html-en
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in English"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"anglès"
+
+#. Menu entry for usr/lib/menu/howto-html-es
+msgid "Howtos Spanish"
+msgstr "Documents COM ES FA en espanyol"
+
+#. Menu description for usr/lib/menu/howto-html-es
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Spanish"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"espanyol"
+
+#. Menu entry for usr/lib/menu/howto-html-fr
+msgid "Howtos French"
+msgstr "Documents COM ES FA en francès"
+
+#. Menu description for usr/lib/menu/howto-html-fr
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in French"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"francès"
+
+#. Menu entry for usr/lib/menu/howto-html-hr
+msgid "Howtos Croatian"
+msgstr "Documents COM ES FA en croat"
+
+#. Menu description for usr/lib/menu/howto-html-hr
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in "
+"Croatian"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"croat"
+
+#. Menu entry for usr/lib/menu/howto-html-hu
+msgid "Howtos Hungarian"
+msgstr "Documents COM ES FA en hongarès"
+
+#. Menu description for usr/lib/menu/howto-html-hu
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in "
+"Hungarian"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"hongarès"
+
+#. Menu entry for usr/lib/menu/howto-html-id
+msgid "Howtos Indonesian"
+msgstr "Documents COM ES FA en indonesi"
+
+#. Menu description for usr/lib/menu/howto-html-id
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in "
+"Indonesian"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"indonesi"
+
+#. Menu entry for usr/lib/menu/howto-html-it
+msgid "Howtos Italian"
+msgstr "Documents COM ES FA en italià"
+
+#. Menu description for usr/lib/menu/howto-html-it
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Italian"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"italià"
+
+#. Menu entry for usr/lib/menu/howto-html-ja
+msgid "Howtos Japanese"
+msgstr "Documents COM ES FA en japonès"
+
+#. Menu description for usr/lib/menu/howto-html-ja
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in "
+"Japanese"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"japonès"
+
+#. Menu entry for usr/lib/menu/howto-html-ko
+msgid "Howtos Korean"
+msgstr "Documents COM ES FA en coreà"
+
+#. Menu description for usr/lib/menu/howto-html-ko
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Korean"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"coreà"
+
+#. Menu entry for usr/lib/menu/howto-html-nl
+msgid "Howtos Dutch"
+msgstr "Documents COM ES FA en holandès"
+
+#. Menu description for usr/lib/menu/howto-html-nl
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Dutch"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"holandès"
+
+#. Menu entry for usr/lib/menu/howto-html-pl
+msgid "Howtos Polish"
+msgstr "Documents COM ES FA en polonès"
+
+#. Menu description for usr/lib/menu/howto-html-pl
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Polish"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"polonès"
+
+#. Menu entry for usr/lib/menu/howto-html-ro
+msgid "Howtos Romanian"
+msgstr "Documents COM ES FA en romanès"
+
+#. Menu description for usr/lib/menu/howto-html-ro
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in "
+"Romanian"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"romanès"
+
+#. Menu entry for usr/lib/menu/howto-html-sl
+msgid "Howtos Slovenian"
+msgstr "Documents COM ES FA en eslovè"
+
+#. Menu description for usr/lib/menu/howto-html-sl
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in "
+"Slovenian"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"eslovè"
+
+#. Menu entry for usr/lib/menu/howto-html-sv
+msgid "Howtos Swedish"
+msgstr "Documents COM ES FA en suec"
+
+#. Menu description for usr/lib/menu/howto-html-sv
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Swedish"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"suec"
+
+#. Menu entry for usr/lib/menu/howto-html-zh
+msgid "Howtos Chinese"
+msgstr "Documents COM ES FA en xinès"
+
+#. Menu description for usr/lib/menu/howto-html-zh
+msgid ""
+"HOWTO documents (html format) from the Linux Documentation Project in Chinese"
+msgstr ""
+"Documents COM ES FA (format HTML) del projecte de documentació de Linux en "
+"xinès"
+
+#. Menu entry for usr/lib/menu/ical
+msgid "Ical"
+msgstr "Ical"
+
+#. Menu description for usr/lib/menu/ical
+msgid "Calendar program"
+msgstr "Programa d'agenda"
+
+#. Menu entry for usr/lib/menu/icebreaker
+msgid "IceBreaker"
+msgstr "IceBreaker"
+
+#. Menu description for usr/lib/menu/icebreaker
+msgid "Action-puzzle game involving bouncing penguins"
+msgstr "Joc d'acció/trencaclosques amb pingüins que reboten"
+
+#. Menu entry for usr/lib/menu/icewm
+msgid "IceWM"
+msgstr "IceWM"
+
+#. Menu entry for usr/lib/menu/icewm
+msgid "Settings"
+msgstr "Configuració"
+
+#. Menu entry for usr/lib/menu/irssi
+msgid "Irssi"
+msgstr "Irssi"
+
+#. Menu description for usr/lib/menu/irssi
+msgid "A Text-UI based Irc Client"
+msgstr "Un client IRC amb interfície d'usuari en mode text"
+
+#. Menu entry for usr/lib/menu/joe
+msgid "Joe"
+msgstr "Joe"
+
+#. Menu description for usr/lib/menu/joe
+msgid "Joe - a text ANSI editor"
+msgstr "Joe - un editor ANSI de text"
+
+#. Menu entry for usr/lib/menu/jpilot
+msgid "J-Pilot"
+msgstr "J-Pilot"
+
+#. Menu description for usr/lib/menu/jpilot
+msgid "A tools for your palm pilot"
+msgstr "Eines per a la Palm Pilot"
+
+#. Menu description for usr/lib/menu/kbiff
+msgid "A mail notification utility"
+msgstr "Utilitat de notificació de correu"
+
+#. Menu entry for usr/lib/menu/kdbg
+msgid "Kdbg"
+msgstr "Kdbg"
+
+#. Menu description for usr/lib/menu/kdbg
+msgid "A Graphical Debugger Interface"
+msgstr "Una interfície gràfica per al depurador"
+
+#. Menu entry for usr/lib/menu/kdeaddons-kcmkuick
+msgid "Quick Copy & Move Plugin"
+msgstr "Connector per copiar i moure ràpidament"
+
+#. Menu description for usr/lib/menu/kdeaddons-kcmkuick
+msgid "Kuick configuration module"
+msgstr "Mòdul de configuració Kuick"
+
+#. Menu tree branch (found in usr/lib/menu/kdeaddons-kcmkuick)
+msgid "FileBrowsing"
+msgstr "Navegació de fitxers"
+
+#. Menu entry for usr/lib/menu/kdeadmin-kcron
+msgid "KCron"
+msgstr "KCron"
+
+#. Menu entry for usr/lib/menu/kdeadmin-kdat
+msgid "KDat"
+msgstr "KDat"
+
+#. Menu entry for usr/lib/menu/kdeadmin-klinuz
+msgid "Linux Kernel Configurator"
+msgstr "Configuració del nucli Linux"
+
+#. Menu description for usr/lib/menu/kdeadmin-klinuz
+msgid "KDE Frontend for the Linux kernel configuration"
+msgstr "Frontal de KDE per a la configuració del nucli Linux"
+
+#. Menu tree branch (found in usr/lib/menu/kdeadmin-klinuz)
+msgid "System"
+msgstr "Sistema"
+
+#. Menu entry for usr/lib/menu/kdeadmin-kpackage
+msgid "KPackage"
+msgstr "KPackage"
+
+#. Menu entry for usr/lib/menu/kdeadmin-ksysv
+msgid "SysV-Init Editor"
+msgstr "Editor de la inicialització System V"
+
+#. Menu entry for usr/lib/menu/kdeadmin-kuser
+msgid "KUser"
+msgstr "KUser"
+
+#. Menu entry for usr/lib/menu/kdeadmin-kwuftpd
+msgid "KWuFTPd"
+msgstr "KWuFTPd"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KBanner
+msgid "Banner"
+msgstr "Pancarta"
+
+#. Menu tree branch (found in usr/lib/menu/kdeartwork-KBanner)
+msgid ".hidden"
+msgstr ".hidden"
+
+#. Menu tree branch (found in usr/lib/menu/kdeartwork-KBanner)
+msgid "ScreenSavers"
+msgstr "Estalvis de pantalla"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KBlob
+msgid "Blob"
+msgstr "Esquitx"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KBouboule
+msgid "Bouboule"
+msgstr "Pasterada"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KLorenz
+msgid "Lorenz Attractor"
+msgstr "Atractor de Lorenz"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KMorph3D
+msgid "Morph3D (GL)"
+msgstr "Morph3D (GL)"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KPipes
+msgid "Pipes (GL)"
+msgstr "Tubs (GL)"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KPolygon
+msgid "Polygons"
+msgstr "Polígons"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KPyro
+msgid "Pyro"
+msgstr "Focs"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KRock
+msgid "Rock"
+msgstr "Roca"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KScience
+msgid "Science"
+msgstr "Ciència"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KSlidescreen
+msgid "Slide Screen"
+msgstr "Pantalla de diapositives"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KSlideshow
+msgid "Slide Show"
+msgstr "Exposició de diapositives"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KSpace
+msgid "Space (GL)"
+msgstr "Espai (GL)"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KSwarm
+msgid "Swarm"
+msgstr "Eixam"
+
+#. Menu entry for usr/lib/menu/kdeartwork-KVm
+msgid "Virtual Machine"
+msgstr "Màquina virtual"
+
+#. Menu entry for usr/lib/menu/kdeartwork-kpartsaver
+msgid "Media Screensaver"
+msgstr "Estalvi de pantalla multimèdia"
+
+#. Menu entry for usr/lib/menu/kdebase-KBlankscreen
+msgid "Blank Screen"
+msgstr "Pantalla en blanc"
+
+#. Menu entry for usr/lib/menu/kdebase-KRandom
+msgid "Random"
+msgstr "Aleatori"
+
+#. Menu entry for usr/lib/menu/kdebase-arts
+msgid "Sound Server"
+msgstr "Servidor de so"
+
+#. Menu description for usr/lib/menu/kdebase-arts
+msgid "Sound Server Configuration"
+msgstr "Configuració del servidor de so"
+
+#. Menu entry for usr/lib/menu/kdebase-audiocd
+msgid "Audio CD IO-Slave"
+msgstr "IO-Slave per a CD d'àudio"
+
+#. Menu description for usr/lib/menu/kdebase-audiocd
+msgid "Audiocd IO Slave Configuration"
+msgstr "Configuració de l'IO-Slave per a CD d'àudio"
+
+#. Menu description for usr/lib/menu/kdebase-background
+msgid "Background settings"
+msgstr "Paràmetres del fons"
+
+#. Menu description for usr/lib/menu/kdebase-basedir
+msgid "Please don't remove or modify"
+msgstr "Si us plau, no ho esborreu ni ho modifiqueu"
+
+#. Menu entry for usr/lib/menu/kdebase-basedir
+msgid "Help"
+msgstr "Ajuda"
+
+#. Menu entry for usr/lib/menu/kdebase-basedir
+msgid "Information"
+msgstr "Informació"
+
+#. Menu entry for usr/lib/menu/kdebase-basedir
+msgid "Personalization"
+msgstr "Personalització"
+
+#. Menu entry for usr/lib/menu/kdebase-basedir
+msgid "PowerControl"
+msgstr "Control de l'alimentació"
+
+#. Menu entry for usr/lib/menu/kdebase-basedir
+msgid "WebBrowsing"
+msgstr "Navegació web"
+
+#. Menu entry for usr/lib/menu/kdebase-bell
+msgid "System Bell"
+msgstr "Timbre del sistema"
+
+#. Menu description for usr/lib/menu/kdebase-bell
+msgid "System Bell Configuration"
+msgstr "Configuració del timbre del sistema"
+
+#. Menu entry for usr/lib/menu/kdebase-cache
+msgid "Cache"
+msgstr "Memòria cau"
+
+#. Menu description for usr/lib/menu/kdebase-cache
+msgid "Configure the cache settings here"
+msgstr "Configura els paràmetres de la memòria cau"
+
+#. Menu entry for usr/lib/menu/kdebase-clock
+msgid "Date & Time"
+msgstr "Data i hora"
+
+#. Menu description for usr/lib/menu/kdebase-clock
+msgid "Date and time settings"
+msgstr "Configuració de la data i l'hora"
+
+#. Menu entry for usr/lib/menu/kdebase-colors
+msgid "Colors"
+msgstr "Colors"
+
+#. Menu description for usr/lib/menu/kdebase-colors
+msgid "Color settings"
+msgstr "Configuració del color"
+
+#. Menu entry for usr/lib/menu/kdebase-cookies
+msgid "Cookies"
+msgstr "Galetes"
+
+#. Menu description for usr/lib/menu/kdebase-cookies
+msgid "You can configure your Cookie configuration here"
+msgstr "Aquí podeu canviar la configuració de les galetes"
+
+#. Menu entry for usr/lib/menu/kdebase-crypto
+msgid "Crypto"
+msgstr "Crypto"
+
+#. Menu description for usr/lib/menu/kdebase-crypto
+msgid "Configure SSL, manage certificates, and other cryptography settings"
+msgstr ""
+"Configura l'SSL, gestiona els certificats i d'altres paràmetres de "
+"criptografia"
+
+#. Menu entry for usr/lib/menu/kdebase-desktop
+msgid "Desktop"
+msgstr "Escriptori"
+
+#. Menu description for usr/lib/menu/kdebase-desktop
+msgid "You can customize the desktop here"
+msgstr "Aquí podeu personalitzar l'escriptori"
+
+#. Menu entry for usr/lib/menu/kdebase-devices
+msgid "Devices"
+msgstr "Dispositius"
+
+#. Menu description for usr/lib/menu/kdebase-devices
+msgid "Attached devices information"
+msgstr "Informació dels dispositius connectats"
+
+#. Menu entry for usr/lib/menu/kdebase-dma
+msgid "DMA-Channels"
+msgstr "Canals DMA"
+
+#. Menu description for usr/lib/menu/kdebase-dma
+msgid "DMA information"
+msgstr "Informació de DMA"
+
+#. Menu entry for usr/lib/menu/kdebase-ebrowsing
+msgid "Enhanced Browsing"
+msgstr "Navegació millorada"
+
+#. Menu description for usr/lib/menu/kdebase-ebrowsing
+msgid "You can configure Enhanced Browsing here"
+msgstr "Aquí podeu configurar la navegació millorada"
+
+#. Menu entry for usr/lib/menu/kdebase-email
+msgid "Email"
+msgstr "Correu electrònic"
+
+#. Menu description for usr/lib/menu/kdebase-email
+msgid "Configure your identity, email addresses, mail servers, etc."
+msgstr ""
+"Configureu la vostra identitat, adreces de correu, servidors de correu, etc."
+
+#. Menu entry for usr/lib/menu/kdebase-energy
+msgid "Energy"
+msgstr "Energia"
+
+#. Menu description for usr/lib/menu/kdebase-energy
+msgid "General energy settings"
+msgstr "Paràmetres generals d'energia"
+
+#. Menu entry for usr/lib/menu/kdebase-filetypes
+msgid "File Associations"
+msgstr "Associacions de fitxers"
+
+#. Menu description for usr/lib/menu/kdebase-filetypes
+msgid "File Associations Configuration"
+msgstr "Configuració de les associacions de fitxers"
+
+#. Menu entry for usr/lib/menu/kdebase-fonts
+msgid "Fonts"
+msgstr "Tipus de lletra"
+
+#. Menu description for usr/lib/menu/kdebase-fonts
+msgid "Font settings"
+msgstr "Configuració dels tipus de lletra"
+
+#. Menu entry for usr/lib/menu/kdebase-home
+msgid "Home"
+msgstr "Inici"
+
+#. Menu entry for usr/lib/menu/kdebase-icons
+msgid "Icons"
+msgstr "Icones"
+
+#. Menu description for usr/lib/menu/kdebase-icons
+msgid "Customize KDE Icons"
+msgstr "Personalitza les icones del KDE"
+
+#. Menu entry for usr/lib/menu/kdebase-interrupts
+msgid "Interrupts"
+msgstr "Interrupcions"
+
+#. Menu description for usr/lib/menu/kdebase-interrupts
+msgid "Interrupt information"
+msgstr "Informació de les interrupcions"
+
+#. Menu entry for usr/lib/menu/kdebase-ioports
+msgid "IO-Ports"
+msgstr "Ports E/S"
+
+#. Menu description for usr/lib/menu/kdebase-ioports
+msgid "IO-port information"
+msgstr "Informació dels ports E/S"
+
+#. Menu entry for usr/lib/menu/kdebase-ioslaveinfo
+msgid "Protocols"
+msgstr "Protocols"
+
+#. Menu description for usr/lib/menu/kdebase-ioslaveinfo
+msgid "Information about the available protocols"
+msgstr "Informació dels protocols disponibles"
+
+#. Menu entry for usr/lib/menu/kdebase-kaddressbook
+msgid "KAddressBook"
+msgstr "KAddressBook"
+
+#. Menu entry for usr/lib/menu/kdebase-kate
+msgid "Kate"
+msgstr "Kate"
+
+#. Menu description for usr/lib/menu/kdebase-kcmaccess
+msgid "Improved accessibility for disabled persons"
+msgstr "Accessibilitat millorada per a persones discapacitades"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmcss
+msgid "Stylesheets"
+msgstr "Fulls d'estil"
+
+#. Menu description for usr/lib/menu/kdebase-kcmcss
+msgid "Configure the stylesheets used to render HTML"
+msgstr "Configureu els fulls d'estil per a la interpretació de l'HTML"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmfontinst
+msgid "Font Installer"
+msgstr "Instal·lador de fonts"
+
+#. Menu description for usr/lib/menu/kdebase-kcmfontinst
+msgid "Install & preview fonts"
+msgstr "Instal·la i previsualitza tipus de lletra"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmkonq
+msgid "File Manager"
+msgstr "Gestor de fitxers"
+
+#. Menu description for usr/lib/menu/kdebase-kcmkonq
+msgid "You can configure the look and feel of the Konqueror here"
+msgstr "Aquí podeu configurar l'aparença i el comportament del Konqueror"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmkonsole
+msgid "Konsole"
+msgstr "Konsole"
+
+#. Menu description for usr/lib/menu/kdebase-kcmkonsole
+msgid "Konsole configuration module"
+msgstr "Mòdul de configuració del Konsole"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmlaunch
+msgid "Launch Feedback"
+msgstr "Resposta a la càrrega"
+
+#. Menu description for usr/lib/menu/kdebase-kcmlaunch
+msgid "Choose application-launch feedback style"
+msgstr "Tria un estil de resposta per a la càrrega d'aplicacions"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmnotify
+msgid "System Notifications"
+msgstr "Notificacions del sistema"
+
+#. Menu description for usr/lib/menu/kdebase-kcmnotify
+msgid "System Notification Configuration"
+msgstr "Configuració de les notificacions del sistema"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmsmserver
+msgid "Session Manager"
+msgstr "Gestor de sessió"
+
+#. Menu description for usr/lib/menu/kdebase-kcmsmserver
+msgid "You can configure the session manager here"
+msgstr "Aquí podeu configurar el gestor de sessió"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmtaskbar
+msgid "Taskbar"
+msgstr "Barra de tasques"
+
+#. Menu description for usr/lib/menu/kdebase-kcmtaskbar
+msgid "You can configure the panel taskbar here"
+msgstr "Aquí podeu configurar la barra de tasques del plafó"
+
+#. Menu entry for usr/lib/menu/kdebase-kcmusb
+msgid "USB Devices"
+msgstr "Dispositius USB"
+
+#. Menu description for usr/lib/menu/kdebase-kcmusb
+msgid "View the USB devices attached to this computer"
+msgstr "Visualitza els dispositius USB connectats a aquest ordinador"
+
+#. Menu entry for usr/lib/menu/kdebase-kcontrol
+msgid "Control Center"
+msgstr "Centre de control"
+
+#. Menu entry for usr/lib/menu/kdebase-kdeprintfax
+msgid "Send a Fax"
+msgstr "Envia un fax"
+
+#. Menu entry for usr/lib/menu/kdebase-kdm
+msgid "Login Manager"
+msgstr "Gestor d'entrada"
+
+#. Menu description for usr/lib/menu/kdebase-kdm
+msgid "All KDM settings"
+msgstr "Tot els paràmetres del KDM"
+
+#. Menu entry for usr/lib/menu/kdebase-keditbookmarks
+msgid "Bookmarks Editor"
+msgstr "Editor de la llista d'adreces d'interès"
+
+#. Menu description for usr/lib/menu/kdebase-keyboard
+msgid "Keyboard settings"
+msgstr "Configuració del teclat"
+
+#. Menu entry for usr/lib/menu/kdebase-keys
+msgid "Shortcuts"
+msgstr "Dreceres"
+
+#. Menu description for usr/lib/menu/kdebase-keys
+msgid "Configuration of keybindings"
+msgstr "Configuració de les assignacions de les tecles"
+
+#. Menu entry for usr/lib/menu/kdebase-kfmclient
+msgid "Konqueror"
+msgstr "Konqueror"
+
+#. Menu tree branch (found in usr/lib/menu/kdebase-kfmclient_html)
+msgid "Use the Internet"
+msgstr "Utilitzeu Internet"
+
+#. Menu entry for usr/lib/menu/kdebase-kjobviewer
+msgid "Print Jobs"
+msgstr "Tasques d'impressió"
+
+#. Menu entry for usr/lib/menu/kdebase-klipper
+msgid "Klipper"
+msgstr "Klipper"
+
+#. Menu entry for usr/lib/menu/kdebase-kmenuedit
+msgid "Menu Editor"
+msgstr "Editor del menú"
+
+#. Menu entry for usr/lib/menu/kdebase-konqbrowser
+msgid "Konqueror Web Browser"
+msgstr "Navegador web Konqueror"
+
+#. Menu entry for usr/lib/menu/kdebase-konqhtml
+msgid "Konqueror Browser"
+msgstr "Navegador Konqueror"
+
+#. Menu description for usr/lib/menu/kdebase-konqhtml
+msgid "Configure the look and feel of the Internet Browser called Konqueror"
+msgstr ""
+"Configura l'aparença i el comportament del navegador d'Internet Konqueror"
+
+#. Menu entry for usr/lib/menu/kdebase-konquerorsu
+msgid "File Manager - Super User Mode"
+msgstr "Gestor de fitxers - Mode SuperUsuari"
+
+#. Menu entry for usr/lib/menu/kdebase-konsolesu
+msgid "Konsole - Super User Mode"
+msgstr "Konsole - Mode SuperUsuari"
+
+#. Menu entry for usr/lib/menu/kdebase-kpager
+msgid "KPager"
+msgstr "KPager"
+
+#. Menu entry for usr/lib/menu/kdebase-kpersonalizer
+msgid "Desktop Settings Wizard"
+msgstr "Auxiliar per a la configuració de l'escriptori"
+
+#. Menu entry for usr/lib/menu/kdebase-ksysguard
+msgid "KDE System Guard"
+msgstr "Vigilant del sistema del KDE"
+
+#. Menu entry for usr/lib/menu/kdebase-kthememgr
+msgid "Theme Manager"
+msgstr "Gestor de temes"
+
+#. Menu description for usr/lib/menu/kdebase-kthememgr
+msgid "Manager for Desktop Themes"
+msgstr "Gestor per als temes d'escriptori"
+
+#. Menu entry for usr/lib/menu/kdebase-ktip
+msgid "Kandalf's Tips"
+msgstr "Consells d'en Kandalf"
+
+#. Menu entry for usr/lib/menu/kdebase-kwindecoration
+msgid "Window Decoration"
+msgstr "Decoració de les finestres"
+
+#. Menu description for usr/lib/menu/kdebase-kwindecoration
+msgid "Window border theme"
+msgstr "Tema del contorn de les finestres"
+
+#. Menu entry for usr/lib/menu/kdebase-kwinoptions
+msgid "Window Behavior"
+msgstr "Comportament de les finestres"
+
+#. Menu entry for usr/lib/menu/kdebase-kwrite
+msgid "KWrite"
+msgstr "KWrite"
+
+#. Menu entry for usr/lib/menu/kdebase-language
+msgid "Country & Language"
+msgstr "País i idioma"
+
+#. Menu description for usr/lib/menu/kdebase-language
+msgid "Language, numeric, and time settings for your particular region"
+msgstr "Paràmetres d'idioma, numèrics i d'hora per al vostre país"
+
+#. Menu entry for usr/lib/menu/kdebase-memory
+msgid "Memory"
+msgstr "Memòria"
+
+#. Menu description for usr/lib/menu/kdebase-memory
+msgid "Memory information"
+msgstr "Informació de la memòria"
+
+#. Menu entry for usr/lib/menu/kdebase-midi
+msgid "Midi"
+msgstr "Midi"
+
+#. Menu description for usr/lib/menu/kdebase-midi
+msgid "Midi Configuration"
+msgstr "Configuració de midi"
+
+#. Menu description for usr/lib/menu/kdebase-mouse
+msgid "Mouse settings"
+msgstr "Configuració del ratolí"
+
+#. Menu entry for usr/lib/menu/kdebase-netpref
+msgid "Preferences"
+msgstr "Preferències"
+
+#. Menu description for usr/lib/menu/kdebase-netpref
+msgid "Configure generic network preferences, like timeout values"
+msgstr ""
+"Configura les preferències genèriques de xarxa, com ara els temps màxims "
+"d'espera"
+
+#. Menu entry for usr/lib/menu/kdebase-nic
+msgid "Network interfaces"
+msgstr "Interfícies de xarxa"
+
+#. Menu description for usr/lib/menu/kdebase-nic
+msgid "Network interface information"
+msgstr "Informació de les interfícies de xarxa"
+
+#. Menu description for usr/lib/menu/kdebase-panel
+msgid "You can configure the appearance of the panel here"
+msgstr "Aquí podeu configurar l'aparença del plafó"
+
+#. Menu entry for usr/lib/menu/kdebase-partitions
+msgid "Partitions"
+msgstr "Particions"
+
+#. Menu description for usr/lib/menu/kdebase-partitions
+msgid "Partition information"
+msgstr "Informació de les particions"
+
+#. Menu entry for usr/lib/menu/kdebase-passwords
+msgid "Passwords"
+msgstr "Contrasenyes"
+
+#. Menu description for usr/lib/menu/kdebase-passwords
+msgid "Password settings"
+msgstr "Configuració de la contrasenya"
+
+#. Menu entry for usr/lib/menu/kdebase-pci
+msgid "PCI"
+msgstr "PCI"
+
+#. Menu description for usr/lib/menu/kdebase-pci
+msgid "PCI information"
+msgstr "Informació del PCI"
+
+#. Menu entry for usr/lib/menu/kdebase-printmgr
+msgid "Printing Manager"
+msgstr "Gestor d'impressió"
+
+#. Menu description for usr/lib/menu/kdebase-printmgr
+msgid "Printing system configuration (printers, jobs, classes, ...)"
+msgstr ""
+"Configuració del sistema d'impressió (impressores, tasques, classes...)"
+
+#. Menu entry for usr/lib/menu/kdebase-processor
+msgid "Processor"
+msgstr "Processador"
+
+#. Menu description for usr/lib/menu/kdebase-processor
+msgid "Processor information"
+msgstr "Informació del processador"
+
+#. Menu entry for usr/lib/menu/kdebase-proxy
+msgid "Proxy"
+msgstr "Servidor intermediari"
+
+#. Menu description for usr/lib/menu/kdebase-proxy
+msgid "Configure Proxy Servers"
+msgstr "Configureu els servidors intermediaris (proxies)"
+
+#. Menu entry for usr/lib/menu/kdebase-screensaver
+msgid "Screensaver"
+msgstr "Estalvi de pantalla"
+
+#. Menu description for usr/lib/menu/kdebase-screensaver
+msgid "Screensaver settings"
+msgstr "Paràmetres de l'estalvi de pantalla"
+
+#. Menu entry for usr/lib/menu/kdebase-scsi
+msgid "SCSI"
+msgstr "SCSI"
+
+#. Menu description for usr/lib/menu/kdebase-scsi
+msgid "SCSI information"
+msgstr "Informació d'SCSI"
+
+#. Menu entry for usr/lib/menu/kdebase-smb
+msgid "Windows Shares"
+msgstr "Directoris compartits de Windows"
+
+#. Menu description for usr/lib/menu/kdebase-smb
+msgid "Use to configure which windows (SMB) filesystems you can browse"
+msgstr ""
+"Empreu-lo per configurar quins sistemes de fitxers Windows (SMB) podeu "
+"explorar"
+
+#. Menu entry for usr/lib/menu/kdebase-smbstatus
+msgid "Samba Status"
+msgstr "Estat de Samba"
+
+#. Menu description for usr/lib/menu/kdebase-smbstatus
+msgid "Samba status monitor"
+msgstr "Monitor de l'estat de Samba"
+
+#. Menu entry for usr/lib/menu/kdebase-socks
+msgid "SOCKS"
+msgstr "SOCKS"
+
+#. Menu description for usr/lib/menu/kdebase-socks
+msgid "Configure SOCKS support"
+msgstr "Configura el suport per a SOCKS"
+
+#. Menu description for usr/lib/menu/kdebase-sound
+msgid "Sound information"
+msgstr "Informació del so"
+
+#. Menu entry for usr/lib/menu/kdebase-spellchecking
+msgid "Spell Checking"
+msgstr "Verificació d'ortografia"
+
+#. Menu description for usr/lib/menu/kdebase-spellchecking
+msgid "Spell Checking Configuration"
+msgstr "Configuració de la verificació d'ortografia"
+
+#. Menu entry for usr/lib/menu/kdebase-style
+msgid "Style"
+msgstr "Estil"
+
+#. Menu description for usr/lib/menu/kdebase-style
+msgid ""
+"Allows the manipulation of widget behavior and changing the Style for KDE"
+msgstr ""
+"Permet la manipulació del comportament dels ginys i canviar l'estil del KDE"
+
+#. Menu entry for usr/lib/menu/kdebase-useragent
+msgid "User Agent"
+msgstr "Agent d'usuari"
+
+#. Menu description for usr/lib/menu/kdebase-useragent
+msgid "You can control what your Browser's \"User Agent\" is reported as here"
+msgstr ""
+"Aquí podeu controlar què envia el vostre navegador en el camp \"User Agent\""
+
+#. Menu entry for usr/lib/menu/kdebase-virtualdesktops
+msgid "Virtual Desktops"
+msgstr "Escriptoris virtuals"
+
+#. Menu description for usr/lib/menu/kdebase-virtualdesktops
+msgid "Configure desktop number and names"
+msgstr "Configureu el nombre d'escriptoris i els seus noms"
+
+#. Menu entry for usr/lib/menu/kdebase-xserver
+msgid "X-Server"
+msgstr "Servidor X"
+
+#. Menu description for usr/lib/menu/kdebase-xserver
+msgid "X-Server information"
+msgstr "Informació del servidor X"
+
+#. Menu entry for usr/lib/menu/kdebase-nsplugin
+msgid "Netscape Plugins"
+msgstr "Connectors del Netscape"
+
+#. Menu description for usr/lib/menu/kdebase-nsplugin
+msgid "Netscape Plugin Configuration"
+msgstr "Configuració dels connectors Netscape (plugins)"
+
+#. Menu entry for usr/lib/menu/kdeedu-keduca
+msgid "KEduca"
+msgstr "KEduca"
+
+#. Menu tree branch (found in usr/lib/menu/kdeedu-keduca)
+msgid "Edutainment"
+msgstr "Entreteniments educatius"
+
+#. Menu entry for usr/lib/menu/kdeedu-kgeo
+msgid "KGeo"
+msgstr "KGeo"
+
+#. Menu entry for usr/lib/menu/kdeedu-klettres
+msgid "KLettres"
+msgstr "KLettres"
+
+#. Menu entry for usr/lib/menu/kdeedu-kmessedwords
+msgid "KMessedWords"
+msgstr "KMessedWords"
+
+#. Menu entry for usr/lib/menu/kdeedu-kstars
+msgid "KStars"
+msgstr "KStars"
+
+#. Menu entry for usr/lib/menu/kdeedu-ktouch
+msgid "KTouch"
+msgstr "KTouch"
+
+#. Menu entry for usr/lib/menu/kdeedu-kvoctrain
+msgid "KVocTrain"
+msgstr "KVocTrain"
+
+#. Menu entry for usr/lib/menu/kdegames-kasteroids
+msgid "KAsteroids"
+msgstr "KAsteroids"
+
+#. Menu entry for usr/lib/menu/kdegames-katomic
+msgid "KAtomic"
+msgstr "KAtomic"
+
+#. Menu entry for usr/lib/menu/kdegames-kbackgammon
+msgid "KBackgammon"
+msgstr "KBackgammon"
+
+#. Menu entry for usr/lib/menu/kdegames-kbattleship
+msgid "KBattleship"
+msgstr "KBattleship"
+
+#. Menu entry for usr/lib/menu/kdegames-kblackbox
+msgid "KBlackBox"
+msgstr "KBlackBox"
+
+#. Menu entry for usr/lib/menu/kdegames-kbounce
+msgid "KBounce"
+msgstr "KBounce"
+
+#. Menu entry for usr/lib/menu/kdegames-kenolaba
+msgid "Kenolaba"
+msgstr "Kenolaba"
+
+#. Menu entry for usr/lib/menu/kdegames-kfouleggs
+msgid "KFoulEggs"
+msgstr "KFoulEggs"
+
+#. Menu entry for usr/lib/menu/kdegames-kjumpingcube
+msgid "KJumpingCube"
+msgstr "KJumpingCube"
+
+#. Menu entry for usr/lib/menu/kdegames-klines
+msgid "Kolor Lines"
+msgstr "Kolor Lines"
+
+#. Menu entry for usr/lib/menu/kdegames-kmahjongg
+msgid "KMahjongg"
+msgstr "KMahjongg"
+
+#. Menu entry for usr/lib/menu/kdegames-kmines
+msgid "KMines"
+msgstr "KMines"
+
+#. Menu entry for usr/lib/menu/kdegames-konquest
+msgid "Konquest"
+msgstr "Konquest"
+
+#. Menu entry for usr/lib/menu/kdegames-kpat
+msgid "Patience"
+msgstr "Paciència"
+
+#. Menu entry for usr/lib/menu/kdegames-kpoker
+msgid "KPoker"
+msgstr "KPoker"
+
+#. Menu entry for usr/lib/menu/kdegames-kreversi
+msgid "KReversi"
+msgstr "KReversi"
+
+#. Menu entry for usr/lib/menu/kdegames-ksame
+msgid "SameGame"
+msgstr "SameGame"
+
+#. Menu entry for usr/lib/menu/kdegames-kshisen
+msgid "Shisen-Sho"
+msgstr "Shisen-Sho"
+
+#. Menu entry for usr/lib/menu/kdegames-ksirtet
+msgid "KSirtet"
+msgstr "KSirtet"
+
+#. Menu entry for usr/lib/menu/kdegames-ksmiletris
+msgid "KSmileTris"
+msgstr "KSmileTris"
+
+#. Menu entry for usr/lib/menu/kdegames-ksnake
+msgid "KSnakeRace"
+msgstr "KSnakeRace"
+
+#. Menu entry for usr/lib/menu/kdegames-ksokoban
+msgid "KSokoban"
+msgstr "KSokoban"
+
+#. Menu entry for usr/lib/menu/kdegames-kspaceduel
+msgid "KSpaceDuel"
+msgstr "KSpaceDuel"
+
+#. Menu entry for usr/lib/menu/kdegames-ktron
+msgid "KTron"
+msgstr "KTron"
+
+#. Menu entry for usr/lib/menu/kdegames-ktuberling
+msgid "Potato Guy"
+msgstr "Mr Potato"
+
+#. Menu entry for usr/lib/menu/kdegames-kwin4
+msgid "KWin4"
+msgstr "KWin4"
+
+#. Menu entry for usr/lib/menu/kdegames-lskat
+msgid "Lieutnant Skat"
+msgstr "Tinent Skat"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kamera
+msgid "Digital Camera"
+msgstr "Càmera digital"
+
+#. Menu description for usr/lib/menu/kdegraphics-kamera
+msgid "Configure Kamera"
+msgstr "Configureu els paràmetres del Kamera"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kcolorchooser
+msgid "KColorChooser"
+msgstr "KColorChooser"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kcoloredit
+msgid "KColorEdit"
+msgstr "KColorEdit"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kdvi
+msgid "KDVI"
+msgstr "KDVI"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kfax
+msgid "KFax"
+msgstr "KFax"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kfract
+msgid "KFract"
+msgstr "KFract"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kghostview
+msgid "KGhostView"
+msgstr "KGhostView"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kiconedit
+msgid "KIconEdit"
+msgstr "KIconEdit"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kooka
+msgid "Kooka"
+msgstr "Kooka"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kpaint
+msgid "KPaint"
+msgstr "KPaint"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kruler
+msgid "KRuler"
+msgstr "KRuler"
+
+#. Menu entry for usr/lib/menu/kdegraphics-ksnapshot
+msgid "KSnapshot"
+msgstr "KSnapshot"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kuickshow
+msgid "Kuickshow"
+msgstr "Kuickshow"
+
+#. Menu entry for usr/lib/menu/kdegraphics-kview
+msgid "KView"
+msgstr "KView"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-artsbuilder
+msgid "aRts Builder"
+msgstr "aRts Builder"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-artscontrol
+msgid "aRts Control Tool"
+msgstr "Eina de control d'aRts"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-kaboodle
+msgid "Kaboodle"
+msgstr "Kaboodle"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-kmid
+msgid "KMid"
+msgstr "KMid"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-kmidi
+msgid "KMidi"
+msgstr "KMidi"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-kmix
+msgid "KMix"
+msgstr "KMix"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-kmixcfg
+msgid "Mixer"
+msgstr "Mesclador de so"
+
+#. Menu description for usr/lib/menu/kdemultimedia-kmixcfg
+msgid "Soundcard mixer control"
+msgstr "Control del mesclador de la targeta de so"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-kscd
+msgid "KsCD"
+msgstr "KsCD"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-ktimidity
+msgid "TiMidity Synth"
+msgstr "TiMidity Synth"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-noatun
+msgid "Noatun"
+msgstr "Noatun"
+
+#. Menu entry for usr/lib/menu/kdemultimedia-aktion
+msgid "aKtion!"
+msgstr "aKtion!"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kcmktalkd
+msgid "Talk Configuration"
+msgstr "Configuració del Talk"
+
+#. Menu description for usr/lib/menu/kdenetwork-kcmktalkd
+msgid "Talk daemon configuration"
+msgstr "Configuració del dimoni talk"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kcmkxmlrpcd
+msgid "XML RPC Daemon"
+msgstr "Dimoni RPC XML"
+
+#. Menu description for usr/lib/menu/kdenetwork-kcmkxmlrpcd
+msgid "XML RPC daemon configuration module"
+msgstr "Mòdul configuració del dimoni RPC XML"
+
+#. Menu entry for usr/lib/menu/krozat
+msgid "Mandrake Slide Show"
+msgstr "Visualitzador de diapositives de Mandrake"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kdict
+msgid "Kdict"
+msgstr "Kdict"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kit
+msgid "Kit"
+msgstr "Kit"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kmail
+msgid "KMail"
+msgstr "KMail"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kmailcvt
+msgid "KMail/KAB Import Tool"
+msgstr "Eina d'importació del KMail/KAB"
+
+#. Menu entry for usr/lib/menu/kdenetwork-knewsticker
+msgid "News Ticker"
+msgstr "Teletip de notícies"
+
+#. Menu description for usr/lib/menu/kdenetwork-knewsticker
+msgid ""
+"Configure the News Ticker applet, manage source files and other related "
+"settings."
+msgstr ""
+"Configura la miniaplicació News Ticker, gestiona fitxers d'entrada i altres "
+"paràmetres relacionats."
+
+#. Menu entry for usr/lib/menu/kdenetwork-knewsticker-standalone
+msgid "KNewsTicker"
+msgstr "KNewsTicker"
+
+#. Menu entry for usr/lib/menu/kdenetwork-knode
+msgid "KNode"
+msgstr "KNode"
+
+#. Menu entry for usr/lib/menu/kdenetwork-korn
+msgid "Korn"
+msgstr "Korn"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kppp
+msgid "KPPP"
+msgstr "KPPP"
+
+#. Menu entry for usr/lib/menu/kdenetwork-kppplogview
+msgid "KPPP - Log Viewer"
+msgstr "KPPP - Visualitzador del registre"
+
+#. Menu entry for usr/lib/menu/kdenetwork-ksirc
+msgid "KSirc"
+msgstr "KSirc"
+
+#. Menu entry for usr/lib/menu/kdenetwork-lanbrowser
+msgid "LAN Browsing"
+msgstr "Navegació de la xarxa local"
+
+#. Menu description for usr/lib/menu/kdenetwork-lanbrowser
+msgid "Setup lisa, reslisa and the ioslaves"
+msgstr "Configureu lisa, reslisa i els ioslaves"
+
+#. Menu entry for usr/lib/menu/kdepim-alarmdaemonctrl
+msgid "Alarm Daemon"
+msgstr "Dimoni d'alarma"
+
+#. Menu description for usr/lib/menu/kdepim-alarmdaemonctrl
+msgid "Alarm Daemon Settings"
+msgstr "Paràmetres del dimoni d'alarma"
+
+#. Menu entry for usr/lib/menu/kdepim-kalarm
+msgid "KAlarm"
+msgstr "KAlarm"
+
+#. Menu entry for usr/lib/menu/kdepim-kandy
+msgid "Kandy"
+msgstr "Kandy"
+
+#. Menu tree branch (found in usr/lib/menu/kdepim-kandy)
+msgid "PDA"
+msgstr "PDA"
+
+#. Menu entry for usr/lib/menu/kdepim-karm
+msgid "KArm"
+msgstr "KArm"
+
+#. Menu entry for usr/lib/menu/kdepim-knotes
+msgid "KNotes"
+msgstr "KNotes"
+
+#. Menu entry for usr/lib/menu/kdepim-korganizer
+msgid "KOrganizer"
+msgstr "KOrganizer"
+
+#. Menu description for usr/lib/menu/kdepim-korganizer
+msgid "Calendar and Scheduling Program"
+msgstr "Un programa de calendari i planificació"
+
+#. Menu entry for usr/lib/menu/kdepim-kpilot
+msgid "KPilot"
+msgstr "KPilot"
+
+#. Menu entry for usr/lib/menu/kdepim-kpilotdaemon
+msgid "KPilotDaemon"
+msgstr "KPilotDaemon"
+
+#. Menu entry for usr/lib/menu/kdesdk-catalogmanager
+msgid "KBabel - Catalog Manager"
+msgstr "KBabel - Gestor de catàlegs"
+
+#. Menu entry for usr/lib/menu/kdesdk-cervisia
+msgid "Cervisia"
+msgstr "Cervisia"
+
+#. Menu entry for usr/lib/menu/kdesdk-kbabel
+msgid "KBabel"
+msgstr "KBabel"
+
+#. Menu entry for usr/lib/menu/kdesdk-kbabeldict
+msgid "KBabel - Dictionary"
+msgstr "KBabel - Diccionari"
+
+#. Menu entry for usr/lib/menu/kdesdk-kbugbuster
+msgid "KBugBuster"
+msgstr "KBugBuster"
+
+#. Menu entry for usr/lib/menu/kdesdk-kompare
+msgid "Kompare"
+msgstr "Kompare"
+
+#. Menu entry for usr/lib/menu/kdetoys-amor
+msgid "AMOR"
+msgstr "AMOR"
+
+#. Menu entry for usr/lib/menu/kdetoys-kaphorism
+msgid "K Aphorisms"
+msgstr "Aforismes"
+
+#. Menu entry for usr/lib/menu/kdetoys-kmoon
+msgid "MoonPhase"
+msgstr "Fase lunar"
+
+#. Menu entry for usr/lib/menu/kdetoys-kodo
+msgid "Mouspedometa"
+msgstr "Ratolímetre"
+
+#. Menu entry for usr/lib/menu/kdetoys-kteatime
+msgid "The Tea Cooker"
+msgstr "El cuiner de te"
+
+#. Menu entry for usr/lib/menu/kdetoys-ktux
+msgid "Tux"
+msgstr "Tux"
+
+#. Menu entry for usr/lib/menu/kdetoys-kwordclock
+msgid "World Clock"
+msgstr "Rellotge mundial"
+
+#. Menu entry for usr/lib/menu/kdeutils-ark
+msgid "Ark"
+msgstr "Ark"
+
+#. Menu entry for usr/lib/menu/kdeutils-battery
+msgid "Battery Monitor"
+msgstr "Monitor de la bateria"
+
+#. Menu entry for usr/lib/menu/kdeutils-bwarning
+msgid "Low Battery Warning"
+msgstr "Avís de bateria baixa"
+
+#. Menu entry for usr/lib/menu/kdeutils-cwarning
+msgid "Low Battery Critical"
+msgstr "Bateria baixa en estat crític"
+
+#. Menu entry for usr/lib/menu/kdeutils-kcalc
+msgid "KCalc"
+msgstr "KCalc"
+
+#. Menu entry for usr/lib/menu/kdeutils-kcharselect
+msgid "KCharSelect"
+msgstr "KCharSelect"
+
+#. Menu entry for usr/lib/menu/kdeutils-kcmdf
+msgid "Block Devices"
+msgstr "Dispositius de blocs"
+
+#. Menu description for usr/lib/menu/kdeutils-kcmdf
+msgid "Shows the disk usage of the mounted devices"
+msgstr "Mostra l'ús de disc dels dispositius muntats"
+
+#. Menu entry for usr/lib/menu/kdeutils-kdepasswd
+msgid "KPasswd"
+msgstr "KPasswd"
+
+#. Menu entry for usr/lib/menu/kdeutils-kdf
+msgid "KDiskFree"
+msgstr "KDiskFree"
+
+#. Menu entry for usr/lib/menu/kdeutils-kedit
+msgid "KEdit"
+msgstr "KEdit"
+
+#. Menu entry for usr/lib/menu/kdeutils-kfloppy
+msgid "KFloppy"
+msgstr "KFloppy"
+
+#. Menu entry for usr/lib/menu/kdeutils-khexedit
+msgid "KHexEdit"
+msgstr "KHexEdit"
+
+#. Menu entry for usr/lib/menu/kdeutils-kjots
+msgid "KJots"
+msgstr "KJots"
+
+#. Menu entry for usr/lib/menu/kdeutils-kljettool
+msgid "KLJetTool"
+msgstr "KLJetTool"
+
+#. Menu entry for usr/lib/menu/kdeutils-klpq
+msgid "KLpq"
+msgstr "KLpq"
+
+#. Menu entry for usr/lib/menu/kdeutils-klprfax
+msgid "K Send a Fax"
+msgstr "Envieu un Fax"
+
+#. Menu entry for usr/lib/menu/kdeutils-ktimer
+msgid "KTimer"
+msgstr "KTimer"
+
+#. Menu entry for usr/lib/menu/kdeutils-kwikdisk
+msgid "KwikDisk"
+msgstr "KwikDisk"
+
+#. Menu entry for usr/lib/menu/kdeutils-pcmcia
+msgid "PCMCIA"
+msgstr "PCMCIA"
+
+#. Menu description for usr/lib/menu/kdeutils-pcmcia
+msgid "PCMCIA status"
+msgstr "Estat de PCMCIA"
+
+#. Menu entry for usr/lib/menu/kdeutils-power
+msgid "Laptop Power Control"
+msgstr "Control de l'alimentació d'un portàtil"
+
+#. Menu entry for usr/lib/menu/kdevelop-kdevelop
+msgid "KDevelop.2"
+msgstr "KDevelop.2"
+
+#. Menu description for usr/lib/menu/kdevelop-kdevelop
+msgid "IDE for C++/Qt/KDE"
+msgstr "IDE per a C++/Qt/KDE"
+
+#. Menu entry for usr/lib/menu/kdevelop-kdevelop-setup
+msgid "KDevelop.2 - Setup"
+msgstr "KDevelop.2 - Configuració"
+
+#. Menu entry for usr/lib/menu/koffice-karbon
+msgid "Karbon14"
+msgstr "Karbon14"
+
+#. Menu entry for usr/lib/menu/koffice-kchart
+msgid "KChart"
+msgstr "KChart"
+
+#. Menu entry for usr/lib/menu/koffice-kformula
+msgid "KFormula"
+msgstr "KFormula"
+
+#. Menu entry for usr/lib/menu/koffice-kivio
+msgid "Kivio"
+msgstr "Kivio"
+
+#. Menu entry for usr/lib/menu/koffice-kontour
+msgid "Kontour"
+msgstr "Kontour"
+
+#. Menu entry for usr/lib/menu/koffice-koshell
+msgid "KOffice Workspace"
+msgstr "Àrea de treball KOffice"
+
+#. Menu entry for usr/lib/menu/koffice-kpresenter
+msgid "KPresenter"
+msgstr "KPresenter"
+
+#. Menu entry for usr/lib/menu/koffice-kspread
+msgid "KSpread"
+msgstr "KSpread"
+
+#. Menu entry for usr/lib/menu/koffice-kugar
+msgid "Kugar"
+msgstr "Kugar"
+
+#. Menu entry for usr/lib/menu/koffice-kword
+msgid "KWord"
+msgstr "KWord"
+
+#. Menu description for usr/lib/menu/ksetiwatch
+msgid "Monitors seti@home crunching"
+msgstr "Monitora els clients del seti@home"
+
+#. Menu entry for usr/lib/menu/lbreakout2
+msgid "LBreakout 2"
+msgstr "LBreakout 2"
+
+#. Menu description for usr/lib/menu/lbreakout2
+msgid "Breakout-style arcade game"
+msgstr "Joc d'arcade de l'estil del Breakout"
+
+#. Menu entry for usr/lib/menu/lesstif-mwm
+msgid "Mwm"
+msgstr "Mwm"
+
+#. Menu description for usr/lib/menu/lesstif-mwm
+msgid "A free Motif clone"
+msgstr "Un clon lliure del Motif"
+
+#. Menu entry for usr/lib/menu/lftp
+msgid "Lftp"
+msgstr "Lftp"
+
+#. Menu description for usr/lib/menu/lftp
+msgid "Command line file transfer program"
+msgstr "Programa de transferència de fitxers per a la línia d'ordres"
+
+#. Menu entry for usr/lib/menu/libqt3-devel-assistant
+msgid "Qt3 Assistant"
+msgstr "Auxiliar Qt3"
+
+#. Menu description for usr/lib/menu/libqt3-devel-assistant
+msgid "A manual browser for Qt3 documentation"
+msgstr "Un navegador de manuals per a la documentació del Qt3"
+
+#. Menu entry for usr/lib/menu/libqt3-devel-designer
+msgid "Qt3 Designer"
+msgstr "Dissenyador de Qt3"
+
+#. Menu description for usr/lib/menu/libqt3-devel-designer
+msgid "A graphical designer/dialog builder for Qt3"
+msgstr "Un dissenyador/muntador de quadres de diàleg gràfic per a Qt3"
+
+#. Menu entry for usr/lib/menu/libqt3-devel-linguist
+msgid "Qt Linguist"
+msgstr "Lingüista de Qt"
+
+#. Menu description for usr/lib/menu/libqt3-devel-linguist
+msgid "A translation tool for Qt3"
+msgstr "Una eina de traducció per a Qt3"
+
+#. Menu description for usr/lib/menu/licq
+msgid "ICQ client"
+msgstr "Client ICQ"
+
+#. Menu entry for usr/lib/menu/links-graphic
+msgid "Links"
+msgstr "Links"
+
+#. Menu description for usr/lib/menu/links-graphic
+msgid "Lynx-like text/graphic WWW browser"
+msgstr "Navegador WWW de mode text i gràfic semblant al Lynx"
+
+#. Menu entry for usr/lib/menu/lynx
+msgid "Lynx"
+msgstr "Lynx"
+
+#. Menu description for usr/lib/menu/lynx
+msgid "A text browser"
+msgstr "Navegador en mode text"
+
+#. Menu entry for usr/lib/menu/lyx
+msgid "LyX"
+msgstr "LyX"
+
+#. Menu description for usr/lib/menu/lyx
+msgid "TeX word processor - especially good at scientific documents"
+msgstr ""
+"Processador de textos TeX - especialment adequat per a documents científics"
+
+#. Menu entry for usr/lib/menu/mandrake_doc-de
+msgid "Mandrake Linux documentation in German"
+msgstr "Documentació del Mandrake Linux en alemany"
+
+#. Menu entry for usr/lib/menu/mandrake_doc-en
+msgid "Mandrake Linux documentation in English"
+msgstr "Documentació del Mandrake Linux en anglès"
+
+#. Menu entry for usr/lib/menu/mandrake_doc-es
+msgid "Mandrake Linux documentation in Spanish"
+msgstr "Documentació del Mandrake Linux en espanyol"
+
+#. Menu entry for usr/lib/menu/mandrake_doc-fr
+msgid "Mandrake Linux documentation in French"
+msgstr "Documentació del Mandrake Linux en francès"
+
+#. Menu entry for usr/lib/menu/mandrake_doc-it
+msgid "Mandrake Linux documentation in Italian"
+msgstr "Documentació del Mandrake Linux en italià"
+
+#. Menu entry for usr/lib/menu/marbles
+msgid "Marbles"
+msgstr "Marbles"
+
+#. Menu description for usr/lib/menu/marbles
+msgid "Atomix-style arcade game"
+msgstr "Un joc d'arcade de l'estil de l'Atomix"
+
+#. Menu description for usr/lib/menu/mathplot
+msgid "Interactive function grapher"
+msgstr "Programa interactiu per representar funcions"
+
+#. Menu entry for usr/lib/menu/mdk-eazel-engine-capplet
+msgid "Crux GTK+ Theme"
+msgstr "Tema GTK+ Crux"
+
+#. Menu description for usr/lib/menu/mdk-eazel-engine-capplet
+msgid "Configuration applet for Crux GTK+ theme"
+msgstr "Miniaplicació de configuració per al tema GTK+ Crux"
+
+#. Menu entry for usr/lib/menu/mdkonline
+msgid "Discover custom services"
+msgstr "Descobriu els serveis personalitzats"
+
+#. Menu description for usr/lib/menu/mdkonline
+msgid "Wizard tool for online registered user"
+msgstr "Eina auxiliar per a usuaris registrats en línia"
+
+#. Menu entry for usr/lib/menu/menu
+msgid "Code generators"
+msgstr "Generadors de codi"
+
+#. Menu entry for usr/lib/menu/menu
+msgid "Biology"
+msgstr "Biologia"
+
+#. Menu entry for usr/lib/menu/menu
+msgid "Computer science"
+msgstr "Informàtica"
+
+#. Menu entry for usr/lib/menu/menu
+msgid "Backup"
+msgstr "Còpia de seguretat"
+
+#. Menu entry for usr/lib/menu/menu
+msgid "Chinese"
+msgstr "Xinès"
+
+#. Menu entry for usr/lib/menu/menu
+msgid "Puzzles"
+msgstr "Trencaclosques"
+
+#. Menu entry for usr/lib/menu/menudrake
+msgid "Menudrake"
+msgstr "Menudrake"
+
+#. Menu description for usr/lib/menu/menudrake
+msgid "Menu editor"
+msgstr "Editor de menús"
+
+#. Menu entry for usr/lib/menu/metacity-setup
+msgid "Metacity-Setup"
+msgstr "Configuració de Metacity"
+
+#. Menu description for usr/lib/menu/metacity-setup
+msgid "Metacity Window Manager Properties"
+msgstr "Propietats del gestor de finestres Metacity"
+
+#. Menu entry for usr/lib/menu/methane
+msgid "Super Methane Brothers"
+msgstr "Super Methane Brothers"
+
+#. Menu description for usr/lib/menu/methane
+msgid "A bubble bobble like arcade game"
+msgstr "Un joc d'arcade com el Bubble Bobble"
+
+#. Menu entry for usr/lib/menu/motv
+msgid "MoTV"
+msgstr "MoTV"
+
+#. Menu description for usr/lib/menu/motv
+msgid "A Motif program for watching TV"
+msgstr "Un programa Motif per veure la TV"
+
+#. Menu entry for usr/lib/menu/mountloop
+msgid "DrakLoop"
+msgstr "DrakLoop"
+
+#. Menu description for usr/lib/menu/mountloop
+msgid "Create encrypted folder"
+msgstr "Crea una carpeta xifrada"
+
+#. Menu entry for usr/lib/menu/mozilla
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#. Menu description for usr/lib/menu/mozilla
+msgid "The free and open source web browser"
+msgstr "El navegador web lliure i de codi obert"
+
+#. Menu entry for usr/lib/menu/mozilla
+msgid "Mozilla Composer"
+msgstr "Redactor de Mozilla"
+
+#. Menu entry for usr/lib/menu/mozilla-mail
+msgid "Mozilla Messenger"
+msgstr "Missatgeria de Mozilla"
+
+#. Menu entry for usr/lib/menu/mozilla-mail
+msgid "Mozilla AddressBook"
+msgstr "Llibreta d'adreces de Mozilla"
+
+#. Menu entry for usr/lib/menu/mozilla-mail
+msgid "Mozilla News"
+msgstr "Lector de notícies de Mozilla"
+
+#. Menu entry for usr/lib/menu/mozilla-xmlterm
+msgid "Mozilla XTerm"
+msgstr "XTerm de Mozilla"
+
+#. Menu description for usr/lib/menu/mozilla-xmlterm
+msgid "XTerm implemented with Mozilla toolkit"
+msgstr "L'XTerm implementat amb el joc d'eines de Mozilla"
+
+#. Menu entry for usr/lib/menu/mp3info
+msgid "MP3 info"
+msgstr "MP3info"
+
+#. Menu description for usr/lib/menu/mp3info
+msgid "Utility for MP3 information and tag modification"
+msgstr "Utilitat per visualitzar i editar els marcadors MP3 (tags id3)"
+
+#. Menu entry for usr/lib/menu/mrproject
+msgid "Mr Project"
+msgstr "Mr Project"
+
+#. Menu description for usr/lib/menu/mrproject
+msgid "Project management tool"
+msgstr "Eina de gestió de projectes"
+
+#. Menu entry for usr/lib/menu/mtoolsfm
+msgid "MTools File Manager"
+msgstr "Gestor de fitxers MTools"
+
+#. Menu description for usr/lib/menu/mtoolsfm
+msgid ""
+"File manager to access photo memory cards in HP's PhotoSmart printers and MF "
+"devices"
+msgstr ""
+"Gestor de fitxers per accedir a les targetes de memòria per a fotos en "
+"impressores HP PhotoSmart i dispositius MF"
+
+#. Menu entry for usr/lib/menu/mures
+msgid "Mures"
+msgstr "Mures"
+
+#. Menu description for usr/lib/menu/mures
+msgid "Clone of Sega's Chu Chu Rocket"
+msgstr "Clon del Chu Chu Rocket de Sega"
+
+#. Menu entry for usr/lib/menu/mutt
+msgid "Mutt"
+msgstr "Mutt"
+
+#. Menu description for usr/lib/menu/mutt
+msgid "Mutt - A text mode mail user agent"
+msgstr "Mutt - Un agent d'usuari de correu electrònic en mode text"
+
+#. Menu entry for usr/lib/menu/nautilus
+msgid "Nautilus"
+msgstr "Nautilus"
+
+#. Menu description for usr/lib/menu/nautilus
+msgid "Nautilus - GNOME file manager"
+msgstr "Nautilus - Gestor de fitxers del GNOME"
+
+#. Menu entry for usr/lib/menu/ncftp
+msgid "NCFtp"
+msgstr "NCFtp"
+
+#. Menu description for usr/lib/menu/ncftp
+msgid "An improved FTP client."
+msgstr "Client FTP millorat"
+
+#. Menu entry for usr/lib/menu/nedit
+msgid "Nedit"
+msgstr "Nedit"
+
+#. Menu description for usr/lib/menu/nedit
+msgid "A text editor based on lestif"
+msgstr "Un editor de text basat en lestif"
+
+#. Menu description for usr/lib/menu/nmap-frontend
+msgid "A frontend for the nmap port scanner"
+msgstr "Frontal per a l'escàner de ports nmap"
+
+#. Menu entry for usr/lib/menu/pan
+msgid "Pan"
+msgstr "Pan"
+
+#. Menu description for usr/lib/menu/pan
+msgid "Pan Usenet Newsreader for Gnome"
+msgstr "Pan - Lector de notícies de Usenet per a Gnome"
+
+#. Menu description for usr/lib/menu/postgresql-tk
+msgid "PostgreSQL Tcl/Tk front-end"
+msgstr "Frontal Tcl/Tk per a PostgreSQL"
+
+#. Menu entry for usr/lib/menu/powermanga
+msgid "Power Manga"
+msgstr "Power Manga"
+
+#. Menu description for usr/lib/menu/powermanga
+msgid "Shoot them up with 3d graphics"
+msgstr "Joc de disparar amb gràfics 3D"
+
+#. Menu entry for usr/lib/menu/printer-filters
+msgid "Install OKI 4w or compatible"
+msgstr "Instal·la OKI 4w o compatible"
+
+#. Menu description for usr/lib/menu/printer-filters
+msgid "Install OKI 4w or compatible (this printers need an extra daemon!)"
+msgstr ""
+"Instal·la OKI 4w o compatible (aquestes impressores necessiten un dimoni "
+"extra!)"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Printer Utility Program"
+msgstr "Programa d'utilitats per a la impressora"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid ""
+"Graphical tool to set default options in many laser printers and maintenance "
+"for inkjets"
+msgstr ""
+"Eina gràfica per definir les opcions per defecte de moltes impressores làser "
+"i per al manteniment d'impressores d'injecció de tinta"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Change Cartridge in a Lexmark 5xxx or 7xxx"
+msgstr "Canvia el cartutx de la Lexmark 5xxx o 7xxx"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid ""
+"Tool to get the print head out to change the cartridges and to put it back "
+"afterwards"
+msgstr ""
+"Eina que desplaça el capçal d'impressió per poder canviar els cartutxos i "
+"després el torna a posar a lloc"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Command line tools for Lexmark 5xxx or 7xxx"
+msgstr "Eines de la línia d'ordres per a la Lexmark 5xxx o 7xxx"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid "Printer maintenance commands: Change cartridges, clean nozzles, ..."
+msgstr ""
+"Ordres per al manteniment de la impressora: canvi de cartutxos, neteja "
+"d'injectors..."
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Change Cartridge in a Lexmark 1xxx"
+msgstr "Canvi del cartutx d'una Lexmark 1xxx"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid "To get the print head of the printer accessible"
+msgstr "Fa accessible el capçal d'impressió de la impressora"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Park Cartridge in a Lexmark 1xxx"
+msgstr "Aparca el cartutx d'una Lexmark 1xxx"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid ""
+"To put the print head back into the corner after changing the cartridges"
+msgstr ""
+"Torna a col·locar el capçal d'impressió al seu lloc després de canviar els "
+"cartutxos"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Display printer test page (for colour adjustment)"
+msgstr ""
+"Visualitza la pàgina de prova de la impressora (per a l'ajustament del color)"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Mtink - Epson inkjet printer maintenance/ink level monitor"
+msgstr ""
+"Mtink - Monitor del nivell de tinta i manteniment d'impressores Epson "
+"d'injecció de tinta"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid ""
+"Epson inkjet printer maintenance (Head cleaning/alignment, ink level "
+"display, cartridge change, ...)"
+msgstr ""
+"Manteniment d'impressores Epson d'injecció de tinta (neteja i alineament "
+"dels capçals, visualitzador del nivell de tinta, canvi del cartutx...)"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Head alignment and nozzle cleaning pages for Z22, Z32, or Z52"
+msgstr ""
+"Pàgines per alinear els capçals i netejar els injectors per a Z22, Z32 o Z52"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid "This program needs Lexmark's printer drivers."
+msgstr "Aquest programa necessita els controladors d'impressora de Lexmark"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Adjust margins and offsets of printed pages"
+msgstr "Ajusta marges i desplaçaments de les pàgines impresses"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid ""
+"Adjust the position and the margins of the printed contents on the paper"
+msgstr "Ajusta la posició i els marges dels continguts impressos en el paper"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Calibrate colour printer (GIMP-Print CUPS drivers)"
+msgstr "Calibra la impressora de color (controladors CUPS GIMP-Print)"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid "Calibrate colour printer (GIMP-Print CUPS drivers, 'CUPS + GIMP-print')"
+msgstr ""
+"Calibra la impressora de color (controladors CUPS GIMP-Print, 'CUPS + GIMP-"
+"print')"
+
+#. Menu entry for usr/lib/menu/printer-utils
+msgid "Maintenance tool for Lexmark Z42, Z43, and Z52"
+msgstr "Eina de manteniment per a Lexmark Z42, Z43 i Z52"
+
+#. Menu description for usr/lib/menu/printer-utils
+msgid "Head alignment, nozzle cleaning, ... for Lexmark Z42, Z43, and Z52"
+msgstr ""
+"Alineament de capçals, neteja d'injectors... per a Lexmark Z42, Z43 i Z52"
+
+#. Menu entry for usr/lib/menu/pyDict
+msgid "pyDict"
+msgstr "pyDict"
+
+#. Menu description for usr/lib/menu/pyDict
+msgid "pyDict - A English/Chinese Dictionary written with python/gtk"
+msgstr "pyDict - Un diccionari Anglès/Xinès escrit amb python/gtk"
+
+#. Menu entry for usr/lib/menu/pysol
+msgid "PySOL"
+msgstr "PySOL"
+
+#. Menu description for usr/lib/menu/pysol
+msgid "All solitaire cards games"
+msgstr "Tots el jocs de cartes de solitari"
+
+#. Menu description for usr/lib/menu/qcad
+msgid "A professional CAD system"
+msgstr "Un sistema CAD professional"
+
+#. Menu entry for usr/lib/menu/quanta
+msgid "Quanta Plus"
+msgstr "Quanta Plus"
+
+#. Menu description for usr/lib/menu/quanta
+msgid "Web Development Environment"
+msgstr "Entorn de desenvolupament web"
+
+#. Menu entry for usr/lib/menu/rfbdrake
+msgid "Virtual Network Connection"
+msgstr "Connexió a xarxes virtuals (VNC)"
+
+#. Menu description for usr/lib/menu/rfbdrake
+msgid "A remote frame buffer tool"
+msgstr "Una eina per a la memòria de vídeo remota"
+
+#. Menu entry for usr/lib/menu/rocksndiamonds
+msgid "Rocks n Diamonds"
+msgstr "Rocks n Diamonds"
+
+#. Menu description for usr/lib/menu/rocksndiamonds
+msgid "A boulderdash like"
+msgstr "Un joc semblant al boulderdash"
+
+#. Menu description for usr/lib/menu/tkpppoe
+msgid "Frontend for rp-pppoe"
+msgstr "Frontal per a rp-pppoe"
+
+#. Menu description for usr/lib/menu/rpmdrake
+msgid "A graphical front end for installing packages"
+msgstr "Frontal gràfic per a la instal·lació de paquets"
+
+#. Menu description for usr/lib/menu/rpmdrake
+msgid "A graphical front end for removing packages"
+msgstr "Frontal gràfic per a la desinstal·lació paquets"
+
+#. Menu description for usr/lib/menu/rpmdrake
+msgid "A graphical front end for software updates"
+msgstr "Frontal gràfic per a actualitzacions de programari"
+
+#. Menu description for usr/lib/menu/rpmdrake
+msgid ""
+"A graphical front end to add/remove/edit sources for installing packages"
+msgstr "Frontal gràfic per afegir/esborrar/editar fonts per instal·lar paquets"
+
+#. Menu entry for usr/lib/menu/rute
+msgid "Beginners Guide to Linux"
+msgstr "Guia d'iniciació a Linux RUTE"
+
+#. Menu description for usr/lib/menu/rute
+msgid "Rute Users Tutorial and Exposition"
+msgstr "Rute Users Tutorial and Exposition"
+
+#. Menu entry for usr/lib/menu/rxvt
+msgid "RXvt"
+msgstr "RXvt"
+
+#. Menu description for usr/lib/menu/rxvt
+msgid ""
+"A version of the rxvt terminal with support for Tranditional Chinese, "
+"Simplified Chinese, Japanese and Korean."
+msgstr ""
+"Una versió del terminal rxvt amb suport per a xinès tradicional, xinès "
+"simplificat, japonès i coreà"
+
+#. Menu entry for usr/lib/menu/jrxvt
+msgid "JRXvt (JIS)"
+msgstr "JRXvt (JIS)"
+
+#. Menu description for usr/lib/menu/jrxvt
+msgid "Japanese rxvt terminal"
+msgstr "Terminal rxvt japonès"
+
+#. Menu entry for usr/lib/menu/krxvt
+msgid "KRXvt (KSC5601)"
+msgstr "KRXvt (KSC5601)"
+
+#. Menu description for usr/lib/menu/krxvt
+msgid "Korean rxvt terminal"
+msgstr "Terminal rxvt coreà"
+
+#. Menu entry for usr/lib/menu/zhrxvt
+msgid "CRXvt (Big5)"
+msgstr "CRXvt (Big5)"
+
+#. Menu description for usr/lib/menu/zhrxvt
+msgid "Traditional Chinese rxvt terminal"
+msgstr "Terminal rxvt xinès (tradicional)"
+
+#. Menu entry for usr/lib/menu/zhrxvt
+msgid "GBRXvt (GB2312)"
+msgstr "GBRXvt (GB2312)"
+
+#. Menu description for usr/lib/menu/zhrxvt
+msgid "Simplied Chinese rxvt terminal"
+msgstr "Terminal rxvt xinès (simplificat)"
+
+#. Menu entry for usr/lib/menu/samba
+msgid "Samba Configuration"
+msgstr "Configuració de Samba"
+
+#. Menu description for usr/lib/menu/samba
+msgid "The Swat Samba Administration Tool"
+msgstr "Eina d'administració de Samba Swat"
+
+#. Menu entry for usr/lib/menu/sawfish
+msgid "Sawfish"
+msgstr "Sawfish"
+
+#. Menu description for usr/lib/menu/sawfish
+msgid "Sawfish WindowManager"
+msgstr "Gestor de finestres SawFish"
+
+#. Menu entry for usr/lib/menu/screem
+msgid "Screem"
+msgstr "Screem"
+
+#. Menu description for usr/lib/menu/screem
+msgid "Website creation tool"
+msgstr "Eina de creació de llocs web"
+
+#. Menu entry for usr/lib/menu/sketch
+msgid "Sketch"
+msgstr "Sketch"
+
+#. Menu description for usr/lib/menu/sketch
+msgid "Vector-based drawing program"
+msgstr "Programa de dibuix vectorial"
+
+#. Menu entry for usr/lib/menu/slap
+msgid "SLAP - SEIKO SmartLabel Printers"
+msgstr "SLAP - Impressores SEIKO SmartLabel"
+
+#. Menu description for usr/lib/menu/slap
+msgid "Printing text in different fonts on SEIKO SmartLabel Printers"
+msgstr "Imprimeix text en diferents fonts en impressores SEIKO SmartLabel"
+
+#. Menu entry for usr/lib/menu/slrn
+msgid "Slrn"
+msgstr "Slrn"
+
+#. Menu description for usr/lib/menu/slrn
+msgid "A powerful, easy to use, threaded Internet news reader"
+msgstr "Un potent lector de notícies fàcil d'utilitzar"
+
+#. Menu entry for usr/lib/menu/smpeg-player
+msgid "Gtv Mpeg player"
+msgstr "Reproductor mpeg Gtv"
+
+#. Menu description for usr/lib/menu/smpeg-player
+msgid "Gtv Mpeg video player"
+msgstr "Reproductor de vídeo mpeg Gtv"
+
+#. Menu entry for usr/lib/menu/spruce
+msgid "Spruce"
+msgstr "Spruce"
+
+#. Menu description for usr/lib/menu/spruce
+msgid "Another email client"
+msgstr "Un altre client de correu electrònic"
+
+#. Menu description for usr/lib/menu/stardict
+msgid "stardict - An English to Chinese online dictionary"
+msgstr "stardict - Un diccionari anglès-xinès en línia"
+
+#. Menu entry for usr/lib/menu/telnet
+msgid "Telnet"
+msgstr "Telnet"
+
+#. Menu description for usr/lib/menu/telnet
+msgid "Telnet client"
+msgstr "Client telnet"
+
+#. Menu entry for usr/lib/menu/tetex-xdvi
+msgid "XDvi"
+msgstr "XDvi"
+
+#. Menu description for usr/lib/menu/tetex-xdvi
+msgid "DVI files viewer"
+msgstr "Visor de fitxers DVI"
+
+#. Menu entry for usr/lib/menu/timeconfig
+msgid "Timeconfig"
+msgstr "Timeconfig"
+
+#. Menu description for usr/lib/menu/timeconfig
+msgid "Configure Time parameters"
+msgstr "Configura els paràmetres de data i hora"
+
+#. Menu entry for usr/lib/menu/tkcvs
+msgid "TkCVS"
+msgstr "TkCVS"
+
+#. Menu description for usr/lib/menu/tkcvs
+msgid "Graphical HMI for CVS"
+msgstr "HMI en mode gràfic per al CVS"
+
+#. Menu entry for usr/lib/menu/tkcvs
+msgid "TkDiff"
+msgstr "TkDiff"
+
+#. Menu description for usr/lib/menu/tkcvs
+msgid "Graphical HMI for diff"
+msgstr "Interfície gràfica per al diff"
+
+#. Menu entry for usr/lib/menu/tkinter
+msgid "IDLE"
+msgstr "IDLE"
+
+#. Menu description for usr/lib/menu/tkinter
+msgid "IDE for Python"
+msgstr "IDE (entorn integrat de desenvolupament) per a Python"
+
+#. Menu entry for usr/lib/menu/tksysv
+msgid "tksysv"
+msgstr "tksysv"
+
+#. Menu description for usr/lib/menu/tksysv
+msgid "Edit Runlevel services"
+msgstr "Edita els serveis de Runlevel"
+
+#. Menu entry for usr/lib/menu/toppler
+msgid "Tower Toppler"
+msgstr "Tower Toppler"
+
+#. Menu description for usr/lib/menu/toppler
+msgid "Reimplementation of the old game known as Tower Toppler or Nebulous"
+msgstr "Reimplementació de l'antic joc conegut com a Tower Toppler o Nebulous"
+
+#. Menu entry for usr/lib/menu/transfugdrake
+msgid "Transfugdrake"
+msgstr "Transfugdrake"
+
+#. Menu description for usr/lib/menu/transfugdrake
+msgid "Import files from windows to Linux"
+msgstr "Importa fitxers de windows a Linux"
+
+#. Menu entry for usr/lib/menu/trophy
+msgid "Trophy"
+msgstr "Trophy"
+
+#. Menu description for usr/lib/menu/trophy
+msgid "Trophy is a 2D car racing action game for Linux."
+msgstr "Trophy és un joc de carreres en 2D per a Linux"
+
+#. Menu entry for usr/lib/menu/tuxracer
+msgid "Tuxracer"
+msgstr "Tuxracer"
+
+#. Menu description for usr/lib/menu/tuxracer
+msgid "A great racing game starring Tux"
+msgstr "Un gran joc de carreres amb en Tux"
+
+#. Menu entry for usr/lib/menu/unixODBC-gui-gtk
+msgid "GODBCConfig"
+msgstr "GODBCConfig"
+
+#. Menu entry for usr/lib/menu/unixODBC-gui-qt
+msgid "ODBCConfig"
+msgstr "ODBCConfig"
+
+#. Menu entry for usr/lib/menu/unixODBC-gui-qt
+msgid "DataManager"
+msgstr "DataManager"
+
+#. Menu entry for usr/lib/menu/unixODBC-gui-qt
+msgid "ODBCtest"
+msgstr "ODBCtest"
+
+#. Menu entry for usr/lib/menu/usbview
+msgid "UsbView"
+msgstr "UsbView"
+
+#. Menu description for usr/lib/menu/usbview
+msgid "USB viewer"
+msgstr "Visualitzador USB"
+
+#. Menu entry for usr/lib/menu/userdrake
+msgid "Userdrake"
+msgstr "Userdrake"
+
+#. Menu description for usr/lib/menu/userdrake
+msgid "Users and groups editor"
+msgstr "Editor d'usuaris i grups"
+
+#. Menu entry for usr/lib/menu/usermode
+msgid "Change Password"
+msgstr "Canvi de contrasenya"
+
+#. Menu description for usr/lib/menu/usermode
+msgid "A frontend to change user password"
+msgstr "Frontal per canviar la contrasenya d'usuari"
+
+#. Menu entry for usr/lib/menu/vim-X11
+msgid "VI editor"
+msgstr "Editor VI"
+
+#. Menu description for usr/lib/menu/vim-X11
+msgid "All-purpose text editor"
+msgstr "Editor de textos d'ús general"
+
+#. Menu entry for usr/lib/menu/wizdrake
+msgid "WizDrake"
+msgstr "WizDrake"
+
+#. Menu description for usr/lib/menu/wizdrake
+msgid "A set of configuration wizards"
+msgstr "Un conjunt d'auxiliars de configuració"
+
+#. Menu entry for usr/lib/menu/wmnet
+msgid "WMnet"
+msgstr "WMnet"
+
+#. Menu description for usr/lib/menu/wmnet
+msgid "A little X doc.app network monitor"
+msgstr "Una miniaplicació que monitoritza la xarxa"
+
+#. Menu entry for usr/lib/menu/xawtv
+msgid "XawTV"
+msgstr "XawTV"
+
+#. Menu description for usr/lib/menu/xawtv
+msgid "The X11 Video4Linux Stream Capture Viewer"
+msgstr "El visualitzador per a X11 del capturador de seqüències de Video4Linux"
+
+#. Menu entry for usr/lib/menu/xboard
+msgid "XBoard"
+msgstr "XBoard"
+
+#. Menu description for usr/lib/menu/xboard
+msgid "A chessboard game"
+msgstr "Un joc d'escacs"
+
+#. Menu entry for usr/lib/menu/xcdroast
+msgid "X-CD-Roast"
+msgstr "X-CD-Roast"
+
+#. Menu description for usr/lib/menu/xchat
+msgid "Graphical IRC client"
+msgstr "Client IRC gràfic"
+
+#. Menu entry for usr/lib/menu/xcin
+msgid "XCIN"
+msgstr "XCIN"
+
+#. Menu description for usr/lib/menu/xcin
+msgid "A X Input Method Server for Chinese"
+msgstr "Un servidor sobre X per a l'escriptura en xinès"
+
+#. Menu entry for usr/lib/menu/xcpustate
+msgid "Xcpustate"
+msgstr "Xcpustate"
+
+#. Menu description for usr/lib/menu/xcpustate
+msgid "Cpu load indicator"
+msgstr "Indicador de la càrrega de la CPU"
+
+#. Menu entry for usr/lib/menu/xdaliclock
+msgid "Xdaliclock"
+msgstr "Xdaliclock"
+
+#. Menu description for usr/lib/menu/xdaliclock
+msgid "Nice big digital clock"
+msgstr "Rellotge digital gran i bonic"
+
+#. Menu entry for usr/lib/menu/xearth
+msgid "Xearth"
+msgstr "Xearth"
+
+#. Menu description for usr/lib/menu/xearth
+msgid "Display the Earth on your desktop"
+msgstr "Mostra la Terra en l'escriptori"
+
+#. Menu entry for usr/lib/menu/xemacs
+msgid "XEmacs"
+msgstr "XEmacs"
+
+#. Menu description for usr/lib/menu/xemacs
+msgid "The XEmacs editor"
+msgstr "L'editor XEmacs"
+
+#. Menu entry for usr/lib/menu/xfig
+msgid "XFig"
+msgstr "XFig"
+
+#. Menu description for usr/lib/menu/xfig
+msgid "Vector Graphics Drawing Tool"
+msgstr "Eina de dibuix de gràfics vectorials"
+
+#. Menu entry for usr/lib/menu/xine-ui
+msgid "Xine"
+msgstr "Xine"
+
+#. Menu description for usr/lib/menu/xine-ui
+msgid "Xine Video Player"
+msgstr "Reproductor de vídeo Xine"
+
+#. Menu entry for usr/lib/menu/xkobo
+msgid "XKobo"
+msgstr "XKobo"
+
+#. Menu description for usr/lib/menu/xkobo
+msgid "Arcade video game"
+msgstr "Videojoc d'arcade"
+
+#. Menu entry for usr/lib/menu/xmms
+msgid "Xmms"
+msgstr "Xmms"
+
+#. Menu description for usr/lib/menu/xmms
+msgid "Multimedia Player"
+msgstr "Reproductor multimèdia"
+
+#. Menu entry for usr/lib/menu/xmovie
+msgid "XMovie"
+msgstr "XMovie"
+
+#. Menu description for usr/lib/menu/xmovie
+msgid "Video player"
+msgstr "Reproductor de vídeo"
+
+#. Menu entry for usr/lib/menu/xojpanel
+msgid "X Office Jet Panel"
+msgstr "Tauler de control sobre X per a Office Jet"
+
+#. Menu description for usr/lib/menu/xojpanel
+msgid ""
+"Displays the contents of the front panel LCD screen of your HP Office Jet in "
+"a window on your desktop"
+msgstr ""
+"Mostra els continguts de la pantalla LCD frontal de l'HP Office Jet en una "
+"finestra de l'escriptori"
+
+#. Menu entry for usr/lib/menu/xpat2
+msgid "XPat 2"
+msgstr "XPat 2"
+
+#. Menu description for usr/lib/menu/xpat2
+msgid "Solitaire game"
+msgstr "Joc del solitari"
+
+#. Menu entry for usr/lib/menu/xpcd
+msgid "Xpcd"
+msgstr "Xpcd"
+
+#. Menu description for usr/lib/menu/xpcd
+msgid "PhotoCD tools"
+msgstr "Eines de PhotoCD"
+
+#. Menu entry for usr/lib/menu/xpdf
+msgid "Xpdf"
+msgstr "Xpdf"
+
+#. Menu description for usr/lib/menu/xpdf
+msgid "Views PDF files"
+msgstr "Visualitza fitxers PDF"
+
+#. Menu entry for usr/lib/menu/xpp
+msgid "X Printing Panel"
+msgstr "Tauler de control d'impressió sobre X"
+
+#. Menu description for usr/lib/menu/xpp
+msgid "Frontend for easy printing with CUPS"
+msgstr "Frontal per a una impressió fàcil amb CUPS"
+
+#. Menu entry for usr/lib/menu/xsane
+msgid "XSane"
+msgstr "XSane"
+
+#. Menu description for usr/lib/menu/xsane
+msgid "Xsane is a frontend for the scanner program sane"
+msgstr "XSane és un frontal per al programa escanejador sane"
+
+#. Menu description for usr/lib/menu/xscreensaver
+msgid "Configure the settings of the screensaver"
+msgstr "Configureu els paràmetres de l'estalvi de pantalla"
+
+#. Menu entry for usr/lib/menu/xsysinfo
+msgid "Xsysinfo"
+msgstr "Xsysinfo"
+
+#. Menu description for usr/lib/menu/xsysinfo
+msgid "System information"
+msgstr "Informació del sistema"
+
+#. Menu entry for usr/lib/menu/xterm
+msgid "XTerm"
+msgstr "XTerm"
+
+#. Menu description for usr/lib/menu/xterm
+msgid "The standard terminal emulator for the X Window System"
+msgstr "L'emulador estàndard de terminal per al sistema de finestres X"
+
+#. Menu description for usr/lib/menu/xtraceroute
+msgid "Graphical OpenGL traceroute"
+msgstr "Traceroute gràfic OpenGL"
+
+#. Menu entry for usr/lib/menu/xwpick
+msgid "Xwpick"
+msgstr "Xwpick"
+
+#. Menu description for usr/lib/menu/xwpick
+msgid "X Window System screenshot grabber"
+msgstr "Capturador d'instantània del sistema de finestres X"
+
+#. Menu entry for usr/lib/menu/xxgdb
+msgid "xxgdb"
+msgstr "xxgdb"
+
+#. Menu description for usr/lib/menu/xxgdb
+msgid "xxgdb: An X Window System graphical interface for the GNU gdb debugger"
+msgstr "xxgdb: Una interfície gràfica sota X per al depurador GNU gdb"
+
+#. Menu entry for usr/lib/menu/yudit
+msgid "Yudit"
+msgstr "Yudit"
+
+#. Menu description for usr/lib/menu/yudit
+msgid "Unicode i18n Editor"
+msgstr "Editor Unicode per a la internacionalització"
+
+#. Menu description for usr/lib/menu/zapping
+msgid "A TV viewer for gnome"
+msgstr "Un visualitzador de TV per a Gnome"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Configure sound settings"
+msgstr "Configurar els paràmetres de so"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake_desk)
+msgid "Administer your system"
+msgstr "Administrar el sistema"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Configure Gnome"
+msgstr "Configurar el Gnome"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Configure KDE"
+msgstr "Configurar el KDE"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Add or remove fonts"
+msgstr "Afegir o suprimir tipus de lletra"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Format a floppy"
+msgstr "Formatar un disquet"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Manage your files"
+msgstr "Gestionar els fitxers"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Change your password"
+msgstr "Canviar la contrasenya"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Configure your printer(s)"
+msgstr "Configurar les impressores"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Configure samba"
+msgstr "Configurar samba"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Add or remove programs"
+msgstr "Afegir o suprimir programes"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Download and install Mandrake security updates"
+msgstr "Baixar i instal·lar les actualitzacions de seguretat de Mandrake"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Software installer"
+msgstr "Instal·lador de programari"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Manage users"
+msgstr "Gestionar els usuaris"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Find files"
+msgstr "Cercar fitxers"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Listen to a CD"
+msgstr "Escoltar un CD"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake_desk)
+msgid "Enjoy music & video"
+msgstr "Gaudir de música i vídeo"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Record sounds"
+msgstr "Enregistrar sons"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Rip a CD"
+msgstr "Extreure l'àudio d'un CD"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Watch videos"
+msgstr "Mirar vídeos"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Watch TV"
+msgstr "Mirar la TV"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Listen to music files"
+msgstr "Escoltar fitxers de música"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play ArmageTron, a 3D lightcycle game"
+msgstr "Jugar a l'ArmageTron, un joc en 3D de motos Lightcycle"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake_desk)
+msgid "Play games"
+msgstr "Jugar"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Frozen-Bubble"
+msgstr "Jugar al Frozen-Bubble"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Chromium, a 3D shoot them up"
+msgstr "Jugar al Chromium, un joc de disparar en 3D"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Cannon Smash, a 3D tabletennis game"
+msgstr "Jugar al Cannon Smash, un joc de ping-pong en 3D"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Freeciv, the free Civilization clone"
+msgstr "Jugar al Freeciv, el clon lliure del Civilization"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Start Freeciv server"
+msgstr "Iniciar el servidor Freeciv"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play FreeCell"
+msgstr "Jugar al FreeCell"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Gnome Mines"
+msgstr "Jugar al cercamines del Gnome"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Mahjongg"
+msgstr "Jugar al Mahjongg"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play reversi"
+msgstr "Jugar al Reversi"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play solitaire"
+msgstr "Jugar al solitari"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Abalone"
+msgstr "Jugar a l'Abalone"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play KAsteroids"
+msgstr "Jugar al KAsteroids"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Mahjongg, a smart mahjongg game"
+msgstr "Jugar al Mahjongg, un joc intel·ligent de mahjongg"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Minesweeper, a KDE replacement for xbombs"
+msgstr "Jugar al Minesweeper, el substitut del KDE per a xbombs"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Kpat, several nice card games"
+msgstr "Jugar al Kpat, diversos jocs de cartes"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Poker"
+msgstr "Jugar al pòquer"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Reversi against the computer"
+msgstr "Jugar al Reversi contra l'ordinador"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play KSirtet, a Tetris clone"
+msgstr "Jugar al KSirtel, un clon del Tetris"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Maelstrom, an asteroids game"
+msgstr "Jugar al Maelstrom, un joc d'asteroides"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Tuxracer, a great racing game starring Tux"
+msgstr "Jugar al Tuxracer, un gran joc de carreres protagonitzat per en Tux"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Play Pingus, a Lemmings clone"
+msgstr "Jugar al Pingus, un clon del Lemmings"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create Web pages"
+msgstr "Crear pàgines web"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read and send mail"
+msgstr "Llegir i enviar correu"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Browse the Web"
+msgstr "Navegar pel web"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Access Newsgroups"
+msgstr "Accedir als grups de notícies"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Connect to the Internet"
+msgstr "Connectar-se a Internet"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Chat on IRC"
+msgstr "Xatejar a l'IRC"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Chat using an ICQ instant messager client"
+msgstr "Xatejar amb un client de missatgeria instantània ICQ"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Chat using an AOL instant messager client"
+msgstr "Xatejar amb un client de missatgeria instantània AOL"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Gnome documentation"
+msgstr "Llegir la documentació del Gnome"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake_desk)
+msgid "Read documentation"
+msgstr "Llegir la documentació"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in German"
+msgstr "Llegir els documents COM ES FA en alemany"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Greek"
+msgstr "Llegir els documents COM ES FA en grec"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in English"
+msgstr "Llegir els documents COM ES FA en anglès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Spanish"
+msgstr "Llegir els documents COM ES FA en espanyol"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in French"
+msgstr "Llegir els documents COM ES FA en francès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Croatian"
+msgstr "Llegir els documents COM ES FA en croat"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Hungarian"
+msgstr "Llegir els documents COM ES FA en hongarès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Indonesian"
+msgstr "Llegir els documents COM ES FA en indonesi"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Italian"
+msgstr "Llegir els documents COM ES FA en italià"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Japanese"
+msgstr "Llegir els documents COM ES FA en japonès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Korean"
+msgstr "Llegir els documents COM ES FA en coreà"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Dutch"
+msgstr "Llegir els documents COM ES FA en holandès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Polish"
+msgstr "Llegir els documents COM ES FA en polonès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Slovenian"
+msgstr "Llegir els documents COM ES FA en eslovè"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Swedish"
+msgstr "Llegir els documents COM ES FA en suec"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read Howtos in Chinese"
+msgstr "Llegir els documents COM ES FA en xinès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Mandrake documentation in german"
+msgstr "Documentació de Mandrake en alemany"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Mandrake documentation in english"
+msgstr "Documentació de Mandrake en anglès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Mandrake documentation in spanish"
+msgstr "Documentació de Mandrake en espanyol"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Mandrake documentation in french"
+msgstr "Documentació de Mandrake en francès"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Mandrake documentation in italian"
+msgstr "Documentació de Mandrake en italià"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read KDE documentation"
+msgstr "Llegir la documentació del KDE"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Read KDE tips"
+msgstr "Llegir els consells sobre el KDE"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create a text document"
+msgstr "Crear un document de text"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake_desk)
+msgid "Use office tools"
+msgstr "Usar les eines d'oficina"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create spreadsheets using Gnumeric"
+msgstr "Crear fulls de càlcul amb el Gnumeric"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create spreadsheets"
+msgstr "Crear fulls de càlcul"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create flowcharts and diagrams"
+msgstr "Crear diagrames de flux"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create a presentation"
+msgstr "Crear una presentació"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Send a fax"
+msgstr "Enviar un fax"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Make your office work using StarOffice"
+msgstr "Fer la feina d'oficina amb StarOffice"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Manipulate pictures"
+msgstr "Retocar fotografies"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake_desk)
+msgid "View, modify, or create graphics"
+msgstr "Visualitzar, modificar o crear gràfics"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Take a screenshot"
+msgstr "Fer una instantània de la pantalla"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Acquire images using a scanner"
+msgstr "Adquirir imatges amb un escàner"
+
+#. Menu entry for usr/lib/menu/simplified/mandrake_desk
+msgid "Create a drawing"
+msgstr "Crear un dibuix"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake)
+msgid "-> All Applications"
+msgstr "-> Totes les aplicacions"
+
+#. Menu tree branch (found in usr/lib/menu/simplified/mandrake-simplified)
+msgid "-> What to do?"
+msgstr "-> Què voleu fer?"
+
+#~ msgid "Informations"
+#~ msgstr "Informació"
