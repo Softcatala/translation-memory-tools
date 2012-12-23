@@ -62,7 +62,10 @@ def gnome():
 def mozilla():
 
 	project = CreateProject("mozilla-tm.po")
-	project.Add(CompressedFileSet('mozilla', 'http://pootle.softcatala.org/ca/mozilla/export/zip', 'mozilla.zip'))
+	mozillaSet = CompressedFileSet('mozilla', 'http://pootle.softcatala.org/ca/mozilla/export/zip', 'mozilla.zip')
+	mozillaSet.AddExcluded('region.properties.po')
+	project.Add(mozillaSet)
+
 	project.Add(CompressedFileSet('mozilla-gaia', 'http://pootle.softcatala.org/ca/gaia/export/zip', 'gaia.zip'))
 	project.Add(CompressedFileSet('mozilla-addons', 'http://localize.mozilla.org/ca/amo/export/zip', 'add-ons.zip'))
 	project.Do()

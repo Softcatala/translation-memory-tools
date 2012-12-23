@@ -67,9 +67,13 @@ class FileSet():
 		self.project = project
 		self.url = url
 		self.filename = filename
+		self.excluded = list()
 
 	def SetTMFile(self, tmfile):
 		self.tmfile = tmfile
+
+	def AddExcluded(self, filename):
+		self.excluded.append(filename)
 
 	def AddComments(self):
 
@@ -86,7 +90,6 @@ class FileSet():
 		os.system("msgattrib tm-project-previous.po --no-fuzzy --no-obsolete --translated > " + self.tmfile)
 		os.system("rm -f tm-project-previous.po")
 		
-
 	def Build(self):
 
 		findFiles = FindFiles()
@@ -97,6 +100,15 @@ class FileSet():
 
  		# Build using a local memory translation file
 		for filename in findFiles.Find(self.temp_dir, '*.po'):
+
+			exclude = False
+			for exfilename in self.excluded:
+				if (filename.find(exfilename) != -1):
+					exclude = True
+
+			if (exclude == True):
+				print 'Excluding file:' + filename
+				continue
 
 			print 'Adding file:' + filename + ' to translation memory'
 
