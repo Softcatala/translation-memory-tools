@@ -43,7 +43,7 @@ def main():
 	# Apply tm
 	findFiles = FindFiles()
 
-	for filename in findFiles.Find(temp_dir, '*.po'):
+	for filename in findFiles.Find(temp_dir, '*.po?'):
 
 		tmfilename = os.path.dirname(filename) + "/tm-" + os.path.basename(filename)
 		pretmfilename = os.path.dirname(filename) + "/previous-" + os.path.basename(filename)
