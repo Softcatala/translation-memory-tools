@@ -48,16 +48,15 @@ def gnome():
 
 	project = CreateProject("gnome-tm.po")
 
-	project.Add(CompressedFileSet('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz'))
-	project.Add(CompressedFileSet('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz'))
-	project.Add(CompressedFileSet('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-6/ui.tar.gz', 'gnome-ui.tar.gz'))
+	project.Add(CompressedFileSet('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz', 'gnome-ui.tar.gz'))
 	project.Add(CompressedFileSet('gnome-office', 'http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz', 'gnome-office.tar.gz'))
-	project.Add(CompressedFileSet('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras-stable/ui.tar.gz', 'gnome-extras.tar.gz'))
+	project.Add(CompressedFileSet('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz', 'gnome-extras.tar.gz'))
 	project.Add(CompressedFileSet('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz'))
 	project.Add(CompressedFileSet('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz'))
-	project.Add(CompressedFileSet('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz'))
 	project.Add(CompressedFileSet('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz'))
 	project.Add(BazaarFileSet('gnome-inkscape', 'bzr cat lp:inkscape/po/ca.po', 'ca.po'))
+	project.Add(CompressedFileSet('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz'))
+	project.Add(CompressedFileSet('olpc', 'http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz', 'olpc.tar.gz'))
 	project.Do()
 
 def mozilla():
@@ -71,8 +70,8 @@ def mozilla():
 def libreoffice():
 
 	project = CreateProject("libreoffice-tm.po")
-	project.Add(CompressedFileSet('LibreOffice.org ajuda', 'http://translations.documentfoundation.org/ca/libo36x_help/export/zip', 'libreoffice-help.zip'))
-	project.Add(CompressedFileSet('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo36x_ui/export/zip', 'libreoffice-ui.zip'))
+	project.Add(CompressedFileSet('LibreOffice.org ajuda', 'https://translations.documentfoundation.org/ca/libo_help/export/zip', 'libreoffice-help.zip'))
+	project.Add(CompressedFileSet('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo_ui/export/zip', 'libreoffice-ui.zip'))
 	project.Add(CompressedFileSet('LibreOffice.org lloc web', 'https://translations.documentfoundation.org/ca/website/export/zip', 'website.zip'))
 	project.Add(CompressedFileSet('LibreOffice.org ask bot', 'https://translations.documentfoundation.org/ca/askbot/export/zip', 'askbot.zip'))
 	project.Do()
