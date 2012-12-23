@@ -24,6 +24,9 @@ msgstr "Interrupció"
 msgid "Abortion"
 msgstr "Interrupció"
 
+msgid "Acceptable use policy"
+msgstr "Normes d'ús"
+
 msgid "Access"
 msgstr "Accés"
 
@@ -201,6 +204,12 @@ msgstr "Llenguatge d'assemblador"
 msgid "Assertion"
 msgstr "Asserció"
 
+msgid "Assistive technology"
+msgstr "Tecnologies d'assistència"
+
+msgid "Assistive tools"
+msgstr "Eines d'assistència"
+
 msgid "Asterisk key"
 msgstr "Tecla d'asterisc"
 
@@ -308,6 +317,9 @@ msgstr "Test de referència"
 
 msgid "Beta version"
 msgstr "Versió beta"
+
+msgid "Billing information"
+msgstr "Dades de facturació"
 
 msgid "Binary code"
 msgstr "Codi binari"
@@ -419,6 +431,9 @@ msgstr "Llenç"
 
 msgid "Capital letter"
 msgstr "Majúscula"
+
+msgid "Capitalized words"
+msgstr "Paraules amb  majúscula inicial"
 
 msgid "Card"
 msgstr "Targeta"
@@ -663,11 +678,17 @@ msgstr "Cobertura"
 msgid "Creation"
 msgstr "Creació"
 
+msgid "Credentials"
+msgstr "Credencials"
+
 msgid "Credit"
 msgstr "Crèdit"
 
 msgid "Credit card"
 msgstr "Targeta de crèdit"
+
+msgid "Credits"
+msgstr "Crèdits"
 
 msgid "Cross-reference"
 msgstr "Referència encreuada"
@@ -1263,6 +1284,9 @@ msgstr "Fragmentació"
 msgid "Frame relay"
 msgstr "Relé de trama"
 
+msgid "Framerate"
+msgstr "Imatges per segon"
+
 msgid "Free software"
 msgstr "Programari lliure"
 
@@ -1271,6 +1295,9 @@ msgstr "Programari gratuït"
 
 msgid "Frequency"
 msgstr "Freqüència"
+
+msgid "Frequently asked questions"
+msgstr "Preguntes més freqüents"
 
 msgid "Full screen"
 msgstr "Pantalla completa"
@@ -1352,6 +1379,9 @@ msgstr "Alçada"
 
 msgid "Help"
 msgstr "Ajuda"
+
+msgid "Help topics"
+msgstr "Temes de l'ajuda"
 
 msgid "Hierarchy"
 msgstr "Jerarquia"
@@ -1740,6 +1770,9 @@ msgstr "Etiqueta"
 msgid "Maturity"
 msgstr "Venciment"
 
+msgid "Media"
+msgstr "Suports"
+
 msgid "Medium"
 msgstr "Suport"
 
@@ -1766,6 +1799,9 @@ msgstr "Comerciabilitat"
 
 msgid "Message"
 msgstr "Missatge"
+
+msgid "Metadata"
+msgstr "Metadades"
 
 msgid "Metafile"
 msgstr "Metafitxer"
@@ -1878,6 +1914,9 @@ msgstr "Etiqueta"
 msgid "Network management"
 msgstr "Gestió de xarxes"
 
+msgid "News"
+msgstr "Missatges"
+
 msgid "Node"
 msgstr "Node"
 
@@ -1907,6 +1946,9 @@ msgstr "Ofimàtica"
 
 msgid "Offset"
 msgstr "Òfset"
+
+msgid "Offsite links"
+msgstr "Enllaços externs"
 
 msgid "Online help"
 msgstr "Ajuda en línia"
@@ -2016,6 +2058,9 @@ msgstr "Paràgraf"
 msgid "Parallel port"
 msgstr "Port en paral·lel"
 
+msgid "Parameters"
+msgstr "Paràmetres"
+
 msgid "Parcel"
 msgstr "Paquet"
 
@@ -2060,6 +2105,9 @@ msgstr "Ordinador personal"
 
 msgid "Personal digital assistant"
 msgstr "Organitzador personal"
+
+msgid "Personal information"
+msgstr "Dades personals"
 
 msgid "Pharming"
 msgstr "Descaminament"
@@ -2139,6 +2187,9 @@ msgstr "Portal"
 msgid "Porting"
 msgstr "Portabilitat"
 
+msgid "Preferences"
+msgstr "Preferències"
+
 msgid "Prerelease"
 msgstr "Versió provisional"
 
@@ -2205,6 +2256,9 @@ msgstr "Llenguatge de programació"
 msgid "Project"
 msgstr "Projecte"
 
+msgid "Properties"
+msgstr "Propietats"
+
 msgid "Proprietary software"
 msgstr "Programari de propietat"
 
@@ -2244,6 +2298,9 @@ msgstr "Barra d'execució ràpida"
 msgid "Quotation"
 msgstr "Citació"
 
+msgid "Quotes"
+msgstr "Cometes"
+
 msgid "Radio button"
 msgstr "Botó d'opció"
 
@@ -2252,6 +2309,9 @@ msgstr "Relleu"
 
 msgid "Random access"
 msgstr "Accés aleatori"
+
+msgid "Random data"
+msgstr "Dades aleatòries"
 
 msgid "Print range"
 msgstr "Àrea d'impressió"
@@ -3137,6 +3197,12 @@ msgstr "Anella de webs"
 
 msgid "Website"
 msgstr "Lloc web"
+
+msgid "What's New?"
+msgstr "Novetats"
+
+msgid "What's Related"
+msgstr "Llocs afins"
 
 msgid "Whitepoint"
 msgstr "Temperatura de color"

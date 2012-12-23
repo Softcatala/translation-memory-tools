@@ -19,12 +19,17 @@ pofile.metadata = {
 	'Plural-Forms' : 'nplurals=2; plural=n != 1;',
 }
 
-for line in cvsfile:
-    columns = line.split(',')
-    columns = [col.strip() for col in columns]
+total = 0
+selected = 0
 
-    if columns:
-		if ((columns[2] == 'm' or columns[2] == 'f') and not '(' in columns[1] and not '|' in columns[1]):
+for line in cvsfile:
+	columns = line.split(',')
+	columns = [col.strip() for col in columns]
+
+	total += 1
+	if columns:
+		if ((columns[2] == 'm' or columns[2] == 'f' or columns[2] == 'f pl' or columns[2] == 'm pl')
+			and not '(' in columns[1] and not '|' in columns[1]):
 
 			s = unicode(columns[0], 'utf-8')
 			columns[0] = s[0].upper() + s[1:]
@@ -32,7 +37,7 @@ for line in cvsfile:
 			s = unicode(columns[1], 'utf-8')
 			columns[1] = s[0].upper() + s[1:]
 
-	   		print columns[0] + "->" + columns[1] + "->" + columns[2]
+			selected += 1
 
 			entry = polib.POEntry(
 				msgid=columns[0],
@@ -41,6 +46,6 @@ for line in cvsfile:
 			pofile.append(entry)
 
 pofile.save('recull.po');
-
+print "Total entries: ", total, "selected:", selected
 
 
