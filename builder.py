@@ -125,10 +125,10 @@ def main():
 
 	recull()
 	abiword()
-	fedora()
 	mozilla()
 	gnome()
 	libreoffice()
+	fedora()
 	ubuntu()
 	mandriva()
 
