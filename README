@@ -18,6 +18,11 @@ tx set --auto-remote  https://fedora.transifex.net/projects/p/fedora/r/fedora-up
 
 tx pull -lca
 
+--- Applications
+
+* builder.py -> Builds the translation memory
+* apply-tm.py -> Downloads a file and applies the translation memory and lists the files that gain more translations
+
 --- Commands
 
 Merging the translation memory with a new file
