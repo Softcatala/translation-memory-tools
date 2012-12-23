@@ -42,6 +42,8 @@ def ubuntu():
 
 	project.Add(BazaarFileSet('ubuntu-software-center', 'bzr cat lp:ubuntu/software-center/po/ca.po', 'ca.po'))
 	project.Add(BazaarFileSet('ubuntu-update-manager', 'bzr cat lp:ubuntu/update-manager/po/ca.po', 'ca.po'))
+	project.Add(BazaarFileSet('ubuntu-release-upgrader', 'bzr cat lp:ubuntu/ubuntu-release-upgrader/po/ca.po', 'ca.po'))
+	project.Add(BazaarFileSet('ubuntuone-control-panel', 'bzr cat lp:ubuntu/ubuntuone-control-panel/po/ca.po', 'ca.po'))
 	project.Do()
 
 def gnome():
