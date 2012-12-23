@@ -36,6 +36,7 @@ def main():
 	download.GetFile(url, filename)
 
 	# Uncompress
+	os.system("rm -r -f " + temp_dir)
 	os.system("mkdir " + temp_dir)
 	os.system("tar -xvf " + filename + " -C " + temp_dir)
 
