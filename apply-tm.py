@@ -23,22 +23,18 @@ from fileset import *
 from project import *
 from projects import *
 
+temp_dir = "./tmp"
 
-def main():
-	
-	temp_dir = "./tmp"
+def process(url):
 
-	# Download
-	url = 'http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz'
-	filename = 'ui.tar.gz'
+	newtranslated = 0
+	filename = 'translations.tar.gz'
 
 	download = DownloadFile()
 	download.GetFile(url, filename)
 
 	# Uncompress
-	os.system("rm -r -f " + temp_dir)
-	os.system("mkdir " + temp_dir)
-	os.system("tar -xvf " + filename + " -C " + temp_dir)
+	os.system("tar -xvf " + filename + " -C " + temp_dir + " > /dev/null")
 
 	# Apply tm
 	findFiles = FindFiles()
@@ -46,11 +42,7 @@ def main():
 	for filename in findFiles.Find(temp_dir, '*.po*'):
 
 		tmfilename = os.path.dirname(filename) + "/tm-" + os.path.basename(filename)
-		pretmfilename = os.path.dirname(filename) + "/previous-" + os.path.basename(filename)
-		os.system("msgmerge -N " + filename + " " + filename + " -C tm.po > " + pretmfilename + " 2> /dev/null")
-		#os.system("msgattrib " + pretmfilename + " --no-fuzzy --no-obsolete --translated --untranslated > " + tmfilename)
-		os.system("cp " + pretmfilename + " " + tmfilename)
-		os.system("rm -f " + pretmfilename);
+		os.system("msgmerge -N " + filename + " " + filename + " -C tm.po > " + tmfilename + " 2> /dev/null")
 
 		infile = polib.pofile(filename)
 		tmfile = polib.pofile(tmfilename)
@@ -58,12 +50,31 @@ def main():
 		intranslated = len(infile.translated_entries())
 		tmtranslated = len(tmfile.translated_entries())
 
-		if (tmtranslated > intranslated):
-			print filename + " original:", intranslated, ",tm:", tmtranslated
+		if (tmtranslated > intranslated + 20):
+			new = tmtranslated - intranslated
+			print filename + " original:", intranslated, ",tm:", tmtranslated, "new translated", new
 			dfilename = os.path.dirname(filename) + "/diff-" + os.path.basename(filename)
-			os.system("diff -u " + filename + " " + tmfilename + " >" + dfilename);
+			os.system("diff -u " + filename + " " + tmfilename + " >" + dfilename)
+			newtranslated += new
+		else:
+			os.system("rm -f " + filename)
+			os.system("rm -f " + tmfilename)
 
-	# Loop of the files and list the ones with more translations
+	return newtranslated
+
+def main():
+
+	newtranslated = 0
+	os.system("rm -r -f " + temp_dir)
+	os.system("mkdir " + temp_dir)
+
+	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz')
+	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz')
+	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz')
+	newtranslated += process('http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz')
+	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz')
+	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz')
+	print "Total new strings", newtranslated
 
 if __name__ == "__main__":
     main()
