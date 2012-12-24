@@ -39,6 +39,7 @@ class POFile:
 
 	def AddCommentToAllEntries(self, filename, comment):
 
+		return;
 		bakfile = filename + ".bak"
 
 		os.system("cp " + filename + " " + bakfile)
