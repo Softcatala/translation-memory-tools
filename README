@@ -1,15 +1,20 @@
 --- Introduction
 
-A program that builds translation memories
+A set of tools to build, maintain and use translation memories —
 
 Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%C3%A0 effort
 
 --- Dependencies
 
+* python
 * python-polib
-*  transifex-client
+* transifex-client
+* bzr (bazaar distributed version control client)
+* gettext
 
 --- Setting up
+
+* transifex 
 
 tx init --host https://fedora.transifex.net
 
@@ -20,7 +25,8 @@ tx pull -lca
 
 --- Applications
 
-* builder.py -> Builds the translation memory
+* builder.py -> Builds the translation memory: downloads files, merge them and builds the final memory
+
 * apply-tm.py -> Downloads a file and applies the translation memory and lists the files that gain more translations
 
 --- Commands
