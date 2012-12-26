@@ -20,10 +20,9 @@
 import logging
 
 from fileset import *
-from project import *
-from projects import *
 
-temp_dir = "./gnome"
+temp_dir = "./tmp"
+output_dir = "./gnome"
 
 def process(url):
 
@@ -45,7 +44,7 @@ def process(url):
 		try:
 
 			tmfilename = os.path.dirname(filename) + "/tm-" + os.path.basename(filename)
-			command = "msgmerge -N " + filename + " " + filename + " -C tm.po > " + tmfilename + " 2> /dev/null"
+			command = "msgmerge -N " + filename + " " + filename + " -C latest-nosource/tm.po > " + tmfilename + " 2> /dev/null"
 			os.system(command)
 			logging.info(command)
 
@@ -63,6 +62,9 @@ def process(url):
 				os.system(command)
 				logging.info(command);
 				newtranslated += new
+				os.system("mv " + filename + " " + output_dir)
+				os.system("mv " + tmfilename + " " + output_dir)
+				os.system("mv " + dfilename + " " + output_dir)
 			else:
 				os.system("rm -f " + filename)
 				os.system("rm -f " + tmfilename)
@@ -87,8 +89,11 @@ def main():
 
 	initLogging()
 	newtranslated = 0
+
 	os.system("rm -r -f " + temp_dir)
 	os.system("mkdir " + temp_dir)
+	os.system("rm -r -f " + output_dir)
+	os.system("mkdir " + output_dir)
 
 	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz')	
 	newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz')
