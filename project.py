@@ -39,7 +39,6 @@ class Project:
 		self.recreateTM = recreateTM
 
 	def SetAddSource(self, addSource):
-		print "project.SetAddSource:", addSource
 		self.addSource = addSource
 
 	def DeletePOFile(self):
