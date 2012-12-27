@@ -27,7 +27,8 @@ from fileset import *
 class Project:
 
 	def __init__(self, filename):
-		recreateTM = True
+		self.recreateTM = True
+		self.addSource = True
 		self.filename = filename
 		self.filesets = list()
 
@@ -36,6 +37,10 @@ class Project:
 
 	def SetRecreateTM(self, recreateTM):
 		self.recreateTM = recreateTM
+
+	def SetAddSource(self, addSource):
+		print "project.SetAddSource:", addSource
+		self.addSource = addSource
 
 	def DeletePOFile(self):
 		if (os.path.isfile(self.filename)):
@@ -54,6 +59,7 @@ class Project:
 			self.DeletePOFile()
 
 			for fileset in self.filesets:
+				fileset.SetAddSource(self.addSource)
 				fileset.Do()
 
 		except Exception as detail:

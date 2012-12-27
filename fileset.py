@@ -39,7 +39,6 @@ class POFile:
 
 	def AddCommentToAllEntries(self, filename, comment):
 
-		return;
 		bakfile = filename + ".bak"
 
 		os.system("cp " + filename + " " + bakfile)
@@ -68,7 +67,11 @@ class FileSet():
 		self.project = project
 		self.url = url
 		self.filename = filename
+		self.addSource = True
 		self.excluded = list()
+
+	def SetAddSource(self, addSource):
+		self.addSource = addSource
 
 	def SetTMFile(self, tmfile):
 		self.tmfile = tmfile
@@ -77,6 +80,9 @@ class FileSet():
 		self.excluded.append(filename)
 
 	def AddComments(self):
+
+		if (self.addSource == False):
+			return
 
 		findFiles = FindFiles()
 

@@ -18,6 +18,7 @@
 # Boston, MA 02111-1307, USA.
 
 import logging
+from optparse import OptionParser
 
 from fileset import *
 from project import *
@@ -25,11 +26,13 @@ from projects import *
 
 projects = Projects("tm.po")
 reRecreateTM = True
+addSource = True
 
 
 def CreateProject(filename):
 	project = Project(filename)
 	project.SetRecreateTM(reRecreateTM)
+	project.SetAddSource(addSource)
 	projects.Add(project)
 	return project
 	
@@ -120,6 +123,17 @@ def initLogging():
 def main():
 
 	print "Translation memory builder version 0.1"
+
+	parser = OptionParser()
+	parser.add_option("-n", "--no-source",
+		              action="store_false", dest="addSource", default=True,
+		              help="Do not include the source for the translation segment")
+
+	(options, args) = parser.parse_args()
+
+	global addSource
+
+	addSource = options.addSource
 
 	start_time = time.time()
 
