@@ -120,9 +120,7 @@ def initLogging():
 	ch = logging.StreamHandler()
 	logger.addHandler(ch)
 
-def main():
-
-	print "Translation memory builder version 0.1"
+def readParameters():
 
 	parser = OptionParser()
 	parser.add_option("-n", "--no-source",
@@ -135,9 +133,14 @@ def main():
 
 	addSource = options.addSource
 
+def main():
+
+	print "Translation memory builder version 0.1"
+
 	start_time = time.time()
 
 	initLogging()
+	readParameters()
 
 	recull()
 	abiword()
