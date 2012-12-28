@@ -35,6 +35,10 @@ Merging the translation memory with a new file
 
 msgmerge -N tm.po new-pofile.po  > final-pofile.po
 
+--- Coding Style guide
+
+http://www.python.org/dev/peps/pep-0008/
+
 --- Contact Information
 
 Jordi Mas
