@@ -19,10 +19,10 @@
 
 import logging
 from optparse import OptionParser
-
 from fileset import *
 from project import *
 from projects import *
+from jsonbackend import *
 
 projects = Projects("tm.po")
 reRecreateTM = True
@@ -36,78 +36,6 @@ def CreateProject(filename):
 	projects.Add(project)
 	return project
 	
-
-def ubuntu():
-
-	# https://translations.launchpad.net/ubuntu/quantal/+lang/ca
-
-	project = CreateProject("ubuntu-tm.po")
-
-	project.Add(BazaarFileSet('ubuntu-software-center', 'bzr cat lp:ubuntu/software-center/po/ca.po', 'ca.po'))
-	project.Add(BazaarFileSet('ubuntu-update-manager', 'bzr cat lp:ubuntu/update-manager/po/ca.po', 'ca.po'))
-	project.Add(BazaarFileSet('ubuntu-release-upgrader', 'bzr cat lp:ubuntu/ubuntu-release-upgrader/po/ca.po', 'ca.po'))
-	project.Add(BazaarFileSet('ubuntuone-control-panel', 'bzr cat lp:ubuntu/ubuntuone-control-panel/po/ca.po', 'ca.po'))
-	project.Do()
-
-def gnome():
-
-	project = CreateProject("gnome-tm.po")
-
-	project.Add(CompressedFileSet('gnome-ui', 'http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz', 'gnome-ui.tar.gz'))
-	project.Add(CompressedFileSet('gnome-office', 'http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz', 'gnome-office.tar.gz'))
-	project.Add(CompressedFileSet('gnome-extras', 'http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz', 'gnome-extras.tar.gz'))
-	project.Add(CompressedFileSet('gnome-external', 'http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz', 'gnome-external.tar.gz'))
-	project.Add(CompressedFileSet('gnome-infrastructure', 'http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz', 'gnome-infrastructure.tar.gz'))
-	project.Add(CompressedFileSet('gimp', 'http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz', 'gimp.tar.gz'))
-	project.Add(BazaarFileSet('gnome-inkscape', 'bzr cat lp:inkscape/po/ca.po', 'ca.po'))
-	project.Add(CompressedFileSet('freedesktop', 'http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz', 'freesktop.tar.gz'))
-	project.Add(CompressedFileSet('olpc', 'http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz', 'olpc.tar.gz'))
-	project.Do()
-
-def mozilla():
-
-	project = CreateProject("mozilla-tm.po")
-	mozillaSet = CompressedFileSet('mozilla', 'http://pootle.softcatala.org/ca/mozilla/export/zip', 'mozilla.zip')
-	mozillaSet.AddExcluded('region.properties.po')
-	project.Add(mozillaSet)
-
-	project.Add(CompressedFileSet('mozilla-gaia', 'http://pootle.softcatala.org/ca/gaia/export/zip', 'gaia.zip'))
-	project.Add(CompressedFileSet('mozilla-addons', 'http://localize.mozilla.org/ca/amo/export/zip', 'add-ons.zip'))
-	project.Do()
-
-def libreoffice():
-
-	project = CreateProject("libreoffice-tm.po")
-	project.Add(CompressedFileSet('LibreOffice.org ajuda', 'https://translations.documentfoundation.org/ca/libo_help/export/zip', 'libreoffice-help.zip'))
-	project.Add(CompressedFileSet('LibreOffice.org UI', 'https://translations.documentfoundation.org/ca/libo_ui/export/zip', 'libreoffice-ui.zip'))
-	project.Add(CompressedFileSet('LibreOffice.org lloc web', 'https://translations.documentfoundation.org/ca/website/export/zip', 'website.zip'))
-	project.Add(CompressedFileSet('LibreOffice.org ask bot', 'https://translations.documentfoundation.org/ca/askbot/export/zip', 'askbot.zip'))
-	project.Do()
-
-def abiword():
-
-	project = CreateProject("abiword-tm.po")
-	project.Add(CompressedFileSet('abiword', 'http://www.abisource.com/dev/strings/dev/ca-ES.po', 'abiword-ca.po'))
-	project.Do()
-
-def fedora():
-
-	project = CreateProject("fedora-tm.po")
-	project.Add(TransifexFileSet('fedora', 'https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/', ''))
-	project.Do()
-
-def recull():
-
-	project = CreateProject("recull-tm.po")
-	project.Add(LocalFileSet('recull', 'recull/recull.po', 'recull.po'))
-	project.Do()
-
-def mandriva():
-
-	project = CreateProject("mandriva-tm.po")
-	project.Add(LocalDirFileSet('mandriva', 'mandriva-po/*.po', ''))
-	project.Do()
-
 def initLogging():
 
 	logfile = "builder.log"
@@ -116,9 +44,9 @@ def initLogging():
 			os.system("rm " + logfile)
 
 	logging.basicConfig(filename=logfile,level=logging.DEBUG)
-	logger = logging.getLogger('')
-	ch = logging.StreamHandler()
-	logger.addHandler(ch)
+#	logger = logging.getLogger('')
+#	ch = logging.StreamHandler()
+#	logger.addHandler(ch)
 
 def readParameters():
 
@@ -133,6 +61,31 @@ def readParameters():
 
 	addSource = options.addSource
 
+def processProjects():
+
+	json = JsonBackend('projects.json')
+	json.load()
+
+	for project_dto in json.projects:
+
+		project = CreateProject(project_dto.filename)
+		logging.info(project_dto)
+		
+		for fileset in project_dto.filesets:
+			logging.info(fileset)
+			if (fileset.type == 'local-po'):
+				project.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'compressed'):
+				project.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type ==  'bazaar'):
+				project.Add(BazaarFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'transifex'):
+				project.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'local-dir'):
+				project.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
+
+		project.Do()
+
 def main():
 
 	print "Translation memory builder version 0.1"
@@ -141,17 +94,7 @@ def main():
 
 	initLogging()
 	readParameters()
-
-	recull()
-	abiword()
-	mozilla()
-	gnome()
-	libreoffice()
-	fedora()
-	ubuntu()
-	mandriva()
-
-	projects.Do()
+	processProjects()
 
 	print "Execution time:", time.time() - start_time, "seconds"
 

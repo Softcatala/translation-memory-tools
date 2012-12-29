@@ -39,6 +39,10 @@ msgmerge -N tm.po new-pofile.po  > final-pofile.po
 
 http://www.python.org/dev/peps/pep-0008/
 
+--- URLS
+
+* https://translations.launchpad.net/ubuntu/quantal/+lang/ca
+
 --- Contact Information
 
 Jordi Mas

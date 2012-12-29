@@ -1,0 +1,164 @@
+
+{
+	"projects": {
+		"Recull": {
+			"filename" : "recull-tm.po",
+			"fileset": {
+				"recull": {
+					"url" : "recull/recull.po",
+					"type": "local-po",
+					"target": "recull.po"
+				}
+			}
+		},
+		"Abiword": {
+			"filename" : "abiword-tm.po",
+			"fileset": {
+				"UI": {
+					"url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
+					"type": "compressed",
+					"target": "abiword-ca.po"
+				}
+			}
+		},
+		"Mozilla": {
+			"filename" : "mozilla-tm.po",
+			"fileset": {
+				"mozilla": {
+					"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
+					"type": "compressed",
+					"target": "mozilla.zip",
+					"excluded" : "region.properties.po"
+				},
+				"mozilla-gaia": {
+					"url" : "http://pootle.softcatala.org/ca/gaia/export/zip",
+					"type": "compressed",
+					"target": "gaia.zip"
+				},
+				"mozilla-addons": {
+					"url" : "http://localize.mozilla.org/ca/amo/export/zip",
+					"type": "compressed",
+					"target": "add-ons.zip"
+				}
+			}
+		},
+		"gnome": {
+			"filename" : "gnome-tm.po",
+			"fileset": {
+				"gnome-ui": {
+					"url" : "http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz",
+					"type": "compressed",
+					"target": "gnome-ui.tar.gz"
+				},
+				"gnome-office": {
+					"url" : "http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz",
+					"type": "compressed",
+					"target": "gnome-office.tar.gz"
+				},
+				"gnome-extras": {
+					"url" : "http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz",
+					"type": "compressed",
+					"target": "gnome-extras.tar.gz"
+				},
+				"gnome-external": {
+					"url" : "http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz",
+					"type": "compressed",
+					"target": "gnome-external.tar.gz"
+				},
+				"gnome-infrastructure": {
+					"url" : "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz",
+					"type": "compressed",
+					"target": "gnome-infrastructure.tar.gz"
+				},
+				"gimp": {
+					"url" : "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz",
+					"type": "compressed",
+					"target": "gimp.tar.gz"
+				},
+				"gnome-inkscape": {
+					"url" : "bzr cat lp:inkscape/po/ca.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				},
+				"freedesktop": {
+					"url" : "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz",
+					"type": "compressed",
+					"target": "freesktop.tar.gz"
+				},
+				"olpc": {
+					"url" : "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz",
+					"type": "compressed",
+					"target": "olpc.tar.gz"
+				}
+			}
+		},
+		"LibreOffice": {
+			"filename" : "libreoffice-tm.po",
+			"fileset": {
+				"UI": {
+					"url" : "https://translations.documentfoundation.org/ca/libo_ui/export/zip",
+					"type": "compressed",
+					"target": "libreoffice-ui.zip"
+				},
+				"Ajuda": {
+					"url" : "https://translations.documentfoundation.org/ca/libo_help/export/zip",
+					"type": "compressed",
+					"target": "libreoffice-help.zip"
+				},
+				"Lloc web": {
+					"url" : "https://translations.documentfoundation.org/ca/website/export/zip",
+					"type": "compressed",
+					"target": "website.zip"
+				},
+				"Ask bot": {
+					"url" : "https://translations.documentfoundation.org/ca/askbot/export/zip",
+					"type": "compressed",
+					"target": "askbot.zip"
+				}
+			}
+		},
+		"Fedora": {
+			"filename" : "fedora-tm.po",
+			"fileset": {
+				"fedora": {
+					"url" : "https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/",
+					"type": "transifex"
+				}
+			}
+		},
+		"Ubuntu": {
+			"filename" : "ubuntu-tm.po",
+			"fileset": {
+				"ubuntu-software-center": {
+					"url" : "bzr cat lp:ubuntu/software-center/po/ca.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				},
+				"ubuntu-update-manager": {
+					"url" : "bzr cat lp:ubuntu/update-manager/po/ca.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				},
+				"ubuntu-release-upgrader": {
+					"url" : "bzr cat lp:ubuntu/ubuntu-release-upgrader/po/ca.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				},
+				"ubuntuone-control-panel": {
+					"url" : "bzr cat lp:ubuntu/ubuntuone-control-panel/po/ca.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				}
+			}
+		},
+		"Mandriva": {
+			"filename" : "mandriva-tm.po",
+			"fileset": {
+				"mandriva": {
+					"url" : "mandriva-po/*.po",
+					"type": "local-dir"
+				}
+			}
+		}
+	}	
+}
