@@ -14,7 +14,7 @@
 		"Abiword": {
 			"filename" : "abiword-tm.po",
 			"fileset": {
-				"UI": {
+				"abiword": {
 					"url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
 					"type": "compressed",
 					"target": "abiword-ca.po"
