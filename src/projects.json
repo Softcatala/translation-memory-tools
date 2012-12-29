@@ -5,7 +5,7 @@
 			"filename" : "recull-tm.po",
 			"fileset": {
 				"recull": {
-					"url" : "recull/recull.po",
+					"url" : "../source-pos/recull/recull.po",
 					"type": "local-po",
 					"target": "recull.po"
 				}
@@ -155,7 +155,7 @@
 			"filename" : "mandriva-tm.po",
 			"fileset": {
 				"mandriva": {
-					"url" : "mandriva-po/*.po",
+					"url" : "../source-pos/mandriva-po/*.po",
 					"type": "local-dir"
 				}
 			}
