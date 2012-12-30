@@ -86,6 +86,8 @@ def processProjects():
 
 		project.Do()
 
+	projects.Do()
+
 def main():
 
 	print "Translation memory builder version 0.1"
