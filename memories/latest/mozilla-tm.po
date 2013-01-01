@@ -71,6 +71,136 @@ msgstr "Seleccioneu la pàgina d'inici que voleu fer servir:"
 msgid "Sync"
 msgstr "Sync"
 
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # Default search engine
+#: browser.search.defaultenginename
+msgctxt "browser.search.defaultenginename"
+msgid "Google"
+msgstr "Google"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # Search engine order (order displayed in the search bar dropdown)s
+#: browser.search.order.1
+msgctxt "browser.search.order.1"
+msgid "Google"
+msgstr "Google"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: browser.search.order.2
+msgid "Yahoo"
+msgstr "Bing"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # This is the default set of web based feed handlers shown in the reader
+#. # selection UI
+#: browser.contentHandlers.types.0.title
+msgctxt "browser.contentHandlers.types.0.title"
+msgid "Google"
+msgstr "Netvibes"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: browser.contentHandlers.types.0.uri
+msgid "http://fusion.google.com/add?feedurl=%s"
+msgstr "http://www.netvibes.com/subscribe.php?url=%s"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: browser.contentHandlers.types.1.title
+msgid "My Yahoo!"
+msgstr "Google"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: browser.contentHandlers.types.1.uri
+msgid "http://add.my.yahoo.com/rss?url=%s"
+msgstr "http://fusion.google.com/add?feedurl=%s"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # increment this number when anything gets changed in the list below.  This
+#. will
+#. # cause Firefox to re-read these prefs and inject any new handlers into the
+#. # profile database.  Note that "new" is defined as "has a different URL";
+#. this
+#. # means that it's not possible to update the name of existing handler, so
+#. # don't make any spelling errors here.
+#: gecko.handlerService.defaultHandlersVersion
+msgid "3"
+msgstr "3"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # The default set of protocol handlers for webcal:
+#: gecko.handlerService.schemes.webcal.0.name
+msgid "30 Boxes"
+msgstr "30 Boxes"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: gecko.handlerService.schemes.webcal.0.uriTemplate
+msgid "http://30boxes.com/external/widget?refer=ff&url=%s"
+msgstr "http://30boxes.com/external/widget?refer=ff&url=%s"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # The default set of protocol handlers for mailto:
+#: gecko.handlerService.schemes.mailto.0.name
+msgid "Yahoo! Mail"
+msgstr "Yahoo! Mail"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: gecko.handlerService.schemes.mailto.0.uriTemplate
+msgid "http://compose.mail.yahoo.com/?To=%s "
+msgstr "http://compose.mail.yahoo.com/?To=%s "
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: gecko.handlerService.schemes.mailto.1.name
+msgid "Gmail"
+msgstr "Gmail"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: gecko.handlerService.schemes.mailto.1.uriTemplate
+msgid "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+msgstr "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # The default set of protocol handlers for irc:
+#: gecko.handlerService.schemes.irc.0.name
+msgctxt "gecko.handlerService.schemes.irc.0.name"
+msgid "Mibbit"
+msgstr "Mibbit"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: gecko.handlerService.schemes.irc.0.uriTemplate
+msgctxt "gecko.handlerService.schemes.irc.0.uriTemplate"
+msgid "https://www.mibbit.com/?url=%s"
+msgstr "https://www.mibbit.com/?url=%s"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#. # The default set of protocol handlers for ircs:
+#: gecko.handlerService.schemes.ircs.0.name
+msgctxt "gecko.handlerService.schemes.ircs.0.name"
+msgid "Mibbit"
+msgstr "Mibbit"
+
+# Translation source: /browser/chrome/browser-region/region.properties.po from
+# project 'mozilla'
+#: gecko.handlerService.schemes.ircs.0.uriTemplate
+msgctxt "gecko.handlerService.schemes.ircs.0.uriTemplate"
+msgid "https://www.mibbit.com/?url=%s"
+msgstr "https://www.mibbit.com/?url=%s"
+
 # Translation source: /browser/chrome/browser/aboutCertError.dtd.po from
 # project 'mozilla'
 #. %brandDTD;
@@ -25933,12 +26063,6 @@ msgstr "ds"
 
 # Translation source: /calendar/chrome/calendar/dateFormat.properties.po from
 # project 'mozilla'
-#: day.3.number
-msgid "3"
-msgstr "3"
-
-# Translation source: /calendar/chrome/calendar/dateFormat.properties.po from
-# project 'mozilla'
 #: day.4.number
 msgid "4"
 msgstr "4"
@@ -42733,6 +42857,15 @@ msgstr "Físic"
 msgid "Virtual"
 msgstr "Virtual"
 
+# Translation source: /editor/ui/chrome/region/region.properties.po from
+# project 'mozilla'
+#. #
+#. # editor.js
+#. # editor.properties
+#: editor.throbber.url
+msgid "http://www.seamonkey-project.org/"
+msgstr "http://www.softcatala.org/wiki/SeaMonkey"
+
 # Translation source: /embedding/android/android_strings.dtd.po from project
 # 'mozilla'
 #. This Source Code Form is subject to the terms of the Mozilla Public
@@ -43409,6 +43542,44 @@ msgid ""
 msgstr ""
 "Ha finalitzat la importació del canal de notícies des del fitxer %1$S a %2$S "
 "del compte '%3$S'."
+
+# Translation source: /mail/chrome/messenger-region/region.properties.po from
+# project 'mozilla'
+#. # Default search engine
+#: browser.search.defaultenginename
+msgctxt "browser.search.defaultenginename"
+msgid "Bing"
+msgstr "Bing"
+
+# Translation source: /mail/chrome/messenger-region/region.properties.po from
+# project 'mozilla'
+#. # Search engine order (order displayed in the search bar dropdown)s
+#: browser.search.order.1
+msgctxt "browser.search.order.1"
+msgid "Bing"
+msgstr "Google"
+
+# Translation source: /mail/chrome/messenger-region/region.properties.po from
+# project 'mozilla'
+#. # To make mapit buttons to disappear in the addressbook, specify empty
+#. string.  For example:
+#. # mail.addr_book.mapit_url.format=
+#. # The format for "mail.addr_book.mapit_url.format" is:
+#. # @A1 == address, part 1
+#. # @A2 == address, part 2
+#. # @CI == city
+#. # @ST == state
+#. # @ZI == zip code
+#. # @CO == country
+#: mail.addr_book.mapit_url.format
+msgid "http://maps.google.com/maps?q=@A1%20@A2%20@CI%20@ST%20@ZI%20@CO"
+msgstr "http://maps.google.com/maps?q=@A1%20@A2%20@CI%20@ST%20@ZI%20@CO"
+
+# Translation source: /mail/chrome/messenger-region/region.properties.po from
+# project 'mozilla'
+#: mailnews.messageid_browser.url
+msgid "http://groups.google.com/search?as_umsgid=%mid"
+msgstr "http://groups.google.com/search?as_umsgid=%mid"
 
 # Translation source: /mail/chrome/messenger-smime/certFetchingStatus.dtd.po
 # from project 'mozilla'
@@ -69748,6 +69919,36 @@ msgstr "Configuració manual"
 msgid "No tabs from your other computers."
 msgstr "Els altres ordinadors no tenen pestanyes."
 
+# Translation source: /mobile/chrome/region.properties.po from project
+# 'mozilla'
+#. # This is the default set of web based feed handlers shown in the reader
+#. # selection UI
+#: browser.contentHandlers.types.0.title
+msgid "My Yahoo"
+msgstr "Netvibes"
+
+# Translation source: /mobile/chrome/region.properties.po from project
+# 'mozilla'
+#: browser.contentHandlers.types.1.title
+msgctxt "browser.contentHandlers.types.1.title"
+msgid "Google"
+msgstr "Bloglines"
+
+# Translation source: /mobile/chrome/region.properties.po from project
+# 'mozilla'
+#. # Keyword URL (for location bar searches)
+#: keyword.URL
+msgid ""
+"https://www.google.com/search?ie=UTF-8&oe=UTF-8&sourceid=navclient&gfns=1&q="
+msgstr ""
+"http://www.google.com/search?ie=UTF-8&oe=UTF-8&sourceid=navclient&gfns=1&q="
+
+# Translation source: /mobile/chrome/region.properties.po from project
+# 'mozilla'
+#: gecko.handlerService.schemes.mailto.0.uriTemplate
+msgid "http://compose.mail.yahoo.com/?To=%s"
+msgstr "http://compose.mail.yahoo.com/?To=%s "
+
 # Translation source: /mobile/overrides/netError.dtd.po from project 'mozilla'
 #: connectionFailure.longDesc
 msgctxt "connectionFailure.longDesc"
@@ -77670,12 +77871,6 @@ msgstr "https://addons.mozilla.org/%LOCALE%/%APP%/dictionaries"
 msgid "http://www.seamonkey-project.org/releases/seamonkey%VERSION%/"
 msgstr "http://www.seamonkey-project.org/releases/seamonkey%VERSION%/"
 
-# Translation source: /suite/chrome/branding/brand.properties.po from project
-# 'mozilla'
-#: app.vendorURL
-msgid "http://www.seamonkey-project.org/"
-msgstr "http://www.seamonkey-project.org/"
-
 # Translation source: /suite/chrome/browser/linkToolbar.dtd.po from project
 # 'mozilla'
 #. This Source Code Form is subject to the terms of the Mozilla Public
@@ -78886,6 +79081,42 @@ msgstr "XLink simple"
 #: linkScript
 msgid "Script"
 msgstr "Script"
+
+# Translation source: /suite/chrome/browser/region.properties.po from project
+# 'mozilla'
+#. # navigator.properties
+#. #
+#. # all.js
+#. #
+#: browser.startup.homepage
+msgid "http://www.seamonkey-project.org/start/"
+msgstr "http://www.softcatala.org/wiki/SeaMonkey"
+
+# Translation source: /suite/chrome/browser/region.properties.po from project
+# 'mozilla'
+#: browser.search.defaulturl
+msgid "http://www.google.com/search?q="
+msgstr "http://www.google.com/search?hl=ca&q="
+
+# Translation source: /suite/chrome/browser/region.properties.po from project
+# 'mozilla'
+#: browser.translation.service
+msgid "http://translate.google.com/translate?prev=/language_tools&u="
+msgstr "http://translate.google.com/translate?prev=/language_tools&u="
+
+# Translation source: /suite/chrome/browser/region.properties.po from project
+# 'mozilla'
+#: browser.translation.serviceDomain
+msgid "translate.google.com"
+msgstr "translate.google.com"
+
+# Translation source: /suite/chrome/browser/region.properties.po from project
+# 'mozilla'
+#. # This is the default set of web based feed handlers shown in the reader
+#. # selection UI
+#: browser.contentHandlers.types.0.title
+msgid "Google"
+msgstr "Netvibes"
 
 # Translation source: /suite/chrome/browser/tabbrowser.dtd.po from project
 # 'mozilla'
@@ -84059,6 +84290,14 @@ msgstr "Reinicia més &endavant"
 msgid "&Do not ask next time"
 msgstr "No m'ho demanis la propera vegada"
 
+# Translation source: /suite/chrome/common/region.properties.po from project
+# 'mozilla'
+#. # More information about this update link available in the update wizard.
+#. # Only change this if you are providing localized release notes.
+#: app.update.url.details
+msgid "http://www.seamonkey-project.org/releases/"
+msgstr "http://www.seamonkey-project.org/releases/"
+
 # Translation source: /suite/chrome/common/safeMode.dtd.po from project
 # 'mozilla'
 #: resetToolbars.label resetToolbars.accesskey
@@ -87483,6 +87722,36 @@ msgstr "M&ostra només el nom de la gent a la meva llibreta d'adreces"
 msgid "C&lose message window when deleting the message"
 msgstr "&Tanca la finestra de missatges quan se suprimeixi el missatge"
 
+# Translation source: /suite/chrome/mailnews/region.properties.po from project
+# 'mozilla'
+#. #
+#. # messenger.properties
+#. # mailnews.js
+#: mailnews.start_page.url
+msgid "chrome://messenger/content/start.xhtml"
+msgstr "chrome://messenger/content/start.xhtml"
+
+# Translation source: /suite/chrome/mailnews/region.properties.po from project
+# 'mozilla'
+#: messenger.throbber.url
+msgctxt "messenger.throbber.url"
+msgid "http://www.seamonkey-project.org/"
+msgstr "http://www.seamonkey-project.org/"
+
+# Translation source: /suite/chrome/mailnews/region.properties.po from project
+# 'mozilla'
+#: compose.throbber.url
+msgctxt "compose.throbber.url"
+msgid "http://www.seamonkey-project.org/"
+msgstr "http://www.seamonkey-project.org/"
+
+# Translation source: /suite/chrome/mailnews/region.properties.po from project
+# 'mozilla'
+#: addressbook.throbber.url
+msgctxt "addressbook.throbber.url"
+msgid "http://www.seamonkey-project.org/"
+msgstr "http://www.seamonkey-project.org/"
+
 # Translation source: /suite/chrome/mailnews/searchTermOverlay.dtd.po from
 # project 'mozilla'
 #. This Source Code Form is subject to the terms of the Mozilla Public
@@ -88117,6 +88386,14 @@ msgid "⌃"
 msgstr "⌃"
 
 # Translation source: /toolkit/chrome/global-
+# platform/mac/platformKeys.properties.po from project 'mozilla'
+#. #the separator character used between modifiers (none on Mac OS)
+#: MODIFIER_SEPARATOR
+msgctxt "MODIFIER_SEPARATOR"
+msgid ""
+msgstr " "
+
+# Translation source: /toolkit/chrome/global-
 # platform/unix/platformKeys.properties.po from project 'mozilla'
 #. #the command key
 #: VK_META
@@ -88129,6 +88406,45 @@ msgstr "Meta"
 #: VK_WIN
 msgid "Win"
 msgstr "Win"
+
+# Translation source: /toolkit/chrome/global-region/region.properties.po from
+# project 'mozilla'
+#. #
+#. #   Localizable URLs
+#. #
+#: pluginStartupMessage
+msgid "Starting Plugin for type"
+msgstr "S'està inicialitzant el connector per al tipus"
+
+# Translation source: /toolkit/chrome/global-region/region.properties.po from
+# project 'mozilla'
+#: more_plugins_url
+msgid "https://pfs.mozilla.org/plugins/"
+msgstr "https://pfs.mozilla.org/plugins/"
+
+# Translation source: /toolkit/chrome/global-region/region.properties.po from
+# project 'mozilla'
+#: pluginupdates_label
+msgid "mozilla.com/plugincheck"
+msgstr "mozilla.com/plugincheck"
+
+# Translation source: /toolkit/chrome/global-region/region.properties.po from
+# project 'mozilla'
+#: pluginupdates_url
+msgid "http://www.mozilla.com/plugincheck/"
+msgstr "http://www.mozilla.com/plugincheck/"
+
+# Translation source: /toolkit/chrome/global-region/region.properties.po from
+# project 'mozilla'
+#: plugindoc_label
+msgid "plugindoc.mozdev.org"
+msgstr "plugindoc.mozdev.org"
+
+# Translation source: /toolkit/chrome/global-region/region.properties.po from
+# project 'mozilla'
+#: plugindoc_url
+msgid "http://plugindoc.mozdev.org/"
+msgstr "http://plugindoc.mozdev.org/"
 
 # Translation source: /toolkit/chrome/global/about.dtd.po from project
 # 'mozilla'
@@ -99376,18 +99692,6 @@ msgstr ""
 
 # Translation source: /apps/browser/browser.properties.po from project
 # 'mozilla-gaia'
-#: support-about.href
-msgid "http://support.mozilla.org/1/firefox-os/1.0/firefox-os/en-US"
-msgstr "http://support.mozilla.org/1/firefox-os/1.0/firefox-os/ca"
-
-# Translation source: /apps/browser/browser.properties.po from project
-# 'mozilla-gaia'
-#: faq-about.href
-msgid "https://www.mozilla.org/en-US/firefox/mobile/faq/?os=firefox-os"
-msgstr "https://www.mozilla.org/ca/firefox/mobile/faq/?os=firefox-os"
-
-# Translation source: /apps/browser/browser.properties.po from project
-# 'mozilla-gaia'
 #: credits-about.href
 msgid "http://mozilla.org/credits/"
 msgstr "http://mozilla.org/credits/"
@@ -99526,12 +99830,6 @@ msgstr "Espereu mentre es configura el compte"
 #: preset-caldav
 msgid "CalDav"
 msgstr "CalDav"
-
-# Translation source: /apps/calendar/calendar.properties.po from project
-# 'mozilla-gaia'
-#: preset-google
-msgid "Google"
-msgstr "Google"
 
 # Translation source: /apps/calendar/calendar.properties.po from project
 # 'mozilla-gaia'
@@ -101055,12 +101353,6 @@ msgstr "Connectant"
 
 # Translation source: /apps/communications/dialer/dialer.properties.po from
 # project 'mozilla-gaia'
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Penja"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
 #. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms,
 #. cf-sync and cf-voice are the service the call forwarding is
 #. activate/inactive for.
@@ -101270,12 +101562,6 @@ msgstr "Número desconegut"
 
 # Translation source: /apps/communications/dialer/dialer.properties.po from
 # project 'mozilla-gaia'
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "Despenja"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
 #: USSD
 msgid "USSD"
 msgstr "USSD"
@@ -101303,57 +101589,6 @@ msgstr "Teclegeu la vostra resposta..."
 #: clear-all-text
 msgid "Clear all text"
 msgstr "Neteja tot el text"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls
-#. when the number is associated with more than one contact.  {{ name }} is
-#. the name of the first contact.
-#. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
-msgstr "{{ name }}…"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{ name }}… o un altre"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… o {{ n }} altres"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… o {{ n }} altres"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… o {{ n }} altres"
-
-# Translation source: /apps/communications/dialer/dialer.properties.po from
-# project 'mozilla-gaia'
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… o {{ n }} altres"
 
 # Translation source: /apps/communications/ftu/ftu.properties.po from project
 # 'mozilla-gaia'
@@ -101640,20 +101875,6 @@ msgstr "Compartició de les dades de rendiment"
 
 # Translation source: /apps/communications/ftu/ftu.properties.po from project
 # 'mozilla-gaia'
-#: telemetry-allows
-msgid ""
-"Telemetry allows you to send Mozilla more detailed information about "
-"performance, hardware, usage and customizations in your {{brandShortName}} "
-"device. We use this information to make our products better, faster and more "
-"responsive."
-msgstr ""
-"La telemetria us permet enviar informació a Mozilla més detallada sobre el "
-"rendiment, el maquinari, l'ús i les personalitzacions del vostre dispositiu "
-"{{brandShortName}}. Utilitzem aquesta informació per fer els nostres "
-"productes millors, més ràpids i amb més capacitat de resposta."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
 #: learn-more-at
 msgid "Learn more at"
 msgstr "Més informació a"
@@ -101722,16 +101943,6 @@ msgstr ""
 "global que ajuda a construir un futur més brillant per a la web. Si voleu "
 "saber més sobre la comunitat Mozilla, els nostres productes i esdeveniments "
 "a prop vostre, introduïu la vostra adreça de correu electrònic més avall."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: collaborate2
-msgid ""
-"I want to help make {{brandShortName}} faster and easier to use by sharing "
-"information about my phone's performance."
-msgstr ""
-"Vull ajudar a fer el {{brandShortName}} més ràpid i més fàcil d'usar "
-"mitjançant l'intercanvi d'informació sobre el rendiment del meu telèfon."
 
 # Translation source: /apps/communications/ftu/ftu.properties.po from project
 # 'mozilla-gaia'
@@ -101851,78 +102062,6 @@ msgstr "Comença el recorregut"
 # Translation source: /apps/communications/ftu/ftu.properties.po from project
 # 'mozilla-gaia'
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Tutorial
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: step1
-msgid "Find any application by swiping left to right."
-msgstr "Troba totes les aplicacions lliscant d'esquerra a dreta."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step2
-msgid ""
-"Pressing and holding an application icon lets you organize and delete "
-"applications."
-msgstr ""
-"Mantenir premuda la icona d'una aplicació us permet organitzar i eliminar "
-"les aplicacions."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step3
-msgid ""
-"Drag your most commonly used applications into the dock for quick access."
-msgstr ""
-"Arrossegueu al plafó les aplicacions que més utilitzeu per a un accés ràpid."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step4
-msgid "Swiping down the status bar reveals notifications and utilities."
-msgstr ""
-"Lliscar cap avall la barra d'estat mostra les notificacions i les utilitats."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step5
-msgid "The utility tray gives you quick access to notifications."
-msgstr "La safata d'utilitats us proporciona accés ràpid a les notificacions."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step6
-msgid "See your accounts credit, phone and data use."
-msgstr "Consulteu el vostre crèdit, telèfon i ús de dades."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step7
-msgid "Quickly access settings."
-msgstr "Accés ràpid a la configuració."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step8
-msgid "Switch tasks quickly by pressing and holding the home button."
-msgstr "Canvieu ràpidament les tasques mantenint premut el botó d'inici."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step9
-msgid "Swipe left and right to navigate, tap to switch applications."
-msgstr ""
-"Feu lliscar a l'esquerra i a la dreta per desplaçar-vos, feu un toc per "
-"canviar d'aplicació."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#: step10
-msgid "Swipe an application away to close it."
-msgstr "Feu lliscar l'aplicació cap amunt per tancar-la."
-
-# Translation source: /apps/communications/ftu/ftu.properties.po from project
-# 'mozilla-gaia'
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Offline Error Dialog
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: offline-dialog-title
@@ -101982,40 +102121,9 @@ msgstr "Per enviar o rebre correus electrònics, cal que configureu un compte."
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
-#: setup-account-header
-msgid "New mail account setup"
-msgstr "Configuració de compte nou de correu electrònic"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
 #: setup-info-header
 msgid "Your login information"
 msgstr "Informació d'accés"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-hotmail-account
-msgid "Hotmail account"
-msgstr "Compte de Hotmail"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-gmail-account
-msgid "Gmail account"
-msgstr "Compte de Gmail"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-other-email
-msgid "Other email"
-msgstr "Altre proveïdor"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-info-password-placeholder
-msgctxt "setup-info-password-placeholder"
-msgid "Password"
-msgstr "Contrasenya"
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
@@ -102050,24 +102158,26 @@ msgstr "Obre la safata d'entrada"
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
-#: setup-error-bad-user-or-pass
-msgid "Invalid username or password"
-msgstr "Nom d'usuari o contrasenya no vàlids"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
+#. # The error for a user having the correct username and password, but the
+#. mail
+#. # server explicitly indicates they don't have permission to talk to the
+#. mail
+#. # server.  This is currently only expected from ActiveSync servers;
+#. situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
 msgstr "El servidor diu que no esteu autoritzat per crear un compte"
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
-#: setup-error-unknown
-msgid "An unknown error occurred"
-msgstr "S'ha produït un error desconegut"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
+#. # The error for Gmail accounts where 2-factor authentication (where you
+#. receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us
+#. to
+#. # talk to the server.
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
@@ -102077,6 +102187,11 @@ msgstr ""
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not
+#. configured
+#. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
 msgstr "Heu d'habilitar l'IMAP al vostre compte Gmail"
@@ -102127,26 +102242,6 @@ msgstr "Següent"
 #: setup-manual-socket
 msgid "Socket Type"
 msgstr "Tipus de sòcol"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-manual-hostname-placeholder
-msgctxt "setup-manual-hostname-placeholder"
-msgid "Hostname"
-msgstr "Nom del servidor"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-manual-port-placeholder
-msgid "Port Number"
-msgstr "Número de port"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: setup-manual-username-placeholder
-msgctxt "setup-manual-username-placeholder"
-msgid "Username"
-msgstr "Usuari"
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
@@ -102387,12 +102482,6 @@ msgstr "Nom d'usuari"
 msgctxt "settings-password"
 msgid "Password"
 msgstr "Contrasenya"
-
-# Translation source: /apps/email/email.properties.po from project 'mozilla-
-# gaia'
-#: settings-new-password
-msgid "New password"
-msgstr "Nova contrasenya"
 
 # Translation source: /apps/email/email.properties.po from project 'mozilla-
 # gaia'
@@ -104519,186 +104608,6 @@ msgstr "%H:%M"
 #: shortDateTimeFormat
 msgid "%x %I:%M %p"
 msgstr "%x %H:%M"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: alarm
-msgid "Alarm"
-msgstr "Alarma"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: alarms
-msgid "Alarms"
-msgstr "Alarmes"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: attention
-msgid "Attention screen"
-msgstr "Pantalla d'atenció"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: background
-msgctxt "background"
-msgid "Background service"
-msgstr "Servei en segon pla"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: backgroundservice
-msgctxt "backgroundservice"
-msgid "Background service"
-msgstr "Servei en segon pla"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: camera
-msgctxt "camera"
-msgid "Camera"
-msgstr "Càmera"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: content-camera
-msgctxt "content-camera"
-msgid "Camera"
-msgstr "Càmera"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: deprecated-hwvideo
-msgid "Deprecated HWVideo"
-msgstr "HWVIdeo és obsolet"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: device-storageapps
-msgid "Apps storage"
-msgstr "Emmagatzematge d'aplicacions"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: device-storagemusic
-msgid "Music storage"
-msgstr "Emmagatzematge de música"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: device-storagepictures
-msgid "Pictures storage"
-msgstr "Emmagatzematge de fotografies"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: embed-apps
-msgid "Embed apps"
-msgstr "Incrusta les aplicacions"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: fmradio
-msgctxt "fmradio"
-msgid "FM Radio"
-msgstr "Ràdio FM"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: geolocation
-msgid "Geolocation"
-msgstr "Geolocalització"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: mobileconnection
-msgid "Mobile connection"
-msgstr "Connexió mòbil"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: mozFM
-msgctxt "mozFM"
-msgid "FM Radio"
-msgstr "Ràdio FM"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: network-event
-msgid "Network events"
-msgstr "Esdeveniments de xarxa"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: networkstats-manager
-msgid "Network usage"
-msgstr "Ús de la xarxa"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: permissions
-msgid "Permissions management"
-msgstr "Gestió de permisos"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: power
-msgid "Power"
-msgstr "Energia"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: settings
-msgid "Settings management"
-msgstr "Gestió dels paràmetres"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: sms
-msgid "SMS"
-msgstr "SMS"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: storage
-msgid "Storage"
-msgstr "Emmagatzematge"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: systemXHR
-msgid "System XHR"
-msgstr "XHR de sistema"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: tcp-socket
-msgid "TCP socket"
-msgstr "Sòcol TCP"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: telephony
-msgid "Telephony"
-msgstr "Telefonia"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: voicemail
-msgid "Voicemail"
-msgstr "Correu de veu"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: webapps-manage
-msgid "Apps management"
-msgstr "Gestió de les aplicacions"
-
-# Translation source: /shared/permissions/permissions.properties.po from
-# project 'mozilla-gaia'
-#: wifi-manage
-msgid "Wi-Fi management"
-msgstr "Gestió de la xarxa sense fil"
 
 # Translation source: /shared/tz/tz.properties.po from project 'mozilla-gaia'
 #: tz-continent
@@ -115755,6 +115664,11 @@ msgstr ""
 "An email has been sent to the requested account with further information. If "
 "you do not receive an email then please confirm you have entered the same "
 "email address used during account registration."
+
+# Translation source: /LC_MESSAGES/messages.po from project 'mozilla-addons'
+#: apps/users/forms.py:106 apps/users/templates/users/pwreset_confirm.html:19
+msgid "New password"
+msgstr "Nova contrasenya"
 
 # Translation source: /LC_MESSAGES/messages.po from project 'mozilla-addons'
 #: apps/users/forms.py:145 apps/users/forms.py:308
