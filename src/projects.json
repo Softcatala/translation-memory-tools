@@ -21,6 +21,15 @@
 				}
 			}
 		},
+		"VLC": {
+			"filename" : "vlc-tm.po",
+			"fileset": {
+				"VLC" : {
+					"url" : "https://www.transifex.com/projects/p/vlc-trans/",
+					"type": "transifex"
+				}
+			}
+		},
 		"Mozilla": {
 			"filename" : "mozilla-tm.po",
 			"fileset": {

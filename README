@@ -12,13 +12,22 @@ Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%
 * bzr (bazaar distributed version control client)
 * gettext
 
---- Setting up
+--- Setting up before execution
 
-* transifex 
+* Transifex for Fedora project
 
 tx init --host https://fedora.transifex.net
 
 tx set --auto-remote  https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/
+(account is username not e-mail)
+
+tx pull -lca
+
+* Transifex for VLC project
+
+tx init --host https://www.transifex.com/
+
+tx set --auto-remote https://www.transifex.com/projects/p/vlc-trans/
 (account is username not e-mail)
 
 tx pull -lca
