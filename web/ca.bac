@@ -1,0 +1,6084 @@
+# This file is distributed under the same license as the PACKAGE package.
+# (c) 2007-2013 Jordi Mas i Hernandez
+# Correccions per Gil Forcada, Sílvia Miranda, David Planella, Albert Juhé, Siegfried-Angel Gevatter i Pau Iranzo.
+# N.T.:
+# - Segons el context traduïm "Game" com a joc o partida.
+msgid ""
+msgstr ""
+"Project-Id-Version: gbrainy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-13 15:44+0100\n"
+"PO-Revision-Date: 2013-01-04 13:45+0200\n"
+"Last-Translator: jmas <jmas@softcatala.org>\n"
+"Language-Team: Softcatalà\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/games.xml.h:1
+msgid "Clock rotation"
+msgstr "Rotació del rellotge"
+
+#: ../data/games.xml.h:2
+msgid "Every hour rotates 360 degrees."
+msgstr "A cada hora gira 360 graus."
+
+#: ../data/games.xml.h:3
+msgid "Brothers and sisters"
+msgstr "Germans i germanes"
+
+#: ../data/games.xml.h:4
+msgid ""
+"Out of [people] people, [brothers] have brothers, [sisters] have sisters and "
+"[both] have both. How many people have neither brothers nor sisters?"
+msgstr ""
+"D'un total de [people] persones, [brothers] tenen germans, [sisters] tenen "
+"germanes i [both] tenen germanes i germanes. Quantes persones no tenen ni "
+"germans ni germanes?"
+
+#: ../data/games.xml.h:5
+msgid ""
+"It is calculated by taking the total number of people minus [brothers_only] "
+"people that have brothers only, minus [sisters_only] that have sisters only "
+"and minus [both] that have sisters and brothers."
+msgstr ""
+"Es calcula prenent el nombre total de persones menys [brothers_only] "
+"persones que tenen només germans, menys [sisters_only] que tenen només "
+"germanes i menys [both] que tenen germanes i germans."
+
+#: ../data/games.xml.h:6
+msgid "Age"
+msgstr "Edat"
+
+#: ../data/games.xml.h:7
+msgid ""
+"John's son age is nowadays half of John's age minus [difference], that is, "
+"([father] / 2) - [difference]."
+msgstr ""
+"L'edat del fill d'en Joan és avui en dia la meitat de l'edat d'en Joan menys "
+"[difference], és a dir, ([father] / 2) - [difference]."
+
+#: ../data/games.xml.h:8
+msgid "Password"
+msgstr "Contrasenya"
+
+#: ../data/games.xml.h:9
+msgid ""
+"Every digit has 10 possibilities. The total number of possibilities is 10 at "
+"the power of [digits]."
+msgstr ""
+"Cada digit té 10 possibilitats. El nombre total de possibilitats és 10 "
+"elevat a [digits]."
+
+#: ../data/games.xml.h:10
+msgid ""
+"Every digit has 8 possibilities. The total number of possibilities is 8 at "
+"the power of [digits]."
+msgstr ""
+"Cada digit té 8 possibilitats. El nombre total de possibilitats és 8 elevat "
+"a [digits]."
+
+#: ../data/games.xml.h:11
+msgid "Tennis game"
+msgstr "Partida de tennis"
+
+#: ../data/games.xml.h:12
+msgid ""
+"Every game is an independent event with 2 possible results. The total number "
+"of possibilities is 2 at the power of [games]."
+msgstr ""
+"Cada joc és un esdeveniment independent amb dos possibles resultats. El "
+"nombre total de possibilitats és 2 elevat a [games]."
+
+#: ../data/games.xml.h:13
+msgid ""
+"In every match you eliminate one player. Therefore, the result is the total "
+"number of player minus one."
+msgstr ""
+"A cada partit s'elimina un jugador. Llavors, el resultat és el total de "
+"jugadors menys u."
+
+#: ../data/games.xml.h:14
+msgid "Bank interest"
+msgstr "Interès bancari"
+
+#: ../data/games.xml.h:15
+msgid ""
+"Compound interest is paid on the principal plus any past interest "
+"accumulated."
+msgstr ""
+"L'interès compost es paga sobre el valor original i els interessos acumulats."
+
+#: ../data/games.xml.h:16
+msgid "Simple equations"
+msgstr "Equacions simples"
+
+#: ../data/games.xml.h:17
+msgid "What number plus [num_a] equals [num_b]?"
+msgstr "Quin número sumat a [num_a] és igual a [num_b]?"
+
+#: ../data/games.xml.h:18
+msgid "x + [num_a] = [num_b]"
+msgstr "x + [num_a] = [num_b]"
+
+#: ../data/games.xml.h:19
+msgid "It is the result of the operation [num_b] - [num_a]."
+msgstr "És el resultat de l'operació [num_b] - [num_a]."
+
+#: ../data/games.xml.h:20
+msgid "What number minus [num_a] equals [num_b]?"
+msgstr "Quin número restat a [num_a] és igual a [num_b]?"
+
+#: ../data/games.xml.h:21
+msgid "x - [num_a] = [num_b]"
+msgstr "x - [num_a] = [num_b]"
+
+#: ../data/games.xml.h:22
+msgid "It is the result of the operation [num_a] + [num_b]."
+msgstr "És el resultat de l'operació [num_a] + [num_b]."
+
+#: ../data/games.xml.h:23
+msgid "What number multiplied by [num_a] equals [num_b]?"
+msgstr "Quin número multiplicat per [num_a] és igual a [num_b]?"
+
+#: ../data/games.xml.h:24
+msgid "x * [num_a] = [num_b]"
+msgstr "x * [num_a] = [num_b]"
+
+#: ../data/games.xml.h:25
+msgid "It is the result of the operation [num_b] / [num_a]."
+msgstr "És el resultat de l'operació [num_b] / [num_a]."
+
+#: ../data/games.xml.h:26
+msgid "What number divided by [num_a] equals [num_b]?"
+msgstr "Quin número dividit per [num_a] és igual a [num_b]?"
+
+#: ../data/games.xml.h:27
+msgid "x / [num_a] = [num_b]"
+msgstr "x / [num_a] = [num_b]"
+
+#: ../data/games.xml.h:28
+msgid "It is the result of the operation [num_a] * [num_b]."
+msgstr "És el resultat de l'operació [num_a] * [num_b]."
+
+#: ../data/games.xml.h:29
+msgid "Boxes"
+msgstr "Caixes"
+
+#: ../data/games.xml.h:30
+msgid "Container"
+msgstr "Contenidor"
+
+#: ../data/games.xml.h:31
+msgid "Box"
+msgstr "Caixa"
+
+#. Translators: 0.5 should be formatted correctly to your locale, using "," for example instead of "." if this is the convention for your language.
+#: ../data/games.xml.h:33
+msgid ""
+"How many boxes measuring 1 x 1 x 0.5 can be fit into a container measuring 6 "
+"x 5 x [z]?"
+msgstr ""
+"Quantes caixes de mida 1 x 1 x 0,5 poden encabir-se en un contenidor de mida "
+"6 x 5 x [z]?"
+
+#: ../data/games.xml.h:34
+msgid "You can fit 6 * 5 * [z] * 2 boxes."
+msgstr "S'hi poden encabir 6 * 5 * [z] * 2 caixes."
+
+#: ../data/games.xml.h:35
+msgid "Palindromic years"
+msgstr "Anys capicua"
+
+#: ../data/games.xml.h:36
+msgid ""
+"[year_start] is a palindromic year as [year_end] is, a gap of 11 years. What "
+"are the next two consecutive palindromic years after [year_end] with the "
+"same gap? Answer using two numbers (e.g.: [year_start] and [year_end])."
+msgstr ""
+"Els anys [year_start] i [year_end] són capicua, amb una diferència d'11 "
+"anys. Quins són els propers dos anys capicua consecutius després de "
+"[year_end] amb la mateixa diferència? Responeu usant dos nombres (p. ex.: "
+"[year_start] i [year_end])"
+
+#: ../data/games.xml.h:37
+msgid ""
+"A palindromic number remains the same when its digits are reversed (e.g.: "
+"2112)."
+msgstr ""
+"Un nombre capicua no varia quan les seves xifres s'inverteixen (p. ex.: "
+"2112)."
+
+#: ../data/games.xml.h:38
+msgid "[rslt_a] and [rslt_b]"
+msgstr "[rslt_a] i [rslt_b]"
+
+#: ../data/games.xml.h:39
+msgid ""
+"From year 1000 to year 10000, palindrome years occur at 110 year intervals "
+"except for the end of each millennium that occur at a 11 years interval."
+msgstr ""
+"Des de l'any 1000 fins el 10000, els anys capicua ocorren en general a "
+"intervals de 110 anys, excepte al final de cada mil·lenni, que es produeixen "
+"en un interval d'11 anys."
+
+#: ../data/games.xml.h:40
+msgid "Dartboard"
+msgstr "Diana"
+
+#: ../data/games.xml.h:41
+msgid ""
+"On the dartboard below, where would you need to throw the darts to add 120 "
+"points in 5 throws? Answer using a list of numbers (e.g.: 4, 5, 6, 3, 2)"
+msgstr ""
+"A la diana de sota, on heu de llançar els dards per sumar 120 punts en 5 "
+"tirades? Responeu usant una llista de nombres (p. ex. 4, 5, 6, 3, 2)"
+
+#: ../data/games.xml.h:42
+msgid "Only 3 of the 4 numbers in the dartboard are used to add 120 points."
+msgstr ""
+"Només 3 dels 4 nombres en la diana són necessaris per afegir 120 punts."
+
+#: ../data/games.xml.h:43
+msgid "Horse race"
+msgstr "Cursa de cavalls"
+
+#: ../data/games.xml.h:44 ../tools/GameXmlGetString.cs:65
+msgid ""
+"In a horse race there are people and horses. You count [eyes] eye and [legs] "
+"leg. How many horses are present?"
+msgid_plural ""
+"In a horse race there are people and horses. You count [eyes] eyes and "
+"[legs] legs. How many horses are present?"
+msgstr[0] ""
+"En una cursa de cavalls hi ha persones i cavalls. Compteu [eyes] ull i "
+"[legs] potes. Quants cavalls hi ha?"
+msgstr[1] ""
+"En una cursa de cavalls hi ha persones i cavalls. Compteu [eyes] ulls i "
+"[legs] potes. Quants cavalls hi ha?"
+
+#: ../data/games.xml.h:45
+msgid ""
+"Every person has two legs and every horse four (2 * [men] + [horses] * 4). "
+"Every person and every horse have also two eyes (2 * [men] + 2 * [horses])."
+msgstr ""
+"Cada persona té dues cames i cada cavall en té quatre potes (2 * [men] + "
+"[horses] * 4). Cada persona i cada cavall tenen també dos ulls (2 * [men] + "
+"2 * [horses])."
+
+#: ../data/games.xml.h:46
+msgid "Lever"
+msgstr "Palanca"
+
+#: ../data/games.xml.h:47
+msgid ""
+"How much weight is needed at the point indicated by the question mark to "
+"balance the lever?"
+msgstr ""
+"Quant pes cal en el punt indicat pel signe d'interrogació per equilibrar la "
+"palanca?"
+
+#: ../data/games.xml.h:48
+msgid ""
+"Consider the sentence attributed to Archimedes: 'Give me a lever long enough "
+"and a place to stand and I can move the Earth'."
+msgstr ""
+"Tingueu present la frase atribuïda a Arquimedes: «Doneu-me una palanca prou "
+"llarga i un punt de suport i mouré la Terra»."
+
+#: ../data/games.xml.h:49
+msgid ""
+"A lever is in equilibrium when the objects placed on it are at a distances "
+"reciprocally proportional to their weights."
+msgstr ""
+"Una palanca està en equilibri quan els objectes que estan a sobre es troben "
+"a distàncies recíprocament proporcionals als seus pesos."
+
+#: ../data/games.xml.h:50
+msgid "Multiple number"
+msgstr "Nombre múltiple"
+
+#: ../data/games.xml.h:51
+msgid ""
+"Which two numbers of the list below are both multiple of [num_x] and "
+"[num_y]? [option_answers]"
+msgstr ""
+"Quins dos nombres de la llista de sota són els dos múltiples de [num_x] i "
+"[num_y]? [option_answers]"
+
+#: ../data/games.xml.h:52
+msgid ""
+"A multiple is a number that may be divided by another number with no "
+"remainder. For example, 10, 15 and 25 are multiples of 5."
+msgstr ""
+"Un múltiple és un nombre que pot ser dividit per un altre nombre que sense "
+"deixar residu. Per exemple, 10, 15 i 25 són múltiples de 5."
+
+#: ../data/games.xml.h:53
+#: ../src/Core/Main/Verbal/AnalogiesMultipleOptions.cs:102
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsOptions.cs:121
+#: ../src/Games/Calculation/CalculationAverage.cs:185
+#: ../src/Games/Calculation/CalculationCloserFraction.cs:177
+#: ../src/Games/Calculation/CalculationPrimes.cs:151
+#: ../src/Games/Calculation/CalculationProportions.cs:130
+#: ../src/Games/Calculation/CalculationSelectedNumbers.cs:228
+#: ../src/Games/Logic/PuzzleFigurePattern.cs:191
+#: ../src/Games/Logic/PuzzleFigures.cs:192
+#: ../src/Games/Logic/PuzzleGridDots.cs:340
+#: ../src/Games/Logic/PuzzleLargerShape.cs:303
+#: ../src/Games/Logic/PuzzleMissingPiece.cs:173
+#: ../src/Games/Logic/PuzzleMissingSlice.cs:218
+#: ../src/Games/Logic/PuzzleMostInCommon.cs:313
+#: ../src/Games/Logic/PuzzleNextFigure.cs:166
+#: ../src/Games/Logic/PuzzleOstracism.cs:176
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:196
+#: ../src/Games/Logic/PuzzleTetris.cs:171
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:219
+msgid "Choose one of the following:"
+msgstr "Trieu una de les opcions següents:"
+
+#: ../data/games.xml.h:54
+msgid "[option_prefix] [option_a] and [option_c]"
+msgstr "[option_prefix] [option_a] i [option_c]"
+
+#: ../data/games.xml.h:55
+msgid "[option_prefix] [option_a] and [option_b]"
+msgstr "[option_prefix] [option_a] i [option_b]"
+
+#: ../data/games.xml.h:56
+msgid "[option_prefix] [option_b] and [option_c]"
+msgstr "[option_prefix] [option_b] i [option_c]"
+
+#: ../data/games.xml.h:57
+msgid "[option_prefix] [option_c] and [option_d]"
+msgstr "[option_prefix] [option_c] i [option_d]"
+
+#. Since this a multioption the answer string is set to option | this string, what makes answer_show is not useful here
+#: ../data/games.xml.h:59
+msgid "[option_a] and [option_b]"
+msgstr "[option_a] i [option_b]"
+
+#: ../data/games.xml.h:60
+msgid "[option_a] and [option_b] are both multiples of [num_x] and [num_y]."
+msgstr "[option_a] i [option_b] són ambdós múltiples de [num_x] i [num_y]."
+
+#: ../data/games.xml.h:61
+msgid "Cars in town"
+msgstr "Cotxes a la ciutat"
+
+#: ../data/games.xml.h:63
+#, no-c-format
+msgid ""
+"In a small town, [all_cars]% of the inhabitants have a car and [males_cars]% "
+"have a car and are males. What percentage of the population are females and "
+"have a car? [option_answers]"
+msgstr ""
+"En una petita ciutat, el [all_cars]% dels habitants tenen un cotxe i el "
+"[males_cars]% tenen un cotxe i són homes. Quin percentatge de la població "
+"són dones i tenen un cotxe? [option_answers]"
+
+#: ../data/games.xml.h:65
+#, no-c-format
+msgid "[option_prefix] [option_a]%"
+msgstr "[option_prefix] [option_a]%"
+
+#: ../data/games.xml.h:67
+#, no-c-format
+msgid "[option_prefix] [option_b]%"
+msgstr "[option_prefix] [option_b]%"
+
+#: ../data/games.xml.h:69
+#, no-c-format
+msgid "[option_prefix] [option_c]%"
+msgstr "[option_prefix] [option_c]%"
+
+#: ../data/games.xml.h:71
+#, no-c-format
+msgid "[option_prefix] [option_d]%"
+msgstr "[option_prefix] [option_d]%"
+
+#: ../data/games.xml.h:73
+#, no-c-format
+msgid ""
+"[females_cars]% ([all_cars] - [males_cars]) of the inhabitants are women and "
+"have a car."
+msgstr ""
+"El [females_cars]% ([all_cars] - [males_cars]) dels habitants són dones i "
+"tenen un cotxe."
+
+#: ../data/games.xml.h:74
+msgid "Compare variables"
+msgstr "Compareu variables"
+
+#: ../data/games.xml.h:75
+msgid ""
+"If p &lt; x &lt; q and r &lt; y &lt; s and you know that x &lt; y is true, "
+"which of the following options is correct? [option_answers]"
+msgstr ""
+"Si «p &lt; x &lt; q» i «r &lt; y &lt; s» i sabeu que «x &lt; y» és cert, "
+"quina de les opcions següents és correcta? [option_answers]"
+
+#: ../data/games.xml.h:76
+msgid "[option_prefix] s > p"
+msgstr "[option_prefix] s > p"
+
+#: ../data/games.xml.h:77
+msgid "[option_prefix] p < r"
+msgstr "[option_prefix] p < r"
+
+#: ../data/games.xml.h:78
+msgid "[option_prefix] p > r"
+msgstr "[option_prefix] p > r"
+
+#: ../data/games.xml.h:79
+msgid "[option_prefix] q = s"
+msgstr "[option_prefix] q = s"
+
+#: ../data/games.xml.h:80
+msgid "If x &lt; y, then p &lt; x &lt; y &lt; s so s &gt; p is true."
+msgstr ""
+"Si «x &lt; y», llavors «p &lt; x &lt; y &lt; s» així que «s &gt; p» és cert."
+
+#: ../data/games.xml.h:81
+msgid ""
+"If p &lt; x &lt; q and r &lt; y &lt; s and you know that x &gt; y is true, "
+"which of the following options is correct? [option_answers]"
+msgstr ""
+"Si «p &lt; x &lt; q» i «r &lt; y &lt; s» i sabeu que «x &gt; y» és cert, "
+"quina de les opcions següents és correcta? [option_answers]"
+
+#: ../data/games.xml.h:82
+msgid "[option_prefix] r < q"
+msgstr "[option_prefix] r < q"
+
+#: ../data/games.xml.h:83
+msgid "If x &gt; y, then r &lt; y &lt; x &lt; q, so r &lt; q is true."
+msgstr ""
+"Si «x &gt; y», llavors «r &lt; y &lt»; «x &lt; q», així que «r &lt; q» és "
+"cert."
+
+#: ../data/games.xml.h:84
+msgid "Odd number"
+msgstr "Nombre senar"
+
+#: ../data/games.xml.h:85
+msgid ""
+"Given two integer numbers x and y, if x is even and y odd, which of the "
+"following expressions gives always an odd result? [option_answers]"
+msgstr ""
+"Donats dos nombres enters «x» i «y», si «x» és parell i «y» és senar, quina "
+"de les expressions següents sempre té com a resultat un nombre senar? "
+"[option_answers]"
+
+#: ../data/games.xml.h:86
+msgid "[option_prefix] 2x + y"
+msgstr "[option_prefix] 2x + y"
+
+#: ../data/games.xml.h:87
+msgid "[option_prefix] x * y"
+msgstr "[option_prefix] x * y"
+
+#: ../data/games.xml.h:88
+msgid "[option_prefix] x * y * 2"
+msgstr "[option_prefix] x * y * 2"
+
+#: ../data/games.xml.h:89
+msgid "[option_prefix] (x - y) * 2"
+msgstr "[option_prefix] (x - y) * 2"
+
+#: ../data/games.xml.h:90
+msgid ""
+"Multiplication of two even numbers always produces an even number, so x "
+"multiplied by 2 is even. Adding an odd number (y) to that even number always "
+"produces an odd number."
+msgstr ""
+"La multiplicació de dos nombres parells és sempre un nombre parell, així que "
+"x multiplicat per 2 és parell. Sumar un nombre parell a un nombre senar "
+"(«y») sempre produeix un nombre senar."
+
+#: ../data/games.xml.h:91
+msgid "Warehouse"
+msgstr "Magatzem"
+
+#: ../data/games.xml.h:92
+msgid "[option_prefix] [answer_a]"
+msgstr "[option_prefix] [answer_a]"
+
+#: ../data/games.xml.h:93
+msgid "[option_prefix] [answer_b]"
+msgstr "[option_prefix] [answer_b]"
+
+#: ../data/games.xml.h:94
+msgid "[option_prefix] [answer_c]"
+msgstr "[option_prefix] [answer_c]"
+
+#: ../data/games.xml.h:95
+msgid "[option_prefix] [answer_d]"
+msgstr "[option_prefix] [answer_d]"
+
+#: ../data/games.xml.h:96
+msgid "Two trucks"
+msgstr "Dos camions"
+
+#: ../data/games.xml.h:97 ../tools/GameXmlGetString.cs:81
+msgid ""
+"You have two trucks that have a total weight of [add] unit. If the lighter "
+"truck weights 15 units less that half of the weight of the heavier truck, "
+"what is the weight of the lighter truck? [option_answers]"
+msgid_plural ""
+"You have two trucks that have a total weight of [add] units. If the lighter "
+"truck weights 15 units less that half of the weight of the heavier truck, "
+"what is the weight of the lighter truck? [option_answers]"
+msgstr[0] ""
+"Teniu dos camions que tenen un pes total de [add] unitat. Si el camió més "
+"lleuger pesa 15 unitats menys que la meitat del pes del camió més pesat, "
+"quin és el pes del camió més lleuger? [option_answers]"
+msgstr[1] ""
+"Teniu dos camions que tenen un pes total de [add] unitats. Si el camió més "
+"lleuger pesa 15 unitats menys que la meitat del pes del camió més pesat, "
+"quin és el pes del camió més lleuger? [option_answers]"
+
+#: ../data/games.xml.h:98
+msgid "The heavier truck weights [heavier] and the lighter [lighter]."
+msgstr "El camió més pesat pesa [heavier] i el més lleuger [lighter]."
+
+#: ../data/games.xml.h:99
+msgid "Family relations"
+msgstr "Relacions familiars"
+
+#: ../data/games.xml.h:100
+msgid ""
+"John's father's sister's sister-in-law is also? Do not assume that John has "
+"any relative that has not been mentioned. [option_answers]"
+msgstr ""
+"La cunyada de la germana del pare del Joan és també? No assumiu que en Joan "
+"té cap parent que no s'hagi mencionat. [option_answers]"
+
+#: ../data/games.xml.h:101
+msgid "[option_prefix] His mother"
+msgstr "[option_prefix] La seva mare"
+
+#: ../data/games.xml.h:102
+msgid "[option_prefix] Has no relation"
+msgstr "[option_prefix] No té cap relació"
+
+#: ../data/games.xml.h:103
+msgctxt "John's father's sister's sister-in-law is also?"
+msgid "[option_prefix] His cousin"
+msgstr "[option_prefix] El seu cosí"
+
+#: ../data/games.xml.h:104
+msgid "[option_prefix] His son-in-law"
+msgstr "[option_prefix] El seu gendre"
+
+#: ../data/games.xml.h:105
+msgid "His mother"
+msgstr "La seva mare"
+
+#: ../data/games.xml.h:106
+msgid ""
+"The sister's sister-in-law is John's father's wife, that is, John's mother."
+msgstr ""
+"La cunyada de la germana és la dona del pare del Joan, és a dir, la seva "
+"mare."
+
+#: ../data/games.xml.h:107
+msgid ""
+"John's mother's brother's brother-in-law is also? Do not assume that John "
+"has any relative that has not been mentioned. [option_answers]"
+msgstr ""
+"El cunyat del germà de la mare d'en Joan és també? No assumiu que en Joan té "
+"cap parent que no s'hagi mencionat. [option_answers]"
+
+#: ../data/games.xml.h:108
+msgid "[option_prefix] His father"
+msgstr "[option_prefix] El seu pare"
+
+#: ../data/games.xml.h:109
+msgctxt "John's mother's brother's brother-in-law is also?"
+msgid "[option_prefix] His cousin"
+msgstr "[option_prefix] El seu cosí"
+
+#: ../data/games.xml.h:110
+msgid "His father"
+msgstr "El seu pare"
+
+#: ../data/games.xml.h:111
+msgid ""
+"The brother's brother-in-law is John's mother's husband, that is, John's "
+"father."
+msgstr ""
+"El cunyat del germà de la mare d'en Joan és el marit de la mare, és a dir, "
+"el pare del Joan."
+
+#: ../data/games.xml.h:112
+msgid "Third number"
+msgstr "El tercer nombre"
+
+#: ../data/games.xml.h:113
+msgid ""
+"The average of three numbers is [three]. The average of two of these numbers "
+"is [two]. What is the third number? [option_answers]"
+msgstr ""
+"La mitjana de tres nombres és [three]. La mitjana de dos d'aquests nombres "
+"és [two]. Quin és el tercer nombre? [option_answers]"
+
+#: ../data/games.xml.h:114
+msgid "It is the result of the operation: ([three] * 3) - ([two] * 2)."
+msgstr "És el resultat de l'operació: ([three] * 3) - ([two] * 2)."
+
+#: ../data/gbrainy.desktop.in.h:1 ../src/Clients/Classical/gbrainy.ui.h:1
+msgid "gbrainy"
+msgstr "gbrainy"
+
+#: ../data/gbrainy.desktop.in.h:2
+msgid "Game"
+msgstr "Joc"
+
+#: ../data/gbrainy.desktop.in.h:3
+msgid ""
+"Play games that challenge your logic, verbal, calculation and memory "
+"abilities"
+msgstr ""
+"Jugueu a trencaclosques que desafien les vostres habilitats lògiques, "
+"verbals, de càlcul i memòria"
+
+#: ../data/themes/themes.xml.h:1
+msgid "Classic"
+msgstr "Clàssic"
+
+#: ../data/themes/themes.xml.h:2
+msgid "Notebook"
+msgstr "Llibreta"
+
+#.
+#. Translators, please check these recommendations when translating gbrainy: http://live.gnome.org/gbrainy/Localizing
+#.
+#: ../data/verbal_analogies.xml.h:4
+msgid "Which of the following sports does not belong in this group?"
+msgstr "Quin dels esports següents no pertany al grup?"
+
+#: ../data/verbal_analogies.xml.h:5
+msgid "Think of the items used in the game."
+msgstr "Penseu en els ítems utilitzats durant el joc."
+
+#: ../data/verbal_analogies.xml.h:6
+msgid "Golf"
+msgstr "Golf"
+
+#: ../data/verbal_analogies.xml.h:7
+msgid "Basketball"
+msgstr "Bàsquet"
+
+#: ../data/verbal_analogies.xml.h:8
+msgid "Tennis"
+msgstr "Tennis"
+
+#: ../data/verbal_analogies.xml.h:9
+msgid "Cycling"
+msgstr "Ciclisme"
+
+#: ../data/verbal_analogies.xml.h:10
+msgid "It is the only one that does not use a ball in the game."
+msgstr "És l'únic que no utilitza una pilota en el joc."
+
+#: ../data/verbal_analogies.xml.h:11
+msgid "A terrier is to a dog like a?"
+msgstr "Un terrier és a un gos com?"
+
+#: ../data/verbal_analogies.xml.h:12
+msgid "Chicken / Parrot"
+msgstr "Pollastre / Lloro"
+
+#: ../data/verbal_analogies.xml.h:13
+msgid "Pony / Horse"
+msgstr "Poni / Cavall"
+
+#: ../data/verbal_analogies.xml.h:14
+msgid "Ant / Vertebrate"
+msgstr "Formiga / Vertebrat"
+
+#: ../data/verbal_analogies.xml.h:15
+msgid "Dog / Cat"
+msgstr "Gos / Gat"
+
+#: ../data/verbal_analogies.xml.h:16
+msgid "Dog and horse are species and terrier and pony are breeds."
+msgstr "Gos i cavall són especies i terrier i poni són races."
+
+#: ../data/verbal_analogies.xml.h:17
+msgid "The word 'taxidermist' is used to define a person that?"
+msgstr "La paraula «taxidermista» s'usa per definir una persona que?"
+
+#: ../data/verbal_analogies.xml.h:18
+msgid "Works with dead animals"
+msgstr "Treballa amb animals morts"
+
+#: ../data/verbal_analogies.xml.h:19
+msgid "Specializes in skin diseases"
+msgstr "S'especialitza en malalties de la pell"
+
+#: ../data/verbal_analogies.xml.h:20
+msgid "Suffers a skin disease"
+msgstr "Pateix una malaltia de la pell"
+
+#: ../data/verbal_analogies.xml.h:21
+msgid "Works with leather"
+msgstr "Treballa amb pell"
+
+#: ../data/verbal_analogies.xml.h:22
+msgid "A car engine that is poorly designed and lacking of sophistication is?"
+msgstr "Un motor de cotxe que té un disseny pobre i mancat de sofisticació és?"
+
+#: ../data/verbal_analogies.xml.h:23
+msgid "Simplistic"
+msgstr "Simplista"
+
+#: ../data/verbal_analogies.xml.h:24
+msgid "Erroneous"
+msgstr "Erroni"
+
+#: ../data/verbal_analogies.xml.h:25
+msgid "Broken"
+msgstr "Espatllat"
+
+#: ../data/verbal_analogies.xml.h:26
+msgid "Unorthodox"
+msgstr "No ortodox"
+
+#: ../data/verbal_analogies.xml.h:27
+msgid "Which of the following words is the closest in meaning to 'censure'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «censura»?"
+
+#: ../data/verbal_analogies.xml.h:28
+msgid "Condemn"
+msgstr "Condemnar"
+
+#: ../data/verbal_analogies.xml.h:29
+msgid "Hide"
+msgstr "Amagar"
+
+#. Translators: 'obscure' is used as a verb
+#: ../data/verbal_analogies.xml.h:31
+msgid "Obscure"
+msgstr "Obscur"
+
+#: ../data/verbal_analogies.xml.h:32
+msgid "Ignore"
+msgstr "Ignorar"
+
+#: ../data/verbal_analogies.xml.h:33
+msgid "An artist whose work has become the defining style of a genre is?"
+msgstr ""
+"Un artista l'obra del qual ha esdevingut l'estil que defineix un gènere és?"
+
+#: ../data/verbal_analogies.xml.h:34
+msgid "Pioneer"
+msgstr "Pioner"
+
+#. Translators: referred to the life style
+#: ../data/verbal_analogies.xml.h:36
+msgid "Bohemian"
+msgstr "Bohemi"
+
+#: ../data/verbal_analogies.xml.h:37
+msgid "Misunderstood"
+msgstr "Incomprès"
+
+#: ../data/verbal_analogies.xml.h:38
+msgid "Martyr"
+msgstr "Màrtir"
+
+#: ../data/verbal_analogies.xml.h:39
+msgid "Which of the following sentences defines better an 'ostracized' person?"
+msgstr ""
+"Quina de les frases següents defineix millor una persona que viu en "
+"l'«ostracisme»?"
+
+#: ../data/verbal_analogies.xml.h:40
+msgid "Person expelled from society"
+msgstr "Persona rebutjada per la societat"
+
+#: ../data/verbal_analogies.xml.h:41
+msgid "Loner"
+msgstr "Solitari"
+
+#: ../data/verbal_analogies.xml.h:42
+msgid "Connoisseur"
+msgstr "Expert"
+
+#: ../data/verbal_analogies.xml.h:43
+msgid "Conspirator"
+msgstr "Conspirador"
+
+#: ../data/verbal_analogies.xml.h:44
+msgid "Which of the following words means fear of people?"
+msgstr "Quina de les paraules següents significa «por a la gent»?"
+
+#. Translators: Anthropophobia is fear of people
+#: ../data/verbal_analogies.xml.h:46
+msgid "Anthropophobia"
+msgstr "Antropofòbia"
+
+#: ../data/verbal_analogies.xml.h:47
+msgid "Hypochondria"
+msgstr "Hipocondria"
+
+#. Translators: Anthophobia is fear of flowers that poses little or no danger
+#: ../data/verbal_analogies.xml.h:49
+msgid "Anthophobia"
+msgstr "Antrofòbia"
+
+#. Translators: Acrophobia is fear of heights
+#: ../data/verbal_analogies.xml.h:51
+msgid "Acrophobia"
+msgstr "Acrofòbia"
+
+#: ../data/verbal_analogies.xml.h:52
+msgid "A person with excessive preoccupation for his health has?"
+msgstr "Una persona amb excessiva preocupació per la seva salut té?"
+
+#: ../data/verbal_analogies.xml.h:53
+msgid "Agoraphobia"
+msgstr "Agorafòbia"
+
+#. Selected to avoid physical characteristics like: has shield, legs or tail
+#: ../data/verbal_analogies.xml.h:55
+msgid "Which of the following words does not belong in this group?"
+msgstr "Quina de les paraules següents no pertany al grup?"
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:57
+msgid "Violin"
+msgstr "Violí"
+
+#: ../data/verbal_analogies.xml.h:58
+msgid "Bassoon"
+msgstr "Fagot"
+
+#: ../data/verbal_analogies.xml.h:59
+msgid "Flute"
+msgstr "Flauta"
+
+#: ../data/verbal_analogies.xml.h:60
+msgid "Oboe"
+msgstr "Oboè"
+
+#: ../data/verbal_analogies.xml.h:61
+msgid "It is the only one that is not a woodwind instrument."
+msgstr "És l'únic que no és un instrument de vent i fusta."
+
+#: ../data/verbal_analogies.xml.h:62
+msgid "What is a 'halberd'?"
+msgstr "Què és una «alabarda»?"
+
+#: ../data/verbal_analogies.xml.h:63
+msgid "Weapon"
+msgstr "Arma"
+
+#: ../data/verbal_analogies.xml.h:64
+msgid "Flower"
+msgstr "Flor"
+
+#: ../data/verbal_analogies.xml.h:65
+msgid "Fish"
+msgstr "Peix"
+
+#: ../data/verbal_analogies.xml.h:66
+msgid "Sport"
+msgstr "Esport"
+
+#: ../data/verbal_analogies.xml.h:67
+msgid "Fossil"
+msgstr "Fòssil"
+
+#: ../data/verbal_analogies.xml.h:68
+msgid "Portico"
+msgstr "Pòrtic"
+
+#: ../data/verbal_analogies.xml.h:69
+msgid "Column"
+msgstr "Columna"
+
+#: ../data/verbal_analogies.xml.h:70
+msgid "Attic"
+msgstr "Golfa"
+
+#: ../data/verbal_analogies.xml.h:71
+msgid "It is the only one that is not related to architecture."
+msgstr "És l'única que no està relacionada amb l'arquitectura."
+
+#: ../data/verbal_analogies.xml.h:72
+msgid "Kilometer"
+msgstr "Kilòmetre"
+
+#: ../data/verbal_analogies.xml.h:73
+msgid "Hectogram"
+msgstr "Hectogram"
+
+#: ../data/verbal_analogies.xml.h:74
+msgid "Liter"
+msgstr "Litre"
+
+#: ../data/verbal_analogies.xml.h:75
+msgid "Gallon"
+msgstr "Galó"
+
+#: ../data/verbal_analogies.xml.h:76
+msgid "It is the only unit that does not belong to the metric system."
+msgstr "És l'única unitat que no pertany al sistema mètric."
+
+#. Translators: refers to the fruit
+#: ../data/verbal_analogies.xml.h:78
+msgid "Orange"
+msgstr "Taronja"
+
+#: ../data/verbal_analogies.xml.h:79
+msgid "Apple"
+msgstr "Poma"
+
+#: ../data/verbal_analogies.xml.h:80
+msgid "Grape"
+msgstr "Raïm"
+
+#: ../data/verbal_analogies.xml.h:81
+msgid "Potato"
+msgstr "Patata"
+
+#: ../data/verbal_analogies.xml.h:82
+msgid "It is the only one that is not a fruit."
+msgstr "És l'única que no és una fruita."
+
+#: ../data/verbal_analogies.xml.h:83
+msgid "Turtle"
+msgstr "Tortuga"
+
+#: ../data/verbal_analogies.xml.h:84
+msgid "Crocodile"
+msgstr "Cocodril"
+
+#: ../data/verbal_analogies.xml.h:85
+msgid "Lizard"
+msgstr "Llangardaix"
+
+#: ../data/verbal_analogies.xml.h:86
+msgid "Frog"
+msgstr "Granota"
+
+#: ../data/verbal_analogies.xml.h:87
+msgid "It is the only one that is not a reptile and also does not have a tail."
+msgstr "És l'únic que no és un rèptil i que no té cua."
+
+#: ../data/verbal_analogies.xml.h:88
+msgid "Tiger"
+msgstr "Tigre"
+
+#: ../data/verbal_analogies.xml.h:89
+msgid "Hyena"
+msgstr "Hiena"
+
+#: ../data/verbal_analogies.xml.h:90
+msgid "Wolf"
+msgstr "Llop"
+
+#: ../data/verbal_analogies.xml.h:91
+msgid "Deer"
+msgstr "Cérvol"
+
+#: ../data/verbal_analogies.xml.h:92
+msgid "It is the only one that is not a carnivore."
+msgstr "És l'únic que no és un carnívor."
+
+#: ../data/verbal_analogies.xml.h:93
+msgid "Which of the following words is closest to the meaning of 'hedonism'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «hedonisme»?"
+
+#: ../data/verbal_analogies.xml.h:94
+msgid "Pleasure"
+msgstr "Plaer"
+
+#: ../data/verbal_analogies.xml.h:95
+msgid "Pain"
+msgstr "Dolor"
+
+#: ../data/verbal_analogies.xml.h:96
+msgid "Collectivism"
+msgstr "Col·lectivisme"
+
+#: ../data/verbal_analogies.xml.h:97
+msgid "Abstinence"
+msgstr "Abstinència"
+
+#: ../data/verbal_analogies.xml.h:98
+msgid ""
+"The ethical doctrine holding that only what is pleasant is an intrinsic good."
+msgstr ""
+"La doctrina ètica que considerà que només el que dóna plaer és un bé "
+"intrínsec."
+
+#: ../data/verbal_analogies.xml.h:99
+msgid "Which of the following words is closest to the meaning of 'asceticism'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «ascetisme»?"
+
+#: ../data/verbal_analogies.xml.h:100
+msgid "Positivism"
+msgstr "Positivisme"
+
+#: ../data/verbal_analogies.xml.h:101
+msgid ""
+"The practice of austere self-discipline in order to achieve a higher or "
+"spiritual idea."
+msgstr ""
+"La pràctica d'una autodisciplina austera a fi d'aconseguir una idea "
+"espiritual o superior."
+
+#: ../data/verbal_analogies.xml.h:102
+msgid "Which of the following words is closest to the meaning of 'oxymoron'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «oxímoron»?"
+
+#: ../data/verbal_analogies.xml.h:103
+msgid "Contradictory"
+msgstr "Contradictori"
+
+#: ../data/verbal_analogies.xml.h:104
+msgid "Synonym"
+msgstr "Sinònim"
+
+#: ../data/verbal_analogies.xml.h:105
+msgid "Related"
+msgstr "Relacionat"
+
+#: ../data/verbal_analogies.xml.h:106
+msgid "Ironic"
+msgstr "Irònic"
+
+#: ../data/verbal_analogies.xml.h:107
+msgid "A figure of speech that combines contradicting terms."
+msgstr "Una figura retòrica que combina termes contradictoris."
+
+#: ../data/verbal_analogies.xml.h:108
+msgid "Lentils"
+msgstr "Llenties"
+
+#: ../data/verbal_analogies.xml.h:109
+msgid "Wheat"
+msgstr "Blat"
+
+#: ../data/verbal_analogies.xml.h:110
+msgid "Corn"
+msgstr "Blat de moro"
+
+#: ../data/verbal_analogies.xml.h:111
+msgid "Rice"
+msgstr "Arròs"
+
+#: ../data/verbal_analogies.xml.h:112
+msgid "It is the only one that is not a cereal."
+msgstr "És l'únic que no és un cereal."
+
+#: ../data/verbal_analogies.xml.h:113
+msgid "Onion"
+msgstr "Ceba"
+
+#: ../data/verbal_analogies.xml.h:114
+msgid "Mango"
+msgstr "Mango"
+
+#: ../data/verbal_analogies.xml.h:115
+msgid "Lychee"
+msgstr "Litxi"
+
+#: ../data/verbal_analogies.xml.h:116
+msgid "Olive"
+msgstr "Oliva"
+
+#: ../data/verbal_analogies.xml.h:117
+msgid "Carbon"
+msgstr "Carboni"
+
+#: ../data/verbal_analogies.xml.h:118
+msgid "Sodium"
+msgstr "Sodi"
+
+#: ../data/verbal_analogies.xml.h:119
+msgid "Titanium"
+msgstr "Titani"
+
+#: ../data/verbal_analogies.xml.h:120
+msgid "Zinc"
+msgstr "Zinc"
+
+#: ../data/verbal_analogies.xml.h:121
+msgid "It is the only one that is not a metal."
+msgstr "És l'únic que no és un metall."
+
+#: ../data/verbal_analogies.xml.h:122
+msgid "Cardiology"
+msgstr "Cardiologia"
+
+#: ../data/verbal_analogies.xml.h:123
+msgid "Hematology"
+msgstr "Hematologia"
+
+#: ../data/verbal_analogies.xml.h:124
+msgid "Psychiatry"
+msgstr "Psiquiatria"
+
+#: ../data/verbal_analogies.xml.h:125
+msgid "Paleontology"
+msgstr "Paleontologia"
+
+#: ../data/verbal_analogies.xml.h:126
+msgid "It is the only one that is not a medical specialty."
+msgstr "És l'única que no és una especialitat mèdica."
+
+#: ../data/verbal_analogies.xml.h:127
+msgid "Which of the following words is closest to the meaning of 'negligent'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «negligent»?"
+
+#. Translator: Used as an adjective in English. Possible answer to: Which of the following words is closest to the meaning of 'negligent'
+#: ../data/verbal_analogies.xml.h:129
+msgid "Careless"
+msgstr "Descuidat"
+
+#. Translator: Used as an adjective in English. Possible answer to: Which of the following words is closest to the meaning of 'negligent'
+#: ../data/verbal_analogies.xml.h:131
+msgid "Friendly"
+msgstr "Simpàtic"
+
+#. Translator: Used as an adjective in English. Possible answer to: Which of the following words is closest to the meaning of 'negligent'
+#: ../data/verbal_analogies.xml.h:133
+msgid "Polite"
+msgstr "Educat"
+
+#. Translator: Used as an adjective in English. Possible answer to: Which of the following words is closest to the meaning of 'negligent'
+#: ../data/verbal_analogies.xml.h:135
+msgid "Angry"
+msgstr "Enfadat"
+
+#. Translator: definition of negligent
+#: ../data/verbal_analogies.xml.h:137
+msgid ""
+"It is the failure to take such care as may be rightfully or reasonably "
+"expected."
+msgstr "No tenir la suficient diligència o cura en un afer."
+
+#: ../data/verbal_analogies.xml.h:138
+msgid "Regular"
+msgstr "Regular"
+
+#: ../data/verbal_analogies.xml.h:139
+msgid "Occasional"
+msgstr "Ocasional"
+
+#: ../data/verbal_analogies.xml.h:140
+msgid "Exceptional"
+msgstr "Excepcional"
+
+#: ../data/verbal_analogies.xml.h:141
+msgid "Rare"
+msgstr "Rar"
+
+#: ../data/verbal_analogies.xml.h:142
+msgid "The other words have the connotation of not occurring frequently."
+msgstr "Les altres paraules tenen la connotació de no ocórrer freqüentment."
+
+#: ../data/verbal_analogies.xml.h:143
+msgid "Which of the following words is closest to the meaning of 'perplexing'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «perplex»?"
+
+#. Translator: As synonymous of 'perplexing'
+#: ../data/verbal_analogies.xml.h:145
+msgid "Confusing"
+msgstr "Confús"
+
+#: ../data/verbal_analogies.xml.h:146
+msgid "Interesting"
+msgstr "Interessant"
+
+#: ../data/verbal_analogies.xml.h:147
+msgid "Ordinary"
+msgstr "Ordinari"
+
+#: ../data/verbal_analogies.xml.h:148
+msgid "Trivial"
+msgstr "Trivial"
+
+#: ../data/verbal_analogies.xml.h:149
+msgid "Which of the following words is closest to the meaning of 'unhappy'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «infeliç»?"
+
+#: ../data/verbal_analogies.xml.h:150
+msgid "Sad"
+msgstr "Trist"
+
+#: ../data/verbal_analogies.xml.h:151
+msgid "Unpleasant"
+msgstr "Desagradable"
+
+#: ../data/verbal_analogies.xml.h:152
+msgid "Tears"
+msgstr "Llàgrimes"
+
+#: ../data/verbal_analogies.xml.h:153
+msgid "Incredible"
+msgstr "Increïble"
+
+#: ../data/verbal_analogies.xml.h:154
+msgid "Famous"
+msgstr "Famós"
+
+#: ../data/verbal_analogies.xml.h:155
+msgid "Acclaimed"
+msgstr "Aclamat"
+
+#: ../data/verbal_analogies.xml.h:156
+msgid "Celebrated"
+msgstr "Celebrada"
+
+#: ../data/verbal_analogies.xml.h:157
+msgid "The other words have the meaning of distinguished."
+msgstr "Les altres de paraules tenen el significat de distingit."
+
+#: ../data/verbal_analogies.xml.h:158
+msgid "Which of the following words is closest to the meaning of 'specific'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «específic»?"
+
+#. Translator: Pertaining to a single or specific person or thing
+#: ../data/verbal_analogies.xml.h:160
+msgid "Particular"
+msgstr "Particular"
+
+#: ../data/verbal_analogies.xml.h:161
+msgid "Obvious"
+msgstr "Obvi"
+
+#: ../data/verbal_analogies.xml.h:162
+msgid "Generic"
+msgstr "Genèric"
+
+#: ../data/verbal_analogies.xml.h:163
+msgid "Plate"
+msgstr "Plat"
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:165
+msgid "Bottle"
+msgstr "Ampolla"
+
+#: ../data/verbal_analogies.xml.h:166
+msgid "Amphora"
+msgstr "Àmfora"
+
+#: ../data/verbal_analogies.xml.h:167
+msgid "Bowl"
+msgstr "Bol"
+
+#: ../data/verbal_analogies.xml.h:168
+msgid "It is the only one that is not used to storage liquids."
+msgstr "És l'única que no s'utilitza per a guardar líquids."
+
+#: ../data/verbal_analogies.xml.h:169
+msgid "Walnut"
+msgstr "Nou (fruit)"
+
+#. Translator: In reference to the nut
+#: ../data/verbal_analogies.xml.h:171
+msgid "Macadamia"
+msgstr "Macadàmia"
+
+#: ../data/verbal_analogies.xml.h:172
+msgid "Chestnut"
+msgstr "Castanya"
+
+#: ../data/verbal_analogies.xml.h:173
+msgid "It is the only one that is not a nut."
+msgstr "És l'única que no és una nou."
+
+#: ../data/verbal_analogies.xml.h:174
+msgid "Which of the following words is closest to the meaning of 'acclaim'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «aclamació»?"
+
+#: ../data/verbal_analogies.xml.h:175
+msgid "Applause"
+msgstr "Aplaudiment"
+
+#: ../data/verbal_analogies.xml.h:176
+msgid "Commendation"
+msgstr "Elogi"
+
+#: ../data/verbal_analogies.xml.h:177
+msgid "Citation"
+msgstr "Citació"
+
+#. Translator: As a noun (call upon a spirit by invocation)
+#: ../data/verbal_analogies.xml.h:179
+msgid "Conjure"
+msgstr "Conjuració"
+
+#: ../data/verbal_analogies.xml.h:180
+msgid "Which of the following words is closest to the meaning of 'grief'?"
+msgstr "Quina de les paraules següents té el significat més proper a «dolor»?"
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:182
+msgid "Lament"
+msgstr "Lament"
+
+#: ../data/verbal_analogies.xml.h:183
+msgid "Fraud"
+msgstr "Frau"
+
+#: ../data/verbal_analogies.xml.h:184
+msgid "Intolerance"
+msgstr "Intolerància"
+
+#: ../data/verbal_analogies.xml.h:185
+msgid "Risk"
+msgstr "Risc"
+
+#: ../data/verbal_analogies.xml.h:186
+msgid "Which of the following words is closest to the meaning of 'phlegmatic'?"
+msgstr ""
+"Quina de les paraules següents té el significat més proper a «flegmàtic»?"
+
+#. Translator: Used as an adjective in English
+#: ../data/verbal_analogies.xml.h:188
+msgid "Calm"
+msgstr "Calmat"
+
+#: ../data/verbal_analogies.xml.h:189
+msgid "Authentic"
+msgstr "Autèntic"
+
+#: ../data/verbal_analogies.xml.h:190
+msgid "Clever"
+msgstr "Intel·ligent"
+
+#: ../data/verbal_analogies.xml.h:191
+msgid "Tense"
+msgstr "Tens"
+
+#: ../data/verbal_analogies.xml.h:192
+msgid "Concert"
+msgstr "Concert"
+
+#: ../data/verbal_analogies.xml.h:193
+msgid "Satire"
+msgstr "Sàtira"
+
+#: ../data/verbal_analogies.xml.h:194
+msgid "Proverb"
+msgstr "Proverbi"
+
+#: ../data/verbal_analogies.xml.h:195
+msgid "Epigram"
+msgstr "Epigrama"
+
+#: ../data/verbal_analogies.xml.h:196
+msgid "It is the only one that is not related to literature."
+msgstr "És l'única que no està relacionada amb la literatura."
+
+#: ../data/verbal_analogies.xml.h:197
+msgid "Curve"
+msgstr "Corba"
+
+#: ../data/verbal_analogies.xml.h:198
+msgid "Cathetus"
+msgstr "Catet"
+
+#: ../data/verbal_analogies.xml.h:199
+msgid "Hypotenuse"
+msgstr "Hipotenusa"
+
+#: ../data/verbal_analogies.xml.h:200
+msgid "Trigonometry"
+msgstr "Trigometria"
+
+#: ../data/verbal_analogies.xml.h:201
+msgid "It is the only one that is not related with triangles."
+msgstr "És l'única que no està relacionada amb triangles."
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:203
+msgid "Necklace"
+msgstr "Collaret"
+
+#: ../data/verbal_analogies.xml.h:204
+msgid "Candelabra"
+msgstr "Canelobre"
+
+#: ../data/verbal_analogies.xml.h:205
+msgid "Lantern"
+msgstr "Llanterna"
+
+#: ../data/verbal_analogies.xml.h:206
+msgid "Lamp"
+msgstr "Làmpada"
+
+#: ../data/verbal_analogies.xml.h:207
+msgid "It is the only one that does not produce light."
+msgstr "És l'única que no produeix llum."
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:209
+msgid "Shield"
+msgstr "Escut"
+
+#: ../data/verbal_analogies.xml.h:210
+msgid "Helmet"
+msgstr "Casc"
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:212
+msgid "Armor"
+msgstr "Armadura"
+
+#: ../data/verbal_analogies.xml.h:213
+msgid "Crossbow"
+msgstr "Ballesta"
+
+#: ../data/verbal_analogies.xml.h:214
+msgid "It is the only one that is not used for protection."
+msgstr "És l'únic que no s'utilitza com a protecció."
+
+#: ../data/verbal_analogies.xml.h:215
+msgid "Monolith"
+msgstr "Monòlit"
+
+#: ../data/verbal_analogies.xml.h:216
+msgid "Granite"
+msgstr "Granit"
+
+#: ../data/verbal_analogies.xml.h:217
+msgid "Rock"
+msgstr "Roca"
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:219
+msgid "Tree"
+msgstr "Arbre"
+
+#: ../data/verbal_analogies.xml.h:220
+msgid "It is the only one that is not related to rocks."
+msgstr "És l'única que no està relacionada amb les roques."
+
+#. Translator: As a noun
+#: ../data/verbal_analogies.xml.h:222
+msgid "Carrot"
+msgstr "Pastanaga"
+
+#: ../data/verbal_analogies.xml.h:223
+msgid "Beet"
+msgstr "Remolatxa"
+
+#: ../data/verbal_analogies.xml.h:224
+msgid "Radish"
+msgstr "Rave"
+
+#: ../data/verbal_analogies.xml.h:225
+msgid "Tomato"
+msgstr "Tomàquet"
+
+#: ../data/verbal_analogies.xml.h:226
+msgid "It is the only one that does not have roots."
+msgstr "És l'única que no té arrels."
+
+#. Translator: Organ as a musical instrument
+#: ../data/verbal_analogies.xml.h:228
+msgid "Organ"
+msgstr "Òrgan"
+
+#: ../data/verbal_analogies.xml.h:229
+msgid "Piano"
+msgstr "Piano"
+
+#: ../data/verbal_analogies.xml.h:230
+msgid "Accordion"
+msgstr "Acordió"
+
+#. Translator: 'keys' as the ones found in a keyboard
+#: ../data/verbal_analogies.xml.h:232
+msgid "It is the only instrument that does not have keys."
+msgstr "És l'únic instrument que no té tecles."
+
+#: ../data/verbal_analogies.xml.h:233
+msgid "car / garage | plane"
+msgstr "cotxe / garatge | avió"
+
+#: ../data/verbal_analogies.xml.h:234
+msgid "Hangar"
+msgstr "Hangar"
+
+#: ../data/verbal_analogies.xml.h:235
+msgid "Airline"
+msgstr "Aerolínia"
+
+#: ../data/verbal_analogies.xml.h:236
+msgid "Aircraft"
+msgstr "Aeronau"
+
+#: ../data/verbal_analogies.xml.h:237
+msgid "Bunker"
+msgstr "Búnquer"
+
+#: ../data/verbal_analogies.xml.h:238
+msgid "circle / semicircle | diameter"
+msgstr "cercle / semicercle | diàmetre"
+
+#: ../data/verbal_analogies.xml.h:239
+msgid "Radius"
+msgstr "Radi"
+
+#: ../data/verbal_analogies.xml.h:240
+msgid "Chord"
+msgstr "Corda"
+
+#: ../data/verbal_analogies.xml.h:241
+msgid "Tangent"
+msgstr "Tangent"
+
+#: ../data/verbal_analogies.xml.h:242
+msgid "Angle"
+msgstr "Angle"
+
+#: ../data/verbal_analogies.xml.h:243
+msgid "The radius of a circle is half the diameter."
+msgstr "El radi d'un cercle és la meitat del diàmetre."
+
+#: ../data/verbal_analogies.xml.h:244
+msgid "talk / yell | dislike"
+msgstr "parlar / cridar | desagradar"
+
+#: ../data/verbal_analogies.xml.h:245
+msgid "Repugnance"
+msgstr "Repugnància"
+
+#: ../data/verbal_analogies.xml.h:246
+msgid "Offensive"
+msgstr "Ofensiu"
+
+#: ../data/verbal_analogies.xml.h:247
+msgid "Shame"
+msgstr "Vergonya"
+
+#: ../data/verbal_analogies.xml.h:248
+msgid "Ostentation"
+msgstr "Ostentació"
+
+#: ../data/verbal_analogies.xml.h:249
+msgid "write / pen | eat"
+msgstr "escriure / bolígraf | menjar"
+
+#: ../data/verbal_analogies.xml.h:250
+msgid "Fork"
+msgstr "Forquilla"
+
+#: ../data/verbal_analogies.xml.h:251
+msgid "Restaurant"
+msgstr "Restaurant"
+
+#: ../data/verbal_analogies.xml.h:252
+msgid "Winery"
+msgstr "Celler"
+
+#: ../data/verbal_analogies.xml.h:253
+msgid "Table"
+msgstr "Taula"
+
+#: ../data/verbal_analogies.xml.h:254
+msgid "A pen is used to write and a fork is used to eat."
+msgstr "Un bolígraf s'usa per escriure i una forquilla per menjar."
+
+#: ../data/verbal_analogies.xml.h:255
+msgid "desert / oasis | sea"
+msgstr "desert / oasis | mar"
+
+#: ../data/verbal_analogies.xml.h:256
+msgid "Island"
+msgstr "Illa"
+
+#: ../data/verbal_analogies.xml.h:257
+msgid "River"
+msgstr "Riu"
+
+#: ../data/verbal_analogies.xml.h:258
+msgid "Beach"
+msgstr "Platja"
+
+#: ../data/verbal_analogies.xml.h:259
+msgid "Coast"
+msgstr "Costa"
+
+#: ../data/verbal_analogies.xml.h:260
+msgid ""
+"An oasis is an isolated area of vegetation in a desert and an island is a "
+"piece of isolated land that is surrounded by water."
+msgstr ""
+"Un oasi és una àrea aïllada de vegetació en un desert i una illa és un tros "
+"de terra que es troba aïllada per l'aigua."
+
+#. Translators: letter refers to letter (in paper form)
+#: ../data/verbal_analogies.xml.h:262
+msgid "turtle / shell | letter"
+msgstr "tortuga / closca | carta"
+
+#: ../data/verbal_analogies.xml.h:263
+msgid "Envelope"
+msgstr "Sobre"
+
+#: ../data/verbal_analogies.xml.h:264
+msgid "Ink"
+msgstr "Tinta"
+
+#: ../data/verbal_analogies.xml.h:265
+msgid "Printer"
+msgstr "Impressora"
+
+#: ../data/verbal_analogies.xml.h:266
+msgid "Cellulose"
+msgstr "Cel·lulosa"
+
+#: ../data/verbal_analogies.xml.h:267
+msgid "A turtle is inside a shell and a letter is inside an envelope."
+msgstr "Una tortuga està dins d'una closca i una carta està dins d'un sobre."
+
+#: ../data/verbal_analogies.xml.h:268
+msgid "wine / grape | rum"
+msgstr "vi / raïm | rom"
+
+#: ../data/verbal_analogies.xml.h:269
+msgid "Sugarcane"
+msgstr "Canya de sucre"
+
+#: ../data/verbal_analogies.xml.h:270
+msgid "Grain"
+msgstr "Gra"
+
+#: ../data/verbal_analogies.xml.h:271
+msgid "Sweet corn"
+msgstr "Blat de moro dolç"
+
+#: ../data/verbal_analogies.xml.h:272
+msgid "horticulture / plants | ornithology"
+msgstr "horticultura / plantes | ornitologia"
+
+#: ../data/verbal_analogies.xml.h:273
+msgid "Birds"
+msgstr "Ocells"
+
+#: ../data/verbal_analogies.xml.h:274
+msgid "Insects"
+msgstr "Insectes"
+
+#: ../data/verbal_analogies.xml.h:275
+msgid "Amphibians"
+msgstr "Amfibis"
+
+#: ../data/verbal_analogies.xml.h:276
+msgid "Fishes"
+msgstr "Peixos"
+
+#: ../data/verbal_analogies.xml.h:277
+msgid "thankful / ingratitude | despotism"
+msgstr "agraït / desagraït | despotisme"
+
+#: ../data/verbal_analogies.xml.h:278
+msgid "Democracy"
+msgstr "Democràcia"
+
+#: ../data/verbal_analogies.xml.h:279
+msgid "Totalitarianism"
+msgstr "Totalitarisme"
+
+#: ../data/verbal_analogies.xml.h:280
+msgid "Oligarchy"
+msgstr "Oligarquia"
+
+#: ../data/verbal_analogies.xml.h:281
+msgid "Authority"
+msgstr "Autoritat"
+
+#: ../data/verbal_analogies.xml.h:282
+msgid "pessimist / optimist | poor"
+msgstr "pessimista / optimista | pobre"
+
+#. Translators: Affluent as antonym of poor, that is, somebody that is rich
+#: ../data/verbal_analogies.xml.h:284
+msgid "Affluent"
+msgstr "Opulent"
+
+#: ../data/verbal_analogies.xml.h:285
+msgid "Homeless"
+msgstr "Sense sostre"
+
+#: ../data/verbal_analogies.xml.h:286
+msgid "Property"
+msgstr "Propietat"
+
+#: ../data/verbal_analogies.xml.h:287
+msgid "Money"
+msgstr "Diners"
+
+#: ../data/verbal_analogies.xml.h:288
+msgid "five / pentagon | ten"
+msgstr "cinc / pentàgon | deu"
+
+#: ../data/verbal_analogies.xml.h:289
+msgid "Decagon"
+msgstr "Decàgon"
+
+#: ../data/verbal_analogies.xml.h:290
+msgid "Enneagram"
+msgstr "Enneagrama"
+
+#: ../data/verbal_analogies.xml.h:291
+msgid "Icosagon"
+msgstr "Icosàgon"
+
+#: ../data/verbal_analogies.xml.h:292
+msgid "Decimal"
+msgstr "Decimal"
+
+#: ../data/verbal_analogies.xml.h:293
+msgid "parallel / meridian | longitude"
+msgstr "paral·lel / meridià | longitud"
+
+#: ../data/verbal_analogies.xml.h:294
+msgid "Latitude"
+msgstr "Latitud"
+
+#: ../data/verbal_analogies.xml.h:295
+msgid "Solstice"
+msgstr "Solstici"
+
+#: ../data/verbal_analogies.xml.h:296
+msgid "Pole"
+msgstr "Pol"
+
+#: ../data/verbal_analogies.xml.h:297
+msgid "Azimuth"
+msgstr "Azimut"
+
+#: ../data/verbal_analogies.xml.h:298
+msgid ""
+"Parallel and longitude traverse from east to west while meridian and "
+"latitude traverse from north to south."
+msgstr ""
+"El paral·lel i la longitud van d'est a oest i el mentre que el meridià i la "
+"latitud van de nord a sud."
+
+#: ../data/verbal_analogies.xml.h:299
+msgid "art / gallery | drama"
+msgstr "art / galeria | drama"
+
+#: ../data/verbal_analogies.xml.h:300
+msgid "Theater"
+msgstr "Teatre"
+
+#: ../data/verbal_analogies.xml.h:301
+msgid "Museum"
+msgstr "Museu"
+
+#: ../data/verbal_analogies.xml.h:302
+msgid "Concert hall"
+msgstr "Sala de concerts"
+
+#: ../data/verbal_analogies.xml.h:303
+msgid "Gym"
+msgstr "Gimnàs"
+
+#: ../data/verbal_analogies.xml.h:304
+msgid "hunter / rifle | photographer"
+msgstr "caçador / rifle | fotògraf"
+
+#: ../data/verbal_analogies.xml.h:305
+msgid "Camera"
+msgstr "Càmera"
+
+#. Translators: tripod as used is photography
+#: ../data/verbal_analogies.xml.h:307
+msgid "Tripod"
+msgstr "Trípode"
+
+#: ../data/verbal_analogies.xml.h:308
+msgid "Photography"
+msgstr "Fotografia"
+
+#: ../data/verbal_analogies.xml.h:309
+msgid "Light"
+msgstr "Llum"
+
+#: ../data/verbal_analogies.xml.h:310
+msgid "dish / break | balloon"
+msgstr "plat / trencar | globus"
+
+#: ../data/verbal_analogies.xml.h:311
+msgid "Burst"
+msgstr "Punxar"
+
+#: ../data/verbal_analogies.xml.h:312
+msgid "Bounce"
+msgstr "Botar"
+
+#: ../data/verbal_analogies.xml.h:313
+msgid "Float"
+msgstr "Flotar"
+
+#: ../data/verbal_analogies.xml.h:314
+msgid "Roll"
+msgstr "Rodar"
+
+#: ../data/verbal_analogies.xml.h:315
+msgid "Both relate to an action that breaks the related item."
+msgstr ""
+"Les dues estan relacionades a una acció que trenca l'element al que es "
+"refereixen."
+
+#: ../data/verbal_analogies.xml.h:316
+msgid "button / push | key (used in a lock)"
+msgstr "botó / prémer | una clau (d'un pany)"
+
+#: ../data/verbal_analogies.xml.h:317
+msgid "Turn"
+msgstr "Girar"
+
+#. Translator: 'Open' as verb, like open with a key
+#: ../data/verbal_analogies.xml.h:319
+msgid "Open"
+msgstr "Obrir"
+
+#. Translator: 'Lock' as verb, like locked with a key
+#: ../data/verbal_analogies.xml.h:321
+msgid "Lock"
+msgstr "Bloquejar"
+
+#. Translator: 'Close' as verb, like closed with a key
+#: ../data/verbal_analogies.xml.h:323
+msgid "Close"
+msgstr "Tancar"
+
+#: ../data/verbal_analogies.xml.h:324
+msgid ""
+"To make both objects work, a button needs to be pushed and a key needs to be "
+"turned."
+msgstr "Per fer funcionar els objectes, cal prémer el botó i girar la clau."
+
+#: ../data/verbal_analogies.xml.h:325
+msgid "concept / idea | obsession"
+msgstr "concepte / idea | obsessió"
+
+#. As a synonym of obsession
+#: ../data/verbal_analogies.xml.h:327
+msgid "Fixation"
+msgstr "Fixació"
+
+#: ../data/verbal_analogies.xml.h:328
+msgid "Indifference"
+msgstr "Indiferència"
+
+#: ../data/verbal_analogies.xml.h:329
+msgid "Disinterest"
+msgstr "Desinterès"
+
+#: ../data/verbal_analogies.xml.h:330
+msgid "Intuition"
+msgstr "Intuïció"
+
+#: ../data/verbal_analogies.xml.h:331
+msgid "The relation between the two words is that they are synonymous."
+msgstr "La relació entre ambdues paraules és que són sinònims."
+
+#: ../data/verbal_analogies.xml.h:332
+msgid "fish / water | bird"
+msgstr "peix / aigua | ocell"
+
+#: ../data/verbal_analogies.xml.h:333
+msgid "Air"
+msgstr "Aire"
+
+#: ../data/verbal_analogies.xml.h:334
+msgid "Wings"
+msgstr "Ales"
+
+#: ../data/verbal_analogies.xml.h:335
+msgid "Ship"
+msgstr "Vaixell"
+
+#: ../data/verbal_analogies.xml.h:336
+msgid "Cage"
+msgstr "Gàbia"
+
+#. Translator: 'rook' as a piece of chess
+#: ../data/verbal_analogies.xml.h:338
+msgid "rook / chess | soldier"
+msgstr "torre / escacs | soldat"
+
+#: ../data/verbal_analogies.xml.h:339
+msgid "Battle"
+msgstr "Batalla"
+
+#: ../data/verbal_analogies.xml.h:340
+msgid "Gun"
+msgstr "Pistola"
+
+#: ../data/verbal_analogies.xml.h:341
+msgid "Peace"
+msgstr "Pau"
+
+#: ../data/verbal_analogies.xml.h:342
+msgid "Enemy"
+msgstr "Enemic"
+
+#: ../data/verbal_analogies.xml.h:343
+msgid "competitive / cooperative | anxious"
+msgstr "competitiu / cooperatiu | ansiós"
+
+#. Translator: Used as an adjective in English
+#: ../data/verbal_analogies.xml.h:345
+msgid "Flexible"
+msgstr "Flexible"
+
+#: ../data/verbal_analogies.xml.h:346
+msgid "Cautious"
+msgstr "Cautelós"
+
+#. Translator: Used as an adjective in English
+#: ../data/verbal_analogies.xml.h:348
+msgid "Daring"
+msgstr "Atrevit"
+
+#: ../data/verbal_analogies.xml.h:349
+msgid "pessimistic / optimistic | suspicious"
+msgstr "pessimista / optimista | sospitós"
+
+#. Translator: Used as an adjective in English
+#: ../data/verbal_analogies.xml.h:351
+msgid "Trusting"
+msgstr "Dóna confiança"
+
+#: ../data/verbal_analogies.xml.h:352
+msgid "Dubious"
+msgstr "Dubtós"
+
+#. Translator: compass as the instrument used for finding direction
+#: ../data/verbal_analogies.xml.h:354
+msgid "thermometer / temperature | compass"
+msgstr "termòmetre / temperatura | compàs"
+
+#: ../data/verbal_analogies.xml.h:355
+msgid "Direction"
+msgstr "Direcció"
+
+#: ../data/verbal_analogies.xml.h:356
+msgid "Elevation"
+msgstr "Elevació"
+
+#: ../data/verbal_analogies.xml.h:357
+msgid "Position"
+msgstr "Posició"
+
+#: ../data/verbal_analogies.xml.h:358
+msgid "Area"
+msgstr "Àrea"
+
+#: ../data/verbal_analogies.xml.h:359
+msgid "The first word is the instrument and the second what it measures."
+msgstr "La primera paraula és un instrument i la segona allò que mesura."
+
+#: ../data/verbal_analogies.xml.h:360
+msgid "hungry / eat | tired"
+msgstr "afamat / menjar | cansat"
+
+#: ../data/verbal_analogies.xml.h:361
+msgid "sleep | rest"
+msgstr "dormir | descansar"
+
+#. Translators: 'open' is used as a verb (open a box)
+#: ../data/verbal_analogies.xml.h:363
+msgid "box / open | banana"
+msgstr "caixa / obrir | plàtan"
+
+#: ../data/verbal_analogies.xml.h:364
+msgid "peel"
+msgstr "pelar"
+
+#. Translators: 'dig' is used as a verb (to dig)
+#: ../data/verbal_analogies.xml.h:366
+msgid "shovel / dig | axe"
+msgstr "pala / cavar | destral"
+
+#. Translators: 'chop' is used as a verb (to chop)
+#: ../data/verbal_analogies.xml.h:368
+msgid "chop"
+msgstr "tallar | talar"
+
+#. Translators: 'break' is used as a verb (to break)
+#: ../data/verbal_analogies.xml.h:370
+msgid "glass / break | paper"
+msgstr "vidre / trencar | paper"
+
+#. Translators: 'tear' and 'rip' are used as verbs (to tear / to rip). Tear as in "To pull apart or into pieces by force" (not lacrimation)
+#: ../data/verbal_analogies.xml.h:372
+msgid "tear | rip"
+msgstr "estripar | trossejar"
+
+#. Translators: the concept 'toe' (http://en.wikipedia.org/wiki/Toe) does not exist in all languages. Feel free to change it to 'fingers' and adapt the answer accordingly
+#: ../data/verbal_analogies.xml.h:374
+msgid "feet / two | toes"
+msgstr "peus / dos | dits"
+
+# N.T: en català són vint dits ja que no tenim el concepte 'toes'
+#. Translators: referred to 'feet / two | toes'
+#: ../data/verbal_analogies.xml.h:376
+msgid "ten | 10"
+msgstr "vint | 20"
+
+#: ../data/verbal_analogies.xml.h:377
+msgid "fish / aquarium | monkey"
+msgstr "peix / aquari | mico"
+
+#: ../data/verbal_analogies.xml.h:378
+msgid "cage | zoo | zoological garden"
+msgstr "gàbia | zoo | zoològic"
+
+#: ../data/verbal_analogies.xml.h:379
+msgid "A fish in an aquarium lives in captivity."
+msgstr "Un peix a un aquari viu en captivitat."
+
+#: ../data/verbal_analogies.xml.h:380
+msgid "ring / finger | bracelet"
+msgstr "anell / dit | braçalet"
+
+#: ../data/verbal_analogies.xml.h:381
+msgid "wrist | arm"
+msgstr "canell | braç"
+
+#: ../data/verbal_analogies.xml.h:382
+msgid "seal / flippers | bird"
+msgstr "foca / aletes | ocell"
+
+#: ../data/verbal_analogies.xml.h:383
+msgid "wings"
+msgstr "ales"
+
+#. Translators: stick refers to a piece of wood
+#: ../data/verbal_analogies.xml.h:385
+msgid "stick / float | stone"
+msgstr "pal / flotar | pedra"
+
+#: ../data/verbal_analogies.xml.h:386
+msgid "sink"
+msgstr "enfonsar | submergir"
+
+#: ../data/verbal_analogies.xml.h:387
+msgid "leopard / spots | tiger"
+msgstr "lleopard / taques | tigre"
+
+#: ../data/verbal_analogies.xml.h:388
+msgid "stripes"
+msgstr "ratlles"
+
+#. Translators: 'submarine' is used as a noun
+#: ../data/verbal_analogies.xml.h:390
+msgid "fish / submarine | bird"
+msgstr "peix / submarí | ocell"
+
+#: ../data/verbal_analogies.xml.h:391
+msgid "airplane | aeroplane | plane"
+msgstr "avió | aeroplà | aeronau"
+
+#: ../data/verbal_analogies.xml.h:392
+msgid "tears / eyes | sweat"
+msgstr "llàgrimes / ulls | suor"
+
+#: ../data/verbal_analogies.xml.h:393
+msgid "body | skin"
+msgstr "cos | pell"
+
+#: ../data/verbal_analogies.xml.h:394
+msgid "bridge / over | tunnel"
+msgstr "pont / sobre | túnel"
+
+#: ../data/verbal_analogies.xml.h:395
+msgid "in | under | through"
+msgstr "dins | sota | a través"
+
+#. Translators: 'play' is used as a verb (to play)
+#: ../data/verbal_analogies.xml.h:397
+msgid "toy / play | tool"
+msgstr "joguina / jugar | eina"
+
+#. Translators: 'work' is used as a verb (to work)
+#: ../data/verbal_analogies.xml.h:399
+msgid "work"
+msgstr "treballar"
+
+#. 'correct' can be used as verb or adjective
+#: ../data/verbal_analogies.xml.h:401
+msgid "error / (to) correct | damage"
+msgstr "error / corregir | dany"
+
+#: ../data/verbal_analogies.xml.h:402
+msgid "repair | fix"
+msgstr "reparar | arreglar"
+
+#: ../data/verbal_analogies.xml.h:403
+msgid "orange / fruit | spinach"
+msgstr "taronja / fruita | espinac"
+
+#: ../data/verbal_analogies.xml.h:404
+msgid "vegetable"
+msgstr "vegetal | verdura | hortalissa"
+
+#: ../data/verbal_analogies.xml.h:405
+msgid "hands / grab | teeth"
+msgstr "mans / agafar | dents"
+
+#: ../data/verbal_analogies.xml.h:406
+msgid "bite"
+msgstr "mossegar"
+
+#: ../data/verbal_analogies.xml.h:407
+msgid "Grab and bite are finite actions."
+msgstr "Agafar i mossegar són accions finites."
+
+#: ../data/verbal_analogies.xml.h:408
+msgid "puzzle / solve | game"
+msgstr "trencaclosques / solucionar | joc"
+
+#: ../data/verbal_analogies.xml.h:409
+msgid "win | play"
+msgstr "guanyar | jugar"
+
+#: ../data/verbal_analogies.xml.h:410
+msgid "eyebrow / eye | mustache"
+msgstr "cella / ull | bigoti"
+
+#: ../data/verbal_analogies.xml.h:411
+msgid "lip | upper lip | mouth"
+msgstr "llavi | llavi superior | boca"
+
+#: ../data/verbal_analogies.xml.h:412
+msgid "ice / slippery | glue"
+msgstr "gel / lliscós | pegament"
+
+#: ../data/verbal_analogies.xml.h:413
+msgid "sticky"
+msgstr "enganxós | enganxifós | apegalós | pegallós"
+
+#: ../data/verbal_analogies.xml.h:414
+msgid "whirlpool / water | tornado"
+msgstr "remolí / aigua | tornado"
+
+#: ../data/verbal_analogies.xml.h:415
+msgid "wind | air"
+msgstr "vent | aire"
+
+#: ../data/verbal_analogies.xml.h:416
+msgid "fox / den | bird"
+msgstr "guineu / cova | ocell"
+
+#: ../data/verbal_analogies.xml.h:417
+msgid "nest"
+msgstr "niu"
+
+#: ../data/verbal_analogies.xml.h:418
+msgid "dog / tame | wolf"
+msgstr "gos / domèstic | llop"
+
+#: ../data/verbal_analogies.xml.h:419
+msgid "wild | savage"
+msgstr "salvatge | feréstec | ferotge | feroç"
+
+#: ../data/verbal_analogies.xml.h:420
+msgid "sugar / sweet | vinegar"
+msgstr "sucre / dolç | vinagre"
+
+#: ../data/verbal_analogies.xml.h:421
+msgid "sour"
+msgstr "agre"
+
+#: ../data/verbal_analogies.xml.h:422
+msgid "tennis / sport | ballet"
+msgstr "tennis / esport | ballet"
+
+#. Translators: 'dance' is used as a noun
+#: ../data/verbal_analogies.xml.h:424
+msgid "dance"
+msgstr "dansa"
+
+#: ../data/verbal_analogies.xml.h:425
+msgid "slurp / tongue | snort"
+msgstr "xuclar / llengua | roncar"
+
+#: ../data/verbal_analogies.xml.h:426
+msgid "nose"
+msgstr "nas"
+
+#: ../data/verbal_analogies.xml.h:427
+msgid "elbow / knee | wrist"
+msgstr "colze / genoll | canell"
+
+#: ../data/verbal_analogies.xml.h:428
+msgid "ankle"
+msgstr "turmell"
+
+#: ../data/verbal_analogies.xml.h:429
+msgid "novel / author | song"
+msgstr "novel·la / autor | cançó"
+
+#: ../data/verbal_analogies.xml.h:430
+msgid "composer | songwriter | lyricist"
+msgstr "compositor | cantautor"
+
+#: ../data/verbal_analogies.xml.h:431
+msgid "car / road | train"
+msgstr "cotxe / carretera | tren"
+
+#: ../data/verbal_analogies.xml.h:432
+msgid "track | railway | rails | railroad"
+msgstr "via | ferrovia | rail"
+
+#: ../data/verbal_analogies.xml.h:433
+msgid "pediatrics / children | numismatics"
+msgstr "pediatria / infants | numismàtica"
+
+#: ../data/verbal_analogies.xml.h:434
+msgid "coins"
+msgstr "monedes"
+
+#: ../data/verbal_analogies.xml.h:435
+msgid "thermometer / temperature | clock"
+msgstr "termòmetre / temperatura | rellotge"
+
+#. Translators: time as duration of an event. What a clock measures
+#: ../data/verbal_analogies.xml.h:437
+msgid "time"
+msgstr "temps"
+
+#: ../data/verbal_analogies.xml.h:438
+msgid "poems / anthology | maps"
+msgstr "poemes / antologia | mapes"
+
+#: ../data/verbal_analogies.xml.h:439
+msgid "atlas"
+msgstr "atles"
+
+#: ../data/verbal_analogies.xml.h:440
+msgid "letter / word | page"
+msgstr "lletra / paraula | pàgina"
+
+#: ../data/verbal_analogies.xml.h:441
+msgid "book | magazine | document"
+msgstr "llibre | revista | document"
+
+#: ../data/verbal_analogies.xml.h:442
+msgid "hour / minute | minute"
+msgstr "hora / minut | minut"
+
+#. Translators: refers to the unit of time
+#: ../data/verbal_analogies.xml.h:444
+msgid "second"
+msgstr "segon"
+
+#: ../data/verbal_analogies.xml.h:445
+msgid "tiger / carnivore | cow"
+msgstr "tigre / carnívor | vaca"
+
+#: ../data/verbal_analogies.xml.h:446
+msgid "herbivorous | herbivore"
+msgstr "herbívor | herbívora"
+
+#: ../data/verbal_analogies.xml.h:447
+msgid "constellation / stars | archipelago"
+msgstr "constel·lació / estrelles | arxipèlag"
+
+#: ../data/verbal_analogies.xml.h:448
+msgid "islands"
+msgstr "illes"
+
+#: ../src/Clients/Classical/CommandLine.cs:100
+#, csharp-format
+msgid "Unknown command line parameter {0}"
+msgstr "El paràmetre de línia de comandes {0} és desconegut"
+
+#. Translators: {0} is a date
+#: ../src/Clients/Classical/CommandLine.cs:110
+#, csharp-format
+msgid "(built on {0})"
+msgstr "(muntat al {0})"
+
+#: ../src/Clients/Classical/CommandLine.cs:121
+msgid "List of available games"
+msgstr "Llista de jocs disponibles"
+
+#: ../src/Clients/Classical/CommandLine.cs:172
+msgid "Usage: gbrainy [options]"
+msgstr "Ús: gbrainy [opcions]"
+
+#: ../src/Clients/Classical/CommandLine.cs:173
+msgid "  --version\t\t\tPrint version information."
+msgstr "  --version\t\t\tMostra informació sobre la versió."
+
+#: ../src/Clients/Classical/CommandLine.cs:174
+msgid "  --help\t\t\tPrint this usage message."
+msgstr "  --help\t\t\tImprimeix aquest missatge."
+
+#: ../src/Clients/Classical/CommandLine.cs:175
+msgid "  --gamelist\t\t\tShows the list of available games."
+msgstr "  --gamelist\t\t\tMostra la llista de jocs disponibles."
+
+#: ../src/Clients/Classical/CommandLine.cs:176
+msgid ""
+"  --customgame [game1, gameN]\tSpecifies a list of games to play during a "
+"custom game."
+msgstr ""
+"  --customgame [game1, gameN]\tEspecifica la llista de jocs personalitzada "
+"per a una sessió."
+
+#: ../src/Clients/Classical/CommandLine.cs:177
+msgid ""
+"  --norandom \t\t\tThe custom game list provided will not be randomized."
+msgstr ""
+"  --norandom \t\t\tLa llista personalitzada de jocs proporcionada no serà "
+"generada aleatòriament."
+
+#: ../src/Clients/Classical/CommandLine.cs:178
+msgid "  --versions \t\t\tShow dependencies."
+msgstr "  --versions \t\t\tMostra les dependències."
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:34
+msgid "Software"
+msgstr "Programari"
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:37
+msgid "Based on ideas by"
+msgstr "Basat en idees de"
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:41
+msgid "MENSA works"
+msgstr "Llibres de MENSA"
+
+#. Translators: Replace by the name of the people that translated the application
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:61
+msgid "translator-credits"
+msgstr "Jordi Mas i Hernandez <jmas@softcatala.org>"
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:66
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as  published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+msgstr ""
+"Aquest programa és programari lliure; es pot redistribuir i/o modificar sota "
+"els termes de la Llicència Pública General GNU tal com ha estat publicada "
+"per la Free Software Foundation; ja sigui la versió 2 de la Llicència o (si "
+"ho preferiu) qualsevol versió posterior.\n"
+"\n"
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:67
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+msgstr ""
+"Aquest programa es distribueix amb l'expectativa de que serà útil, però "
+"SENSE CAP GARANTIA; fins i tot sense la garantia implícita de "
+"COMERCIALITZACIÓ o ADEQUACIÓ PER A CAP PROPÒSIT EN PARTICULAR. Vegeu la "
+"Llicència Pública General GNU per obtenir-ne més detalls.\n"
+"\n"
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:68
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place - Suite 330, Boston, MA 02111-1307, USA."
+msgstr ""
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU "
+"juntament amb aquest programa; en cas contrari, escriviu a la Free Software "
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA."
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:78
+msgid "A brain teaser game for fun and to keep your brain trained."
+msgstr "Un joc per divertir-se i mantenir el vostre cervell en forma."
+
+#: ../src/Clients/Classical/Dialogs/AboutDialog.cs:80
+msgid "gbrainy project web site"
+msgstr "Lloc web del projecte gbrainy"
+
+#. Column: Game Name
+#: ../src/Clients/Classical/Dialogs/CustomGameDialog.cs:105
+msgid "Game Name"
+msgstr "Nom del joc"
+
+#. Column: Type
+#: ../src/Clients/Classical/Dialogs/CustomGameDialog.cs:131
+msgid "Type"
+msgstr "Tipus"
+
+#: ../src/Clients/Classical/Dialogs/CustomGameDialog.cs:157
+msgid "Selected"
+msgstr "Seleccionat"
+
+#. Translators: default file name used when exporting PDF files (keep the pdf extension please)
+#: ../src/Clients/Classical/Dialogs/PdfExportDialog.cs:73
+msgid "games.pdf"
+msgstr "jocs.pdf"
+
+#: ../src/Clients/Classical/Dialogs/PdfExportDialog.cs:80
+msgid "PDF files"
+msgstr "Fitxers PDF"
+
+#: ../src/Clients/Classical/Dialogs/PdfExportDialog.cs:84
+msgid "All files"
+msgstr "Tots els fitxers"
+
+#: ../src/Clients/Classical/Dialogs/PdfExportDialog.cs:172
+msgid "The PDF file has been exported correctly."
+msgstr "El fitxer PDF s'ha exportat correctament."
+
+#: ../src/Clients/Classical/Dialogs/PdfExportDialog.cs:175
+msgid ""
+"There was a problem generating the PDF file. The file has not been created."
+msgstr ""
+"S'ha produït un problema en generar el fitxer PDF. El fitxer no s'ha creat."
+
+#: ../src/Clients/Classical/Dialogs/PlayerHistoryDialog.cs:46
+msgid "The graph below shows the player's game score evolution."
+msgstr "El gràfic de sota mostra l'evolució de la puntuació del jugador."
+
+#: ../src/Clients/Classical/Dialogs/PlayerHistoryDialog.cs:50
+msgid ""
+"You need more than one game session recorded to see the score evolution."
+msgstr ""
+"Cal més d'una partida emmagatzemada per veure l'evolució de la puntuació."
+
+#: ../src/Clients/Classical/Dialogs/PlayerHistoryDialog.cs:54
+#, csharp-format
+msgid "It is built using the results of {0} recorded game session."
+msgid_plural ""
+"It is built using the results of the last {0} recorded game sessions."
+msgstr[0] ""
+"S'ha elaborat utilitzant els resultats de {0} partida emmagatzemada."
+msgstr[1] ""
+"S'ha elaborat utilitzant els resultats de les darreres {0} partides "
+"emmagatzemades."
+
+#. Translators: "The graph below" +  "It is built using" sentences
+#. Translators: answer + rationale of the answer
+#. Translators: Concatenating two strings (rationale of answer + extra information).
+#: ../src/Clients/Classical/Dialogs/PlayerHistoryDialog.cs:61
+#: ../src/Core/Main/Game.cs:145
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsCompare.cs:75
+#: ../src/Games/Logic/PuzzleCountSeries.cs:93
+#, csharp-format
+msgid "{0} {1}"
+msgstr "{0} {1}"
+
+#: ../src/Clients/Classical/Dialogs/PlayerHistoryDialog.cs:67
+#: ../src/Core/Views/FinishView.cs:102
+#: ../src/Core/Views/PlayerHistoryView.cs:85
+msgid "Total"
+msgstr "Total"
+
+#: ../src/Clients/Classical/Dialogs/PreferencesDialog.cs:120
+msgid "You are about to delete the player's game session history."
+msgstr "Esteu a punt de suprimir l'historial de partides del jugador."
+
+#: ../src/Clients/Classical/Dialogs/PreferencesDialog.cs:121
+msgid ""
+"If you proceed, you will lose the history of the previous game sessions. Do "
+"you want to continue?"
+msgstr ""
+"Si continueu, perdreu l'historial de les partides prèvies. Voleu continuar?"
+
+#: ../src/Clients/Classical/Dialogs/PreferencesDialog.cs:122
+msgid "_Delete"
+msgstr "_Suprimeix"
+
+#: ../src/Clients/Classical/Dialogs/ui/CustomGameDialog.ui.h:1
+msgid "Custom Game"
+msgstr "Partida personalitzada"
+
+#: ../src/Clients/Classical/Dialogs/ui/CustomGameDialog.ui.h:2
+msgid "Select All"
+msgstr "Selecciona-ho tot"
+
+#: ../src/Clients/Classical/Dialogs/ui/CustomGameDialog.ui.h:3
+msgid "Unselect all"
+msgstr "Desselecciona-ho tot"
+
+#: ../src/Clients/Classical/Dialogs/ui/CustomGameDialog.ui.h:4
+msgid "_Start"
+msgstr "_Inicia"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:1
+msgid "PDF export"
+msgstr "Exportació PDF"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:2
+msgid ""
+"This option allows to export a set of games in a PDF file. You can complete "
+"the puzzles without a computer."
+msgstr ""
+"Aquesta opció permet exportar un conjunt de jocs a un fitxer PDF per poder-"
+"hi jugar sense un ordinador."
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:3
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:2
+msgid "<b>General Settings</b>"
+msgstr "<b>Configuració general</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:4
+msgid "Skip games that use colors"
+msgstr "Omet jocs que usen colors"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:5
+msgid "<b>Game Types</b>"
+msgstr "<b>Tipus de de jocs</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:6
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:124
+#: ../src/Core/Main/GameTypes.cs:45 ../src/Core/Views/FinishView.cs:109
+msgid "Logic"
+msgstr "Lògica"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:7
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:128
+#: ../src/Core/Main/GameTypes.cs:49 ../src/Core/Views/FinishView.cs:116
+msgid "Calculation"
+msgstr "Càlcul"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:8
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:138
+#: ../src/Core/Main/GameTypes.cs:51 ../src/Core/Views/FinishView.cs:130
+msgid "Verbal"
+msgstr "Verbal"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:9
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:8
+msgid "<b>Difficulty Level</b>"
+msgstr "<b>Nivell de dificultat</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:10
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:9
+msgid "Easy"
+msgstr "Fàcil"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:11
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:10
+msgid "Medium"
+msgstr "Mitjà"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:12
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:11
+msgid "Master"
+msgstr "Mestre"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:13
+msgid "<b>Number of games</b>"
+msgstr "<b>Nombre de jocs</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:14
+msgid "Total number of games:"
+msgstr "Nombre total de jocs:"
+
+#. Translators: this the number of pages that are included by side when exporting a PDF"
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:16
+msgid "Pages per side:"
+msgstr "Pàgines per cara:"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:17
+msgid "<b>Output File</b>"
+msgstr "<b>Fitxer de sortida</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PdfExportDialog.ui.h:18
+msgid "_Save"
+msgstr "_Desa"
+
+#: ../src/Clients/Classical/Dialogs/ui/PlayerHistoryDialog.ui.h:1
+#: ../src/Clients/Classical/gbrainy.ui.h:19
+msgid "Player's Game Session History"
+msgstr "Historial de partides del jugador"
+
+#: ../src/Clients/Classical/Dialogs/ui/PlayerHistoryDialog.ui.h:2
+msgid "Show:"
+msgstr "Mostra:"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:1
+#: ../src/Clients/Classical/gbrainy.ui.h:21
+msgid "Preferences"
+msgstr "Preferències"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:3
+msgid "Skip games that use colors (for colorblind users)"
+msgstr "Omet jocs que usen colors (per a usuaris daltònics)"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:4
+msgid "Force gbrainy to always use English language (ignore translations)"
+msgstr ""
+"Força al gbrainy a utilitzar sempre llengua anglesa (ignora les traduccions)"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:5
+msgid "Search and load extensions when starting"
+msgstr "Cerca i carrega les extensions en iniciar"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:6
+msgid "Enable sounds"
+msgstr "Habilita el so"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:7
+msgid "Theme:"
+msgstr "Tema:"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:12
+msgid "<b>Memory Games</b>"
+msgstr "<b>Jocs de memòria</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:13
+msgid "Time in seconds to memorize the challenge:"
+msgstr "Temps en segons per memoritzar el repte:"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:14
+msgid "Show a countdown message"
+msgstr "Mostra un missatge de compte enrere"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:15
+msgid "<b>Player's Game Session History</b>"
+msgstr "<b>Historial de partides del jugador</b>"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:16
+msgid "Minimum number of played games to store the game session:"
+msgstr "Nombre mínim de jocs jugats per desar la partida:"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:17
+msgid "Maximum number of records in the player's game session history:"
+msgstr "Nombre màxim de jocs desats a l'historial de partides del jugador:"
+
+#: ../src/Clients/Classical/Dialogs/ui/PreferencesDialog.ui.h:18
+msgid "Delete Player's Game Session History"
+msgstr "Suprimeix l'historial de partides del jugador"
+
+#: ../src/Clients/Classical/gbrainy.cs:429
+msgid "Congratulations."
+msgstr "Enhorabona."
+
+#: ../src/Clients/Classical/gbrainy.cs:433
+msgid "Incorrect answer."
+msgstr "Resposta incorrecta."
+
+#: ../src/Clients/Classical/gbrainy.cs:494
+msgid ""
+"Once you have an answer type it in the \"Answer:\" entry box and press the "
+"\"OK\" button."
+msgstr ""
+"Un cop tingueu la resposta introduïu-la al quadre «Resposta:» i premeu el "
+"botó «D'acord»."
+
+#: ../src/Clients/Classical/gbrainy.cs:524
+msgid "The level of translation of gbrainy for your language is low."
+msgstr "El nivell de traducció del gbrainy al vostre idioma és baix."
+
+#: ../src/Clients/Classical/gbrainy.cs:525
+msgid ""
+"You may be exposed to partially translated games making it more difficult to "
+"play. If you prefer to play in English, there is an option for doing so in "
+"gbrainy's Preferences."
+msgstr ""
+"És possible que es mostrin jocs parcialment traduïts. Això fa que jugar al "
+"gbrainy pugui ser sigui més difícil. Si preferiu jugar en anglès, hi ha una "
+"opció a les Preferències del gbrainy per fer-ho."
+
+#: ../src/Clients/Classical/gbrainy.cs:621
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:143
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../src/Clients/Classical/gbrainy.cs:626
+msgid "Resume"
+msgstr "Reprèn"
+
+# csharp-format
+#: ../src/Clients/Classical/gbrainy.cs:776
+#, csharp-format
+msgid "Startup time {0}"
+msgstr "Temps d'iniciació {0}"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:2
+msgid "_Game"
+msgstr "P_artida"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:3
+msgid "_New Game"
+msgstr "_Partida nova"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:4
+msgid "All Games (Logic, Mental Calculation, Memory and Verbal Analogies)"
+msgstr "Tots els jocs (lògica, càlcul mental, memòria i analogies verbals)"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:5
+msgid "Logic Puzzles Only"
+msgstr "Només trencaclosques lògics"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:6
+msgid "Mental Calculation Only"
+msgstr "Només càlcul mental"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:7
+msgid "Memory Trainers Only"
+msgstr "Només entrenadors de memòria"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:8
+msgid "Verbal Analogies Only"
+msgstr "Només analogies verbals"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:9
+msgid "Custom Game Selection..."
+msgstr "Partida personalitzada..."
+
+#: ../src/Clients/Classical/gbrainy.ui.h:10
+msgid "_Pause Game"
+msgstr "_Fes una pausa a la partida"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:11
+msgid "_End Game"
+msgstr "_Finalitza la partida"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:12
+msgid "Export Games to PDF for Off-line Playing..."
+msgstr "Exporta jocs a PDF per jugar fora de línia..."
+
+#: ../src/Clients/Classical/gbrainy.ui.h:13
+msgid "_View"
+msgstr "_Visualitza"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:14
+msgid "Toolbar"
+msgstr "Barra d'eines"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:15
+msgid "Show"
+msgstr "Mostra"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:16
+msgid "Orientation"
+msgstr "Orientació"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:17
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:18
+msgid "Horizontal"
+msgstr "Horitzontal"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:20
+msgid "_Settings"
+msgstr "_Paràmetres"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:22
+msgid "Extensions"
+msgstr "Extensions"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:23
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:24
+msgid "_Contents"
+msgstr "_Continguts"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:25
+msgid "How to Extend gbrainy's Functionality"
+msgstr "Com ampliar la funcionalitat del gbrainy"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:26
+msgid "Answer:"
+msgstr "Resposta:"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:27
+msgid "_Next"
+msgstr "_Següent"
+
+#: ../src/Clients/Classical/gbrainy.ui.h:28
+msgid "_Tip"
+msgstr "P_ista"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:31
+msgid "Add-in Manager"
+msgstr "Gestor d'extensions"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:32
+msgid "Additional extensions are required to perform this operation."
+msgstr ""
+"Són necessàries extensions addicionals per a efectuar aquesta operació."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:33
+msgid "The following add-ins will be installed:"
+msgstr "S'instal·laran les extensions següents:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:34
+msgid "<big><b>Add-in Manager</b></big>"
+msgstr "<big><b>Gestor d'extensions</b></big>"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:35
+msgid "The following add-ins are currently installed:"
+msgstr "Les extensions següents es troben ja instal·lades:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:36
+msgid "_Install Add-ins..."
+msgstr "_Instal·la les extensions..."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:37
+msgid "_Repositories..."
+msgstr "_Dipòsits..."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:38
+msgid "_Uninstall..."
+msgstr "_Desinstal·la..."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:39
+msgid "Enable"
+msgstr "Habilita"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:40
+msgid "Disable"
+msgstr "Inhabilita"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:41
+msgid "Add-in"
+msgstr "Extensió"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:42
+msgid "Version"
+msgstr "Versió"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:43
+msgid "Other"
+msgstr "Altres"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:44
+msgid "Version:"
+msgstr "Versió:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:45
+msgid "Author:"
+msgstr "Autor:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:46
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:47
+msgid "Add-in Dependencies:"
+msgstr "Dependències de l'extensió:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:48
+msgid "<b>Select the add-ins to install and click on Next</b>"
+msgstr ""
+"<b>Seleccioneu les extensions que s'han d'instal·lar i feu clic a Següent</b>"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:49
+msgid "Show all packages"
+msgstr "Mostra tots els paquets"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:50
+msgid "Show new versions only"
+msgstr "Mostra només les versions noves"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:51
+msgid "Show updates only"
+msgstr "Mostra només les actualitzacions"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:52
+msgid "_Unselect All"
+msgstr "_Desselecciona-ho"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:53
+msgid "Select _All"
+msgstr "_Selecciona-ho tot"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:54
+msgid "Add-in Installation"
+msgstr "Instal·lació d'extensions"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:55
+msgid "Name"
+msgstr "Nom"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:56
+msgid "Url"
+msgstr "URL"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:57
+msgid "Install from:"
+msgstr "Instal·la des de:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:58
+msgid "Repository"
+msgstr "Dipòsit"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:59
+msgid "All registered repositories"
+msgstr "Tots els dipòsits registrats"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:60
+msgid "Register an on-line repository"
+msgstr "Registra un dipòsit en línia"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:61
+msgid "Select the location of the repository you want to register:"
+msgstr "Seleccioneu la ubicació del dipòsit que voleu registrar:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:62
+msgid "Register a local repository"
+msgstr "Registra un dipòsit local"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:63
+msgid "Url:"
+msgstr "URL:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:64
+#: ../src/Clients/Classical/Widgets/BrowseFile.cs:43
+msgid "Browse..."
+msgstr "Navega..."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:65
+msgid "Path:"
+msgstr "Camí:"
+
+#. Mono Addins 0.6
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:68
+msgid "Installed"
+msgstr "Instal·lat"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:69
+msgid "Updates"
+msgstr "Actualitzacions"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:70
+msgid "Gallery"
+msgstr "Galeria"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:71
+msgid "Repository:"
+msgstr "Dipòsit:"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:72
+msgid "Install from file..."
+msgstr "Instal·la des d'un fitxer..."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:73
+msgid "No selection"
+msgstr "Sense selecció"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:74
+msgid "No add-ins found"
+msgstr "No s'ha trobat cap extensió"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:75
+msgid "Refresh"
+msgstr "Refresca"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:76
+msgid "Add-in packages"
+msgstr "Paquets d'extensions"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:77
+msgid "Install Add-in Package"
+msgstr "Instal·la un paquet d'extensió"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:78
+msgid "All repositories"
+msgstr "Tots els dipòsits"
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:79
+msgid "Manage Repositories..."
+msgstr "Gestiona els dipòsits..."
+
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:80
+msgid "Add-in Repository Management"
+msgstr "Gestor de dipòsits d'extensions"
+
+#. Translators: {0} is a number indicating the Addins available for update
+#: ../src/Clients/Classical/MonoAddinsStrings.cs:87
+#, csharp-format
+msgid "{0} update available"
+msgid_plural "{0} updates available"
+msgstr[0] "{0} actualització disponible"
+msgstr[1] "{0} actualitzacions disponibles"
+
+#: ../src/Clients/Classical/Widgets/BrowseFile.cs:84
+msgid "Open Location"
+msgstr "Obre ubicació"
+
+#: ../src/Clients/Classical/Widgets/GameDrawingArea.cs:127
+#: ../src/Core/Main/GameSession.cs:185
+msgid "Paused"
+msgstr "En pausa"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:118
+msgid "Play all the games"
+msgstr "Jugueu a tots els jocs"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:119
+msgid "All"
+msgstr "Tots"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:123
+msgid "Play games that challenge your reasoning and thinking"
+msgstr ""
+"Jugueu a jocs que desafien les vostres habilitats de raonament i pensament"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:129
+msgid "Play games that challenge your mental calculation skills"
+msgstr "Jugueu a jocs que desafien les vostres habilitats de càlcul mental"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:133
+#: ../src/Core/Main/GameTypes.cs:47 ../src/Core/Views/FinishView.cs:123
+msgid "Memory"
+msgstr "Memòria"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:134
+msgid "Play games that challenge your short term memory"
+msgstr "Jugueu a jocs que desafien la vostra memòria a curt termini"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:139
+msgid "Play games that challenge your verbal aptitude"
+msgstr "Jugueu a jocs que desafien les vostres aptituds verbals"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:144
+msgid "Pause or resume the game"
+msgstr "Fes una pausa o continua la partida"
+
+#
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:148
+msgid "End the game and show score"
+msgstr "Finalitza la partida i mostra la puntuació"
+
+#: ../src/Clients/Classical/Widgets/Toolbar.cs:149
+msgid "End"
+msgstr "Finalitza"
+
+#: ../src/Core/Main/ColorPalette.cs:72
+msgid "red"
+msgstr "vermell"
+
+#: ../src/Core/Main/ColorPalette.cs:73
+msgid "green"
+msgstr "verd"
+
+#: ../src/Core/Main/ColorPalette.cs:74
+msgid "blue"
+msgstr "blau"
+
+#: ../src/Core/Main/ColorPalette.cs:75
+msgid "yellow"
+msgstr "groc"
+
+#: ../src/Core/Main/ColorPalette.cs:76
+msgid "magenta"
+msgstr "magenta"
+
+#
+#: ../src/Core/Main/ColorPalette.cs:77
+msgid "orange"
+msgstr "taronja"
+
+#
+#: ../src/Core/Main/ColorPalette.cs:78
+msgid "black"
+msgstr "negre"
+
+#
+#: ../src/Core/Main/ColorPalette.cs:79
+msgid "white"
+msgstr "blanc"
+
+#. Translators Note
+#. The following series of answers may need to be adapted
+#. in cultures with alphabets different to the Latin one.
+#. The idea is to enumerate a sequence of possible answers
+#. For languages represented with the Latin alphabet use
+#. the same than English
+#. First possible answer for a series (e.g.: Figure A)
+#: ../src/Core/Main/GameAnswer.cs:116
+msgid "A"
+msgstr "A"
+
+#. Second possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:118
+msgid "B"
+msgstr "B"
+
+#. Third possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:120
+msgid "C"
+msgstr "C"
+
+#. Fourth possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:122
+msgid "D"
+msgstr "D"
+
+#. Fifth possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:124
+msgid "E"
+msgstr "E"
+
+#. Sixth possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:126
+msgid "F"
+msgstr "F"
+
+#. Seventh possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:128
+msgid "G"
+msgstr "G"
+
+#. Eighth possible answer for a series
+#: ../src/Core/Main/GameAnswer.cs:130
+msgid "H"
+msgstr "H"
+
+#. Translators. This is the list of valid answers, like A or B.
+#: ../src/Core/Main/GameAnswer.cs:146
+#, csharp-format
+msgid "{0} or {1}"
+msgstr "{0} o {1}"
+
+#. Translators. This is the list of valid answers, like A, B or C.
+#: ../src/Core/Main/GameAnswer.cs:150
+#, csharp-format
+msgid "{0}, {1} or {2}"
+msgstr "{0}, {1} o {2}"
+
+#. Translators. This is the list of valid answers, like A, B, C or D.
+#: ../src/Core/Main/GameAnswer.cs:154
+#, csharp-format
+msgid "{0}, {1}, {2} or {3}"
+msgstr "{0}, {1}, {2} o {3}"
+
+#: ../src/Core/Main/GameAnswer.cs:163
+#, csharp-format
+msgid "Figure {0}"
+msgstr "Figura {0}"
+
+#: ../src/Core/Main/Game.cs:138
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsCompare.cs:67
+#, csharp-format
+msgid "The correct answer is {0}."
+msgid_plural "The possible correct answers are {0}."
+msgstr[0] "La resposta correcta és {0}."
+msgstr[1] "Les possibles respostes correctes són {0}."
+
+#: ../src/Core/Main/GameManager.cs:251
+msgid "Extensions database:"
+msgstr "Base de dades d'extensions:"
+
+#. Translators: 'Games registered' is the games know to gbrainy (build-in and load from addins-in and external files)
+#: ../src/Core/Main/GameManager.cs:257
+#, csharp-format
+msgid ""
+"{0} games registered: {1} logic puzzles, {2} calculation trainers, {3} "
+"memory trainers, {4} verbal analogies"
+msgstr ""
+"{0} jocs registrats: {1} trencaclosques lògics, {2} entrenadors de càlcul "
+"mental, {3} entrenadors de memòria, {4} analogies verbals"
+
+#: ../src/Core/Main/GameSession.cs:183
+#, csharp-format
+msgid "Games played: {0} (Score: {1})"
+msgstr "Jocs: {0} (puntuació: {1})"
+
+#: ../src/Core/Main/GameSession.cs:184
+#, csharp-format
+msgid "Time: {0}"
+msgstr "Temps: {0}"
+
+#. Translators: {0} is the name of the game
+#: ../src/Core/Main/GameSession.cs:189
+#, csharp-format
+msgid "Game: {0}"
+msgstr "Joc: {0}"
+
+#. Translators: text in the status bar: games played - time - game name
+#: ../src/Core/Main/GameSession.cs:191
+#, csharp-format
+msgid "{0} - {1} - {2}"
+msgstr "{0} - {1} - {2}"
+
+#. Translators: text in the status bar: games played - time
+#: ../src/Core/Main/GameSession.cs:194
+#, csharp-format
+msgid "{0} - {1}"
+msgstr "{0} - {1}"
+
+#: ../src/Core/Main/GameSessionHistory.cs:80
+msgid "Outstanding results"
+msgstr "Resultats extraordinaris"
+
+#: ../src/Core/Main/GameSessionHistory.cs:82
+msgid "Excellent results"
+msgstr "Excel·lents resultats"
+
+#: ../src/Core/Main/GameSessionHistory.cs:84
+msgid "Good results"
+msgstr "Bons resultats"
+
+#: ../src/Core/Main/GameSessionHistory.cs:86
+msgid "Poor results"
+msgstr "Resultats pobres"
+
+#: ../src/Core/Main/GameSessionHistory.cs:87
+msgid "Disappointing results"
+msgstr "Resultats decebedors"
+
+#: ../src/Core/Main/GameTips.cs:59
+msgid "Read the instructions carefully and identify the data and given clues."
+msgstr ""
+"Llegiu les instruccions amb deteniment i identifiqueu les dades i pistes "
+"donades."
+
+#: ../src/Core/Main/GameTips.cs:61
+msgid ""
+"To score the player gbrainy uses the time and tips needed to complete each "
+"game."
+msgstr ""
+"Per puntuar al jugador gbrainy utilitza el temps i les pistes utilitzades "
+"per a resoldre cada joc."
+
+#: ../src/Core/Main/GameTips.cs:63
+msgid ""
+"In logic games, elements that may seem irrelevant can be very important."
+msgstr ""
+"En els jocs de lògica, els elements que semblen irrellevants poden ser força "
+"importants."
+
+#: ../src/Core/Main/GameTips.cs:65
+msgid "Try to approach a problem from different angles."
+msgstr "Proveu d'aproximar-vos al problema des de diferents angles."
+
+#: ../src/Core/Main/GameTips.cs:67
+msgid ""
+"Do not be afraid of making mistakes, they are part of the learning process."
+msgstr "Gaudiu fent errades, és part del procés d'aprenentatge."
+
+#: ../src/Core/Main/GameTips.cs:69
+msgid ""
+"Do all the problems, even the difficult ones. Improvement comes from "
+"challeging yourself."
+msgstr ""
+"Feu tots els problemes, fins i tot els difícils. La millora prové d'afrontar "
+"els reptes."
+
+#: ../src/Core/Main/GameTips.cs:71
+msgid "Play on a daily basis, you will notice progress soon."
+msgstr "Jugueu diàriament, us adonareu del vostre progrés en poc temps."
+
+#. Translators: Custom Game Selection is a menu option
+#: ../src/Core/Main/GameTips.cs:73
+msgid ""
+"Use the 'Custom Game Selection' to choose exactly which games you want to "
+"play."
+msgstr ""
+"Utilitzeu la «selecció de la partida personalitzada» per a escollir "
+"exactament quins jocs voleu entrenar."
+
+#
+#: ../src/Core/Main/GameTips.cs:75 ../src/Core/Views/WelcomeView.cs:151
+msgid "Use the Settings to adjust the difficulty level of the game."
+msgstr ""
+"Utilitzeu les Preferències per ajustar el nivell de dificultat del joc."
+
+#: ../src/Core/Main/GameTips.cs:77
+msgid "Association of elements is a common technique for remembering things."
+msgstr "L'associació d'elements és una tècnica habitual per recordar coses."
+
+#: ../src/Core/Main/GameTips.cs:79
+msgid ""
+"Grouping elements into categories is a common technique for remembering "
+"things."
+msgstr "L'agrupació d'elements és una tècnica habitual per recordar coses."
+
+#: ../src/Core/Main/GameTips.cs:81
+msgid "Build acronyms using the first letter of each fact to be remembered."
+msgstr "Construïu acrònims usant la primera lletra de cada fet a recordar."
+
+#: ../src/Core/Main/GameTips.cs:83
+msgid ""
+"The enjoyment obtained from a puzzle is proportional to the time spent on it."
+msgstr ""
+"El plaer obtingut d'un trencaclosques és proporcional al temps dedicat."
+
+#: ../src/Core/Main/GameTips.cs:85
+msgid "Think of breaking down every problem into simpler components."
+msgstr "Penseu en com dividir cada problema en parts més simples."
+
+#: ../src/Core/Main/GameTips.cs:87
+msgid "When answering verbal analogies pay attention to the verb tense."
+msgstr "Quan respongueu a analogies verbals pareu atenció al temps verbal."
+
+#: ../src/Core/Main/GameTips.cs:89
+msgid ""
+"When you go to stores, try to perform calculations without the use of "
+"calculator."
+msgstr ""
+"Quan vagi a botigues, provi de realitzar càlculs sense utilitzar una "
+"calculadora."
+
+#: ../src/Core/Main/Memory.cs:53
+msgid "Memorize the objects below in the given time"
+msgstr "Memoritzeu els objectes de sota en el temps donat"
+
+#: ../src/Core/Main/Memory.cs:225
+msgid "Time left"
+msgstr "Temps restant"
+
+# csharp-format
+#. Translators: {0} is the game number and {1} the game question or answer
+#. The number is used as reference when looking for the game solution in the PDF
+#: ../src/Core/Main/PdfExporter.cs:112 ../src/Core/Main/PdfExporter.cs:172
+#, csharp-format
+msgid "Game #{0}. {1}"
+msgstr "Joc nº {0}. {1}"
+
+#: ../src/Core/Main/PdfExporter.cs:129
+#, csharp-format
+msgid "Created by gbrainy {0}"
+msgstr "Creat amb el gbrainy {0}"
+
+#: ../src/Core/Main/PdfExporter.cs:164
+msgid "Solutions"
+msgstr "Solucions"
+
+#. Translators: this the separator used when concatenating multiple possible answers for verbal analogies
+#. For example: "Possible correct answers are: sleep, rest."
+#: ../src/Core/Main/Verbal/Analogies.cs:76
+msgid ", "
+msgstr ", "
+
+#: ../src/Core/Main/Verbal/AnalogiesMultipleOptions.cs:38
+#, csharp-format
+msgid "Multiple options #{0}"
+msgstr "Múltiples opcions nº {0}"
+
+#. Translators: {0} is replaced by a question and {1} by the possible valid answers
+#. E.g.: What is the correct option? Answer A, B, C or D.
+#: ../src/Core/Main/Verbal/AnalogiesMultipleOptions.cs:51
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsOptions.cs:60
+#, csharp-format
+msgid "{0} Answer {1}."
+msgstr "{0} Responeu {1}."
+
+#. Translators: this "option) answer" for example "a) "21 x 60 = 1260". This should not be changed for most of the languages
+#: ../src/Core/Main/Verbal/AnalogiesMultipleOptions.cs:87
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsOptions.cs:103
+#: ../src/Games/Calculation/CalculationCloserFraction.cs:164
+#: ../src/Games/Calculation/CalculationGreatestDivisor.cs:152
+#: ../src/Games/Logic/PuzzleOstracism.cs:164
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:183
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:142
+#, csharp-format
+msgid "{0}) {1}"
+msgstr "{0}) {1}"
+
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsCompare.cs:39
+#, csharp-format
+msgid "Pair of words compare #{0}"
+msgstr "Compareu dues paraules nº {0}"
+
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsCompare.cs:55
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsOptions.cs:55
+#, csharp-format
+msgid ""
+"Given the relationship between the two words below, which word has the same "
+"relationship to '{0}'?"
+msgstr ""
+"Donada la relació entre les dues paraules de sota, quina paraula té la "
+"mateixa relació amb «{0}»?"
+
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsCompare.cs:112
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsOptions.cs:125
+#, csharp-format
+msgid "Words: {0}"
+msgstr "Paraules: {0}"
+
+#: ../src/Core/Main/Verbal/AnalogiesPairOfWordsOptions.cs:39
+#, csharp-format
+msgid "Pair of words #{0}"
+msgstr "Parell de paraules #{0}"
+
+#: ../src/Core/Main/Verbal/AnalogiesQuestionAnswer.cs:36
+#, csharp-format
+msgid "Question and answer #{0}"
+msgstr "Pregunta i resposta nº {0}"
+
+#. Translators {0}: list of options (A, B, C)
+#: ../src/Core/Main/Xml/GameXml.cs:216
+#, csharp-format
+msgid "Answer {0}."
+msgstr "Responeu {0}."
+
+#: ../src/Core/Views/CountDownView.cs:80
+msgid "Get ready to memorize the next objects..."
+msgstr "Prepareu-vos per memoritzar els objectes següents..."
+
+#: ../src/Core/Views/FinishView.cs:145
+#: ../src/Core/Views/PlayerHistoryView.cs:277
+msgid "Score"
+msgstr "Puntuació"
+
+#. Translator: This will be part of the sentence "Games won: 10 (6 played)"
+#: ../src/Core/Views/FinishView.cs:154
+#, csharp-format
+msgid "{0} played"
+msgid_plural "{0} played"
+msgstr[0] "{0} jugat"
+msgstr[1] "{0} jugats"
+
+#: ../src/Core/Views/FinishView.cs:158
+#, csharp-format
+msgid "Games won: {0} ({1})"
+msgid_plural "Games won: {0} ({1})"
+msgstr[0] "Jocs guanyats: {0} ({1})"
+msgstr[1] "Jocs guanyats: {0} ({1})"
+
+#: ../src/Core/Views/FinishView.cs:162
+#, csharp-format
+msgid "{0}. Games won: {1} ({2})"
+msgid_plural "{0}. Games won: {1} ({2})"
+msgstr[0] "{0}. Jocs guanyats: {1} ({2})"
+msgstr[1] "{0}. Jocs guanyats: {1} ({2})"
+
+#: ../src/Core/Views/FinishView.cs:168
+#, csharp-format
+msgid "Time played {0} (average per game {1})"
+msgstr "Duració de la partida: {0} (mitjana per joc {1})"
+
+#. Translators: translated string should not be longer that the English original (space restriction on the UI)
+#: ../src/Core/Views/FinishView.cs:177
+msgid "For details on how gbrainy's scoring works refer to the help."
+msgstr ""
+"Per detalls de com funciona la puntuació del gbrainy consulteu l'ajuda."
+
+#: ../src/Core/Views/FinishView.cs:189
+msgid "Tips for your next games"
+msgstr "Consells per a les properes partides"
+
+#: ../src/Core/Views/FinishView.cs:217
+msgid "Congratulations! New personal record"
+msgstr "Enhorabona! Nou record personal"
+
+#: ../src/Core/Views/FinishView.cs:227
+#, csharp-format
+msgid ""
+"By scoring {0} in logic puzzle games you have established a new personal "
+"record. Your previous record was {1}."
+msgstr ""
+"En puntuar {0} als trencaclosques lògics heu assolit un nou record personal. "
+"El vostre record anterior era {1}."
+
+#: ../src/Core/Views/FinishView.cs:233
+#, csharp-format
+msgid ""
+"By scoring {0} in calculation games you have established a new personal "
+"record. Your previous record was {1}."
+msgstr ""
+"En puntuar {0} als jocs de càlcul mental heu assolit un nou record personal. "
+"El vostre record anterior era {1}."
+
+#: ../src/Core/Views/FinishView.cs:239
+#, csharp-format
+msgid ""
+"By scoring {0} in memory games you have established a new personal record. "
+"Your previous record was {1}."
+msgstr ""
+"En puntuar {0} als jocs de memòria heu assolit un nou record personal. El "
+"vostre record anterior era {1}."
+
+#: ../src/Core/Views/FinishView.cs:245
+#, csharp-format
+msgid ""
+"By scoring {0} in verbal analogies you have established a new personal "
+"record. Your previous record was {1}."
+msgstr ""
+"En puntuar {0} a les analogies verbals heu assolit un nou record personal. "
+"El vostre record anterior era {1}."
+
+#: ../src/Core/Views/PlayerHistoryView.cs:276
+msgid "Time"
+msgstr "Temps"
+
+#: ../src/Core/Views/WelcomeView.cs:64
+msgid "Logic puzzles. Challenge your reasoning and thinking skills."
+msgstr ""
+"Trencaclosques lògics. Desafieu les vostres habilitats de raonament i "
+"pensament."
+
+#: ../src/Core/Views/WelcomeView.cs:85
+msgid ""
+"Mental calculation. Arithmetical operations that test your mental "
+"calculation abilities."
+msgstr ""
+"Càlcul mental. Operacions aritmètiques que posen a prova les vostres "
+"habilitats de càlcul mental."
+
+#: ../src/Core/Views/WelcomeView.cs:106
+msgid "Memory trainers. To prove your short term memory."
+msgstr "Entrenadors de memòria. Per posar a prova la memòria a curt termini."
+
+#: ../src/Core/Views/WelcomeView.cs:127
+msgid "Verbal analogies. Challenge your verbal aptitude."
+msgstr "Analogies verbals. Desafieu les vostres aptituds verbals."
+
+#. Translators: {0} is the version number of the program
+#: ../src/Core/Views/WelcomeView.cs:143
+#, csharp-format
+msgid "Welcome to gbrainy {0}"
+msgstr "Us donem la benvinguda al gbrainy {0}"
+
+#: ../src/Core/Views/WelcomeView.cs:147
+msgid ""
+"gbrainy is a brain teaser game and trainer to have fun and to keep your "
+"brain trained. It includes:"
+msgstr ""
+"El gbrainy és un joc per divertir-se i mantenir el vostre cervell en forma. "
+"Inclou:"
+
+#: ../src/Games/Calculation/CalculationArithmetical.cs:41
+msgid "Arithmetical operations"
+msgstr "Operacions aritmètiques"
+
+#: ../src/Games/Calculation/CalculationArithmetical.cs:49
+msgid "What is the result of the following operation?"
+msgstr "Quin és el resultat de l'operació següent?"
+
+#: ../src/Games/Calculation/CalculationAverage.cs:38
+msgid "Average"
+msgstr "Mitjana"
+
+#: ../src/Games/Calculation/CalculationAverage.cs:55
+#, csharp-format
+msgid ""
+"Given the numbers: {0}. Which of the following numbers is closest to the "
+"average? Answer {1}, {2}, {3} or {4}."
+msgstr ""
+"Donats els números: {0}. Quin dels números següents és el més proper a la "
+"mitjana? Responeu {1}, {2}, {3} o {4}."
+
+#: ../src/Games/Calculation/CalculationAverage.cs:60
+msgid ""
+"The average of a list of numbers is their sum divided by the number of "
+"numbers in the list."
+msgstr ""
+"La mitjana d'una llista de nombres és la suma de tots els números dividida "
+"pel nombre total de números a la llista."
+
+#: ../src/Games/Calculation/CalculationAverage.cs:65
+#, csharp-format
+msgid "The result of the operation is {0}."
+msgstr "El resultat de l'operació és {0}."
+
+#: ../src/Games/Calculation/CalculationCloserFraction.cs:37
+msgid "Closer fraction"
+msgstr "Fracció més propera"
+
+#: ../src/Games/Calculation/CalculationCloserFraction.cs:46
+#, csharp-format
+msgid ""
+"Which of the following numbers is closer to {0}? Answer {1}, {2}, {3} or {4}."
+msgstr ""
+"Quin dels números següents és el més proper a {0}? Responeu {1}, {2}, {3} o "
+"{4}."
+
+#: ../src/Games/Calculation/CalculationCloserFraction.cs:55
+#, csharp-format
+msgid "The result of the operation {0} / {1} is '{2}'."
+msgstr "El resultat de l'operació {0} / {1} és «{2}»."
+
+#: ../src/Games/Calculation/CalculationConsecutiveSum.cs:36
+msgid "Consecutive sum"
+msgstr "Suma consecutiva"
+
+#: ../src/Games/Calculation/CalculationConsecutiveSum.cs:45
+#, csharp-format
+msgid ""
+"In the list of single digit numbers below, there are 5 consecutive numbers "
+"that sum {0}. What are these numbers?"
+msgstr ""
+"A la llista de nombres d'un sol digit de sota, hi ha cinc nombres "
+"consecutius que sumen {0}. Quin són aquests nombres?"
+
+#: ../src/Games/Calculation/CalculationFractions.cs:61
+msgid "Fractions"
+msgstr "Fraccions"
+
+# csharp-format
+#: ../src/Games/Calculation/CalculationFractions.cs:69
+msgid ""
+"What is the result of the given operation? Answer using either a fraction or "
+"a number."
+msgstr ""
+"Quin és el resultat de l'operació donada? Responeu utilitzant una fracció o "
+"un número."
+
+#: ../src/Games/Calculation/CalculationGreatestDivisor.cs:36
+msgid "Greatest divisor"
+msgstr "Divisor més gran"
+
+#: ../src/Games/Calculation/CalculationGreatestDivisor.cs:45
+#, csharp-format
+msgid ""
+"Which of the possible divisors is the greatest that divides all numbers? "
+"Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quin dels divisors possibles és el més gran que divideix tots els números? "
+"Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Calculation/CalculationGreatestDivisor.cs:243
+#: ../src/Games/Calculation/CalculationSelectedNumbers.cs:215
+msgid "Numbers"
+msgstr "Números"
+
+#: ../src/Games/Calculation/CalculationGreatestDivisor.cs:257
+msgid "Possible divisors"
+msgstr "Divisors possibles"
+
+#: ../src/Games/Calculation/CalculationOperator.cs:34
+msgid "Operators"
+msgstr "Operadors"
+
+#: ../src/Games/Calculation/CalculationOperator.cs:38
+#, csharp-format
+msgid "The first operator is {0}."
+msgstr "El primer operador és {0}."
+
+#: ../src/Games/Calculation/CalculationOperator.cs:46
+#, csharp-format
+msgid "Which operators make {0}, {1}, and {2} equal {3}? Answer using '+-/*'."
+msgstr ""
+"Quins operadors fan que els números {0}, {1} i {2} siguin iguals a {3}? "
+"Responeu utilitzant «+-/*»."
+
+#: ../src/Games/Calculation/CalculationOperator.cs:109
+#: ../src/Games/Calculation/CalculationRatio.cs:86
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:100
+#, csharp-format
+msgid "{0} and {1}"
+msgstr "{0} i {1}"
+
+#: ../src/Games/Calculation/CalculationPrimes.cs:67
+msgid "Primes"
+msgstr "Primers"
+
+#: ../src/Games/Calculation/CalculationPrimes.cs:76
+#, csharp-format
+msgid ""
+"Which of the following numbers is a prime? A prime number is a positive "
+"integer that has exactly two different positive divisors, 1 and itself. "
+"Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quin dels números següents és primer? Un número primer és un número enter "
+"positiu que té exactament dos divisors positius diferents, l'1 i ell mateix. "
+"Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Calculation/CalculationPrimes.cs:81
+msgid ""
+"If the sum of all digits in a given number is divisible by 3, then so is the "
+"number. For example 15 = 1 + 5 = 6, which is divisible by 3."
+msgstr ""
+"Si la suma de tots els dígits d'un número donat és divisible per 3, llavors "
+"també ho és el número. Per exemple 15 = 1 + 5 = 6, que és divisible per 3."
+
+#: ../src/Games/Calculation/CalculationPrimes.cs:86
+#, csharp-format
+msgid "The number {0} is a prime number."
+msgstr "El nombre {0} és un nombre primer."
+
+#: ../src/Games/Calculation/CalculationProportions.cs:36
+msgid "Proportions"
+msgstr "Proporcions"
+
+#: ../src/Games/Calculation/CalculationProportions.cs:46
+#, csharp-format
+msgid "What is {0}% of {1}/{2}? Answer {3}, {4}, {5} or {6}."
+msgstr "Quin és el {0}% de {1}/{2}? Responeu {3}, {4}, {5} o {6}."
+
+#: ../src/Games/Calculation/CalculationRatio.cs:31
+msgid "Ratio"
+msgstr "Ràtio"
+
+#: ../src/Games/Calculation/CalculationRatio.cs:41
+#, csharp-format
+msgid ""
+"Which two numbers have a sum of {0} and have a ratio of {1} to {2}? Answer "
+"using two numbers (e.g.: 1 and 2)."
+msgstr ""
+"Quins dos nombres sumen {0} i tenen una ràtio de {1} a {2}? Responeu usant "
+"dos nombres (p. ex.: 1 i 2)."
+
+#: ../src/Games/Calculation/CalculationRatio.cs:48
+#, csharp-format
+msgid ""
+"The second number can be calculated by multiplying the first number by {0} "
+"and dividing it by {1}."
+msgstr ""
+"El segon nombre es pot calcular multiplicant el primer per {0} i dividint-lo "
+"per {1}."
+
+#: ../src/Games/Calculation/CalculationRatio.cs:54
+msgid ""
+"A ratio specifies a proportion between two numbers. A ratio of a:b means "
+"that for every 'a' parts you have 'b' parts."
+msgstr ""
+"Una ràtio especifica la proporció entre dos nombres. Una ràtio a:b indica "
+"que per cada «a» parts hi ha «b» parts."
+
+#: ../src/Games/Calculation/CalculationRatio.cs:98
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:114
+#, csharp-format
+msgid "x + y = {0}"
+msgstr "x + y = {0}"
+
+#: ../src/Games/Calculation/CalculationRatio.cs:101
+#, csharp-format
+msgid "have a ratio of {0}:{1}"
+msgstr "tenen una ràtio de {0}:{1}"
+
+#: ../src/Games/Calculation/CalculationSelectedNumbers.cs:48
+msgid "Selected numbers"
+msgstr "Nombres seleccionats"
+
+#: ../src/Games/Calculation/CalculationSelectedNumbers.cs:61
+#, csharp-format
+msgid ""
+"In the list of numbers below, what is the sum of the numbers greater than "
+"{0}? Answer {1}, {2}, {3} or {4}."
+msgstr ""
+"A la llista de nombres de sota, quina és la suma dels nombres més grans que "
+"{0}? Responeu {1}, {2}, {3} o {4}."
+
+#: ../src/Games/Calculation/CalculationSelectedNumbers.cs:66
+#, csharp-format
+msgid ""
+"In the list of numbers below, what is the product of the numbers greater "
+"than {0}? Answer {1}, {2}, {3} or {4}."
+msgstr ""
+"A la llista de nombres de sota, quin és el producte dels nombres més grans "
+"que {0}? Responeu {1}, {2}, {3} o {4}."
+
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:40
+msgid "Two numbers"
+msgstr "Dos números"
+
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:51
+#, csharp-format
+msgid ""
+"Which two numbers when added are {0} and when multiplied are {1}? Answer "
+"using two numbers (e.g.: 1 and 2)."
+msgstr ""
+"Quins dos números quan es sumen donen {0} i quan es multipliquen donen {1}? "
+"Responeu usant dos nombres (p. ex.: 1 i 2)."
+
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:53
+#, csharp-format
+msgid ""
+"Which two numbers when subtracted are {0} and when multiplied are {1}? "
+"Answer using two numbers (e.g.: 1 and 2)."
+msgstr ""
+"Quins dos números quan es resten donen {0} i quan es multipliquen donen {1}? "
+"Responeu usant dos nombres (p. ex.: 1 i 2)."
+
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:117
+#, csharp-format
+msgid "x - y = {0}"
+msgstr "x - y = {0}"
+
+#: ../src/Games/Calculation/CalculationTwoNumbers.cs:124
+#, csharp-format
+msgid "x * y = {0}"
+msgstr "x * y = {0}"
+
+#: ../src/Games/Logic/Puzzle3DCube.cs:31
+msgid "3D Cube"
+msgstr "Cub 3D"
+
+#: ../src/Games/Logic/Puzzle3DCube.cs:35
+msgid ""
+"How many small cubes does it take to build the large cube below? Answer "
+"using a number."
+msgstr ""
+"Quants cubs individuals petits calen per a construir el cub gran de sota? "
+"Responeu utilitzant un número."
+
+#: ../src/Games/Logic/Puzzle3DCube.cs:39
+msgid "A cube is a regular solid object having six congruent square faces."
+msgstr ""
+"Un cub és un objecte sòlid regular que té sis cares quadrades congruents."
+
+#: ../src/Games/Logic/PuzzleBalance.cs:49
+msgid "Balance"
+msgstr "Balança"
+
+#: ../src/Games/Logic/PuzzleBalance.cs:53
+msgid ""
+"Using triangles only, how many triangles are needed in the right part of the "
+"last figure to keep it balanced?"
+msgstr ""
+"Utilitzant només triangles, quants triangles són necessaris en la part dreta "
+"de l'última balança per mantenir-la en equilibri?"
+
+#: ../src/Games/Logic/PuzzleBalance.cs:58
+msgid ""
+"Every circle is equivalent to two triangles and every square to three "
+"triangles."
+msgstr ""
+"Cada cercle és equivalent a dos triangles i cada quadrat a tres triangles."
+
+#: ../src/Games/Logic/PuzzleBalance.cs:63
+msgid "Every circle is equivalent two triangles."
+msgstr "Cada cercle és equivalent a dos triangles."
+
+#: ../src/Games/Logic/PuzzleBuildTriangle.cs:50
+msgid "Build a triangle"
+msgstr "Construir un triangle"
+
+#: ../src/Games/Logic/PuzzleBuildTriangle.cs:55
+#, csharp-format
+msgid ""
+"Which three pieces can you use together to build a triangle? Answer using "
+"the three figure names, e.g.: {0}{1}{2}."
+msgstr ""
+"Quines tres peces podeu utilitzar conjuntament per a construir un triangle? "
+"Responeu utilitzant els tres noms de figures, p. ex.: {0}{1}{2}."
+
+#: ../src/Games/Logic/PuzzleBuildTriangle.cs:60
+msgid "The resulting triangle is isosceles."
+msgstr "El triangle resultant és isòsceles."
+
+#: ../src/Games/Logic/PuzzleBuildTriangle.cs:173
+msgid "The triangle is:"
+msgstr "El triangle és:"
+
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:29
+msgid "Circles in a square"
+msgstr "Cercles en un quadrat"
+
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:33
+msgid ""
+"What is the maximum number of circles (as shown) that fit in the square "
+"below?"
+msgstr ""
+"Quin és el nombre màxim de cercles (com el mostrat) que podeu encabir al "
+"rectangle de sota?"
+
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:37
+msgid "You can fit more than 64 circles."
+msgstr "S'hi poden encabir més de 64 cercles."
+
+#. Translators: {0} is replaced always by 0.1340
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:43
+#, csharp-format
+msgid ""
+"Using the above layout {0} units of height are gained per row leaving enough "
+"space for an additional row."
+msgstr ""
+"Utilitzant la disposició mostrada a dalt, es guanyen {0} unitats d'alçada a "
+"cada fila deixant prou espai per a una fila addicional."
+
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:77
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:96
+msgid "8 units"
+msgstr "8 unitats"
+
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:115
+#: ../src/Games/Logic/PuzzleCirclesSquare.cs:134
+msgid "1 unit"
+msgstr "1 unitat"
+
+#: ../src/Games/Logic/PuzzleClocks.cs:37
+msgid "Clocks"
+msgstr "Rellotges"
+
+#. Translators: {0} is replaced by 'Figure X'
+#: ../src/Games/Logic/PuzzleClocks.cs:43
+#, csharp-format
+msgid ""
+"To what number should the large handle of the '{0}' clock point? Answer "
+"using numbers."
+msgstr ""
+"A quin número hauria d'apuntar la maneta gran del rellotge «{0}»? Responeu "
+"utilitzant números."
+
+#: ../src/Games/Logic/PuzzleClocks.cs:51
+#, csharp-format
+msgid ""
+"Starting from the first clock, add {1} to the number obtained by appending "
+"the values to which the hands point. For example, the values of the hands "
+"for '{0}' are {3} ({2} + {1})."
+msgstr ""
+"Començant des del primer rellotge, sumeu {1} al nombre que s'obté d'afegir "
+"els valors als que apunten les manetes. Per exemple, els valors de les "
+"manetes per «{0}» és {3} ({2} = {1})."
+
+#: ../src/Games/Logic/PuzzleClocks.cs:57
+msgid "The clocks do not follow the time logic."
+msgstr "Els rellotges no segueixen la lògica horària."
+
+#: ../src/Games/Logic/PuzzleCountCircles.cs:45
+msgid "Count circles"
+msgstr "Compteu cercles"
+
+#: ../src/Games/Logic/PuzzleCountCircles.cs:49
+msgid "How many circles do you count?"
+msgstr "Quants cercles compteu?"
+
+#: ../src/Games/Logic/PuzzleCountCircles.cs:53
+msgid "It is an easy exercise if you systematically count the circles."
+msgstr ""
+"És un exercici senzill si utilitzeu una forma sistemàtica de comptar els "
+"cercles."
+
+#: ../src/Games/Logic/PuzzleCounting.cs:41
+msgid "Counting"
+msgstr "Compteu"
+
+#: ../src/Games/Logic/PuzzleCounting.cs:64
+#, csharp-format
+msgid "We have a {0} meter piece of fabric."
+msgid_plural "We have a {0} meters piece of fabric."
+msgstr[0] "Tenim una peça de tela d'{0} metre."
+msgstr[1] "Tenim una peça de tela de {0} metres."
+
+#: ../src/Games/Logic/PuzzleCounting.cs:68
+#, csharp-format
+msgid ""
+"A machine takes {0} second to cut 1 meter of this fabric. How many seconds "
+"does the machine take to cut the entire piece of fabric into 1 meter pieces?"
+msgid_plural ""
+"A machine takes {0} seconds to cut 1 meter of this fabric. How many seconds "
+"does the machine take to cut the entire piece of fabric into 1 meter pieces?"
+msgstr[0] ""
+"Una màquina triga {0} segon en tallar 1 metre de tela. Quants segons triga "
+"la màquina en tallar la peça completa de tela en trossos d'1 metre?"
+msgstr[1] ""
+"Una màquina triga {0} segons en tallar 1 metre de tela. Quants segons triga "
+"la màquina en tallar la peça completa de tela en trossos d'1 metre?"
+
+#: ../src/Games/Logic/PuzzleCounting.cs:72
+#, csharp-format
+msgid "With the cut number {0}, the machine creates two 1 meter pieces."
+msgid_plural "With the cut number {0}, the machine creates two 1 meter pieces."
+msgstr[0] "Amb el tall nº {0}, la màquina crea dues peces d'1 metre."
+msgstr[1] "Amb el tall nº {0}, la màquina crea dues peces d'1 metre."
+
+#: ../src/Games/Logic/PuzzleCounting.cs:85
+#, csharp-format
+msgid ""
+"A fence is built to enclose a square shaped region. {0} fence pole is used "
+"in each side of the square. How many fence poles are used in total?"
+msgid_plural ""
+"A fence is built to enclose a square shaped region. {0} fence poles are used "
+"in each side of the square. How many fence poles are used in total?"
+msgstr[0] ""
+"Es construeix una tanca per a una regió de forma quadrada. S'utilitza {0} "
+"pal a cada costat del quadrat. Quants pals s'utilitzen en total per tota la "
+"tanca?"
+msgstr[1] ""
+"Es construeix una tanca per a una regió de forma quadrada. S'utilitzen {0} "
+"pals a cada costat del quadrat. Quants pals s'utilitzen en total per tota la "
+"tanca?"
+
+#: ../src/Games/Logic/PuzzleCounting.cs:92
+#, csharp-format
+msgid ""
+"There is {0} fence pole since the poles on the corners of the square are "
+"shared."
+msgid_plural ""
+"There are {0} fence poles since the poles on the corners of the square are "
+"shared."
+msgstr[0] ""
+"Hi ha {0} pal a la tanca, ja que els pals de les cantonades es comparteixen."
+msgstr[1] ""
+"Hi ha {0} pals a la tanca, ja que els pals de les cantonades es comparteixen."
+
+#: ../src/Games/Logic/PuzzleCounting.cs:105
+#, csharp-format
+msgid ""
+"Wrapping an anniversary present costs one monetary unit. The anniversary "
+"present costs {0} monetary unit more than the cost to wrap it. How much does "
+"it cost to both purchase and wrap the present?"
+msgid_plural ""
+"Wrapping an anniversary present costs one monetary unit. The anniversary "
+"present costs {0} monetary units more than the cost to wrap it. How much "
+"does it cost to both purchase and wrap the present?"
+msgstr[0] ""
+"L'embolcall per a un regal d'aniversari costa una unitat monetària. El regal "
+"d'aniversari costa {0} unitat monetàries més que l'embolcall. Quant costen "
+"el regal i l'embolcall?"
+msgstr[1] ""
+"L'embolcall per a un regal d'aniversari costa una unitat monetària. El regal "
+"d'aniversari costa {0} unitats monetàries més que l'embolcall. Quant costen "
+"el regal i l'embolcall?"
+
+#: ../src/Games/Logic/PuzzleCounting.cs:112
+#, csharp-format
+msgid ""
+"It is the cost of the present, {0} monetary unit, plus one monetary unit of "
+"the wrapping."
+msgid_plural ""
+"It is the cost of the present, {0} monetary units, plus one monetary unit of "
+"the wrapping."
+msgstr[0] ""
+"És el cost del regal, {0} unitat monetària, més una unitat monetària de "
+"l'embolcall."
+msgstr[1] ""
+"És el cost del regal, {0} unitats monetàries, més una unitat monetària de "
+"l'embolcall."
+
+#: ../src/Games/Logic/PuzzleCountSeries.cs:40
+msgid "Count series"
+msgstr "Compteu sèries"
+
+#: ../src/Games/Logic/PuzzleCountSeries.cs:62
+msgid ""
+"How many numbers '9' are required to represent the numbers between 10 to 100?"
+msgstr ""
+"Quants números «9» són necessaris per a representar els números entre 10 i "
+"100?"
+
+#: ../src/Games/Logic/PuzzleCountSeries.cs:68
+msgid ""
+"How many two digit numbers occur where the first digit is larger than the "
+"second (e.g.: 20 and 21)?"
+msgstr ""
+"Quants números de dos dígits tenen el primer dígit més gran que el segon (p. "
+"ex.: 20 i 21)?"
+
+#: ../src/Games/Logic/PuzzleCountSeries.cs:74
+msgid ""
+"How many two digit numbers occur where the first digit is smaller than the "
+"second (e.g.: 12 and 13)?"
+msgstr ""
+"Quants números de dos dígits tenen el primer dígit més petit que el segon "
+"(p. ex.: 12 i 13)?"
+
+#. Translators: A sequence of numbers 1, 2, 3, etc.
+#: ../src/Games/Logic/PuzzleCountSeries.cs:86
+#, csharp-format
+msgid "{0}, {1}"
+msgstr "{0}, {1}"
+
+#: ../src/Games/Logic/PuzzleCountSeries.cs:89
+#, csharp-format
+msgid "The numbers are: {0}."
+msgstr "Els nombres són: {0}."
+
+#: ../src/Games/Logic/PuzzleCountSeries.cs:94
+msgid "Notice that 99 contains two numbers '9'."
+msgstr "Adoneu-vos que 99 conté dos nombres «9»."
+
+#: ../src/Games/Logic/PuzzleCoverPercentage.cs:35
+msgid "Cover percentage"
+msgstr "Percentatge cobert"
+
+#: ../src/Games/Logic/PuzzleCoverPercentage.cs:39
+msgid "What percentage of the figure is colored?"
+msgstr "Quin és el percentatge d'acoloriment de la figura?"
+
+#: ../src/Games/Logic/PuzzleCube.cs:45
+msgid "Cube"
+msgstr "Cub"
+
+#: ../src/Games/Logic/PuzzleCube.cs:49
+#, csharp-format
+msgid ""
+"When you fold the figure below as a cube, which face on the figure is "
+"opposite the face with a {0} drawn on it? Answer the number written on the "
+"face."
+msgstr ""
+"Quan doblegueu la figura de sota com un cub, quina és la cara de la figura "
+"contrària a la que té un {0} dibuixat? Responeu amb el número escrit a la "
+"cara."
+
+#: ../src/Games/Logic/PuzzleDice.cs:54
+msgid ""
+"What is the probability of getting a '2' or a '6' in a single throw of an "
+"unmodified 6 sided die? Answer using a fraction (e.g.: 1/2)."
+msgstr ""
+"Quina és la probabilitat d'obtenir un «2» o un «6» en un únic llançament "
+"d'un dau no trucat de 6 cares? Responeu utilitzant una fracció (p. ex.: 1/2)."
+
+#: ../src/Games/Logic/PuzzleDice.cs:56
+msgid "There are 2 of 6 possibilities."
+msgstr "Hi ha 2 de 6 possibilitats."
+
+#: ../src/Games/Logic/PuzzleDice.cs:58
+msgid ""
+"What is the probability of not getting a '5' in a single throw of an "
+"unmodified 6 sided die? Answer using a fraction (e.g.: 1/2)."
+msgstr ""
+"Quina és la probabilitat de no obtenir un «5» en un únic llançament d'un dau "
+"no trucat de 6 cares? Responeu utilitzant una fracció (p. ex.: 1/2)."
+
+#: ../src/Games/Logic/PuzzleDice.cs:60
+msgid "There are 5 of 6 possibilities."
+msgstr "Hi ha 5 de 6 possibilitats."
+
+#: ../src/Games/Logic/PuzzleDice.cs:62
+msgid ""
+"Two unmodified 6 sided dice are thrown simultaneously. What is the "
+"probability of getting two even numbers? Answer using a fraction (e.g.: 1/2)."
+msgstr ""
+"Dos daus no trucats de 6 cares són llançats simultàniament. Quina és la "
+"probabilitat d'obtenir dos nombres parells? Responeu utilitzant una fracció "
+"(p. ex.: 1/2)."
+
+#: ../src/Games/Logic/PuzzleDice.cs:64
+msgid "There are 9 of 36 possibilities of getting two even numbers."
+msgstr "Hi ha 9 de 36 possibilitats d'obtenir dos nombres parells."
+
+#: ../src/Games/Logic/PuzzleDice.cs:66
+msgid ""
+"Two unmodified 6 sided dice are thrown simultaneously. What is the "
+"probability of getting two '6'? Answer using a fraction (e.g.: 1/2)."
+msgstr ""
+"Dos daus no trucats de 6 cares són llançats simultàniament. Quina és la "
+"probabilitat d'obtenir dos «6»? Responeu utilitzant una fracció (p. ex.: "
+"1/2)."
+
+#: ../src/Games/Logic/PuzzleDice.cs:68
+msgid ""
+"There is 1 of 6 possibilities of getting a '6' on the first die and the same "
+"for the second die."
+msgstr ""
+"Hi ha 1 de 6 possibilitats d'obtenir un «6» al primer dau i les mateixes per "
+"al segon dau."
+
+#: ../src/Games/Logic/PuzzleDice.cs:73
+msgid "Dice"
+msgstr "Daus"
+
+#: ../src/Games/Logic/PuzzleDivideCircle.cs:45
+msgid "Divide circles"
+msgstr "Divideix cercles"
+
+#: ../src/Games/Logic/PuzzleDivideCircle.cs:49
+msgid ""
+"In the last figure, in how many regions is the circle divided into when all "
+"dots are connected?"
+msgstr ""
+"A l'última figura, en quantes regions es divideix el cercle quan tots els "
+"punts estan connectats?"
+
+#: ../src/Games/Logic/PuzzleDivideCircle.cs:179
+#, csharp-format
+msgid "Has {0} region"
+msgid_plural "Has {0} regions"
+msgstr[0] "Té {0} regió"
+msgstr[1] "Té {0} regions"
+
+#: ../src/Games/Logic/PuzzleEquation.cs:33
+msgid "Equation"
+msgstr "Equació"
+
+#: ../src/Games/Logic/PuzzleEquation.cs:37
+msgid "What is the result of the equation below?"
+msgstr "Quin és el resultat de l'equació de sota?"
+
+#
+#: ../src/Games/Logic/PuzzleEquation.cs:42
+msgid ""
+"The order of arithmetical operations is always as follows: exponents and "
+"roots, multiplication and division, addition and subtraction."
+msgstr ""
+"L'ordre de les operacions aritmètiques és sempre: exponents i arrels, "
+"multiplicacions i divisions, sumes i restes."
+
+#: ../src/Games/Logic/PuzzleExtraCircle.cs:53
+msgid "Extra circle"
+msgstr "Cercle extra"
+
+#: ../src/Games/Logic/PuzzleExtraCircle.cs:62
+#, csharp-format
+msgid ""
+"Which circle does not belong to the group? It is not a sequence of elements. "
+"Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quin és el cercle que no pertany al grup? No és una seqüència d'elements. "
+"Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzleExtraCircle.cs:67
+msgid "All circles share a common property except for one."
+msgstr "Tots els cercles comparteixen una propietat excepte un."
+
+#: ../src/Games/Logic/PuzzleExtraCircle.cs:72
+msgid ""
+"In all circles the color slices follow the same order except for this one."
+msgstr ""
+"En tots els cercles els talls de colors segueixen el mateix ordre excepte "
+"per aquest."
+
+#: ../src/Games/Logic/PuzzleFigureLetter.cs:40
+msgid "Figures and text"
+msgstr "Figures i text"
+
+#: ../src/Games/Logic/PuzzleFigureLetter.cs:44
+msgid ""
+"The figures and the texts are related. What text should go under the last "
+"figure?"
+msgstr ""
+"Les figures i els textos estan relacionades. Quin text correspon a l'última "
+"figura?"
+
+#: ../src/Games/Logic/PuzzleFigureLetter.cs:48
+msgid "Every character of the text represents a property of the figure."
+msgstr "Cada caràcter del text representa una propietat de la figura."
+
+#: ../src/Games/Logic/PuzzleFigureLetter.cs:53
+msgid ""
+"'A' indicates that the figures overlap, 'B' that are squares, 'C' that are "
+"circles, 'D' that the figures are separated, 'E' that there are three "
+"figures and 'F' that there are two figures."
+msgstr ""
+"«A» indica que les figures es solapen, «B» que són quadrats, «C» que són "
+"cercles, «D» que són figures separades, «E» que hi ha tres figures i «F» que "
+"hi ha dues figures."
+
+#: ../src/Games/Logic/PuzzleFigurePattern.cs:40
+msgid "Figure pattern"
+msgstr "Patró de figura"
+
+#: ../src/Games/Logic/PuzzleFigurePattern.cs:45
+#, csharp-format
+msgid "What figure should replace the question mark? Answer {0}, {1} or {2}."
+msgstr "Quina figura ha de reemplaçar l'interrogant? Responeu {0}, {1} o {2}."
+
+#
+#: ../src/Games/Logic/PuzzleFigurePattern.cs:50
+msgid ""
+"The third figure of every row involves somehow combining the first two "
+"figures."
+msgstr ""
+"La tercera figura de cada fila és el resultat de combinar d'alguna manera "
+"les dues primeres figures."
+
+#: ../src/Games/Logic/PuzzleFigurePattern.cs:55
+msgid ""
+"Superpose the first and second figures and remove the lines that they have "
+"in common, then rotate the resulting figure 45 degrees."
+msgstr ""
+"Superposeu la primera i la segona figura i suprimiu les línies que tenen en "
+"comú i roteu la figura resultant 45 graus."
+
+#: ../src/Games/Logic/PuzzleFigures.cs:58
+msgid "Figures"
+msgstr "Figures"
+
+#: ../src/Games/Logic/PuzzleFigures.cs:62
+#, csharp-format
+msgid ""
+"What is the next logical sequence of objects in the last column? Answer {0}, "
+"{1} or {2}."
+msgstr ""
+"Quina és la següent seqüència lògica d'objectes a l'última columna? Responeu "
+"{0}, {1} o {2}."
+
+#: ../src/Games/Logic/PuzzleFigures.cs:68
+msgid ""
+"It is the only combination that you can build with the given elements "
+"without repeating them."
+msgstr ""
+"És l'única combinació que es pot construir amb els elements donats sense "
+"repetir-los."
+
+#: ../src/Games/Logic/PuzzleFindTheNumber.cs:43
+msgid "Find the number"
+msgstr "Cerca el nombre"
+
+#: ../src/Games/Logic/PuzzleFindTheNumber.cs:51
+#, csharp-format
+msgid ""
+"Looking horizontally and vertically to the lines of the grid below, which is "
+"the number {0} place away from itself multiplied by 2 and {1} place away "
+"from itself plus 2?"
+msgid_plural ""
+"Looking horizontally and vertically to the lines of the grid below, which is "
+"the number {0} places away from itself multiplied by 2 and {1} places away "
+"from itself plus 2?"
+msgstr[0] ""
+"Mirant horitzontal i verticalment les línies de la graella de sota, quin és "
+"el nombre que es troba a {0} lloc de distància de si mateix multiplicat per "
+"2 i a {1} lloc de distància de si mateix més 2?"
+msgstr[1] ""
+"Mirant horitzontal i verticalment les línies de la graella de sota, quin és "
+"el nombre que es troba a {0} llocs de distància de si mateix multiplicat per "
+"2 i a {1} llocs de distància de si mateix més 2?"
+
+#: ../src/Games/Logic/PuzzleFindTheNumber.cs:60
+#, csharp-format
+msgid "The number is located at row {0}, column {1}."
+msgstr "El nombre es troba a la línia {0}, columna {1}."
+
+#: ../src/Games/Logic/PuzzleFindTheNumber.cs:69
+#, csharp-format
+msgid "The number is located within the first {0} row of the grid."
+msgid_plural "The number is located within the first {0} rows of the grid."
+msgstr[0] "El nombre es troba a la primera línia de la graella."
+msgstr[1] "El nombre es troba entre les primeres {0} línies de la graella."
+
+#: ../src/Games/Logic/PuzzleFourSided.cs:32
+msgid "Four sided"
+msgstr "Quatre costats"
+
+#: ../src/Games/Logic/PuzzleFourSided.cs:36
+msgid "How many four sided figures do you count in the figure below?"
+msgstr "Quantes figures de quatre costats compteu a la figura de sota?"
+
+#: ../src/Games/Logic/PuzzleFourSided.cs:40
+msgid "A four sided figure can be embedded inside another figure."
+msgstr "Una figura de quatre costats pot estar incrustada dins d'una altra."
+
+#: ../src/Games/Logic/PuzzleFourSided.cs:45
+#, csharp-format
+msgid "The four sided figures are made by connecting the following points: {0}"
+msgstr ""
+"Les figures de quatre costats es fan connectant els punts següents: {0}"
+
+#: ../src/Games/Logic/PuzzleGridCircles.cs:35
+msgid "Circles in a grid"
+msgstr "Cercles en una graella"
+
+#: ../src/Games/Logic/PuzzleGridCircles.cs:39
+msgid "One of the numbers in the grid must be circled. Which one?"
+msgstr "Un dels nombres a la graella ha d'estar encerclat. Quin?"
+
+#: ../src/Games/Logic/PuzzleGridCircles.cs:43
+msgid "All circled numbers share an arithmetical property."
+msgstr "Tots els números encerclats comparteixen una propietat aritmètica."
+
+#: ../src/Games/Logic/PuzzleGridCircles.cs:48
+#, csharp-format
+msgid "Every circled number can be divided by {0}."
+msgstr "Cada número encerclat pot ser dividit per {0}."
+
+#: ../src/Games/Logic/PuzzleGridDots.cs:205
+msgid "Square with dots"
+msgstr "Quadrat amb punts"
+
+#: ../src/Games/Logic/PuzzleGridDots.cs:210
+#: ../src/Games/Logic/PuzzleNextFigure.cs:58
+#, csharp-format
+msgid ""
+"Which is the next logical figure in the sequence? Answer {0}, {1} or {2}."
+msgstr ""
+"Quina és la següent figura lògica a la seqüència? Responeu {0}, {1} o {2}."
+
+#: ../src/Games/Logic/PuzzleGridDots.cs:219
+msgid ""
+"From the top-left figure, the top-left circle moves down, the bottom-left "
+"circle moves up, the bottom-right moves diagonally up-left and the top-right "
+"moves diagonally down-left."
+msgstr ""
+"Des de la figura superior esquerra, el cercle superior dret es mou cap "
+"avall, l'inferior esquerre cap a dalt, l'inferior dret diagonalment cap a "
+"dalt i l'esquerra, i l'inferior dret cap avall i l'esquerra."
+
+#: ../src/Games/Logic/PuzzleGridDots.cs:222
+msgid ""
+"From the top-left figure, the figure is rotated counterclockwise 90 degrees."
+msgstr ""
+"Des de la figura superior esquerra, la figura gira 90 graus en sentit "
+"contrari a les agulles del rellotge."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:44
+msgid "Numbers in a grid"
+msgstr "Nombres a la graella"
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:48
+msgid ""
+"The numbers in the grid below follow a pattern. Which number should replace "
+"the question mark?"
+msgstr ""
+"Els nombres a la graella de sota segueixen un patró. Quin és el número que "
+"ha de reemplaçar l'interrogant?"
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:54
+msgid "The pattern is arithmetical and works vertically."
+msgstr "El patró és aritmètic i funciona verticalment."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:56
+#: ../src/Games/Logic/PuzzleRelatedNumbers.cs:166
+msgid "The pattern is arithmetical and works horizontally."
+msgstr "El patró és aritmètic i funciona horitzontalment."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:65
+msgid ""
+"The fourth row is calculated by multiplying the first two rows and adding "
+"the third."
+msgstr ""
+"La quarta fila es calcula multiplicant les dues primeres files i afegint-hi "
+"la tercera."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:67
+msgid ""
+"The fourth column is calculated by multiplying the first two columns and "
+"adding the third."
+msgstr ""
+"La quarta columna es calcula multiplicant les dues primeres columnes i "
+"afegint-hi la tercera."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:71
+msgid ""
+"The fourth row is calculated by multiplying the first two rows and "
+"subtracting the third."
+msgstr ""
+"La quarta fila es calcula multiplicant les dues primeres files i restant-hi "
+"la tercera."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:73
+msgid ""
+"The fourth column is calculated by multiplying the first two columns and "
+"subtracting the third."
+msgstr ""
+"La quarta columna es calcula multiplicant les dues primeres columnes i "
+"restant-hi la tercera."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:77
+msgid ""
+"The fourth row is calculated by adding the first two rows and subtracting "
+"the third."
+msgstr ""
+"La quarta fila es calcula afegint les dues primeres files i restant-hi la "
+"tercera."
+
+#: ../src/Games/Logic/PuzzleGridNumbers.cs:79
+msgid ""
+"The fourth column is calculated by adding the first two columns and "
+"subtracting the third."
+msgstr ""
+"La quarta columna es calcula afegint les dues primeres columnes i restant-hi "
+"la tercera."
+
+#: ../src/Games/Logic/PuzzleHandshakes.cs:32
+msgid "Handshakes"
+msgstr "Encaixades de mans"
+
+# csharp-format
+#: ../src/Games/Logic/PuzzleHandshakes.cs:37
+#, csharp-format
+msgid ""
+"All attendees to a party are introduced to one another. {0} handshakes are "
+"made in total. How many people are attending the party?"
+msgstr ""
+"Tots els assistents a una festa són presentats els uns als altres. Hi ha {0} "
+"encaixades de mans en total. Quants convidats hi ha a la festa?"
+
+#: ../src/Games/Logic/PuzzleHandshakes.cs:42
+msgid ""
+"Try to imagine a situation in which you are meeting a small number of people."
+msgstr ""
+"Intenteu imaginar una situació on us presenten a un nombre menor de persones."
+
+#: ../src/Games/Logic/PuzzleHandshakes.cs:46
+msgid ""
+"Using n as the total number of people, the first person handshakes n-1 "
+"people, the second n-2 people, etc. The result is the sum of the first n-1 "
+"consecutive numbers: 1+2+3+...+(n-1)."
+msgstr ""
+"Utilitzant n com el total de persones, la primera persona es presenta a n-1, "
+"la segona persona a n-2, etc. El resultat és la suma dels primers n-1 "
+"nombres consecutius: 1+2+3+...+(n-1)."
+
+#: ../src/Games/Logic/PuzzleLargerShape.cs:113
+msgid "Larger shape"
+msgstr "Forma més gran"
+
+#: ../src/Games/Logic/PuzzleLargerShape.cs:122
+#, csharp-format
+msgid ""
+"Which larger shape can you make combining the first two figures? Answer {0}, "
+"{1}, {2} or {3}."
+msgstr ""
+"Quina forma més gran podeu fer combinant les dues primeres figures? Responeu "
+"{0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzleLargestArea.cs:241
+msgid "Largest area"
+msgstr "L'àrea més gran"
+
+#: ../src/Games/Logic/PuzzleLargestArea.cs:246
+#, csharp-format
+msgid ""
+"Which of the following figures has the largest area? Answer {0}, {1}, {2} or "
+"{3}."
+msgstr "Quina de les figures té l'àrea més gran? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzleLargestDiameter.cs:46
+msgid "Largest diameter"
+msgstr "El diàmetre més gran"
+
+#: ../src/Games/Logic/PuzzleLargestDiameter.cs:51
+#, csharp-format
+msgid ""
+"If the circles represented by the arcs below were completed, which circle "
+"would have the largest diameter? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si els cercles representats pels arcs a sota es completessin, quin cercle "
+"tindria el diàmetre més gran? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzleLargestDiameter.cs:58
+msgid "Less curved is the arc, the larger the circle is."
+msgstr "Menys corbat és l'arc, més gran és el cercle."
+
+#: ../src/Games/Logic/PuzzleLargestDiameter.cs:101
+#, csharp-format
+msgid "Arc {0}"
+msgstr "Arc {0}"
+
+#: ../src/Games/Logic/PuzzleLines.cs:34
+msgid "Lines"
+msgstr "Línies"
+
+#: ../src/Games/Logic/PuzzleLines.cs:38
+msgid ""
+"How many line segments in total are in the figures below? A line segment is "
+"a line between two points with no crossing lines."
+msgstr ""
+"Quants segments de línia hi ha en total a les figures de sota? Un segment de "
+"línia és una línia entre dos punts sense línies que el creuen."
+
+#: ../src/Games/Logic/PuzzleLines.cs:44
+#, csharp-format
+msgid ""
+"There is {0} line in the figure to the left and {1} in the figure to the "
+"right."
+msgid_plural ""
+"There are {0} lines in the figure to the left and {1} in the figure to the "
+"right."
+msgstr[0] ""
+"Hi ha {0} línia a la figura de l'esquerra i {1} línies a la figura de la "
+"dreta."
+msgstr[1] ""
+"Hi ha {0} línies a la figura de l'esquerra i {1} línies a la figura de la "
+"dreta."
+
+#: ../src/Games/Logic/PuzzleLines.cs:52
+msgid "It is an easy exercise if you systematically count the lines."
+msgstr ""
+"És un exercici senzill si utilitzeu una forma sistemàtica de comptar les "
+"línies."
+
+#: ../src/Games/Logic/PuzzleMissingPiece.cs:35
+msgid "Missing piece"
+msgstr "Peça que manca"
+
+#: ../src/Games/Logic/PuzzleMissingPiece.cs:40
+#, csharp-format
+msgid "Which square completes the figure below? Answer {0}, {1} or {2}."
+msgstr "Quin quadrat completa la figura de sota? Responeu {0}, {1} o {2}."
+
+#: ../src/Games/Logic/PuzzleMissingPiece.cs:45
+msgid "The logic works at row level."
+msgstr "La lògica funciona a nivell de fila."
+
+#: ../src/Games/Logic/PuzzleMissingPiece.cs:50
+msgid ""
+"In every row the third square is made by flipping the first square and "
+"superimposing it on the second square, followed by removing the matching "
+"lines."
+msgstr ""
+"A cada fila el tercer quadrat es construeix donant la volta al primer "
+"quadrat i sobreimposant-lo al segon, llavors eliminant les línies "
+"coincidents."
+
+#: ../src/Games/Logic/PuzzleMissingSlice.cs:62
+msgid "Missing slice"
+msgstr "Tall que manca"
+
+#: ../src/Games/Logic/PuzzleMissingSlice.cs:67
+#, csharp-format
+msgid ""
+"The slices below have some kind of relation. Which is the missing slice in "
+"the circle below? Answer {0}, {1} or {2}."
+msgstr ""
+"Els talls de sota tenen algun tipus de relació. Quin és el tall que manca en "
+"el cercle de sota? Responeu {0}, {1} o {2}."
+
+#: ../src/Games/Logic/PuzzleMissingSlice.cs:72
+msgid "Each slice is related to the opposite one."
+msgstr "Cada tall està relacionat amb el tall contrari."
+
+#: ../src/Games/Logic/PuzzleMissingSlice.cs:77
+#, csharp-format
+msgid ""
+"All numbers of each slice, when added to the ones of the opposite slice, add "
+"always {0}."
+msgstr ""
+"Tots els números de cada tall quan s'afegeixen als del tall contrari sumen "
+"sempre {0}."
+
+#: ../src/Games/Logic/PuzzleMostInCommon.cs:77
+msgid "Most in common"
+msgstr "Més en comú"
+
+#: ../src/Games/Logic/PuzzleMostInCommon.cs:82
+#, csharp-format
+msgid ""
+"Which of the possible answers have the most in common with the four given "
+"figures? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quina de les possibles respostes té més en comú amb les quatre figures "
+"donades? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzleMostInCommon.cs:87
+msgid "Think of the common elements that the given figures have inside them."
+msgstr ""
+"Penseu en els elements comuns que les figures donades tenen dins d'elles."
+
+#: ../src/Games/Logic/PuzzleMostInCommon.cs:93
+msgid ""
+"It has the same number of elements inside the figure as the given figures."
+msgstr ""
+"Té el mateix nombre d'elements dins de la figura que les figures donades."
+
+#: ../src/Games/Logic/PuzzleMostInCommon.cs:95
+msgid ""
+"It is the figure with the most elements in common compared to the given "
+"figures."
+msgstr ""
+"És la figura amb més elements en comú quan es compara amb les figures "
+"donades."
+
+#: ../src/Games/Logic/PuzzleMoveFigure.cs:33
+msgid "Move figure"
+msgstr "Mou la figura"
+
+#: ../src/Games/Logic/PuzzleMoveFigure.cs:37
+msgid ""
+"What is the minimum number of circles to be moved in order to convert the "
+"left figure into the right figure?"
+msgstr ""
+"Quin és el nombre mínim de cercles que heu de moure per convertir la figura "
+"de l'esquerra en la figura de la dreta?"
+
+#: ../src/Games/Logic/PuzzleMoveFigure.cs:44
+msgid ""
+"Move the circle from the first line to the second and move two circles from "
+"the fourth line to the second and the fifth lines."
+msgstr ""
+"Moveu el cercle de la primera línia a la segona i moveu dos cercles de la "
+"quarta a la segona i cinquena línia."
+
+#: ../src/Games/Logic/PuzzleMoveFigure.cs:46
+msgid ""
+"Move the first line to the seventh; move the two circles of the second line "
+"to third; and move first and last circles of the fifth line to the sixth."
+msgstr ""
+"Moveu la primera línia a la setena; moveu dos cercles de la segona línia a "
+"la tercera; i moveu el primer i l'últim cercle de la cinquena línia a la "
+"sisena."
+
+#: ../src/Games/Logic/PuzzleNextFigure.cs:53
+msgid "Next figure"
+msgstr "Figura següent"
+
+#: ../src/Games/Logic/PuzzleNextFigure.cs:65
+msgid ""
+"From first figure, the top circle advances by two positions clockwise, while "
+"the left circle goes backwards one position."
+msgstr ""
+"Des de la primera figura, el cercle superior avança dues posicions en sentit "
+"de les agulles del rellotge, mentre que el cercle esquerre va cap enrere una "
+"posició."
+
+#: ../src/Games/Logic/PuzzleNumericRelation.cs:46
+msgid "Numeric relation"
+msgstr "Relació numèrica"
+
+#: ../src/Games/Logic/PuzzleNumericRelation.cs:50
+msgid "What number should replace the question mark?"
+msgstr "Quin és el número que ha de reemplaçar l'interrogant?"
+
+#: ../src/Games/Logic/PuzzleNumericRelation.cs:54
+msgid "The numbers are related arithmetically."
+msgstr "La relació dels números és aritmètica."
+
+#. Translators: {0} is always replaced by the number 3
+#: ../src/Games/Logic/PuzzleNumericRelation.cs:62
+#, csharp-format
+msgid "Every group of {0} numbers sums exactly {1}."
+msgstr "Cada grup de {0} números suma exactament {1}."
+
+#: ../src/Games/Logic/PuzzleNumericRelation.cs:64
+msgid ""
+"Divide the sequence in groups of three numbers. Every third number is "
+"calculated by multiplying by the two previous ones."
+msgstr ""
+"Dividiu la seqüència en grups de tres números. Cada tercer número es calcula "
+"multiplicant els dos anteriors."
+
+#: ../src/Games/Logic/PuzzleNumericRelation.cs:66
+msgid ""
+"Divide the sequence in groups of three numbers. Every third number is "
+"calculated by subtracting the second number from the first."
+msgstr ""
+"Dividiu la seqüència en grups de tres números. Cada tercer número es calcula "
+"restant el segon número del primer."
+
+#: ../src/Games/Logic/PuzzleNumericSequence.cs:42
+msgid "Numeric sequence"
+msgstr "Seqüència numèrica"
+
+#: ../src/Games/Logic/PuzzleNumericSequence.cs:46
+msgid ""
+"The next sequence follows a logic. What number should replace the question "
+"mark?"
+msgstr ""
+"La seqüència següent segueix una lògica. Quin és el número que ha de "
+"reemplaçar l'interrogant?"
+
+#: ../src/Games/Logic/PuzzleNumericSequence.cs:50
+msgid "Every number in the sequence is related to the previous one."
+msgstr "Cada número de la seqüència està relacionat amb l'anterior."
+
+#: ../src/Games/Logic/PuzzleNumericSequence.cs:57
+msgid ""
+"Every number in the sequence is the result of subtracting 1 from the "
+"previous number and multiplying it by 2."
+msgstr ""
+"Cada número de la seqüència és el resultat de restar 1 al número anterior i "
+"multiplicar-lo per 2."
+
+#: ../src/Games/Logic/PuzzleNumericSequence.cs:59
+msgid ""
+"Every number in the sequence is the result of adding 1 to the previous "
+"number and multiplying it by 3."
+msgstr ""
+"Cada número de la seqüència és el resultat d'afegir 1 al número anterior i "
+"multiplicar-lo per 3."
+
+#: ../src/Games/Logic/PuzzleNumericSequence.cs:61
+msgid ""
+"Every number in the sequence is the result of subtracting 2 from the "
+"previous number and multiplying it by -2."
+msgstr ""
+"Cada número de la seqüència és el resultat de restar 2 al número anterior i "
+"multiplicar-lo per -2."
+
+#: ../src/Games/Logic/PuzzleOstracism.cs:53
+msgid "Ostracism"
+msgstr "Ostracisme"
+
+#: ../src/Games/Logic/PuzzleOstracism.cs:58
+#, csharp-format
+msgid ""
+"Which element does not belong to the group? It is not related to any "
+"arithmetical of the numbers. Answer {0}, {1}, {2}, {3} or {4}."
+msgstr ""
+"Quin és l'element que no pertany al grup? No està relacionat amb la "
+"aritmètica dels nombres. Responeu {0}, {1}, {2}, {3} o {4}."
+
+#: ../src/Games/Logic/PuzzleOstracism.cs:66
+msgid ""
+"The criteria for deciding if an equation belongs to the group is not "
+"arithmetical."
+msgstr ""
+"El criteri per a decidir si una equació pertany al grup no és aritmètic."
+
+#: ../src/Games/Logic/PuzzleOstracism.cs:68
+msgid ""
+"Consider that every number that belongs to the group has two parts that are "
+"related."
+msgstr ""
+"Considereu que cada número que pertany al grup té dues parts que estan "
+"relacionades."
+
+#: ../src/Games/Logic/PuzzleOstracism.cs:79
+msgid ""
+"In all the other equations the digits from the left side also appear on the "
+"right side."
+msgstr ""
+"En totes les altres equacions els dígits de la part esquerra apareixen també "
+"a la part dreta."
+
+#: ../src/Games/Logic/PuzzleOstracism.cs:81
+msgid ""
+"In all the other numbers the last three digits are the square of the first "
+"two digits."
+msgstr ""
+"En tots els altres números els tres últims dígits són el quadrat dels "
+"primers dos dígits."
+
+#: ../src/Games/Logic/PuzzlePencil.cs:38
+msgid "Pencil"
+msgstr "Llapis"
+
+#: ../src/Games/Logic/PuzzlePencil.cs:43
+#, csharp-format
+msgid ""
+"Which of the following figures cannot be drawn without crossing any previous "
+"lines nor lifting the pencil? Answer {0}, {1}, {2}, {3} or {4}."
+msgstr ""
+"Quina de les figures següents no es pot dibuixar sense creuar una de les "
+"línies prèvies ni aixecar el llapis? Responeu {0}, {1}, {2}, {3} o {4}."
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:45
+msgid "People at a table"
+msgstr "Gent a la taula"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:49
+#, csharp-format
+msgid ""
+"A group of people are sitting at a round table spaced out evenly. How many "
+"people are there if the {0} person is across from the {1}?"
+msgstr ""
+"Un grup de persones igualment separades s'asseu en una taula rodona. Quantes "
+"persones hi ha si la {0} persona és davant de la persona {1}?"
+
+#
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:54
+msgid ""
+"Subtracting the two positions you find out how many people are seated half "
+"way around the table. Doubling this number leaves you with the total amount "
+"of people."
+msgstr ""
+"Restant les dues posicions obteniu quanta gent està asseguda a la meitat de "
+"la taula. El doble d'aquest número és el nombre total de persones."
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:62
+msgid "5th"
+msgstr "5a"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:63
+msgid "19th"
+msgstr "19a"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:67
+msgid "4th"
+msgstr "4a"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:68
+msgid "12th"
+msgstr "12a"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:72
+msgid "9th"
+msgstr "9a"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:73
+msgid "22nd"
+msgstr "22a"
+
+#: ../src/Games/Logic/PuzzlePeopleTable.cs:85
+msgid "Two people in the table sitting across each other"
+msgstr "Dues persones a la taula assegudes una davant de l'altra"
+
+#: ../src/Games/Logic/PuzzlePercentage.cs:41
+msgid "Percentage"
+msgstr "Percentatge"
+
+#: ../src/Games/Logic/PuzzlePercentage.cs:75
+#, csharp-format
+msgid ""
+"After getting {0}% discount you have paid {1} monetary unit for a TV set. "
+"What was the original price of the TV set?"
+msgid_plural ""
+"After getting {0}% discount you have paid {1} monetary units for a TV set. "
+"What was the original price of the TV set?"
+msgstr[0] ""
+"Després d'obtenir un descompte del {0}% heu pagat {1} unitat monetària per "
+"un televisor. Quin era el preu original del televisor?"
+msgstr[1] ""
+"Després d'obtenir un descompte del {0}% heu pagat {1} unitats monetàries per "
+"un televisor. Quin era el preu original del televisor?"
+
+#: ../src/Games/Logic/PuzzlePercentage.cs:96
+#, csharp-format
+msgid ""
+"John's shop had sales of {0} monetary unit. This was an increase of {1}% "
+"over last month. What were last month sales?"
+msgid_plural ""
+"John's shop had sales of {0} monetary units. This was an increase of {1}% "
+"over last month. What were last month sales?"
+msgstr[0] ""
+"La botiga d'en Joan ha tingut unes vendes de {0} unitat monetària. Això va "
+"representar un increment del {1}% respecte al mes passat. Quines van ser les "
+"vendes el mes passat?"
+msgstr[1] ""
+"La botiga d'en Joan ha tingut unes vendes de {0} unitats monetàries. Això va "
+"representar un increment del {1}% respecte al mes passat. Quines van ser les "
+"vendes el mes passat?"
+
+#: ../src/Games/Logic/PuzzlePercentage.cs:114
+#, csharp-format
+msgid ""
+"The amount of water in a bucket decreases by {0}%. By what percentage must "
+"the amount of water increase to reach its original value?"
+msgstr ""
+"La quantitat d'aigua a un cubell decreix un {0}%. Quin percentatge ha "
+"d'augmentar la quantitat d'aigua per arribar al valor original?"
+
+#: ../src/Games/Logic/PuzzlePercentage.cs:117
+msgid "The objective is to obtain the same total amount."
+msgstr "L'objectiu és obtenir la mateixa quantitat total."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:59
+#, csharp-format
+msgid ""
+"If all painters are artists and some citizens of Barcelona are artists. "
+"Which of the following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si tots els pintors són artistes i alguns ciutadans de Barcelona són "
+"artistes. Quina de les conclusions frases és correcta? Responeu {0}, {1}, "
+"{2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:61
+msgid "Some citizens of Barcelona are painters"
+msgstr "Alguns ciutadans de Barcelona són pintors"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:62
+msgid "All citizens of Barcelona are painters"
+msgstr "Tots els ciutadans de Barcelona són pintors"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:63
+msgid "No citizen of Barcelona is a painter"
+msgstr "Cap ciutadà de Barcelona és pintor"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:64
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:72
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:80
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:88
+msgid "None of the other options"
+msgstr "Cap de les altres opcions"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:67
+#, csharp-format
+msgid ""
+"If no ill artist is happy and some artists are happy. Which of the following "
+"conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si cap artista malalt està content i alguns artistes estan contents. Quina "
+"de les conclusions següents és correcta? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:69
+msgid "Some artist are not ill"
+msgstr "Alguns artistes no estan malalts"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:70
+msgid "Some painters are not artists"
+msgstr "Alguns pintors no són artistes"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:71
+msgid "All artists are happy"
+msgstr "Tots els artistes estan contents"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:75
+#, csharp-format
+msgid ""
+"People that travel always buy a map. You are not going to travel. Which of "
+"the following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Les persones que viatgen sempre compren un mapa. No heu de viatjar. Quina de "
+"les conclusions següents és correcta? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:77
+msgid "You do not have any map"
+msgstr "No tens cap mapa"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:78
+msgid "You do not buy a map"
+msgstr "No compres cap mapa"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:79
+msgid "All people have a map"
+msgstr "Tothom té un mapa"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:83
+#, csharp-format
+msgid ""
+"If you whistle if you are happy and you always smile when you whistle, which "
+"of the following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si xiuleu si esteu contents i sempre somrieu quan xiuleu, quina de les "
+"conclusions següents és correcta? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:85
+msgid "You smile if you are happy"
+msgstr "Somrieu si esteu contents"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:86
+msgid "You are only happy if you whistle"
+msgstr "Només esteu contents si xiuleu"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:87
+msgid "You whistle if you are not happy"
+msgstr "Xiuleu si no esteu contents"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:91
+#, csharp-format
+msgid ""
+"If your course is always honest and your course is always the best policy, "
+"which of the following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si el vostre objectiu és ser honest i el vostre objectiu és sempre la millor "
+"política, quina de les conclusions següents és correcta? Responeu {0}, {1}, "
+"{2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:93
+msgid "Honesty is sometimes the best policy"
+msgstr "L'honestedat és alguns cops la millor política"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:94
+msgid "Honesty is always the best policy"
+msgstr "L'honestedat és sempre la millor política"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:95
+msgid "Honesty is not always the best policy"
+msgstr "L'honestedat no és sempre la millor política"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:96
+msgid "Some of the best policies are dishonest"
+msgstr "Algunes de les millors polítiques són deshonestes"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:99
+#, csharp-format
+msgid ""
+"If no old misers are cheerful and some old misers are thin, which of the "
+"following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si no hi ha cap avar vell que sigui alegre i alguns avars vells són prims, "
+"quina de les conclusions següents és correcta? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:101
+msgid "Some thin people are not cheerful"
+msgstr "Algunes persones primes no són alegres"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:102
+msgid "Thin people are not cheerful"
+msgstr "Les persones primes no són alegres"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:103
+msgid "Cheerful people are not thin"
+msgstr "Les persones alegres no són primes"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:104
+msgid "Some cheerful people are not thin"
+msgstr "Algunes persones alegres no són primes"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:107
+#, csharp-format
+msgid ""
+"If all pigs are fat and nothing that is fed on barley-water is fat, which of "
+"the following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si tots els porcs són grossos i res que s'alimenta amb aigua d'ordi està "
+"gros, quina de les conclusions següents és correcta? Responeu {0}, {1}, {2} "
+"o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:109
+msgid "All animals fed on barley-water are non pigs"
+msgstr "Tots els animals que s'alimenten amb aigua d'ordi no són porcs"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:110
+msgid "No pigs are fed on barley-water"
+msgstr "Cap porc s'alimenta amb aigua d'ordi"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:111
+msgid "Pigs are not fed on barley-water"
+msgstr "Els porcs no s'alimenten amb aigua d'ordi"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:112
+msgid "All the other options"
+msgstr "Totes les altres opcions"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:115
+#, csharp-format
+msgid ""
+"If some pictures are first attempts and no first attempts are really good, "
+"which of the following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si algunes fotografies són primers intents i cap primer intent és molt bo, "
+"quina de les conclusions següents és correcta? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:117
+msgid "Some bad pictures are not first attempts"
+msgstr "Algunes fotografies dolentes no són primers intents"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:118
+msgid "Some pictures are not really good"
+msgstr "Algunes fotografies no són realment bones"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:119
+msgid "All bad pictures are first attempts"
+msgstr "Totes les fotografies dolentes són primers intents"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:120
+msgid "All the others"
+msgstr "Totes les altres"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:123
+#, csharp-format
+msgid ""
+"If you have been out for a walk and you are feeling better, which of the "
+"following conclusions is correct? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Si heu anat a fer un tomb i us sentiu millor, quina de les conclusions "
+"següents és correcta? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:125
+msgid "To feel better, you must go out for a walk"
+msgstr "Per sentir-vos millor, heu d'anar a fer un tomb"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:126
+msgid "If you go out for a walk, you will feel better"
+msgstr "Si aneu a fer un tomb, us sentireu millor"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:127
+msgid "Some who go out for a walk feel better"
+msgstr "Alguns que van a fer un tomb se senten millor"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:128
+msgid "No one feels better who does not go out for a walk"
+msgstr "Ningú que no fa un tomb se sent millor"
+
+#: ../src/Games/Logic/PuzzlePredicateLogic.cs:134
+msgid "Predicate logic"
+msgstr "Lògica de predicats"
+
+#: ../src/Games/Logic/PuzzleQuadrilaterals.cs:43
+msgid "Quadrilaterals"
+msgstr "Quadrilàters"
+
+#: ../src/Games/Logic/PuzzleQuadrilaterals.cs:48
+#, csharp-format
+msgid ""
+"Which of the following figures does not belong to the group? Answer {0}, "
+"{1}, {2}, {3}, {4} or {5}."
+msgstr ""
+"Quina de les figures següents no pertany al grup? Responeu {0}, {1}, {2}, "
+"{3}, {4} o {5}."
+
+#: ../src/Games/Logic/PuzzleQuadrilaterals.cs:55
+msgid "It is the only figure with all lines of equal length."
+msgstr "És l'única figura amb totes línies de la mateixa longitud."
+
+#: ../src/Games/Logic/PuzzleRelatedNumbers.cs:158
+msgid "Related numbers"
+msgstr "Nombres relacionats"
+
+#: ../src/Games/Logic/PuzzleRelatedNumbers.cs:162
+msgid "In the grid below, which number should replace the question mark?"
+msgstr ""
+"A la graella de sota, quin és el número que ha de reemplaçar l'interrogant?"
+
+#: ../src/Games/Logic/PuzzleRelatedNumbers.cs:173
+msgid ""
+"The number in the middle of every row is half of the sum of the other "
+"numbers in the row."
+msgstr ""
+"El número al centre de cada fila és igual a la meitat de la suma dels altres "
+"números de la fila."
+
+#: ../src/Games/Logic/PuzzleRelatedNumbers.cs:175
+msgid ""
+"The number in the middle of every row is the sum of the other numbers in the "
+"row."
+msgstr ""
+"El número al centre de cada fila és igual a la suma dels altres números de "
+"la fila."
+
+#: ../src/Games/Logic/PuzzleRelatedNumbers.cs:177
+msgid ""
+"The number in the middle of every row is the double of the sum of the other "
+"numbers in the row."
+msgstr ""
+"El número al centre de cada fila és igual al doble de la suma dels altres "
+"números de la fila."
+
+#: ../src/Games/Logic/PuzzleSquaresAndLetters.cs:34
+msgid "Squares and letters"
+msgstr "Quadrats i lletres"
+
+#: ../src/Games/Logic/PuzzleSquaresAndLetters.cs:38
+msgid ""
+"The letters around the squares follow a pattern. Which letter should replace "
+"the question mark in the last square?"
+msgstr ""
+"Les lletres al voltant dels quadrats segueixen un patró. Quina és la lletra "
+"que ha de reemplaçar l'interrogant a l'últim quadrat?"
+
+#: ../src/Games/Logic/PuzzleSquaresAndLetters.cs:43
+#, csharp-format
+msgid ""
+"Every letter is calculated by taking the alphabetical position of the "
+"previous character and adding {0} to it in order to get the position of the "
+"next letter."
+msgstr ""
+"Cada lletra es calcula prenent la posició a l'alfabet del caràcter previ i "
+"afegint-hi {0} per a obtenir la posició de la lletra següent."
+
+#: ../src/Games/Logic/PuzzleSquares.cs:30
+msgid "Squares"
+msgstr "Quadrats"
+
+#: ../src/Games/Logic/PuzzleSquares.cs:34
+msgid "How many squares of any size do you count in the figure below?"
+msgstr "Quants quadrats de qualsevol mida compteu a la figura de sota?"
+
+#: ../src/Games/Logic/PuzzleSquares.cs:38
+msgid ""
+"A square is a rectangle with sides of equal length. A square can also be "
+"built from other squares."
+msgstr ""
+"Un quadrat és un rectangle amb els quatre costats de la mateixa llargària. "
+"Un quadrat també es pot fer d'altres quadrats."
+
+#: ../src/Games/Logic/PuzzleSquares.cs:45
+msgid ""
+"There are 16 single squares, 9 squares made by 4 single squares, 4 squares "
+"made by 9 single squares and 1 square made by 16 single squares."
+msgstr ""
+"Hi ha 16 quadrats simples, 9 quadrats fets per 4 quadrats simples, 4 "
+"quadrats fets per 9 quadrats simples i 1 quadrat fet per 16 quadrats simples."
+
+#: ../src/Games/Logic/PuzzleSquares.cs:47
+msgid ""
+"There are 9 single squares, 4 squares made by 4 single squares and 1 square "
+"made by 9 single squares."
+msgstr ""
+"Hi ha 9 quadrats simples, 4 quadrats fets per 4 quadrats simples i 1 quadrat "
+"fet per 9 quadrats simples."
+
+#: ../src/Games/Logic/PuzzleSquareSheets.cs:29
+msgid "Square sheets"
+msgstr "Fulls quadrats"
+
+#: ../src/Games/Logic/PuzzleSquareSheets.cs:33
+msgid ""
+"What is the minimum number of square sheets of paper of any size required to "
+"create the figure? Lines indicate frontiers between different sheets."
+msgstr ""
+"Quin és el nombre mínim de fulls de paper quadrats de qualsevol mida "
+"necessaris per a crear la figura? Les línies indiquen fronteres entre "
+"diferents fulls."
+
+#: ../src/Games/Logic/PuzzleSquareSheets.cs:37
+msgid "The sheets should overlap."
+msgstr "Els fulls de paper han de sobreposar-se."
+
+#. Translators: the translated version should not take more characters that the English original
+#: ../src/Games/Logic/PuzzleSquareSheets.cs:43
+msgid ""
+"A full sized square of paper (yellow), a 3/4 of the whole size square of "
+"paper (blue) in the bottom right corner, another 3/4 square of paper (green) "
+"in the top left corner and a 1/4 square of paper (red) in the top left "
+"corner."
+msgstr ""
+"Un full de mida completa (groc), 3/4 d'un full complet (blau) a la cantonada "
+"inferior dreta, 3/4 d'un full complet (verd) a la cantonada superior "
+"esquerra i 1/4 d'un full (vermell) a la cantonada superior esquerra."
+
+#: ../src/Games/Logic/PuzzleTetris.cs:34
+msgid "Tetris"
+msgstr "Tetris"
+
+#: ../src/Games/Logic/PuzzleTetris.cs:39
+#, csharp-format
+msgid "What figure completes the set below? Answer {0}, {1} or {2}."
+msgstr ""
+"Quina és la figura que completa el conjunt de sota? Responeu {0}, {1} o {2}."
+
+#: ../src/Games/Logic/PuzzleTetris.cs:45
+msgid ""
+"It is the figure that completes all possible combinations with four blocks "
+"without taking into account rotations."
+msgstr ""
+"És la figura que completa totes les possibles combinacions amb quatre blocs "
+"sense tenir en compte les rotacions."
+
+#. Translators: this the name of a game
+#: ../src/Games/Logic/PuzzleTimeNow.cs:34
+msgid "Time now"
+msgstr "L'hora actual"
+
+#: ../src/Games/Logic/PuzzleTimeNow.cs:45
+#, csharp-format
+msgid ""
+"{0} hour ago it was as long after {1:h tt} as it was before {2:h tt} on the "
+"same day. What is the time now? Answer using the hour (e.g.: {3:h tt})"
+msgid_plural ""
+"{0} hours ago it was as long after {1:h tt} as it was before {2:h tt} on the "
+"same day. What is the time now? Answer using the hour (e.g.: {3:h tt})"
+msgstr[0] ""
+"Fa {0} hora estàvem tant lluny de les {1:%H} com de les {2:%H} al mateix "
+"dia. Quina hora és ara? Responeu usant l'hora (p. ex.: {3:%H})"
+msgstr[1] ""
+"Fa {0} hores estàvem tant lluny de les {1:%H} com de les {2:%H} al mateix "
+"dia. Quina hora és ara? Responeu usant l'hora (p. ex.: {3:%H})"
+
+#: ../src/Games/Logic/PuzzleTimeNow.cs:54
+#, csharp-format
+msgid ""
+"Determine the hour half way between the given times, and then add {0} hour "
+"to convert it to the present time."
+msgid_plural ""
+"Determine the hour half way between the given times, and then add {0} hours "
+"to convert it to the present time."
+msgstr[0] ""
+"Heu de calcular l'hora que està a mig camí entre les hores donades, i "
+"llavors afegir {0} hora per convertir-ho al temps present."
+msgstr[1] ""
+"Heu de calcular l'hora que està a mig camí entre les hores donades, i "
+"llavors afegir {0} hores per convertir-ho al temps present."
+
+#. TimeNow Puzzle. Translators: {0} is used to check the hour answered by the user.
+#. Use the right time format specification for your culture
+#. Explanation of the date and time format specifications can be found here:
+#. http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
+#. For 12-hour clock format use {0:%h} and for 24-hour clock format use {0:%H}. The date formats {0:h} and {0:H} are invalid.
+#. 'tt' is the A.M./P.M. designator
+#: ../src/Games/Logic/PuzzleTimeNow.cs:86
+#, csharp-format
+msgid "{0:h tt}"
+msgstr "{0:%H}"
+
+#: ../src/Games/Logic/PuzzleTimeNow.cs:96
+msgid "Sample clock"
+msgstr "Rellotge d'exemple"
+
+#: ../src/Games/Logic/PuzzleTrains.cs:40
+msgid "Trains"
+msgstr "Trens"
+
+#: ../src/Games/Logic/PuzzleTrains.cs:52
+msgid "The distance formula is 'distance = rate x time'."
+msgstr "La fórmula de la distància és «distància = rati x temps»."
+
+#. Translators:
+#. - mph (miles per hour). You must localize this using the right unit of speed for your locale
+#. - The translated string should not use more characters than the original sentence
+#: ../src/Games/Logic/PuzzleTrains.cs:81
+#, csharp-format
+msgid ""
+"A train leaves the station traveling at {0} mph. {1} hour later a second "
+"train leaves the station traveling in the same direction at {2} mph. How "
+"many hours does it take the second train, since it starts moving, to "
+"overtake the first train?"
+msgid_plural ""
+"A train leaves the station traveling at {0} mph. {1} hours later a second "
+"train leaves the station traveling in the same direction at {2} mph. How "
+"many hours does it take the second train, since it starts moving, to "
+"overtake the first train?"
+msgstr[0] ""
+"Un tren marxa de l'estació viatjant a {0} km/h. {1} hora després un segon "
+"tren marxa de l'estació viatjant en la mateixa direcció a {2} km/h. Quantes "
+"hores necessita el segon tren, des de que es comença a moure, per atrapar al "
+"primer tren?"
+msgstr[1] ""
+"Un tren marxa de l'estació viatjant a {0} km/h. {1} hores després un segon "
+"tren marxa de l'estació viatjant en la mateixa direcció a {2} km/h. Quantes "
+"hores necessita el segon tren, des de que es comença a moure, per atrapar al "
+"primer tren?"
+
+#: ../src/Games/Logic/PuzzleTrains.cs:85
+msgid ""
+"You can calculate the answer by multiplying the speed of the first train by "
+"the time and dividing it by the difference of speeds."
+msgstr ""
+"Per calcular la resposta, multipliqueu la velocitat del primer tren pel "
+"temps i dividint-la per la diferencia de les velocitats."
+
+#. Translators:
+#. - mph (miles per hour) and miles must be localized this using the right unit of speed for your locale
+#: ../src/Games/Logic/PuzzleTrains.cs:101
+#, csharp-format
+msgid ""
+"Two trains separated by {0} mile are heading towards each other on straight "
+"parallel tracks. One travels at {1} mph and the other at {2} mph. In how "
+"many hours will they meet?"
+msgid_plural ""
+"Two trains separated by {0} miles are heading towards each other on straight "
+"parallel tracks. One travels at {1} mph and the other at {2} mph. In how "
+"many hours will they meet?"
+msgstr[0] ""
+"Dos trens separats per {0} kilòmetre es dirigeixen un cap a l'altre en vies "
+"rectes paral·leles. Un viatja a {1} km/h i l'altre a {2} km/h. Quantes hores "
+"trigaran en trobar-se?"
+msgstr[1] ""
+"Dos trens separats per {0} kilòmetres es dirigeixen un cap a l'altre en vies "
+"rectes paral·leles. Un viatja a {1} km/h i l'altre a {2} km/h. Quantes hores "
+"trigaran en trobar-se?"
+
+#: ../src/Games/Logic/PuzzleTrains.cs:106
+#: ../src/Games/Logic/PuzzleTrains.cs:128
+msgid ""
+"You can calculate the answer by dividing the distance by the sum of both "
+"speeds."
+msgstr ""
+"Per calcular la resposta, dividiu la distància per la suma d'ambdues "
+"velocitats."
+
+#. Translators:
+#. - mph (miles per hour) and miles must be localized this using the right unit of speed for your locale
+#: ../src/Games/Logic/PuzzleTrains.cs:123
+#, csharp-format
+msgid ""
+"Two trains on straight parallel tracks leave from the same point and time "
+"traveling in opposite directions at {0} and {1} mph respectively. In how "
+"many hours will they be {2} mile apart?"
+msgid_plural ""
+"Two trains on straight parallel tracks leave from the same point and time "
+"traveling in opposite directions at {0} and {1} mph respectively. In how "
+"many hours will they be {2} miles apart?"
+msgstr[0] ""
+"Dos trens en vies rectes paral·leles marxen del mateix lloc i hora viatjant "
+"en direccions oposades a {0} i {1} km/h respectivament. Quantes hores "
+"trigaran en trobar-se a {2} kilòmetre de distància?"
+msgstr[1] ""
+"Dos trens en vies rectes paral·leles marxen del mateix lloc i hora viatjant "
+"en direccions oposades a {0} i {1} km/h respectivament. Quantes hores "
+"trigaran en trobar-se a {2} kilòmetres de distància?"
+
+#: ../src/Games/Logic/PuzzleTriangles.cs:31
+msgid "Triangles"
+msgstr "Triangles"
+
+#: ../src/Games/Logic/PuzzleTriangles.cs:35
+msgid "How many triangles of any size do you count in the figure below?"
+msgstr "Quants triangles de qualsevol mida compteu a la figura de sota?"
+
+#: ../src/Games/Logic/PuzzleTriangles.cs:39
+msgid "A triangle can be embedded inside another triangle."
+msgstr "Un triangle pot estar incrustat dins d'un altre."
+
+#: ../src/Games/Logic/PuzzleTriangles.cs:44
+#, csharp-format
+msgid "The triangles are made by connecting the following points: {0}"
+msgstr "Els triangles es fan connectant els punts següents: {0}"
+
+#: ../src/Games/Logic/PuzzleTrianglesWithNumbers.cs:57
+msgid "Triangles with numbers"
+msgstr "Triangles amb números"
+
+#: ../src/Games/Logic/PuzzleTrianglesWithNumbers.cs:61
+msgid "Which number should replace the question mark below?"
+msgstr "Quin és el número que ha de reemplaçar l'interrogant?"
+
+#: ../src/Games/Logic/PuzzleTrianglesWithNumbers.cs:66
+msgid "All the triangles share a property and are independent of the rest."
+msgstr ""
+"Tots els triangles comparteixen una propietat i són independents de la resta."
+
+#: ../src/Games/Logic/PuzzleTrianglesWithNumbers.cs:71
+#, csharp-format
+msgid "The result of multiplying the two numbers inside every triangle is {0}."
+msgstr ""
+"El resultat de multiplicar els dos números de dins de cada triangle és {0}."
+
+#: ../src/Games/Memory/MemoryColouredFigures.cs:50
+msgid "Colored figures"
+msgstr "Figures de colors"
+
+#: ../src/Games/Memory/MemoryColouredFigures.cs:59
+#, csharp-format
+msgid ""
+"Which of these figures was previously shown? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quina de les figures següents s'ha mostrat anteriorment? Responeu {0}, {1}, "
+"{2} o {3}."
+
+#: ../src/Games/Memory/MemoryColouredText.cs:35
+msgid "Colored text"
+msgstr "Text de colors"
+
+#: ../src/Games/Memory/MemoryColouredText.cs:44
+#, csharp-format
+msgid "What was the color of the text that said '{0}'?"
+msgstr "Quin era el color del text que deia «{0}»?"
+
+#: ../src/Games/Memory/MemoryCountDots.cs:41
+msgid "Counting dots"
+msgstr "Compteu punts"
+
+#. Translators: {0} is the name of the color. The color name is always singular
+#: ../src/Games/Memory/MemoryCountDots.cs:52
+#, csharp-format
+msgid ""
+"How many dots of {0} color were in the previous image? Answer using numbers."
+msgstr ""
+"Quants punts de color {0} hi havia a la imatge prèvia? Responeu utilitzant "
+"números."
+
+#: ../src/Games/Memory/MemoryFaces.cs:52
+msgid "Memorize faces"
+msgstr "Memoritzeu cares"
+
+#: ../src/Games/Memory/MemoryFaces.cs:57
+msgid ""
+"In which cell is the other face like the one shown below? Answer the cell "
+"number."
+msgstr ""
+"En quina cel·la es troba l'altra cara com la mostrada a continuació? "
+"Responeu amb el nombre de la cel·la."
+
+#: ../src/Games/Memory/MemoryFacts.cs:48
+msgid "Memorize facts"
+msgstr "Memoritzeu fets"
+
+#. Translators: {0} is replaced by a number, {1} by a year (like 1940)
+#. Day in English does not need to be plural
+#: ../src/Games/Memory/MemoryFacts.cs:106
+#, csharp-format
+msgid ""
+"Shiny Cars had already announced a {0} day production halt next month, but "
+"before then it had not halted production since {1}."
+msgid_plural ""
+"Shiny Cars had already announced a {0} day production halt next month, but "
+"before then it had not halted production since {1}."
+msgstr[0] ""
+"Cotxes Lluents ha anunciat una aturada de la producció de {0} dia per al mes "
+"següent. Abans d'això no havia aturat la producció des de {1}."
+msgstr[1] ""
+"Cotxes Lluents ha anunciat una aturada de la producció de {0} dies per al "
+"mes següent. Abans d'això no havia aturat la producció des de {1}."
+
+#
+#: ../src/Games/Memory/MemoryFacts.cs:110
+msgid "How many days did Shiny Cars halt its production for?"
+msgstr "Durant quants dies Cotxes Lluents ha aturat la producció?"
+
+#: ../src/Games/Memory/MemoryFacts.cs:111
+msgid "In what year did Shiny Cars last halt its production?"
+msgstr "A quin any va aturar Cotxes Lluents la producció per darrer cop?"
+
+#. Translators: {0} is replaced by a number, {1} by a year (like 1940)
+#: ../src/Games/Memory/MemoryFacts.cs:119
+#, csharp-format
+msgid ""
+"Shiny Cars sales fell {0}% this past December, the worst decline since {1}."
+msgstr ""
+"Les vendes de Cotxes Lluents van caure un {0}% el desembre passat, la pitjor "
+"caiguda des de {1}."
+
+#: ../src/Games/Memory/MemoryFacts.cs:121
+msgid "By how much did company sales fall last December?"
+msgstr "Quan van caure les vendes de l'empresa el desembre passat?"
+
+#: ../src/Games/Memory/MemoryFacts.cs:123
+#, csharp-format
+msgid ""
+"Shiny Cars sales fell {0}% this past December. This is the worst decline "
+"since which year?"
+msgstr ""
+"Les vendes de Cotxes Lluents van caure un {0}% el desembre passat. Aquesta "
+"és la pitjor caiguda des de l'any?"
+
+#: ../src/Games/Memory/MemoryFacts.cs:129
+#, csharp-format
+msgid "About {0}% of Shiny Cars produced worldwide are sold in Europe."
+msgstr ""
+"Aproximadament el {0}% dels Cotxes Lluents produïts al món es venen a Europa."
+
+#: ../src/Games/Memory/MemoryFacts.cs:131
+msgid ""
+"What percentage of all Shiny Cars produced worldwide are sold in Europe?"
+msgstr ""
+"Quin percentatge dels Cotxes Lluents produïts al món es venen a Europa?"
+
+#: ../src/Games/Memory/MemoryFacts.cs:137
+#, csharp-format
+msgid ""
+"About {0}% of Shiny Cars use diesel, {1}% use gasoline and the remainder use "
+"electricity."
+msgstr ""
+"Aproximadament el {0}% dels Cotxes Lluents usen dièsel, el {1}% usen benzina "
+"i els restants usen electricitat."
+
+#: ../src/Games/Memory/MemoryFacts.cs:139
+msgid "What percentage of Shiny Cars use diesel?"
+msgstr "Quin percentatge dels Cotxes Lluents usen dièsel?"
+
+#: ../src/Games/Memory/MemoryFacts.cs:140
+msgid "What percentage of Shiny Cars use gasoline?"
+msgstr "Quin percentatge dels Cotxes Lluents usen benzina?"
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:65
+msgid "Triangle"
+msgstr "Triangle"
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:67
+msgid "Square"
+msgstr "Quadrat"
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:69
+msgid "Pentagon"
+msgstr "Pentàgon"
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:71
+msgid "Circle"
+msgstr "Cercle"
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:79
+msgid "Memorize figures and text"
+msgstr "Memoritzeu figures i text"
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:84
+#, csharp-format
+msgid ""
+"The list below enumerates the figures shown in the previous image except for "
+"one. Which is the missing figure? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"La llista de sota enumera les figures mostrades en la imatge prèvia a "
+"excepció d'una. Quina és la figura que manca? Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Memory/MemoryFiguresAndText.cs:222
+msgid "List of images shown before"
+msgstr "Llista d'imatges mostrades previàment"
+
+#: ../src/Games/Memory/MemoryFiguresNumbers.cs:38
+msgid "Figures with numbers"
+msgstr "Figures amb números"
+
+#: ../src/Games/Memory/MemoryFiguresNumbers.cs:43
+#, csharp-format
+msgid ""
+"Which one of these squares was previously shown? Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quin dels quadres següents s'ha mostrat anteriorment? Responeu {0}, {1}, {2} "
+"o {3}."
+
+# csharp-format
+#: ../src/Games/Memory/MemoryIndications.cs:133
+#, csharp-format
+msgid "Start at point number {0}"
+msgstr "Inicia al punt número {0}"
+
+#: ../src/Games/Memory/MemoryIndications.cs:137
+msgid "Move right"
+msgstr "Mou a la dreta"
+
+#: ../src/Games/Memory/MemoryIndications.cs:139
+msgid "Move left"
+msgstr "Mou a l'esquerra"
+
+#: ../src/Games/Memory/MemoryIndications.cs:141
+msgid "Move up"
+msgstr "Mou amunt"
+
+#: ../src/Games/Memory/MemoryIndications.cs:143
+msgid "Move down"
+msgstr "Mou avall"
+
+#: ../src/Games/Memory/MemoryIndications.cs:148
+#, csharp-format
+msgid "End at point {0}"
+msgstr "Finalitza al punt {0}"
+
+#: ../src/Games/Memory/MemoryIndications.cs:162
+msgid "Memorize indications"
+msgstr "Memoritzeu indicacions"
+
+# csharp-format
+#: ../src/Games/Memory/MemoryIndications.cs:168
+#, csharp-format
+msgid ""
+"Which of the following graphics represents the indications previously given? "
+"Answer {0}, {1}, {2} or {3}."
+msgstr ""
+"Quin dels gràfics següents representa les indicacions donades prèviament? "
+"Responeu {0}, {1}, {2} o {3}."
+
+#: ../src/Games/Memory/MemoryNumbers.cs:65
+msgid "How many odd numbers were in the previous image? Answer using numbers."
+msgstr ""
+"Quants números imparells hi havia a la imatge prèvia? Responeu utilitzant "
+"números."
+
+#: ../src/Games/Memory/MemoryNumbers.cs:90
+msgid "How many even numbers were in the previous image? Answer using numbers."
+msgstr ""
+"Quants números parells hi havia a la imatge prèvia? Responeu utilitzant "
+"números."
+
+#: ../src/Games/Memory/MemoryNumbers.cs:115
+msgid ""
+"How many numbers with more than one digit were in the previous image? Answer "
+"using numbers."
+msgstr ""
+"Quants números amb més d'un dígit hi havia a la imatge prèvia? Responeu "
+"utilitzant números."
+
+#: ../src/Games/Memory/MemoryNumbers.cs:132
+msgid "Memorize numbers"
+msgstr "Memoritzeu números"
+
+#: ../src/Games/Memory/MemoryWords.cs:35
+msgid "Memorize words"
+msgstr "Memoritzeu paraules"
+
+#: ../src/Games/Memory/MemoryWords.cs:40
+msgid ""
+"There is a missing word from the previous list. Which one is the missing "
+"word?"
+msgstr "Hi ha una paraula que manca de la llista anterior. Quina és?"
+
+#. Body parts
+#: ../src/Games/Memory/MemoryWords.cs:49
+msgid "wrist"
+msgstr "canell"
+
+#: ../src/Games/Memory/MemoryWords.cs:50
+msgid "elbow"
+msgstr "colze"
+
+#: ../src/Games/Memory/MemoryWords.cs:51
+msgid "armpit"
+msgstr "aixella"
+
+#: ../src/Games/Memory/MemoryWords.cs:52
+msgid "hand"
+msgstr "mà"
+
+#: ../src/Games/Memory/MemoryWords.cs:53
+msgid "chest"
+msgstr "pit"
+
+#. Fishes
+#: ../src/Games/Memory/MemoryWords.cs:56
+msgid "sardine"
+msgstr "sardina"
+
+#: ../src/Games/Memory/MemoryWords.cs:57
+msgid "trout"
+msgstr "truita"
+
+#: ../src/Games/Memory/MemoryWords.cs:58
+msgid "monkfish"
+msgstr "rap"
+
+#: ../src/Games/Memory/MemoryWords.cs:59
+msgid "cod"
+msgstr "bacallà"
+
+#: ../src/Games/Memory/MemoryWords.cs:60
+msgid "salmon"
+msgstr "salmó"
+
+#. Vegetables
+#: ../src/Games/Memory/MemoryWords.cs:63
+msgid "potato"
+msgstr "patata"
+
+#: ../src/Games/Memory/MemoryWords.cs:64
+msgid "ginger"
+msgstr "gingebre"
+
+#: ../src/Games/Memory/MemoryWords.cs:65
+msgid "pepper"
+msgstr "pebre"
+
+#: ../src/Games/Memory/MemoryWords.cs:66
+msgid "garlic"
+msgstr "all"
+
+#: ../src/Games/Memory/MemoryWords.cs:67
+msgid "pumpkin"
+msgstr "carbassa"
+
+#. Bicycle
+#: ../src/Games/Memory/MemoryWords.cs:70
+msgid "brake"
+msgstr "fre"
+
+#: ../src/Games/Memory/MemoryWords.cs:71
+msgid "pedal"
+msgstr "pedal"
+
+#: ../src/Games/Memory/MemoryWords.cs:72
+msgid "chain"
+msgstr "cadena"
+
+#: ../src/Games/Memory/MemoryWords.cs:73
+msgid "wheel"
+msgstr "roda"
+
+#: ../src/Games/Memory/MemoryWords.cs:74
+msgid "handlebar"
+msgstr "manillar"
+
+#. Music
+#: ../src/Games/Memory/MemoryWords.cs:77
+msgid "drummer"
+msgstr "bateria"
+
+#: ../src/Games/Memory/MemoryWords.cs:78
+msgid "speaker"
+msgstr "altaveu"
+
+#: ../src/Games/Memory/MemoryWords.cs:79
+msgid "lyrics"
+msgstr "lletra"
+
+#: ../src/Games/Memory/MemoryWords.cs:80
+msgid "beat"
+msgstr "batec"
+
+#: ../src/Games/Memory/MemoryWords.cs:81
+msgid "song"
+msgstr "cançó"
+
+#. Weather
+#: ../src/Games/Memory/MemoryWords.cs:84
+msgid "cloud"
+msgstr "núvol"
+
+#: ../src/Games/Memory/MemoryWords.cs:85
+msgid "rain"
+msgstr "pluja"
+
+#: ../src/Games/Memory/MemoryWords.cs:86
+msgid "storm"
+msgstr "tempesta"
+
+#: ../src/Games/Memory/MemoryWords.cs:87
+msgid "fog"
+msgstr "boira"
+
+#: ../src/Games/Memory/MemoryWords.cs:88
+msgid "rainbow"
+msgstr "iris"
+
+#. Animals
+#: ../src/Games/Memory/MemoryWords.cs:91
+msgid "rabbit"
+msgstr "conill"
+
+#: ../src/Games/Memory/MemoryWords.cs:92
+msgid "mouse"
+msgstr "ratolí"
+
+#: ../src/Games/Memory/MemoryWords.cs:93
+msgid "monkey"
+msgstr "mico"
+
+#: ../src/Games/Memory/MemoryWords.cs:94
+msgid "bear"
+msgstr "ós"
+
+#: ../src/Games/Memory/MemoryWords.cs:95
+msgid "wolf"
+msgstr "llop"
+
+#: ../tools/GameXmlGetString.cs:29
+msgid ""
+"How many degrees rotates the minute hand of a clock in 2 hours [num] minute?"
+msgid_plural ""
+"How many degrees rotates the minute hand of a clock in 2 hours [num] minutes?"
+msgstr[0] ""
+"Quants graus gira l'agulla dels minuts d'un rellotge en 2 hores i [num] "
+"minut?"
+msgstr[1] ""
+"Quants graus gira l'agulla dels minuts d'un rellotge en 2 hores i [num] "
+"minuts?"
+
+#: ../tools/GameXmlGetString.cs:33
+msgid ""
+"John is 46 years old. His son is [difference] year younger than half of "
+"John's age. How old is John's son?"
+msgid_plural ""
+"John is 46 years old. His son is [difference] years younger than half of "
+"John's age. How old is John's son?"
+msgstr[0] ""
+"En Joan té 46 anys. El seu fill és [difference] any més jove que la meitat "
+"de l'edat d'en Joan. Quina edat té el fill d'en Joan?"
+msgstr[1] ""
+"En Joan té 46 anys. El seu fill és [difference] anys més jove que la meitat "
+"de l'edat d'en Joan. Quina edat té el fill d'en Joan?"
+
+#: ../tools/GameXmlGetString.cs:37
+msgid ""
+"John's age is nowadays 2 times his son's age. [ago] year ago, John was "
+"[proportion] times older than his son. How old is John's son nowadays?"
+msgid_plural ""
+"John's age is nowadays 2 times his son's age. [ago] years ago, John was "
+"[proportion] times older than his son. How old is John's son nowadays?"
+msgstr[0] ""
+"L'edat d'en Joan és avui en dia dos cops la del seu fill. Fa [ago] any, en "
+"Joan era [proportion] cops més gran que el seu fill. Quina edat té el fill "
+"d'en Joan avui en dia?"
+msgstr[1] ""
+"L'edat d'en Joan és avui en dia dos cops la del seu fill. Fa [ago] anys, en "
+"Joan era [proportion] cops més gran que el seu fill. Quina edat té el fill "
+"d'en Joan avui en dia?"
+
+#: ../tools/GameXmlGetString.cs:41
+msgid ""
+"John's age (variable x) is nowadays 2 times his son's age (variable y), that "
+"is x = 2y, and [ago] year ago, John was [proportion] times older than his "
+"son: x - [ago] = (y - [ago]) * [proportion]."
+msgid_plural ""
+"John's age (variable x) is nowadays 2 times his son's age (variable y), that "
+"is x = 2y, and [ago] years ago, John was [proportion] times older than his "
+"son: x - [ago] = (y - [ago]) * [proportion]."
+msgstr[0] ""
+"L'edat d'en Joan (variable x) és avui en dia dos cops la del seu fill "
+"(variable y), és a dir x = 2y, i fa [ago] any, en Joan era [proportion] cops "
+"més gran que el seu fill: x - [ago] = (y - [ago]) * [proportion]."
+msgstr[1] ""
+"L'edat d'en Joan (variable x) és avui en dia dos cops la del seu fill "
+"(variable y), és a dir x = 2y, i fa [ago] anys, en Joan era [proportion] "
+"cops més gran que el seu fill: x - [ago] = (y - [ago]) * [proportion]."
+
+#: ../tools/GameXmlGetString.cs:45
+msgid ""
+"A file is protected by a password formed by a [digits] digit number "
+"represented in base 10 (ranging from 0 to 9). How many different passwords "
+"can you have?"
+msgid_plural ""
+"A file is protected by a password formed by a [digits] digits number "
+"represented in base 10 (ranging from 0 to 9). How many different passwords "
+"can you have?"
+msgstr[0] ""
+"Un fitxer està protegit per una contrasenya composta per un número "
+"representat en base 10 (de 0 a 9) de [digits] dígit. Quantes contrasenyes "
+"diferents podeu tenir?"
+msgstr[1] ""
+"Un fitxer està protegit per una contrasenya composta per un número "
+"representat en base 10 (de 0 a 9) de [digits] dígits. Quantes contrasenyes "
+"diferents podeu tenir?"
+
+#: ../tools/GameXmlGetString.cs:49
+msgid ""
+"A file is protected by a password formed by a [digits] digit represented in "
+"base 8 (ranging from 0 to 7). How many different passwords can you have?"
+msgid_plural ""
+"A file is protected by a password formed by a [digits] digits represented in "
+"base 8 (ranging from 0 to 7). How many different passwords can you have?"
+msgstr[0] ""
+"Un fitxer està protegit per una contrasenya composta per un número "
+"representat en base 8 (de 0 a 7) de [digits] dígit. Quantes contrasenyes "
+"diferents podeu tenir?"
+msgstr[1] ""
+"Un fitxer està protegit per una contrasenya composta per un número "
+"representat en base 8 (de 0 a 7) de [digits] dígits. Quantes contrasenyes "
+"diferents podeu tenir?"
+
+#: ../tools/GameXmlGetString.cs:53
+msgid ""
+"There is [games] tennis game played simultaneously. How many different "
+"forecasts are possible?"
+msgid_plural ""
+"There are [games] tennis games played simultaneously. How many different "
+"forecasts are possible?"
+msgstr[0] ""
+"Es juga [games] partit de tennis. Quants resultats diferents són possibles?"
+msgstr[1] ""
+"Es juguen [games] partits de tennis simultàniament. Quants resultats "
+"diferents són possibles?"
+
+#: ../tools/GameXmlGetString.cs:57
+msgid ""
+"In a tennis tournament, in every match a player is eliminated after losing "
+"to a single opponent. How many matches does it take to determine the winner "
+"of a tennis tournament that starts with [players] player?"
+msgid_plural ""
+"In a tennis tournament, in every match a player is eliminated after losing "
+"to a single opponent. How many matches does it take to determine the winner "
+"of a tennis tournament that starts with [players] players?"
+msgstr[0] ""
+"En un torneig de tennis, en cada partit un jugador és eliminat després de "
+"perdre contra un únic oponent.Quants partits calen per determinar el "
+"guanyador a un torneig de tennis que comença amb [players] jugador?"
+msgstr[1] ""
+"En un torneig de tennis, en cada partit un jugador és eliminat després de "
+"perdre contra un únic oponent.Quants partits calen per determinar el "
+"guanyador a un torneig de tennis que comença amb [players] jugadors?"
+
+#: ../tools/GameXmlGetString.cs:61
+msgid ""
+"You have [money] monetary unit in your bank account at 10% interest "
+"compounded annually. How much money will you have at the end of 2 years?"
+msgid_plural ""
+"You have [money] monetary units in your bank account at 10% interest "
+"compounded annually. How much money will you have at the end of 2 years?"
+msgstr[0] ""
+"Teniu [money] unitat monetària en un compte bancari al 10% d'interès compost "
+"anual. Quants diners tindreu al final de 2 anys?"
+msgstr[1] ""
+"Teniu [money] unitats monetàries en un compte bancari al 10% d'interès "
+"compost anual. Quants diners tindreu al final de 2 anys?"
+
+#: ../tools/GameXmlGetString.cs:69
+msgid ""
+"John cleans at the speed of 1 / [john_time] per hour and his friend at 1 / "
+"[friend]. Together they will need [answer_a] hour."
+msgid_plural ""
+"John cleans at the speed of 1 / [john_time] per hour and his friend at 1 / "
+"[friend]. Together they will need [answer_a] hours."
+msgstr[0] ""
+"En Joan neteja a una velocitat de 1 / [john_time] per hora i el seu amic a "
+"1 / [friend]. Junts necessitaran [answer_a] hora."
+msgstr[1] ""
+"En Joan neteja a una velocitat de 1 / [john_time] per hora i el seu amic a "
+"1 / [friend]. Junts necessitaran [answer_a] hores."
+
+#: ../tools/GameXmlGetString.cs:73
+msgid ""
+"John needs [john_time] hour to clean a warehouse and his friend needs half "
+"as many. How many hours would it take them to clean up the warehouse if they "
+"worked together? [option_answers]"
+msgid_plural ""
+"John needs [john_time] hours to clean a warehouse and his friend needs half "
+"as many. How many hours would it take them to clean up the warehouse if they "
+"worked together? [option_answers]"
+msgstr[0] ""
+"En Joan necessita [john_time] hora per a netejar un magatzem i el seu amic "
+"la meitat del temps. Quantes hores els hi calen per netejar el magatzem si "
+"treballen junts? [option_answers]"
+msgstr[1] ""
+"En Joan necessita [john_time] hores per a netejar un magatzem i el seu amic "
+"la meitat del temps. Quantes hores els hi calen per netejar el magatzem si "
+"treballen junts? [option_answers]"
+
+#: ../tools/GameXmlGetString.cs:77
+msgid ""
+"John needs [john_time] hour to clean a warehouse and his friend needs twice "
+"as many. How many hours would it take them to clean up the warehouse if they "
+"worked together? [option_answers]"
+msgid_plural ""
+"John needs [john_time] hours to clean a warehouse and his friend needs twice "
+"as many. How many hours would it take them to clean up the warehouse if they "
+"worked together? [option_answers]"
+msgstr[0] ""
+"En Joan necessita [john_time] hora per a netejar un magatzem i el seu amic "
+"el doble del temps. Quantes hores els hi calen per netejar el magatzem si "
+"treballen junts? [option_answers]"
+msgstr[1] ""
+"En Joan necessita [john_time] hores per a netejar un magatzem i el seu amic "
+"el doble del temps. Quantes hores els hi calen per netejar el magatzem si "
+"treballen junts? [option_answers]"
+
+#~ msgid "Next Game"
+#~ msgstr "Joc següent"
+
+#~ msgid "Answer"
+#~ msgstr "Respondre"
