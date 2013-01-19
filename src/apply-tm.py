@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/env python
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -18,6 +18,7 @@
 # Boston, MA 02111-1307, USA.
 
 import logging
+import orderdict
 
 from fileset import *
 

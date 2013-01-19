@@ -1,4 +1,3 @@
-#!/usr/bin/python2
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -18,7 +17,8 @@
 # Boston, MA 02111-1307, USA.
 
 import json
-import collections
+#import collections
+from ordereddict import *
 
 class ProjectDTO:
 
@@ -77,7 +77,7 @@ class JsonBackend:
 	def load(self):
 		
 		json_data = open(self.filename)
-		data = json.load(json_data, object_pairs_hook=collections.OrderedDict)
+		data = json.load(json_data, object_pairs_hook=OrderedDict)
 		
 		# Enums projects names
 		for attribute, value in data['projects'].items():

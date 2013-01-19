@@ -1,4 +1,3 @@
-#!/usr/bin/python2
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
