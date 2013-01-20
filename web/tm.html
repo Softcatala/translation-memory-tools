@@ -2,45 +2,32 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script> 
 
 <script>
 
 function AjaxRequest()
-{
-	var _text = $('#myDiv');	
-	
-	$.ajax({
-		type: 'POST',
-		url: "http://recursos.softcatala.org/tm-upload.php",
-		data: $("#form").serialize(),
-		error: function(xhr, type, exception) { alert("Error: " + type); },
-		success: function(response, textStatus, XMLHttpRequest) {  	    		
-			_text.html(response);
-		}
-	});
+{	
+	var options = { target: '#resultat' };	
+	$('#form').ajaxSubmit(options);    	
 }
 
-function OldAjaxRequest()
-{
-	alert("alert");
-	$("#form").ajaxForm();
-	return false;
-}
 </script>
 
 </head>
 <body>
 
-<title></title>
+<title>Recursos de Softcatalà per a traductors</title>
 
 <h1>Aplicar memòria de traducció</h1>
 <p>En el formulari de sota podeu proveir un fitxer PO o POT i es processarà amb la memòria de Softcatalà</p>
-<form enctype="multipart/form-data"  method='POST' action='#none' id ='form'>
+<form enctype="multipart/form-data"  method='POST' action='http://recursos.softcatala.org/tm-upload.php' id='form' name='form'>
 	<label for="file">Fitxer a pujar:</label>
 	<input type='file' name='file' id='file'/>
 	<input type='submit' name='submit' value="Envia" onclick='AjaxRequest(); return false;'/>
 	<br/>
-	<div id ="myDiv" name ="myDiv">Text</div>
+	<br/>
+	<div id ="resultat" name ="resultat"></div>
 </form>
 
 <h1>Darrera versió</h1>
