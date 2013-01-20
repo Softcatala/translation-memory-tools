@@ -1,69 +1,50 @@
 <?php
-if ($_FILES["file"]["error"] > 0)
-  {
-  echo "Error: " . $_FILES["file"]["error"] . "<br>";
-  }
-else
-  {
-#  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-#  echo "Type: " . $_FILES["file"]["type"] . "<br>";
-#  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-#  echo "Stored in: " . $_FILES["file"]["tmp_name"];
-  }
 
+function showStatistics($filename)
+{
+	$command = "msgfmt -o /dev/null --statistics " . $filename . " 2>&1";
+	
+	exec($command, $output, $return_value);	
+	echo "<br/><b>Resultats</b><br/>";
+	echo $output[0];
+}
 
-$tempdir = sys_get_temp_dir ();
-$location = $_FILES["file"]["tmp_name"];
-$out_file = sys_get_temp_dir();
-$out_file .=  "/tm-" . $_FILES["file"]["name"];
+function showLink($link)
+{
+	echo "<br/>Baixada: <a href=" . $link . ">" . $link . "</a>";	
+}
 
-echo $out_file;
+// Main
 
-die("finished");
+	if ($_FILES["file"]["error"] > 0)
+	  {
+	  echo "Error: " . $_FILES["file"]["error"] . "<br>";
+	  }
+	else
+	  {
+	#  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
+	#  echo "Type: " . $_FILES["file"]["type"] . "<br>";
+	#  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
+	#  echo "Stored in: " . $_FILES["file"]["tmp_name"];
+	  }
+	  
+	$po_outdir = "output";
+	  
+	if ( !file_exists($po_outdir) ) {
+	  mkdir ($po_outdir, 0777);
+	 }
+	
+	$uploaded_file = $_FILES["file"]["tmp_name"];
+	$out_file = $_SERVER["DOCUMENT_ROOT"] . "/output/tm-" . $_FILES["file"]["name"];
+	$tm_file = $_SERVER["DOCUMENT_ROOT"] . "/tm.po";
+	$link = "http://recursos.softcatala.org" . "/output/tm-" . $_FILES["file"]["name"];
+	
+	$command = "msgmerge -N " . $uploaded_file . " " . $uploaded_file . " -C " . $tm_file . " > " . $out_file;
+	#echo $command;
+	exec($command, $output, $return_value);
+	
+	showStatistics($out_file);
+	showLink($link);
 
-#$out_file .= ".po";
-
-#echo "Pas 1 ";
-#echo $out_file;
-#echo "  ";
-#echo $location;
-
-#echo " Pas 2 ";
-
-#echo "msgmerge -N "  . $location  . " " .   $location . " -C tm.po > output.po 2> /dev/null";
-
-#$command = "cp " . $location . $out_file;
-
-#echo $command;
-#exec($command,  $output, $return_value);
-
-#echo out . $output[0];
-#echo ret . $return_value;
-
-#$command = "msgmerge -N "  . $location  . " " . $location . " -C tm.po > " . $out_file  . " 2> /dev/null";
-
-#$echo $command;
-#$exec($command,  $output, $return_value);
-
-
-
-#echo out . $output[0];
-#echo ret . $return_value;
-
-#$attachment_location = $out_file;
-#if (file_exists($attachment_location)) {
-#
- #   header($_SERVER["SERVER_PROTOCOL"] . " 200 OK");
- #   header("Cache-Control: public"); // needed for i.e.
- #   header("Content-Type: application/po");
-#    header("Content-Transfer-Encoding: Binary");
-#    header("Content-Length:".filesize($attachment_location));
-#    header("Content-Disposition: attachment; filename=" . $out_file);
-#    readfile($attachment_location);
-#    die();        
-#} else {
-#	echo "File :" . $attachment_location;
-#	die("Error: File not found. ");
-#} 
 
 ?> 
