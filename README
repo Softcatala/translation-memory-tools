@@ -34,7 +34,9 @@ tx pull -lca
 
 --- Applications
 
-* builder.py -> Builds the translation memory: downloads files, merge them and builds the final memory
+Located at 'src' subdirectory
+
+* builder.py -> Builds the translation memory: downloads files, merge them and builds the final translation memory
 
 * apply-tm.py -> Downloads a file and applies the translation memory and lists the files that gain more translations
 
