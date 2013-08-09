@@ -6,7 +6,7 @@ Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%
 
 --- Dependencies
 
-* python
+* python 2.7 or higher
 * python-polib
 * transifex-client
 * bzr (bazaar distributed version control client)

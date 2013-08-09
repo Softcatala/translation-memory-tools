@@ -17,8 +17,7 @@
 # Boston, MA 02111-1307, USA.
 
 import json
-#import collections
-from ordereddict import *
+from collections import OrderedDict
 
 class ProjectDTO:
 
