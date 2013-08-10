@@ -1800,10 +1800,8 @@ msgstr[1] "%li segons"
 #. information here if you shuffle %(str_days)s %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:82
 #, python-format
@@ -1815,10 +1813,8 @@ msgstr "%(str_days)s %(str_hours)s"
 #. information here if you shuffle %(str_hours)s %(str_minutes)s
 #. around. Make sure to keep all '$(str_*)s' in the translated string
 #. and do NOT change anything appart from the ordering.
-#.
 #. %(str_hours)s will be either "1 hour" or "2 hours" depending on the
 #. plural form
-#.
 #. Note: most western languages will not need to change this
 #: ../DistUpgrade/DistUpgradeView.py:100
 #, python-format
@@ -3265,7 +3261,7 @@ msgstr ""
 "utilitzant l'ordre «ubuntu-bug ubuntu-release-upgrader-core» en un terminal."
 
 # Translation source: /ca.po from project 'ubuntu-release-upgrader'
-#: ../DistUpgrade/DistUpgradeController.py:1153
+#: ../DistUpgrade/DistUpgradeController.py:1151
 #, python-format
 msgid ""
 "\n"
@@ -3325,8 +3321,8 @@ msgstr "Realitza una actualització de la versió"
 
 # Translation source: /ca.po from project 'ubuntu-release-upgrader'
 #: ../data/com.ubuntu.release-upgrader.policy.in.h:2
-msgid "Authentication is required to perform a release upgrade"
-msgstr "Cal autenticació per realitzar una actualització de la versió"
+msgid "To upgrade Ubuntu, you need to authenticate."
+msgstr "Cal que us autentiqueu per actualitzar l'Ubuntu."
 
 # Translation source: /ca.po from project 'ubuntu-release-upgrader'
 #: ../data/com.ubuntu.release-upgrader.policy.in.h:3
@@ -3335,8 +3331,8 @@ msgstr "Realitza una actualització parcial"
 
 # Translation source: /ca.po from project 'ubuntu-release-upgrader'
 #: ../data/com.ubuntu.release-upgrader.policy.in.h:4
-msgid "Authentication is required to perform a partial upgrade"
-msgstr "Cal autenticació per realitzar una actualització parcial"
+msgid "To perform a partial upgrade, you need to authenticate."
+msgstr "Cal que us autentiqueu per fer una actualització parcial."
 
 # Translation source: /ca.po from project 'ubuntuone-control-panel'
 #. Undefined variable '_', pylint: disable=E0602
