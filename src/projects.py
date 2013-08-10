@@ -53,3 +53,13 @@ class Projects:
 		for project in self.projects:
 			project.Statistics()
 
+
+	def ToTmx(self):
+		
+		for project in self.projects:
+			project.ToTmx()
+
+		fileName, fileExtension = os.path.splitext(self.tmfile)
+		os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")
+
+

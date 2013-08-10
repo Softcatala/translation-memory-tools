@@ -11,6 +11,7 @@ Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%
 * transifex-client
 * bzr (bazaar distributed version control client)
 * gettext
+* po2tmx
 
 --- Setting up before execution
 

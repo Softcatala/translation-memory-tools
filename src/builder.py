@@ -117,6 +117,7 @@ def main():
 	initLogging()
 	readParameters()
 	processProjects()
+	projects.ToTmx()
 	projects.Statistics()
 
 	s= "Execution time: " + str(time.time() - start_time) + " seconds"

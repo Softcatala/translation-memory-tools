@@ -73,4 +73,10 @@ class Project:
 		print s
 		logging.info(s)
 
+	def ToTmx(self):
+		
+		fileName, fileExtension = os.path.splitext(self.filename)
+		os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")
+
+
 
