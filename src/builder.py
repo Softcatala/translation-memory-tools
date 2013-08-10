@@ -65,7 +65,11 @@ def readParameters():
 	global projectsNames
  
 	addSource = options.addSource
-	projectsNames = options.projectNames.split(",")
+
+	if (options.projectNames is not None):
+		projectsNames = options.projectNames.split(",")
+	else:
+		projectsNames = None
 
 def processProjects():
 
@@ -74,13 +78,14 @@ def processProjects():
 
 	for project_dto in json.projects:
 
-		found = False
-		for projectName in projectsNames:
-			if projectName.lower().strip() == project_dto.name.lower().strip():
-				found = True
+		if (projectsNames is not None):
+			found = False
+			for projectName in projectsNames:
+				if projectName.lower().strip() == project_dto.name.lower().strip():
+					found = True
 
-		if found == False:
-			continue;
+			if found == False:
+				continue;
 
 		project = CreateProject(project_dto.filename)
 		logging.info(project_dto)
