@@ -53,7 +53,7 @@ class Projects:
 		
 		for project in self.projects:
 			poFile = polib.pofile(project.filename)
-			s = project.name + "project. " + str(len(poFile.translated_entries())) + " translated strings"
+			s = project.name + " project. " + str(len(poFile.translated_entries())) + " translated strings"
 			print s
 			logging.info(s)
 
