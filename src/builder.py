@@ -52,14 +52,20 @@ def readParameters():
 
 	parser = OptionParser()
 	parser.add_option("-n", "--no-source",
-		              action="store_false", dest="addSource", default=True,
-		              help="Do not include the source for the translation segment")
+			action="store_false", dest="addSource", default=True,
+			help="Do not include the source for the translation segment")
+
+	parser.add_option("-p", "--projects",
+			action="store", type="string", dest="projectNames",
+			help="To restrict the processing of projects to comma sparated given list e.g.: (fedora,ubuntu)")
 
 	(options, args) = parser.parse_args()
 
 	global addSource
-
+	global projectsNames
+ 
 	addSource = options.addSource
+	projectsNames = options.projectNames.split(",")
 
 def processProjects():
 
@@ -67,6 +73,14 @@ def processProjects():
 	json.load()
 
 	for project_dto in json.projects:
+
+		found = False
+		for projectName in projectsNames:
+			if projectName.lower().strip() == project_dto.name.lower().strip():
+				found = True
+
+		if found == False:
+			continue;
 
 		project = CreateProject(project_dto.filename)
 		logging.info(project_dto)
