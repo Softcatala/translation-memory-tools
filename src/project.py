@@ -25,11 +25,12 @@ from fileset import *
 
 class Project:
 
-	def __init__(self, filename):
+	def __init__(self, name, filename):
 		self.recreateTM = True
 		self.addSource = True
 		self.filename = filename
 		self.filesets = list()
+		self.name = name
 
 	def GetFilename(self):
 		return self.filename;

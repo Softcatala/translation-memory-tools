@@ -29,8 +29,8 @@ reRecreateTM = True
 addSource = True
 
 
-def CreateProject(filename):
-	project = Project(filename)
+def CreateProject(project_dto):
+	project = Project(project_dto.name, project_dto.filename)
 	project.SetRecreateTM(reRecreateTM)
 	project.SetAddSource(addSource)
 	projects.Add(project)
@@ -87,9 +87,9 @@ def processProjects():
 			if found == False:
 				continue;
 
-		project = CreateProject(project_dto.filename)
+		project = CreateProject(project_dto)
 		logging.info(project_dto)
-		
+
 		for fileset in project_dto.filesets:
 			logging.info(fileset)
 			if (fileset.type == 'local-po'):
@@ -117,8 +117,11 @@ def main():
 	initLogging()
 	readParameters()
 	processProjects()
+	projects.Statistics()
 
-	print "Execution time:", time.time() - start_time, "seconds"
+	s= "Execution time: " + str(time.time() - start_time) + " seconds"
+	logging.info(s)
+	print s
 
 if __name__ == "__main__":
     main()

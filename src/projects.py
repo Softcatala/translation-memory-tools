@@ -19,6 +19,7 @@
 
 
 import os
+import logging
 
 from fileset import *
 
@@ -48,5 +49,12 @@ class Projects:
 
 		os.system("msgfmt -c --statistics " + self.tmfile)
 
+	def Statistics(self):
+		
+		for project in self.projects:
+			poFile = polib.pofile(project.filename)
+			s = project.name + "project. " + str(len(poFile.translated_entries())) + " translated strings"
+			print s
+			logging.info(s)
 
 
