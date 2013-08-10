@@ -118,11 +118,6 @@
 					"url" : "https://translations.documentfoundation.org/ca/website/export/zip",
 					"type": "compressed",
 					"target": "website.zip"
-				},
-				"Ask bot": {
-					"url" : "https://translations.documentfoundation.org/ca/askbot/export/zip",
-					"type": "compressed",
-					"target": "askbot.zip"
 				}
 			}
 		},
