@@ -1,6 +1,16 @@
 
 {
 	"projects": {
+		"Header": {
+			"filename" : "header-tm.po",
+			"fileset": {
+				"header": {
+					"url" : "../source-pos/header/header.po",
+					"type": "local-po",
+					"target": "header.po"
+				}
+			}
+		},
 		"Recull": {
 			"filename" : "recull-tm.po",
 			"fileset": {
