@@ -130,7 +130,7 @@
 			"filename" : "fedora-tm.po",
 			"fileset": {
 				"fedora": {
-					"url" : "https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/",
+					"url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/",
 					"type": "transifex"
 				}
 			}

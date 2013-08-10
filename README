@@ -16,9 +16,9 @@ Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%
 
 * Transifex for Fedora project
 
-tx init --host https://fedora.transifex.net
+tx init --host https://fedora.transifex.com
 
-tx set --auto-remote  https://fedora.transifex.net/projects/p/fedora/r/fedora-upstream-projects/
+tx set --auto-remote  https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/
 (account is username not e-mail)
 
 tx pull -lca
