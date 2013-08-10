@@ -110,6 +110,7 @@ def processProjects():
 def main():
 
 	print "Translation memory builder version 0.1"
+	print "Use --help for assistance"
 
 	start_time = time.time()
 
