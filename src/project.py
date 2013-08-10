@@ -66,4 +66,11 @@ class Project:
 			logging.error(detail)
 			self.DeletePOFile()
 
+	def Statistics(self):
+		
+		poFile = polib.pofile(self.filename)
+		s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings"
+		print s
+		logging.info(s)
+
 
