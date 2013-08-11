@@ -54,10 +54,45 @@
 					"type": "compressed",
 					"target": "gaia.zip"
 				},
+				"filezilla": {
+					"url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
+					"type": "compressed",
+					"target": "filezilla.zip"
+				},
 				"mozilla-addons": {
 					"url" : "http://localize.mozilla.org/ca/amo/export/zip",
 					"type": "compressed",
 					"target": "add-ons.zip"
+				},
+				"browserid": {
+					"url" : "http://localize.mozilla.org/ca/browserid/export/zip",
+					"type": "compressed",
+					"target": "browserid.zip"
+				},
+				"firefox-home": {
+					"url" : "http://localize.mozilla.org/ca/fxhome/export/zip",
+					"type": "compressed",
+					"target": "fxhome.zip"
+				},
+				"firefox-input": {
+					"url" : "http://localize.mozilla.org/ca/input/export/zip",
+					"type": "compressed",
+					"target": "input.zip"
+				},
+				"firefox-hackasaurus": {
+					"url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",
+					"type": "compressed",
+					"target": "hackasaurus.zip"
+				},
+				"mozillians": {
+					"url" : "http://localize.mozilla.org/ca/mozillians/export/zip",
+					"type": "compressed",
+					"target": "mozillians.zip"
+				},
+				"firefox-sumo": {
+					"url" : "http://localize.mozilla.org/ca/sumo/export/zip",
+					"type": "compressed",
+					"target": "sumo.zip"
 				}
 			}
 		},
