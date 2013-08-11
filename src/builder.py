@@ -23,6 +23,11 @@ from fileset import *
 from project import *
 from projects import *
 from jsonbackend import *
+from localfileset import *
+from localdirfileset import *
+from compressedfileset import *
+from bazaarfileset import *
+from transifexfileset import *
 
 projects = Projects("tm.po")
 reRecreateTM = True
@@ -104,7 +109,6 @@ def processProjects():
 				project.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
 			elif (fileset.type == 'file'):
 				project.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
-
 
 		project.Do()
 

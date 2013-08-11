@@ -166,90 +166,9 @@ class FileSet():
 		else:
 			print("Unsupported file extension for filename " + self.filename)
 
-
-class CompressedFileSet(FileSet):
-
-	def Do(self):
-
-		# Download po files
-		download = DownloadFile()
-		download.GetFile(self.url, self.filename)
-
-		self.Uncompress()
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
-
-		os.system("rm -f " + self.filename)
-
-class LocalFileSet(FileSet):
-
-	def Do(self):
-
-		os.system("cp " + self.url + " " + self.filename)
-
-		self.Uncompress()
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
-
-		os.system("rm -f " + self.filename)
-
-class LocalDirFileSet(FileSet):
-
-	def Do(self):
-
-		os.system("rm -f " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.system("cp " + self.url + " " + self.temp_dir +  "/" + self.filename)
-
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
-
-class BazaarFileSet(FileSet):
-
-	def Do(self):
-
-		os.system("rm -r -f " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.system("cd " + self.temp_dir)
-		os.system(self.url + " > ca.po")
-
-		self.Uncompress()
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
-
-		os.system("rm -f ca.po")
-		os.system("rm -r -f " + self.temp_dir)
-
-
-class TransifexFileSet(FileSet):
-
-	def Do(self):
-
-		prevdir = os.getcwd()
-
-		os.system("rm -r -f " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.chdir(self.temp_dir)
-		os.system("tx init --host https://fedora.transifex.net")
-		os.system("tx set --auto-remote " + self.url)
-		os.system("tx pull -f -lca")
-		os.chdir(prevdir)
-
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
-
-		os.system("rm -r -f " + self.temp_dir)
-
 class FileFileSet(FileSet):
 
 	def Do(self):
-
-		print "FileFileSet " + self.filename
 
 		# Download local file
 		download = DownloadFile()
