@@ -69,7 +69,13 @@ class Project:
 	def Statistics(self):
 		
 		poFile = polib.pofile(self.filename)
-		s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings"
+	
+		words = 0
+		for entry in poFile:
+			string_words = entry.msgstr.split(' ')
+			words += len(string_words)
+
+		s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings, words " + str(words)
 		print s
 		logging.info(s)
 
