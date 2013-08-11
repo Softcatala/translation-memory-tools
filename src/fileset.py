@@ -27,7 +27,7 @@ class DownloadFile:
 
 	def GetFile(self, url, filename):
 		
-		print 'Downloading file \'' + url + '\''
+		print 'Downloading file \'' + url + '\'' + " to " + filename
 
 		infile = urllib2.urlopen(url)
 		output = open(filename,'wb')
@@ -101,6 +101,15 @@ class FileSet():
 		os.system("cp " + self.tmfile +" tm-project-previous.po")
 		os.system("msgattrib tm-project-previous.po --no-fuzzy --no-obsolete --translated > " + self.tmfile)
 		os.system("rm -f tm-project-previous.po")
+
+	def ConvertTsFilesToPo(self):
+
+		findFiles = FindFiles()
+
+		for tsfile in findFiles.Find(self.temp_dir, '*.ts'):
+			fileName, fileExtension = os.path.splitext(tsfile)
+			print "convert: " + fileName
+			os.system("ts2po " + tsfile + " -o " + fileName + ".po")
 		
 	def Build(self):
 
@@ -151,11 +160,11 @@ class FileSet():
 		elif (self.filename.endswith('tar.gz')):
 			os.system("mkdir " + self.temp_dir)
 			os.system("tar -xvf " + self.filename + " -C " + self.temp_dir)
-		elif (self.filename.endswith('.po')):
+		elif (self.filename.endswith('.po') or  self.filename.endswith('.ts')):
 			os.system("mkdir " + self.temp_dir)
 			os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
 		else:
-			print("Unsupport file extension for filename " + self.filename)
+			print("Unsupported file extension for filename " + self.filename)
 
 
 class CompressedFileSet(FileSet):
@@ -166,7 +175,8 @@ class CompressedFileSet(FileSet):
 		download = DownloadFile()
 		download.GetFile(self.url, self.filename)
 
-		self.Uncompress();
+		self.Uncompress()
+		self.ConvertTsFilesToPo()
 		self.AddComments()
 		self.Build()
 
@@ -178,7 +188,8 @@ class LocalFileSet(FileSet):
 
 		os.system("cp " + self.url + " " + self.filename)
 
-		self.Uncompress();
+		self.Uncompress()
+		self.ConvertTsFilesToPo()
 		self.AddComments()
 		self.Build()
 
@@ -192,6 +203,7 @@ class LocalDirFileSet(FileSet):
 		os.system("mkdir " + self.temp_dir)
 		os.system("cp " + self.url + " " + self.temp_dir +  "/" + self.filename)
 
+		self.ConvertTsFilesToPo()
 		self.AddComments()
 		self.Build()
 
@@ -204,7 +216,8 @@ class BazaarFileSet(FileSet):
 		os.system("cd " + self.temp_dir)
 		os.system(self.url + " > ca.po")
 
-		self.Uncompress();
+		self.Uncompress()
+		self.ConvertTsFilesToPo()
 		self.AddComments()
 		self.Build()
 
@@ -226,6 +239,7 @@ class TransifexFileSet(FileSet):
 		os.system("tx pull -f -lca")
 		os.chdir(prevdir)
 
+		self.ConvertTsFilesToPo()
 		self.AddComments()
 		self.Build()
 
