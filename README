@@ -39,7 +39,7 @@ tx set --auto-remote https://www.transifex.com/projects/p/vlc-trans/
 
 tx pull -lca
 
---- Projects include in the translation memory
+--- Projects included in the translation memory
 
 The file projects.json contains the description of the projects that are included in the translation memory
 
@@ -60,10 +60,6 @@ msgmerge -N tm.po new-pofile.po  > final-pofile.po
 --- Coding Style guide
 
 http://www.python.org/dev/peps/pep-0008/
-
---- URLS
-
-* https://translations.launchpad.net/ubuntu/quantal/+lang/ca
 
 --- Contact Information
 
