@@ -210,6 +210,21 @@
 				}
 			}
 		},
+		"Pootle": {
+			"filename" : "pootle-tm.po",
+			"fileset": {
+				"Pootle": {
+					"url" : "http://pootle.locamotion.org/ca/pootle/export/zip",
+					"type": "compressed",
+					"target": "pootle.zip"
+				},
+				"virtaal": {
+					"url" : "http://pootle.locamotion.org/ca/virtaal/export/zip",
+					"type": "compressed",
+					"target": "virtaal.zip"
+				}
+			}
+		},
 		"Mandriva": {
 			"filename" : "mandriva-tm.po",
 			"fileset": {
