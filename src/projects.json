@@ -165,6 +165,16 @@
 				}
 			}
 		},
+		"Mailman": {
+			"filename" : "mailman-tm.po",
+			"fileset": {
+				"mailman": {
+					"url" : "bzr cat lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				}
+			}
+		},
 		"Mandriva": {
 			"filename" : "mandriva-tm.po",
 			"fileset": {
