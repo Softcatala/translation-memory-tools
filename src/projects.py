@@ -20,6 +20,7 @@
 
 import os
 
+from project import *
 from fileset import *
 
 class Projects:
@@ -28,7 +29,8 @@ class Projects:
 		self.filename = filename
 		self.tmfile = "tm.po"
 		self.projects = list()
-
+		self.tm_project = Project('Translation memory', self.tmfile)
+		
 		if (os.path.isfile(filename)):
 			os.system("rm " + filename)
 
@@ -53,13 +55,15 @@ class Projects:
 		for project in self.projects:
 			project.Statistics()
 
+		self.tm_project.Statistics()
+
 
 	def ToTmx(self):
 		
 		for project in self.projects:
 			project.ToTmx()
 
-		fileName, fileExtension = os.path.splitext(self.tmfile)
-		os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")
+		self.tm_project.ToTmx()
+
 
 
