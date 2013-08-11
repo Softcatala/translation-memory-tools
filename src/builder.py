@@ -92,7 +92,7 @@ def processProjects():
 
 		for fileset in project_dto.filesets:
 			logging.info(fileset)
-			if (fileset.type == 'local-po'):
+			if (fileset.type == 'local-file'):
 				project.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
 			elif (fileset.type == 'compressed'):
 				project.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
@@ -102,6 +102,9 @@ def processProjects():
 				project.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
 			elif (fileset.type == 'local-dir'):
 				project.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'file'):
+				project.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
+
 
 		project.Do()
 

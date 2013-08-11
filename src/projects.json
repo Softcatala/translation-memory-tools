@@ -6,7 +6,7 @@
 			"fileset": {
 				"header": {
 					"url" : "../source-pos/header/header.po",
-					"type": "local-po",
+					"type": "local-file",
 					"target": "header.po"
 				}
 			}
@@ -16,7 +16,7 @@
 			"fileset": {
 				"recull": {
 					"url" : "../source-pos/recull/recull.po",
-					"type": "local-po",
+					"type": "local-file",
 					"target": "recull.po"
 				}
 			}
@@ -26,7 +26,7 @@
 			"fileset": {
 				"abiword": {
 					"url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
-					"type": "compressed",
+					"type": "file",
 					"target": "abiword-ca.po"
 				}
 			}
@@ -36,7 +36,7 @@
 			"fileset": {
 				"virtualbox": {
 					"url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
-					"type": "compressed",
+					"type": "file",
 					"target": "virtualbox-ca.ts"
 				}
 			}
