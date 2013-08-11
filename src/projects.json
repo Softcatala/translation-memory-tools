@@ -65,7 +65,7 @@
 			"filename" : "gnome-tm.po",
 			"fileset": {
 				"gnome-ui": {
-					"url" : "http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz",
+					"url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/ui.tar.gz",
 					"type": "compressed",
 					"target": "gnome-ui.tar.gz"
 				},
