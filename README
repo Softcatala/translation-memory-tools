@@ -1,8 +1,14 @@
 --- Introduction
 
-A set of tools to build, maintain and use translation memories —
+This is the toolset used at Softcatalà to build the translation memories for all the projects that we contribute to.
 
-Part of http://www.softcatala.org/wiki/Mem%C3%B2ria_traducci%C3%B3_de_Softcatal%C3%A0 effort
+The toolset performs the following tasks:
+
+* Download and unpack the files from source repositories
+* Create a translation memory for project in PO and TMX format
+* Produce a single translation memory file that contains all the projects
+
+The web page of the project is at: http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà
 
 --- Dependencies
 
@@ -32,6 +38,10 @@ tx set --auto-remote https://www.transifex.com/projects/p/vlc-trans/
 (account is username not e-mail)
 
 tx pull -lca
+
+--- Projects include in the translation memory
+
+The file projects.json contains the description of the projects that are included in the translation memory
 
 --- Applications
 
