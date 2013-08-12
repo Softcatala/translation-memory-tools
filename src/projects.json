@@ -64,11 +64,6 @@
 					"type": "compressed",
 					"target": "gaia.zip"
 				},
-				"filezilla": {
-					"url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
-					"type": "compressed",
-					"target": "filezilla.zip"
-				},
 				"mozilla-addons": {
 					"url" : "http://localize.mozilla.org/ca/amo/export/zip",
 					"type": "compressed",
@@ -103,6 +98,16 @@
 					"url" : "http://localize.mozilla.org/ca/sumo/export/zip",
 					"type": "compressed",
 					"target": "sumo.zip"
+				}
+			}
+		},
+		"filezilla": {
+			"filename" : "filezilla-tm.po",
+			"fileset": {
+				"filezilla": {
+					"url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
+					"type": "compressed",
+					"target": "filezilla.zip"
 				}
 			}
 		},
