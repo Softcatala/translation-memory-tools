@@ -31,13 +31,11 @@ from transifexfileset import *
 from filefileset import *
 
 projects = Projects("tm.po")
-reRecreateTM = True
 addSource = True
 
 
 def CreateProject(project_dto):
 	project = Project(project_dto.name, project_dto.filename)
-	project.SetRecreateTM(reRecreateTM)
 	project.SetAddSource(addSource)
 	projects.Add(project)
 	return project
