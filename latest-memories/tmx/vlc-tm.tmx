@@ -54908,5 +54908,2952 @@ p &gt; span { color: #838383; }
         <seg>codi font</seg>
       </tuv>
     </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Translators</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Traductors</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'DejaVu Sans'; font-size:12pt; font-weight:600;"&gt;VideoLAN Movie Creator %1 &lt;/span&gt;&lt;span style=" font-family:'DejaVu Sans'; font-weight:600;"&gt;%2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;a href="http://www.vlmc.org"&gt;&lt;span style=" font-family:'DejaVu Sans'; text-decoration: underline; color:#4f4f4f;"&gt;http://www.vlmc.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;⏎ &lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;⏎ p, li { white-space: pre-wrap; }⏎ &lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;"&gt;⏎ &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'DejaVu Sans'; font-size:12pt; font-weight:600;"&gt;VideoLAN Movie Creator %1 &lt;/span&gt;&lt;span style=" font-family:'DejaVu Sans'; font-weight:600;"&gt;%2&lt;/span&gt;&lt;/p&gt;⏎ &lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;a href="http://www.vlmc.org"&gt;&lt;span style=" font-family:'DejaVu Sans'; text-decoration: underline; color:#4f4f4f;"&gt;http://www.vlmc.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC (VideoLAN Movie Creator) is a cross-platform, non-linear video editing software based on the VLC Media Player.
+</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>VLMC (VideoLAN Movie Creator) és un programari multi-plataforma per a l'edició no-lineal de vídeo basat en el reproductor multimèdia VLC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This version of VLMC was compiled on:
+%1 running  %2 compiled against Qt %3
+Your Qt runtime version: %4
+</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquesta versió del VLMC va ser compilada el: %1 sobre %2 compiled against Qt %3⏎ Your Qt runtime version: %4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Remove</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Elimina</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unlink</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desenllaça</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Link</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Enllaça</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set color</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Estableix el color</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Media Properties</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Propietats multimèdia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>---</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>---</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Number of video tracks</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nombre de pistes de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Number of audio tracks</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nombre de pistes d'àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In project workspace</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>A l'espai de treball del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Metatags :</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Metatags:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Annotations :</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Anotacions:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>properties</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>propietats</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New tags edition</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Afegeix etiquetes noves</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter tags (you can enter multiple tags, separated by a comma)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu les etiquetes (podeu introduir-ne moltes, separades per comes)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Adding clip to track %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està afegint el clip a la pista %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Moving clip from track %1 to %2</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està movent el clip de la pista %1 a la %2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Removing clip </seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està eliminant el clip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Resizing clip</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està canviant la mida del clip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Splitting clip</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està dividint el clip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Adding effect %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està afegint l'efecte %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Moving effect %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està movent l'efecte %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Deleting effect %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està eliminant l'efecte %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Resizing effect %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està canviant la mida de l'efecte %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Invalid action</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>L'acció no és vàlida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC Crash handler</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Gestor d'errors del VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An error occurred. We're sorry for the inconvenient, though we saved your project. It will be reopened next time you open VLMC.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error, tot i així s'han desat les dades del projecte. Quan torneu a obrir el VLMC s'obrirà de nou.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ok</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>D'acord</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Restart</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reinicia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Crash_Description</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Descripció_de_l'error</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unknown signal</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Senyal desconegut</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A crash occurred. Signal received: </seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error. S'ha rebut el senyal:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clip Preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Previsualització del clip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project Preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Revisió del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>History</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Historial</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Effects List</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Llista d'efectes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Effect Properties</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Propietats de l'efecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Effect stack</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pila d'efectes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Move the effect up in the stack</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mou l'efecte amunt a la pila</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Move the effect down in the stack</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mou l'efecte avall a la pila</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Overview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Resum</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Description</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Descripció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Filter</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Filtre</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mixer 2</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mesclador 2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mixer 3</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mesclador 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%1 informations</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Informacions %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The project has been modified.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha modificat el projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Do you want to save it?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu desar-lo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You are about to relocate the project. Every video will be copied to your new workspace.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ara canviareu la ubicació del projecte. Tots els vídeos es copiaran a l'espai de treball nou.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Do you want to proceed?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu procedir?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Failed to load project file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No s'ha pogut carregar el fitxer de projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Backup file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fitxer de còpia de seguretat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A backup file exists for this project. Do you want to load it?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Existeix un fitxer de còpia de seguretat per a aquest projecte. Voleu carregar-lo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An outdated backup file was found. Do you want to erase it?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha trobat un fitxer de còpia de seguretat no actualitzat. Voleu eliminar-lo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter the output file name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el nom del fitxer de sortida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC project file(*.vlmc)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fitxer de projecte VLMC (*.vlmc)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please choose a project file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Seleccioneu un fitxer de projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>WizardPage</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pàgina auxiliar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This guide will step you through the process of setting up a new project.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquesta guia us ajudarà en el procés de configuració d'un projecte nou.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Description</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Descripció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Workspace directory</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Directori del lloc de treball</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project location</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ubicació del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New project wizard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nou projecte amb auxiliar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set General options</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Defineix les opcions generals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form is incomplete</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El formulari és incomplet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The project name must be filled.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El nom del projecte ha d'estar omplert.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The workspace location must be set.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El lloc de treball ha d'estar definit.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Missing workspace location</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Falta la ubicació del lloc de treball</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Invalid workspace location</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La ubicació del lloc de treball no és vàlida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;p style='white-space:pre'&gt;&lt;b&gt;Name:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Length:&lt;/b&gt; %2</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;p style='white-space:pre'&gt;&lt;b&gt;Nom:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Longitud:&lt;/b&gt; %2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Remove</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Elimina</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set color</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Estableix el color</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Effect Properties</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Propietats de l'efecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;p style='white-space:pre'&gt;&lt;b&gt;Name:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Length:&lt;/b&gt; %2</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;p style='white-space:pre'&gt;&lt;b&gt;Nom:&lt;/b&gt; %1&lt;br&gt;&lt;b&gt;Longitud:&lt;/b&gt; %2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Import</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Importar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TextLabel</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Etiqueta de text</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Invalid medias</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fitxers multimèdia invàlids</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some of the medias you loaded can't be used for video editing. Do you want VLMC to convert them so you can use them in your project?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Alguns dels suports que ha carregat no poden ser utilitzats per l'edició de vídel. Vol que VLMC els converteixi perquè els pugui utilitzar en el seu projecte?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Failed to load %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No s'ha pogut carregar %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VideoLAN Movie Creator</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>VideoLAN Movie Creator</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>I understand</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ho entenc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:16pt; font-weight:600;"&gt;Please note&lt;/span&gt;&lt;/p&gt;
+&lt;p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:14pt;"&gt;&lt;/p&gt;
+&lt;p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt;VideoLAN Movie Creator is a &lt;/span&gt;&lt;a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Pre-alpha"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; text-decoration: underline; color:#0057ae;"&gt;pre-alpha&lt;/span&gt;&lt;/a&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt; software and is not ready for prime-time. Many key features are &lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; font-weight:600;"&gt;simply missing&lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt;, or even &lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; font-weight:600;"&gt;buggy&lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt;. Our team is composed of volunteers who are working hard to give you the best experience with video editing.&lt;/span&gt;&lt;/p&gt;
+&lt;p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:14pt;"&gt;&lt;/p&gt;
+&lt;p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;a href="http://www.vlmc.org"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; text-decoration: underline; color:#0057ae;"&gt;read more&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;⏎
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;⏎
+p, li { white-space: pre-wrap; }⏎
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"&gt;⏎
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:16pt; font-weight:600;"&gt;Tingui en compte&lt;/span&gt;&lt;/p&gt;⏎
+&lt;p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:14pt;"&gt;&lt;/p&gt;⏎
+&lt;p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt;VideoLAN Movie Creator és una versió&lt;/span&gt;&lt;a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Pre-alpha"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; text-decoration: underline; color:#0057ae;"&gt;pre-alfa&lt;/span&gt;&lt;/a&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt; de programari, i no està preparada per la seva posada en producció. Moltes funcions importants&lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; font-weight:600;"&gt;simplement no hi són&lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt;, o fins i tot &lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; font-weight:600;"&gt;tenen errors&lt;/span&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt;"&gt;. El nostre equip està format per voluntaris que estan treballandt dur per donar-te la millor experiència amb l'edició de vídeo.&lt;/span&gt;&lt;/p&gt;⏎
+&lt;p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:14pt;"&gt;&lt;/p&gt;⏎
+&lt;p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;a href="http://www.vlmc.org"&gt;&lt;span style=" font-family:'Sans Serif'; font-size:14pt; text-decoration: underline; color:#0057ae;"&gt;llegir més&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Media List</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Llista de fitxers multimèdia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VideoLAN Movie Creator</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>VideoLAN Movie Creator</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Edit</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Edita</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Export</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Exporta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Window</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Finestra</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC Toolbar</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Barra d'eines de VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Help</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ajuda</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Previsualització</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;New Project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Nou Projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open the wizard to create a new project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre l'auxiliar per crear un projecte nou</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;To a file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Cap a un fitxer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Render your project as a file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Renderitza el teu projecte com un fitxer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Load Project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Càrrega del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Import</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Importa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Import new medias into the current project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Importa fitxers multimèdia nous al projecte actual</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proj&amp;ect Preferences</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Preferències del Projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Save &amp;As</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Anomena i desa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Close Project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tan&amp;ca el projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Crash</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Error</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Undo</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desfés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Redo</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Refés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Share your project on youtube</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Comparteix el projecte a YouTube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Selection mode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mode de selecció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Use the mouse tool to manipulate regions in the timeline</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Feu servir el ratolí per manipular trossos de la línia temporal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cut mode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mode de tall</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Use the scissors to cut regions in the timeline</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Feu servir les tisores per tallar trossos de la línia temporal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Zoom out</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Allunya</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Zoom in</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Apropa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC Renderer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Renderitzador VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There is nothing to render.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No hi ha res per renderitzar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Crash recovery</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Recuperació de la fallada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC didn't closed nicely. Do you want to recover your project?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>VLMC no ha estat tancat correctament. Vols recuperar el teu projecte?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can't restore project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El projecte no es pot restaurar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC didn't manage to restore your project. We apology for the inconvenience</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>VLMC no ha aconseguit restaurar el teu projecte. Ens disculpem per les molèsties</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Publish on &amp;Internet</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Publica a &amp;Internet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>clip count</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>compta clips</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>length</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>durada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This clip or some of its children are contained in the timeline.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquest clip o algun dels seus fills es troben dins la línia de temps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Removing it will delete it from the timeline. Do you want to proceed?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Eliminar-ho també ho eliminarà de la línia de temps. Vols continuar?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can't copy to workspace</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No es pot copiar a l'espai de treball</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can't copy this media to workspace: %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No es pot copiar el fitxer multimèdia a l'àrea de treball: %1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tags</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Etiquetes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Import</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Importar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>WizardPage</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pàgina de l'auxiliar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;"&gt;
+&lt;table border="0" style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt;
+&lt;tr&gt;
+&lt;td style="border: none;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;We have now enough informations to load this project.&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Press &lt;span style=" font-weight:600;"&gt;finish&lt;/span&gt; to close this wizard and start editing your videos!&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;⏎
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;⏎
+p, li { white-space: pre-wrap; }⏎
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;"&gt;⏎
+&lt;table border="0" style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt;⏎
+&lt;tr&gt;⏎
+&lt;td style="border: none;"&gt;⏎
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Actualment nosaltres tenim suficient informació per carregar aquest projecte.&lt;/p&gt;⏎
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Prem&lt;span style=" font-weight:600;"&gt;finalitzar&lt;/span&gt; per tancar aquest auxiliar i comenár a editar els teus vídeos!&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project wizard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Auxiliar del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ready to load this project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Preparat per carregar aquest projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select a path</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Seleccioneu un camí</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatic save</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desat automàtic</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When this option is activated,VLMC will automatically save your project at a specified interval</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Quan aquesta opció és activada, VLMC desarà automàticament el seu projecte a l'interval especificat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatic save interval</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Interval de desat automàtic</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is the interval that VLMC will wait between two automatic save</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquest és l'interval que VLMC esperarà entre dos desats automàtics</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Media preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Previsualitza el fitxer multimèdia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Preview the selected media, or pause the current preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Previsualitzar el suport seleccionat, o fer una pausa a la previsualització actual</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Render preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Renderitzar la previsualització</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Preview the project, or pause the current preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Previsualitzar el projecte, o fer una pausa a l'actual previsualització</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Undo</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desfés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Undo the last action</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desfés l'última acció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Redo</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Refés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Redo the last action</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Refés l'última acció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Help</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ajuda</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Toggle the help page</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Commuta la pàgina d'ajuda</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Quit VLMC</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Surt del VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open VLMC preferences</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obrir les preferències del VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project preferences</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Preferències del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open the project preferences</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre les preferències del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Switch to fullscreen mode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Canvia en mode pantalla completa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nou projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open the new project wizard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre l'auxiliar del projecte nou</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open a project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre un projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open an existing project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre un projecte existent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Save the current project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desa el projecte actual</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Save as</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Anomena i desa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Save the current project to a new file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desa el projecte actual en un nou fitxer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Close the project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tanca el projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Close the current project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tanca el projecte actual</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Import media</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Importa fitxers multimèdia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open the import window</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre la finestra d'importació</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Render the project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Renderitza el projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Render the project to a file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Renderitza el projecte en un fitxer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Selection mode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mode de selecció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select the selection tool in the timeline</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Selecciona l'eina de selecció en la línia de temps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cut mode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mode de tall</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select the cut/razor tool in the timeline</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Selecciona les eines tisores o navalla de la línia temporal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The VLMC's UI language</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Llenguatge de la interfície d'usuari del VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Confirm clip deletion</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Confirma l'eliminació del cli</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ask for confirmation before deleting a clip from the timeline</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Preguntar confirmació abans d'eliminar un clip de la línia de temps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Youtube Developer Key</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Contrasenya del desenvolupador de Youtube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Youtube Username</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom d'usuari de Youtube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proxy Port</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Port del servidor intermediari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proxy Username</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom d'usuari del servidor intermediari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proxy Password</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Contrasenya del servidor intermediari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default location where to store projects folders</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El camí per defecte on es desaran els directoris dels projectes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Output video FPS</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>FPS del vídeo de sortida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Frame Per Second used when previewing and rendering the project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fotogrames Per Segon utilitzats quan s'estigui previsualitzant i renderitzant el projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Width resolution of the output video</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Amplada de la resolució del vídeo de sortida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Height resolution of the output video</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Resolució en alçada del vídeo de sortida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio samplerate</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Freqüència de mostratge de l'àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Output project audio samplerate</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Freqüència de mostratge de l'àudio de sortida del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The project name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El nom del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project default location</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ubicació per defecte del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Temporary folder</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Carpeta temporal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The temporary folder used by VLMC to process videos.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La carpeta temporal és utilitzada pel VLMC per processar els vídeos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC's Youtube Developer Key</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Contrasenya del VLMC de desenvolupador de Youtube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Valid YouTube username</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom d'usuari de Youtube vàlid</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Youtube Password</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Contrasenya del Youtube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Leave this field empty, password will be stored in unencrypted form.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Deixa aquest camp en blanc, la contrasenya serà desada en un formulari desencriptat.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enable Proxy for VLMC</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Habilita el servidor d'intercanvi per VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enables Global Network Proxy for VLMC.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Habilita la xarxa global de servidor d'intercanvi per VLMC.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Proxy Hostname</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Nom del servidor d'intercanvi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set Proxy Hostname.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Escriu el nom del servidor d'intercanvi.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set Proxy Port.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Escriu el port del servidor d'intercanvi.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set Proxy Username, if any.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Escriu el nom d'usuari del servidor d'intercanvi, si n'hi ha.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set Proxy Password, if any.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Escriu la contrasenya del servidor intermediari, si n'hi ha</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video aspect ratio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Relació d'aspecte de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The rendered video aspect ratio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Relació d'aspecte del vídeo renderitzat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Preview</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Previsualització</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Go to the previous frame</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Anar al fotograma anterior</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Play / Pause</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reprodueix / Pausa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Go to the next frame</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vés al següent fotograma</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set marker A</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Col·loca el marcador A</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set marker B</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Col·loca el marcador B</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cut at markers position</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Talla en la posició dels marcadors</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop the playback</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Atura la reproducció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Rendering error</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Error de renderització</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An error occurred while rendering.
+Please check your VLC installation before reporting the issue.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error mentre s'estava renderitzant. Comproveu la instal·lació de VLC abans d'informar del problema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Adjust Volume</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ajusta el volum</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can't open project file. (%1)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El projecte no es pot obrir. (%1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Failed to load the project file: %1. Aborting.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No s'ha pogut carregar el fitxer del projecte: %1. Interrompent el procés.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Untitled Project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Projecte sense títol</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unsaved Project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Projecte no desat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project wizard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Auxiliar del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Choose the appropriate action then click Next to continue.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Escull l'acció apropiada i llavors fes clic o següent per continuar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This help is likely not to be of any help.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquesta ajuda no és probable que us serveixi d'ajuda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project wizard help</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Ajuda de l'auxiliar del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Moving clip</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està movent el clip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unable to get backtrace</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No es pot obtenir la traçabilitat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The XMLStream is not a valid YouTube Feed</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El flux de dades XML no és vàlid pel canal de YouTube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Selecciona...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Width</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Amplada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Height</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Alçada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>H264</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>H264</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>AAC</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>AAC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter the output file name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el nom del fitxer de sortida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Videos(%1)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vídeos(%1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Invalid parameters</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Paràmetres invàlids</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please enter valid rendering parameters</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Si us plau, introduïu uns paràmetres de renderització vàlids</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please provide a valid output file!</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Si us plau, proporciona un fitxer de sortida vàlid!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File already exists!</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El fitxer ja existeix!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Output file already exists, do you want to overwrite it?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El fitxer de sortida ja existeix, vols sobrescriure'l?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Export Settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configuració d'exportar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video Quality</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Qualitat del vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio Quality</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Qualitat de l'àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Custom</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Personalitzat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>QVGA (320x240) - 30 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>QVGA (320x240) - 30 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VGA (640x480) - 30 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>VGA (640x480) - 30 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>SVGA (800x600) - 30 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>SVGA (800x600) - 30 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>XVGA (1024x768) - 30 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>XVGA (1024x768) - 30 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>480p NTSC (720x480) - 29.97 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>480p NTSC (720x480) - 29.97 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>576p PAL (720x576) - 25 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>576p PAL (720x576) - 25 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>720p (1280x720) - 29.97 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>720p (1280x720) - 29.97 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1080p (1920x1080) - 29.97 fps</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>1080p (1920x1080) - 29.97 fps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Export Settings: Publish on Internet</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configuració d'exportar: Publicar a Internet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Filter</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Filtre</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project preferences</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Preferències del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC Settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configuració del VLMC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Restore default?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu restaurar els valors redefinits?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This will restore all settings default value.
+Are you sure you want to continue?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Es restaurarà tota la configuració amb els valors per defecte. Estàs segur que vols continuar?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Invalid value</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Valor invàlid</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can't save settings due to an invalid value</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No es pot desar la informació a causa d'un valor invàlid</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Keyboard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Teclat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>YouTube</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>YouTube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Share Video On Internet</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Comparteix el vídeo a Internet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Service</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Servei</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>YouTube</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>YouTube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Autos &amp; Vehicles</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Automòbils i vehicles</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Education</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Educació</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Entertainment</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Entreteniment</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Film &amp; Animation</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pel·lícules i animació</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Games</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Jocs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Howto &amp; Style</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Guies pràctiques i estil</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Music</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Música</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>News &amp; Politics</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Notícies i política</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nonprofit &amp; Activism</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sense ànim de lucre i activisme</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>People &amp; Blogs</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Gent i blocs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Animals &amp; Pets</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Animals i mascotes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tech &amp; Science</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tecnologia i Ciència</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sports</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Esports</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Travel &amp; Events</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Viatges i Events</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Description</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Descripció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Keywords</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Paraules clau</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Make this video private</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fes que aquest vídeo sigui privat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"&gt;
+&lt;p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans'; font-size:12pt;"&gt;By publishing, you agree with the Terms Of Services of &lt;/span&gt;&lt;a href="http://code.google.com/apis/youtube/terms.html"&gt;&lt;span style=" font-family:'Sans'; font-size:12pt; text-decoration: underline; color:#0000ff;"&gt;YouTube&lt;/span&gt;&lt;/a&gt;&lt;span style=" font-family:'Sans'; font-size:12pt;"&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;⏎
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;⏎
+p, li { white-space: pre-wrap; }⏎
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"&gt;⏎
+&lt;p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans'; font-size:12pt;"&gt;Mitjançant la publicació, vostè està d'acord amb els termes del servei de &lt;/span&gt;&lt;a href="http://code.google.com/apis/youtube/terms.html"&gt;&lt;span style=" font-family:'Sans'; font-size:12pt; text-decoration: underline; color:#0000ff;"&gt;YouTube&lt;/span&gt;&lt;/a&gt;&lt;span style=" font-family:'Sans'; font-size:12pt;"&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&amp;Publish</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&amp;Publica</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>'Username' or 'Password' or 'Title' cannot be empty. Please check these fields.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El nom d'usuari, la constrasenya, o el títol no pot estar buit. Reviseu aquest camps.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Authenticating...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està autenticant...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Authenticated!</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Autenticat!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Your video has been uploaded.
+URL (copied to your clipboard):
+%1
+
+Open this in your default web browser?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El vídeo s'ha carregat.
+URL (copiada cap al porta-retalls):
+%1
+
+Voleu obrir-lo en el navegador d'Internet predeterminat?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some error has occured while processing your video.
+Please check with your video service provider.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït algun error mentre es processava el vídeo.
+Comproveu-ho amb el proveïdor de serveis de vídeo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video Uploaded</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El vídeo s'ha pujat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%1 kB Uploaded</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%1 KB carregats</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Media List</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Llista de fitxers multimèdia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Keyword Tags</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Etiquetes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TextLabel</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Etiqueta de text</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video #%1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vídeo #%1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio #%1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Àudio #%1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Rename track</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Canvia el nom de la pista</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter the track new name</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el nou nom de la pista</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Confirm the deletion of the region?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Confirmeu l'eliminació d'aquesta regió?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Confirm the deletion of those regions?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Confirmeu l'eliminació d'aquestes regions?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Yes, don't ask me again</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sí, no ho tornis a preguntar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nothing to undo</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No hi ha res per desfer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>WizardPage</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pàgina de l'auxiliar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In this page you can fine tune some of the settings of your new project.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>En aquesta pàgina pots ajustar alguns paràmetres del teu nou projecte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Width</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Amplada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Height</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Alçada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Custom</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Personalitzat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>SDTV/NTSC (480i)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>SDTV/NTSC (480i)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>SDTV/PAL (576i)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>SDTV/PAL (576i)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>EDTV (480p)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>EDTV (480p)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>EDTV (576p)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>EDTV (576p)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>HDTV (720p)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>HDTV (720p)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>HDTV (1080i)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>HDTV (1080i)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>HDTV (1080p)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>HDTV (1080p)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Frames / sec</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fotogrames / segon</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New project wizard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Auxiliar del projecte nou</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configure Video settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configura els paràmetres de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>16/9</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>16/9</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video aspect ratio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Relació d'aspecte de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Form</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Formulari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;"&gt;
+&lt;table border="0" style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt;
+&lt;tr&gt;
+&lt;td style="border: none;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;Welcome to the project Wizard.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;This wizard will help you to create a new project, or open an already existing one.&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Please select your preferred action below then press next.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;⏎
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;⏎
+p, li { white-space: pre-wrap; }⏎
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;"&gt;⏎
+&lt;table border="0" style="-qt-table-type: root; margin-top:4px; margin-bottom:4px; margin-left:4px; margin-right:4px;"&gt;⏎
+&lt;tr&gt;⏎
+&lt;td style="border: none;"&gt;⏎
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;Benvingut a l'auxiliar del projecte.&lt;/span&gt;&lt;/p&gt;⏎
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Aquest auxiliar l'ajudarà a crear un nou projecte, o obrir un projecte existent.&lt;/p&gt;⏎
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;/p&gt;⏎
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Si us plau, selecciona la teva opció preferida i llavors prem següent.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create a new project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Crea un nou projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open an existing project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre un projecte existent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Do not show at startup.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No ho mostris a l'inici.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Project wizard</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Auxiliar del projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open or create a project</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre o crea un projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sorry</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Perdoneu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You first need to select a project from the list.
+Then click next to continue...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Primerament, necessites seleccionar un projecte de la llista.
+Llavors, fes clic a següent per continuar...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Remove</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Elimina</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select a project file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Selecciona un fitxer de projecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>VLMC project file(*.vlmc)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fitxer de projecte VLMC (*.vlmc)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Render in progress...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Renderització en procés...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Frame</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Marc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TextLabel</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Etiqueta de text</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Rendering frame %1 / %2</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està renderitzant el fotograma %1 / %2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File already exists!</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El fitxer ja existeix!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A file with the same name already exists, do you want to overwrite it?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Un fitxer amb el mateix nom ja existeix. Vols sobreescriure'l?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Workspace: </seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Lloc de treball:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg> copied to </seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>copiat a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>YouTube Authentication</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Autenticació de YouTube</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connection may be insecure, do you want to continue? One or more SSL errors has occurred: %1</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La connexió pot no ser segura, voleu continuar? Un o més errors SSL han succeit: %1</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

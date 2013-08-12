@@ -40816,3 +40816,2170 @@ msgstr "També podeu baixar directament el"
 #: vlc/index.php:107
 msgid "source code"
 msgstr "codi font"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AboutVLMC#3
+msgid "Translators"
+msgstr "Traductors"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AboutVLMC#5
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'DejaVu Sans'; font-size:12pt; font-weight:600;\">VideoLAN Movie "
+"Creator %1 </span><span style=\" font-family:'DejaVu Sans'; font-weight:600;"
+"\">%2</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"http://www.vlmc."
+"org\"><span style=\" font-family:'DejaVu Sans'; text-decoration: underline; "
+"color:#4f4f4f;\">http://www.vlmc.org</span></a></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">⏎ <html><head><meta name=\"qrichtext\" content="
+"\"1\" /><style type=\"text/css\">⏎ p, li { white-space: pre-wrap; }⏎ </"
+"style></head><body style=\" font-family:'Sans'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">⏎ <p style=\" margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px;\"><span style=\" font-family:'DejaVu Sans'; font-size:12pt; font-"
+"weight:600;\">VideoLAN Movie Creator %1 </span><span style=\" font-"
+"family:'DejaVu Sans'; font-weight:600;\">%2</span></p>⏎ <p style=\" margin-"
+"top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+"indent:0; text-indent:0px;\"><a href=\"http://www.vlmc.org\"><span style=\" "
+"font-family:'DejaVu Sans'; text-decoration: underline; color:#4f4f4f;"
+"\">http://www.vlmc.org</span></a></p></body></html>"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AboutVLMC#6
+msgid ""
+"VLMC (VideoLAN Movie Creator) is a cross-platform, non-linear video editing "
+"software based on the VLC Media Player.\n"
+msgstr ""
+"VLMC (VideoLAN Movie Creator) és un programari multi-plataforma per a "
+"l'edició no-lineal de vídeo basat en el reproductor multimèdia VLC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AboutVLMC#7
+msgid ""
+"This version of VLMC was compiled on:\n"
+"%1 running  %2 compiled against Qt %3\n"
+"Your Qt runtime version: %4\n"
+msgstr ""
+"Aquesta versió del VLMC va ser compilada el: %1 sobre %2 compiled against Qt "
+"%3⏎ Your Qt runtime version: %4"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AbstractGraphicsMediaItem#1
+msgctxt "AbstractGraphicsMediaItem#1"
+msgid "Remove"
+msgstr "Elimina"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AbstractGraphicsMediaItem#3
+msgid "Unlink"
+msgstr "Desenllaça"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AbstractGraphicsMediaItem#4
+msgid "Link"
+msgstr "Enllaça"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: AbstractGraphicsMediaItem#5
+msgctxt "AbstractGraphicsMediaItem#5"
+msgid "Set color"
+msgstr "Estableix el color"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#1
+msgctxt "ClipMetadataDisplayer#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#2
+msgid "Media Properties"
+msgstr "Propietats multimèdia"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#3
+msgctxt "ClipMetadataDisplayer#3"
+msgid "Name"
+msgstr "Nom"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#5
+msgid "---"
+msgstr "---"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#8
+msgid "Number of video tracks"
+msgstr "Nombre de pistes de vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#9
+msgid "Number of audio tracks"
+msgstr "Nombre de pistes d'àudio"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipMetadataDisplayer#12
+msgid "In project workspace"
+msgstr "A l'espai de treball del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipProperty#1
+msgid "Metatags :"
+msgstr "Metatags:"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipProperty#2
+msgctxt "ClipProperty#2"
+msgid "..."
+msgstr "..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipProperty#3
+msgid "Annotations :"
+msgstr "Anotacions:"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipProperty#4
+msgid "properties"
+msgstr "propietats"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipProperty#5
+msgid "New tags edition"
+msgstr "Afegeix etiquetes noves"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ClipProperty#6
+msgid "Enter tags (you can enter multiple tags, separated by a comma)"
+msgstr ""
+"Introduïu les etiquetes (podeu introduir-ne moltes, separades per comes)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Clip::Add#1
+msgid "Adding clip to track %1"
+msgstr "S'està afegint el clip a la pista %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Clip::Move#1
+msgid "Moving clip from track %1 to %2"
+msgstr "S'està movent el clip de la pista %1 a la %2"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Clip::Remove#1
+msgid "Removing clip "
+msgstr "S'està eliminant el clip"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Clip::Resize#1
+msgid "Resizing clip"
+msgstr "S'està canviant la mida del clip"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Clip::Split#1
+msgid "Splitting clip"
+msgstr "S'està dividint el clip"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Effect::Add#1
+msgid "Adding effect %1"
+msgstr "S'està afegint l'efecte %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Effect::Move#1
+msgid "Moving effect %1"
+msgstr "S'està movent l'efecte %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Effect::Remove#1
+msgid "Deleting effect %1"
+msgstr "S'està eliminant l'efecte %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Effect::Resize#1
+msgid "Resizing effect %1"
+msgstr "S'està canviant la mida de l'efecte %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Commands::Generic#1
+msgid "Invalid action"
+msgstr "L'acció no és vàlida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#1
+msgid "VLMC Crash handler"
+msgstr "Gestor d'errors del VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#2
+msgid ""
+"An error occurred. We're sorry for the inconvenient, though we saved your "
+"project. It will be reopened next time you open VLMC."
+msgstr ""
+"S'ha produït un error, tot i així s'han desat les dades del projecte. Quan "
+"torneu a obrir el VLMC s'obrirà de nou."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#3
+msgid "Ok"
+msgstr "D'acord"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#4
+msgid "Restart"
+msgstr "Reinicia"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#5
+msgid "Crash_Description"
+msgstr "Descripció_de_l'error"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#6
+msgid "Unknown signal"
+msgstr "Senyal desconegut"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: CrashHandler#7
+msgid "A crash occurred. Signal received: "
+msgstr "S'ha produït un error. S'ha rebut el senyal:"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: DockWidgetManager#2
+msgid "Clip Preview"
+msgstr "Previsualització del clip"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: DockWidgetManager#3
+msgid "Project Preview"
+msgstr "Revisió del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: DockWidgetManager#4
+msgid "History"
+msgstr "Historial"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: DockWidgetManager#5
+msgid "Effects List"
+msgstr "Llista d'efectes"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectSettingWidget#1
+msgctxt "EffectSettingWidget#1"
+msgid "Effect Properties"
+msgstr "Propietats de l'efecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectStack#1
+msgid "Effect stack"
+msgstr "Pila d'efectes"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectStack#2
+msgid "Move the effect up in the stack"
+msgstr "Mou l'efecte amunt a la pila"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectStack#3
+msgctxt "EffectStack#3"
+msgid "..."
+msgstr "..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectStack#4
+msgid "Move the effect down in the stack"
+msgstr "Mou l'efecte avall a la pila"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#1
+msgctxt "EffectWidget#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#2
+msgid "Overview"
+msgstr "Resum"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#3
+msgctxt "EffectWidget#3"
+msgid "Name"
+msgstr "Nom"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#7
+msgctxt "EffectWidget#7"
+msgid "Description"
+msgstr "Descripció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#8
+msgctxt "EffectWidget#8"
+msgid "Filter"
+msgstr "Filtre"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#10
+msgid "Mixer 2"
+msgstr "Mesclador 2"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectWidget#11
+msgid "Mixer 3"
+msgstr "Mesclador 3"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: EffectsListView#1
+msgid "%1 informations"
+msgstr "Informacions %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#1
+msgid "The project has been modified."
+msgstr "S'ha modificat el projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#2
+msgid "Do you want to save it?"
+msgstr "Voleu desar-lo?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#3
+msgid ""
+"You are about to relocate the project. Every video will be copied to your "
+"new workspace."
+msgstr ""
+"Ara canviareu la ubicació del projecte. Tots els vídeos es copiaran a "
+"l'espai de treball nou."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#4
+msgid "Do you want to proceed?"
+msgstr "Voleu procedir?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#5
+msgid "Failed to load project file"
+msgstr "No s'ha pogut carregar el fitxer de projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#6
+msgid "Backup file"
+msgstr "Fitxer de còpia de seguretat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#7
+msgid "A backup file exists for this project. Do you want to load it?"
+msgstr ""
+"Existeix un fitxer de còpia de seguretat per a aquest projecte. Voleu "
+"carregar-lo?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#8
+msgid "An outdated backup file was found. Do you want to erase it?"
+msgstr ""
+"S'ha trobat un fitxer de còpia de seguretat no actualitzat. Voleu eliminar-"
+"lo?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#9
+msgctxt "GUIProjectManager#9"
+msgid "Enter the output file name"
+msgstr "Introduïu el nom del fitxer de sortida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#10
+msgctxt "GUIProjectManager#10"
+msgid "VLMC project file(*.vlmc)"
+msgstr "Fitxer de projecte VLMC (*.vlmc)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GUIProjectManager#11
+msgid "Please choose a project file"
+msgstr "Seleccioneu un fitxer de projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#1
+msgctxt "GeneralPage#1GeneralPage#1"
+msgid "WizardPage"
+msgstr "Pàgina auxiliar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#2
+msgid ""
+"This guide will step you through the process of setting up a new project."
+msgstr ""
+"Aquesta guia us ajudarà en el procés de configuració d'un projecte nou."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#3
+msgctxt "GeneralPage#3"
+msgid "Project name"
+msgstr "Nom del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#4
+msgctxt "GeneralPage#4"
+msgid "Description"
+msgstr "Descripció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#5
+msgid "Workspace directory"
+msgstr "Directori del lloc de treball"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#7
+msgid "Project location"
+msgstr "Ubicació del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#8
+msgctxt "GeneralPage#8"
+msgid "New project wizard"
+msgstr "Nou projecte amb auxiliar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#9
+msgid "Set General options"
+msgstr "Defineix les opcions generals"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#10
+msgid "Form is incomplete"
+msgstr "El formulari és incomplet"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#11
+msgid "The project name must be filled."
+msgstr "El nom del projecte ha d'estar omplert."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#12
+msgid "The workspace location must be set."
+msgstr "El lloc de treball ha d'estar definit."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#13
+msgid "Missing workspace location"
+msgstr "Falta la ubicació del lloc de treball"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GeneralPage#14
+msgid "Invalid workspace location"
+msgstr "La ubicació del lloc de treball no és vàlida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GraphicsAudioItem#1
+msgctxt "GraphicsAudioItem#1"
+msgid "<p style='white-space:pre'><b>Name:</b> %1<br><b>Length:</b> %2"
+msgstr "<p style='white-space:pre'><b>Nom:</b> %1<br><b>Longitud:</b> %2"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GraphicsEffectItem#1
+msgctxt "GraphicsEffectItem#1"
+msgid "Remove"
+msgstr "Elimina"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GraphicsEffectItem#2
+msgctxt "GraphicsEffectItem#2"
+msgid "Set color"
+msgstr "Estableix el color"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GraphicsEffectItem#3
+msgctxt "GraphicsEffectItem#3"
+msgid "Effect Properties"
+msgstr "Propietats de l'efecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: GraphicsMovieItem#1
+msgctxt "GraphicsMovieItem#1"
+msgid "<p style='white-space:pre'><b>Name:</b> %1<br><b>Length:</b> %2"
+msgstr "<p style='white-space:pre'><b>Nom:</b> %1<br><b>Longitud:</b> %2"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ImportController#1
+msgctxt "ImportController#1"
+msgid "Import"
+msgstr "Importar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ImportController#2
+msgctxt "ImportController#2"
+msgid "TextLabel"
+msgstr "Etiqueta de text"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ImportController#3
+msgid "Invalid medias"
+msgstr "Fitxers multimèdia invàlids"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ImportController#4
+msgid ""
+"Some of the medias you loaded can't be used for video editing. Do you want "
+"VLMC to convert them so you can use them in your project?"
+msgstr ""
+"Alguns dels suports que ha carregat no poden ser utilitzats per l'edició de "
+"vídel. Vol que VLMC els converteixi perquè els pugui utilitzar en el seu "
+"projecte?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ImportController#5
+msgid "Failed to load %1"
+msgstr "No s'ha pogut carregar %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: IntroDialog#1
+msgctxt "IntroDialog#1"
+msgid "VideoLAN Movie Creator"
+msgstr "VideoLAN Movie Creator"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: IntroDialog#2
+msgid "I understand"
+msgstr "Ho entenc"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: IntroDialog#3
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-size:16pt; font-weight:600;\">Please note</span></"
+"p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Sans Serif'; font-size:14pt;\"></p>\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Sans Serif'; font-size:14pt;\">VideoLAN Movie Creator "
+"is a </span><a href=\"http://en.wikipedia.org/wiki/"
+"Software_release_life_cycle#Pre-alpha\"><span style=\" font-family:'Sans "
+"Serif'; font-size:14pt; text-decoration: underline; color:#0057ae;\">pre-"
+"alpha</span></a><span style=\" font-family:'Sans Serif'; font-size:14pt;\"> "
+"software and is not ready for prime-time. Many key features are </span><span "
+"style=\" font-family:'Sans Serif'; font-size:14pt; font-weight:600;\">simply "
+"missing</span><span style=\" font-family:'Sans Serif'; font-size:14pt;\">, "
+"or even </span><span style=\" font-family:'Sans Serif'; font-size:14pt; font-"
+"weight:600;\">buggy</span><span style=\" font-family:'Sans Serif'; font-"
+"size:14pt;\">. Our team is composed of volunteers who are working hard to "
+"give you the best experience with video editing.</span></p>\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Sans Serif'; font-size:14pt;\"></p>\n"
+"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href="
+"\"http://www.vlmc.org\"><span style=\" font-family:'Sans Serif'; font-"
+"size:14pt; text-decoration: underline; color:#0057ae;\">read more</span></"
+"a></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">⏎\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">⏎\n"
+"p, li { white-space: pre-wrap; }⏎\n"
+"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; "
+"font-weight:400; font-style:normal;\">⏎\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-size:16pt; font-weight:600;\">Tingui en compte</"
+"span></p>⏎\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Sans Serif'; font-size:14pt;\"></p>⏎\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Sans Serif'; font-size:14pt;\">VideoLAN Movie Creator "
+"és una versió</span><a href=\"http://en.wikipedia.org/wiki/"
+"Software_release_life_cycle#Pre-alpha\"><span style=\" font-family:'Sans "
+"Serif'; font-size:14pt; text-decoration: underline; color:#0057ae;\">pre-"
+"alfa</span></a><span style=\" font-family:'Sans Serif'; font-size:14pt;\"> "
+"de programari, i no està preparada per la seva posada en producció. Moltes "
+"funcions importants</span><span style=\" font-family:'Sans Serif'; font-"
+"size:14pt; font-weight:600;\">simplement no hi són</span><span style=\" font-"
+"family:'Sans Serif'; font-size:14pt;\">, o fins i tot </span><span style=\" "
+"font-family:'Sans Serif'; font-size:14pt; font-weight:600;\">tenen errors</"
+"span><span style=\" font-family:'Sans Serif'; font-size:14pt;\">. El nostre "
+"equip està format per voluntaris que estan treballandt dur per donar-te la "
+"millor experiència amb l'edició de vídeo.</span></p>⏎\n"
+"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; "
+"margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; "
+"text-indent:0px; font-family:'Sans Serif'; font-size:14pt;\"></p>⏎\n"
+"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href="
+"\"http://www.vlmc.org\"><span style=\" font-family:'Sans Serif'; font-"
+"size:14pt; text-decoration: underline; color:#0057ae;\">llegir més</span></"
+"a></p></body></html>"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ListViewController#1
+msgctxt "ListViewController#1"
+msgid "Media List"
+msgstr "Llista de fitxers multimèdia"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#1
+msgctxt "MainWindow#1"
+msgid "VideoLAN Movie Creator"
+msgstr "VideoLAN Movie Creator"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#2
+msgid "&Edit"
+msgstr "&Edita"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#5
+msgid "&Export"
+msgstr "&Exporta"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#6
+msgid "&Window"
+msgstr "&Finestra"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#9
+msgid "VLMC Toolbar"
+msgstr "Barra d'eines de VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#11
+msgctxt "MainWindow#11"
+msgid "Help"
+msgstr "Ajuda"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#13
+msgctxt "MainWindow#13"
+msgid "Preview"
+msgstr "Previsualització"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#14
+msgid "&New Project"
+msgstr "&Nou Projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#15
+msgid "Open the wizard to create a new project"
+msgstr "Obre l'auxiliar per crear un projecte nou"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#17
+msgid "&To a file"
+msgstr "&Cap a un fitxer"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#18
+msgid "Render your project as a file"
+msgstr "Renderitza el teu projecte com un fitxer"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#19
+msgid "&Load Project"
+msgstr "&Càrrega del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#21
+msgid "&Import"
+msgstr "&Importa"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#22
+msgid "Import new medias into the current project"
+msgstr "Importa fitxers multimèdia nous al projecte actual"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#23
+msgid "Proj&ect Preferences"
+msgstr "Preferències del Projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#24
+msgid "Save &As"
+msgstr "&Anomena i desa"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#25
+msgid "&Close Project"
+msgstr "Tan&ca el projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#26
+msgid "Crash"
+msgstr "Error"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#27
+msgctxt "MainWindow#27"
+msgid "Undo"
+msgstr "Desfés"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#28
+msgctxt "MainWindow#28"
+msgid "Redo"
+msgstr "Refés"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#29
+msgid "Share your project on youtube"
+msgstr "Comparteix el projecte a YouTube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#31
+msgctxt "MainWindow#31"
+msgid "Selection mode"
+msgstr "Mode de selecció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#32
+msgid "Use the mouse tool to manipulate regions in the timeline"
+msgstr "Feu servir el ratolí per manipular trossos de la línia temporal"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#33
+msgctxt "MainWindow#33"
+msgid "Cut mode"
+msgstr "Mode de tall"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#34
+msgid "Use the scissors to cut regions in the timeline"
+msgstr "Feu servir les tisores per tallar trossos de la línia temporal"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#35
+msgid "Zoom out"
+msgstr "Allunya"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#36
+msgid "Zoom in"
+msgstr "Apropa"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#37
+msgid "VLMC Renderer"
+msgstr "Renderitzador VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#38
+msgid "There is nothing to render."
+msgstr "No hi ha res per renderitzar."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#39
+msgid "Crash recovery"
+msgstr "Recuperació de la fallada"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#40
+msgid "VLMC didn't closed nicely. Do you want to recover your project?"
+msgstr "VLMC no ha estat tancat correctament. Vols recuperar el teu projecte?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#41
+msgid "Can't restore project"
+msgstr "El projecte no es pot restaurar."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#42
+msgid ""
+"VLMC didn't manage to restore your project. We apology for the inconvenience"
+msgstr ""
+"VLMC no ha aconseguit restaurar el teu projecte. Ens disculpem per les "
+"molèsties"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MainWindow#43
+msgid "Publish on &Internet"
+msgstr "Publica a &Internet"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#1
+msgctxt "MediaCellView#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#2
+msgid "clip count"
+msgstr "compta clips"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#3
+msgid "length"
+msgstr "durada"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#4
+msgid "This clip or some of its children are contained in the timeline."
+msgstr "Aquest clip o algun dels seus fills es troben dins la línia de temps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#5
+msgid "Removing it will delete it from the timeline. Do you want to proceed?"
+msgstr "Eliminar-ho també ho eliminarà de la línia de temps. Vols continuar?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#6
+msgid "Can't copy to workspace"
+msgstr "No es pot copiar a l'espai de treball"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaCellView#7
+msgid "Can't copy this media to workspace: %1"
+msgstr "No es pot copiar el fitxer multimèdia a l'àrea de treball: %1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaLibrary#1
+msgctxt "MediaLibrary#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaLibrary#2
+msgctxt "MediaLibrary#2"
+msgid "Name"
+msgstr "Nom"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaLibrary#3
+msgid "Tags"
+msgstr "Etiquetes"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: MediaLibrary#4
+msgctxt "MediaLibrary#4"
+msgid "Import"
+msgstr "Importar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: NotificationZone#1
+msgctxt "NotificationZone#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: OpenPage#1
+msgctxt "OpenPage#1"
+msgid "WizardPage"
+msgstr "Pàgina de l'auxiliar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: OpenPage#2
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">We have now enough "
+"informations to load this project.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Press <span style=\" font-"
+"weight:600;\">finish</span> to close this wizard and start editing your "
+"videos!</p></td></tr></table></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">⏎\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">⏎\n"
+"p, li { white-space: pre-wrap; }⏎\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">⏎\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">⏎\n"
+"<tr>⏎\n"
+"<td style=\"border: none;\">⏎\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actualment nosaltres tenim "
+"suficient informació per carregar aquest projecte.</p>⏎\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Prem<span style=\" font-"
+"weight:600;\">finalitzar</span> per tancar aquest auxiliar i comenár a "
+"editar els teus vídeos!</p></td></tr></table></body></html>"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: OpenPage#3
+msgctxt "OpenPage#3"
+msgid "Project wizard"
+msgstr "Auxiliar del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: OpenPage#4
+msgid "Ready to load this project"
+msgstr "Preparat per carregar aquest projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PathWidget#1
+msgid "Select a path"
+msgstr "Seleccioneu un camí"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#1
+msgid "Automatic save"
+msgstr "Desat automàtic"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#2
+msgid ""
+"When this option is activated,VLMC will automatically save your project at a "
+"specified interval"
+msgstr ""
+"Quan aquesta opció és activada, VLMC desarà automàticament el seu projecte a "
+"l'interval especificat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#3
+msgid "Automatic save interval"
+msgstr "Interval de desat automàtic"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#4
+msgid "This is the interval that VLMC will wait between two automatic save"
+msgstr "Aquest és l'interval que VLMC esperarà entre dos desats automàtics"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#5
+msgid "Media preview"
+msgstr "Previsualitza el fitxer multimèdia"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#6
+msgid "Preview the selected media, or pause the current preview"
+msgstr ""
+"Previsualitzar el suport seleccionat, o fer una pausa a la previsualització "
+"actual"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#7
+msgid "Render preview"
+msgstr "Renderitzar la previsualització"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#8
+msgid "Preview the project, or pause the current preview"
+msgstr ""
+"Previsualitzar el projecte, o fer una pausa a l'actual previsualització"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#9
+msgctxt "PreferenceWidget#9"
+msgid "Undo"
+msgstr "Desfés"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#10
+msgid "Undo the last action"
+msgstr "Desfés l'última acció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#11
+msgctxt "PreferenceWidget#11"
+msgid "Redo"
+msgstr "Refés"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#12
+msgid "Redo the last action"
+msgstr "Refés l'última acció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#13
+msgctxt "PreferenceWidget#13"
+msgid "Help"
+msgstr "Ajuda"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#14
+msgid "Toggle the help page"
+msgstr "Commuta la pàgina d'ajuda"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#16
+msgid "Quit VLMC"
+msgstr "Surt del VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#18
+msgid "Open VLMC preferences"
+msgstr "Obrir les preferències del VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#19
+msgctxt "PreferenceWidget#19"
+msgid "Project preferences"
+msgstr "Preferències del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#20
+msgid "Open the project preferences"
+msgstr "Obre les preferències del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#22
+msgid "Switch to fullscreen mode"
+msgstr "Canvia en mode pantalla completa"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#23
+msgid "New project"
+msgstr "Nou projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#24
+msgid "Open the new project wizard"
+msgstr "Obre l'auxiliar del projecte nou"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#25
+msgid "Open a project"
+msgstr "Obre un projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#26
+msgctxt "PreferenceWidget#26"
+msgid "Open an existing project"
+msgstr "Obre un projecte existent"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#28
+msgid "Save the current project"
+msgstr "Desa el projecte actual"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#29
+msgid "Save as"
+msgstr "Anomena i desa"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#30
+msgid "Save the current project to a new file"
+msgstr "Desa el projecte actual en un nou fitxer"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#31
+msgid "Close the project"
+msgstr "Tanca el projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#32
+msgid "Close the current project"
+msgstr "Tanca el projecte actual"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#33
+msgid "Import media"
+msgstr "Importa fitxers multimèdia"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#34
+msgid "Open the import window"
+msgstr "Obre la finestra d'importació"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#35
+msgid "Render the project"
+msgstr "Renderitza el projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#36
+msgid "Render the project to a file"
+msgstr "Renderitza el projecte en un fitxer"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#37
+msgctxt "PreferenceWidget#37"
+msgid "Selection mode"
+msgstr "Mode de selecció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#38
+msgid "Select the selection tool in the timeline"
+msgstr "Selecciona l'eina de selecció en la línia de temps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#39
+msgctxt "PreferenceWidget#39"
+msgid "Cut mode"
+msgstr "Mode de tall"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#40
+msgid "Select the cut/razor tool in the timeline"
+msgstr "Selecciona les eines tisores o navalla de la línia temporal"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#42
+msgid "The VLMC's UI language"
+msgstr "Llenguatge de la interfície d'usuari del VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#43
+msgid "Confirm clip deletion"
+msgstr "Confirma l'eliminació del cli"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#44
+msgid "Ask for confirmation before deleting a clip from the timeline"
+msgstr "Preguntar confirmació abans d'eliminar un clip de la línia de temps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#45
+msgid "Youtube Developer Key"
+msgstr "Contrasenya del desenvolupador de Youtube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#46
+msgid "Youtube Username"
+msgstr "Nom d'usuari de Youtube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#47
+msgid "Proxy Port"
+msgstr "Port del servidor intermediari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#48
+msgid "Proxy Username"
+msgstr "Nom d'usuari del servidor intermediari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#49
+msgid "Proxy Password"
+msgstr "Contrasenya del servidor intermediari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#50
+msgid "The default location where to store projects folders"
+msgstr "El camí per defecte on es desaran els directoris dels projectes"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#51
+msgid "Output video FPS"
+msgstr "FPS del vídeo de sortida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#52
+msgid "Frame Per Second used when previewing and rendering the project"
+msgstr ""
+"Fotogrames Per Segon utilitzats quan s'estigui previsualitzant i "
+"renderitzant el projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#54
+msgid "Width resolution of the output video"
+msgstr "Amplada de la resolució del vídeo de sortida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#56
+msgid "Height resolution of the output video"
+msgstr "Resolució en alçada del vídeo de sortida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#57
+msgid "Audio samplerate"
+msgstr "Freqüència de mostratge de l'àudio"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#58
+msgid "Output project audio samplerate"
+msgstr "Freqüència de mostratge de l'àudio de sortida del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#59
+msgctxt "PreferenceWidget#59"
+msgid "Project name"
+msgstr "Nom del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#60
+msgid "The project name"
+msgstr "El nom del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#61
+msgid "Project default location"
+msgstr "Ubicació per defecte del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#62
+msgid "Temporary folder"
+msgstr "Carpeta temporal"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#63
+msgid "The temporary folder used by VLMC to process videos."
+msgstr "La carpeta temporal és utilitzada pel VLMC per processar els vídeos."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#64
+msgid "VLMC's Youtube Developer Key"
+msgstr "Contrasenya del VLMC de desenvolupador de Youtube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#65
+msgid "Valid YouTube username"
+msgstr "Nom d'usuari de Youtube vàlid"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#66
+msgid "Youtube Password"
+msgstr "Contrasenya del Youtube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#67
+msgid "Leave this field empty, password will be stored in unencrypted form."
+msgstr ""
+"Deixa aquest camp en blanc, la contrasenya serà desada en un formulari "
+"desencriptat."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#68
+msgid "Enable Proxy for VLMC"
+msgstr "Habilita el servidor d'intercanvi per VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#69
+msgid "Enables Global Network Proxy for VLMC."
+msgstr "Habilita la xarxa global de servidor d'intercanvi per VLMC."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#70
+msgid "Proxy Hostname"
+msgstr "Nom del servidor d'intercanvi"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#71
+msgid "Set Proxy Hostname."
+msgstr "Escriu el nom del servidor d'intercanvi."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#72
+msgid "Set Proxy Port."
+msgstr "Escriu el port del servidor d'intercanvi."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#73
+msgid "Set Proxy Username, if any."
+msgstr "Escriu el nom d'usuari del servidor d'intercanvi, si n'hi ha."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#74
+msgid "Set Proxy Password, if any."
+msgstr "Escriu la contrasenya del servidor intermediari, si n'hi ha"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#75
+msgctxt "PreferenceWidget#75"
+msgid "Video aspect ratio"
+msgstr "Relació d'aspecte de vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreferenceWidget#76
+msgid "The rendered video aspect ratio"
+msgstr "Relació d'aspecte del vídeo renderitzat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#1
+msgctxt "PreviewWidget#1"
+msgid "Preview"
+msgstr "Previsualització"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#2
+msgid "Go to the previous frame"
+msgstr "Anar al fotograma anterior"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#3
+msgid "Play / Pause"
+msgstr "Reprodueix / Pausa"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#4
+msgid "Go to the next frame"
+msgstr "Vés al següent fotograma"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#5
+msgid "Set marker A"
+msgstr "Col·loca el marcador A"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#6
+msgid "Set marker B"
+msgstr "Col·loca el marcador B"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#7
+msgid "Cut at markers position"
+msgstr "Talla en la posició dels marcadors"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#8
+msgid "Stop the playback"
+msgstr "Atura la reproducció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#9
+msgid "Rendering error"
+msgstr "Error de renderització"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#10
+msgid ""
+"An error occurred while rendering.\n"
+"Please check your VLC installation before reporting the issue."
+msgstr ""
+"S'ha produït un error mentre s'estava renderitzant. Comproveu la "
+"instal·lació de VLC abans d'informar del problema."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: PreviewWidget#11
+msgid "Adjust Volume"
+msgstr "Ajusta el volum"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectManager#1
+msgid "Can't open project file. (%1)"
+msgstr "El projecte no es pot obrir. (%1)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectManager#2
+msgid "Failed to load the project file: %1. Aborting."
+msgstr ""
+"No s'ha pogut carregar el fitxer del projecte: %1. Interrompent el procés."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectManager#3
+msgid "Untitled Project"
+msgstr "Projecte sense títol"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectManager#4
+msgid "Unsaved Project"
+msgstr "Projecte no desat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectWizard#1
+msgctxt "ProjectWizard#1"
+msgid "Project wizard"
+msgstr "Auxiliar del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectWizard#2
+msgid "Choose the appropriate action then click Next to continue."
+msgstr "Escull l'acció apropiada i llavors fes clic o següent per continuar."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectWizard#3
+msgid "This help is likely not to be of any help."
+msgstr "Aquesta ajuda no és probable que us serveixi d'ajuda."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ProjectWizard#4
+msgid "Project wizard help"
+msgstr "Ajuda de l'auxiliar del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: QObject#1
+msgid "Moving clip"
+msgstr "S'està movent el clip"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: QObject#2
+msgid "Unable to get backtrace"
+msgstr "No es pot obtenir la traçabilitat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: QObject#3
+msgid "The XMLStream is not a valid YouTube Feed"
+msgstr "El flux de dades XML no és vàlid pel canal de YouTube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#1
+msgid "Select..."
+msgstr "Selecciona..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#2
+msgctxt "RendererSettings#2"
+msgid "Width"
+msgstr "Amplada"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#3
+msgctxt "RendererSettings#3"
+msgid "Height"
+msgstr "Alçada"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#4
+msgid "H264"
+msgstr "H264"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#5
+msgid "AAC"
+msgstr "AAC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#6
+msgctxt "RendererSettings#6"
+msgid "Enter the output file name"
+msgstr "Introduïu el nom del fitxer de sortida"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#7
+msgid "Videos(%1)"
+msgstr "Vídeos(%1)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#8
+msgid "Invalid parameters"
+msgstr "Paràmetres invàlids"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#9
+msgid "Please enter valid rendering parameters"
+msgstr "Si us plau, introduïu uns paràmetres de renderització vàlids"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#10
+msgid "Please provide a valid output file!"
+msgstr "Si us plau, proporciona un fitxer de sortida vàlid!"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#11
+msgctxt "RendererSettings#11"
+msgid "File already exists!"
+msgstr "El fitxer ja existeix!"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#12
+msgid "Output file already exists, do you want to overwrite it?"
+msgstr "El fitxer de sortida ja existeix, vols sobrescriure'l?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#13
+msgid "Export Settings"
+msgstr "Configuració d'exportar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#16
+msgid "Video Quality"
+msgstr "Qualitat del vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#17
+msgid "Audio Quality"
+msgstr "Qualitat de l'àudio"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#20
+msgctxt "RendererSettings#20"
+msgid "Custom"
+msgstr "Personalitzat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#21
+msgid "QVGA (320x240) - 30 fps"
+msgstr "QVGA (320x240) - 30 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#22
+msgid "VGA (640x480) - 30 fps"
+msgstr "VGA (640x480) - 30 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#23
+msgid "SVGA (800x600) - 30 fps"
+msgstr "SVGA (800x600) - 30 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#24
+msgid "XVGA (1024x768) - 30 fps"
+msgstr "XVGA (1024x768) - 30 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#25
+msgid "480p NTSC (720x480) - 29.97 fps"
+msgstr "480p NTSC (720x480) - 29.97 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#26
+msgid "576p PAL (720x576) - 25 fps"
+msgstr "576p PAL (720x576) - 25 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#27
+msgid "720p (1280x720) - 29.97 fps"
+msgstr "720p (1280x720) - 29.97 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#28
+msgid "1080p (1920x1080) - 29.97 fps"
+msgstr "1080p (1920x1080) - 29.97 fps"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: RendererSettings#30
+msgid "Export Settings: Publish on Internet"
+msgstr "Configuració d'exportar: Publicar a Internet"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: SearchLineEdit#2
+msgctxt "SearchLineEdit#2"
+msgid "Filter"
+msgstr "Filtre"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#1
+msgctxt "Settings#1"
+msgid "Project preferences"
+msgstr "Preferències del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#2
+msgid "VLMC Settings"
+msgstr "Configuració del VLMC"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#3
+msgid "Restore default?"
+msgstr "Voleu restaurar els valors redefinits?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#4
+msgid ""
+"This will restore all settings default value.\n"
+"Are you sure you want to continue?"
+msgstr ""
+"Es restaurarà tota la configuració amb els valors per defecte. Estàs segur "
+"que vols continuar?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#5
+msgid "Invalid value"
+msgstr "Valor invàlid"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#6
+msgid "Can't save settings due to an invalid value"
+msgstr "No es pot desar la informació a causa d'un valor invàlid"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#8
+msgid "Keyboard"
+msgstr "Teclat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#9
+msgctxt "Settings#9"
+msgid "YouTube"
+msgstr "YouTube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#11
+msgctxt "Settings#11"
+msgid "Video"
+msgstr "Vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Settings#12
+msgctxt "Settings#12"
+msgid "Audio"
+msgstr "Àudio"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#1
+msgid "Share Video On Internet"
+msgstr "Comparteix el vídeo a Internet"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#2
+msgid "Service"
+msgstr "Servei"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#3
+msgctxt "ShareOnInternet#3"
+msgid "YouTube"
+msgstr "YouTube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#7
+msgid "Autos & Vehicles"
+msgstr "Automòbils i vehicles"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#9
+msgid "Education"
+msgstr "Educació"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#10
+msgid "Entertainment"
+msgstr "Entreteniment"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#11
+msgid "Film & Animation"
+msgstr "Pel·lícules i animació"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#12
+msgid "Games"
+msgstr "Jocs"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#13
+msgid "Howto & Style"
+msgstr "Guies pràctiques i estil"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#14
+msgid "Music"
+msgstr "Música"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#15
+msgid "News & Politics"
+msgstr "Notícies i política"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#16
+msgid "Nonprofit & Activism"
+msgstr "Sense ànim de lucre i activisme"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#17
+msgid "People & Blogs"
+msgstr "Gent i blocs"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#18
+msgid "Animals & Pets"
+msgstr "Animals i mascotes"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#19
+msgid "Tech & Science"
+msgstr "Tecnologia i Ciència"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#20
+msgid "Sports"
+msgstr "Esports"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#21
+msgid "Travel & Events"
+msgstr "Viatges i Events"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#23
+msgctxt "ShareOnInternet#23"
+msgid "Description"
+msgstr "Descripció"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#24
+msgid "Keywords"
+msgstr "Paraules clau"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#25
+msgid "Make this video private"
+msgstr "Fes que aquest vídeo sigui privat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#26
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Sans'; font-size:12pt;\">By publishing, you agree with "
+"the Terms Of Services of </span><a href=\"http://code.google.com/apis/"
+"youtube/terms.html\"><span style=\" font-family:'Sans'; font-size:12pt; text-"
+"decoration: underline; color:#0000ff;\">YouTube</span></a><span style=\" "
+"font-family:'Sans'; font-size:12pt;\">.</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">⏎\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">⏎\n"
+"p, li { white-space: pre-wrap; }⏎\n"
+"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; "
+"font-weight:400; font-style:normal;\">⏎\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'Sans'; font-size:12pt;\">Mitjançant la publicació, "
+"vostè està d'acord amb els termes del servei de </span><a href=\"http://code."
+"google.com/apis/youtube/terms.html\"><span style=\" font-family:'Sans'; font-"
+"size:12pt; text-decoration: underline; color:#0000ff;\">YouTube</span></"
+"a><span style=\" font-family:'Sans'; font-size:12pt;\">.</span></p></body></"
+"html>"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#28
+msgid "&Publish"
+msgstr "&Publica"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#30
+msgid ""
+"'Username' or 'Password' or 'Title' cannot be empty. Please check these "
+"fields."
+msgstr ""
+"El nom d'usuari, la constrasenya, o el títol no pot estar buit. Reviseu "
+"aquest camps."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#31
+msgid "Authenticating..."
+msgstr "S'està autenticant..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#32
+msgid "Authenticated!"
+msgstr "Autenticat!"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#33
+msgid ""
+"Your video has been uploaded.\n"
+"URL (copied to your clipboard):\n"
+"%1\n"
+"\n"
+"Open this in your default web browser?"
+msgstr ""
+"El vídeo s'ha carregat.\n"
+"URL (copiada cap al porta-retalls):\n"
+"%1\n"
+"\n"
+"Voleu obrir-lo en el navegador d'Internet predeterminat?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#34
+msgid ""
+"Some error has occured while processing your video.\n"
+"Please check with your video service provider."
+msgstr ""
+"S'ha produït algun error mentre es processava el vídeo.\n"
+"Comproveu-ho amb el proveïdor de serveis de vídeo."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#35
+msgid "Video Uploaded"
+msgstr "El vídeo s'ha pujat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: ShareOnInternet#36
+msgid "%1 kB Uploaded"
+msgstr "%1 KB carregats"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: StackViewNavController#1
+msgctxt "StackViewNavController#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: StackViewNavController#3
+msgctxt "StackViewNavController#3"
+msgid "Media List"
+msgstr "Llista de fitxers multimèdia"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TagWidget#1
+msgctxt "TagWidget#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TagWidget#2
+msgid "Keyword Tags"
+msgstr "Etiquetes"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Timeline#1
+msgctxt "Timeline#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TrackControls#1
+msgctxt "TrackControls#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TrackControls#2
+msgctxt "TrackControls#2"
+msgid "TextLabel"
+msgstr "Etiqueta de text"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TrackControls#3
+msgid "Video #%1"
+msgstr "Vídeo #%1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TrackControls#4
+msgid "Audio #%1"
+msgstr "Àudio #%1"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TrackControls#5
+msgid "Rename track"
+msgstr "Canvia el nom de la pista"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TrackControls#6
+msgid "Enter the track new name"
+msgstr "Introduïu el nou nom de la pista"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TracksScene#1
+msgid "Confirm the deletion of the region?"
+msgstr "Confirmeu l'eliminació d'aquesta regió?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TracksScene#2
+msgid "Confirm the deletion of those regions?"
+msgstr "Confirmeu l'eliminació d'aquestes regions?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TracksScene#4
+msgid "Yes, don't ask me again"
+msgstr "Sí, no ho tornis a preguntar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: TracksScene#5
+msgid "No"
+msgstr "No"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: UndoStack#1
+msgid "Nothing to undo"
+msgstr "No hi ha res per desfer"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#1
+msgctxt "VideoPage#1"
+msgid "WizardPage"
+msgstr "Pàgina de l'auxiliar"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#2
+msgid ""
+"In this page you can fine tune some of the settings of your new project."
+msgstr "En aquesta pàgina pots ajustar alguns paràmetres del teu nou projecte."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#3
+msgctxt "VideoPage#3"
+msgid "Video"
+msgstr "Vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#4
+msgctxt "VideoPage#4"
+msgid "Width"
+msgstr "Amplada"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#5
+msgctxt "VideoPage#5"
+msgid "Height"
+msgstr "Alçada"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#6
+msgctxt "VideoPage#6"
+msgid "Custom"
+msgstr "Personalitzat"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#7
+msgid "SDTV/NTSC (480i)"
+msgstr "SDTV/NTSC (480i)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#8
+msgid "SDTV/PAL (576i)"
+msgstr "SDTV/PAL (576i)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#9
+msgid "EDTV (480p)"
+msgstr "EDTV (480p)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#10
+msgid "EDTV (576p)"
+msgstr "EDTV (576p)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#11
+msgid "HDTV (720p)"
+msgstr "HDTV (720p)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#12
+msgid "HDTV (1080i)"
+msgstr "HDTV (1080i)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#13
+msgid "HDTV (1080p)"
+msgstr "HDTV (1080p)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#14
+msgid "Frames / sec"
+msgstr "Fotogrames / segon"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#15
+msgctxt "VideoPage#15"
+msgid "Audio"
+msgstr "Àudio"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#24
+msgctxt "VideoPage#24"
+msgid "New project wizard"
+msgstr "Auxiliar del projecte nou"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#25
+msgid "Configure Video settings"
+msgstr "Configura els paràmetres de vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#26
+msgid "16/9"
+msgstr "16/9"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: VideoPage#27
+msgctxt "VideoPage#27"
+msgid "Video aspect ratio"
+msgstr "Relació d'aspecte de vídeo"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#1
+msgctxt "WelcomePage#1"
+msgid "Form"
+msgstr "Formulari"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#2
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Welcome to the project Wizard.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">This wizard will help you "
+"to create a new project, or open an already existing one.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Please select your "
+"preferred action below then press next.</p></td></tr></table></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">⏎\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">⏎\n"
+"p, li { white-space: pre-wrap; }⏎\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">⏎\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">⏎\n"
+"<tr>⏎\n"
+"<td style=\"border: none;\">⏎\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Benvingut a l'auxiliar del projecte.</span></p>⏎\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Aquest auxiliar l'ajudarà "
+"a crear un nou projecte, o obrir un projecte existent.</p>⏎\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p>⏎\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Si us plau, selecciona la "
+"teva opció preferida i llavors prem següent.</p></td></tr></table></body></"
+"html>"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#3
+msgid "Create a new project"
+msgstr "Crea un nou projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#4
+msgctxt "WelcomePage#4"
+msgid "Open an existing project"
+msgstr "Obre un projecte existent"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#5
+msgid "Open..."
+msgstr "Obre..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#6
+msgid "Do not show at startup."
+msgstr "No ho mostris a l'inici."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#7
+msgctxt "WelcomePage#7"
+msgid "Project wizard"
+msgstr "Auxiliar del projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#8
+msgid "Open or create a project"
+msgstr "Obre o crea un projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#9
+msgid "Sorry"
+msgstr "Perdoneu"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#10
+msgid ""
+"You first need to select a project from the list.\n"
+"Then click next to continue..."
+msgstr ""
+"Primerament, necessites seleccionar un projecte de la llista.\n"
+"Llavors, fes clic a següent per continuar..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#11
+msgctxt "WelcomePage#11"
+msgid "Remove"
+msgstr "Elimina"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#12
+msgid "Select a project file"
+msgstr "Selecciona un fitxer de projecte"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WelcomePage#13
+msgctxt "WelcomePage#13"
+msgid "VLMC project file(*.vlmc)"
+msgstr "Fitxer de projecte VLMC (*.vlmc)"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WorkflowFileRendererDialog#2
+msgid "Render in progress..."
+msgstr "Renderització en procés..."
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WorkflowFileRendererDialog#3
+msgid "Frame"
+msgstr "Marc"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WorkflowFileRendererDialog#4
+msgctxt "WorkflowFileRendererDialog#4"
+msgid "TextLabel"
+msgstr "Etiqueta de text"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: WorkflowFileRendererDialog#6
+msgid "Rendering frame %1 / %2"
+msgstr "S'està renderitzant el fotograma %1 / %2"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Workspace#1
+msgctxt "Workspace#1"
+msgid "File already exists!"
+msgstr "El fitxer ja existeix!"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Workspace#2
+msgid "A file with the same name already exists, do you want to overwrite it?"
+msgstr "Un fitxer amb el mateix nom ja existeix. Vols sobreescriure'l?"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Workspace#3
+msgid "Workspace: "
+msgstr "Lloc de treball:"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: Workspace#4
+msgid " copied to "
+msgstr "copiat a"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: YouTubeService#1
+msgid "YouTube Authentication"
+msgstr "Autenticació de YouTube"
+
+# Translation source: /translations/vlc-trans.vlmc/ca.po from project 'VLC'
+#: YouTubeService#2
+msgid ""
+"Connection may be insecure, do you want to continue? One or more SSL errors "
+"has occurred: %1"
+msgstr ""
+"La connexió pot no ser segura, voleu continuar? Un o més errors SSL han "
+"succeit: %1"
