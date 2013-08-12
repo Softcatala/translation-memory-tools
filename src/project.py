@@ -22,6 +22,12 @@ import sys
 import logging
 
 from fileset import *
+from localfileset import *
+from localdirfileset import *
+from compressedfileset import *
+from bazaarfileset import *
+from transifexfileset import *
+from filefileset import *
 
 class Project:
 
@@ -44,6 +50,23 @@ class Project:
 	def Add(self, fileset):
 		fileset.SetTMFile(self.filename)
 		self.filesets.append(fileset)
+
+	def AddFileSets(self, project_dto):
+
+		for fileset in project_dto.filesets:
+			logging.info(fileset)
+			if (fileset.type == 'local-file'):
+				self.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'compressed'):
+				self.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type ==  'bazaar'):
+				self.Add(BazaarFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'transifex'):
+				self.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'local-dir'):
+				self.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
+			elif (fileset.type == 'file'):
+				self.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
 
 	def Do(self):
 		try:

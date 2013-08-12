@@ -37,7 +37,19 @@ class Projects:
 	def Add(self, project):
 		self.projects.append(project)
 
+
+	def AddProject(self, project_dto, addSource):
+
+		project = Project(project_dto.name, project_dto.filename)
+		project.SetAddSource(addSource)
+		project.AddFileSets(project_dto)
+		self.Add(project)
+		logging.info(project_dto)
+
 	def Do(self):
+
+		for project in self.projects:
+			project.Do()
 
 		for project in self.projects:
 
@@ -56,7 +68,6 @@ class Projects:
 			project.Statistics()
 
 		self.tm_project.Statistics()
-
 
 	def ToTmx(self):
 		

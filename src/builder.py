@@ -23,22 +23,9 @@ from fileset import *
 from project import *
 from projects import *
 from jsonbackend import *
-from localfileset import *
-from localdirfileset import *
-from compressedfileset import *
-from bazaarfileset import *
-from transifexfileset import *
-from filefileset import *
 
 projects = Projects("tm.po")
 addSource = True
-
-
-def CreateProject(project_dto):
-	project = Project(project_dto.name, project_dto.filename)
-	project.SetAddSource(addSource)
-	projects.Add(project)
-	return project
 	
 def initLogging():
 
@@ -77,6 +64,8 @@ def readParameters():
 
 def processProjects():
 
+	global addSource
+
 	json = JsonBackend('projects.json')
 	json.load()
 
@@ -91,25 +80,7 @@ def processProjects():
 			if found == False:
 				continue;
 
-		project = CreateProject(project_dto)
-		logging.info(project_dto)
-
-		for fileset in project_dto.filesets:
-			logging.info(fileset)
-			if (fileset.type == 'local-file'):
-				project.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'compressed'):
-				project.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type ==  'bazaar'):
-				project.Add(BazaarFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'transifex'):
-				project.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'local-dir'):
-				project.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'file'):
-				project.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
-
-		project.Do()
+		projects.AddProject(project_dto, addSource)
 
 	projects.Do()
 
