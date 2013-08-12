@@ -166,23 +166,6 @@ class FileSet():
 		else:
 			print("Unsupported file extension for filename " + self.filename)
 
-class FileFileSet(FileSet):
 
-	def Do(self):
-
-		# Download local file
-		download = DownloadFile()
-		download.GetFile(self.url, self.filename)
-
-		# Copy file to be processed
-		os.system("rm -f -r " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
-
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
-
-		os.system("rm -f " + self.filename)
 
 

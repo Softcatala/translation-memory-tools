@@ -28,6 +28,7 @@ from localdirfileset import *
 from compressedfileset import *
 from bazaarfileset import *
 from transifexfileset import *
+from filefileset import *
 
 projects = Projects("tm.po")
 reRecreateTM = True
