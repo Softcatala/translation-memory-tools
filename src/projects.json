@@ -158,6 +158,31 @@
 					"url" : "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz",
 					"type": "compressed",
 					"target": "olpc.tar.gz"
+				},
+				"gnome-doc": {
+					"url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/doc.tar.gz",
+					"type": "compressed",
+					"target": "gnome-doc.tar.gz"
+				},
+				"gnome-infrastructure-doc": {
+					"url" : "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
+					"type": "compressed",
+					"target": "gnome-infrastructure-doc.tar.gz"
+				},
+				"gnome-gimp-doc": {
+					"url" : "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz",
+					"type": "compressed",
+					"target": "gnome-gimp-doc.tar.gz"
+				},
+				"gnome-extras-doc": {
+					"url" : "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz",
+					"type": "compressed",
+					"target": "gnome-extras-doc.tar.gz"
+				},
+				"olpc-doc": {
+					"url" : "https://l10n.gnome.org/languages/ca/olpc/doc.tar.gz",
+					"type": "compressed",
+					"target": "olpc-doc.tar.gz"
 				}
 			}
 		},
