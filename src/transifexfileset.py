@@ -21,6 +21,16 @@ from fileset import *
 
 class TransifexFileSet(FileSet):
 
+	def RemoveNonTranslationOnlyFiles(self):
+
+		findFiles = FindFiles()
+
+		for filename in findFiles.Find(self.temp_dir, '*'):
+			print "Considering " + filename
+			if (filename.endswith('en.po') or filename.endswith('en.ts')):
+				print "Removing:" + filename
+				os.system("rm -f " + filename)
+
 	def Do(self):
 
 		prevdir = os.getcwd()
@@ -30,10 +40,15 @@ class TransifexFileSet(FileSet):
 		os.chdir(self.temp_dir)
 		os.system("tx init --host https://fedora.transifex.net")
 		os.system("tx set --auto-remote " + self.url)
-		os.system("tx pull -f -lca")
+
+		# To be able to process files with no English source (.strings, .xml, etc) we pull the English files too
+		# and then we delete the ones that include source and target
+		os.system("tx pull -f -lca,en")
 		os.chdir(prevdir)
+		self.RemoveNonTranslationOnlyFiles()
 
 		self.ConvertTsFilesToPo()
+		self.ConvertStringFilesToPo()
 		self.AddComments()
 		self.Build()
 

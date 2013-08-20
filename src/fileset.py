@@ -110,6 +110,16 @@ class FileSet():
 			fileName, fileExtension = os.path.splitext(tsfile)
 			print "convert: " + fileName
 			os.system("ts2po " + tsfile + " -o " + fileName + ".po")
+
+	def ConvertStringFilesToPo(self):
+
+		findFiles = FindFiles()
+
+		for tsfile in findFiles.Find(self.temp_dir, '*.strings'):
+			dirName = os.path.dirname(tsfile);
+			print "convert: " + dirName
+			filename = dirName + "/strings-ca.po"
+			os.system("prop2po -t " + dirName  + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
 		
 	def Build(self):
 
