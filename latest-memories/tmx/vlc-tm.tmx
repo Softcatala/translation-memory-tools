@@ -5,6 +5,1070 @@
   <body>
     <tu>
       <tuv xml:lang="en">
+        <seg>Choose Audio Track</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Trieu la pista d'àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Choose Subtitle Track</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Trieu la pista de subtítol</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TV Connected</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>TV connectada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This video is playing on the TV</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquest vídeo s'està reproduint a la TV</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hue</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>To de color</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Contrast</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Contrast</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Brightness</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Brillantor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Saturation</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Saturació</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gamma</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Gamma</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Playback failed</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error en la reproducció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Aspect Ratio: %@</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Relació d'aspecte: %@</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Default</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Per defecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Crop to fill screen</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Escapça per ajustar a la pantalla</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Device too slow</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El dispositiu és massa lent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Your %@ is likely too slow to play "%@". Open anyway?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El vostre %@ és molt lent per reproduir «%@». Voleu obrir-lo igualment?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Playback speed</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Velocitat de reproducció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Edit</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Edita</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Done</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cancel</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cancel·la</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Save</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Download</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Baixades</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Delete</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Elimina</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Next</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Següent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Contribute</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Col·laboreu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Back</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Endarrere</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connect</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connecta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Private Playback</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reproducció privada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Delete file?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu suprimir el fitxer?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Do you want to delete "%@" permanently?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu eliminar «%@» de forma permanent?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open Network Stream</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre un flux de xarxa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter any HTTP, RTSP, RTMP, MMS, FTP or UDP/RTP address to open the stream directly.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu una adreça http, rtsp, rtmp, mms, ftp o udp/rtp per obrir directament el flux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>About VLC for iOS</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Quant al VLC per a l'iOS</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open VLC sidebar menu</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre el menú lateral de VLC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>WiFi Upload</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pujada WiFi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Inactive Server</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Servidor inactiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No active WiFi connection</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cap connexió WiFi activa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter an address to download the file to your %@.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Entreu una adreça per a baixar el fitxer en la carpeta %@</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Downloads</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Baixades</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Error %i occured</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error %i</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Download failed</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error en la baixada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File format not supported</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Format de fitxer no suportat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The file format used by %@ is not supported by this version of VLC for iOS.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El format de fitxer utilitzat per %@ no es compatible amb aquest versió de VLC per a l'iOS.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All Files</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tots els fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Music Albums</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Àlbums de música</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TV Series</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sèries de televisió</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%i Tracks</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%i pistes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%i Track</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%i pista</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%i Episodes, %i unread</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%i episodis, %i no llegit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%i Episode, %i unread</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%i episodi, %i no llegit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Media Library</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Biblioteca multimèdia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Network</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Xarxa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Local Network</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Xarxa local</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connect to Server</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connecta amb el servidor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter the IP or the name of the server you want to connect to.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu l'adreça IP o el nom del servidor on voleu connectar-vos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If required by the server, enter user name and password.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Si ho requereix el servidor, introduïu el nom d'usuari i la contrasenya.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>User</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Usuari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Password</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Contrasenya</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Download file?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu baixar el fitxer?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Would you like to download "%@" to your %@?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu baixar «%@» al vostre %@?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Login</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Entrada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%i files</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%i fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1 file</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>1 fitxer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No supported files</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cap fitxer compatible</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Downloading...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està baixant...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter Passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el codi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Re-enter Passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Confirmeu el codi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set Passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el codi de pas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Change Passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Canvi el codi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter your old passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el codi antic</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter your new passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu el codi nou</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Re-enter your new passcode</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Confirmeu el codi nou</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Passcodes did not match. Try again.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Els codis no coincideixen. Torneu a intentar-ho</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1 Failed Passcode Attempt</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>1 intent fallit de codi d'accés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%d Failed Passcode Attempts</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%d intents fallits de codi d'accés</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Settings"; // plain text key to keep compatibility with InAppSettingsKit's upstream</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Paràmetres"; // plain text key to keep compatibility with InAppSettingsKit's upstream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Empty Media Library</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Biblioteca multimèdia buida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For playback, use iTunes to synchronize files, check the VLC menu for available options or ask another application to open a file in VLC for iOS.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Per a la reproducció, utilitzeu iTunes per sincronitzar fitxers, comproveu el menú VLC per veure les opcions disponibles o demaneu a una altra aplicació que obri un fitxer al VLC per iOS.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Slide your finger down to adjust the scrubbing rate.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Feu lliscar el dit avall per ajustar la taxa de depuració.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>High-Speed Scrubbing</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Depuració molt ràpida</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Half-Speed Scrubbing</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Depuració a velocitat 1/2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Quarter-Speed Scrubbing</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Depuració a velocitat 1/4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fine Scrubbing</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Depuració fina</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Playback Position</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Posició de reproducció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video Filters</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Filtres de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reset Video Filters</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reinicia els filtres de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Switch Video Aspect Ratio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Intercanvia la relació d'aspecte del vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Play or Pause current playback</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reprodueix o pausa la reproducció actual</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jump Backwards</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Salta cap enrere</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jump Forwards</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Salta cap endavant</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Version: %@</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Versió: %@</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Based on:&lt;br /&gt;%@</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Basat en:&lt;br /&gt;%@</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>NEW</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>NOU</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Report a bug</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Informeu d'un error</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Would you like to create a bug report?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu crear un informe d'error?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open Safari</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre el Safari</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video Player</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reproductor de vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Double tap to show or hide playback controls</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Feu dos tocs per mostrar o amagar els controls de reproducció</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Video</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vídeo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Time-stretching audio</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Canvi de velocitat de l'àudio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Audio playback in background</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reproducció de so de fons</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Generic</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Genèric</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Passcode Lock</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Bloqueig amb codi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Synchronization</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unlink from Dropbox</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desvincula del Dropbox</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Deblocking filter</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Filtre de desbloqueig</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No deblocking (fastest)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sense desbloqueig (el més ràpid)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Medium deblocking</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desbloqueig mitjà</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Low deblocking</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desbloqueig baix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Subtitles</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Subtítols</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Font</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Lletra</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Text Encoding</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Codificació del text</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Relative font size</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cos de lletra relatiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Smallest</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Massa petit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Small</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Petit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Normal</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Normal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Large</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Gran</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Largest</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Massa gran</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Font color</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Color de lletra</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>White</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Blanc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Black</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Negre</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gray</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Gris</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Silver</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Plata</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Red</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vermell</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fuchsia</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fúcsia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Yellow</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Groc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Green</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Verd</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Navy</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Blau marí</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Deinterlace</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desentrellaça</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>On</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Actiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Off</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Inactiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatic</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Automàtic</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>This program comes with NO WARRANTY, to the extent permitted by law.
 You may redistribute it under the terms of the GNU General Public License;
 see the file named COPYING for details.
@@ -101,14 +1165,6 @@ Escrit per l'equip de VideoLAN; mireu el fitxer AUTHORS.
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Audio</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Àudio</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Audio settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -185,14 +1241,6 @@ Escrit per l'equip de VideoLAN; mireu el fitxer AUTHORS.
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Paràmetres i mòduls diversos de l'àudio.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Video</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Vídeo</seg>
       </tuv>
     </tu>
     <tu>
@@ -539,14 +1587,6 @@ Podeu especificar també els paràmetres predeterminats per a cada empaquetador.
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Paràmetres avançats</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Network</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Xarxa</seg>
       </tuv>
     </tu>
     <tu>
@@ -1003,14 +2043,6 @@ Avís: si no podeu accedir a la interfície, obriu una finestra de línia d'ordr
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Automatic</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Automàtic</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>boolean</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -1302,14 +2334,6 @@ Premeu la tecla RETORN per continuar...
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Atura el navegador</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Delete</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Elimina</seg>
       </tuv>
     </tu>
     <tu>
@@ -2722,22 +3746,6 @@ Premeu la tecla RETORN per continuar...
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>On</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Actiu</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Off</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Inactiu</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Stereo audio output mode</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -3214,14 +4222,6 @@ Premeu la tecla RETORN per continuar...
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Amaga el punter i els controls de pantalla completa després de n mil·lisegons.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Deinterlace</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Desentrellaça</seg>
       </tuv>
     </tu>
     <tu>
@@ -3827,14 +4827,6 @@ Default value is 1.0 (original video size).</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Default</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Per defecte</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Enable</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -4159,14 +5151,6 @@ Default value is 1.0 (original video size).</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Afavoreix la velocitat per sobre de la precisió durant la cerca</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Playback speed</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Velocitat de reproducció</seg>
       </tuv>
     </tu>
     <tu>
@@ -5901,14 +6885,6 @@ Default value is 1.0 (original video size).</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Next</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Següent</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Select the hotkey to use to skip to the next item in the playlist.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -7221,14 +8197,6 @@ Default value is 1.0 (original video size).</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Subtitles</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Subtítols</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Overlays</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -7527,14 +8495,6 @@ S'està baixant... %s/%s %.1f%% fet</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Cancel</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Cancel·la</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>%s
 Downloading... %s/%s - %.1f%% done</seg>
       </tuv>
@@ -7629,14 +8589,6 @@ S'està baixant... %s/%s - %.1f%% fet</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Instal·la</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Media Library</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Biblioteca multimèdia</seg>
       </tuv>
     </tu>
     <tu>
@@ -12215,14 +13167,6 @@ This is useful if you add directories that contain playlist files for instance. 
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Password</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Contrasenya</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Password that will be requested to access the stream.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -13679,14 +14623,6 @@ This is useful if you add directories that contain playlist files for instance. 
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Brightness</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Brillantor</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Picture brightness or black level.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -13711,14 +14647,6 @@ This is useful if you add directories that contain playlist files for instance. 
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Contrast</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Contrast</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Picture contrast or luma gain.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -13727,26 +14655,10 @@ This is useful if you add directories that contain playlist files for instance. 
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Saturation</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Saturació</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Picture saturation or chroma gain.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Saturació de la imatge o guany de crominància.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Hue</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>To de color</seg>
       </tuv>
     </tu>
     <tu>
@@ -13835,14 +14747,6 @@ This is useful if you add directories that contain playlist files for instance. 
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Equilibri de la crominància dels blaus.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Gamma</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Gamma</seg>
       </tuv>
     </tu>
     <tu>
@@ -18782,38 +19686,6 @@ Instal·leu un sound font i configureu-lo des de les preferències del VLC (Entr
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Black</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Negre</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Gray</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Gris</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Silver</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Plata</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>White</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Blanc</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Maroon</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -18822,42 +19694,10 @@ Instal·leu un sound font i configureu-lo des de les preferències del VLC (Entr
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Red</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Vermell</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Fuchsia</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Fúcsia</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Yellow</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Groc</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Olive</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Oliva</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Green</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Verd</seg>
       </tuv>
     </tu>
     <tu>
@@ -18882,14 +19722,6 @@ Instal·leu un sound font i configureu-lo des de les preferències del VLC (Entr
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Porpra</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Navy</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Blau marí</seg>
       </tuv>
     </tu>
     <tu>
@@ -22338,14 +23170,6 @@ Requereix CABAC.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Ràpid</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Normal</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Normal</seg>
       </tuv>
     </tu>
     <tu>
@@ -27188,14 +28012,6 @@ Què voleu fer?</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Save</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Desa</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Remove a preset</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -27288,14 +28104,6 @@ Què voleu fer?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Neteja</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Edit</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Edita</seg>
       </tuv>
     </tu>
     <tu>
@@ -29340,14 +30148,6 @@ Trieu un dispositiu disponible al menú desplegable que hi ha damunt.
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Open</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Obre</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>4 Tabs to choose between media input. Select 'File' for files, 'Disc' for optical media such as DVDs, Audio CDs or BRs, 'Network' for network streams or 'Capture' for Input Devices such as microphones or cameras, the current screen or TV streams if the EyeTV application is installed.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -30490,22 +31290,6 @@ Assegureu-vos d'haver instal·lat el connector d'EyeTV per al VLC.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Font color</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Color de lletra</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Font</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Lletra</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Subtitle languages</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -31540,14 +32324,6 @@ Utilitza 0 per inhabilitar-lo.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Utilitzeu aquesta opció per transmetre a un grup d'ordinadors dinàmic en una xarxa amb la transmissió a grups habilitada. És el mètode més eficient per transmetre a diversos ordinadors,però no funciona a Internet. Les capçaleres RTP s'afegiran al flux</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Back</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Endarrere</seg>
       </tuv>
     </tu>
     <tu>
@@ -33711,14 +34487,6 @@ Feu clic per ajustar</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Local Network</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Xarxa local</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Internet</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -35145,14 +35913,6 @@ it will be automatically selected.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Fitxers de subtítols</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>All Files</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Tots els fitxers</seg>
       </tuv>
     </tu>
     <tu>
@@ -38327,14 +39087,6 @@ Si teniu dubtes, interrompeu ara.
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Generic</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Genèric</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>SAP multicast address</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -38435,14 +39187,6 @@ Si teniu dubtes, interrompeu ara.
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Eina</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>User</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Usuari</seg>
       </tuv>
     </tu>
     <tu>
@@ -40327,14 +41071,6 @@ Si teniu dubtes, interrompeu ara.
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Relative font size</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Cos de lletra relatiu</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>This is the relative default size of the fonts that will be rendered on the video. If absolute font size is set, relative size will be overridden.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -40403,22 +41139,6 @@ Si teniu dubtes, interrompeu ara.
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Més petit</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Small</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Petit</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Large</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Gran</seg>
       </tuv>
     </tu>
     <tu>
@@ -54454,14 +55174,6 @@ p &gt; span { color: #838383; }
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Download</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Baixades</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Screenshots</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -54482,14 +55194,6 @@ p &gt; span { color: #838383; }
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Tots els projectes</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Contribute</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Col·laboreu</seg>
       </tuv>
     </tu>
     <tu>
@@ -54562,14 +55266,6 @@ p &gt; span { color: #838383; }
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Llistes de correu</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Report a bug</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Informeu d'un error</seg>
       </tuv>
     </tu>
     <tu>

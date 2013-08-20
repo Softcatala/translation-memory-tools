@@ -1,25 +1,832 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR VideoLAN
-# This file is distributed under the same license as the PACKAGE package.
 #
-# Translators:
-# Eva Castillo <evac1295@gmail.com>, 2013
-# jmontane <joan@montane.cat>, 2013
-# Pau Iranzo <paugnu@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: VLC - Trans\n"
-"Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2013-08-05 13:45+0200\n"
-"PO-Revision-Date: 2013-07-14 07:06+0000\n"
-"Last-Translator: Pau Iranzo <paugnu@gmail.com>\n"
-"Language-Team: Catalan (http://www.transifex.com/projects/p/vlc-trans/"
-"language/ca/)\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-19 23:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: CHOOSE_AUDIO_TRACK
+msgid "Choose Audio Track"
+msgstr "Trieu la pista d'àudio"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: CHOOSE_SUBTITLE_TRACK
+msgid "Choose Subtitle Track"
+msgstr "Trieu la pista de subtítol"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYING_EXTERNALLY_TITLE
+msgid "TV Connected"
+msgstr "TV connectada"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYING_EXTERNALLY_DESC
+msgid "This video is playing on the TV"
+msgstr "Aquest vídeo s'està reproduint a la TV"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VFILTER_HUE
+msgid "Hue"
+msgstr "To de color"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VFILTER_CONTRAST
+msgid "Contrast"
+msgstr "Contrast"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VFILTER_BRIGHTNESS
+msgid "Brightness"
+msgstr "Brillantor"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VFILTER_SATURATION
+msgid "Saturation"
+msgstr "Saturació"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VFILTER_GAMMA
+msgid "Gamma"
+msgstr "Gamma"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_FAILED
+msgid "Playback failed"
+msgstr "S'ha produït un error en la reproducció"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: AR_CHANGED
+msgid "Aspect Ratio: %@"
+msgstr "Relació d'aspecte: %@"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DEFAULT
+msgid "Default"
+msgstr "Per defecte"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: FILL_TO_SCREEN
+msgid "Crop to fill screen"
+msgstr "Escapça per ajustar a la pantalla"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DEVICE_TOOSLOW_TITLE
+msgid "Device too slow"
+msgstr "El dispositiu és massa lent"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DEVICE_TOOSLOW
+msgid "Your %@ is likely too slow to play \"%@\". Open anyway?"
+msgstr ""
+"El vostre %@ és molt lent per reproduir «%@». Voleu obrir-lo igualment?"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_SPEED
+msgid "Playback speed"
+msgstr "Velocitat de reproducció"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_EDIT
+msgid "Edit"
+msgstr "Edita"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_DONE
+msgid "Done"
+msgstr "Fet"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_OPEN
+msgid "Open"
+msgstr "Obre"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_CANCEL
+msgid "Cancel"
+msgstr "Cancel·la"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_SAVE
+msgid "Save"
+msgstr "Desa"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_DOWNLOAD
+msgid "Download"
+msgstr "Baixades"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_DELETE
+msgid "Delete"
+msgstr "Elimina"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_NEXT
+msgid "Next"
+msgstr "Següent"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_CONTRIBUTE
+msgid "Contribute"
+msgstr "Col·laboreu"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_BACK
+msgid "Back"
+msgstr "Endarrere"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUTTON_CONNECT
+msgid "Connect"
+msgstr "Connecta"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PRIVATE_PLAYBACK_TOGGLE
+msgid "Private Playback"
+msgstr "Reproducció privada"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DELETE_FILE
+msgid "Delete file?"
+msgstr "Voleu suprimir el fitxer?"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DELETE_FILE_LONG
+msgid "Do you want to delete \"%@\" permanently?"
+msgstr "Voleu eliminar «%@» de forma permanent?"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: OPEN_NETWORK
+msgid "Open Network Stream"
+msgstr "Obre un flux de xarxa"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: OPEN_NETWORK_HELP
+msgid ""
+"Enter any HTTP, RTSP, RTMP, MMS, FTP or UDP/RTP address to open the stream "
+"directly."
+msgstr ""
+"Introduïu una adreça http, rtsp, rtmp, mms, ftp o udp/rtp per obrir "
+"directament el flux."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: ABOUT_APP
+msgid "About VLC for iOS"
+msgstr "Quant al VLC per a l'iOS"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: OPEN_VLC_MENU
+msgid "Open VLC sidebar menu"
+msgstr "Obre el menú lateral de VLC"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: HTTP_UPLOAD
+msgid "WiFi Upload"
+msgstr "Pujada WiFi"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: HTTP_UPLOAD_SERVER_OFF
+msgid "Inactive Server"
+msgstr "Servidor inactiu"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: HTTP_UPLOAD_NO_CONNECTIVITY
+msgid "No active WiFi connection"
+msgstr "Cap connexió WiFi activa"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DOWNLOAD_FROM_HTTP_HELP
+msgid "Enter an address to download the file to your %@."
+msgstr "Entreu una adreça per a baixar el fitxer en la carpeta %@"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DOWNLOAD_FROM_HTTP
+msgid "Downloads"
+msgstr "Baixades"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: ERROR_NUMBER
+msgid "Error %i occured"
+msgstr "S'ha produït un error %i"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DOWNLOAD_FAILED
+msgid "Download failed"
+msgstr "S'ha produït un error en la baixada"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: FILE_NOT_SUPPORTED
+msgid "File format not supported"
+msgstr "Format de fitxer no suportat"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: FILE_NOT_SUPPORTED_LONG
+msgid ""
+"The file format used by %@ is not supported by this version of VLC for iOS."
+msgstr ""
+"El format de fitxer utilitzat per %@ no es compatible amb aquest versió de "
+"VLC per a l'iOS."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_ALL_FILES
+msgid "All Files"
+msgstr "Tots els fitxers"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_MUSIC
+msgid "Music Albums"
+msgstr "Àlbums de música"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_SERIES
+msgid "TV Series"
+msgstr "Sèries de televisió"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_TRACKS
+msgid "%i Tracks"
+msgstr "%i pistes"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_SINGLE_TRACK
+msgid "%i Track"
+msgstr "%i pista"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_EPISODES
+msgid "%i Episodes, %i unread"
+msgstr "%i episodis, %i no llegit"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_SINGLE_EPISODE
+msgid "%i Episode, %i unread"
+msgstr "%i episodi, %i no llegit"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: SECTION_HEADER_LIBRARY
+msgid "Media Library"
+msgstr "Biblioteca multimèdia"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: SECTION_HEADER_NETWORK
+msgid "Network"
+msgstr "Xarxa"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LOCAL_NETWORK
+msgid "Local Network"
+msgstr "Xarxa local"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: CONNECT_TO_SERVER
+msgid "Connect to Server"
+msgstr "Connecta amb el servidor"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: ENTER_SERVER_ADDRESS_HELP
+msgid "Enter the IP or the name of the server you want to connect to."
+msgstr "Introduïu l'adreça IP o el nom del servidor on voleu connectar-vos."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: ENTER_SERVER_CREDS_HELP
+msgid "If required by the server, enter user name and password."
+msgstr ""
+"Si ho requereix el servidor, introduïu el nom d'usuari i la contrasenya."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: USER_LABEL
+msgid "User"
+msgstr "Usuari"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSWORD_LABEL
+msgid "Password"
+msgstr "Contrasenya"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DROPBOX_DOWNLOAD
+msgid "Download file?"
+msgstr "Voleu baixar el fitxer?"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DROPBOX_DL_LONG
+msgid "Would you like to download \"%@\" to your %@?"
+msgstr "Voleu baixar «%@» al vostre %@?"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DROPBOX_LOGIN
+msgid "Login"
+msgstr "Entrada"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: NUM_OF_FILES
+msgid "%i files"
+msgstr "%i fitxers"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: ONE_FILE
+msgid "1 file"
+msgstr "1 fitxer"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: NO_FILES
+msgid "No supported files"
+msgstr "Cap fitxer compatible"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: DOWNLOADING
+msgid "Downloading..."
+msgstr "S'està baixant..."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: ENTER_PASSCODE
+msgid "Enter Passcode"
+msgstr "Introduïu el codi"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: REENTER_PASSCODE
+msgid "Re-enter Passcode"
+msgstr "Confirmeu el codi"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_SET
+msgid "Set Passcode"
+msgstr "Introduïu el codi de pas"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_CHANGE
+msgid "Change Passcode"
+msgstr "Canvi el codi"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_ENTER_OLD
+msgid "Enter your old passcode"
+msgstr "Introduïu el codi antic"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_ENTER_NEW
+msgid "Enter your new passcode"
+msgstr "Introduïu el codi nou"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_REENTER_NEW
+msgid "Re-enter your new passcode"
+msgstr "Confirmeu el codi nou"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODES_DID_NOT_MATCH
+msgid "Passcodes did not match. Try again."
+msgstr "Els codis no coincideixen. Torneu a intentar-ho"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_FAILED_1
+msgid "1 Failed Passcode Attempt"
+msgstr "1 intent fallit de codi d'accés"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PASSCODE_FAILED_FORMAT
+msgid "%d Failed Passcode Attempts"
+msgstr "%d intents fallits de codi d'accés"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: Settings
+msgid ""
+"Settings\"; // plain text key to keep compatibility with InAppSettingsKit's "
+"upstream"
+msgstr ""
+"Paràmetres\"; // plain text key to keep compatibility with "
+"InAppSettingsKit's upstream"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: EMPTY_LIBRARY
+msgid "Empty Media Library"
+msgstr "Biblioteca multimèdia buida"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: EMPTY_LIBRARY_LONG
+msgid ""
+"For playback, use iTunes to synchronize files, check the VLC menu for "
+"available options or ask another application to open a file in VLC for iOS."
+msgstr ""
+"Per a la reproducció, utilitzeu iTunes per sincronitzar fitxers, comproveu "
+"el menú VLC per veure les opcions disponibles o demaneu a una altra "
+"aplicació que obri un fitxer al VLC per iOS."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_SCRUB_HELP
+msgid "Slide your finger down to adjust the scrubbing rate."
+msgstr "Feu lliscar el dit avall per ajustar la taxa de depuració."
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_SCRUB_HIGH
+msgid "High-Speed Scrubbing"
+msgstr "Depuració molt ràpida"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_SCRUB_HALF
+msgid "Half-Speed Scrubbing"
+msgstr "Depuració a velocitat 1/2"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_SCRUB_QUARTER
+msgid "Quarter-Speed Scrubbing"
+msgstr "Depuració a velocitat 1/4"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_SCRUB_FINE
+msgid "Fine Scrubbing"
+msgstr "Depuració fina"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAYBACK_POSITION
+msgid "Playback Position"
+msgstr "Posició de reproducció"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VIDEO_FILTER
+msgid "Video Filters"
+msgstr "Filtres de vídeo"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VIDEO_FILTER_RESET_BUTTON
+msgid "Reset Video Filters"
+msgstr "Reinicia els filtres de vídeo"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VIDEO_ASPECT_RATIO_BUTTON
+msgid "Switch Video Aspect Ratio"
+msgstr "Intercanvia la relació d'aspecte del vídeo"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: PLAY_PAUSE_BUTTON
+msgid "Play or Pause current playback"
+msgstr "Reprodueix o pausa la reproducció actual"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BWD_BUTTON
+msgid "Jump Backwards"
+msgstr "Salta cap enrere"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: FWD_BUTTON
+msgid "Jump Forwards"
+msgstr "Salta cap endavant"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VERSION_FORMAT
+msgid "Version: %@"
+msgstr "Versió: %@"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BASED_ON_FORMAT
+msgid "Based on:<br />%@"
+msgstr "Basat en:<br />%@"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: NEW
+msgid "NEW"
+msgstr "NOU"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUG_REPORT_TITLE
+msgid "Report a bug"
+msgstr "Informeu d'un error"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUG_REPORT_MESSAGE
+msgid "Would you like to create a bug report?"
+msgstr "Voleu crear un informe d'error?"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: BUG_REPORT_BUTTON
+msgid "Open Safari"
+msgstr "Obre el Safari"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VO_VIDEOPLAYER_TITLE
+msgid "Video Player"
+msgstr "Reproductor de vídeo"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: VO_VIDEOPLAYER_DOUBLETAP
+msgid "Double tap to show or hide playback controls"
+msgstr "Feu dos tocs per mostrar o amagar els controls de reproducció"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_VIDEO_TITLE
+msgid "Video"
+msgstr "Vídeo"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_AUDIO_TITLE
+msgid "Audio"
+msgstr "Àudio"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_TIME_STRETCH_AUDIO
+msgid "Time-stretching audio"
+msgstr "Canvi de velocitat de l'àudio"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_BACKGROUND_AUDIO
+msgid "Audio playback in background"
+msgstr "Reproducció de so de fons"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_GENERIC_TITLE
+msgid "Generic"
+msgstr "Genèric"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_PASSCODE_LOCK
+msgid "Passcode Lock"
+msgstr "Bloqueig amb codi"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_FILE_SYNC
+msgid "File Synchronization"
+msgstr "Sincronització de fitxers"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_UNLINK_DROPBOX
+msgid "Unlink from Dropbox"
+msgstr "Desvincula del Dropbox"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SKIP_LOOP_FILTER
+msgid "Deblocking filter"
+msgstr "Filtre de desbloqueig"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SKIP_LOOP_FILTER_NONE
+msgid "No deblocking (fastest)"
+msgstr "Sense desbloqueig (el més ràpid)"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SKIP_LOOP_FILTER_NONREF
+msgid "Medium deblocking"
+msgstr "Desbloqueig mitjà"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SKIP_LOOP_FILTER_NONKEY
+msgid "Low deblocking"
+msgstr "Desbloqueig baix"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_TITLE
+msgid "Subtitles"
+msgstr "Subtítols"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONT
+msgid "Font"
+msgstr "Lletra"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_TEXT_ENCODING
+msgid "Text Encoding"
+msgstr "Codificació del text"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTSIZE
+msgid "Relative font size"
+msgstr "Cos de lletra relatiu"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTSIZE_SMALLEST
+msgid "Smallest"
+msgstr "Massa petit"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTSIZE_SMALL
+msgid "Small"
+msgstr "Petit"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTSIZE_NORMAL
+msgid "Normal"
+msgstr "Normal"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTSIZE_LARGE
+msgid "Large"
+msgstr "Gran"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTSIZE_LARGEST
+msgid "Largest"
+msgstr "Massa gran"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR
+msgid "Font color"
+msgstr "Color de lletra"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_WHITE
+msgid "White"
+msgstr "Blanc"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_BLACK
+msgid "Black"
+msgstr "Negre"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_GRAY
+msgid "Gray"
+msgstr "Gris"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_SILVER
+msgid "Silver"
+msgstr "Plata"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_RED
+msgid "Red"
+msgstr "Vermell"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_FUCHSIA
+msgid "Fuchsia"
+msgstr "Fúcsia"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_YELLOW
+msgid "Yellow"
+msgstr "Groc"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_GREEN
+msgid "Green"
+msgstr "Verd"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_SUBTITLES_FONTCOLOR_NAVY
+msgid "Navy"
+msgstr "Blau marí"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_DEINTERLACE
+msgid "Deinterlace"
+msgstr "Desentrellaça"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_DEINTERLACE_ON
+msgid "On"
+msgstr "Actiu"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_DEINTERLACE_OFF
+msgid "Off"
+msgstr "Inactiu"
+
+# Translation source: /translations/vlc-trans.ios-settings-20/strings-ca.po
+# from project 'VLC'
+#: SETTINGS_DEINTERLACE_AUTO
+msgid "Automatic"
+msgstr "Automàtic"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: include/vlc_common.h:922
@@ -88,21 +895,6 @@ msgid "Hotkeys settings"
 msgstr "Paràmetres de les tecles de drecera"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: include/vlc_config_cat.h:53 src/input/es_out.c:2866 src/input/es_out.c:2907
-#: src/libvlc-module.c:1456 modules/access/imem.c:64
-#: modules/gui/macosx/ConvertAndSave.m:185 modules/gui/macosx/MainMenu.m:376
-#: modules/gui/macosx/output.m:161 modules/gui/macosx/playlistinfo.m:112
-#: modules/gui/macosx/simple_prefs.m:142 modules/gui/macosx/wizard.m:377
-#: modules/gui/qt4/components/info_panels.cpp:557
-#: modules/gui/qt4/components/simple_preferences.cpp:91
-#: modules/services_discovery/mediadirs.c:76 modules/stream_out/es.c:93
-#: modules/stream_out/transcode/transcode.c:191
-#: share/lua/http/dialogs/create_stream.html:150
-#: modules/gui/qt4/ui/profiles.h:705 modules/gui/qt4/ui/profiles.h:736
-msgid "Audio"
-msgstr "Àudio"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: include/vlc_config_cat.h:54
 msgid "Audio settings"
 msgstr "Paràmetres d'àudio"
@@ -156,23 +948,6 @@ msgstr "Miscel·lània"
 #: include/vlc_config_cat.h:68
 msgid "Miscellaneous audio settings and modules."
 msgstr "Paràmetres i mòduls diversos de l'àudio."
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: include/vlc_config_cat.h:71 src/input/es_out.c:2869 src/input/es_out.c:2951
-#: src/libvlc-module.c:1510 modules/access/imem.c:64
-#: modules/gui/macosx/ConvertAndSave.m:175 modules/gui/macosx/MainMenu.m:389
-#: modules/gui/macosx/output.m:151 modules/gui/macosx/playlistinfo.m:102
-#: modules/gui/macosx/simple_prefs.m:144 modules/gui/macosx/simple_prefs.m:279
-#: modules/gui/macosx/wizard.m:378
-#: modules/gui/qt4/components/info_panels.cpp:558
-#: modules/gui/qt4/components/simple_preferences.cpp:93
-#: modules/services_discovery/mediadirs.c:69 modules/stream_out/es.c:101
-#: modules/stream_out/transcode/transcode.c:161
-#: share/lua/http/dialogs/create_stream.html:147
-#: modules/gui/qt4/ui/profiles.h:706 modules/gui/qt4/ui/profiles.h:710
-#: modules/gui/qt4/ui/sprefs_video.h:353
-msgid "Video"
-msgstr "Vídeo"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: include/vlc_config_cat.h:72
@@ -464,13 +1239,6 @@ msgstr "Paràmetres avançats. Utilitzeu-los amb precaució..."
 #: include/vlc_config_cat.h:183
 msgid "Advanced settings"
 msgstr "Paràmetres avançats"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: include/vlc_config_cat.h:188 modules/gui/macosx/open.m:131
-#: modules/gui/macosx/open.m:595 modules/gui/macosx/simple_prefs.m:211
-#: modules/gui/qt4/ui/sprefs_input.h:355
-msgid "Network"
-msgstr "Xarxa"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: include/vlc_config_cat.h:189
@@ -859,16 +1627,6 @@ msgid "Reverse stereo"
 msgstr "Estèreo invers"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/config/core.c:397 modules/access/dtv/access.c:91
-#: modules/access/dtv/access.c:106 modules/access/dtv/access.c:115
-#: modules/access/dtv/access.c:123 modules/access/dtv/access.c:132
-#: modules/access/dtv/access.c:140 modules/access/dtv/access.c:160
-#: modules/access/v4l2/v4l2.c:137
-#: modules/gui/qt4/components/open_panels.cpp:961
-msgid "Automatic"
-msgstr "Automàtic"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/config/file.c:458
 msgid "boolean"
 msgstr "booleà"
@@ -1091,14 +1849,6 @@ msgstr "Cerca del navegador"
 #: src/config/keys.c:65
 msgid "Browser Stop"
 msgstr "Atura el navegador"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/config/keys.c:66 modules/gui/macosx/playlist.m:499
-#: modules/gui/qt4/dialogs/bookmarks.cpp:50
-#: modules/gui/qt4/ui/podcast_configuration.h:105
-#: modules/gui/qt4/ui/streampanel.h:173
-msgid "Delete"
-msgstr "Elimina"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/config/keys.c:67
@@ -2141,20 +2891,6 @@ msgid "Auto"
 msgstr "Auto"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:180 modules/access/dtv/access.c:92
-#: modules/access/v4l2/v4l2.c:201 modules/control/hotkeys.c:203
-msgid "On"
-msgstr "Actiu"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:180 modules/access/dtv/access.c:92
-#: modules/access/v4l2/v4l2.c:137 modules/access/v4l2/v4l2.c:201
-#: modules/control/hotkeys.c:181 modules/control/hotkeys.c:203
-#: modules/video_filter/deinterlace/algo_phosphor.h:55
-msgid "Off"
-msgstr "Inactiu"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:182
 msgid "Stereo audio output mode"
 msgstr "Mode de sortida de l'àudio estère"
@@ -2588,16 +3324,6 @@ msgid "Hide mouse cursor and fullscreen controller after n milliseconds."
 msgstr ""
 "Amaga el punter i els controls de pantalla completa després de n "
 "mil·lisegons."
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:338 src/libvlc-module.c:340
-#: src/video_output/interlacing.c:180 modules/gui/macosx/MainMenu.m:405
-#: modules/gui/macosx/MainMenu.m:406 modules/gui/macosx/simple_prefs.m:277
-#: modules/gui/qt4/dialogs/convert.cpp:95
-#: modules/video_filter/deinterlace/deinterlace.c:97
-#: share/lua/http/dialogs/create_stream.html:346
-msgid "Deinterlace"
-msgstr "Desentrellaça"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:348 src/video_output/interlacing.c:196
@@ -3095,22 +3821,6 @@ msgstr ""
 "Sincronització de la Xarxa."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:540 src/video_output/vout_intf.c:96
-#: src/video_output/vout_intf.c:114 modules/access/dshow/dshow.cpp:92
-#: modules/access/dshow/dshow.cpp:99 modules/access/dshow/dshow.cpp:119
-#: modules/access/dshow/dshow.cpp:2032 modules/audio_output/directx.c:795
-#: modules/gui/macosx/AudioEffects.m:86 modules/gui/macosx/MainMenu.m:600
-#: modules/gui/macosx/prefs_widgets.m:1214
-#: modules/gui/macosx/prefs_widgets.m:1287
-#: modules/gui/macosx/simple_prefs.m:389 modules/gui/macosx/simple_prefs.m:530
-#: modules/gui/macosx/simple_prefs.m:780 modules/gui/macosx/VideoEffects.m:57
-#: modules/gui/qt4/components/preferences_widgets.cpp:545
-#: modules/video_filter/marq.c:60 modules/video_filter/rss.c:71
-#: modules/video_filter/rss.c:184 modules/video_output/msw/directx.c:1456
-msgid "Default"
-msgstr "Per defecte"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:540 modules/gui/macosx/AudioEffects.m:112
 #: modules/gui/macosx/MainWindow.m:960 modules/gui/macosx/wizard.m:351
 #: modules/gui/qt4/components/extended_panels.cpp:1024
@@ -3371,11 +4081,6 @@ msgstr "Cerca ràpida"
 #: src/libvlc-module.c:639
 msgid "Favor speed over precision while seeking"
 msgstr "Afavoreix la velocitat per sobre de la precisió durant la cerca"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:641
-msgid "Playback speed"
-msgstr "Velocitat de reproducció"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:643
@@ -4848,19 +5553,6 @@ msgid "Slower (fine)"
 msgstr "Més lent (lleuger)"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:1223 modules/control/hotkeys.c:208
-#: modules/gui/macosx/about.m:274 modules/gui/macosx/ControlsBar.m:726
-#: modules/gui/macosx/ControlsBar.m:727 modules/gui/macosx/fspanel.m:420
-#: modules/gui/macosx/MainMenu.m:360 modules/gui/macosx/MainMenu.m:458
-#: modules/gui/macosx/MainMenu.m:466 modules/gui/macosx/MainMenu.m:1449
-#: modules/gui/macosx/wizard.m:306 modules/gui/macosx/wizard.m:318
-#: modules/gui/macosx/wizard.m:1559
-#: modules/gui/qt4/components/controller.hpp:120 modules/notify/notify.c:339
-#: modules/gui/qt4/ui/streampanel.h:182
-msgid "Next"
-msgstr "Següent"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:1224
 msgid "Select the hotkey to use to skip to the next item in the playlist."
 msgstr ""
@@ -5795,17 +6487,6 @@ msgid "Subpictures"
 msgstr "Subimatges"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:1643 modules/codec/subsdec.c:181
-#: modules/demux/subtitle.c:69 modules/demux/xiph_metadata.h:47
-#: modules/demux/xiph_metadata.h:60 modules/gui/macosx/ConvertAndSave.m:173
-#: modules/gui/macosx/ConvertAndSave.m:191 modules/gui/macosx/MainMenu.m:412
-#: share/lua/http/dialogs/create_stream.html:153
-#: modules/gui/qt4/ui/profiles.h:702 modules/gui/qt4/ui/profiles.h:746
-#: modules/gui/qt4/ui/profiles.h:749
-msgid "Subtitles"
-msgstr "Subtítols"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:1660 modules/stream_out/transcode/transcode.c:115
 msgid "Overlays"
 msgstr "Superposats"
@@ -6014,27 +6695,6 @@ msgid "Downloading ..."
 msgstr "S'està baixant..."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/misc/update.c:585 src/misc/update.c:712 modules/demux/avi/avi.c:2387
-#: modules/gui/macosx/AudioEffects.m:387 modules/gui/macosx/AudioEffects.m:402
-#: modules/gui/macosx/AudioEffects.m:641 modules/gui/macosx/AudioEffects.m:741
-#: modules/gui/macosx/bookmarks.m:105 modules/gui/macosx/controls.m:54
-#: modules/gui/macosx/ConvertAndSave.m:168
-#: modules/gui/macosx/ConvertAndSave.m:367
-#: modules/gui/macosx/ConvertAndSave.m:381 modules/gui/macosx/coredialogs.m:65
-#: modules/gui/macosx/coredialogs.m:67 modules/gui/macosx/coredialogs.m:172
-#: modules/gui/macosx/MainWindow.m:179 modules/gui/macosx/MainWindow.m:184
-#: modules/gui/macosx/open.m:126 modules/gui/macosx/open.m:188
-#: modules/gui/macosx/prefs.m:208 modules/gui/macosx/simple_prefs.m:195
-#: modules/gui/macosx/simple_prefs.m:223 modules/gui/macosx/simple_prefs.m:283
-#: modules/gui/macosx/simple_prefs.m:698 modules/gui/macosx/VideoEffects.m:879
-#: modules/gui/macosx/VideoEffects.m:943 modules/gui/macosx/wizard.m:317
-#: modules/gui/qt4/components/open_panels.cpp:1347
-#: modules/gui/qt4/components/preferences_widgets.cpp:1424
-#: modules/gui/qt4/components/sout/profile_selector.cpp:435
-msgid "Cancel"
-msgstr "Cancel·la"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/misc/update.c:605
 #, c-format
 msgid ""
@@ -6118,13 +6778,6 @@ msgstr ""
 #: src/misc/update.c:712
 msgid "Install"
 msgstr "Instal·la"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/playlist/engine.c:269 src/playlist/loadsave.c:152 lib/media_list.c:252
-#: modules/gui/macosx/MainWindow.m:222
-#: modules/gui/qt4/components/playlist/selector.cpp:238
-msgid "Media Library"
-msgstr "Biblioteca multimèdia"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/playlist/tree.c:67 modules/access/dtv/access.c:75
@@ -9379,16 +10032,6 @@ msgstr ""
 "accedir al flux."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/access_output/http.c:54 modules/access/vnc.c:47
-#: modules/gui/macosx/coredialogs.m:64 modules/gui/macosx/simple_prefs.m:185
-#: modules/gui/macosx/simple_prefs.m:243
-#: modules/gui/qt4/dialogs/external.cpp:118 modules/lua/vlc.c:53
-#: modules/lua/vlc.c:69 modules/misc/audioscrobbler.c:116
-#: modules/stream_out/raop.c:154 modules/stream_out/rtp.c:180
-msgid "Password"
-msgstr "Contrasenya"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/access_output/http.c:55 modules/stream_out/rtp.c:181
 msgid "Password that will be requested to access the stream."
 msgstr ""
@@ -10439,13 +11082,6 @@ msgid "Reset controls to defaults."
 msgstr "Restableix els valors per defecte dels controls."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/access/v4l2/v4l2.c:84 modules/gui/macosx/VideoEffects.m:92
-#: modules/video_filter/atmo/atmo.cpp:263
-#: modules/gui/qt4/ui/video_effects.h:1304
-msgid "Brightness"
-msgstr "Brillantor"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/access/v4l2/v4l2.c:85
 msgid "Picture brightness or black level."
 msgstr "Brillantor de la imatge o nivell de negre."
@@ -10461,34 +11097,14 @@ msgid "Automatically adjust the picture brightness."
 msgstr "Ajusta la brillantor de la imatge automàticament."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/access/v4l2/v4l2.c:89 modules/gui/macosx/VideoEffects.m:91
-#: modules/gui/qt4/ui/video_effects.h:1306
-msgid "Contrast"
-msgstr "Contrast"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/access/v4l2/v4l2.c:90
 msgid "Picture contrast or luma gain."
 msgstr "Contrast de la imatge o guany de luminància. "
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/access/v4l2/v4l2.c:91 modules/gui/macosx/VideoEffects.m:94
-#: modules/gui/macosx/VideoEffects.m:134
-#: modules/gui/qt4/ui/video_effects.h:1307
-#: modules/gui/qt4/ui/video_effects.h:1339
-msgid "Saturation"
-msgstr "Saturació"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/access/v4l2/v4l2.c:92
 msgid "Picture saturation or chroma gain."
 msgstr "Saturació de la imatge o guany de crominància."
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/access/v4l2/v4l2.c:93 modules/gui/macosx/VideoEffects.m:90
-#: modules/gui/qt4/ui/video_effects.h:1303
-msgid "Hue"
-msgstr "To de color"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/access/v4l2/v4l2.c:94
@@ -10549,12 +11165,6 @@ msgstr "Equilibri de blaus"
 #: modules/access/v4l2/v4l2.c:110
 msgid "Blue chroma balance."
 msgstr "Equilibri de la crominància dels blaus."
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/access/v4l2/v4l2.c:111 modules/gui/macosx/VideoEffects.m:95
-#: modules/gui/qt4/ui/video_effects.h:1308
-msgid "Gamma"
-msgstr "Gamma"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/access/v4l2/v4l2.c:113
@@ -14100,64 +14710,9 @@ msgstr "Contorn"
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/codec/kate.c:210 modules/text_renderer/freetype.c:206
 #: modules/text_renderer/quartztext.c:115 modules/text_renderer/win32text.c:89
-#: modules/video_filter/marq.c:60 modules/video_filter/rss.c:71
-msgid "Black"
-msgstr "Negre"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:210 modules/text_renderer/freetype.c:206
-#: modules/text_renderer/quartztext.c:115 modules/text_renderer/win32text.c:89
-#: modules/video_filter/marq.c:60 modules/video_filter/rss.c:72
-msgid "Gray"
-msgstr "Gris"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:210 modules/text_renderer/freetype.c:206
-#: modules/text_renderer/quartztext.c:115 modules/text_renderer/win32text.c:89
-#: modules/video_filter/marq.c:61 modules/video_filter/rss.c:72
-msgid "Silver"
-msgstr "Plata"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:210 modules/text_renderer/freetype.c:206
-#: modules/text_renderer/quartztext.c:115 modules/text_renderer/win32text.c:89
-#: modules/video_filter/ball.c:120 modules/video_filter/marq.c:61
-#: modules/video_filter/rss.c:72
-msgid "White"
-msgstr "Blanc"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:210 modules/text_renderer/freetype.c:206
-#: modules/text_renderer/quartztext.c:115 modules/text_renderer/win32text.c:89
 #: modules/video_filter/marq.c:61 modules/video_filter/rss.c:72
 msgid "Maroon"
 msgstr "Granat"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:211 modules/gui/macosx/MainMenu.m:426
-#: modules/gui/macosx/MainMenu.m:994 modules/text_renderer/freetype.c:207
-#: modules/text_renderer/quartztext.c:116 modules/text_renderer/win32text.c:90
-#: modules/video_filter/ball.c:119 modules/video_filter/colorthres.c:64
-#: modules/video_filter/marq.c:61 modules/video_filter/rss.c:72
-msgid "Red"
-msgstr "Vermell"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:211 modules/text_renderer/freetype.c:207
-#: modules/text_renderer/quartztext.c:116 modules/text_renderer/win32text.c:90
-#: modules/video_filter/colorthres.c:64 modules/video_filter/marq.c:62
-#: modules/video_filter/rss.c:73
-msgid "Fuchsia"
-msgstr "Fúcsia"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:211 modules/gui/macosx/MainMenu.m:428
-#: modules/gui/macosx/MainMenu.m:998 modules/text_renderer/freetype.c:207
-#: modules/text_renderer/quartztext.c:116 modules/text_renderer/win32text.c:90
-#: modules/video_filter/colorthres.c:64 modules/video_filter/marq.c:62
-#: modules/video_filter/rss.c:73
-msgid "Yellow"
-msgstr "Groc"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/codec/kate.c:211 modules/text_renderer/freetype.c:207
@@ -14165,15 +14720,6 @@ msgstr "Groc"
 #: modules/video_filter/marq.c:62 modules/video_filter/rss.c:73
 msgid "Olive"
 msgstr "Oliva"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:211 modules/gui/macosx/MainMenu.m:427
-#: modules/gui/macosx/MainMenu.m:996 modules/text_renderer/freetype.c:207
-#: modules/text_renderer/quartztext.c:116 modules/text_renderer/win32text.c:90
-#: modules/video_filter/ball.c:119 modules/video_filter/marq.c:62
-#: modules/video_filter/rss.c:73
-msgid "Green"
-msgstr "Verd"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/codec/kate.c:211 modules/text_renderer/freetype.c:207
@@ -14196,13 +14742,6 @@ msgstr "Llima"
 #: modules/video_filter/marq.c:63 modules/video_filter/rss.c:74
 msgid "Purple"
 msgstr "Porpra"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/kate.c:212 modules/text_renderer/freetype.c:208
-#: modules/text_renderer/quartztext.c:117 modules/text_renderer/win32text.c:91
-#: modules/video_filter/marq.c:63 modules/video_filter/rss.c:74
-msgid "Navy"
-msgstr "Blau marí"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/codec/kate.c:212 modules/gui/macosx/MainMenu.m:429
@@ -16828,16 +17367,6 @@ msgstr "tesa"
 #: modules/codec/x264.c:429
 msgid "Fast"
 msgstr "Ràpid"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/codec/x264.c:429 modules/gui/macosx/MainMenu.m:356
-#: modules/gui/macosx/simple_prefs.m:567
-#: modules/gui/qt4/components/simple_preferences.cpp:534
-#: modules/misc/gnutls.c:64 modules/text_renderer/freetype.c:195
-#: modules/text_renderer/freetype.c:214 modules/text_renderer/quartztext.c:121
-#: modules/text_renderer/win32text.c:82
-msgid "Normal"
-msgstr "Normal"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/codec/x264.c:429
@@ -20138,18 +20667,6 @@ msgid "Enter a name for the new profile:"
 msgstr "Introduïu el nom del perfil nou:"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/AudioEffects.m:388 modules/gui/macosx/AudioEffects.m:642
-#: modules/gui/macosx/ConvertAndSave.m:368
-#: modules/gui/macosx/ConvertAndSave.m:400 modules/gui/macosx/output.m:457
-#: modules/gui/macosx/playlist.m:695 modules/gui/macosx/prefs.m:207
-#: modules/gui/macosx/simple_prefs.m:222 modules/gui/macosx/simple_prefs.m:285
-#: modules/gui/macosx/VideoEffects.m:880
-#: modules/gui/qt4/components/sout/profile_selector.cpp:432
-#: modules/gui/qt4/ui/vlm.h:302
-msgid "Save"
-msgstr "Desa"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/macosx/AudioEffects.m:399 modules/gui/macosx/AudioEffects.m:738
 #: modules/gui/macosx/VideoEffects.m:940
 msgid "Remove a preset"
@@ -20216,11 +20733,6 @@ msgstr "Afegeix"
 #: modules/gui/qt4/dialogs/bookmarks.cpp:53 modules/gui/qt4/ui/vlm.h:301
 msgid "Clear"
 msgstr "Neteja"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/bookmarks.m:93 modules/gui/macosx/MainMenu.m:330
-msgid "Edit"
-msgstr "Edita"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/macosx/bookmarks.m:94 modules/gui/qt4/dialogs/bookmarks.cpp:57
@@ -21721,14 +22233,6 @@ msgid "Media Resource Locator (MRL)"
 msgstr "Media Resource Locator (MRL)"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/open.m:125 modules/gui/macosx/open.m:189
-#: modules/gui/macosx/open.m:669 modules/gui/macosx/open.m:744
-#: modules/gui/macosx/open.m:1111 modules/gui/macosx/open.m:1544
-#: modules/gui/qt4/components/controller.hpp:115
-msgid "Open"
-msgstr "Obre"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/macosx/open.m:129
 msgid ""
 "4 Tabs to choose between media input. Select 'File' for files, 'Disc' for "
@@ -22516,20 +23020,6 @@ msgstr "Codificació per defecte"
 #: modules/gui/macosx/simple_prefs.m:247
 msgid "Display Settings"
 msgstr "Paràmetres de visualització"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/simple_prefs.m:249
-#: modules/gui/qt4/ui/sprefs_subtitles.h:298
-msgid "Font color"
-msgstr "Color de lletra"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/simple_prefs.m:251 modules/text_renderer/freetype.c:154
-#: modules/text_renderer/quartztext.c:92 modules/text_renderer/win32text.c:59
-#: modules/video_filter/marq.c:167 modules/video_filter/rss.c:206
-#: modules/gui/qt4/ui/sprefs_subtitles.h:296
-msgid "Font"
-msgstr "Lletra"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/macosx/simple_prefs.m:252
@@ -23364,11 +23854,6 @@ msgstr ""
 "xarxa amb la transmissió a grups habilitada. És el mètode més eficient per "
 "transmetre a diversos ordinadors,però no funciona a Internet. Les capçaleres "
 "RTP s'afegiran al flux"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/wizard.m:316
-msgid "Back"
-msgstr "Endarrere"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/macosx/wizard.m:319 modules/gui/macosx/wizard.m:322
@@ -24937,11 +25422,6 @@ msgid "Devices"
 msgstr "Dispositius"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/qt4/components/playlist/selector.cpp:252
-msgid "Local Network"
-msgstr "Xarxa local"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/qt4/components/playlist/selector.cpp:253
 msgid "Internet"
 msgstr "Internet"
@@ -25919,11 +26399,6 @@ msgstr "Fitxers multimèdia"
 #: modules/gui/qt4/dialogs_provider.hpp:44
 msgid "Subtitle Files"
 msgstr "Fitxers de subtítols"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/qt4/dialogs_provider.hpp:45
-msgid "All Files"
-msgstr "Tots els fitxers"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/qt4/dialogs/sout.cpp:45 modules/gui/qt4/ui/sout.h:202
@@ -28172,11 +28647,6 @@ msgid "Audio capture (PulseAudio)"
 msgstr "Captura d'àudio (PulseAudio)"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/services_discovery/pulse.c:186 modules/stream_out/es.c:85
-msgid "Generic"
-msgstr "Genèric"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/services_discovery/sap.c:82
 msgid "SAP multicast address"
 msgstr "Adreça de multidestinació SAP"
@@ -28254,11 +28724,6 @@ msgstr "Sessió"
 #: modules/services_discovery/sap.c:878
 msgid "Tool"
 msgstr "Eina"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/services_discovery/sap.c:882
-msgid "User"
-msgstr "Usuari"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/services_discovery/udev.c:55 modules/services_discovery/udev.c:97
@@ -29671,12 +30136,6 @@ msgstr ""
 "#FFFF00 = groc (vermell + verd), blanc = #FFFFFF"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/text_renderer/freetype.c:174 modules/text_renderer/quartztext.c:94
-#: modules/text_renderer/win32text.c:75
-msgid "Relative font size"
-msgstr "Cos de lletra relatiu"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/text_renderer/freetype.c:175 modules/text_renderer/quartztext.c:95
 #: modules/text_renderer/win32text.c:76
 msgid ""
@@ -29726,18 +30185,6 @@ msgstr "Distància de l'ombra"
 #: modules/text_renderer/win32text.c:82
 msgid "Smaller"
 msgstr "Més petit"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/text_renderer/freetype.c:195 modules/text_renderer/quartztext.c:121
-#: modules/text_renderer/win32text.c:82
-msgid "Small"
-msgstr "Petit"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/text_renderer/freetype.c:195 modules/text_renderer/quartztext.c:121
-#: modules/text_renderer/win32text.c:82
-msgid "Large"
-msgstr "Gran"
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/text_renderer/freetype.c:195 modules/text_renderer/quartztext.c:121
@@ -40432,12 +40879,6 @@ msgstr "Centre de seguretat"
 
 # Translation source: /translations/vlc-trans.vlc_website/ca.po from project
 # 'VLC'
-#: include/header.php:272
-msgid "Download"
-msgstr "Baixades"
-
-# Translation source: /translations/vlc-trans.vlc_website/ca.po from project
-# 'VLC'
 #: include/header.php:274 include/header.php:354 index.php:29 vlc/index.php:23
 #: vlc/index.php:65
 msgid "Screenshots"
@@ -40454,12 +40895,6 @@ msgstr "Projectes"
 #: include/header.php:297 include/header.php:358
 msgid "All Projects"
 msgstr "Tots els projectes"
-
-# Translation source: /translations/vlc-trans.vlc_website/ca.po from project
-# 'VLC'
-#: include/header.php:301 index.php:119
-msgid "Contribute"
-msgstr "Col·laboreu"
 
 # Translation source: /translations/vlc-trans.vlc_website/ca.po from project
 # 'VLC'
@@ -40514,12 +40949,6 @@ msgstr "Fòrums"
 #: include/header.php:316 include/header.php:379
 msgid "Mailing-Lists"
 msgstr "Llistes de correu"
-
-# Translation source: /translations/vlc-trans.vlc_website/ca.po from project
-# 'VLC'
-#: include/header.php:317
-msgid "Report a bug"
-msgstr "Informeu d'un error"
 
 # Translation source: /translations/vlc-trans.vlc_website/ca.po from project
 # 'VLC'

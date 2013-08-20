@@ -1203,28 +1203,28 @@ msgstr "etiqueta"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:717
+#: ../src/frontend/entangle-camera-manager.c:756
 msgid "Monitor"
 msgstr "Monitor"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:869
-#: ../src/frontend/entangle-camera-manager.c:2681
+#: ../src/frontend/entangle-camera-manager.c:908
+#: ../src/frontend/entangle-camera-manager.c:2720
 msgid "Delete"
 msgstr "Suprimeix"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:889
+#: ../src/frontend/entangle-camera-manager.c:928
 msgid "Download"
 msgstr "Baixada"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:920
-#: ../src/frontend/entangle-camera-manager.c:958
-#: ../src/frontend/entangle-camera-manager.c:986
+#: ../src/frontend/entangle-camera-manager.c:959
+#: ../src/frontend/entangle-camera-manager.c:997
+#: ../src/frontend/entangle-camera-manager.c:1025
 #: ../src/frontend/entangle-camera-manager.xml.h:22
 #: ../src/frontend/entangle-camera-picker.c:533
 #: ../src/frontend/entangle-preferences-display.c:975
@@ -1235,36 +1235,36 @@ msgstr "Captura"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:1021
+#: ../src/frontend/entangle-camera-manager.c:1060
 #: ../src/frontend/entangle-camera-manager.xml.h:24
 msgid "Preview"
 msgstr "Previsualització"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:1303
-#: ../src/frontend/entangle-camera-manager.c:2547
+#: ../src/frontend/entangle-camera-manager.c:1342
+#: ../src/frontend/entangle-camera-manager.c:2586
 #: ../src/frontend/entangle-camera-manager.xml.h:27
 msgid "Cancel"
 msgstr "Cancel·la"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:1304
-#: ../src/frontend/entangle-camera-manager.c:2548
+#: ../src/frontend/entangle-camera-manager.c:1343
+#: ../src/frontend/entangle-camera-manager.c:2587
 msgid "Retry"
 msgstr "Reintent"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:1342
+#: ../src/frontend/entangle-camera-manager.c:1381
 #: ../src/frontend/entangle-camera-picker.c:125
 msgid "No"
 msgstr "No"
 
 # Translation source: /translations/entangle.entanglepot/ca.po from project
 # 'fedora'
-#: ../src/frontend/entangle-camera-manager.c:1343
+#: ../src/frontend/entangle-camera-manager.c:1382
 #: ../src/frontend/entangle-camera-picker.c:125
 msgid "Yes"
 msgstr "Sí"

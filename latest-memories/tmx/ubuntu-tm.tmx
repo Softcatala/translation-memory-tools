@@ -3820,5 +3820,1165 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
         <seg>Cal que us autentiqueu per fer una actualització parcial.</seg>
       </tuv>
     </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Your services</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Els vostres serveis</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Always in sync</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sempre sincronitzat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you need to know more about Ubuntu One, then please go to {support_url}</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Si us cal saber més coses sobre l'Ubuntu One, aneu a {support_url}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No, continue setting up</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No, continua la configuració</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can restart the setup process at any time by clicking on Ubuntu One in your menu.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Podeu reiniciar el procés de configuració en qualsevol moment fent clic a l'Ubuntu One en el menú.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Are you sure you want to cancel setting up Ubuntu One?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Segur que voleu cancel·lar la configuració de l'Ubuntu One?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Yes, I want to cancel</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sí, vull cancel·lar-la</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the folders in your cloud. Select the ones you want to sync with this computer.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquestes són les carpetes en el vostre núvol. Seleccioneu les que voleu sincronitzar amb aquest ordinador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Syncing the cloud to your computer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està sincronitzant el núvol amb l'ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Okay! Now it's time to choose which folders on this computer you would like to sync to the cloud.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>D'acord. Ara és l'hora de triar quines carpetes d'aquest ordinador voleu sincronitzar al núvol.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Syncing your computer with the cloud</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està sincronitzant l'ordinador amb el núvol</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connect to Ubuntu One</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connecta't a l'Ubuntu One</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thunderbird plug-in</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connector del Thunderbird</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Copy link</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Copia l'adreça de l'enllaç</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There was a problem while retrieving the credentials.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Hi ha hagut un problema en recuperar les credencials.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>View your personal details and service summary</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Mostra les dades personals i un resum dels serveis</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Welcome to Ubuntu One!</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Us donem la benvinguda a l'Ubuntu One</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The information could not be retrieved. Maybe your internet connection is down?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No s'ha pogut recuperar la informació. Pot ser que no estigueu connectat a Internet?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The settings could not be changed,
+previous values were restored.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No s'han pogut aplicar els canvis,
+s'han restaurat els valors anteriors.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Are you sure you want to remove this device from Ubuntu One?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Segur que voleu suprimir aquest dispositiu de l'Ubuntu One?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The device could not be removed.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No s'ha pogut eliminar el dispositiu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manage devices registered with your personal cloud</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Administra els dispositius registrats al meu núvol personal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This device</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquest dispositiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Go to the web page to manage your other devices</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aneu al lloc web per gestionar els vostres altres dispositius</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other devices</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Altres dispositius</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The devices connected with your personal cloud are listed below.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Els dispositius connectats amb el vostre núvol personal es mostren a continuació.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Edit your services online</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Editeu els serveis en línia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Edit personal details online</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Editeu els detalls personals en línia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;i&gt;%(package_name)s&lt;/i&gt; could not be installed</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El paquet &lt;i&gt;%(package_name)s&lt;/i&gt; no s'ha pogut instal·lar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sync another folder with your cloud</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronitza una altra carpeta amb el vostre núvol</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The chosen directory "%(folder_path)s" is not valid. 
+
+Please choose a folder inside your "%(home_folder)s" directory, and not overlapping with any existing cloud folder.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El directori triat «%(folder_path)s» no és vàlid. 
+
+Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui sobreposada amb cap altra carpeta existent en el núvol.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>My personal folders</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Les meves carpetes personals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Shared by %(other_user_display_name)s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Compartit per %(other_user_display_name)s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Add a folder from this computer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Afegeix una carpeta d'aquest ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manage your cloud folders</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Administra les carpetes del núvol</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Explore</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Explora</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sync Locally?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronitza localment</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The contents of your cloud folder will be merged with your local folder "%(folder_path)s" when subscribing.
+Do you want to subscribe to this cloud folder?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Quan us subscriviu, el contingut de la carpeta del núvol es fusionarà amb la vostra carpeta local «%(folder_path)s».
+Voleu subscriure-us a aquesta carpeta del núvol?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Go to the web for public and private sharing options</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aneu al lloc web per modificar les opcions de compartició pública i privada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select which folders from your cloud you want to sync with this computer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Seleccioneu les carpetes del vostre núvol que voleu sincronitzar amb aquest ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connect</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connecta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connect the file sync service with your personal cloud</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connecta el servei de sincronització de fitxers amb el meu núvol personal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync is disabled.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La sincronització de fitxers està inhabilitada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disconnect</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desconnecta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disconnect the file sync service from your personal cloud</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Desconnecta el servei de sincronització de fitxers del meu núvol personal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync is disconnected.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La sincronització de fitxers s'ha desconnectat.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enable</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Habilita</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enable the file sync service</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Habilita el servei de sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync error.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Error en la sincronització de fitxers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync is up-to-date.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La sincronització de fitxers està actualitzada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Restart</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reinicia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Restart the file sync service</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Reinicia el servei de sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Inicia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Start the file sync service</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Inicia el servei de sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync starting...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està iniciant la sincronització de fitxers...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Atura</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop the file sync service</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Atura el servei de sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync is stopped.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>La sincronització de fitxers està aturada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync in progress...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronització de fitxers en progrés...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%(free_space)s available storage</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%(free_space)s d'emmagatzematge disponible</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ubuntu One experienced an error</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error a l'Ubuntu One</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sorry, an error has occurred and Ubuntu One needs to close.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error i l'Ubuntu One es tancarà.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Get help online</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obteniu ajuda en línia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Get more storage</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obteniu més emmagatzematge</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hi %(user_display_name)s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Hola %(user_display_name)s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Go to the Website</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vés al lloc web</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In Progress</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>En curs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You need to install the package &lt;i&gt;%(package_name)s&lt;/i&gt; in order to enable more sync services.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cal que instal·leu el paquet &lt;i&gt;%(package_name)s&lt;/i&gt; per tal d'habilitar més serveis de sincronització.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Install the %(plugin_name)s for the sync service: %(service_name)s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Instal·leu el %(plugin_name)s per al servei de sincronització: %(service_name)s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Installation of &lt;i&gt;%(package_name)s&lt;/i&gt; in progress</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està realitzant la instal·lació del paquet &lt;i&gt;%(package_name)s&lt;/i&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Agree and continue</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Accepta i continua</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>License Agreement</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Acord de llicència</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ubuntu One Basic is free, while additional service add-ons may be paid for services.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>L'Ubuntu One Bàsic és gratuït, mentre que alguns serveis addicionals són de pagament.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disagree and uninstall</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Rebutja i desinstal·la'l</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published by the Free Software Foundation.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aquest programa és programari lliure: podeu redistribuir-lo i/o modificar-lo sota els termes de la Llicència pública general de GNU versió 3, tal com publica la Free Software Foundation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As free software, this programme is distributed without warranty. See the GNU General Public License for more details at {license_link}</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Com a programari lliure, aquest programa es distribueix sense cap garantia. Vegeu la llicència pública general GNU per obtenir més informació a {license_link}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Loading...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està carregant...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Getting information, please wait...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està obtenint informació, espereu un moment...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Calculating...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'està calculant...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The folders you have selected to sync take over your {quota_total} space. You can remove some folders or add some extra storage.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Les carpetes que heu seleccionat per sincronitzar sobrepassen el vostre espai de {quota_total}. Podeu suprimir algunes carpetes o afegir emmagatzematge addicional.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sync these folders on my computer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronitza aquestes carpetes en el meu ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Space {space_total}</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Espai {space_total}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Account information</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Informació del compte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Devices</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Dispositius</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Folders</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Carpetes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Paràmetres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Share links</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Enllaços compartits</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%(app_name)s Control Panel</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Quadre de control %(app_name)s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Purchased Music</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Música comprada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>My folders</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Les meves carpetes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>[unknown user name]</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>[nom d'usuari desconegut]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An internet connection is required to join or sign in to %(app_name)s.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cal una connexió a Internet per inscriure's o accedir a %(app_name)s.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New Share by %s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Compartició nova d'en/na %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No devices to show.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No hi ha cap dispositiu a mostrar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No folders to show.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No hi ha cap carpeta per mostrar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There is no Ubuntu One pairing record.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>No hi ha cap registre d'aparellaments de l'Ubuntu One.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open Ubuntu One</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre l'Ubuntu One</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Open the Ubuntu One Folder</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Obre la carpeta de l'Ubuntu One</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%(percentage)s used</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%(percentage)s utilitzat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please wait</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Espereu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Personal details</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Dades personals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using %(used)s of %(total)s (%(percentage).0f%%)</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'estan utilitzant %(used)s d'un total de %(total)s (%(percentage).0f%%)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Recent Transfers</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Transferències recents</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Restore</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Restaura</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Search files</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Cerca fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select sync folders</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Seleccioneu les carpetes per sincronitzar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manage the sync services</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Administra els serveis de sincronització</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enable the sync services for this computer.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Habilita els serveis de sincronització en aquest ordinador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Allow all notifications to this device</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Habilita totes les notificacions a aquest dispositiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Connect automatically when computer starts</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Connecta't automàticament en iniciar l'ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bandwidth Settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pàrametres de l'ample de banda</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Apply these settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Aplica aquests paràmetres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Default settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Paràmetres per defecte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Sync Settings</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configuració de la sincronització de fitxers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>KiB/s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>KiB/s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Limit download speed to</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Limita la velocitat de baixada a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Limit upload speed to</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Limita la velocitat de pujada a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatically sync all new cloud folders to this computer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronitza automàticament totes les carpetes noves del núvol en aquest ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Automatically sync all folders shared with me to this computer</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronitza automàticament totes les carpetes compartides amb mi en aquest ordinador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Share a File</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Converteix un fitxer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Shared files</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Fitxers compartits</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manage the shares offered to others</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Administra les comparticions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manage permissions for shares made to other users.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Administreu els permisos de compartició amb altres usuaris</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sign in</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Inicia la sessió</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;i&gt;%(package_name)s&lt;/i&gt; was successfully installed</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El paquet &lt;i&gt;%(package_name)s&lt;/i&gt; s'ha instal·lat correctament</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sync, stream, share</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Sincronitzeu, difoneu, compartiu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Talk to us</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Parleu amb nosaltres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Current and Recent Transfers</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Transferències actuals i recents</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Value could not be retrieved.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El valor no s'ha pogut recuperar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unknown error</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Error desconegut</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%(used)s of %(total)s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%(used)s de %(total)s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Quit Ubuntu One</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Surt de l'Ubuntu one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>bytes</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>bytes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>KiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>KiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>MiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>MiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>GiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>GiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>TiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>PiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Eib</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Eib</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>ZiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>ZiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>YiB</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>YiB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configure and manage your Ubuntu One account</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configureu i gestioneu el vostre compte de l'Ubuntu One</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
