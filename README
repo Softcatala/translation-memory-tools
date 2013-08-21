@@ -21,27 +21,14 @@ The web page of the project is at: http://www.softcatala.org/wiki/Memòria_tradu
 
 --- Setting up before execution
 
-* Transifex for Fedora project
-
-tx init --host https://fedora.transifex.com
-
-tx set --auto-remote  https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/
-(account is username not e-mail)
-
-tx pull -lca
-
-* Transifex for VLC project
-
-tx init --host https://www.transifex.com/
-
-tx set --auto-remote https://www.transifex.com/projects/p/vlc-trans/
-(account is username not e-mail)
-
-tx pull -lca
+For Transifex's project (all the project with transifex's type at projects.jon) ask for credential at their Transifex servers the first time that 
+they get executed. After the first execution, they get recorded in the '.transifexrc' file.
 
 --- Projects included in the translation memory
 
 The file projects.json contains the description of the projects that are included in the translation memory
+
+The supported file types are: PO, TS and .strings files (transifex repositories only).
 
 --- Applications
 
