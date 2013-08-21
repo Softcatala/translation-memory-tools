@@ -17,6 +17,7 @@
 # Boston, MA 02111-1307, USA.
 
 from fileset import *
+from urlparse import urlparse
 
 
 class TransifexFileSet(FileSet):
@@ -38,9 +39,12 @@ class TransifexFileSet(FileSet):
 		os.system("rm -r -f " + self.temp_dir)
 		os.system("mkdir " + self.temp_dir)
 		os.chdir(self.temp_dir)
-		os.system("tx init --host https://fedora.transifex.net")
-		os.system("tx set --auto-remote " + self.url)
 
+		url = urlparse(self.url)
+		uri = url.scheme + "://" + url.netloc
+		os.system("tx init --host " + uri)
+		os.system("tx set --auto-remote " + self.url)
+		
 		# To be able to process files with no English source (.strings, .xml, etc) we pull the English files too
 		# and then we delete the ones that include source and target
 		os.system("tx pull -f -lca,en")
