@@ -24,6 +24,10 @@ The web page of the project is at: http://www.softcatala.org/wiki/Memòria_tradu
 For Transifex's project (all the project with transifex's type at projects.jon) ask for credential at their Transifex servers the first time that 
 they get executed. After the first execution, they get recorded in the '.transifexrc' file.
 
+--- Logging
+
+After the execution a builder.log file is created with details for execution.
+
 --- Projects included in the translation memory
 
 The file projects.json contains the description of the projects that are included in the translation memory

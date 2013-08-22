@@ -17,6 +17,7 @@
 # Boston, MA 02111-1307, USA.
 
 
+import logging
 import urllib2
 import os
 import polib
@@ -27,7 +28,7 @@ class DownloadFile:
 
 	def GetFile(self, url, filename):
 		
-		print 'Downloading file \'' + url + '\'' + " to " + filename
+		logging.info('Downloading file \'' + url + '\'' + " to " + filename)
 
 		infile = urllib2.urlopen(url)
 		output = open(filename,'wb')
@@ -93,7 +94,6 @@ class FileSet():
 
 		for filename in findFiles.Find(self.temp_dir, '*.po'):
 			relative = filename.replace(self.temp_dir, '')
-			print 'Adding source reference to file:' + relative
 			pofile = POFile()
 			pofile.AddCommentToAllEntries(filename, "Translation source: " + relative +  " from project '" + self.project + "'")
 
@@ -108,7 +108,7 @@ class FileSet():
 
 		for tsfile in findFiles.Find(self.temp_dir, '*.ts'):
 			fileName, fileExtension = os.path.splitext(tsfile)
-			print "convert: " + fileName
+			logging.info("converting: " + fileName)
 			os.system("ts2po " + tsfile + " -o " + fileName + ".po")
 
 	def ConvertStringFilesToPo(self):
@@ -117,7 +117,7 @@ class FileSet():
 
 		for tsfile in findFiles.Find(self.temp_dir, '*.strings'):
 			dirName = os.path.dirname(tsfile);
-			print "convert: " + dirName
+			logging.info("convert: " + dirName)
 			filename = dirName + "/strings-ca.po"
 			os.system("prop2po -t " + dirName  + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
 		
@@ -138,10 +138,10 @@ class FileSet():
 					exclude = True
 
 			if (exclude == True):
-				print 'Excluding file:' + filename
+				logging.info( 'Excluding file:' + filename)
 				continue
 
-			print 'Adding file:' + filename + ' to translation memory'
+			logging.info('Adding file:' + filename + ' to translation memory')
 
 			if (os.path.isfile(localtm)):
 				os.system("cp " + localtm + " tm-project-previous.po")
@@ -174,7 +174,7 @@ class FileSet():
 			os.system("mkdir " + self.temp_dir)
 			os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
 		else:
-			print("Unsupported file extension for filename " + self.filename)
+			logging.error("Unsupported file extension for filename " + self.filename)
 
 
 

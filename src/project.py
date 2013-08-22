@@ -54,7 +54,7 @@ class Project:
 	def AddFileSets(self, project_dto):
 
 		for fileset in project_dto.filesets:
-			logging.info(fileset)
+			logging.debug(fileset)
 			if (fileset.type == 'local-file'):
 				self.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
 			elif (fileset.type == 'compressed'):
@@ -91,7 +91,6 @@ class Project:
 			words += len(string_words)
 
 		s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings, words " + str(words)
-		print s
 		logging.info(s)
 
 	def ToTmx(self):

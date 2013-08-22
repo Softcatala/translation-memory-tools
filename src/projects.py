@@ -44,7 +44,7 @@ class Projects:
 		project.SetAddSource(addSource)
 		project.AddFileSets(project_dto)
 		self.Add(project)
-		logging.info(project_dto)
+		logging.debug(project_dto)
 
 	def Do(self):
 

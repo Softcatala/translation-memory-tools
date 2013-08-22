@@ -32,12 +32,13 @@ def initLogging():
 	logfile = "builder.log"
 
 	if (os.path.isfile(logfile)):
-			os.system("rm " + logfile)
+		os.system("rm " + logfile)
 
 	logging.basicConfig(filename=logfile,level=logging.DEBUG)
-#	logger = logging.getLogger('')
-#	ch = logging.StreamHandler()
-#	logger.addHandler(ch)
+	logger = logging.getLogger('')
+	console = logging.StreamHandler()
+	console.setLevel(logging.INFO)
+	logger.addHandler(console)
 
 def readParameters():
 
@@ -99,7 +100,6 @@ def main():
 
 	s= "Execution time: " + str(time.time() - start_time) + " seconds"
 	logging.info(s)
-	print s
 
 if __name__ == "__main__":
     main()
