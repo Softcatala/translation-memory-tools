@@ -16,17 +16,20 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import *
+from fileset import FileSet
+
+import os
+
 
 class LocalFileSet(FileSet):
 
-	def Do(self):
+    def Do(self):
 
-		os.system("cp " + self.url + " " + self.filename)
+        os.system("cp " + self.url + " " + self.filename)
 
-		self.Uncompress()
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
+        self.Uncompress()
+        self.ConvertTsFilesToPo()
+        self.AddComments()
+        self.Build()
 
-		os.system("rm -f " + self.filename)
+        os.system("rm -f " + self.filename)
