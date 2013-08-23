@@ -68,7 +68,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
         <seg>OK</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Accepteu</seg>
+        <seg>Accepta</seg>
       </tuv>
     </tu>
     <tu>
@@ -344,7 +344,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
         <seg>Frequently Asked Questions</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Preguntes mes freqüents</seg>
+        <seg>Preguntes més freqüents</seg>
       </tuv>
     </tu>
     <tu>

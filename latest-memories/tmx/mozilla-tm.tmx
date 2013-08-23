@@ -7898,7 +7898,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Save a PNG image of the entire visible window (optionally after a delay)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Desa una image PNG de tota la finestra visible (opcionalment, després d'un retard)</seg>
+        <seg>Desa una imatge PNG de tota la finestra visible (opcionalment, després d'un retard)</seg>
       </tuv>
     </tu>
     <tu>
@@ -18094,7 +18094,7 @@ Ha estat verificat per %S</seg>
         <seg>Your application cache is currently using %1$S %2$S of disk space</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La memòria cau de l'aplicacioó actualment utilitza %1$S %2$S d'espai de disc</seg>
+        <seg>La memòria cau de l'aplicació utilitza actualment %1$S %2$S d'espai de disc</seg>
       </tuv>
     </tu>
     <tu>
@@ -142447,6 +142447,22 @@ marques registrades de la Mozilla Foundation.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Firefox Input</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Firefox Input</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Product</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Producte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>1d</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -142475,14 +142491,6 @@ marques registrades de la Mozilla Foundation.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>La darrera opinió</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Firefox Input</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Firefox Input</seg>
       </tuv>
     </tu>
     <tu>

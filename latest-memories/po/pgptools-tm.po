@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-19 23:57+0200\n"
+"POT-Creation-Date: 2013-08-22 22:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr "Finestra"
 # project 'GPGMail'
 #: 8.title
 msgid "OK"
-msgstr "Accepteu"
+msgstr "Accepta"
 
 # Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
 # project 'GPGMail'
@@ -291,7 +291,7 @@ msgstr "Preguntes més freqüents."
 # project 'GPGMail'
 #: 734.alternateTitle
 msgid "Frequently Asked Questions"
-msgstr "Preguntes mes freqüents"
+msgstr "Preguntes més freqüents"
 
 # Translation source: /translations/GPGMail.Preferences/strings-ca.po from
 # project 'GPGMail'
