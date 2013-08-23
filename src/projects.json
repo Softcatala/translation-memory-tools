@@ -21,44 +21,6 @@
 				}
 			}
 		},
-		"Abiword": {
-			"filename" : "abiword-tm.po",
-			"fileset": {
-				"abiword": {
-					"url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
-					"type": "file",
-					"target": "abiword-ca.po"
-				}
-			}
-		},
-		"VirtualBox": {
-			"filename" : "virtualbox-tm.po",
-			"fileset": {
-				"virtualbox": {
-					"url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
-					"type": "file",
-					"target": "virtualbox-ca.ts"
-				}
-			}
-		},
-		"VLC": {
-			"filename" : "vlc-tm.po",
-			"fileset": {
-				"VLC" : {
-					"url" : "https://www.transifex.com/projects/p/vlc-trans/",
-					"type": "transifex"
-				}
-			}
-		},
-		"GPGMail": {
-			"filename" : "pgptools-tm.po",
-			"fileset": {
-				"GPGMail" : {
-					"url" : "https://www.transifex.com/projects/p/GPGMail/",
-					"type": "transifex"
-				}
-			}
-		},
 		"Mozilla": {
 			"filename" : "mozilla-tm.po",
 			"fileset": {
@@ -107,16 +69,6 @@
 					"url" : "http://localize.mozilla.org/ca/sumo/export/zip",
 					"type": "compressed",
 					"target": "sumo.zip"
-				}
-			}
-		},
-		"filezilla": {
-			"filename" : "filezilla-tm.po",
-			"fileset": {
-				"filezilla": {
-					"url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
-					"type": "compressed",
-					"target": "filezilla.zip"
 				}
 			}
 		},
@@ -212,6 +164,54 @@
 					"url" : "https://translations.documentfoundation.org/ca/website/export/zip",
 					"type": "compressed",
 					"target": "website.zip"
+				}
+			}
+		},
+		"filezilla": {
+			"filename" : "filezilla-tm.po",
+			"fileset": {
+				"filezilla": {
+					"url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
+					"type": "compressed",
+					"target": "filezilla.zip"
+				}
+			}
+		},
+		"Abiword": {
+			"filename" : "abiword-tm.po",
+			"fileset": {
+				"abiword": {
+					"url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
+					"type": "file",
+					"target": "abiword-ca.po"
+				}
+			}
+		},
+		"VirtualBox": {
+			"filename" : "virtualbox-tm.po",
+			"fileset": {
+				"virtualbox": {
+					"url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
+					"type": "file",
+					"target": "virtualbox-ca.ts"
+				}
+			}
+		},
+		"VLC": {
+			"filename" : "vlc-tm.po",
+			"fileset": {
+				"VLC" : {
+					"url" : "https://www.transifex.com/projects/p/vlc-trans/",
+					"type": "transifex"
+				}
+			}
+		},
+		"GPGMail": {
+			"filename" : "pgptools-tm.po",
+			"fileset": {
+				"GPGMail" : {
+					"url" : "https://www.transifex.com/projects/p/GPGMail/",
+					"type": "transifex"
 				}
 			}
 		},

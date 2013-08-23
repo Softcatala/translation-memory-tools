@@ -30,7 +30,10 @@ After the execution a builder.log file is created with details for execution.
 
 --- Projects included in the translation memory
 
-The file projects.json contains the description of the projects that are included in the translation memory
+The file projects.json contains the description of the projects that are included in the translation memory.
+
+If context is not provided (msgctxt), duplicated translations are not stored. As result, the first occurrence of a string is added to the memory,
+ignoring the rest. For this reason the projects with better translations are first in the json file.
 
 The supported file types are: PO, TS and .strings files (transifex repositories only).
 
