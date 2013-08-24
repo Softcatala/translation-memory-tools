@@ -21,76 +21,74 @@ from collections import OrderedDict
 
 class ProjectDTO:
 
-	def __init__(self):
-		self.name = ""
-		self.filename = ""
-		self.filesets = list()
-		return
+    def __init__(self):
+        self.name = ""
+        self.filename = ""
+        self.filesets = list()
+        return
 
-	def __str__(self):
-		return  "ProjectDTO. Name: " + self.name + ", filename:" + self.filename
+    def __str__(self):
+        return  "ProjectDTO. Name: " + self.name + ", filename:" + self.filename
 
 class FileSetDTO:
 
-	def __init__(self):
-		self.name = ""
-		self.url = ""
-		self.type = ""
-		self.excluded = ""
-		self.target = ""
-		return
+    def __init__(self):
+        self.name = ""
+        self.url = ""
+        self.type = ""
+        self.excluded = ""
+        self.target = ""
+        return
 
-	def __str__(self):
-		return  "FileSetDTO. Name: " + self.name + ", url:" + self.url + ", type:" + self.type + ", excluded:" + self.excluded +  ", target:" + self.target
+    def __str__(self):
+        return  "FileSetDTO. Name: " + self.name + ", url:" + self.url + ", type:" + self.type + ", excluded:" + self.excluded +  ", target:" + self.target
 
 class JsonBackend:
 
-	def __init__(self, filename):
-		self.filename = filename
-		self.projects = list()
-		return
+    def __init__(self, filename):
+        self.filename = filename
+        self.projects = list()
+        return
 
-	def _processFileSet(self, project, project_value):
+    def _processFileSet(self, project, project_value):
 
-		for fileset_attr, fileset_value in project_value.iteritems():
-			fileset = FileSetDTO()
-			project.filesets.append(fileset)
-			fileset.name = fileset_attr
-			
-			self._processFileSetAttributes(fileset, fileset_value)
+        for fileset_attr, fileset_value in project_value.iteritems():
+            fileset = FileSetDTO()
+            project.filesets.append(fileset)
+            fileset.name = fileset_attr
 
-	def _processFileSetAttributes(self, fileset, fileset_value):
+            self._processFileSetAttributes(fileset, fileset_value)
 
-		for fileset_properties_attr, fileset_properties_value in fileset_value.iteritems():
-			if (fileset_properties_attr == 'name'):
-				fileset.name = fileset_properties_value
-			elif (fileset_properties_attr == 'url'):
-				fileset.url = fileset_properties_value
-			elif (fileset_properties_attr == 'type'):
-				fileset.type = fileset_properties_value
-			elif (fileset_properties_attr == 'target'):
-				fileset.target = fileset_properties_value
-			elif (fileset_properties_attr == 'excluded'):
-				fileset.excluded = fileset_properties_value
+    def _processFileSetAttributes(self, fileset, fileset_value):
 
-	def load(self):
-		
-		json_data = open(self.filename)
-		data = json.load(json_data, object_pairs_hook=OrderedDict)
-		
-		# Enums projects names
-		for attribute, value in data['projects'].items():
-			project = ProjectDTO()
-			project.name = attribute
-			self.projects.append(project)
-		
-			#Enum project sets
-			for project_attr, project_value in value.iteritems():
-				if (project_attr == 'filename'):
-					project.filename = project_value
-				elif (project_attr == 'fileset'):
-					self._processFileSet(project, project_value)
+        for fileset_properties_attr, fileset_properties_value in fileset_value.iteritems():
+            if (fileset_properties_attr == 'name'):
+                fileset.name = fileset_properties_value
+            elif (fileset_properties_attr == 'url'):
+                fileset.url = fileset_properties_value
+            elif (fileset_properties_attr == 'type'):
+                fileset.type = fileset_properties_value
+            elif (fileset_properties_attr == 'target'):
+                fileset.target = fileset_properties_value
+            elif (fileset_properties_attr == 'excluded'):
+                fileset.excluded = fileset_properties_value
 
-		json_data.close()
+    def load(self):
 
+        json_data = open(self.filename)
+        data = json.load(json_data, object_pairs_hook=OrderedDict)
 
+        # Enums projects names
+        for attribute, value in data['projects'].items():
+            project = ProjectDTO()
+            project.name = attribute
+            self.projects.append(project)
+
+            #Enum project sets
+            for project_attr, project_value in value.iteritems():
+                if (project_attr == 'filename'):
+                    project.filename = project_value
+                elif (project_attr == 'fileset'):
+                    self._processFileSet(project, project_value)
+
+        json_data.close()

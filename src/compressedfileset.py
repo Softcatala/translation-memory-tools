@@ -20,15 +20,15 @@ from fileset import *
 
 class CompressedFileSet(FileSet):
 
-	def Do(self):
+    def Do(self):
 
-		# Download po files
-		download = DownloadFile()
-		download.GetFile(self.url, self.filename)
+        # Download po files
+        download = DownloadFile()
+        download.GetFile(self.url, self.filename)
 
-		self.Uncompress()
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
+        self.Uncompress()
+        self.ConvertTsFilesToPo()
+        self.AddComments()
+        self.Build()
 
-		os.system("rm -f " + self.filename)
+        os.system("rm -f " + self.filename)
