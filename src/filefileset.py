@@ -20,20 +20,19 @@ from fileset import *
 
 class FileFileSet(FileSet):
 
-	def Do(self):
+    def Do(self):
 
-		# Download local file
-		download = DownloadFile()
-		download.GetFile(self.url, self.filename)
+        # Download local file
+        download = DownloadFile()
+        download.GetFile(self.url, self.filename)
 
-		# Copy file to be processed
-		os.system("rm -f -r " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
+        # Copy file to be processed
+        os.system("rm -f -r " + self.temp_dir)
+        os.system("mkdir " + self.temp_dir)
+        os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
 
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
+        self.ConvertTsFilesToPo()
+        self.AddComments()
+        self.Build()
 
-		os.system("rm -f " + self.filename)
-
+        os.system("rm -f " + self.filename)

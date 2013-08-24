@@ -31,72 +31,69 @@ from filefileset import *
 
 class Project:
 
-	def __init__(self, name, filename):
-		self.addSource = True
-		self.filename = filename
-		self.filesets = list()
-		self.name = name
+    def __init__(self, name, filename):
+        self.addSource = True
+        self.filename = filename
+        self.filesets = list()
+        self.name = name
 
-	def GetFilename(self):
-		return self.filename;
+    def GetFilename(self):
+        return self.filename;
 
-	def SetAddSource(self, addSource):
-		self.addSource = addSource
+    def SetAddSource(self, addSource):
+        self.addSource = addSource
 
-	def DeletePOFile(self):
-		if (os.path.isfile(self.filename)):
-			os.system("rm " + self.filename)
+    def DeletePOFile(self):
+        if (os.path.isfile(self.filename)):
+            os.system("rm " + self.filename)
 
-	def Add(self, fileset):
-		fileset.SetTMFile(self.filename)
-		self.filesets.append(fileset)
+    def Add(self, fileset):
+        fileset.SetTMFile(self.filename)
+        self.filesets.append(fileset)
 
-	def AddFileSets(self, project_dto):
+    def AddFileSets(self, project_dto):
 
-		for fileset in project_dto.filesets:
-			logging.debug(fileset)
-			if (fileset.type == 'local-file'):
-				self.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'compressed'):
-				self.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type ==  'bazaar'):
-				self.Add(BazaarFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'transifex'):
-				self.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'local-dir'):
-				self.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
-			elif (fileset.type == 'file'):
-				self.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
+        for fileset in project_dto.filesets:
+            logging.debug(fileset)
+            if (fileset.type == 'local-file'):
+                self.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
+            elif (fileset.type == 'compressed'):
+                self.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
+            elif (fileset.type ==  'bazaar'):
+                self.Add(BazaarFileSet(fileset.name, fileset.url, fileset.target))
+            elif (fileset.type == 'transifex'):
+                self.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
+            elif (fileset.type == 'local-dir'):
+                self.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
+            elif (fileset.type == 'file'):
+                self.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
 
-	def Do(self):
-		try:
-			self.DeletePOFile()
+    def Do(self):
+        try:
+            self.DeletePOFile()
 
-			for fileset in self.filesets:
-				fileset.SetAddSource(self.addSource)
-				fileset.Do()
+            for fileset in self.filesets:
+                fileset.SetAddSource(self.addSource)
+                fileset.Do()
 
-		except Exception as detail:
-			logging.error("Project.Do. Cannot complete " + self.filename)
-			logging.error(detail)
-			self.DeletePOFile()
+        except Exception as detail:
+            logging.error("Project.Do. Cannot complete " + self.filename)
+            logging.error(detail)
+            self.DeletePOFile()
 
-	def Statistics(self):
-		
-		poFile = polib.pofile(self.filename)
-	
-		words = 0
-		for entry in poFile:
-			string_words = entry.msgstr.split(' ')
-			words += len(string_words)
+    def Statistics(self):
 
-		s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings, words " + str(words)
-		logging.info(s)
+        poFile = polib.pofile(self.filename)
 
-	def ToTmx(self):
-		
-		fileName, fileExtension = os.path.splitext(self.filename)
-		os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")
+        words = 0
+        for entry in poFile:
+            string_words = entry.msgstr.split(' ')
+            words += len(string_words)
 
+        s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings, words " + str(words)
+        logging.info(s)
 
+    def ToTmx(self):
 
+        fileName, fileExtension = os.path.splitext(self.filename)
+        os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")

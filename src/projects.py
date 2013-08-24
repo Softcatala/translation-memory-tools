@@ -25,56 +25,53 @@ from fileset import *
 
 class Projects:
 
-	def __init__(self, filename):
-		self.filename = filename
-		self.tmfile = "tm.po"
-		self.projects = list()
-		self.tm_project = Project('Translation memory', self.tmfile)
-		
-		if (os.path.isfile(filename)):
-			os.system("rm " + filename)
+    def __init__(self, filename):
+        self.filename = filename
+        self.tmfile = "tm.po"
+        self.projects = list()
+        self.tm_project = Project('Translation memory', self.tmfile)
 
-	def Add(self, project):
-		self.projects.append(project)
+        if (os.path.isfile(filename)):
+            os.system("rm " + filename)
 
-
-	def AddProject(self, project_dto, addSource):
-
-		project = Project(project_dto.name, project_dto.filename)
-		project.SetAddSource(addSource)
-		project.AddFileSets(project_dto)
-		self.Add(project)
-		logging.debug(project_dto)
-
-	def Do(self):
-
-		for project in self.projects:
-			project.Do()
-
-		for project in self.projects:
-
-			if (os.path.isfile(self.tmfile)):
-				os.system("cp " + self.tmfile +" tm-previous.po")
-				os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-previous.po " + project.GetFilename())
-				os.system("rm -f tm-previous.po")
-			else:
-				os.system("cp " + project.GetFilename() + " " + self.tmfile)
-
-		os.system("msgfmt -c --statistics " + self.tmfile)
-
-	def Statistics(self):
-		
-		for project in self.projects:
-			project.Statistics()
-
-		self.tm_project.Statistics()
-
-	def ToTmx(self):
-		
-		for project in self.projects:
-			project.ToTmx()
-
-		self.tm_project.ToTmx()
+    def Add(self, project):
+        self.projects.append(project)
 
 
+    def AddProject(self, project_dto, addSource):
 
+        project = Project(project_dto.name, project_dto.filename)
+        project.SetAddSource(addSource)
+        project.AddFileSets(project_dto)
+        self.Add(project)
+        logging.debug(project_dto)
+
+    def Do(self):
+
+        for project in self.projects:
+            project.Do()
+
+        for project in self.projects:
+
+            if (os.path.isfile(self.tmfile)):
+                os.system("cp " + self.tmfile +" tm-previous.po")
+                os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-previous.po " + project.GetFilename())
+                os.system("rm -f tm-previous.po")
+            else:
+                os.system("cp " + project.GetFilename() + " " + self.tmfile)
+
+        os.system("msgfmt -c --statistics " + self.tmfile)
+
+    def Statistics(self):
+
+        for project in self.projects:
+            project.Statistics()
+
+        self.tm_project.Statistics()
+
+    def ToTmx(self):
+
+        for project in self.projects:
+            project.ToTmx()
+
+        self.tm_project.ToTmx()
