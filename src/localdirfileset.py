@@ -20,12 +20,12 @@ from fileset import *
 
 class LocalDirFileSet(FileSet):
 
-	def Do(self):
+    def Do(self):
 
-		os.system("rm -f " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.system("cp " + self.url + " " + self.temp_dir +  "/" + self.filename)
+        os.system("rm -f " + self.temp_dir)
+        os.system("mkdir " + self.temp_dir)
+        os.system("cp " + self.url + " " + self.temp_dir +  "/" + self.filename)
 
-		self.ConvertTsFilesToPo()
-		self.AddComments()
-		self.Build()
+        self.ConvertTsFilesToPo()
+        self.AddComments()
+        self.Build()

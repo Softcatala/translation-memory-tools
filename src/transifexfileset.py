@@ -22,39 +22,39 @@ from urlparse import urlparse
 
 class TransifexFileSet(FileSet):
 
-	def RemoveNonTranslationOnlyFiles(self):
+    def RemoveNonTranslationOnlyFiles(self):
 
-		findFiles = FindFiles()
+        findFiles = FindFiles()
 
-		for filename in findFiles.Find(self.temp_dir, '*'):
-			print "Considering " + filename
-			if (filename.endswith('en.po') or filename.endswith('en.ts')):
-				print "Removing:" + filename
-				os.system("rm -f " + filename)
+        for filename in findFiles.Find(self.temp_dir, '*'):
+            print "Considering " + filename
+            if (filename.endswith('en.po') or filename.endswith('en.ts')):
+                print "Removing:" + filename
+                os.system("rm -f " + filename)
 
-	def Do(self):
+    def Do(self):
 
-		prevdir = os.getcwd()
+        prevdir = os.getcwd()
 
-		os.system("rm -r -f " + self.temp_dir)
-		os.system("mkdir " + self.temp_dir)
-		os.chdir(self.temp_dir)
+        os.system("rm -r -f " + self.temp_dir)
+        os.system("mkdir " + self.temp_dir)
+        os.chdir(self.temp_dir)
 
-		url = urlparse(self.url)
-		uri = url.scheme + "://" + url.netloc
-		os.system("tx init --host " + uri)
-		os.system("tx set --auto-remote " + self.url)
-		
-		# To be able to process files with no English source (.strings, .xml, etc) we pull the English files too
-		# and then we delete the ones that include source and target
-		os.system("tx pull -f -lca,en")
-		os.chdir(prevdir)
-		self.RemoveNonTranslationOnlyFiles()
+        url = urlparse(self.url)
+        uri = url.scheme + "://" + url.netloc
+        os.system("tx init --host " + uri)
+        os.system("tx set --auto-remote " + self.url)
+        
+        # To be able to process files with no English source (.strings, .xml, etc) we pull the English files too
+        # and then we delete the ones that include source and target
+        os.system("tx pull -f -lca,en")
+        os.chdir(prevdir)
+        self.RemoveNonTranslationOnlyFiles()
 
-		self.ConvertTsFilesToPo()
-		self.ConvertStringFilesToPo()
-		self.AddComments()
-		self.Build()
+        self.ConvertTsFilesToPo()
+        self.ConvertStringFilesToPo()
+        self.AddComments()
+        self.Build()
 
-		os.system("rm -r -f " + self.temp_dir)
+        os.system("rm -r -f " + self.temp_dir)
 

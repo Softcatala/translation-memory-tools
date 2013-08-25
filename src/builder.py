@@ -26,80 +26,80 @@ from jsonbackend import *
 
 projects = Projects("tm.po")
 addSource = True
-	
+    
 def initLogging():
 
-	logfile = "builder.log"
+    logfile = "builder.log"
 
-	if (os.path.isfile(logfile)):
-		os.system("rm " + logfile)
+    if (os.path.isfile(logfile)):
+        os.system("rm " + logfile)
 
-	logging.basicConfig(filename=logfile,level=logging.DEBUG)
-	logger = logging.getLogger('')
-	console = logging.StreamHandler()
-	console.setLevel(logging.INFO)
-	logger.addHandler(console)
+    logging.basicConfig(filename=logfile,level=logging.DEBUG)
+    logger = logging.getLogger('')
+    console = logging.StreamHandler()
+    console.setLevel(logging.INFO)
+    logger.addHandler(console)
 
 def readParameters():
 
-	parser = OptionParser()
-	parser.add_option("-n", "--no-source",
-			action="store_false", dest="addSource", default=True,
-			help="Do not include the source for the translation segment")
+    parser = OptionParser()
+    parser.add_option("-n", "--no-source",
+            action="store_false", dest="addSource", default=True,
+            help="Do not include the source for the translation segment")
 
-	parser.add_option("-p", "--projects",
-			action="store", type="string", dest="projectNames",
-			help="To restrict the processing of projects to comma sparated given list e.g.: (fedora,ubuntu)")
+    parser.add_option("-p", "--projects",
+            action="store", type="string", dest="projectNames",
+            help="To restrict the processing of projects to comma sparated given list e.g.: (fedora,ubuntu)")
 
-	(options, args) = parser.parse_args()
+    (options, args) = parser.parse_args()
 
-	global addSource
-	global projectsNames
+    global addSource
+    global projectsNames
  
-	addSource = options.addSource
+    addSource = options.addSource
 
-	if (options.projectNames is not None):
-		projectsNames = options.projectNames.split(",")
-	else:
-		projectsNames = None
+    if (options.projectNames is not None):
+        projectsNames = options.projectNames.split(",")
+    else:
+        projectsNames = None
 
 def processProjects():
 
-	global addSource
+    global addSource
 
-	json = JsonBackend('projects.json')
-	json.load()
+    json = JsonBackend('projects.json')
+    json.load()
 
-	for project_dto in json.projects:
+    for project_dto in json.projects:
 
-		if (projectsNames is not None):
-			found = False
-			for projectName in projectsNames:
-				if projectName.lower().strip() == project_dto.name.lower().strip():
-					found = True
+        if (projectsNames is not None):
+            found = False
+            for projectName in projectsNames:
+                if projectName.lower().strip() == project_dto.name.lower().strip():
+                    found = True
 
-			if found == False:
-				continue;
+            if found == False:
+                continue;
 
-		projects.AddProject(project_dto, addSource)
+        projects.AddProject(project_dto, addSource)
 
-	projects.Do()
+    projects.Do()
 
 def main():
 
-	print "Translation memory builder version 0.1"
-	print "Use --help for assistance"
+    print "Translation memory builder version 0.1"
+    print "Use --help for assistance"
 
-	start_time = time.time()
+    start_time = time.time()
 
-	initLogging()
-	readParameters()
-	processProjects()
-	projects.ToTmx()
-	projects.Statistics()
+    initLogging()
+    readParameters()
+    processProjects()
+    projects.ToTmx()
+    projects.Statistics()
 
-	s= "Execution time: " + str(time.time() - start_time) + " seconds"
-	logging.info(s)
+    s= "Execution time: " + str(time.time() - start_time) + " seconds"
+    logging.info(s)
 
 if __name__ == "__main__":
     main()
