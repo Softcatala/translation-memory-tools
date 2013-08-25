@@ -56,7 +56,7 @@ class JsonBackend:
             fileset = FileSetDTO()
             project.filesets.append(fileset)
             fileset.name = fileset_attr
-            
+
             self._processFileSetAttributes(fileset, fileset_value)
 
     def _processFileSetAttributes(self, fileset, fileset_value):
@@ -74,16 +74,16 @@ class JsonBackend:
                 fileset.excluded = fileset_properties_value
 
     def load(self):
-        
+
         json_data = open(self.filename)
         data = json.load(json_data, object_pairs_hook=OrderedDict)
-        
+
         # Enums projects names
         for attribute, value in data['projects'].items():
             project = ProjectDTO()
             project.name = attribute
             self.projects.append(project)
-        
+
             #Enum project sets
             for project_attr, project_value in value.iteritems():
                 if (project_attr == 'filename'):
@@ -92,5 +92,3 @@ class JsonBackend:
                     self._processFileSet(project, project_value)
 
         json_data.close()
-
-

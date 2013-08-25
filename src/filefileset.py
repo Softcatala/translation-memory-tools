@@ -36,4 +36,3 @@ class FileFileSet(FileSet):
         self.Build()
 
         os.system("rm -f " + self.filename)
-

@@ -44,7 +44,7 @@ class TransifexFileSet(FileSet):
         uri = url.scheme + "://" + url.netloc
         os.system("tx init --host " + uri)
         os.system("tx set --auto-remote " + self.url)
-        
+
         # To be able to process files with no English source (.strings, .xml, etc) we pull the English files too
         # and then we delete the ones that include source and target
         os.system("tx pull -f -lca,en")
@@ -57,4 +57,3 @@ class TransifexFileSet(FileSet):
         self.Build()
 
         os.system("rm -r -f " + self.temp_dir)
-

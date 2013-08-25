@@ -26,7 +26,7 @@ from jsonbackend import *
 
 projects = Projects("tm.po")
 addSource = True
-    
+
 def initLogging():
 
     logfile = "builder.log"
@@ -55,7 +55,7 @@ def readParameters():
 
     global addSource
     global projectsNames
- 
+
     addSource = options.addSource
 
     if (options.projectNames is not None):
@@ -79,7 +79,7 @@ def processProjects():
                     found = True
 
             if found == False:
-                continue;
+                continue
 
         projects.AddProject(project_dto, addSource)
 
@@ -103,5 +103,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

@@ -82,9 +82,9 @@ class Project:
             self.DeletePOFile()
 
     def Statistics(self):
-        
+
         poFile = polib.pofile(self.filename)
-    
+
         words = 0
         for entry in poFile:
             string_words = entry.msgstr.split(' ')
@@ -94,9 +94,6 @@ class Project:
         logging.info(s)
 
     def ToTmx(self):
-        
+
         fileName, fileExtension = os.path.splitext(self.filename)
         os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")
-
-
-

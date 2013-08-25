@@ -27,7 +27,7 @@ import time
 class DownloadFile:
 
     def GetFile(self, url, filename):
-        
+
         logging.info('Downloading file \'' + url + '\'' + " to " + filename)
 
         infile = urllib2.urlopen(url)
@@ -47,7 +47,7 @@ class POFile:
 
         for entry in input_po:
             entry.tcomment = comment
-            
+
         input_po.save(filename)
 
 class FindFiles:
@@ -120,7 +120,7 @@ class FileSet():
             logging.info("convert: " + dirName)
             filename = dirName + "/strings-ca.po"
             os.system("prop2po -t " + dirName  + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
-        
+
     def Build(self):
 
         findFiles = FindFiles()
@@ -175,7 +175,3 @@ class FileSet():
             os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
         else:
             logging.error("Unsupported file extension for filename " + self.filename)
-
-
-
-

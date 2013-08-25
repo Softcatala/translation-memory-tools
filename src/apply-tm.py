@@ -82,7 +82,7 @@ def initLogging():
     logfile = "apply-tm.log"
 
     if (os.path.isfile(logfile)):
-            os.system("rm " + logfile)
+        os.system("rm " + logfile)
 
     logging.basicConfig(filename=logfile,level=logging.DEBUG)
 
@@ -96,7 +96,7 @@ def main():
     os.system("rm -r -f " + output_dir)
     os.system("mkdir " + output_dir)
 
-    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz')    
+    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz')
     newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz')
     newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz')
     newtranslated += process('http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz')
@@ -106,5 +106,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

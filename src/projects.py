@@ -30,7 +30,7 @@ class Projects:
         self.tmfile = "tm.po"
         self.projects = list()
         self.tm_project = Project('Translation memory', self.tmfile)
-        
+
         if (os.path.isfile(filename)):
             os.system("rm " + filename)
 
@@ -63,18 +63,15 @@ class Projects:
         os.system("msgfmt -c --statistics " + self.tmfile)
 
     def Statistics(self):
-        
+
         for project in self.projects:
             project.Statistics()
 
         self.tm_project.Statistics()
 
     def ToTmx(self):
-        
+
         for project in self.projects:
             project.ToTmx()
 
         self.tm_project.ToTmx()
-
-
-
