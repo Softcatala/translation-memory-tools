@@ -245,6 +245,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Upgrading Media Library</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Actualitza la biblioteca de medis</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Open Network Stream</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -401,6 +409,14 @@
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>%i episodi, %i no llegit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Track %i</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Pista %i</seg>
       </tuv>
     </tu>
     <tu>
@@ -5689,14 +5705,6 @@ Default value is 1.0 (original video size).</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Llista de revocació de certificats HTTP/TLS</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>This file contains an optional CRL to prevent remove clients from using revoked certificates in TLS sessions.</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Aquest fitxer té un CRL opcional per prevenir l'eliminació de clients en utilitzar certificats revocats en sessions TLS.</seg>
       </tuv>
     </tu>
     <tu>

@@ -6,6 +6,8 @@ Es composa de dos directories:
 
 * tmx/ - Fitxers amb la memòria de traducció en format TMX. Més informació: http://ca.wikipedia.org/wiki/TMX 
 
+Els fitxers tm.po i tm.tmx contenen les memòries de tots els projectes i la resta de cada projecte individualment.
+
 Més informació: http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà
 
 La distribució de les cadenes va sotmesa a les llicències de cada programari
@@ -14,6 +16,6 @@ Aquesta memòria inclou els principals programes que tradueix Softcatalà. S'han
 inclòs només aquells programes sobre els quals s'han fet revisions completes
 recentement.
 
-Data d'ensamblatge juliol 2013
+Data d'ensamblatge agost 2013
 
 L'Equip de Softcatalà

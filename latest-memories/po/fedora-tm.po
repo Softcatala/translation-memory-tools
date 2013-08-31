@@ -2466,7 +2466,7 @@ msgstr "Dispositiu:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain-monitor.c:1234 tools/virsh-pool.c:1518
+#: tools/virsh-domain-monitor.c:1234 tools/virsh-pool.c:1517
 msgid "UUID:"
 msgstr "UUID:"
 
@@ -4729,7 +4729,7 @@ msgstr "No s'ha pogut analitzar el mode '%s'"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: daemon/libvirtd.c:1316 src/locking/lock_daemon.c:1294
+#: daemon/libvirtd.c:1317 src/locking/lock_daemon.c:1291
 #, c-format
 msgid "Failed to fork as daemon: %s"
 msgstr "No s'ha pogut bifurcar com a dimoni: %s"
@@ -5004,118 +5004,119 @@ msgstr "maxnames > REMOTE_STORAGE_VOL_NAME_LIST_MAX"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:2303 src/lxc/lxc_driver.c:2496
-#: src/lxc/lxc_driver.c:2570 src/openvz/openvz_driver.c:1981
-#: src/qemu/qemu_driver.c:1674 src/qemu/qemu_driver.c:1686
-#: src/qemu/qemu_driver.c:1758 src/qemu/qemu_driver.c:1859
-#: src/qemu/qemu_driver.c:1974 src/qemu/qemu_driver.c:2023
-#: src/qemu/qemu_driver.c:2110 src/qemu/qemu_driver.c:2376
-#: src/qemu/qemu_driver.c:2387 src/qemu/qemu_driver.c:2453
-#: src/qemu/qemu_driver.c:2596 src/qemu/qemu_driver.c:3196
-#: src/qemu/qemu_driver.c:3252 src/qemu/qemu_driver.c:3512
-#: src/qemu/qemu_driver.c:3620 src/qemu/qemu_driver.c:3705
-#: src/qemu/qemu_driver.c:3770 src/qemu/qemu_driver.c:3847
-#: src/qemu/qemu_driver.c:4971 src/qemu/qemu_driver.c:5718
-#: src/qemu/qemu_driver.c:9121 src/qemu/qemu_driver.c:9180
-#: src/qemu/qemu_driver.c:9203 src/qemu/qemu_driver.c:9264
-#: src/qemu/qemu_driver.c:9417 src/qemu/qemu_driver.c:9764
-#: src/qemu/qemu_driver.c:9886 src/qemu/qemu_driver.c:11165
-#: src/qemu/qemu_driver.c:11204 src/qemu/qemu_driver.c:11338
-#: src/qemu/qemu_driver.c:11395 src/qemu/qemu_driver.c:11445
-#: src/qemu/qemu_driver.c:11500 src/qemu/qemu_driver.c:11559
-#: src/qemu/qemu_driver.c:11871 src/qemu/qemu_driver.c:12233
-#: src/qemu/qemu_driver.c:13752 src/qemu/qemu_driver.c:13761
-#: src/qemu/qemu_driver.c:13905 src/qemu/qemu_driver.c:13986
-#: src/qemu/qemu_driver.c:14095 src/qemu/qemu_driver.c:14235
-#: src/qemu/qemu_driver.c:14283 src/qemu/qemu_driver.c:14353
-#: src/qemu/qemu_driver.c:14461 src/qemu/qemu_driver.c:14498
-#: src/qemu/qemu_driver.c:14690 src/qemu/qemu_driver.c:14819
-#: src/qemu/qemu_driver.c:15205 src/qemu/qemu_driver.c:15654
-#: src/qemu/qemu_driver.c:15713 src/qemu/qemu_driver.c:15761
-#: src/qemu/qemu_driver.c:15801 src/qemu/qemu_driver.c:15872
-#: src/qemu/qemu_driver.c:15894 src/qemu/qemu_driver.c:15944
-#: src/qemu/qemu_driver.c:15966 src/qemu/qemu_migration.c:2083
-#: src/qemu/qemu_migration.c:4011 src/uml/uml_driver.c:2561
-#: src/xen/xen_driver.c:2575 src/xen/xm_internal.c:675
+#: src/conf/domain_conf.c:2307 src/lxc/lxc_driver.c:2496
+#: src/lxc/lxc_driver.c:2570 src/libxl/libxl_driver.c:4598
+#: src/openvz/openvz_driver.c:1981 src/qemu/qemu_driver.c:1674
+#: src/qemu/qemu_driver.c:1686 src/qemu/qemu_driver.c:1758
+#: src/qemu/qemu_driver.c:1859 src/qemu/qemu_driver.c:1974
+#: src/qemu/qemu_driver.c:2023 src/qemu/qemu_driver.c:2110
+#: src/qemu/qemu_driver.c:2376 src/qemu/qemu_driver.c:2387
+#: src/qemu/qemu_driver.c:2453 src/qemu/qemu_driver.c:2596
+#: src/qemu/qemu_driver.c:3196 src/qemu/qemu_driver.c:3252
+#: src/qemu/qemu_driver.c:3512 src/qemu/qemu_driver.c:3620
+#: src/qemu/qemu_driver.c:3705 src/qemu/qemu_driver.c:3770
+#: src/qemu/qemu_driver.c:3847 src/qemu/qemu_driver.c:4910
+#: src/qemu/qemu_driver.c:5657 src/qemu/qemu_driver.c:8892
+#: src/qemu/qemu_driver.c:8951 src/qemu/qemu_driver.c:8974
+#: src/qemu/qemu_driver.c:9035 src/qemu/qemu_driver.c:9188
+#: src/qemu/qemu_driver.c:9535 src/qemu/qemu_driver.c:9657
+#: src/qemu/qemu_driver.c:10936 src/qemu/qemu_driver.c:10975
+#: src/qemu/qemu_driver.c:11109 src/qemu/qemu_driver.c:11166
+#: src/qemu/qemu_driver.c:11216 src/qemu/qemu_driver.c:11271
+#: src/qemu/qemu_driver.c:11330 src/qemu/qemu_driver.c:11642
+#: src/qemu/qemu_driver.c:12004 src/qemu/qemu_driver.c:13523
+#: src/qemu/qemu_driver.c:13532 src/qemu/qemu_driver.c:13676
+#: src/qemu/qemu_driver.c:13757 src/qemu/qemu_driver.c:13866
+#: src/qemu/qemu_driver.c:14006 src/qemu/qemu_driver.c:14054
+#: src/qemu/qemu_driver.c:14124 src/qemu/qemu_driver.c:14232
+#: src/qemu/qemu_driver.c:14269 src/qemu/qemu_driver.c:14461
+#: src/qemu/qemu_driver.c:14590 src/qemu/qemu_driver.c:14980
+#: src/qemu/qemu_driver.c:15429 src/qemu/qemu_driver.c:15488
+#: src/qemu/qemu_driver.c:15536 src/qemu/qemu_driver.c:15576
+#: src/qemu/qemu_driver.c:15647 src/qemu/qemu_driver.c:15669
+#: src/qemu/qemu_driver.c:15719 src/qemu/qemu_driver.c:15741
+#: src/qemu/qemu_migration.c:2082 src/qemu/qemu_migration.c:4010
+#: src/uml/uml_driver.c:2561 src/xen/xen_driver.c:2614
+#: src/xen/xm_internal.c:675
 msgid "domain is not running"
 msgstr "el domini no s'està executant"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:5232
+#: src/conf/domain_conf.c:5245
 #, c-format
 msgid "Invalid floppy device name: %s"
 msgstr "Nom del dispositiu de disquet invàlid: %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:5248
+#: src/conf/domain_conf.c:5261
 #, c-format
 msgid "Invalid harddisk device name: %s"
 msgstr "Nom del dispositiu de disc dur invàlid: %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:5341
+#: src/conf/domain_conf.c:5354
 #, c-format
 msgid "Invalid bus type '%s' for floppy disk"
 msgstr "Tipus de bus '%s' no vàlid per al disquet"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:6512
+#: src/conf/domain_conf.c:6550
 msgid "Model name contains invalid characters"
 msgstr "El nom de model conté caràcters invàlids"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:7404
+#: src/conf/domain_conf.c:7443
 msgid "missing input device type"
 msgstr "falta el tipus de dispositiu d'entrada"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:7425
+#: src/conf/domain_conf.c:7464
 #, c-format
 msgid "ps2 bus does not support %s input device"
 msgstr "el bus ps2 no suporta el dispositiu d'entrada %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:7431 src/conf/domain_conf.c:7438
+#: src/conf/domain_conf.c:7470 src/conf/domain_conf.c:7477
 #, c-format
 msgid "unsupported input bus %s"
 msgstr "el bus d'entrada %s no està suportat"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:7443
+#: src/conf/domain_conf.c:7482
 #, c-format
 msgid "xen bus does not support %s input device"
 msgstr "el bus xen no disposa del dispositiu d'entrada %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:10275
+#: src/conf/domain_conf.c:10315
 msgid "unknown virt type"
 msgstr "tipus de virtualització desconeguda"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:10338
+#: src/conf/domain_conf.c:10378
 #, c-format
 msgid "unknown boot device '%s'"
 msgstr "el dispositiu d'arrencada '%s' és desconegut"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:10718
+#: src/conf/domain_conf.c:10758
 msgid "missing domain type attribute"
 msgstr "falta l'atribut del tipus de domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:10781 src/conf/network_conf.c:1926
+#: src/conf/domain_conf.c:10821 src/conf/network_conf.c:1941
 #: src/conf/secret_conf.c:190 src/openvz/openvz_conf.c:1076
 #: src/xenxs/xen_xm.c:216
 msgid "Failed to generate UUID"
@@ -5123,7 +5124,7 @@ msgstr "no s'ha pogut obtenir un UUID de xarxa"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:10788 src/conf/network_conf.c:1933
+#: src/conf/domain_conf.c:10828 src/conf/network_conf.c:1948
 #: src/conf/nwfilter_conf.c:2562 src/conf/secret_conf.c:196
 #: src/conf/storage_conf.c:889
 msgid "malformed uuid element"
@@ -5131,20 +5132,20 @@ msgstr "l'element uuid no és correcte"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:11525
+#: src/conf/domain_conf.c:11562
 msgid "no OS type"
 msgstr "tipus d'SO desconegut"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/domain_conf.c:16179
+#: src/conf/domain_conf.c:16243
 #, c-format
 msgid "unexpected domain type %d"
 msgstr "tipus de domini inesperat %d"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/conf/network_conf.c:2858 src/conf/network_conf.c:2945
+#: src/conf/network_conf.c:2882 src/conf/network_conf.c:2966
 #, c-format
 msgid "Network config filename '%s' does not match network name '%s'"
 msgstr ""
@@ -5179,13 +5180,13 @@ msgstr "S'ha esgotat el temps"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/libvirt.c:4744
+#: src/libvirt.c:4746
 msgid "domainMigratePrepare did not set uri"
 msgstr "el domainMigratePrepare no ha definit una uri"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/lxc/lxc_driver.c:926 src/libxl/libxl_driver.c:3247
+#: src/lxc/lxc_driver.c:926 src/libxl/libxl_driver.c:3301
 #: src/vmware/vmware_driver.c:687
 msgid "Domain is already running"
 msgstr "El domini ja s'està executant"
@@ -5198,7 +5199,7 @@ msgstr "per defecte"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/lxc/lxc_process.c:1352 src/libxl/libxl_driver.c:496
+#: src/lxc/lxc_process.c:1355 src/libxl/libxl_driver.c:544
 #: src/qemu/qemu_driver.c:291 src/uml/uml_driver.c:195
 #, c-format
 msgid "Failed to autostart VM '%s': %s"
@@ -5206,14 +5207,14 @@ msgstr "No s'ha pogut iniciar automàticament la VM '%s': %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/libxl/libxl_driver.c:2058 src/libxl/libxl_driver.c:2093
-#: src/libxl/libxl_driver.c:2218 src/libxl/libxl_driver.c:2268
-#: src/libxl/libxl_driver.c:2761 src/libxl/libxl_driver.c:2881
-#: src/libxl/libxl_driver.c:2941 src/libxl/libxl_driver.c:3009
-#: src/libxl/libxl_driver.c:3076 src/libxl/libxl_driver.c:3768
-#: src/libxl/libxl_driver.c:3876 src/libxl/libxl_driver.c:3984
-#: src/libxl/libxl_driver.c:4295 src/libxl/libxl_driver.c:4366
-#: src/libxl/libxl_driver.c:4451 src/libxl/libxl_driver.c:4549
+#: src/libxl/libxl_driver.c:2112 src/libxl/libxl_driver.c:2147
+#: src/libxl/libxl_driver.c:2272 src/libxl/libxl_driver.c:2322
+#: src/libxl/libxl_driver.c:2815 src/libxl/libxl_driver.c:2935
+#: src/libxl/libxl_driver.c:2995 src/libxl/libxl_driver.c:3063
+#: src/libxl/libxl_driver.c:3130 src/libxl/libxl_driver.c:3822
+#: src/libxl/libxl_driver.c:3930 src/libxl/libxl_driver.c:4038
+#: src/libxl/libxl_driver.c:4350 src/libxl/libxl_driver.c:4421
+#: src/libxl/libxl_driver.c:4506 src/libxl/libxl_driver.c:4691
 #: src/openvz/openvz_driver.c:273 src/openvz/openvz_driver.c:426
 #: src/openvz/openvz_driver.c:474 src/openvz/openvz_driver.c:548
 #: src/openvz/openvz_driver.c:592 src/openvz/openvz_driver.c:630
@@ -5237,13 +5238,13 @@ msgstr "no hi ha cap domini que concordi amb l'uuid"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/libxl/libxl_conf.c:704
+#: src/libxl/libxl_conf.c:915
 msgid "Unable to find an unused VNC port"
 msgstr "No es pot trobar un port VNC no utilitzat"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/network/bridge_driver.c:2650
+#: src/network/bridge_driver.c:1965
 msgid "network is already active"
 msgstr "la xarxa ja és activa"
 
@@ -5296,20 +5297,20 @@ msgstr "el domini no està en estat de tancament"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/qemu/qemu_agent.c:185 src/qemu/qemu_monitor.c:738
+#: src/qemu/qemu_agent.c:185 src/qemu/qemu_monitor.c:739
 msgid "Unable to put monitor into non-blocking mode"
 msgstr "No es pot posar el monitor en mode no blocant"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
 #: src/qemu/qemu_agent.c:192 src/qemu/qemu_agent.c:258
-#: src/qemu/qemu_monitor.c:733
+#: src/qemu/qemu_monitor.c:734
 msgid "Unable to set monitor close-on-exec flag"
 msgstr "No es pot definir l'indicador de monitor close-on-exec"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/qemu/qemu_agent.c:252 src/qemu/qemu_monitor.c:321
+#: src/qemu/qemu_agent.c:252 src/qemu/qemu_monitor.c:322
 #, c-format
 msgid "Unable to open monitor path %s"
 msgstr "No es pot obrir el camí al monitor %s"
@@ -5323,7 +5324,7 @@ msgstr "El tipus de xarxa %d no està suportat"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/qemu/qemu_command.c:4653 src/qemu/qemu_command.c:8411
+#: src/qemu/qemu_command.c:5105 src/qemu/qemu_command.c:8924
 msgid "invalid sound model"
 msgstr "model de so invàlid"
 
@@ -5341,21 +5342,21 @@ msgstr "no hi ha cap domini que coincideixi amb l'id %d"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/qemu/qemu_process.c:3480 src/qemu/qemu_process.c:4342
+#: src/qemu/qemu_process.c:3505 src/qemu/qemu_process.c:4361
 #: src/uml/uml_driver.c:1036
 msgid "VM is already active"
 msgstr "La VM ja és activa"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/remote/remote_driver.c:3536
+#: src/remote/remote_driver.c:3537
 #, c-format
 msgid "unknown authentication type %s"
 msgstr "tipus d'autenticació desconegut: %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/remote/remote_driver.c:3584
+#: src/remote/remote_driver.c:3585
 #, c-format
 msgid "unsupported authentication type %d"
 msgstr "tipus d'autenticació %d no disponible"
@@ -5410,26 +5411,14 @@ msgstr "Es necessita autenticació"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/test/test_driver.c:906
-msgid "resolving domain filename"
-msgstr "s'està resolent el nom de fitxer del domini"
-
-# Translation source: /translations/libvirt.strings/ca.po from project
-# 'fedora'
-#: src/test/test_driver.c:955
-msgid "resolving network filename"
-msgstr "s'està resolent el nom de fitxer de la xarxa"
-
-# Translation source: /translations/libvirt.strings/ca.po from project
-# 'fedora'
-#: src/test/test_driver.c:1150
+#: src/test/test_driver.c:1207
 msgid "testOpen: supply a path or use test:///default"
 msgstr "testOpen: proporcioneu un camí o empreu test:///default"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/test/test_driver.c:1719 src/test/test_driver.c:2313
-#: src/test/test_driver.c:2841 src/test/test_driver.c:2897
+#: src/test/test_driver.c:1776 src/test/test_driver.c:2370
+#: src/test/test_driver.c:2898 src/test/test_driver.c:2954
 msgid "getting time of day"
 msgstr "obtenció de la data i hora"
 
@@ -5526,7 +5515,7 @@ msgstr "error intern"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: src/util/virerror.c:738 tools/virsh.c:675
+#: src/util/virerror.c:738 tools/virsh.c:676
 msgid "out of memory"
 msgstr "sense memòria"
 
@@ -6047,19 +6036,19 @@ msgstr "%s: %d: no s'ha pogut assignar %lu bytes"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:342
+#: tools/virsh.c:343
 msgid "failed to connect to the hypervisor"
 msgstr "no s'ha pogut connectar a l'hipervisor"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:361
+#: tools/virsh.c:362
 msgid "(re)connect to hypervisor"
 msgstr "torna a connectar a l'hipervisor"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:364
+#: tools/virsh.c:365
 msgid ""
 "Connect to local hypervisor. This is built-in command after shell start up."
 msgstr ""
@@ -6068,71 +6057,71 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:374
+#: tools/virsh.c:375
 msgid "hypervisor connection URI"
 msgstr "URI de la connexió de l'hipervisor"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:378
+#: tools/virsh.c:379
 msgid "read-only connection"
 msgstr "connexió només de lectura"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:416
+#: tools/virsh.c:417
 msgid "Failed to connect to the hypervisor"
 msgstr "No s'ha pogut connectar a l'hipervisor"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:522
+#: tools/virsh.c:523
 msgid "print help"
 msgstr "escriu l'ajuda"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:956
+#: tools/virsh.c:957
 msgid "quit this interactive terminal"
 msgstr "surt d'aquest terminal interactiu"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1078
+#: tools/virsh.c:1079
 #, c-format
 msgid "command '%s' doesn't support option --%s"
 msgstr "l'ordre '%s' no reconeix l'opció --%s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1123
+#: tools/virsh.c:1124
 #, c-format
 msgid "command '%s' requires <%s> option"
 msgstr "l'ordre '%s' requereix l'opció <%s>"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1124
+#: tools/virsh.c:1125
 #, c-format
 msgid "command '%s' requires --%s option"
 msgstr "l'ordre '%s' requereix l'opció --%s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1190
+#: tools/virsh.c:1191
 #, c-format
 msgid "command '%s' doesn't exist"
 msgstr "l'ordre '%s' no existeix"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1207
+#: tools/virsh.c:1208
 msgid "  NAME\n"
 msgstr "  NOM\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1210
+#: tools/virsh.c:1211
 msgid ""
 "\n"
 "  SYNOPSIS\n"
@@ -6142,7 +6131,7 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1261
+#: tools/virsh.c:1262
 msgid ""
 "\n"
 "  DESCRIPTION\n"
@@ -6152,7 +6141,7 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1267
+#: tools/virsh.c:1268
 msgid ""
 "\n"
 "  OPTIONS\n"
@@ -6162,27 +6151,27 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1276
+#: tools/virsh.c:1277
 #, c-format
 msgid "--%s <number>"
 msgstr "--%s <nombre>"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1280
+#: tools/virsh.c:1281
 #, c-format
 msgid "--%s <string>"
 msgstr "--%s <cadena>"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1718
+#: tools/virsh.c:1719
 msgid "no valid connection"
 msgstr "connexió invàlida"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1783
+#: tools/virsh.c:1784
 #, c-format
 msgid ""
 "\n"
@@ -6195,70 +6184,70 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1854
+#: tools/virsh.c:1855
 #, c-format
 msgid "unknown command: '%s'"
 msgstr "ordre desconeguda: '%s'"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1896
+#: tools/virsh.c:1897
 #, c-format
 msgid "expected syntax: --%s <%s>"
 msgstr "sintaxi inesperada: --%s <%s>"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1899
+#: tools/virsh.c:1900
 msgid "number"
 msgstr "nombre"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1899
+#: tools/virsh.c:1900
 msgid "string"
 msgstr "cadena"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:1923
+#: tools/virsh.c:1924
 #, c-format
 msgid "unexpected data '%s'"
 msgstr "dades inesperades '%s'"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2094
+#: tools/virsh.c:2095
 msgid "missing \""
 msgstr "manca \""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2261
+#: tools/virsh.c:2262
 msgid "error: "
 msgstr "errror: "
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2380
+#: tools/virsh.c:2391
 msgid "failed to get the log file information"
 msgstr "no es pot obtenir la informació del fitxer de registre"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2385
+#: tools/virsh.c:2396
 msgid "the log path is not a file"
 msgstr "el camí al registre no és un fitxer"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2393
+#: tools/virsh.c:2404
 msgid "failed to open the log file. check the log file path"
 msgstr "no s'ha pogut obrir el fitxer de registre, comproveu el camí al fitxer"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2475
+#: tools/virsh.c:2487
 msgid "failed to write the log file"
 msgstr "no s'ha pogut escriure el fitxer de registre"
 
@@ -6272,7 +6261,7 @@ msgstr "Ha fallat la creació de '%s': %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:2814
+#: tools/virsh.c:2826
 msgid ""
 "\n"
 "  (specify help <command> for details about the command)\n"
@@ -6283,14 +6272,14 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:3062
+#: tools/virsh.c:3077
 #, c-format
 msgid "unsupported option '-%c'. See --help."
 msgstr "l'opció '-%c' no està disponible. Veieu --help."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:3210
+#: tools/virsh.c:3223
 #, c-format
 msgid ""
 "Welcome to %s, the virtualization interactive terminal.\n"
@@ -6301,7 +6290,7 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh.c:3213
+#: tools/virsh.c:3226
 msgid ""
 "Type:  'help' for help with commands\n"
 "       'quit' to quit\n"
@@ -6314,7 +6303,7 @@ msgstr ""
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
 #: tools/virsh-domain-monitor.c:145 tools/virsh-domain.c:123
-#: tools/virsh-pool.c:1101 tools/virsh-pool.c:1534
+#: tools/virsh-pool.c:1100 tools/virsh-pool.c:1533
 msgid "running"
 msgstr "s'està executant"
 
@@ -6359,40 +6348,40 @@ msgstr "cap estat"
 #: tools/virsh-domain.c:168 tools/virsh-domain.c:270 tools/virsh-domain.c:711
 #: tools/virsh-domain.c:965 tools/virsh-domain.c:1021
 #: tools/virsh-domain.c:1245 tools/virsh-domain.c:1508
-#: tools/virsh-domain.c:1683 tools/virsh-domain.c:1885
-#: tools/virsh-domain.c:1983 tools/virsh-domain.c:2149
-#: tools/virsh-domain.c:2219 tools/virsh-domain.c:2316
-#: tools/virsh-domain.c:2510 tools/virsh-domain.c:2697
-#: tools/virsh-domain.c:2743 tools/virsh-domain.c:2827
-#: tools/virsh-domain.c:3419 tools/virsh-domain.c:3864
-#: tools/virsh-domain.c:3984 tools/virsh-domain.c:4043
-#: tools/virsh-domain.c:4386 tools/virsh-domain.c:4516
-#: tools/virsh-domain.c:4663 tools/virsh-domain.c:4706
-#: tools/virsh-domain.c:4792 tools/virsh-domain.c:4873
-#: tools/virsh-domain.c:4916 tools/virsh-domain.c:5128
-#: tools/virsh-domain.c:5204 tools/virsh-domain.c:5414
-#: tools/virsh-domain.c:5523 tools/virsh-domain.c:5810
-#: tools/virsh-domain.c:5929 tools/virsh-domain.c:6258
-#: tools/virsh-domain.c:6585 tools/virsh-domain.c:6642
-#: tools/virsh-domain.c:6816 tools/virsh-domain.c:6854
-#: tools/virsh-domain.c:6956 tools/virsh-domain.c:7071
-#: tools/virsh-domain.c:7168 tools/virsh-domain.c:7270
-#: tools/virsh-domain.c:7469 tools/virsh-domain.c:7616
-#: tools/virsh-domain.c:7766 tools/virsh-domain.c:7892
-#: tools/virsh-domain.c:8022 tools/virsh-domain.c:8390
-#: tools/virsh-domain.c:8657 tools/virsh-domain.c:8711
-#: tools/virsh-domain.c:8773 tools/virsh-domain.c:8825
-#: tools/virsh-domain.c:8869 tools/virsh-domain.c:9047
-#: tools/virsh-domain.c:9120 tools/virsh-domain.c:9180
-#: tools/virsh-domain.c:9343 tools/virsh-domain.c:9444
-#: tools/virsh-domain.c:9546 tools/virsh-domain.c:9947
-#: tools/virsh-domain.c:10057 tools/virsh-domain.c:10117
-#: tools/virsh-domain.c:10268 tools/virsh-snapshot.c:128
-#: tools/virsh-snapshot.c:337 tools/virsh-snapshot.c:529
-#: tools/virsh-snapshot.c:651 tools/virsh-snapshot.c:887
-#: tools/virsh-snapshot.c:1444 tools/virsh-snapshot.c:1708
-#: tools/virsh-snapshot.c:1776 tools/virsh-snapshot.c:1844
-#: tools/virsh-snapshot.c:1937
+#: tools/virsh-domain.c:1683 tools/virsh-domain.c:1889
+#: tools/virsh-domain.c:1987 tools/virsh-domain.c:2153
+#: tools/virsh-domain.c:2223 tools/virsh-domain.c:2320
+#: tools/virsh-domain.c:2514 tools/virsh-domain.c:2701
+#: tools/virsh-domain.c:2747 tools/virsh-domain.c:2831
+#: tools/virsh-domain.c:3425 tools/virsh-domain.c:3870
+#: tools/virsh-domain.c:3990 tools/virsh-domain.c:4049
+#: tools/virsh-domain.c:4392 tools/virsh-domain.c:4522
+#: tools/virsh-domain.c:4669 tools/virsh-domain.c:4712
+#: tools/virsh-domain.c:4798 tools/virsh-domain.c:4879
+#: tools/virsh-domain.c:4922 tools/virsh-domain.c:5134
+#: tools/virsh-domain.c:5210 tools/virsh-domain.c:5420
+#: tools/virsh-domain.c:5529 tools/virsh-domain.c:5816
+#: tools/virsh-domain.c:5935 tools/virsh-domain.c:6272
+#: tools/virsh-domain.c:6603 tools/virsh-domain.c:6660
+#: tools/virsh-domain.c:6834 tools/virsh-domain.c:6872
+#: tools/virsh-domain.c:6974 tools/virsh-domain.c:7089
+#: tools/virsh-domain.c:7186 tools/virsh-domain.c:7288
+#: tools/virsh-domain.c:7487 tools/virsh-domain.c:7634
+#: tools/virsh-domain.c:7784 tools/virsh-domain.c:7913
+#: tools/virsh-domain.c:8051 tools/virsh-domain.c:8419
+#: tools/virsh-domain.c:8686 tools/virsh-domain.c:8740
+#: tools/virsh-domain.c:8802 tools/virsh-domain.c:8854
+#: tools/virsh-domain.c:8898 tools/virsh-domain.c:9076
+#: tools/virsh-domain.c:9149 tools/virsh-domain.c:9209
+#: tools/virsh-domain.c:9372 tools/virsh-domain.c:9473
+#: tools/virsh-domain.c:9575 tools/virsh-domain.c:9976
+#: tools/virsh-domain.c:10086 tools/virsh-domain.c:10146
+#: tools/virsh-domain.c:10297 tools/virsh-snapshot.c:128
+#: tools/virsh-snapshot.c:331 tools/virsh-snapshot.c:523
+#: tools/virsh-snapshot.c:645 tools/virsh-snapshot.c:881
+#: tools/virsh-snapshot.c:1438 tools/virsh-snapshot.c:1702
+#: tools/virsh-snapshot.c:1770 tools/virsh-snapshot.c:1838
+#: tools/virsh-snapshot.c:1931
 msgid "domain name, id or uuid"
 msgstr "nom de domini, id o uuid"
 
@@ -6462,8 +6451,8 @@ msgstr "Id:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain-monitor.c:1231 tools/virsh-pool.c:1515
-#: tools/virsh-snapshot.c:926 tools/virsh-volume.c:973
+#: tools/virsh-domain-monitor.c:1231 tools/virsh-pool.c:1514
+#: tools/virsh-snapshot.c:920 tools/virsh-volume.c:973
 msgid "Name:"
 msgstr "Nom:"
 
@@ -6475,10 +6464,10 @@ msgstr "Tipus SO:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain-monitor.c:1242 tools/virsh-domain.c:5454
-#: tools/virsh-domain.c:5483 tools/virsh-pool.c:1525 tools/virsh-pool.c:1529
-#: tools/virsh-pool.c:1533 tools/virsh-pool.c:1537 tools/virsh-pool.c:1541
-#: tools/virsh-snapshot.c:962
+#: tools/virsh-domain-monitor.c:1242 tools/virsh-domain.c:5460
+#: tools/virsh-domain.c:5489 tools/virsh-pool.c:1524 tools/virsh-pool.c:1528
+#: tools/virsh-pool.c:1532 tools/virsh-pool.c:1536 tools/virsh-pool.c:1540
+#: tools/virsh-snapshot.c:956
 msgid "State:"
 msgstr "Estat:"
 
@@ -6490,7 +6479,7 @@ msgstr "Quantitat de CPU:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain-monitor.c:1252 tools/virsh-domain.c:5461
+#: tools/virsh-domain-monitor.c:1252 tools/virsh-domain.c:5467
 msgid "CPU time:"
 msgstr "Temps de CPU:"
 
@@ -6564,8 +6553,8 @@ msgstr "Id"
 # 'fedora'
 #: tools/virsh-domain-monitor.c:1817 tools/virsh-domain-monitor.c:1822
 #: tools/virsh-interface.c:363 tools/virsh-network.c:692
-#: tools/virsh-pool.c:1195 tools/virsh-pool.c:1221 tools/virsh-pool.c:1285
-#: tools/virsh-snapshot.c:1601 tools/virsh-snapshot.c:1605
+#: tools/virsh-pool.c:1194 tools/virsh-pool.c:1220 tools/virsh-pool.c:1283
+#: tools/virsh-snapshot.c:1595 tools/virsh-snapshot.c:1599
 msgid "State"
 msgstr "Estat"
 
@@ -6596,8 +6585,8 @@ msgstr "Adjunta un dispositiu des d'un fitxer XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:173 tools/virsh-domain.c:9348
-#: tools/virsh-domain.c:9449
+#: tools/virsh-domain.c:173 tools/virsh-domain.c:9377
+#: tools/virsh-domain.c:9478
 msgid "XML file"
 msgstr "Fitxer XML"
 
@@ -6628,7 +6617,7 @@ msgstr "font del dispositiu de disc"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:280 tools/virsh-domain.c:9952
+#: tools/virsh-domain.c:280 tools/virsh-domain.c:9981
 msgid "target of disk device"
 msgstr "destí del dispositiu de disc"
 
@@ -6670,7 +6659,7 @@ msgstr "Adjunta una nova interfície de xarxa."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:716 tools/virsh-domain.c:9551
+#: tools/virsh-domain.c:716 tools/virsh-domain.c:9580
 msgid "network interface type"
 msgstr "tipus d'interfície de xarxa"
 
@@ -6740,496 +6729,496 @@ msgstr "S'ha desmarcat el domini %s com a autoiniciat\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2207
+#: tools/virsh-domain.c:2211
 msgid "connect to the guest console"
 msgstr "connecta a la consola de l'allotjat"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2210
+#: tools/virsh-domain.c:2214
 msgid "Connect the virtual serial console for the guest"
 msgstr "Connecta a la consola sèrie virtual per a l'allotjat"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2465 tools/virsh-domain.c:9680
-#: tools/virsh-domain.c:9839 tools/virsh-secret.c:219 tools/virsh-secret.c:283
+#: tools/virsh-domain.c:2469 tools/virsh-domain.c:9709
+#: tools/virsh-domain.c:9868 tools/virsh-secret.c:220 tools/virsh-secret.c:284
 msgid "Failed to allocate memory"
 msgstr "No s'ha pogut assignar memòria"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2470 tools/virsh-domain.c:9685
-#: tools/virsh-domain.c:9904
+#: tools/virsh-domain.c:2474 tools/virsh-domain.c:9714
+#: tools/virsh-domain.c:9933
 msgid "Failed to create XML"
 msgstr "No s'ha pogut crear l'XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2685
+#: tools/virsh-domain.c:2689
 msgid "suspend a domain"
 msgstr "suspèn un domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2688
+#: tools/virsh-domain.c:2692
 msgid "Suspend a running domain."
 msgstr "Suspèn un domini en execució."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2713
+#: tools/virsh-domain.c:2717
 #, c-format
 msgid "Domain %s suspended\n"
 msgstr "S'ha suspès el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2715
+#: tools/virsh-domain.c:2719
 #, c-format
 msgid "Failed to suspend domain %s"
 msgstr "No s'ha pogut suspendre el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:2876 tools/virsh-domain.c:8244
+#: tools/virsh-domain.c:2880 tools/virsh-domain.c:8273
 msgid "domain name or uuid"
 msgstr "nom de domini o uuid"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3156
+#: tools/virsh-domain.c:3160
 #, c-format
 msgid "Domain %s has been undefined\n"
 msgstr "S'ha indefinit el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3159
+#: tools/virsh-domain.c:3163
 #, c-format
 msgid "Failed to undefine domain %s"
 msgstr "No s'ha definit el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3221
+#: tools/virsh-domain.c:3227
 msgid "start a (previously defined) inactive domain"
 msgstr "inicia un domini inactiu definit prèviament"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3235
+#: tools/virsh-domain.c:3241
 msgid "name of the inactive domain"
 msgstr "nom del domini inactiu"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3332
+#: tools/virsh-domain.c:3338
 msgid "Domain is already active"
 msgstr "El domini ja és actiu"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3378
+#: tools/virsh-domain.c:3384
 #, c-format
 msgid "Failed to start domain %s"
 msgstr "No s'ha pogut iniciar el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3383
+#: tools/virsh-domain.c:3389
 #, c-format
 msgid "Domain %s started\n"
 msgstr "S'ha iniciat el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3403
+#: tools/virsh-domain.c:3409
 msgid "save a domain state to a file"
 msgstr "desa un estat de domini a un fitxer"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3424
+#: tools/virsh-domain.c:3430
 msgid "where to save the data"
 msgstr "on desar les dades"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:3490
+#: tools/virsh-domain.c:3496
 #, c-format
 msgid "Failed to save domain %s to %s"
 msgstr "No s'ha pogut desar el domini %s a %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4031
+#: tools/virsh-domain.c:4037
 msgid "show/set scheduler parameters"
 msgstr "mostra/estableix els paràmetres del planificador"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4034
+#: tools/virsh-domain.c:4040
 msgid "Show/Set scheduler parameters."
 msgstr "Mostra/amaga els paràmetres del planificador"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4200 tools/virsh-domain.c:4203
+#: tools/virsh-domain.c:4206 tools/virsh-domain.c:4209
 msgid "Scheduler"
 msgstr "Planificador"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4279
+#: tools/virsh-domain.c:4285
 msgid "restore a domain from a saved state in a file"
 msgstr "restaura un domini des d'un estat desat en un fitxer"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4282
+#: tools/virsh-domain.c:4288
 msgid "Restore a domain."
 msgstr "Restaura un domini."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4291
+#: tools/virsh-domain.c:4297
 msgid "the state to restore"
 msgstr "l'estat a restaurar"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4341
+#: tools/virsh-domain.c:4347
 #, c-format
 msgid "Failed to restore domain from %s"
 msgstr "No s'ha pogut restaurar un domini des de %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4345
+#: tools/virsh-domain.c:4351
 #, c-format
 msgid "Domain restored from %s\n"
 msgstr "S'ha restaurat un domini des de %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4358
+#: tools/virsh-domain.c:4364
 msgid "dump the core of a domain to a file for analysis"
 msgstr "bolca el nucli d'un domini a un fitxer per a analitzar-lo"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4361
+#: tools/virsh-domain.c:4367
 msgid "Core dump a domain."
 msgstr "Bolca el nucli d'un domini."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4391
+#: tools/virsh-domain.c:4397
 msgid "where to dump the core"
 msgstr "on bolcar el nucli"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4440
+#: tools/virsh-domain.c:4446
 #, c-format
 msgid "Failed to core dump domain %s to %s"
 msgstr "No s'ha pogut bolcar el domini %s a %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4651
+#: tools/virsh-domain.c:4657
 msgid "resume a domain"
 msgstr "recupera un domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4654
+#: tools/virsh-domain.c:4660
 msgid "Resume a previously suspended domain."
 msgstr "Recupera un domini suspès anteriorment."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4679
+#: tools/virsh-domain.c:4685
 #, c-format
 msgid "Domain %s resumed\n"
 msgstr "S'ha recuperat el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4681
+#: tools/virsh-domain.c:4687
 #, c-format
 msgid "Failed to resume domain %s"
 msgstr "No s'ha pogut recuperar el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4694
+#: tools/virsh-domain.c:4700
 msgid "gracefully shutdown a domain"
 msgstr "apaga un domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4697
+#: tools/virsh-domain.c:4703
 msgid "Run shutdown in the target domain."
 msgstr "Executa l'apagada en el domini destí."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4761
+#: tools/virsh-domain.c:4767
 #, c-format
 msgid "Domain %s is being shutdown\n"
 msgstr "S'està apagant el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4763
+#: tools/virsh-domain.c:4769
 #, c-format
 msgid "Failed to shutdown domain %s"
 msgstr "No s'ha pogut apagar el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4780
+#: tools/virsh-domain.c:4786
 msgid "reboot a domain"
 msgstr "reiniciar un domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4783
+#: tools/virsh-domain.c:4789
 msgid "Run a reboot command in the target domain."
 msgstr "Executeu una ordre de reinici en el domini destí."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4842
+#: tools/virsh-domain.c:4848
 #, c-format
 msgid "Domain %s is being rebooted\n"
 msgstr "S'està reiniciant el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:4844
+#: tools/virsh-domain.c:4850
 #, c-format
 msgid "Failed to reboot domain %s"
 msgstr "No s'ha pogut reiniciar el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5405
+#: tools/virsh-domain.c:5411
 msgid "Returns basic information about the domain virtual CPUs."
 msgstr "Retorna informació bàsica quant a les CPU virtuals del domini."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5452 tools/virsh-domain.c:5481
-#: tools/virsh-domain.c:5756
+#: tools/virsh-domain.c:5458 tools/virsh-domain.c:5487
+#: tools/virsh-domain.c:5762
 msgid "VCPU:"
 msgstr "VCPU:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5453 tools/virsh-domain.c:5482
+#: tools/virsh-domain.c:5459 tools/virsh-domain.c:5488
 msgid "CPU:"
 msgstr "CPU:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5463 tools/virsh-domain.c:5485
+#: tools/virsh-domain.c:5469 tools/virsh-domain.c:5491
 msgid "CPU Affinity:"
 msgstr "Afinitat de la CPU:"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5514
+#: tools/virsh-domain.c:5520
 msgid "Pin domain VCPUs to host physical CPUs."
 msgstr "Associa les VCPU del domini a CPU físiques de l'amfitrió."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5527
+#: tools/virsh-domain.c:5533
 msgid "vcpu number"
 msgstr "números de vcpu"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5625 tools/virsh-domain.c:5650
+#: tools/virsh-domain.c:5631 tools/virsh-domain.c:5656
 #, c-format
 msgid "Physical CPU %d doesn't exist."
 msgstr "No existeix cap CPU física %d."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5917
+#: tools/virsh-domain.c:5923
 msgid "change number of virtual CPUs"
 msgstr "canvia el nombre de CPU virtuals"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:5934
+#: tools/virsh-domain.c:5940
 msgid "number of virtual CPUs"
 msgstr "nombre de CPU virtuals"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6433
+#: tools/virsh-domain.c:6451
 msgid "create a domain from an XML file"
 msgstr "crea un domini des d'un fitxer XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6436
+#: tools/virsh-domain.c:6454
 msgid "Create a domain."
 msgstr "Crea un domini."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6445 tools/virsh-domain.c:6535
+#: tools/virsh-domain.c:6463 tools/virsh-domain.c:6553
 msgid "file containing an XML domain description"
 msgstr "fitxer que conté una descripció de domini XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6503
+#: tools/virsh-domain.c:6521
 #, c-format
 msgid "Domain %s created from %s\n"
 msgstr "S'ha creat el domini %s des de %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6511
+#: tools/virsh-domain.c:6529
 #, c-format
 msgid "Failed to create domain from %s"
 msgstr "No s'ha pogut crear un domini des de %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6523
+#: tools/virsh-domain.c:6541
 msgid "define (but don't start) a domain from an XML file"
 msgstr "defineix (però no iniciïs) un domini des d'un fitxer XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6526
+#: tools/virsh-domain.c:6544
 msgid "Define a domain."
 msgstr "Defineix un domini."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6558
+#: tools/virsh-domain.c:6576
 #, c-format
 msgid "Domain %s defined from %s\n"
 msgstr "El domini %s s'ha definit des de %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6562
+#: tools/virsh-domain.c:6580
 #, c-format
 msgid "Failed to define domain from %s"
 msgstr "No s'ha pogut definir el domini des de %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6615
+#: tools/virsh-domain.c:6633
 #, c-format
 msgid "Domain %s destroyed\n"
 msgstr "S'ha destruït el domini %s\n"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:6617
+#: tools/virsh-domain.c:6635
 #, c-format
 msgid "Failed to destroy domain %s"
 msgstr "No s'ha destruït el domini %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:7059
+#: tools/virsh-domain.c:7077
 msgid "change memory allocation"
 msgstr "canvia l'assignació de memòria"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:7062
+#: tools/virsh-domain.c:7080
 msgid "Change the current memory allocation in the guest domain."
 msgstr "Canvia l'assignació de memòria actual en el domini convidat."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:7156
+#: tools/virsh-domain.c:7174
 msgid "change maximum memory limit"
 msgstr "canvia el límit de memòria màxima"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:7159
+#: tools/virsh-domain.c:7177
 msgid "Change the maximum memory allocation limit in the guest domain."
 msgstr "Canvia el límit d'assignació màxima de memòria en el domini convidat."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:7236 tools/virsh-domain.c:7241
+#: tools/virsh-domain.c:7254 tools/virsh-domain.c:7259
 msgid "Unable to change MaxMemorySize"
 msgstr "No es pot canviar MaxMemorySize"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8010
+#: tools/virsh-domain.c:8039
 msgid "domain information in XML"
 msgstr "informació de domini en XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8013
+#: tools/virsh-domain.c:8042
 msgid "Output the domain information as an XML dump to stdout."
 msgstr ""
 "Escriu la informació de domini com a bolcat XML per la sortida estàndard."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8196
+#: tools/virsh-domain.c:8225
 msgid "convert a domain id or UUID to domain name"
 msgstr "converteix un id de domini o UUID a nom de domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8208
+#: tools/virsh-domain.c:8237
 msgid "domain id or uuid"
 msgstr "id de domini o uuid"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8232
+#: tools/virsh-domain.c:8261
 msgid "convert a domain name or UUID to domain id"
 msgstr "converteix un nom de domini o UUID a id de domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8273
+#: tools/virsh-domain.c:8302
 msgid "convert a domain name or id to domain UUID"
 msgstr "converteix un nom de domini o id a UUID de domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8285
+#: tools/virsh-domain.c:8314
 msgid "domain id or name"
 msgstr "id de domini o nom"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8303
+#: tools/virsh-domain.c:8332
 msgid "failed to get domain UUID"
 msgstr "no s'ha pogut obtenir un UUID de domini"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8314
+#: tools/virsh-domain.c:8343
 msgid "migrate domain to another host"
 msgstr "migra el domini a un altre amfitrió"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8317
+#: tools/virsh-domain.c:8346
 msgid "Migrate domain to another host.  Add --live for live migration."
 msgstr ""
 "Migra els dominis a un altre amfitrió. Afegiu --live per a una migració "
@@ -7237,105 +7226,105 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8325
+#: tools/virsh-domain.c:8354
 msgid "live migration"
 msgstr "migració activa"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:8399
+#: tools/virsh-domain.c:8428
 msgid "migration URI, usually can be omitted"
 msgstr "URI de la migració, normalment se sol ometre"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9035
+#: tools/virsh-domain.c:9064
 msgid "vnc display"
 msgstr "visualització vnc"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9038
+#: tools/virsh-domain.c:9067
 msgid "Output the IP address and port number for the VNC display."
 msgstr "Escriu l'adreça IP i el número de port per a la visualització VNC."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9108
+#: tools/virsh-domain.c:9137
 msgid "tty console"
 msgstr "consola tty"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9111
+#: tools/virsh-domain.c:9140
 msgid "Output the device for the TTY console."
 msgstr "Escriu el dispositiu per la consola TTY."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9197 tools/virsh-host.c:589
+#: tools/virsh-domain.c:9226 tools/virsh-host.c:589
 msgid "failed to get hostname"
 msgstr "no s'ha pogut obtenir el nom de màquina"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9331
+#: tools/virsh-domain.c:9360
 msgid "detach device from an XML file"
 msgstr "desvincula un dispositiu d'un fitxer XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9334
+#: tools/virsh-domain.c:9363
 msgid "Detach device from an XML <file>"
 msgstr "desvincula un dispositiu d'un fitxer XML"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9414
+#: tools/virsh-domain.c:9443
 #, c-format
 msgid "Failed to detach device from %s"
 msgstr "No s'ha pogut desvincular el dispositiu de %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9534
+#: tools/virsh-domain.c:9563
 msgid "detach network interface"
 msgstr "desvincula la interfície de xarxa"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9537
+#: tools/virsh-domain.c:9566
 msgid "Detach network interface."
 msgstr "Desvincula la interfície de xarxa."
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9625
+#: tools/virsh-domain.c:9654
 msgid "Failed to get interface information"
 msgstr "No es pot obtenir informació de node"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9633
+#: tools/virsh-domain.c:9662
 #, c-format
 msgid "No found interface whose type is %s"
 msgstr "No s'ha trobat cap interfície de tipus %s"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9738 tools/virsh-domain.c:9747
+#: tools/virsh-domain.c:9767 tools/virsh-domain.c:9776
 msgid "Failed to get disk information"
 msgstr "No es pot obtenir informació de disc"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9935
+#: tools/virsh-domain.c:9964
 msgid "detach disk device"
 msgstr "desvincula un dispositiu de disc"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-domain.c:9938
+#: tools/virsh-domain.c:9967
 msgid "Detach disk device."
 msgstr "Desvincula un dispositiu de disc."
 
@@ -7495,14 +7484,14 @@ msgstr "S'està executant l'hipervisor: %s %d.%d.%d\n"
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
 #: tools/virsh-interface.c:372 tools/virsh-network.c:709
-#: tools/virsh-pool.c:1165
+#: tools/virsh-pool.c:1164
 msgid "active"
 msgstr "actiu"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
 #: tools/virsh-interface.c:372 tools/virsh-network.c:709
-#: tools/virsh-pool.c:1095 tools/virsh-pool.c:1167 tools/virsh-pool.c:1526
+#: tools/virsh-pool.c:1094 tools/virsh-pool.c:1166 tools/virsh-pool.c:1525
 msgid "inactive"
 msgstr "inactiu"
 
@@ -7649,8 +7638,8 @@ msgstr ""
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-network.c:386 tools/virsh-network.c:703 tools/virsh-pool.c:1056
-#: tools/virsh-pool.c:1557
+#: tools/virsh-network.c:386 tools/virsh-network.c:703 tools/virsh-pool.c:1055
+#: tools/virsh-pool.c:1556
 msgid "no autostart"
 msgstr "cap autoinici"
 
@@ -7692,8 +7681,8 @@ msgstr "llista les xarxes actives i inactives"
 
 # Translation source: /translations/libvirt.strings/ca.po from project
 # 'fedora'
-#: tools/virsh-network.c:693 tools/virsh-pool.c:1196 tools/virsh-pool.c:1226
-#: tools/virsh-pool.c:1285
+#: tools/virsh-network.c:693 tools/virsh-pool.c:1195 tools/virsh-pool.c:1225
+#: tools/virsh-pool.c:1283
 msgid "Autostart"
 msgstr "Autoinici"
 
@@ -28569,6 +28558,12 @@ msgstr "S'ha produït un error en iniciar el Gestor de màquines virtuals"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virt-manager:242
+msgid "virt-manager requires libvirt 0.6.0 or later."
+msgstr "virt-manager requereix libvirt 0.6.0 o superior."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virt-install:44
 msgid ""
 "An install method must be specified\n"
@@ -28883,6 +28878,12 @@ msgstr "La instal·lació sol·licitada no té XML step 2"
 #: ../virt-install:814
 msgid "Requested installation does not have XML step 3"
 msgstr "La instal·lació sol·licitada no té XML step 3"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virt-install:833
+msgid "Create a new virtual machine from specified install media."
+msgstr "Crea una nova màquina virtual des del suport d'instal·lació."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -29247,6 +29248,16 @@ msgstr "Què voleu utilitzar com a disc clonat (camí de fitxer) per a '%s'?"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virt-clone:133
+msgid ""
+"Duplicate a virtual machine, changing all unique configuration like MAC "
+"address, name, etc. The VM contents are not altered."
+msgstr ""
+"Duplica una màquina virtual, canviant tota la configuració única com les "
+"adreces MAC, el nom, etc. El contingut de la MV no es modifica."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virt-clone:139
 msgid "Name of the original guest; The status must be shut off or paused."
 msgstr "Nom de l'hoste original; El seu estat ha de ser aturat o en pausa"
@@ -29369,6 +29380,13 @@ msgstr "La imatge requereix %i interfície de xarxa."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virt-image:58
+msgid "Create a virtual machine from a virt-image(5) image descriptor."
+msgstr ""
+"Crea una màquina virtual a partir del descriptor d'imatge virt-image(5)."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virt-image:74
 msgid ""
 "The OS variant being installed, e.g. 'fedora6', 'rhel5', 'solaris10', 'win2k'"
@@ -29443,6 +29461,16 @@ msgstr "L'índex per a --boot ha d'estar entre 0 i %d"
 #, c-format
 msgid "Creating guest %s..."
 msgstr "S'està creant l'hoste %s..."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virt-convert:48
+msgid ""
+"Convert from virtual machine descriptor format to another. The VM contents "
+"are not altered."
+msgstr ""
+"Converteix d'un format de descriptor de màquina virtual a un altre. El "
+"contingut de la MV no es modifica."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -29801,6 +29829,12 @@ msgstr "Redirecció USB"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtManager/addhardware.py:1040 ../virtManager/details.py:3701
+msgid "TPM"
+msgstr "TPM"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtManager/addhardware.py:1132
 msgid "Te_mplate:"
 msgstr "_Plantilla:"
@@ -29878,6 +29912,13 @@ msgstr "Error de paràmetre d'emmagatzematge."
 #: ../virtManager/addhardware.py:1374 ../virtManager/create.py:1707
 msgid "Not Enough Free Space"
 msgstr "No hi ha prou espai al disc"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/addhardware.py:1382 ../virtManager/create.py:1716
+#, python-format
+msgid "Disk \"%s\" is already in use by other guests %s"
+msgstr "El disc \"%s\" ja s'està utilitzant per altres hostes %s"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -30002,6 +30043,18 @@ msgstr "Error de paràmetre de de dispositiu smartcard"
 #: ../virtManager/addhardware.py:1637
 msgid "USB redirected device parameter error"
 msgstr "Error de paràmetre de dispositiu redirigit a l´USB"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/addhardware.py:1657
+msgid "TPM device parameter error"
+msgstr "Error de paràmetre en el dispositiu TPM"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/asyncjob.py:240
+msgid "Cancel the job?"
+msgstr "Voleu cancel·lar la tasca?"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -30403,6 +30456,25 @@ msgstr "S´ha produït un error en obrir el camí del sòcol '%s'"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtManager/console.py:632
+msgid "USB redirection error"
+msgstr "S'ha produït un error en la redirecció USB"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#. The @format positional parameters are the following:
+#. 1 '%s' manufacturer
+#. 2 '%s' product
+#. 3 '%s' descriptor (a [vendor_id:product_id] string)
+#. 4 '%d' bus
+#. 5 '%d' address
+#: ../virtManager/console.py:645
+#, python-format
+msgid "%s %s %s at %d-%d"
+msgstr "%s %s %s a %d-%d"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtManager/console.py:757
 msgid "Leave fullscreen"
 msgstr "Surt de la pantalla completa"
@@ -30460,6 +30532,21 @@ msgstr "La consola gràfica no està configurada per a l'hoste"
 #, python-format
 msgid "Cannot display graphical console type '%s'"
 msgstr "No es pot mostrar el tipus de consola gràfica '%s'"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/console.py:1205
+#, python-format
+msgid ""
+"Guest is on a remote host with transport '%s'\n"
+"but is only configured to listen on 127.0.0.1.\n"
+"Connect using 'ssh' transport or change the\n"
+"guest's listen address."
+msgstr ""
+"L'hoste és a un amfitrió remot amb transport '%s'⏎\n"
+"però només està configurat per escoltar a 127.0.0.1.⏎\n"
+"Connecteu usant el transport 'ssh' o bé canvieu⏎\n"
+"l'adreça d'escolta de l'hoste."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -31280,6 +31367,18 @@ msgstr "S'ha produït un error en el paràmetre del volum"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtManager/delete.py:140
+msgid "Are you sure you want to delete the storage?"
+msgstr "Esteu segur que voleu eliminar l'emmagatzematge?"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/delete.py:142
+msgid "All selected storage will be deleted."
+msgstr "Tot l'emmagatzematge seleccionat s'esborrarà."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtManager/delete.py:150
 #, python-format
 msgid "Deleting virtual machine '%s'"
@@ -31381,6 +31480,19 @@ msgstr "%s:%s"
 #, python-format
 msgid "Redirected %s"
 msgstr "Redirigit %s"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/details.py:634
+msgid ""
+"Redirect USB device attached on host to virtual machine with SPICE graphics. "
+"USB Redirection device is required for Virtual Machine to support this "
+"functionality. Auto-redirection is enabled by default"
+msgstr ""
+"Redirigeix el dispositiu USB associat a l'amfitrió cap a la màquina virtual "
+"amb gràfics SPICE. Es requereix un dispositiu de redirecció USB en la "
+"màquina virtual per implementar aquesta funcionalitat. L'auto-redirecció "
+"està habilitada per defecte"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -31502,6 +31614,27 @@ msgstr "_Executa"
 #, python-format
 msgid "Error launching hardware dialog: %s"
 msgstr "S'ha produït un error en iniciar el diàleg de maquinari: %s"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/details.py:1619
+#, python-format
+msgid "Error taking screenshot: %s"
+msgstr "S'ha produït un error en la captura de pantalla: %s"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/details.py:1627
+msgid "Error initializing spice USB device widget"
+msgstr ""
+"S'ha produït un error en la inicialització del giny per a dispositius USB "
+"del spice."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/details.py:1631
+msgid "Select USB devices for redirection"
+msgstr "Seleccioneu dispositius USB per a la redirecció"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -31800,6 +31933,21 @@ msgstr "Sistema de fitxers %s"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtManager/domain.py:259
+#, python-format
+msgid ""
+"There is more than one '%s' device attached to your host, and we can't "
+"determine which one to use for your guest.\n"
+"To fix this, remove and reattach the USB device to your guest using the 'Add "
+"Hardware' wizard."
+msgstr ""
+"Hi ha diversos dispositius '%s' connectats al vostre amfitrió, i no es pot "
+"determinar quin s'ha d'utilitzar per a l'hoste.⏎\n"
+"Per arreglar això, traieu i torneu a inserir el dispositiu USB en l'hoste "
+"utilitzant l'assistent 'Afegeix maquinari'."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtManager/domain.py:373
 #, python-format
 msgid "Could not find specified device in the inactive VM configuration: %s"
@@ -31895,6 +32043,20 @@ msgstr ""
 "⏎\n"
 "Podeu afegir manualment una connexió d'hipervisor⏎\n"
 "via Fitxer->Afegeix connexió"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtManager/engine.py:204
+msgid ""
+"The 'libvirtd' service will need to be started.\n"
+"\n"
+"After that, virt-manager will connect to libvirt on\n"
+"the next application start up."
+msgstr ""
+"Caldrà iniciar el servei 'libvirtd'.⏎\n"
+"⏎\n"
+"Després d'això, virt-manager connectarà amb libvirt⏎\n"
+"en el següent inici de l'aplicació."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -32968,6 +33130,12 @@ msgstr "No es pot usar l'emmagatzematge local en una connexió remota."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtManager/systray.py:127
+msgid "_Show Virtual Machine Manager"
+msgstr "_Mostra el Gestor de màquines virtuals"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtManager/systray.py:154 ../ui/vmm-manager.ui.h:1
 msgid "Virtual Machine Manager"
 msgstr "Gestor de màquines virtuals"
@@ -33375,6 +33543,13 @@ msgstr ""
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtinst/cli.py:147
+msgid "See man page for examples and full option syntax."
+msgstr ""
+"Vegeu la pàgina man per obtenir exemples i sintaxi completa de les opcions."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtinst/cli.py:297
 msgid "Exiting at user request."
 msgstr "S'ha sortit a petició de l'usuari."
@@ -33461,6 +33636,13 @@ msgstr "Com de gran voleu que sigui el disc (%s) (en gigabytes)?"
 #, python-format
 msgid "This will overwrite the existing path '%s'"
 msgstr "Això sobreescriurà el camí existent '%s'"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtinst/cli.py:542
+#, python-format
+msgid "Disk %s is already in use by other guests %s."
+msgstr "El disc %s ja s'està utilitzant per altres hostes %s."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -33551,6 +33733,13 @@ msgstr "S'ha produït un error en els paràmetres del dispositiu gràfic: %s"
 #, python-format
 msgid "Error in smartcard device parameters: %s"
 msgstr "S'ha produït un error en els paràmetres del dispositiu smartcard: %s"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtinst/cli.py:884
+#, python-format
+msgid "Error in TPM device parameters: %s"
+msgstr "S'ha produït un error en els paràmetres del dispositiu TPM: %s"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -33712,6 +33901,16 @@ msgid ""
 msgstr ""
 "Configura un dispositiu memballoon d'hoste, p.e.:⏎\n"
 "--memballoon model=virtio"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtinst/cli.py:1027
+msgid ""
+"Configure a guest TPM device. Ex:\n"
+"--tpm type=passthrough"
+msgstr ""
+"Configura un dispositiu TPM d'hoste, p. e.⏎\n"
+"--tpm type=passthrough"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -35238,6 +35437,12 @@ msgstr ""
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtinst/VirtualCharDevice.py:161
+msgid "Host input path to attach to the guest."
+msgstr "Camí d'entrada de l'amfitrió a associar a l'hoste."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtinst/VirtualCharDevice.py:175
 msgid "Target connect/listen mode."
 msgstr "Mode de connexió/escolta del destí."
@@ -35253,6 +35458,12 @@ msgstr "Adreça on connectar/escoltar."
 #: ../virtinst/VirtualCharDevice.py:205
 msgid "Port on target host to connect/listen to."
 msgstr "Port de l'amfitrió destí on connectar/escoltar."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtinst/VirtualCharDevice.py:220
+msgid "Host addresss to bind to."
+msgstr "Adreça d'amfitrió on connectar."
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -35362,6 +35573,15 @@ msgstr ""
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtinst/VirtualDisk.py:665
+#, python-format
+msgid "Must specify storage creation parameters for non-existent path '%s'."
+msgstr ""
+"S'han d'especificar els paràmetres de la creació d'emmagatzematge per al "
+"camí inexistent '%s'."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtinst/VirtualDisk.py:672
 #, python-format
 msgid "The path '%s' must be a file or a device, not a directory"
@@ -35389,6 +35609,13 @@ msgstr "La destinació '%s' del sistema de fitxers ha de ser un camí absolut"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../virtinst/VirtualGraphics.py:37
+#, python-format
+msgid "%s must be above 5900, or -1 for auto allocation"
+msgstr "%s ha de ser superior a 5900, o bé -1 per a una assignació automàtica"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../virtinst/VirtualNetworkInterface.py:86
 msgid "Shared physical device"
 msgstr "Dispositiu físic compartit"
@@ -35405,6 +35632,12 @@ msgstr "Xarxa virtual"
 #, python-format
 msgid "The MAC address '%s' is in use by another virtual machine."
 msgstr "L'adreça MAC '%s' s'està utilitzant per una altra màquina virtual."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../virtinst/VirtualTPMDevice.py:44
+msgid "Passthrough device"
+msgstr "Dispositiu passthrough"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -35829,6 +36062,26 @@ msgstr "Si us plau indiqueu els paràmetres del dispositiu redirigit."
 #: ../ui/vmm-add-hardware.ui.h:63
 msgid "_Host:"
 msgstr "_Servidor:"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../ui/vmm-add-hardware.ui.h:64
+msgid "Please indicate what TPM device type to connect to the virtual machine."
+msgstr ""
+"Si us plau indiqueu el tipus de dispositiu TPM per connectar a la màquina "
+"virtual."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../ui/vmm-add-hardware.ui.h:65
+msgid "_Backend:"
+msgstr "_Backend:"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../ui/vmm-add-hardware.ui.h:66
+msgid "Device Path:"
+msgstr "Camí del dispositiu:"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -36554,6 +36807,19 @@ msgstr "fd00:100::1"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../ui/vmm-create-net.ui.h:44
+msgid ""
+"<b>Note:</b> The network could be chosen from one of the IPv6 private "
+"address ranges. eg FC00::/7.  In any case, the prefix must be <b>64</b>.\n"
+"A typical IPv6 network address will look something like:  fd00:dead:"
+"beef:55::/64"
+msgstr ""
+"<b>Nota:</b> Podeu triar la xarxa d'un dels intervals d'adreces privades "
+"IPv6, p. e. FC00::/7.  En qualsevol cas, el prefix ha de ser <b>64</b>.⏎\n"
+"Una adreça de xarxa IPv6 típica serà de l'estil: fd00:dead:beef:55::/64"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../ui/vmm-create-net.ui.h:46
 msgid "Enable DHCPv6"
 msgstr "Habilita DHCPv6"
@@ -37221,6 +37487,16 @@ msgstr "Confirmació d'esborrat"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../ui/vmm-delete.ui.h:2
+msgid ""
+"<small>This VM is currently running and will be forced off before being "
+"deleted</small>"
+msgstr ""
+"<small>Aquesta MV s'està executant en aquest moment i abans de ser eliminada "
+"se'n forçarà l'apagada</small>"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../ui/vmm-delete.ui.h:3
 msgid "Delete _associated storage files"
 msgstr "Esborra els fitxers d'emmagatzematge _associats"
@@ -37257,9 +37533,21 @@ msgstr "_Clona"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
+#: ../ui/vmm-details.ui.h:13
+msgid "_Delete..."
+msgstr "_Suprimeix..."
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
 #: ../ui/vmm-details.ui.h:14
 msgid "_Take Screenshot"
 msgstr "C_aptura de pantalla"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../ui/vmm-details.ui.h:15
+msgid "_Redirect USB device"
+msgstr "_Redirigeix dispositiu USB"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'
@@ -38168,6 +38456,18 @@ msgstr "foo:12"
 #: ../ui/vmm-details.ui.h:183
 msgid "<b>Redirected device</b>"
 msgstr "<b>Dispositiu redirigit</b>"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../ui/vmm-details.ui.h:184
+msgid "Device path:"
+msgstr "Camí del dispositiu:"
+
+# Translation source: /translations/virt-manager.virt-managerpot/ca.po from
+# project 'fedora'
+#: ../ui/vmm-details.ui.h:185
+msgid "<b>TPM Device</b>"
+msgstr "<b>Dispositiu TPM</b>"
 
 # Translation source: /translations/virt-manager.virt-managerpot/ca.po from
 # project 'fedora'

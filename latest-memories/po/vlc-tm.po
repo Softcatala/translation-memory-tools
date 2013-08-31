@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 22:58+0200\n"
+"POT-Creation-Date: 2013-08-31 09:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,6 +195,12 @@ msgstr "Voleu eliminar «%@» de forma permanent?"
 
 # Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
 # project 'VLC'
+#: UPGRADING_LIBRARY
+msgid "Upgrading Media Library"
+msgstr "Actualitza la biblioteca de medis"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
 #: OPEN_NETWORK
 msgid "Open Network Stream"
 msgstr "Obre un flux de xarxa"
@@ -319,6 +325,12 @@ msgstr "%i episodis, %i no llegit"
 #: LIBRARY_SINGLE_EPISODE
 msgid "%i Episode, %i unread"
 msgstr "%i episodi, %i no llegit"
+
+# Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
+# project 'VLC'
+#: LIBRARY_TRACK_N
+msgid "Track %i"
+msgstr "Pista %i"
 
 # Translation source: /translations/vlc-trans.ios-20/strings-ca.po from
 # project 'VLC'
@@ -4567,15 +4579,6 @@ msgstr ""
 #: src/libvlc-module.c:840
 msgid "HTTP/TLS Certificate Revocation List"
 msgstr "Llista de revocació de certificats HTTP/TLS"
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: src/libvlc-module.c:842
-msgid ""
-"This file contains an optional CRL to prevent remove clients from using "
-"revoked certificates in TLS sessions."
-msgstr ""
-"Aquest fitxer té un CRL opcional per prevenir l'eliminació de clients en "
-"utilitzar certificats revocats en sessions TLS."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:845

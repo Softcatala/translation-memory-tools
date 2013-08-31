@@ -3261,7 +3261,7 @@ msgstr ""
 "utilitzant l'ordre «ubuntu-bug ubuntu-release-upgrader-core» en un terminal."
 
 # Translation source: /ca.po from project 'ubuntu-release-upgrader'
-#: ../DistUpgrade/DistUpgradeController.py:1151
+#: ../DistUpgrade/DistUpgradeController.py:1161
 #, python-format
 msgid ""
 "\n"
@@ -3289,7 +3289,7 @@ msgstr ""
 "en un terminal."
 
 # Translation source: /ca.po from project 'ubuntu-release-upgrader'
-#: ../DistUpgrade/DistUpgradeQuirks.py:513
+#: ../DistUpgrade/DistUpgradeQuirks.py:514
 msgid ""
 "Running the 'unity' desktop environment is not fully supported by your "
 "graphics hardware. You will maybe end up in a very slow environment after "

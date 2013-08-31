@@ -6871,22 +6871,6 @@ Copyright (c) 2007-2010 Red Hat, Inc.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>resolving domain filename</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>s'està resolent el nom de fitxer del domini</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>resolving network filename</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>s'està resolent el nom de fitxer de la xarxa</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>testOpen: supply a path or use test:///default</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -32669,6 +32653,14 @@ ldap_access_filter = memberOf=cn=allowedusers,ou=Groups,dc=example,dc=com
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>virt-manager requires libvirt 0.6.0 or later.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>virt-manager requereix libvirt 0.6.0 o superior.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>An install method must be specified
 (%(methods)s)</seg>
       </tuv>
@@ -33017,6 +33009,14 @@ amb la consola per completar el procés d'instal·lació.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>La instal·lació sol·licitada no té XML step 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Create a new virtual machine from specified install media.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Crea una nova màquina virtual des del suport d'instal·lació.</seg>
       </tuv>
     </tu>
     <tu>
@@ -33447,6 +33447,14 @@ amb la consola per completar el procés d'instal·lació.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Duplicate a virtual machine, changing all unique configuration like MAC address, name, etc. The VM contents are not altered.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Duplica una màquina virtual, canviant tota la configuració única com les adreces MAC, el nom, etc. El contingut de la MV no es modifica.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Name of the original guest; The status must be shut off or paused.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -33575,6 +33583,14 @@ amb la consola per completar el procés d'instal·lació.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Create a virtual machine from a virt-image(5) image descriptor.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Crea una màquina virtual a partir del descriptor d'imatge virt-image(5).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>The OS variant being installed, e.g. 'fedora6', 'rhel5', 'solaris10', 'win2k'</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -33667,6 +33683,14 @@ amb la consola per completar el procés d'instal·lació.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>S'està creant l'hoste %s...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert from virtual machine descriptor format to another. The VM contents are not altered.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Converteix d'un format de descriptor de màquina virtual a un altre. El contingut de la MV no es modifica.</seg>
       </tuv>
     </tu>
     <tu>
@@ -34113,6 +34137,14 @@ amb la consola per completar el procés d'instal·lació.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>TPM</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>TPM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Te_mplate:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -34199,6 +34231,14 @@ Voleu reutilitzar aquest emmagatzematge?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha prou espai al disc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disk "%s" is already in use by other guests %s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El disc "%s" ja s'està utilitzant per altres hostes %s</seg>
       </tuv>
     </tu>
     <tu>
@@ -34359,6 +34399,22 @@ Voleu reutilitzar aquest emmagatzematge?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Error de paràmetre de dispositiu redirigit a l´USB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TPM device parameter error</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Error de paràmetre en el dispositiu TPM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cancel the job?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Voleu cancel·lar la tasca?</seg>
       </tuv>
     </tu>
     <tu>
@@ -34844,6 +34900,22 @@ Error de recuperació: %s</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>USB redirection error</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error en la redirecció USB</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>%s %s %s at %d-%d</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%s %s %s a %d-%d</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Leave fullscreen</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -34912,6 +34984,20 @@ Error de recuperació: %s</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>No es pot mostrar el tipus de consola gràfica '%s'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guest is on a remote host with transport '%s'
+but is only configured to listen on 127.0.0.1.
+Connect using 'ssh' transport or change the
+guest's listen address.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>L'hoste és a un amfitrió remot amb transport '%s'⏎
+però només està configurat per escoltar a 127.0.0.1.⏎
+Connecteu usant el transport 'ssh' o bé canvieu⏎
+l'adreça d'escolta de l'hoste.</seg>
       </tuv>
     </tu>
     <tu>
@@ -35908,6 +35994,22 @@ Amb la utilització d'aquestes es pot sobreescriure la configuració ja existent
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Are you sure you want to delete the storage?</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Esteu segur que voleu eliminar l'emmagatzematge?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All selected storage will be deleted.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tot l'emmagatzematge seleccionat s'esborrarà.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Deleting virtual machine '%s'</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -36028,6 +36130,14 @@ Amb la utilització d'aquestes es pot sobreescriure la configuració ja existent
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Redirigit %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Redirect USB device attached on host to virtual machine with SPICE graphics. USB Redirection device is required for Virtual Machine to support this functionality. Auto-redirection is enabled by default</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Redirigeix el dispositiu USB associat a l'amfitrió cap a la màquina virtual amb gràfics SPICE. Es requereix un dispositiu de redirecció USB en la màquina virtual per implementar aquesta funcionalitat. L'auto-redirecció està habilitada per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -36164,6 +36274,30 @@ Amb la utilització d'aquestes es pot sobreescriure la configuració ja existent
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en iniciar el diàleg de maquinari: %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Error taking screenshot: %s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error en la captura de pantalla: %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Error initializing spice USB device widget</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error en la inicialització del giny per a dispositius USB del spice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Select USB devices for redirection</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Seleccioneu dispositius USB per a la redirecció</seg>
       </tuv>
     </tu>
     <tu>
@@ -36528,6 +36662,16 @@ Amb la utilització d'aquestes es pot sobreescriure la configuració ja existent
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>There is more than one '%s' device attached to your host, and we can't determine which one to use for your guest.
+To fix this, remove and reattach the USB device to your guest using the 'Add Hardware' wizard.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Hi ha diversos dispositius '%s' connectats al vostre amfitrió, i no es pot determinar quin s'ha d'utilitzar per a l'hoste.⏎
+Per arreglar això, traieu i torneu a inserir el dispositiu USB en l'hoste utilitzant l'assistent 'Afegeix maquinari'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Could not find specified device in the inactive VM configuration: %s</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -36640,6 +36784,20 @@ i que libvirtd s'estigui executant.⏎
 ⏎
 Podeu afegir manualment una connexió d'hipervisor⏎
 via Fitxer-&gt;Afegeix connexió</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The 'libvirtd' service will need to be started.
+
+After that, virt-manager will connect to libvirt on
+the next application start up.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Caldrà iniciar el servei 'libvirtd'.⏎
+⏎
+Després d'això, virt-manager connectarà amb libvirt⏎
+en el següent inici de l'aplicació.</seg>
       </tuv>
     </tu>
     <tu>
@@ -37897,6 +38055,14 @@ mentre manteniu premudes les tecles desitjades.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>_Show Virtual Machine Manager</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>_Mostra el Gestor de màquines virtuals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Virtual Machine Manager</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -38363,6 +38529,14 @@ Avís: Els formats d'emmagatzematge qcow2 i qed no admeten assignacions plenes.<
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>See man page for examples and full option syntax.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Vegeu la pàgina man per obtenir exemples i sintaxi completa de les opcions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Exiting at user request.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -38461,6 +38635,14 @@ En altre cas, si us plau reinicieu la vostra instal·lació.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Això sobreescriurà el camí existent '%s'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disk %s is already in use by other guests %s.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El disc %s ja s'està utilitzant per altres hostes %s.</seg>
       </tuv>
     </tu>
     <tu>
@@ -38565,6 +38747,14 @@ En altre cas, si us plau reinicieu la vostra instal·lació.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en els paràmetres del dispositiu smartcard: %s</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Error in TPM device parameters: %s</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'ha produït un error en els paràmetres del dispositiu TPM: %s</seg>
       </tuv>
     </tu>
     <tu>
@@ -38753,6 +38943,16 @@ En altre cas, si us plau reinicieu la vostra instal·lació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Configura un dispositiu memballoon d'hoste, p.e.:⏎
 --memballoon model=virtio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Configure a guest TPM device. Ex:
+--tpm type=passthrough</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Configura un dispositiu TPM d'hoste, p. e.⏎
+--tpm type=passthrough</seg>
       </tuv>
     </tu>
     <tu>
@@ -40555,6 +40755,14 @@ La ubicació ha de ser el directori arrel d'un arbre d'instal·lació.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Host input path to attach to the guest.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Camí d'entrada de l'amfitrió a associar a l'hoste.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Target connect/listen mode.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -40575,6 +40783,14 @@ La ubicació ha de ser el directori arrel d'un arbre d'instal·lació.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Port de l'amfitrió destí on connectar/escoltar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Host addresss to bind to.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Adreça d'amfitrió on connectar.</seg>
       </tuv>
     </tu>
     <tu>
@@ -40707,6 +40923,14 @@ La ubicació ha de ser el directori arrel d'un arbre d'instal·lació.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Must specify storage creation parameters for non-existent path '%s'.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>S'han d'especificar els paràmetres de la creació d'emmagatzematge per al camí inexistent '%s'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>The path '%s' must be a file or a device, not a directory</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -40739,6 +40963,14 @@ La ubicació ha de ser el directori arrel d'un arbre d'instal·lació.</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>%s must be above 5900, or -1 for auto allocation</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>%s ha de ser superior a 5900, o bé -1 per a una assignació automàtica</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Shared physical device</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -40759,6 +40991,14 @@ La ubicació ha de ser el directori arrel d'un arbre d'instal·lació.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>L'adreça MAC '%s' s'està utilitzant per una altra màquina virtual.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Passthrough device</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Dispositiu passthrough</seg>
       </tuv>
     </tu>
     <tu>
@@ -41270,6 +41510,30 @@ access in the guest.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>_Servidor:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please indicate what TPM device type to connect to the virtual machine.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Si us plau indiqueu el tipus de dispositiu TPM per connectar a la màquina virtual.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>_Backend:</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>_Backend:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Device Path:</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Camí del dispositiu:</seg>
       </tuv>
     </tu>
     <tu>
@@ -42116,6 +42380,16 @@ utilitza la imatge de disc existent tant per a la màquina original com per a la
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>&lt;b&gt;Note:&lt;/b&gt; The network could be chosen from one of the IPv6 private address ranges. eg FC00::/7.  In any case, the prefix must be &lt;b&gt;64&lt;/b&gt;.
+A typical IPv6 network address will look something like:  fd00:dead:beef:55::/64</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;b&gt;Nota:&lt;/b&gt; Podeu triar la xarxa d'un dels intervals d'adreces privades IPv6, p. e. FC00::/7.  En qualsevol cas, el prefix ha de ser &lt;b&gt;64&lt;/b&gt;.⏎
+Una adreça de xarxa IPv6 típica serà de l'estil: fd00:dead:beef:55::/64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Enable DHCPv6</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -42944,6 +43218,14 @@ la creació d'arbres de directori.&lt;/small&gt;</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>&lt;small&gt;This VM is currently running and will be forced off before being deleted&lt;/small&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;small&gt;Aquesta MV s'està executant en aquest moment i abans de ser eliminada se'n forçarà l'apagada&lt;/small&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>Delete _associated storage files</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -42992,10 +43274,26 @@ la creació d'arbres de directori.&lt;/small&gt;</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>_Delete...</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>_Suprimeix...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>_Take Screenshot</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>C_aptura de pantalla</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>_Redirect USB device</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>_Redirigeix dispositiu USB</seg>
       </tuv>
     </tu>
     <tu>
@@ -44190,6 +44488,22 @@ xarxa:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Dispositiu redirigit&lt;/b&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Device path:</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Camí del dispositiu:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&lt;b&gt;TPM Device&lt;/b&gt;</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>&lt;b&gt;Dispositiu TPM&lt;/b&gt;</seg>
       </tuv>
     </tu>
     <tu>

@@ -4138,7 +4138,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>A new theme has been installed.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha instal·lat un nou tema.</seg>
+        <seg>S'ha instal·lat un tema nou.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7722,7 +7722,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Reset the value of a setting to the system defaults</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Reinicia el valor d'un paràmetre al predeterminat.</seg>
+        <seg>Reinicia el valor d'un paràmetre al valor per defecte del sistema</seg>
       </tuv>
     </tu>
     <tu>
@@ -7738,7 +7738,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>The name of the setting to reset to the system default value</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El nom del paràmetre a reiniciar al valor predeterminat del sistema.</seg>
+        <seg>El nom del paràmetre que es reiniciarà al valor per defecte del sistema</seg>
       </tuv>
     </tu>
     <tu>
@@ -9954,7 +9954,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Clear entries from the application cache</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Esborra les entrades de la memòria cau de l'aplicació</seg>
+        <seg>Esborra les entrades de la memòria cau d'aplicacions</seg>
       </tuv>
     </tu>
     <tu>
@@ -9962,7 +9962,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Clear one or more entries from the application cache</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Esborra una o més entrades de la memòria cau de l'aplicació</seg>
+        <seg>Esborra una o més entrades de la memòria cau d'aplicacions</seg>
       </tuv>
     </tu>
     <tu>
@@ -9978,7 +9978,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Display a list of application cache entries.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra una llista d'entrades de la memòria cau de l'aplicació.</seg>
+        <seg>Mostra una llista d'entrades de la memòria cau d'aplicacions.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9986,7 +9986,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Display a list of all application cache entries. If the search parameter is used then the table displays the entries containing the search term.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra una llista de totes les entrades de la memòria cau de l'aplicació. Si s'utilitza el paràmetre de cerca, la taula mostra les entrades que contenen el terme de la cerca.</seg>
+        <seg>Mostra una llista de totes les entrades de la memòria cau d'aplicacions. Si s'utilitza el paràmetre de cerca, la taula mostra les entrades que contenen el terme de la cerca.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10066,7 +10066,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Open a new tab containing the specified cache entry information.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre una nova pestanya que conté la informació de l'entrada de la memòria cau especificada.</seg>
+        <seg>Obre una pestanya nova que conté la informació de l'entrada de la memòria cau especificada.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10074,7 +10074,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Open a new tab containing the specified cache entry information.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre una nova pestanya que conté la informació de l'entrada de la memòria cau especificada.</seg>
+        <seg>Obre una pestanya nova que conté la informació de l'entrada de la memòria cau especificada.</seg>
       </tuv>
     </tu>
     <tu>
@@ -13420,7 +13420,7 @@ Feu clic per commutar les eines per a desenvolupadors.</seg>
         <seg>Enter a new keyword for "%S":</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Introduïu una nova paraula clau per a «%S»:</seg>
+        <seg>Introduïu una paraula clau nova per a «%S»:</seg>
       </tuv>
     </tu>
     <tu>
@@ -15350,7 +15350,7 @@ Ha estat verificat per %S</seg>
         <seg>Open in a &amp;New Window</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre e&amp;n una nova finestra</seg>
+        <seg>Obre e&amp;n una finestra nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -15358,7 +15358,7 @@ Ha estat verificat per %S</seg>
         <seg>Open in a Ne&amp;w Tab</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre en una nova pes&amp;tanya</seg>
+        <seg>Obre en una pes&amp;tanya nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -16206,7 +16206,7 @@ Ha estat verificat per %S</seg>
         <seg>System Defaults</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Paràmetres predeterminats del sistema</seg>
+        <seg>Paràmetres per defecte del sistema</seg>
       </tuv>
     </tu>
     <tu>
@@ -16358,7 +16358,7 @@ Ha estat verificat per %S</seg>
         <seg>Cached Web Content</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Contingut web de la memòria cau</seg>
+        <seg>Contingut web en memòria cau</seg>
       </tuv>
     </tu>
     <tu>
@@ -16366,7 +16366,7 @@ Ha estat verificat per %S</seg>
         <seg>Offline Web Content and User Data</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Contingut web fora de línia i dades de l'usuari</seg>
+        <seg>Contingut web i dades de l'usuari fora de línia</seg>
       </tuv>
     </tu>
     <tu>
@@ -16478,7 +16478,7 @@ Ha estat verificat per %S</seg>
         <seg>Use a &amp;background service to install updates</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>In&amp;stal·la les actualitzacions en un segon pla</seg>
+        <seg>In&amp;stal·la les actualitzacions en segon pla</seg>
       </tuv>
     </tu>
     <tu>
@@ -16502,7 +16502,7 @@ Ha estat verificat per %S</seg>
         <seg>&amp;Tell me when a website asks to store data for offline use</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Avisa'm quan un lloc web demani emmagatzemar dades per a un ús &amp;fora de línia</seg>
+        <seg>Avisa'm quan un lloc web demani emmagatzemar dades per utilitzar-les &amp;fora de línia</seg>
       </tuv>
     </tu>
     <tu>
@@ -16518,7 +16518,7 @@ Ha estat verificat per %S</seg>
         <seg>The following websites are allowed to store data for offline use:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Els llocs web següents permeten desar dades per utilitzar-les fora de línia:</seg>
+        <seg>Els llocs web següents poden desar dades per utilitzar-les fora de línia:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16542,7 +16542,7 @@ Ha estat verificat per %S</seg>
         <seg>Remove offline data</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Suprimeix les dades d'ús en fora de línia</seg>
+        <seg>Suprimeix les dades fora de línia</seg>
       </tuv>
     </tu>
     <tu>
@@ -16710,7 +16710,7 @@ Ha estat verificat per %S</seg>
         <seg>&amp;Allow pages to choose their own colors, instead of my selections above</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Permet a les pàgines triar els colors propis, en comptes dels predeterminats</seg>
+        <seg>&amp;Permet a les pàgines triar els seus propis colors, en lloc de la meva selecció</seg>
       </tuv>
     </tu>
     <tu>
@@ -17430,7 +17430,7 @@ Ha estat verificat per %S</seg>
         <seg>&amp;Allow pages to choose their own fonts, instead of my selections above</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>P&amp;ermet a les pàgines mostrar els tipus de lletra propis, en comptes dels predeterminats</seg>
+        <seg>P&amp;ermet a les pàgines triar els seus propis tipus de lletra, en lloc de la meva selecció</seg>
       </tuv>
     </tu>
     <tu>
@@ -18054,7 +18054,7 @@ Ha estat verificat per %S</seg>
         <seg>Remove offline website data</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Suprimeix les dades del lloc web per a l'ús fora de línia</seg>
+        <seg>Suprimeix les dades de llocs web fora de línia</seg>
       </tuv>
     </tu>
     <tu>
@@ -18070,7 +18070,7 @@ Ha estat verificat per %S</seg>
         <seg>The following websites are not allowed to store data for offline use:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No es permet als llocs web següents emmagatzemar dades per a un ús fora de línia:</seg>
+        <seg>No es permet als llocs web següents emmagatzemar dades per utilitzar-les fora de línia:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18094,7 +18094,7 @@ Ha estat verificat per %S</seg>
         <seg>Your application cache is currently using %1$S %2$S of disk space</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La memòria cau de l'aplicació utilitza actualment %1$S %2$S d'espai de disc</seg>
+        <seg>La memòria cau d'aplicacions actualment utilitza %1$S %2$S d'espai de disc</seg>
       </tuv>
     </tu>
     <tu>
@@ -18678,7 +18678,7 @@ Ha estat verificat per %S</seg>
         <seg>Open new windows in a new &amp;tab instead</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre les noves fines&amp;tres millor en pestanyes</seg>
+        <seg>Obre les fines&amp;tres noves millor en pestanyes</seg>
       </tuv>
     </tu>
     <tu>
@@ -18710,7 +18710,7 @@ Ha estat verificat per %S</seg>
         <seg>When I open a link in a new tab, &amp;switch to it immediately</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>En obrir un enllaç en una nova pe&amp;stanya, vés-hi immediatament</seg>
+        <seg>En obrir un enllaç en una pe&amp;stanya nova, vés-hi immediatament</seg>
       </tuv>
     </tu>
     <tu>
@@ -18798,7 +18798,7 @@ Ha estat verificat per %S</seg>
         <seg>Safe Mode is a special mode of &amp;brandShortName; that can be used to troubleshoot issues.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El Mode segur és un mode especial del &amp;brandShortName; que podeu utilitzar per a la resolució de problemes.</seg>
+        <seg>El mode segur és un mode especial del &amp;brandShortName; que podeu utilitzar per a la resolució de problemes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -18822,7 +18822,7 @@ Ha estat verificat per %S</seg>
         <seg>&amp;brandShortName; closed unexpectedly while starting. This might be caused by add-ons or other problems. You can try to resolve the problem by resetting &amp;brandShortName; to its default state or troubleshooting in Safe Mode.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El &amp;brandShortName; s'ha tancat de forma inesperada. Pot ser degut als complements o a altres problemes. Per intentar resoldre el problema, podeu reiniciar el &amp;brandShortName; a l'estat per defecte o podeu iniciar-lo en Mode segur.</seg>
+        <seg>El &amp;brandShortName; s'ha tancat de forma inesperada. Pot ser degut als complements o a altres problemes. Per intentar resoldre el problema, podeu reiniciar el &amp;brandShortName; a l'estat per defecte o podeu iniciar-lo en mode segur.</seg>
       </tuv>
     </tu>
     <tu>
@@ -18838,7 +18838,7 @@ Ha estat verificat per %S</seg>
         <seg>If you don't want this, you can continue in Safe Mode to do your own troubleshooting with your add-ons and custom settings temporarily disabled.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Si no voleu fer-ho, podeu continuar en Mode segur, amb el qual s'inhabilitaran temporalment els vostres complements i paràmetres personalitzats per tal que pugueu intentar resoldre el problema.</seg>
+        <seg>Si no voleu fer-ho, podeu continuar en mode segur, amb el qual s'inhabilitaran temporalment els vostres complements i paràmetres personalitzats per tal que pugueu intentar resoldre el problema.</seg>
       </tuv>
     </tu>
     <tu>
@@ -19430,7 +19430,7 @@ Ha estat verificat per %S</seg>
         <seg>Note: Changing this will erase all data stored on the Sync server and upload new data secured by this Recovery Key. Your other devices will not sync until the new Recovery Key is entered for that device.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Nota: si la canvieu es suprimiran totes les dades desades al servidor Sync i pujarà de nou totes les dades locals als servidor encriptant-les amb la nova clau de recuperació. Els demés dispositius no es sincronitzaran fins que introduïu la nova clau de recuperació als dispositius.</seg>
+        <seg>Nota: si la canvieu es suprimiran totes les dades desades al servidor Sync i pujarà de nou totes les dades locals als servidor encriptant-les amb la clau de recuperació nova. Els demés dispositius no es sincronitzaran fins que introduïu la clau de recuperació nova als dispositius.</seg>
       </tuv>
     </tu>
     <tu>
@@ -19462,7 +19462,7 @@ Ha estat verificat per %S</seg>
         <seg>Enter your new password</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Introduïu la nova contrasenya</seg>
+        <seg>Introduïu la contrasenya nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -19470,7 +19470,7 @@ Ha estat verificat per %S</seg>
         <seg>Confirm your new password</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Confirmeu la nova contrasenya</seg>
+        <seg>Confirmeu la contrasenya nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -19502,7 +19502,7 @@ Ha estat verificat per %S</seg>
         <seg>Your Recovery Key was changed using another device, please enter your updated Recovery Key.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La vostra clau de recuperació s'ha canviat des d'un altre dispositiu, introduïu la nova clau de recuperació.</seg>
+        <seg>La vostra clau de recuperació s'ha canviat des d'un altre dispositiu, introduïu la clau de recuperació actualitzada.</seg>
       </tuv>
     </tu>
     <tu>
@@ -19654,7 +19654,7 @@ Ha estat verificat per %S</seg>
         <seg>&amp;brandShortName; will now automatically sync in the background.  You can close this tab and continue using &amp;brandShortName;.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El &amp;brandShortName; s'actualitzarà automàticament en un segon pla.  Podeu tancar aquesta pestanya per continuar utilitzant el &amp;brandShortName;.</seg>
+        <seg>El &amp;brandShortName; s'actualitzarà automàticament en segon pla. Podeu tancar aquesta pestanya per continuar utilitzant el &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -20732,7 +20732,7 @@ Si no esperàveu aquesta sol·licitud, podria ser un intent d'explotar una vulne
         <seg>This page has a content security policy that prevents it from being embedded in this way.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Aquesta pàgina té una política de seguretat de continguts que impedeix que s'incrusti d'aquesta manera.</seg>
+        <seg>Aquesta pàgina té una política de seguretat del contingut que impedeix que s'incrusti d'aquesta manera.</seg>
       </tuv>
     </tu>
     <tu>
@@ -21229,7 +21229,7 @@ que el &amp;brandShortName; tingui permís per accedir al web.&lt;/li&gt;
         <seg>Blocked by Content Security Policy</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Blocat per la política de seguretat de continguts</seg>
+        <seg>Blocat per la política de seguretat del contingut</seg>
       </tuv>
     </tu>
     <tu>
@@ -21237,7 +21237,7 @@ que el &amp;brandShortName; tingui permís per accedir al web.&lt;/li&gt;
         <seg>&lt;p&gt;&amp;brandShortName; prevented this page from loading in this way because the page has a content security policy that disallows it.&lt;/p&gt;</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&lt;p&gt;El &amp;brandShortName; ha impedit que la pàgina es carregui d'aquesta manera perquè té una política de seguretat de continguts que no ho permet.&lt;/p&gt;</seg>
+        <seg>&lt;p&gt;El &amp;brandShortName; ha impedit que la pàgina es carregui d'aquesta manera perquè la pàgina té una política de seguretat del contingut que no ho permet.&lt;/p&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -21431,7 +21431,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>The Maintenance Service will allow you to update $BrandShortName silently in the background.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El servei de manteniment us permetrà actualitzar el $BrandShortName silenciosament en un segon pla.</seg>
+        <seg>El servei de manteniment us permetrà actualitzar el $BrandShortName silenciosament en segon pla.</seg>
       </tuv>
     </tu>
     <tu>
@@ -28698,7 +28698,7 @@ a partir del %2$S.</seg>
         <seg>The calendar data in your profile was updated by a newer version of %1$S, and continuing will probably cause the information to be lost or corrupted. %1$S will now be disabled and %2$S restarted.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les dades de calendari en el vostre perfil s'han actualitzat a una nova versió del %1$S, i si continueu, segurament la informació es perdrà o es farà malbé. Ara s'inhabilitarà el %1$S i el %2$S es tornarà a iniciar.</seg>
+        <seg>Les dades de calendari en el vostre perfil s'han actualitzat a una versió nova del %1$S, i si continueu, segurament la informació es perdrà o es farà malbé. Ara s'inhabilitarà el %1$S i el %2$S es tornarà a iniciar.</seg>
       </tuv>
     </tu>
     <tu>
@@ -28706,7 +28706,7 @@ a partir del %2$S.</seg>
         <seg>The calendar data in your profile was updated by a newer version of %1$S, and continuing will probably cause the information to be lost or corrupted. %1$S will now quit.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les dades de calendari en el vostre perfil s'han actualitzat a una nova versió del %1$S, i si continueu, segurament la informació es perdrà o es farà malbé. Ara se sortirà del %1$S.</seg>
+        <seg>Les dades de calendari en el vostre perfil s'han actualitzat a una versió nova del %1$S, i si continueu, segurament la informació es perdrà o es farà malbé. Ara se sortirà del %1$S.</seg>
       </tuv>
     </tu>
     <tu>
@@ -28846,7 +28846,7 @@ Codi d'estat: 0x%1$S</seg>
         <seg>There has been an error reading data for calendar: %1$S. It has been placed in read-only mode, since changes to this calendar will likely result in data-loss.  You may change this setting by choosing 'Edit Calendar'.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha produït un error quan es llegien les dades per al calendari: %1$S. S'ha posat en mode només de lectura, perquè els canvis podrien suposar una pèrdua de dades.  Podeu canviar aquesta configuració triant «Edita el calendari».</seg>
+        <seg>S'ha produït un error en llegir dades per al calendari: %1$S. S'ha posat en mode només de lectura, perquè els canvis podrien suposar una pèrdua de dades. Podeu canviar aquest paràmetre triant «Edita el calendari».</seg>
       </tuv>
     </tu>
     <tu>
@@ -35679,7 +35679,7 @@ Continue?</seg>
         <seg>%1$S has canceled this event: « %2$S »</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>En/na %1$S ha cancel·lat aquesta cita: « %2$S »</seg>
+        <seg>%1$S ha cancel·lat aquesta cita: «%2$S»</seg>
       </tuv>
     </tu>
     <tu>
@@ -44124,7 +44124,7 @@ ser temporal, i podeu tornar-ho a provar més tard.&lt;/li&gt;
         <seg>&lt;p&gt;The browser prevented this page from loading in this way because the page has a content security policy that disallows it.&lt;/p&gt;</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&lt;p&gt;El navegador ha evitat que la pàgina es carregui d'aquesta manera perquè té una política de seguretat de continguts que no ho permet.&lt;/p&gt;</seg>
+        <seg>&lt;p&gt;El navegador ha impedit que la pàgina es carregui d'aquesta manera perquè la pàgina té una política de seguretat del contingut que no ho permet.&lt;/p&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -44637,7 +44637,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>allow directive is deprecated, use the equivalent default-src directive instead</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>la directiva «allow» està desfasada.Utilitzeu l'equivalent «default-src».</seg>
+        <seg>La directiva «allow» està desfasada. Utilitzeu l'equivalent «default-src».</seg>
       </tuv>
     </tu>
     <tu>
@@ -44645,7 +44645,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>policy-uri directive can only appear alone</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>la directiva «policy-uri» només pot aparèixer sola</seg>
+        <seg>La directiva «policy-uri» només pot aparèixer sola</seg>
       </tuv>
     </tu>
     <tu>
@@ -45149,7 +45149,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>Open Web &amp;Location…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre un &amp;lloc Web...</seg>
+        <seg>Obre un &amp;lloc web…</seg>
       </tuv>
     </tu>
     <tu>
@@ -45165,7 +45165,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>Save And Change Character &amp;Encoding</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>D&amp;esa i canvia la codificació dels caràcters</seg>
+        <seg>D&amp;esa i canvia la codificació de caràcters</seg>
       </tuv>
     </tu>
     <tu>
@@ -45181,7 +45181,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>Publis&amp;h As…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Publica co&amp;m...</seg>
+        <seg>Publica co&amp;m…</seg>
       </tuv>
     </tu>
     <tu>
@@ -45197,7 +45197,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>Pu&amp;blishing Site Settings…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions de la pu&amp;blicació del web...</seg>
+        <seg>Paràmetres del lloc de pu&amp;blicació…</seg>
       </tuv>
     </tu>
     <tu>
@@ -45357,7 +45357,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>Show table borders and named anchors</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra les vores de les taules i els noms de les àncores</seg>
+        <seg>Mostra les vores de les taules i les àncores amb nom</seg>
       </tuv>
     </tu>
     <tu>
@@ -45957,7 +45957,7 @@ Intenteu desar-lo amb un nom de fitxer més curt.</seg>
         <seg>Please enter a name for this anchor.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu d'introduir un nom per a aquest objectiu.</seg>
+        <seg>Heu d'introduir un nom per a aquesta àncora.</seg>
       </tuv>
     </tu>
     <tu>
@@ -46159,7 +46159,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>(No named anchors or headings in this page)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>(En aquesta pàgina no hi ha àncores ni encapçalaments amb nom)</seg>
+        <seg>(En aquesta pàgina no hi ha cap àncora amb nom ni encapçalament)</seg>
       </tuv>
     </tu>
     <tu>
@@ -46303,7 +46303,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Named Anchor</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Objectiu anomenat</seg>
+        <seg>Àncora amb nom</seg>
       </tuv>
     </tu>
     <tu>
@@ -46375,7 +46375,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Field Set</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Joc de camps</seg>
+        <seg>Conjunt de camps</seg>
       </tuv>
     </tu>
     <tu>
@@ -46647,7 +46647,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Named &amp;Anchor…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Àncor&amp;a anomenada…</seg>
+        <seg>Àncor&amp;a amb nom…</seg>
       </tuv>
     </tu>
     <tu>
@@ -47023,7 +47023,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>&amp;Remove Named Anchors</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Supri&amp;meix les àncores anomenades</seg>
+        <seg>Supri&amp;meix les àncores amb nom</seg>
       </tuv>
     </tu>
     <tu>
@@ -47551,7 +47551,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Insert new image or edit selected image's properties</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Insereix una nova imatge o edita les propietats de la imatge seleccionada</seg>
+        <seg>Insereix una imatge nova o edita les propietats de la imatge seleccionada</seg>
       </tuv>
     </tu>
     <tu>
@@ -47575,7 +47575,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Insert new table or edit selected table's properties</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Insereix una nova taula o edita les propietats de la taula seleccionada</seg>
+        <seg>Insereix una taula nova o edita les propietats de la taula seleccionada</seg>
       </tuv>
     </tu>
     <tu>
@@ -47583,7 +47583,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Insert new link or edit selected link's properties</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Insereix un nou enllaç o edita les propietats de l'enllaç seleccionat</seg>
+        <seg>Insereix un enllaç nou o edita les propietats de l'enllaç seleccionat</seg>
       </tuv>
     </tu>
     <tu>
@@ -47599,7 +47599,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Insert new named anchor or edit selected anchor's properties</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Insereix un nou objectiu anomenat o edita les propietats de l'objectiu seleccionat</seg>
+        <seg>Insereix una àncora amb nom nova o edita les propietats de l'àncora seleccionada</seg>
       </tuv>
     </tu>
     <tu>
@@ -47719,7 +47719,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Insert a Link, Anchor, Image, Horizontal Line, or Table</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Insereix un enllaç, objectiu, imatge, línia horitzontal o taula</seg>
+        <seg>Insereix un enllaç, àncora, imatge, línia horitzontal o taula</seg>
       </tuv>
     </tu>
     <tu>
@@ -48559,7 +48559,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Composer creates a new table row for each paragraph in the selection.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El redactor crea una nova fila de taula per a cada paràgraf de la selecció.</seg>
+        <seg>El redactor crea una fila de taula nova per a cada paràgraf de la selecció.</seg>
       </tuv>
     </tu>
     <tu>
@@ -48671,7 +48671,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Enter a &amp;web page location, a local file, or select a Named Anchor or Heading from the popup list:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Introd&amp;uïu la ubicació d'una pàgina web, un fitxer local, o seleccioneu un objectiu amb nom o capçalera de la llista emergent:</seg>
+        <seg>Introd&amp;uïu la ubicació d'una pàgina web, un fitxer local, o seleccioneu una àncora amb nom o capçalera de la llista emergent:</seg>
       </tuv>
     </tu>
     <tu>
@@ -48695,7 +48695,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Named Anchor Properties</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Propietats de l'objectiu amb nom</seg>
+        <seg>Propietats de l'àncora amb nom</seg>
       </tuv>
     </tu>
     <tu>
@@ -48703,7 +48703,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Anchor &amp;Name:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Nom de l'objectiu:</seg>
+        <seg>&amp;Nom de l'àncora:</seg>
       </tuv>
     </tu>
     <tu>
@@ -48711,7 +48711,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Enter a unique name for this named anchor (target)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Introduïu un nom únic per a aquest objectiu amb nom</seg>
+        <seg>Introduïu un nom únic per a aquesta àncora amb nom (destí)</seg>
       </tuv>
     </tu>
     <tu>
@@ -48871,7 +48871,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Field Set Properties</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Propietats de la configuració del camp</seg>
+        <seg>Propietats del conjunt de camps</seg>
       </tuv>
     </tu>
     <tu>
@@ -48919,7 +48919,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>&amp;Remove Field Set</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Suprimeix el joc de camps</seg>
+        <seg>&amp;Suprimeix el conjunt de camps</seg>
       </tuv>
     </tu>
     <tu>
@@ -50103,7 +50103,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Set as &amp;Default</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Defineix com a predeterminat</seg>
+        <seg>&amp;Defineix per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -50351,7 +50351,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Save And Change Character Encoding</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Desa i canvia el joc de caràcters</seg>
+        <seg>Desa i canvia la codificació de caràcters</seg>
       </tuv>
     </tu>
     <tu>
@@ -50359,7 +50359,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Character Encoding</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Joc de caràcters</seg>
+        <seg>Codificació de caràcters</seg>
       </tuv>
     </tu>
     <tu>
@@ -50367,7 +50367,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Select the character encoding you want to save a document in:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Seleccioneu el joc de caràcters amb què voleu desar un document:</seg>
+        <seg>Seleccioneu la codificació de caràcters amb què voleu desar un document:</seg>
       </tuv>
     </tu>
     <tu>
@@ -51143,7 +51143,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Another application is attempting to send mail using your user profile. Are you sure you want to send mail?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Una altra aplicació està intentant enviar un correu utilitzant el vostre perfil d'usuari. Esteu segur que voleu enviar aquest correu?</seg>
+        <seg>Una altra aplicació està intentant enviar correu utilitzant el vostre perfil d'usuari. Esteu segur que voleu enviar aquest correu?</seg>
       </tuv>
     </tu>
     <tu>
@@ -51151,7 +51151,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Warn me whenever other applications try to send mail from me</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Avisa'm sempre que altres aplicacions intentin enviar correu utilitzant el meu perfil</seg>
+        <seg>Avisa'm sempre que altres aplicacions intentin enviar correu amb el meu perfil</seg>
       </tuv>
     </tu>
     <tu>
@@ -51873,7 +51873,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>The sender encrypted this message to you using one of your digital certificates, however %brand% was not able to find this certificate and corresponding private key. &lt;br&gt; Possible solutions: &lt;br&gt;&lt;ul&gt;&lt;li&gt;If you have a smartcard, please insert it now. &lt;li&gt;If you are using a new machine, or if you are using a new %brand% profile, you will need to restore your certificate and private key from a backup. Certificate backups usually end in ".p12".&lt;/ul&gt; </seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El remitent us ha xifrat aquest missatge fent servir un dels vostres certificats digitals. No obstant això, el %brand% no ha pogut trobar aquest certificat i la clau privada corresponent. &lt;br&gt; Possibles solucions: &lt;br&gt;&lt;ul&gt;&lt;li&gt;Si teniu una targeta intel·ligent, inseriu-la ara. &lt;li&gt;Si utilitzeu una nova màquina, o un nou perfil del %brand%, caldrà que recupereu el vostre certificat i clau privada des d'una còpia de seguretat. Les còpies de seguretat dels certificats normalment tenen l'extensió «p12».&lt;/ul&gt; </seg>
+        <seg>El remitent us ha xifrat aquest missatge fent servir un dels vostres certificats digitals. No obstant això, el %brand% no ha pogut trobar aquest certificat i la clau privada corresponent. &lt;br&gt; Possibles solucions: &lt;br&gt;&lt;ul&gt;&lt;li&gt;Si teniu una targeta intel·ligent, inseriu-la ara. &lt;li&gt;Si utilitzeu una màquina nova, o un perfil nou del %brand%, caldrà que recupereu el vostre certificat i clau privada des d'una còpia de seguretat. Les còpies de seguretat dels certificats normalment tenen l'extensió «p12».&lt;/ul&gt; </seg>
       </tuv>
     </tu>
     <tu>
@@ -53537,7 +53537,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Privacy policies for &amp;vendorShortName;'s products may be found </seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les normes de privadesa dels productes &amp;vendorShortName; les podeu trobar </seg>
+        <seg>Podeu trobar les polítiques de privadesa dels productes &amp;vendorShortName; </seg>
       </tuv>
     </tu>
     <tu>
@@ -53561,7 +53561,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Any applicable privacy policies for this product should be listed here.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Totes les normes de privadesa aplicables per a aquest producte s'haurien de llistar aquí.</seg>
+        <seg>Les polítiques de privadesa que s'apliquen a aquest producte cal llistar-les aquí.</seg>
       </tuv>
     </tu>
     <tu>
@@ -53657,7 +53657,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Any applicable service terms for this product should be listed here.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Aquí s'hauria d'incloure tots els termes de servei que s'apliquin a aquest producte.</seg>
+        <seg>Els termes de servei que s'apliquen a aquest producte cal llistar-los aquí.</seg>
       </tuv>
     </tu>
     <tu>
@@ -53777,7 +53777,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Incoming server</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Servidor de recepció</seg>
+        <seg>Servidor d'entrada</seg>
       </tuv>
     </tu>
     <tu>
@@ -53785,7 +53785,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Outgoing servers</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Servidors d'enviament</seg>
+        <seg>Servidors de sortida</seg>
       </tuv>
     </tu>
     <tu>
@@ -54089,7 +54089,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Incoming settings:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions de recepció:</seg>
+        <seg>Paràmetres d'entrada:</seg>
       </tuv>
     </tu>
     <tu>
@@ -54097,7 +54097,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Outgoing settings:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions d'enviament:</seg>
+        <seg>Paràmetres de sortida:</seg>
       </tuv>
     </tu>
     <tu>
@@ -54113,7 +54113,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>&amp;Done</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Fet</seg>
+        <seg>&amp;Fet</seg>
       </tuv>
     </tu>
     <tu>
@@ -54121,7 +54121,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Change &amp;Settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Modifica les opcions</seg>
+        <seg>Canvia els parà&amp;metres</seg>
       </tuv>
     </tu>
     <tu>
@@ -54209,7 +54209,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>(default)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>(predeterminat)</seg>
+        <seg>(per defecte)</seg>
       </tuv>
     </tu>
     <tu>
@@ -54225,7 +54225,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Looking up configuration: %1$S installation</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'està cercant la configuració: la instal·lació del %1$S</seg>
+        <seg>S'està cercant la configuració: Instal·lació del %1$S</seg>
       </tuv>
     </tu>
     <tu>
@@ -54233,7 +54233,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Looking up configuration: Email provider</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'està cercant la configuració: el proveïdor de correu electrònic</seg>
+        <seg>S'està cercant la configuració: Proveïdor de correu electrònic</seg>
       </tuv>
     </tu>
     <tu>
@@ -54241,7 +54241,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Looking up configuration: Mozilla ISP database</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'està cercant la configuració: la base de dades ISP de Mozilla</seg>
+        <seg>S'està cercant la configuració: Base de dades d'ISP de Mozilla</seg>
       </tuv>
     </tu>
     <tu>
@@ -54249,7 +54249,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Looking up configuration: Trying common server names</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'està cercant la configuració: s'estan provant els noms de servidors més típics</seg>
+        <seg>S'està cercant la configuració: S'estan provant els noms de servidor més típics</seg>
       </tuv>
     </tu>
     <tu>
@@ -54257,7 +54257,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Looking up configuration: Probing server</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'està cercant la configuració: s'està provant el servidor</seg>
+        <seg>S'està cercant la configuració: S'està provant el servidor</seg>
       </tuv>
     </tu>
     <tu>
@@ -54265,7 +54265,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Configuration found on %1$S installation</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha trobat la següent configuració a la instal·lació del %1$S</seg>
+        <seg>S'ha trobat la configuració a la instal·lació del %1$S</seg>
       </tuv>
     </tu>
     <tu>
@@ -54273,7 +54273,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Configuration found at email provider</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha trobat la següent configuració al proveïdor de correu electrònic</seg>
+        <seg>S'ha trobat la configuració al proveïdor de correu electrònic</seg>
       </tuv>
     </tu>
     <tu>
@@ -54281,7 +54281,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Configuration found in Mozilla ISP database</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha trobat la següent configuració a la base de dades ISP de Mozilla</seg>
+        <seg>S'ha trobat la configuració a la base de dades d'ISP de Mozilla</seg>
       </tuv>
     </tu>
     <tu>
@@ -54289,7 +54289,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Configuration found by trying common server names</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha trobat la següent configuració provant els noms de servidors més típics</seg>
+        <seg>S'han trobat la configuració provant els noms de servidor més típics</seg>
       </tuv>
     </tu>
     <tu>
@@ -54297,7 +54297,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>The following settings were found by probing the given server</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha trobat la següent configuració després de provar el servidor indicat</seg>
+        <seg>S'han trobat els paràmetres següents després de provar el servidor indicat</seg>
       </tuv>
     </tu>
     <tu>
@@ -54305,7 +54305,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>%1$S failed to find the settings for your email account.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El %1$S no ha pogut trobar la configuració per al vostre compte de correu.</seg>
+        <seg>El %1$S no ha pogut trobar els paràmetres per al vostre compte de correu.</seg>
       </tuv>
     </tu>
     <tu>
@@ -54321,7 +54321,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>You are offline. We guessed some settings but you will need to enter the right settings.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Esteu fora de línia. La configuració actual és provisional i l'hauríeu de repassar.</seg>
+        <seg>Esteu fora de línia. Els paràmetres actuals són provisionals i els hauríeu de revisar.</seg>
       </tuv>
     </tu>
     <tu>
@@ -54345,7 +54345,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>checking configuration…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>s'està cercant una configuració…</seg>
+        <seg>s'està comprovant la configuració…</seg>
       </tuv>
     </tu>
     <tu>
@@ -54425,7 +54425,7 @@ Seleccioneu una ubicació nova (URL) i torneu-ho a provar.</seg>
         <seg>Could not guess settings — please enter missing hostnames.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No s'ha pogut esbrinar la configuració — introduïu els noms dels servidors.</seg>
+        <seg>No s'han pogut esbrinar els paràmetres. Introduïu els noms dels servidors.</seg>
       </tuv>
     </tu>
     <tu>
@@ -56105,7 +56105,7 @@ de contingut incrustat en els missatges HTML d'aquest contacte.</seg>
         <seg>Create a new address book contact</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Crea un nou contacte a la llibreta d'adreces</seg>
+        <seg>Crea un contacte nou a la llibreta d'adreces</seg>
       </tuv>
     </tu>
     <tu>
@@ -56113,7 +56113,7 @@ de contingut incrustat en els missatges HTML d'aquest contacte.</seg>
         <seg>Create a new list</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Crea una nova llista</seg>
+        <seg>Crea una llista nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -56859,7 +56859,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>Settings must be saved before a directory may be downloaded.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Han de desar-se les preferències abans que es pugui baixar un directori.</seg>
+        <seg>Per poder baixar un directori, primer cal desar els paràmetres.</seg>
       </tuv>
     </tu>
     <tu>
@@ -57583,7 +57583,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>When managing your identities you can use a server from this list by selecting it as the Outgoing Server (SMTP), or you can use the default server from this list by selecting "Use Default Server".</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Quan gestioneu les seues identitats podeu utilitzar un servidor d&amp;apos;aquesta llista seleccionant-lo com a servidor d&amp;apos;eixida (SMTP), o podeu utilitzar el servidor predeterminat d&amp;apos;aquesta llista seleccionant "Utilitza el servidor predeterminat"</seg>
+        <seg>Quan gestioneu les vostres identitats, podeu utilitzar un servidor d'aquesta llista seleccionant-lo com a «Servidor de sortida (SMTP)» o podeu utilitzar el servidor per defecte d'aquesta llista seleccionant «Utilitza el servidor per defecte»</seg>
       </tuv>
     </tu>
     <tu>
@@ -57927,7 +57927,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>&amp;Set Default</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Defineix com a per defecte</seg>
+        <seg>&amp;Defineix per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -58495,7 +58495,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>Always delete read messages (overrides age settings)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Suprimeix sempre els missatges llegits (sobreescriu les opcions segons l'antiguitat)</seg>
+        <seg>Suprimeix sempre els missatges llegits (sobreescriu els paràmetres d'antiguitat)</seg>
       </tuv>
     </tu>
     <tu>
@@ -59039,7 +59039,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>Default encryption setting when sending messages:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Utilitza xifratge en enviar missatges:</seg>
+        <seg>Paràmetre de xifratge per defecte en enviar missatges:</seg>
       </tuv>
     </tu>
     <tu>
@@ -59135,7 +59135,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>You specified that this message should be digitally signed, but the application either failed to find the signing certificate specified in your Mail &amp; Newsgroup Account Settings, or the certificate has expired.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu sol·licitat signar digitalment aquest missatge, però l'aplicació no ha pogut trobar el certificat de signatura indicat en les preferències del vostre compte de correu/missatges, o bé el certificat ha vençut.</seg>
+        <seg>Heu sol·licitat signar digitalment aquest missatge, però l'aplicació no ha trobat el certificat de signatura indicat en els Paràmetres del compte, o bé el certificat ha vençut.</seg>
       </tuv>
     </tu>
     <tu>
@@ -59143,7 +59143,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>You specified encryption for this message, but the application either failed to find the encryption certificate specified in your Mail &amp; Newsgroup Account Settings, or the certificate has expired.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu sol·licitat xifrar aquest missatge, però l'aplicació no ha pogut trobar el certificat de xifratge indicat en les preferències del vostre compte de correu/missatges, o bé el certificat ha vençut.</seg>
+        <seg>Heu sol·licitat xifrar aquest missatge, però l'aplicació no ha trobat el certificat de xifratge indicat en els Paràmetres del compte, o bé el certificat ha vençut.</seg>
       </tuv>
     </tu>
     <tu>
@@ -59151,7 +59151,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>You specified encryption for this message, but the application failed to find an encryption certificate for %S.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu sol·licitat xifrar aquest missatge, però l'aplicació no ha pogut localitzat un certificat de xifratge per a %S.</seg>
+        <seg>Heu sol·licitat xifrar aquest missatge, però l'aplicació no ha trobat cap certificat de xifratge per a %S.</seg>
       </tuv>
     </tu>
     <tu>
@@ -59679,7 +59679,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>View my account settings on box.com</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra la configuració del meu compte a box.com</seg>
+        <seg>Mostra els paràmetres del meu compte a box.com</seg>
       </tuv>
     </tu>
     <tu>
@@ -59695,7 +59695,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>View my account settings on one.ubuntu.com</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra la configuració del meu compte one.ubuntu.com</seg>
+        <seg>Mostra els paràmetres del meu compte one.ubuntu.com</seg>
       </tuv>
     </tu>
     <tu>
@@ -60079,7 +60079,7 @@ Adreça electrònica, Nom, Cognoms, Nom a mostrar, Organització.</seg>
         <seg>Eudora mail, address books, and settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Correu, llibretes d'adreces i configuració de l'Eudora</seg>
+        <seg>Correu, llibretes d'adreces i paràmetres de l'Eudora</seg>
       </tuv>
     </tu>
     <tu>
@@ -60758,7 +60758,7 @@ Would you like to continue applying filters?</seg>
         <seg>&amp;Apply default to all messages in the folder (individual message character encoding settings and auto-detection will be ignored)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Aplica el valor per defecte a tots els missatges (ignora el joc de caràcters indicat a la capçalera MIME)</seg>
+        <seg>&amp;Aplica el valor per defecte a tots els missatges de la carpeta (omet la codificació de caràcters de cada missatge i la detecció automàtica)</seg>
       </tuv>
     </tu>
     <tu>
@@ -61454,7 +61454,7 @@ Would you like to continue applying filters?</seg>
         <seg>Show all of the email messages in the active set in a new tab.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre tots els missatges del conjunt actiu en una nova pestanya.</seg>
+        <seg>Obre tots els missatges del conjunt actiu en una pestanya nova.</seg>
       </tuv>
     </tu>
     <tu>
@@ -65612,7 +65612,7 @@ De: %S
         <seg>Create a new message</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Crea un nou missatge</seg>
+        <seg>Crea un missatge nou</seg>
       </tuv>
     </tu>
     <tu>
@@ -65916,7 +65916,7 @@ De: %S
         <seg>Open in New &amp;Tab</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obre en una nova pes&amp;tanya</seg>
+        <seg>Obre en una pes&amp;tanya nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -68547,7 +68547,7 @@ Comproveu la persona que l'ha enviat perquè sovint els tallafocs o els antiviru
         <seg>Set this search engine as the default</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Selecciona com a predeterminat aquest motor de cerca</seg>
+        <seg>Defineix com a motor de cerca per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -68555,7 +68555,7 @@ Comproveu la persona que l'ha enviat perquè sovint els tallafocs o els antiviru
         <seg>This search engine is currently the default</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Aquest motor de cerca actualment és el predeterminat</seg>
+        <seg>Actualment aquest és el motor de cerca per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -68867,7 +68867,7 @@ Comproveu la persona que l'ha enviat perquè sovint els tallafocs o els antiviru
         <seg>Unable to open the temporary file %S. Check your 'Temporary Directory' setting.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No es pot obrir el fitxer temporal %S. Reviseu la configuració del 'Directori temporal'.</seg>
+        <seg>No es pot obrir el fitxer temporal %S. Comproveu el paràmetre de «Directori temporal».</seg>
       </tuv>
     </tu>
     <tu>
@@ -68939,7 +68939,7 @@ Comproveu la persona que l'ha enviat perquè sovint els tallafocs o els antiviru
         <seg>No sender was specified. Please fill in your email address in the Mail &amp; Newsgroups account settings.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No s'ha indicat cap remitent. Introduïu la vostra adreça electrònica a les preferències de correu i grups de discussió de la Missatgeria.</seg>
+        <seg>No s'ha indicat cap remitent. Introduïu la vostra adreça electrònica als Paràmetres del compte.</seg>
       </tuv>
     </tu>
     <tu>
@@ -69267,7 +69267,7 @@ Comproveu la persona que l'ha enviat perquè sovint els tallafocs o els antiviru
         <seg>The author of this message has requested that responses be sent only to the author. If you also want to reply to the newsgroup, add a new row to the addressing area, choose Newsgroup from the recipients list, and enter the name of the newsgroup.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>L'autor d'aquest missatge ha demanat que les respostes només s'enviïn a l'autor. Si també voleu contestar al grup de notícies, afegiu una nova fila a la zona de l'adreça, seleccioneu «grup de notícies» de la llista de destinataris i introduïu-ne el nom.</seg>
+        <seg>L'autor d'aquest missatge ha demanat que les respostes només s'enviïn a l'autor. Si també voleu contestar al grup de notícies, afegiu una fila nova a la zona de l'adreça, seleccioneu «grup de notícies» de la llista de destinataris i introduïu-ne el nom.</seg>
       </tuv>
     </tu>
     <tu>
@@ -69411,7 +69411,7 @@ Comproveu la persona que l'ha enviat perquè sovint els tallafocs o els antiviru
         <seg>Unable to authenticate to SMTP server %S. Please check the password, and verify the 'Authentication method' in 'Account Settings | Outgoing server (SMTP)'.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No s'ha pogut autenticar al servidor SMTP %S. Comproveu la contrasenya i verifiqueu el mètode d'autenticació a «paràmetres del compte | paràmetres de sortida (SMTP)».</seg>
+        <seg>No s'ha pogut autenticar al servidor SMTP %S. Comproveu la contrasenya i el «Mètode d'autenticació» a «Paràmetres del compte | Servidor de sortida (SMTP)».</seg>
       </tuv>
     </tu>
     <tu>
@@ -70973,7 +70973,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Import Settings and Mail Folders</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Importació de la configuració i les carpetes de correu</seg>
+        <seg>Importació dels paràmetres i carpetes de correu</seg>
       </tuv>
     </tu>
     <tu>
@@ -71069,7 +71069,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Newsgroup Folders</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Carpetes dels grups de discussió</seg>
+        <seg>Carpetes de grups de discussió</seg>
       </tuv>
     </tu>
     <tu>
@@ -71077,7 +71077,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Mail Folders</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Carpetes del correu</seg>
+        <seg>Carpetes de correu</seg>
       </tuv>
     </tu>
     <tu>
@@ -71085,7 +71085,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Mail Folders</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Carpetes del correu</seg>
+        <seg>Carpetes de correu</seg>
       </tuv>
     </tu>
     <tu>
@@ -71093,7 +71093,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Mail Folders</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Carpetes del correu</seg>
+        <seg>Carpetes de correu</seg>
       </tuv>
     </tu>
     <tu>
@@ -71101,7 +71101,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Mail Folders</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Carpetes del correu</seg>
+        <seg>Carpetes de correu</seg>
       </tuv>
     </tu>
     <tu>
@@ -71357,7 +71357,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Write a new message</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Redacta un nou missatge</seg>
+        <seg>Redacta un missatge nou</seg>
       </tuv>
     </tu>
     <tu>
@@ -72189,7 +72189,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Create New Tag</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Crea una nova etiqueta</seg>
+        <seg>Crea una etiqueta nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -72341,7 +72341,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Let your friends and family know about your new address.&lt;br/&gt; That's why you got this new account, isn't it?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Feu saber als vostres amics i a la vostra família que teniu una nova adreça electrònica. &lt;br/&gt; Que per això serveixen els comptes de correu, oi?</seg>
+        <seg>Feu saber als vostres amics i a la vostra família que teniu una adreça electrònica nova. &lt;br/&gt; Que per això serveixen els comptes de correu, oi?</seg>
       </tuv>
     </tu>
     <tu>
@@ -72637,7 +72637,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Outlook Express mail, address books, and settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Correu, llibretes d'adreces i configuració de l'Outlook Express</seg>
+        <seg>Correu, llibretes d'adreces i paràmetres de l'Outlook Express</seg>
       </tuv>
     </tu>
     <tu>
@@ -72733,7 +72733,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>You are currently offline. Do you want to go online to get new messages?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Esteu actualment fora de línia. Voleu posar-vos en línia per recuperar els nous missatges?</seg>
+        <seg>Esteu actualment fora de línia. Voleu posar-vos en línia per recuperar els missatges nous?</seg>
       </tuv>
     </tu>
     <tu>
@@ -72793,7 +72793,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Outlook mail, address books, and settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Correu, llibretes d'adreces i configuració de l'Outlook</seg>
+        <seg>Correu, llibretes d'adreces i paràmetres de l'Outlook</seg>
       </tuv>
     </tu>
     <tu>
@@ -73681,7 +73681,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>Set the default character encodings for sending and receiving mail</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Defineix les codificacions de caràcters per defecte per rebre i enviar correu</seg>
+        <seg>Definiu les codificacions de caràcters per defecte per enviar i rebre correu</seg>
       </tuv>
     </tu>
     <tu>
@@ -74529,7 +74529,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>The Junk settings on account "%1$S" have a possible problem. Would you like to review them before saving Account Settings?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El registre de dades d'entrenament del correu brossa indica un possible problema al compte «%1$S». Voleu revisar la configuració abans de desar els canvis?</seg>
+        <seg>Els paràmetres del correu brossa del compte «%1$S» tenen un possible problema. Voldríeu revisar-los abans de desar els paràmetres del compte?</seg>
       </tuv>
     </tu>
     <tu>
@@ -74537,7 +74537,7 @@ Voleu esperar fins que el missatge s'hagi enviat abans de sortir o bé sortir ar
         <seg>%1$S needs to restart now to apply the change to the Local directory setting.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Cal reiniciar el %1$S per aplicar el canvi de configuració de directori local.</seg>
+        <seg>Cal reiniciar el %1$S per aplicar el canvi del paràmetre de directori local.</seg>
       </tuv>
     </tu>
     <tu>
@@ -74991,7 +74991,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>&amp;Enter the new name for your folder:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Introduïu &amp;el nou nom de la carpeta:</seg>
+        <seg>Introduïu &amp;el nom nou de la carpeta:</seg>
       </tuv>
     </tu>
     <tu>
@@ -74999,7 +74999,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>&amp;brandShortName; is now running in Safe Mode, which temporarily disables your custom settings, themes, and extensions.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El &amp;brandShortName; s'està executant en Mode segur, que inhabilita temporalment la vostra configuració, els vostres temes i extensions.</seg>
+        <seg>El &amp;brandShortName; s'està executant en mode segur, que inhabilita temporalment els vostres paràmetres personalitzats, temes i extensions.</seg>
       </tuv>
     </tu>
     <tu>
@@ -75039,7 +75039,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>&amp;Continue in Safe Mode</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Continua en &amp;Mode segur</seg>
+        <seg>Continua en &amp;mode segur</seg>
       </tuv>
     </tu>
     <tu>
@@ -75343,7 +75343,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Add a new rule</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Afegeix una nova regla</seg>
+        <seg>Afegeix una regla nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -75583,7 +75583,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Set as Default</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Defineix com a predeterminat</seg>
+        <seg>Defineix per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -75615,7 +75615,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>It is not possible to unset &amp;brandShortName; as the default client within &amp;brandShortName;. To make another application the default you must use its 'Set as default' dialog.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No podeu eliminar el &amp;brandShortName; com a client per defecte des de dins del mateix &amp;brandShortName;. Per definir una altra aplicació com a client per defecte, heu d'utilitzar el seu diàleg «Defineix com a predeterminat».</seg>
+        <seg>No podeu eliminar el &amp;brandShortName; com a client per defecte des de dins del mateix &amp;brandShortName;. Per definir una altra aplicació com a client per defecte, heu d'utilitzar el seu diàleg «Defineix per defecte».</seg>
       </tuv>
     </tu>
     <tu>
@@ -75815,7 +75815,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Windows Live Mail settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions del Windows Live Mail</seg>
+        <seg>Paràmetres del Windows Live Mail</seg>
       </tuv>
     </tu>
     <tu>
@@ -76423,7 +76423,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Settings can be changed using the Attachments tab in &amp;brandShortName;'s Preferences.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les opcions es poden canviar utilitzant la pestanya Adjuncions del menú Preferències del &amp;brandShortName;.</seg>
+        <seg>Els paràmetres es poden canviar utilitzant la pestanya Adjuncions del menú Preferències del &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -76431,7 +76431,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Settings can be changed using the Attachments tab in &amp;brandShortName;'s Options.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les opcions es poden canviar utilitzant la pestanya Adjuncions del menú Opcions del &amp;brandShortName;.</seg>
+        <seg>Els paràmetres es poden canviar utilitzant la pestanya Adjuncions del menú Opcions del &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -76479,7 +76479,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>There is not enough space available for &amp;brandShortName; to start.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No hi ha prou espai disponible per al &amp;brandShortName; per iniciar-se.</seg>
+        <seg>No hi ha prou espai lliure per poder iniciar el &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -76487,7 +76487,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>An error occurred when trying to load files required to run &amp;brandShortName;</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha produït un error quan es provava de carregar els fitxers necessaris per executar el &amp;brandShortName;</seg>
+        <seg>S'ha produït un error en intentar carregar els fitxers necessaris per executar el &amp;brandShortName;</seg>
       </tuv>
     </tu>
     <tu>
@@ -76511,7 +76511,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>&amp;brandShortName; Crash Reporter</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Informe de fallades del &amp;brandShortName;</seg>
+        <seg>Informes de fallada del &amp;brandShortName;</seg>
       </tuv>
     </tu>
     <tu>
@@ -76527,7 +76527,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Tell &amp;vendorShortName; about this crash so they can fix it</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Notifiqueu a &amp;vendorShortName; el problema perquè pugui solucionar-ho</seg>
+        <seg>Notifiqueu la fallada a &amp;vendorShortName; per intentar solucionar-la</seg>
       </tuv>
     </tu>
     <tu>
@@ -76535,7 +76535,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Include the address of the page I was on</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Inclou l'adreça de la pàgina on em trobava</seg>
+        <seg>Inclou l'adreça de la pàgina on estava</seg>
       </tuv>
     </tu>
     <tu>
@@ -76575,7 +76575,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Exit without sending a crash report?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Voleu sortir sense enviar un informe d'error?</seg>
+        <seg>Voleu sortir sense enviar un informe de fallada?</seg>
       </tuv>
     </tu>
     <tu>
@@ -76583,7 +76583,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Sending crash report\u2026</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'està enviant un informe de fallada\u2026</seg>
+        <seg>S'està enviant l'informe de fallada\u2026</seg>
       </tuv>
     </tu>
     <tu>
@@ -76615,7 +76615,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>No web apps were found</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No s'ha trobat cap aplicació Web</seg>
+        <seg>No s'ha trobat cap aplicació web</seg>
       </tuv>
     </tu>
     <tu>
@@ -76631,7 +76631,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Enter Search or Address</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Escriviu una cerca o una adreça</seg>
+        <seg>Escriviu una cerca o adreça</seg>
       </tuv>
     </tu>
     <tu>
@@ -76727,7 +76727,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions</seg>
+        <seg>Paràmetres</seg>
       </tuv>
     </tu>
     <tu>
@@ -76735,7 +76735,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions</seg>
+        <seg>Paràmetres</seg>
       </tuv>
     </tu>
     <tu>
@@ -76751,7 +76751,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Search settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions de cerca</seg>
+        <seg>Paràmetres de cerca</seg>
       </tuv>
     </tu>
     <tu>
@@ -77063,7 +77063,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Show product announcements</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra notícies de producte</seg>
+        <seg>Mostra notícies del producte</seg>
       </tuv>
     </tu>
     <tu>
@@ -77071,7 +77071,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Show search suggestions</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Mostra els suggeriments de cerca</seg>
+        <seg>Mostra suggeriments de cerca</seg>
       </tuv>
     </tu>
     <tu>
@@ -77127,7 +77127,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Offline website data</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Dades fora de línia dels llocs web</seg>
+        <seg>Dades de llocs web fora de línia</seg>
       </tuv>
     </tu>
     <tu>
@@ -77343,7 +77343,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Request Desktop Site</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Sol·licita per a escriptori</seg>
+        <seg>Mostra lloc d'escriptori</seg>
       </tuv>
     </tu>
     <tu>
@@ -77383,7 +77383,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Synced</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Sincronitzada</seg>
+        <seg>Sincronitzades</seg>
       </tuv>
     </tu>
     <tu>
@@ -77591,7 +77591,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>There are no settings to clear.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No hi ha cap opció per netejar.</seg>
+        <seg>No hi ha cap paràmetre per netejar.</seg>
       </tuv>
     </tu>
     <tu>
@@ -77703,7 +77703,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Add-ons for your &amp;brandShortName;</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Els complements del &amp;brandShortName;</seg>
+        <seg>Complements del &amp;brandShortName;</seg>
       </tuv>
     </tu>
     <tu>
@@ -77839,7 +77839,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Enable protection</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Habilita la protecció</seg>
+        <seg>Activa la protecció</seg>
       </tuv>
     </tu>
     <tu>
@@ -77847,7 +77847,7 @@ Esteu segur que voleu emmagatzemar els missatges d'aquest compte en un compte di
         <seg>Disable protection</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Inhabilita la protecció</seg>
+        <seg>Desactiva la protecció</seg>
       </tuv>
     </tu>
     <tu>
@@ -78093,7 +78093,7 @@ de l'Android</seg>
         <seg>To activate your new device, select “Set up &amp;syncBrand.shortName.label;” on the device.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Per activar un nou dispositiu, seleccioneu «Configura el &amp;syncBrand.shortName.label;» a l'altre dispositiu</seg>
+        <seg>Per activar un dispositiu nou, seleccioneu «Configura el &amp;syncBrand.shortName.label;» a l'altre dispositiu</seg>
       </tuv>
     </tu>
     <tu>
@@ -78253,7 +78253,7 @@ de l'Android</seg>
         <seg>Your data is now being downloaded in the background. You can go to Settings to manage your account, or start browsing with &amp;brandShortName;.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les vostres dades s'estan baixant en segon pla. Podeu anar a les Opcions per gestionar el vostre compte, o començar a navegar amb el &amp;brandShortName;.</seg>
+        <seg>Les vostres dades s'estan baixant en segon pla. Podeu anar als Paràmetres per gestionar el vostre compte o començar a navegar amb el &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -78261,7 +78261,7 @@ de l'Android</seg>
         <seg>Your &amp;syncBrand.fullName.label; account is already set up. You can go to Settings to manage your account, or launch &amp;brandShortName;.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El vostre compte &amp;syncBrand.fullName.label; ja està configurat. Podeu anar a les opcions per gestionar el vostre compte, o iniciar el &amp;brandShortName;.</seg>
+        <seg>El vostre compte &amp;syncBrand.fullName.label; ja està configurat. Podeu anar al Paràmetres per gestionar el vostre compte, o iniciar el &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -78269,7 +78269,7 @@ de l'Android</seg>
         <seg>To activate your new device, select “Set up &amp;syncBrand.shortName.label;” on the device, and then select “I Have an Account.”</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Per activar el nou dispositiu, seleccioneu «Configura el &amp;syncBrand.shortName.label;» al dispositiu, i després seleccioneu «Tinc un compte».</seg>
+        <seg>Per activar el dispositiu nou, seleccioneu «Configura el &amp;syncBrand.shortName.label;» al dispositiu, i després seleccioneu «Tinc un compte».</seg>
       </tuv>
     </tu>
     <tu>
@@ -78285,7 +78285,7 @@ de l'Android</seg>
         <seg>What to sync</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Què sincronitzar</seg>
+        <seg>Què cal sincronitzar</seg>
       </tuv>
     </tu>
     <tu>
@@ -78381,7 +78381,7 @@ de l'Android</seg>
         <seg>Incorrect account name or password.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El nom del compte o de la contrasenya són incorrectes.</seg>
+        <seg>El nom del compte o la contrasenya són incorrectes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -78813,7 +78813,7 @@ de l'Android</seg>
         <seg>We're sorry that you had some problems with &amp;brandShortName;. Please tell us what happened so that we can fix it.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Sentim que hàgiu tingut problemes amb el &amp;brandShortName;. Digueu-nos què va passar perquè puguem solucionar-ho.</seg>
+        <seg>Sentim que hàgiu tingut problemes amb el &amp;brandShortName;. Digueu-nos què ha passat perquè puguem solucionar-ho.</seg>
       </tuv>
     </tu>
     <tu>
@@ -79917,7 +79917,7 @@ de l'Android</seg>
         <seg>Search Settings</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Opcions de cerca</seg>
+        <seg>Paràmetres de cerca</seg>
       </tuv>
     </tu>
     <tu>
@@ -79925,7 +79925,7 @@ de l'Android</seg>
         <seg>Add a New Setting</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Afegeix una opció nova</seg>
+        <seg>Afegeix un paràmetre nou</seg>
       </tuv>
     </tu>
     <tu>
@@ -80173,7 +80173,7 @@ de l'Android</seg>
         <seg>You have been asked to trust a new Certificate Authority (CA).</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>S'ha sol·licitat confiar en una nova entitat certificadora.</seg>
+        <seg>S'ha sol·licitat confiar en una entitat certificadora nova.</seg>
       </tuv>
     </tu>
     <tu>
@@ -80493,7 +80493,7 @@ de l'Android</seg>
         <seg>Your data is now being downloaded in the background. You can close this window at any time.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les vostres dades s'estan baixant en un segon pla. Quan vulgueu podeu tancar aquesta finestra.</seg>
+        <seg>Les vostres dades s'estan baixant en segon pla. Podeu tancar aquesta finestra en qualsevol moment.</seg>
       </tuv>
     </tu>
     <tu>
@@ -82069,7 +82069,7 @@ són marques registrades de la Mozilla Foundation.</seg>
         <seg>New password entered incorrectly.  Please try again.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La nova contrasenya no s'ha introduït correctament. Torneu-ho a provar.</seg>
+        <seg>La contrasenya nova no s'ha introduït correctament. Torneu-ho a provar.</seg>
       </tuv>
     </tu>
     <tu>
@@ -82205,7 +82205,7 @@ són marques registrades de la Mozilla Foundation.</seg>
         <seg>New CRL has an invalid format.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La nova CRL no té un format vàlid.</seg>
+        <seg>La CRL nova no té un format vàlid.</seg>
       </tuv>
     </tu>
     <tu>
@@ -82277,7 +82277,7 @@ són marques registrades de la Mozilla Foundation.</seg>
         <seg>New CRL is not later than the current one.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La nova CRL no està després de l'actual.</seg>
+        <seg>La CRL nova no està després de l'actual.</seg>
       </tuv>
     </tu>
     <tu>
@@ -82437,7 +82437,7 @@ són marques registrades de la Mozilla Foundation.</seg>
         <seg>New KRL has an invalid format.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La nova KRL no té un format vàlid.</seg>
+        <seg>La KRL nova no té un format vàlid.</seg>
       </tuv>
     </tu>
     <tu>
@@ -82821,7 +82821,7 @@ són marques registrades de la Mozilla Foundation.</seg>
         <seg>New KRL is not later than the current one.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La nova KRL no és després que l'actual.</seg>
+        <seg>La KRL nova no és després que l'actual.</seg>
       </tuv>
     </tu>
     <tu>
@@ -82829,7 +82829,7 @@ són marques registrades de la Mozilla Foundation.</seg>
         <seg>New CKL has different issuer than current CKL.  Delete current CKL.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La nova CKL té un emissor diferent que l'actual. Suprimiu l'actual.</seg>
+        <seg>La CKL nova té un emissor diferent que l'actual. Suprimiu l'actual.</seg>
       </tuv>
     </tu>
     <tu>
@@ -85361,7 +85361,7 @@ Valor públic:
         <seg>You should make a password-protected backup copy of your new security certificate and its associated private key.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu de fer una còpia de seguretat protegida per contrasenya del nou certificat de seguretat i la seva clau privada.</seg>
+        <seg>Heu de fer una còpia de seguretat protegida per contrasenya del certificat de seguretat nou i la seva clau privada.</seg>
       </tuv>
     </tu>
     <tu>
@@ -86579,7 +86579,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Trust this CA to identify email users.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Confia en aquesta CA per identificar usuari de correu electrònic.</seg>
+        <seg>Confia en aquesta CA per identificar usuaris de correu electrònic.</seg>
       </tuv>
     </tu>
     <tu>
@@ -86595,7 +86595,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Before trusting this CA for any purpose, you should examine its certificate and its policy and procedures (if available).</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Abans de confiar en aquesta CA amb qualsevol finalitat, cal que n'examineu el certificat i les normes i procediments (si estan disponibles).</seg>
+        <seg>Abans de confiar en aquesta CA amb qualsevol finalitat, cal que n'examineu el certificat i les polítiques i procediments (si estan disponibles).</seg>
       </tuv>
     </tu>
     <tu>
@@ -86611,7 +86611,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Policy</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Normes</seg>
+        <seg>Política</seg>
       </tuv>
     </tu>
     <tu>
@@ -86627,7 +86627,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Examine CA policies and procedures</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Examina les normes i procediments de la CA</seg>
+        <seg>Examina les polítiques i procediments de la CA</seg>
       </tuv>
     </tu>
     <tu>
@@ -87773,7 +87773,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Incorrect account name or password</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El nom del compte o de la contrasenya no són correctes</seg>
+        <seg>El nom del compte o la contrasenya són incorrectes.</seg>
       </tuv>
     </tu>
     <tu>
@@ -87973,7 +87973,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Sync has not been able to complete during the last %1$S days. Please check your network settings.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>No s'ha completat cap sincronització des de fa %1$S dies. Comproveu si teniu bé la configuració de la xarxa.</seg>
+        <seg>El Sync no ha pogut sincronitzar des de fa %1$S dies. Comproveu els paràmetres de la xarxa.</seg>
       </tuv>
     </tu>
     <tu>
@@ -89205,7 +89205,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Cookies from this website will be accepted or rejected based on default settings.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les galetes d'aquest lloc s'acceptaran o es rebutjaran d'acord amb la configuració per defecte.</seg>
+        <seg>Les galetes d'aquest lloc s'acceptaran o es rebutjaran d'acord amb els paràmetres per defecte.</seg>
       </tuv>
     </tu>
     <tu>
@@ -89269,7 +89269,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Images from this website will be downloaded based on default settings.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les imatges d'aquest lloc es baixaran d'acord amb la configuració per defecte.</seg>
+        <seg>Les imatges d'aquest lloc es baixaran d'acord amb els paràmetres per defecte.</seg>
       </tuv>
     </tu>
     <tu>
@@ -90053,7 +90053,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Your previous &amp;brandShortName; session closed unexpectedly. We sincerely apologize for the inconvenience. You can restore the tabs and windows from your previous session, or start a new session if they are no longer needed.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La sessió anterior del &amp;brandShortName; s'ha tancat de forma inesperada. Lamentem els inconvenients que us pugui haver ocasionat. Podeu recuperar les pestanyes i les finestres de la sessió anterior, o iniciar una nova sessió si ja no us calen.</seg>
+        <seg>La sessió anterior del &amp;brandShortName; s'ha tancat de forma inesperada. Lamentem els inconvenients que us pugui haver ocasionat. Podeu recuperar les pestanyes i les finestres de la sessió anterior, o iniciar una sessió nova si ja no us calen.</seg>
       </tuv>
     </tu>
     <tu>
@@ -90085,7 +90085,7 @@ Your certificate contains the same serial number as another certificate issued b
         <seg>Start New Session</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Inicia una nova sessió</seg>
+        <seg>Inicia una sessió nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -90821,7 +90821,7 @@ que sapigueu del cert perquè aquest lloc web no utilitza una identificació per
         <seg>Content preferences are a way for &amp;brandShortName; to save its settings, like zoom levels, specifically for a website.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Les preferències de contingut són un mecanisme del &amp;brandShortName; per desar les preferències de l'aplicació, com ara els nivells de zoom, de forma específica per a un lloc web.</seg>
+        <seg>Les preferències de contingut són un mecanisme del &amp;brandShortName; per desar paràmetres específics per a un lloc web, com ara els nivells de zoom.</seg>
       </tuv>
     </tu>
     <tu>
@@ -93183,7 +93183,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>The cache keeps copies of frequently visited web pages on your hard disk. (Clicking Reload always shows you the latest version of a page.)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La memòria cau conserva còpies al disc dur de les pàgines web que es visiten sovint; això redueix el temps de connexió a Internet. (Feu clic a Actualitza per obtenir sempre la darrera versió de la pàgina.)</seg>
+        <seg>La memòria cau conserva còpies al disc dur de les pàgines web que es visiten més sovint. (Feu clic a Actualitza per obtenir sempre la darrera versió de la pàgina.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -94223,7 +94223,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>Default Character Encoding</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Codificació de caràcters</seg>
+        <seg>Codificació de caràcters per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -94231,7 +94231,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>&amp;Character Encoding:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Codificació per defecte:</seg>
+        <seg>&amp;Codificació de caràcters:</seg>
       </tuv>
     </tu>
     <tu>
@@ -94279,7 +94279,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>Open links meant to open a new window in:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obrir enllaços vol dir obrir-los en una nova finestra en:</seg>
+        <seg>Obrir enllaços vol dir obrir-los en una finestra nova en:</seg>
       </tuv>
     </tu>
     <tu>
@@ -94319,7 +94319,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>A new tab in the current window</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Una nova pestanya en la finestra actual</seg>
+        <seg>Una pestanya nova en la finestra actual</seg>
       </tuv>
     </tu>
     <tu>
@@ -94327,7 +94327,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>A new window</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Una nova finestra</seg>
+        <seg>Una finestra nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -94839,7 +94839,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>&amp;Notify me when a website wants to store data for offline use.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Notifiqueu-me quan un lloc web vulgui emmagatzemar dades per al seu ús fora de línia</seg>
+        <seg>A&amp;visa'm quan un lloc web vulgui emmagatzemar dades per utilitzar-les fora de línia.</seg>
       </tuv>
     </tu>
     <tu>
@@ -94887,7 +94887,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>&amp;brandShortName; allows you to create policies that determine what access certain websites have to various functionality, including aspects of scripting and Java.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El &amp;brandShortName; us permet crear normes que controlen l'accés que tenen determinats llocs web a diverses funcions, com ara certs aspectes de l'execució de scripts i Java. </seg>
+        <seg>El &amp;brandShortName; us permet crear polítiques que controlen l'accés que tenen determinats llocs web a diverses funcions, com ara certs aspectes de l'execució de scripts i Java.</seg>
       </tuv>
     </tu>
     <tu>
@@ -94895,7 +94895,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>Policies:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Normes:</seg>
+        <seg>Polítiques:</seg>
       </tuv>
     </tu>
     <tu>
@@ -94903,7 +94903,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>Default Policy</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Normes predeterminades</seg>
+        <seg>Política per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -94959,7 +94959,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>Policy Description:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Descripció de les normes:</seg>
+        <seg>Descripció de la política:</seg>
       </tuv>
     </tu>
     <tu>
@@ -96007,7 +96007,7 @@ Esteu segur que voleu enviar aquesta informació?</seg>
         <seg>Your application cache is currently using %1$S %2$S of disk space.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>La memòria cau de l'aplicació actualment utilitza %1$S %2$S d'espai de disc.</seg>
+        <seg>La memòria cau d'aplicacions actualment utilitza %1$S %2$S d'espai de disc.</seg>
       </tuv>
     </tu>
     <tu>
@@ -96341,9 +96341,9 @@ Would you like to delete the profile data files?
 </seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>En suprimir un perfil, aquest s'eliminarà de la llista de perfils i no es podrà desfer l'acció.
+        <seg>Quan suprimiu un perfil, s'eliminarà de la llista de perfils disponibles i l'acció no es podrà desfer.
 
-Es pot triar també suprimir els fitxers de dades del perfil, incloent-hi el vostre correu emmagatzemat i els certificats. Aquesta opció suprimira la carpeta «%S» i no pot desfer-se.
+També podeu triar suprimir els fitxers de dades del perfil, incloent-hi el vostre correu emmagatzemat, els paràmetres i els certificats. Aquesta opció suprimirà la carpeta «%S» i no es pot desfer.
 
 Voleu suprimir els fitxers de dades del perfil?
 
@@ -96439,7 +96439,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>Reset all user &amp;preferences to &amp;brandShortName; defaults</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Reinicia totes les &amp;preferències d'usuari del &amp;brandShortName; als valors predeterminats</seg>
+        <seg>Reinicia totes les &amp;preferències d'usuari als valors per defecte del &amp;brandShortName;</seg>
       </tuv>
     </tu>
     <tu>
@@ -96455,7 +96455,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>Make Changes and Restart</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Fes els canvis i reinicia</seg>
+        <seg>Aplica els canvis i reinicia</seg>
       </tuv>
     </tu>
     <tu>
@@ -96760,7 +96760,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>You changed your Recovery Key from another device, please enter your updated Recovery Key.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu canviat la vostra clau de recuperació des d'un altre dispositiu, per tant cal que introduïu la nova clau de recuperació.</seg>
+        <seg>Heu canviat la vostra clau de recuperació des d'un altre dispositiu, introduïu la clau de recuperació actualitzada.</seg>
       </tuv>
     </tu>
     <tu>
@@ -96800,7 +96800,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>Welcome, if you've never used &amp;syncBrand.fullName.label; before, you will need to create a new account.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Us donem la benvinguda, si mai heu fet servir el &amp;syncBrand.fullName.label; abans, caldrà que creeu primer un nou compte.</seg>
+        <seg>Us donem la benvinguda, si mai heu fet servir el &amp;syncBrand.fullName.label; abans, caldrà que creeu primer un compte nou.</seg>
       </tuv>
     </tu>
     <tu>
@@ -96872,7 +96872,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>To activate your new device, go to &amp;syncBrand.shortName.label; Preferences/Options on the device and select &amp;#x0022;Connect.&amp;#x0022;</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Per activar el nou dispositiu, aneu a les opcions del &amp;syncBrand.shortName.label; del dispositiu i seleccioneu «Connecta».</seg>
+        <seg>Per activar el dispositiu nou, aneu a les opcions del &amp;syncBrand.shortName.label; del dispositiu i seleccioneu «Connecta».</seg>
       </tuv>
     </tu>
     <tu>
@@ -97976,7 +97976,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>Create a new address book card</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Crea una nova targeta de llibreta d'adreces</seg>
+        <seg>Crea una targeta de llibreta d'adreces nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -98393,7 +98393,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>Get All New Messages</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Obté tots els nous missatges</seg>
+        <seg>Recupera tots els missatges nous</seg>
       </tuv>
     </tu>
     <tu>
@@ -98681,7 +98681,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>&amp;Web Page in New Window</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Pàgina &amp;web en una nova finestra</seg>
+        <seg>Pàgina &amp;web en una finestra nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -98689,7 +98689,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>&amp;Summary in New Window</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Resum en una nova finestra</seg>
+        <seg>&amp;Resum en una finestra nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -98873,7 +98873,7 @@ Trieu un altre perfil o creeu-ne un de nou.</seg>
         <seg>Open in New Mail &amp;Window</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&amp;Obre</seg>
+        <seg>&amp;Obre en una finestra nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -99161,7 +99161,7 @@ disc per evitar la baixada de missatges grans.
         <seg>Compose a new message</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Redacta un nou missatge</seg>
+        <seg>Redacta un missatge nou</seg>
       </tuv>
     </tu>
     <tu>
@@ -99483,7 +99483,7 @@ to go online and send your unsent messages?
         <seg>Set as De&amp;fault</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>De&amp;fineix com a predeterminat</seg>
+        <seg>De&amp;fineix per defecte</seg>
       </tuv>
     </tu>
     <tu>
@@ -99491,7 +99491,7 @@ to go online and send your unsent messages?
         <seg>You can modify outgoing server settings from within Mail &amp;amp; Newsgroups Account Settings.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Podeu canviar el servidor de sortida anant a les opcions del Correu i dels grups de discussió.</seg>
+        <seg>Podeu canviar els paràmetres del servidor de sortida des dels Paràmetres del compte.</seg>
       </tuv>
     </tu>
     <tu>
@@ -99747,7 +99747,7 @@ to go online and send your unsent messages?
         <seg>&amp;When possible, use this default character encoding in replies. (When unchecked, only new messages use this default.)</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Sempre q&amp;ue sigui possible, utilitzeu aquesta codificació per defecte en les respostes. (Quan estigui desmarcat, només els missatges nous la utilitzaran.)</seg>
+        <seg>Q&amp;uan sigui possible, utilitza la codificació de caràcters per defecte en les respostes. (Si es desmarca, només la utilitzaran els missatges nous.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -99851,7 +99851,7 @@ to go online and send your unsent messages?
         <seg>[Author] wrote:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>[L'autor/ora] ha escrit:</seg>
+        <seg>[Autor/a] ha escrit:</seg>
       </tuv>
     </tu>
     <tu>
@@ -99859,7 +99859,7 @@ to go online and send your unsent messages?
         <seg>On [date], [author] wrote:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>En la [data], [l'autor/ora] ha escrit:</seg>
+        <seg>El [data], [autor/a] ha escrit:</seg>
       </tuv>
     </tu>
     <tu>
@@ -99867,7 +99867,7 @@ to go online and send your unsent messages?
         <seg>[Author] wrote, On [date]:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>[L'autor/ora] ha escrit, en la [data]:</seg>
+        <seg>[Autor/a] ha escrit, el [data]:</seg>
       </tuv>
     </tu>
     <tu>
@@ -102984,7 +102984,7 @@ del &amp;brandShortName;, visiteu el nostre &lt;a id='supportLink'&gt;lloc web d
         <seg>Available Character Encodings:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Codificacions de caràcter disponibles:</seg>
+        <seg>Codificacions de caràcters disponibles:</seg>
       </tuv>
     </tu>
     <tu>
@@ -103096,7 +103096,7 @@ del &amp;brandShortName;, visiteu el nostre &lt;a id='supportLink'&gt;lloc web d
         <seg>You must enter a name to create a new toolbar.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu d'introduir un nom per crear una nova barra d'eines.</seg>
+        <seg>Heu d'introduir un nom per crear una barra d'eines nova.</seg>
       </tuv>
     </tu>
     <tu>
@@ -109506,7 +109506,7 @@ Torneu-ho a provar.</seg>
         <seg>Settings can be changed in &amp;brandShortName;'s Preferences.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Els paràmetres de configuració poden canviar-se a les preferències del &amp;brandShortName;.</seg>
+        <seg>Els paràmetres poden canviar-se a les preferències del &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -109514,7 +109514,7 @@ Torneu-ho a provar.</seg>
         <seg>Settings can be changed in &amp;brandShortName;'s Options.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Els paràmetres de configuració poden canviar-se a les opcions del &amp;brandShortName;.</seg>
+        <seg>Els paràmetres poden canviar-se a les opcions del &amp;brandShortName;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -111589,7 +111589,7 @@ aquesta versió.</seg>
 &amp;brandShortName; and have been disabled:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Els següents complements no són compatibles amb la nova versió 
+        <seg>Els següents complements no són compatibles amb la versió nova 
 del &amp;brandShortName; i s'han inhabilitat:</seg>
       </tuv>
     </tu>
@@ -112490,7 +112490,7 @@ alguns dels vostres complements.</seg>
         <seg>Enter new password:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Introduïu una nova contrasenya:</seg>
+        <seg>Introduïu una contrasenya nova:</seg>
       </tuv>
     </tu>
     <tu>
@@ -112602,7 +112602,7 @@ alguns dels vostres complements.</seg>
         <seg>&amp;brandShortName; stores information about your settings and preferences in your personal profile.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El &amp;brandShortName; emmagatzema informació sobre la vostra configuració i preferències en el vostre perfil personal.</seg>
+        <seg>El &amp;brandShortName; emmagatzema informació sobre els vostres paràmetres i preferències en el vostre perfil personal.</seg>
       </tuv>
     </tu>
     <tu>
@@ -112666,7 +112666,7 @@ alguns dels vostres complements.</seg>
         <seg>Your user settings, preferences and other user-related data will be stored in:</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Els vostres paràmetres de configuració, preferències, adreces d'interès i correu s'emmagatzemaran a:</seg>
+        <seg>Els vostres paràmetres, preferències i altres dades d'usuari s'emmagatzemaran a:</seg>
       </tuv>
     </tu>
     <tu>
@@ -112738,7 +112738,7 @@ alguns dels vostres complements.</seg>
         <seg>&amp;brandShortName; stores information about your settings, preferences, and other user items in your user profile.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El &amp;brandShortName; emmagatzema informació sobre la vostra configuració, preferències, i altres elements d'usuari al vostre perfil d'usuari.</seg>
+        <seg>El &amp;brandShortName; emmagatzema informació sobre els vostres paràmetres, preferències i altres elements de l'usuari al vostre perfil d'usuari.</seg>
       </tuv>
     </tu>
     <tu>
@@ -112770,7 +112770,7 @@ alguns dels vostres complements.</seg>
         <seg>%S is already running, but is not responding. To open a new window, you must first close the existing %S process, or restart your system.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El %S ja s'està executant, però no està responent. Per obrir una nova finestra, primer heu de tancar el procés %S que ja existeix, o reiniciar el vostre sistema.</seg>
+        <seg>El %S ja s'està executant, però no està responent. Per obrir una finestra nova, primer heu de tancar el procés %S que ja existeix, o reiniciar el vostre sistema.</seg>
       </tuv>
     </tu>
     <tu>
@@ -112778,7 +112778,7 @@ alguns dels vostres complements.</seg>
         <seg>%S is already running, but is not responding. The old %S process must be closed to open a new window.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>El %S ja s'està executant, però no està responent. El procés antic %S ha de tancar-se per obrir una nova finestra.</seg>
+        <seg>El %S ja s'està executant, però no està responent. El procés antic %S ha de tancar-se per obrir una finestra nova.</seg>
       </tuv>
     </tu>
     <tu>
@@ -112810,7 +112810,7 @@ alguns dels vostres complements.</seg>
         <seg>Please select a profile to begin %S, or create a new profile.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Seleccioneu un perfil per començar el %S, o creeu un nou perfil.</seg>
+        <seg>Seleccioneu un perfil per començar el %S, o creeu un perfil nou.</seg>
       </tuv>
     </tu>
     <tu>
@@ -112904,9 +112904,9 @@ You may also choose to delete the profile data files, including your settings, c
 Would you like to delete the profile data files?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Quan suprimiu un perfil, el feu desaparèixer de la llista de perfils disponibles i llavors no podreu tornar enrere.
-També podeu triar suprimir els fitxers de dades del perfil, incloent-hi el correu desat, la configuració i els certificats. Aquesta opció suprimirà la carpeta «%S» i no podrà tornar-se enrere.
-Voleu suprimir els fitxers de dades d'aquest perfil?
+        <seg>Quan suprimiu un perfil, s'eliminarà de la llista de perfils disponibles i l'acció no es podrà desfer.
+També podeu triar suprimir els fitxers de dades del perfil, incloent-hi els vostres paràmetres, els certificats i altres dades de l'usuari. Aquesta opció suprimirà la carpeta «%S» i no es pot desfer.
+Voleu suprimir els fitxers de dades del perfil?
 </seg>
       </tuv>
     </tu>
@@ -112963,7 +112963,7 @@ Voleu suprimir els fitxers de dades d'aquest perfil?
         <seg>Click Finish to create this new profile.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Feu clic a Finalitza per crear el nou perfil.</seg>
+        <seg>Feu clic a Finalitza per crear el perfil nou.</seg>
       </tuv>
     </tu>
     <tu>
@@ -112971,7 +112971,7 @@ Voleu suprimir els fitxers de dades d'aquest perfil?
         <seg>Click Done to create this new profile.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Feu clic a Fet per crear el nou perfil.</seg>
+        <seg>Feu clic a Fet per crear el perfil nou.</seg>
       </tuv>
     </tu>
     <tu>
@@ -113626,7 +113626,7 @@ can restart &amp;brandShortName; now, or continue working and restart later.</se
         <seg>Get the New Version</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Aconsegueix la nova versió</seg>
+        <seg>Aconsegueix la versió nova</seg>
       </tuv>
     </tu>
     <tu>
@@ -113730,7 +113730,7 @@ can restart &amp;brandShortName; now, or continue working and restart later.</se
         <seg>Get the new version…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Aconsegueix la nova versió…</seg>
+        <seg>Aconsegueix la versió nova…</seg>
       </tuv>
     </tu>
     <tu>
@@ -113762,7 +113762,7 @@ can restart &amp;brandShortName; now, or continue working and restart later.</se
         <seg>Install the new version…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Instal·la la nova versió…</seg>
+        <seg>Instal·la la versió nova…</seg>
       </tuv>
     </tu>
     <tu>
@@ -114348,7 +114348,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Tell %s about this crash so they can fix it</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Comunica a %s la fallada perquè puguin reparar-la</seg>
+        <seg>Comunica la fallada a %s per intentar solucionar-la</seg>
       </tuv>
     </tu>
     <tu>
@@ -119126,7 +119126,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Tap to track your phone and internet usage.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Toqueu per veure el consum del telèfon i d'Internet.</seg>
+        <seg>Toqueu per controlar el consum de telèfon i Internet.</seg>
       </tuv>
     </tu>
     <tu>
@@ -119142,7 +119142,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Tap to track your internet usage.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Toqueu per veure el consum d'Internet.</seg>
+        <seg>Toqueu per controlar el consum d'Internet.</seg>
       </tuv>
     </tu>
     <tu>
@@ -119158,7 +119158,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Insert a SIM to enable Usage.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Inseriu una SIM per veure el Consum.</seg>
+        <seg>Inseriu una SIM per veure el consum.</seg>
       </tuv>
     </tu>
     <tu>
@@ -119174,7 +119174,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Unlock your SIM to enable Usage.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Desbloquegeu la SIM per veure el Consum.</seg>
+        <seg>Desbloquegeu la SIM per veure el consum.</seg>
       </tuv>
     </tu>
     <tu>
@@ -119254,7 +119254,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Data Report and Alert</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Informe de dades i alerta</seg>
+        <seg>Informe i alerta de dades</seg>
       </tuv>
     </tu>
     <tu>
@@ -119614,7 +119614,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Phone and Internet data report</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Informe de dades del telèfon i d'Internet</seg>
+        <seg>Informe de dades de telèfon i Internet</seg>
       </tuv>
     </tu>
     <tu>
@@ -119702,7 +119702,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>Used</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Utilitzat</seg>
+        <seg>Consumits</seg>
       </tuv>
     </tu>
     <tu>
@@ -119950,7 +119950,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>{{limit}} of data used</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>{{limit}} de dades utilitzades</seg>
+        <seg>{{limit}} de consum de dades</seg>
       </tuv>
     </tu>
     <tu>
@@ -119958,7 +119958,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>You've reached the limit you selected</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Heu arribat al límit que vau seleccionar</seg>
+        <seg>Heu arribat al límit que vau definir</seg>
       </tuv>
     </tu>
     <tu>
@@ -122163,10 +122163,50 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
     </tu>
     <tu>
       <tuv xml:lang="en">
+        <seg>Everything…</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tot…</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>I'm thinking of…</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Estic interessat en…</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Smart Collections</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Col·leccions intel·ligents</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
         <seg>I'm thinking of…</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Estic interessat en...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Everything</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Tot</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Enter any topic or search query</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>Introduïu un tema o consulta</seg>
       </tuv>
     </tu>
     <tu>
@@ -122655,22 +122695,6 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>Temps</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Everything…</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Tot…</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Smart Collections</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Col·leccions intel·ligents</seg>
       </tuv>
     </tu>
     <tu>
@@ -125287,6 +125311,14 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>{{site}} vol conèixer la vostra ubicació.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>{{brandShortName}} uses data such as GPS, Wi-Fi, and mobile networks near you to help determine your approximate location. Data is sent to Mozilla and other service providers and will be used in the aggregate to improve those location databases.  Data may be stored on your device and data collection may occur even when no apps are running.</seg>
+      </tuv>
+      <tuv xml:lang="ca-ES">
+        <seg>El {{brandShortName}} utilitza dades com ara el GPS, el Wi-Fi i les xarxes mòbils properes per determinar una ubicació aproximada. Les dades s'envien a Mozilla i a altres proveïdors de serveis i s'utilitzaran a l'engròs per a la millora de bases de dades d'ubicacions. Les dades poden emmagatzemar-se en el vostre dispositiu i llur recol·lecció pot ocórrer quan no s'executa cap altre aplicació.</seg>
       </tuv>
     </tu>
     <tu>
@@ -137918,7 +137950,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>UUID doesn't match add-on.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>L'UUID no es correspon amb el del complement.</seg>
+        <seg>L'UUID no coincideix amb el del complement.</seg>
       </tuv>
     </tu>
     <tu>
@@ -137950,7 +137982,7 @@ Per ajudar-nos a diagnosticar i resoldre el problema, podeu enviar-nos un inform
         <seg>&lt;em:type&gt; doesn't match add-on</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>&lt;em:type&gt; no es correspon amb el complment</seg>
+        <seg>&lt;em:type&gt; no coincideix amb el complement</seg>
       </tuv>
     </tu>
     <tu>
@@ -141381,14 +141413,6 @@ Esteu segur que voleu continuar?</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>%(site)s: Complete Persona password reset</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>%(site)s: Completa el reinici de la contrasenya del Persona</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>A Better Way to Sign In</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
@@ -141421,26 +141445,10 @@ Esteu segur que voleu continuar?</seg>
     </tu>
     <tu>
       <tuv xml:lang="en">
-        <seg>Simplified sign-on.</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Registre simplificat.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
         <seg>Persona replaces multiple passwords</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>El Persona reemplaça l'ús de contrasenyes múltiples</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>Sites such as &lt;a %(timesLink)s&gt;%(timesName)s&lt;/a&gt;, &lt;a %(openphotoLink)s&gt;%(openphotoName)s&lt;/a&gt; and &lt;a %(voostLink)s&gt;%(voostName)s&lt;/a&gt; use Persona instead of usernames to sign you in.</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>Llocs com ara &lt;a %(timesLink)s&gt;%(timesName)s&lt;/a&gt;, &lt;a %(openphotoLink)s&gt;%(openphotoName)s&lt;/a&gt; i &lt;a %(voostLink)s&gt;%(voostName)s&lt;/a&gt; utilitzen Persona en comptes de noms d'usuari per iniciar una sessió.</seg>
       </tuv>
     </tu>
     <tu>
@@ -141625,14 +141633,6 @@ Esteu segur que voleu continuar?</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
         <seg>S'està connectant al Persona...</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="en">
-        <seg>&lt;strong&gt;Mozilla Persona.&lt;/strong&gt; Simplified sign-in by the non-profit behind Firefox. &lt;a %s&gt;Learn more&amp;rarr;&lt;/a&gt;</seg>
-      </tuv>
-      <tuv xml:lang="ca-ES">
-        <seg>&lt;strong&gt;Mozilla Persona.&lt;/strong&gt; L'inici de sessió simplificat, desenvolupat per l'organització sense afany de lucre darrere del Firefox.  &lt;a %s&gt;Més informació&amp;rarr;&lt;/a&gt;</seg>
       </tuv>
     </tu>
     <tu>
