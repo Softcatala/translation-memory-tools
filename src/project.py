@@ -96,4 +96,4 @@ class Project:
     def ToTmx(self):
 
         fileName, fileExtension = os.path.splitext(self.filename)
-        os.system("po2tmx " + self.filename + " -l ca-ES -o " + fileName + ".tmx")
+        os.system("po2tmx " + self.filename + " --comment others -l ca-ES -o " + fileName + ".tmx")
