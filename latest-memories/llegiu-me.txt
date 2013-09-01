@@ -1,8 +1,8 @@
 Memòria de traducció de Softcatalà
 
-Es composa de dos directories:
+Inclou dos directoris:
 
-* po/ - Amb format PO seguint els estàndars de GNU Gettext. Més informació: http://en.wikipedia.org/wiki/GNU_gettext
+* po/ - Amb format PO seguint els estàndards de GNU Gettext. Més informació: http://en.wikipedia.org/wiki/GNU_gettext
 
 * tmx/ - Fitxers amb la memòria de traducció en format TMX. Més informació: http://ca.wikipedia.org/wiki/TMX 
 
@@ -14,8 +14,8 @@ La distribució de les cadenes va sotmesa a les llicències de cada programari
 
 Aquesta memòria inclou els principals programes que tradueix Softcatalà. S'han
 inclòs només aquells programes sobre els quals s'han fet revisions completes
-recentement.
+recentment.
 
-Data d'ensamblatge agost 2013
+Agost 2013
 
 L'Equip de Softcatalà
