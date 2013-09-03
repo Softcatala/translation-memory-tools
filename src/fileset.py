@@ -83,7 +83,9 @@ class FileSet():
         self.tmfile = tmfile
 
     def AddExcluded(self, filename):
-        self.excluded.append(filename)
+
+        if len(filename) > 0:
+            self.excluded.append(filename)
 
     def AddComments(self):
 

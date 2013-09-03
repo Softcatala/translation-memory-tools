@@ -55,18 +55,22 @@ class Project:
 
         for fileset in project_dto.filesets:
             logging.debug(fileset)
+
             if (fileset.type == 'local-file'):
-                self.Add(LocalFileSet(fileset.name, fileset.url, fileset.target))
+                fs = LocalFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'compressed'):
-                self.Add(CompressedFileSet(fileset.name, fileset.url, fileset.target))
+                fs = CompressedFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type ==  'bazaar'):
-                self.Add(BazaarFileSet(fileset.name, fileset.url, fileset.target))
+                fs = BazaarFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'transifex'):
-                self.Add(TransifexFileSet(fileset.name, fileset.url, fileset.target))
+                fs = TransifexFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'local-dir'):
-                self.Add(LocalDirFileSet(fileset.name, fileset.url, fileset.target))
+                fs = LocalDirFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'file'):
-                self.Add(FileFileSet(fileset.name, fileset.url, fileset.target))
+                fs = FileFileSet(fileset.name, fileset.url, fileset.target)
+
+            self.Add(fs)
+            fs.AddExcluded(fileset.excluded)
 
     def Do(self):
         try:
