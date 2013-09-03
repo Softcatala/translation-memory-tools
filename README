@@ -51,6 +51,8 @@ Merging the translation memory with a new file
 
 msgmerge -N tm.po new-pofile.po  > final-pofile.po
 
+You can also use translate-toolkit's pretranslate tool
+
 --- Coding Style guide
 
 http://www.python.org/dev/peps/pep-0008/
