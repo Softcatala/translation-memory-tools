@@ -10,6 +10,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Softcatalà</seg>
       </tuv>
+      <note>Translation source: /header.po from project 'header'</note>
     </tu>
   </body>
 </tmx>

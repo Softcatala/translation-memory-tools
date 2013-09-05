@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-31 09:51+0200\n"
+"POT-Creation-Date: 2013-09-05 21:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4579,6 +4579,15 @@ msgstr ""
 #: src/libvlc-module.c:840
 msgid "HTTP/TLS Certificate Revocation List"
 msgstr "Llista de revocació de certificats HTTP/TLS"
+
+# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
+#: src/libvlc-module.c:842
+msgid ""
+"This file contains an optional CRL to prevent remote clients from using "
+"revoked certificates in TLS sessions."
+msgstr ""
+"Aquest fitxer conté un CRL opcional per evitar que clients remots utilitzin "
+"certificats revocats en sessions TLS."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: src/libvlc-module.c:845
@@ -23792,19 +23801,6 @@ msgstr ""
 "yourip:8080 per defecte."
 
 # Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
-#: modules/gui/macosx/wizard.m:265
-msgid ""
-"Use this to stream to several computers using the Microsoft MMS protocol. "
-"This protocol is used as transport method by many Microsoft's softwares. "
-"Note that only a small part of the MMS protocol is supported (MMS "
-"encapsulated in HTTP)."
-msgstr ""
-"Utilitzeu aquesta opció per transmetre a diversos ordinadors mitjançant el "
-"protocol de Microsoft MMS. Aquest protocol l'utilitzen com a mètode de "
-"transport diversos programes de Microsoft. Tingueu en compte que només admet "
-"una petita part del protocol MMS (MMS encapsulat en HTTP)."
-
-# Translation source: /translations/vlc-trans.vlc-21/ca.po from project 'VLC'
 #: modules/gui/macosx/wizard.m:270 modules/gui/macosx/wizard.m:280
 msgid "Enter the address of the computer to stream to."
 msgstr "Introduïu l'adreça de l'ordinador a la qual es transmetrà."
@@ -39141,6 +39137,20 @@ msgstr ""
 "Torna a calcular la durada dels subtítols segons el seu contingut i el seu "
 "valor.\n"
 "Utilitza 0 per inhabilitar-lo."
+
+# Translation source: /translations/vlc-trans.vlc_head/ca.po from project
+# 'VLC'
+#: modules/gui/macosx/wizard.m:271
+msgid ""
+"Use this to stream to several computers using the Microsoft MMS protocol. "
+"This protocol is used as transport method by many Microsoft's softwares. "
+"Note that only a small part of the MMS protocol is supported (MMS "
+"encapsulated in HTTP)."
+msgstr ""
+"Utilitzeu aquesta opció per transmetre a diversos ordinadors mitjançant el "
+"protocol de Microsoft MMS. Aquest protocol l'utilitzen com a mètode de "
+"transport diversos programes de Microsoft. Tingueu en compte que només admet "
+"una petita part del protocol MMS (MMS encapsulat en HTTP)."
 
 # Translation source: /translations/vlc-trans.vlc_head/ca.po from project
 # 'VLC'

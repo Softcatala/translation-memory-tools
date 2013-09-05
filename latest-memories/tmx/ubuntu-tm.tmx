@@ -10,6 +10,7 @@
       <tuv xml:lang="ca-ES">
         <seg>ERROR</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -18,6 +19,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical ja no proporcionarà més actualitzacions per a %s en l'Ubuntu %s. Pot ser que hi hagi actualitzacions en una versió més nova de l'Ubuntu.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -26,6 +28,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical proporciona actualitzacions crítiques per a %(appname)s fins el/l' %(support_end_month_str)s de %(support_end_year)s.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -34,6 +37,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical proporciona actualitzacions crítiques creades pels desenvolupadors de %(appname)s fins el/l' %(support_end_month_str)s de %(support_end_year)s.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -42,6 +46,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical no proporciona actualitzacions per a %s, però pot ser que el fabricant del programa ho faci.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -50,6 +55,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical proporciona actualitzacions crítiques per a %s.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -58,6 +64,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical proporciona actualitzacions crítiques proveïdes pels desenvolupadors de %s.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -66,6 +73,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Canonical no proporciona actualitzacions per a %s, però pot ser que la comunitat de l'Ubuntu ho faci.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -74,6 +82,7 @@
       <tuv xml:lang="ca-ES">
         <seg>L'estat de manteniment per a %s no és conegut.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -82,6 +91,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Descripció</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -90,6 +100,7 @@
       <tuv xml:lang="ca-ES">
         <seg>No està disponible en les dades actuals</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -98,6 +109,7 @@
       <tuv xml:lang="ca-ES">
         <seg>No està disponible per a l'arquitectura del vostre ordinador.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -106,6 +118,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Captura de pantalla</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -114,6 +127,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Versió: %s (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -122,6 +136,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s està instal·lat en aquest ordinador.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -130,6 +145,7 @@
       <tuv xml:lang="ca-ES">
         <seg>És utilitzat per %s component de programari instaŀlat.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -138,6 +154,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Lloc web</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -146,6 +163,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Desconegut</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -154,6 +172,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Programari lliure</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -162,6 +181,7 @@
       <tuv xml:lang="ca-ES">
         <seg>De propietat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -170,6 +190,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Llicència: %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -178,6 +199,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Gratuït</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -186,6 +208,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Preu: %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -194,6 +217,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s - Captura de pantalla</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -202,6 +226,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Per a eliminar %s, també cal eliminar aquests elements:</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -210,6 +235,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Elimina-ho tot</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -218,6 +244,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Si elimineu %s, futures actualitzacions no inclouran elements nous del conjunt &lt;b&gt;%s&lt;/b&gt;. Esteu segur que voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -226,6 +253,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Elimina-ho de totes maneres</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -234,6 +262,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s és un programa clau de l'Ubuntu. Eliminar-lo pot causar que actualitzacions futures resultin incompletes. Esteu segur que voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -242,6 +271,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Actualitza</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -250,6 +280,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Elimina</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -258,6 +289,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Instal·la</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -266,6 +298,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Activa el canal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -274,6 +307,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Manté</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -282,6 +316,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Reemplaça</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -290,6 +325,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Ha canviat el fitxer de configuració «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -298,6 +334,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Voleu utilitzar la nova versió?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -306,6 +343,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Obteniu programari lliure</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -314,6 +352,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s element coincident</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -322,6 +361,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s element disponible</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -330,6 +370,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Departaments</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -338,6 +379,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Detalls</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -346,6 +388,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Cancel·la</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -354,6 +397,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Dependència</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -362,6 +406,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Programari instal·lat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -370,6 +415,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s element instal·lat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -378,6 +424,7 @@
       <tuv xml:lang="ca-ES">
         <seg>En progrés (%i)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -386,6 +433,7 @@
       <tuv xml:lang="ca-ES">
         <seg>© 2009 Canonical</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -394,6 +442,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Copia l'adreça _web</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -402,6 +451,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Trieu d'entre milers d'aplicacions gratuïtes disponibles per a l'Ubuntu.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -410,6 +460,7 @@
       <tuv xml:lang="ca-ES">
         <seg>S'està reconstruint el catàleg d'aplicacions...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -418,6 +469,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Cerca...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -426,6 +478,7 @@
       <tuv xml:lang="ca-ES">
         <seg>A_juda del centre de programari</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -434,6 +487,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Centre de programari de l'Ubuntu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -442,6 +496,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Totes les aplicacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -450,6 +505,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Aplicacions mantingudes per _Canonical</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -458,6 +514,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Edita</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -466,6 +523,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Fitxer</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -474,6 +532,7 @@
       <tuv xml:lang="ca-ES">
         <seg>A_juda</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -482,6 +541,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Instal·la</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -490,6 +550,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Fonts de programari...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -498,6 +559,7 @@
       <tuv xml:lang="ca-ES">
         <seg>_Visualitza</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -506,6 +568,7 @@
       <tuv xml:lang="ca-ES">
         <seg>disponible</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -514,6 +577,7 @@
       <tuv xml:lang="ca-ES">
         <seg>instal·lat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -522,6 +586,7 @@
       <tuv xml:lang="ca-ES">
         <seg>pendent</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -530,6 +595,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Trieu d'entre milers d'aplicacions gratuïtes disponibles per a l'Ubuntu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -538,6 +604,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Centre de programari</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-software-center'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -546,6 +613,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%(size).0f kB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -554,6 +622,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%.1f MB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -562,6 +631,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Servidor per %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -570,6 +640,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Servidor principal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -578,6 +649,7 @@
       <tuv xml:lang="ca-ES">
         <seg>Servidors personalitzats</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -586,6 +658,7 @@
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut calcular l'entrada del fitxer sources.list</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -594,6 +667,7 @@
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut trobar cap paquet, esteu utilitzat un disc de l'Ubuntu per a l'arquitectura adequada?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -602,6 +676,7 @@
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut afegir el CD</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -616,6 +691,7 @@ The error message was:
 El missatge d'error ha estat:
 «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -624,6 +700,7 @@ El missatge d'error ha estat:
       <tuv xml:lang="ca-ES">
         <seg>Elimina el paquet en mal estat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -632,6 +709,7 @@ El missatge d'error ha estat:
       <tuv xml:lang="ca-ES">
         <seg>El paquet «%s» es troba en un estat inconsistent i s'ha de tornar a instal·lar, però no s'ha trobat l'arxiu per a fer-ho. Voleu eliminar aquest paquet i continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -640,6 +718,7 @@ El missatge d'error ha estat:
       <tuv xml:lang="ca-ES">
         <seg>Pot ser que el servidor estigui sobrecarregat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -648,6 +727,7 @@ El missatge d'error ha estat:
       <tuv xml:lang="ca-ES">
         <seg>Paquets trencats</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -656,6 +736,7 @@ El missatge d'error ha estat:
       <tuv xml:lang="ca-ES">
         <seg>El vostre sistema conté paquets trencats que no es poden arreglar amb aquesta aplicació. Utilitzeu el Synaptic o l'apt-get abans de continuar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -680,6 +761,7 @@ Això pot ser degut a:
 
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -688,6 +770,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>Això és probablement un problema transitori, torneu a provar-ho més tard.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -696,6 +779,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>Si cap d'aquestes s'aplica, llavors informeu d'aquest error utilitzant l'ordre «ubuntu-bug update-manager» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -704,6 +788,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut calcular l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -712,6 +797,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en autenticar alguns paquets</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -720,6 +806,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>No s'han pogut autenticar alguns paquets. Potser hi ha un problema temporal amb la xarxa. Podeu provar-ho més tard. A continuació es mostra la llista amb els paquets no autenticats.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -728,6 +815,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>El paquet «%s» està marcat per a eliminar-lo, però apareix a la llista negra de fitxers a eliminar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -736,6 +824,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>El paquet essencial «%s» està marcat per a ésser eliminat.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -744,6 +833,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>S'està intentant instal·lar la versió «%s» de la llista negra</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -752,6 +842,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut instal·lar «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -760,6 +851,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>Ha sigut impossible instal·lar el paquet necessari. Informeu d'aquest error utilitzant l'ordre «ubuntu-bug update-manager» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -768,6 +860,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut conjecturar el metapaquet</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -778,6 +871,7 @@ Això pot ser degut a:
         <seg>No teniu instal·lats el paquet ubuntu-desktop, kubuntu-desktop, xubuntu-desktop o edubuntu-desktop i no s'ha pogut detectar la versió de l'Ubuntu que esteu utilitzant.
 Instal·leu un d'aquests paquets abans de continuar; per fer-ho podeu utilitzar el Synaptic o l'apt-get</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -786,6 +880,7 @@ Instal·leu un d'aquests paquets abans de continuar; per fer-ho podeu utilitzar 
       <tuv xml:lang="ca-ES">
         <seg>S'està llegint la memòria cau</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -794,6 +889,7 @@ Instal·leu un d'aquests paquets abans de continuar; per fer-ho podeu utilitzar 
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut obtenir un bloqueig exclusiu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -802,6 +898,7 @@ Instal·leu un d'aquests paquets abans de continuar; per fer-ho podeu utilitzar 
       <tuv xml:lang="ca-ES">
         <seg>Normalment això es deu al fet que teniu un altre gestor de paquets en execució (com  ara l'apt-get o l'aptitude) i cal que abans el tanqueu.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -810,6 +907,7 @@ Instal·leu un d'aquests paquets abans de continuar; per fer-ho podeu utilitzar 
       <tuv xml:lang="ca-ES">
         <seg>No és possible actualitzar a través d'una connexió remota</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -822,6 +920,7 @@ The upgrade will abort now. Please try without ssh.</seg>
 
 S'interromprà l'actualització. Torneu-ho a intentar sense SSH.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -830,6 +929,7 @@ S'interromprà l'actualització. Torneu-ho a intentar sense SSH.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Voleu continuar treballant via SSH?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -844,6 +944,7 @@ Do you want to continue?</seg>
 Si continueu, s'iniciarà un dimoni addicional al port «%s».
 Voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -852,6 +953,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està iniciant un sshd addicional</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -862,6 +964,7 @@ Voleu continuar?</seg>
         <seg>Per facilitar la recuperació en cas de fallada, s'iniciarà un sshd addicional al port «%s». Si alguna cosa anés malament amb l'ssh en ús, podeu fer servir l'addicional.
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -872,6 +975,7 @@ Voleu continuar?</seg>
         <seg>Si feu servir un tallafocs, necessitareu obrir temporalment aquest port. Atès que això és potencialment perillós, no es fa automàticament. Per exemple, podeu obrir el port amb:
 «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -880,6 +984,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No es pot actualitzar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -888,6 +993,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aquesta eina no permet l'actualització de «%s» a «%s».</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -896,6 +1002,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat la configuració d'un entorn de proves</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -904,6 +1011,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No ha estat possible crear un entorn de proves.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -912,6 +1020,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Mode de prova</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -924,6 +1033,7 @@ Voleu continuar?</seg>
 
 Cap dels canvis fets als directoris del sistema seran permanents.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -932,6 +1042,7 @@ Cap dels canvis fets als directoris del sistema seran permanents.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La vostra instal·lació del Python està malmesa. Reviseu l'enllaç simbòlic «/usr/bin/python».</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -940,6 +1051,7 @@ Cap dels canvis fets als directoris del sistema seran permanents.</seg>
       <tuv xml:lang="ca-ES">
         <seg>El paquet «debsig-verify» està instal·lat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -950,6 +1062,7 @@ Please remove it with synaptic or 'apt-get remove debsig-verify' first and run t
         <seg>L'actualització no pot continuar amb aquest paquet instal·lat.
 Elimineu-lo amb el Synaptic o amb l'ordre «apt-get remove debsig-verify» i torneu a executar l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -958,6 +1071,7 @@ Elimineu-lo amb el Synaptic o amb l'ordre «apt-get remove debsig-verify» i tor
       <tuv xml:lang="ca-ES">
         <seg>No es pot escriure a «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -968,6 +1082,7 @@ Please make sure that the system directory is writable.</seg>
         <seg>No es pot escriure al directori del sistema «%s», per la qual cosa l'actualització no pot continuar.
 Assegureu-vos que aquest directori tingui els permisos d'escriptura adients.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -976,6 +1091,7 @@ Assegureu-vos que aquest directori tingui els permisos d'escriptura adients.</se
       <tuv xml:lang="ca-ES">
         <seg>Voleu incloure les darreres actualitzacions d'Internet?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -990,6 +1106,7 @@ If you answer 'no' here, the network is not used at all.</seg>
 L'actualització trigarà més, però en acabar tindreu un sistema completament actualitzat. Podeu optar per no fer-ho, però en breu haureu d'actualitzar el sistema.
 Si responeu «no» la xarxa no s'utilitzarà per a res.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -998,6 +1115,7 @@ Si responeu «no» la xarxa no s'utilitzarà per a res.</seg>
       <tuv xml:lang="ca-ES">
         <seg>desactivat en actualitzar a %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1006,6 +1124,7 @@ Si responeu «no» la xarxa no s'utilitzarà per a res.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha trobat cap rèplica vàlida</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1019,6 +1138,7 @@ If you select 'No' the upgrade will cancel.</seg>
 
 Voleu sobreescriure el fitxer «sources.list» de totes maneres? Si trieu que «Sí», totes les entrades «%s» s'actualitzaran a «%s». Si trieu que «No», es cancel·larà l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1027,6 +1147,7 @@ Voleu sobreescriure el fitxer «sources.list» de totes maneres? Si trieu que «
       <tuv xml:lang="ca-ES">
         <seg>Voleu generar les fonts per defecte?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1039,6 +1160,7 @@ Should default entries for '%s' be added? If you select 'No', the upgrade will c
 
 Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·larà l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1047,6 +1169,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>La informació dels dipòsits no és vàlida</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1055,6 +1178,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>En actualitzar la informació dels dipòsits s'ha obtingut un fitxer no vàlid, per la qual cosa s'iniciarà el procés d'informe d'errors.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1063,6 +1187,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'han desactivat les fonts de tercers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1071,6 +1196,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'han desactivat algunes entrades de tercers. Les podeu reactivar després de l'actualització des de l'eina «software-properties» en el vostre gestor de paquets.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1079,6 +1205,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>Paquet en estat inconsistent</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1087,6 +1214,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>El paquet «%s» es troba en un estat inconsistent i s'ha de tornar a instal·lar, però no s'ha trobat l'arxiu per a fer-ho. Torneu-lo a instal·lar manualment o suprimiu-lo del sistema.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1095,6 +1223,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1103,6 +1232,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error mentre s'actualitzava el vostre sistema. Normalment això es degut a problemes de xarxa. Comproveu la vostra connexió de xarxa i torneu a intentar-ho.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1111,6 +1241,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>No disposeu de suficient espai al disc</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1119,6 +1250,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha interromput l'actualització. Cal un total de %s d'espai lliure al disc «%s», per la qual cosa hauríeu d'alliberar un mínim de %s d'espai addicional al disc «%s». Buideu la paperera i suprimiu els paquets temporals d'anteriors instal·lacions utilitzant l'ordre «sudo apt-get clean».</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1127,6 +1259,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'estan calculant els canvis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1135,6 +1268,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>Voleu iniciar l'actualització?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1143,6 +1277,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha cancel·lat l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1151,6 +1286,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>Ara es cancel·larà l'actualització i es restaurarà a l'estat original del sistema. Podeu continuar l'actualització més tard.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1159,6 +1295,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>No s'han pogut baixar les actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1167,6 +1304,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha interromput l'actualització. Comproveu la connexió a Internet o els suports d'instal·lació i torneu-ho a provar. S'han mantingut tots els fitxers baixats fins ara.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1175,6 +1313,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error durant l'enviament</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1183,6 +1322,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'està restaurant l'estat original del sistema</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1191,6 +1331,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>No s'han pogut instal·lar les actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1199,6 +1340,7 @@ Voleu que s'afegeixin entrades per a «%s»? Si trieu que «No», es cancel·lar
       <tuv xml:lang="ca-ES">
         <seg>S'ha interromput l'actualització. Pot ser que el vostre sistema hagi quedat en un estat inestable. Ara s'executarà un procés de recuperació (dpkg --configure -a).</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1213,6 +1355,7 @@ Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/+source/
 Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/ubuntu/+source/update-manager/+filebug en el navegador web, i adjuntar els fitxers que hi hagi a /var/log/dist-upgrade/ a l'informe d'error.
 %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1221,6 +1364,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>S'ha interromput l'actualització. Verifiqueu la vostra connexió a Internet o el suport d'instal·lació i torneu-ho a intentar. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1229,6 +1373,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>Voleu suprimir els paquets obsolets?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1237,6 +1382,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>Sup_rimeix</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1245,6 +1391,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error durant el procés de neteja. Vegeu el següent missatge per a més informació. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1253,6 +1400,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>Les dependències requerides no estan instal·lades</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1261,6 +1409,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>La dependència requerida «%s» no està instal·lada. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1269,6 +1418,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>S'està comprovant el gestor de paquets</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1277,6 +1427,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en la preparació de l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1285,6 +1436,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat la preparació del sistema per l'actualització, per la qual cosa s'iniciarà el procés d'informe d'errors.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1293,6 +1445,7 @@ Hauríeu d'informar d'aquest error anant a l'adreça http://bugs.launchpad.net/u
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en obtenir els prerequisits de l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1305,6 +1458,7 @@ Additionally, a bug reporting process is being started.</seg>
 
 També s'iniciarà el procés d'informe d'errors.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1313,6 +1467,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està actualitzant la informació dels dipòsits</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1321,6 +1476,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut afegir el CD-ROM</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1329,6 +1485,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut afegir el CD-ROM correctament.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1337,6 +1494,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La informació dels paquets no és valida</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1345,6 +1503,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està recollint</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1353,6 +1512,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està actualitzant</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1361,6 +1521,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha completat l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1369,6 +1530,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha completat l'actualització, però s'han produït errors durant aquest procés.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1377,6 +1539,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està cercant programari obsolet</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1385,6 +1548,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha completat l'actualització del sistema.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1393,6 +1557,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>L'actualització parcial s'ha completat.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1401,6 +1566,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està utilitzant l'evms</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1409,6 +1575,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>El vostre sistema utilitza el gestor de volum «evms» a /proc/mounts. Aquest programari no es mantindrà més, desconnecteu-lo i torneu a executar l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1417,6 +1584,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sembla que el vostre maquinari gràfic no és totalment compatible amb l'Ubuntu 12.04 LTS.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1425,6 +1593,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La compatibilitat a l'Ubuntu 12.04 LTS per al vostre maquinari gràfic Intel és limitat i podríeu tenir problemes després d'actualitzar. Per obtenir més informació visiteu https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForI8xx. Voleu continuar amb l'actualització?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1433,6 +1602,7 @@ També s'iniciarà el procés d'informe d'errors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>L'actualització pot reduir els efectes d'escriptori i el rendiment en jocs i altres programes que facin un ús exhaustiu de processament gràfic.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1445,6 +1615,7 @@ Do you want to continue?</seg>
 
 Voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1457,6 +1628,7 @@ Do you want to continue?</seg>
 
 Voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1465,6 +1637,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sense CPU i686</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1473,6 +1646,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El vostre sistema utilitza una CPU i586 o una CPU que no té l'extensió «cmov». Tots els paquets s'han construït amb optimitzacions que requereixen un i686 com a arquitectura mínima. No és possible actualitzar el sistema a una versió nova de l'Ubuntu amb aquest maquinari.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1481,6 +1655,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No és una CPU ARMv6</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1489,6 +1664,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El vostre sistema utilitza una CPU ARM que és més antiga que l'arquitectura ARMv6. Tots els paquets del Karmic s'han creat amb optimitzacions que requereixen l'ARMv6 com a arquitectura mínima. No és possible actualitzar el vostre sistema a una versió nova de l'Ubuntu amb aquest maquinari.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1497,6 +1673,7 @@ Voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap sistema d'inicialització disponible</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1509,6 +1686,7 @@ Are you sure you want to continue?</seg>
 
 Segur que voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1517,6 +1695,7 @@ Segur que voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualització en entorn de proves utilitzant aufs</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1525,6 +1704,7 @@ Segur que voleu continuar?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Utilitza el camí especificat per cercar un CDROM amb paquets actualitzables</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1535,6 +1715,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
         <seg>Utilitzeu un frontal. Actualment es disposa de: 
 DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1543,6 +1724,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>*OBSOLET* aquesta opció s'ignorarà</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1551,6 +1733,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>Realitza només una actualització parcial (sense reescriure el sources.list)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1559,6 +1742,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>Inhabilita la compatibilitat amb el GNU screen</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1567,6 +1751,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>Estableix el «datadir» (directori de dades)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1575,6 +1760,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>Inseriu «%s» a la unitat «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1583,6 +1769,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha completat el recull</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1591,6 +1778,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està obtenint el fitxer %li de %li a %s B/s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1599,6 +1787,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>Queden %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1607,6 +1796,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està obtenint el fitxer %li de %li</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1615,6 +1805,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'estan aplicant els canvis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1623,6 +1814,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>problemes de dependències - es deixarà sense configurar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1631,6 +1823,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut instal·lar «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1639,6 +1832,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
       <tuv xml:lang="ca-ES">
         <seg>L'actualització continuarà, però pot ser que el paquet «%s» no sigui funcional. Hauríeu de considerar l'enviament d'un informe d'error sobre aquest fet.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1649,6 +1843,7 @@ DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE</seg>
         <seg>Voleu reemplaçar el fitxer de
 configuració personalitzat «%s»?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1657,6 +1852,7 @@ configuració personalitzat «%s»?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Perdreu tots els canvis realitzats en el fitxer de configuració si trieu reemplaçar-lo per una versió més nova.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1665,6 +1861,7 @@ configuració personalitzat «%s»?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha trobat l'ordre «diff»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1673,6 +1870,7 @@ configuració personalitzat «%s»?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error greu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1683,6 +1881,7 @@ Your original sources.list was saved in /etc/apt/sources.list.distUpgrade.</seg>
         <seg>Informeu d'això com un error (si no és que ja ho heu fet) i adjunteu els fitxers /var/log/dist-upgrade/main.log i /var/log/dist-upgrade/apt.log al vostre informe. S'ha interromput l'actualització.
 S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUpgrade.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1691,6 +1890,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>S'ha premut Ctrl+C</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1699,6 +1899,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Això interromprà l'operació, amb la qual cosa pot ser que es malmeti el sistema. Esteu segur que ho voleu fer?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1707,6 +1908,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Per a evitar una possible pèrdua de dades, tanqueu tots els documents i aplicacions.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1715,6 +1917,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Ja no mantinguts per Canonical (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1723,6 +1926,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Es desactualitzaran (%s)&lt;/b&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1731,6 +1935,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Se suprimiran (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1739,6 +1944,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Ja no són necessaris (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1747,6 +1953,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>S'instal·laran (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1755,6 +1962,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>S'actualitzaran (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1763,6 +1971,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Canvi de suport</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1771,6 +1980,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Mostra les diferències &gt;&gt;&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1779,6 +1989,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>&lt;&lt;&lt; Oculta les diferències</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1787,6 +1998,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1795,6 +2007,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>&amp;Cancel·la</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1803,6 +2016,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>&amp;Tanca</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1811,6 +2025,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Mostra el terminal &gt;&gt;&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1819,6 +2034,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>&lt;&lt;&lt; Oculta el terminal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1827,6 +2043,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Informació</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1835,6 +2052,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Ja no es mantenen %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1843,6 +2061,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Suprimeix %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1851,6 +2070,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Suprimeix %s (s'havia instal·lat automàticament)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1859,6 +2079,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Instal·la %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1867,6 +2088,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Actualitza %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1875,6 +2097,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Cal que reinicieu el sistema</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1883,6 +2106,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;&lt;big&gt;Reinicieu el sistema per a completar l'actualització&lt;/big&gt;&lt;/b&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1891,6 +2115,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>_Reinicia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1903,6 +2128,7 @@ The system could be in an unusable state if you cancel the upgrade. You are stro
 
 El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar amb l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1911,6 +2137,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>Voleu cancel·lar l'actualització?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1919,6 +2146,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%li dia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1927,6 +2155,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%li hora</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1935,6 +2164,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%li minut</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1943,6 +2173,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%li segon</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1951,6 +2182,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%(str_days)s %(str_hours)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1959,6 +2191,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%(str_hours)s %(str_minutes)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1967,6 +2200,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>La baixada trigarà aproximadament %s amb una connexió ADSL d'1Mb, i aproximadament %s amb un mòdem de 56k</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1975,6 +2209,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>La baixada trigarà aproximadament %s amb la vostra connexió. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1983,6 +2218,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'està preparant l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1991,6 +2227,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'estan obtenint canals de programari nous</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1999,6 +2236,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'estan obtenint els paquets nous</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2007,6 +2245,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'estan instal·lant les actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2015,6 +2254,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'està netejant</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2023,6 +2263,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>%(amount)d paquet instal·lat ja no està mantingut per Canonical. Així i tot, encara podeu obtenir assistència de la comunitat.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2031,6 +2272,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>Se suprimirà %d paquet.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2039,6 +2281,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'instal·larà %d paquet nou</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2047,6 +2290,7 @@ El sistema pot quedar inusable si la cancel·leu. És molt recomanable continuar
       <tuv xml:lang="ca-ES">
         <seg>S'actualitzarà %d paquet</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2059,6 +2303,7 @@ You have to download a total of %s. </seg>
 
 Heu de baixar un total de %s. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2067,6 +2312,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>La instal·lació de l'actualització pot trigar unes quantes hores. Un cop hagi finalitzat la baixada dels fitxers, el procés no es pot cancel·lar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2075,6 +2321,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>La baixada i instal·lació de l'actualització pot trigar unes quantes hores. Un cop hagi finalitzat la baixada dels fitxers, el procés no es pot cancel·lar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2083,6 +2330,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>La supressió de paquets pot trigar unes quantes hores. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2091,6 +2339,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>El programari d'aquest ordinador està actualitzat.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2099,6 +2348,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha actualitzacions disponibles per al vostre sistema. L'actualització es cancel·larà</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2107,6 +2357,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal que reinicieu el sistema</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2115,6 +2366,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>L'actualització ha finalitzat i cal reiniciar el sistema. Voleu fer-ho ara?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2123,6 +2375,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>autenticació del fitxer «%(file)s» amb la signatura «%(signature)s» </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2131,6 +2384,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>s'està extraient «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2139,6 +2393,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>No es pot executar l'eina d'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2147,6 +2402,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Sembla que hi ha un error en l'eina d'actualització. Informeu d'aquest error utilitzant l'ordre «ubuntu-bug update-manager» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2155,6 +2411,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Signatura de l'eina d'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2163,6 +2420,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Eina d'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2171,6 +2429,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat la baixada</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2179,6 +2438,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat l'obtenció de l'actualització. Pot ser que hi hagi algun problema a la xarxa. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2187,6 +2447,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat l'autenticació</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2195,6 +2456,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat l'autenticació de l'actualització. Pot ser que hi hagi algun problema a la xarxa o al servidor. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2203,6 +2465,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat l'extracció</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2211,6 +2474,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat l'extracció de l'actualització. Pot ser que hi hagi algun problema a la xarxa o al servidor. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2219,6 +2483,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat la verificació</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2227,6 +2492,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat la verificació de l'actualització. Pot ser que hi hagi algun problema a la xarxa o al servidor. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2235,6 +2501,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>No es pot executar l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2243,6 +2510,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>Normalment això està provocat per un sistema on /tmp s'ha muntat com a no executable. Torneu-lo a muntar sense l'opció de no executable i torneu a executar l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2251,6 +2519,7 @@ Heu de baixar un total de %s. </seg>
       <tuv xml:lang="ca-ES">
         <seg>El missatge d'error és «%s».</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2261,6 +2530,7 @@ Your original sources.list was saved in /etc/apt/sources.list.distUpgrade.</seg>
         <seg>Informeu d'això com un error i adjunteu els fitxers /var/log/dist-upgrade/main.log i /var/log/dist-upgrade/apt.log al vostre informe. S'ha interromput l'actualització.
 S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUpgrade.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2269,6 +2539,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>S'està interrompent</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2279,6 +2550,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
         <seg>Degradat:
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2287,6 +2559,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Premeu la tecla de retorn per continuar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2295,6 +2568,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Continua [sN] </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2303,6 +2577,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Detalls [d]</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2311,6 +2586,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2319,6 +2595,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>n</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2327,6 +2604,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>d</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2337,6 +2615,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
         <seg>Ja no es mantenen: %s
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2347,6 +2626,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
         <seg>Suprimeix: %s
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2357,6 +2637,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
         <seg>Instal·la: %s
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2367,6 +2648,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
         <seg>Actualitza: %s
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2375,6 +2657,7 @@ S'ha desat el vostre fitxer sources.list original a /etc/apt/sources.list.distUp
       <tuv xml:lang="ca-ES">
         <seg>Continua [Sn] </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2385,6 +2668,7 @@ If you select 'y' the system will be restarted.</seg>
         <seg>Cal reiniciar el sistema per a finalitzar l'actualització.
 Si seleccioneu «s», es reiniciarà el sistema.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2393,6 +2677,7 @@ Si seleccioneu «s», es reiniciarà el sistema.</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Cancel·la l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2401,6 +2686,7 @@ Si seleccioneu «s», es reiniciarà el sistema.</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Reprèn l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2413,6 +2699,7 @@ The system could be in an unusable state if you cancel the upgrade. You are stro
 
 Si ho feu, pot ser que el sistema sigui inutilitzable. És extremament recomanable continuar amb l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2421,6 +2708,7 @@ Si ho feu, pot ser que el sistema sigui inutilitzable. És extremament recomanab
       <tuv xml:lang="ca-ES">
         <seg>_Comença l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2429,6 +2717,7 @@ Si ho feu, pot ser que el sistema sigui inutilitzable. És extremament recomanab
       <tuv xml:lang="ca-ES">
         <seg>Diferències entre els fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2437,6 +2726,7 @@ Si ho feu, pot ser que el sistema sigui inutilitzable. És extremament recomanab
       <tuv xml:lang="ca-ES">
         <seg>_Informa de l'error</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2445,6 +2735,7 @@ Si ho feu, pot ser que el sistema sigui inutilitzable. És extremament recomanab
       <tuv xml:lang="ca-ES">
         <seg>_Continua</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2453,6 +2744,7 @@ Si ho feu, pot ser que el sistema sigui inutilitzable. És extremament recomanab
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;&lt;big&gt;Voleu iniciar l'actualització?&lt;/big&gt;&lt;/b&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2465,6 +2757,7 @@ Please save your work before continuing.</seg>
 
 Deseu la vostra feina abans de continuar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2473,6 +2766,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualització de la distribució</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2481,6 +2775,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>    </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2489,6 +2784,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'estan configurant els canals de programari nous</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2497,6 +2793,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està reiniciant l'ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2505,6 +2802,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Terminal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2513,6 +2811,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Espereu un moment, això pot tardar una estona.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2521,6 +2820,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha completat l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2529,6 +2829,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'han trobat les notes de la versió</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2537,6 +2838,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>El servidor potser està sobrecarregat. </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2545,6 +2847,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'han pogut baixar les notes de la versió</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2553,6 +2856,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comproveu la vostra connexió a Internet</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2561,6 +2865,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Notes de la versió</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2569,6 +2874,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'estan baixant els fitxers de paquet addicionals...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2577,6 +2883,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer %s de %s a %s B/s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2585,6 +2892,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer %s de %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2593,6 +2901,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obre l'enllaç al navegador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2601,6 +2910,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Copia l'enllaç al porta-retalls</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2609,6 +2919,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està baixant el fitxer %(current)li de %(total)li a %(speed)s/s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2617,6 +2928,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està baixant el fitxer %(current)li de %(total)li</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2625,6 +2937,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La vostra versió de l'Ubuntu ja no està mantinguda.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2633,6 +2946,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ja no rebreu més actualitzacions de seguretat o crítiques. Hauríeu d'actualitzar-vos a la darrera versió de l'Ubuntu.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2641,6 +2955,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Informació de l'actualització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2649,6 +2964,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Nom</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2659,6 +2975,7 @@ Deseu la vostra feina abans de continuar.</seg>
         <seg>Versió %s: 
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2667,6 +2984,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha detectat cap connexió de xarxa, no podeu baixar informació del registre de canvis.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2675,6 +2993,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està descarregant la llista de canvis...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2683,6 +3002,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Desselecciona-ho tot</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2691,6 +3011,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccion_a-ho tot</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2699,6 +3020,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Es baixaran %s.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2707,6 +3029,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap actualització per instal·lar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2715,6 +3038,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut determinar la mida de la baixada.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2723,6 +3047,7 @@ Deseu la vostra feina abans de continuar.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No se sap quan s'ha actualitzat la informació del paquet per últim cop. Feu clic al botó «Comprova» per actualitzar la informació.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2733,6 +3058,7 @@ Press the 'Check' button below to check for new software updates.</seg>
         <seg>La informació dels paquets s'actualitzà fa %(days_ago)s dies.
 Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacions noves.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2741,6 +3067,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>La informació dels paquets es va actualitzar fa %(days_ago)s dia.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2749,6 +3076,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>La informació dels paquets es va actualitzar fa %(hours_ago)s hora.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2757,6 +3085,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>La informació del paquet es va actualitzar per últim cop fa %s minuts.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2765,6 +3094,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>La informació del paquet s'acaba d'actualitzar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2773,6 +3103,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>Pot ser que hi hagi actualitzacions de programari per a aquest ordinador.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2781,6 +3112,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>L'actualització requereix %s d'espai lliure al disc «%s». Hauríeu d'alliberar almenys %s d'espai de disc a «%s». Buideu la vostra paperera i esborreu els paquets temporals utilitzant «sudo apt-get clean».</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2789,6 +3121,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>Cal reiniciar l'ordinador per a finalitzar la instaŀlació de les actualitzacions. Deseu la vostra feina abans de continuar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2797,6 +3130,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>S'està llegint la informació dels paquets</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2805,6 +3139,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>S'està connectant...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2813,6 +3148,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>Pot ser que no pugueu comprovar si hi ha actualitzacions o baixar-ne de noves.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2821,6 +3157,7 @@ Premeu el botó «Comprova» de més avall per comprovar si hi ha actualitzacion
       <tuv xml:lang="ca-ES">
         <seg>No es pot inicialitzar la informació dels paquets</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2835,6 +3172,7 @@ Please report this bug against the 'update-manager' package and include the foll
 Informeu d'aquest error de l'update-manager i incloeu el missatge següent:
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2847,6 +3185,7 @@ Please report this bug against the 'update-manager' package and include the foll
 
 Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2855,6 +3194,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg> (Instal·lació nova)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2863,6 +3203,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>(Mida: %s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2871,6 +3212,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>De la versió %(old_version)s a la %(new_version)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2879,6 +3221,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>Versió %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2887,6 +3230,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>En aquests moments no es pot efectuar l'actualització de versió</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2895,6 +3239,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>En aquests moments no es pot efectuar l'actualització de versió. Torneu-ho a provar més tard. El servidor ha respost: «%s»</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2903,6 +3248,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>S'està baixant l'eina d'actualització a una versió nova</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2911,6 +3257,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;La versió nova de l'Ubuntu «%s» està disponible&lt;/b&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2919,6 +3266,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>L'índex de programari està trencat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2927,6 +3275,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>No és possible instal·lar o desinstal·lar programari. Per a arreglar-ho, utilitzeu el gestor de paquets «Synaptic» o executeu «sudo apt-get install -f» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2935,6 +3284,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>Comprova si hi ha actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2943,6 +3293,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>Instal·la totes les actualitzacions disponibles</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2951,6 +3302,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>Registre de canvis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2959,6 +3311,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2967,6 +3320,7 @@ Informeu d'aquest error de l'update-manager i incloeu el missatge següent:</seg
       <tuv xml:lang="ca-ES">
         <seg>S'està construint la llista d'actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -2993,6 +3347,7 @@ Les causes d'això poden ser:
  * Paquets de programari no oficial que no estan proveïts per l'Ubuntu
  * Canvis normals en una versió de desenvolupament de l'Ubuntu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3001,6 +3356,7 @@ Les causes d'això poden ser:
       <tuv xml:lang="ca-ES">
         <seg>S'està baixant el registre de canvis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3009,6 +3365,7 @@ Les causes d'això poden ser:
       <tuv xml:lang="ca-ES">
         <seg>Altres actualitzacions (%s)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3017,6 +3374,7 @@ Les causes d'això poden ser:
       <tuv xml:lang="ca-ES">
         <seg>Aquesta actualització no prové d'una font que funcioni amb registres de canvis.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3027,6 +3385,7 @@ Please check your Internet connection.</seg>
         <seg>S'ha produït un error en baixar la llista de canvis. 
 Comproveu la vostra connexió a Internet.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3043,6 +3402,7 @@ Versió disponible: %s
 
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3057,6 +3417,7 @@ until the changes become available or try again later.</seg>
 Vegeu http://launchpad.net/ubuntu/+source/%s/%s/+changelog
 mentre els canvis no estan disponobles o torneu a provar-ho més tard.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3071,6 +3432,7 @@ until the changes become available or try again later.</seg>
 Utilitzeu http://launchpad.net/ubuntu/+source/%s/%s/+changelog
 mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3079,6 +3441,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut detectar la distribució</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3087,6 +3450,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error «%s» mentre es comprovava el sistema que esteu utilitzant.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3095,6 +3459,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions de seguretat importants</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3103,6 +3468,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions recomanades</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3111,6 +3477,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions proposades</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3119,6 +3486,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Backports</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3127,6 +3495,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions de la distribució</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3135,6 +3504,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Altres actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3143,6 +3513,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Les actualitzacions de programari corregeixen errors, eliminen problemes de seguretat i proporcionen prestacions noves.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3151,6 +3522,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualització _parcial</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3159,6 +3531,7 @@ mentre els canvis no estiguin disponibles o torneu a provar-ho més tard.</seg>
       <tuv xml:lang="ca-ES">
         <seg>&lt;big&gt;&lt;b&gt;No s'han pogut instal·lar totes les actualitzacions&lt;/b&gt;&lt;/big&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3179,6 +3552,7 @@ Això pot ser degut a:
  * Paquets de programari no oficials, no proporcionats per l'Ubuntu
  * Canvis normals d'una versió no final de l'Ubuntu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3187,6 +3561,7 @@ Això pot ser degut a:
       <tuv xml:lang="ca-ES">
         <seg>Compro_va</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3199,6 +3574,7 @@ Your system does not check for updates automatically. You can configure this beh
 
 El vostre sistema no comprova les actualitzacions automàticament. Si voleu que ho faci, configureu-ho a &lt;i&gt;Fonts de programari&lt;/i&gt; a la pestanya &lt;i&gt;Actualitzacions&lt;/i&gt;.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3207,6 +3583,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>_En el futur oculta aquesta informació</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3215,6 +3592,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Co_ntinua</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3223,6 +3601,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>&lt;big&gt;&lt;b&gt;S'està utilitzant la bateria&lt;/b&gt;&lt;/big&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3231,6 +3610,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>El sistema està funcionant amb l'energia de la bateria. Segur que voleu continuar?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3239,6 +3619,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>_Actualitza</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3247,6 +3628,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Mostra el progrés dels fitxers individuals</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3255,6 +3637,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>_Actualitza</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3263,6 +3646,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>actualitzacions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3271,6 +3655,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Canvis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3279,6 +3664,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Esteu connectat per itinerància i potser us cobraran per les dades baixades per l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3287,6 +3673,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>És més segur connectar l'ordinador a la xarxa elèctrica abans de començar l'actualització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3295,6 +3682,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>_Paràmetres...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3303,6 +3691,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Hi ha disponible una versió nova de l'Ubuntu. Voleu actualitzar el vostre sistema?&lt;/b&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3311,6 +3700,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>No actualitzis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3319,6 +3709,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Demana-m'ho més tard</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3327,6 +3718,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Actualitza</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3335,6 +3727,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Heu triat no actualitzar a la versió nova de l'Ubuntu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3343,6 +3736,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions de programari</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3351,6 +3745,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Mostra i instal·la les actualitzacions disponibles</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3359,6 +3754,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Mostra la versió i surt</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3367,6 +3763,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>El directori que conté els fitxers de dades</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3375,6 +3772,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Comprova si hi ha una versió nova de l'Ubuntu disponible</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3383,6 +3781,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Comprova si és possible actualitzar a la darrera versió de desenvolupament</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3391,6 +3790,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Duu a terme l'actualització utilitzant la darrera versió proposada de l'actualitzador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3399,6 +3799,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>No passes a primer pla en iniciar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3407,6 +3808,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Prova d'executar un dist-upgrade</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3415,6 +3817,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>No comprovis si hi ha actualitzacions en iniciar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3423,6 +3826,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Prova d'actualitzar en un entorn de proves amb aufs</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3431,6 +3835,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>S'està executant una actualització parcial</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3439,6 +3844,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Mostra la descripció del paquet en lloc del registre de canvis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3447,6 +3853,7 @@ El vostre sistema no comprova les actualitzacions automàticament. Si voleu que 
       <tuv xml:lang="ca-ES">
         <seg>Proveu d'actualitzar a l'última versió fent servir l'actualitzador de $distro-proposed</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3457,6 +3864,7 @@ Currently 'desktop' for regular upgrades of a desktop system and 'server' for se
         <seg>Executeu un mode d'actualització especial.
 Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'escriptori i del mode «server» per a sistemes servidors.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3465,6 +3873,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Executa el frontal especificat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3473,6 +3882,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Només verifica si hi ha disponible una versió nova i informa del resultat mitjançant el codi de sortida</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3481,6 +3891,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>S'està cercant una versió nova de l'Ubuntu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3493,6 +3904,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
 %(url)s
 </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3501,6 +3913,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>No s'ha trobat cap versió nova</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3509,6 +3922,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>La versió nova «%s» ja està disponible</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3517,6 +3931,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Executeu «do-release-upgrade» per actualitzar a la nova versió.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3525,6 +3940,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Hi ha disponible una actualitzacio de l'Ubuntu %(version)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3533,6 +3949,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Heu triat no actualitzar a l'Ubuntu %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3541,6 +3958,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Afegeix informació de depuració</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3549,6 +3967,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Mostra els paquets no oficials en aquest dispositiu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3557,6 +3976,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Mostra els paquets mantinguts en aquest ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3565,6 +3985,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Mostra tots els paquets i el seu estat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3573,6 +3994,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Mostra una llista de tots els paquets</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3581,6 +4003,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Estat de manteniment de «%s»:</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3589,6 +4012,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Teniu %(num)s paquets (%(percent).1f%%) mantinguts fins %(time)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3597,6 +4021,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Teniu %(num)s paquets (%(percent).1f%%) que ja no es poden baixar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3605,6 +4030,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Teniu %(num)s paquets (%(percent).1f%%) que no estan mantinguts</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3613,6 +4039,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Executeu aquest programa amb una de les opcions --show-unsupported, --show-supported o --show-all per veure'n més detalls</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3621,6 +4048,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Ja no es poden baixar:</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3629,6 +4057,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>No mantinguts: </seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3637,6 +4066,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Mantinguts fins %s:</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3645,6 +4075,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>No mantingut</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3653,6 +4084,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>El mètode %s no està implementat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3661,6 +4093,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Un fitxer en disc</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3669,6 +4102,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Instal·la el paquet que falta.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3677,6 +4111,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>El paquet %s s'hauria d'instal·lar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3685,6 +4120,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Paquet .deb</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3693,6 +4129,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>%s s'ha de marcar com a instal·lat manualment.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3701,6 +4138,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>En dur a terme l'actualització, si el paquet kdelibs4-dev està instal·lat caldrà instal·lar el paquet kdelibs5-dev. Vegeu l'informe d'error número 279621 a bugs.launchpad.net per a obtenir-ne més detalls.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3709,6 +4147,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>%i entrades obsoletes en el fitxer status</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3717,6 +4156,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Entrades obsoletes a dpkg status</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3725,6 +4165,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Entrades obsoletes a dpkg status</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3733,6 +4174,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Esborra el lilo ja que el grub també està instal·lat (Si voleu més detalls vegeu l'error #314004)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-update-manager'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3741,6 +4183,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Si res d'això és aplicable, informeu d'aquest error utilitzant l'ordre «ubuntu-bug ubuntu-release-upgrader-core» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3749,6 +4192,7 @@ Actualment disposeu del mode «desktop» per a actualitzacions de sistemes d'esc
       <tuv xml:lang="ca-ES">
         <seg>Ha sigut impossible instal·lar el paquet necessari. Informeu d'aquest error utilitzant l'ordre «ubuntu-bug ubuntu-release-upgrader-core» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3763,6 +4207,7 @@ Please report this bug in a browser at http://bugs.launchpad.net/ubuntu/+source/
 Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+source/ubuntu-release-upgrader/+filebug i adjunteu els fitxers de /var/log/dist-upgrade/ a l'informe d'error.
 %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3771,6 +4216,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>El més probable és que sigui un error en l'eina d'actualització. Informeu d'aquest error utilitzant l'ordre «ubuntu-bug ubuntu-release-upgrader-core» en un terminal.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3779,6 +4225,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>L'entorn d'escriptori «Unity» no és totalment compatible amb el vostre maquinari gràfic. Pot ser que l'escriptori s'executi molt lentament després de l'actualització. El nostre consell és que de moment mantingueu la versió LTS. Per obtenir més informació vegeu https://wiki.ubuntu.com/X/Bugs/UpdateManagerWarningForUnity3D. Tot i això, voleu continuar amb l'actualització?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3787,6 +4234,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Podeu actualitzar més tard obrint el gestor d'actualitzacions i fent clic a «Actualitza».</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3795,6 +4243,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Realitza una actualització de la versió</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3803,6 +4252,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Cal que us autentiqueu per actualitzar l'Ubuntu.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3811,6 +4261,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Realitza una actualització parcial</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3819,6 +4270,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Cal que us autentiqueu per fer una actualització parcial.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntu-release-upgrader'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3827,6 +4279,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Els vostres serveis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3835,6 +4288,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Sempre sincronitzat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3843,6 +4297,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Si us cal saber més coses sobre l'Ubuntu One, aneu a {support_url}</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3851,6 +4306,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>No, continua la configuració</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3859,6 +4315,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Podeu reiniciar el procés de configuració en qualsevol moment fent clic a l'Ubuntu One en el menú.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3867,6 +4324,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Segur que voleu cancel·lar la configuració de l'Ubuntu One?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3875,6 +4333,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Sí, vull cancel·lar-la</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3883,6 +4342,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Aquestes són les carpetes en el vostre núvol. Seleccioneu les que voleu sincronitzar amb aquest ordinador.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3891,6 +4351,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>S'està sincronitzant el núvol amb l'ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3899,6 +4360,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>D'acord. Ara és l'hora de triar quines carpetes d'aquest ordinador voleu sincronitzar al núvol.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3907,6 +4369,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>S'està sincronitzant l'ordinador amb el núvol</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3915,6 +4378,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Connecta't a l'Ubuntu One</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3923,6 +4387,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Connector del Thunderbird</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3931,6 +4396,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Copia l'adreça de l'enllaç</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3939,6 +4405,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Hi ha hagut un problema en recuperar les credencials.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3947,6 +4414,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Mostra les dades personals i un resum dels serveis</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3955,6 +4423,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>Us donem la benvinguda a l'Ubuntu One</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3963,6 +4432,7 @@ Informeu d'aquest error en un navegador a http://bugs.launchpad.net/ubuntu/+sour
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut recuperar la informació. Pot ser que no estigueu connectat a Internet?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3973,6 +4443,7 @@ previous values were restored.</seg>
         <seg>No s'han pogut aplicar els canvis,
 s'han restaurat els valors anteriors.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3981,6 +4452,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Segur que voleu suprimir aquest dispositiu de l'Ubuntu One?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3989,6 +4461,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut eliminar el dispositiu.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3997,6 +4470,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Administra els dispositius registrats al meu núvol personal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4005,6 +4479,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aquest dispositiu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4013,6 +4488,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aneu al lloc web per gestionar els vostres altres dispositius</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4021,6 +4497,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Altres dispositius</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4029,6 +4506,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Els dispositius connectats amb el vostre núvol personal es mostren a continuació.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4037,6 +4515,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Editeu els serveis en línia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4045,6 +4524,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Editeu els detalls personals en línia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4053,6 +4533,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>El paquet &lt;i&gt;%(package_name)s&lt;/i&gt; no s'ha pogut instal·lar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4061,6 +4542,7 @@ s'han restaurat els valors anteriors.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronitza una altra carpeta amb el vostre núvol</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4073,6 +4555,7 @@ Please choose a folder inside your "%(home_folder)s" directory, and not overlapp
 
 Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui sobreposada amb cap altra carpeta existent en el núvol.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4081,6 +4564,7 @@ Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui s
       <tuv xml:lang="ca-ES">
         <seg>Les meves carpetes personals</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4089,6 +4573,7 @@ Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui s
       <tuv xml:lang="ca-ES">
         <seg>Compartit per %(other_user_display_name)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4097,6 +4582,7 @@ Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui s
       <tuv xml:lang="ca-ES">
         <seg>Afegeix una carpeta d'aquest ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4105,6 +4591,7 @@ Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui s
       <tuv xml:lang="ca-ES">
         <seg>Administra les carpetes del núvol</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4113,6 +4600,7 @@ Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui s
       <tuv xml:lang="ca-ES">
         <seg>Explora</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4121,6 +4609,7 @@ Trieu una carpeta dins del vostre directori «%(home_folder)s» que no estigui s
       <tuv xml:lang="ca-ES">
         <seg>Sincronitza localment</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4131,6 +4620,7 @@ Do you want to subscribe to this cloud folder?</seg>
         <seg>Quan us subscriviu, el contingut de la carpeta del núvol es fusionarà amb la vostra carpeta local «%(folder_path)s».
 Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4139,6 +4629,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aneu al lloc web per modificar les opcions de compartició pública i privada</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4147,6 +4638,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu les carpetes del vostre núvol que voleu sincronitzar amb aquest ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4155,6 +4647,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Connecta</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4163,6 +4656,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Connecta el servei de sincronització de fitxers amb el meu núvol personal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4171,6 +4665,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>La sincronització de fitxers està inhabilitada.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4179,6 +4674,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Desconnecta</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4187,6 +4683,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Desconnecta el servei de sincronització de fitxers del meu núvol personal</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4195,6 +4692,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>La sincronització de fitxers s'ha desconnectat.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4203,6 +4701,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Habilita</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4211,6 +4710,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Habilita el servei de sincronització de fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4219,6 +4719,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Error en la sincronització de fitxers.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4227,6 +4728,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>La sincronització de fitxers està actualitzada.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4235,6 +4737,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Reinicia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4243,6 +4746,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Reinicia el servei de sincronització de fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4251,6 +4755,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronització de fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4259,6 +4764,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Inicia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4267,6 +4773,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Inicia el servei de sincronització de fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4275,6 +4782,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està iniciant la sincronització de fitxers...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4283,6 +4791,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Atura</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4291,6 +4800,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Atura el servei de sincronització de fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4299,6 +4809,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>La sincronització de fitxers està aturada.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4307,6 +4818,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronització de fitxers en progrés...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4315,6 +4827,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%(free_space)s d'emmagatzematge disponible</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4323,6 +4836,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error a l'Ubuntu One</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4331,6 +4845,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error i l'Ubuntu One es tancarà.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4339,6 +4854,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obteniu ajuda en línia</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4347,6 +4863,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obteniu més emmagatzematge</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4355,6 +4872,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Hola %(user_display_name)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4363,6 +4881,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Vés al lloc web</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4371,6 +4890,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>En curs</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4379,6 +4899,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal que instal·leu el paquet &lt;i&gt;%(package_name)s&lt;/i&gt; per tal d'habilitar més serveis de sincronització.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4387,6 +4908,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Instal·leu el %(plugin_name)s per al servei de sincronització: %(service_name)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4395,6 +4917,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està realitzant la instal·lació del paquet &lt;i&gt;%(package_name)s&lt;/i&gt;</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4403,6 +4926,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Accepta i continua</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4411,6 +4935,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Acord de llicència</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4419,6 +4944,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>L'Ubuntu One Bàsic és gratuït, mentre que alguns serveis addicionals són de pagament.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4427,6 +4953,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Rebutja i desinstal·la'l</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4435,6 +4962,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aquest programa és programari lliure: podeu redistribuir-lo i/o modificar-lo sota els termes de la Llicència pública general de GNU versió 3, tal com publica la Free Software Foundation.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4443,6 +4971,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Com a programari lliure, aquest programa es distribueix sense cap garantia. Vegeu la llicència pública general GNU per obtenir més informació a {license_link}</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4451,6 +4980,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està carregant...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4459,6 +4989,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està obtenint informació, espereu un moment...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4467,6 +4998,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'està calculant...</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4475,6 +5007,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Les carpetes que heu seleccionat per sincronitzar sobrepassen el vostre espai de {quota_total}. Podeu suprimir algunes carpetes o afegir emmagatzematge addicional.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4483,6 +5016,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronitza aquestes carpetes en el meu ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4491,6 +5025,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Espai {space_total}</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4499,6 +5034,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Informació del compte</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4507,6 +5043,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Dispositius</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4515,6 +5052,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Carpetes</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4523,6 +5061,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Paràmetres</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4531,6 +5070,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Enllaços compartits</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4539,6 +5079,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Quadre de control %(app_name)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4547,6 +5088,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Música comprada</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4555,6 +5097,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Les meves carpetes</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4563,6 +5106,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>[nom d'usuari desconegut]</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4571,6 +5115,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal una connexió a Internet per inscriure's o accedir a %(app_name)s.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4579,6 +5124,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Compartició nova d'en/na %s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4587,6 +5133,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap dispositiu a mostrar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4595,6 +5142,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap carpeta per mostrar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4603,6 +5151,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap registre d'aparellaments de l'Ubuntu One.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4611,6 +5160,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obre</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4619,6 +5169,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obre l'Ubuntu One</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4627,6 +5178,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obre la carpeta de l'Ubuntu One</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4635,6 +5187,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%(percentage)s utilitzat</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4643,6 +5196,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Espereu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4651,6 +5205,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Dades personals</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4659,6 +5214,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'estan utilitzant %(used)s d'un total de %(total)s (%(percentage).0f%%)</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4667,6 +5223,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Transferències recents</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4675,6 +5232,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Restaura</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4683,6 +5241,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cerca fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4691,6 +5250,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu les carpetes per sincronitzar</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4699,6 +5259,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Administra els serveis de sincronització</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4707,6 +5268,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Habilita els serveis de sincronització en aquest ordinador.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4715,6 +5277,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Habilita totes les notificacions a aquest dispositiu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4723,6 +5286,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Connecta't automàticament en iniciar l'ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4731,6 +5295,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Pàrametres de l'ample de banda</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4739,6 +5304,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aplica aquests paràmetres</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4747,6 +5313,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Paràmetres per defecte</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4755,6 +5322,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Configuració de la sincronització de fitxers</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4763,6 +5331,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>KiB/s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4771,6 +5340,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Limita la velocitat de baixada a</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4779,6 +5349,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Limita la velocitat de pujada a</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4787,6 +5358,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronitza automàticament totes les carpetes noves del núvol en aquest ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4795,6 +5367,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronitza automàticament totes les carpetes compartides amb mi en aquest ordinador</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4803,6 +5376,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Converteix un fitxer</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4811,6 +5385,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxers compartits</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4819,6 +5394,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Administra les comparticions</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4827,6 +5403,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Administreu els permisos de compartició amb altres usuaris</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4835,6 +5412,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Inicia la sessió</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4843,6 +5421,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El paquet &lt;i&gt;%(package_name)s&lt;/i&gt; s'ha instal·lat correctament</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4851,6 +5430,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sincronitzeu, difoneu, compartiu</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4859,6 +5439,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Parleu amb nosaltres</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4867,6 +5448,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Transferències actuals i recents</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4875,6 +5457,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El valor no s'ha pogut recuperar.</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4883,6 +5466,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Error desconegut</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4891,6 +5475,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%(used)s de %(total)s</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4899,6 +5484,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Surt de l'Ubuntu one</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4907,6 +5493,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>bytes</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4915,6 +5502,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>KiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4923,6 +5511,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>MiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4931,6 +5520,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>GiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4939,6 +5529,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>TiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4947,6 +5538,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>PiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4955,6 +5547,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Eib</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4963,6 +5556,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>ZiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4971,6 +5565,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>YiB</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -4979,6 +5574,7 @@ Voleu subscriure-us a aquesta carpeta del núvol?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Configureu i gestioneu el vostre compte de l'Ubuntu One</seg>
       </tuv>
+      <note>Translation source: /ca.po from project 'ubuntuone-control-panel'</note>
     </tu>
   </body>
 </tmx>
