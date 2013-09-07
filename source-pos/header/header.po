@@ -16,9 +16,9 @@
 #
 # Aquesta memòria inclou els principals programes que tradueix Softcatalà. S'han 
 # inclòs només aquells programes sobre els quals s'han fet revisions completes
-# recentement.# 
+# recentement.
 #
-# Data d'ensamblatge juliol 2013
+# Data d'ensamblatge setembre 2013
 #
 
 msgid ""
