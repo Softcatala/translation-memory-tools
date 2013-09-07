@@ -1,0 +1,5 @@
+--- Static analysis
+
+Use flake8 *.py
+
+
