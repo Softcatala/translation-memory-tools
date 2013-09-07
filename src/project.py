@@ -26,6 +26,7 @@ from bazaarfileset import BazaarFileSet
 from transifexfileset import TransifexFileSet
 from localdirfileset import LocalDirFileSet
 from fileset import FileSet
+from filefileset import FileFileSet
 from polib import pofile
 
 
