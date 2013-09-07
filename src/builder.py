@@ -18,14 +18,18 @@
 # Boston, MA 02111-1307, USA.
 
 import logging
+import time
+import os
+
 from optparse import OptionParser
-from fileset import *
-from project import *
-from projects import *
-from jsonbackend import *
+from fileset import FileSet
+from project import Project
+from projects import Projects
+from jsonbackend import JsonBackend
 
 projects = Projects("tm.po")
 addSource = True
+
 
 def initLogging():
 
@@ -34,22 +38,25 @@ def initLogging():
     if (os.path.isfile(logfile)):
         os.system("rm " + logfile)
 
-    logging.basicConfig(filename=logfile,level=logging.DEBUG)
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
     logger = logging.getLogger('')
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
     logger.addHandler(console)
 
+
 def readParameters():
 
     parser = OptionParser()
     parser.add_option("-n", "--no-source",
-            action="store_false", dest="addSource", default=True,
-            help="Do not include the source for the translation segment")
+                      action="store_false", dest="addSource", default=True,
+                      help="Do not include the source for the translation " +
+                      "segment")
 
     parser.add_option("-p", "--projects",
-            action="store", type="string", dest="projectNames",
-            help="To restrict the processing of projects to comma sparated given list e.g.: (fedora,ubuntu)")
+                      action="store", type="string", dest="projectNames",
+                      help="To restrict the processing of projects to " +
+                      "comma sparated given list e.g.: (fedora,ubuntu)")
 
     (options, args) = parser.parse_args()
 
@@ -62,6 +69,7 @@ def readParameters():
         projectsNames = options.projectNames.split(",")
     else:
         projectsNames = None
+
 
 def processProjects():
 
@@ -78,12 +86,13 @@ def processProjects():
                 if projectName.lower().strip() == project_dto.name.lower().strip():
                     found = True
 
-            if found == False:
+            if found is False:
                 continue
 
         projects.AddProject(project_dto, addSource)
 
     projects.Do()
+
 
 def main():
 
@@ -98,7 +107,7 @@ def main():
     projects.ToTmx()
     projects.Statistics()
 
-    s= "Execution time: " + str(time.time() - start_time) + " seconds"
+    s = "Execution time: " + str(time.time() - start_time) + " seconds"
     logging.info(s)
 
 if __name__ == "__main__":

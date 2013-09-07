@@ -16,7 +16,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import *
+import os
+
+from fileset import FileSet, FindFiles
 from urlparse import urlparse
 
 
@@ -45,8 +47,9 @@ class TransifexFileSet(FileSet):
         os.system("tx init --host " + uri)
         os.system("tx set --auto-remote " + self.url)
 
-        # To be able to process files with no English source (.strings, .xml, etc) we pull the English files too
-        # and then we delete the ones that include source and target
+        # To be able to process files with no English source (.strings, .xml,
+        # etc) we pull the English files too and then we delete the ones that
+        # include source and target
         os.system("tx pull -f -lca,en")
         os.chdir(prevdir)
         self.RemoveNonTranslationOnlyFiles()

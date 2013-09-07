@@ -19,6 +19,7 @@
 import json
 from collections import OrderedDict
 
+
 class ProjectDTO:
 
     def __init__(self):
@@ -28,7 +29,8 @@ class ProjectDTO:
         return
 
     def __str__(self):
-        return  "ProjectDTO. Name: " + self.name + ", filename:" + self.filename
+        return "ProjectDTO. Name: " + self.name + ", filename:" + self.filename
+
 
 class FileSetDTO:
 
@@ -42,6 +44,7 @@ class FileSetDTO:
 
     def __str__(self):
         return  "FileSetDTO. Name: " + self.name + ", url:" + self.url + ", type:" + self.type + ", excluded:" + self.excluded +  ", target:" + self.target
+
 
 class JsonBackend:
 

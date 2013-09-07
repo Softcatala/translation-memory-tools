@@ -16,7 +16,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import *
+import os
+from fileset import FileSet
+
 
 class LocalDirFileSet(FileSet):
 
@@ -24,7 +26,7 @@ class LocalDirFileSet(FileSet):
 
         os.system("rm -f " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
-        os.system("cp " + self.url + " " + self.temp_dir +  "/" + self.filename)
+        os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)
 
         self.ConvertTsFilesToPo()
         self.AddComments()
