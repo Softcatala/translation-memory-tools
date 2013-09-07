@@ -18,16 +18,16 @@
 
 
 import os
-import sys
 import logging
 
-from fileset import *
-from localfileset import *
-from localdirfileset import *
-from compressedfileset import *
-from bazaarfileset import *
-from transifexfileset import *
-from filefileset import *
+from localfileset import LocalFileSet
+from compressedfileset import CompressedFileSet
+from bazaarfileset import BazaarFileSet
+from transifexfileset import TransifexFileSet
+from localdirfileset import LocalDirFileSet
+from fileset import FileSet
+from polib import pofile
+
 
 class Project:
 
@@ -38,7 +38,7 @@ class Project:
         self.name = name
 
     def GetFilename(self):
-        return self.filename;
+        return self.filename
 
     def SetAddSource(self, addSource):
         self.addSource = addSource
@@ -59,11 +59,13 @@ class Project:
             if (fileset.type == 'local-file'):
                 fs = LocalFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'compressed'):
-                fs = CompressedFileSet(fileset.name, fileset.url, fileset.target)
-            elif (fileset.type ==  'bazaar'):
+                fs = CompressedFileSet(fileset.name, fileset.url,
+                                       fileset.target)
+            elif (fileset.type == 'bazaar'):
                 fs = BazaarFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'transifex'):
-                fs = TransifexFileSet(fileset.name, fileset.url, fileset.target)
+                fs = TransifexFileSet(fileset.name, fileset.url,
+                                      fileset.target)
             elif (fileset.type == 'local-dir'):
                 fs = LocalDirFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'file'):
@@ -87,17 +89,20 @@ class Project:
 
     def Statistics(self):
 
-        poFile = polib.pofile(self.filename)
+        poFile = pofile(self.filename)
 
         words = 0
         for entry in poFile:
             string_words = entry.msgstr.split(' ')
             words += len(string_words)
 
-        s = self.name + " project. " + str(len(poFile.translated_entries())) + " translated strings, words " + str(words)
+        s = self.name + " project. " + str(len(poFile.translated_entries()))
+        s = s + " translated strings, words " + str(words)
+
         logging.info(s)
 
     def ToTmx(self):
 
         fileName, fileExtension = os.path.splitext(self.filename)
-        os.system("po2tmx " + self.filename + " --comment others -l ca-ES -o " + fileName + ".tmx")
+        os.system("po2tmx " + self.filename + " --comment others -l ca-ES -o "
+                  + fileName + ".tmx")

@@ -19,9 +19,10 @@
 
 
 import os
+import logging
 
-from project import *
-from fileset import *
+from project import Project
+
 
 class Projects:
 
@@ -36,7 +37,6 @@ class Projects:
 
     def Add(self, project):
         self.projects.append(project)
-
 
     def AddProject(self, project_dto, addSource):
 
@@ -54,8 +54,9 @@ class Projects:
         for project in self.projects:
 
             if (os.path.isfile(self.tmfile)):
-                os.system("cp " + self.tmfile +" tm-previous.po")
-                os.system("msgcat -tutf-8 --use-first -o " + self.tmfile + " tm-previous.po " + project.GetFilename())
+                os.system("cp " + self.tmfile + " tm-previous.po")
+                os.system("msgcat -tutf-8 --use-first -o " + self.tmfile
+                          + " tm-previous.po " + project.GetFilename())
                 os.system("rm -f tm-previous.po")
             else:
                 os.system("cp " + project.GetFilename() + " " + self.tmfile)
