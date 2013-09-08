@@ -26,6 +26,7 @@ from bazaarfileset import BazaarFileSet
 from transifexfileset import TransifexFileSet
 from localdirfileset import LocalDirFileSet
 from filefileset import FileFileSet
+from subversionfileset import SubversionFileSet
 from polib import pofile
 
 
@@ -70,6 +71,8 @@ class Project:
                 fs = LocalDirFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'file'):
                 fs = FileFileSet(fileset.name, fileset.url, fileset.target)
+            elif (fileset.type == 'subversion'):
+                fs = SubversionFileSet(fileset.name, fileset.url, fileset.target)
 
             self.Add(fs)
             fs.AddExcluded(fileset.excluded)
