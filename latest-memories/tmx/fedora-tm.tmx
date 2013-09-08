@@ -30451,7 +30451,7 @@ Errors del muntatge de l'RPM:
         <seg>There was a problem registering this system.</seg>
       </tuv>
       <tuv xml:lang="ca-ES">
-        <seg>Hi ha hagut un problema en registrar aquests sistema.</seg>
+        <seg>Hi ha hagut un problema en registrar aquest sistema.</seg>
       </tuv>
       <note>Translation source: /translations/spacewalk.rhn-client-tools/ca.po from
 # project 'fedora'</note>

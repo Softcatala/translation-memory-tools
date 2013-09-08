@@ -356,7 +356,8 @@
       <tuv xml:lang="ca-ES">
         <seg>S'està tornant a carregar l'estat de l'arxiu emmagatzemat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME (pickled)</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1180,7 +1181,9 @@
       <tuv xml:lang="ca-ES">
         <seg>Cerca de subscriptors %(link)s:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# El %(link)s mostra un enllaç a l'ajuda del Python per a la sintaxi de les
+# expressions regulars (dpm)</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1547,7 +1550,8 @@
       <tuv xml:lang="ca-ES">
         <seg>Subscriu</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME: Subscriu-los vs Subscriu-me. La segona és molt més visible. jm</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -3701,7 +3705,8 @@ ja ha estat tractat per l'administrador de la llista. </seg>
       <tuv xml:lang="ca-ES">
         <seg>%(realname)s -- Edita l'html per %(template_info)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME: l'HTML o el HTML? jm</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -5246,7 +5251,8 @@ se n'ha informat a ambdós administradors d'aquesta llista.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Helpbot de la llista:     %(requestaddr)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME: helpbot (dpm)</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -11925,7 +11931,10 @@ Envieu un missatge que contingui només la paraula «help» per a rebre instrucc
       <tuv xml:lang="ca-ES">
         <seg>Funciona amb el Mailman&lt;br&gt;versió %(version)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME: Ve a ser el mateix que «Powered by», però juguen amb el fet que
+# «delivery»
+# té més connotació de correu.</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -12600,7 +12609,8 @@ Options:
         Mostra aquest missatge i surt.
 </seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME Pickle. jm</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -15640,7 +15650,8 @@ anterior. Reconeix versions fins a la 1.0b4(?).
       <tuv xml:lang="ca-ES">
         <seg>S'està fixant la plantilla de llengua:  %(listname)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mailman'</note>
+      <note>Translation source: /ca.po from project 'mailman'
+# FIXME: fixant. jm</note>
     </tu>
     <tu>
       <tuv xml:lang="en">

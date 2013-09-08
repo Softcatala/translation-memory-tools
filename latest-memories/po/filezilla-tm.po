@@ -172,6 +172,7 @@ msgid "%s bytes"
 msgstr "%s bytes"
 
 # Translation source: /filezilla.po from project 'filezilla'
+# 82%
 #: ../../source/FileZilla3/locales/../src/interface/updatewizard.cpp:902
 #, c-format
 msgid "%s bytes (%s/s)"
@@ -4045,6 +4046,7 @@ msgid "FTP - File Transfer Protocol with optional encryption"
 msgstr "FTP - Protocol de Transferència de Fitxers amb xifratge opcional"
 
 # Translation source: /filezilla.po from project 'filezilla'
+# 75%
 #: ../../source/FileZilla3/locales/../src/engine/server.cpp:21
 msgid "FTP - Insecure File Transfer Protocol"
 msgstr "FTP - Protocol de Transferència de Fitxers insegur"

@@ -6569,7 +6569,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/guide/start</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 75%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -6587,7 +6588,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/virtaal/index#contact</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 81%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -6704,7 +6706,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Per marcar la traducció actual com a complerta premeu &lt;Ctrl+Retorn&gt;.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 75%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -6731,7 +6734,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Dubtosa</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 83%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -6903,7 +6907,8 @@ Try saving to a different location.</seg>
 
 Proveu de desar-lo en una altra ubicació.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 77%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -6916,7 +6921,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
 
 %(error_message)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 85%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -7204,7 +7210,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables (Drupal)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 76%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -7213,7 +7220,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables en les cadenes del Drupal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 83%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -7321,7 +7329,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/virtaal/cheatsheet</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 89%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -8389,7 +8398,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Per traduir:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 81%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -8425,7 +8435,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduït:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 78%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -8470,7 +8481,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;%d&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'virtaal'</note>
+      <note>Translation source: /ca.po from project 'virtaal'
+# 88%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">

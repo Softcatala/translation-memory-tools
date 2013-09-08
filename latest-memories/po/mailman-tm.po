@@ -216,6 +216,7 @@ msgid "Creating archive directory "
 msgstr "S'està creant el directori d'arxius "
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME (pickled)
 #: Mailman/Archiver/pipermail.py:299
 msgid "Reloading pickled archive state"
 msgstr "S'està tornant a carregar l'estat de l'arxiu emmagatzemat"
@@ -751,6 +752,8 @@ msgid "(help)"
 msgstr "(ajuda)"
 
 # Translation source: /ca.po from project 'mailman'
+# El %(link)s mostra un enllaç a l'ajuda del Python per a la sintaxi de les
+# expressions regulars (dpm)
 #: Mailman/Cgi/admin.py:858
 msgid "Find member %(link)s:"
 msgstr "Cerca de subscriptors %(link)s:"
@@ -1003,6 +1006,7 @@ msgid "Invite"
 msgstr "Convida'ls"
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME: Subscriu-los vs Subscriu-me. La segona és molt més visible. jm
 #: Mailman/Cgi/admin.py:1138 Mailman/Cgi/listinfo.py:178
 msgid "Subscribe"
 msgstr "Subscriu"
@@ -2566,6 +2570,7 @@ msgid "List name is required."
 msgstr "Es requereix el nom de la llista."
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME: l'HTML o el HTML? jm
 #: Mailman/Cgi/edithtml.py:100
 msgid "%(realname)s -- Edit html for %(template_info)s"
 msgstr "%(realname)s -- Edita l'html per %(template_info)s"
@@ -3689,6 +3694,7 @@ msgid "Postings to:  %(postaddr)s"
 msgstr "Enviaments a:             %(postaddr)s"
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME: helpbot (dpm)
 #: Mailman/Commands/cmd_info.py:47
 msgid "List Helpbot: %(requestaddr)s"
 msgstr "Helpbot de la llista:     %(requestaddr)s"
@@ -9195,6 +9201,9 @@ msgid "The results of your email commands"
 msgstr "Els resultats de les ordres del vostre correu electrònic"
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME: Ve a ser el mateix que «Powered by», però juguen amb el fet que
+# «delivery»
+# té més connotació de correu.
 #: Mailman/htmlformat.py:639
 msgid "Delivered by Mailman<br>version %(version)s"
 msgstr "Funciona amb el Mailman<br>versió %(version)s"
@@ -9678,6 +9687,7 @@ msgstr ""
 "    %(adminurl)s\n"
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME Pickle. jm
 #: bin/check_db:19
 msgid ""
 "Check a list's config database file for integrity.\n"
@@ -12330,6 +12340,7 @@ msgstr ""
 "anterior. Reconeix versions fins a la 1.0b4(?).\n"
 
 # Translation source: /ca.po from project 'mailman'
+# FIXME: fixant. jm
 #: bin/update:106
 msgid "Fixing language templates: %(listname)s"
 msgstr "S'està fixant la plantilla de llengua:  %(listname)s"

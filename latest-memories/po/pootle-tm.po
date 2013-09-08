@@ -4358,6 +4358,7 @@ msgid "<u>Manual</u>"
 msgstr "<u>Manual</u>"
 
 # Translation source: /ca.po from project 'virtaal'
+# 75%
 #. l10n: Only change this URL if there is a translated version in your
 #. language, or if the default English is really unsuitable for users in your
 #. language
@@ -4372,6 +4373,7 @@ msgid "<u>Localization Guide</u>"
 msgstr "<u>Guia de localització</u>"
 
 # Translation source: /ca.po from project 'virtaal'
+# 81%
 #. l10n: Only change this URL if there is a translated version in your
 #. language, or if the default English is really unsuitable for users in your
 #. language
@@ -4450,6 +4452,7 @@ msgstr ""
 "Per marcar la traducció actual com a incompleta premeu <Ctrl+Maj+Retorn>."
 
 # Translation source: /ca.po from project 'virtaal'
+# 75%
 #: ../virtaal/tips.py:33
 msgid "To mark the current translation as complete, simply press <Ctrl+Enter>."
 msgstr "Per marcar la traducció actual com a complerta premeu <Ctrl+Retorn>."
@@ -4469,6 +4472,7 @@ msgstr ""
 "llarg de la traducció."
 
 # Translation source: /ca.po from project 'virtaal'
+# 83%
 #: ../virtaal/controllers/checkscontroller.py:29
 msgid "Fuzzy"
 msgstr "Dubtosa"
@@ -4587,6 +4591,7 @@ msgid "Can only export Gettext PO files"
 msgstr "Només es poden exportar fitxers PO del Gettext"
 
 # Translation source: /ca.po from project 'virtaal'
+# 77%
 #: ../virtaal/controllers/maincontroller.py:280
 #, python-format
 msgid ""
@@ -4603,6 +4608,7 @@ msgstr ""
 "Proveu de desar-lo en una altra ubicació."
 
 # Translation source: /ca.po from project 'virtaal'
+# 85%
 #: ../virtaal/controllers/maincontroller.py:285
 #, python-format
 msgid ""
@@ -4778,11 +4784,13 @@ msgid "Placeable for \"alt\" attributes (as found in HTML)"
 msgstr "Objecte col·locable per als atributs «alt» (tal com es troba a l'HTML)"
 
 # Translation source: /ca.po from project 'virtaal'
+# 76%
 #: ../virtaal/controllers/placeablescontroller.py:157
 msgid "Placeholders (Drupal)"
 msgstr "Textos variables (Drupal)"
 
 # Translation source: /ca.po from project 'virtaal'
+# 83%
 #: ../virtaal/controllers/placeablescontroller.py:158
 msgid "Placeholders in Drupal strings"
 msgstr "Textos variables en les cadenes del Drupal"
@@ -4850,6 +4858,7 @@ msgid "Reviewed"
 msgstr "Revisat"
 
 # Translation source: /ca.po from project 'virtaal'
+# 89%
 #: ../virtaal/controllers/welcomescreencontroller.py:64
 msgid "http://translate.sourceforge.net/wiki/virtaal/cheatsheet"
 msgstr "http://translate.sourceforge.net/wiki/virtaal/cheatsheet"
@@ -5545,6 +5554,7 @@ msgid "Save the file for up-to-date information"
 msgstr "Deseu el fitxer per a una informació actualitzada"
 
 # Translation source: /ca.po from project 'virtaal'
+# 81%
 #: ../virtaal/views/propertiesview.py:32
 msgid "Untranslated:"
 msgstr "Per traduir:"
@@ -5565,6 +5575,7 @@ msgid "Needs review:"
 msgstr "Cal revisar-ho:"
 
 # Translation source: /ca.po from project 'virtaal'
+# 78%
 #: ../virtaal/views/propertiesview.py:36
 msgid "Translated:"
 msgstr "Traduït:"
@@ -5593,6 +5604,7 @@ msgid "(%04.1f%%)"
 msgstr "(%04.1f%%)"
 
 # Translation source: /ca.po from project 'virtaal'
+# 88%
 #. l10n: The total number of words. You can not use %Id at this stage. If
 #. unsure, just copy the original.
 #: ../virtaal/views/propertiesview.py:191

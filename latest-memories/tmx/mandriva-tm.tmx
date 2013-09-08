@@ -1018,7 +1018,15 @@ Si voleu crear un disc d'arrencada per al vostre sistema, inseriu un disquet a l
       <tuv xml:lang="ca-ES">
         <seg>Benvingut al GRUB, el selector de sistema operatiu!</seg>
       </tuv>
-      <note>Translation source: /DrakX-ca.po from project 'mandriva'</note>
+      <note>Translation source: /DrakX-ca.po from project 'mandriva'
+# NOTE: this message will be displayed by grub at boot time; that is
+# using the BIOS font; that means cp437 charset on 99.99% of PC computers
+# out there. It is the nsuggested that for non latin languages an ascii
+# transliteration be used; or maybe the english text be used; as it is best
+#
+# The lines must fit on screen, aka length &lt; 80
+# and only one line per string for the GRUB messages
+#</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -1082,7 +1090,12 @@ Trieu un sistema operatiu de la lista superior, o espereu
 
 </seg>
       </tuv>
-      <note>Translation source: /DrakX-ca.po from project 'mandriva'</note>
+      <note>Translation source: /DrakX-ca.po from project 'mandriva'
+# NOTE: this message will be displayed at boot time; that is
+# only the ascii charset will be available on most machines
+# so use only 7bit for this message (and do transliteration or
+# leave it in English, as it is the best for your language)
+#</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -8949,7 +8962,8 @@ sectors n'hi ha prou) al començament del disc</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aquesta clau de xifratge és massa senzilla (ha de tenir com a mínim %d caràcters)</seg>
       </tuv>
-      <note>Translation source: /DrakX-ca.po from project 'mandriva'</note>
+      <note>Translation source: /DrakX-ca.po from project 'mandriva'
+# c-format</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -10723,7 +10737,9 @@ Tingueu en compte que qualsevol adreça s'ha de prefixar amb 0x, com '0x123'</se
       <tuv xml:lang="ca-ES">
         <seg>S'han trobat interfícies %s %s</seg>
       </tuv>
-      <note>Translation source: /DrakX-ca.po from project 'mandriva'</note>
+      <note>Translation source: /DrakX-ca.po from project 'mandriva'
+# #msgid "Found %s %s interfaces"
+# #msgstr "S'han trobat interfícies %2$s %1$s"</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -20819,7 +20835,8 @@ Versió:</seg>
       <tuv xml:lang="ca-ES">
         <seg>Nom</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22070,7 +22087,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Virtaal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22079,7 +22097,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Eina de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22088,7 +22107,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Una eina de traducció per ajudar un traductor humà a traduir fitxers en altres llengües</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22097,7 +22117,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22106,7 +22127,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Act_ualitza amb la plantilla</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22115,7 +22137,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Exporta</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22124,7 +22147,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Fitxers _recents</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22133,7 +22157,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Edita</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22142,7 +22167,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Transfereix de la font</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22151,7 +22177,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Objecte col·locable ante_rior</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22160,7 +22187,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Objecte col·locable següe_nt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22169,7 +22197,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Visualitza</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22178,7 +22207,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Pantalla completa</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22187,7 +22217,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Controls de _qualitat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22196,7 +22227,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Navegació</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22205,7 +22237,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Pàgin_a amunt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22214,7 +22247,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Pàgina avall</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22223,7 +22257,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>A_juda</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22232,7 +22267,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Ajuda en lí_nia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22241,7 +22277,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Guia d'aprenentatge</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22250,7 +22287,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Guia de _localització</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22259,7 +22297,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>_Informa d'un error</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22268,7 +22307,8 @@ Aquí podreu configurar el sistema d'alerta.
       <tuv xml:lang="ca-ES">
         <seg>Nou parell de llengües</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22281,7 +22321,8 @@ If you are translating from English to French then English would be your origina
 
 Si esteu traduint de l'anglès al francès, l'anglès seria llavors la llengua original o d'origen.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22290,7 +22331,8 @@ Si esteu traduint de l'anglès al francès, l'anglès seria llavors la llengua o
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Original&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22303,7 +22345,8 @@ If you are translating from English to French then French would be your translat
 
 Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua de destinació.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22312,7 +22355,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Traducció&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22321,7 +22365,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>_Afegeix una llengua absent…</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22330,7 +22375,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Afegeix una llengua absent</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22339,7 +22385,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Nom de la llengua:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22348,7 +22395,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Codi ISO:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22357,7 +22405,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Expressió del plural:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22366,7 +22415,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Nombre de plurals:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22375,7 +22425,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Depenent de la tasca de traducció, la informació del plural pot ser opcional.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22384,7 +22435,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Informació de la llengua&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22393,7 +22445,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Preferències del Virtaal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22402,7 +22455,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>El nom emmagatzemat en la capçalera del fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22411,7 +22465,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Nom:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22420,7 +22475,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>L'adreça electrònica emmagatzemada en la capçalera del fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22429,7 +22485,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Adreça electrònica:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22438,7 +22495,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>La informació de l'equip emmagatzemada a la capçalera del fitxer. Pot ser una adreça electrònica, o bé un URL.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22447,7 +22505,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Equip:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22456,7 +22515,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Informació del traductor&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22465,7 +22525,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Text d'origen:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22474,7 +22535,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Text de destinació:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22483,7 +22545,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Utilitza els tipus de lletra per _defecte</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22492,7 +22555,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Tipus de lletra&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22501,7 +22565,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Els objectes col·locables són parts especials d'un text que poden ressaltar-se automàticament i inserir-se fàcilment en una traducció.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22510,7 +22575,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Objectes col·locables</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22519,7 +22585,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Connectors</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22528,7 +22595,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Fitxers de terminologia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22537,7 +22605,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Afegeix un terme</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22546,7 +22615,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>C_omentaris</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22555,7 +22625,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>_Fitxer de terminologia:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22564,7 +22635,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Consultes web</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22573,7 +22645,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Afegeix un URL</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22582,7 +22655,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>URL:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22591,7 +22665,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Posa les consultes entre cometes</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22600,7 +22675,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Opcions&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22609,7 +22685,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Obre&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22618,7 +22695,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;&lt;big&gt;Fitxers recents&lt;/big&gt;&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22627,7 +22705,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Guia d'aprenentatge&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22636,7 +22715,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Full de trucs&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22645,7 +22725,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/virtaal/features</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22654,7 +22735,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Més...&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22663,7 +22745,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Característiques&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22672,7 +22755,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;&lt;big&gt;Primers passos&lt;/big&gt;&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22681,7 +22765,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/virtaal/using_virtaal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22690,7 +22775,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Manual&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22699,7 +22785,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/guide/start</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 75%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22708,7 +22796,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Guia de localització&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22717,7 +22806,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/virtaal/index#contact</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 81%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22726,7 +22817,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;u&gt;Opinions&lt;/u&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22735,7 +22827,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;&lt;big&gt;Assistència&lt;/big&gt;&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22744,7 +22837,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Propietats</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22753,7 +22847,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Paraules&lt;/b&gt; (total):</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22762,7 +22857,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;Cadenes&lt;/b&gt; (total):</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22771,7 +22867,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Tipus de fitxer:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22780,7 +22877,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Mida del fitxer:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22789,7 +22887,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Ubicació:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22798,7 +22897,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Al final de la traducció premeu &lt;Retorn&gt; per continuar amb la següent.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22807,7 +22907,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Per copiar la cadena original al camp de destinació premeu &lt;Alt+Avall&gt;.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22816,7 +22917,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Per marcar la traducció actual com a dubtosa que premeu &lt;Alt+U&gt;.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22825,7 +22927,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Per marcar la traducció actual com a incompleta premeu &lt;Ctrl+Maj+Retorn&gt;.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22834,7 +22937,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Per marcar la traducció actual com a complerta premeu &lt;Ctrl+Retorn&gt;.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 75%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22843,7 +22948,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Feu servir Ctrl+Amunt o Ctrl+Avall per moure-vos al llarg de la traducció.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22852,7 +22958,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Feu servir Ctrl+PàgAmunt o Ctrl+PàgAvall per moure-vos a grans passos al llarg de la traducció.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22861,7 +22968,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Dubtosa</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 83%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22870,7 +22979,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Per traduir</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 75%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22879,7 +22990,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Tecles de drecera</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22888,7 +23000,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Acrònims</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22897,7 +23010,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>En blanc</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22906,7 +23020,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Claudàtors</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22915,7 +23030,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Conflicte del compendi</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22924,7 +23040,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Toni Hermoso Pulido - Softcatalà &lt;toniher@softcatala.cat&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 88%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22933,7 +23051,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Cometes dobles</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22942,7 +23061,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Espais dobles</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22951,7 +23071,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Paraula repetida</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22960,7 +23081,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Correu electrònic</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22969,7 +23091,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Puntuació final</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22978,7 +23101,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Espai en blanc final</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22987,7 +23111,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Alteracions</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -22996,7 +23121,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Camins de fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23005,7 +23131,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Funcions</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23014,7 +23141,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Valors del GConf</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23023,7 +23151,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Comentari del KDE antic</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23032,7 +23161,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Llarg</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23041,7 +23171,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Paraules que cal traduir</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23050,7 +23181,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Línies noves</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23059,7 +23191,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Nombre de plurals</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 94%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23068,7 +23202,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Paraules que no cal traduir</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23077,7 +23212,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Nombres</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23086,7 +23222,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>printf()</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23095,7 +23232,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Espaiament de la puntuació</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23104,7 +23242,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Puntuació estricta</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23113,7 +23252,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Nombre de frases</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23122,7 +23262,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Curt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23131,7 +23272,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Ús simple de les majúscules</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23140,7 +23282,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Plurals simples</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23149,7 +23292,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Cometes simples</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23158,7 +23302,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Ortografia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23167,7 +23312,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Majúscules a l'inici</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23176,7 +23322,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Puntuació a l'inici</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23185,7 +23332,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Espai en blanc a l'inici</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23194,7 +23342,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Tabulacions</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23203,7 +23352,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Sense canvis</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23212,7 +23362,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>URL</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23221,7 +23372,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Caràcters vàlids</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23230,7 +23382,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Textos variables</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23239,7 +23392,9 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Etiquetes XML</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 87%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23248,7 +23403,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>OpenOffice.org</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23257,7 +23413,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Mozilla</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23266,7 +23423,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>KDE</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23275,7 +23433,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>GNOME</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23284,7 +23443,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Drupal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23293,7 +23453,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Informació de la capçalera</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23302,7 +23463,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Introduïu el vostre nom</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23311,7 +23473,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Introduïu la vostra adreça electrònica</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23320,7 +23483,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Introduïu la informació del vostre equip</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23329,7 +23493,8 @@ Si esteu traduint de l'anglès al francès, el francès seria llavors la llengua
       <tuv xml:lang="ca-ES">
         <seg>Heu seleccionat obrir el fitxer que ja està obert actualment. Voleu tornar a carregar-lo?</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23346,7 +23511,8 @@ Try opening a different file.</seg>
 
 Proveu d'obrir un altre fitxer.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23363,7 +23529,8 @@ Try saving to a different location.</seg>
 
 Proveu de desar-lo en una altra ubicació.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23376,7 +23543,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
 
 %(error_message)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23385,7 +23553,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Només es poden exportar fitxers PO del Gettext</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23394,7 +23563,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Exporta</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23411,7 +23581,9 @@ Try saving to a different location.</seg>
 
 Proveu de desar-lo en una altra ubicació.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 77%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23424,7 +23596,9 @@ Proveu de desar-lo en una altra ubicació.</seg>
 
 %(error_message)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 85%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23433,7 +23607,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Torna a carregar el fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23442,7 +23617,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Voleu tornar a carregar el fitxer des de la darrera còpia desada i perdre tots els canvis?</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23451,7 +23627,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>CamelCase</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23460,7 +23637,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Paraules amb majúscules dins, com ara alguns noms de marques i WikiWords</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23469,7 +23647,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Majúscules</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23478,7 +23657,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Paraules que contenen només majúscules</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23487,7 +23667,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Opcions de la línia d'ordres</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23496,7 +23677,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Opcions de la línia d'ordres de l'aplicació, com ara --help, -h i -I</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23505,7 +23687,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Adreces electròniques</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23514,7 +23697,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Noms de fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23523,7 +23707,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Camins que fan referència a ubicacions de fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23532,7 +23717,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables (printf)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23541,7 +23727,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables en les cadenes de «printf»</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23550,7 +23737,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables (Python)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23559,7 +23747,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables en les cadenes de Python</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23568,7 +23757,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables (Java)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23577,7 +23767,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables en les cadenes de Java</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23586,7 +23777,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables (Qt)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23595,7 +23787,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables en cadenes Qt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23604,7 +23797,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Nombres enters i fraccions decimals</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23613,7 +23807,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Puntuació</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23622,7 +23817,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Símbols i puntuació menys freqüent</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23631,7 +23827,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>URL, noms de servidor i adreces IP</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23640,7 +23837,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Entitats XML</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23649,7 +23847,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Referències d'entitats, com ara &amp;amp; i &amp;#169;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23658,7 +23857,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Etiquetes XML</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23667,7 +23867,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Etiquetes XML, com ara &lt;b&gt; i &lt;/i&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23676,7 +23877,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Espais</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23685,7 +23887,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Dobles espais i espais en posicions no esperades</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23694,7 +23897,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Atributs «alt»</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23703,7 +23907,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Objecte col·locable per als atributs «alt» (tal com es troba a l'HTML)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23712,7 +23917,9 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables (Drupal)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 76%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23721,7 +23928,9 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Textos variables en les cadenes del Drupal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 83%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23730,7 +23939,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap font o fitxers que es puguin traduir al feix</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23739,7 +23949,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>El fitxer no té res per traduir.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23748,7 +23959,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Abans:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23757,7 +23969,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Després:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23766,7 +23979,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduït: %d</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23775,7 +23989,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Dubtós: %d</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23784,7 +23999,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Per traduir: %d</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23793,7 +24009,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Total: %d</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23802,7 +24019,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer actualitzat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23811,7 +24029,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal treballar-hi</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23820,7 +24039,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Rebutjat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23829,7 +24049,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal revisar-ho</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23838,7 +24059,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduït</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23847,7 +24069,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Revisat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23856,7 +24079,9 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>http://translate.sourceforge.net/wiki/virtaal/cheatsheet</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 89%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23865,7 +24090,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Controls de qualitat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23874,7 +24100,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Selecciona les comprovacions</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23883,7 +24110,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Totes les comprovacions</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23892,7 +24120,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Incomplet</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23901,7 +24130,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cerca</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23910,7 +24140,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sensible a les majús_cules</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23919,7 +24150,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Expressió _regular</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23928,7 +24160,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Reemplaça amb</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23937,7 +24170,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Reemplaça</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23946,7 +24180,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Reempl_aça-ho tot</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23955,7 +24190,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Flux de treball</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23964,7 +24200,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu els estats</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23973,7 +24210,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Tots els estats</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23982,7 +24220,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Les paraules llargues es completen automàticament mentre escriviu</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -23991,7 +24230,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Compleció automàtica</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24000,7 +24240,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Corregeix automàticament el text mentre escriviu</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24009,7 +24250,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Corrector automàtic</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24018,7 +24260,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Corrector ortogràfic</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24027,7 +24270,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Verifica l'ortografia i proporciona'n suggeriments</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24036,7 +24280,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>&lt;i&gt;(no hi ha cap suggeriment)&lt;/i&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24045,7 +24290,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ignora-ho tot</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24054,7 +24300,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Més...</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24063,7 +24310,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Afegeix «%s» al diccionari</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24072,7 +24320,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Llengües</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24081,7 +24330,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Realitza consultes en el text seleccionat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24090,7 +24340,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Consulta externa</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24099,7 +24350,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu els serveis de consulta</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24108,7 +24360,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu els serveis que s'utilitzaran per realitzar les consultes</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24117,7 +24370,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Consulta «%(selection)s»</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24126,7 +24380,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Consulta web</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24135,7 +24390,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Consulta el text seleccionat en un lloc web</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24144,7 +24400,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Google</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24153,7 +24410,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Viquipèdia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24162,7 +24420,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Open-Tran.eu</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24171,7 +24430,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cita la consulta</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24180,7 +24440,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Migra la configuració del KBabel, el Lokalize i/o el Poedit al Virtaal.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24189,7 +24450,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Auxiliar de migració</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24198,7 +24460,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Voleu que el Virtaal provi d'importar els paràmetres i les dades d'altres aplicacions?</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24207,7 +24470,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Voleu importar dades d'altres aplicacions?</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24216,7 +24480,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La migració s'ha completat amb èxit</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24225,7 +24490,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'han migrat els elements següents:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24234,7 +24500,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha completat la migració</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24243,7 +24510,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>El Virtaal no ha pogut migrar cap paràmetre o dada</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24252,7 +24520,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha migrat res</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24261,7 +24530,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Paràmetres del Poedit</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24270,7 +24540,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció del Poedit: %(database_language_code)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24279,7 +24550,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció del KBabel: %(database_language_code)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24288,7 +24560,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Paràmetres del Lokalize</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24297,7 +24570,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció del Lokalize: %(database_name)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24306,7 +24580,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ajuda de terminologia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24315,7 +24590,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Suggeriments de terminologia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24324,7 +24600,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Terminologia de localització</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24333,7 +24610,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Terminologia de localització seleccionada</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24342,7 +24620,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxers locals</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24351,7 +24630,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxers de terminologia locals</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24360,7 +24640,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Fitxers de terminologia…</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24369,7 +24650,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Afegeix un _terme…</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24378,7 +24660,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24387,7 +24670,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Es pot estendre</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24396,7 +24680,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Afegeix fitxers</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24405,7 +24690,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Tots els fitxers permesos</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24414,7 +24700,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Tots els fitxers</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24423,7 +24710,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>«%s» no és un fitxer usable.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24436,7 +24724,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
 
 %(errormsg)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24445,7 +24734,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>S'ha produït un error en obrir el fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24454,7 +24744,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Terme d'_origen - %(langname)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24463,7 +24754,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Terme de des_tinació — %(langname)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24472,7 +24764,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ja existeix una entrada idèntica.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24481,7 +24774,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;%s&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24490,7 +24784,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions existents: %(translations)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24499,7 +24794,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Termes de l'Open-Tran.eu</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24508,7 +24804,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu les fonts de terminologia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24517,7 +24814,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu les fonts dels suggeriments de terminologia</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24526,7 +24824,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24535,7 +24834,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Suggeriments de la memòria de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24544,7 +24844,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Amagama</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24553,7 +24854,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions anteriors per a programari lliure i de codi obert</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24562,7 +24864,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer actual</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24571,7 +24874,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Unitats traduïdes del fitxer obert actualment</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24580,7 +24884,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aquest fitxer</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24589,7 +24894,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Google traductor</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24598,7 +24904,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions automàtiques sense revisar del servei de traducció de Google</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24607,7 +24914,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Microsoft Translator</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24616,7 +24924,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions automàtiques sense revisar del servei de traducció de Microsoft</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24625,7 +24934,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Microsoft</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24634,7 +24944,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>libtranslate</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24643,7 +24954,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions automàtiques sense revisar de diferents serveis</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24652,7 +24964,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció local</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24661,7 +24974,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions que heu fet anteriorment</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24670,7 +24984,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>MT local</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24679,7 +24994,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Moses</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24688,7 +25004,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions automàtiques sense revisar d'un servidor Moses</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24697,7 +25014,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>OpenTran</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24706,7 +25024,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Servidor remot</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24715,7 +25034,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Un servidor de memòria de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24724,7 +25044,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>MT remota</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24733,7 +25054,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>TinyTM</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24742,7 +25064,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Un servidor de memòria de traducció TinyTM</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24751,7 +25074,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Apertium</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24760,7 +25084,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions automàtiques sense revisar de l'Apertium</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24769,7 +25094,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Suggeriments de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24778,7 +25104,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ctrl+%(number_key)d</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24787,7 +25114,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu les fonts de la memòria de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24796,7 +25124,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu les fonts que voleu consultar per a la memòria de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24805,7 +25134,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>%</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24814,7 +25144,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Coincidències</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24823,7 +25154,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Font de la MT (memòria de traducció)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24832,7 +25164,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>%(match_quality)s%%</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24841,7 +25174,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>?</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24850,7 +25184,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Trieu un fitxer de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24859,7 +25194,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi ha cap problema</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24868,7 +25204,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Control de qualitat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24877,7 +25214,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Tipus de projecte</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24886,7 +25224,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprovacions: %(checker_name)s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24895,7 +25234,8 @@ Proveu de desar-lo en una altra ubicació.</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Nou parell de llengües…</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24906,7 +25246,8 @@ Do you want to save your changes?</seg>
         <seg>S'ha modificat el fitxer actual.
 Voleu desar els vostres canvis?</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24915,7 +25256,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Descarta-ho</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24924,7 +25266,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%(modified_marker)s%(current_file)s - Virtaal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24933,7 +25276,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Introduïu el nombre de formes de substantius (plurals) que s'utilitzarà</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24942,7 +25286,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Introduïu l'equació de plural que s'utilitzarà</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24951,7 +25296,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>_Navegació:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24960,7 +25306,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Deseu el fitxer per a una informació actualitzada</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24969,7 +25316,9 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Per traduir:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 81%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24978,7 +25327,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal treballar-hi:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24987,7 +25337,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Rebutjat:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24996,7 +25347,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cal revisar-ho:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25005,7 +25357,9 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduït:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 78%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25014,7 +25368,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Revisat:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25023,7 +25378,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>(0%)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25032,7 +25388,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>(100%)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25041,7 +25398,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>(%04.1f%%)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25050,7 +25408,9 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>&lt;b&gt;%d&lt;/b&gt;</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'
+# 88%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25059,7 +25419,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%.1f KB</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25068,7 +25429,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat l'exportació</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25077,7 +25439,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ha fallat la previsualització</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25086,7 +25449,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aneu un pas enrere en el flux de treball (Ctrl+Maj+Retorn)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25095,7 +25459,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Feu clic per anar a un estat específic del flux de treball</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25104,7 +25469,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Aneu un pas endavant en el flux de treball (Ctrl+Retorn)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25113,7 +25479,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Copyright © 2007-2010 Zuza Software Foundation</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25122,7 +25489,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El Virtaal és un programa per fer traduccions.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25131,7 +25499,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>L'objectiu inicial és la traducció de programari (localització o l10n), però també pretenem que pugui ser útil com a eina d'ús general per a la traducció assistida per ordinador (CAT).</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25140,7 +25509,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Lloc web del Virtaal</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25149,7 +25519,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Agraïm la donació de:</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25158,7 +25529,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>The International Development Research Centre</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25167,7 +25539,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Mozilla Corporation</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25176,7 +25549,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Toni Hermoso Pulido - Softcatalà</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25185,7 +25559,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El codi de llengua cal que sigui una cadena ASCII.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25194,7 +25569,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El codi de llengua cal que tingui com a mínim 2 caràcters.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25203,7 +25579,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Llengua</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25212,7 +25589,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Codi</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25221,7 +25599,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Habilitat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25230,7 +25609,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Configura…</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25239,7 +25619,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25248,7 +25629,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Assistència terminològica</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25257,7 +25639,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Controls de qualitat</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25266,7 +25649,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traducció automàtica</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25275,7 +25659,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ressaltat i inserció de col·locables</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25284,7 +25669,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Molts connectors i opcions per a la personalització</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25293,7 +25679,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>El fitxer no existeix.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25302,7 +25689,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No és un fitxer vàlid.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25311,7 +25699,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció TMX</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25320,7 +25709,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>TMX</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25329,7 +25719,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Translation Memory eXchange</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25338,7 +25729,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Glossari TBX</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25347,7 +25739,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>TBX</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25356,7 +25749,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>TermBase eXchange</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25365,7 +25759,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Memòria de traducció del Wordfast</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25374,7 +25769,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de traducció del Qt Linguist</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25383,7 +25779,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de missatges de QT</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25392,7 +25789,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Llibres de frases de QT</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25401,7 +25799,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer INI</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25410,7 +25809,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>INI</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25419,7 +25819,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Inicialització</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25428,7 +25829,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de propietats de Java</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25437,7 +25839,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de traducció de l'OpenOffice.org</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25446,7 +25849,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de traducció XLIFF</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25455,7 +25859,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>XLIFF</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25464,7 +25869,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Format de fitxer d'intercanvi de localització XML</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25473,7 +25879,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer RC de C++</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25482,7 +25889,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>RC</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25491,7 +25899,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Compilador de recursos</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25500,7 +25909,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de traducció de Tcl</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25509,7 +25919,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de missatges d'error de JavaScript</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25518,7 +25929,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Plantilla de traducció Gettext</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25527,7 +25939,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Editor d'etiquetes del Trados</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25536,7 +25949,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer de cadenes de l'OS X</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25545,7 +25959,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Diccionari UTX</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25554,7 +25969,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>UTX</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25563,7 +25979,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Terminologia Universal eXchange</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25572,7 +25989,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer PO del Gettext</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25581,7 +25999,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer MO del Gettext</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25590,7 +26009,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Fitxer .qm del Qt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25599,7 +26019,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Glossari de l'OmegaT</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25608,7 +26029,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%prog [opcions] [fitxer_traducció]</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25617,7 +26039,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>REGISTRE</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25626,7 +26049,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>activa el registre, el resultat s'emmagatzema al fitxer que es proporciona.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25635,7 +26059,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>CONFIGURACIÓ</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25644,7 +26069,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>utilitza el fitxer de configuració que es proporciona.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25653,7 +26079,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>habilita les característiques de depuració</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25662,7 +26089,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>PERFIL</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25671,7 +26099,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>s'habiliten els perfils, el resultat s'emmagatzema al fitxer que es proporciona.</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25680,7 +26109,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut obrir el fitxer de registre «%(filename)s»</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25689,7 +26119,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut llegir el fitxer de configuració «%(filename)s»</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25698,7 +26129,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>el nombre d'arguments no és vàlid</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25707,7 +26139,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No hi funcionen els perfils</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25716,7 +26149,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut obrir el fitxer de perfil «%(filename)s»</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25725,7 +26159,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>no hi ha cap opció així: %s</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25734,7 +26169,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>opció ambigua: %s (%s?)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25745,7 +26181,8 @@ Voleu desar els vostres canvis?</seg>
         <seg>Ús: %s
 </seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25754,7 +26191,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ús</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25763,7 +26201,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>enter</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25772,7 +26211,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>enter gran</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25781,7 +26221,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>coma flotant</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25790,7 +26231,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>complex</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25799,7 +26241,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>opció %s: el valor de %s no és vàlida: %r</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25808,7 +26251,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>opció %s: la tria no és vàlida: %r (trieu-ne de %s)</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25817,7 +26261,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>mostra aquest missatge d'ajuda i surt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25826,7 +26271,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>mostra el número de versió del programa i surt</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25835,7 +26281,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>%prog [opcions]</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25844,7 +26291,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>l'opció %s requereix un argument</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25853,7 +26301,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>l'opció %s requereix %d arguments</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -25862,7 +26311,8 @@ Voleu desar els vostres canvis?</seg>
       <tuv xml:lang="ca-ES">
         <seg>l'opció %s no pren cap valor</seg>
       </tuv>
-      <note>Translation source: /ca.po from project 'mandriva'</note>
+      <note>Translation source: /ca.po from project 'mandriva'
+# Translation source: /ca.po from project 'virtaal'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29497,7 +29947,9 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Llistat detallat per Català (ca) traduccions</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table
+# add your language name here</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29506,7 +29958,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Taula generada sobre %d/%m/%Y a %H:%M:%S UTC</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29515,7 +29968,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>%d cadenes</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29524,7 +29978,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Total</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29533,7 +29988,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Mòduls extra</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29542,7 +29998,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>sense fer</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29551,7 +30008,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>antic (necesita actualització)</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29560,7 +30018,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> [descarrega] </seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29569,7 +30028,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Podeu fer un clic sobre %s per descarregar els fitxers.</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29578,7 +30038,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Enllaços a altres llocs de traduccions</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29587,7 +30048,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions del KDE</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -29596,7 +30058,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Traduccions del Gnome</seg>
       </tuv>
-      <note>Translation source: /example-ca.po from project 'mandriva'</note>
+      <note>Translation source: /example-ca.po from project 'mandriva'
+# used in the stats page table</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30125,7 +30588,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> ... </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkdirselect.c:122</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30134,7 +30598,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> Ajuda </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkhelpbutton.c:93</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30143,7 +30608,9 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> D'acord </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkmdkbutton.c:193 gtkmdk/gtkmdkdialog.c:265
+# gtkmdk/gtkmdkdialog.c:277 gtkmdk/gtkmdkfilesel.c:199</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30152,7 +30619,9 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> Cancel·la </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkmdkbutton.c:207 gtkmdk/gtkmdkdialog.c:286
+# gtkmdk/gtkmdkfilesel.c:204</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30170,7 +30639,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> Següent </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkmdkdialog.c:306</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30179,7 +30649,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> Sí </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkmdkdialog.c:297</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30188,7 +30659,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg> No </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/gtkmdkdialog.c:306</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30199,7 +30671,8 @@ Seleccioneu el menú que voleu configurar</seg>
         <seg>Nou valor per al directori: %s
 </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:42</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30208,7 +30681,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Directori temporal: </seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:56</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30217,7 +30691,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Seleccioneu un nou directori</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:56</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30226,7 +30701,8 @@ Seleccioneu el menú que voleu configurar</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprova el diàleg Pregunta</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:89</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30237,7 +30713,8 @@ for the ask dialog</seg>
         <seg>Això és una prova
 per al diàleg Pregunta</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:90</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30246,7 +30723,8 @@ per al diàleg Pregunta</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprova el diàleg Bang</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:105</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30257,7 +30735,8 @@ for the bang dialog</seg>
         <seg>Això és una prova
 per al diàleg Bang</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:106</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30266,7 +30745,8 @@ per al diàleg Bang</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprova el diàleg Atura</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:121</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30277,7 +30757,8 @@ for the stop dialog</seg>
         <seg>Això és una prova
 per al diàleg Atura</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:122</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30286,7 +30767,8 @@ per al diàleg Atura</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprova el diàleg Modal</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:136</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30297,7 +30779,8 @@ be modal</seg>
         <seg>Aquest diàleg ha de
 ser Modal</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:137</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30306,7 +30789,8 @@ ser Modal</seg>
       <tuv xml:lang="ca-ES">
         <seg>Resposta</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:140</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30317,7 +30801,8 @@ the "No" Button</seg>
         <seg>Heu premut
 el botó "No"</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:142</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30328,7 +30813,8 @@ the "Yes" Button</seg>
         <seg>Heu premut
 el botó "Sí"</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:143</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30337,7 +30823,8 @@ el botó "Sí"</seg>
       <tuv xml:lang="ca-ES">
         <seg>Color</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:161</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30346,7 +30833,8 @@ el botó "Sí"</seg>
       <tuv xml:lang="ca-ES">
         <seg>Vermell</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:162</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30355,7 +30843,8 @@ el botó "Sí"</seg>
       <tuv xml:lang="ca-ES">
         <seg>Verd</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:163</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30364,7 +30853,8 @@ el botó "Sí"</seg>
       <tuv xml:lang="ca-ES">
         <seg>Blau</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:164</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30438,7 +30928,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>selector de directori</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:247</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30447,7 +30938,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>botó d'ajuda</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:248</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30456,7 +30948,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>diàleg Pregunta</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:249</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30465,7 +30958,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>diàleg Bang</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:250</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30474,7 +30968,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>diàleg Atura</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:251</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30483,7 +30978,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>diàleg Modal</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:252</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30492,7 +30988,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>quadre combinat amb marcs</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:253</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30501,7 +30998,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>quant al diàleg</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:254</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30510,7 +31008,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>Selector de fitxers</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:255</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -30519,7 +31018,8 @@ la icona 1</seg>
       <tuv xml:lang="ca-ES">
         <seg>Botons Mdk</seg>
       </tuv>
-      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'</note>
+      <note>Translation source: /gtk+mdk-ca.po from project 'mandriva'
+# gtkmdk/testgtkmdk.c:256</note>
     </tu>
     <tu>
       <tuv xml:lang="en">

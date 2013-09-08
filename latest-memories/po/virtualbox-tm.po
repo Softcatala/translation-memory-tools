@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-05 20:59+0200\n"
+"POT-Creation-Date: 2013-09-08 01:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,18 +13,21 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.9.0\n"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Native language name
 #: @@@#1
 msgctxt "@@@#1"
 msgid "English"
 msgstr "Català"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language name, in English
 #: @@@#3
 msgctxt "@@@#3"
 msgid "English"
 msgstr "Catalan"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Comma-separated list of translators
 #: @@@#5
 msgid "Oracle Corporation"
 msgstr "Vicent Fornés, Pau Iranzo <pau.iranzo@softcatala.org>"
@@ -365,11 +368,13 @@ msgid "Copy to clipboard"
 msgstr "Copia al porta-retalls"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# value state
 #: QIWidgetValidator#1
 msgid "not complete"
 msgstr "no és complet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# value state
 #: QIWidgetValidator#2
 msgid "invalid"
 msgstr "no és vàlid"
@@ -697,18 +702,21 @@ msgid "De&bug"
 msgstr "De&puració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #: UIActionPool#47
 msgctxt "UIActionPool#47"
 msgid "&Statistics..."
 msgstr "E&stadístiques..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #: UIActionPool#48
 msgctxt "UIActionPool#48"
 msgid "&Command Line..."
 msgstr "&Línia d'ordres..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #. (obsolete)
 #: UIActionPool#49
 msgctxt "UIActionPool#49"
@@ -814,11 +822,13 @@ msgid "Disable remote desktop (RDP) connections to this machine"
 msgstr "Inhabilita les connexions d'escriptori remot (RDP) en aquesta màquina"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #: UIActionPool#66
 msgid "Enable &Logging..."
 msgstr "Activa l'&enregistrament..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #. (obsolete)
 #: UIActionPool#67
 msgid "Disable &Logging..."
@@ -959,12 +969,14 @@ msgid "Ins&ert Ctrl-Alt-Backspace"
 msgstr "Ins&ereix Ctrl-Alt-Backspace"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Mac OS X version
 #: UIActionPool#93
 msgctxt "UIActionPool#93"
 msgid "&File"
 msgstr "&Fitxer"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Non Mac OS X version
 #: UIActionPool#94
 msgctxt "UIActionPool#94"
 msgid "&File"
@@ -1007,6 +1019,7 @@ msgid "Export one or more VirtualBox virtual machines as an appliance"
 msgstr "Exporta una aplicació virtual d'una màquina virtual del VirtualBox"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# global settings
 #: UIActionPool#101
 msgctxt "UIActionPool#101"
 msgid "&Preferences..."
@@ -1530,6 +1543,7 @@ msgid "Warnings:"
 msgstr "Avisos:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix MBytes=1024 KBytes
 #. (obsolete)
 #: UIApplianceEditorWidget#27
 msgctxt "UIApplianceEditorWidget#27"
@@ -1537,6 +1551,7 @@ msgid "MB"
 msgstr "MB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix MBytes=1024KBytes
 #. (obsolete)
 #: UIApplianceEditorWidget#28
 msgctxt "UIApplianceEditorWidget#28"
@@ -1764,143 +1779,167 @@ msgid "Edit (Ctrl+E)"
 msgstr "Edita (Ctrl+E)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#1
 msgctxt "UIDetailsBlock#1"
 msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#2
 msgctxt "UIDetailsBlock#2"
 msgid "OS Type"
 msgstr "Tipus de sistema operatiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#3
 msgid "Information inaccessible"
 msgstr "Informació no accessible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#4
 msgctxt "UIDetailsBlock#4UIDetailsBlock#4"
 msgid "Base Memory"
 msgstr "Memòria base"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#5
 msgctxt "UIDetailsBlock#5"
 msgid "<nobr>%1 MB</nobr>"
 msgstr "<nobr>%1 MB</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#6
 msgctxt "UIDetailsBlock#6"
 msgid "Processors"
 msgstr "Processadors"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#7
 msgctxt "UIDetailsBlock#7"
 msgid "<nobr>%1</nobr>"
 msgstr "<nobr>%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#8
 msgctxt "UIDetailsBlock#8"
 msgid "Execution Cap"
 msgstr "Límit d'execució"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#9
 msgctxt "UIDetailsBlock#9"
 msgid "<nobr>%1%</nobr>"
 msgstr "<nobr>%1%</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#10
 msgctxt "UIDetailsBlock#10"
 msgid "Boot Order"
 msgstr "Ordre d'arrencada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#11
 msgctxt "UIDetailsBlock#11"
 msgid "ACPI"
 msgstr "ACPI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#12
 msgctxt "UIDetailsBlock#12"
 msgid "IO APIC"
 msgstr "IO APIC"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#13
 msgctxt "UIDetailsBlock#13"
 msgid "BIOS"
 msgstr "BIOS"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#14
 msgctxt "UIDetailsBlock#14"
 msgid "VT-x/AMD-V"
 msgstr "VT-x/AMD-V"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#15
 msgctxt "UIDetailsBlock#15"
 msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#16
 msgctxt "UIDetailsBlock#16"
 msgid "PAE/NX"
 msgstr "PAE/NX"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#17
 msgctxt "UIDetailsBlock#17"
 msgid "Acceleration"
 msgstr "Acceleració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#18
 msgctxt "UIDetailsBlock#18"
 msgid "Video Memory"
 msgstr "Memòria de vídeo"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#19
 msgctxt "UIDetailsBlock#19"
 msgid "Screens"
 msgstr "Pantalles"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#20
 msgctxt "UIDetailsBlock#20"
 msgid "2D Video"
 msgstr "Video 2D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsBlock#21
 msgctxt "UIDetailsBlock#21"
 msgid "3D"
 msgstr "3D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #: UIDetailsBlock#22
 msgctxt "UIDetailsBlock#22UIDetailsBlock#22"
 msgid "Remote Desktop Server Port"
 msgstr "Port del servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #: UIDetailsBlock#23
 msgctxt "UIDetailsBlock#23"
 msgid "Remote Desktop Server"
 msgstr "Servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #: UIDetailsBlock#24
 msgctxt "UIDetailsBlock#24"
 msgid "Disabled"
@@ -1913,132 +1952,154 @@ msgid "(CD/DVD)"
 msgstr "(CD/DVD)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (Storage)
 #: UIDetailsBlock#26
 msgctxt "UIDetailsBlock#26"
 msgid "Not Attached"
 msgstr "No està connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #: UIDetailsBlock#27
 msgctxt "UIDetailsBlock#27"
 msgid "Host Driver"
 msgstr "Controlador amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #: UIDetailsBlock#28
 msgctxt "UIDetailsBlock#28"
 msgid "Controller"
 msgstr "Controlador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #: UIDetailsBlock#29
 msgctxt "UIDetailsBlock#29"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#30
 msgctxt "UIDetailsBlock#30"
 msgid "Bridged adapter, %1"
 msgstr "Adaptador pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#31
 msgctxt "UIDetailsBlock#31"
 msgid "Internal network, '%1'"
 msgstr "Xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#32
 msgctxt "UIDetailsBlock#32"
 msgid "Host-only adapter, '%1'"
 msgstr "Adaptador de només l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#33
 msgctxt "UIDetailsBlock#33"
 msgid "Generic driver, '%1'"
 msgstr "Mòdul genèric, «%1»"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#34
 msgctxt "UIDetailsBlock#34"
 msgid "Generic driver, '%1' {&nbsp;%2&nbsp;}"
 msgstr "Mòdul genèric, «%1» {&nbsp;%2&nbsp;}"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#35
 msgctxt "UIDetailsBlock#35"
 msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: UIDetailsBlock#36
 msgctxt "UIDetailsBlock#36"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (serial ports)
 #: UIDetailsBlock#37
 msgctxt "UIDetailsBlock#37"
 msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (serial ports)
 #: UIDetailsBlock#38
 msgctxt "UIDetailsBlock#38"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (parallel ports)
 #: UIDetailsBlock#39
 msgctxt "UIDetailsBlock#39"
 msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (parallel ports)
 #: UIDetailsBlock#40
 msgctxt "UIDetailsBlock#40"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #: UIDetailsBlock#41
 msgctxt "UIDetailsBlock#41"
 msgid "Device Filters"
 msgstr "Filtres del dispositiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #: UIDetailsBlock#42
 msgctxt "UIDetailsBlock#42"
 msgid "%1 (%2 active)"
 msgstr "%1 (%2 actiu)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #: UIDetailsBlock#43
 msgctxt "UIDetailsBlock#43"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shared folders)
 #: UIDetailsBlock#44
 msgctxt "UIDetailsBlock#44"
 msgid "Shared Folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shared folders)
 #: UIDetailsBlock#45
 msgctxt "UIDetailsBlock#45"
 msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (description)
 #: UIDetailsBlock#46
 msgctxt "UIDetailsBlock#46"
 msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#1
 msgctxt "UIDetailsPagePrivate#1"
@@ -2046,6 +2107,7 @@ msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#2
 msgctxt "UIDetailsPagePrivate#2"
@@ -2053,6 +2115,7 @@ msgid "OS Type"
 msgstr "Tipus de sistema operatiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#3
 msgctxt "UIDetailsPagePrivate#3"
@@ -2060,6 +2123,7 @@ msgid "Base Memory"
 msgstr "Memòria RAM"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#4
 msgctxt "UIDetailsPagePrivate#4"
@@ -2067,6 +2131,7 @@ msgid "<nobr>%1 MB</nobr>"
 msgstr "<nobr>%1 MB</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#5
 msgctxt "UIDetailsPagePrivate#5"
@@ -2074,6 +2139,7 @@ msgid "Processors"
 msgstr "Processadors"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#6
 msgctxt "UIDetailsPagePrivate#6"
@@ -2081,6 +2147,7 @@ msgid "<nobr>%1</nobr>"
 msgstr "<nobr>%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#7
 msgctxt "UIDetailsPagePrivate#7"
@@ -2088,6 +2155,7 @@ msgid "Boot Order"
 msgstr "Ordre d'arrencada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#8
 msgctxt "UIDetailsPagePrivate#8"
@@ -2095,6 +2163,7 @@ msgid "ACPI"
 msgstr "ACPI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#9
 msgctxt "UIDetailsPagePrivate#9"
@@ -2102,6 +2171,7 @@ msgid "IO APIC"
 msgstr "IO APIC"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#10
 msgctxt "UIDetailsPagePrivate#10"
@@ -2109,6 +2179,7 @@ msgid "BIOS"
 msgstr "BIOS"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#11
 msgctxt "UIDetailsPagePrivate#11"
@@ -2116,6 +2187,7 @@ msgid "VT-x/AMD-V"
 msgstr "VT-x/AMD-V"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#12
 msgctxt "UIDetailsPagePrivate#12"
@@ -2123,6 +2195,7 @@ msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#13
 msgctxt "UIDetailsPagePrivate#13"
@@ -2130,6 +2203,7 @@ msgid "PAE/NX"
 msgstr "PAE/NX"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#14
 msgctxt "UIDetailsPagePrivate#14"
@@ -2137,6 +2211,7 @@ msgid "Acceleration"
 msgstr "Acceleració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#15
 msgctxt "UIDetailsPagePrivate#15"
@@ -2144,6 +2219,7 @@ msgid "Video Memory"
 msgstr "Memòria de vídeo"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#16
 msgctxt "UIDetailsPagePrivate#16"
@@ -2151,6 +2227,7 @@ msgid "Screens"
 msgstr "Pantalles"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#17
 msgctxt "UIDetailsPagePrivate#17"
@@ -2158,6 +2235,7 @@ msgid "2D Video"
 msgstr "Video 2D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#18
 msgctxt "UIDetailsPagePrivate#18"
@@ -2165,6 +2243,7 @@ msgid "3D"
 msgstr "3D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #. (obsolete)
 #: UIDetailsPagePrivate#19
 msgctxt "UIDetailsPagePrivate#19"
@@ -2172,6 +2251,7 @@ msgid "Remote Desktop Server Port"
 msgstr "Port del servidor d'escriptori remot (RDP)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #. (obsolete)
 #: UIDetailsPagePrivate#20
 msgctxt "UIDetailsPagePrivate#20"
@@ -2179,6 +2259,7 @@ msgid "Remote Desktop Server"
 msgstr "Servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #. (obsolete)
 #: UIDetailsPagePrivate#21
 msgctxt "UIDetailsPagePrivate#21"
@@ -2193,6 +2274,7 @@ msgid "(CD/DVD)"
 msgstr "(CD/DVD)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (Storage)
 #. (obsolete)
 #: UIDetailsPagePrivate#23
 msgctxt "UIDetailsPagePrivate#23"
@@ -2200,6 +2282,7 @@ msgid "Not Attached"
 msgstr "No està connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #. (obsolete)
 #: UIDetailsPagePrivate#24
 msgctxt "UIDetailsPagePrivate#24"
@@ -2207,6 +2290,7 @@ msgid "Host Driver"
 msgstr "Controlador amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #. (obsolete)
 #: UIDetailsPagePrivate#25
 msgctxt "UIDetailsPagePrivate#25"
@@ -2214,6 +2298,7 @@ msgid "Controller"
 msgstr "Controlador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #. (obsolete)
 #: UIDetailsPagePrivate#26
 msgctxt "UIDetailsPagePrivate#26"
@@ -2221,6 +2306,7 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#27
 msgctxt "UIDetailsPagePrivate#27"
@@ -2228,6 +2314,7 @@ msgid "Bridged adapter, %1"
 msgstr "Adaptador pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#28
 msgctxt "UIDetailsPagePrivate#28"
@@ -2235,6 +2322,7 @@ msgid "Internal network, '%1'"
 msgstr "Xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#29
 msgctxt "UIDetailsPagePrivate#29"
@@ -2242,6 +2330,7 @@ msgid "Host-only adapter, '%1'"
 msgstr "Adaptador de només l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#30
 msgctxt "UIDetailsPagePrivate#30"
@@ -2249,6 +2338,7 @@ msgid "VDE network, '%1'"
 msgstr "Xarxa VDE, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#31
 msgctxt "UIDetailsPagePrivate#31"
@@ -2256,6 +2346,7 @@ msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#32
 msgctxt "UIDetailsPagePrivate#32"
@@ -2263,6 +2354,7 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (serial ports)
 #. (obsolete)
 #: UIDetailsPagePrivate#33
 msgctxt "UIDetailsPagePrivate#33"
@@ -2270,6 +2362,7 @@ msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (serial ports)
 #. (obsolete)
 #: UIDetailsPagePrivate#34
 msgctxt "UIDetailsPagePrivate#34"
@@ -2277,6 +2370,7 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (parallel ports)
 #. (obsolete)
 #: UIDetailsPagePrivate#35
 msgctxt "UIDetailsPagePrivate#35"
@@ -2284,6 +2378,7 @@ msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (parallel ports)
 #. (obsolete)
 #: UIDetailsPagePrivate#36
 msgctxt "UIDetailsPagePrivate#36"
@@ -2291,6 +2386,7 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #. (obsolete)
 #: UIDetailsPagePrivate#37
 msgctxt "UIDetailsPagePrivate#37"
@@ -2298,6 +2394,7 @@ msgid "Device Filters"
 msgstr "Filtres del dispositiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #. (obsolete)
 #: UIDetailsPagePrivate#38
 msgctxt "UIDetailsPagePrivate#38"
@@ -2305,6 +2402,7 @@ msgid "%1 (%2 active)"
 msgstr "%1 (%2 actiu)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #. (obsolete)
 #: UIDetailsPagePrivate#39
 msgctxt "UIDetailsPagePrivate#39"
@@ -2312,6 +2410,7 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shared folders)
 #. (obsolete)
 #: UIDetailsPagePrivate#40
 msgctxt "UIDetailsPagePrivate#40"
@@ -2319,6 +2418,7 @@ msgid "Shared Folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shared folders)
 #. (obsolete)
 #: UIDetailsPagePrivate#41
 msgctxt "UIDetailsPagePrivate#41"
@@ -2326,6 +2426,7 @@ msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (description)
 #. (obsolete)
 #: UIDetailsPagePrivate#42
 msgctxt "UIDetailsPagePrivate#42"
@@ -2345,78 +2446,91 @@ msgstr ""
 "tornar a comprovar l'accessibilitat:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#44
 msgctxt "UIDetailsPagePrivate#44"
 msgid "General"
 msgstr "General"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#45
 msgctxt "UIDetailsPagePrivate#45"
 msgid "System"
 msgstr "Sistema"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#46
 msgctxt "UIDetailsPagePrivate#46"
 msgid "Preview"
 msgstr "Vista prèvia"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#47
 msgctxt "UIDetailsPagePrivate#47"
 msgid "Display"
 msgstr "Pantalla"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#48
 msgctxt "UIDetailsPagePrivate#48"
 msgid "Storage"
 msgstr "Emmagatzematge"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#49
 msgctxt "UIDetailsPagePrivate#49"
 msgid "Audio"
 msgstr "Àudio"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#50
 msgctxt "UIDetailsPagePrivate#50"
 msgid "Network"
 msgstr "Xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#51
 msgctxt "UIDetailsPagePrivate#51"
 msgid "Serial Ports"
 msgstr "Ports en sèrie"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#52
 msgctxt "UIDetailsPagePrivate#52"
 msgid "Parallel Ports"
 msgstr "Ports paral·lels"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#53
 msgctxt "UIDetailsPagePrivate#53"
 msgid "USB"
 msgstr "USB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#54
 msgctxt "UIDetailsPagePrivate#54"
 msgid "Shared Folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: UIDetailsPagePrivate#55
 msgctxt "UIDetailsPagePrivate#55"
 msgid "Description"
 msgstr "Descripció"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIDetailsPagePrivate#56
 msgctxt "UIDetailsPagePrivate#56"
@@ -2424,6 +2538,7 @@ msgid "Execution Cap"
 msgstr "Límit d'execució"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#57
 msgctxt "UIDetailsPagePrivate#57"
@@ -2431,6 +2546,7 @@ msgid "Generic driver, '%1'"
 msgstr "Mòdul genèric, «%1»"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIDetailsPagePrivate#58
 msgctxt "UIDetailsPagePrivate#58"
@@ -3592,6 +3708,7 @@ msgid "&Finish"
 msgstr "&Finalitza"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UIFirstRunWzd#30
 msgctxt "UIFirstRunWzd#30"
@@ -3599,6 +3716,7 @@ msgid "Type"
 msgstr "Tipus"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UIFirstRunWzd#31
 msgctxt "UIFirstRunWzd#31"
@@ -3773,6 +3891,7 @@ msgid "CD/DVD-ROM Device"
 msgstr "Dispositiu CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UIFirstRunWzdPage3#7
 msgctxt "UIFirstRunWzdPage3#7"
@@ -3780,6 +3899,7 @@ msgid "Type"
 msgstr "Tipus"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UIFirstRunWzdPage3#8
 msgctxt "UIFirstRunWzdPage3#8"
@@ -3787,11 +3907,13 @@ msgid "Source"
 msgstr "Font"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Group name
 #: UIGChooserItemGroup#1
 msgid "<b>%1</b>"
 msgstr "<b>%1</b>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Group info
 #: UIGChooserItemGroup#2
 msgid "%n group(s)"
 msgstr ""
@@ -3802,12 +3924,14 @@ msgstr ""
 "        "
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Group info wrapper
 #: UIGChooserItemGroup#3
 msgctxt "UIGChooserItemGroup#3"
 msgid "<nobr>%1</nobr>"
 msgstr "<nobr>%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Machine info
 #: UIGChooserItemGroup#4
 msgid "%n machine(s)"
 msgstr ""
@@ -3818,6 +3942,7 @@ msgstr ""
 "        "
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Running machine info
 #: UIGChooserItemGroup#5
 msgid "(%n running)"
 msgstr ""
@@ -3828,12 +3953,14 @@ msgstr ""
 "        "
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Machine info wrapper
 #: UIGChooserItemGroup#6
 msgctxt "UIGChooserItemGroup#6"
 msgid "<nobr>%1</nobr>"
 msgstr "<nobr>%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Group item tool-tip / Machine info wrapper, including running
 #: UIGChooserItemGroup#7
 msgid "<nobr>%1 %2</nobr>"
 msgstr "<nobr>%1</nobr> {1 %2<?}"
@@ -3864,93 +3991,109 @@ msgid "New group"
 msgstr "Grup nou"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (general)
 #: UIGDetails#1
 msgctxt "UIGDetails#1"
 msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (general)
 #: UIGDetails#2
 msgid "Groups"
 msgstr "Grups"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #: UIGDetails#3
 msgid "%1 MB"
 msgstr "%1 MB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#4
 msgctxt "UIGDetails#4"
 msgid "Processors"
 msgstr "Processadors"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #: UIGDetails#5
 msgctxt "UIGDetails#5"
 msgid "%1%"
 msgstr "%1%"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#6
 msgctxt "UIGDetails#6"
 msgid "VT-x/AMD-V"
 msgstr "VT-x/AMD-V"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#7
 msgctxt "UIGDetails#7"
 msgid "PAE/NX"
 msgstr "PAE/NX"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#8
 msgctxt "UIGDetails#8"
 msgid "Acceleration"
 msgstr "Acceleració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display)
 #: UIGDetails#9
 msgctxt "UIGDetails#9"
 msgid "Screens"
 msgstr "Pantalles"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display)
 #: UIGDetails#10
 msgctxt "UIGDetails#10"
 msgid "3D"
 msgstr "3D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display)
 #: UIGDetails#11
 msgctxt "UIGDetails#11"
 msgid "Acceleration"
 msgstr "Acceleració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display/vrde/VRDE server)
 #: UIGDetails#12
 msgctxt "UIGDetails#12"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (storage)
 #: UIGDetails#13
 msgid "[CD/DVD]"
 msgstr "[CD/DVD]"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (audio)
 #: UIGDetails#14
 msgctxt "UIGDetails#14"
 msgid "Controller"
 msgstr "Controlador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (audio)
 #: UIGDetails#15
 msgctxt "UIGDetails#15"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #. (obsolete)
 #: UIGDetails#16
 msgctxt "UIGDetails#16"
@@ -3958,6 +4101,7 @@ msgid "Bridged adapter, %1"
 msgstr "Adaptador pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #. (obsolete)
 #: UIGDetails#17
 msgctxt "UIGDetails#17"
@@ -3965,6 +4109,7 @@ msgid "Internal network, '%1'"
 msgstr "Xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #. (obsolete)
 #: UIGDetails#18
 msgctxt "UIGDetails#18"
@@ -3972,6 +4117,7 @@ msgid "Host-only adapter, '%1'"
 msgstr "Adaptador de només l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #. (obsolete)
 #: UIGDetails#19
 msgctxt "UIGDetails#19"
@@ -3979,6 +4125,7 @@ msgid "Generic driver, '%1'"
 msgstr "Mòdul genèric, «%1»"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #. (obsolete)
 #: UIGDetails#20
 msgctxt "UIGDetails#20"
@@ -3986,178 +4133,209 @@ msgid "Generic driver, '%1' {&nbsp;%2&nbsp;}"
 msgstr "Mòdul genèric, «%1» {&nbsp;%2&nbsp;}"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #: UIGDetails#21
 msgctxt "UIGDetails#21"
 msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network/adapter)
 #: UIGDetails#22
 msgctxt "UIGDetails#22"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (serial)
 #: UIGDetails#23
 msgctxt "UIGDetails#23"
 msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (serial)
 #: UIGDetails#24
 msgctxt "UIGDetails#24"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (parallel)
 #: UIGDetails#25
 msgctxt "UIGDetails#25"
 msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (parallel)
 #: UIGDetails#26
 msgctxt "UIGDetails#26"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (usb)
 #: UIGDetails#27
 msgctxt "UIGDetails#27"
 msgid "%1 (%2 active)"
 msgstr "%1 (%2 actiu)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (usb)
 #: UIGDetails#28
 msgctxt "UIGDetails#28"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (shared folders)
 #: UIGDetails#29
 msgctxt "UIGDetails#29"
 msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (description)
 #: UIGDetails#30
 msgctxt "UIGDetails#30"
 msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (general)
 #: UIGDetails#31
 msgid "Operating System"
 msgstr "Sistema operatiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #: UIGDetails#32
 msgid "Information Inaccessible"
 msgstr "Informació no accessible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#33
 msgctxt "UIGDetails#33"
 msgid "Base Memory"
 msgstr "Memòria base"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#34
 msgctxt "UIGDetails#34"
 msgid "Execution Cap"
 msgstr "Límit d'execució"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#35
 msgctxt "UIGDetails#35"
 msgid "Boot Order"
 msgstr "Ordre d'arrencada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (system)
 #: UIGDetails#36
 msgctxt "UIGDetails#36"
 msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display)
 #: UIGDetails#37
 msgctxt "UIGDetails#37"
 msgid "Video Memory"
 msgstr "Memòria de vídeo"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display)
 #: UIGDetails#38
 msgctxt "UIGDetails#38"
 msgid "2D Video"
 msgstr "Video 2D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display/vrde)
 #: UIGDetails#39
 msgctxt "UIGDetails#39"
 msgid "Remote Desktop Server Port"
 msgstr "Port del servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (display/vrde)
 #: UIGDetails#40
 msgctxt "UIGDetails#40"
 msgid "Remote Desktop Server"
 msgstr "Servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (storage)
 #: UIGDetails#41
 msgctxt "UIGDetails#41"
 msgid "Not Attached"
 msgstr "No està connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (audio)
 #: UIGDetails#42
 msgctxt "UIGDetails#42"
 msgid "Host Driver"
 msgstr "Controlador amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #: UIGDetails#43
 msgid "Bridged Adapter, %1"
 msgstr "Adaptador pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #: UIGDetails#44
 msgid "Internal Network, '%1'"
 msgstr "Xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #: UIGDetails#45
 msgid "Host-only Adapter, '%1'"
 msgstr "Adaptador de només l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #: UIGDetails#46
 msgid "Generic Driver, '%1'"
 msgstr "Mòdul genèric, «%1»"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (network)
 #: UIGDetails#47
 msgid "Generic Driver, '%1' {&nbsp;%2&nbsp;}"
 msgstr "Mòdul genèric, «%1» {&nbsp;%2&nbsp;}"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (usb)
 #: UIGDetails#48
 msgctxt "UIGDetails#48"
 msgid "Device Filters"
 msgstr "Filtres del dispositiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (usb)
 #: UIGDetails#49
 msgid "USB Controller Inaccessible"
 msgstr "Controlador USB no accessible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details (shared folders)
 #: UIGDetails#50
 msgctxt "UIGDetails#50"
 msgid "Shared Folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadAudio#1
 msgctxt "UIGDetailsUpdateThreadAudio#1"
@@ -4165,6 +4343,7 @@ msgid "Controller"
 msgstr "Controlador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadDescription#1
 msgctxt "UIGDetailsUpdateThreadDescription#1"
@@ -4172,6 +4351,7 @@ msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadDisplay#1
 msgctxt "UIGDetailsUpdateThreadDisplay#1"
@@ -4179,6 +4359,7 @@ msgid "Video Memory"
 msgstr "Memòria de vídeo"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadDisplay#2
 msgctxt "UIGDetailsUpdateThreadDisplay#2"
@@ -4186,6 +4367,7 @@ msgid "Screens"
 msgstr "Pantalles"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIGDetailsUpdateThreadDisplay#3
 msgctxt "UIGDetailsUpdateThreadDisplay#3"
@@ -4193,6 +4375,7 @@ msgid "2D Video"
 msgstr "Video 2D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIGDetailsUpdateThreadDisplay#4
 msgctxt "UIGDetailsUpdateThreadDisplay#4"
@@ -4200,6 +4383,7 @@ msgid "3D"
 msgstr "3D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadDisplay#5
 msgctxt "UIGDetailsUpdateThreadDisplay#5"
@@ -4207,6 +4391,7 @@ msgid "Acceleration"
 msgstr "Acceleració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadDisplay#6
 msgctxt "UIGDetailsUpdateThreadDisplay#6"
@@ -4214,6 +4399,7 @@ msgid "Remote Desktop Server"
 msgstr "Servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadGeneral#1
 msgctxt "UIGDetailsUpdateThreadGeneral#1"
@@ -4221,6 +4407,7 @@ msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIGDetailsUpdateThreadNetwork#1
 msgctxt "UIGDetailsUpdateThreadNetwork#1"
@@ -4228,6 +4415,7 @@ msgid "Bridged adapter, %1"
 msgstr "Adaptador pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIGDetailsUpdateThreadNetwork#2
 msgctxt "UIGDetailsUpdateThreadNetwork#2"
@@ -4235,6 +4423,7 @@ msgid "Internal network, '%1'"
 msgstr "Xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIGDetailsUpdateThreadNetwork#3
 msgctxt "UIGDetailsUpdateThreadNetwork#3"
@@ -4242,6 +4431,7 @@ msgid "Host-only adapter, '%1'"
 msgstr "Adaptador de només l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIGDetailsUpdateThreadNetwork#4
 msgctxt "UIGDetailsUpdateThreadNetwork#4"
@@ -4249,6 +4439,7 @@ msgid "Generic driver, '%1'"
 msgstr "Mòdul genèric, «%1»"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: UIGDetailsUpdateThreadNetwork#5
 msgctxt "UIGDetailsUpdateThreadNetwork#5"
@@ -4256,6 +4447,7 @@ msgid "Generic driver, '%1' {&nbsp;%2&nbsp;}"
 msgstr "Mòdul genèric, «%1» {&nbsp;%2&nbsp;}"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadNetwork#6
 msgctxt "UIGDetailsUpdateThreadNetwork#6"
@@ -4263,6 +4455,7 @@ msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadParallel#1
 msgctxt "UIGDetailsUpdateThreadParallel#1"
@@ -4270,6 +4463,7 @@ msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSF#1
 msgctxt "UIGDetailsUpdateThreadSF#1"
@@ -4277,6 +4471,7 @@ msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSerial#1
 msgctxt "UIGDetailsUpdateThreadSerial#1"
@@ -4284,6 +4479,7 @@ msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#1
 msgctxt "UIGDetailsUpdateThreadSystem#1"
@@ -4291,6 +4487,7 @@ msgid "Processors"
 msgstr "Processadors"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#2
 msgctxt "UIGDetailsUpdateThreadSystem#2"
@@ -4298,6 +4495,7 @@ msgid "Execution Cap"
 msgstr "Límit d'execució"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#3
 msgctxt "UIGDetailsUpdateThreadSystem#3"
@@ -4305,6 +4503,7 @@ msgid "%1%"
 msgstr "%1%"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#4
 msgctxt "UIGDetailsUpdateThreadSystem#4"
@@ -4312,6 +4511,7 @@ msgid "Boot Order"
 msgstr "Ordre d'arrencada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#5
 msgctxt "UIGDetailsUpdateThreadSystem#5"
@@ -4319,6 +4519,7 @@ msgid "VT-x/AMD-V"
 msgstr "VT-x/AMD-V"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#6
 msgctxt "UIGDetailsUpdateThreadSystem#6"
@@ -4326,6 +4527,7 @@ msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#7
 msgctxt "UIGDetailsUpdateThreadSystem#7"
@@ -4333,6 +4535,7 @@ msgid "PAE/NX"
 msgstr "PAE/NX"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadSystem#8
 msgctxt "UIGDetailsUpdateThreadSystem#8"
@@ -4340,6 +4543,7 @@ msgid "Acceleration"
 msgstr "Acceleració"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details
 #. (obsolete)
 #: UIGDetailsUpdateThreadUSB#1
 msgctxt "UIGDetailsUpdateThreadUSB#1"
@@ -4426,6 +4630,7 @@ msgid "Specifies the maximum height which we would like the guest to use."
 msgstr "Especifica l'alçada màxima que el client pot utilitzar."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Maximum Guest Screen Size
 #: UIGlobalSettingsDisplay#6
 msgid "Automatic"
 msgstr "Automàtic"
@@ -4440,6 +4645,7 @@ msgstr ""
 "veurà aquest suggeriment quan les guest additions estiguin instal·lades."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Maximum Guest Screen Size
 #: UIGlobalSettingsDisplay#8
 msgctxt "UIGlobalSettingsDisplay#8"
 msgid "None"
@@ -4451,6 +4657,7 @@ msgid "Do not attempt to limit the size of the guest screen."
 msgstr "No limitis la mida de la pantalla del client."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Maximum Guest Screen Size
 #: UIGlobalSettingsDisplay#10
 msgid "Hint"
 msgstr "Suggeriment"
@@ -4697,24 +4904,28 @@ msgstr ""
 "l'amfitrio a la finestra de la màquina virtual."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language
 #: UIGlobalSettingsLanguage#1
 msgctxt "UIGlobalSettingsLanguage#1"
 msgid " (built-in)"
 msgstr " (integrat)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language
 #: UIGlobalSettingsLanguage#2
 msgctxt "UIGlobalSettingsLanguage#2"
 msgid "<unavailable>"
 msgstr "<no disponible>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Author(s)
 #: UIGlobalSettingsLanguage#3
 msgctxt "UIGlobalSettingsLanguage#3"
 msgid "<unknown>"
 msgstr "<desconegut>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language
 #: UIGlobalSettingsLanguage#4
 msgctxt "UIGlobalSettingsLanguage#4"
 msgid "Default"
@@ -4771,6 +4982,7 @@ msgid "Author(s):"
 msgstr "Autor(s):"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# <adapter name> network
 #. (obsolete)
 #: UIGlobalSettingsNetwork#1
 msgid "%1 network"
@@ -4818,11 +5030,13 @@ msgid "Adapter"
 msgstr "Adaptador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# interface
 #: UIGlobalSettingsNetwork#10
 msgid "Automatically configured"
 msgstr "Configurat automàticament"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# interface
 #: UIGlobalSettingsNetwork#11
 msgid "Manually configured"
 msgstr "Configurat manualment"
@@ -4833,6 +5047,7 @@ msgid "IPv4 Address"
 msgstr "Adreça IPv4"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# address
 #: UIGlobalSettingsNetwork#13
 msgctxt "UIGlobalSettingsNetwork#13"
 msgid "Not set"
@@ -4844,6 +5059,7 @@ msgid "IPv4 Network Mask"
 msgstr "Màscara de xarxa IPv4"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# mask
 #: UIGlobalSettingsNetwork#15
 msgctxt "UIGlobalSettingsNetwork#15"
 msgid "Not set"
@@ -4860,6 +5076,7 @@ msgid "IPv6 Network Mask Length"
 msgstr "Mida de la màscara de xarxa IPv6"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# length
 #: UIGlobalSettingsNetwork#18
 msgctxt "UIGlobalSettingsNetwork#18"
 msgid "Not set"
@@ -4871,12 +5088,14 @@ msgid "DHCP Server"
 msgstr "Servidor DHCP"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# server
 #: UIGlobalSettingsNetwork#20
 msgctxt "UIGlobalSettingsNetwork#20"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# server
 #: UIGlobalSettingsNetwork#21
 msgctxt "UIGlobalSettingsNetwork#21"
 msgid "Disabled"
@@ -4898,6 +5117,7 @@ msgid "Lower Bound"
 msgstr "Límit inferior"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# bound
 #: UIGlobalSettingsNetwork#25
 msgctxt "UIGlobalSettingsNetwork#25"
 msgid "Not set"
@@ -4924,6 +5144,7 @@ msgid "&Edit host-only network"
 msgstr "&Edita xarxa només per a l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# creating/removing host-only network
 #. (obsolete)
 #: UIGlobalSettingsNetwork#30
 msgid "Performing"
@@ -5747,6 +5968,7 @@ msgid "Save license to file..."
 msgstr "Anomena i desa la llicència..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD tooltip
 #: UIIndicatorsPool#1
 msgctxt "UIIndicatorsPool#1"
 msgid ""
@@ -5757,6 +5979,7 @@ msgstr ""
 "virtuals:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD tooltip
 #: UIIndicatorsPool#2
 msgctxt "UIIndicatorsPool#2"
 msgid ""
@@ -5767,6 +5990,7 @@ msgstr ""
 "DVD:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# FD tooltip
 #: UIIndicatorsPool#3
 msgctxt "UIIndicatorsPool#3"
 msgid ""
@@ -5777,6 +6001,7 @@ msgstr ""
 "disquetera:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #: UIIndicatorsPool#4
 msgctxt "UIIndicatorsPool#4"
 msgid ""
@@ -5787,30 +6012,35 @@ msgstr ""
 "xarxa:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #: UIIndicatorsPool#5
 msgctxt "UIIndicatorsPool#5"
 msgid "<br><nobr><b>Adapter %1 (%2)</b>: %3 cable %4</nobr>"
 msgstr "<br><nobr><b>Adaptador %1 (%2)</b>: %3 cable %4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #: UIIndicatorsPool#6
 msgctxt "UIIndicatorsPool#6"
 msgid "connected"
 msgstr "connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #: UIIndicatorsPool#7
 msgctxt "UIIndicatorsPool#7"
 msgid "disconnected"
 msgstr "desconnectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #: UIIndicatorsPool#8
 msgctxt "UIIndicatorsPool#8"
 msgid "<br><nobr><b>All network adapters are disabled</b></nobr>"
 msgstr "<br><nobr><b>Tots els adaptadors de xarxa estan desactivats</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: UIIndicatorsPool#9
 msgctxt "UIIndicatorsPool#9"
 msgid ""
@@ -5821,18 +6051,21 @@ msgstr ""
 "connectats:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: UIIndicatorsPool#10
 msgctxt "UIIndicatorsPool#10"
 msgid "<br><nobr><b>No USB devices attached</b></nobr>"
 msgstr "<br><nobr><b>No hi ha dispositius USB connectats</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: UIIndicatorsPool#11
 msgctxt "UIIndicatorsPool#11"
 msgid "<br><nobr><b>USB Controller is disabled</b></nobr>"
 msgstr "<br><nobr><b>El controlador USB està desactivat</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Shared folders tooltip
 #: UIIndicatorsPool#12
 msgctxt "UIIndicatorsPool#12"
 msgid ""
@@ -5843,6 +6076,7 @@ msgstr ""
 "compartides per la màquina virtual:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Shared folders tooltip
 #: UIIndicatorsPool#13
 msgctxt "UIIndicatorsPool#13"
 msgid "<br><nobr><b>No shared folders</b></nobr>"
@@ -5856,6 +6090,7 @@ msgid "<hr>The VRDP Server is listening on port %1"
 msgstr "<hr>El servidor VRDP està escoltant el port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Virtualization Stuff LED
 #. (obsolete)
 #: UIIndicatorsPool#15
 msgctxt "UIIndicatorsPool#15"
@@ -5869,6 +6104,7 @@ msgstr ""
 "nobr><br><nobr><b>%3:</b>&nbsp;%4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Virtualization Stuff LED
 #: UIIndicatorsPool#16
 msgctxt "UIIndicatorsPool#16"
 msgid "<br><nobr><b>%1:</b>&nbsp;%2</nobr>"
@@ -5924,6 +6160,7 @@ msgid "<hr>The Remote Desktop Server is listening on port %1"
 msgstr "<hr>El servidor d'escriptori remot està escoltant al port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Virtualization Stuff LED
 #: UIIndicatorsPool#21
 msgid ""
 "Indicates the status of different features used by this virtual machine:"
@@ -6863,12 +7100,14 @@ msgid "no host-only network adapter is selected"
 msgstr "no s'ha seleccionat cap adaptador de només l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network adapter name
 #: UIMachineSettingsNetwork#4
 msgctxt "UIMachineSettingsNetwork#4"
 msgid "Not selected"
 msgstr "No seleccionat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network
 #. (obsolete)
 #: UIMachineSettingsNetwork#5
 msgctxt "UIMachineSettingsNetwork#5"
@@ -6876,6 +7115,7 @@ msgid "Adapter"
 msgstr "Adaptador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# adapter
 #. (obsolete)
 #: UIMachineSettingsNetwork#6
 msgctxt "UIMachineSettingsNetwork#6"
@@ -6883,6 +7123,7 @@ msgid "Not selected"
 msgstr "No seleccionat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# internal
 #. (obsolete)
 #: UIMachineSettingsNetwork#7
 msgctxt "UIMachineSettingsNetwork#7"
@@ -6890,6 +7131,7 @@ msgid "Network"
 msgstr "Xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network
 #. (obsolete)
 #: UIMachineSettingsNetwork#8
 msgctxt "UIMachineSettingsNetwork#8"
@@ -6903,6 +7145,7 @@ msgid "MAC Address"
 msgstr "Adreça MAC"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# address
 #. (obsolete)
 #: UIMachineSettingsNetwork#10
 msgctxt "UIMachineSettingsNetwork#10"
@@ -6916,12 +7159,14 @@ msgid "Cable"
 msgstr "Cable"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# cable
 #. (obsolete)
 #: UIMachineSettingsNetwork#12
 msgid "Connected"
 msgstr "Connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# cable
 #. (obsolete)
 #: UIMachineSettingsNetwork#13
 msgid "Not connected"
@@ -7435,6 +7680,7 @@ msgid "Internal network name is not set"
 msgstr "No s'ha especificat un nom de xarxa intern"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# parallel ports
 #: UIMachineSettingsParallel#1
 msgctxt "UIMachineSettingsParallel#1"
 msgid "Port %1"
@@ -7804,6 +8050,7 @@ msgid "If checked, this shared folder will be permanent."
 msgstr "Si està marcat, aquesta carpeta compartida serà permanent."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# serial ports
 #: UIMachineSettingsSerial#1
 msgctxt "UIMachineSettingsSerial#1"
 msgid "Port %1"
@@ -8649,12 +8896,14 @@ msgid "no hard disk is selected for <i>%1</i>."
 msgstr "no s'ha seleccionat cap disc per a <b>%1</b>."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# controller
 #: UIMachineSettingsStorage#102
 msgctxt "UIMachineSettingsStorage#102"
 msgid "at most one supported"
 msgstr "com a mínim una compatible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# controllers
 #: UIMachineSettingsStorage#103
 msgctxt "UIMachineSettingsStorage#103"
 msgid "up to %1 supported"
@@ -8776,11 +9025,13 @@ msgid "<qt>%1&nbsp;MB</qt>"
 msgstr "<qt>%1&nbsp;MB</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# %1 is 1 for now
 #: UIMachineSettingsSystem#8
 msgid "<qt>%1&nbsp;CPU</qt>"
 msgstr "<qt>%1&nbsp;processador</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# %1 is 32 for now
 #. (obsolete)
 #: UIMachineSettingsSystem#9
 msgctxt "UIMachineSettingsSystem#9"
@@ -8974,6 +9225,7 @@ msgid "Enable Nested Pa&ging"
 msgstr "Activa la pa&ginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# %1 is host cpu count * 2 for now
 #: UIMachineSettingsSystem#36
 msgctxt "UIMachineSettingsSystem#36"
 msgid "<qt>%1&nbsp;CPUs</qt>"
@@ -9108,12 +9360,14 @@ msgstr ""
 "el botó «D'acord»."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Min CPU execution cap in %
 #: UIMachineSettingsSystem#51
 msgctxt "UIMachineSettingsSystem#51"
 msgid "<qt>%1%</qt>"
 msgstr "<qt>%1%</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Max CPU execution cap in %
 #: UIMachineSettingsSystem#52
 msgctxt "UIMachineSettingsSystem#52"
 msgid "<qt>%1%</qt>"
@@ -9211,6 +9465,7 @@ msgid "Moves the selected USB filter down."
 msgstr "Mou el filtre d'USB seleccionat avall."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# usb
 #: UIMachineSettingsUSB#13
 msgctxt "UIMachineSettingsUSB#13"
 msgid "New Filter %1"
@@ -9268,48 +9523,56 @@ msgid "[filter]"
 msgstr "[filtre]"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#21
 msgctxt "UIMachineSettingsUSB#21"
 msgid "<nobr>Vendor ID: %1</nobr>"
 msgstr "<nobr>ID del venedor: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#22
 msgctxt "UIMachineSettingsUSB#22"
 msgid "<nobr>Product ID: %2</nobr>"
 msgstr "<nobr>ID del producte: %2</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#23
 msgctxt "UIMachineSettingsUSB#23"
 msgid "<nobr>Revision: %3</nobr>"
 msgstr "<nobr>Revisió: %3</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#24
 msgctxt "UIMachineSettingsUSB#24"
 msgid "<nobr>Product: %4</nobr>"
 msgstr "<nobr>Producte: %4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#25
 msgctxt "UIMachineSettingsUSB#25"
 msgid "<nobr>Manufacturer: %5</nobr>"
 msgstr "<nobr>Fabricant: %5</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#26
 msgctxt "UIMachineSettingsUSB#26"
 msgid "<nobr>Serial No.: %1</nobr>"
 msgstr "<nobr>No. de sèrie: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#27
 msgctxt "UIMachineSettingsUSB#27"
 msgid "<nobr>Port: %1</nobr>"
 msgstr "<nobr>Port: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: UIMachineSettingsUSB#28
 msgctxt "UIMachineSettingsUSB#28"
 msgid "<nobr>State: %1</nobr>"
@@ -9347,18 +9610,21 @@ msgstr ""
 "cancel·leu els canvis dels paràmetres actuals."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# remote
 #: UIMachineSettingsUSBFilterDetails#1
 msgctxt "UIMachineSettingsUSBFilterDetails#1"
 msgid "Any"
 msgstr "Qualsevol"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# remote
 #: UIMachineSettingsUSBFilterDetails#2
 msgctxt "UIMachineSettingsUSBFilterDetails#2"
 msgid "Yes"
 msgstr "Sí"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# remote
 #: UIMachineSettingsUSBFilterDetails#3
 msgctxt "UIMachineSettingsUSBFilterDetails#3"
 msgid "No"
@@ -9587,11 +9853,13 @@ msgid "Choose medium type:"
 msgstr "Trieu el tipus de suport:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# error info
 #: UIMessageCenter#1
 msgid "Callee: "
 msgstr "Subrutina:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# error info
 #: UIMessageCenter#2
 msgid "Callee&nbsp;RC: "
 msgstr "Subrutina&nbsp;RC:"
@@ -9604,11 +9872,13 @@ msgid "CD/DVD image"
 msgstr "Imatge CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# error info
 #: UIMessageCenter#4
 msgid "Component: "
 msgstr "Component:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# msg box flag
 #: UIMessageCenter#5
 msgid "Do not show this message again"
 msgstr "No tornis a mostrar aquest missatge"
@@ -9886,26 +10156,31 @@ msgid "hard disk"
 msgstr "disc dur"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# error info
 #: UIMessageCenter#46
 msgid "Interface: "
 msgstr "Interfície:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# runtime error info
 #: UIMessageCenter#47
 msgid "<nobr>Error ID: </nobr>"
 msgstr "<nobr>ID de l'error:</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# runtime error info
 #: UIMessageCenter#48
 msgid "<nobr>Fatal Error</nobr>"
 msgstr "<nobr>Error fatal</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# runtime error info
 #: UIMessageCenter#49
 msgid "<nobr>Non-Fatal Error</nobr>"
 msgstr "<nobr>Error no fatal</nobr> "
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# runtime error info
 #: UIMessageCenter#50
 msgid "<nobr>Warning</nobr>"
 msgstr "<nobr>Avís</nobr>"
@@ -10397,11 +10672,13 @@ msgstr ""
 "qualsevol altre suport arrencable.</p><p>Voleu continuar?</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# error info
 #: UIMessageCenter#88
 msgid "Result&nbsp;Code: "
 msgstr "Resultat&nbsp;Codi:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# runtime error info
 #: UIMessageCenter#89
 msgid "Severity: "
 msgstr "Severitat:"
@@ -10412,26 +10689,31 @@ msgid "There is no virtual machine named <b>%1</b>."
 msgstr "No hi ha cap màquina virtual anomenada <b>%1</b>."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# msg box title
 #: UIMessageCenter#91
 msgid "VirtualBox - Critical Error"
 msgstr "VirtualBox - Error crític"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# msg box title
 #: UIMessageCenter#92
 msgid "VirtualBox - Error"
 msgstr "VirtualBox - Error"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# msg box title
 #: UIMessageCenter#93
 msgid "VirtualBox - Information"
 msgstr "VirtualBox - Informació"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# msg box title
 #: UIMessageCenter#94
 msgid "VirtualBox - Question"
 msgstr "VirtualBox - Pregunta"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# msg box title
 #: UIMessageCenter#95
 msgid "VirtualBox - Warning"
 msgstr "VirtualBox - Avís"
@@ -10483,6 +10765,7 @@ msgstr ""
 "<b><nobr>%2</nobr></b>."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# machine
 #. (obsolete)
 #: UIMessageCenter#101
 msgctxt "UIMessageCenter#101UIMessageCenter#101"
@@ -10490,6 +10773,7 @@ msgid "Delete"
 msgstr "Elimina"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# machine
 #. (obsolete)
 #: UIMessageCenter#102
 msgctxt "UIMessageCenter#102"
@@ -10497,12 +10781,14 @@ msgid "Unregister"
 msgstr "Treu del registre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# saved state
 #: UIMessageCenter#103
 msgctxt "UIMessageCenter#103"
 msgid "Discard"
 msgstr "Descarta"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# detach image
 #. (obsolete)
 #: UIMessageCenter#104
 msgctxt "UIMessageCenter#104"
@@ -10526,6 +10812,7 @@ msgstr ""
 "no es pot desfer.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: UIMessageCenter#106
 msgctxt "UIMessageCenter#106"
@@ -10533,6 +10820,7 @@ msgid "Delete"
 msgstr "Suprimeix"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: UIMessageCenter#107
 msgctxt "UIMessageCenter#107"
@@ -10554,6 +10842,7 @@ msgstr ""
 "</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: UIMessageCenter#109
 msgctxt "UIMessageCenter#109"
@@ -10581,23 +10870,27 @@ msgstr ""
 "%1 al canal %2 del bus %3 de la màquina <b>%4</b>."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# additions
 #: UIMessageCenter#112
 msgctxt "UIMessageCenter#112"
 msgid "Download"
 msgstr "Baixa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# additions
 #: UIMessageCenter#113
 msgid "Mount"
 msgstr "Munta"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# additional message box paragraph
 #: UIMessageCenter#114
 msgid "<p>The host key is currently defined as <b>%1</b>.</p>"
 msgstr ""
 "<p>La tecla d'amfitrió es troba actualment definida com a <b>%1</b>.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# do input capture
 #: UIMessageCenter#115
 msgid "Capture"
 msgstr "Captura"
@@ -10620,6 +10913,7 @@ msgstr ""
 "ignorar aquest missatge.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# inaccessible media message box
 #: UIMessageCenter#117
 msgid "Check"
 msgstr "Comprova"
@@ -10656,6 +10950,7 @@ msgstr ""
 "seguretat.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutAutoConvertedSettings message box
 #. (obsolete)
 #: UIMessageCenter#119
 msgctxt "UIMessageCenter#119"
@@ -10663,12 +10958,14 @@ msgid "&Save"
 msgstr "De&sa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutAutoConvertedSettings message box
 #. (obsolete)
 #: UIMessageCenter#120
 msgid "&Backup"
 msgstr "&Còpia de seguretat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutAutoConvertedSettings message box
 #. (obsolete)
 #: UIMessageCenter#121
 msgctxt "UIMessageCenter#121"
@@ -10676,12 +10973,14 @@ msgid "Cancel"
 msgstr "Cancel·la"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# fullscreen
 #: UIMessageCenter#122
 msgctxt "UIMessageCenter#122"
 msgid "Switch"
 msgstr "Canvia"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# seamless
 #: UIMessageCenter#123
 msgctxt "UIMessageCenter#123"
 msgid "Switch"
@@ -10699,18 +10998,21 @@ msgstr ""
 "perdran.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# machine
 #: UIMessageCenter#125
 msgctxt "UIMessageCenter#125"
 msgid "Reset"
 msgstr "Reinicialitza"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# no hard disk attached
 #: UIMessageCenter#126
 msgctxt "UIMessageCenter#126"
 msgid "Continue"
 msgstr "Continua"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# no hard disk attached
 #: UIMessageCenter#127
 msgid "Go Back"
 msgstr "Vés enrere"
@@ -10740,6 +11042,7 @@ msgstr ""
 "fer.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: UIMessageCenter#130
 msgctxt "UIMessageCenter#130"
@@ -10747,6 +11050,7 @@ msgid "&Create"
 msgstr "&Crea"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: UIMessageCenter#131
 msgctxt "UIMessageCenter#131"
@@ -11130,6 +11434,7 @@ msgid "Cancel"
 msgstr "Cancel·la"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# detach medium
 #: UIMessageCenter#167
 msgctxt "UIMessageCenter#167"
 msgid "Release"
@@ -11173,6 +11478,7 @@ msgstr ""
 "s'eliminarà i, a més serà possible afegir-la novament més tard.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: UIMessageCenter#172
 msgctxt "UIMessageCenter#172"
 msgid "Remove"
@@ -11209,12 +11515,14 @@ msgstr ""
 "forma que podreu afegir-la a aquest disc dur novament més tard.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk storage
 #: UIMessageCenter#175
 msgctxt "UIMessageCenter#175"
 msgid "Delete"
 msgstr "Elimina"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk storage
 #: UIMessageCenter#176
 msgid "Keep"
 msgstr "Manté"
@@ -11253,6 +11561,7 @@ msgstr ""
 "controlador addicional?</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: UIMessageCenter#180
 msgid "Change"
@@ -11420,12 +11729,14 @@ msgstr ""
 "VirtualBox sense desar els resultats de la conversió al disc.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutAutoConvertedSettings message box
 #. (obsolete)
 #: UIMessageCenter#197
 msgid "&More"
 msgstr "&Més"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutAutoConvertedSettings message box
 #. (obsolete)
 #: UIMessageCenter#198
 msgctxt "UIMessageCenter#198"
@@ -11491,6 +11802,7 @@ msgstr ""
 "conversió del disc.</li>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutAutoConvertedSettings message box
 #. (obsolete)
 #: UIMessageCenter#202
 msgid "O&verwrite"
@@ -11562,6 +11874,7 @@ msgid "Failed to export appliance <b>%1</b>."
 msgstr "No s'ha pogut exportar l'aplicació virtual <b>%1</b>."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to close ...
 #. (obsolete)
 #: UIMessageCenter#211
 msgctxt "UIMessageCenter#211"
@@ -11569,6 +11882,7 @@ msgid "hard disk"
 msgstr "disc dur"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to close ...
 #. (obsolete)
 #: UIMessageCenter#212
 msgctxt "UIMessageCenter#212"
@@ -11576,6 +11890,7 @@ msgid "CD/DVD image"
 msgstr "Imatge de CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to close ...
 #. (obsolete)
 #: UIMessageCenter#213
 msgctxt "UIMessageCenter#213"
@@ -11710,6 +12025,7 @@ msgstr ""
 "<b>Selecciona</b> per obrir el <i>Gestor de suports virtuals</i>.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: UIMessageCenter#229
 msgctxt "UIMessageCenter#229"
@@ -11717,6 +12033,7 @@ msgid "&Create"
 msgstr "&Crea"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: UIMessageCenter#230
 msgctxt "UIMessageCenter#230"
@@ -11799,6 +12116,7 @@ msgstr ""
 "màquina.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# warnAboutSettingsAutoConversion message box
 #: UIMessageCenter#241
 msgctxt "UIMessageCenter#241"
 msgid "E&xit"
@@ -11820,34 +12138,40 @@ msgstr ""
 "accions.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to mount ...
 #: UIMessageCenter#243
 msgctxt "UIMessageCenter#243"
 msgid "hard disk"
 msgstr "disc dur"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to mount ... host-drive
 #: UIMessageCenter#244
 msgid "CD/DVD"
 msgstr "CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to mount ...
 #: UIMessageCenter#245
 msgctxt "UIMessageCenter#245"
 msgid "CD/DVD image"
 msgstr "Imatge de CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to mount ... host-drive
 #: UIMessageCenter#246
 msgid "floppy"
 msgstr "disquet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to mount ...
 #: UIMessageCenter#247
 msgctxt "UIMessageCenter#247"
 msgid "floppy image"
 msgstr "imatge de disquet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to attach ...
 #. (obsolete)
 #: UIMessageCenter#248
 msgctxt "UIMessageCenter#248"
@@ -11855,12 +12179,14 @@ msgid "hard disk"
 msgstr "disc dur"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to attach ...
 #. (obsolete)
 #: UIMessageCenter#249
 msgid "CD/DVD device"
 msgstr "Dispositiu CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# failed to close ...
 #. (obsolete)
 #: UIMessageCenter#250
 msgid "floppy device"
@@ -11877,6 +12203,7 @@ msgstr ""
 "cap CD o imatges iso ni tampoc instal·lar les Guest Additions sense ell.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: UIMessageCenter#252
 msgctxt "UIMessageCenter#252"
 msgid "&Remove"
@@ -12099,11 +12426,13 @@ msgstr ""
 "d'existent?</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# add attachment routine
 #: UIMessageCenter#274
 msgid "Create &new disk"
 msgstr "Crea un disc &nou"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# add attachment routine
 #: UIMessageCenter#275
 msgid "&Choose existing disk"
 msgstr "&Tria un disc existent"
@@ -12120,11 +12449,13 @@ msgstr ""
 "ara?</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# add attachment routine
 #: UIMessageCenter#277
 msgid "&Choose disk"
 msgstr "Tria un dis&c"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# add attachment routine
 #: UIMessageCenter#278
 msgid "Leave &empty"
 msgstr "Deixa-ho &buit"
@@ -12362,6 +12693,7 @@ msgstr ""
 "d'amfitrió+Home</b>.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# scale
 #: UIMessageCenter#301
 msgctxt "UIMessageCenter#301"
 msgid "Switch"
@@ -12683,6 +13015,7 @@ msgstr ""
 "p><p>Voleu baixar la darrera versió des de la xarxa</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# extension pack
 #: UIMessageCenter#336
 msgctxt "UIMessageCenter#336"
 msgid "Download"
@@ -12709,6 +13042,7 @@ msgstr ""
 "instal·lar el paqck d'extenxions?</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# extension pack
 #: UIMessageCenter#339
 msgctxt "UIMessageCenter#339"
 msgid "Install"
@@ -12737,6 +13071,7 @@ msgstr ""
 "d'extensions des d'Oracle</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# extension pack
 #: UIMessageCenter#342
 msgid "Ok"
 msgstr "D'acord"
@@ -12755,6 +13090,9 @@ msgstr ""
 "tancarà l'aplicació.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# This text is never used with n == 0.  Feel free to drop the %n where
+# possible, we only included it because of problems with Qt Linguist (but the
+# user can see how many machines are in the list and doesn't need to be told).
 #: UIMessageCenter#344
 msgctxt "UIMessageCenter#344"
 msgid ""
@@ -12818,11 +13156,13 @@ msgid "Do you wish to cancel all current network operations?"
 msgstr "Voleu cancel·lar totes les operacions de xarxa actives?"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# machine
 #: UIMessageCenter#350
 msgid "ACPI Shutdown"
 msgstr "Apagada ACPI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# machine
 #: UIMessageCenter#351
 msgid "Power Off"
 msgstr "Apaga"
@@ -13161,6 +13501,7 @@ msgid "Current network operations:"
 msgstr "Operacions de xarxa actuals:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network operation
 #: UINetworkManagerIndicator#2
 msgid "failed"
 msgstr "ha fallat"
@@ -13479,6 +13820,7 @@ msgid "&Finish"
 msgstr "&Finalitza"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWizard#31
 msgctxt "UINewHDWizard#31"
@@ -13486,6 +13828,7 @@ msgid "Type"
 msgstr "Tipus"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWizard#32
 msgctxt "UINewHDWizard#32"
@@ -13493,6 +13836,7 @@ msgid "Location"
 msgstr "Ubicació"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWizard#33
 msgctxt "UINewHDWizard#33"
@@ -13500,6 +13844,7 @@ msgid "Size"
 msgstr "Mida"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWizard#34
 msgid "Bytes"
@@ -13635,6 +13980,7 @@ msgstr ""
 "el premeu, es crearà una imatge de disc dur nova."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# copied virtual disk name
 #. (obsolete)
 #: UINewHDWizard#48
 msgctxt "UINewHDWizard#48"
@@ -13894,6 +14240,7 @@ msgid "%1 B"
 msgstr "%1 B"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWizard#80
 msgctxt "UINewHDWizard#80"
@@ -13901,6 +14248,7 @@ msgid "File type"
 msgstr "Tipus de fitxer"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWizard#81
 msgid "Details"
@@ -14103,6 +14451,7 @@ msgid "%1 B"
 msgstr "%1 B"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWzdPage4#4
 msgctxt "UINewHDWzdPage4#4"
@@ -14110,6 +14459,7 @@ msgid "Type"
 msgstr "Tipus"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWzdPage4#5
 msgctxt "UINewHDWzdPage4#5"
@@ -14117,6 +14467,7 @@ msgid "Location"
 msgstr "Ubicació"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewHDWzdPage4#6
 msgctxt "UINewHDWzdPage4#6"
@@ -14513,6 +14864,7 @@ msgid "&Finish"
 msgstr "&Finalitza"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# megabytes
 #. (obsolete)
 #: UINewVMWzd#38
 msgctxt "UINewVMWzd#38"
@@ -14520,6 +14872,7 @@ msgid "MB"
 msgstr "MB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzd#39
 msgctxt "UINewVMWzd#39"
@@ -14527,6 +14880,7 @@ msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzd#40
 msgctxt "UINewVMWzd#40"
@@ -14534,6 +14888,7 @@ msgid "OS Type"
 msgstr "Tipus de sistema operatiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzd#41
 msgctxt "UINewVMWzd#41"
@@ -14541,6 +14896,7 @@ msgid "Base Memory"
 msgstr "Memòria RAM"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzd#42
 msgctxt "UINewVMWzd#42"
@@ -14683,6 +15039,7 @@ msgid "The recommended base memory size is <b>%1</b> MB."
 msgstr "La mida de memòria base recomanada és <b>%1</b> MB."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix MBytes=1024 KBytes
 #. (obsolete)
 #: UINewVMWzdPage3#6
 msgctxt "UINewVMWzdPage3#6"
@@ -14797,6 +15154,7 @@ msgid "Summary"
 msgstr "Resum"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzdPage5#3
 msgctxt "UINewVMWzdPage5#3"
@@ -14804,6 +15162,7 @@ msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzdPage5#4
 msgctxt "UINewVMWzdPage5#4"
@@ -14811,6 +15170,7 @@ msgid "OS Type"
 msgstr "Tipus de sistema operatiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzdPage5#5
 msgctxt "UINewVMWzdPage5#5"
@@ -14818,6 +15178,7 @@ msgid "Base Memory"
 msgstr "Memòria base"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix MBytes=1024KBytes
 #. (obsolete)
 #: UINewVMWzdPage5#6
 msgctxt "UINewVMWzdPage5#6"
@@ -14825,6 +15186,7 @@ msgid "MB"
 msgstr "MB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# summary
 #. (obsolete)
 #: UINewVMWzdPage5#7
 msgctxt "UINewVMWzdPage5#7"
@@ -14982,11 +15344,13 @@ msgid "Cancel the current operation"
 msgstr "Cancel·la l'operació actual"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# You may wish to translate this more like "Time remaining: %1, %2"
 #: UIProgressDialog#19
 msgid "%1, %2 remaining"
 msgstr "Resta %1, %2"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# You may wish to translate this more like "Time remaining: %1"
 #: UIProgressDialog#20
 msgid "%1 remaining"
 msgstr "Resta %1"
@@ -15038,6 +15402,7 @@ msgstr ""
 "virtualbox.org</a> per veure altra informació i novetats.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Note: main window title which is pretended by the product name.
 #: UISelectorWindow#6
 msgctxt "UISelectorWindow#6"
 msgid "Manager"
@@ -15633,12 +15998,14 @@ msgid "Inaccessible"
 msgstr "No s'hi pot accedir"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VM tooltip (name, last state change, session state)
 #: UIVMListView#2
 msgctxt "UIVMListView#2"
 msgid "<nobr>%1<br></nobr><nobr>%2 since %3</nobr><br><nobr>Session %4</nobr>"
 msgstr "<nobr>%1<br></nobr><nobr>%2 des de %3</nobr><br><nobr>Sessió %4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Inaccessible VM tooltip (name, last state change)
 #: UIVMListView#3
 msgctxt "UIVMListView#3"
 msgid "<nobr><b>%1</b><br></nobr><nobr>Inaccessible since %2</nobr>"
@@ -16005,6 +16372,7 @@ msgid "Choose a location for new virtual hard drive file..."
 msgstr "Seleccioneu una ubicació per al fitxer de disc virtual..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# copied virtual hard drive name
 #: UIWizardCloneVD#20
 msgctxt "UIWizardCloneVD#20"
 msgid "%1_copy"
@@ -17272,12 +17640,14 @@ msgid "Switch to fullscreen mode"
 msgstr "Canvia al mode de pantalla completa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# enable/disable...
 #. (obsolete)
 #: VBoxConsoleWnd#5
 msgid "Mouse Integration"
 msgstr "Integració del punter"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# enable/disable...
 #. (obsolete)
 #: VBoxConsoleWnd#6
 msgid "Auto-resize Guest Display"
@@ -17450,6 +17820,7 @@ msgid "Unmount the currently mounted CD/DVD-ROM media"
 msgstr "Desmunta el suport que està muntat actualment en el CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# enable/disable...
 #. (obsolete)
 #: VBoxConsoleWnd#31
 msgid "Remote Desktop (RDP) Server"
@@ -17738,6 +18109,7 @@ msgid "&Network Adapters"
 msgstr "Adaptadors de &xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network
 #. (obsolete)
 #: VBoxConsoleWnd#68
 msgctxt "VBoxConsoleWnd#68"
@@ -17745,6 +18117,7 @@ msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Floppy tip
 #. (obsolete)
 #: VBoxConsoleWnd#69
 msgctxt "VBoxConsoleWnd#69"
@@ -17759,6 +18132,7 @@ msgid "Sun VirtualBox"
 msgstr "Sun VirtualBox"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD tip
 #. (obsolete)
 #: VBoxConsoleWnd#71
 msgctxt "VBoxConsoleWnd#71"
@@ -17792,12 +18166,14 @@ msgid "Switch to seamless desktop integration mode"
 msgstr "Canvia al mode d'integració de l'escriptori fluid"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Floppy tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#76
 msgid "<qt><nobr>Indicates the activity of the floppy media:</nobr>%1</qt>"
 msgstr "<qt><nobr>Indica l'activitat del disquet:</nobr>%1</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Floppy tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#77
 msgctxt "VBoxConsoleWnd#77"
@@ -17805,6 +18181,7 @@ msgid "<br><nobr><b>Host Drive</b>: %1</nobr>"
 msgstr "<br><nobr><b>Unitat de l'amfitrió</b>: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Floppy tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#78
 msgctxt "VBoxConsoleWnd#78"
@@ -17812,6 +18189,7 @@ msgid "<br><nobr><b>Image</b>: %1</nobr>"
 msgstr "<br><nobr><b>Imatge</b>: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Floppy tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#79
 msgctxt "VBoxConsoleWnd#79"
@@ -17819,12 +18197,14 @@ msgid "<br><nobr><b>No media mounted</b></nobr>"
 msgstr "<br><nobr><b>No hi ha cap suport muntat</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DVD-ROM tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#80
 msgid "<qt><nobr>Indicates the activity of the CD/DVD-ROM media:</nobr>%1</qt>"
 msgstr "<qt><nobr>Indica l'activitat del CD/DVD:</nobr>%1</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DVD-ROM tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#81
 msgctxt "VBoxConsoleWnd#81"
@@ -17832,6 +18212,7 @@ msgid "<br><nobr><b>Host Drive</b>: %1</nobr>"
 msgstr "<br><nobr><b>Unitat de l'amfitrió</b>: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DVD-ROM tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#82
 msgctxt "VBoxConsoleWnd#82"
@@ -17839,6 +18220,7 @@ msgid "<br><nobr><b>Image</b>: %1</nobr>"
 msgstr "<br><nobr><b>Imatge</b>: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DVD-ROM tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#83
 msgctxt "VBoxConsoleWnd#83"
@@ -17846,6 +18228,7 @@ msgid "<br><nobr><b>No media mounted</b></nobr>"
 msgstr "<br><nobr><b>No hi ha cap suport muntat</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#84
 msgid ""
@@ -17853,12 +18236,14 @@ msgid ""
 msgstr "<qt><nobr>Indica l'activitat dels discos durs virtuals:</nobr>%1</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#85
 msgid "<br><nobr><b>No hard disks attached</b></nobr>"
 msgstr "<br><nobr><b>No hi ha cap disc dur connectat</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#86
 msgid ""
@@ -17867,12 +18252,14 @@ msgstr ""
 "<qt><nobr>Indica l'activitat de les interfícies de xarxa:</nobr>%1</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#87
 msgid "<br><nobr><b>Adapter %1 (%2)</b>: cable %3</nobr>"
 msgstr "<br><nobr><b>Adaptador %1 (%2)</b>: el fil està %3</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#88
 msgctxt "VBoxConsoleWnd#88"
@@ -17880,6 +18267,7 @@ msgid "connected"
 msgstr "connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#89
 msgctxt "VBoxConsoleWnd#89"
@@ -17887,6 +18275,7 @@ msgid "disconnected"
 msgstr "desconnectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#90
 msgctxt "VBoxConsoleWnd#90"
@@ -17894,6 +18283,7 @@ msgid "<br><nobr><b>All network adapters are disabled</b></nobr>"
 msgstr "<br><nobr><b>Tots els adaptadors de xarxa estan desactivats</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#91
 msgid ""
@@ -17902,6 +18292,7 @@ msgstr ""
 "<qt><nobr>Indica l'activitat dels dispositius USB connectats:</nobr>%1</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#92
 msgctxt "VBoxConsoleWnd#92"
@@ -17909,6 +18300,7 @@ msgid "<br><nobr><b>No USB devices attached</b></nobr>"
 msgstr "<br><nobr><b>No hi ha dispositius USB connectats</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#93
 msgctxt "VBoxConsoleWnd#93"
@@ -17916,6 +18308,7 @@ msgid "<br><nobr><b>USB Controller is disabled</b></nobr>"
 msgstr "<br><nobr><b>El controlador USB està desactivat</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Shared folders tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#94
 msgid ""
@@ -17925,6 +18318,7 @@ msgstr ""
 "<qt><nobr>Indica l'activitat de les carpetes compartides:</nobr>%1</qt>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Shared folders tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#95
 msgctxt "VBoxConsoleWnd#95"
@@ -17981,6 +18375,7 @@ msgid "Show Session Information Dialog"
 msgstr "Mostra el diàleg informatiu de la sessió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #. (obsolete)
 #: VBoxConsoleWnd#103
 msgctxt "VBoxConsoleWnd#103"
@@ -17988,6 +18383,7 @@ msgid "&Statistics..."
 msgstr "E&stadístiques..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #. (obsolete)
 #: VBoxConsoleWnd#104
 msgctxt "VBoxConsoleWnd#104"
@@ -18030,6 +18426,7 @@ msgstr ""
 "vrdp_16px.png/>) o no (<img src=:/vrdp_disabled_16px.png/>)."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# debug action
 #. (obsolete)
 #: VBoxConsoleWnd#108
 msgctxt "VBoxConsoleWnd#108"
@@ -18051,6 +18448,7 @@ msgstr ""
 "menú principal."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Virtualization Stuff LED
 #. (obsolete)
 #: VBoxConsoleWnd#110
 msgctxt "VBoxConsoleWnd#110"
@@ -18064,6 +18462,7 @@ msgstr ""
 "nobr><br><nobr><b>%3:</b>&nbsp;%4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Virtualization Stuff LED
 #. (obsolete)
 #: VBoxConsoleWnd#111
 msgctxt "VBoxConsoleWnd#111"
@@ -18155,6 +18554,7 @@ msgid "No Floppy Devices Attached"
 msgstr "No s'ha connectat cap dispositiu de disquetera"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#124
 msgctxt "VBoxConsoleWnd#124"
@@ -18166,6 +18566,7 @@ msgstr ""
 "virtuals:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#125
 msgctxt "VBoxConsoleWnd#125"
@@ -18177,12 +18578,14 @@ msgstr ""
 "DVD:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#126
 msgid "<br><nobr><b>No CD/DVD devices attached</b></nobr>"
 msgstr "<br><nobr><b>No s'ha connectat cap dispositiu de CD/DVD</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# FD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#127
 msgctxt "VBoxConsoleWnd#127"
@@ -18194,12 +18597,14 @@ msgstr ""
 "disquetera:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# FD tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#128
 msgid "<br><nobr><b>No floppy devices attached</b></nobr>"
 msgstr "<br><nobr><b>No s'ha connectat cap dispositiu de disquetera</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#129
 msgctxt "VBoxConsoleWnd#129"
@@ -18211,6 +18616,7 @@ msgstr ""
 "xarxa:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#130
 msgctxt "VBoxConsoleWnd#130"
@@ -18222,6 +18628,7 @@ msgstr ""
 "connectats:</nobr>%1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Shared folders tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#131
 msgctxt "VBoxConsoleWnd#131"
@@ -18254,6 +18661,7 @@ msgid "Show Monitor Preview"
 msgstr "Mostra la previsualització del monitor"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Network adapters tooltip
 #. (obsolete)
 #: VBoxConsoleWnd#135
 msgctxt "VBoxConsoleWnd#135"
@@ -18411,6 +18819,7 @@ msgid "Cancel dialog"
 msgstr "Cancel·la el diàleg"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# no info
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#16
 msgctxt "VBoxDiskImageManagerDlg#16"
@@ -18569,6 +18978,7 @@ msgid "Checking accessibility"
 msgstr "S'està comprovant l'accessibilitat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#39
 msgctxt "VBoxDiskImageManagerDlg#39"
@@ -18586,6 +18996,7 @@ msgstr ""
 "nobr><br><nobr>Tipus d'emmagatzematge:&nbsp;&nbsp;%3</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#41
 msgctxt "VBoxDiskImageManagerDlg#41"
@@ -18593,12 +19004,14 @@ msgid "<br><nobr>Attached to:&nbsp;&nbsp;%1</nobr>"
 msgstr "<br><nobr>Connectat a:&nbsp;&nbsp;%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#42
 msgid "<br><nobr>Snapshot:&nbsp;&nbsp;%5</nobr>"
 msgstr "<br><nobr>Captura:&nbsp;&nbsp;%5</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#43
 msgctxt "VBoxDiskImageManagerDlg#43"
@@ -18608,6 +19021,7 @@ msgstr ""
 "l'accessibilitat als suports"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# HDD
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#44
 msgctxt "VBoxDiskImageManagerDlg#44"
@@ -18615,6 +19029,7 @@ msgid "<nobr><b>%1</b></nobr><br>%2"
 msgstr "<nobr><b>%1</b></nobr><br>%2"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD/Floppy
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#45
 msgctxt "VBoxDiskImageManagerDlg#45"
@@ -18622,12 +19037,14 @@ msgid "<nobr><b>%1</b></nobr><br>Checking accessibility..."
 msgstr "<nobr><b>%1</b></nobr><br>S'està comprovant l'accessibilitat..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD/Floppy
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#46
 msgid "<nobr><b>%1</b></nobr>"
 msgstr "<nobr><b>%1</b></nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD/Floppy
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#47
 msgctxt "VBoxDiskImageManagerDlg#47"
@@ -18635,6 +19052,7 @@ msgid "<br><nobr>Attached to:&nbsp;&nbsp;%1</nobr>"
 msgstr "<br><nobr>Connectat a:&nbsp;&nbsp;%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD/Floppy
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#48
 msgctxt "VBoxDiskImageManagerDlg#48"
@@ -18651,6 +19069,7 @@ msgid "<nobr><b>%1</b></nobr><br>%2"
 msgstr "<nobr><b>%1</b></nobr><br>%2"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# CD/DVD/Floppy
 #. (obsolete)
 #: VBoxDiskImageManagerDlg#50
 msgid "The image file is not accessible"
@@ -18975,6 +19394,7 @@ msgstr ""
 "de la màquina virtual."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: VBoxGlobal#1
 msgctxt "VBoxGlobal#1"
@@ -18982,11 +19402,13 @@ msgid "Differencing"
 msgstr "S'estan calculant les diferències"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device details
 #: VBoxGlobal#2
 msgid "Unknown device %1:%2"
 msgstr "Dispositiu desconegut %1:%2"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: VBoxGlobal#3
 msgid ""
 "<nobr>Vendor ID: %1</nobr><br><nobr>Product ID: %2</nobr><br><nobr>Revision: "
@@ -18996,82 +19418,96 @@ msgstr ""
 "nobr><br><nobr>Revisió: %3</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: VBoxGlobal#4
 msgid "<br><nobr>Serial No. %1</nobr>"
 msgstr "<br><nobr>Núm de sèrie %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: VBoxGlobal#5
 msgid "<br><nobr>State: %1</nobr>"
 msgstr "<br><nobr>Estat: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#6
 msgctxt "VBoxGlobal#6"
 msgid "Name"
 msgstr "Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#7
 msgctxt "VBoxGlobal#7"
 msgid "OS Type"
 msgstr "Tipus de sistema operatiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#8
 msgctxt "VBoxGlobal#8"
 msgid "Base Memory"
 msgstr "Memòria base"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxGlobal#9
 msgid "<nobr>%3 MB</nobr>"
 msgstr "<nobr>%3 MB</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#10
 msgctxt "VBoxGlobal#10"
 msgid "General"
 msgstr "General"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#11
 msgctxt "VBoxGlobal#11"
 msgid "Video Memory"
 msgstr "Memòria de vídeo"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxGlobal#12
 msgid "<nobr>%4 MB</nobr>"
 msgstr "<nobr>%4 MB</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#13
 msgctxt "VBoxGlobal#13"
 msgid "Boot Order"
 msgstr "Ordre d'arrencada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#14
 msgctxt "VBoxGlobal#14"
 msgid "ACPI"
 msgstr "ACPI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#15
 msgctxt "VBoxGlobal#15"
 msgid "IO APIC"
 msgstr "IO APIC"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#16
 msgctxt "VBoxGlobal#16"
 msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (HDDs)
 #. (obsolete)
 #: VBoxGlobal#17
 msgctxt "VBoxGlobal#17"
@@ -19079,6 +19515,7 @@ msgid "Not Attached"
 msgstr "No està connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxGlobal#18
 msgctxt "VBoxGlobal#18"
@@ -19086,42 +19523,49 @@ msgid "Hard Disks"
 msgstr "Discos durs"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (ACPI)
 #: VBoxGlobal#19
 msgctxt "VBoxGlobal#19"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (ACPI)
 #: VBoxGlobal#20
 msgctxt "VBoxGlobal#20"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (IO APIC)
 #: VBoxGlobal#21
 msgctxt "VBoxGlobal#21"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (IO APIC)
 #: VBoxGlobal#22
 msgctxt "VBoxGlobal#22"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (Nested Paging)
 #: VBoxGlobal#23
 msgctxt "VBoxGlobal#23"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (Nested Paging)
 #: VBoxGlobal#24
 msgctxt "VBoxGlobal#24"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (floppy)
 #. (obsolete)
 #: VBoxGlobal#25
 msgctxt "VBoxGlobal#25"
@@ -19129,6 +19573,7 @@ msgid "Not mounted"
 msgstr "No està muntat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (floppy)
 #. (obsolete)
 #: VBoxGlobal#26
 msgctxt "VBoxGlobal#26"
@@ -19136,6 +19581,7 @@ msgid "Image"
 msgstr "Imatge"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (floppy)
 #. (obsolete)
 #: VBoxGlobal#27
 msgctxt "VBoxGlobal#27"
@@ -19143,6 +19589,7 @@ msgid "Host Drive"
 msgstr "Unitat de l'ordinador amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxGlobal#28
 msgctxt "VBoxGlobal#28"
@@ -19150,11 +19597,13 @@ msgid "Floppy"
 msgstr "Disquet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #: VBoxGlobal#29
 msgid "Bridged Adapter"
 msgstr "Adaptador pont"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (DVD)
 #. (obsolete)
 #: VBoxGlobal#30
 msgctxt "VBoxGlobal#30"
@@ -19162,6 +19611,7 @@ msgid "Not mounted"
 msgstr "No està muntat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (DVD)
 #. (obsolete)
 #: VBoxGlobal#31
 msgctxt "VBoxGlobal#31"
@@ -19169,6 +19619,7 @@ msgid "Image"
 msgstr "Imatge"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (DVD)
 #. (obsolete)
 #: VBoxGlobal#32
 msgctxt "VBoxGlobal#32"
@@ -19176,6 +19627,7 @@ msgid "Host Drive"
 msgstr "Unitat de l'ordinador amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxGlobal#33
 msgctxt "VBoxGlobal#33"
@@ -19183,6 +19635,7 @@ msgid "CD/DVD-ROM"
 msgstr "CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #. (obsolete)
 #: VBoxGlobal#34
 msgctxt "VBoxGlobal#34"
@@ -19190,72 +19643,84 @@ msgid "Adapter"
 msgstr "Adaptador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #: VBoxGlobal#35
 msgctxt "VBoxGlobal#35"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#36
 msgctxt "VBoxGlobal#36"
 msgid "Audio"
 msgstr "Àudio"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: VBoxGlobal#37
 msgctxt "VBoxGlobal#37"
 msgid "Bridged adapter, %1"
 msgstr "Adaptador pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: VBoxGlobal#38
 msgctxt "VBoxGlobal#38"
 msgid "Host-only adapter, '%1'"
 msgstr "Adaptador de només l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: VBoxGlobal#39
 msgctxt "VBoxGlobal#39"
 msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: VBoxGlobal#40
 msgctxt "VBoxGlobal#40"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#41
 msgctxt "VBoxGlobal#41"
 msgid "Network"
 msgstr "Xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #: VBoxGlobal#42
 msgctxt "VBoxGlobal#42"
 msgid "Device Filters"
 msgstr "Filtres del dispositiu"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #: VBoxGlobal#43
 msgctxt "VBoxGlobal#43"
 msgid "%1 (%2 active)"
 msgstr "%1 (%2 actiu)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (USB)
 #: VBoxGlobal#44
 msgctxt "VBoxGlobal#44"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP)
 #. (obsolete)
 #: VBoxGlobal#45
 msgid "VRDP Server Port"
 msgstr "Port del servidor VRDP"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP)
 #. (obsolete)
 #: VBoxGlobal#46
 msgctxt "VBoxGlobal#46"
@@ -19263,6 +19728,7 @@ msgid "%1"
 msgstr "%1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP)
 #. (obsolete)
 #: VBoxGlobal#47
 msgctxt "VBoxGlobal#47"
@@ -19270,6 +19736,7 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxGlobal#48
 msgctxt "VBoxGlobal#48"
@@ -19283,110 +19750,130 @@ msgid "Opening URLs is not implemented yet."
 msgstr "Encara no està implementada l'opció d'obrir URL."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#50
 msgid "Powered Off"
 msgstr "Aturada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#51
 msgid "Saved"
 msgstr "Desat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#52
 msgid "Aborted"
 msgstr "Interromput"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#53
 msgid "Running"
 msgstr "S'està executant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#54
 msgid "Paused"
 msgstr "Pausat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#55
 msgid "Starting"
 msgstr "S'està iniciant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#56
 msgid "Stopping"
 msgstr "S'està aturant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#57
 msgid "Saving"
 msgstr "S'està desant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#58
 msgid "Restoring"
 msgstr "S'està restaurant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #. (obsolete)
 #: VBoxGlobal#59
 msgid "Discarding"
 msgstr "S'està descartant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #. (obsolete)
 #: VBoxGlobal#60
 msgid "Closed"
 msgstr "Tancat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #. (obsolete)
 #: VBoxGlobal#61
 msgid "Open"
 msgstr "Obre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #: VBoxGlobal#62
 msgid "Spawning"
 msgstr "S'està engendrant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #. (obsolete)
 #: VBoxGlobal#63
 msgid "Closing"
 msgstr "S'està tancant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#64
 msgctxt "VBoxGlobal#64"
 msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#65
 msgctxt "VBoxGlobal#65"
 msgid "Floppy"
 msgstr "Disquet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#66
 msgctxt "VBoxGlobal#66"
 msgid "CD/DVD-ROM"
 msgstr "CD/DVD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#67
 msgctxt "VBoxGlobal#67"
 msgid "Hard Disk"
 msgstr "Disc dur"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#68
 msgctxt "VBoxGlobal#68"
 msgid "Network"
 msgstr "Xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskControllerType
 #. (obsolete)
 #: VBoxGlobal#69
 msgctxt "VBoxGlobal#69"
@@ -19394,6 +19881,7 @@ msgid "Primary"
 msgstr "Primari"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskControllerType
 #. (obsolete)
 #: VBoxGlobal#70
 msgctxt "VBoxGlobal#70"
@@ -19401,6 +19889,7 @@ msgid "Secondary"
 msgstr "Secundari"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #. (obsolete)
 #: VBoxGlobal#71
 msgctxt "VBoxGlobal#71"
@@ -19408,6 +19897,7 @@ msgid "Normal"
 msgstr "Normal"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #. (obsolete)
 #: VBoxGlobal#72
 msgctxt "VBoxGlobal#72"
@@ -19415,6 +19905,7 @@ msgid "Immutable"
 msgstr "Immutable"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #. (obsolete)
 #: VBoxGlobal#73
 msgctxt "VBoxGlobal#73"
@@ -19422,6 +19913,7 @@ msgid "Writethrough"
 msgstr "Escriptura directa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskStorageType
 #. (obsolete)
 #: VBoxGlobal#74
 msgctxt "VBoxGlobal#74"
@@ -19429,18 +19921,21 @@ msgid "Virtual Disk Image"
 msgstr "Imatge de disc virtual"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskStorageType
 #. (obsolete)
 #: VBoxGlobal#75
 msgid "iSCSI"
 msgstr "iSCSI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskStorageType
 #. (obsolete)
 #: VBoxGlobal#76
 msgid "VMDK Image"
 msgstr "Imatge VMDK"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VRDPAuthType
 #. (obsolete)
 #: VBoxGlobal#77
 msgctxt "VBoxGlobal#77"
@@ -19448,6 +19943,7 @@ msgid "Null"
 msgstr "Nul"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VRDPAuthType
 #. (obsolete)
 #: VBoxGlobal#78
 msgctxt "VBoxGlobal#78"
@@ -19455,6 +19951,7 @@ msgid "External"
 msgstr "Extern"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VRDPAuthType
 #. (obsolete)
 #: VBoxGlobal#79
 msgctxt "VBoxGlobal#79"
@@ -19462,6 +19959,7 @@ msgid "Guest"
 msgstr "Client"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBFilterActionType
 #. (obsolete)
 #: VBoxGlobal#80
 msgctxt "VBoxGlobal#80"
@@ -19469,6 +19967,7 @@ msgid "Ignore"
 msgstr "Ignora"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBFilterActionType
 #. (obsolete)
 #: VBoxGlobal#81
 msgctxt "VBoxGlobal#81"
@@ -19476,6 +19975,7 @@ msgid "Hold"
 msgstr "Retèn"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskControllerDevice
 #. (obsolete)
 #: VBoxGlobal#82
 msgctxt "VBoxGlobal#82"
@@ -19483,6 +19983,7 @@ msgid "Master"
 msgstr "Mestre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskControllerDevice
 #. (obsolete)
 #: VBoxGlobal#83
 msgctxt "VBoxGlobal#83"
@@ -19490,134 +19991,159 @@ msgid "Slave"
 msgstr "Esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskControllerDevice
 #. (obsolete)
 #: VBoxGlobal#84
 msgid "Device&nbsp;%1"
 msgstr "Dispositiu&nbsp;%1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#85
 msgid "Null Audio Driver"
 msgstr "Controlador d'àudio nul"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#86
 msgid "Windows Multimedia"
 msgstr "Windows Multimedia"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#87
 msgid "OSS Audio Driver"
 msgstr "Controlador d'àudio OSS"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#88
 msgid "ALSA Audio Driver"
 msgstr "Controlador d'àudio ALSA"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#89
 msgid "Windows DirectSound"
 msgstr "Windows DirectSound"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#90
 msgid "CoreAudio"
 msgstr "CoreAudio"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterType
 #: VBoxGlobal#91
 msgid "Intel PRO/1000 MT Server (82545EM)"
 msgstr "Intel PRO/1000 MT Server (82545EM)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #: VBoxGlobal#92
 msgctxt "VBoxGlobal#92"
 msgid "Not attached"
 msgstr "No està connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #: VBoxGlobal#93
 msgid "NAT"
 msgstr "NAT"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #. (obsolete)
 #: VBoxGlobal#94
 msgid "Host Interface"
 msgstr "Interfície de xarxa de l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #: VBoxGlobal#95
 msgid "Internal Network"
 msgstr "Xarxa interna"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #: VBoxGlobal#96
 msgid "Host-only Adapter"
 msgstr "Adaptador de només l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceState
 #: VBoxGlobal#97
 msgid "Not supported"
 msgstr "No compatible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceState
 #: VBoxGlobal#98
 msgid "Unavailable"
 msgstr "No disponible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceState
 #: VBoxGlobal#99
 msgid "Busy"
 msgstr "Ocupat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceState
 #: VBoxGlobal#100
 msgid "Available"
 msgstr "Disponible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceState
 #: VBoxGlobal#101
 msgid "Held"
 msgstr "Retingut"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceState
 #: VBoxGlobal#102
 msgid "Captured"
 msgstr "Capturat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: VBoxGlobal#103
 msgid "<i>Checking...</i>"
 msgstr "<i>S'està comprovant...</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: VBoxGlobal#104
 msgid "<i>Inaccessible</i>"
 msgstr "<i>Inaccessible</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# ClipboardType
 #: VBoxGlobal#105
 msgctxt "VBoxGlobal#105"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# ClipboardType
 #: VBoxGlobal#106
 msgctxt "VBoxGlobal#106"
 msgid "Host To Guest"
 msgstr "De l'amfitrió al client"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# ClipboardType
 #: VBoxGlobal#107
 msgctxt "VBoxGlobal#107"
 msgid "Guest To Host"
 msgstr "Del client a l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# ClipboardType
 #: VBoxGlobal#108
 msgctxt "VBoxGlobal#108"
 msgid "Bidirectional"
@@ -19638,36 +20164,42 @@ msgid "Select a file"
 msgstr "Seleccioneu un fitxer"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (serial ports)
 #: VBoxGlobal#111
 msgctxt "VBoxGlobal#111"
 msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (serial ports)
 #: VBoxGlobal#112
 msgctxt "VBoxGlobal#112"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#113
 msgctxt "VBoxGlobal#113"
 msgid "Serial Ports"
 msgstr "Ports en sèrie"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#114
 msgctxt "VBoxGlobal#114"
 msgid "USB"
 msgstr "USB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shared folders)
 #: VBoxGlobal#115
 msgctxt "VBoxGlobal#115"
 msgid "Shared Folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shadef folders)
 #. (obsolete)
 #: VBoxGlobal#116
 msgctxt "VBoxGlobal#116"
@@ -19675,204 +20207,240 @@ msgid "%1"
 msgstr "%1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (shared folders)
 #: VBoxGlobal#117
 msgctxt "VBoxGlobal#117"
 msgid "None"
 msgstr "Cap"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#118
 msgctxt "VBoxGlobal#118"
 msgid "Shared Folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #. (obsolete)
 #: VBoxGlobal#119
 msgid "Stuck"
 msgstr "Encallada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# PortMode
 #: VBoxGlobal#120
 msgid "Disconnected"
 msgstr "Desconnectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# PortMode
 #: VBoxGlobal#121
 msgid "Host Pipe"
 msgstr "Conducte cap a l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# PortMode
 #: VBoxGlobal#122
 msgid "Host Device"
 msgstr "Dispositiu de l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #. (obsolete)
 #: VBoxGlobal#123
 msgid "Bridged Network"
 msgstr "Xarxa en pont"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #. (obsolete)
 #: VBoxGlobal#124
 msgid "Host-only Network"
 msgstr "Xarxa només d'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#125
 msgctxt "VBoxGlobal#125"
 msgid "PIIX3"
 msgstr "PIIX3"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#126
 msgctxt "VBoxGlobal#126"
 msgid "PIIX4"
 msgstr "PIIX4"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#127
 msgid "ICH6"
 msgstr "ICH6"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#128
 msgid "AHCI"
 msgstr "AHCI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#129
 msgid "Lsilogic"
 msgstr "Lsilogic"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#130
 msgid "BusLogic"
 msgstr "BusLogic"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# serial port
 #: VBoxGlobal#131
 msgid "User-defined"
 msgstr "Definit per l'usuari"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskStorageType
 #. (obsolete)
 #: VBoxGlobal#132
 msgid "Custom Hard Disk"
 msgstr "Disc dur personalitzat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#133
 msgctxt "VBoxGlobal#133"
 msgid "VT-x/AMD-V"
 msgstr "VT-x/AMD-V"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#134
 msgctxt "VBoxGlobal#134"
 msgid "PAE/NX"
 msgstr "PAE/NX"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VT-x/AMD-V)
 #: VBoxGlobal#135
 msgctxt "VBoxGlobal#135"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VT-x/AMD-V)
 #: VBoxGlobal#136
 msgctxt "VBoxGlobal#136"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (PAE/NX)
 #: VBoxGlobal#137
 msgctxt "VBoxGlobal#137"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (PAE/NX)
 #: VBoxGlobal#138
 msgctxt "VBoxGlobal#138"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #: VBoxGlobal#139
 msgctxt "VBoxGlobal#139"
 msgid "Host Driver"
 msgstr "Controlador amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (audio)
 #: VBoxGlobal#140
 msgctxt "VBoxGlobal#140"
 msgid "Controller"
 msgstr "Controlador"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: VBoxGlobal#141
 msgid "Bridged network, %1"
 msgstr "Xarxa en pont, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: VBoxGlobal#142
 msgctxt "VBoxGlobal#142"
 msgid "Internal network, '%1'"
 msgstr "Xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: VBoxGlobal#143
 msgid "Host-only network, '%1'"
 msgstr "Xarxa només de l'amfitrió, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (parallel ports)
 #: VBoxGlobal#144
 msgctxt "VBoxGlobal#144"
 msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (parallel ports)
 #: VBoxGlobal#145
 msgctxt "VBoxGlobal#145"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#146
 msgctxt "VBoxGlobal#146"
 msgid "Parallel Ports"
 msgstr "Ports paral·lels"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#147
 msgctxt "VBoxGlobal#147"
 msgid "USB"
 msgstr "USB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DeviceType
 #: VBoxGlobal#148
 msgid "Shared Folder"
 msgstr "Carpeta compartida"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBus
 #: VBoxGlobal#149
 msgid "IDE"
 msgstr "IDE"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBus
 #: VBoxGlobal#150
 msgid "SATA"
 msgstr "SATA"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBus
 #: VBoxGlobal#151
 msgid "SCSI"
 msgstr "SCSI"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBusChannel
 #. (obsolete)
 #: VBoxGlobal#152
 msgctxt "VBoxGlobal#152"
@@ -19880,6 +20448,7 @@ msgid "Primary"
 msgstr "Primari"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBusChannel
 #. (obsolete)
 #: VBoxGlobal#153
 msgctxt "VBoxGlobal#153"
@@ -19887,6 +20456,7 @@ msgid "Secondary"
 msgstr "Secundari"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBusDevice
 #. (obsolete)
 #: VBoxGlobal#154
 msgctxt "VBoxGlobal#154"
@@ -19894,6 +20464,7 @@ msgid "Master"
 msgstr "Mestre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBusDevice
 #. (obsolete)
 #: VBoxGlobal#155
 msgctxt "VBoxGlobal#155"
@@ -19901,6 +20472,7 @@ msgid "Slave"
 msgstr "Esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBusChannel
 #. (obsolete)
 #: VBoxGlobal#156
 msgctxt "VBoxGlobal#156"
@@ -19908,47 +20480,56 @@ msgid "Port %1"
 msgstr "Port %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskStorageType
 #. (obsolete)
 #: VBoxGlobal#157
 msgid "VHD Image"
 msgstr "Imatge VHD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#158
 msgid "Solaris Audio"
 msgstr "Solaris Audio"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioDriverType
 #: VBoxGlobal#159
 msgid "PulseAudio"
 msgstr "PulseAudio"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioControllerType
 #: VBoxGlobal#160
 msgid "ICH AC97"
 msgstr "ICH AC97"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioControllerType
 #: VBoxGlobal#161
 msgid "SoundBlaster 16"
 msgstr "SoundBlaster 16"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterType
 #: VBoxGlobal#162
 msgid "PCnet-PCI II (Am79C970A)"
 msgstr "PCnet-PCI II (Am79C970A)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterType
 #: VBoxGlobal#163
 msgid "PCnet-FAST III (Am79C973)"
 msgstr "PCnet-FAST III (Am79C973)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterType
 #: VBoxGlobal#164
 msgid "Intel PRO/1000 MT Desktop (82540EM)"
 msgstr "Intel PRO/1000 MT Desktop (82540EM)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# IDEControllerType
 #. (obsolete)
 #: VBoxGlobal#165
 msgctxt "VBoxGlobal#165"
@@ -19956,6 +20537,7 @@ msgid "PIIX3"
 msgstr "PIIX3"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# IDEControllerType
 #. (obsolete)
 #: VBoxGlobal#166
 msgctxt "VBoxGlobal#166"
@@ -19963,71 +20545,83 @@ msgid "PIIX4"
 msgstr "PIIX4"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterType
 #: VBoxGlobal#167
 msgid "Intel PRO/1000 T Server (82543GC)"
 msgstr "Intel PRO/1000 T Server (82543GC)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#168
 msgctxt "VBoxGlobal#168"
 msgid "<nobr>Vendor ID: %1</nobr>"
 msgstr "<nobr>ID del venedor: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#169
 msgctxt "VBoxGlobal#169"
 msgid "<nobr>Product ID: %2</nobr>"
 msgstr "<nobr>ID del producte: %2</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#170
 msgctxt "VBoxGlobal#170"
 msgid "<nobr>Revision: %3</nobr>"
 msgstr "<nobr>Revisió: %3</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#171
 msgctxt "VBoxGlobal#171"
 msgid "<nobr>Product: %4</nobr>"
 msgstr "<nobr>Producte: %4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#172
 msgctxt "VBoxGlobal#172"
 msgid "<nobr>Manufacturer: %5</nobr>"
 msgstr "<nobr>Fabricant: %5</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#173
 msgctxt "VBoxGlobal#173"
 msgid "<nobr>Serial No.: %1</nobr>"
 msgstr "<nobr>No. de sèrie: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#174
 msgctxt "VBoxGlobal#174"
 msgid "<nobr>Port: %1</nobr>"
 msgstr "<nobr>Port: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB filter tooltip
 #: VBoxGlobal#175
 msgctxt "VBoxGlobal#175"
 msgid "<nobr>State: %1</nobr>"
 msgstr "<nobr>Estat: %1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: VBoxGlobal#176
 msgid "host interface, %1"
 msgstr "Interfície amfitriona, %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: VBoxGlobal#177
 msgid "internal network, '%1'"
 msgstr "xarxa interna, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network
 #. (obsolete)
 #: VBoxGlobal#178
 msgctxt "VBoxGlobal#178"
@@ -20035,12 +20629,14 @@ msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: VBoxGlobal#179
 msgid "<br><nobr>Type&nbsp;(Format):&nbsp;&nbsp;%2&nbsp;(%3)</nobr>"
 msgstr "<br><nobr>Tipus&nbsp;(format):&nbsp;&nbsp;%2&nbsp;(%3)</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: VBoxGlobal#180
 msgctxt "VBoxGlobal#180"
@@ -20048,6 +20644,7 @@ msgid "<br><nobr>Attached to:&nbsp;&nbsp;%1</nobr>"
 msgstr "<br><nobr>Connectat a:&nbsp;&nbsp;%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: VBoxGlobal#181
 msgctxt "VBoxGlobal#181"
@@ -20055,18 +20652,21 @@ msgid "<i>Not&nbsp;Attached</i>"
 msgstr "<i>No&nbsp;connectat</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: VBoxGlobal#182
 msgid "<br><i>Checking accessibility...</i>"
 msgstr "<br><i>S'està comprovant l'accessibilitat...</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: VBoxGlobal#183
 msgid "<hr>Failed to check media accessibility.<br>%1."
 msgstr "<hr>Ha fallat la comprovació de l'accessibilitat.<br>%1."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #. (obsolete)
 #: VBoxGlobal#184
 msgid ""
@@ -20077,11 +20677,13 @@ msgstr ""
 "disc dur diferenciat."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#185
 msgid "Checking..."
 msgstr "S'està comprovant..."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#186
 msgctxt "VBoxGlobal#186"
 msgid "Inaccessible"
@@ -20110,69 +20712,81 @@ msgstr ""
 "disc dur diferenciat:<br>%2%3"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#189
 msgid "3D Acceleration"
 msgstr "Acceleració 3D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (3D Acceleration)
 #: VBoxGlobal#190
 msgctxt "VBoxGlobal#190"
 msgid "Enabled"
 msgstr "Activada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (3D Acceleration)
 #: VBoxGlobal#191
 msgctxt "VBoxGlobal#191"
 msgid "Disabled"
 msgstr "Desactivada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#192
 msgid "Setting Up"
 msgstr "S'està configurant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #: VBoxGlobal#193
 msgctxt "VBoxGlobal#193"
 msgid "Differencing"
 msgstr "S'estan calculant les diferències"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#194
 msgctxt "VBoxGlobal#194"
 msgid "<nobr>%1 MB</nobr>"
 msgstr "<nobr>%1 MB</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#195
 msgid "Processor(s)"
 msgstr "Processador(s)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#196
 msgctxt "VBoxGlobal#196"
 msgid "<nobr>%1</nobr>"
 msgstr "<nobr>%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#197
 msgctxt "VBoxGlobal#197"
 msgid "System"
 msgstr "Sistema"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP Server)
 #. (obsolete)
 #: VBoxGlobal#198
 msgid "Remote Display Server Port"
 msgstr "Port servidor de pantalla remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP Server)
 #. (obsolete)
 #: VBoxGlobal#199
 msgid "Remote Display Server"
 msgstr "Servidor de pantalla remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP Server)
 #. (obsolete)
 #: VBoxGlobal#200
 msgctxt "VBoxGlobal#200"
@@ -20180,93 +20794,110 @@ msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#201
 msgctxt "VBoxGlobal#201"
 msgid "Display"
 msgstr "Pantalla"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# PortMode
 #: VBoxGlobal#202
 msgid "Raw File"
 msgstr "Fitxer Raw"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (2D Video Acceleration)
 #: VBoxGlobal#203
 msgctxt "VBoxGlobal#203"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (2D Video Acceleration)
 #: VBoxGlobal#204
 msgctxt "VBoxGlobal#204"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#205
 msgid "2D Video Acceleration"
 msgstr "Acceleració de vídeo 2D"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (Storage)
 #: VBoxGlobal#206
 msgctxt "VBoxGlobal#206"
 msgid "Not Attached"
 msgstr "No està connectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#207
 msgctxt "VBoxGlobal#207"
 msgid "Storage"
 msgstr "Emmagatzematge"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#208
 msgid "Teleported"
 msgstr "Teleportat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#209
 msgid "Guru Meditation"
 msgstr "Mediació gurú"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#210
 msgid "Teleporting"
 msgstr "Telepotació"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#211
 msgid "Taking Live Snapshot"
 msgstr "S'està capturant la captura"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#212
 msgid "Teleporting Paused VM"
 msgstr "S'està teleportant la MV en pausa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#213
 msgid "Restoring Snapshot"
 msgstr "S'està restaurant la captura"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#214
 msgid "Deleting Snapshot"
 msgstr "S'està eliminant la captura"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBus
 #: VBoxGlobal#215
 msgctxt "VBoxGlobal#215"
 msgid "Floppy"
 msgstr "Disquet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBusDevice
 #. (obsolete)
 #: VBoxGlobal#216
 msgid "Device %1"
 msgstr "Dispositiu %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#217
 msgctxt "VBoxGlobal#217"
@@ -20274,6 +20905,7 @@ msgid "IDE Primary Master"
 msgstr "IDE primari mestre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#218
 msgctxt "VBoxGlobal#218"
@@ -20281,6 +20913,7 @@ msgid "IDE Primary Slave"
 msgstr "IDE primari esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#219
 msgctxt "VBoxGlobal#219"
@@ -20288,6 +20921,7 @@ msgid "IDE Secondary Master"
 msgstr "IDE secondari mestre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#220
 msgctxt "VBoxGlobal#220"
@@ -20295,6 +20929,7 @@ msgid "IDE Secondary Slave"
 msgstr "IDE secondari esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#221
 msgctxt "VBoxGlobal#221"
@@ -20302,6 +20937,7 @@ msgid "SATA Port %1"
 msgstr "Port SATA %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#222
 msgctxt "VBoxGlobal#222"
@@ -20309,6 +20945,7 @@ msgid "SCSI Port %1"
 msgstr "Port SCSI %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#223
 msgctxt "VBoxGlobal#223"
@@ -20316,56 +20953,67 @@ msgid "Floppy Device %1"
 msgstr "Disquetera %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterType
 #: VBoxGlobal#224
 msgid "Paravirtualized Network (virtio-net)"
 msgstr "Xarxa paravirtualitzada (virtio-net)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#225
 msgid "I82078"
 msgstr "I82078"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#226
 msgid "Empty"
 msgstr "Buit"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#227
 msgid "Host Drive '%1'"
 msgstr "Unitat de l'amfitrió %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#228
 msgid "Host Drive %1 (%2)"
 msgstr "Dispositiu amfitrió %1 (%2)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#229
 msgid "<p style=white-space:pre>Type (Format):  %1 (%2)</p>"
 msgstr "<p style=white-space:pre>Tipus (format):  %1 (%2)</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# image
 #: VBoxGlobal#230
 msgid "<p>Attached to:  %1</p>"
 msgstr "<p>Connectat a:  %1</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# image
 #: VBoxGlobal#231
 msgid "<i>Not Attached</i>"
 msgstr "<i>No està connectat</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#232
 msgid "<i>Checking accessibility...</i>"
 msgstr "<i>S'està comprovant l'accessibilitat...</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#233
 msgid "Failed to check media accessibility."
 msgstr "No s'ha pogut comprovar l'accessibilitat al suport."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#234
 msgid "<b>No medium selected</b>"
 msgstr "<b>No s'ha seleccionat cap suport</b>"
@@ -20376,6 +21024,7 @@ msgid "You can also change this while the machine is running."
 msgstr "També podeu canviar això mentre la màquina s'està executant."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#236
 msgid "<b>No media available</b>"
 msgstr "<b>No hi ha cap suport disponible</b>"
@@ -20387,6 +21036,7 @@ msgstr ""
 "Podeu crear imatges de suports fent servir el gestor virtual de suports."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#238
 msgid ""
 "Attaching this hard disk will be performed indirectly using a newly created "
@@ -20396,6 +21046,7 @@ msgstr ""
 "nou disc dur diferenciat."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#239
 msgid ""
 "Some of the media in this hard disk chain are inaccessible. Please use the "
@@ -20407,6 +21058,7 @@ msgstr ""
 "b> per inspeccionar aquests suports."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# medium
 #: VBoxGlobal#240
 msgid ""
 "This base hard disk is indirectly attached using the following differencing "
@@ -20482,12 +21134,14 @@ msgid "(CD/DVD)"
 msgstr "(CD/DVD)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#248
 msgctxt "VBoxGlobal#248"
 msgid "Screens"
 msgstr "Pantalles"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #. (obsolete)
 #: VBoxGlobal#249
 msgctxt "VBoxGlobal#249"
@@ -20495,22 +21149,26 @@ msgid "VDE network, '%1'"
 msgstr "Xarxa VDE, '%1'"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageBus
 #: VBoxGlobal#250
 msgid "SAS"
 msgstr "SAS"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #. (obsolete)
 #: VBoxGlobal#251
 msgid "VDE Adapter"
 msgstr "Adaptador VDE"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageControllerType
 #: VBoxGlobal#252
 msgid "LsiLogic SAS"
 msgstr "LsiLogic SAS"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# regexp for matching ####[.##] B|KB|MB|GB|TB|PB, %1=decimal point
 #. (obsolete)
 #: VBoxGlobal#253
 msgid ""
@@ -20521,43 +21179,51 @@ msgstr ""
 "GB|TB|PB))))$"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix Bytes
 #: VBoxGlobal#254
 msgid "B"
 msgstr "B"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix KBytes=1024 Bytes
 #: VBoxGlobal#255
 msgid "KB"
 msgstr "KB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix MBytes=1024 KBytes
 #: VBoxGlobal#256
 msgctxt "VBoxGlobal#256"
 msgid "MB"
 msgstr "MB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix GBytes=1024 MBytes
 #: VBoxGlobal#257
 msgid "GB"
 msgstr "GB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix TBytes=1024 GBytes
 #: VBoxGlobal#258
 msgid "TB"
 msgstr "TB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix PBytes=1024 TBytes
 #: VBoxGlobal#259
 msgid "PB"
 msgstr "PB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# nested paging
 #: VBoxGlobal#260
 msgctxt "VBoxGlobal#260"
 msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# nested paging
 #: VBoxGlobal#261
 msgctxt "VBoxGlobal#261"
 msgid "Disabled"
@@ -20570,6 +21236,7 @@ msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #. (obsolete)
 #: VBoxGlobal#263
 msgctxt "VBoxGlobal#263"
@@ -20577,11 +21244,13 @@ msgid "Shareable"
 msgstr "Compartible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device details
 #: VBoxGlobal#264
 msgid "Unknown device"
 msgstr "Dispositiu desconegut"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# New Storage UI : Slot Name
 #. (obsolete)
 #: VBoxGlobal#265
 msgctxt "VBoxGlobal#265"
@@ -20589,18 +21258,21 @@ msgid "SAS Port %1"
 msgstr "Port SAS %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #: VBoxGlobal#266
 msgctxt "VBoxGlobal#266"
 msgid "Remote Desktop Server Port"
 msgstr "Port del servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #: VBoxGlobal#267
 msgctxt "VBoxGlobal#267"
 msgid "Remote Desktop Server"
 msgstr "Servidor d'escriptori remot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE Server)
 #: VBoxGlobal#268
 msgctxt "VBoxGlobal#268"
 msgid "Disabled"
@@ -20659,49 +21331,58 @@ msgid "All files (*)"
 msgstr "Tots els fitxers (*)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MachineState
 #: VBoxGlobal#277
 msgid "Fault Tolerant Syncing"
 msgstr "Tolera fallades de sincronització"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #: VBoxGlobal#278
 msgid "Unlocked"
 msgstr "Desbloquejat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #: VBoxGlobal#279
 msgid "Locked"
 msgstr "Bloquejat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# SessionState
 #: VBoxGlobal#280
 msgid "Unlocking"
 msgstr "S'està desbloquejant"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AuthType
 #: VBoxGlobal#281
 msgctxt "VBoxGlobal#281"
 msgid "Null"
 msgstr "Nul"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AuthType
 #: VBoxGlobal#282
 msgctxt "VBoxGlobal#282"
 msgid "External"
 msgstr "Extern"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AuthType
 #: VBoxGlobal#283
 msgctxt "VBoxGlobal#283"
 msgid "Guest"
 msgstr "Client"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# AudioControllerType
 #: VBoxGlobal#284
 msgid "Intel HD Audio"
 msgstr "Àudio Intel HD"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NATProtocolType
 #. (obsolete)
 #: VBoxGlobal#285
 msgctxt "VBoxGlobal#285"
@@ -20709,6 +21390,7 @@ msgid "UDP"
 msgstr "UDP"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NATProtocolType
 #. (obsolete)
 #: VBoxGlobal#286
 msgctxt "VBoxGlobal#286"
@@ -20716,12 +21398,14 @@ msgid "TCP"
 msgstr "TCP"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# ChipsetType
 #: VBoxGlobal#287
 msgctxt "VBoxGlobal#287"
 msgid "PIIX3"
 msgstr "PIIX3"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# ChipsetType
 #: VBoxGlobal#288
 msgid "ICH9"
 msgstr "ICH9"
@@ -20733,6 +21417,7 @@ msgid "and"
 msgstr "i"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# size suffix MBytes=1024KBytes
 #. (obsolete)
 #: VBoxGlobal#290
 msgctxt "VBoxGlobal#290"
@@ -20740,6 +21425,7 @@ msgid "MB"
 msgstr "MB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #. (obsolete)
 #: VBoxGlobal#291
 msgctxt "VBoxGlobal#291"
@@ -20747,6 +21433,7 @@ msgid "Readonly"
 msgstr "Només lectura"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DiskType
 #. (obsolete)
 #: VBoxGlobal#292
 msgctxt "VBoxGlobal#292"
@@ -20783,28 +21470,33 @@ msgid "Fixed size storage split into files of less than 2GB"
 msgstr "L'emmagatzematge de mida fixa divideix els fitxers de menys de 2GB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#297
 msgctxt "VBoxGlobal#297"
 msgid "Execution Cap"
 msgstr "Límit d'execució"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #: VBoxGlobal#298
 msgctxt "VBoxGlobal#298"
 msgid "<nobr>%1%</nobr>"
 msgstr "<nobr>%1</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (network)
 #: VBoxGlobal#299
 msgid "Generic, '%1'"
 msgstr "Genèric, «%1»"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAttachmentType
 #: VBoxGlobal#300
 msgid "Generic Driver"
 msgstr "Mòdul genèric"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterPromiscModePolicyType
 #. (obsolete)
 #: VBoxGlobal#301
 msgctxt "VBoxGlobal#301"
@@ -20812,6 +21504,7 @@ msgid "Deny"
 msgstr "Denega"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterPromiscModePolicyType
 #. (obsolete)
 #: VBoxGlobal#302
 msgctxt "VBoxGlobal#302"
@@ -20819,6 +21512,7 @@ msgid "Allow VMs"
 msgstr "Permet màquines virtuals"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterPromiscModePolicyType
 #. (obsolete)
 #: VBoxGlobal#303
 msgctxt "VBoxGlobal#303"
@@ -20832,83 +21526,97 @@ msgid "Adapter %1"
 msgstr "Adaptador %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DragAndDropType
 #: VBoxGlobal#305
 msgctxt "VBoxGlobal#305"
 msgid "Disabled"
 msgstr "Desactivat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DragAndDropType
 #: VBoxGlobal#306
 msgctxt "VBoxGlobal#306"
 msgid "Host To Guest"
 msgstr "De l'amfitrió al client"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DragAndDropType
 #: VBoxGlobal#307
 msgctxt "VBoxGlobal#307"
 msgid "Guest To Host"
 msgstr "Del client a l'amfitrió"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DragAndDropType
 #: VBoxGlobal#308
 msgctxt "VBoxGlobal#308"
 msgid "Bidirectional"
 msgstr "Bidireccional"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumType
 #: VBoxGlobal#309
 msgctxt "VBoxGlobal#309"
 msgid "Normal"
 msgstr "Normal"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumType
 #: VBoxGlobal#310
 msgctxt "VBoxGlobal#310"
 msgid "Immutable"
 msgstr "Immutable"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumType
 #: VBoxGlobal#311
 msgctxt "VBoxGlobal#311"
 msgid "Writethrough"
 msgstr "Escriptura directa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumType
 #: VBoxGlobal#312
 msgctxt "VBoxGlobal#312"
 msgid "Shareable"
 msgstr "Compartible"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumType
 #: VBoxGlobal#313
 msgctxt "VBoxGlobal#313"
 msgid "Readonly"
 msgstr "Només lectura"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumType
 #: VBoxGlobal#314
 msgctxt "VBoxGlobal#314"
 msgid "Multi-attach"
 msgstr "Adjunció múltiple"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#315
 msgctxt "VBoxGlobal#315"
 msgid "Dynamically allocated storage"
 msgstr "Emmagatzematge d'ubicació dinàmica"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#316
 msgid "Dynamically allocated differencing storage"
 msgstr "Emmagatzematge diferenciat d'ubicació dinàmica"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#317
 msgctxt "VBoxGlobal#317"
 msgid "Fixed size storage"
 msgstr "Emmagatzematge de mida fixa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#318
 msgctxt "VBoxGlobal#318"
 msgid "Dynamically allocated storage split into files of less than 2GB"
@@ -20916,6 +21624,7 @@ msgstr ""
 "L'emmagatzematge d'ubicació dinàmica divideix en fitxers de menys de 2GB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#319
 msgid ""
 "Dynamically allocated differencing storage split into files of less than 2GB"
@@ -20924,185 +21633,217 @@ msgstr ""
 "menys de 2GB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#320
 msgctxt "VBoxGlobal#320"
 msgid "Fixed size storage split into files of less than 2GB"
 msgstr "L'emmagatzematge de mida fixa divideix els fitxers de menys de 2GB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#321
 msgid "Dynamically allocated compressed storage"
 msgstr "Emmagatzematge comprimit d'ubicació dinàmica"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#322
 msgid "Dynamically allocated differencing compressed storage"
 msgstr "Emmagatzematge diferenciat ubicat d'ubicació dinàmica"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#323
 msgid "Fixed size ESX storage"
 msgstr "Emmagatzematge de mida fixa ESX"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# MediumVariant
 #: VBoxGlobal#324
 msgid "Fixed size storage on raw disk"
 msgstr "Emmagatzematge de mida fixa en disc en cru"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterPromiscModePolicy
 #: VBoxGlobal#325
 msgctxt "VBoxGlobal#325"
 msgid "Deny"
 msgstr "Denega"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterPromiscModePolicy
 #: VBoxGlobal#326
 msgctxt "VBoxGlobal#326"
 msgid "Allow VMs"
 msgstr "Permet màquines virtuals"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NetworkAdapterPromiscModePolicy
 #: VBoxGlobal#327
 msgctxt "VBoxGlobal#327"
 msgid "Allow All"
 msgstr "Permet-ho tot"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceFilterAction
 #: VBoxGlobal#328
 msgctxt "VBoxGlobal#328"
 msgid "Ignore"
 msgstr "Ignora"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USBDeviceFilterAction
 #: VBoxGlobal#329
 msgctxt "VBoxGlobal#329"
 msgid "Hold"
 msgstr "Retèn"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NATProtocol
 #: VBoxGlobal#330
 msgctxt "VBoxGlobal#330"
 msgid "UDP"
 msgstr "UDP"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# NATProtocol
 #: VBoxGlobal#331
 msgctxt "VBoxGlobal#331"
 msgid "TCP"
 msgstr "TCP"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#332
 msgctxt "VBoxGlobal#332"
 msgid "IDE Primary Master"
 msgstr "IDE primari mestre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#333
 msgctxt "VBoxGlobal#333"
 msgid "IDE Primary Slave"
 msgstr "IDE primari esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#334
 msgctxt "VBoxGlobal#334"
 msgid "IDE Secondary Master"
 msgstr "IDE secondari mestre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#335
 msgctxt "VBoxGlobal#335"
 msgid "IDE Secondary Slave"
 msgstr "IDE secondari esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#336
 msgctxt "VBoxGlobal#336"
 msgid "SATA Port %1"
 msgstr "Port SATA %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#337
 msgctxt "VBoxGlobal#337"
 msgid "SCSI Port %1"
 msgstr "Port SCSI %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#338
 msgctxt "VBoxGlobal#338"
 msgid "SAS Port %1"
 msgstr "Port SAS %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# StorageSlot
 #: VBoxGlobal#339
 msgctxt "VBoxGlobal#339"
 msgid "Floppy Device %1"
 msgstr "Disquetera %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#340
 msgctxt "VBoxGlobal#340"
 msgid "General"
 msgstr "General"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#341
 msgctxt "VBoxGlobal#341"
 msgid "Preview"
 msgstr "Vista prèvia"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#342
 msgctxt "VBoxGlobal#342"
 msgid "System"
 msgstr "Sistema"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#343
 msgctxt "VBoxGlobal#343"
 msgid "Display"
 msgstr "Pantalla"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#344
 msgctxt "VBoxGlobal#344"
 msgid "Storage"
 msgstr "Emmagatzematge"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#345
 msgctxt "VBoxGlobal#345"
 msgid "Audio"
 msgstr "Àudio"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#346
 msgctxt "VBoxGlobal#346"
 msgid "Network"
 msgstr "Xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#347
 msgid "Serial ports"
 msgstr "Ports en sèrie"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#348
 msgid "Parallel ports"
 msgstr "Ports paral·lels"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#349
 msgctxt "VBoxGlobal#349"
 msgid "USB"
 msgstr "USB"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#350
 msgid "Shared folders"
 msgstr "Carpetes compartides"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# DetailsElementType
 #: VBoxGlobal#351
 msgctxt "VBoxGlobal#351"
 msgid "Description"
@@ -21508,6 +22249,7 @@ msgstr ""
 "cursor i d'edició no es poden fer servir com a tecles d'amfitrió."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# usb
 #. (obsolete)
 #: VBoxGlobalSettingsDlg#45
 msgctxt "VBoxGlobalSettingsDlg#45"
@@ -21555,6 +22297,7 @@ msgid "Language:"
 msgstr "Idioma:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language
 #. (obsolete)
 #: VBoxGlobalSettingsDlg#52
 msgctxt "VBoxGlobalSettingsDlg#52"
@@ -21562,6 +22305,7 @@ msgid " (built-in)"
 msgstr " (integrat)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language
 #. (obsolete)
 #: VBoxGlobalSettingsDlg#53
 msgctxt "VBoxGlobalSettingsDlg#53"
@@ -21569,6 +22313,7 @@ msgid "<unavailable>"
 msgstr "<no disponible>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Author(s)
 #. (obsolete)
 #: VBoxGlobalSettingsDlg#54
 msgctxt "VBoxGlobalSettingsDlg#54"
@@ -21594,6 +22339,7 @@ msgstr ""
 "                                    "
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Language
 #. (obsolete)
 #: VBoxGlobalSettingsDlg#56
 msgctxt "VBoxGlobalSettingsDlg#56"
@@ -22402,6 +23148,7 @@ msgid "<i>Not&nbsp;Attached</i>"
 msgstr "<i>No&nbsp;connectat</i>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# no info
 #: VBoxMediaManagerDlg#25
 msgctxt "VBoxMediaManagerDlg#25"
 msgid "--"
@@ -22458,6 +23205,7 @@ msgid "&Floppy Images"
 msgstr "Imatges de dis&quet"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VMM: Virtual Disk
 #. (obsolete)
 #: VBoxMediaManagerDlg#34
 msgctxt "VBoxMediaManagerDlg#34"
@@ -22465,6 +23213,7 @@ msgid "Attached to"
 msgstr "Connectat a"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VMM: CD/DVD Image
 #. (obsolete)
 #: VBoxMediaManagerDlg#35
 msgctxt "VBoxMediaManagerDlg#35"
@@ -22472,6 +23221,7 @@ msgid "Attached to"
 msgstr "Connectat a"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VMM: Floppy Image
 #. (obsolete)
 #: VBoxMediaManagerDlg#36
 msgctxt "VBoxMediaManagerDlg#36"
@@ -23231,6 +23981,7 @@ msgid "Open VirtualBox registration form"
 msgstr "Obre el formulari de registre de VirtualBox"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# global settings
 #. (obsolete)
 #: VBoxSelectorWnd#35
 msgctxt "VBoxSelectorWnd#35"
@@ -23515,12 +24266,14 @@ msgid "Re&fresh"
 msgstr "Ac&tualitza"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# icon text
 #. (obsolete)
 #: VBoxSelectorWnd#74
 msgid "Log"
 msgstr "Registre"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Mac OS X version
 #. (obsolete)
 #: VBoxSelectorWnd#75
 msgctxt "VBoxSelectorWnd#75"
@@ -23528,6 +24281,7 @@ msgid "&File"
 msgstr "&Fitxer"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Non Mac OS X version
 #. (obsolete)
 #: VBoxSelectorWnd#76
 msgctxt "VBoxSelectorWnd#76"
@@ -23549,6 +24303,7 @@ msgid "Virtual machine files (%1)"
 msgstr "Fitxers de màquina virtual (%1)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Note: main window title which is pretended by the product name.
 #. (obsolete)
 #: VBoxSelectorWnd#79
 msgctxt "VBoxSelectorWnd#79"
@@ -23855,6 +24610,7 @@ msgid " Transient Folders"
 msgstr "Carpetes transitòries"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# don't translate
 #. (obsolete)
 #: VBoxSharedFoldersSettings#17
 msgid "VBoxSharedFoldersSettings"
@@ -23992,6 +24748,7 @@ msgid "D&etails:"
 msgstr "&Detalls:"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Current State (time or date + time)
 #: VBoxSnapshotsWgt#1
 msgid "%1 since %2"
 msgstr "%1 des de %2"
@@ -24021,16 +24778,19 @@ msgid "Ctrl+Shift+S"
 msgstr "Ctrl+Shift+S"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Snapshot details
 #: VBoxSnapshotsWgt#6
 msgid " (current, "
 msgstr "(actual,"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Current State (Unmodified)
 #: VBoxSnapshotsWgt#7
 msgid "Current State"
 msgstr "Estat actual"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Current State (Modified)
 #: VBoxSnapshotsWgt#8
 msgid "Current State (changed)"
 msgstr "Estat actual (modificat)"
@@ -24082,11 +24842,13 @@ msgid "Discard the selected snapshot of the virtual machine"
 msgstr "Descarta la captura seleccionada de la màquina virtual"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Snapshot details
 #: VBoxSnapshotsWgt#16
 msgid "offline)"
 msgstr "fora de línia)"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Snapshot details
 #: VBoxSnapshotsWgt#17
 msgid "online)"
 msgstr "en línia)"
@@ -24160,11 +24922,13 @@ msgid "Take a snapshot of the current virtual machine state"
 msgstr "Fes una captura de l'estat actual de la màquina virtual"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Snapshot (time)
 #: VBoxSnapshotsWgt#29
 msgid "Taken at %1"
 msgstr "Feta el %1"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Snapshot (date + time)
 #: VBoxSnapshotsWgt#30
 msgid "Taken on %1"
 msgstr "Feta el %1"
@@ -24388,6 +25152,7 @@ msgid "Remove this icon from the system tray"
 msgstr "Elimina aquesta icona de la safata del sistema"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# tray menu
 #. (obsolete)
 #: VBoxTrayIcon#5
 msgid "&Other Machines..."
@@ -24400,6 +25165,7 @@ msgid "&Action"
 msgstr "&Acció"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# remote
 #. (obsolete)
 #: VBoxUSBFilterSettings#2
 msgctxt "VBoxUSBFilterSettings#2"
@@ -24427,6 +25193,7 @@ msgid "&Name"
 msgstr "&Nom"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# remote
 #. (obsolete)
 #: VBoxUSBFilterSettings#6
 msgctxt "VBoxUSBFilterSettings#6"
@@ -24589,6 +25356,7 @@ msgid "&Serial No."
 msgstr "Número de &Sèrie."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# don't translate
 #. (obsolete)
 #: VBoxUSBFilterSettings#22
 msgid "VBoxUSBFilterSettings"
@@ -24601,6 +25369,7 @@ msgid "&Vendor ID"
 msgstr "ID del &venedor"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# remote
 #. (obsolete)
 #: VBoxUSBFilterSettings#24
 msgctxt "VBoxUSBFilterSettings#24"
@@ -24608,11 +25377,13 @@ msgid "Yes"
 msgstr "Sí"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB devices
 #: VBoxUSBMenu#1
 msgid "<no devices available>"
 msgstr "<no hi ha dispositius disponibles>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# USB device tooltip
 #: VBoxUSBMenu#2
 msgctxt "VBoxUSBMenu#2"
 msgid "No supported devices connected to the host PC"
@@ -24821,18 +25592,21 @@ msgid "Secondary Slave"
 msgstr "Secundari Esclau"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# guest additions
 #. (obsolete)
 #: VBoxVMInformationDlg#29
 msgid "Version %1.%2"
 msgstr "Versió %1.%2"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# guest additions
 #: VBoxVMInformationDlg#30
 msgctxt "VBoxVMInformationDlg#30"
 msgid "Not Detected"
 msgstr "No detectat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# guest os type
 #: VBoxVMInformationDlg#31
 msgctxt "VBoxVMInformationDlg#31"
 msgid "Not Detected"
@@ -24867,6 +25641,7 @@ msgid "No Network Adapters"
 msgstr "No hi ha cap adaptador de xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# nested paging
 #. (obsolete)
 #: VBoxVMInformationDlg#37
 msgctxt "VBoxVMInformationDlg#37"
@@ -24874,6 +25649,7 @@ msgid "Enabled"
 msgstr "Activat"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# nested paging
 #. (obsolete)
 #: VBoxVMInformationDlg#38
 msgctxt "VBoxVMInformationDlg#38"
@@ -24893,6 +25669,7 @@ msgid "VBoxVMInformationDlg"
 msgstr "VBoxVMInformationDlg"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDP server port)
 #. (obsolete)
 #: VBoxVMInformationDlg#41
 msgctxt "VBoxVMInformationDlg#41"
@@ -24915,6 +25692,7 @@ msgid "Network Statistics"
 msgstr "Estadístiques de xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report
 #. (obsolete)
 #: VBoxVMInformationDlg#45
 msgctxt "VBoxVMInformationDlg#45"
@@ -24922,6 +25700,7 @@ msgid "Nested Paging"
 msgstr "Paginació imbricada"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# details report (VRDE server port)
 #: VBoxVMInformationDlg#46
 msgctxt "VBoxVMInformationDlg#46"
 msgid "Not Available"
@@ -24945,6 +25724,7 @@ msgid "Inaccessible"
 msgstr "No s'hi pot accedir"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# VM tooltip (name, last state change, session state)
 #. (obsolete)
 #: VBoxVMListBox#2
 msgctxt "VBoxVMListBox#2"
@@ -24952,6 +25732,7 @@ msgid "<nobr>%1<br></nobr><nobr>%2 since %3</nobr><br><nobr>Session %4</nobr>"
 msgstr "<nobr>%1<br></nobr><nobr>%2 des de %3</nobr><br><nobr>Sessió %4</nobr>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# Inaccessible VM tooltip (name, last state change)
 #. (obsolete)
 #: VBoxVMListBox#3
 msgctxt "VBoxVMListBox#3"
@@ -25695,6 +26476,7 @@ msgid "Accepts (saves) changes and closes the dialog."
 msgstr "Accepta (desa) els canvis i tanca el diàleg."
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# network
 #. (obsolete)
 #: VBoxVMSettingsDlg#16
 msgctxt "VBoxVMSettingsDlg#16"
@@ -26363,6 +27145,7 @@ msgid " Network "
 msgstr "Xarxa"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# usb
 #. (obsolete)
 #: VBoxVMSettingsDlg#104
 msgctxt "VBoxVMSettingsDlg#104"
@@ -26376,6 +27159,7 @@ msgid "<No suitable interfaces>"
 msgstr "<No hi ha cap interfície funcional>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# hard disk
 #. (obsolete)
 #: VBoxVMSettingsDlg#106
 msgid "<not attached>"
@@ -26433,6 +27217,7 @@ msgstr ""
 "d'adaptador.</p>"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# serial ports
 #. (obsolete)
 #: VBoxVMSettingsDlg#113
 msgctxt "VBoxVMSettingsDlg#113"
@@ -27152,6 +27937,7 @@ msgid "Port path not specified "
 msgstr "No s'ha especificat una ruta al port"
 
 # Translation source: /virtualbox-ca.po from project 'virtualbox'
+# parallel ports
 #. (obsolete)
 #: VBoxVMSettingsDlg#199
 msgctxt "VBoxVMSettingsDlg#199"

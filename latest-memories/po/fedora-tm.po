@@ -20566,7 +20566,7 @@ msgstr ""
 # project 'fedora'
 #: ../src/up2date_client/rhnregGui.py:765
 msgid "There was a problem registering this system."
-msgstr "Hi ha hagut un problema en registrar aquests sistema."
+msgstr "Hi ha hagut un problema en registrar aquest sistema."
 
 # Translation source: /translations/spacewalk.rhn-client-tools/ca.po from
 # project 'fedora'
