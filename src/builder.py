@@ -70,7 +70,9 @@ def readParameters():
     (options, args) = parser.parse_args()
 
     addSource = options.addSource
-    projectsJson = options.projectsJson
+    
+    if (options.projectsJson is not None):
+        projectsJson = options.projectsJson
 
     if (options.projectNames is not None):
         projectsNames = options.projectNames.split(",")
