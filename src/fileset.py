@@ -126,11 +126,16 @@ class FileSet():
 
         os.system("rm -f -r " + self.temp_dir)
 
-        if (self.filename.endswith('zip')):
+        if (self.filename.endswith('.zip')):
             os.system("unzip " + self.filename + " -d " + self.temp_dir)
         elif (self.filename.endswith('tar.gz')):
             os.system("mkdir " + self.temp_dir)
             os.system("tar -xvf " + self.filename + " -C " + self.temp_dir)
+        elif (self.filename.endswith('.gz')):
+            os.system("mkdir " + self.temp_dir)
+            # We are assuming that the .gz file will contain a single PO
+            os.system("gunzip " + self.filename + " -c > " + self.temp_dir
+                      + "/ca.po")
         elif (self.filename.endswith('.po') or self.filename.endswith('.ts')):
             os.system("mkdir " + self.temp_dir)
             os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
