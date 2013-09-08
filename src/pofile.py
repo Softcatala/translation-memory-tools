@@ -17,21 +17,23 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-from fileset import FileSet
-from downloadfile import DownloadFile
+import polib
 
 
-class CompressedFileSet(FileSet):
+class POFile:
 
-    def Do(self):
+    def AddCommentToAllEntries(self, filename, comment):
 
-        # Download po files
-        download = DownloadFile()
-        download.GetFile(self.url, self.filename)
+        bakfile = filename + ".bak"
 
-        self.Uncompress()
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        os.system("cp " + filename + " " + bakfile)
 
-        os.system("rm -f " + self.filename)
+        input_po = polib.pofile(bakfile)
+
+        for entry in input_po:
+            if len(entry.tcomment) > 0:
+                entry.tcomment = comment + "\n" + entry.tcomment
+            else:
+                entry.tcomment = comment
+
+        input_po.save(filename)

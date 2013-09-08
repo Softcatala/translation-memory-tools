@@ -18,7 +18,8 @@
 
 import os
 
-from fileset import FileSet, DownloadFile
+from fileset import FileSet
+from downloadfile import DownloadFile
 
 
 class FileFileSet(FileSet):

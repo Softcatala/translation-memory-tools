@@ -16,22 +16,17 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
-from fileset import FileSet
-from downloadfile import DownloadFile
+import logging
+import urllib2
 
 
-class CompressedFileSet(FileSet):
+class DownloadFile:
 
-    def Do(self):
+    def GetFile(self, url, filename):
 
-        # Download po files
-        download = DownloadFile()
-        download.GetFile(self.url, self.filename)
+        logging.info('Downloading file \'' + url + '\'' + " to " + filename)
 
-        self.Uncompress()
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
-
-        os.system("rm -f " + self.filename)
+        infile = urllib2.urlopen(url)
+        output = open(filename, 'wb')
+        output.write(infile.read())
+        output.close()

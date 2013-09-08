@@ -18,57 +18,10 @@
 
 
 import logging
-import urllib2
 import os
-import polib
-import fnmatch
 
-
-class DownloadFile:
-
-    def GetFile(self, url, filename):
-
-        logging.info('Downloading file \'' + url + '\'' + " to " + filename)
-
-        infile = urllib2.urlopen(url)
-        output = open(filename, 'wb')
-        output.write(infile.read())
-        output.close()
-
-
-class POFile:
-
-    def AddCommentToAllEntries(self, filename, comment):
-
-        bakfile = filename + ".bak"
-
-        os.system("cp " + filename + " " + bakfile)
-
-        input_po = polib.pofile(bakfile)
-
-        for entry in input_po:
-            if len(entry.tcomment) > 0:
-                entry.tcomment = comment + "\n" + entry.tcomment
-            else:
-                entry.tcomment = comment
-
-        input_po.save(filename)
-
-
-class FindFiles:
-
-    def Find(self, directory, pattern):
-
-        filelist = list()
-
-        for root, dirs, files in os.walk(directory):
-            for basename in files:
-                if fnmatch.fnmatch(basename, pattern):
-                    filename = os.path.join(root, basename)
-                    filelist.append(filename)
-
-        filelist.sort()
-        return filelist
+from pofile import POFile
+from findfiles import FindFiles
 
 
 class FileSet():

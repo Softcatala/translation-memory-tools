@@ -17,21 +17,20 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-from fileset import FileSet
-from downloadfile import DownloadFile
+import fnmatch
 
 
-class CompressedFileSet(FileSet):
+class FindFiles:
 
-    def Do(self):
+    def Find(self, directory, pattern):
 
-        # Download po files
-        download = DownloadFile()
-        download.GetFile(self.url, self.filename)
+        filelist = list()
 
-        self.Uncompress()
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        for root, dirs, files in os.walk(directory):
+            for basename in files:
+                if fnmatch.fnmatch(basename, pattern):
+                    filename = os.path.join(root, basename)
+                    filelist.append(filename)
 
-        os.system("rm -f " + self.filename)
+        filelist.sort()
+        return filelist
