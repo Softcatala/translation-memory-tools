@@ -46,7 +46,11 @@ class POFile:
         input_po = polib.pofile(bakfile)
 
         for entry in input_po:
-            entry.tcomment = comment
+            if len(entry.tcomment) > 0:
+                entry.tcomment = comment + "\n" + entry.tcomment            
+            else:
+                entry.tcomment = comment
+
 
         input_po.save(filename)
 
@@ -131,7 +135,7 @@ class FileSet():
         if (os.path.isfile(localtm)):
             os.system("rm -f " + localtm)
 
-         # Build using a local memory translation file
+        # Build using a local memory translation file
         for filename in findFiles.Find(self.temp_dir, '*.po'):
 
             exclude = False
