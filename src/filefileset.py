@@ -16,7 +16,10 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import *
+import os
+
+from fileset import FileSet, DownloadFile
+
 
 class FileFileSet(FileSet):
 
@@ -29,7 +32,8 @@ class FileFileSet(FileSet):
         # Copy file to be processed
         os.system("rm -f -r " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
-        os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
+        os.system("cp " + self.filename + " " + self.temp_dir + "/"
+                  + self.filename)
 
         self.ConvertTsFilesToPo()
         self.AddComments()

@@ -22,7 +22,7 @@ import urllib2
 import os
 import polib
 import fnmatch
-import time
+
 
 class DownloadFile:
 
@@ -31,9 +31,10 @@ class DownloadFile:
         logging.info('Downloading file \'' + url + '\'' + " to " + filename)
 
         infile = urllib2.urlopen(url)
-        output = open(filename,'wb')
+        output = open(filename, 'wb')
         output.write(infile.read())
         output.close()
+
 
 class POFile:
 
@@ -47,12 +48,12 @@ class POFile:
 
         for entry in input_po:
             if len(entry.tcomment) > 0:
-                entry.tcomment = comment + "\n" + entry.tcomment            
+                entry.tcomment = comment + "\n" + entry.tcomment
             else:
                 entry.tcomment = comment
 
-
         input_po.save(filename)
+
 
 class FindFiles:
 
@@ -68,6 +69,7 @@ class FindFiles:
 
         filelist.sort()
         return filelist
+
 
 class FileSet():
 
@@ -93,7 +95,7 @@ class FileSet():
 
     def AddComments(self):
 
-        if (self.addSource == False):
+        if (self.addSource is False):
             return
 
         findFiles = FindFiles()
@@ -101,10 +103,10 @@ class FileSet():
         for filename in findFiles.Find(self.temp_dir, '*.po'):
             relative = filename.replace(self.temp_dir, '')
             pofile = POFile()
-            pofile.AddCommentToAllEntries(filename, "Translation source: " + relative +  " from project '" + self.project + "'")
+            pofile.AddCommentToAllEntries(filename, "Translation source: " + relative + " from project '" + self.project + "'")
 
     def CleanUp(self):
-        os.system("cp " + self.tmfile +" tm-project-previous.po")
+        os.system("cp " + self.tmfile + " tm-project-previous.po")
         os.system("msgattrib tm-project-previous.po --no-fuzzy --no-obsolete --translated > " + self.tmfile)
         os.system("rm -f tm-project-previous.po")
 
@@ -122,10 +124,10 @@ class FileSet():
         findFiles = FindFiles()
 
         for tsfile in findFiles.Find(self.temp_dir, '*.strings'):
-            dirName = os.path.dirname(tsfile);
+            dirName = os.path.dirname(tsfile)
             logging.info("convert: " + dirName)
             filename = dirName + "/strings-ca.po"
-            os.system("prop2po -t " + dirName  + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
+            os.system("prop2po -t " + dirName + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
 
     def Build(self):
 
@@ -143,8 +145,8 @@ class FileSet():
                 if (filename.find(exfilename) != -1):
                     exclude = True
 
-            if (exclude == True):
-                logging.info( 'Excluding file:' + filename)
+            if (exclude is True):
+                logging.info('Excluding file:' + filename)
                 continue
 
             logging.info('Adding file:' + filename + ' to translation memory')
@@ -176,7 +178,7 @@ class FileSet():
         elif (self.filename.endswith('tar.gz')):
             os.system("mkdir " + self.temp_dir)
             os.system("tar -xvf " + self.filename + " -C " + self.temp_dir)
-        elif (self.filename.endswith('.po') or  self.filename.endswith('.ts')):
+        elif (self.filename.endswith('.po') or self.filename.endswith('.ts')):
             os.system("mkdir " + self.temp_dir)
             os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
         else:

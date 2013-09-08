@@ -43,7 +43,7 @@ class FileSetDTO:
         return
 
     def __str__(self):
-        return  "FileSetDTO. Name: " + self.name + ", url:" + self.url + ", type:" + self.type + ", excluded:" + self.excluded +  ", target:" + self.target
+        return "FileSetDTO. Name: " + self.name + ", url:" + self.url + ", type:" + self.type + ", excluded:" + self.excluded + ", target:" + self.target
 
 
 class JsonBackend:

@@ -22,13 +22,12 @@ import time
 import os
 
 from optparse import OptionParser
-from fileset import FileSet
-from project import Project
 from projects import Projects
 from jsonbackend import JsonBackend
 
 projects = Projects("tm.po")
 addSource = True
+projectsNames = None
 
 
 def initLogging():
