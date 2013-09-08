@@ -29,7 +29,6 @@ class TransifexFileSet(FileSet):
         findFiles = FindFiles()
 
         for filename in findFiles.Find(self.temp_dir, '*'):
-            print "Considering " + filename
             if (filename.endswith('en.po') or filename.endswith('en.ts')):
                 print "Removing:" + filename
                 os.system("rm -f " + filename)
