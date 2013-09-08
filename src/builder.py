@@ -28,6 +28,7 @@ from jsonbackend import JsonBackend
 projects = Projects("tm.po")
 addSource = True
 projectsNames = None
+projectsJson = 'projects.json'
 
 
 def initLogging():
@@ -46,6 +47,10 @@ def initLogging():
 
 def readParameters():
 
+    global addSource
+    global projectsNames
+    global projectsJson
+
     parser = OptionParser()
     parser.add_option("-n", "--no-source",
                       action="store_false", dest="addSource", default=True,
@@ -57,12 +62,15 @@ def readParameters():
                       help="To restrict the processing of projects to " +
                       "comma sparated given list e.g.: (fedora,ubuntu)")
 
+    parser.add_option("-s", "--json",
+                      action="store", type="string", dest="projectsJson",
+                      help="Define the json file contains the project's " +
+                      "definitions (default: projects.json)")
+
     (options, args) = parser.parse_args()
 
-    global addSource
-    global projectsNames
-
     addSource = options.addSource
+    projectsJson = options.projectsJson
 
     if (options.projectNames is not None):
         projectsNames = options.projectNames.split(",")
@@ -74,7 +82,7 @@ def processProjects():
 
     global addSource
 
-    json = JsonBackend('projects.json')
+    json = JsonBackend(projectsJson)
     json.load()
 
     for project_dto in json.projects:
