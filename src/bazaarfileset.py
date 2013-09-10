@@ -27,7 +27,7 @@ class BazaarFileSet(FileSet):
         os.system("rm -r -f " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
         os.system("cd " + self.temp_dir)
-        os.system(self.url + " > ca.po")
+        os.system("bzr cat " + self.url + " > ca.po")
 
         self.Uncompress()
         self.ConvertTsFilesToPo()

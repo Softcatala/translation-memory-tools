@@ -106,7 +106,7 @@
 					"target": "gimp.tar.gz"
 				},
 				"gnome-inkscape": {
-					"url" : "bzr cat lp:inkscape/po/ca.po",
+					"url" : "lp:inkscape/po/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				},
@@ -228,22 +228,22 @@
 			"filename" : "ubuntu-tm.po",
 			"fileset": {
 				"ubuntu-software-center": {
-					"url" : "bzr cat lp:ubuntu/software-center/po/ca.po",
+					"url" : "lp:ubuntu/software-center/po/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				},
 				"ubuntu-update-manager": {
-					"url" : "bzr cat lp:ubuntu/update-manager/po/ca.po",
+					"url" : "lp:ubuntu/update-manager/po/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				},
 				"ubuntu-release-upgrader": {
-					"url" : "bzr cat lp:ubuntu/ubuntu-release-upgrader/po/ca.po",
+					"url" : "lp:ubuntu/ubuntu-release-upgrader/po/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				},
 				"ubuntuone-control-panel": {
-					"url" : "bzr cat lp:ubuntu/ubuntuone-control-panel/po/ca.po",
+					"url" : "lp:ubuntu/ubuntuone-control-panel/po/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				}
@@ -253,7 +253,7 @@
 			"filename" : "mailman-tm.po",
 			"fileset": {
 				"mailman": {
-					"url" : "bzr cat lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
+					"url" : "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				}
