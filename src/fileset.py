@@ -143,4 +143,4 @@ class FileSet():
             os.system("mkdir " + self.temp_dir)
             os.system("tar -Jxf " + self.filename + " -C " + self.temp_dir)
         else:
-            logging.error("Unsupported file extension for filename " + self.filename)
+            logging.error("Unsupported file extension for filename:" + self.filename)

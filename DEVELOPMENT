@@ -1,0 +1,7 @@
+--- Static analysis
+
+Use flake8 *.py
+
+--- Running unit tests
+
+pytest test_name.py

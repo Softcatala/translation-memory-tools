@@ -28,7 +28,7 @@ from localdirfileset import LocalDirFileSet
 from filefileset import FileFileSet
 from subversionfileset import SubversionFileSet
 from polib import pofile
-
+from crawlerfileset import CrawlFileSet
 
 class Project:
 
@@ -73,6 +73,10 @@ class Project:
                 fs = FileFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'subversion'):
                 fs = SubversionFileSet(fileset.name, fileset.url, fileset.target)
+            elif (fileset.type == 'crawl'):
+                fs = CrawlFileSet(fileset.name, fileset.url, fileset.target)
+            else:
+                logging.error("Unsupported filetype: " + fileset.type)    
 
             self.Add(fs)
             fs.AddExcluded(fileset.excluded)
