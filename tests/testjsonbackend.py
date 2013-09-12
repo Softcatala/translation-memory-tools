@@ -31,7 +31,8 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(fileset.url, 'http://pootle.softcatala.org/ca/mozilla/export/zip')
         self.assertEquals(fileset.type, 'compressed')
         self.assertEquals(fileset.excluded, 'region.properties.po')
-        self.assertEquals(fileset.target, 'mozilla.zip')
+        self.assertEquals(fileset.excluded, 'region.properties.po')
+        self.assertEquals(fileset.pattern, 'http://.*?/ca/.*?')
         return
 
     def _validate_mozilla_project(self, project):

@@ -8,7 +8,8 @@
 					"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
 					"type": "compressed",
 					"target": "mozilla.zip",
-					"excluded" : "region.properties.po"
+					"excluded" : "region.properties.po",
+                    "pattern" : "http://.*?/ca/.*?"
 				},
 				"firefox-hackasaurus": {
 					"url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",

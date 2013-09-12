@@ -65,7 +65,7 @@
 				"gnuetools" : {
 					"url" : "http://translationproject.org/team/ca.html",
 					"type": "crawl",
-					"pattern" : "'http://.*?/ca/.*?'"
+					"pattern" : "http://.*?/ca/.*?"
 				}
 			}
 		}

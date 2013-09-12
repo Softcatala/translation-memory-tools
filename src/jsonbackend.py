@@ -16,6 +16,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import logging
 import json
 from collections import OrderedDict
 
@@ -40,10 +41,13 @@ class FileSetDTO:
         self.type = ""
         self.excluded = ""
         self.target = ""
+        self.pattern = ""
         return
 
     def __str__(self):
-        return "FileSetDTO. Name: " + self.name + ", url:" + self.url + ", type:" + self.type + ", excluded:" + self.excluded + ", target:" + self.target
+        return "FileSetDTO. Name: " + self.name + ", url:" + self.url + \
+               ", type:" + self.type + ", excluded:" + self.excluded + \
+               ", target:" + self.target + ", pattern:" + self.pattern
 
 
 class JsonBackend:
@@ -75,6 +79,11 @@ class JsonBackend:
                 fileset.target = fileset_properties_value
             elif (fileset_properties_attr == 'excluded'):
                 fileset.excluded = fileset_properties_value
+            elif (fileset_properties_attr == 'pattern'):
+                fileset.pattern = fileset_properties_value
+            else:
+                logging.error("Field '" + fileset_properties_attr +
+                              "' no recognized")
 
     def load(self):
 

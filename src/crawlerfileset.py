@@ -27,10 +27,14 @@ from crawler import *
 
 class CrawlFileSet(FileSet):
 
+    def set_pattern(self, pattern):
+        self.pattern = pattern
+        print pattern
+
     def _download_links(self, links, directory):
 
         for link in links:
-            if re.match('http://.*?/ca/.*?', link):
+            if re.match(self.pattern, link):
                 filename = os.path.join(directory, link.split('/')[-1])
 
                 download = DownloadFile()

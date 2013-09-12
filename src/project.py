@@ -75,6 +75,7 @@ class Project:
                 fs = SubversionFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'crawl'):
                 fs = CrawlFileSet(fileset.name, fileset.url, fileset.target)
+                fs.set_pattern(fileset.pattern)
             else:
                 logging.error("Unsupported filetype: " + fileset.type)    
 
