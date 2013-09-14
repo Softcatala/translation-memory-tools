@@ -27,7 +27,7 @@ from transifexfileset import TransifexFileSet
 from localdirfileset import LocalDirFileSet
 from filefileset import FileFileSet
 from subversionfileset import SubversionFileSet
-from polib import POFile
+from polib import pofile
 from crawlerfileset import CrawlFileSet
 
 class Project:
@@ -97,7 +97,7 @@ class Project:
 
     def statistics(self):
 
-        poFile = POFile(self.filename)
+        poFile = pofile(self.filename)
 
         words = 0
         for entry in poFile:
