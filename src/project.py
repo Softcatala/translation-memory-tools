@@ -27,7 +27,7 @@ from transifexfileset import TransifexFileSet
 from localdirfileset import LocalDirFileSet
 from filefileset import FileFileSet
 from subversionfileset import SubversionFileSet
-from polib import pofile
+from polib import POFile
 from crawlerfileset import CrawlFileSet
 
 class Project:
