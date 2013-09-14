@@ -28,7 +28,7 @@ class TransifexFileSet(FileSet):
 
         findFiles = FindFiles()
 
-        for filename in findFiles.Find(self.temp_dir, '*'):
+        for filename in findFiles.find(self.temp_dir, '*'):
             if (filename.endswith('en.po') or filename.endswith('en.ts')):
                 os.system("rm -f " + filename)
 
