@@ -22,7 +22,7 @@ import fnmatch
 
 class FindFiles:
 
-    def Find(self, directory, pattern):
+    def find(self, directory, pattern):
 
         filelist = list()
 

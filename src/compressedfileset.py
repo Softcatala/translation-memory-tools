@@ -23,15 +23,15 @@ from downloadfile import DownloadFile
 
 class CompressedFileSet(FileSet):
 
-    def Do(self):
+    def do(self):
 
         # Download po files
         download = DownloadFile()
-        download.GetFile(self.url, self.filename)
+        download.get_file(self.url, self.filename)
 
-        self.Uncompress()
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.uncompress()
+        self.convert_ts_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -f " + self.filename)

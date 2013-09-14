@@ -31,7 +31,7 @@ projectsNames = None
 projectsJson = 'projects.json'
 
 
-def initLogging():
+def init_logging():
 
     logfile = "builder.log"
 
@@ -45,7 +45,7 @@ def initLogging():
     logger.addHandler(console)
 
 
-def readParameters():
+def read_parameters():
 
     global addSource
     global projectsNames
@@ -80,7 +80,7 @@ def readParameters():
         projectsNames = None
 
 
-def processProjects():
+def process_projects():
 
     global addSource
 
@@ -98,9 +98,9 @@ def processProjects():
             if found is False:
                 continue
 
-        projects.AddProject(project_dto, addSource)
+        projects.add_project(project_dto, addSource)
 
-    projects.Do()
+    projects.do()
 
 
 def main():
@@ -110,11 +110,11 @@ def main():
 
     start_time = time.time()
 
-    initLogging()
-    readParameters()
-    processProjects()
-    projects.ToTmx()
-    projects.Statistics()
+    init_logging()
+    read_parameters()
+    process_projects()
+    projects.to_tmx()
+    projects.statistics()
 
     s = "Execution time: " + str(time.time() - start_time) + " seconds"
     logging.info(s)

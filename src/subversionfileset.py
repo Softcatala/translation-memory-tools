@@ -23,15 +23,15 @@ from fileset import FileSet
 
 class SubversionFileSet(FileSet):
 
-    def Do(self):
+    def do(self):
 
         os.system("rm -r -f " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
         os.system("cd " + self.temp_dir + "&& svn co --non-recursive "
                   + self.url)
 
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.convert_ts_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -r -f " + self.temp_dir)

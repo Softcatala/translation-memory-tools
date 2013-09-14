@@ -57,16 +57,16 @@ class JsonBackend:
         self.projects = list()
         return
 
-    def _processFileSet(self, project, project_value):
+    def _process_fileset(self, project, project_value):
 
         for fileset_attr, fileset_value in project_value.iteritems():
             fileset = FileSetDTO()
             project.filesets.append(fileset)
             fileset.name = fileset_attr
 
-            self._processFileSetAttributes(fileset, fileset_value)
+            self._process_file_set_attributes(fileset, fileset_value)
 
-    def _processFileSetAttributes(self, fileset, fileset_value):
+    def _process_file_set_attributes(self, fileset, fileset_value):
 
         for fileset_properties_attr, fileset_properties_value in fileset_value.iteritems():
             if (fileset_properties_attr == 'name'):
@@ -101,6 +101,6 @@ class JsonBackend:
                 if (project_attr == 'filename'):
                     project.filename = project_value
                 elif (project_attr == 'fileset'):
-                    self._processFileSet(project, project_value)
+                    self._process_fileset(project, project_value)
 
         json_data.close()

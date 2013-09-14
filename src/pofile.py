@@ -22,7 +22,7 @@ import polib
 
 class POFile:
 
-    def AddCommentToAllEntries(self, filename, comment):
+    def add_comment_to_all_entries(self, filename, comment):
 
         bakfile = filename + ".bak"
 

@@ -22,13 +22,13 @@ from fileset import FileSet
 
 class LocalFileSet(FileSet):
 
-    def Do(self):
+    def do(self):
 
         os.system("cp " + self.url + " " + self.filename)
 
-        self.Uncompress()
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.uncompress()
+        self.convert_ts_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -f " + self.filename)

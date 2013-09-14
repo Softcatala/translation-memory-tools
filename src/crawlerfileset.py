@@ -38,9 +38,9 @@ class CrawlFileSet(FileSet):
                 filename = os.path.join(directory, link.split('/')[-1])
 
                 download = DownloadFile()
-                download.GetFile(link, filename)
+                download.get_file(link, filename)
 
-    def Do(self):
+    def do(self):
 
         os.system("rm -r -f " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
@@ -49,9 +49,9 @@ class CrawlFileSet(FileSet):
         links = crawler.run()
         self._download_links(links, self.temp_dir)
 
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.convert_ts_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -f ca.po")
         os.system("rm -r -f " + self.temp_dir)

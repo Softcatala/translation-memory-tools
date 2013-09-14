@@ -22,17 +22,17 @@ from fileset import FileSet
 
 class BazaarFileSet(FileSet):
 
-    def Do(self):
+    def do(self):
 
         os.system("rm -r -f " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
         os.system("cd " + self.temp_dir)
         os.system("bzr cat " + self.url + " > ca.po")
 
-        self.Uncompress()
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.uncompress()
+        self.convert_ts_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -f ca.po")
         os.system("rm -r -f " + self.temp_dir)

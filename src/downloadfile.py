@@ -22,7 +22,7 @@ import urllib2
 
 class DownloadFile:
 
-    def GetFile(self, url, filename):
+    def get_file(self, url, filename):
 
         logging.info('Downloading file \'' + url + '\'' + " to " + filename)
 

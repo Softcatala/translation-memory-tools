@@ -22,12 +22,12 @@ from fileset import FileSet
 
 class LocalDirFileSet(FileSet):
 
-    def Do(self):
+    def do(self):
 
         os.system("rm -f " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
         os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)
 
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.convert_ts_files_to_po()
+        self.uncompress()
+        self.build()

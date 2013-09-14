@@ -28,51 +28,51 @@ class Projects:
 
     def __init__(self, filename):
         self.filename = filename
-        self.tmfile = "tm.po"
+        self.tm_file = "tm.po"
         self.projects = list()
-        self.tm_project = Project('Translation memory', self.tmfile)
+        self.tm_project = Project('Translation memory', self.tm_file)
 
         if (os.path.isfile(filename)):
             os.system("rm " + filename)
 
-    def Add(self, project):
+    def add(self, project):
         self.projects.append(project)
 
-    def AddProject(self, project_dto, addSource):
+    def add_project(self, project_dto, add_source):
 
         project = Project(project_dto.name, project_dto.filename)
-        project.SetAddSource(addSource)
-        project.AddFileSets(project_dto)
-        self.Add(project)
+        project.set_add_source(add_source)
+        project.add_filesets(project_dto)
+        self.add(project)
         logging.debug(project_dto)
 
-    def Do(self):
+    def do(self):
 
         for project in self.projects:
-            project.Do()
+            project.do()
 
         for project in self.projects:
 
-            if (os.path.isfile(self.tmfile)):
-                os.system("cp " + self.tmfile + " tm-previous.po")
-                os.system("msgcat -tutf-8 --use-first -o " + self.tmfile
-                          + " tm-previous.po " + project.GetFilename())
+            if (os.path.isfile(self.tm_file)):
+                os.system("cp " + self.tm_file + " tm-previous.po")
+                os.system("msgcat -tutf-8 --use-first -o " + self.tm_file
+                          + " tm-previous.po " + project.get_filename())
                 os.system("rm -f tm-previous.po")
             else:
-                os.system("cp " + project.GetFilename() + " " + self.tmfile)
+                os.system("cp " + project.get_filename() + " " + self.tm_file)
 
-        os.system("msgfmt -c --statistics " + self.tmfile)
+        os.system("msgfmt -c --statistics " + self.tm_file)
 
-    def Statistics(self):
-
-        for project in self.projects:
-            project.Statistics()
-
-        self.tm_project.Statistics()
-
-    def ToTmx(self):
+    def statistics(self):
 
         for project in self.projects:
-            project.ToTmx()
+            project.statistics()
 
-        self.tm_project.ToTmx()
+        self.tm_project.statistics()
+
+    def to_tmx(self):
+
+        for project in self.projects:
+            project.to_tmx()
+
+        self.tm_project.to_tmx()

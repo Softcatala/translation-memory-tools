@@ -24,11 +24,11 @@ from downloadfile import DownloadFile
 
 class FileFileSet(FileSet):
 
-    def Do(self):
+    def do(self):
 
         # Download local file
         download = DownloadFile()
-        download.GetFile(self.url, self.filename)
+        download.get_file(self.url, self.filename)
 
         # Copy file to be processed
         os.system("rm -f -r " + self.temp_dir)
@@ -36,8 +36,8 @@ class FileFileSet(FileSet):
         os.system("cp " + self.filename + " " + self.temp_dir + "/"
                   + self.filename)
 
-        self.ConvertTsFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.convert_ts_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -f " + self.filename)

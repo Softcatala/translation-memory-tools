@@ -33,26 +33,26 @@ from crawlerfileset import CrawlFileSet
 class Project:
 
     def __init__(self, name, filename):
-        self.addSource = True
+        self.add_source = True
         self.filename = filename
         self.filesets = list()
         self.name = name
 
-    def GetFilename(self):
+    def get_filename(self):
         return self.filename
 
-    def SetAddSource(self, addSource):
-        self.addSource = addSource
+    def set_add_source(self, add_source):
+        self.add_source = add_source
 
-    def DeletePOFile(self):
+    def _delete_po_file(self):
         if (os.path.isfile(self.filename)):
             os.system("rm " + self.filename)
 
-    def Add(self, fileset):
-        fileset.SetTMFile(self.filename)
+    def add(self, fileset):
+        fileset.set_tm_file(self.filename)
         self.filesets.append(fileset)
 
-    def AddFileSets(self, project_dto):
+    def add_filesets(self, project_dto):
 
         for fileset in project_dto.filesets:
             logging.debug(fileset)
@@ -79,25 +79,25 @@ class Project:
             else:
                 logging.error("Unsupported filetype: " + fileset.type)    
 
-            self.Add(fs)
-            fs.AddExcluded(fileset.excluded)
+            self.add(fs)
+            fs.add_excluded(fileset.excluded)
 
-    def Do(self):
+    def do(self):
         try:
-            self.DeletePOFile()
+            self._delete_po_file()
 
             for fileset in self.filesets:
-                fileset.SetAddSource(self.addSource)
-                fileset.Do()
+                fileset.set_add_source(self.add_source)
+                fileset.do()
 
         except Exception as detail:
             logging.error("Project.Do. Cannot complete " + self.filename)
             logging.error(detail)
-            self.DeletePOFile()
+            self._delete_po_file()
 
-    def Statistics(self):
+    def statistics(self):
 
-        poFile = pofile(self.filename)
+        poFile = POFile(self.filename)
 
         words = 0
         for entry in poFile:
@@ -109,7 +109,7 @@ class Project:
 
         logging.info(s)
 
-    def ToTmx(self):
+    def to_tmx(self):
 
         fileName, fileExtension = os.path.splitext(self.filename)
         os.system("po2tmx " + self.filename + " --comment others -l ca-ES -o "

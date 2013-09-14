@@ -24,7 +24,7 @@ from urlparse import urlparse
 
 class TransifexFileSet(FileSet):
 
-    def RemoveNonTranslationOnlyFiles(self):
+    def remove_non_translation_only_files(self):
 
         findFiles = FindFiles()
 
@@ -32,7 +32,7 @@ class TransifexFileSet(FileSet):
             if (filename.endswith('en.po') or filename.endswith('en.ts')):
                 os.system("rm -f " + filename)
 
-    def Do(self):
+    def do(self):
 
         prevdir = os.getcwd()
 
@@ -50,11 +50,11 @@ class TransifexFileSet(FileSet):
         # include source and target
         os.system("tx pull -f -lca,en")
         os.chdir(prevdir)
-        self.RemoveNonTranslationOnlyFiles()
+        self.remove_non_translation_only_files()
 
-        self.ConvertTsFilesToPo()
-        self.ConvertStringFilesToPo()
-        self.AddComments()
-        self.Build()
+        self.convert_ts_files_to_po()
+        self.convert_string_files_to_po()
+        self.add_comments()
+        self.build()
 
         os.system("rm -r -f " + self.temp_dir)
