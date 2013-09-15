@@ -62,6 +62,7 @@ class Project:
             elif (fileset.type == 'compressed'):
                 fs = CompressedFileSet(fileset.name, fileset.url,
                                        fileset.target)
+                fs.set_pattern(fileset.pattern)
             elif (fileset.type == 'bazaar'):
                 fs = BazaarFileSet(fileset.name, fileset.url, fileset.target)
             elif (fileset.type == 'transifex'):

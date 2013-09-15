@@ -29,7 +29,6 @@ class CrawlFileSet(FileSet):
 
     def set_pattern(self, pattern):
         self.pattern = pattern
-        print pattern
 
     def _download_links(self, links, directory):
 
