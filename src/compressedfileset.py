@@ -31,7 +31,7 @@ class CompressedFileSet(FileSet):
             os.system("mkdir " + self.temp_dir)
             if len(self.pattern) > 0:
                 os.system("tar -xvf " + self.filename + " -C " + self.temp_dir +
-                          self.pattern)
+                          " " + self.pattern)
             else:
                 os.system("tar -xvf " + self.filename + " -C " + self.temp_dir)
 
