@@ -81,6 +81,16 @@ class FileSet():
             logging.info("convert: " + dirName)
             filename = dirName + "/strings-ca.po"
             os.system("prop2po -t " + dirName + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
+            
+    def convert_ini_files_to_po(self):
+
+        findFiles = FindFiles()
+
+        for tsfile in findFiles.find(self.temp_dir, '*.ini'):
+            dirName = os.path.dirname(tsfile)
+            logging.info("convert: " + dirName)
+            filename = dirName + "/strings-ca.po"
+            os.system("prop2po -t " + dirName + "/en.ini " + dirName + "/ca.ini -o " + filename)
 
     def build(self):
 

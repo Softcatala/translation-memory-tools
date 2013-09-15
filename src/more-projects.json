@@ -68,6 +68,15 @@
 					"pattern" : "http://.*?/ca/.*?"
 				}
 			}
+		},
+		"Joomla": {
+			"filename" : "joomla-tm.po",
+			"fileset": {
+				"Joomla" : {
+					"url" : "https://www.transifex.com/projects/p/ct_joomla/",
+					"type": "transifex"
+				}
+			}
 		}
 	}
 }
