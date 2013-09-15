@@ -24,10 +24,9 @@ class LocalDirFileSet(FileSet):
 
     def do(self):
 
-        os.system("rm -f " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
+        self.create_tmp_directory()
         os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)
 
         self.convert_ts_files_to_po()
-        self.uncompress()
         self.build()
+        self.remove_tmp_directory()

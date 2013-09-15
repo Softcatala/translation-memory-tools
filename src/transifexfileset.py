@@ -36,8 +36,7 @@ class TransifexFileSet(FileSet):
 
         prevdir = os.getcwd()
 
-        os.system("rm -r -f " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
+        self.create_tmp_directory()
         os.chdir(self.temp_dir)
 
         url = urlparse(self.url)
@@ -56,5 +55,4 @@ class TransifexFileSet(FileSet):
         self.convert_string_files_to_po()
         self.add_comments()
         self.build()
-
-        os.system("rm -r -f " + self.temp_dir)
+        self.remove_tmp_directory()

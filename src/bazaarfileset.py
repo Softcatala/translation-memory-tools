@@ -24,8 +24,7 @@ class BazaarFileSet(FileSet):
 
     def do(self):
 
-        os.system("rm -r -f " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
+        self.create_tmp_directory()
         os.system("cd " + self.temp_dir)
         os.system("bzr cat " + self.url + " > ca.po")
 
@@ -35,4 +34,4 @@ class BazaarFileSet(FileSet):
         self.build()
 
         os.system("rm -f ca.po")
-        os.system("rm -r -f " + self.temp_dir)
+        self.remove_tmp_directory()

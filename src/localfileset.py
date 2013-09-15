@@ -26,9 +26,11 @@ class LocalFileSet(FileSet):
 
         os.system("cp " + self.url + " " + self.filename)
 
+        self.create_tmp_directory()
         self.uncompress()
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()
 
         os.system("rm -f " + self.filename)
+        self.remove_tmp_directory()

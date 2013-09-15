@@ -25,13 +25,11 @@ class SubversionFileSet(FileSet):
 
     def do(self):
 
-        os.system("rm -r -f " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
+        self.create_tmp_directory()
         os.system("cd " + self.temp_dir + "&& svn co --non-recursive "
                   + self.url)
 
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()
-
-        os.system("rm -r -f " + self.temp_dir)
+        self.remove_tmp_directory()

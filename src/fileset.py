@@ -121,10 +121,15 @@ class FileSet():
 
         os.system("rm -f " + localtm)
         self._clean_up()
+        
+    def create_tmp_directory(self):
+        os.system("rm -f -r " + self.temp_dir)
+        os.system("mkdir " + self.temp_dir)
+        
+    def remove_tmp_directory(self):
+        os.system("rm -f -r " + self.temp_dir)
 
     def uncompress(self):
-
-        os.system("rm -f -r " + self.temp_dir)
 
         if (self.filename.endswith('.zip')):
             os.system("unzip " + self.filename + " -d " + self.temp_dir)

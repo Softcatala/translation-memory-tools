@@ -42,8 +42,7 @@ class CrawlFileSet(FileSet):
 
     def do(self):
 
-        os.system("rm -r -f " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
+        self.create_tmp_directory()
 
         crawler = Crawler(self.url)
         links = crawler.run()
@@ -52,6 +51,4 @@ class CrawlFileSet(FileSet):
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()
-
-        os.system("rm -f ca.po")
-        os.system("rm -r -f " + self.temp_dir)
+        self.remove_tmp_directory()

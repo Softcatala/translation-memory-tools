@@ -25,6 +25,8 @@ class CompressedFileSet(FileSet):
 
     def do(self):
 
+        self.create_tmp_directory()
+        
         # Download po files
         download = DownloadFile()
         download.get_file(self.url, self.filename)
@@ -35,3 +37,4 @@ class CompressedFileSet(FileSet):
         self.build()
 
         os.system("rm -f " + self.filename)
+        self.remove_tmp_directory()

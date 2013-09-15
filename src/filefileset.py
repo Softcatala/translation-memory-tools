@@ -25,19 +25,18 @@ from downloadfile import DownloadFile
 class FileFileSet(FileSet):
 
     def do(self):
+    
+        self.create_tmp_directory()
 
         # Download local file
         download = DownloadFile()
         download.get_file(self.url, self.filename)
 
         # Copy file to be processed
-        os.system("rm -f -r " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
         os.system("cp " + self.filename + " " + self.temp_dir + "/"
                   + self.filename)
 
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()
-
-        os.system("rm -f " + self.filename)
+        self.remove_tmp_directory()
