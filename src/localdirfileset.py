@@ -28,5 +28,6 @@ class LocalDirFileSet(FileSet):
         os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)
 
         self.convert_ts_files_to_po()
+        self.add_comments()
         self.build()
         self.remove_tmp_directory()
