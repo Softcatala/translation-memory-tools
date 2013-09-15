@@ -90,7 +90,7 @@ class FileSet():
             dirName = os.path.dirname(tsfile)
             logging.info("convert: " + dirName)
             filename = dirName + "/strings-ca.po"
-            os.system("prop2po -t " + dirName + "/en.ini " + dirName + "/ca.ini -o " + filename)
+            os.system("prop2po -t " + dirName + "/en.ini " + dirName + "/ca.ini --encoding=utf-8 --personality=strings -o " + filename)
 
     def build(self):
 
