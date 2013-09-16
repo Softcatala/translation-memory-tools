@@ -18,6 +18,7 @@ The web page of the project is at: http://www.softcatala.org/wiki/Memòria_tradu
 * bzr (bazaar distributed version control client)
 * gettext
 * translate-toolkit
+* nose (using 'pip install nose')
 
 --- Setting up before execution
 
