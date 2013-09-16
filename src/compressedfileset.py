@@ -40,9 +40,6 @@ class CompressedFileSet(FileSet):
             # We are assuming that the .gz file will contain a single PO
             os.system("gunzip " + self.filename + " -c > " + self.temp_dir
                       + "/ca.po")
-        elif (self.filename.endswith('.po') or self.filename.endswith('.ts')):
-            os.system("mkdir " + self.temp_dir)
-            os.system("cp " + self.filename + " " + self.temp_dir + "/" + self.filename)
         elif (self.filename.endswith('tar.xz')):
             os.system("mkdir " + self.temp_dir)
             os.system("tar -Jxf " + self.filename + " -C " + self.temp_dir)

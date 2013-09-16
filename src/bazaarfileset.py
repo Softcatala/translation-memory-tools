@@ -26,11 +26,10 @@ class BazaarFileSet(FileSet):
 
         self.create_tmp_directory()
         os.system("cd " + self.temp_dir)
-        os.system("bzr cat " + self.url + " > ca.po")
+        outfile = os.path.join(self.temp_dir, "ca.po")
+        os.system("bzr cat " + self.url + " > " + outfile)
 
-        self.convert_ts_files_to_po()
         self.add_comments()
         self.build()
 
-        os.system("rm -f ca.po")
         self.remove_tmp_directory()
