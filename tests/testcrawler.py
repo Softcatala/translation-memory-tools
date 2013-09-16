@@ -20,7 +20,7 @@ import sys
 import unittest
 
 sys.path.append('../src/')
-from crawlfileset import Page
+from crawler import Page
 
 
 class FilePage(Page):
