@@ -18,13 +18,13 @@
 
 import os
 
-from fileset import FileSet, FindFiles
 from urlparse import urlparse
-
+from fileset import FileSet
+from findfiles import FindFiles
 
 class TransifexFileSet(FileSet):
 
-    def remove_non_translation_only_files(self):
+    def _remove_non_translation_only_files(self):
 
         findFiles = FindFiles()
 
@@ -49,7 +49,7 @@ class TransifexFileSet(FileSet):
         # include source and target
         os.system("tx pull -f -lca,en")
         os.chdir(prevdir)
-        self.remove_non_translation_only_files()
+        self._remove_non_translation_only_files()
 
         self.convert_ts_files_to_po()
         self.convert_string_files_to_po()
