@@ -99,17 +99,28 @@ class Project:
 
     def statistics(self):
 
-        poFile = pofile(self.filename)
-
         words = 0
-        for entry in poFile:
-            string_words = entry.msgstr.split(' ')
-            words += len(string_words)
+        entries = 0
 
-        s = self.name + " project. " + str(len(poFile.translated_entries()))
-        s = s + " translated strings, words " + str(words)
+        try:
+        
+            poFile = pofile(self.filename)
+            
+            for entry in poFile:
+                string_words = entry.msgstr.split(' ')
+                words += len(string_words)
 
-        logging.info(s)
+            entries = str(len(poFile.translated_entries()))
+            
+        except Exception as detail:
+            logging.error("Project. statistics exception " + self.filename)
+            logging.error(detail)
+            
+
+        finally:
+            s = self.name + " project. " + str(entries)
+            s = s + " translated strings, words " + str(words)
+            logging.info(s)
 
     def to_tmx(self):
 
