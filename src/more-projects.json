@@ -95,6 +95,16 @@
 					"target": "nemo.tar.gz"
 				}
 			}
+		},
+		"Chromium": {
+			"filename" : "chromium-tm.po",
+			"fileset": {
+				"chromium": {
+					"url" : "lp:chromium-browser/translations",
+					"type" : "bazaar",
+					"pattern" : ".*?ca.po"
+				}
+			}
 		}
 	}
 }

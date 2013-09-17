@@ -103,6 +103,7 @@ class FileSet():
         # Build using a local memory translation file
         for filename in findFiles.find(self.temp_dir, '*.po'):
 
+            print "Do:" + filename
             exclude = False
             for exfilename in self.excluded:
                 if (filename.find(exfilename) != -1):

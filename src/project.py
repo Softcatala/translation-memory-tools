@@ -65,6 +65,7 @@ class Project:
                 fs.set_pattern(fileset.pattern)
             elif (fileset.type == 'bazaar'):
                 fs = BazaarFileSet(fileset.name, fileset.url, fileset.target)
+                fs.set_pattern(fileset.pattern)
             elif (fileset.type == 'transifex'):
                 fs = TransifexFileSet(fileset.name, fileset.url,
                                       fileset.target)
@@ -92,7 +93,7 @@ class Project:
                 fileset.do()
 
         except Exception as detail:
-            logging.error("Project.Do. Cannot complete " + self.filename)
+            logging.error("Project.do. Cannot complete " + self.filename)
             logging.error(detail)
             self._delete_po_file()
 
