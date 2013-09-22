@@ -17,46 +17,75 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import sys
+sys.path.append('../../src/')
+
 import polib
 import time
+import os
 from whoosh.fields import *
 from whoosh.index import create_in
-
+from jsonbackend import JsonBackend
 
 class Search:
 
     dir_name = "indexdir"
+    writer = None
+    
+    def process_projects(self):
+
+        json = JsonBackend("../../src/projects.json")
+        json.load()
+
+        for project_dto in json.projects:        
+            self._process_project(project_dto.name, project_dto.filename)
+
+    def _process_project(self, name, filename):
+
+        full_filename = os.path.join("../../latest-memories/po/", filename)
+        print "Processing: " + full_filename
+        
+        try:
+            input_po = polib.pofile(full_filename)
+            
+            for entry in input_po:
+                s = unicode(entry.msgid)
+                t = unicode(entry.msgstr)
+                c = unicode(entry.comment)
+                p = unicode(name)
+                self.writer.add_document(source=s, target=t, comment=c, project=p)
+
+        except Exception as detail:
+            print "Exception: " +  str(detail)
 
     def create_index(self):
-        '''
-            Given a PO file, enumerates all the strings, and creates a Whoosh
-            index to be able to search later
-        '''
-
-        ix = None
-        start_time = time.time()
 
         schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True),
-                        comment=TEXT(stored=True))
+                        comment=TEXT(stored=True), project=TEXT(stored=True))
+                        
+        if not os.path.exists(self.dir_name):
+            os.mkdir(self.dir_name)
 
         ix = create_in(self.dir_name, schema)
-        writer = ix.writer()
-
-        input_po = polib.pofile("tm.po")
-        for entry in input_po:
-            u = unicode(entry.msgstr)
-            writer.add_document(source=entry.msgid, target=u)
-
-        writer.commit()
-        end_time = time.time() - start_time
-        print "time used to create the index: " + str(end_time)
+        self.writer = ix.writer()
 
 
 def main():
+    '''
+        Given a PO file, enumerates all the strings, and creates a Whoosh
+        index to be able to search later
+    '''
 
     print "Create Whoosh index from a PO file"
+    start_time = time.time()
+    
     search = Search()
     search.create_index()
+    search.process_projects()
+    search.writer.commit()
+    
+    end_time = time.time() - start_time
+    print "time used to create the index: " + str(end_time)
 
 if __name__ == "__main__":
     main()

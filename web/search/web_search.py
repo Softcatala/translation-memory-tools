@@ -23,46 +23,86 @@ import time
 
 from whoosh.index import open_dir
 from whoosh.fields import *
+from whoosh.highlight import *
 from whoosh.qparser import QueryParser
 
 
 class Search:
 
     dir_name = "indexdir"
+    
+    def print_result(self, result, org):
 
-    def search(self, term):
+        print '<div class = "result">'
+        print "<b>Projecte:</b> " + result["project"].encode('utf-8')
+        print "</br>"
+        
+        if len(result["comment"]) > 0:
+            print "<b>Commentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
+            print "</br>"
+
+        if org is True:
+            print "<b>Original:</b> " + result.highlights("source").encode('utf-8')
+            print "</br>"
+            print "<b>Traducció:</b> " + result["target"].encode('utf-8')
+        else:
+            print "<b>Original:</b> " + result["source"].encode('utf-8')
+            print "</br>"
+            print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
+
+        print '</div>'
+        print '</br></br>'
+        
+
+    def search(self, term, org):
         '''
             Search a term in the Whoosh index
         '''
-        ix = None
+        
         start_time = time.time()
 
         ix = open_dir(self.dir_name)
         with ix.searcher() as searcher:
-            query = QueryParser("target", ix.schema).parse(term)
-            results = searcher.search(query)
+        
+            if org is True:
+                query = QueryParser("source", ix.schema).parse(term)
+            else:
+                query = QueryParser("target", ix.schema).parse(term)
+
+            results = searcher.search(query, limit=None)
+            my_cf = WholeFragmenter()
+            results.fragmenter = my_cf
             for result in results:
-                print result["source"] + "</br>"
-                print result.highlights("target").encode('utf-8')
-                print "</br></br>"
+                self.print_result(result, org)
 
         end_time = time.time() - start_time
-        print "Temps: " + str(end_time)
+        print str(len(results)) + " resultats. Temps de cerca: " + str(end_time)
+        
+def open_html(term):
 
+    print 'Content-type: text/html\n\n'
+    print '<html><head>'
+    print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
+    print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
+    print 'Terme de cerca: ' + term + '</br></br>'
 
 def main():
 
-    print 'Content-type: text/html\n\n'
-
     form = cgi.FieldStorage()
-    term = form.getvalue("query", u'instal·lació')
+    term = form.getvalue("query", 'gbrainy')
+    original = form.getvalue("original", None)
+    translation = form.getvalue("translation", None)
+    
+    open_html(term)
+    
+    if original is not None:
+        org = True
+    else:
+        org = False
 
-    print '<html><head>'
-    print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
-    print 'Terme de cerca: ' + term + '</br></br>'
     search = Search()
     term = unicode(term, 'utf-8')
-    search.search(term)
+    search.search(term, org)
     print '</head><body>'
 
 if __name__ == "__main__":
