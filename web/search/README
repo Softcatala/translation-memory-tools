@@ -1,0 +1,7 @@
+--- Introduction
+
+Web interface to search in the memory
+
+--- Dependencies
+
+* Whoosh package
