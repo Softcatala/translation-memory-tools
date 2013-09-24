@@ -2,11 +2,18 @@
 body
 {
 	font-family: Verdana, Arial; 
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .section
 { 
 	 color: #BA2626;
 }
+
+.result
+{ 
+     background-color:aliceblue;
+}
+
+
 
