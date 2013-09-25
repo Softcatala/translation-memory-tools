@@ -68,7 +68,7 @@ def process_projects():
         if (project_dto.name != 'Header'):    
             html += table_row(project_dto.name, project_dto.filename)
 
-    html += table_row('Totes les memories', 'tm-all.po')
+    html += table_row('Totes les memories', 'tm.po')
     html += '</table>\r'
     html += '<br/>\r'
     return html
