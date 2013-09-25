@@ -25,6 +25,7 @@ import time
 import os
 from whoosh.fields import *
 from whoosh.index import create_in
+from whoosh.analysis import StandardAnalyzer
 from jsonbackend import JsonBackend
 
 class Search:
@@ -59,8 +60,11 @@ class Search:
             print "Exception: " +  str(detail)
 
     def create_index(self):
+    
+        MIN_WORDSIZE_TO_IDX = 1
 
-        schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True),
+        schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True,
+                        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)),
                         comment=TEXT(stored=True), project=TEXT(stored=True))
                         
         if not os.path.exists(self.dir_name):
