@@ -87,6 +87,7 @@ def get_statistics(filename):
     try:
     
         poFile = pofile(os.path.join("../../latest-memories/po/", filename))
+        print "Getting stats for: " + filename
         
         for entry in poFile:
             string_words = entry.msgstr.split(' ')
