@@ -22,6 +22,8 @@ import sys
 sys.path.append('../../src/')
 from jsonbackend import JsonBackend
 import os
+import datetime
+from polib import pofile
 
 
 def link(text, link):
@@ -36,6 +38,7 @@ def table_row_generate(name, potext, pofile, tmxtext, tmxfile):
     html += "<td>" + name + "</td>\r"
     html += "<td>" + link(potext, pofile) + "</td>\r"
     html += "<td>" + link(tmxtext, tmxfile) + "</td>\r"
+    html += "<td>" + get_statistics(pofile) + "</td>\r"
     html += "</tr>\r"
     return html
     
@@ -56,24 +59,46 @@ def process_projects():
     json = JsonBackend("../../src/projects.json")
     json.load()
 
-    html = '<h1 class ="section">Baixa les memories de traduccio</h1>\r'
+    html = u'<h1 class ="section">Baixa les memòries de traducció</h1>\r'
     html += '<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
     html += '<tr>\r'
     html += '<th>Projecte</th>\r'
     html += '<th>Fitxer PO</th>\r'
     html += '<th>Fitxer TMX</th>\r'
+    html += u'<th>Paraules traduïdes</th>\r'
     html += '</tr>\r'
 
     for project_dto in json.projects:
         if (project_dto.name != 'Header'):    
             html += table_row(project_dto.name, project_dto.filename)
 
-    html += table_row('Totes les memories', 'tm.po')
+    html += table_row(u'Totes les memòries', 'tm.po')
     html += '</table>\r'
+    today = datetime.date.today()
+    html += '<br/>\r'
+    html += u'Data de generació: ' + today.strftime("%d/%m/%Y")
     html += '<br/>\r'
     return html
 
+def get_statistics(filename):
 
+    words = 0
+
+    try:
+    
+        poFile = pofile(filename)
+        
+        for entry in poFile:
+            string_words = entry.msgstr.split(' ')
+            words += len(string_words)
+
+    except Exception as detail:
+        print("Statistics exception " + filename)
+        print(detail)
+        
+    finally:
+        return str(words)
+        
 def main():
     '''
         Reads the projects and generates an HTML to enable downloading all
@@ -84,7 +109,7 @@ def main():
 
     html = process_projects()
     html_file = open("download.html", "w")
-    html_file.write(html)
+    html_file.write(html.encode('utf-8'))
     html_file.close()
 
 if __name__ == "__main__":
