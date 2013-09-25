@@ -38,7 +38,7 @@ def table_row_generate(name, potext, pofile, tmxtext, tmxfile):
     html += "<td>" + name + "</td>\r"
     html += "<td>" + link(potext, pofile) + "</td>\r"
     html += "<td>" + link(tmxtext, tmxfile) + "</td>\r"
-    html += "<td>" + get_statistics(pofile) + "</td>\r"
+    html += "<td>" + get_statistics(potext) + "</td>\r"
     html += "</tr>\r"
     return html
     
@@ -86,7 +86,7 @@ def get_statistics(filename):
 
     try:
     
-        poFile = pofile(filename)
+        poFile = pofile(os.path.join("../../latest-memories/po/", filename))
         
         for entry in poFile:
             string_words = entry.msgstr.split(' ')
