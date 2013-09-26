@@ -292,6 +292,122 @@
 					"target": "monodevelop-ca.po"
 				}
 			}
+		},
+		"Debian": {
+			"filename" : "debian-tm.po",
+			"web" : "http://www.debian.org/international/l10n/po/ca",
+			"fileset": {
+				"apt": {
+					"url" : "http://i18n.debian.org/material/po/unstable/main/a/apt/po/apt_0.9.11.2_ca.po.gz",
+					"type": "compressed",
+					"target": "apt_ca.po.gz"
+				},
+				"dpkg": {
+					"url" : "http://i18n.debian.org/material/po/unstable/main/d/dpkg/po/dpkg_1.17.1_ca.po.gz",
+					"type": "compressed",
+					"target": "dpkg.gz"
+				},
+				"shadow": {
+					"url" : "http://i18n.debian.org/material/po/unstable/main/s/shadow/po/shadow_1%3a4.1.5.1-1_ca.po.gz",
+					"type": "compressed",
+					"target": "shadow.gz"
+				},
+				"aptitude": {
+					"url" : "http://i18n.debian.org/material/po/unstable/main/a/aptitude/po/aptitude_0.6.8.2-1.2_ca.po.gz",
+					"type": "compressed",
+					"target": "aptitude.gz"
+				},
+				"po4a": {
+					"url" : "http://i18n.debian.org/material/po/unstable/main/p/po4a/po/bin/po4a_0.45-1_ca.po.gz",
+					"type": "compressed",
+					"target": "po4a.gz"
+				}
+			}
+        },
+		"OpenSuse": {
+			"filename" : "opensuse-tm.po",
+			"fileset": {
+				"yast" : {
+					"url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/yast/ca/po",
+					"type": "subversion"
+				},
+				"webyast" : {
+					"url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/webyast/ca/po",
+					"type": "subversion"
+				},
+				"lcn" : {
+					"url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/lcn/ca/po",
+					"type": "subversion"
+				}
+			}
+		},
+		"Kde": {
+			"filename" : "kde-tm.po",
+			"fileset": {
+				"kde" : {
+					"url" : "http://ftp.kde.org/stable/4.9.5/src/kde-l10n/kde-l10n-ca-4.9.5.tar.xz",
+					"type": "compressed",
+					"target": "kde-l10n.tar.xz"
+				}
+			}
+		},
+		"gnutools": {
+			"filename" : "gnutools-tm.po",
+			"fileset": {
+				"gnuetools" : {
+					"url" : "http://translationproject.org/team/ca.html",
+					"type": "crawl",
+					"pattern" : "http://.*?/ca/.*?"
+				}
+			}
+		},
+		"Joomla": {
+			"filename" : "joomla-tm.po",
+			"fileset": {
+				"Joomla" : {
+					"url" : "https://www.transifex.com/projects/p/ct_joomla/",
+					"type": "transifex"
+				}
+			}
+		},
+		"LinuxMint": {
+			"filename" : "linuxmint-tm.po",
+			"comment" : "Files obtained from http://packages.linuxmint.com/list.php?release=Olivia since cannot be downloaded from https://translations.launchpad.net/linuxmint/latest/+lang/ca",
+			"fileset": {
+				"Cinnamon" : {
+					"url" : "http://packages.linuxmint.com/pool/main/c/cinnamon/cinnamon_1.8.8%2bolivia.tar.gz",
+					"type": "compressed",
+                    "pattern" : "*cinnamon-ca.po",
+					"target": "cinnamon.tar.gz"
+				},
+				"Nemo" : {
+					"url" : "http://packages.linuxmint.com/pool/main/n/nemo/nemo_1.8.3%2bolivia.tar.gz",
+					"type": "compressed",
+                    "pattern" : "*nemo-ca.po",
+					"target": "nemo.tar.gz"
+				}
+			}
+		},
+		"Chromium": {
+			"filename" : "chromium-tm.po",
+			"fileset": {
+				"chromium": {
+					"url" : "lp:chromium-browser/translations",
+					"type" : "bazaar",
+					"pattern" : ".*?ca.po"
+				}
+			},
+		"Drupal": {
+			"filename" : "drupal-tm.po",
+			"comment" : "See https://localize.drupal.org/download",
+			"fileset": {
+				"drupal": {
+					"url" : "http://ftp.drupal.org/files/translations/7.x/drupal/drupal-7.0-alpha1.ca.po",
+					"type": "file",
+					"target": "drupal-ca.po"
+				}
+			}
+		}
 		}
 	}	
 }
