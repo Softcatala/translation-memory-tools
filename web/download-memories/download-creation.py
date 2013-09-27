@@ -81,7 +81,7 @@ def process_projects():
     html += '</table>\r'
     today = datetime.date.today()
     html += '<br/>\r'
-    html += u'Data de generació: ' + today.strftime("%d/%m/%Y")
+    html += u'Data de generació dels fitxers: ' + today.strftime("%d/%m/%Y")
     html += '<br/>\r'
     return html
 
