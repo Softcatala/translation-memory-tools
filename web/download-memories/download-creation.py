@@ -73,7 +73,8 @@ def process_projects():
     html += u'<th>Paraules traduïdes</th>\r'
     html += '</tr>\r'
 
-    for project_dto in json.projects:
+    projects = sorted(json.projects, key=lambda x: x.name.lower())
+    for project_dto in projects:
         if (project_dto.name != 'Header'):    
             html += table_row(project_dto.name, project_dto.filename)
 
