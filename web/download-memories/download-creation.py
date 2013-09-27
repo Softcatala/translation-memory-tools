@@ -34,11 +34,16 @@ def link(text, link):
     
 def table_row_generate(name, potext, pofile, tmxtext, tmxfile):
 
+    words = get_statistics(potext)
+    if (words == 0):
+        print "Skipping empty translation memory: " + potext
+        return ''
+    
     html = "<tr>\r"
     html += "<td>" + name + "</td>\r"
     html += "<td>" + link(potext, pofile) + "</td>\r"
     html += "<td>" + link(tmxtext, tmxfile) + "</td>\r"
-    html += "<td>" + get_statistics(potext) + "</td>\r"
+    html += "<td>" + str(words) + "</td>\r"
     html += "</tr>\r"
     return html
     
@@ -98,7 +103,7 @@ def get_statistics(filename):
         print(detail)
         
     finally:
-        return str(words)
+        return words
         
 def main():
     '''
