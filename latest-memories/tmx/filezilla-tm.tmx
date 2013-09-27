@@ -199,8 +199,7 @@
       <tuv xml:lang="ca-ES">
         <seg>%s bytes (%s/s)</seg>
       </tuv>
-      <note>Translation source: /filezilla.po from project 'filezilla'
-# 82%</note>
+      <note>Translation source: /filezilla.po from project 'filezilla' 82%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -6287,8 +6286,7 @@ El port per defecte per FTP és el 21 i per SFTP el 22</seg>
       <tuv xml:lang="ca-ES">
         <seg>FTP - Protocol de Transferència de Fitxers insegur</seg>
       </tuv>
-      <note>Translation source: /filezilla.po from project 'filezilla'
-# 75%</note>
+      <note>Translation source: /filezilla.po from project 'filezilla' 75%</note>
     </tu>
     <tu>
       <tuv xml:lang="en">

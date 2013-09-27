@@ -10,8 +10,7 @@
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut verificar la signatura.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -24,8 +23,7 @@ Please download the public key %@ using GPG Keychain Access.</seg>
 ⏎
 Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -34,8 +32,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>No s'ha pogut desxifrar el fitxer adjunt.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -44,8 +41,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>La clau secreta per desxifrar el fitxer no és al clauer.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -54,8 +50,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>El fitxer adjunt s'ha desxifrat amb èxit.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -64,8 +59,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Obriu un fitxer adjunt a la vista de missatges fent doble clic.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Attachment/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -74,8 +68,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Finestra</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -84,8 +77,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Accepta</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -94,8 +86,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Expira el:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -104,8 +95,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>nom</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -114,8 +104,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Detalls</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -124,8 +113,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Clau</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -134,8 +122,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Nom:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -144,8 +131,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Adreça electrònica:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -154,8 +140,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comentari:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -164,8 +149,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Identitat de la clau:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -174,8 +158,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Creat:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -184,8 +167,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Expira:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -194,8 +176,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Algoritme:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -204,8 +185,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Valor de confiança:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -214,8 +194,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Signatura</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -224,8 +203,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Creat:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -234,8 +212,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>Expira:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -244,8 +221,7 @@ Utilitza Accés a clauers GPG per descarregar la clau pública %@ .</seg>
       <tuv xml:lang="ca-ES">
         <seg>La signatura no s'ha verificat.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -256,8 +232,7 @@ Please download the key using GPG Keychain Access.</seg>
         <seg>La signatura no s'ha verificat perquè la clau pública no està en el claur.⏎
 Descarregui la clau amb Accés a clauers GPG.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -266,8 +241,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La signatura no té data de caducitat</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -276,8 +250,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La signatura no té data de caducitat</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -286,8 +259,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La signatura no té data de caducitat</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -296,8 +268,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La signatura no s'ha verificat.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -308,8 +279,7 @@ Please download the key using GPG Keychain Access.</seg>
         <seg>La signatura no s'ha verificat perquè la clau pública no està en el claur.⏎
 Descarregui la clau amb Accés a clauers GPG.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.AttachmentsXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -318,8 +288,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprova automàticament si hi ha noves versions de GPGMail</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -328,8 +297,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Descarrega automàticament les noves versions de GPGMail.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -338,8 +306,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cerca actualitzacions ara.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -348,8 +315,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>GPGMail</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -358,8 +324,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Actualitzacions</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -368,8 +333,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cerca ara actualitzacions</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -378,8 +342,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Cerca ara</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -388,8 +351,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Descarrega les actualitzacions automàticament</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -398,8 +360,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Comprova automàticament si hi ha actualitzacions</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -408,8 +369,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Composició</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -418,8 +378,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Preguntes més freqüents.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -428,8 +387,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Preguntes més freqüents</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -438,8 +396,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>PMF</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -448,8 +405,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Si t'agrada el que fem, contribuïu.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -458,8 +414,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Si t'agrada el que fem, contribuïu </seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -468,8 +423,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Donació</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -478,8 +432,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Lectura</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -488,8 +441,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Si desitja xifrar/signar projectes</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -498,8 +450,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Consulteu Preferències -&gt;Visualització -&gt; Previsualització de la llista.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -508,8 +459,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Crea una previsualització de la llista</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -518,8 +468,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Botó</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -528,8 +477,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Versió: xxx</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -538,8 +486,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Revisió:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -548,8 +495,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Si té cap altra pregunta.</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -558,8 +504,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Ajuda</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from
-# project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.Preferences/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -568,8 +513,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Signatures</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -578,8 +522,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Creat:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -588,8 +531,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Sense signatura</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -598,8 +540,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Expira:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -608,8 +549,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Creat:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -618,8 +558,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Expira:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -628,8 +567,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>Creat:</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -638,8 +576,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La signatura no té data de caducitat</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
     <tu>
       <tuv xml:lang="en">
@@ -648,8 +585,7 @@ Descarregui la clau amb Accés a clauers GPG.</seg>
       <tuv xml:lang="ca-ES">
         <seg>La clau no té data de caducitat</seg>
       </tuv>
-      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po
-# from project 'GPGMail'</note>
+      <note>Translation source: /translations/GPGMail.SignatureViewXib/strings-ca.po from project 'GPGMail'</note>
     </tu>
   </body>
 </tmx>
