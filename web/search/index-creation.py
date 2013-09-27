@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -32,14 +33,29 @@ class Search:
 
     dir_name = "indexdir"
     writer = None
-    
+    words = 0
+    projects = 0
+
     def process_projects(self):
 
         json = JsonBackend("../../src/projects.json")
         json.load()
 
-        for project_dto in json.projects:        
+        for project_dto in json.projects:
             self._process_project(project_dto.name, project_dto.filename)
+            self.projects = self.projects + 1
+            
+        self.write_statistics()
+            
+    def write_statistics(self):
+
+        today = datetime.date.today()
+        html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
+        html += u' i conté ' + str(self.projects) + ' projectes amb un total de ' 
+        html += str(self.words) + ' paraules</p>'
+        html_file = open("statistics.html", "w")
+        html_file.write(html.encode('utf-8'))        
+        html_file.close()
 
     def _process_project(self, name, filename):
 
@@ -54,10 +70,14 @@ class Search:
                 t = unicode(entry.msgstr)
                 c = unicode(entry.comment)
                 p = unicode(name)
+                
+                string_words = entry.msgstr.split(' ')
+                self.words += len(string_words)
                 self.writer.add_document(source=s, target=t, comment=c, project=p)
 
         except Exception as detail:
             print "Exception: " +  str(detail)
+
 
     def create_index(self):
     
