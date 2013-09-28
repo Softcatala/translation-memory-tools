@@ -35,7 +35,7 @@ def link(text, link):
     return html
     
     
-def table_row_generate(name, potext, pofile, tmxtext, tmxfile):
+def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
 
     words = get_statistics(potext)
     if (words == 0):
@@ -43,7 +43,11 @@ def table_row_generate(name, potext, pofile, tmxtext, tmxfile):
         return ''
     
     html = "<tr>\r"
-    html += "<td>" + name + "</td>\r"
+    if (len(projectweb) > 0):
+        html += "<td><a href='" + projectweb + "'>"  + name + "</a></td>\r"
+    else:
+        html += "<td>" + name + "</td>\r"
+
     html += "<td>" + link(potext, pofile) + "</td>\r"
     html += "<td>" + link(tmxtext, tmxfile) + "</td>\r"
     html += "<td>" + str(words) + "</td>\r"
@@ -51,7 +55,7 @@ def table_row_generate(name, potext, pofile, tmxtext, tmxfile):
     return html
     
     
-def table_row(name, potext):
+def table_row(name, projectweb, potext):
 
     subdirectory = "memories/"
     
@@ -59,7 +63,7 @@ def table_row(name, potext):
     filename, file_extension = os.path.splitext(potext)
     tmxfile = filename + ".tmx"
     
-    return table_row_generate(name, potext, pofile,
+    return table_row_generate(name, projectweb, potext, pofile,
                               tmxfile, os.path.join(subdirectory, tmxfile))
 
 def process_projects():
@@ -79,9 +83,10 @@ def process_projects():
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if (project_dto.name != 'Header'):    
-            html += table_row(project_dto.name, project_dto.filename)
+            html += table_row(project_dto.name, project_dto.projectweb,
+                              project_dto.filename)
 
-    html += table_row(u'Totes les memòries', 'tm.po')
+    html += table_row(u'Totes les memòries', '', 'tm.po')
     html += '</table>\r'
     today = datetime.date.today()
     html += '<br/>\r'
