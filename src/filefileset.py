@@ -30,11 +30,7 @@ class FileFileSet(FileSet):
 
         # Download local file
         download = DownloadFile()
-        download.get_file(self.url, self.filename)
-
-        # Copy file to be processed
-        os.system("cp " + self.filename + " " + self.temp_dir + "/"
-                  + self.filename)
+        download.get_file(self.url, os.path.join(self.temp_dir, self.filename))
 
         self.convert_ts_files_to_po()
         self.add_comments()
