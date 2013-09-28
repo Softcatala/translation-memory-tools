@@ -26,7 +26,7 @@ class SubversionFileSet(FileSet):
     def do(self):
 
         self.create_tmp_directory()
-        os.system("cd " + self.temp_dir + "&& svn co --non-recursive "
+        os.system("cd " + self.temp_dir + "&& svn co --non-recursive --trust-server-cert --non-interactive "
                   + self.url)
 
         self.convert_ts_files_to_po()
