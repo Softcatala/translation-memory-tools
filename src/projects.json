@@ -408,6 +408,16 @@
 					"target": "drupal-ca.po"
 				}
 			}
+		},
+		"WordPress": {
+			"filename" : "wordpress-tm.po",
+			"web" : "http://ca.wordpress.org/",
+			"fileset": {
+				"yast" : {
+					"url" : "http://i18n.svn.wordpress.org/ca/trunk/next-version/messages/",
+					"type": "subversion"
+				}
+            }
 		}
 	}	
 }
