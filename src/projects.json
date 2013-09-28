@@ -411,10 +411,20 @@
 		},
 		"WordPress": {
 			"filename" : "wordpress-tm.po",
-			"web" : "http://ca.wordpress.org/",
+			"projectweb" : "http://ca.wordpress.org/",
 			"fileset": {
 				"yast" : {
 					"url" : "http://i18n.svn.wordpress.org/ca/trunk/next-version/messages/",
+					"type": "subversion"
+				}
+            }
+		},
+		"Blender": {
+			"filename" : "blender-tm.po",
+			"projectweb" : "http://www.blender.cat/",
+			"fileset": {
+				"yast" : {
+					"url" : "https://svn.blender.org/svnroot/bf-translations/branches/ca/",
 					"type": "subversion"
 				}
             }
