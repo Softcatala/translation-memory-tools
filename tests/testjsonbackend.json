@@ -3,6 +3,7 @@
 	"projects": {
 		"Mozilla": {
 			"filename" : "mozilla-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
 			"fileset": {
 				"mozilla": {
 					"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",

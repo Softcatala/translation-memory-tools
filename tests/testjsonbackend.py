@@ -38,6 +38,7 @@ class TestJsonBackend(unittest.TestCase):
     def _validate_mozilla_project(self, project):
         self.assertEquals(project.name, 'Mozilla')
         self.assertEquals(project.filename, 'mozilla-tm.po')
+        self.assertEquals(project.projectweb, 'http://www.softcatala.org/wiki/Projectes/Mozilla')
         self.assertEquals(len(project.filesets), 3)
         self._validate_mozilla_project_mozilla_fileset(project.filesets[0])
         return

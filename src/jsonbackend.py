@@ -26,11 +26,13 @@ class ProjectDTO:
     def __init__(self):
         self.name = ""
         self.filename = ""
+        self.projectweb = ""
         self.filesets = list()
         return
 
     def __str__(self):
-        return "ProjectDTO. Name: " + self.name + ", filename:" + self.filename
+        return "ProjectDTO. Name: " + self.name + ", filename:" +\
+                self.filename + ", project web:" + self.projectweb
 
 
 class FileSetDTO:
@@ -102,5 +104,7 @@ class JsonBackend:
                     project.filename = project_value
                 elif (project_attr == 'fileset'):
                     self._process_fileset(project, project_value)
+                elif (project_attr == 'projectweb'):
+                    project.projectweb = project_value
 
         json_data.close()
