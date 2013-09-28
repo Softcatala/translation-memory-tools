@@ -24,6 +24,9 @@ from jsonbackend import JsonBackend
 import os
 import datetime
 from polib import pofile
+from optparse import OptionParser
+
+po_directory = None
 
 
 def link(text, link):
@@ -92,8 +95,9 @@ def get_statistics(filename):
 
     try:
     
-        poFile = pofile(os.path.join("../../latest-memories/po/", filename))
-        print "Getting stats for: " + filename
+        full_path = os.path.join(po_directory, filename)
+        poFile = pofile(full_path)
+        print "Getting stats for: " + full_path
         
         for entry in poFile:
             string_words = entry.msgstr.split(' ')
@@ -105,6 +109,22 @@ def get_statistics(filename):
         
     finally:
         return words
+
+def read_parameters():
+
+    global po_directory
+
+    parser = OptionParser()
+
+    parser.add_option("-d", "--directory",
+                      action="store", type="string", dest="po_directory",
+                      default="../../latest-memories/po/",
+                      help="Directory to find the PO files")
+
+    (options, args) = parser.parse_args()
+
+    po_directory = options.po_directory
+    
         
 def main():
     '''
@@ -113,7 +133,9 @@ def main():
     '''
 
     print "Creates download.html file"
+    print "Use --help for assistance"
 
+    read_parameters()
     html = process_projects()
     html_file = open("download.html", "w")
     html_file.write(html.encode('utf-8'))

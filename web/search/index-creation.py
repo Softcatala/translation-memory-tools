@@ -28,6 +28,9 @@ from whoosh.fields import *
 from whoosh.index import create_in
 from whoosh.analysis import StandardAnalyzer
 from jsonbackend import JsonBackend
+from optparse import OptionParser
+
+po_directory = None
 
 class Search:
 
@@ -36,13 +39,14 @@ class Search:
     words = 0
     projects = 0
 
-    def process_projects(self):
+    def process_projects(self, po_directory):
 
         json = JsonBackend("../../src/projects.json")
         json.load()
 
         for project_dto in json.projects:
-            self._process_project(project_dto.name, project_dto.filename)
+            self._process_project(po_directory, project_dto.name, 
+                                  project_dto.filename)
             self.projects = self.projects + 1
             
         self.write_statistics()
@@ -57,9 +61,9 @@ class Search:
         html_file.write(html.encode('utf-8'))        
         html_file.close()
 
-    def _process_project(self, name, filename):
+    def _process_project(self, po_directory, name, filename):
 
-        full_filename = os.path.join("../../latest-memories/po/", filename)
+        full_filename = os.path.join(po_directory, filename)
         print "Processing: " + full_filename
         
         try:
@@ -92,7 +96,22 @@ class Search:
 
         ix = create_in(self.dir_name, schema)
         self.writer = ix.writer()
+        
+def read_parameters():
 
+    global po_directory
+
+    parser = OptionParser()
+
+    parser.add_option("-d", "--directory",
+                      action="store", type="string", dest="po_directory",
+                      default="../../latest-memories/po/",
+                      help="Directory to find the PO files")
+
+    (options, args) = parser.parse_args()
+
+    po_directory = options.po_directory
+    
 
 def main():
     '''
@@ -101,11 +120,14 @@ def main():
     '''
 
     print "Create Whoosh index from a PO file"
+    print "Use --help for assistance"
+
     start_time = time.time()
     
+    read_parameters()
     search = Search()
     search.create_index()
-    search.process_projects()
+    search.process_projects(po_directory)
     search.writer.commit()
     
     end_time = time.time() - start_time
