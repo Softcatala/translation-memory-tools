@@ -96,6 +96,7 @@ def load_projects_from_json():
     json = JsonBackend(projectsJson)
     json.load()
 
+    logging.info("Projects defined in json file " + str(len(json.projects)))
     for project_dto in json.projects:
 
         if (projectsNames is not None):
