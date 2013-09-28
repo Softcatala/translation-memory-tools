@@ -29,7 +29,7 @@ projects = Projects("tm.po")
 addSource = True
 projectsNames = None
 projectsJson = 'projects.json'
-
+only_all_projects_tm = None
 
 def init_logging():
 
@@ -50,6 +50,7 @@ def read_parameters():
     global addSource
     global projectsNames
     global projectsJson
+    global only_all_projects_tm
 
     parser = OptionParser()
     parser.add_option("-n", "--no-source",
@@ -67,6 +68,11 @@ def read_parameters():
                       help="Define the json file contains the project's " +
                       "definitions (default: projects.json)")
 
+    parser.add_option("-a", "--all",
+                      action="store_true", dest="only_all_projects_tm",
+                      help="Looks for already existing PO files in the " +
+                      " current directory and creates a new tm.po with all memories")
+                      
     (options, args) = parser.parse_args()
 
     addSource = options.addSource
@@ -78,9 +84,12 @@ def read_parameters():
         projectsNames = options.projectNames.split(",")
     else:
         projectsNames = None
+        
+    if (options.only_all_projects_tm is not None):
+        only_all_projects_tm = options.only_all_projects_tm
 
 
-def process_projects():
+def load_projects_from_json():
 
     global addSource
 
@@ -100,8 +109,6 @@ def process_projects():
 
         projects.add_project(project_dto, addSource)
 
-    projects.do()
-
 
 def main():
 
@@ -109,10 +116,15 @@ def main():
     print "Use --help for assistance"
 
     start_time = time.time()
-
     init_logging()
     read_parameters()
-    process_projects()
+    load_projects_from_json()
+
+    if (only_all_projects_tm is True):
+        projects.create_tm_for_all_projects()
+    else:
+        projects.do()
+
     projects.to_tmx()
     projects.statistics()
 
