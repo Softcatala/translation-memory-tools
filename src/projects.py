@@ -1,4 +1,5 @@
 #!/usr/bin/python2
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -47,14 +48,14 @@ class Projects:
         logging.debug(project_dto)
 
     def do(self):
-        '''Proces all projects''' 
+        '''Proces all projects'''
         for project in self.projects:
             project.do()
-            
+
         self.create_tm_for_all_projects()
-        
+
     def create_tm_for_all_projects(self):
-        '''Creates the TM memory for all projects''' 
+        '''Creates the TM memory for all projects'''
         for project in self.projects:
 
             if (os.path.isfile(self.tm_file)):

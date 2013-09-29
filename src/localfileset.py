@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -25,8 +26,8 @@ class LocalFileSet(FileSet):
     def do(self):
 
         self.create_tmp_directory()
-        
-        os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)        
+
+        os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -25,7 +26,7 @@ from downloadfile import DownloadFile
 class FileFileSet(FileSet):
 
     def do(self):
-    
+
         self.create_tmp_directory()
 
         # Download local file

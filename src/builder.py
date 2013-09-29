@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -72,11 +73,11 @@ def read_parameters():
                       action="store_true", dest="only_all_projects_tm",
                       help="Looks for already existing PO files in the " +
                       " current directory and creates a new tm.po with all memories")
-                      
+
     (options, args) = parser.parse_args()
 
     addSource = options.addSource
-    
+
     if (options.projectsJson is not None):
         projectsJson = options.projectsJson
 
@@ -84,7 +85,7 @@ def read_parameters():
         projectsNames = options.projectNames.split(",")
     else:
         projectsNames = None
-        
+
     if (options.only_all_projects_tm is not None):
         only_all_projects_tm = options.only_all_projects_tm
 
