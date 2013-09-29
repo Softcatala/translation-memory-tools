@@ -1,434 +1,433 @@
-
 {
-	"projects": {
-		"Header": {
-			"filename" : "header-tm.po",
-			"fileset": {
-				"header": {
-					"url" : "../source-pos/header/header.po",
-					"type": "local-file",
-					"target": "header.po"
-				}
-			}
-		},
-		"Recull": {
-			"filename" : "recull-tm.po",
-			"fileset": {
-				"recull": {
-					"url" : "../source-pos/recull/recull.po",
-					"type": "local-file",
-					"target": "recull.po"
-				}
-			}
-		},
-		"Mozilla": {
-			"filename" : "mozilla-tm.po",
+    "projects": {
+    "Header": {
+            "filename" : "header-tm.po",
+            "fileset": {
+                    "header": {
+                            "url" : "../source-pos/header/header.po",
+                            "type": "local-file",
+                            "target": "header.po"
+                    }
+            }
+    },
+    "Recull": {
+            "filename" : "recull-tm.po",
+            "fileset": {
+                    "recull": {
+                            "url" : "../source-pos/recull/recull.po",
+                            "type": "local-file",
+                            "target": "recull.po"
+                    }
+            }
+    },
+    "Mozilla": {
+            "filename" : "mozilla-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
-			"fileset": {
-				"mozilla": {
-					"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
-					"type": "compressed",
-					"target": "mozilla.zip",
-					"excluded" : "region.properties.po"
-				},
-				"mozilla-gaia": {
-					"url" : "http://pootle.softcatala.org/ca/gaia/export/zip",
-					"type": "compressed",
-					"target": "gaia.zip"
-				},
-				"mozilla-addons": {
-					"url" : "http://localize.mozilla.org/ca/amo/export/zip",
-					"type": "compressed",
-					"target": "add-ons.zip"
-				},
-				"browserid": {
-					"url" : "http://localize.mozilla.org/ca/browserid/export/zip",
-					"type": "compressed",
-					"target": "browserid.zip"
-				},
-				"firefox-home": {
-					"url" : "http://localize.mozilla.org/ca/fxhome/export/zip",
-					"type": "compressed",
-					"target": "fxhome.zip"
-				},
-				"firefox-input": {
-					"url" : "http://localize.mozilla.org/ca/input/export/zip",
-					"type": "compressed",
-					"target": "input.zip"
-				},
-				"firefox-hackasaurus": {
-					"url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",
-					"type": "compressed",
-					"target": "hackasaurus.zip"
-				},
-				"mozillians": {
-					"url" : "http://localize.mozilla.org/ca/mozillians/export/zip",
-					"type": "compressed",
-					"target": "mozillians.zip"
-				},
-				"firefox-sumo": {
-					"url" : "http://localize.mozilla.org/ca/sumo/export/zip",
-					"type": "compressed",
-					"target": "sumo.zip"
-				}
-			}
-		},
-		"gnome": {
-			"filename" : "gnome-tm.po",
-			"fileset": {
-				"gnome-ui": {
-					"url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/ui.tar.gz",
-					"type": "compressed",
-					"target": "gnome-ui.tar.gz"
-				},
-				"gnome-office": {
-					"url" : "http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz",
-					"type": "compressed",
-					"target": "gnome-office.tar.gz"
-				},
-				"gnome-extras": {
-					"url" : "http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz",
-					"type": "compressed",
-					"target": "gnome-extras.tar.gz"
-				},
-				"gnome-external": {
-					"url" : "http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz",
-					"type": "compressed",
-					"target": "gnome-external.tar.gz"
-				},
-				"gnome-infrastructure": {
-					"url" : "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz",
-					"type": "compressed",
-					"target": "gnome-infrastructure.tar.gz"
-				},
-				"gimp": {
-					"url" : "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz",
-					"type": "compressed",
-					"target": "gimp.tar.gz"
-				},
-				"gnome-inkscape": {
-					"url" : "lp:inkscape/po/ca.po",
-					"type": "bazaar",
-					"target": "ca.po"
-				},
-				"freedesktop": {
-					"url" : "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz",
-					"type": "compressed",
-					"target": "freesktop.tar.gz"
-				},
-				"olpc": {
-					"url" : "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz",
-					"type": "compressed",
-					"target": "olpc.tar.gz"
-				},
-				"gnome-doc": {
-					"url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/doc.tar.gz",
-					"type": "compressed",
-					"target": "gnome-doc.tar.gz"
-				},
-				"gnome-infrastructure-doc": {
-					"url" : "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
-					"type": "compressed",
-					"target": "gnome-infrastructure-doc.tar.gz"
-				},
-				"gnome-gimp-doc": {
-					"url" : "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz",
-					"type": "compressed",
-					"target": "gnome-gimp-doc.tar.gz"
-				},
-				"gnome-extras-doc": {
-					"url" : "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz",
-					"type": "compressed",
-					"target": "gnome-extras-doc.tar.gz"
-				},
-				"olpc-doc": {
-					"url" : "https://l10n.gnome.org/languages/ca/olpc/doc.tar.gz",
-					"type": "compressed",
-					"target": "olpc-doc.tar.gz"
-				}
-			}
-		},
-		"LibreOffice": {
-			"filename" : "libreoffice-tm.po",
-			"fileset": {
-				"UI": {
-					"url" : "https://translations.documentfoundation.org/ca/libo_ui/export/zip",
-					"type": "compressed",
-					"target": "libreoffice-ui.zip"
-				},
-				"Ajuda": {
-					"url" : "https://translations.documentfoundation.org/ca/libo_help/export/zip",
-					"type": "compressed",
-					"target": "libreoffice-help.zip"
-				},
-				"Lloc web": {
-					"url" : "https://translations.documentfoundation.org/ca/website/export/zip",
-					"type": "compressed",
-					"target": "website.zip"
-				}
-			}
-		},
-		"filezilla": {
-			"filename" : "filezilla-tm.po",
-			"fileset": {
-				"filezilla": {
-					"url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
-					"type": "compressed",
-					"target": "filezilla.zip"
-				}
-			}
-		},
-		"Abiword": {
-			"filename" : "abiword-tm.po",
-			"fileset": {
-				"abiword": {
-					"url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
-					"type": "file",
-					"target": "abiword-ca.po"
-				}
-			}
-		},
-		"VirtualBox": {
-			"filename" : "virtualbox-tm.po",
-			"fileset": {
-				"virtualbox": {
-					"url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
-					"type": "file",
-					"target": "virtualbox-ca.ts"
-				}
-			}
-		},
-		"VLC": {
-			"filename" : "vlc-tm.po",
-			"fileset": {
-				"VLC" : {
-					"url" : "https://www.transifex.com/projects/p/vlc-trans/",
-					"type": "transifex"
-				}
-			}
-		},
-		"GPGMail": {
-			"filename" : "pgptools-tm.po",
-			"fileset": {
-				"GPGMail" : {
-					"url" : "https://www.transifex.com/projects/p/GPGMail/",
-					"type": "transifex"
-				}
-			}
-		},
-		"Fedora": {
-			"filename" : "fedora-tm.po",
-			"fileset": {
-				"fedora": {
-					"url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/",
-					"type": "transifex"
-				}
-			}
-		},
-		"Ubuntu": {
-			"filename" : "ubuntu-tm.po",
-			"fileset": {
-				"ubuntu-software-center": {
-					"url" : "lp:ubuntu/software-center/po/ca.po",
-					"type": "bazaar",
-					"target": "ca.po"
-				},
-				"ubuntu-update-manager": {
-					"url" : "lp:ubuntu/update-manager/po/ca.po",
-					"type": "bazaar",
-					"target": "ca.po"
-				},
-				"ubuntu-release-upgrader": {
-					"url" : "lp:ubuntu/ubuntu-release-upgrader/po/ca.po",
-					"type": "bazaar",
-					"target": "ca.po"
-				},
-				"ubuntuone-control-panel": {
-					"url" : "lp:ubuntu/ubuntuone-control-panel/po/ca.po",
-					"type": "bazaar",
-					"target": "ca.po"
-				}
-			}
-		},
-		"Mailman": {
-			"filename" : "mailman-tm.po",
-			"fileset": {
-				"mailman": {
-					"url" : "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
-					"type": "bazaar",
-					"target": "ca.po"
-				}
-			}
-		},
-		"Pootle": {
-			"filename" : "pootle-tm.po",
-			"fileset": {
-				"Pootle": {
-					"url" : "http://pootle.locamotion.org/ca/pootle/export/zip",
-					"type": "compressed",
-					"target": "pootle.zip"
-				},
-				"virtaal": {
-					"url" : "http://pootle.locamotion.org/ca/virtaal/export/zip",
-					"type": "compressed",
-					"target": "virtaal.zip"
-				}
-			}
-		},
-		"Mandriva": {
-			"filename" : "mandriva-tm.po",
-			"fileset": {
-				"mandriva": {
-					"url" : "../source-pos/mandriva-po/*.po",
-					"type": "local-dir"
-				}
-			}
-		},
-		"Monodevelop": {
-			"filename" : "monodevelop-tm.po",
-			"fileset": {
-				"monodevelop": {
-					"url" : "https://raw.github.com/mono/monodevelop/master/main/po/ca.po",
-            		"type": "file",
-					"target": "monodevelop-ca.po"
-				}
-			}
-		},
-		"Debian": {
-			"filename" : "debian-tm.po",
-			"web" : "http://www.debian.org/international/l10n/po/ca",
-			"fileset": {
-				"apt": {
-					"url" : "http://i18n.debian.org/material/po/unstable/main/a/apt/po/apt_0.9.11.2_ca.po.gz",
-					"type": "compressed",
-					"target": "apt_ca.po.gz"
-				},
-				"dpkg": {
-					"url" : "http://i18n.debian.org/material/po/unstable/main/d/dpkg/po/dpkg_1.17.1_ca.po.gz",
-					"type": "compressed",
-					"target": "dpkg.gz"
-				},
-				"shadow": {
-					"url" : "http://i18n.debian.org/material/po/unstable/main/s/shadow/po/shadow_1%3a4.1.5.1-1_ca.po.gz",
-					"type": "compressed",
-					"target": "shadow.gz"
-				},
-				"aptitude": {
-					"url" : "http://i18n.debian.org/material/po/unstable/main/a/aptitude/po/aptitude_0.6.8.2-1.2_ca.po.gz",
-					"type": "compressed",
-					"target": "aptitude.gz"
-				},
-				"po4a": {
-					"url" : "http://i18n.debian.org/material/po/unstable/main/p/po4a/po/bin/po4a_0.45-1_ca.po.gz",
-					"type": "compressed",
-					"target": "po4a.gz"
-				}
-			}
-        },
-		"OpenSuse": {
-			"filename" : "opensuse-tm.po",
-			"fileset": {
-				"yast" : {
-					"url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/yast/ca/po",
-					"type": "subversion"
-				},
-				"webyast" : {
-					"url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/webyast/ca/po",
-					"type": "subversion"
-				},
-				"lcn" : {
-					"url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/lcn/ca/po",
-					"type": "subversion"
-				}
-			}
-		},
-		"Kde": {
-			"filename" : "kde-tm.po",
-			"fileset": {
-				"kde" : {
-					"url" : "http://ftp.kde.org/stable/4.9.5/src/kde-l10n/kde-l10n-ca-4.9.5.tar.xz",
-					"type": "compressed",
-					"target": "kde-l10n.tar.xz"
-				}
-			}
-		},
-		"gnutools": {
-			"filename" : "gnutools-tm.po",
-			"fileset": {
-				"gnuetools" : {
-					"url" : "http://translationproject.org/team/ca.html",
-					"type": "crawl",
-					"pattern" : "http://.*?/ca/.*?"
-				}
-			}
-		},
-		"Joomla": {
-			"filename" : "joomla-tm.po",
-			"fileset": {
-				"Joomla" : {
-					"url" : "https://www.transifex.com/projects/p/ct_joomla/",
-					"type": "transifex"
-				}
-			}
-		},
-		"LinuxMint": {
-			"filename" : "linuxmint-tm.po",
-			"comment" : "Files obtained from http://packages.linuxmint.com/list.php?release=Olivia since cannot be downloaded from https://translations.launchpad.net/linuxmint/latest/+lang/ca",
-			"fileset": {
-				"Cinnamon" : {
-					"url" : "http://packages.linuxmint.com/pool/main/c/cinnamon/cinnamon_1.8.8%2bolivia.tar.gz",
-					"type": "compressed",
-                    "pattern" : "*cinnamon-ca.po",
-					"target": "cinnamon.tar.gz"
-				},
-				"Nemo" : {
-					"url" : "http://packages.linuxmint.com/pool/main/n/nemo/nemo_1.8.3%2bolivia.tar.gz",
-					"type": "compressed",
-                    "pattern" : "*nemo-ca.po",
-					"target": "nemo.tar.gz"
-				}
-			}
-		},
-		"Chromium": {
-			"filename" : "chromium-tm.po",
-			"fileset": {
-				"chromium": {
-					"url" : "lp:chromium-browser/translations",
-					"type" : "bazaar",
-					"pattern" : ".*?ca.po"
-				}
-			}
-		},
-		"Drupal": {
-			"filename" : "drupal-tm.po",
-			"comment" : "See https://localize.drupal.org/download",
-			"fileset": {
-				"drupal": {
-					"url" : "http://ftp.drupal.org/files/translations/7.x/drupal/drupal-7.0-alpha1.ca.po",
-					"type": "file",
-					"target": "drupal-ca.po"
-				}
-			}
-		},
-		"WordPress": {
-			"filename" : "wordpress-tm.po",
-			"projectweb" : "http://ca.wordpress.org/",
-			"fileset": {
-				"yast" : {
-					"url" : "http://i18n.svn.wordpress.org/ca/trunk/next-version/messages/",
-					"type": "subversion"
-				}
+            "fileset": {
+                    "mozilla": {
+                            "url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
+                            "type": "compressed",
+                            "target": "mozilla.zip",
+                            "excluded" : "region.properties.po"
+                    },
+                    "mozilla-gaia": {
+                            "url" : "http://pootle.softcatala.org/ca/gaia/export/zip",
+                            "type": "compressed",
+                            "target": "gaia.zip"
+                    },
+                    "mozilla-addons": {
+                            "url" : "http://localize.mozilla.org/ca/amo/export/zip",
+                            "type": "compressed",
+                            "target": "add-ons.zip"
+                    },
+                    "browserid": {
+                            "url" : "http://localize.mozilla.org/ca/browserid/export/zip",
+                            "type": "compressed",
+                            "target": "browserid.zip"
+                    },
+                    "firefox-home": {
+                            "url" : "http://localize.mozilla.org/ca/fxhome/export/zip",
+                            "type": "compressed",
+                            "target": "fxhome.zip"
+                    },
+                    "firefox-input": {
+                            "url" : "http://localize.mozilla.org/ca/input/export/zip",
+                            "type": "compressed",
+                            "target": "input.zip"
+                    },
+                    "firefox-hackasaurus": {
+                            "url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",
+                            "type": "compressed",
+                            "target": "hackasaurus.zip"
+                    },
+                    "mozillians": {
+                            "url" : "http://localize.mozilla.org/ca/mozillians/export/zip",
+                            "type": "compressed",
+                            "target": "mozillians.zip"
+                    },
+                    "firefox-sumo": {
+                            "url" : "http://localize.mozilla.org/ca/sumo/export/zip",
+                            "type": "compressed",
+                            "target": "sumo.zip"
+                    }
             }
-		},
-		"Blender": {
-			"filename" : "blender-tm.po",
-			"projectweb" : "http://www.blender.cat/",
-			"fileset": {
-				"yast" : {
-					"url" : "https://svn.blender.org/svnroot/bf-translations/branches/ca/",
-					"type": "subversion"
-				}
+    },
+    "gnome": {
+            "filename" : "gnome-tm.po",
+            "fileset": {
+                    "gnome-ui": {
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-ui.tar.gz"
+                    },
+                    "gnome-office": {
+                            "url" : "http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-office.tar.gz"
+                    },
+                    "gnome-extras": {
+                            "url" : "http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-extras.tar.gz"
+                    },
+                    "gnome-external": {
+                            "url" : "http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-external.tar.gz"
+                    },
+                    "gnome-infrastructure": {
+                            "url" : "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-infrastructure.tar.gz"
+                    },
+                    "gimp": {
+                            "url" : "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gimp.tar.gz"
+                    },
+                    "gnome-inkscape": {
+                            "url" : "lp:inkscape/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    },
+                    "freedesktop": {
+                            "url" : "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "freesktop.tar.gz"
+                    },
+                    "olpc": {
+                            "url" : "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "olpc.tar.gz"
+                    },
+                    "gnome-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-doc.tar.gz"
+                    },
+                    "gnome-infrastructure-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-infrastructure-doc.tar.gz"
+                    },
+                    "gnome-gimp-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-gimp-doc.tar.gz"
+                    },
+                    "gnome-extras-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-extras-doc.tar.gz"
+                    },
+                    "olpc-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/olpc/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "olpc-doc.tar.gz"
+                    }
             }
-		}
-	}	
+    },
+    "LibreOffice": {
+            "filename" : "libreoffice-tm.po",
+            "fileset": {
+                    "UI": {
+                            "url" : "https://translations.documentfoundation.org/ca/libo_ui/export/zip",
+                            "type": "compressed",
+                            "target": "libreoffice-ui.zip"
+                    },
+                    "Ajuda": {
+                            "url" : "https://translations.documentfoundation.org/ca/libo_help/export/zip",
+                            "type": "compressed",
+                            "target": "libreoffice-help.zip"
+                    },
+                    "Lloc web": {
+                            "url" : "https://translations.documentfoundation.org/ca/website/export/zip",
+                            "type": "compressed",
+                            "target": "website.zip"
+                    }
+            }
+    },
+    "filezilla": {
+            "filename" : "filezilla-tm.po",
+            "fileset": {
+                    "filezilla": {
+                            "url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
+                            "type": "compressed",
+                            "target": "filezilla.zip"
+                    }
+            }
+    },
+    "Abiword": {
+            "filename" : "abiword-tm.po",
+            "fileset": {
+                    "abiword": {
+                            "url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
+                            "type": "file",
+                            "target": "abiword-ca.po"
+                    }
+            }
+    },
+    "VirtualBox": {
+            "filename" : "virtualbox-tm.po",
+            "fileset": {
+                    "virtualbox": {
+                            "url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
+                            "type": "file",
+                            "target": "virtualbox-ca.ts"
+                    }
+            }
+    },
+    "VLC": {
+            "filename" : "vlc-tm.po",
+            "fileset": {
+                    "VLC" : {
+                            "url" : "https://www.transifex.com/projects/p/vlc-trans/",
+                            "type": "transifex"
+                    }
+            }
+    },
+    "GPGMail": {
+            "filename" : "pgptools-tm.po",
+            "fileset": {
+                    "GPGMail" : {
+                            "url" : "https://www.transifex.com/projects/p/GPGMail/",
+                            "type": "transifex"
+                    }
+            }
+    },
+    "Fedora": {
+            "filename" : "fedora-tm.po",
+            "fileset": {
+                    "fedora": {
+                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/",
+                            "type": "transifex"
+                    }
+            }
+    },
+    "Ubuntu": {
+            "filename" : "ubuntu-tm.po",
+            "fileset": {
+                    "ubuntu-software-center": {
+                            "url" : "lp:ubuntu/software-center/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    },
+                    "ubuntu-update-manager": {
+                            "url" : "lp:ubuntu/update-manager/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    },
+                    "ubuntu-release-upgrader": {
+                            "url" : "lp:ubuntu/ubuntu-release-upgrader/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    },
+                    "ubuntuone-control-panel": {
+                            "url" : "lp:ubuntu/ubuntuone-control-panel/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    }
+            }
+    },
+    "Mailman": {
+            "filename" : "mailman-tm.po",
+            "fileset": {
+                    "mailman": {
+                            "url" : "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    }
+            }
+    },
+    "Pootle": {
+            "filename" : "pootle-tm.po",
+            "fileset": {
+                    "Pootle": {
+                            "url" : "http://pootle.locamotion.org/ca/pootle/export/zip",
+                            "type": "compressed",
+                            "target": "pootle.zip"
+                    },
+                    "virtaal": {
+                            "url" : "http://pootle.locamotion.org/ca/virtaal/export/zip",
+                            "type": "compressed",
+                            "target": "virtaal.zip"
+                    }
+            }
+    },
+    "Mandriva": {
+            "filename" : "mandriva-tm.po",
+            "fileset": {
+                    "mandriva": {
+                            "url" : "../source-pos/mandriva-po/*.po",
+                            "type": "local-dir"
+                    }
+            }
+    },
+    "Monodevelop": {
+            "filename" : "monodevelop-tm.po",
+            "fileset": {
+                    "monodevelop": {
+                            "url" : "https://raw.github.com/mono/monodevelop/master/main/po/ca.po",
+            "type": "file",
+                            "target": "monodevelop-ca.po"
+                    }
+            }
+    },
+    "Debian": {
+            "filename" : "debian-tm.po",
+            "web" : "http://www.debian.org/international/l10n/po/ca",
+            "fileset": {
+                    "apt": {
+                            "url" : "http://i18n.debian.org/material/po/unstable/main/a/apt/po/apt_0.9.11.2_ca.po.gz",
+                            "type": "compressed",
+                            "target": "apt_ca.po.gz"
+                    },
+                    "dpkg": {
+                            "url" : "http://i18n.debian.org/material/po/unstable/main/d/dpkg/po/dpkg_1.17.1_ca.po.gz",
+                            "type": "compressed",
+                            "target": "dpkg.gz"
+                    },
+                    "shadow": {
+                            "url" : "http://i18n.debian.org/material/po/unstable/main/s/shadow/po/shadow_1%3a4.1.5.1-1_ca.po.gz",
+                            "type": "compressed",
+                            "target": "shadow.gz"
+                    },
+                    "aptitude": {
+                            "url" : "http://i18n.debian.org/material/po/unstable/main/a/aptitude/po/aptitude_0.6.8.2-1.2_ca.po.gz",
+                            "type": "compressed",
+                            "target": "aptitude.gz"
+                    },
+                    "po4a": {
+                            "url" : "http://i18n.debian.org/material/po/unstable/main/p/po4a/po/bin/po4a_0.45-1_ca.po.gz",
+                            "type": "compressed",
+                            "target": "po4a.gz"
+                    }
+            }
+    },
+    "OpenSuse": {
+            "filename" : "opensuse-tm.po",
+            "fileset": {
+                    "yast" : {
+                            "url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/yast/ca/po",
+                            "type": "subversion"
+                    },
+                    "webyast" : {
+                            "url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/webyast/ca/po",
+                            "type": "subversion"
+                    },
+                    "lcn" : {
+                            "url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/lcn/ca/po",
+                            "type": "subversion"
+                    }
+            }
+    },
+    "Kde": {
+            "filename" : "kde-tm.po",
+            "fileset": {
+                    "kde" : {
+                            "url" : "http://ftp.kde.org/stable/4.9.5/src/kde-l10n/kde-l10n-ca-4.9.5.tar.xz",
+                            "type": "compressed",
+                            "target": "kde-l10n.tar.xz"
+                    }
+            }
+    },
+    "gnutools": {
+            "filename" : "gnutools-tm.po",
+            "fileset": {
+                    "gnuetools" : {
+                            "url" : "http://translationproject.org/team/ca.html",
+                            "type": "crawl",
+                            "pattern" : "http://.*?/ca/.*?"
+                    }
+            }
+    },
+    "Joomla": {
+            "filename" : "joomla-tm.po",
+            "fileset": {
+                    "Joomla" : {
+                            "url" : "https://www.transifex.com/projects/p/ct_joomla/",
+                            "type": "transifex"
+                    }
+            }
+    },
+    "LinuxMint": {
+            "filename" : "linuxmint-tm.po",
+            "comment" : "Files obtained from http://packages.linuxmint.com/list.php?release=Olivia since cannot be downloaded from https://translations.launchpad.net/linuxmint/latest/+lang/ca",
+            "fileset": {
+                    "Cinnamon" : {
+                            "url" : "http://packages.linuxmint.com/pool/main/c/cinnamon/cinnamon_1.8.8%2bolivia.tar.gz",
+                            "type": "compressed",
+        "pattern" : "*cinnamon-ca.po",
+                            "target": "cinnamon.tar.gz"
+                    },
+                    "Nemo" : {
+                            "url" : "http://packages.linuxmint.com/pool/main/n/nemo/nemo_1.8.3%2bolivia.tar.gz",
+                            "type": "compressed",
+        "pattern" : "*nemo-ca.po",
+                            "target": "nemo.tar.gz"
+                    }
+            }
+    },
+    "Chromium": {
+            "filename" : "chromium-tm.po",
+            "fileset": {
+                    "chromium": {
+                            "url" : "lp:chromium-browser/translations",
+                            "type" : "bazaar",
+                            "pattern" : ".*?ca.po"
+                    }
+            }
+    },
+    "Drupal": {
+            "filename" : "drupal-tm.po",
+            "comment" : "See https://localize.drupal.org/download",
+            "fileset": {
+                    "drupal": {
+                            "url" : "http://ftp.drupal.org/files/translations/7.x/drupal/drupal-7.0-alpha1.ca.po",
+                            "type": "file",
+                            "target": "drupal-ca.po"
+                    }
+            }
+    },
+    "WordPress": {
+            "filename" : "wordpress-tm.po",
+            "projectweb" : "http://ca.wordpress.org/",
+            "fileset": {
+                    "yast" : {
+                            "url" : "http://i18n.svn.wordpress.org/ca/trunk/next-version/messages/",
+                            "type": "subversion"
+                    }
+            }
+    },
+    "Blender": {
+            "filename" : "blender-tm.po",
+            "projectweb" : "http://www.blender.cat/",
+            "fileset": {
+                    "yast" : {
+                            "url" : "https://svn.blender.org/svnroot/bf-translations/branches/ca/",
+                            "type": "subversion"
+                    }
+                }
+            }
+    }
 }
