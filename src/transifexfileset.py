@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -15,12 +16,12 @@
 # License along with this program; if not, write to the
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
+from fileset import FileSet
+from findfiles import FindFiles
+from urlparse import urlparse
 
 import os
 
-from urlparse import urlparse
-from fileset import FileSet
-from findfiles import FindFiles
 
 class TransifexFileSet(FileSet):
 
@@ -29,8 +30,8 @@ class TransifexFileSet(FileSet):
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
-            if (filename.endswith('en.po') or filename.endswith('en.ts')):
-                os.system("rm -f " + filename)
+            if filename.endswith('en.po') or filename.endswith('en.ts'):
+                os.remove(filename)
 
     def do(self):
 
@@ -40,14 +41,14 @@ class TransifexFileSet(FileSet):
         os.chdir(self.temp_dir)
 
         url = urlparse(self.url)
-        uri = url.scheme + "://" + url.netloc
-        os.system("tx init --host " + uri)
-        os.system("tx set --auto-remote " + self.url)
+        uri = '{0}://{1}'.format(url.scheme, url.netloc)
+        os.system('tx init --host {0}'.format(uri))
+        os.system('tx set --auto-remote {0}'.format(self.url))
 
         # To be able to process files with no English source (.strings, .xml,
         # etc) we pull the English files too and then we delete the ones that
         # include source and target
-        os.system("tx pull -f -lca,en")
+        os.system('tx pull -f -lca,en')
         os.chdir(prevdir)
         self._remove_non_translation_only_files()
 
