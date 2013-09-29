@@ -12,6 +12,7 @@
     },
     "Recull": {
             "filename" : "recull-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Recull_de_termes",
             "fileset": {
                     "recull": {
                             "url" : "../source-pos/recull/recull.po",
@@ -74,6 +75,7 @@
     },
     "gnome": {
             "filename" : "gnome-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/GNOME",
             "fileset": {
                     "gnome-ui": {
                             "url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/ui.tar.gz",
@@ -149,6 +151,7 @@
     },
     "LibreOffice": {
             "filename" : "libreoffice-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/LibreOffice",
             "fileset": {
                     "UI": {
                             "url" : "https://translations.documentfoundation.org/ca/libo_ui/export/zip",
@@ -169,6 +172,7 @@
     },
     "filezilla": {
             "filename" : "filezilla-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
             "fileset": {
                     "filezilla": {
                             "url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
@@ -179,6 +183,7 @@
     },
     "Abiword": {
             "filename" : "abiword-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Abiword",
             "fileset": {
                     "abiword": {
                             "url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
@@ -189,6 +194,7 @@
     },
     "VirtualBox": {
             "filename" : "virtualbox-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/VirtualBox",
             "fileset": {
                     "virtualbox": {
                             "url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
@@ -199,6 +205,7 @@
     },
     "VLC": {
             "filename" : "vlc-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/VLC",
             "fileset": {
                     "VLC" : {
                             "url" : "https://www.transifex.com/projects/p/vlc-trans/",
@@ -208,6 +215,7 @@
     },
     "GPGMail": {
             "filename" : "pgptools-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/GPGTools",
             "fileset": {
                     "GPGMail" : {
                             "url" : "https://www.transifex.com/projects/p/GPGMail/",
@@ -217,6 +225,7 @@
     },
     "Fedora": {
             "filename" : "fedora-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Fedora",
             "fileset": {
                     "fedora": {
                             "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/",
@@ -226,6 +235,7 @@
     },
     "Ubuntu": {
             "filename" : "ubuntu-tm.po",
+            "projectweb" : "https://wiki.ubuntu.com/UbuntuCatalanTranslators",
             "fileset": {
                     "ubuntu-software-center": {
                             "url" : "lp:ubuntu/software-center/po/ca.po",
@@ -251,6 +261,7 @@
     },
     "Mailman": {
             "filename" : "mailman-tm.po",
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mailman",
             "fileset": {
                     "mailman": {
                             "url" : "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
@@ -295,7 +306,7 @@
     },
     "Debian": {
             "filename" : "debian-tm.po",
-            "web" : "http://www.debian.org/international/l10n/po/ca",
+            "projectweb" : "http://www.debian.org/international/l10n/po/ca",
             "fileset": {
                     "apt": {
                             "url" : "http://i18n.debian.org/material/po/unstable/main/a/apt/po/apt_0.9.11.2_ca.po.gz",
@@ -326,6 +337,7 @@
     },
     "OpenSuse": {
             "filename" : "opensuse-tm.po",
+            "projectweb" : "http://en.opensuse.org/openSUSE:Localization_team",
             "fileset": {
                     "yast" : {
                             "url" : "https://svn.opensuse.org/svn/opensuse-i18n/trunk/yast/ca/po",
@@ -343,6 +355,7 @@
     },
     "Kde": {
             "filename" : "kde-tm.po",
+            "projectweb" : "http://cat.kde.org/",
             "fileset": {
                     "kde" : {
                             "url" : "http://ftp.kde.org/stable/4.9.5/src/kde-l10n/kde-l10n-ca-4.9.5.tar.xz",
@@ -353,6 +366,7 @@
     },
     "gnutools": {
             "filename" : "gnutools-tm.po",
+            "projectweb" : "ttp://translationproject.org/team/ca.html",
             "fileset": {
                     "gnuetools" : {
                             "url" : "http://translationproject.org/team/ca.html",
@@ -363,6 +377,7 @@
     },
     "Joomla": {
             "filename" : "joomla-tm.po",
+            "projectweb" : "http://community.joomla.org/translations/joomla-16-translations.html#ca-es",
             "fileset": {
                     "Joomla" : {
                             "url" : "https://www.transifex.com/projects/p/ct_joomla/",
@@ -372,24 +387,26 @@
     },
     "LinuxMint": {
             "filename" : "linuxmint-tm.po",
+            "projectweb" : "https://launchpad.net/~linuxmint-translation-team-catalan",
             "comment" : "Files obtained from http://packages.linuxmint.com/list.php?release=Olivia since cannot be downloaded from https://translations.launchpad.net/linuxmint/latest/+lang/ca",
             "fileset": {
                     "Cinnamon" : {
                             "url" : "http://packages.linuxmint.com/pool/main/c/cinnamon/cinnamon_1.8.8%2bolivia.tar.gz",
                             "type": "compressed",
-        "pattern" : "*cinnamon-ca.po",
+                            "pattern" : "*cinnamon-ca.po",
                             "target": "cinnamon.tar.gz"
                     },
                     "Nemo" : {
                             "url" : "http://packages.linuxmint.com/pool/main/n/nemo/nemo_1.8.3%2bolivia.tar.gz",
                             "type": "compressed",
-        "pattern" : "*nemo-ca.po",
+                            "pattern" : "*nemo-ca.po",
                             "target": "nemo.tar.gz"
                     }
             }
     },
     "Chromium": {
             "filename" : "chromium-tm.po",
+            "projectweb" : "https://translations.launchpad.net/chromium-browser/translations/+lang/ca",
             "fileset": {
                     "chromium": {
                             "url" : "lp:chromium-browser/translations",
@@ -400,6 +417,7 @@
     },
     "Drupal": {
             "filename" : "drupal-tm.po",
+            "projectweb" : "https://drupal.org/project/ca",
             "comment" : "See https://localize.drupal.org/download",
             "fileset": {
                     "drupal": {
