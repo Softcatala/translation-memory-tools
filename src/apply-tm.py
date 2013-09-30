@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -17,13 +18,30 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from downloadfile import DownloadFile
+from findfiles import FindFiles
+from shtuil import rmtree
+from shutil import move
+
 import logging
-import orderdict
+import os
 
-from fileset import *
 
-temp_dir = "./tmp"
-output_dir = "./gnome"
+logfile = 'apply-tm.log'
+temp_dir = './tmp'
+output_dir = './gnome'
+
+GNOME_VERSION = '3-8'
+GNOME_URL = 'https://l10n.gnome.org/languages/ca'
+GNOME_SETS = (
+    '{0}/gnome-{1}/ui.tar.gz'.format(GNOME_URL, GNOME_VERSION),
+    '{0}/gnome-extras/ui.tar.gz'.format(GNOME_URL),
+    '{0}/gnome-office/ui.tar.gz'.format(GNOME_URL),
+    '{0}/external-deps/ui.tar.gz'.format(GNOME_URL),
+    '{0}/gnome-infrastructure/ui.tar.gz'.format(GNOME_URL),
+    '{0}/gnome-gimp/ui.tar.gz'.format(GNOME_URL),
+)
+
 
 def process(url):
 
@@ -32,10 +50,10 @@ def process(url):
 
     download = DownloadFile()
     download.GetFile(url, filename)
-    logging.info("Downloaded " + url);
+    logging.info('Downloaded {0}'.format(url))
 
     # Uncompress
-    os.system("tar -xvf " + filename + " -C " + temp_dir + " > /dev/null")
+    os.system('tar -xvf {0} -C {1}'.format(filename, temp_dir))
 
     # Apply tm
     findFiles = FindFiles()
@@ -44,8 +62,12 @@ def process(url):
 
         try:
 
-            tmfilename = os.path.dirname(filename) + "/tm-" + os.path.basename(filename)
-            command = "msgmerge -N " + filename + " " + filename + " -C latest-nosource/tm.po > " + tmfilename + " 2> /dev/null"
+            tmfilename = '{0}/tm-{1}'.format(
+                os.path.dirname(filename),
+                os.path.basename(filename)
+            )
+            command = 'msgmerge -N {0} {0} -C latest-nosource/tm.po ' \
+                '> {1} 2> /dev/null'.format(filename, tmfilename)
             os.system(command)
             logging.info(command)
 
@@ -55,54 +77,59 @@ def process(url):
             intranslated = len(infile.translated_entries())
             tmtranslated = len(tmfile.translated_entries())
 
-            if (tmtranslated > intranslated + 20):
+            if tmtranslated > intranslated + 20:
                 new = tmtranslated - intranslated
-                print filename + " original:", intranslated, ",tm:", tmtranslated, "new translated", new
-                dfilename = os.path.dirname(filename) + "/diff-" + os.path.basename(filename)
-                command = "diff -u " + filename + " " + tmfilename + " >" + dfilename
+                print '{0} original: {1} , tm: {2} new translated {3}'.format(
+                    filename,
+                    intranslated,
+                    tmtranslated,
+                    new
+                )
+                dfilename = '{0}/diff-{1}'.format(
+                    os.path.dirname(filename),
+                    os.path.basename(filename)
+                )
+                command = 'diff -u {0} {1} > {2}'.format(
+                    filename,
+                    tmfilename,
+                    dfilename
+                )
                 os.system(command)
-                logging.info(command);
+                logging.info(command)
                 newtranslated += new
-                os.system("mv " + filename + " " + output_dir)
-                os.system("mv " + tmfilename + " " + output_dir)
-                os.system("mv " + dfilename + " " + output_dir)
+                move(filename, output_dir)
+                move(tmfilename, output_dir)
+                move(dfilename, output_dir)
             else:
-                os.system("rm -f " + filename)
-                os.system("rm -f " + tmfilename)
+                os.remove(filename)
+                os.remove(tmfilename)
 
         except Exception as detail:
-            print "Cannot complete " + filename
-            logging.error("Cannot complete " + filename)
+            msg = 'Cannot complete {0}'.format(filename)
+            print msg
+            logging.error(msg)
             logging.error(detail)
 
     return newtranslated
 
+
 def initLogging():
+    if os.path.isfile(logfile):
+        os.remove(logfile)
 
-    logfile = "apply-tm.log"
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
 
-    if (os.path.isfile(logfile)):
-        os.system("rm " + logfile)
 
-    logging.basicConfig(filename=logfile,level=logging.DEBUG)
-
-def main():
-
+if __name__ == '__main__':
     initLogging()
+
+    rmtree(temp_dir)
+    os.makedirs(temp_dir)
+    rmtree(output_dir)
+    os.makedirs(output_dir)
+
     newtranslated = 0
+    for gnome_set in GNOME_SETS:
+        newtranslated += process(gnome_set)
 
-    os.system("rm -r -f " + temp_dir)
-    os.system("mkdir " + temp_dir)
-    os.system("rm -r -f " + output_dir)
-    os.system("mkdir " + output_dir)
-
-    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-3-8/ui.tar.gz')
-    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz')
-    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz')
-    newtranslated += process('http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz')
-    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz')
-    newtranslated += process('http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz')
-    print "Total new strings", newtranslated
-
-if __name__ == "__main__":
-    main()
+    print 'Total new strings {0}'.format(newtranslated)

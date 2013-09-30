@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -81,7 +82,7 @@ class FileSet():
             logging.info("convert: " + dirName)
             filename = dirName + "/strings-ca.po"
             os.system("prop2po -t " + dirName + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
-            
+
     def convert_ini_files_to_po(self):
 
         findFiles = FindFiles()
@@ -132,11 +133,10 @@ class FileSet():
 
         os.system("rm -f " + localtm)
         self._clean_up()
-        
+
     def create_tmp_directory(self):
         os.system("rm -f -r " + self.temp_dir)
         os.system("mkdir " + self.temp_dir)
-        
+
     def remove_tmp_directory(self):
         os.system("rm -f -r " + self.temp_dir)
-

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -15,10 +16,13 @@
 # License along with this program; if not, write to the
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
+from fileset import FileSet
 
 import os
 
-from fileset import FileSet
+
+CMD = 'cd {0} && svn co --non-recursive --trust-server-cert ' \
+    '--non-interactive {1}'
 
 
 class SubversionFileSet(FileSet):
@@ -26,8 +30,8 @@ class SubversionFileSet(FileSet):
     def do(self):
 
         self.create_tmp_directory()
-        os.system("cd " + self.temp_dir + "&& svn co --non-recursive --trust-server-cert --non-interactive "
-                  + self.url)
+        cmd = CMD.format(self.temp_dir, self.url)
+        os.system(cmd)
 
         self.convert_ts_files_to_po()
         self.add_comments()

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -79,7 +80,7 @@ class Project:
                 fs = CrawlFileSet(fileset.name, fileset.url, fileset.target)
                 fs.set_pattern(fileset.pattern)
             else:
-                logging.error("Unsupported filetype: " + fileset.type)    
+                logging.error("Unsupported filetype: " + fileset.type)
 
             self.add(fs)
             fs.add_excluded(fileset.excluded)
@@ -103,19 +104,19 @@ class Project:
         entries = 0
 
         try:
-        
+
             poFile = pofile(self.filename)
-            
+
             for entry in poFile:
                 string_words = entry.msgstr.split(' ')
                 words += len(string_words)
 
             entries = str(len(poFile.translated_entries()))
-            
+
         except Exception as detail:
             logging.error("Project. statistics exception " + self.filename)
             logging.error(detail)
-            
+
 
         finally:
             s = self.name + " project. " + str(entries)

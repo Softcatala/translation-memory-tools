@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
@@ -52,7 +53,7 @@ class CompressedFileSet(FileSet):
     def do(self):
 
         self.create_tmp_directory()
-        
+
         # Download po files
         download = DownloadFile()
         download.get_file(self.url, self.filename)
