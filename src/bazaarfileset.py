@@ -17,11 +17,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
-import re
-
 from fileset import FileSet
 from findfiles import FindFiles
+
+import os
+import re
 
 
 class BazaarFileSet(FileSet):
@@ -30,7 +30,7 @@ class BazaarFileSet(FileSet):
         self.pattern = pattern
 
     def _has_filename(self):
-        '''Used to identify if the file contains a path (/ and then .)'''
+        """Used to identify if the file contains a path (/ and then .)"""
         filename = self.url.split('/')[-1]
 
         if len(filename) > 0:
@@ -46,17 +46,19 @@ class BazaarFileSet(FileSet):
         for filename in findFiles.find(self.temp_dir, '*'):
 
             if re.match(self.pattern, filename) is None:
-                os.system("rm -f " + filename)
+                os.remove(filename)
 
     def do(self):
-
         self.create_tmp_directory()
 
         if self._has_filename() is True:
-            outfile = os.path.join(self.temp_dir, "ca.po")
-            os.system("bzr cat " + self.url + " > " + outfile)
+            outfile = os.path.join(self.temp_dir, 'ca.po')
+            os.system('bzr cat {0} > {1}'.format(self.url, outfile))
         else:
-            os.system("cd " + self.temp_dir + "&& bzr checkout --lightweight " + self.url)
+            os.system('cd {0} && bzr checkout --lightweight'.format(
+                self.temp_dir,
+                self.url
+            ))
             self._remove_non_translation_files()
 
         self.add_comments()
