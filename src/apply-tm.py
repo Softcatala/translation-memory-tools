@@ -25,6 +25,7 @@ from shutil import move
 
 import logging
 import os
+import polib
 
 
 logfile = 'apply-tm.log'
