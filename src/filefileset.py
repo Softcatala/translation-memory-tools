@@ -17,16 +17,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
-
-from fileset import FileSet
 from downloadfile import DownloadFile
+from fileset import FileSet
+
+import os
 
 
 class FileFileSet(FileSet):
 
     def do(self):
-
         self.create_tmp_directory()
 
         # Download local file
