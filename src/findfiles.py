@@ -17,15 +17,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
 import fnmatch
+import os
 
 
 class FindFiles:
 
     def find(self, directory, pattern):
 
-        filelist = list()
+        filelist = []
 
         for root, dirs, files in os.walk(directory):
             for basename in files:
