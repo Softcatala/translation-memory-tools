@@ -19,7 +19,6 @@
 
 from fileset import FileSet
 
-import os
 import shutil
 
 
