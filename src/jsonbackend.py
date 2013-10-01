@@ -17,40 +17,40 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from collections import OrderedDict
+
 import logging
 import json
-from collections import OrderedDict
 
 
 class ProjectDTO:
 
     def __init__(self):
-        self.name = ""
-        self.filename = ""
-        self.projectweb = ""
-        self.filesets = list()
-        return
+        self.name = ''
+        self.filename = ''
+        self.projectweb = ''
+        self.filesets = []
 
     def __str__(self):
-        return "ProjectDTO. Name: " + self.name + ", filename:" +\
-                self.filename + ", project web:" + self.projectweb
+        text = 'ProjectDTO. Name: {0}, filename: {1}, project web: {2}'
+        return text.format(self.name, self.filename, self.projectweb)
 
 
 class FileSetDTO:
 
     def __init__(self):
-        self.name = ""
-        self.url = ""
-        self.type = ""
-        self.excluded = ""
-        self.target = ""
-        self.pattern = ""
-        return
+        self.name = ''
+        self.url = ''
+        self.type = ''
+        self.excluded = ''
+        self.target = ''
+        self.pattern = ''
 
     def __str__(self):
-        return "FileSetDTO. Name: " + self.name + ", url:" + self.url + \
-               ", type:" + self.type + ", excluded:" + self.excluded + \
-               ", target:" + self.target + ", pattern:" + self.pattern
+        text = 'FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, ' \
+            'target: {4}, pattern: {5}'
+        return text.format(self.name, self.url, self.type, self.excluded,
+                           self.target, self.pattern)
 
 
 class JsonBackend:
@@ -58,10 +58,8 @@ class JsonBackend:
     def __init__(self, filename):
         self.filename = filename
         self.projects = list()
-        return
 
     def _process_fileset(self, project, project_value):
-
         for fileset_attr, fileset_value in project_value.iteritems():
             fileset = FileSetDTO()
             project.filesets.append(fileset)
@@ -70,26 +68,25 @@ class JsonBackend:
             self._process_file_set_attributes(fileset, fileset_value)
 
     def _process_file_set_attributes(self, fileset, fileset_value):
-
-        for fileset_properties_attr, fileset_properties_value in fileset_value.iteritems():
-            if (fileset_properties_attr == 'name'):
+        for fileset_properties_attr, fileset_properties_value in \
+                fileset_value.iteritems():
+            if fileset_properties_attr == 'name':
                 fileset.name = fileset_properties_value
-            elif (fileset_properties_attr == 'url'):
+            elif fileset_properties_attr == 'url':
                 fileset.url = fileset_properties_value
-            elif (fileset_properties_attr == 'type'):
+            elif fileset_properties_attr == 'type':
                 fileset.type = fileset_properties_value
-            elif (fileset_properties_attr == 'target'):
+            elif fileset_properties_attr == 'target':
                 fileset.target = fileset_properties_value
-            elif (fileset_properties_attr == 'excluded'):
+            elif fileset_properties_attr == 'excluded':
                 fileset.excluded = fileset_properties_value
-            elif (fileset_properties_attr == 'pattern'):
+            elif fileset_properties_attr == 'pattern':
                 fileset.pattern = fileset_properties_value
             else:
-                logging.error("Field '" + fileset_properties_attr +
-                              "' no recognized")
+                msg = 'Field \'{0}\' not recognized'
+                logging.error(msg.format(fileset_properties_attr))
 
     def load(self):
-
         json_data = open(self.filename)
         data = json.load(json_data, object_pairs_hook=OrderedDict)
 
@@ -101,11 +98,11 @@ class JsonBackend:
 
             #Enum project sets
             for project_attr, project_value in value.iteritems():
-                if (project_attr == 'filename'):
+                if project_attr == 'filename':
                     project.filename = project_value
-                elif (project_attr == 'fileset'):
+                elif project_attr == 'fileset':
                     self._process_fileset(project, project_value)
-                elif (project_attr == 'projectweb'):
+                elif project_attr == 'projectweb':
                     project.projectweb = project_value
 
         json_data.close()
