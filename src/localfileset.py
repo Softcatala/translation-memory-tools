@@ -17,20 +17,21 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
 from fileset import FileSet
+
+import os
+import shutil
 
 
 class LocalFileSet(FileSet):
 
     def do(self):
-
         self.create_tmp_directory()
 
-        os.system("cp " + self.url + " " + self.temp_dir + "/" + self.filename)
+        shutil.copy(self.url, '{0}/{1}'.format(self.temp_dir, self.filename))
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()
 
-        os.system("rm -f " + self.filename)
+        os.remove(self.filename)
         self.remove_tmp_directory()

@@ -19,21 +19,21 @@
 
 import os
 import polib
+import shutil
 
 
 class POFile:
 
     def add_comment_to_all_entries(self, filename, comment):
+        bakfile = filename + '.bak'
 
-        bakfile = filename + ".bak"
-
-        os.system("cp " + filename + " " + bakfile)
+        shutil.copy(filename, bakfile)
 
         input_po = polib.pofile(bakfile)
 
         for entry in input_po:
             if len(entry.tcomment) > 0:
-                entry.tcomment = comment + "\n" + entry.tcomment
+                entry.tcomment = '{0}\n{1}'.format(comment, entry.tcomment)
             else:
                 entry.tcomment = comment
 
