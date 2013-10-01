@@ -111,7 +111,8 @@ def load_projects_from_json():
     json = JsonBackend(projectsJson)
     json.load()
 
-    logging.info('Projects defined in json file ' + str(len(json.projects)))
+    msg = 'Projects defined in json file {0}'.format(len(json.projects))
+    logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
 
