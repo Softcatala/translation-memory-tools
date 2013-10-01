@@ -18,26 +18,27 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import logging
-import time
-import os
-
+from jsonbackend import JsonBackend
 from optparse import OptionParser
 from projects import Projects
-from jsonbackend import JsonBackend
 
-projects = Projects("tm.po")
+import logging
+import os
+import time
+
+
+projects = Projects('tm.po')
 addSource = True
 projectsNames = None
 projectsJson = 'projects.json'
 only_all_projects_tm = None
 
+
 def init_logging():
+    logfile = 'builder.log'
 
-    logfile = "builder.log"
-
-    if (os.path.isfile(logfile)):
-        os.system("rm " + logfile)
+    if os.path.isfile(logfile):
+        os.remove(logfile)
 
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     logger = logging.getLogger('')
@@ -47,82 +48,95 @@ def init_logging():
 
 
 def read_parameters():
-
     global addSource
     global projectsNames
     global projectsJson
     global only_all_projects_tm
 
     parser = OptionParser()
-    parser.add_option("-n", "--no-source",
-                      action="store_false", dest="addSource", default=True,
-                      help="Do not include the source for the translation " +
-                      "segment")
 
-    parser.add_option("-p", "--projects",
-                      action="store", type="string", dest="projectNames",
-                      help="To restrict the processing of projects to " +
-                      "comma sparated given list e.g.: (fedora,ubuntu)")
+    parser.add_option(
+        '-n',
+        '--no-source',
+        action='store_false',
+        dest='addSource',
+        default=True,
+        help='Do not include the source for the translation segment'
+    )
 
-    parser.add_option("-s", "--json",
-                      action="store", type="string", dest="projectsJson",
-                      help="Define the json file contains the project's " +
-                      "definitions (default: projects.json)")
+    parser.add_option(
+        '-p',
+        '--projects',
+        action='store',
+        type='string',
+        dest='projectNames',
+        help='To restrict the processing of projects to comma sparated '
+        'given list e.g.: (fedora,ubuntu)'
+    )
 
-    parser.add_option("-a", "--all",
-                      action="store_true", dest="only_all_projects_tm",
-                      help="Looks for already existing PO files in the " +
-                      " current directory and creates a new tm.po with all memories")
+    parser.add_option(
+        '-s',
+        '--json',
+        action='store',
+        type='string',
+        dest='projectsJson',
+        help="Define the json file contains the project's definitions "
+        "(default: projects.json)"
+    )
+
+    parser.add_option(
+        '-a',
+        '--all',
+        action='store_true',
+        dest='only_all_projects_tm',
+        help='Looks for already existing PO files in the  current directory '
+        'and creates a new tm.po with all memories'
+    )
 
     (options, args) = parser.parse_args()
 
     addSource = options.addSource
 
-    if (options.projectsJson is not None):
+    if options.projectsJson is not None:
         projectsJson = options.projectsJson
 
-    if (options.projectNames is not None):
-        projectsNames = options.projectNames.split(",")
-    else:
-        projectsNames = None
+    if options.projectNames is not None:
+        projectsNames = options.projectNames.split(',')
 
-    if (options.only_all_projects_tm is not None):
+    if options.only_all_projects_tm is not None:
         only_all_projects_tm = options.only_all_projects_tm
 
 
 def load_projects_from_json():
-
-    global addSource
-
     json = JsonBackend(projectsJson)
     json.load()
 
-    logging.info("Projects defined in json file " + str(len(json.projects)))
+    logging.info('Projects defined in json file ' + str(len(json.projects)))
     for project_dto in json.projects:
+        project_dto_lower = project_dto.name.lower().strip()
 
-        if (projectsNames is not None):
+        if projectsNames:
             found = False
             for projectName in projectsNames:
-                if projectName.lower().strip() == project_dto.name.lower().strip():
+                if projectName.lower().strip() == project_dto_lower:
                     found = True
 
-            if found is False:
+            if not found:
                 continue
 
         projects.add_project(project_dto, addSource)
 
 
-def main():
-
-    print "Translation memory builder version 0.1"
-    print "Use --help for assistance"
+if __name__ == '__main__':
+    print 'Translation memory builder version 0.1'
+    print 'Use --help for assistance'
 
     start_time = time.time()
     init_logging()
     read_parameters()
     load_projects_from_json()
 
-    if (only_all_projects_tm is True):
+    if only_all_projects_tm is True:
         projects.create_tm_for_all_projects()
     else:
         projects.do()
@@ -130,8 +144,5 @@ def main():
     projects.to_tmx()
     projects.statistics()
 
-    s = "Execution time: " + str(time.time() - start_time) + " seconds"
+    s = 'Execution time: {0} seconds'.format(str(time.time() - start_time))
     logging.info(s)
-
-if __name__ == "__main__":
-    main()
