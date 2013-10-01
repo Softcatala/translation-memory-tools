@@ -17,41 +17,56 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
-from fileset import FileSet
 from downloadfile import DownloadFile
+from fileset import FileSet
+
+import logging
+import os
 
 
 class CompressedFileSet(FileSet):
 
     def _uncompress(self):
 
-        if (self.filename.endswith('.zip')):
-            os.system("unzip " + self.filename + " -d " + self.temp_dir)
-        elif (self.filename.endswith('tar.gz')):
-            os.system("mkdir " + self.temp_dir)
-            if len(self.pattern) > 0:
-                os.system("tar -xvf " + self.filename + " -C " + self.temp_dir +
-                          " " + self.pattern)
-            else:
-                os.system("tar -xvf " + self.filename + " -C " + self.temp_dir)
+        if self.filename.endswith('.zip'):
+            os.system('unzip {0} -d {1}'.format(self.filename, self.temp_dir))
 
-        elif (self.filename.endswith('.gz')):
-            os.system("mkdir " + self.temp_dir)
+        elif self.filename.endswith('tar.gz'):
+            os.makedirs(self.temp_dir)
+            if len(self.pattern) > 0:
+                cmd = 'tar -xvf {0} -C {1} {2}'.format(
+                    self.filename,
+                    self.temp_dir,
+                    self.pattern
+                )
+                os.system(cmd)
+            else:
+                cmd = 'tar -xvf {0} -C {1}'.format(
+                    self.filename,
+                    self.temp_dir
+                )
+                os.system(cmd)
+
+        elif self.filename.endswith('.gz'):
+            os.makedirs(self.temp_dir)
             # We are assuming that the .gz file will contain a single PO
-            os.system("gunzip " + self.filename + " -c > " + self.temp_dir
-                      + "/ca.po")
-        elif (self.filename.endswith('tar.xz')):
-            os.system("mkdir " + self.temp_dir)
-            os.system("tar -Jxf " + self.filename + " -C " + self.temp_dir)
+            cmd = 'gunzip {0} -c > {1}/ca.po'.format(
+                self.filename,
+                self.temp_dir
+            )
+            os.system(cmd)
+        elif self.filename.endswith('tar.xz'):
+            os.makedirs(self.temp_dir)
+            cmd = 'tar -Jxf {0} -C {1}'.format(self.filename, self.temp_dir)
+            os.system(cmd)
         else:
-            logging.error("Unsupported file extension for filename:" + self.filename)
+            msg = 'Unsupported file extension for filename: {0}'
+            logging.error(msg.format(self.filename))
 
     def set_pattern(self, pattern):
         self.pattern = pattern
 
     def do(self):
-
         self.create_tmp_directory()
 
         # Download po files
@@ -63,5 +78,5 @@ class CompressedFileSet(FileSet):
         self.add_comments()
         self.build()
 
-        os.system("rm -f " + self.filename)
+        os.remove(self.filename)
         self.remove_tmp_directory()
