@@ -18,12 +18,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from crawler import Crawler
+from downloadfile import DownloadFile
+from fileset import FileSet
 
 import os
 import re
-from downloadfile import DownloadFile
-from fileset import FileSet
-from crawler import *
 
 
 class CrawlFileSet(FileSet):
@@ -32,7 +32,6 @@ class CrawlFileSet(FileSet):
         self.pattern = pattern
 
     def _download_links(self, links, directory):
-
         for link in links:
             if re.match(self.pattern, link):
                 filename = os.path.join(directory, link.split('/')[-1])
@@ -41,7 +40,6 @@ class CrawlFileSet(FileSet):
                 download.get_file(link, filename)
 
     def do(self):
-
         self.create_tmp_directory()
 
         crawler = Crawler(self.url)
