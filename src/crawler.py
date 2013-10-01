@@ -18,17 +18,18 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from HTMLParser import HTMLParser
+from Queue import Queue
+
 import urllib2
 import urlparse
-from Queue import Queue
-from HTMLParser import HTMLParser
 
 
 class LinkExtractor(HTMLParser):
     """Customized HTMLParser that extracts links"""
 
     def __init__(self, base_url):
-        HTMLParser.__init__(self)
+        super(HTMLParser, self).__init__()
         self.base_url = base_url
         self.links = []
 
@@ -37,9 +38,9 @@ class LinkExtractor(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
 
-        if tag == "a":
+        if tag == 'a':
             attrs = dict(attrs)
-            link = attrs["href"]
+            link = attrs['href']
 
             if link is not None:
                 absolute = urlparse.urljoin(self.base_url, link)
@@ -62,15 +63,16 @@ class Page:
         return u.geturl()
 
     def _download_page(self):
-
         request = urllib2.Request(self.url)
         handle = urllib2.build_opener()
 
-        self.content = unicode(handle.open(request).read(), "utf-8",
-                               errors="replace")
+        self.content = unicode(
+            handle.open(request).read(),
+            'utf-8',
+            errors='replace'
+        )
 
     def _process_links(self):
-
         parser = LinkExtractor(self.url)
         parser.feed(self.content)
         parser.close()
@@ -80,10 +82,9 @@ class Page:
         return self.links
 
     def get_child_pages_links(self):
-
         children = []
         for link in self.links:
-            if link.startswith(self.base_url) is True:
+            if link.startswith(self.base_url):
                 children.append(link)
 
         return children
@@ -93,12 +94,10 @@ class Crawler:
     """Crawls urls and gets the links to translations files"""
 
     def __init__(self, root):
-
         self.urls = Queue()
         self.urls.put(root)
 
     def run(self):
-
         url = self.urls.get()
 
         page = Page(url)
