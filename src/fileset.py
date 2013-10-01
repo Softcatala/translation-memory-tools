@@ -17,24 +17,24 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from findfiles import FindFiles
+from pofile import POFile
 
 import logging
 import os
-
-from pofile import POFile
-from findfiles import FindFiles
+import shutil
 
 
 class FileSet():
 
-    temp_dir = "./tmp"
+    temp_dir = './tmp'
 
     def __init__(self, project, url, filename):
         self.project = project
         self.url = url
         self.filename = filename
         self.add_source = True
-        self.excluded = list()
+        self.excluded = []
 
     def set_add_source(self, add_source):
         self.add_source = add_source
@@ -43,13 +43,12 @@ class FileSet():
         self.tm_file = tm_file
 
     def add_excluded(self, filename):
-
         if len(filename) > 0:
             self.excluded.append(filename)
 
     def add_comments(self):
 
-        if (self.add_source is False):
+        if not self.add_source:
             return
 
         findFiles = FindFiles()
@@ -57,86 +56,99 @@ class FileSet():
         for filename in findFiles.find(self.temp_dir, '*.po'):
             relative = filename.replace(self.temp_dir, '')
             pofile = POFile()
-            pofile.add_comment_to_all_entries(filename, "Translation source: " + relative + " from project '" + self.project + "'")
+            msg = 'Translation source: {0} from project \'{1}\''.format(
+                relative,
+                self.project
+            )
+            pofile.add_comment_to_all_entries(
+                filename,
+                msg
+            )
 
     def _clean_up(self):
-        os.system("cp " + self.tm_file + " tm-project-previous.po")
-        os.system("msgattrib tm-project-previous.po --no-fuzzy --no-obsolete --translated > " + self.tm_file)
-        os.system("rm -f tm-project-previous.po")
+        backup = 'tm-project-previous.po'
+        shutil.copy(self.tm_file, backup)
+        cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}'
+        os.system(cmd.format(backup, self.tm_file))
+        os.remove(backup)
 
     def convert_ts_files_to_po(self):
-
         findFiles = FindFiles()
 
         for tsfile in findFiles.find(self.temp_dir, '*.ts'):
             fileName, fileExtension = os.path.splitext(tsfile)
-            logging.info("converting: " + fileName)
-            os.system("ts2po " + tsfile + " -o " + fileName + ".po")
+            logging.info('converting: {0}'.format(fileName))
+            os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def convert_string_files_to_po(self):
-
         findFiles = FindFiles()
 
         for tsfile in findFiles.find(self.temp_dir, '*.strings'):
             dirName = os.path.dirname(tsfile)
-            logging.info("convert: " + dirName)
-            filename = dirName + "/strings-ca.po"
-            os.system("prop2po -t " + dirName + "/en.strings " + dirName + "/ca.strings --personality strings -o " + filename)
+            logging.info('convert: {0}'.format(dirName))
+            filename = '{0}/strings-ca.po'.format(dirName)
+            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
+                '--personality strings -o {1}'
+            os.system(cmd.format(dirName, filename))
 
     def convert_ini_files_to_po(self):
-
         findFiles = FindFiles()
 
         for tsfile in findFiles.find(self.temp_dir, '*.ini'):
             dirName = os.path.dirname(tsfile)
-            logging.info("convert: " + dirName)
-            filename = dirName + "/strings-ca.po"
-            os.system("prop2po -t " + dirName + "/en.ini " + dirName + "/ca.ini --encoding=utf-8 --personality=strings -o " + filename)
+            logging.info('convert: {0}'.format(dirName))
+            filename = '{0}/strings-ca.po'.format(dirName)
+            cmd = 'prop2po -t {0}/en.ini {0}/ca.ini --encoding=utf-8 ' \
+                '--personality=strings -o {1}'
+            os.system(cmd.format(dirName, filename))
 
     def build(self):
-
         findFiles = FindFiles()
-        localtm = "tm-local.po"
+        localtm = 'tm-local.po'
 
-        if (os.path.isfile(localtm)):
-            os.system("rm -f " + localtm)
+        if os.path.isfile(localtm):
+            os.remove(localtm)
 
         # Build using a local memory translation file
         for filename in findFiles.find(self.temp_dir, '*.po'):
-
-            print "Do:" + filename
+            print 'Do: {0}'.format(filename)
             exclude = False
             for exfilename in self.excluded:
-                if (filename.find(exfilename) != -1):
+                if filename.find(exfilename) != -1:
                     exclude = True
 
-            if (exclude is True):
-                logging.info('Excluding file:' + filename)
+            if exclude:
+                logging.info('Excluding file: {0}'.format(filename))
                 continue
 
-            logging.info('Adding file:' + filename + ' to translation memory')
+            msg = 'Adding file: {0} to translation memory'
+            logging.info(msg.format(filename))
 
-            if (os.path.isfile(localtm)):
-                os.system("cp " + localtm + " tm-project-previous.po")
-                os.system("msgcat -tutf-8 --use-first -o " + localtm + " tm-project-previous.po " + filename)
-                os.system("rm -f tm-project-previous.po")
+            if os.path.isfile(localtm):
+                backup = 'tm-project-previous.po'
+                shutil.copy(localtm, backup)
+                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2}'
+                os.system(cmd.format(localtm, backup, filename))
+                os.remove(backup)
             else:
-                os.system("cp " + filename + " " + localtm)
+                shutil.copy(filename, localtm)
 
         # Add to the project TM
-        if (os.path.isfile(self.tm_file)):
-            os.system("cp " + self.tm_file + " tm-project-previous.po")
-            os.system("msgcat -tutf-8 --use-first -o " + self.tm_file + " tm-project-previous.po " + localtm)
-            os.system("rm -f tm-project-previous.po")
+        if os.path.isfile(self.tm_file):
+            backup = 'tm-project-previous.po'
+            shutil.copy(self.tm_file, backup)
+            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2}'
+            os.system(cmd.format(self.tm_file, backup, localtm))
+            os.remove(backup)
         else:
-            os.system("cp " + localtm + " " + self.tm_file)
+            shutil.copy(localtm, self.tm_file)
 
-        os.system("rm -f " + localtm)
+        os.remove(localtm)
         self._clean_up()
 
     def create_tmp_directory(self):
-        os.system("rm -f -r " + self.temp_dir)
-        os.system("mkdir " + self.temp_dir)
+        self.remove_tmp_directory()
+        os.makedirs(self.temp_dir)
 
     def remove_tmp_directory(self):
-        os.system("rm -f -r " + self.temp_dir)
+        shutil.rmtree(self.temp_dir)
