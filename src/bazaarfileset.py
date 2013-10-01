@@ -51,7 +51,7 @@ class BazaarFileSet(FileSet):
     def do(self):
         self.create_tmp_directory()
 
-        if self._has_filename() is True:
+        if self._has_filename():
             outfile = os.path.join(self.temp_dir, 'ca.po')
             os.system('bzr cat {0} > {1}'.format(self.url, outfile))
         else:
