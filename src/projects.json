@@ -299,7 +299,7 @@
             "fileset": {
                     "monodevelop": {
                             "url" : "https://raw.github.com/mono/monodevelop/master/main/po/ca.po",
-            "type": "file",
+                            "type": "file",
                             "target": "monodevelop-ca.po"
                     }
             }
@@ -441,11 +441,38 @@
             "filename" : "blender-tm.po",
             "projectweb" : "http://www.blender.cat/",
             "fileset": {
-                    "yast" : {
+                    "blender" : {
                             "url" : "https://svn.blender.org/svnroot/bf-translations/branches/ca/",
                             "type": "subversion"
                     }
-                }
             }
+    },
+    "Mediawiki": {
+            "filename" : "mediawiki-tm.po",
+            "projectweb" : "cap",
+            "fileset": {
+                    "main": {
+                            "url" : "http://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=core&language=ca&task=export-as-po",
+                            "type": "file",
+                            "target": "main-ca.po"
+                    },
+                    "mobile": {
+                            "url" : "http://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=out-wikimedia-mobile-0-all&language=ca&task=export-as-po",
+                            "type": "file",
+                            "target": "mobile-all-ca.po"
+                    }
+            }
+    },
+    "OpenstreetMap": {
+            "filename" : "openstreetmap-tm.po",
+            "projectweb" : "cap",
+            "fileset": {
+                    "main": {
+                            "url" : "http://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=out-osm-0-all&language=ca&task=export-as-po",
+                            "type": "file",
+                            "target": "main-ca.po"
+                    }
+            }
+        }
     }
 }
