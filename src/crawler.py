@@ -29,7 +29,7 @@ class LinkExtractor(HTMLParser):
     """Customized HTMLParser that extracts links"""
 
     def __init__(self, base_url):
-        super(HTMLParser, self).__init__()
+        HTMLParser.__init__(self)
         self.base_url = base_url
         self.links = []
 
