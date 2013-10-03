@@ -143,7 +143,8 @@ class FileSet():
         else:
             shutil.copy(localtm, self.tm_file)
 
-        os.remove(localtm)
+        if os.path.exists(localtm):
+            os.remove(localtm)
         self._clean_up()
 
     def create_tmp_directory(self):
@@ -151,4 +152,5 @@ class FileSet():
         os.makedirs(self.temp_dir)
 
     def remove_tmp_directory(self):
-        shutil.rmtree(self.temp_dir)
+        if os.path.exists(self.temp_dir):
+            shutil.rmtree(self.temp_dir)

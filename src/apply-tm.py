@@ -102,8 +102,10 @@ def process(url):
                 move(tmfilename, output_dir)
                 move(dfilename, output_dir)
             else:
-                os.remove(filename)
-                os.remove(tmfilename)
+                if os.path.exists(filename):
+                    os.remove(filename)
+                if os.path.exists(tmfilename):
+                    os.remove(tmfilename)
 
         except Exception as detail:
             msg = 'Cannot complete {0}'.format(filename)

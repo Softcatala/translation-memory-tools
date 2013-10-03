@@ -78,5 +78,6 @@ class CompressedFileSet(FileSet):
         self.add_comments()
         self.build()
 
-        os.remove(self.filename)
+        if os.path.exists(self.filename):
+            os.remove(self.filename)
         self.remove_tmp_directory()
