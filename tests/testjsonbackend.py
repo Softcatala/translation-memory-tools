@@ -20,15 +20,17 @@ import os
 import sys
 import unittest
 
+
 sys.path.append('../src/')
-from jsonbackend import *
+from jsonbackend import JsonBackend
 
 
 class TestJsonBackend(unittest.TestCase):
 
     def _validate_mozilla_project_mozilla_fileset(self, fileset):
+        url = 'http://pootle.softcatala.org/ca/mozilla/export/zip'
         self.assertEquals(fileset.name, 'mozilla')
-        self.assertEquals(fileset.url, 'http://pootle.softcatala.org/ca/mozilla/export/zip')
+        self.assertEquals(fileset.url, url)
         self.assertEquals(fileset.type, 'compressed')
         self.assertEquals(fileset.excluded, 'region.properties.po')
         self.assertEquals(fileset.excluded, 'region.properties.po')
@@ -36,21 +38,21 @@ class TestJsonBackend(unittest.TestCase):
         return
 
     def _validate_mozilla_project(self, project):
+        url = 'http://www.softcatala.org/wiki/Projectes/Mozilla'
         self.assertEquals(project.name, 'Mozilla')
         self.assertEquals(project.filename, 'mozilla-tm.po')
-        self.assertEquals(project.projectweb, 'http://www.softcatala.org/wiki/Projectes/Mozilla')
+        self.assertEquals(project.projectweb, url)
         self.assertEquals(len(project.filesets), 3)
         self._validate_mozilla_project_mozilla_fileset(project.filesets[0])
         return
 
     def test_processFileSet(self):
-    
+
         json = JsonBackend('testjsonbackend.json')
         json.load()
-        
+
         self.assertEquals(len(json.projects), 2)
         self._validate_mozilla_project(json.projects[0])
 
 if __name__ == '__main__':
     unittest.main()
-
