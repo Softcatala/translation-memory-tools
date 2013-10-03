@@ -137,7 +137,7 @@ if __name__ == '__main__':
     read_parameters()
     load_projects_from_json()
 
-    if only_all_projects_tm is True:
+    if only_all_projects_tm:
         projects.create_tm_for_all_projects()
     else:
         projects.do()
