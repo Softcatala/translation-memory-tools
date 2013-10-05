@@ -16,6 +16,7 @@
 # License along with this program; if not, write to the
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
+
 from fileset import FileSet
 
 import os
@@ -28,7 +29,6 @@ CMD = 'cd {0} && svn co --non-recursive --trust-server-cert ' \
 class SubversionFileSet(FileSet):
 
     def do(self):
-
         self.create_tmp_directory()
         cmd = CMD.format(self.temp_dir, self.url)
         os.system(cmd)

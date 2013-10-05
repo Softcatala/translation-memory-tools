@@ -16,6 +16,7 @@
 # License along with this program; if not, write to the
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
+
 from fileset import FileSet
 from findfiles import FindFiles
 from urlparse import urlparse
@@ -26,7 +27,6 @@ import os
 class TransifexFileSet(FileSet):
 
     def _remove_non_translation_only_files(self):
-
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
@@ -34,7 +34,6 @@ class TransifexFileSet(FileSet):
                 os.remove(filename)
 
     def do(self):
-
         prevdir = os.getcwd()
 
         self.create_tmp_directory()
