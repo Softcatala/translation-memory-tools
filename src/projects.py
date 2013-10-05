@@ -63,7 +63,7 @@ class Projects:
                 os.system(cmd.format(self.tm_file,
                                      backup_file,
                                      project.get_filename())
-                os.system('rm -f tm-previous.po')
+                os.remove(backup_file)
             else:
                 shutil.copy(project.get_filename(), self.tm_file)
 
