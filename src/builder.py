@@ -140,7 +140,7 @@ if __name__ == '__main__':
     if only_all_projects_tm:
         projects.create_tm_for_all_projects()
     else:
-        projects.do()
+        projects()
 
     projects.to_tmx()
     projects.statistics()
