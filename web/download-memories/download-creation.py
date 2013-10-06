@@ -42,6 +42,7 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
         print "Skipping empty translation memory: " + potext
         return ''
     
+    date = get_file_date(potext)
     html = "<tr>\r"
     if (len(projectweb) > 0):
         html += "<td><a href='" + projectweb + "'>"  + name + "</a></td>\r"
@@ -51,6 +52,7 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
     html += "<td>" + link(potext, pofile) + "</td>\r"
     html += "<td>" + link(tmxtext, tmxfile) + "</td>\r"
     html += "<td>" + str(words) + "</td>\r"
+    html += "<td>" + date + "</td>\r"
     html += "</tr>\r"
     return html
     
@@ -65,6 +67,13 @@ def table_row(name, projectweb, potext):
     
     return table_row_generate(name, projectweb, potext, pofile,
                               tmxfile, os.path.join(subdirectory, tmxfile))
+                              
+def get_file_date(filename):
+
+    full_path = os.path.join(po_directory, filename)
+    last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
+    last_date = last_ctime.strftime("%d/%m/%Y")
+    return last_date
 
 def process_projects():
 
@@ -79,6 +88,7 @@ def process_projects():
     html += '<th>Fitxer PO</th>\r'
     html += '<th>Fitxer TMX</th>\r'
     html += u'<th>Paraules traduïdes</th>\r'
+    html += u'<th>Última actualització</th>\r'
     html += '</tr>\r'
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
@@ -91,7 +101,7 @@ def process_projects():
     html += '</table>\r'
     today = datetime.date.today()
     html += '<br/>\r'
-    html += u'Data de generació dels fitxers: ' + today.strftime("%d/%m/%Y")
+    html += u'Data de generació d\'aquesta pàgina: ' + today.strftime("%d/%m/%Y")
     html += '<br/>\r'
     return html
 
