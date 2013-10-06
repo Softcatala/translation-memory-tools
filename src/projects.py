@@ -62,7 +62,7 @@ class Projects:
                 cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2}'
                 os.system(cmd.format(self.tm_file,
                                      backup_file,
-                                     project.get_filename())
+                                     project.get_filename()))
                 os.remove(backup_file)
             else:
                 shutil.copy(project.get_filename(), self.tm_file)
