@@ -473,6 +473,17 @@
                             "target": "main-ca.po"
                     }
             }
+        },
+    "Track": {
+            "filename" : "track-tm.po",
+            "projectweb" : "http://trac.edgewall.org/ticket/7353",
+            "fileset": {
+                    "main": {
+                            "url" : "http://trac.edgewall.org/export/HEAD/trunk/trac/locale/ca/LC_MESSAGES/messages.po",
+                            "type": "file",
+                            "target": "main-ca.po"
+                    }
+            }
         }
     }
 }
