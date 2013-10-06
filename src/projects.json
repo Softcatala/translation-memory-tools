@@ -449,7 +449,7 @@
     },
     "Mediawiki": {
             "filename" : "mediawiki-tm.po",
-            "projectweb" : "cap",
+            "projectweb" : "http://www.mediawiki.org/wiki/MediaWiki/ca",
             "fileset": {
                     "main": {
                             "url" : "http://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=core&language=ca&task=export-as-po",
@@ -465,7 +465,7 @@
     },
     "OpenstreetMap": {
             "filename" : "openstreetmap-tm.po",
-            "projectweb" : "cap",
+            "projectweb" : "http://wiki.openstreetmap.org/wiki/Ca:Main_Page",
             "fileset": {
                     "main": {
                             "url" : "http://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=out-osm-0-all&language=ca&task=export-as-po",
