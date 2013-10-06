@@ -366,7 +366,7 @@
     },
     "gnutools": {
             "filename" : "gnutools-tm.po",
-            "projectweb" : "ttp://translationproject.org/team/ca.html",
+            "projectweb" : "http://translationproject.org/team/ca.html",
             "fileset": {
                     "gnuetools" : {
                             "url" : "http://translationproject.org/team/ca.html",
