@@ -32,7 +32,7 @@ class CompressedFileSet(FileSet):
             os.system('unzip {0} -d {1}'.format(self.filename, self.temp_dir))
 
         elif self.filename.endswith('tar.gz'):
-            os.makedirs(self.temp_dir)
+            self.create_tmp_directory()
             if len(self.pattern) > 0:
                 cmd = 'tar -xvf {0} -C {1} {2}'.format(
                     self.filename,
@@ -48,7 +48,7 @@ class CompressedFileSet(FileSet):
                 os.system(cmd)
 
         elif self.filename.endswith('.gz'):
-            os.makedirs(self.temp_dir)
+            self.create_tmp_directory()
             # We are assuming that the .gz file will contain a single PO
             cmd = 'gunzip {0} -c > {1}/ca.po'.format(
                 self.filename,
@@ -56,7 +56,7 @@ class CompressedFileSet(FileSet):
             )
             os.system(cmd)
         elif self.filename.endswith('tar.xz'):
-            os.makedirs(self.temp_dir)
+            self.create_tmp_directory()
             cmd = 'tar -Jxf {0} -C {1}'.format(self.filename, self.temp_dir)
             os.system(cmd)
         else:
