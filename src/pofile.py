@@ -32,7 +32,7 @@ class POFile:
 
         for entry in input_po:
             if len(entry.tcomment) > 0:
-                entry.tcomment = '{0}\n{1}'.format(comment, entry.tcomment)
+                entry.tcomment = u'{0}\n{1}'.format(comment, entry.tcomment)
             else:
                 entry.tcomment = comment
 
