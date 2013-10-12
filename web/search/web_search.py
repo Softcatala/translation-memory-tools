@@ -84,6 +84,7 @@ def open_html(term):
     print '<html><head>'
     print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
     print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
+    print '<a href = "/index.html">Torna a la pàgina anterior</a></br></br>'
     print 'Terme de cerca: ' + term + '</br></br>'
 
 def main():

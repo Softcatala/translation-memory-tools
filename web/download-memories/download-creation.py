@@ -103,9 +103,9 @@ def process_projects():
     html += table_row(u'Totes les memòries', '', 'tm.po')
     html += '</table>\r'
     today = datetime.date.today()
-    html += '<br/>\r'
+    html += '<br>\r'
     html += u'Data de generació d\'aquesta pàgina: ' + today.strftime("%d/%m/%Y")
-    html += '<br/>\r'
+    html += '<br>\r'
     return html
 
 def get_statistics(filename):
