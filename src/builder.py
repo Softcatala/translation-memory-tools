@@ -28,9 +28,9 @@ import time
 
 
 projects = Projects('tm.po')
-addSource = True
-projectsNames = None
-projectsJson = 'projects.json'
+add_source = True
+projects_names = None
+projects_json = 'projects.json'
 only_all_projects_tm = None
 
 
@@ -48,9 +48,9 @@ def init_logging():
 
 
 def read_parameters():
-    global addSource
-    global projectsNames
-    global projectsJson
+    global add_source
+    global projects_names
+    global projects_json
     global only_all_projects_tm
 
     parser = OptionParser()
@@ -59,7 +59,7 @@ def read_parameters():
         '-n',
         '--no-source',
         action='store_false',
-        dest='addSource',
+        dest='add_source',
         default=True,
         help='Do not include the source for the translation segment'
     )
@@ -69,7 +69,7 @@ def read_parameters():
         '--projects',
         action='store',
         type='string',
-        dest='projectNames',
+        dest='projects_names',
         help='To restrict the processing of projects to comma separated '
         'given list e.g.: (fedora, ubuntu)'
     )
@@ -79,7 +79,7 @@ def read_parameters():
         '--json',
         action='store',
         type='string',
-        dest='projectsJson',
+        dest='projects_json',
         help="Define the json file contains the project's definitions "
         "(default: projects.json)"
     )
@@ -95,20 +95,20 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
 
-    addSource = options.addSource
+    add_source = options.add_source
 
-    if options.projectsJson is not None:
-        projectsJson = options.projectsJson
+    if options.projects_json is not None:
+        projects_json = options.projects_json
 
-    if options.projectNames is not None:
-        projectsNames = options.projectNames.split(',')
+    if options.projects_names is not None:
+        projects_names = options.projects_names.split(',')
 
     if options.only_all_projects_tm is not None:
         only_all_projects_tm = options.only_all_projects_tm
 
 
 def load_projects_from_json():
-    json = JsonBackend(projectsJson)
+    json = JsonBackend(projects_json)
     json.load()
 
     msg = 'Projects defined in json file {0}'.format(len(json.projects))
@@ -116,16 +116,16 @@ def load_projects_from_json():
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
 
-        if projectsNames:
+        if projects_names:
             found = False
-            for projectName in projectsNames:
-                if projectName.lower().strip() == project_dto_lower:
+            for project_name in projects_names:
+                if project_name.lower().strip() == project_dto_lower:
                     found = True
 
             if not found:
                 continue
 
-        projects.add_project(project_dto, addSource)
+        projects.add_project(project_dto, add_source)
 
 
 if __name__ == '__main__':
