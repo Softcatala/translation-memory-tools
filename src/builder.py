@@ -70,8 +70,8 @@ def read_parameters():
         action='store',
         type='string',
         dest='projectNames',
-        help='To restrict the processing of projects to comma sparated '
-        'given list e.g.: (fedora,ubuntu)'
+        help='To restrict the processing of projects to comma separated '
+        'given list e.g.: (fedora, ubuntu)'
     )
 
     parser.add_option(
