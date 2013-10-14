@@ -25,8 +25,8 @@ import json
 
 class ProjectDTO:
 
-    def __init__(self):
-        self.name = ''
+    def __init__(self, name):
+        self.name = name
         self.filename = ''
         self.projectweb = ''
         self.filesets = []
@@ -57,7 +57,7 @@ class JsonBackend:
 
     def __init__(self, filename):
         self.filename = filename
-        self.projects = list()
+        self.projects = []
 
     def _process_fileset(self, project, project_value):
         for fileset_attr, fileset_value in project_value.iteritems():
@@ -87,22 +87,18 @@ class JsonBackend:
                 logging.error(msg.format(fileset_properties_attr))
 
     def load(self):
-        json_data = open(self.filename)
-        data = json.load(json_data, object_pairs_hook=OrderedDict)
+        with open(self.filename) as json_data:
+            data = json.load(json_data, object_pairs_hook=OrderedDict)
 
-        # Enums projects names
-        for attribute, value in data['projects'].items():
-            project = ProjectDTO()
-            project.name = attribute
-            self.projects.append(project)
+            # Parse projects
+            for attribute, value in data['projects'].items():
+                project = ProjectDTO(attribute)
+                self.projects.append(project)
 
-            #Enum project sets
-            for project_attr, project_value in value.iteritems():
-                if project_attr == 'filename':
-                    project.filename = project_value
-                elif project_attr == 'fileset':
-                    self._process_fileset(project, project_value)
-                elif project_attr == 'projectweb':
-                    project.projectweb = project_value
+                # Get project properties
+                for prop in ('filename', 'projectweb'):
+                    if prop in value:
+                        setattr(project, prop, value[prop])
 
-        json_data.close()
+                if 'fileset' in value:
+                    self._process_fileset(project, value['fileset'])
