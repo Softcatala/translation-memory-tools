@@ -227,7 +227,19 @@
             "filename" : "fedora-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Fedora",
             "fileset": {
-                    "fedora": {
+                    "main": {
+                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-main/",
+                            "type": "transifex"
+                    },
+                    "docs": {
+                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-docs/",
+                            "type": "transifex"
+                    },
+                    "websites": {
+                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-websites/",
+                            "type": "transifex"
+                    },
+                    "upstream": {
                             "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/",
                             "type": "transifex"
                     }
