@@ -44,9 +44,9 @@ class Search:
         if org is True:
             print "<b>Original:</b> " + result.highlights("source").encode('utf-8')
             print "</br>"
-            print "<b>Traducció:</b> " + result["target"].encode('utf-8')
+            print "<b>Traducció:</b> " + cgi.escape(result["target"].encode('utf-8'))
         else:
-            print "<b>Original:</b> " + result["source"].encode('utf-8')
+            print "<b>Original:</b> " + cgi.escape(result["source"].encode('utf-8'))
             print "</br>"
             print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
 
