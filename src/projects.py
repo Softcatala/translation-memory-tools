@@ -29,12 +29,15 @@ class Projects:
 
     def __init__(self, filename):
         self.filename = filename
-        self.tm_file = 'tm.po'
         self.projects = list()
-        self.tm_project = Project('Translation memory', self.tm_file)
+        self.set_tm_file('tm.po')
 
         if os.path.isfile(filename):
             os.remove(filename)
+            
+    def set_tm_file(self, filename):
+        self.tm_file = filename
+        self.tm_project = Project('Translation memory', self.tm_file)
 
     def add(self, project):
         self.projects.append(project)
@@ -55,6 +58,7 @@ class Projects:
 
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
+
         for project in self.projects:
             if os.path.isfile(self.tm_file):
                 backup_file = 'tm-previous.po'

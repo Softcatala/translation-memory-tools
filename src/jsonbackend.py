@@ -29,6 +29,7 @@ class ProjectDTO:
         self.name = name
         self.filename = ''
         self.projectweb = ''
+        self.softcatala = ''
         self.filesets = []
 
     def __str__(self):
@@ -96,7 +97,7 @@ class JsonBackend:
                 self.projects.append(project)
 
                 # Get project properties
-                for prop in ('filename', 'projectweb'):
+                for prop in ('filename', 'projectweb', 'softcatala'):
                     if prop in value:
                         setattr(project, prop, value[prop])
 

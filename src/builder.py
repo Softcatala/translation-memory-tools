@@ -32,6 +32,7 @@ add_source = True
 projects_names = None
 projects_json = 'projects.json'
 only_all_projects_tm = None
+softcatala_only = None
 
 
 def init_logging():
@@ -52,6 +53,7 @@ def read_parameters():
     global projects_names
     global projects_json
     global only_all_projects_tm
+    global softcatala_only
 
     parser = OptionParser()
 
@@ -89,8 +91,17 @@ def read_parameters():
         '--all',
         action='store_true',
         dest='only_all_projects_tm',
-        help='Looks for already existing PO files in the  current directory '
+        help='Looks for already existing PO files in the current directory '
         'and creates a new tm.po with all memories'
+    )
+    
+    parser.add_option(
+        '-c',
+        '--softcatala',
+        action='store_true',
+        dest='softcatala_only',
+        default=False,
+        help=u'Process only Softcatalà memories'
     )
 
     (options, args) = parser.parse_args()
@@ -103,18 +114,22 @@ def read_parameters():
     if options.projects_names is not None:
         projects_names = options.projects_names.split(',')
 
-    if options.only_all_projects_tm is not None:
-        only_all_projects_tm = options.only_all_projects_tm
-
+    only_all_projects_tm = options.only_all_projects_tm
+    softcatala_only = options.softcatala_only
 
 def load_projects_from_json():
     json = JsonBackend(projects_json)
     json.load()
+    
+    global softcatala_only
 
     msg = 'Projects defined in json file {0}'.format(len(json.projects))
     logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
+        
+        if softcatala_only is True and len(project_dto.softcatala) == 0:
+            continue
 
         if projects_names:
             found = False
@@ -138,6 +153,9 @@ if __name__ == '__main__':
     load_projects_from_json()
 
     if only_all_projects_tm:
+        projects.create_tm_for_all_projects()
+    elif softcatala_only:
+        projects.set_tm_file('softcatala-tm.po')
         projects.create_tm_for_all_projects()
     else:
         projects()
