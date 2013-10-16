@@ -93,6 +93,9 @@ def process_projects():
     html += u'<th>Paraules traduïdes</th>\r'
     html += u'<th>Última actualització</th>\r'
     html += '</tr>\r'
+    
+    html += table_row(u'Totes les memòries de tots els projectes', '', 'tm.po')
+    html += table_row(u'Totes les memòries de projectes de Softcatalà', '', 'softcatala-tm.po')
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
@@ -100,7 +103,6 @@ def process_projects():
             html += table_row(project_dto.name, project_dto.projectweb,
                               project_dto.filename)
 
-    html += table_row(u'Totes les memòries', '', 'tm.po')
     html += '</table>\r'
     today = datetime.date.today()
     html += '<br>\r'
