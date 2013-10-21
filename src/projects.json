@@ -501,7 +501,7 @@
                             "target": "main-ca.po"
                     }
             }
-        },
+    },
     "Track": {
             "filename" : "track-tm.po",
             "projectweb" : "http://trac.edgewall.org/ticket/7353",
@@ -512,6 +512,16 @@
                             "target": "main-ca.po"
                     }
             }
-        }
+    },
+    "Josm": {
+			"filename" : "josm-tm.po",
+			"fileset": {
+				"Josm": {
+                    "url" : "lp:~openstreetmap/josm/josm_trans/josm/ca.po",
+					"type": "bazaar",
+					"target": "ca.po"
+				}
+			}
+		}
     }
 }
