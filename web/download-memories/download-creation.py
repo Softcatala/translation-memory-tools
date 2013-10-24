@@ -115,9 +115,14 @@ def process_projects():
     html += u'<th>Última actualització</th>\r'
     html += '</tr>\r'
     
-    html += table_row(u'Totes les memòries de tots els projectes', '', 'tm.po')
-    html += table_row(u'Totes les memòries de projectes de Softcatalà', '', 'softcatala-tm.po')
-
+    memories = {u'Totes les memòries de tots els projectes' : 'tm.po',
+        u'Totes les memòries de projectes de Softcatalà': 'softcatala-tm.po'}
+    
+    for name, filename in memories.items():
+        html += table_row(name, '', filename)
+        create_zipfile(po_directory, filename)
+        create_zipfile(tmx_directory, get_tmx_file(filename))
+    
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if (project_dto.name != 'Header'):
