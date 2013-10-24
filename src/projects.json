@@ -386,7 +386,7 @@
             "projectweb" : "http://cat.kde.org/",
             "fileset": {
                     "kde" : {
-                            "url" : "http://ftp.kde.org/stable/4.9.5/src/kde-l10n/kde-l10n-ca-4.9.5.tar.xz",
+                            "url" : "http://ftp.kde.org/stable/4.11.2/src/kde-l10n/kde-l10n-ca-4.11.2.tar.xz",
                             "type": "compressed",
                             "target": "kde-l10n.tar.xz"
                     }
