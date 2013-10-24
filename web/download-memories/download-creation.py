@@ -149,7 +149,7 @@ def create_zipfile(src_directory, filename):
         print "Cannot zip:" + srcfile
         return
 
-    cmd = 'zip {0} {1}'.format(zipfile, srcfile)
+    cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
     print cmd
     os.system(cmd)
 
