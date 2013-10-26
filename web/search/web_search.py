@@ -90,13 +90,12 @@ def open_html(term):
 def main():
 
     form = cgi.FieldStorage()
-    term = form.getvalue("query", 'gbrainy')
-    original = form.getvalue("original", None)
-    translation = form.getvalue("translation", None)
+    term = form.getvalue("query", None)
+    where = form.getvalue("where", None)
     
     open_html(term)
     
-    if original is not None:
+    if where == 'source':
         org = True
     else:
         org = False
