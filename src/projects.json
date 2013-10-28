@@ -535,5 +535,16 @@
                             "type": "transifex"
                     }
             }
+    },
+    "Xfce": {
+            "filename" : "xfce-tm.po",
+            "projectweb" : "https://www.transifex.com/projects/p/xfce/language/ca/",
+            "softcatala" : "false",
+            "fileset": {
+                    "ownCloud" : {
+                            "url" : "https://www.transifex.com/projects/p/xfce/",
+                            "type": "transifex"
+                    }
+            }
     }
 }
