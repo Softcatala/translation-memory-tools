@@ -527,7 +527,7 @@
     },
     "ownCloud": {
             "filename" : "owncloud-tm.po",
-            "projectweb" : "http://owncloud.org/",
+            "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
             "softcatala" : "false",
             "fileset": {
                     "ownCloud" : {
