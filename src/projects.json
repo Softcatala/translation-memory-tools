@@ -518,12 +518,11 @@
 			"projectweb" : "http://translations.launchpad.net/josm/trunk/+pots/josm/ca/+translate",
 			"fileset": {
 				"JOSM": {
-                    "url" : "lp:~openstreetmap/josm/josm_trans/josm/ca.po",
+					"url" : "lp:~openstreetmap/josm/josm_trans/josm/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				}
 			}
-		}
     },
     "ownCloud": {
             "filename" : "owncloud-tm.po",
@@ -546,5 +545,6 @@
                             "type": "transifex"
                     }
             }
+    }
     }
 }
