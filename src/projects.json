@@ -76,7 +76,7 @@
                     }
             }
     },
-    "gnome": {
+    "GNOME": {
             "filename" : "gnome-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/GNOME",
             "softcatala" : "true",
@@ -175,7 +175,7 @@
                     }
             }
     },
-    "filezilla": {
+    "FileZilla": {
             "filename" : "filezilla-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
             "softcatala" : "true",
@@ -491,7 +491,7 @@
                     }
             }
     },
-    "OpenstreetMap": {
+    "OpenStreetMap": {
             "filename" : "openstreetmap-tm.po",
             "projectweb" : "http://wiki.openstreetmap.org/wiki/Ca:Main_Page",
             "fileset": {
@@ -531,17 +531,6 @@
             "fileset": {
                     "ownCloud" : {
                             "url" : "https://www.transifex.com/projects/p/owncloud/",
-                            "type": "transifex"
-                    }
-            }
-    },
-    "Xfce": {
-            "filename" : "xfce-tm.po",
-            "projectweb" : "https://www.transifex.com/projects/p/xfce/language/ca/",
-            "softcatala" : "false",
-            "fileset": {
-                    "xfce" : {
-                            "url" : "https://www.transifex.com/projects/p/xfce/",
                             "type": "transifex"
                     }
             }
