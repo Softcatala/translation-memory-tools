@@ -541,7 +541,7 @@
             "projectweb" : "https://www.transifex.com/projects/p/xfce/language/ca/",
             "softcatala" : "false",
             "fileset": {
-                    "ownCloud" : {
+                    "xfce" : {
                             "url" : "https://www.transifex.com/projects/p/xfce/",
                             "type": "transifex"
                     }
