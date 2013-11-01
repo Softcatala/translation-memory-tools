@@ -24,7 +24,7 @@ import urllib2
 class DownloadFile:
 
     def get_file(self, url, filename):
-        msg = 'Downloading file \'{0}\' tot {1}'.format(url, filename)
+        msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
         logging.info(msg)
 
         infile = urllib2.urlopen(url)
