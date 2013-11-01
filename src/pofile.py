@@ -23,10 +23,13 @@ import shutil
 
 class POFile:
 
-    def add_comment_to_all_entries(self, filename, comment):
-        bakfile = filename + '.bak'
+    def __init__(self, filename):
+        self.filename = filename
 
-        shutil.copy(filename, bakfile)
+    def add_comment_to_all_entries(self, comment):
+        bakfile = self.filename + '.bak'
+
+        shutil.copy(self.filename, bakfile)
 
         input_po = polib.pofile(bakfile)
 
@@ -36,4 +39,22 @@ class POFile:
             else:
                 entry.tcomment = comment
 
-        input_po.save(filename)
+        input_po.save(self.filename)
+
+    def get_statistics(self):
+
+        words = 0
+
+        try:
+
+            poFile = polib.pofile(self.filename)
+            for entry in poFile:
+                string_words = entry.msgstr.split(' ')
+                words += len(string_words)
+
+        except Exception as detail:
+            print("POFile.get_statistics exception " + self.filename)
+            print(detail)
+
+        finally:
+            return words

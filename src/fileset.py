@@ -55,15 +55,12 @@ class FileSet():
 
         for filename in findFiles.find(self.temp_dir, '*.po'):
             relative = filename.replace(self.temp_dir, '')
-            pofile = POFile()
+            pofile = POFile(filename)
             msg = 'Translation source: {0} from project \'{1}\''.format(
                 relative,
                 self.project
             )
-            pofile.add_comment_to_all_entries(
-                filename,
-                msg
-            )
+            pofile.add_comment_to_all_entries(msg)
 
     def _clean_up(self):
         backup = 'tm-project-previous.po'

@@ -18,11 +18,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-sys.path.append('../../src/')
+from pofile import POFile
 from jsonbackend import JsonBackend
 import os
-from polib import pofile
 from optparse import OptionParser
 
 src_directory = None
@@ -47,30 +45,10 @@ def process_projects():
             if os.path.isfile(src_file) is False and os.path.isfile(trg_file) is True:
                 print "{0} has been added in the new version".format(project_dto.filename)
 
-            src_stats = get_statistics(src_file)
-            trg_stats = get_statistics(trg_file)
+            src_stats = POFile(src_file).get_statistics()
+            trg_stats = POFile(trg_file).get_statistics()
 
             print "{0} project {1}: words (before), {2} words (now), delta {3}".format(project_dto.filename, src_stats, trg_stats, trg_stats - src_stats)
-
-
-def get_statistics(full_path):
-
-    words = 0
-
-    try:
-
-        poFile = pofile(full_path)
-
-        for entry in poFile:
-            string_words = entry.msgstr.split(' ')
-            words += len(string_words)
-
-    except Exception as detail:
-        print("Statistics exception " + full_path)
-        print(detail)
-
-    finally:
-        return words
 
 
 def read_parameters():
