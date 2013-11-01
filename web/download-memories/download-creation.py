@@ -102,7 +102,7 @@ def process_projects():
     json.load()
 
     html = u'<h1 class ="section">Baixa les memòries de traducció</h1>\r'
-    html += u'<p>Baixeu les memòries de traducció per poder-les configurar al vostre programa de traducció habitual.</p>\r'
+    html += u'<p>Baixeu les memòries de traducció per poder-les afegir al vostre programa de traducció habitual.</p>\r'
     html += u'<p>Disposem instruccions de com fer-ho '
     html += u'<a href="http://www.softcatala.org/wiki/Configurar_PoEdit_amb_mem%C3%B2ries_de_traducci%C3%B3">pas a pas</a> '
     html += u'amb l\'eina de traducció PoEdit.</p>\r'
