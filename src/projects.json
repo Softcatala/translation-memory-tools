@@ -76,7 +76,7 @@
                     }
             }
     },
-    "gnome": {
+    "GNOME": {
             "filename" : "gnome-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/GNOME",
             "softcatala" : "true",
@@ -175,7 +175,7 @@
                     }
             }
     },
-    "filezilla": {
+    "FileZilla": {
             "filename" : "filezilla-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
             "softcatala" : "true",
@@ -491,7 +491,7 @@
                     }
             }
     },
-    "OpenstreetMap": {
+    "OpenStreetMap": {
             "filename" : "openstreetmap-tm.po",
             "projectweb" : "http://wiki.openstreetmap.org/wiki/Ca:Main_Page",
             "fileset": {
@@ -513,15 +513,27 @@
                     }
             }
     },
-    "Josm": {
+    "JOSM": {
 			"filename" : "josm-tm.po",
+			"projectweb" : "http://translations.launchpad.net/josm/trunk/+pots/josm/ca/+translate",
 			"fileset": {
-				"Josm": {
-                    "url" : "lp:~openstreetmap/josm/josm_trans/josm/ca.po",
+				"JOSM": {
+					"url" : "lp:~openstreetmap/josm/josm_trans/josm/ca.po",
 					"type": "bazaar",
 					"target": "ca.po"
 				}
 			}
-		}
+    },
+    "ownCloud": {
+            "filename" : "owncloud-tm.po",
+            "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
+            "softcatala" : "false",
+            "fileset": {
+                    "ownCloud" : {
+                            "url" : "https://www.transifex.com/projects/p/owncloud/",
+                            "type": "transifex"
+                    }
+            }
+    }
     }
 }
