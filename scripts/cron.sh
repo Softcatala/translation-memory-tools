@@ -10,7 +10,7 @@ cd $PROGRAMS
 rm -f *.po
 rm -f *.tmx
 rm -f *.log
-#python builder.py
+python builder.py
 
 # Copy only new PO files
 for filename in *.po
@@ -46,15 +46,15 @@ for filename in *.tmx
 
 # Build aggregated memories
 cd $INTERMEDIATE_PO/
-#python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --all
-#python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --softcatala
-#cp *.tmx ../tmx/
+python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --all
+python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --softcatala
+cp *.tmx ../tmx/
 
 # Update download file & index
 cd /home/jmas/tm-git/web/download-memories
-#python download-creation.py -d ../../../translation-memories/po -t ../../../translation-memories/tmx
+python download-creation.py -d ../../../translation-memories/po -t ../../../translation-memories/tmx
 cd ../search
-#python index-creation.py -d ../../../translation-memories/po
+python index-creation.py -d ../../../translation-memories/po
 
 # Notify completion
 cd $PROGRAMS
