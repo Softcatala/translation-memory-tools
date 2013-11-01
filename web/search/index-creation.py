@@ -56,7 +56,7 @@ class Search:
         today = datetime.date.today()
         html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
         html += u' i conté ' + str(self.projects) + ' projectes amb un total de ' 
-        html += format(str(self.words), '.d') + ' paraules</p>'
+        html += format(self.words, ',d') + ' paraules</p>'
         html_file = open("statistics.html", "w")
         html_file.write(html.encode('utf-8'))        
         html_file.close()

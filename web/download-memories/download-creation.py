@@ -54,7 +54,7 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
 
     html += "<td>" + link(get_zip_file(potext), pofile) + "</td>\r"
     html += "<td>" + link(get_zip_file(tmxtext), tmxfile) + "</td>\r"
-    html += "<td>" + format(str(words), '.d') + "</td>\r"
+    html += "<td>" + format(words, ',d') + "</td>\r"
     html += "<td>" + date + "</td>\r"
     html += "</tr>\r"
     return html
