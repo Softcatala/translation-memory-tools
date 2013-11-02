@@ -205,7 +205,12 @@ def main():
     print "Creates download.html file"
     print "Use --help for assistance"
 
-    locale.setlocale(locale.LC_ALL, '')
+    try:
+        locale.setlocale(locale.LC_ALL, '')
+        
+    except Exception as detail:
+            print "Exception: " +  str(detail)
+
     read_parameters()
 
     create_output_dir("memories")

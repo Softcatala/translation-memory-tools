@@ -125,7 +125,11 @@ def main():
 
     start_time = time.time()
 
-    locale.setlocale(locale.LC_ALL, '')
+    try:
+        locale.setlocale(locale.LC_ALL, '')
+        
+    except Exception as detail:
+            print "Exception: " +  str(detail)
         
     read_parameters()
     search = Search()
