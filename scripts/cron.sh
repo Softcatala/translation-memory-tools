@@ -38,8 +38,11 @@ for filename in *.po
         fsize=$(du -b "$filename" | cut -f 1)
         if [ $fsize -ge 200 ];
           then
-            echo Copying $filename
-	    cp $filename $INTERMEDIATE_PO/$filename
+	    if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
+	      then
+	        echo Copying $filename
+                cp $filename $INTERMEDIATE_PO/$filename
+            fi
         fi 
     fi
   done
