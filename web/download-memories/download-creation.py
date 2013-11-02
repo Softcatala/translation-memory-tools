@@ -19,6 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import sys
+import locale
 sys.path.append('../../src/')
 from jsonbackend import JsonBackend
 import os
@@ -54,7 +55,7 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
 
     html += "<td>" + link(get_zip_file(potext), pofile) + "</td>\r"
     html += "<td>" + link(get_zip_file(tmxtext), tmxfile) + "</td>\r"
-    html += "<td>" + format(words, ',d') + "</td>\r"
+    html += "<td>" +  locale.format("%d", words, grouping=True) + "</td>\r"
     html += "<td>" + date + "</td>\r"
     html += "</tr>\r"
     return html
@@ -204,6 +205,7 @@ def main():
     print "Creates download.html file"
     print "Use --help for assistance"
 
+    locale.setlocale(locale.LC_ALL, '')
     read_parameters()
 
     create_output_dir("memories")

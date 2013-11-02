@@ -19,6 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import sys
+import locale
 sys.path.append('../../src/')
 
 import polib
@@ -56,7 +57,7 @@ class Search:
         today = datetime.date.today()
         html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
         html += u' i conté ' + str(self.projects) + ' projectes amb un total de ' 
-        html += format(self.words, ',d') + ' paraules</p>'
+        html += locale.format("%d", self.words, grouping=True) + ' paraules</p>'
         html_file = open("statistics.html", "w")
         html_file.write(html.encode('utf-8'))        
         html_file.close()
@@ -123,7 +124,9 @@ def main():
     print "Use --help for assistance"
 
     start_time = time.time()
-    
+
+    locale.setlocale(locale.LC_ALL, '')
+        
     read_parameters()
     search = Search()
     search.create_index()
