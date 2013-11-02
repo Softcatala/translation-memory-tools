@@ -17,6 +17,5 @@ cp tm-git/web/download-memories/download.html $TARGET_DIR
 cp tm-git/web/download-memories/download.html $TARGET_DIR
 rm -r -f $TARGET_DIR/memories
 mkdir $TARGET_DIR/memories
-#cp translation-memories/po/*.po $TARGET_DIR/memories
-#cp translation-memories/tmx/*.tmx $TARGET_DIR/memories
 cp tm-git/web/download-memories/memories/*.zip $TARGET_DIR/memories
+cp tm-git/src/report.txt $TARGET_DIR
