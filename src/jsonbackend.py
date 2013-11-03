@@ -103,7 +103,6 @@ class JsonBackend:
                     if prop in value:
                         setattr(project, prop, value[prop])
 
-                print str(type(project.disabled)) + " :" + str(project.disabled)
                 if (project.disabled is True):
                     continue
                 
