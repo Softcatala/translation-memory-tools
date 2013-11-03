@@ -2,7 +2,6 @@
 {
 	"projects": {
 		"Mozilla": {
-			"filename" : "mozilla-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
 			"fileset": {
 				"mozilla": {
@@ -25,7 +24,6 @@
 			}
 		},
 		"Mandriva": {
-			"filename" : "mandriva-tm.po",
 			"fileset": {
 				"mandriva": {
 					"url" : "../source-pos/mandriva-po/*.po",
@@ -34,7 +32,6 @@
 			}
 		},
         "ownCloud": {
-            "filename" : "owncloud-tm.po",
             "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
             "disabled": true,
             "fileset": {

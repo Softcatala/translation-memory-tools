@@ -106,6 +106,7 @@ class JsonBackend:
                 if (project.disabled is True):
                     continue
                 
+                project.filename = '{0}-tm.po'.format(project.name.lower())
                 self.projects.append(project)
 
                 if 'fileset' in value:

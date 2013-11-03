@@ -1,7 +1,6 @@
 {
     "projects": {
     "Header": {
-            "filename" : "header-tm.po",
             "softcatala" : "true",
             "fileset": {
                     "header": {
@@ -12,7 +11,6 @@
             }
     },
     "Recull": {
-            "filename" : "recull-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Recull_de_termes",
             "softcatala" : "true",
             "fileset": {
@@ -24,7 +22,6 @@
             }
     },
     "Mozilla": {
-            "filename" : "mozilla-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
             "softcatala" : "true",
             "fileset": {
@@ -77,7 +74,6 @@
             }
     },
     "GNOME": {
-            "filename" : "gnome-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/GNOME",
             "softcatala" : "true",
             "fileset": {
@@ -154,7 +150,6 @@
             }
     },
     "LibreOffice": {
-            "filename" : "libreoffice-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/LibreOffice",
             "softcatala" : "true",
             "fileset": {
@@ -176,7 +171,6 @@
             }
     },
     "FileZilla": {
-            "filename" : "filezilla-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
             "softcatala" : "true",
             "fileset": {
@@ -188,7 +182,6 @@
             }
     },
     "Abiword": {
-            "filename" : "abiword-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Abiword",
             "softcatala" : "true",
             "fileset": {
@@ -200,7 +193,6 @@
             }
     },
     "VirtualBox": {
-            "filename" : "virtualbox-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/VirtualBox",
             "softcatala" : "true",
             "fileset": {
@@ -212,7 +204,6 @@
             }
     },
     "VLC": {
-            "filename" : "vlc-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/VLC",
             "softcatala" : "true",
             "fileset": {
@@ -222,8 +213,7 @@
                     }
             }
     },
-    "GPGMail": {
-            "filename" : "pgptools-tm.po",
+    "GPGTools": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/GPGTools",
             "softcatala" : "true",
             "fileset": {
@@ -234,7 +224,6 @@
             }
     },
     "Fedora": {
-            "filename" : "fedora-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Fedora",
             "softcatala" : "true",
             "fileset": {
@@ -257,7 +246,6 @@
             }
     },
     "Ubuntu": {
-            "filename" : "ubuntu-tm.po",
             "projectweb" : "https://wiki.ubuntu.com/UbuntuCatalanTranslators",
             "softcatala" : "true",
             "fileset": {
@@ -284,7 +272,6 @@
             }
     },
     "Mailman": {
-            "filename" : "mailman-tm.po",
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mailman",
             "softcatala" : "true",
             "fileset": {
@@ -296,7 +283,6 @@
             }
     },
     "Pootle": {
-            "filename" : "pootle-tm.po",
             "softcatala" : "true",
             "fileset": {
                     "Pootle": {
@@ -312,7 +298,6 @@
             }
     },
     "Mandriva": {
-            "filename" : "mandriva-tm.po",
             "softcatala" : "true",
             "fileset": {
                     "mandriva": {
@@ -322,7 +307,6 @@
             }
     },
     "Monodevelop": {
-            "filename" : "monodevelop-tm.po",
             "softcatala" : "true",
             "fileset": {
                     "monodevelop": {
@@ -333,7 +317,6 @@
             }
     },
     "Debian": {
-            "filename" : "debian-tm.po",
             "projectweb" : "http://www.debian.org/international/l10n/po/ca",
             "fileset": {
                     "apt": {
@@ -364,7 +347,6 @@
             }
     },
     "OpenSuse": {
-            "filename" : "opensuse-tm.po",
             "projectweb" : "http://en.opensuse.org/openSUSE:Localization_team",
             "fileset": {
                     "yast" : {
@@ -382,7 +364,6 @@
             }
     },
     "Kde": {
-            "filename" : "kde-tm.po",
             "projectweb" : "http://cat.kde.org/",
             "fileset": {
                     "kde" : {
@@ -393,7 +374,6 @@
             }
     },
     "gnutools": {
-            "filename" : "gnutools-tm.po",
             "projectweb" : "http://translationproject.org/team/ca.html",
             "fileset": {
                     "gnuetools" : {
@@ -404,7 +384,6 @@
             }
     },
     "Joomla": {
-            "filename" : "joomla-tm.po",
             "projectweb" : "http://community.joomla.org/translations/joomla-16-translations.html#ca-es",
             "fileset": {
                     "Joomla" : {
@@ -414,7 +393,6 @@
             }
     },
     "LinuxMint": {
-            "filename" : "linuxmint-tm.po",
             "projectweb" : "https://launchpad.net/~linuxmint-translation-team-catalan",
             "comment" : "Files obtained from http://packages.linuxmint.com/list.php?release=Olivia since cannot be downloaded from https://translations.launchpad.net/linuxmint/latest/+lang/ca",
             "fileset": {
@@ -433,7 +411,6 @@
             }
     },
     "Chromium": {
-            "filename" : "chromium-tm.po",
             "projectweb" : "https://translations.launchpad.net/chromium-browser/translations/+lang/ca",
             "fileset": {
                     "chromium": {
@@ -444,7 +421,6 @@
             }
     },
     "Drupal": {
-            "filename" : "drupal-tm.po",
             "projectweb" : "https://drupal.org/project/ca",
             "comment" : "See https://localize.drupal.org/download",
             "fileset": {
@@ -456,7 +432,6 @@
             }
     },
     "WordPress": {
-            "filename" : "wordpress-tm.po",
             "projectweb" : "http://ca.wordpress.org/",
             "fileset": {
                     "yast" : {
@@ -466,7 +441,6 @@
             }
     },
     "Blender": {
-            "filename" : "blender-tm.po",
             "projectweb" : "http://www.blender.cat/",
             "disabled": true,
             "fileset": {
@@ -477,7 +451,6 @@
             }
     },
     "Mediawiki": {
-            "filename" : "mediawiki-tm.po",
             "projectweb" : "http://www.mediawiki.org/wiki/MediaWiki/ca",
             "fileset": {
                     "main": {
@@ -493,7 +466,6 @@
             }
     },
     "OpenStreetMap": {
-            "filename" : "openstreetmap-tm.po",
             "projectweb" : "http://wiki.openstreetmap.org/wiki/Ca:Main_Page",
             "fileset": {
                     "main": {
@@ -504,7 +476,6 @@
             }
     },
     "Track": {
-            "filename" : "track-tm.po",
             "projectweb" : "http://trac.edgewall.org/ticket/7353",
             "fileset": {
                     "main": {
@@ -515,7 +486,6 @@
             }
     },
     "JOSM": {
-			"filename" : "josm-tm.po",
 			"projectweb" : "http://translations.launchpad.net/josm/trunk/+pots/josm/ca/+translate",
 			"fileset": {
 				"JOSM": {
@@ -526,7 +496,6 @@
 			}
     },
     "ownCloud": {
-            "filename" : "owncloud-tm.po",
             "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
             "softcatala" : "false",
             "fileset": {
@@ -537,7 +506,6 @@
             }
     },
     "LibreCAD": {
-            "filename" : "librecad-tm.po",
             "softcatala" : "false",
             "projectweb" : "http://translate.librecad.org/pootle/ca/",
             "fileset": {
