@@ -515,6 +515,16 @@
                             "target": "librecad-ca.ts"
                     }
             }
+    },
+    "Xfce": {
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/VLC",
+            "softcatala" : "true",
+            "fileset": {
+                    "Xfce" : {
+                            "url" : "https://www.transifex.com/projects/p/xfce/r/all-resources/",
+                            "type": "transifex"
+                    }
+            }
         }
     }
 }
