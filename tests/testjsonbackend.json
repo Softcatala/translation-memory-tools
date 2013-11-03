@@ -32,6 +32,17 @@
 					"type": "local-dir"
 				}
 			}
-		}
-	}	
+		},
+        "ownCloud": {
+            "filename" : "owncloud-tm.po",
+            "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
+            "disabled": true,
+            "fileset": {
+                    "ownCloud" : {
+                            "url" : "https://www.transifex.com/projects/p/owncloud/",
+                            "type": "transifex"
+                    }
+            }
+	    }
+    }
 }

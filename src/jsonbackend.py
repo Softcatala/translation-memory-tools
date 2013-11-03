@@ -30,11 +30,14 @@ class ProjectDTO:
         self.filename = ''
         self.projectweb = ''
         self.softcatala = ''
+        self.disabled = False
         self.filesets = []
 
     def __str__(self):
-        text = 'ProjectDTO. Name: {0}, filename: {1}, project web: {2}'
-        return text.format(self.name, self.filename, self.projectweb)
+        text = 'ProjectDTO. Name: {0}, filename: {1}, project web: {2}, ' \
+            'disabled {3}'
+        return text.format(self.name, self.filename, self.projectweb, 
+                           self.disabled)
 
 
 class FileSetDTO:
@@ -94,12 +97,17 @@ class JsonBackend:
             # Parse projects
             for attribute, value in data['projects'].items():
                 project = ProjectDTO(attribute)
-                self.projects.append(project)
-
+                
                 # Get project properties
-                for prop in ('filename', 'projectweb', 'softcatala'):
+                for prop in ('filename', 'projectweb', 'softcatala', 'disabled'):
                     if prop in value:
                         setattr(project, prop, value[prop])
+
+                print str(type(project.disabled)) + " :" + str(project.disabled)
+                if (project.disabled is True):
+                    continue
+                
+                self.projects.append(project)
 
                 if 'fileset' in value:
                     self._process_fileset(project, value['fileset'])

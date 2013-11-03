@@ -468,6 +468,7 @@
     "Blender": {
             "filename" : "blender-tm.po",
             "projectweb" : "http://www.blender.cat/",
+            "disabled": true,
             "fileset": {
                     "blender" : {
                             "url" : "https://svn.blender.org/svnroot/bf-translations/branches/ca/",
