@@ -4,6 +4,6 @@ Use flake8 *.py
 
 --- Running unit tests
 
-Individually: pytest test_name.py
+Individually: py.test test_name.py
 
 As a group: nosetests
