@@ -534,6 +534,18 @@
                             "type": "transifex"
                     }
             }
-    }
+    },
+    "LibreCAD": {
+            "filename" : "librecad-tm.po",
+            "softcatala" : "false",
+            "projectweb" : "http://translate.librecad.org/pootle/ca/",
+            "fileset": {
+                    "LibreCAD" : {
+                            "url" : "https://github.com/LibreCAD/LibreCAD/raw/master/librecad/ts/librecad_ca.ts",
+                            "type": "file",
+                            "target": "librecad-ca.ts"
+                    }
+            }
+        }
     }
 }
