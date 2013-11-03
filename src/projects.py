@@ -50,7 +50,7 @@ class Projects:
         logging.debug(project_dto)
 
     def __call__(self):
-        """Proces all projects"""
+        """Process all projects"""
         for project in self.projects:
             project.do()
 
