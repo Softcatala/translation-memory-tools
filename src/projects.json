@@ -78,7 +78,7 @@
             "softcatala" : "true",
             "fileset": {
                     "gnome-ui": {
-                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/ui.tar.gz",
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-12/ui.tar.gz",
                             "type": "compressed",
                             "target": "gnome-ui.tar.gz"
                     },
@@ -123,7 +123,7 @@
                             "target": "olpc.tar.gz"
                     },
                     "gnome-doc": {
-                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-10/doc.tar.gz",
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-12/doc.tar.gz",
                             "type": "compressed",
                             "target": "gnome-doc.tar.gz"
                     },
