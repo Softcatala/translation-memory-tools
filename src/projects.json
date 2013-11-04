@@ -346,7 +346,7 @@
                     }
             }
     },
-    "OpenSuse": {
+    "openSUSE": {
             "projectweb" : "http://en.opensuse.org/openSUSE:Localization_team",
             "fileset": {
                     "yast" : {
