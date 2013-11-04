@@ -366,10 +366,13 @@
     "Kde": {
             "projectweb" : "http://cat.kde.org/",
             "fileset": {
-                    "kde" : {
-                            "url" : "http://ftp.kde.org/stable/4.11.2/src/kde-l10n/kde-l10n-ca-4.11.2.tar.xz",
-                            "type": "compressed",
-                            "target": "kde-l10n.tar.xz"
+                    "web" : {
+                            "url" : "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/ca/messages/",
+                            "type": "subversion"
+                    },
+                    "documentation" : {
+                            "url" : "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/ca/docmessages/",
+                            "type": "subversion"
                     }
             }
     },
