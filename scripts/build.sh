@@ -4,6 +4,8 @@ ROOT=/home/jmas
 if [ ! -z "$DEVENV" ]; then
     ROOT=/home/jmas/dev
     echo Development enviroment set to $ROOT
+    cd $ROOT/tm-git/src
+    git pull
 fi
 
 INTERMEDIATE_PO=$ROOT/translation-memories/po
