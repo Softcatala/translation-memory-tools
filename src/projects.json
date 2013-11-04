@@ -535,6 +535,16 @@
                             "target": "limesurvey-ca.po"
                     }
             }
+    },
+    "Sigil": {
+            "projectweb" : "https://www.transifex.com/projects/p/sigil/language/ca/",
+            "fileset": {
+                    "sigil": {
+                            "url" : "https://www.transifex.com/projects/p/sigil/",
+                            "type": "transifex",
+                            "target": "sigil-ca.po"
+                    }
+            }
         }
     }
 }
