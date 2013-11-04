@@ -73,7 +73,16 @@ apply-tm.py (experimental)
 compare-sets.py (for reporting propouses)
    Compares two sets of the PO files and counts the words
     
-Located at ``src`` subdirectory:
+Located at ``web`` subdirectory:
+
+search 
+   Scripts to create the Whossh index and enable the web application
+   
+download-memories
+   Generates the web page to download the memories
+   
+scripts
+   All the automation scripts to build the system automatically nightly
 
 
 Commands
