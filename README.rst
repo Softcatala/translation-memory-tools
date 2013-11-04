@@ -23,6 +23,7 @@ Dependencies
 * bzr (bazaar distributed version control client)
 * gettext
 * translate-toolkit
+* Subversion 1.7 or higher
 * nose (using 'pip install nose')
 
 
