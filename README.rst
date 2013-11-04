@@ -62,13 +62,18 @@ Applications
 
 Located at ``src`` subdirectory:
 
-builder.py
+builder.py (main program)
    Builds the translation memory: downloads files, merge them and builds the
    final translation memory
 
-apply-tm.py
+apply-tm.py (experimental)
    Downloads a file and applies the translation memory and lists the files
    that gain more translations
+
+compare-sets.py (for reporting propouses)
+   Compares two sets of the PO files and counts the words
+    
+Located at ``src`` subdirectory:
 
 
 Commands
