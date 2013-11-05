@@ -363,7 +363,7 @@
                     }
             }
     },
-    "Kde": {
+    "KDE": {
             "projectweb" : "http://cat.kde.org/",
             "fileset": {
                     "kde" : {
