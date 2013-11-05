@@ -23,6 +23,7 @@ Dependencies
 * bzr (bazaar distributed version control client)
 * gettext
 * translate-toolkit
+* Subversion 1.7 or higher
 * nose (using 'pip install nose')
 
 
@@ -62,13 +63,27 @@ Applications
 
 Located at ``src`` subdirectory:
 
-builder.py
+builder.py (main program)
    Builds the translation memory: downloads files, merge them and builds the
    final translation memory
 
-apply-tm.py
+apply-tm.py (experimental)
    Downloads a file and applies the translation memory and lists the files
    that gain more translations
+
+compare-sets.py (for reporting propouses)
+   Compares two sets of the PO files and counts the words
+    
+Located at ``web`` subdirectory:
+
+search 
+   Scripts to create the Whossh index and enable the web application
+   
+download-memories
+   Generates the web page to download the memories
+   
+scripts
+   All the automation scripts to build the system automatically nightly
 
 
 Commands

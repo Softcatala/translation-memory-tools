@@ -22,7 +22,7 @@ from fileset import FileSet
 import os
 
 
-CMD = 'cd {0} && svn co --non-recursive --trust-server-cert ' \
+CMD = 'cd {0} && svn co --trust-server-cert ' \
     '--non-interactive {1}'
 
 
