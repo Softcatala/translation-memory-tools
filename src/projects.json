@@ -555,6 +555,16 @@
                             "target": "mate-ca.po"
                     }
             }
+    },
+    "Audacity": {
+            "projectweb" : "https://www.transifex.com/projects/p/audacity/language/ca/",
+            "fileset": {
+                    "audacity": {
+                            "url" : "https://www.transifex.com/projects/p/audacity/",
+                            "type": "transifex",
+                            "target": "audacity-ca.po"
+                    }
+            }
         }
     }
 }
