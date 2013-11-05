@@ -548,6 +548,7 @@
     },
     "MATE": {
             "projectweb" : "https://www.transifex.com/projects/p/MATE/language/ca/",
+            "disabled": true,
             "fileset": {
                     "mate": {
                             "url" : "https://www.transifex.com/projects/p/MATE/",
@@ -558,11 +559,23 @@
     },
     "Audacity": {
             "projectweb" : "https://www.transifex.com/projects/p/audacity/language/ca/",
+            "disabled": true,
             "fileset": {
                     "audacity": {
                             "url" : "https://www.transifex.com/projects/p/audacity/",
                             "type": "transifex",
                             "target": "audacity-ca.po"
+                    }
+            }
+    },
+    "iDEditor": {
+            "projectweb" : "https://www.transifex.com/projects/p/id-editor/language/ca/",
+            "disabled": true,
+            "fileset": {
+                    "audacity": {
+                            "url" : "https://www.transifex.com/projects/p/id-editor/",
+                            "type": "transifex",
+                            "target": "id-editor-ca.po"
                     }
             }
         }
