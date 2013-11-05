@@ -171,7 +171,7 @@
             }
     },
     "FileZilla": {
-            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
+            "projectweb" : "http://pootle.softcatala.org/projects/filezilla/",
             "softcatala" : "true",
             "fileset": {
                     "filezilla": {
