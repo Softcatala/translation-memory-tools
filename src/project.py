@@ -137,5 +137,10 @@ class Project:
 
     def to_tmx(self):
         fileName, fileExtension = os.path.splitext(self.filename)
-        cmd = 'po2tmx {0} --comment others -l ca-ES -o {1}.tmx'
+        # TODO: Once a translate toolkit version > 1.10 has been published
+        # (https://github.com/translate/translate/releases) we can deploy
+        # the version and add the comment parameter to allow export comments
+        # to TMX
+        #cmd = 'po2tmx {0} --comment others -l ca-ES -o {1}.tmx'
+        cmd = 'po2tmx {0} -l ca-ES -o {1}.tmx'
         os.system(cmd.format(self.filename, fileName))
