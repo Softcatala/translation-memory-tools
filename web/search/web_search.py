@@ -51,7 +51,6 @@ class Search:
             print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
 
         print '</div>'
-        print '</br></br>'
         
 
     def search(self, term, org):
@@ -84,8 +83,8 @@ def open_html(term):
     print '<html><head>'
     print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
     print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
-    print '<a href = "/index.html">Torna a la pàgina anterior</a></br></br>'
-    print 'Terme de cerca: ' + term + '</br></br>'
+    print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + term + '</span></br></br>'
+    print '<a href = "/index.html">< Torna a la pàgina anterior</a></br></br>'
 
 def main():
 

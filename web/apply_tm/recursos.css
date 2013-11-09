@@ -12,7 +12,61 @@ body
 
 .result
 { 
-     background-color:aliceblue;
+    border-top: 5px solid #E7E7E7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+b[class^='match'],b[class*=' match']
+{
+	 color: #BA2626;
+}
+
+.searched
+{ 
+    font-weight:bold;
+    font-size: 20px;
+    font-family: Arial;
+    color: #BA2626;
+}
+
+.searched-term
+{ 
+    font-style: bold;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+
+.search-box
+{ 
+    background-color: #E5E3D8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search-box p
+{ 
+    font-weight:bold;
+}
+
+.search-samples
+{ 
+    background-color: #F2F0E5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.download-table table
+{
+    border-collapse: collapse;
+    background-color: #FF0000;
+}
+ 
+.download-table th
+{
+    background-color: #F2F0E5;
 }
 
 
