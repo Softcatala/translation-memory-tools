@@ -14,7 +14,7 @@ mkdir $TARGET_DIR/indexdir
 cp -r $ROOT/tm-git/web/search/indexdir/* $TARGET_DIR/indexdir
 
 # Search TM app
-cp $ROOT/tm-git/web/apply_tm/recursos.css $TARGET_DIR
+cp $ROOT/tm-git/web/search/recursos.css $TARGET_DIR
 cp $ROOT/tm-git/web/search/index.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/web_search.py $TARGET_DIR
 cp $ROOT/tm-git/web/search/statistics.html $TARGET_DIR

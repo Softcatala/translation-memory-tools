@@ -79,7 +79,8 @@ python index-creation.py -d $INTERMEDIATE_PO
 # Notify completion
 cd $PROGRAMS
 pwd
-python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO > report.txt
-ls report.txt -l
-cat report.txt | mail -s "Recursos updated" "jmas@softcatala.org" 
+python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO 
+#python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO > report.txt
+#ls report.txt -l
+#cat report.txt | mail -s "Recursos updated" "jmas@softcatala.org" 
 
