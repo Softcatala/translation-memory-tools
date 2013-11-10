@@ -58,13 +58,12 @@ b[class^='match'],b[class*=' match']
     padding-bottom: 10px;
 }
 
-.download-table table
+table
 {
     border-collapse: collapse;
-    background-color: #FF0000;
 }
  
-.download-table th
+th
 {
     background-color: #F2F0E5;
 }
