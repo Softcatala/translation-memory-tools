@@ -56,7 +56,7 @@ class BazaarFileSet(FileSet):
             outfile = os.path.join(self.temp_dir, 'ca.po')
             os.system('bzr cat {0} > {1}'.format(self.url, outfile))
         else:
-            os.system('cd {0} && bzr checkout --lightweight'.format(
+            os.system('cd {0} && bzr checkout --lightweight {1}'.format(
                 self.temp_dir,
                 self.url
             ))
