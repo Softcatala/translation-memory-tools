@@ -551,7 +551,6 @@
     },
     "MATE": {
             "projectweb" : "https://www.transifex.com/projects/p/MATE/language/ca/",
-            "disabled": true,
             "fileset": {
                     "mate": {
                             "url" : "https://www.transifex.com/projects/p/MATE/",
@@ -562,7 +561,6 @@
     },
     "Audacity": {
             "projectweb" : "https://www.transifex.com/projects/p/audacity/language/ca/",
-            "disabled": true,
             "fileset": {
                     "audacity": {
                             "url" : "https://www.transifex.com/projects/p/audacity/",
