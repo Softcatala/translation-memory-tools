@@ -1,0 +1,4955 @@
+# Translations template for ceilometer.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the ceilometer project.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Ceilometer\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-11-25 10:56+0000\n"
+"PO-Revision-Date: 2013-11-20 11:46+0000\n"
+"Last-Translator: openstackjenkins <jenkins@openstack.org>\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/openstack/"
+"language/ca/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cinder/policy.py:32
+msgctxt ""
+"Translation source: /translations/cinder.cinder-translations/ca.po from "
+"project 'main'"
+msgid "JSON file representing policy"
+msgstr "Fitxer JSON que representa la politica"
+
+#: cinder/policy.py:35
+msgctxt ""
+"Translation source: /translations/cinder.cinder-translations/ca.po from "
+"project 'main'"
+msgid "Rule checked when requested rule is not found"
+msgstr "Marca la regla quan aquesta no s'ha trobat"
+
+#: forms.py:49
+msgctxt ""
+"Translation source: /translations/horizon.djangopo/ca.po from project 'main'"
+msgid "User Name"
+msgstr "Nom d'usuari"
+
+#: forms.py:50
+msgctxt ""
+"Translation source: /translations/horizon.djangopo/ca.po from project 'main'"
+msgid "Password"
+msgstr "Contrasenya"
+
+#: static/horizon/js/horizon.forms.js:97
+msgctxt ""
+"Translation source: /translations/horizon.horizon-js-translations/ca.po from "
+"project 'main'"
+msgid "Filter"
+msgstr "Filtre"
+
+#: static/horizon/js/horizon.modals.js:33
+msgctxt ""
+"Translation source: /translations/horizon.horizon-js-translations/ca.po from "
+"project 'main'"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: static/horizon/js/horizon.users.js:18
+msgctxt ""
+"Translation source: /translations/horizon.horizon-js-translations/ca.po from "
+"project 'main'"
+msgid "Passwords do not match."
+msgstr "Les contrasenyes no coinicdeixen"
+
+#: base.py:429
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Other"
+msgstr "Altre"
+
+#: decorators.py:55
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Please log in to continue."
+msgstr "Identifiqueu-vos per continuar."
+
+#: decorators.py:87
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "You are not authorized to access %s"
+msgstr "No esteu autoritzats per accedir a %s"
+
+#: exceptions.py:284
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Unauthorized. Please try logging in again."
+msgstr "Sense autorització. Torneu a intentar-ho."
+
+#: conf/default.py:29
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Password is not accepted"
+msgstr "La contrasenya no ha estat acceptada"
+
+#: tables/actions.py:381
+#: templates/horizon/common/_data_table_table_actions.html:13
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Filter"
+msgstr "Filtre"
+
+#: tables/actions.py:622
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "You do not have permission to %(action)s: %(objs)s"
+msgstr "No teniu per misos per a  %(action)s: %(objs)s"
+
+#: tables/actions.py:628
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Unable to %(action)s: %(objs)s"
+msgstr "No es pot %(action)s: %(objs)s"
+
+#: tables/actions.py:634
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%(action)s: %(objs)s"
+msgstr "%(action)s: %(objs)s"
+
+#: tables/actions.py:644
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Delete"
+msgstr "Eliminar"
+
+#: tables/actions.py:645
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Deleted"
+msgstr "Eliminat"
+
+#: tables/base.py:287
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "The attribute %(attr)s doesn't exist on %(obj)s."
+msgstr "L'attribut %(attr)s no existeix a %(obj)s"
+
+#: tables/base.py:766
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "No items to display."
+msgstr "No hi ha itemas per mostrar"
+
+#: tables/base.py:870
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Actions"
+msgstr "Accions"
+
+#: tables/base.py:1063
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "No match returned for the id \"%s\"."
+msgstr "No hi ha resultats per l'identificador \"%s\"."
+
+#: tables/base.py:1193
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Please select a row before taking that action."
+msgstr "Heu de seleccionar una fila abans de dur a terme aquesta acció."
+
+#: templates/_header.html:6
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Help"
+msgstr "Ajuda"
+
+#: templates/_header.html:8
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Sign Out"
+msgstr "Sortir"
+
+#: templates/splash.html:7 templates/auth/login.html:4
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Login"
+msgstr "Usuari"
+
+#: templates/auth/_login.html:5
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Log In"
+msgstr "Identificació"
+
+#: templates/auth/_login.html:33
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Sign In"
+msgstr "Registrar-se"
+
+#: templates/horizon/_messages.html:7
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Info: "
+msgstr "Informació:"
+
+#: templates/horizon/_messages.html:13
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Warning: "
+msgstr "Advertència:"
+
+#: templates/horizon/_messages.html:19
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Success: "
+msgstr "Èxit:"
+
+#: templates/horizon/_messages.html:25
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Error: "
+msgstr "Error: "
+
+#: templates/horizon/common/_data_table.html:54
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Summary"
+msgstr "Resum"
+
+#: templates/horizon/common/_data_table.html:63
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Displaying %(counter)s item"
+msgid_plural "Displaying %(counter)s items"
+msgstr[0] "Mostrant %(counter)s element"
+msgstr[1] "Mostrar %(counter)s elements"
+
+#: templates/horizon/common/_limit_summary.html:4
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Limit Summary"
+msgstr "Resum"
+
+#: templates/horizon/common/_limit_summary.html:7
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Instances"
+msgstr "Instància"
+
+#: templates/horizon/common/_limit_summary.html:14
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "VCPUs"
+msgstr "VCPUs"
+
+#: templates/horizon/common/_limit_summary.html:21
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "RAM"
+msgstr "RAM"
+
+#: templates/horizon/common/_limit_summary.html:28
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Floating IPs"
+msgstr "IP flotants"
+
+#: templates/horizon/common/_resource_browser.html:10
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Displaying %(nav_items)s item"
+msgid_plural "Displaying %(nav_items)s items"
+msgstr[0] "Mostrant %(nav_items)s objjecte"
+msgstr[1] "Mostrant %(nav_items)s objjectes"
+
+#: templates/horizon/common/_resource_browser.html:11
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Displaying %(content_items)s item"
+msgid_plural "Displaying %(content_items)s items"
+msgstr[0] "Mostrant %(content_items)s objjecte"
+msgstr[1] "Mostrant %(content_items)s objjectes"
+
+#: templates/horizon/common/_sidebar.html:15
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Current Project"
+msgstr "Projecte actual"
+
+#: templates/horizon/common/_usage_summary.html:8
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Submit"
+msgstr "Transmet"
+
+#: templates/horizon/common/_usage_summary.html:14
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Active Instances"
+msgstr "Activar instàncies"
+
+#: templates/horizon/common/_usage_summary.html:15
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Active RAM"
+msgstr "Memòria activa"
+
+#: templates/horizon/common/_workflow.html:36
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Cancel"
+msgstr "Cancela"
+
+#: templatetags/branding.py:35
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Horizon"
+msgstr "Horizon"
+
+#: templatetags/horizon.py:92
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "No Limit"
+msgstr "Sense limit"
+
+#: templatetags/horizon.py:94 templatetags/horizon.py:96
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Available"
+msgstr "Disponible"
+
+#: templatetags/sizeformat.py:45
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d byte"
+msgstr[1] "%(size)d bytes"
+
+#: templatetags/sizeformat.py:49
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%(size)d"
+msgid_plural "%(size)d"
+msgstr[0] "%(size)d"
+msgstr[1] "%(size)d"
+
+#: templatetags/sizeformat.py:52
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s KB"
+msgstr "%s KB"
+
+#: templatetags/sizeformat.py:55
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s MB"
+msgstr "%s MB"
+
+#: templatetags/sizeformat.py:58
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s GB"
+msgstr "%s GB"
+
+#: templatetags/sizeformat.py:61
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s TB"
+msgstr "%s TB"
+
+#: templatetags/sizeformat.py:63
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s PB"
+msgstr "%s PB"
+
+#: utils/fields.py:48
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Incorrect format for IP address"
+msgstr "Format incorrecte per l'adreça IP"
+
+#: utils/fields.py:49
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Invalid version for IP address"
+msgstr "Versió incorrecta de l'adreça IP"
+
+#: utils/fields.py:50
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Invalid subnet mask"
+msgstr "Màscara de xarxa invàlida"
+
+#: workflows/base.py:72
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Processing..."
+msgstr "Processant..."
+
+#: workflows/base.py:601
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "Save"
+msgstr "Desa"
+
+#: workflows/base.py:602
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s completed successfully."
+msgstr "%s completat correctament."
+
+#: workflows/base.py:603
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.horizon-translations/ca.po from "
+"project 'main'"
+msgid "%s did not complete."
+msgstr "%s no s'ha completat"
+
+#: settings.py:85
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "AKI - Amazon Kernel Image"
+msgstr "AKI - Amazon Kernel Image"
+
+#: settings.py:86
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "AMI - Amazon Machine Image"
+msgstr "AMI - Amazon Machine Image"
+
+#: settings.py:87
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "ARI - Amazon Ramdisk Image"
+msgstr "ARI - Amazon Ramdisk Image"
+
+#: settings.py:88
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "ISO - Optical Disk Image"
+msgstr "ISO - Imatge de disc Optic"
+
+#: settings.py:89
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "QCOW2 - QEMU Emulator"
+msgstr "QCOW2 - Emulador QEMU"
+
+#: settings.py:177
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "English"
+msgstr "Anglès"
+
+#: settings.py:180
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Spanish"
+msgstr "Castellà"
+
+#: settings.py:181
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "French"
+msgstr "Francès"
+
+#: settings.py:182
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Japanese"
+msgstr "Japonès"
+
+#: settings.py:186
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Portuguese (Brazil)"
+msgstr "Portugès (Brasil)"
+
+#: settings.py:187
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Simplified Chinese"
+msgstr "Chinès simplificat"
+
+#: api/cinder.py:90
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unknown instance"
+msgstr "Instància desconeguda"
+
+#: dashboards/admin/dashboard.py:24
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "System Panel"
+msgstr "Panell del Sistema"
+
+#: dashboards/admin/dashboard.py:36
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Admin"
+msgstr "Administració"
+
+#: dashboards/admin/defaults/tables.py:46
+#: dashboards/admin/defaults/workflows.py:37
+#: dashboards/admin/flavors/tables.py:94
+#: dashboards/admin/flavors/workflows.py:48
+#: dashboards/admin/overview/views.py:34
+#: dashboards/admin/projects/workflows.py:49
+#: dashboards/project/instances/templates/instances/_detail_overview.html:31
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:10
+#: dashboards/project/overview/views.py:33 usage/tables.py:20
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "VCPUs"
+msgstr "VCPUs"
+
+#: dashboards/admin/defaults/tables.py:47
+#: dashboards/admin/defaults/workflows.py:38
+#: dashboards/admin/hypervisors/tables.py:69
+#: dashboards/admin/instances/panel.py:29
+#: dashboards/admin/instances/tables.py:39
+#: dashboards/admin/instances/tables.py:124
+#: dashboards/admin/instances/templates/instances/index.html:3
+#: dashboards/admin/projects/workflows.py:50
+#: dashboards/project/databases/tables.py:39
+#: dashboards/project/instances/panel.py:25
+#: dashboards/project/instances/tables.py:78
+#: dashboards/project/instances/tables.py:93
+#: dashboards/project/instances/tables.py:122
+#: dashboards/project/instances/tables.py:154
+#: dashboards/project/instances/tables.py:449
+#: dashboards/project/instances/tables.py:463
+#: dashboards/project/instances/tables.py:577
+#: dashboards/project/instances/templates/instances/index.html:3
+#: dashboards/project/instances/templates/instances/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Instances"
+msgstr "Instàncies"
+
+#: dashboards/admin/defaults/tables.py:51
+#: dashboards/admin/defaults/workflows.py:47
+#: dashboards/admin/projects/workflows.py:57
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Gigabytes"
+msgstr "Gigabytes"
+
+#: dashboards/admin/defaults/tables.py:52
+#: dashboards/admin/defaults/workflows.py:48
+#: dashboards/admin/projects/workflows.py:58
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "RAM (MB)"
+msgstr "RAM (MB)"
+
+#: dashboards/admin/defaults/tables.py:53
+#: dashboards/admin/defaults/workflows.py:49
+#: dashboards/admin/projects/workflows.py:59
+#: dashboards/admin/projects/workflows.py:67
+#: dashboards/project/access_and_security/tabs.py:76
+#: dashboards/project/access_and_security/floating_ips/tables.py:66
+#: dashboards/project/access_and_security/floating_ips/tables.py:147
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Floating IPs"
+msgstr "IP flotants"
+
+#: dashboards/admin/defaults/tables.py:57
+#: dashboards/admin/networks/ports/tables.py:76
+#: dashboards/admin/projects/workflows.py:60
+#: dashboards/admin/routers/ports/tables.py:31
+#: dashboards/project/networks/ports/tables.py:54
+#: dashboards/project/routers/ports/tables.py:85
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Fixed IPs"
+msgstr "Adreça IP fixa"
+
+#: dashboards/admin/defaults/tables.py:63
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Quota Name"
+msgstr "Nom de la quota"
+
+#: dashboards/admin/defaults/tables.py:64
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Limit"
+msgstr "Límit"
+
+#: dashboards/admin/defaults/tables.py:71
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Quotas"
+msgstr "Quotes"
+
+#: dashboards/admin/defaults/tabs.py:29
+#: dashboards/admin/defaults/workflows.py:67
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Default Quotas"
+msgstr "Quota per defecte"
+
+#: dashboards/admin/defaults/tabs.py:39
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to get quota info."
+msgstr "No s'ha pogut obtenir la informació de la quota"
+
+#: dashboards/admin/defaults/views.py:46
+#: dashboards/admin/projects/views.py:138
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve default quota values."
+msgstr "No s'han pogut obtenir els valors de la quota predeterminada"
+
+#: dashboards/admin/domains/tables.py:63
+#: dashboards/admin/flavors/extras/tables.py:46
+#: dashboards/admin/roles/tables.py:37 dashboards/admin/users/tables.py:30
+#: dashboards/project/images_and_snapshots/images/tables.py:81
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit"
+msgstr "Edita"
+
+#: dashboards/admin/domains/tables.py:166
+#: dashboards/admin/domains/workflows.py:35
+#: dashboards/admin/flavors/workflows.py:37
+#: dashboards/admin/groups/forms.py:32 dashboards/admin/groups/forms.py:58
+#: dashboards/admin/groups/tables.py:100 dashboards/admin/info/tables.py:38
+#: dashboards/admin/info/tables.py:68 dashboards/admin/info/tables.py:101
+#: dashboards/admin/info/tables.py:132 dashboards/admin/info/tables.py:177
+#: dashboards/admin/instances/tables.py:92
+#: dashboards/admin/networks/forms.py:35
+#: dashboards/admin/networks/forms.py:100
+#: dashboards/admin/networks/ports/forms.py:42
+#: dashboards/admin/networks/ports/tables.py:73
+#: dashboards/admin/networks/subnets/tables.py:70
+#: dashboards/admin/projects/tables.py:113
+#: dashboards/admin/projects/workflows.py:104
+#: dashboards/admin/routers/tables.py:52
+#: dashboards/admin/routers/ports/tables.py:28
+#: dashboards/admin/routers/templates/routers/_detail_overview.html:7
+#: dashboards/admin/volumes/forms.py:31 dashboards/admin/volumes/tables.py:35
+#: dashboards/admin/volumes/tables.py:53
+#: dashboards/project/access_and_security/security_groups/forms.py:40
+#: dashboards/project/access_and_security/security_groups/forms.py:66
+#: dashboards/project/access_and_security/security_groups/tables.py:67
+#: dashboards/project/containers/templates/containers/_object_detail.html:10
+#: dashboards/project/database_backups/tables.py:98
+#: dashboards/project/database_backups/templates/database_backups/details.html:18
+#: dashboards/project/database_backups/templates/database_backups/details.html:42
+#: dashboards/project/database_backups/workflows/create_backup.py:31
+#: dashboards/project/databases/tables.py:214
+#: dashboards/project/databases/templates/databases/_detail_overview.html:9
+#: dashboards/project/firewalls/forms.py:37
+#: dashboards/project/firewalls/forms.py:115
+#: dashboards/project/firewalls/forms.py:142
+#: dashboards/project/firewalls/tables.py:142
+#: dashboards/project/firewalls/tables.py:174
+#: dashboards/project/firewalls/tables.py:191
+#: dashboards/project/firewalls/workflows.py:34
+#: dashboards/project/firewalls/workflows.py:178
+#: dashboards/project/firewalls/workflows.py:236
+#: dashboards/project/firewalls/templates/firewalls/_firewall_details.html:7
+#: dashboards/project/firewalls/templates/firewalls/_policy_details.html:7
+#: dashboards/project/firewalls/templates/firewalls/_rule_details.html:7
+#: dashboards/project/images_and_snapshots/images/forms.py:41
+#: dashboards/project/images_and_snapshots/images/forms.py:154
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:9
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:10
+#: dashboards/project/images_and_snapshots/volume_snapshots/tables.py:82
+#: dashboards/project/instances/templates/instances/_detail_overview.html:10
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:9
+#: dashboards/project/instances/workflows/update_instance.py:108
+#: dashboards/project/loadbalancers/forms.py:35
+#: dashboards/project/loadbalancers/forms.py:74
+#: dashboards/project/loadbalancers/tables.py:189
+#: dashboards/project/loadbalancers/workflows.py:29
+#: dashboards/project/loadbalancers/workflows.py:149
+#: dashboards/project/loadbalancers/templates/loadbalancers/_pool_details.html:9
+#: dashboards/project/loadbalancers/templates/loadbalancers/_vip_details.html:9
+#: dashboards/project/networks/forms.py:37
+#: dashboards/project/networks/tables.py:94
+#: dashboards/project/networks/ports/forms.py:36
+#: dashboards/project/networks/ports/tables.py:52
+#: dashboards/project/networks/subnets/tables.py:83
+#: dashboards/project/networks/templates/networks/_detail_overview.html:7
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:10
+#: dashboards/project/networks/templates/networks/subnets/_detail_overview.html:10
+#: dashboards/project/routers/tables.py:124
+#: dashboards/project/routers/ports/tables.py:82
+#: dashboards/project/routers/templates/routers/_detail_overview.html:7
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:9
+#: dashboards/project/volumes/tables.py:166
+#: dashboards/project/volumes/tables.py:195
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:10
+#: dashboards/project/vpn/tables.py:94 dashboards/project/vpn/tables.py:123
+#: dashboards/project/vpn/tables.py:143 dashboards/project/vpn/tables.py:161
+#: dashboards/project/vpn/workflows.py:30
+#: dashboards/project/vpn/workflows.py:112
+#: dashboards/project/vpn/workflows.py:211
+#: dashboards/project/vpn/workflows.py:308
+#: dashboards/project/vpn/templates/vpn/_ikepolicy_details.html:6
+#: dashboards/project/vpn/templates/vpn/_ipsecpolicy_details.html:6
+#: dashboards/project/vpn/templates/vpn/_ipsecsiteconnection_details.html:7
+#: dashboards/project/vpn/templates/vpn/_vpnservice_details.html:7
+#: dashboards/router/nexus1000v/forms.py:52
+#: dashboards/router/nexus1000v/forms.py:123
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Name"
+msgstr "Nom"
+
+#: dashboards/admin/domains/tables.py:168
+#: dashboards/admin/domains/workflows.py:38
+#: dashboards/admin/flavors/templates/flavors/_update.html:18
+#: dashboards/admin/flavors/templates/flavors/extras/_create.html:19
+#: dashboards/admin/flavors/templates/flavors/extras/_edit.html:19
+#: dashboards/admin/groups/forms.py:35 dashboards/admin/groups/forms.py:61
+#: dashboards/admin/groups/tables.py:102
+#: dashboards/admin/groups/templates/groups/_create.html:17
+#: dashboards/admin/groups/templates/groups/_update.html:17
+#: dashboards/admin/images/templates/images/_update.html:18
+#: dashboards/admin/networks/templates/networks/_create.html:18
+#: dashboards/admin/networks/templates/networks/ports/_create.html:18
+#: dashboards/admin/projects/tables.py:115
+#: dashboards/admin/projects/workflows.py:106
+#: dashboards/admin/roles/templates/roles/_create.html:17
+#: dashboards/admin/roles/templates/roles/_update.html:17
+#: dashboards/admin/users/templates/users/_create.html:17
+#: dashboards/admin/users/templates/users/_update.html:17
+#: dashboards/admin/volumes/templates/volumes/_create_volume_type.html:18
+#: dashboards/project/access_and_security/security_groups/forms.py:46
+#: dashboards/project/access_and_security/security_groups/forms.py:72
+#: dashboards/project/access_and_security/security_groups/tables.py:68
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_create.html:17
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_import.html:17
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_add_rule.html:18
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_create.html:18
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_update.html:18
+#: dashboards/project/containers/templates/containers/_copy.html:17
+#: dashboards/project/containers/templates/containers/_create.html:17
+#: dashboards/project/containers/templates/containers/_upload.html:18
+#: dashboards/project/database_backups/templates/database_backups/details.html:20
+#: dashboards/project/database_backups/workflows/create_backup.py:33
+#: dashboards/project/firewalls/forms.py:40
+#: dashboards/project/firewalls/forms.py:117
+#: dashboards/project/firewalls/forms.py:145
+#: dashboards/project/firewalls/workflows.py:38
+#: dashboards/project/firewalls/workflows.py:181
+#: dashboards/project/firewalls/workflows.py:239
+#: dashboards/project/firewalls/templates/firewalls/_firewall_details.html:10
+#: dashboards/project/firewalls/templates/firewalls/_policy_details.html:10
+#: dashboards/project/firewalls/templates/firewalls/_rule_details.html:10
+#: dashboards/project/images_and_snapshots/images/forms.py:43
+#: dashboards/project/images_and_snapshots/images/forms.py:156
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:12
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:15
+#: dashboards/project/instances/templates/instances/_rebuild.html:18
+#: dashboards/project/loadbalancers/forms.py:40
+#: dashboards/project/loadbalancers/forms.py:79
+#: dashboards/project/loadbalancers/tables.py:191
+#: dashboards/project/loadbalancers/workflows.py:32
+#: dashboards/project/loadbalancers/workflows.py:152
+#: dashboards/project/loadbalancers/templates/loadbalancers/_pool_details.html:12
+#: dashboards/project/loadbalancers/templates/loadbalancers/_vip_details.html:12
+#: dashboards/project/networks/templates/networks/_create.html:17
+#: dashboards/project/routers/templates/routers/ports/_create.html:18
+#: dashboards/project/routers/templates/routers/ports/_setgateway.html:18
+#: dashboards/project/stacks/templates/stacks/_create.html:18
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:13
+#: dashboards/project/stacks/templates/stacks/_resource_overview.html:21
+#: dashboards/project/stacks/templates/stacks/_select_template.html:19
+#: dashboards/project/volumes/forms.py:34
+#: dashboards/project/volumes/forms.py:295
+#: dashboards/project/volumes/tables.py:169
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:15
+#: dashboards/project/volumes/templates/volumes/_limits.html:3
+#: dashboards/project/vpn/tables.py:125 dashboards/project/vpn/workflows.py:33
+#: dashboards/project/vpn/workflows.py:115
+#: dashboards/project/vpn/workflows.py:214
+#: dashboards/project/vpn/workflows.py:311
+#: dashboards/project/vpn/templates/vpn/_ikepolicy_details.html:9
+#: dashboards/project/vpn/templates/vpn/_ipsecpolicy_details.html:9
+#: dashboards/project/vpn/templates/vpn/_ipsecsiteconnection_details.html:10
+#: dashboards/project/vpn/templates/vpn/_vpnservice_details.html:10
+#: dashboards/router/nexus1000v/templates/nexus1000v/_create_network_profile.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: dashboards/admin/domains/tables.py:170
+#: dashboards/admin/domains/workflows.py:40
+#: dashboards/admin/groups/tables.py:166 dashboards/admin/info/tables.py:42
+#: dashboards/admin/info/tables.py:163 dashboards/admin/projects/tables.py:117
+#: dashboards/admin/projects/workflows.py:108
+#: dashboards/admin/projects/workflows.py:469
+#: dashboards/admin/users/tables.py:46 dashboards/admin/users/tables.py:125
+#: dashboards/project/firewalls/forms.py:71
+#: dashboards/project/firewalls/tables.py:160
+#: dashboards/project/firewalls/workflows.py:71
+#: dashboards/project/firewalls/templates/firewalls/_rule_details.html:53
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:64
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Enabled"
+msgstr "Activat"
+
+#: dashboards/admin/domains/workflows.py:201
+#: dashboards/admin/flavors/workflows.py:260
+#: dashboards/admin/flavors/templates/flavors/_update.html:25
+#: dashboards/admin/flavors/templates/flavors/extras/_edit.html:25
+#: dashboards/admin/projects/workflows.py:490
+#: dashboards/project/instances/workflows/update_instance.py:135
+#: dashboards/settings/user/templates/user/_settings.html:24
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Save"
+msgstr "Desa"
+
+#: dashboards/admin/flavors/panel.py:29 dashboards/admin/flavors/tables.py:33
+#: dashboards/admin/flavors/tables.py:112
+#: dashboards/admin/flavors/templates/flavors/index.html:3
+#: dashboards/admin/flavors/templates/flavors/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Flavors"
+msgstr "Sabors"
+
+#: dashboards/admin/flavors/tables.py:32
+#: dashboards/admin/flavors/templates/flavors/extras/create.html:7
+#: dashboards/admin/flavors/templates/flavors/extras/edit.html:7
+#: dashboards/admin/flavors/templates/flavors/extras/index.html:7
+#: dashboards/project/databases/workflows/create_instance.py:32
+#: dashboards/project/instances/templates/instances/_detail_overview.html:27
+#: dashboards/project/instances/workflows/create_instance.py:92
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Flavor"
+msgstr "Sabor"
+
+#: dashboards/admin/flavors/tables.py:41
+#: dashboards/admin/flavors/workflows.py:175
+#: dashboards/admin/flavors/workflows.py:176
+#: dashboards/admin/flavors/templates/flavors/create.html:3
+#: dashboards/admin/flavors/templates/flavors/create.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Flavor"
+msgstr "Crear Sabor"
+
+#: dashboards/admin/flavors/tables.py:48
+#: dashboards/admin/flavors/workflows.py:259
+#: dashboards/admin/flavors/templates/flavors/_update.html:9
+#: dashboards/admin/flavors/templates/flavors/update.html:3
+#: dashboards/admin/flavors/templates/flavors/update.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit Flavor"
+msgstr "Editar Sabor"
+
+#: dashboards/admin/flavors/tables.py:85 dashboards/admin/flavors/tables.py:89
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "%sMB"
+msgstr "%sMB"
+
+#: dashboards/admin/flavors/tables.py:93
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Flavor Name"
+msgstr "Nom del Sabor"
+
+#: dashboards/admin/flavors/tables.py:96
+#: dashboards/project/databases/templates/databases/_detail_overview.html:15
+#: dashboards/project/instances/templates/instances/_detail_overview.html:29
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:14
+#: usage/tables.py:23
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "RAM"
+msgstr "RAM"
+
+#: dashboards/admin/flavors/tables.py:98
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:11
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Root Disk"
+msgstr "Disc Arrel"
+
+#: dashboards/admin/flavors/tables.py:104
+#: dashboards/admin/flavors/workflows.py:43
+#: dashboards/admin/networks/forms.py:102
+#: dashboards/admin/networks/templates/networks/ports/_update.html:13
+#: dashboards/admin/roles/forms.py:39
+#: dashboards/admin/routers/templates/routers/_detail_overview.html:9
+#: dashboards/admin/users/forms.py:146
+#: dashboards/project/database_backups/templates/database_backups/details.html:22
+#: dashboards/project/database_backups/templates/database_backups/details.html:44
+#: dashboards/project/databases/templates/databases/_detail_overview.html:11
+#: dashboards/project/firewalls/templates/firewalls/_firewall_details.html:13
+#: dashboards/project/firewalls/templates/firewalls/_policy_details.html:13
+#: dashboards/project/firewalls/templates/firewalls/_rule_details.html:13
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:15
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:12
+#: dashboards/project/instances/templates/instances/_detail_overview.html:12
+#: dashboards/project/loadbalancers/forms.py:36
+#: dashboards/project/loadbalancers/forms.py:75
+#: dashboards/project/loadbalancers/forms.py:166
+#: dashboards/project/loadbalancers/forms.py:213
+#: dashboards/project/loadbalancers/tables.py:237
+#: dashboards/project/loadbalancers/templates/loadbalancers/_member_details.html:6
+#: dashboards/project/loadbalancers/templates/loadbalancers/_monitor_details.html:6
+#: dashboards/project/loadbalancers/templates/loadbalancers/_pool_details.html:6
+#: dashboards/project/loadbalancers/templates/loadbalancers/_vip_details.html:6
+#: dashboards/project/networks/forms.py:39
+#: dashboards/project/networks/templates/networks/_detail_overview.html:9
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:12
+#: dashboards/project/networks/templates/networks/ports/_update.html:13
+#: dashboards/project/networks/templates/networks/subnets/_detail_overview.html:12
+#: dashboards/project/routers/templates/routers/_detail_overview.html:9
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:11
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:12
+#: dashboards/project/vpn/templates/vpn/_ikepolicy_details.html:12
+#: dashboards/project/vpn/templates/vpn/_ipsecpolicy_details.html:12
+#: dashboards/project/vpn/templates/vpn/_ipsecsiteconnection_details.html:13
+#: dashboards/project/vpn/templates/vpn/_vpnservice_details.html:13
+#: dashboards/router/nexus1000v/forms.py:120
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "ID"
+msgstr "Identificador"
+
+#: dashboards/admin/flavors/tables.py:106
+#: dashboards/project/images_and_snapshots/images/forms.py:89
+#: dashboards/project/images_and_snapshots/images/forms.py:176
+#: dashboards/project/images_and_snapshots/images/tables.py:131
+#: dashboards/project/images_and_snapshots/images/tables.py:212
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:19
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Public"
+msgstr "Pública"
+
+#: dashboards/admin/flavors/views.py:51
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve flavor list."
+msgstr "No s'ha pogut obtenir la llista de sabors"
+
+#: dashboards/admin/flavors/views.py:74
+#: dashboards/admin/flavors/extras/views.py:43
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve flavor data."
+msgstr "No s'ha pogut obtenir la inforamció del sabor. "
+
+#: dashboards/admin/flavors/workflows.py:49
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "RAM MB"
+msgstr "MB de RAM"
+
+#: dashboards/admin/flavors/workflows.py:50
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Root Disk GB"
+msgstr "GB del disc princpial"
+
+#: dashboards/admin/flavors/workflows.py:157
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "All Projects"
+msgstr "Projectes"
+
+#: dashboards/admin/flavors/workflows.py:203
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to create flavor."
+msgstr "No s'ha pogut crear el sabor"
+
+#: dashboards/admin/flavors/extras/tables.py:36
+#: dashboards/admin/flavors/templates/flavors/extras/_create.html:25
+#: dashboards/project/networks/workflows.py:268
+#: dashboards/project/networks/subnets/workflows.py:59
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create"
+msgstr "Crea"
+
+#: dashboards/admin/flavors/templates/flavors/_update.html:26
+#: dashboards/admin/flavors/templates/flavors/extras/_create.html:26
+#: dashboards/admin/flavors/templates/flavors/extras/_edit.html:26
+#: dashboards/admin/groups/templates/groups/_add_non_member.html:8
+#: dashboards/admin/groups/templates/groups/_create.html:24
+#: dashboards/admin/groups/templates/groups/_update.html:24
+#: dashboards/admin/images/templates/images/_create.html:34
+#: dashboards/admin/images/templates/images/_update.html:25
+#: dashboards/admin/networks/templates/networks/_create.html:25
+#: dashboards/admin/networks/templates/networks/_update.html:24
+#: dashboards/admin/networks/templates/networks/ports/_create.html:25
+#: dashboards/admin/networks/templates/networks/ports/_update.html:29
+#: dashboards/admin/roles/templates/roles/_create.html:24
+#: dashboards/admin/roles/templates/roles/_update.html:24
+#: dashboards/admin/users/templates/users/_create.html:34
+#: dashboards/admin/users/templates/users/_update.html:34
+#: dashboards/admin/volumes/templates/volumes/_create_volume_type.html:29
+#: dashboards/project/access_and_security/templates/access_and_security/floating_ips/_allocate.html:43
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_create.html:25
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_import.html:25
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_add_rule.html:28
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_create.html:25
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_update.html:25
+#: dashboards/project/containers/templates/containers/_copy.html:24
+#: dashboards/project/containers/templates/containers/_create.html:24
+#: dashboards/project/containers/templates/containers/_upload.html:26
+#: dashboards/project/firewalls/templates/firewalls/_insert_rule_to_policy.html:27
+#: dashboards/project/firewalls/templates/firewalls/_remove_rule_from_policy.html:24
+#: dashboards/project/firewalls/templates/firewalls/_updatefirewall.html:24
+#: dashboards/project/firewalls/templates/firewalls/_updatepolicy.html:24
+#: dashboards/project/firewalls/templates/firewalls/_updaterule.html:24
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_create.html:34
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_update.html:24
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_create.html:25
+#: dashboards/project/instances/templates/instances/_rebuild.html:26
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatemember.html:24
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatemonitor.html:24
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatepool.html:24
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatevip.html:24
+#: dashboards/project/network_topology/templates/network_topology/_create_router.html:21
+#: dashboards/project/networks/templates/networks/_create.html:24
+#: dashboards/project/networks/templates/networks/_update.html:24
+#: dashboards/project/networks/templates/networks/ports/_update.html:29
+#: dashboards/project/routers/templates/routers/_create.html:21
+#: dashboards/project/routers/templates/routers/ports/_create.html:30
+#: dashboards/project/routers/templates/routers/ports/_setgateway.html:25
+#: dashboards/project/stacks/templates/stacks/_create.html:25
+#: dashboards/project/stacks/templates/stacks/_select_template.html:26
+#: dashboards/project/volumes/templates/volumes/_attach.html:25
+#: dashboards/project/volumes/templates/volumes/_create.html:25
+#: dashboards/project/volumes/templates/volumes/_create_snapshot.html:24
+#: dashboards/router/nexus1000v/templates/nexus1000v/_create_network_profile.html:25
+#: dashboards/router/nexus1000v/templates/nexus1000v/_update_network_profile.html:24
+#: dashboards/settings/password/templates/password/_change.html:25
+#: dashboards/settings/user/templates/user/_settings.html:25
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: dashboards/admin/groups/tables.py:76 dashboards/admin/projects/tables.py:13
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Modify Users"
+msgstr "Modificar usuaris"
+
+#: dashboards/admin/groups/tables.py:124
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Remove"
+msgstr "Eliminar"
+
+#: dashboards/admin/groups/tables.py:125
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Removed"
+msgstr "Eliminat"
+
+#: dashboards/admin/groups/tables.py:126 dashboards/admin/groups/tables.py:183
+#: dashboards/admin/metering/tables.py:46 dashboards/admin/users/tables.py:47
+#: dashboards/admin/users/tables.py:90
+#: dashboards/project/databases/tables.py:66
+#: dashboards/project/instances/workflows/create_instance.py:50
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "User"
+msgstr "Usuari"
+
+#: dashboards/admin/groups/tables.py:127 dashboards/admin/groups/tables.py:184
+#: dashboards/admin/users/panel.py:29 dashboards/admin/users/tables.py:48
+#: dashboards/admin/users/tables.py:91 dashboards/admin/users/tables.py:132
+#: dashboards/admin/users/templates/users/index.html:3
+#: dashboards/admin/users/templates/users/index.html:6
+#: dashboards/project/databases/tables.py:67
+#: dashboards/project/databases/tabs.py:37
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Users"
+msgstr "Usuaris"
+
+#: dashboards/admin/groups/tables.py:162 dashboards/admin/users/forms.py:77
+#: dashboards/admin/users/forms.py:147 dashboards/admin/users/tables.py:118
+#: dashboards/project/databases/tables.py:184
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "User Name"
+msgstr "Nom d'usuari"
+
+#: dashboards/admin/groups/tables.py:163 dashboards/admin/users/forms.py:79
+#: dashboards/admin/users/forms.py:149 dashboards/admin/users/tables.py:119
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Email"
+msgstr "Correu electrònic"
+
+#: dashboards/admin/groups/tables.py:165 dashboards/admin/users/tables.py:124
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "User ID"
+msgstr "ID d'usuari"
+
+#: dashboards/admin/groups/tables.py:181
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_add_rule.html:27
+#: dashboards/project/firewalls/workflows.py:108
+#: dashboards/project/firewalls/workflows.py:215
+#: dashboards/project/firewalls/workflows.py:291
+#: dashboards/project/loadbalancers/workflows.py:130
+#: dashboards/project/loadbalancers/workflows.py:237
+#: dashboards/project/loadbalancers/workflows.py:369
+#: dashboards/project/loadbalancers/workflows.py:510
+#: dashboards/project/loadbalancers/workflows.py:569
+#: dashboards/project/vpn/workflows.py:94
+#: dashboards/project/vpn/workflows.py:193
+#: dashboards/project/vpn/workflows.py:290
+#: dashboards/project/vpn/workflows.py:462
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Add"
+msgstr "Afegir"
+
+#: dashboards/admin/groups/views.py:147
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve users."
+msgstr "No s'han pogut obtenir els usuaris."
+
+#: dashboards/admin/hypervisors/tables.py:44
+#: dashboards/admin/info/tables.py:176
+#: dashboards/admin/routers/ports/tables.py:34
+#: dashboards/project/access_and_security/security_groups/forms.py:170
+#: dashboards/project/access_and_security/security_groups/forms.py:177
+#: dashboards/project/images_and_snapshots/images/tables.py:204
+#: dashboards/project/loadbalancers/workflows.py:394
+#: dashboards/project/loadbalancers/templates/loadbalancers/_monitor_details.html:12
+#: dashboards/project/loadbalancers/templates/loadbalancers/_vip_details.html:35
+#: dashboards/project/routers/ports/tables.py:88
+#: dashboards/project/volumes/forms.py:35
+#: dashboards/project/volumes/tables.py:198
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: dashboards/admin/images/panel.py:29 dashboards/admin/images/tables.py:51
+#: dashboards/admin/images/templates/images/index.html:3
+#: dashboards/admin/images/templates/images/index.html:6
+#: dashboards/project/images_and_snapshots/images/tables.py:57
+#: dashboards/project/images_and_snapshots/images/tables.py:225
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Images"
+msgstr "Imatges"
+
+#: dashboards/admin/images/tables.py:47
+#: dashboards/admin/instances/tables.py:94
+#: dashboards/project/images_and_snapshots/images/tables.py:202
+#: dashboards/project/instances/tables.py:548
+#: dashboards/project/instances/templates/instances/_detail_overview.html:85
+#: dashboards/project/instances/workflows/create_instance.py:115
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Image Name"
+msgstr "Nom de la imatge"
+
+#: dashboards/admin/images/views.py:53
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve image list."
+msgstr "No s'ha pogut obtenir la llista d'imatges"
+
+#: dashboards/admin/images/templates/images/_create.html:18
+#: dashboards/admin/networks/templates/networks/_update.html:17
+#: dashboards/admin/networks/templates/networks/ports/_update.html:22
+#: dashboards/project/access_and_security/templates/access_and_security/floating_ips/_allocate.html:18
+#: dashboards/project/firewalls/templates/firewalls/_insert_rule_to_policy.html:17
+#: dashboards/project/firewalls/templates/firewalls/_remove_rule_from_policy.html:17
+#: dashboards/project/firewalls/templates/firewalls/_updatefirewall.html:17
+#: dashboards/project/firewalls/templates/firewalls/_updatepolicy.html:17
+#: dashboards/project/firewalls/templates/firewalls/_updaterule.html:17
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_create.html:18
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_update.html:17
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_create.html:18
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatemember.html:17
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatemonitor.html:17
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatepool.html:17
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatevip.html:17
+#: dashboards/project/networks/templates/networks/_update.html:17
+#: dashboards/project/networks/templates/networks/ports/_update.html:22
+#: dashboards/router/nexus1000v/templates/nexus1000v/_update_network_profile.html:17
+#: dashboards/settings/password/templates/password/_change.html:18
+#: dashboards/settings/user/templates/user/_settings.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Description:"
+msgstr "Descripció:"
+
+#: dashboards/admin/images/templates/images/_create.html:33
+#: dashboards/project/images_and_snapshots/images/tables.py:74
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_create.html:33
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Image"
+msgstr "Crea una imatge"
+
+#: dashboards/admin/images/templates/images/_update.html:9
+#: dashboards/admin/images/templates/images/_update.html:24
+#: dashboards/admin/images/templates/images/update.html:4
+#: dashboards/admin/images/templates/images/update.html:7
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_update.html:8
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_update.html:23
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/update.html:3
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/update.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Update Image"
+msgstr "Actualitza imatge"
+
+#: dashboards/admin/info/tables.py:37 dashboards/project/vpn/tables.py:93
+#: dashboards/project/vpn/tables.py:122 dashboards/project/vpn/tables.py:142
+#: dashboards/project/vpn/tables.py:160
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Id"
+msgstr "Id"
+
+#: dashboards/admin/info/tables.py:39
+#: dashboards/project/access_and_security/api_access/tables.py:50
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Service"
+msgstr "Servei"
+
+#: dashboards/admin/info/tables.py:40 dashboards/admin/info/tables.py:102
+#: dashboards/admin/info/tables.py:178 dashboards/admin/instances/tables.py:88
+#: dashboards/admin/volumes/tables.py:37
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Host"
+msgstr "Amfitrió"
+
+#: dashboards/admin/info/tables.py:47 dashboards/admin/info/tabs.py:32
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Services"
+msgstr "Serveis"
+
+#: dashboards/admin/info/tables.py:70 dashboards/admin/info/tables.py:136
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Hosts"
+msgstr "Amfitrió"
+
+#: dashboards/admin/info/tables.py:74
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Available"
+msgstr "Disponible"
+
+#: dashboards/admin/info/tables.py:104 dashboards/admin/info/tables.py:179
+#: dashboards/admin/instances/tables.py:104
+#: dashboards/admin/metering/tables.py:181
+#: dashboards/admin/networks/tables.py:75
+#: dashboards/admin/networks/ports/tables.py:79
+#: dashboards/admin/routers/tables.py:56
+#: dashboards/admin/routers/ports/tables.py:32
+#: dashboards/admin/routers/templates/routers/_detail_overview.html:13
+#: dashboards/project/database_backups/tables.py:108
+#: dashboards/project/database_backups/templates/database_backups/details.html:24
+#: dashboards/project/database_backups/templates/database_backups/details.html:46
+#: dashboards/project/databases/tables.py:169
+#: dashboards/project/databases/tables.py:222
+#: dashboards/project/databases/templates/databases/_detail_overview.html:13
+#: dashboards/project/firewalls/tables.py:197
+#: dashboards/project/firewalls/templates/firewalls/_firewall_details.html:25
+#: dashboards/project/images_and_snapshots/images/tables.py:208
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:17
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:18
+#: dashboards/project/instances/tables.py:558
+#: dashboards/project/instances/templates/instances/_detail_overview.html:14
+#: dashboards/project/loadbalancers/templates/loadbalancers/_member_details.html:27
+#: dashboards/project/loadbalancers/templates/loadbalancers/_pool_details.html:42
+#: dashboards/project/loadbalancers/templates/loadbalancers/_vip_details.html:49
+#: dashboards/project/networks/tables.py:100
+#: dashboards/project/networks/ports/tables.py:56
+#: dashboards/project/networks/templates/networks/_detail_overview.html:13
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:32
+#: dashboards/project/routers/tables.py:128
+#: dashboards/project/routers/ports/tables.py:86
+#: dashboards/project/routers/templates/routers/_detail_overview.html:11
+#: dashboards/project/stacks/tables.py:81
+#: dashboards/project/stacks/tables.py:110
+#: dashboards/project/stacks/tables.py:156
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:19
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:26
+#: dashboards/project/stacks/templates/stacks/_resource_overview.html:27
+#: dashboards/project/stacks/templates/stacks/_resource_overview.html:32
+#: dashboards/project/volumes/tables.py:176
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:18
+#: dashboards/project/vpn/tables.py:104 dashboards/project/vpn/tables.py:130
+#: dashboards/project/vpn/templates/vpn/_ipsecsiteconnection_details.html:71
+#: dashboards/project/vpn/templates/vpn/_vpnservice_details.html:38
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Status"
+msgstr "Estat"
+
+#: dashboards/admin/info/tables.py:165 dashboards/admin/users/tables.py:46
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:64
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Disabled"
+msgstr "Descativat"
+
+#: dashboards/admin/info/tables.py:170
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Up"
+msgstr "Amunt"
+
+#: dashboards/admin/info/tables.py:172
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Down"
+msgstr "Davall"
+
+#: dashboards/admin/instances/tables.py:38
+#: dashboards/project/access_and_security/floating_ips/tables.py:133
+#: dashboards/project/access_and_security/floating_ips/workflows.py:37
+#: dashboards/project/databases/tables.py:38
+#: dashboards/project/instances/tables.py:77
+#: dashboards/project/instances/tables.py:92
+#: dashboards/project/instances/tables.py:121
+#: dashboards/project/instances/tables.py:153
+#: dashboards/project/instances/tables.py:448
+#: dashboards/project/instances/tables.py:462
+#: dashboards/project/volumes/tables.py:242
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Instance"
+msgstr "Instància"
+
+#: dashboards/admin/instances/tables.py:81
+#: dashboards/admin/metering/templates/metering/stats.html:76
+#: dashboards/admin/networks/forms.py:37
+#: dashboards/admin/networks/tables.py:68
+#: dashboards/admin/projects/tables.py:87
+#: dashboards/admin/routers/tables.py:50 dashboards/admin/volumes/tables.py:38
+#: dashboards/project/dashboard.py:63
+#: dashboards/project/images_and_snapshots/images/tables.py:125
+#: dashboards/project/instances/workflows/create_instance.py:49
+#: dashboards/router/nexus1000v/forms.py:82
+#: dashboards/router/nexus1000v/forms.py:135
+#: dashboards/router/nexus1000v/tables.py:62
+#: dashboards/router/nexus1000v/tables.py:89
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project"
+msgstr "Projecte"
+
+#: dashboards/admin/instances/tables.py:96
+#: dashboards/project/access_and_security/floating_ips/tables.py:129
+#: dashboards/project/access_and_security/floating_ips/workflows.py:33
+#: dashboards/project/access_and_security/floating_ips/workflows.py:40
+#: dashboards/project/databases/tables.py:163
+#: dashboards/project/instances/tables.py:550
+#: dashboards/project/loadbalancers/tables.py:220
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP Address"
+msgstr "Adreça IP"
+
+#: dashboards/admin/instances/tables.py:99
+#: dashboards/project/containers/tables.py:246
+#: dashboards/project/containers/templates/containers/_container_detail.html:14
+#: dashboards/project/containers/templates/containers/_object_detail.html:18
+#: dashboards/project/databases/tables.py:165
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:36
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:37
+#: dashboards/project/instances/tables.py:553
+#: dashboards/project/volumes/tables.py:172
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:27
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Size"
+msgstr "Mida"
+
+#: dashboards/admin/instances/tables.py:110
+#: dashboards/project/instances/tables.py:563
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Task"
+msgstr "Tasca"
+
+#: dashboards/admin/instances/tables.py:119
+#: dashboards/project/instances/tables.py:572
+#: dashboards/project/instances/templates/instances/_detail_overview.html:18
+#: usage/tables.py:61
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Uptime"
+msgstr "Temps en funcionament"
+
+#: dashboards/admin/instances/views.py:75
+#: dashboards/project/access_and_security/tabs.py:101
+#: dashboards/project/access_and_security/floating_ips/workflows.py:85
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve instance list."
+msgstr "No s'ha pogut obtenir la llista d'instàncies"
+
+#: dashboards/admin/instances/templates/instances/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "All Instances"
+msgstr "Totes les instàncies"
+
+#: dashboards/admin/metering/templates/metering/stats.html:103
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Other"
+msgstr "Altre"
+
+#: dashboards/admin/networks/forms.py:42
+#: dashboards/admin/networks/forms.py:106
+#: dashboards/admin/networks/tables.py:73
+#: dashboards/project/firewalls/forms.py:70
+#: dashboards/project/firewalls/forms.py:118
+#: dashboards/project/firewalls/workflows.py:69
+#: dashboards/project/firewalls/workflows.py:183
+#: dashboards/project/firewalls/workflows.py:243
+#: dashboards/project/firewalls/templates/firewalls/_policy_details.html:31
+#: dashboards/project/firewalls/templates/firewalls/_rule_details.html:50
+#: dashboards/project/networks/tables.py:98
+#: dashboards/project/networks/templates/networks/_detail_overview.html:17
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Shared"
+msgstr "Compartit"
+
+#: dashboards/admin/networks/forms.py:53 dashboards/admin/users/forms.py:43
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select a project"
+msgstr "Selecciona un projecte"
+
+#: dashboards/admin/networks/forms.py:89
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network %s was successfully created."
+msgstr "La xarxa %s ha estat creada correctament."
+
+#: dashboards/admin/networks/forms.py:95
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Failed to create network %s"
+msgstr "No s'ha pogut crear la xarxa %s"
+
+#: dashboards/admin/networks/forms.py:118
+#: dashboards/project/networks/forms.py:51
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network %s was successfully updated."
+msgstr "La Xarxa %s s'ha actualitzat correctament."
+
+#: dashboards/admin/networks/forms.py:123
+#: dashboards/project/networks/forms.py:56
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Failed to update network %s"
+msgstr "No s'ha pogut actualitzar la xarxa %s"
+
+#: dashboards/admin/networks/panel.py:25
+#: dashboards/admin/networks/tables.py:36
+#: dashboards/admin/networks/tables.py:81
+#: dashboards/admin/networks/templates/networks/index.html:3
+#: dashboards/admin/networks/templates/networks/index.html:6
+#: dashboards/admin/projects/workflows.py:68
+#: dashboards/project/instances/workflows/create_instance.py:480
+#: dashboards/project/networks/panel.py:25
+#: dashboards/project/networks/tables.py:44
+#: dashboards/project/networks/tables.py:106
+#: dashboards/project/networks/templates/networks/index.html:3
+#: dashboards/project/networks/templates/networks/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Networks"
+msgstr "Xarxes"
+
+#: dashboards/admin/networks/tables.py:35
+#: dashboards/project/networks/tables.py:43
+#: dashboards/project/networks/workflows.py:70
+#: dashboards/project/networks/templates/networks/subnets/index.html:3
+#: dashboards/project/networks/templates/networks/subnets/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: dashboards/admin/networks/tables.py:42
+#: dashboards/project/networks/tables.py:59
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Failed to delete network %s"
+msgstr "No s'ha pogut eliminar la xarxa %s"
+
+#: dashboards/admin/networks/tables.py:50
+#: dashboards/admin/networks/templates/networks/_create.html:9
+#: dashboards/admin/networks/templates/networks/_create.html:24
+#: dashboards/admin/networks/templates/networks/create.html:3
+#: dashboards/admin/networks/templates/networks/create.html:6
+#: dashboards/project/network_topology/templates/network_topology/index.html:28
+#: dashboards/project/networks/tables.py:67
+#: dashboards/project/networks/workflows.py:267
+#: dashboards/project/networks/templates/networks/_create.html:8
+#: dashboards/project/networks/templates/networks/_create.html:23
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Network"
+msgstr "Crear una xarxa"
+
+#: dashboards/admin/networks/tables.py:57
+#: dashboards/admin/networks/templates/networks/_update.html:8
+#: dashboards/project/networks/tables.py:74
+#: dashboards/project/networks/templates/networks/_update.html:8
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit Network"
+msgstr "Edita una xarxa"
+
+#: dashboards/admin/networks/tables.py:69
+#: dashboards/admin/networks/ports/forms.py:35
+#: dashboards/project/networks/workflows.py:38
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network Name"
+msgstr "Nom de la xarxa"
+
+#: dashboards/admin/networks/tables.py:72
+#: dashboards/project/networks/tables.py:97
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Subnets Associated"
+msgstr "Subxarxes associades"
+
+#: dashboards/admin/networks/views.py:60
+#: dashboards/project/networks/views.py:53
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network list can not be retrieved."
+msgstr "No es pot obtenir la llista de xarxes."
+
+#: dashboards/admin/networks/views.py:92
+#: dashboards/project/networks/views.py:110
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Subnet list can not be retrieved."
+msgstr "No es pot obtenir la llista de subxarxes."
+
+#: dashboards/admin/networks/views.py:104
+#: dashboards/project/networks/views.py:122
+#: dashboards/project/routers/views.py:133
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Port list can not be retrieved."
+msgstr "No es pot obtenir la llista de ports"
+
+#: dashboards/admin/networks/ports/forms.py:38
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:15
+#: dashboards/project/networks/templates/networks/subnets/_detail_overview.html:15
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network ID"
+msgstr "Identificador de la Xarxa"
+
+#: dashboards/admin/networks/ports/forms.py:46
+#: dashboards/admin/networks/ports/forms.py:79
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:39
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Device ID"
+msgstr "Identificador del dispositiu"
+
+#: dashboards/admin/networks/ports/forms.py:64
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Port %s was successfully created."
+msgstr "S'ha creat correctament el port %s."
+
+#: dashboards/admin/networks/ports/forms.py:69
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Failed to create a port for network %s"
+msgstr "No s'ha pogut crear el port %s."
+
+#: dashboards/admin/networks/ports/forms.py:95
+#: dashboards/project/networks/ports/forms.py:47
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Port %s was successfully updated."
+msgstr "S'ha actualizat correctament el port %s."
+
+#: dashboards/admin/networks/ports/tables.py:34
+#: dashboards/project/access_and_security/security_groups/forms.py:128
+#: dashboards/project/access_and_security/security_groups/forms.py:137
+#: dashboards/project/access_and_security/security_groups/forms.py:144
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:7
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Port"
+msgstr "Port"
+
+#: dashboards/admin/networks/ports/tables.py:35
+#: dashboards/admin/networks/ports/tables.py:85
+#: dashboards/admin/projects/workflows.py:69
+#: dashboards/project/networks/ports/tables.py:65
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Ports"
+msgstr "Ports"
+
+#: dashboards/admin/networks/ports/tables.py:51
+#: dashboards/admin/networks/templates/networks/ports/_create.html:9
+#: dashboards/admin/networks/templates/networks/ports/_create.html:24
+#: dashboards/admin/networks/templates/networks/ports/create.html:3
+#: dashboards/admin/networks/templates/networks/ports/create.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Port"
+msgstr "Crear un port"
+
+#: dashboards/admin/networks/ports/tables.py:62
+#: dashboards/admin/networks/templates/networks/ports/_update.html:8
+#: dashboards/project/networks/ports/tables.py:41
+#: dashboards/project/networks/templates/networks/ports/_update.html:8
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit Port"
+msgstr "Edita el port"
+
+#: dashboards/admin/networks/ports/tables.py:78
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Device Attached"
+msgstr "Dispositiu vinculat"
+
+#: dashboards/admin/networks/subnets/tables.py:32
+#: dashboards/project/loadbalancers/tables.py:194
+#: dashboards/project/loadbalancers/workflows.py:36
+#: dashboards/project/networks/workflows.py:116
+#: dashboards/project/networks/subnets/tables.py:45
+#: dashboards/project/networks/templates/networks/subnets/_detail_overview.html:7
+#: dashboards/project/routers/ports/forms.py:32
+#: dashboards/project/vpn/tables.py:126 dashboards/project/vpn/workflows.py:35
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Subnet"
+msgstr "Subxarxa"
+
+#: dashboards/admin/networks/subnets/tables.py:33
+#: dashboards/admin/networks/subnets/tables.py:81
+#: dashboards/admin/projects/workflows.py:71
+#: dashboards/project/networks/subnets/tables.py:46
+#: dashboards/project/networks/subnets/tables.py:105
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Subnets"
+msgstr "Subxarxes"
+
+#: dashboards/admin/networks/subnets/tables.py:49
+#: dashboards/project/networks/workflows.py:85
+#: dashboards/project/networks/subnets/tables.py:62
+#: dashboards/project/networks/subnets/workflows.py:58
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Subnet"
+msgstr "Crear subxarxa"
+
+#: dashboards/admin/networks/subnets/tables.py:60
+#: dashboards/project/networks/subnets/tables.py:73
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit Subnet"
+msgstr "Editar subxarxa"
+
+#: dashboards/admin/networks/subnets/tables.py:73
+#: dashboards/project/networks/workflows.py:98
+#: dashboards/project/networks/subnets/tables.py:86
+#: dashboards/project/networks/subnets/workflows.py:104
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP Version"
+msgstr "Versió IP"
+
+#: dashboards/admin/networks/subnets/tables.py:74
+#: dashboards/project/networks/workflows.py:100
+#: dashboards/project/networks/subnets/tables.py:87
+#: dashboards/project/networks/templates/networks/subnets/_detail_overview.html:30
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Gateway IP"
+msgstr "Porta d'enllaç IP"
+
+#: dashboards/admin/networks/templates/networks/_create.html:19
+#: dashboards/project/networks/templates/networks/_create.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select a name for your network."
+msgstr "Seleccioneu un nom per la vostra xarxa."
+
+#: dashboards/admin/networks/templates/networks/_update.html:18
+#: dashboards/project/networks/templates/networks/_update.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "You may update the editable properties of your network here."
+msgstr "Pots canviar les propietats editables de la xarxa des d'aquí."
+
+#: dashboards/admin/networks/templates/networks/_update.html:23
+#: dashboards/admin/networks/templates/networks/ports/_update.html:28
+#: dashboards/project/firewalls/templates/firewalls/_insert_rule_to_policy.html:26
+#: dashboards/project/firewalls/templates/firewalls/_remove_rule_from_policy.html:23
+#: dashboards/project/firewalls/templates/firewalls/_updatefirewall.html:23
+#: dashboards/project/firewalls/templates/firewalls/_updatepolicy.html:23
+#: dashboards/project/firewalls/templates/firewalls/_updaterule.html:23
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatemember.html:23
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatemonitor.html:23
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatepool.html:23
+#: dashboards/project/loadbalancers/templates/loadbalancers/_updatevip.html:23
+#: dashboards/project/networks/templates/networks/_update.html:23
+#: dashboards/project/networks/templates/networks/ports/_update.html:28
+#: dashboards/router/nexus1000v/templates/nexus1000v/_update_network_profile.html:23
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Save Changes"
+msgstr "Guardar canvis"
+
+#: dashboards/admin/networks/templates/networks/update.html:3
+#: dashboards/admin/networks/templates/networks/update.html:6
+#: dashboards/project/networks/templates/networks/update.html:3
+#: dashboards/project/networks/templates/networks/update.html:6
+#: dashboards/router/nexus1000v/templates/nexus1000v/update_network_profile.html:3
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Update Network"
+msgstr "Actualitzar Xarxa"
+
+#: dashboards/admin/networks/templates/networks/ports/update.html:3
+#: dashboards/admin/networks/templates/networks/ports/update.html:6
+#: dashboards/project/networks/templates/networks/ports/update.html:3
+#: dashboards/project/networks/templates/networks/ports/update.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Update Port"
+msgstr "Actualitza el port"
+
+#: dashboards/admin/networks/templates/networks/subnets/index.html:3
+#: dashboards/admin/networks/templates/networks/subnets/index.html:6
+#: dashboards/project/networks/templates/networks/detail.html:3
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network Detail"
+msgstr "Detalls de la Xarxa"
+
+#: dashboards/admin/overview/views.py:34 usage/tables.py:31
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Name"
+msgstr "Nom del projecte"
+
+#: dashboards/admin/overview/views.py:34
+#: dashboards/project/overview/views.py:33
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Ram (MB)"
+msgstr "RAM (MB)"
+
+#: dashboards/admin/overview/views.py:66 dashboards/admin/projects/views.py:89
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve project list."
+msgstr "No s'ha pogut obtenir la llista de projectes"
+
+#: dashboards/admin/overview/templates/overview/usage.html:12
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Monitoring"
+msgstr "Monitoreig"
+
+#: dashboards/admin/projects/panel.py:29
+#: dashboards/admin/projects/tables.py:88
+#: dashboards/admin/projects/tables.py:121
+#: dashboards/admin/projects/templates/projects/index.html:3
+#: dashboards/admin/projects/templates/projects/index.html:6
+#: templates/403.html:25 templates/404.html:24
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Projects"
+msgstr "Projectes"
+
+#: dashboards/admin/projects/tables.py:44
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "View Usage"
+msgstr "Visualitza l'ús"
+
+#: dashboards/admin/projects/tables.py:52
+#: dashboards/admin/projects/workflows.py:340
+#: dashboards/admin/projects/workflows.py:341
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Project"
+msgstr "Crear Projecte"
+
+#: dashboards/admin/projects/tables.py:63
+#: dashboards/admin/projects/workflows.py:489
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit Project"
+msgstr "Editar Projecte"
+
+#: dashboards/admin/projects/tables.py:116
+#: dashboards/admin/routers/templates/routers/_detail_overview.html:11
+#: dashboards/project/firewalls/templates/firewalls/_firewall_details.html:16
+#: dashboards/project/firewalls/templates/firewalls/_policy_details.html:16
+#: dashboards/project/firewalls/templates/firewalls/_rule_details.html:16
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:74
+#: dashboards/project/loadbalancers/templates/loadbalancers/_member_details.html:9
+#: dashboards/project/loadbalancers/templates/loadbalancers/_monitor_details.html:9
+#: dashboards/project/loadbalancers/templates/loadbalancers/_pool_details.html:15
+#: dashboards/project/loadbalancers/templates/loadbalancers/_vip_details.html:15
+#: dashboards/project/networks/templates/networks/_detail_overview.html:11
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:17
+#: dashboards/project/vpn/templates/vpn/_ikepolicy_details.html:15
+#: dashboards/project/vpn/templates/vpn/_ipsecpolicy_details.html:15
+#: dashboards/project/vpn/templates/vpn/_ipsecsiteconnection_details.html:16
+#: dashboards/project/vpn/templates/vpn/_vpnservice_details.html:16
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project ID"
+msgstr "Identificador del projecte"
+
+#: dashboards/admin/projects/views.py:58
+#: dashboards/router/nexus1000v/views.py:45
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve project information."
+msgstr "No s'ha pogut obtenir la informació del projecte"
+
+#: dashboards/admin/projects/views.py:182
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve project details."
+msgstr "No s'han pogut obtenir els detalls del projecte"
+
+#: dashboards/admin/projects/workflows.py:84
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Quota"
+msgstr "Quota"
+
+#: dashboards/admin/projects/workflows.py:123
+#: dashboards/admin/projects/workflows.py:472
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Info"
+msgstr "Informació del proejcte"
+
+#: dashboards/admin/projects/workflows.py:215
+#: dashboards/admin/projects/workflows.py:222
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Members"
+msgstr "Membres del projecte"
+
+#: dashboards/admin/projects/workflows.py:221
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "All Users"
+msgstr "Tots els usuaris"
+
+#: dashboards/admin/projects/workflows.py:223
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "No users found."
+msgstr "No s'han trobat usuaris"
+
+#: dashboards/admin/projects/workflows.py:312
+#: dashboards/admin/projects/workflows.py:319
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Groups"
+msgstr "Projectes"
+
+#: dashboards/admin/projects/templates/projects/usage.html:3
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Usage Overview"
+msgstr "Visió global de l'ús del projecte"
+
+#: dashboards/admin/projects/templates/projects/usage.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Usage"
+msgstr "Ús del projecte"
+
+#: dashboards/admin/roles/panel.py:26 dashboards/admin/roles/tables.py:48
+#: dashboards/admin/roles/tables.py:72
+#: dashboards/admin/roles/templates/roles/index.html:3
+#: dashboards/admin/roles/templates/roles/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Roles"
+msgstr "Rols"
+
+#: dashboards/admin/roles/tables.py:47 dashboards/admin/users/forms.py:92
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Role"
+msgstr "Rol"
+
+#: dashboards/admin/users/forms.py:62 dashboards/project/instances/forms.py:73
+#: dashboards/project/instances/workflows/create_instance.py:438
+#: dashboards/settings/password/forms.py:48
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Passwords do not match."
+msgstr "Les contrasenyes no coinicdeixen"
+
+#: dashboards/admin/users/forms.py:82 dashboards/admin/users/forms.py:152
+#: dashboards/project/databases/workflows/create_instance.py:83
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Password"
+msgstr "Contrasenya"
+
+#: dashboards/admin/users/forms.py:87 dashboards/admin/users/forms.py:158
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Confirm Password"
+msgstr "Confirma la contrasenya"
+
+#: dashboards/admin/users/forms.py:90 dashboards/admin/users/forms.py:161
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Primary Project"
+msgstr "Projecte primari"
+
+#: dashboards/admin/users/forms.py:121
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "User \"%s\" was successfully created."
+msgstr "L'usuari \"%s\" s'ha creat correctament."
+
+#: dashboards/admin/users/forms.py:135
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to create user."
+msgstr "No s'ha pogut crear l'usuari."
+
+#: dashboards/admin/users/forms.py:190
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "User has been updated successfully."
+msgstr "L'usuari s'ha actualitzat correctament"
+
+#: dashboards/admin/users/tables.py:16
+#: dashboards/admin/users/templates/users/_create.html:8
+#: dashboards/admin/users/templates/users/_create.html:33
+#: dashboards/admin/users/templates/users/create.html:3
+#: dashboards/admin/users/templates/users/create.html:7
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create User"
+msgstr "Crear usuari"
+
+#: dashboards/admin/users/tables.py:45
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Enable"
+msgstr "Activa"
+
+#: dashboards/admin/users/tables.py:45
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Disable"
+msgstr "Desactiva"
+
+#: dashboards/admin/users/tables.py:78
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "You cannot disable the user you are currently logged in as."
+msgstr "No pots desactivat l'usuari amb el que estàs identificat actualment."
+
+#: dashboards/admin/users/views.py:76
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to update user."
+msgstr "No s'ha pogut actualitzar l'usuari."
+
+#: dashboards/admin/users/views.py:123
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve user roles."
+msgstr "No s'han pogut obtenir els rols de l'usuari"
+
+#: dashboards/admin/users/templates/users/_create.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "From here you can create a new user and assign them to a project."
+msgstr "Des d'aqui pots crear un nou usuari i asignar-lo a un projecte."
+
+#: dashboards/admin/users/templates/users/_update.html:8
+#: dashboards/admin/users/templates/users/_update.html:33
+#: dashboards/admin/users/templates/users/update.html:3
+#: dashboards/admin/users/templates/users/update.html:7
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Update User"
+msgstr "Actualitza usuari"
+
+#: dashboards/admin/users/templates/users/_update.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid ""
+"From here you can edit the user's details, including their default project."
+msgstr ""
+"Des d'aqui pots editar els detalls de l'usuari, incloïent el seu projecte "
+"per defecte."
+
+#: dashboards/admin/volumes/templates/volumes/detail.html:3
+#: dashboards/project/volumes/templates/volumes/detail.html:3
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Volume Details"
+msgstr "Detalls del volum"
+
+#: dashboards/admin/volumes/templates/volumes/detail.html:6
+#: dashboards/project/volumes/templates/volumes/detail.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Volume Detail"
+msgstr "Detall del volum"
+
+#: dashboards/project/access_and_security/panel.py:26
+#: dashboards/project/instances/workflows/create_instance.py:402
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Access & Security"
+msgstr "Acces i Seguretat"
+
+#: dashboards/project/access_and_security/tabs.py:54
+#: dashboards/project/access_and_security/security_groups/views.py:120
+#: usage/base.py:112
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve security groups."
+msgstr "No s'han pogut obtenir els grups de seguretat."
+
+#: dashboards/project/access_and_security/tabs.py:60
+#: dashboards/project/access_and_security/keypairs/tables.py:26
+#: dashboards/project/access_and_security/keypairs/tables.py:55
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Keypairs"
+msgstr "Parells de claus"
+
+#: dashboards/project/access_and_security/tabs.py:70
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve keypair list."
+msgstr "No s'ha pogut obtenir la llista de parells de clau."
+
+#: dashboards/project/access_and_security/tabs.py:86
+#: dashboards/project/access_and_security/floating_ips/workflows.py:69
+#: usage/base.py:107
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve floating IP addresses."
+msgstr "No s'han pogut obtenir les adreces IP flotants."
+
+#: dashboards/project/access_and_security/tabs.py:93
+#: dashboards/project/access_and_security/floating_ips/views.py:68
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve floating IP pools."
+msgstr "No s'ha pogut obtenir els pools de IP flotants"
+
+#: dashboards/project/access_and_security/floating_ips/forms.py:33
+#: dashboards/project/loadbalancers/forms.py:80
+#: dashboards/project/loadbalancers/forms.py:169
+#: dashboards/project/loadbalancers/tables.py:83
+#: dashboards/project/loadbalancers/tables.py:226
+#: dashboards/project/loadbalancers/workflows.py:285
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Pool"
+msgstr "Pool"
+
+#: dashboards/project/access_and_security/floating_ips/forms.py:53
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Allocated Floating IP %(ip)s."
+msgstr "S'ha assigant la ip flotant %(ip)s."
+
+#: dashboards/project/access_and_security/floating_ips/forms.py:57
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to allocate Floating IP."
+msgstr "No s'ha pogut asignar la ip flotant"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:40
+#: dashboards/project/access_and_security/floating_ips/tables.py:55
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Allocate IP To Project"
+msgstr "Assigna una IP al projecte"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:63
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Release"
+msgstr "Allibera"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:64
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Released"
+msgstr "Alliberada"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:65
+#: dashboards/project/access_and_security/templates/access_and_security/floating_ips/_allocate.html:23
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Floating IP"
+msgstr "IP flotant"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:75
+#: dashboards/project/access_and_security/floating_ips/workflows.py:126
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Associate"
+msgstr "Associar"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:107
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Successfully disassociated Floating IP: %s"
+msgstr "S'ha desasocioat correctament la IP flotant: %s"
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:111
+#: dashboards/project/instances/tables.py:430
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to disassociate floating IP."
+msgstr "No s'ha pofut desasociar la IP flotant."
+
+#: dashboards/project/access_and_security/floating_ips/tables.py:136
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Floating IP Pool"
+msgstr "Pool de IP flotants"
+
+#: dashboards/project/access_and_security/floating_ips/views.py:71
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "No floating IP pools available."
+msgstr "No hi ha pools d'IP flotants disponibles"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:41
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select the IP address you wish to associate with the selected instance."
+msgstr ""
+"Seleccioneu l'adreça IP que voleu associar amb la instància seleccionada."
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:73
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select an IP address"
+msgstr "Selecciona una adreça IP"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:75
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "No IP addresses available"
+msgstr "No hi ha adreces IP disponibles"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:99
+#: dashboards/project/volumes/forms.py:257
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select an instance"
+msgstr "Selecciona una instància"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:105
+#: dashboards/project/volumes/forms.py:259
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "No instances available"
+msgstr "No hi ha instàncies disponibles"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:125
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Manage Floating IP Associations"
+msgstr "Gestiona les associacións d'IP flotants"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:127
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP address %s associated."
+msgstr "L'adreça IP %s s'ha associat"
+
+#: dashboards/project/access_and_security/floating_ips/workflows.py:128
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to associate IP address %s."
+msgstr "No s'ha pogut associar l'adreça IP %s."
+
+#: dashboards/project/access_and_security/keypairs/forms.py:38
+#: dashboards/project/access_and_security/keypairs/forms.py:49
+#: dashboards/project/access_and_security/keypairs/tables.py:47
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Keypair Name"
+msgstr "Nom del parell de claus"
+
+#: dashboards/project/access_and_security/keypairs/forms.py:40
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid ""
+"Keypair names may only contain letters, numbers, underscores and hyphens."
+msgstr ""
+"Els parells de claus nomes poden contenir lletres,nombres, subratllats i "
+"guions."
+
+#: dashboards/project/access_and_security/keypairs/forms.py:51
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Public Key"
+msgstr "Clau pública"
+
+#: dashboards/project/access_and_security/keypairs/forms.py:60
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Successfully imported public key: %s"
+msgstr "S'ha importat la clau pública correctament: %s"
+
+#: dashboards/project/access_and_security/keypairs/forms.py:65
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to import keypair."
+msgstr "No s'ha pogut importar el parell de claus"
+
+#: dashboards/project/access_and_security/keypairs/tables.py:25
+#: dashboards/project/instances/tables.py:555
+#: dashboards/project/instances/workflows/create_instance.py:379
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Keypair"
+msgstr "Parell de claus"
+
+#: dashboards/project/access_and_security/keypairs/tables.py:34
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_import.html:8
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_import.html:24
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/import.html:3
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/import.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Import Keypair"
+msgstr "Importa parell de claus"
+
+#: dashboards/project/access_and_security/keypairs/tables.py:41
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_create.html:8
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/_create.html:24
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/create.html:3
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/create.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Keypair"
+msgstr "Crea parell de claus"
+
+#: dashboards/project/access_and_security/keypairs/tables.py:48
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Fingerprint"
+msgstr "Emprempta"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:54
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Successfully created security group: %s"
+msgstr "S'ha creat correctament el grup de seguretat: %s"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:60
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to create security group."
+msgstr "No s'ha pogut crear el grup de seguretat"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:93
+#: dashboards/project/access_and_security/security_groups/tables.py:91
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_add_rule.html:20
+#: dashboards/project/firewalls/tables.py:50
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Rule"
+msgstr "Regla"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:117
+#: dashboards/project/access_and_security/security_groups/forms.py:124
+#: dashboards/project/access_and_security/security_groups/tables.py:159
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP Protocol"
+msgstr "Protocol IP"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:148
+#: dashboards/project/access_and_security/security_groups/forms.py:155
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "From Port"
+msgstr "Port Origen"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:159
+#: dashboards/project/access_and_security/security_groups/forms.py:166
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "To Port"
+msgstr "Port destí"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:181
+#: dashboards/project/access_and_security/security_groups/forms.py:188
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Code"
+msgstr "Codi"
+
+#: dashboards/project/access_and_security/security_groups/forms.py:290
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "The ICMP type is invalid."
+msgstr "El tipus ICMP és invàlid."
+
+#: dashboards/project/access_and_security/security_groups/forms.py:293
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "The ICMP code is invalid."
+msgstr "El codi ICMP és invàlid."
+
+#: dashboards/project/access_and_security/security_groups/forms.py:313
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "The \"from\" port number is invalid."
+msgstr "El nombre del port origen és invàlid."
+
+#: dashboards/project/access_and_security/security_groups/forms.py:316
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "The \"to\" port number is invalid."
+msgstr "El nombre del port destí és invàlid."
+
+#: dashboards/project/access_and_security/security_groups/tables.py:61
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Edit Rules"
+msgstr "Editar regles"
+
+#: dashboards/project/access_and_security/security_groups/tables.py:82
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/_add_rule.html:8
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/add_rule.html:3
+#: dashboards/project/access_and_security/templates/access_and_security/security_groups/add_rule.html:6
+#: dashboards/project/firewalls/tables.py:27
+#: dashboards/project/firewalls/workflows.py:107
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Add Rule"
+msgstr "Afegir regla"
+
+#: dashboards/project/access_and_security/security_groups/tables.py:92
+#: dashboards/project/firewalls/tables.py:51
+#: dashboards/project/firewalls/tables.py:167
+#: dashboards/project/firewalls/tables.py:177
+#: dashboards/project/firewalls/workflows.py:135
+#: dashboards/project/firewalls/workflows.py:141
+#: dashboards/project/firewalls/templates/firewalls/_policy_details.html:19
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Rules"
+msgstr "Regles"
+
+#: dashboards/project/access_and_security/security_groups/views.py:127
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "%s (current)"
+msgstr "%s (actual)"
+
+#: dashboards/project/access_and_security/templates/access_and_security/index.html:3
+#: dashboards/project/access_and_security/templates/access_and_security/index.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Access &amp; Security"
+msgstr "Accès i Seguretat"
+
+#: dashboards/project/access_and_security/templates/access_and_security/floating_ips/_allocate.html:21
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Quotas"
+msgstr "Quotes del projecte"
+
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/download.html:4
+#: dashboards/project/access_and_security/templates/access_and_security/keypairs/download.html:7
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Download Keypair"
+msgstr "Descarrega parell de claus"
+
+#: dashboards/project/containers/browsers.py:26
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Swift"
+msgstr "Swift"
+
+#: dashboards/project/containers/browsers.py:29
+#: dashboards/project/containers/tables.py:42
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Container"
+msgstr "Contenidor"
+
+#: dashboards/project/containers/forms.py:44
+#: dashboards/project/containers/tables.py:123
+#: dashboards/project/containers/templates/containers/_container_detail.html:10
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Container Name"
+msgstr "Nom del contenidor"
+
+#: dashboards/project/containers/forms.py:52
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Container created successfully."
+msgstr "El contenidor s'ha creat correctament."
+
+#: dashboards/project/containers/forms.py:63
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Folder created successfully."
+msgstr "La carpeta s'ha creat correctament."
+
+#: dashboards/project/containers/forms.py:66
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to create container."
+msgstr "No s'ha pogut crear el contenidor."
+
+#: dashboards/project/containers/forms.py:74
+#: dashboards/project/containers/tables.py:243
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Object Name"
+msgstr "Nom de l'objecte"
+
+#: dashboards/project/containers/forms.py:78
+#: dashboards/project/stacks/forms.py:67
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "File"
+msgstr "Fitxer"
+
+#: dashboards/project/containers/forms.py:92
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Object was successfully uploaded."
+msgstr "L'objecte s'ha pujat correctament."
+
+#: dashboards/project/containers/forms.py:95
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to upload object."
+msgstr "No s'ha pogut pujar l'objecte."
+
+#: dashboards/project/containers/forms.py:99
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Destination container"
+msgstr "Contenidor destí."
+
+#: dashboards/project/containers/tables.py:152
+#: dashboards/project/containers/tables.py:164
+#: dashboards/project/containers/templates/containers/_upload.html:19
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Object"
+msgstr "Objecte"
+
+#: dashboards/project/containers/tables.py:153
+#: dashboards/project/containers/tables.py:165
+#: dashboards/project/containers/tables.py:250
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Objects"
+msgstr "Objectes"
+
+#: dashboards/project/containers/tables.py:171
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Copy"
+msgstr "Copia"
+
+#: dashboards/project/containers/tables.py:184
+#: dashboards/project/database_backups/tables.py:101
+#: dashboards/project/databases/tables.py:217
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Download"
+msgstr "Descarrega"
+
+#: dashboards/project/containers/views.py:57
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve container list."
+msgstr "No s'ha pogut obtenir la llista de contenidors."
+
+#: dashboards/project/containers/templates/containers/_copy.html:8
+#: dashboards/project/containers/templates/containers/_copy.html:23
+#: dashboards/project/containers/templates/containers/copy.html:3
+#: dashboards/project/containers/templates/containers/copy.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Copy Object"
+msgstr "Copiar un objecte"
+
+#: dashboards/project/containers/templates/containers/_upload.html:9
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Upload Object To Container"
+msgstr "Puja un objecte al contenidor"
+
+#: dashboards/project/containers/templates/containers/upload.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Upload Objects"
+msgstr "Puja Objectes"
+
+#: dashboards/project/database_backups/tables.py:57
+#: dashboards/project/databases/tables.py:64
+#: dashboards/project/databases/tables.py:80
+#: dashboards/project/firewalls/tables.py:48
+#: dashboards/project/firewalls/tables.py:56
+#: dashboards/project/firewalls/tables.py:64
+#: dashboards/project/loadbalancers/tables.py:68
+#: dashboards/project/loadbalancers/tables.py:81
+#: dashboards/project/loadbalancers/tables.py:89
+#: dashboards/project/loadbalancers/tables.py:97
+#: dashboards/project/loadbalancers/workflows.py:628
+#: dashboards/project/stacks/tables.py:39 dashboards/project/vpn/tables.py:57
+#: dashboards/project/vpn/tables.py:65 dashboards/project/vpn/tables.py:73
+#: dashboards/project/vpn/tables.py:81
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Delete"
+msgstr "Eliminar"
+
+#: dashboards/project/database_backups/views.py:48
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Not Found"
+msgstr "No s'ha trobat la pàgina"
+
+#: dashboards/project/database_backups/templates/database_backups/details.html:15
+#: dashboards/project/databases/templates/databases/_detail_overview.html:6
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:6
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:7
+#: dashboards/project/instances/templates/instances/_detail_overview.html:7
+#: dashboards/project/instances/workflows/update_instance.py:121
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:6
+#: dashboards/project/stacks/templates/stacks/_resource_overview.html:6
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:7
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Info"
+msgstr "Informació"
+
+#: dashboards/project/database_backups/templates/database_backups/details.html:29
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:38
+#: dashboards/project/instances/templates/instances/_detail_overview.html:34
+#: dashboards/project/instances/templates/instances/_detail_overview.html:37
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:11
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:12
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:13
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:28
+#: dashboards/project/volumes/templates/volumes/_limits.html:10
+#: dashboards/project/volumes/templates/volumes/_limits.html:11
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "GB"
+msgstr "GB"
+
+#: dashboards/project/database_backups/workflows/create_backup.py:39
+#: dashboards/project/databases/workflows/create_instance.py:40
+#: dashboards/project/instances/workflows/create_instance.py:140
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Details"
+msgstr "Detalls"
+
+#: dashboards/project/databases/tables.py:65
+#: dashboards/project/databases/tables.py:81
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Deleted"
+msgstr "Eliminat"
+
+#: dashboards/project/databases/tables.py:141
+#: dashboards/project/instances/tables.py:490
+#: dashboards/project/instances/tables.py:497
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Not available"
+msgstr "No disponible"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:70
+#: dashboards/project/images_and_snapshots/images/forms.py:172
+#: dashboards/project/images_and_snapshots/images/tables.py:219
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Format"
+msgstr "Fomat"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:75
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Minimum Disk (GB)"
+msgstr "Espái minim del disct (GB)"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:82
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Minimum Ram (MB)"
+msgstr "Ram Mínima (MB)"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:158
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:62
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Kernel ID"
+msgstr "Kernel ID"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:163
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:66
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Ramdisk ID"
+msgstr "Ramdisk ID"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:168
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:58
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Architecture"
+msgstr "Arquitectura"
+
+#: dashboards/project/images_and_snapshots/images/forms.py:208
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Image was successfully updated."
+msgstr "La imatge s'ha actualtizat correctament."
+
+#: dashboards/project/images_and_snapshots/images/tables.py:56
+#: dashboards/project/volumes/forms.py:122
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Image"
+msgstr "Imatge"
+
+#: dashboards/project/images_and_snapshots/images/tables.py:96
+#: dashboards/project/images_and_snapshots/volume_snapshots/tables.py:42
+#: dashboards/project/volumes/tables.py:61
+#: dashboards/project/volumes/tables.py:74
+#: dashboards/project/volumes/templates/volumes/_create.html:9
+#: dashboards/project/volumes/templates/volumes/_create.html:24
+#: dashboards/project/volumes/templates/volumes/create.html:3
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Create Volume"
+msgstr "Crea un volum"
+
+#: dashboards/project/images_and_snapshots/images/tabs.py:38
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve image details."
+msgstr "No s'han pogut obtenir els detalls de la imatge"
+
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:25
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:39
+#: dashboards/project/instances/templates/instances/_detail_overview.html:16
+#: dashboards/project/stacks/tables.py:74
+#: dashboards/project/stacks/templates/stacks/_detail_overview.html:22
+#: dashboards/project/volumes/templates/volumes/_detail_overview.html:29
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Created"
+msgstr "Creada"
+
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:27
+#: dashboards/project/stacks/tables.py:77
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Updated"
+msgstr "Actualitzada"
+
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/images/_detail_overview.html:78
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Image Type"
+msgstr "Tipus d'imatge"
+
+#: dashboards/project/images_and_snapshots/templates/images_and_snapshots/snapshots/_detail_overview.html:20
+#: dashboards/project/instances/templates/instances/_detail_overview.html:113
+#: dashboards/project/instances/workflows/create_instance.py:109
+#: dashboards/project/instances/workflows/create_instance.py:275
+#: dashboards/project/volumes/tables.py:38
+#: dashboards/project/volumes/tables.py:216
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Volume"
+msgstr "Volum"
+
+#: dashboards/project/images_and_snapshots/volume_snapshots/tables.py:85
+#: dashboards/project/volumes/forms.py:32
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Volume Name"
+msgstr "Nom del volum"
+
+#: dashboards/project/instances/forms.py:40
+#: dashboards/project/instances/forms.py:61
+#: dashboards/project/instances/workflows/create_instance.py:292
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select Image"
+msgstr "Selecciona la imatge"
+
+#: dashboards/project/instances/forms.py:63
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "No images available."
+msgstr "No hi ha imatges disponibles."
+
+#: dashboards/project/instances/tables.py:119
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Pause"
+msgstr "Pausa"
+
+#: dashboards/project/instances/tables.py:120
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Paused"
+msgstr "Pausada"
+
+#: dashboards/project/instances/tables.py:151
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Suspend"
+msgstr "Suspen"
+
+#: dashboards/project/instances/tables.py:152
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Suspended"
+msgstr "Suspesa"
+
+#: dashboards/project/instances/tables.py:275
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "View Log"
+msgstr "Veure el registre"
+
+#: dashboards/project/instances/tables.py:351
+#: dashboards/project/instances/tables.py:371
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Associate Floating IP"
+msgstr "Associar IP flotant"
+
+#: dashboards/project/instances/tables.py:399
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Disassociate Floating IP"
+msgstr "Desasociar IP flotant"
+
+#: dashboards/project/instances/tables.py:546
+#: dashboards/project/instances/workflows/create_instance.py:90
+#: dashboards/project/overview/views.py:33 usage/tables.py:58
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Instance Name"
+msgstr "Nom de la instància"
+
+#: dashboards/project/instances/tabs.py:37
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Log"
+msgstr "Registre"
+
+#: dashboards/project/instances/templates/instances/_detail_console.html:21
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Reload"
+msgstr "Recarrega"
+
+#: dashboards/project/instances/templates/instances/_detail_log.html:10
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Go"
+msgstr "Ves"
+
+#: dashboards/project/instances/templates/instances/_detail_log.html:12
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "View Full Log"
+msgstr "Veure el registre complert"
+
+#: dashboards/project/instances/templates/instances/_detail_overview.html:32
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "VCPU"
+msgstr "VCPUs"
+
+#: dashboards/project/instances/templates/instances/_detail_overview.html:43
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP Addresses"
+msgstr "Adreces IP"
+
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:14
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "MB"
+msgstr "MB"
+
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:19
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Project Limits"
+msgstr "Projectes"
+
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:21
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Number of Instances"
+msgstr "Nombre d'instàncies"
+
+#: dashboards/project/instances/templates/instances/_flavors_and_quotas.html:35
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Total RAM"
+msgstr "RAM total"
+
+#: dashboards/project/instances/workflows/create_instance.py:95
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Instance Count"
+msgstr "Nombre d'instàncies"
+
+#: dashboards/project/instances/workflows/create_instance.py:320
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select Volume"
+msgstr "Selecciona un volum"
+
+#: dashboards/project/instances/workflows/create_instance.py:417
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Select a keypair"
+msgstr "Selecciona un parell de claus"
+
+#: dashboards/project/instances/workflows/create_instance.py:419
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "No keypairs available."
+msgstr "No hi ha parells de claus disponibles"
+
+#: dashboards/project/networks/workflows.py:90
+#: dashboards/project/networks/subnets/tables.py:85
+#: dashboards/project/networks/subnets/workflows.py:83
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Network Address"
+msgstr "Adreça de la Xarxa"
+
+#: dashboards/project/networks/subnets/views.py:67
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Unable to retrieve subnet details"
+msgstr "No s'han pogut obtenir els detalls de la subxarxa"
+
+#: dashboards/project/networks/subnets/workflows.py:107
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Gateway IP (optional)"
+msgstr "IP de la porta d'enllaç (opcional)"
+
+#: dashboards/project/networks/subnets/workflows.py:152
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Update Subnet"
+msgstr "Actualitza Subxarxa"
+
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:23
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP address:"
+msgstr "Adreça IP:"
+
+#: dashboards/project/networks/templates/networks/ports/_detail_overview.html:30
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Mac Address"
+msgstr "Adreça MAC"
+
+#: dashboards/project/networks/templates/networks/subnets/_detail_overview.html:17
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "IP version"
+msgstr "Versió IP"
+
+#: dashboards/project/volumes/forms.py:37
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Size (GB)"
+msgstr "Mida (GB)"
+
+#: dashboards/project/volumes/tables.py:111
+#, python-format
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "%sGB"
+msgstr "%sGB"
+
+#: dashboards/project/volumes/templates/volumes/_limits.html:10
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Total Gigabytes"
+msgstr "Gigabytes totals"
+
+#: dashboards/project/volumes/templates/volumes/_limits.html:18
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Number of Volumes"
+msgstr "Nombre de volums"
+
+#: dashboards/project/vpn/templates/vpn/_vpnservice_details.html:27
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "VPN Connections"
+msgstr "Projectes"
+
+#: dashboards/settings/dashboard.py:24 templates/_header.html:5
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Settings"
+msgstr "Preferències"
+
+#: dashboards/settings/user/forms.py:103
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Settings saved."
+msgstr "Preferències desades."
+
+#: dashboards/settings/user/panel.py:25
+#: dashboards/settings/user/templates/user/_settings.html:9
+#: dashboards/settings/user/templates/user/settings.html:3
+#: dashboards/settings/user/templates/user/settings.html:6
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "User Settings"
+msgstr "Preferències del usuari"
+
+#: templates/403.html:5 templates/403.html.py:10
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Forbidden"
+msgstr "Prohibit"
+
+#: templates/403.html:21 templates/404.html:20 templates/500.html:73
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Home"
+msgstr "Inici"
+
+#: templates/404.html:5
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Page Not Found"
+msgstr "No s'ha trobat la pàgina"
+
+#: templates/404.html:10
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "The page you were looking for doesn't exist"
+msgstr "La pàgina que esteu buscant no existeix"
+
+#: templates/500.html:74 templates/_header.html:7
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Help"
+msgstr "Ajuda"
+
+#: templates/_header.html:9
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Sign Out"
+msgstr "Sortir"
+
+#: usage/tables.py:12
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Download CSV Summary"
+msgstr "Descarrega el resum en CSV"
+
+#: usage/tables.py:41 usage/tables.py:69
+msgctxt ""
+"Translation source: /translations/horizon.openstack-dashboard-translations/"
+"ca.po from project 'main'"
+msgid "Usage Summary"
+msgstr "Resum de l'ús"
+
+#: keystone/token/backends/memcache.py:170
+msgctxt ""
+"Translation source: /translations/keystone.keystone-translations/ca.po from "
+"project 'main'"
+msgid "Unable to add token to revocation list."
+msgstr "No es pot afegir el token a la llista de revocats."
+
+#: keystone/config.py:62
+msgctxt ""
+"Translation source: /translations/keystone.keystonepot/ca.po from project "
+"'main'"
+msgid "Invalid syslog facility"
+msgstr "Fitxer syslog invàlid"
+
+#: keystone/policy/backends/rules.py:34
+msgctxt ""
+"Translation source: /translations/keystone.keystonepot/ca.po from project "
+"'main'"
+msgid "JSON file representing policy"
+msgstr "Fitxer JSON que representa la politica"
+
+#: keystone/policy/backends/rules.py:37
+msgctxt ""
+"Translation source: /translations/keystone.keystonepot/ca.po from project "
+"'main'"
+msgid "Rule checked when requested rule is not found"
+msgstr "Marca la regla quan aquesta no s'ha trobat"
+
+#: nova/policy.py:33
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "JSON file representing policy"
+msgstr "Fitxer JSON que representa la politica"
+
+#: nova/policy.py:36
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "Rule checked when requested rule is not found"
+msgstr "Marca la regla quan aquesta no s'ha trobat"
+
+#: nova/cmd/manage.py:275
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "Quota"
+msgstr "Quota"
+
+#: nova/cmd/manage.py:276
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "Limit"
+msgstr "Límit"
+
+#: nova/cmd/manage.py:536 nova/tests/test_nova_manage.py:213
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: nova/cmd/manage.py:697
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "Host"
+msgstr "Amfitrió"
+
+#: nova/cmd/manage.py:699
+msgctxt ""
+"Translation source: /translations/nova.nova-translations/ca.po from project "
+"'main'"
+msgid "Status"
+msgstr "Estat"
+
+#: doc/admin-guide-cloud/ch_identity_mgmt.xml100(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Monitoring"
+msgstr "Monitoreig"
+
+#: doc/admin-guide-cloud/ch_networking.xml44(th)
+#: doc/admin-guide-cloud/ch_networking.xml1185(th)
+#: doc/admin-guide-cloud/ch_networking.xml1297(th)
+#: doc/admin-guide-cloud/ch_networking.xml1406(th)
+#: doc/admin-guide-cloud/ch_networking.xml1470(th)
+#: doc/admin-guide-cloud/ch_networking.xml1543(th)
+#: doc/admin-guide-cloud/ch_networking.xml1647(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml45(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml171(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml374(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml436(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml759(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml806(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1074(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1209(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1287(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1524(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1903(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2011(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2054(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/admin-guide-cloud/ch_networking.xml50(emphasis)
+#: doc/admin-guide-cloud/ch_networking.xml1296(th)
+#: doc/admin-guide-cloud/ch_networking.xml1412(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: doc/admin-guide-cloud/ch_networking.xml56(emphasis)
+#: doc/admin-guide-cloud/ch_networking.xml1421(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Subnet"
+msgstr "Subxarxa"
+
+#: doc/admin-guide-cloud/ch_networking.xml61(emphasis)
+#: doc/admin-guide-cloud/ch_networking.xml1433(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Port"
+msgstr "Port"
+
+#: doc/admin-guide-cloud/ch_networking.xml1468(th)
+#: doc/admin-guide-cloud/ch_networking.xml1541(th)
+#: doc/admin-guide-cloud/ch_networking.xml1645(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml169(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml372(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml434(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml757(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml804(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1072(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1207(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1285(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1522(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2009(th)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2052(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/admin-guide-cloud/ch_networking.xml1484(option)
+#: doc/admin-guide-cloud/ch_networking.xml1599(option)
+#: doc/admin-guide-cloud/ch_networking.xml1684(option)
+#: doc/admin-guide-cloud/ch_networking.xml1767(option)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml379(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml441(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml764(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml811(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1079(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1214(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1292(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml1529(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2016(td)
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2059(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: doc/admin-guide-cloud/section_networking_adv_features.xml426(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Floating IP"
+msgstr "IP flotant"
+
+#: doc/admin-guide-cloud/section_networking_adv_features.xml2044(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Rules"
+msgstr "Regles"
+
+#: doc/admin-guide-cloud/ch_compute.xml669(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Images"
+msgstr "Imatges"
+
+#: doc/admin-guide-cloud/ch_compute.xml717(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Flavors"
+msgstr "Sabors"
+
+#: doc/admin-guide-cloud/ch_compute.xml743(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.admin-guide-cloud/"
+"ca.po from project 'main'"
+msgid "Instances"
+msgstr "Instàncies"
+
+#: doc/common/ch_getstart.xml27(th)
+#: doc/common/section_keystone-concepts.xml88(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Service"
+msgstr "Servei"
+
+#: doc/common/ch_getstart.xml29(th)
+#: doc/common/section_nova_boot_from_volume.xml73(th)
+#: doc/common/section_nova_cli_quotas.xml27(td)
+#: doc/common/section_identity-configure.xml27(td)
+#: doc/common/section_customize_flavors.xml35(td)
+#: doc/common/section_cli_install.xml32(th)
+#: doc/common/tables/nova-cells.xml14(td)
+#: doc/common/tables/glance-policy.xml14(td)
+#: doc/common/tables/neutron-mlnx.xml14(td)
+#: doc/common/tables/nova-ipv6.xml14(td)
+#: doc/common/tables/cinder-eqlx.xml14(td)
+#: doc/common/tables/swift-object-expirer-filter-catch_errors.xml13(td)
+#: doc/common/tables/swift-object-expirer-filter-cache.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-cache.xml13(td)
+#: doc/common/tables/neutron-ml2_l2pop.xml14(td)
+#: doc/common/tables/glance-qpid.xml14(td)
+#: doc/common/tables/swift-container-server-DEFAULT.xml13(td)
+#: doc/common/tables/nova-volumes.xml14(td)
+#: doc/common/tables/glance-gridfs.xml14(td)
+#: doc/common/tables/neutron-ml2_arista.xml14(td)
+#: doc/common/tables/glance-filesystem.xml14(td)
+#: doc/common/tables/swift-container-server-container-updater.xml13(td)
+#: doc/common/tables/cinder-storage_gpfs.xml14(td)
+#: doc/common/tables/nova-docker.xml14(td)
+#: doc/common/tables/cinder-storage_nexenta_iscsi.xml14(td)
+#: doc/common/tables/nova-tilera.xml14(td) doc/common/tables/nova-ca.xml14(td)
+#: doc/common/tables/swift-account-server-filter-recon.xml13(td)
+#: doc/common/tables/cinder-huawei.xml14(td)
+#: doc/common/tables/swift-container-server-container-replicator.xml13(td)
+#: doc/common/tables/nova-glance.xml14(td)
+#: doc/common/tables/nova-neutron.xml14(td)
+#: doc/common/tables/cinder-backups_ceph.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-name_check.xml13(td)
+#: doc/common/tables/nova-metadata.xml14(td)
+#: doc/common/tables/glance-s3.xml14(td)
+#: doc/common/tables/neutron-kombu.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-ratelimit.xml13(td)
+#: doc/common/tables/cinder-block-device.xml14(td)
+#: doc/common/tables/cinder-zones.xml14(td)
+#: doc/common/tables/swift-container-server-container-sync.xml13(td)
+#: doc/common/tables/neutron-common.xml14(td)
+#: doc/common/tables/swift-object-server-object-auditor.xml13(td)
+#: doc/common/tables/neutron-openvswitch_agent.xml14(td)
+#: doc/common/tables/cinder-compute.xml14(td)
+#: doc/common/tables/cinder-lvm.xml14(td)
+#: doc/common/tables/cinder-storage_nfs.xml14(td)
+#: doc/common/tables/neutron-plumgrid.xml14(td)
+#: doc/common/tables/nova-hypervisor.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-tempurl.xml13(td)
+#: doc/common/tables/cinder-storage_nexenta_nfs.xml14(td)
+#: doc/common/tables/cinder-quota.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-healthcheck.xml13(td)
+#: doc/common/tables/swift-object-expirer-DEFAULT.xml13(td)
+#: doc/common/tables/nova-console.xml14(td)
+#: doc/common/tables/swift-swift-bench-bench.xml13(td)
+#: doc/common/tables/nova-common.xml14(td)
+#: doc/common/tables/swift-object-server-object-updater.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-account-quotas.xml13(td)
+#: doc/common/tables/swift-proxy-server-app-proxy-server.xml13(td)
+#: doc/common/tables/nova-keymgr.xml14(td)
+#: doc/common/tables/neutron-api.xml14(td)
+#: doc/common/tables/nova-testing.xml14(td)
+#: doc/common/tables/cinder-backups.xml14(td)
+#: doc/common/tables/swift-container-server-pipeline-main.xml13(td)
+#: doc/common/tables/swift-rsyncd-object.xml13(td)
+#: doc/common/tables/nova-s3.xml14(td)
+#: doc/common/tables/neutron-openvswitch.xml14(td)
+#: doc/common/tables/nova-zookeeper.xml14(td)
+#: doc/common/tables/cinder-rpc.xml14(td)
+#: doc/common/tables/cinder-api.xml14(td)
+#: doc/common/tables/cinder-windows.xml14(td)
+#: doc/common/tables/swift-object-server-pipeline-main.xml13(td)
+#: doc/common/tables/cinder-san.xml14(td)
+#: doc/common/tables/swift-account-server-app-account-server.xml13(td)
+#: doc/common/tables/cinder-keymgr.xml14(td)
+#: doc/common/tables/nova-db.xml14(td)
+#: doc/common/tables/neutron-ml2_vxlan.xml14(td)
+#: doc/common/tables/glance-logging.xml14(td)
+#: doc/common/tables/glance-wsgi.xml14(td)
+#: doc/common/tables/nova-periodic.xml14(td)
+#: doc/common/tables/swift-account-server-filter-healthcheck.xml13(td)
+#: doc/common/tables/cinder-images.xml14(td)
+#: doc/common/tables/swift-container-server-app-container-server.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-slo.xml13(td)
+#: doc/common/tables/neutron-wsgi.xml14(td)
+#: doc/common/tables/neutron-scheduler.xml14(td)
+#: doc/common/tables/glance-rbd.xml14(td)
+#: doc/common/tables/cinder-storage_netapp.xml14(td)
+#: doc/common/tables/neutron-metadata.xml14(td)
+#: doc/common/tables/cinder-storage_ceph.xml14(td)
+#: doc/common/tables/cinder-netapp.xml14(td)
+#: doc/common/tables/nova-livemigration.xml14(td)
+#: doc/common/tables/nova-ldap.xml14(td)
+#: doc/common/tables/nova-fping.xml14(td)
+#: doc/common/tables/neutron-securitygroups.xml14(td)
+#: doc/common/tables/nova-ec2.xml14(td)
+#: doc/common/tables/swift-account-server-account-auditor.xml13(td)
+#: doc/common/tables/swift-object-server-DEFAULT.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-bulk.xml13(td)
+#: doc/common/tables/nova-policy.xml14(td)
+#: doc/common/tables/neutron-logging.xml14(td)
+#: doc/common/tables/glance-rpc.xml14(td)
+#: doc/common/tables/nova-authentication.xml14(td)
+#: doc/common/tables/cinder-vmware.xml14(td)
+#: doc/common/tables/glance-sheepdog.xml14(td)
+#: doc/common/tables/neutron-qpid.xml14(td)
+#: doc/common/tables/neutron-hyperv_agent.xml14(td)
+#: doc/common/tables/glance-swift.xml14(td)
+#: doc/common/tables/swift-account-server-DEFAULT.xml13(td)
+#: doc/common/tables/neutron-bigswitch.xml14(td)
+#: doc/common/tables/neutron-lbaas.xml14(td)
+#: doc/common/tables/cinder-backups_swift.xml14(td)
+#: doc/common/tables/nova-powervm.xml14(td)
+#: doc/common/tables/neutron-ml2_cisco.xml14(td)
+#: doc/common/tables/nova-pci.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-proxy-logging.xml13(td)
+#: doc/common/tables/neutron-varmour.xml14(td)
+#: doc/common/tables/glance-imagecache.xml14(td)
+#: doc/common/tables/swift-rsyncd-account.xml13(td)
+#: doc/common/tables/cinder-storage.xml14(td)
+#: doc/common/tables/nova-vpn.xml14(td) doc/common/tables/nova-wsgi.xml14(td)
+#: doc/common/tables/cinder-storage_glusterfs.xml14(td)
+#: doc/common/tables/swift-container-server-filter-healthcheck.xml13(td)
+#: doc/common/tables/nova-availabilityzones.xml14(td)
+#: doc/common/tables/nova-vnc.xml14(td)
+#: doc/common/tables/swift-swift-swift-constraints.xml13(td)
+#: doc/common/tables/neutron-cisco.xml14(td)
+#: doc/common/tables/nova-hyperv.xml14(td)
+#: doc/common/tables/swift-object-server-filter-recon.xml13(td)
+#: doc/common/tables/cinder-coraid.xml14(td)
+#: doc/common/tables/swift-container-server-container-auditor.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-catch_errors.xml13(td)
+#: doc/common/tables/nova-vmware.xml14(td)
+#: doc/common/tables/nova-logging.xml14(td)
+#: doc/common/tables/nova-xen.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-list-endpoints.xml13(td)
+#: doc/common/tables/neutron-nicira.xml14(td)
+#: doc/common/tables/swift-memcache-memcache.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-keystoneauth.xml13(td)
+#: doc/common/tables/neutron-ml2.xml14(td)
+#: doc/common/tables/neutron-linuxbridge.xml14(td)
+#: doc/common/tables/cinder-nfs.xml14(td)
+#: doc/common/tables/glance-common.xml14(td)
+#: doc/common/tables/nova-network.xml14(td)
+#: doc/common/tables/cinder-scality.xml14(td)
+#: doc/common/tables/neutron-notifier.xml14(td)
+#: doc/common/tables/cinder-common.xml14(td)
+#: doc/common/tables/nova-trustedcomputing.xml14(td)
+#: doc/common/tables/neutron-ml2_flat.xml14(td)
+#: doc/common/tables/nova-configdrive.xml14(td)
+#: doc/common/tables/cinder-database.xml14(td)
+#: doc/common/tables/neutron-rpc.xml14(td)
+#: doc/common/tables/nova-zeromq.xml14(td)
+#: doc/common/tables/glance-testing.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-tempauth.xml13(td)
+#: doc/common/tables/glance-registry.xml14(td)
+#: doc/common/tables/nova-v3api.xml14(td)
+#: doc/common/tables/swift-object-server-object-replicator.xml13(td)
+#: doc/common/tables/swift-dispersion-dispersion.xml13(td)
+#: doc/common/tables/swift-account-server-account-replicator.xml13(td)
+#: doc/common/tables/neutron-fwaas.xml14(td)
+#: doc/common/tables/glance-rabbitmq.xml14(td)
+#: doc/common/tables/cinder-backups_tsm.xml14(td)
+#: doc/common/tables/nova-qpid.xml14(td)
+#: doc/common/tables/cinder-connection.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-authtoken.xml13(td)
+#: doc/common/tables/neutron-zeromq.xml14(td)
+#: doc/common/tables/neutron-vpn.xml14(td)
+#: doc/common/tables/cinder-log.xml14(td)
+#: doc/common/tables/neutron-agent.xml14(td)
+#: doc/common/tables/neutron-ryu.xml14(td)
+#: doc/common/tables/swift-object-server-app-object-server.xml13(td)
+#: doc/common/tables/neutron-policy.xml14(td)
+#: doc/common/tables/swift-proxy-server-DEFAULT.xml13(td)
+#: doc/common/tables/swift-proxy-server-filter-staticweb.xml13(td)
+#: doc/common/tables/swift-object-expirer-app-proxy-server.xml13(td)
+#: doc/common/tables/neutron-meta.xml14(td)
+#: doc/common/tables/neutron-ssl.xml14(td)
+#: doc/common/tables/nova-scheduling.xml14(td)
+#: doc/common/tables/swift-drive-audit-drive-audit.xml13(td)
+#: doc/common/tables/swift-container-server-filter-recon.xml13(td)
+#: doc/common/tables/neutron-db.xml14(td)
+#: doc/common/tables/neutron-brocade.xml14(td)
+#: doc/common/tables/swift-object-expirer-pipeline-main.xml13(td)
+#: doc/common/tables/neutron-linuxbridge_agent.xml14(td)
+#: doc/common/tables/cinder-xiv.xml14(td)
+#: doc/common/tables/neutron-rabbitmq.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-container-quotas.xml13(td)
+#: doc/common/tables/swift-swift-swift-hash.xml13(td)
+#: doc/common/tables/cinder-auth.xml14(td)
+#: doc/common/tables/nova-kombu.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-formpost.xml13(td)
+#: doc/common/tables/cinder-hds.xml14(td)
+#: doc/common/tables/nova-spice.xml14(td)
+#: doc/common/tables/neutron-midonet.xml14(td)
+#: doc/common/tables/cinder-storwize.xml14(td)
+#: doc/common/tables/cinder-solidfire.xml14(td)
+#: doc/common/tables/glance-ssl.xml14(td)
+#: doc/common/tables/nova-apiv3.xml14(td)
+#: doc/common/tables/glance-db.xml14(td) doc/common/tables/nova-api.xml14(td)
+#: doc/common/tables/swift-rsyncd-container.xml13(td)
+#: doc/common/tables/cinder-san-solaris.xml14(td)
+#: doc/common/tables/swift-object-server-filter-healthcheck.xml13(td)
+#: doc/common/tables/glance-paste.xml14(td)
+#: doc/common/tables/neutron-quotas.xml14(td)
+#: doc/common/tables/nova-rpc.xml14(td)
+#: doc/common/tables/nova-baremetal.xml14(td)
+#: doc/common/tables/swift-account-server-pipeline-main.xml13(td)
+#: doc/common/tables/glance-api.xml14(td)
+#: doc/common/tables/cinder-scheduler.xml14(td)
+#: doc/common/tables/neutron-ml2_ncs.xml14(td)
+#: doc/common/tables/neutron-nec.xml14(td)
+#: doc/common/tables/neutron-testing.xml14(td)
+#: doc/common/tables/swift-object-expirer-object-expirer.xml13(td)
+#: doc/common/tables/glance-cinder.xml14(td)
+#: doc/common/tables/nova-redis.xml14(td)
+#: doc/common/tables/neutron-embrane.xml14(td)
+#: doc/common/tables/swift-proxy-server-pipeline-main.xml13(td)
+#: doc/common/tables/nova-upgrade_levels.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-cname_lookup.xml13(td)
+#: doc/common/tables/nova-rabbitmq.xml14(td)
+#: doc/common/tables/cinder-zadara.xml14(td)
+#: doc/common/tables/swift-account-server-account-reaper.xml13(td)
+#: doc/common/tables/nova-quota.xml14(td)
+#: doc/common/tables/nova-conductor.xml14(td)
+#: doc/common/tables/nova-compute.xml14(td)
+#: doc/common/tables/swift-proxy-server-filter-domain_remap.xml13(td)
+#: doc/common/tables/neutron-hyperv.xml14(td)
+#: doc/common/tables/cinder-storage_xen.xml14(td)
+#: doc/common/tables/nova-xvpnvncproxy.xml14(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/common/ch_getstart.xml39(link)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Horizon"
+msgstr "Horizon"
+
+#: doc/common/ch_getstart.xml75(link)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Swift"
+msgstr "Swift"
+
+#: doc/common/section_keystone-concepts.xml24(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "User"
+msgstr "Usuari"
+
+#: doc/common/section_keystone-concepts.xml109(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Role"
+msgstr "Rol"
+
+#: doc/common/section_nova_boot_from_volume.xml67(replaceable)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "ID"
+msgstr "Identificador"
+
+#: doc/common/section_dashboard_access.xml99(guilabel)
+#: doc/common/section_dashboard_access.xml262(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Instances"
+msgstr "Instàncies"
+
+#: doc/common/section_dashboard_access.xml125(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Access &amp; Security"
+msgstr "Accès i Seguretat"
+
+#: doc/common/section_dashboard_access.xml159(guilabel)
+#: doc/common/section_dashboard_access.xml294(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Networks"
+msgstr "Xarxes"
+
+#: doc/common/section_dashboard_access.xml279(guilabel)
+#: doc/common/section_customize_flavors.xml6(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Flavors"
+msgstr "Sabors"
+
+#: doc/common/section_dashboard_access.xml287(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Images"
+msgstr "Imatges"
+
+#: doc/common/section_dashboard_access.xml351(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Projects"
+msgstr "Projectes"
+
+#: doc/common/section_dashboard_access.xml358(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Users"
+msgstr "Usuaris"
+
+#: doc/common/section_dashboard_access.xml372(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Roles"
+msgstr "Rols"
+
+#: doc/common/section_nova_cli_quotas.xml24(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Quota Name"
+msgstr "Nom de la quota"
+
+#: doc/common/section_customize_flavors.xml40(literal)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Name"
+msgstr "Nom"
+
+#: doc/common/section_customize_flavors.xml71(literal)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "VCPUs"
+msgstr "VCPUs"
+
+#: doc/common/section_keystone_cli_example_usage.xml31(replaceable)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: doc/common/section_compute_config-api.xml97(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.common/ca.po from "
+"project 'main'"
+msgid "Limit"
+msgstr "Límit"
+
+#: doc/config-reference/networking/section_networking-multi-dhcp-agents.xml209(emphasis)
+#: doc/config-reference/networking/section_networking-adv-config.xml68(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.config-reference/ca."
+"po from project 'main'"
+msgid "Settings"
+msgstr "Preferències"
+
+#: doc/config-reference/networking/section_networking-options-reference.xml57(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.config-reference/ca."
+"po from project 'main'"
+msgid "Quotas"
+msgstr "Quotes"
+
+#: doc/config-reference/networking/section_networking-config-identity.xml166(th)
+#: doc/config-reference/networking/section_networking-config-identity.xml239(td)
+#: doc/config-reference/networking/section_networking-config-identity.xml278(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.config-reference/ca."
+"po from project 'main'"
+msgid "Item"
+msgstr "Item"
+
+#: doc/config-reference/block-storage/drivers/coraid-driver.xml358(th)
+#: doc/config-reference/block-storage/drivers/huawei-storage-driver.xml311(td)
+#: doc/config-reference/block-storage/drivers/ibm-storwize-svc-driver.xml203(td)
+#: doc/config-reference/block-storage/drivers/hds-volume-driver.xml326(td)
+#: doc/config-reference/block-storage/drivers/ibm-gpfs-volume-driver.xml80(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.config-reference/ca."
+"po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/config-reference/block-storage/drivers/huawei-storage-driver.xml309(td)
+#: doc/config-reference/block-storage/drivers/ibm-storwize-svc-driver.xml201(td)
+#: doc/config-reference/block-storage/drivers/hds-volume-driver.xml324(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.config-reference/ca."
+"po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/glossary/glossary-terms.xml2101(glossterm)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.glossary/ca.po from "
+"project 'main'"
+msgid "Horizon"
+msgstr "Horizon"
+
+#: doc/glossary/glossary-terms.xml4202(glossterm)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.glossary/ca.po from "
+"project 'main'"
+msgid "Swift"
+msgstr "Swift"
+
+#: doc/install-guide/section_nova-boot.xml96(replaceable)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.install-guide/ca.po "
+"from project 'main'"
+msgid "ID"
+msgstr "Identificador"
+
+#: doc/install-guide/section_neutron-per-tenant-routers-with-private-networks.xml62(th)
+#: doc/install-guide/section_neutron-provider-router-with-private_networks.xml32(th)
+#: doc/install-guide/section_neutron-single-flat.xml33(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.install-guide/ca.po "
+"from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/install-guide/section_neutron-provider-router-with-private_networks.xml62(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.install-guide/ca.po "
+"from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: doc/install-guide/ch_overview.xml6(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.install-guide/ca.po "
+"from project 'main'"
+msgid "Architecture"
+msgstr "Arquitectura"
+
+#: doc/src/docbkx/openstack-ops/src/ch_arch_network_design.xml170(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_upstream.xml449(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Status"
+msgstr "Estat"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_log_monitor.xml32(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Service"
+msgstr "Servei"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_log_monitor.xml307(para)
+#: doc/src/docbkx/openstack-ops/src/ch_arch_storage.xml226(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Swift"
+msgstr "Swift"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_log_monitor.xml408(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Monitoring"
+msgstr "Monitoreig"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_projects_users.xml95(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Quotas"
+msgstr "Quotes"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_projects_users.xml367(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Password"
+msgstr "Contrasenya"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_projects_users.xml373(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Role"
+msgstr "Rol"
+
+#: doc/src/docbkx/openstack-ops/src/ch_arch_cloud_controller.xml343(title)
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml27(title)
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml829(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Images"
+msgstr "Imatges"
+
+#: doc/src/docbkx/openstack-ops/src/ch_arch_scaling.xml41(th)
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml171(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Name"
+msgstr "Nom"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml116(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Flavors"
+msgstr "Sabors"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml157(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml163(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "ID"
+msgstr "Identificador"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml217(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "VCPUs"
+msgstr "VCPUs"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml485(title)
+#: doc/src/docbkx/openstack-ops/src/ch_ops_maintenance.xml174(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Instances"
+msgstr "Instàncies"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml694(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Floating IPs"
+msgstr "IP flotants"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_user_facing.xml744(literal)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: doc/src/docbkx/openstack-ops/src/ch_arch_storage.xml218(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Object"
+msgstr "Objecte"
+
+#: doc/src/docbkx/openstack-ops/src/ch_ops_lay_of_land.xml429(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.openstack-ops/ca.po "
+"from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: doc/security-guide/ch051_vss-intro.xml230(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.security-guide/ca."
+"po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/security-guide/ch017_threat-models-confidence-and-confidentiality.xml59(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.security-guide/ca."
+"po from project 'main'"
+msgid "Summary"
+msgstr "Resum"
+
+#: doc/security-guide/ch005_security-domains.xml10(para)
+#: doc/security-guide/ch005_security-domains.xml31(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.security-guide/ca."
+"po from project 'main'"
+msgid "Public"
+msgstr "Pública"
+
+#: doc/security-guide/ch034_tenant-secure-networking-best-practices.xml42(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.security-guide/ca."
+"po from project 'main'"
+msgid "Quotas"
+msgstr "Quotes"
+
+#: doc/training-guide/module003-ch004-swift-building-blocks.xml287(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Download"
+msgstr "Descarrega"
+
+#: doc/training-guide/module001-ch006-overview-horizon-cli.xml123(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Instances"
+msgstr "Instàncies"
+
+#: doc/training-guide/module001-ch006-overview-horizon-cli.xml139(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Access &amp; Security"
+msgstr "Accès i Seguretat"
+
+#: doc/training-guide/module001-ch004-openstack-architecture.xml302(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: doc/training-guide/module001-ch007-keystone-arch.xml26(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "User"
+msgstr "Usuari"
+
+#: doc/training-guide/module001-ch007-keystone-arch.xml77(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Service"
+msgstr "Servei"
+
+#: doc/training-guide/module001-ch007-keystone-arch.xml90(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Role"
+msgstr "Rol"
+
+#: doc/training-guide/module001-ch007-keystone-arch.xml113(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Users"
+msgstr "Usuaris"
+
+#: doc/training-guide/module001-ch007-keystone-arch.xml119(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Roles"
+msgstr "Rols"
+
+#: doc/training-guide/module001-ch007-keystone-arch.xml170(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Services"
+msgstr "Serveis"
+
+#: doc/training-guide/bk001-ch011-associate-assessment.xml19(th)
+#: doc/training-guide/bk001-ch011-associate-assessment.xml40(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "Task"
+msgstr "Tasca"
+
+#: doc/training-guide/lab000-virtualbox-basics.xml382(th)
+#: doc/training-guide/lab000-virtualbox-basics.xml456(th)
+#: doc/training-guide/lab000-virtualbox-basics.xml543(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.training-guide/ca."
+"po from project 'main'"
+msgid "IP Address"
+msgstr "Adreça IP"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_projects_security.xml114(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "IP Protocol"
+msgstr "Protocol IP"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml22(th)
+#: doc/user-guide-admin/section_dashboard_admin_manage_images.xml52(guilabel)
+#: doc/user-guide-admin/section_keystone_cli_manage_projects_users_roles.xml49(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml28(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Flavor Name"
+msgstr "Nom del Sabor"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml36(para)
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml153(guilabel)
+#: doc/user-guide-admin/section_dashboard_admin_set_quotas.xml129(para)
+#: doc/user-guide-admin/section_nova_cli_manage_flavors.xml28(term)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "VCPUs"
+msgstr "VCPUs"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml44(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "RAM"
+msgstr "RAM"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml52(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Root Disk"
+msgstr "Disc Arrel"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml85(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "ID"
+msgstr "Identificador"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml145(guilabel)
+#: doc/user-guide-admin/section_dashboard_admin_manage_images.xml48(guilabel)
+#: doc/user-guide-admin/section_nova_cli_manage_flavors.xml22(term)
+#: doc/user-guide-admin/section_keystone_cli_manage_projects_users_roles.xml43(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Name"
+msgstr "Nom"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml162(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "RAM MB"
+msgstr "MB de RAM"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_flavors.xml172(guilabel)
+#: doc/user-guide-admin/section_nova_cli_manage_flavors.xml40(term)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Root Disk GB"
+msgstr "GB del disc princpial"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_images.xml67(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Format"
+msgstr "Fomat"
+
+#: doc/user-guide-admin/section_dashboard_admin_manage_images.xml77(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Public"
+msgstr "Pública"
+
+#: doc/user-guide-admin/section_dashboard_admin_set_quotas.xml40(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Quota Name"
+msgstr "Nom de la quota"
+
+#: doc/user-guide-admin/section_dashboard_admin_set_quotas.xml42(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Service"
+msgstr "Servei"
+
+#: doc/user-guide-admin/section_dashboard_admin_set_quotas.xml48(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Gigabytes"
+msgstr "Gigabytes"
+
+#: doc/user-guide-admin/section_dashboard_admin_set_quotas.xml57(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Instances"
+msgstr "Instàncies"
+
+#: doc/user-guide-admin/section_dashboard_admin_set_quotas.xml93(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "RAM (MB)"
+msgstr "RAM (MB)"
+
+#: doc/user-guide-admin/section_keystone_cli_manage_projects_users_roles.xml35(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Services"
+msgstr "Serveis"
+
+#: doc/user-guide-admin/section_keystone_cli_manage_projects_users_roles.xml46(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide-admin/ca."
+"po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/user-guide/section_dashboard_create_networks.xml32(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: doc/user-guide/section_dashboard_create_networks.xml37(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Network Name"
+msgstr "Nom de la xarxa"
+
+#: doc/user-guide/section_dashboard_create_networks.xml44(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Subnet"
+msgstr "Subxarxa"
+
+#: doc/user-guide/section_dashboard_create_networks.xml47(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Create Subnet"
+msgstr "Crear subxarxa"
+
+#: doc/user-guide/section_dashboard_create_networks.xml62(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Network Address"
+msgstr "Adreça de la Xarxa"
+
+#: doc/user-guide/section_dashboard_create_networks.xml68(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "IP Version"
+msgstr "Versió IP"
+
+#: doc/user-guide/section_dashboard_create_networks.xml73(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Gateway IP"
+msgstr "Porta d'enllaç IP"
+
+#: doc/user-guide/section_dashboard_access_and_security.xml53(guilabel)
+#: doc/user-guide/section_dashboard_access_and_security.xml95(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Rule"
+msgstr "Regla"
+
+#: doc/user-guide/section_dashboard_manage_images.xml54(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Name"
+msgstr "Nom"
+
+#: doc/user-guide/section_dashboard_manage_images.xml58(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/user-guide/section_dashboard_manage_images.xml73(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Format"
+msgstr "Fomat"
+
+#: doc/user-guide/section_dashboard_manage_images.xml83(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Public"
+msgstr "Pública"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml39(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Details"
+msgstr "Detalls"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml49(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Instance Name"
+msgstr "Nom de la instància"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml56(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Flavor"
+msgstr "Sabor"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml61(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Instance Count"
+msgstr "Nombre d'instàncies"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml69(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Access &amp; Security"
+msgstr "Accès i Seguretat"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml73(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Keypair"
+msgstr "Parell de claus"
+
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml101(guilabel)
+#: doc/user-guide/section_dashboard_launch_instances_from_image.xml105(guilabel)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.user-guide/ca.po "
+"from project 'main'"
+msgid "Volume Options"
+msgstr "Opcions del volum"
+
+#: doc/src/docbkx/basic-install/src/basic-install_requirements.xml31(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-basic-install/"
+"ca.po from project 'main'"
+msgid "Services"
+msgstr "Serveis"
+
+#: doc/src/docbkx/basic-install/src/basic-install_architecture.xml6(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-basic-install/"
+"ca.po from project 'main'"
+msgid "Architecture"
+msgstr "Arquitectura"
+
+#: doc/src/docbkx/openstack-api-site/src/docbkx/index.xml135(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-api-"
+"site/ca.po from project 'main'"
+msgid "Floating IPs"
+msgstr "IP flotants"
+
+#: doc/src/docbkx/openstack-api-site/src/docbkx/index.xml164(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-api-"
+"site/ca.po from project 'main'"
+msgid "Networks"
+msgstr "Xarxes"
+
+#: doc/src/docbkx/openstack-api-site/src/docbkx/index.xml184(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-api-"
+"site/ca.po from project 'main'"
+msgid "Keypairs"
+msgstr "Parells de claus"
+
+#: doc/src/docbkx/openstack-api-site/src/docbkx/index.xml212(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-api-"
+"site/ca.po from project 'main'"
+msgid "Hosts"
+msgstr "Amfitrió"
+
+#: doc/src/docbkx/openstack-api-site/src/docbkx/index.xml259(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-api-"
+"site/ca.po from project 'main'"
+msgid "Image"
+msgstr "Imatge"
+
+#: doc/src/docbkx/openstack-api-site/src/docbkx/index.xml269(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-api-"
+"site/ca.po from project 'main'"
+msgid "Volume"
+msgstr "Volum"
+
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/nfs-volume-driver.xml40(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/ibm-storwize-svc-driver.xml172(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/glusterfs-driver.xml27(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml54(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml197(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml302(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml446(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml593(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml692(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml795(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml897(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"block-storage-admin/ca.po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/nfs-volume-driver.xml42(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/ibm-storwize-svc-driver.xml174(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/glusterfs-driver.xml29(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml56(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml199(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml304(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml448(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml595(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml694(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml797(td)
+#: doc/src/docbkx/openstack-block-storage-admin/drivers/netapp-volume-driver.xml899(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"block-storage-admin/ca.po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/src/docbkx/openstack-compute-admin/computevolumes.xml177(literal)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"compute-admin/ca.po from project 'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: doc/src/docbkx/openstack-compute-admin/ch_instance_mgmt.xml244(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"compute-admin/ca.po from project 'main'"
+msgid "Images"
+msgstr "Imatges"
+
+#: doc/src/docbkx/openstack-compute-admin/ch_instance_mgmt.xml296(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"compute-admin/ca.po from project 'main'"
+msgid "Flavors"
+msgstr "Sabors"
+
+#: doc/src/docbkx/openstack-compute-admin/computeconfigure.xml1323(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"compute-admin/ca.po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/src/docbkx/openstack-compute-admin/computeconfigure.xml1415(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"compute-admin/ca.po from project 'main'"
+msgid "Limit"
+msgstr "Límit"
+
+#: doc/src/docbkx/openstack-install/object-storage-install-ubuntu.xml6(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"install/ca.po from project 'main'"
+msgid "Installing OpenStack Object Storage on Ubuntu"
+msgstr "Instalació d'OpenStack Object Storage a Ubuntu"
+
+#: doc/src/docbkx/openstack-install/object-storage-install-ubuntu.xml7(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"install/ca.po from project 'main'"
+msgid ""
+"Though you can install OpenStack Object Storage for development or testing "
+"purposes on a single server, a multiple-server installation enables the high "
+"availability and redundancy you want in a production distributed object "
+"storage system."
+msgstr ""
+"Tot i que pots instalar OpenStack Object Storage per a desenvolupament o "
+"proves en un únic servidor, una instalació en múltiples servidors et "
+"permetrà utilitzar alta disponibilitat i redundancia"
+
+#: doc/src/docbkx/openstack-install/ch_terminology.xml118(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"install/ca.po from project 'main'"
+msgid "Image"
+msgstr "Imatge"
+
+#: doc/src/docbkx/openstack-install/ch_terminology.xml129(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"install/ca.po from project 'main'"
+msgid "Horizon"
+msgstr "Horizon"
+
+#: doc/src/docbkx/openstack-install/ch_terminology.xml137(para)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"install/ca.po from project 'main'"
+msgid "Swift"
+msgstr "Swift"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml57(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Network"
+msgstr "Xarxa"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml65(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml132(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml231(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml147(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml289(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml349(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml531(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml577(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml67(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml134(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml233(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/app_demo_flat.xml28(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml149(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml291(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml351(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml533(th)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml579(th)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml72(td)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml139(td)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml238(td)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml296(td)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml356(td)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml538(td)
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml584(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml124(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Subnet"
+msgstr "Subxarxa"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml161(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "IP version"
+msgstr "Versió IP"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_using.xml223(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Port"
+msgstr "Port"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_operational_features.xml166(title)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Quotas"
+msgstr "Quotes"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/ch_adv_features.xml341(caption)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Floating IP"
+msgstr "IP flotant"
+
+#: doc/src/docbkx/openstack-network-connectivity-admin/app_demo_multi_dhcp_agents.xml202(emphasis)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"network-connectivity-admin/ca.po from project 'main'"
+msgid "Settings"
+msgstr "Preferències"
+
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml410(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"object-storage-admin/ca.po from project 'main'"
+msgid "Type"
+msgstr "Tipus"
+
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml411(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml846(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml982(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml1017(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml1073(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml1173(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml1211(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml1241(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml1401(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml25(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml141(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml234(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml341(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml392(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml449(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml505(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml615(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml669(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml739(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml795(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml832(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml873(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml961(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1002(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1085(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1122(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1179(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1234(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1327(td)
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorage-config-reference.xml1398(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"object-storage-admin/ca.po from project 'main'"
+msgid "Description"
+msgstr "Descripció"
+
+#: doc/src/docbkx/openstack-object-storage-admin/objectstorageadmin.xml413(td)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"object-storage-admin/ca.po from project 'main'"
+msgid "id"
+msgstr "Identificador"
+
+#: doc/src/docbkx/openstack-object-storage-admin/objectstoragetutorials.xml121(term)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"object-storage-admin/ca.po from project 'main'"
+msgid "Port"
+msgstr "Port"
+
+#: doc/src/docbkx/openstack-object-storage-admin/objectstoragetutorials.xml134(term)
+msgctxt ""
+"Translation source: /translations/openstack-manuals-i18n.z-old-openstack-"
+"object-storage-admin/ca.po from project 'main'"
+msgid "Password"
+msgstr "Contrasenya"
