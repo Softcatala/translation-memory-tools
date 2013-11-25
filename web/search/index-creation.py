@@ -140,7 +140,7 @@ def main():
         locale.setlocale(locale.LC_ALL, '')
         
     except Exception as detail:
-            print "Exception: " +  str(detail)
+        print "Exception: " +  str(detail)
         
     read_parameters()
     search = Search()
