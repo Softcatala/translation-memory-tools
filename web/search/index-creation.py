@@ -69,16 +69,26 @@ class Search:
         
         try:
             input_po = polib.pofile(full_filename)
-            
+
             for entry in input_po:
                 s = unicode(entry.msgid)
                 t = unicode(entry.msgstr)
-                c = unicode(entry.comment)
                 p = unicode(name)
                 
+                if (entry.msgctxt is None):
+                    x = entry.msgctxt
+                else:
+                    x = unicode(entry.msgctxt)
+                    
+                if (entry.comment is None):
+                    c = entry.comment
+                else:
+                    c = unicode(entry.comment)
+                    
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
-                self.writer.add_document(source=s, target=t, comment=c, project=p)
+                self.writer.add_document(source=s, target=t, comment=c, 
+                                         context=x, project=p)
 
         except Exception as detail:
             print "Exception: " +  str(detail)
@@ -90,7 +100,8 @@ class Search:
 
         schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True,
                         analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)),
-                        comment=TEXT(stored=True), project=TEXT(stored=True))
+                        comment=TEXT(stored=True), context=TEXT(stored=True),
+                        project=TEXT(stored=True))
                         
         if not os.path.exists(self.dir_name):
             os.mkdir(self.dir_name)
