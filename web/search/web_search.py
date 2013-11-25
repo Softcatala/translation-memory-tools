@@ -37,11 +37,12 @@ class Search:
         print "<b>Projecte:</b> " + result["project"].encode('utf-8')
         print "</br>"
 
-        if 'comment' in result.fields() is True and len(result["comment"]) > 0:
+
+        if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             print "<b>Commentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
             print "</br>"
             
-        if 'context' in result.fields() is True and len(result["context"]) > 0:
+        if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             print "<b>Context:</b> " + cgi.escape(result["context"].encode('utf-8'))
             print "</br>"
 
@@ -96,8 +97,11 @@ def main():
     term = form.getvalue("query", None)
     where = form.getvalue("where", None)
 
+#    term = 'Audio OR file'
+#    where = 'target'
+
     open_html(term)
-    
+        
     if where == 'source':
         org = True
     else:
