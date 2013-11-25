@@ -80,10 +80,10 @@ class Search:
                 else:
                     x = unicode(entry.msgctxt)
                     
-                if (entry.comment is None):
-                    c = entry.comment
+                if (entry.tcomment is None):
+                    c = entry.tcomment
                 else:
-                    c = unicode(entry.comment)
+                    c = unicode(entry.tcomment)
                     
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
