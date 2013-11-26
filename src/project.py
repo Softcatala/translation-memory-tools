@@ -58,37 +58,45 @@ class Project:
             logging.debug(fileset)
 
             if fileset.type == 'local-file':
-                fs = LocalFileSet(fileset.name,
+                fs = LocalFileSet(self.name,
+                                  fileset.name,
                                   fileset.url,
                                   fileset.target)
             elif fileset.type == 'compressed':
-                fs = CompressedFileSet(fileset.name,
+                fs = CompressedFileSet(self.name,
+                                       fileset.name,
                                        fileset.url,
                                        fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'bazaar':
-                fs = BazaarFileSet(fileset.name,
+                fs = BazaarFileSet(self.name,
+                                   fileset.name,
                                    fileset.url,
                                    fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'transifex':
-                fs = TransifexFileSet(fileset.name,
+                fs = TransifexFileSet(self.name,
+                                      fileset.name,
                                       fileset.url,
                                       fileset.target)
             elif fileset.type == 'local-dir':
-                fs = LocalDirFileSet(fileset.name,
+                fs = LocalDirFileSet(self.name,
+                                     fileset.name,
                                      fileset.url,
                                      fileset.target)
             elif fileset.type == 'file':
-                fs = FileFileSet(fileset.name,
+                fs = FileFileSet(self.name,
+                                 fileset.name,
                                  fileset.url,
                                  fileset.target)
             elif fileset.type == 'subversion':
-                fs = SubversionFileSet(fileset.name,
+                fs = SubversionFileSet(self.name,
+                                       fileset.name,
                                        fileset.url,
                                        fileset.target)
             elif fileset.type == 'crawl':
-                fs = CrawlFileSet(fileset.name,
+                fs = CrawlFileSet(self.name,
+                                  fileset.name,
                                   fileset.url,
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)

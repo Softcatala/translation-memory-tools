@@ -29,8 +29,9 @@ class FileSet():
 
     temp_dir = './tmp'
 
-    def __init__(self, project, url, filename):
-        self.project = project
+    def __init__(self, project_name, name, url, filename):
+        self.project_name = project_name
+        self.name = name
         self.url = url
         self.filename = filename
         self.add_source = True
@@ -56,10 +57,14 @@ class FileSet():
         for filename in findFiles.find(self.temp_dir, '*.po'):
             relative = filename.replace(self.temp_dir, '')
             pofile = POFile(filename)
-            msg = 'Translation source: {0} from project \'{1}\''.format(
-                relative,
-                self.project
-            )
+
+            if self.project_name.lower().strip() == self.name.lower().strip():
+                msg = 'Source: {0} from project \'{1}\'' \
+                    .format(relative, self.project_name)
+            else:
+                msg = 'Source: {0} from project \'{1} - {2}\'' \
+                    .format(relative, self.project_name, self.name)
+                
             pofile.add_comment_to_all_entries(msg)
 
     def _clean_up(self):
