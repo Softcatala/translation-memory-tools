@@ -155,6 +155,9 @@ def create_zipfile(src_directory, filename):
         print "Cannot zip:" + srcfile
         return
 
+    if os.path.isfile(zipfile):
+        os.remove(zipfile)
+
     cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
     os.system(cmd)
 
