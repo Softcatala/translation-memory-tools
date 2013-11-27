@@ -39,7 +39,7 @@ class Search:
 
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
-            print "<b>Commentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
+            print "<b>Comentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
             print "</br>"
             
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
