@@ -379,7 +379,7 @@
     "gnutools": {
             "projectweb" : "http://translationproject.org/team/ca.html",
             "fileset": {
-                    "gnuetools" : {
+                    "gnutools" : {
                             "url" : "http://translationproject.org/team/ca.html",
                             "type": "crawl",
                             "pattern" : "http://.*?/ca/.*?"
