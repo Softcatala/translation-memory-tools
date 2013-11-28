@@ -27,13 +27,9 @@ import shutil
 
 class Projects:
 
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(self):
         self.projects = list()
-        self.set_tm_file('tm.po')
-
-        if os.path.isfile(filename):
-            os.remove(filename)
+        self.set_tm_file('tots-tm.po')
             
     def set_tm_file(self, filename):
         self.tm_file = filename
@@ -58,6 +54,9 @@ class Projects:
 
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
+        
+        if os.path.isfile(self.tm_file):
+            os.remove(self.tm_file)
 
         for project in self.projects:
             if os.path.isfile(self.tm_file):

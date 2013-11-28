@@ -27,7 +27,7 @@ import os
 import time
 
 
-projects = Projects('tm.po')
+projects = Projects()
 add_source = True
 projects_names = None
 projects_json = 'projects.json'

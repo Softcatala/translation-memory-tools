@@ -120,7 +120,7 @@ def process_projects():
     html += u'<th>Última actualització</th>\r'
     html += '</tr>\r'
 
-    memories = {u'Totes les memòries de tots els projectes': 'tm.po',
+    memories = {u'Totes les memòries de tots els projectes': 'tots-tm.po',
         u'Totes les memòries de projectes de Softcatalà': 'softcatala-tm.po'}
 
     for name, filename in memories.items():
