@@ -32,6 +32,9 @@ from jsonbackend import JsonBackend
 from optparse import OptionParser
 
 po_directory = None
+debug_keyword = None
+projects_names = None
+
 
 class Search:
 
@@ -42,31 +45,47 @@ class Search:
 
     def process_projects(self, po_directory):
 
+        global projects_names
+
         json = JsonBackend("../../src/projects.json")
         json.load()
 
         for project_dto in json.projects:
-            self._process_project(po_directory, project_dto.name, 
+
+            if projects_names:
+                found = False
+
+                for project_name in projects_names:
+                    project_dto_lower = project_dto.name.lower().strip()
+                    if project_name.lower().strip() == project_dto_lower:
+                        found = True
+
+                if not found:
+                    continue
+
+            self._process_project(po_directory, project_dto.name,
                                   project_dto.filename)
             self.projects = self.projects + 1
-            
+
         self.write_statistics()
-            
+
     def write_statistics(self):
 
         today = datetime.date.today()
         html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
-        html += u' i conté ' + str(self.projects) + ' projectes amb un total de ' 
+        html += u' i conté ' + str(self.projects) + ' projectes amb un total de '
         html += locale.format("%d", self.words, grouping=True) + ' paraules</p>'
         html_file = open("statistics.html", "w")
-        html_file.write(html.encode('utf-8'))        
+        html_file.write(html.encode('utf-8'))
         html_file.close()
 
     def _process_project(self, po_directory, name, filename):
+    
+        global debug_keyword
 
         full_filename = os.path.join(po_directory, filename)
         print "Processing: " + full_filename
-        
+
         try:
             input_po = polib.pofile(full_filename)
 
@@ -74,56 +93,84 @@ class Search:
                 s = unicode(entry.msgid)
                 t = unicode(entry.msgstr)
                 p = unicode(name)
-                
+
                 if (entry.msgctxt is None):
                     x = entry.msgctxt
                 else:
                     x = unicode(entry.msgctxt)
-                    
+
                 if (entry.tcomment is None):
                     c = entry.tcomment
                 else:
                     c = unicode(entry.tcomment)
-                    
+
+                if debug_keyword is not None and debug_keyword.strip() == s:
+                    print "Source: " + s
+                    print "Translation: " + t
+                    print "Context: " + str(x)
+                    print "Comment: " + str(c)
+                                        
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
-                self.writer.add_document(source=s, target=t, comment=c, 
+                self.writer.add_document(source=s, target=t, comment=c,
                                          context=x, project=p)
 
         except Exception as detail:
-            print "Exception: " +  str(detail)
-
+            print "Exception: " + str(detail)
 
     def create_index(self):
-    
+
         MIN_WORDSIZE_TO_IDX = 1
 
         schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True,
                         analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)),
                         comment=TEXT(stored=True), context=TEXT(stored=True),
                         project=TEXT(stored=True))
-                        
+
         if not os.path.exists(self.dir_name):
             os.mkdir(self.dir_name)
 
         ix = create_in(self.dir_name, schema)
         self.writer = ix.writer()
-        
+
+
 def read_parameters():
 
     global po_directory
+    global debug_keyword
+    global projects_names
 
     parser = OptionParser()
 
-    parser.add_option("-d", "--directory",
-                      action="store", type="string", dest="po_directory",
-                      default="../../src/",
-                      help="Directory to find the PO files")
+    parser.add_option('-d', '--directory',
+                      action='store', type='string', dest='po_directory',
+                      default='../../src/',
+                      help='Directory to find the PO files')
+
+    parser.add_option('-k', '--keyword',
+                      action='store', type='string', dest='debug_keyword',
+                      default=None,
+                      help='Output debug information for a keyword (for '
+                      'debugging)')
+
+    parser.add_option('-p',
+                      '--projects',
+                      action='store',
+                      type='string',
+                      dest='projects_names',
+                      help='To restrict the processing of projects to comma'
+                      ' separated given list (for debugging)')
 
     (options, args) = parser.parse_args()
 
     po_directory = options.po_directory
-    
+
+    if options.debug_keyword is not None:
+        debug_keyword = options.debug_keyword
+
+    if options.projects_names is not None:
+        projects_names = options.projects_names.split(',')
+
 
 def main():
     '''
@@ -138,16 +185,16 @@ def main():
 
     try:
         locale.setlocale(locale.LC_ALL, '')
-        
+
     except Exception as detail:
-        print "Exception: " +  str(detail)
-        
+        print "Exception: " + str(detail)
+
     read_parameters()
     search = Search()
     search.create_index()
     search.process_projects(po_directory)
     search.writer.commit()
-    
+
     end_time = time.time() - start_time
     print "time used to create the index: " + str(end_time)
 
