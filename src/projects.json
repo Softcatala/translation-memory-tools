@@ -579,8 +579,7 @@
                             "target": "id-editor-ca.po"
                     }
             }
-        }
-        ,
+    },
     "OpenStack": {
             "projectweb" : "https://wiki.openstack.org/wiki/Translations",
             "fileset": {
@@ -589,6 +588,17 @@
                             "type": "transifex"
                     }
             }
+        },
+    "Django": {
+            "projectweb" : "https://code.djangoproject.com/wiki/Localization",
+            "fileset": {
+                    "main": {
+                            "url" : "https://www.transifex.com/projects/p/django/r/all-resources/",
+                            "type": "transifex"
+                    }
+            }
         }
+        
+        
     }
 }
