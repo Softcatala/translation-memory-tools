@@ -117,7 +117,7 @@ def read_parameters():
 
     parser.add_option("-d", "--directory",
                       action="store", type="string", dest="po_directory",
-                      default="../../latest-memories/po/",
+                      default="../../src/",
                       help="Directory to find the PO files")
 
     (options, args) = parser.parse_args()

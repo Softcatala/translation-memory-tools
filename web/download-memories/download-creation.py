@@ -172,12 +172,12 @@ def read_parameters():
 
     parser.add_option("-d", "--podir",
                       action="store", type="string", dest="po_directory",
-                      default="../../latest-memories/po/",
+                      default="../../src/",
                       help="Directory to find the PO files")
 
     parser.add_option("-t", "--tmxdir",
                       action="store", type="string", dest="tmx_directory",
-                      default="../../latest-memories/tmx/",
+                      default="../../src/",
                       help="Directory to find the TMX files")
 
     parser.add_option("-o", "--ouputdir",
