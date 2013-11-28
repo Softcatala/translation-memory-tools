@@ -437,7 +437,7 @@
     "WordPress": {
             "projectweb" : "http://ca.wordpress.org/",
             "fileset": {
-                    "yast" : {
+                    "wordpress" : {
                             "url" : "http://i18n.svn.wordpress.org/ca/trunk/next-version/messages/",
                             "type": "subversion"
                     }
