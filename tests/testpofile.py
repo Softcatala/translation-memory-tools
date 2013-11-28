@@ -43,6 +43,7 @@ msgstr ""
 
 # Please remember to do something
 #: ../dir/file.xml.in.h:1 ../dir/file2.xml.in.h:4
+msgctxt 'Context'
 msgid u'Power off the selected virtual machines'
 msgstr u'Apaga les màquines virtuals seleccionades'
 """
