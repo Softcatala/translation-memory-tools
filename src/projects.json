@@ -382,7 +382,8 @@
                     "gnutools" : {
                             "url" : "http://translationproject.org/team/ca.html",
                             "type": "crawl",
-                            "pattern" : "http://.*?/ca/.*?"
+                            "pattern" : "http://.*?/ca/.*?",
+                            "excluded" : "xchat-"
                     }
             }
     },
