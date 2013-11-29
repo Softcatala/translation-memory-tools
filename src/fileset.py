@@ -103,6 +103,19 @@ class FileSet():
             cmd = 'prop2po -t {0}/en.ini {0}/ca.ini --encoding=utf-8 ' \
                 '--personality=strings -o {1}'
             os.system(cmd.format(dirName, filename))
+            
+    def _should_exclude_file(self, filename):
+
+        exclude = False
+        for exfilename in self.excluded:
+            if filename.find(exfilename) != -1:
+                exclude = True
+
+        if exclude:
+            logging.info('Excluding file: {0}'.format(filename))
+                
+        return exclude
+        
 
     def build(self):
         findFiles = FindFiles()
@@ -114,13 +127,8 @@ class FileSet():
         # Build using a local memory translation file
         for filename in findFiles.find(self.temp_dir, '*.po'):
             print 'Do: {0}'.format(filename)
-            exclude = False
-            for exfilename in self.excluded:
-                if filename.find(exfilename) != -1:
-                    exclude = True
 
-            if exclude:
-                logging.info('Excluding file: {0}'.format(filename))
+            if self._should_exclude_file(filename):
                 continue
 
             msg = 'Adding file: {0} to translation memory'
