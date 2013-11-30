@@ -55,7 +55,7 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
 
     html += "<td>" + link(get_zip_file(potext), pofile) + "</td>\r"
     html += "<td>" + link(get_zip_file(tmxtext), tmxfile) + "</td>\r"
-    html += "<td>" +  locale.format("%d", words, grouping=True) + "</td>\r"
+    html += "<td>" + locale.format("%d", words, grouping=True) + "</td>\r"
     html += "<td>" + date + "</td>\r"
     html += "</tr>\r"
     return html
@@ -99,11 +99,11 @@ def get_file_date(filename):
     last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
     last_date = last_ctime.strftime("%d/%m/%Y")
     return last_date
-    
+
 
 def build_all_projects_memory(json, html):
     '''Builds zip file that contains all memories for all projects'''
-    
+
     name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
 
@@ -116,11 +116,13 @@ def build_all_projects_memory(json, html):
         if (project_dto.name != 'Header'):
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
-                          get_tmx_file(project_dto.filename))
+                           get_tmx_file(project_dto.filename))
+    return html
+
 
 def build_all_softcatala_memory(json, html):
     '''Builds zip file that contains all memories for the Softcatalà projects'''
-    
+
     name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
@@ -133,20 +135,23 @@ def build_all_softcatala_memory(json, html):
         if project_dto.name != 'Header' and len(project_dto.softcatala) > 0:
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
-                          get_tmx_file(project_dto.filename))
-                          
+                           get_tmx_file(project_dto.filename))
+    return html
+
+
 def build_invidual_projects_memory(json, html):
     '''Builds zip file that contains a memory for every project'''
-    
+
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if (project_dto.name != 'Header'):
 
             create_zipfile(po_directory, project_dto.filename)
             create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
-            
+
             html += table_row(project_dto.name, project_dto.projectweb,
                               project_dto.filename)
+    return html
 
 
 def process_projects():
@@ -167,11 +172,11 @@ def process_projects():
     html += u'<th>Paraules traduïdes</th>\r'
     html += u'<th>Última actualització</th>\r'
     html += '</tr>\r'
-    
-    build_all_projects_memory(json, html)
-    build_all_softcatala_memory(json, html)
-    build_invidual_projects_memory(json, html)
-   
+
+    html = build_all_projects_memory(json, html)
+    html = build_all_softcatala_memory(json, html)
+    html = build_invidual_projects_memory(json, html)
+
     html += '</table>\r'
     today = datetime.date.today()
     html += '<br>\r'
@@ -191,6 +196,7 @@ def update_zipfile(src_directory, filename, file_to_add):
 
     cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
     os.system(cmd)
+
 
 def create_zipfile(src_directory, filename):
 
@@ -256,9 +262,9 @@ def main():
 
     try:
         locale.setlocale(locale.LC_ALL, '')
-        
+
     except Exception as detail:
-            print "Exception: " +  str(detail)
+        print "Exception: " + str(detail)
 
     read_parameters()
 
