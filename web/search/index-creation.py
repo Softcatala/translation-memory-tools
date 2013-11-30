@@ -51,6 +51,9 @@ class Search:
         json.load()
 
         for project_dto in json.projects:
+        
+            if project_dto.name == 'Header':
+                continue
 
             if projects_names:
                 found = False
