@@ -46,20 +46,30 @@
                             "type": "compressed",
                             "target": "browserid.zip"
                     },
-                    "firefox-home": {
-                            "url" : "http://localize.mozilla.org/ca/fxhome/export/zip",
-                            "type": "compressed",
-                            "target": "fxhome.zip"
-                    },
                     "firefox-input": {
                             "url" : "http://localize.mozilla.org/ca/input/export/zip",
                             "type": "compressed",
                             "target": "input.zip"
                     },
-                    "firefox-hackasaurus": {
-                            "url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",
+                    "commbadge": {
+                            "url" : "http://localize.mozilla.org/ca/commbadge/export/zip",
                             "type": "compressed",
-                            "target": "hackasaurus.zip"
+                            "target": "commbadge.zip"
+                    },
+                    "fireplace": {
+                            "url" : "http://localize.mozilla.org/ca/fireplace/export/zip",
+                            "type": "compressed",
+                            "target": "fireplace.zip"
+                    },
+                    "rocketfuel": {
+                            "url" : "http://localize.mozilla.org/ca/rocketfuel/export/zip",
+                            "type": "compressed",
+                            "target": "rocketfuel.zip"
+                    },
+                    "webpay": {
+                            "url" : "http://localize.mozilla.org/ca/webpay/export/zip",
+                            "type": "compressed",
+                            "target": "webpay.zip"
                     },
                     "mozillians": {
                             "url" : "http://localize.mozilla.org/ca/mozillians/export/zip",
