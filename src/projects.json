@@ -521,8 +521,7 @@
             }
     },
     "Xfce": {
-            "projectweb" : "http://www.softcatala.org/wiki/Projectes/VLC",
-            "softcatala" : "true",
+            "projectweb" : "http://wiki.xfce.org/translations/team_ca",
             "fileset": {
                     "Xfce" : {
                             "url" : "https://www.transifex.com/projects/p/xfce/r/all-resources/",
