@@ -99,6 +99,54 @@ def get_file_date(filename):
     last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
     last_date = last_ctime.strftime("%d/%m/%Y")
     return last_date
+    
+
+def build_all_projects_memory(json, html):
+    '''Builds zip file that contains all memories for all projects'''
+    
+    name = u'Totes les memòries de tots els projectes'
+    filename = 'tots-tm.po'
+
+    html += table_row(name, '', filename)
+    create_zipfile(po_directory, filename)
+    create_zipfile(tmx_directory, get_tmx_file(filename))
+
+    projects = sorted(json.projects, key=lambda x: x.name.lower())
+    for project_dto in projects:
+        if (project_dto.name != 'Header'):
+            update_zipfile(po_directory, filename, project_dto.filename)
+            update_zipfile(tmx_directory, get_tmx_file(filename),
+                          get_tmx_file(project_dto.filename))
+
+def build_all_softcatala_memory(json, html):
+    '''Builds zip file that contains all memories for the Softcatalà projects'''
+    
+    name = u'Totes les memòries de projectes de Softcatalà'
+    filename = 'softcatala-tm.po'
+
+    html += table_row(name, '', filename)
+    create_zipfile(po_directory, filename)
+    create_zipfile(tmx_directory, get_tmx_file(filename))
+
+    projects = sorted(json.projects, key=lambda x: x.name.lower())
+    for project_dto in projects:
+        if project_dto.name != 'Header' and len(project_dto.softcatala) > 0:
+            update_zipfile(po_directory, filename, project_dto.filename)
+            update_zipfile(tmx_directory, get_tmx_file(filename),
+                          get_tmx_file(project_dto.filename))
+                          
+def build_invidual_projects_memory(json, html):
+    '''Builds zip file that contains a memory for every project'''
+    
+    projects = sorted(json.projects, key=lambda x: x.name.lower())
+    for project_dto in projects:
+        if (project_dto.name != 'Header'):
+
+            create_zipfile(po_directory, project_dto.filename)
+            create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
+            
+            html += table_row(project_dto.name, project_dto.projectweb,
+                              project_dto.filename)
 
 
 def process_projects():
@@ -119,32 +167,30 @@ def process_projects():
     html += u'<th>Paraules traduïdes</th>\r'
     html += u'<th>Última actualització</th>\r'
     html += '</tr>\r'
-
-    memories = {u'Totes les memòries de tots els projectes': 'tots-tm.po',
-        u'Totes les memòries de projectes de Softcatalà': 'softcatala-tm.po'}
-
-    for name, filename in memories.items():
-        html += table_row(name, '', filename)
-        create_zipfile(po_directory, filename)
-        create_zipfile(tmx_directory, get_tmx_file(filename))
-
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
-    for project_dto in projects:
-        if (project_dto.name != 'Header'):
-
-            create_zipfile(po_directory, project_dto.filename)
-            create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
-
-            html += table_row(project_dto.name, project_dto.projectweb,
-                              project_dto.filename)
-
+    
+    build_all_projects_memory(json, html)
+    build_all_softcatala_memory(json, html)
+    build_invidual_projects_memory(json, html)
+   
     html += '</table>\r'
     today = datetime.date.today()
     html += '<br>\r'
     html += u'Data de generació d\'aquesta pàgina: ' + today.strftime("%d/%m/%Y")
     html += '<br>\r'
     return html
-    
+
+
+def update_zipfile(src_directory, filename, file_to_add):
+
+    srcfile = os.path.join(src_directory, file_to_add)
+    zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
+
+    if not os.path.exists(srcfile):
+        print 'File {0} does not exists and cannot be zipped'.format(srcfile)
+        return
+
+    cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
+    os.system(cmd)
 
 def create_zipfile(src_directory, filename):
 
@@ -152,7 +198,7 @@ def create_zipfile(src_directory, filename):
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
-        print "Cannot zip:" + srcfile
+        print 'File {0} does not exists and cannot be zipped'.format(srcfile)
         return
 
     if os.path.isfile(zipfile):
