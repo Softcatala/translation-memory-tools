@@ -53,12 +53,12 @@ for filename in *.po
         fsize=$(du -b "$filename" | cut -f 1)
         if [ $fsize -ge 200 ];
           then
-	    if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
-	      then
-	        echo Copying $filename
-                cp $filename $INTERMEDIATE_PO/$filename
+	        if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
+                then
+	                echo Copying $filename
+                    cp $filename $INTERMEDIATE_PO/$filename
             fi
-        fi 
+        fi
     fi
   done
 
@@ -72,8 +72,11 @@ for filename in *.tmx
         fsize=$(du -b "$filename" | cut -f 1)
         if [ $fsize -ge 200 ];
           then
-            echo Copying $filename
-            cp $filename $INTERMEDIATE_TMX/$filename
+	        if ! diff -q $filename $INTERMEDIATE_TMX/$filename > /dev/null
+                then
+	                echo Copying $filename
+                    cp $filename $INTERMEDIATE_TMX/$filename
+            fi
         fi
     fi
   done
