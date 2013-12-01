@@ -79,7 +79,7 @@ class FileSet():
 
         for tsfile in findFiles.find(self.temp_dir, '*.ts'):
             fileName, fileExtension = os.path.splitext(tsfile)
-            logging.info('converting: {0}'.format(fileName))
+            logging.info('convert ts file: {0}'.format(fileName))
             os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def convert_string_files_to_po(self):
@@ -87,7 +87,7 @@ class FileSet():
 
         for tsfile in findFiles.find(self.temp_dir, '*.strings'):
             dirName = os.path.dirname(tsfile)
-            logging.info('convert: {0}'.format(dirName))
+            logging.info('convert strings file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
             cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
                 '--personality strings -o {1}'
@@ -98,7 +98,7 @@ class FileSet():
 
         for tsfile in findFiles.find(self.temp_dir, '*.ini'):
             dirName = os.path.dirname(tsfile)
-            logging.info('convert: {0}'.format(dirName))
+            logging.info('convert ini file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
             cmd = 'prop2po -t {0}/en.ini {0}/ca.ini --encoding=utf-8 ' \
                 '--personality=strings -o {1}'
