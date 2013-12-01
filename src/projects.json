@@ -330,12 +330,12 @@
             "projectweb" : "http://www.debian.org/international/l10n/po/ca",
             "fileset": {
                     "apt": {
-                            "url" : "http://i18n.debian.org/material/po/testing/main/a/apt/po/apt_0.9.11.4_ca.po.gz",
+                            "url" : "http://i18n.debian.org/material/po/testing/main/a/apt/po/apt_0.9.12.1_ca.po.gz",
                             "type": "compressed",
                             "target": "apt_ca.po.gz"
                     },
                     "dpkg": {
-                            "url" : "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/dpkg_1.16.10_ca.po.gz",
+                            "url" : "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/dpkg_1.16.12_ca.po.gz",
                             "type": "compressed",
                             "target": "dpkg.gz"
                     },
