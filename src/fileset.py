@@ -96,11 +96,21 @@ class FileSet():
     def convert_ini_files_to_po(self):
         findFiles = FindFiles()
 
-        for tsfile in findFiles.find(self.temp_dir, '*.ini'):
-            dirName = os.path.dirname(tsfile)
-            logging.info('convert ini file: {0}'.format(dirName))
+        for inifile in findFiles.find(self.temp_dir, 'ca.ini'):
+            dirName = os.path.dirname(inifile)
+            logging.info('convert ini file: {0}'.format(inifile))
+            
+            # http://bugs.locamotion.org/show_bug.cgi?id=3148
+            # The rename operations can be removed when the issue is fixed
+            os.rename('{0}/en.ini'.format(dirName),
+                      '{0}/en.strings'.format(dirName))
+                      
+        
+            os.rename('{0}/ca.ini'.format(dirName),
+                      '{0}/ca.strings'.format(dirName))
+        
             filename = '{0}/strings-ca.po'.format(dirName)
-            cmd = 'prop2po -t {0}/en.ini {0}/ca.ini --encoding=utf-8 ' \
+            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 ' \
                 '--personality=strings -o {1}'
             os.system(cmd.format(dirName, filename))
             
