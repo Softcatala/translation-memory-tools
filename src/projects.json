@@ -388,6 +388,7 @@
     },
     "gnutools": {
             "projectweb" : "http://translationproject.org/team/ca.html",
+            "comment" : "Xchat exclusion caused by: http://bugs.locamotion.org/show_bug.cgi?id=3147",
             "fileset": {
                     "gnutools" : {
                             "url" : "http://translationproject.org/team/ca.html",
