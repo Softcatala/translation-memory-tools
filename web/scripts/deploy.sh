@@ -6,6 +6,16 @@ if [ ! -z "$DEVENV" ]; then
     ROOT=/home/jmas/dev
     TARGET_DIR=/var/www/recursos.softcatala.org/dev
     echo Development enviroment set to $TARGET_DIR
+    INTEGRATION_PARAM=-d
+fi
+
+cd $ROOT/tm-git/integration-tests/
+python run.py $INTEGRATION_PARAM
+
+RETVAL=$?
+if [ $RETVAL -ne 0 ]; then 
+   echo Aborting deployment
+   exit
 fi
 
 # Index
