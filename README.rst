@@ -85,6 +85,14 @@ download-memories
 scripts
    All the automation scripts to build the system automatically nightly
 
+Located at root directory:
+
+unittests
+   The unittest to check the funcitionality of different classes
+   
+integration-tests
+   tests that check if what has been generated contains errors 
+
 
 Commands
 ========
