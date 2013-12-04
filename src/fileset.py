@@ -70,7 +70,8 @@ class FileSet():
     def _clean_up(self):
         backup = 'tm-project-previous.po'
         shutil.copy(self.tm_file, backup)
-        cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}'
+        cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}' \
+              ' 2> /dev/null'
         os.system(cmd.format(backup, self.tm_file))
         os.remove(backup)
 
@@ -147,7 +148,7 @@ class FileSet():
             if os.path.isfile(localtm):
                 backup = 'tm-project-previous.po'
                 shutil.copy(localtm, backup)
-                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2}'
+                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
                 os.system(cmd.format(localtm, backup, filename))
                 os.remove(backup)
             else:
@@ -157,7 +158,7 @@ class FileSet():
         if os.path.isfile(self.tm_file):
             backup = 'tm-project-previous.po'
             shutil.copy(self.tm_file, backup)
-            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2}'
+            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
             os.system(cmd.format(self.tm_file, backup, localtm))
             os.remove(backup)
         else:

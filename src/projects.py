@@ -62,7 +62,7 @@ class Projects:
             if os.path.isfile(self.tm_file):
                 backup_file = 'tm-previous.po'
                 shutil.copy(self.tm_file, backup_file)
-                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2}'
+                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
                 os.system(cmd.format(self.tm_file,
                                      backup_file,
                                      project.get_filename()))
@@ -70,7 +70,7 @@ class Projects:
             else:
                 shutil.copy(project.get_filename(), self.tm_file)
 
-        os.system('msgfmt -c --statistics {0}'.format(self.tm_file))
+        os.system('msgfmt --statistics {0} 2> /dev/null'.format(self.tm_file))
 
     def statistics(self):
         for project in self.projects:
