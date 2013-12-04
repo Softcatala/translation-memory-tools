@@ -121,15 +121,18 @@ def read_parameters():
 
     parser = OptionParser()
 
-    parser.add_option("-d", "--dev",
-                      action="store_true", dest="is_dev",
-                      default=False,
-                      help="Site to check is dev enviroment")
+    enviroments = ['dev', 'preprod', 'prod']
+    parser.add_option("-e", "--enviroment", dest="enviroment", default="prod",
+                      type="choice", choices=enviroments,
+                      help="set default enviroment: dev, preprod, prod")
 
     (options, args) = parser.parse_args()
 
-    if (options.is_dev is True):
+    print options.enviroment
+    if options.enviroment == 'dev':
         site_url = 'http://recursos.softcatala.org/dev/'
+    elif options.enviroment == 'preprod':
+        site_url = 'http://recursos.softcatala.org/preprod/'
     else:
         site_url = 'http://recursos.softcatala.org/'
 
@@ -151,5 +154,5 @@ if __name__ == '__main__':
     if downloads.errors > 0:
         print 'Total download errors {0}'.format(downloads.errors)
         sys.exit(error)
-        
+
     sys.exit(ok)
