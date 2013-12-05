@@ -608,6 +608,15 @@
                             "type": "transifex"
                     }
             }
+        },
+    "CreativeCommons": {
+            "projectweb" : "http://creativecommons.org",
+            "fileset": {
+                    "CreativeCommons": {
+                            "url" : "https://www.transifex.com/projects/p/CC/",
+                            "type": "transifex"
+                    }
+            }
         }
         
         
