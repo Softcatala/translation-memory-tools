@@ -24,24 +24,23 @@ import time
 from whoosh.index import open_dir
 from whoosh.fields import *
 from whoosh.highlight import *
-from whoosh.qparser import QueryParser
+from whoosh.qparser import MultifieldParser
 
 
 class Search:
 
     dir_name = "indexdir"
-    
+
     def print_result(self, result, org):
 
         print '<div class = "result">'
         print "<b>Projecte:</b> " + result["project"].encode('utf-8')
         print "</br>"
 
-
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             print "<b>Comentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
             print "</br>"
-            
+
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             print "<b>Context:</b> " + cgi.escape(result["context"].encode('utf-8'))
             print "</br>"
@@ -56,22 +55,30 @@ class Search:
             print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
 
         print '</div>'
-        
 
-    def search(self, term, org):
+    def search(self, term, org, project):
         '''
             Search a term in the Whoosh index
         '''
-        
+
         start_time = time.time()
 
         ix = open_dir(self.dir_name)
         with ix.searcher() as searcher:
-        
+
             if org is True:
-                query = QueryParser("source", ix.schema).parse(term)
+                qs = 'source:{0}'.format(term)
             else:
-                query = QueryParser("target", ix.schema).parse(term)
+                qs = 'target:{0}'.format(term)
+
+            if project is not None and project != 'tots':
+                if project == 'softcatala':
+                    qs += ' softcatala:true'
+                else:
+                    qs += ' project:{0}'.format(project)
+
+            query = MultifieldParser(["source", "project", "softcatala"],
+                                     ix.schema).parse(qs)
 
             results = searcher.search(query, limit=None)
             my_cf = WholeFragmenter()
@@ -81,7 +88,8 @@ class Search:
 
         end_time = time.time() - start_time
         print str(len(results)) + " resultats. Temps de cerca: " + str(end_time)
-        
+
+
 def open_html(term):
 
     print 'Content-type: text/html\n\n'
@@ -91,14 +99,13 @@ def open_html(term):
     print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + term + '</span></br></br>'
     print '<a href = "/index.html">< Torna a la pàgina anterior</a></br></br>'
 
+
 def main():
 
     form = cgi.FieldStorage()
     term = form.getvalue("query", None)
     where = form.getvalue("where", None)
-
-#    term = 'Audio OR file'
-#    where = 'target'
+    project = form.getvalue("project", None)
 
     open_html(term)
         
@@ -109,7 +116,7 @@ def main():
 
     search = Search()
     term = unicode(term, 'utf-8')
-    search.search(term, org)
+    search.search(term, org, project)
     print '</head><body>'
 
 if __name__ == "__main__":

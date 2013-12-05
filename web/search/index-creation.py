@@ -42,6 +42,7 @@ class Search:
     writer = None
     words = 0
     projects = 0
+    options = []
 
     def process_projects(self, po_directory):
 
@@ -51,7 +52,7 @@ class Search:
         json.load()
 
         for project_dto in json.projects:
-        
+
             if project_dto.name == 'Header':
                 continue
 
@@ -66,13 +67,17 @@ class Search:
                 if not found:
                     continue
 
+            self.options.append(project_dto.name)
+
             self._process_project(po_directory, project_dto.name,
-                                  project_dto.filename)
+                                  project_dto.filename,
+                                  project_dto.softcatala)
             self.projects = self.projects + 1
 
-        self.write_statistics()
+        self._write_statistics()
+        self._write_select_projects()
 
-    def write_statistics(self):
+    def _write_statistics(self):
 
         today = datetime.date.today()
         html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
@@ -82,8 +87,23 @@ class Search:
         html_file.write(html.encode('utf-8'))
         html_file.close()
 
-    def _process_project(self, po_directory, name, filename):
-    
+    def _write_select_projects(self):
+
+        html = u'<p>Àmbit de cerca: '
+        html += u'<select name ="project">\r'
+        html += u'<option value="tots" selected="selected">Tots els projectes</option>\r'
+        html += u'<option value="softcatala">Tots els projectes de Softcatalà</option>\r'
+
+        for option in self.options:
+            html += u'<option value="{0}">{1}</option>\r'.format(option, option)
+
+        html += u'</select></p>\r'
+        html_file = open("select-projects.html", "w")
+        html_file.write(html.encode('utf-8'))
+        html_file.close()
+
+    def _process_project(self, po_directory, name, filename, softcatala):
+
         global debug_keyword
 
         full_filename = os.path.join(po_directory, filename)
@@ -112,11 +132,12 @@ class Search:
                     print "Translation: " + t
                     print "Context: " + str(x)
                     print "Comment: " + str(c)
-                                        
+
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
                 self.writer.add_document(source=s, target=t, comment=c,
-                                         context=x, project=p)
+                                         context=x, project=p,
+                                         softcatala=softcatala)
 
         except Exception as detail:
             print "Exception: " + str(detail)
@@ -128,7 +149,7 @@ class Search:
         schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True,
                         analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)),
                         comment=TEXT(stored=True), context=TEXT(stored=True),
-                        project=TEXT(stored=True))
+                        softcatala=BOOLEAN(stored=True), project=TEXT(stored=True))
 
         if not os.path.exists(self.dir_name):
             os.mkdir(self.dir_name)
