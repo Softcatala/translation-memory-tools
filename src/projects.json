@@ -617,8 +617,19 @@
                             "type": "transifex"
                     }
             }
+        },
+    "Android": {
+            "projectweb" : "http://www.android.com",
+            "fileset": {
+                    "Android": {
+                            "url" : "https://android.googlesource.com/?format=JSON",
+                            "type": "gerrit-directory",
+                            "target": "gerrit-projects.json",
+                            "pattern_disabled" : ".*?/apps/.*?"
+                    }
+            }
         }
-        
+
         
     }
 }

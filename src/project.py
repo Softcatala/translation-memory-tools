@@ -26,6 +26,8 @@ from localfileset import LocalFileSet
 from polib import pofile
 from subversionfileset import SubversionFileSet
 from transifexfileset import TransifexFileSet
+from gitfileset import GitFileSet
+from gerritdirectoryfileset import GerritDirectoryFileSet
 
 import logging
 import os
@@ -100,6 +102,19 @@ class Project:
                                   fileset.url,
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
+            elif fileset.type == 'git':
+                fs = GitFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+                fs.set_pattern(fileset.pattern)
+            elif fileset.type == 'gerrit-directory':
+                fs = GerritDirectoryFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+                fs.set_pattern(fileset.pattern)
+                fs.set_project(self)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
@@ -108,18 +123,20 @@ class Project:
             fs.add_excluded(fileset.excluded)
 
     def do(self):
-        try:
-            self._delete_po_file()
+        self._delete_po_file()
 
-            for fileset in self.filesets:
+        for fileset in self.filesets:
+            try:
+
                 fileset.set_add_source(self.add_source)
                 fileset.do()
 
-        except Exception as detail:
-            msg = 'Project.do. Cannot complete {0}'
-            logging.error(msg.format(self.filename))
-            logging.error(detail)
-            self._delete_po_file()
+            except Exception as detail:
+                msg = 'Project.do. Cannot complete project {0}, fileset {1}'. \
+                      format(self.name, fileset.name)
+                logging.exception(msg.format(self.filename))
+                logging.error(detail)
+                pass
 
     def statistics(self):
         words = 0
