@@ -95,7 +95,7 @@ class Search:
         html += u'<option value="softcatala">Tots els projectes de Softcatalà</option>\r'
 
         for option in self.options:
-            html += u'<option value="{0}">{1}</option>\r'.format(option, option)
+            html += u'<option value="{0}">Projecte {1}</option>\r'.format(option, option)
 
         html += u'</select></p>\r'
         html_file = open("select-projects.html", "w")

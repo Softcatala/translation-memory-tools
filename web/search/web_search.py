@@ -83,20 +83,22 @@ class Search:
             results = searcher.search(query, limit=None)
             my_cf = WholeFragmenter()
             results.fragmenter = my_cf
+
+            end_time = time.time() - start_time            
+            open_html(term, len(results), end_time)
+            
             for result in results:
                 self.print_result(result, org)
 
-        end_time = time.time() - start_time
-        print str(len(results)) + " resultats. Temps de cerca: " + str(end_time)
 
-
-def open_html(term):
+def open_html(term, results, time):
 
     print 'Content-type: text/html\n\n'
     print '<html><head>'
     print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
     print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
-    print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + term + '</span></br></br>'
+    print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + term + '</span></br>'
+    print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
     print '<a href = "/index.html">< Torna a la pàgina anterior</a></br></br>'
 
 
@@ -106,8 +108,6 @@ def main():
     term = form.getvalue("query", None)
     where = form.getvalue("where", None)
     project = form.getvalue("project", None)
-
-    open_html(term)
         
     if where == 'source':
         org = True
