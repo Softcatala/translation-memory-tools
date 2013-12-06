@@ -67,15 +67,15 @@ class Search:
         with ix.searcher() as searcher:
 
             if org is True:
-                qs = 'source:{0}'.format(term)
+                qs = u'source:{0}'.format(term)
             else:
-                qs = 'target:{0}'.format(term)
+                qs = u'target:{0}'.format(term)
 
             if project is not None and project != 'tots':
                 if project == 'softcatala':
-                    qs += ' softcatala:true'
+                    qs += u' softcatala:true'
                 else:
-                    qs += ' project:{0}'.format(project)
+                    qs += u' project:{0}'.format(project)
 
             query = MultifieldParser(["source", "project", "softcatala"],
                                      ix.schema).parse(qs)
