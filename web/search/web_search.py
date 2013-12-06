@@ -60,44 +60,51 @@ class Search:
         '''
             Search a term in the Whoosh index
         '''
+        
+        try:
+            open_html()
 
-        start_time = time.time()
+            start_time = time.time()
 
-        ix = open_dir(self.dir_name)
-        with ix.searcher() as searcher:
+            ix = open_dir(self.dir_name)
+            with ix.searcher() as searcher:
 
-            if org is True:
-                qs = u'source:{0}'.format(term)
-            else:
-                qs = u'target:{0}'.format(term)
-
-            if project is not None and project != 'tots':
-                if project == 'softcatala':
-                    qs += u' softcatala:true'
+                if org is True:
+                    qs = u'source:{0}'.format(term)
                 else:
-                    qs += u' project:{0}'.format(project)
+                    qs = u'target:{0}'.format(term)
 
-            query = MultifieldParser(["source", "project", "softcatala"],
-                                     ix.schema).parse(qs)
+                if project is not None and project != 'tots':
+                    if project == 'softcatala':
+                        qs += u' softcatala:true'
+                    else:
+                        qs += u' project:{0}'.format(project)
 
-            results = searcher.search(query, limit=None)
-            my_cf = WholeFragmenter()
-            results.fragmenter = my_cf
+                query = MultifieldParser(["source", "project", "softcatala"],
+                                         ix.schema).parse(qs)
 
-            end_time = time.time() - start_time            
-            open_html(term, len(results), end_time)
-            
-            for result in results:
-                self.print_result(result, org)
+                results = searcher.search(query, limit=None)
+                my_cf = WholeFragmenter()
+                results.fragmenter = my_cf
 
+                end_time = time.time() - start_time            
+                write_html_header(term, len(results), end_time)
+                
+                for result in results:
+                    self.print_result(result, org)
+                    
+        except Exception as details:
+            print "Error:" + str(details)
 
-def open_html(term, results, time):
-
+def open_html():
     print 'Content-type: text/html\n\n'
     print '<html><head>'
     print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
     print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
-    print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + term + '</span></br>'
+
+def write_html_header(term, results, time):
+    t = term.encode('utf-8')
+    print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span></br>'
     print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
     print '<a href = "/index.html">< Torna a la pàgina anterior</a></br></br>'
 
@@ -108,7 +115,7 @@ def main():
     term = form.getvalue("query", None)
     where = form.getvalue("where", None)
     project = form.getvalue("project", None)
-        
+    
     if where == 'source':
         org = True
     else:
