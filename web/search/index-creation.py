@@ -94,7 +94,8 @@ class Search:
         html += u'<option value="tots" selected="selected">Tots els projectes</option>\r'
         html += u'<option value="softcatala">Tots els projectes de Softcatalà</option>\r'
 
-        for option in self.options:
+        options = sorted(self.options, key=lambda x: x.lower())
+        for option in options:
             html += u'<option value="{0}">Projecte {1}</option>\r'.format(option, option)
 
         html += u'</select></p>\r'
