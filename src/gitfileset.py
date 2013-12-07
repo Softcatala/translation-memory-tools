@@ -21,29 +21,29 @@ from fileset import FileSet
 from findfiles import FindFiles
 
 import os
-import sys
+import logging
+import re
 
 
 class GitFileSet(FileSet):
- 
+
     def _get_filename(self):
         filename = self.url.split('/')[-1]
         return filename
-        
+
     def _remove_non_translation_files(self):
         findFiles = FindFiles()
 
-        for filename in findFiles.find(self.temp_dir, '-ca.po'):
-            if re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
-                os.remove(filename)
+        for filename in findFiles.find(self.temp_dir, '*'):
+            if re.match('.*?-ca.po', filename) is None:
+                if os.path.exists(filename):
+                    os.remove(filename)
+            else:
+                logging.debug("Keeping file:" + filename)
 
     def convert_android_resources_files_to_po(self):
-    
+
         filename = self._get_filename()
-        
-        src = os.path.join(self.temp_dir, "res/values/strings.xml")
-        trg = os.path.join(self.temp_dir, "res/values-ca/strings.xml")
 
         # See: https://pypi.python.org/pypi/android2po/1.2.0
         cmd = 'cd {0}/{1} && a2po init ca'.format(self.temp_dir, filename)
