@@ -131,13 +131,18 @@ class FileSet():
     def build(self):
         findFiles = FindFiles()
         localtm = 'tm-local.po'
+        
+        files = findFiles.find(self.temp_dir, '*.po')
+        
+        if (len(files) == 0):
+            logging.info('No files to add in fileset: {0}'. format(self.name))
+            return
 
         if os.path.isfile(localtm):
             os.remove(localtm)
 
         # Build using a local memory translation file
-        for filename in findFiles.find(self.temp_dir, '*.po'):
-            print 'Do: {0}'.format(filename)
+        for filename in files:
 
             if self._should_exclude_file(filename):
                 continue
