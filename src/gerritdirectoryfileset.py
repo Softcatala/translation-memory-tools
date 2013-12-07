@@ -83,7 +83,7 @@ class GerritDirectoryFileSet(FileSet):
                         url = prj_value
                         
                 if not re.match(self.pattern, name):
-                    print "Discarding: " + name
+                    logging.debug ('GerritDirectoryFileSet. Discarding:' + name)
                     continue
                     
                 fileset = GitFileSet(self.project_name, name, url, '')
@@ -91,6 +91,8 @@ class GerritDirectoryFileSet(FileSet):
                 self.project.add(fileset)
 
         # All the new filesets have been added re-process project now
+        logging.debug('GerritDirectoryFileSet. Added {0} filesets dynamically'.
+            format(len(self.project.filesets)))
+
         self.project.do()
 
-        logging.debug("Gerrit.Do completed")
