@@ -628,6 +628,15 @@
                             "pattern" : "^(?!.*device).*"
                     }
             }
+        },
+    "CiviCRM": {
+            "projectweb" : "https://www.transifex.com/projects/p/civicrm/language/ca/",
+            "fileset": {
+                    "CiviCRM": {
+                            "url" : "https://www.transifex.com/projects/p/civicrm/",
+                            "type": "transifex"
+                    }
+            }
         }
 
         
