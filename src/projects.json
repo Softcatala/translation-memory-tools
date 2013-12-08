@@ -647,6 +647,16 @@
                             "target": "winmerge-ca.po"
                     }
             }
+        },
+    "Eliot": {
+            "projectweb" : "http://www.nongnu.org/eliot/en/index.html",
+            "fileset": {
+                    "Eliot": {
+                            "url" : "http://git.savannah.gnu.org/cgit/eliot.git/plain/po/ca.po",
+                            "type": "file",
+                            "target": "eliot-ca.po"
+                    }
+            }
         }
 
         
