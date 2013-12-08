@@ -106,7 +106,7 @@ def write_html_header(term, results, time):
     t = term.encode('utf-8')
     print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span></br>'
     print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
-    print '<a href = "/index.html">< Torna a la pàgina anterior</a></br></br>'
+    print '<a href = "./index.html">< Torna a la pàgina anterior</a></br></br>'
 
 
 def main():
