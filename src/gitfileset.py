@@ -31,11 +31,15 @@ class GitFileSet(FileSet):
         filename = self.url.split('/')[-1]
         return filename
 
-    def _remove_non_translation_files(self):
+    def _remove_non_translation_files_for_android(self):
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
-            if re.match('.*?-ca.po', filename) is None:
+            # Some Android projects contain there own po files like
+            # https://android.googlesource.com/platform/ndk and they have
+            # the name standard "ca.po"
+            # The rest are produced by a2po then they have the pattern '-ca.po'
+            if re.match('.*?ca.po', filename) is None:
                 if os.path.exists(filename):
                     os.remove(filename)
             else:
@@ -58,7 +62,7 @@ class GitFileSet(FileSet):
         ))
 
         self.convert_android_resources_files_to_po()
-        self._remove_non_translation_files()
+        self._remove_non_translation_files_for_android()
         self.add_comments()
         self.build()
 
