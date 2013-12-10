@@ -25,7 +25,8 @@ Dependencies
 * translate-toolkit
 * Subversion 1.7 or higher
 * nose (using 'pip install nose')
-
+* Git
+* a2po (using 'pip install a2po')
 
 Setting up before execution
 ===========================
