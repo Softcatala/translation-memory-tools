@@ -1,0 +1,5 @@
+User-agent: *
+# Prevent developement and preprod enviroments to be crawled
+Disallow: /dev/
+Disallow: /preprod/
+
