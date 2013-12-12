@@ -161,9 +161,9 @@ def process_projects():
 
     html = u'<h1 class ="section">Baixa les memòries de traducció</h1>\r'
     html += u'<p>Baixeu les memòries de traducció per poder-les afegir al vostre programa de traducció habitual.</p>\r'
-    html += u'<p>Disposem instruccions de com fer-ho '
-    html += u'<a href="http://www.softcatala.org/wiki/Configurar_PoEdit_amb_mem%C3%B2ries_de_traducci%C3%B3">pas a pas</a> '
-    html += u'amb l\'eina de traducció PoEdit.</p>\r'
+    html += u'<p>Disposem dels següents documents que descriuen com usar memòries de traducció amb diferents eines:</p>\r'
+    html += u'<ul><li><a href="http://www.softcatala.org/wiki/Configurar_PoEdit_amb_mem%C3%B2ries_de_traducci%C3%B3">Com configurar el PoEdit amb memòries de traducció</a>\r'
+    html += u'<li><a href="http://www.softcatala.org/wiki/Configurar_Lokalize_amb_mem%C3%B2ries_de_traducci%C3%B3">Com configurar el Lokalize amb memòries de traducció</a></ul>\r'
     html += '<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
     html += '<tr>\r'
     html += '<th>Projecte</th>\r'
