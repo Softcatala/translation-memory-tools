@@ -27,6 +27,7 @@ Dependencies
 * nose (using 'pip install nose')
 * Git
 * a2po (using 'pip install android2po')
+* Whoosh (using 'pip install whoosh')
 
 Setting up before execution
 ===========================
