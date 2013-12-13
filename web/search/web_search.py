@@ -64,6 +64,11 @@ class Search:
         try:
             open_html()
 
+            if len(term) < 2:
+                write_html_header(term, 0, 0)
+                print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
+                return
+
             start_time = time.time()
 
             ix = open_dir(self.dir_name)
@@ -121,8 +126,12 @@ def main():
     else:
         org = False
 
+    if term is None:
+        term = ''
+    else:
+        term = unicode(term, 'utf-8')
+
     search = Search()
-    term = unicode(term, 'utf-8')
     search.search(term, org, project)
     print '</head><body>'
 
