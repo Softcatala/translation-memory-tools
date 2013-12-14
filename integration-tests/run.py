@@ -25,6 +25,7 @@ from HTMLParser import HTMLParser
 from Queue import Queue
 from optparse import OptionParser
 from checkdownloads import CheckDownloads
+from checksearch import CheckSearch
 
 import urllib2
 import urlparse
@@ -144,6 +145,10 @@ if __name__ == '__main__':
     read_parameters()
     print "Integration tests for: " + site_url
     print "Use --help for assistance"
+
+    search = CheckSearch(site_url)
+    if search.check() is False:
+        sys.exit(error)
 
     crawler = Crawler(site_url)
     crawler.run()

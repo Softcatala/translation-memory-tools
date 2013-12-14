@@ -25,11 +25,26 @@ from whoosh.index import open_dir
 from whoosh.fields import *
 from whoosh.highlight import *
 from whoosh.qparser import MultifieldParser
+import traceback
+import json
 
 
-class Search:
+class JsonSerializer:
 
-    dir_name = "indexdir"
+    def do(self, search):
+
+        print 'Content-type: application/json\n\n'
+
+        results = search.get_results()
+
+        all_results = []
+        for result in results:
+            all_results.append(result.fields())
+
+        print json.dumps(all_results, indent=4, separators=(',', ': '))
+
+
+class WebSerializer:
 
     def print_result(self, result, org):
 
@@ -56,62 +71,90 @@ class Search:
 
         print '</div>'
 
-    def search(self, term, org, project):
+    def do(self, search):
         '''
             Search a term in the Whoosh index
         '''
-        
-        try:
-            open_html()
 
-            if len(term) < 2:
-                write_html_header(term, 0, 0)
+        try:
+            self.open_html()
+
+            if len(search.term) < 2:
+                self.write_html_header(search.term, 0, 0)
                 print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
                 return
 
             start_time = time.time()
 
-            ix = open_dir(self.dir_name)
-            with ix.searcher() as searcher:
+            results = search.get_results()
+            end_time = time.time() - start_time
 
-                if org is True:
-                    qs = u'source:{0}'.format(term)
-                else:
-                    qs = u'target:{0}'.format(term)
+            self.write_html_header(search.term, len(results), end_time)
+            for result in results:
+                self.print_result(result, search.org)
 
-                if project is not None and project != 'tots':
-                    if project == 'softcatala':
-                        qs += u' softcatala:true'
-                    else:
-                        qs += u' project:{0}'.format(project)
+            self.close_html()
 
-                query = MultifieldParser(["source", "project", "softcatala"],
-                                         ix.schema).parse(qs)
-
-                results = searcher.search(query, limit=None)
-                my_cf = WholeFragmenter()
-                results.fragmenter = my_cf
-
-                end_time = time.time() - start_time            
-                write_html_header(term, len(results), end_time)
-                
-                for result in results:
-                    self.print_result(result, org)
-                    
         except Exception as details:
             print "Error:" + str(details)
+            traceback.print_exc()
 
-def open_html():
-    print 'Content-type: text/html\n\n'
-    print '<html><head>'
-    print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
-    print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
+    def open_html(self):
+        print 'Content-type: text/html\n\n'
+        print '<html><head>'
+        print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
+        print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
 
-def write_html_header(term, results, time):
-    t = term.encode('utf-8')
-    print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span></br>'
-    print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
-    print '<a href = "./index.html">< Torna a la pàgina anterior</a></br></br>'
+    def write_html_header(self, term, results, time):
+        t = term.encode('utf-8')
+        print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span></br>'
+        print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
+        print '<a href = "./index.html">< Torna a la pàgina anterior</a></br></br>'
+
+    def close_html(self):
+        print '</head><body>'
+
+
+class Search:
+    '''
+            Search a term in the Whoosh index
+    '''
+
+    dir_name = "indexdir"
+
+    def __init__(self, term, org, project):
+        self.term = term
+        self.org = org
+        self.project = project
+        self.searcher = None
+        self.query = None
+
+    def get_results(self):
+        if self.searcher is None:
+            self.search()
+
+        results = self.searcher.search(self.query, limit=None)
+        my_cf = WholeFragmenter()
+        results.fragmenter = my_cf
+        return results
+
+    def search(self):
+        ix = open_dir(self.dir_name)
+        self.searcher = ix.searcher()
+
+        if self.org is True:
+            qs = u'source:{0}'.format(self.term)
+        else:
+            qs = u'target:{0}'.format(self.term)
+
+        if self.project is not None and self.project != 'tots':
+            if self.project == 'softcatala':
+                qs += u' softcatala:true'
+            else:
+                qs += u' project:{0}'.format(self.project)
+
+        self.query = MultifieldParser(["source", "project", "softcatala"],
+                                      ix.schema).parse(qs)
 
 
 def main():
@@ -120,17 +163,22 @@ def main():
     term = form.getvalue("query", '')
     where = form.getvalue("where", None)
     project = form.getvalue("project", None)
-    
+    json = form.getvalue("json", None)
+
     if where == 'source':
         org = True
     else:
         org = False
-   
-    term = unicode(term, 'utf-8')
 
-    search = Search()
-    search.search(term, org, project)
-    print '</head><body>'
+    term = unicode(term, 'utf-8')
+    search = Search(term, org, project)
+
+    if (json is None):
+        web_serializer = WebSerializer()
+        web_serializer.do(search)
+    else:
+        json_serializer = JsonSerializer()
+        json_serializer.do(search)
 
 if __name__ == "__main__":
     main()
