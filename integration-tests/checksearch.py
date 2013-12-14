@@ -47,7 +47,7 @@ class CheckSearch:
                 print "No results"
                 return False
 
-            if data[0]['target'].lower() != word:
+            if word in data[0]['target'].lower() is False:
                 print 'No {0} word found'.format(word)
                 return False
 
