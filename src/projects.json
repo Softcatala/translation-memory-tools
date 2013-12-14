@@ -1,7 +1,7 @@
 {
     "projects": {
     "Header": {
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "header": {
                             "url" : "../source-pos/header/header.po",
@@ -12,7 +12,7 @@
     },
     "Recull": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Recull_de_termes",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "recull": {
                             "url" : "../source-pos/recull/recull.po",
@@ -23,7 +23,7 @@
     },
     "Mozilla": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "mozilla": {
                             "url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
@@ -85,7 +85,7 @@
     },
     "GNOME": {
             "projectweb" : "http://www.softcatala.org/wiki/GNOME",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "gnome-ui": {
                             "url" : "https://l10n.gnome.org/languages/ca/gnome-3-12/ui.tar.gz",
@@ -161,7 +161,7 @@
     },
     "LibreOffice": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/LibreOffice",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "UI": {
                             "url" : "https://translations.documentfoundation.org/ca/libo_ui/export/zip",
@@ -182,7 +182,7 @@
     },
     "FileZilla": {
             "projectweb" : "http://pootle.softcatala.org/projects/filezilla/",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "filezilla": {
                             "url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
@@ -193,7 +193,7 @@
     },
     "Abiword": {
             "projectweb" : "http://www.softcatala.org/wiki/Abiword",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "abiword": {
                             "url" : "http://www.abisource.com/dev/strings/dev/ca-ES.po",
@@ -204,7 +204,7 @@
     },
     "VirtualBox": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/VirtualBox",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "virtualbox": {
                             "url" : "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts",
@@ -215,7 +215,7 @@
     },
     "VLC": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/VLC",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "VLC" : {
                             "url" : "https://www.transifex.com/projects/p/vlc-trans/",
@@ -225,7 +225,7 @@
     },
     "GPGTools": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/GPGTools",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "GPGMail" : {
                             "url" : "https://www.transifex.com/projects/p/GPGMail/",
@@ -235,7 +235,7 @@
     },
     "Fedora": {
             "projectweb" : "http://www.softcatala.org/wiki/Fedora",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "main": {
                             "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-main/",
@@ -257,7 +257,7 @@
     },
     "Ubuntu": {
             "projectweb" : "https://wiki.ubuntu.com/UbuntuCatalanTranslators",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "ubuntu-software-center": {
                             "url" : "lp:ubuntu/software-center/po/ca.po",
@@ -283,7 +283,7 @@
     },
     "Mailman": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mailman",
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "mailman": {
                             "url" : "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po",
@@ -293,7 +293,7 @@
             }
     },
     "Pootle": {
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "Pootle": {
                             "url" : "http://pootle.locamotion.org/ca/pootle/export/zip",
@@ -308,7 +308,7 @@
             }
     },
     "Mandriva": {
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "mandriva": {
                             "url" : "../source-pos/mandriva-po/*.po",
@@ -317,7 +317,7 @@
             }
     },
     "Monodevelop": {
-            "softcatala" : "true",
+            "softcatala" : true,
             "fileset": {
                     "monodevelop": {
                             "url" : "https://raw.github.com/mono/monodevelop/master/main/po/ca.po",
@@ -512,7 +512,6 @@
     },
     "ownCloud": {
             "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
-            "softcatala" : "false",
             "fileset": {
                     "ownCloud" : {
                             "url" : "https://www.transifex.com/projects/p/owncloud/",
@@ -521,7 +520,6 @@
             }
     },
     "LibreCAD": {
-            "softcatala" : "false",
             "projectweb" : "http://translate.librecad.org/pootle/ca/",
             "fileset": {
                     "LibreCAD" : {

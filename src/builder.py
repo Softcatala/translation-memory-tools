@@ -128,7 +128,7 @@ def load_projects_from_json():
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
         
-        if softcatala_only is True and len(project_dto.softcatala) == 0:
+        if softcatala_only is True and project_dto.softcatala is True == 0:
             continue
 
         if projects_names:

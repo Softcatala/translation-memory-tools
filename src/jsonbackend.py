@@ -29,7 +29,7 @@ class ProjectDTO:
         self.name = name
         self.filename = ''
         self.projectweb = ''
-        self.softcatala = ''
+        self.softcatala = False
         self.disabled = False
         self.filesets = []
 
