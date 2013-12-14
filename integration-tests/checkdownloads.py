@@ -68,7 +68,7 @@ class CheckDownloads:
         if found is False:
             self.errors = self.errors + 1
             print 'Missing link {0}'.format(filename)
-            
+
         return found
 
     def _create_tmp_directory(self):
@@ -129,19 +129,21 @@ class CheckDownloads:
         json = JsonBackend("../src/projects.json")
         json.load()
 
-        # len(json.project) is the right number because minus the header
-        # but plus the memory with all projects (like tots-tm)
-        expected_files = len(json.projects)
+        TM_ITSELF = 1
+        expected_files = TM_ITSELF + sum(p.downloadable is True
+                                         for p in json.projects)
         self.downloads_for_project('tots', expected_files)
 
-        expected_files = sum(len(p.softcatala) > 0 for p in json.projects)
+        expected_files = TM_ITSELF + sum(p.softcatala is True and
+                                         p.downloadable is True
+                                         for p in json.projects)
+
         self.downloads_for_project('softcatala', expected_files)
 
         expected_files = 1
         for project_dto in json.projects:
-            if project_dto.name == 'Header':
+            if project_dto.downloadable is False:
                 continue
 
             self.downloads_for_project(project_dto.name, expected_files)
-
 
