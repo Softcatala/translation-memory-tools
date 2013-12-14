@@ -117,7 +117,7 @@ def write_html_header(term, results, time):
 def main():
 
     form = cgi.FieldStorage()
-    term = form.getvalue("query", None)
+    term = form.getvalue("query", '')
     where = form.getvalue("where", None)
     project = form.getvalue("project", None)
     
@@ -125,11 +125,8 @@ def main():
         org = True
     else:
         org = False
-
-    if term is None:
-        term = ''
-    else:
-        term = unicode(term, 'utf-8')
+   
+    term = unicode(term, 'utf-8')
 
     search = Search()
     search.search(term, org, project)
