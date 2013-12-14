@@ -35,7 +35,7 @@ def process_projects():
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if (project_dto.name != 'Header'):
+        if project_dto.downloadable is True:
 
             src_file = os.path.join(src_directory, project_dto.filename)
             trg_file = os.path.join(trg_directory, project_dto.filename)

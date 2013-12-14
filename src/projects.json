@@ -3,6 +3,7 @@
     "Header": {
             "comment" : "This is the first file used when buidling the Softcatalà TM. It contains the hearder with the credits",
             "softcatala" : true,
+            "downloadable" : "false",
             "fileset": {
                     "header": {
                             "url" : "../source-pos/header/header.po",

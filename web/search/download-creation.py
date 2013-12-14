@@ -113,7 +113,7 @@ def build_all_projects_memory(json, html):
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if (project_dto.name != 'Header'):
+        if project_dto.downloadable is True:
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
@@ -132,7 +132,7 @@ def build_all_softcatala_memory(json, html):
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.name != 'Header' and project_dto.softcatala is True:
+        if project_dto.downloadable is True and project_dto.softcatala is True:
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
@@ -144,7 +144,7 @@ def build_invidual_projects_memory(json, html):
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if (project_dto.name != 'Header'):
+        if project_dto.downloadable is True:
 
             create_zipfile(po_directory, project_dto.filename)
             create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
