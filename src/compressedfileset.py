@@ -33,7 +33,7 @@ class CompressedFileSet(FileSet):
 
         elif self.filename.endswith('tar.gz'):
             if len(self.pattern) > 0:
-                cmd = 'tar -xvf {0} -C {1} {2}'.format(
+                cmd = 'tar --wildcards -xvf {0} -C {1} {2}'.format(
                     self.filename,
                     self.temp_dir,
                     self.pattern
