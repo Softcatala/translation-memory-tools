@@ -79,7 +79,7 @@ class CheckDownloads:
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def check_zipfile(self, filename, extensions, expected_files):
+    def check_zipfile(self, filename, extensions, expected_files, minimum_size):
 
         tmp_file = tempfile.NamedTemporaryFile()
         link = self._get_link_from_filename(filename)
@@ -100,6 +100,12 @@ class CheckDownloads:
         for filename in findFiles.find(self.temp_dir, extensions):
             files = files + 1
 
+            size = os.path.getsize(filename)
+            if size < minimum_size:
+                self.errors = self.errors + 1
+                print 'File {0} has size {1} but expected was at least {2}'. \
+                      format(filename, size, minimum_size)
+
         if (files != expected_files):
             self.errors = self.errors + 1
             print '{0} expected {1} files but contains {2}'.format(link,
@@ -112,19 +118,22 @@ class CheckDownloads:
         print "Processing:" + name
 
         # Po files
+        MIN_PO_SIZE = 1500
         po_zip_file = '{0}-tm.po.zip'.format(name.lower())
         if self.is_filename_a_download(po_zip_file):
-            self.check_zipfile(po_zip_file, '*.po', expected_files)
+            self.check_zipfile(po_zip_file, '*.po', expected_files, MIN_PO_SIZE)
 
         # Tmx files
+        MIN_TMX_SIZE = 350
         tmx_zip_file = '{0}-tm.tmx.zip'.format(name.lower())
         if self.is_filename_a_download(tmx_zip_file):
-            self.check_zipfile(tmx_zip_file, '*.tmx', expected_files)
+            self.check_zipfile(tmx_zip_file, '*.tmx', expected_files,
+                               MIN_TMX_SIZE)
 
     def check(self):
 
         '''Reads the json and makes sure that for every project we have a'''
-        '''po and tmx there is a download published with the expected files'''
+        '''po and a tmx that is a download published with the expected files'''
 
         json = JsonBackend("../src/projects.json")
         json.load()
