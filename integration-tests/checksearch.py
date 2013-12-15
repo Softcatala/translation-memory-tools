@@ -88,5 +88,5 @@ class CheckSearch:
             return True
 
         except Exception as detail:
-            print u'Error: ' + unicode(detail)
+            print u'Error checking search results: ' + unicode(detail)
             return False

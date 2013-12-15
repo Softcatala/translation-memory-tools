@@ -132,7 +132,7 @@ def read_parameters():
     opt_enviroments = "localhost, dev, prepod, prod"
     parser.add_option("-e", "--enviroment", dest="enviroment", default="prod",
                       type="choice", choices=enviroments.keys(),
-                      help="set default enviroment to :" + opt_enviroments)
+                      help="set default enviroment to: " + opt_enviroments)
 
     (options, args) = parser.parse_args()
     site_url = enviroments.get(options.enviroment, None)
