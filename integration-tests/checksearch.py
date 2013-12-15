@@ -30,29 +30,63 @@ class CheckSearch:
 
     def search_source(self, term):
 
-        url = '{0}/web_search.py?query={1}&where=translation&project=tots&json=1'.format(self.url, term)
+        url = '{0}/web_search.py?query={1}&where=source&project=tots' \
+              '&json=1'.format(self.url, term)
 
         urllib.urlretrieve(url, 'file.txt')
         with open('file.txt') as json_data:
             data = json.load(json_data)
             return data
 
+    def _assert_contains(self, actual, expected):
+
+        actual = actual.lower()
+        expected = expected.lower()
+        if expected not in actual:
+            raise Exception(u"Expected '{0}' contains '{1}'".
+                            format(expected, actual))
+
+    def _assert_that(self, actual, expected):
+
+        actual = actual.lower()
+        expected = expected.lower()
+        if not expected == actual:
+            raise Exception(u"Expected '{0}' equals '{1}'".
+                            format(expected, actual))
+
+    def _assert_greater(self, actual, minimum):
+
+        if minimum > actual:
+            raise Exception(u'Expected {0} to be greater than minimum {1}'.
+                            format(minimum, actual))
+
+    def _check_integration_data(self):
+
+        string = u'"Palindromics numbers remain the same when its digits are reversed"'
+        data = self.search_source(string)
+
+        self._assert_greater(len(data), 1)
+        self._assert_that(data[0]['source'], u'Palindromics numbers remain the same when its digits are reversed')
+        self._assert_that(data[0]['target'], u'Els nombres capicua no varien quan les seves xifres s\'inverteixen')
+        self._assert_that(data[0]['context'], u'Palindromics.context')
+        self._assert_contains(data[0]['comment'], u'Títol de preferències')
+
+    def _check_common_seaches(self):
+
+        string = u'File'
+        data = self.search_source(string)
+
+        self._assert_greater(len(data), 1)
+        self._assert_contains(data[0]['source'], string)
+
     def check(self):
 
         try:
 
-            word = 'fitxer'
-            data = self.search_source(word)
-            if len(data) == 0:
-                print "No results"
-                return False
-
-            if word in data[0]['target'].lower() is False:
-                print 'No {0} word found'.format(word)
-                return False
-
+            self._check_common_seaches()
+            self._check_integration_data()
             return True
 
         except Exception as detail:
-            print "Error: " + str(detail)
+            print u'Error: ' + unicode(detail)
             return False

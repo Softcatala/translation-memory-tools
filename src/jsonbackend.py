@@ -32,6 +32,7 @@ class ProjectDTO:
         self.softcatala = False
         self.disabled = False
         self.downloadable = True
+        self.selectable = True
         self.filesets = []
 
     def __str__(self):
@@ -100,7 +101,8 @@ class JsonBackend:
                 project = ProjectDTO(attribute)
                 
                 # Get project properties
-                for prop in ('filename', 'projectweb', 'softcatala', 'disabled', 'downloadable'):
+                for prop in ('filename', 'projectweb', 'softcatala', 'disabled',
+                             'downloadable', 'selectable'):
                     if prop in value:
                         setattr(project, prop, value[prop])
 

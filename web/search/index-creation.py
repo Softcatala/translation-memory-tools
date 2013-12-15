@@ -53,9 +53,6 @@ class Search:
 
         for project_dto in json.projects:
 
-            if project_dto.name == 'Header':
-                continue
-
             if projects_names:
                 found = False
 
@@ -67,7 +64,8 @@ class Search:
                 if not found:
                     continue
 
-            self.options.append(project_dto.name)
+            if project_dto.selectable is True:
+                self.options.append(project_dto.name)
 
             self._process_project(po_directory, project_dto.name,
                                   project_dto.filename,

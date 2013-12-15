@@ -12,6 +12,18 @@
                     }
             }
     },
+    "IntegrationTests": {
+            "softcatala" : true,
+            "downloadable" : false,
+            "selectable" : false,
+            "fileset": {
+                    "IntegrationTests": {
+                            "url" : "../source-pos/integration-tests/integration-tests.po",
+                            "type": "local-file",
+                            "target": "integration-tests.po"
+                    }
+            }
+    },
     "Recull": {
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Recull_de_termes",
             "softcatala" : true,
