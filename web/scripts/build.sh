@@ -53,12 +53,12 @@ for filename in *.po
         fsize=$(du -b "$filename" | cut -f 1)
         if [ $fsize -ge 200 ];
           then
-	    if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
-	      then
-	        echo Copying $filename
+	        if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
+	          then
+	            echo Copying $filename
                 cp $filename $INTERMEDIATE_PO/$filename
             fi
-        fi 
+        fi
     fi
   done
 
@@ -66,11 +66,13 @@ for filename in *.po
 # Copy only new TMX files
 for filename in *.tmx
   do
-    # If file exists and size is greater than 200 bytes
+    # If file exists and size is greater than 350 bytes
     if [ -e  $filename ]
       then
         fsize=$(du -b "$filename" | cut -f 1)
-        if [ $fsize -ge 200 ];
+        # Empty TMX files are 275 bytes (just the header)
+        # Files with one short translation 450 bytes
+        if [ $fsize -ge 350 ];
           then
             echo Copying $filename
             cp $filename $INTERMEDIATE_TMX/$filename
