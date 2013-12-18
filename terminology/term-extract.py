@@ -24,26 +24,20 @@ sys.path.append('../src/')
 import time
 import math
 import polib
+import datetime
 import cgi
-from findfiles import FindFiles
 from optparse import OptionParser
+from corpus import Corpus
 
 src_directory = None
+html_comment = ''
+hmtl_file = None
 
 class Translation:
     def __init__(self):
         self.translation = ''
         self.frequency = 0
         self.percentage = 0  # Percentage of frequency across all options
-
-def dump_documents(documents):
-
-    for document_key_filename in documents.keys():
-        print document_key_filename
-        for terms in documents[document_key_filename].keys():
-            print "  s({0}):{1}".format(len(documents[document_key_filename][terms]), terms.encode('utf-8'))
-            for translation in documents[document_key_filename][terms]:
-                print "     t:" + translation.encode('utf-8')
 
 def create_translations_for_word_sorted_by_frequency(documents, term):
 
@@ -92,8 +86,8 @@ def create_translations_for_word_sorted_by_frequency(documents, term):
 
 def create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull):
 
-    f = open('glossary.txt','w')
-    terms = sorted(tfxdf, key=tfxdf.get,reverse=True)
+    f = open('glossary.txt', 'w')
+    terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
 
     item = 1
     for term in terms:
@@ -114,16 +108,27 @@ def create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recul
    
     f.close()
 
-def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull):
+def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull, strings, strings_selected):
+
+    global html_file
 
     terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
 
-    f = open('glossary.html','w')
+    f = open(html_file,'w')
 
     f.write(u'<html><head>\n')
     f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8">')
+    html = ''
 
-    html = u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
+    html += u'<p><b>Comentaris</b></p><ul>'
+    html += u'<li>Glossari generat computacionalment al final del mateix hi ha dades sobre la generació.</li>'
+    html += u'<li>La columna opcions considerades indica quines altres traduccions apareixen per aquest terme i s\'han considerat.</li>'
+    html += u'<li>La columna català és l\'opció més comuna.</li>'
+    html += u'<li>Usada indica el % d\'ús respecte a altres opcions i coincidències els cops que s\'ha trobat.</li>'
+    html += u'<li>(r) indica el terme es troba a l\'últim Recull de termes publicat.</li>'    
+    html += u'</ul>'
+    
+    html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
     html += u'<tr>\r'
     html += u'<th>#</th>\r'
     html += u'<th>Anglès</th>\r'
@@ -133,6 +138,9 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     f.write(html.encode('utf-8'))
 
     item = 0
+    first_50 = 0
+    first_100 = 0
+    first_500 = 0
     for term in terms:
         if term in terms_recull.keys():
             inrecull = ' (r)'
@@ -155,16 +163,43 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
         html += u'<td>{0}</td>'.format(options)
         html += u"</tr>\r"
         f.write(html.encode('utf-8'))
+
+        if item < 50 and len(inrecull) > 0:
+            first_50 += 1
         
-        if item >= 2000:
+        if item < 100 and len(inrecull) > 0:
+            first_100 += 1
+
+        if item < 500 and len(inrecull) > 0:
+            first_500 += 1
+
+        if item >= 1000:
             break
-   
+
+    f.write('</table>\n')
+
+    global html_comment
+
+    html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
+    html += '<p>Cadenes analitzades: {0}</p>'.format(strings) 
+    html += '<p>Cadenes seleccionades: {0} - {1}%</p>'.format(strings_selected, 100 * strings_selected / strings) 
+    html += u'<p>Termes únics totals selecionats: {0}</p>'.format(len(source_words))
+    html += '<p>Dels 50 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_50 * 100 / 50, first_50)
+    html += '<p>Dels 100 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_100 * 100 / 100, first_100)       
+    html += '<p>Dels 500 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_500 * 100 / 500, first_500) 
+
+    if len(html_comment) > 0:
+        u = unicode(html_comment, "UTF-8") # utf-8 is the system encoding
+        html += u"Comentari de generació: " + u 
+
+    f.write(html.encode('utf-8'))
+  
     f.write('</head></html>\n')
     f.close()
 
 def read_recull():
 
-    pofile = polib.pofile('../source-pos/recull/recull.po')
+    pofile = polib.pofile('recull/recull.po')
         
     terms = {}
     for entry in pofile:
@@ -194,78 +229,19 @@ def calculate_most_frequent(source_words, tf, df, tfxdf, terms_recull):
         if item < 100 and len(inrecull) > 0:
             first_100 += 1
 
-    print 'Source words {0}'.format(len(source_words))
-    print '50 first words in recull: {0} - {1}%'.format(first_50, first_50 * 100 /50)
-    print '100 first words in recull: {0} - {1}%'.format(first_100, first_50 * 100 /100)  
     f.close()
-
-def clean_string(result):
-
-    chars = {'_', '&', '~', # Accelarators
-            ':', ',' # Punctuations
-    }
-  
-    for c in chars:
-        result = result.replace(c, '')
-    
-    result = result.lower()
-    return result       
-
-def process_projects():
-
-    findFiles = FindFiles()
-
+      
     # Use cases
     #  1. Calculate TF -> need term, frequency in the document
     #  2. Calculate IDF -> need n of documents, documents containing the term
     #  3. Search all words 
     #
     # Values 
-    #
-    # Option 1 (this)
-    #  1. Dictionary key:document, value:(key: term src, value:list <trgs>)
-  
-    source_words = set()
-    documents = {}
-    files = 0
-    for filename in findFiles.find(src_directory, '*.po'):
-        print filename
-
-        pofile = polib.pofile(filename)
-        
-        terms = {}
-        for entry in pofile:
-            # Only 1 word terms for now
-            if len(entry.msgid.split()) > 1:
-                continue
-
-            msgid = clean_string(entry.msgid)
-            msgstr = clean_string(entry.msgstr)
-
-            # Single words without spaces that are very long
-            if len(msgid) > 30:
-                continue
-           
-            # Single chars provide no value
-            if len(msgid) < 2:
-                continue
-
-            if not msgid in terms.keys():
-                translations = []
-            else:
-                translations = terms[msgid]
-
-            source_words.add(msgid)
-            translations.append(msgstr)
-            terms[msgid] = translations
-
     
-        documents[filename] = terms
-        files += 1
-        #if files > 10:
-        #    break
- 
-    #dump_documents(documents)
+def process_projects():
+
+    corpus = Corpus(src_directory)
+    corpus.process()
 
     # 
     # Processed
@@ -288,17 +264,17 @@ def process_projects():
     tfxdf = {}
     df = {}
 
-    for source_word in source_words:
+    for source_word in corpus.source_words:
         frequency = 0
         documents_appear = 0
-        for document_key_filename in documents.keys():
-            if source_word in documents[document_key_filename]: # Word not in the file
+        for document_key_filename in corpus.documents.keys():
+            if source_word in corpus.documents[document_key_filename]: # Word not in the file
                 documents_appear += 1
-                terms = documents[document_key_filename][source_word]
+                terms = corpus.documents[document_key_filename][source_word]
                 frequency += len(terms)
 
         tf[source_word] = frequency
-        _idf = math.log(len(documents) / documents_appear)
+        _idf = math.log(len(corpus.documents) / documents_appear)
         idf[source_word] = _idf
         df[source_word] = documents_appear
         tfxidf[source_word] = frequency * _idf
@@ -307,9 +283,10 @@ def process_projects():
 
     terms_recull = read_recull()
 
-    calculate_most_frequent(source_words, tf, df, tfxdf, terms_recull)
+    calculate_most_frequent(corpus.source_words, tf, df, tfxdf, terms_recull)
     #create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull)
-    create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull)
+    create_html_glossary_for_all_projects(corpus.documents, corpus.source_words, tfxdf, terms_recull, 
+                                          corpus.strings, corpus.strings_selected)
 
     # tf x idf
     f = open('td-idx.txt','w')        
@@ -323,17 +300,31 @@ def process_projects():
 def read_parameters():
 
     global src_directory
+    global html_comment
+    global html_file
    
     parser = OptionParser()
 
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
-                      default = "pos/",
+                      #default = "/home/jordi/sc/other/src/pos/",
+                      default = "sc-tm-pos/",
                       help="Directory to find the PO files")
+
+    parser.add_option("-c", "--comment",
+                      action="store", type="string", dest="html_comment",
+                      default = "",
+                      help="HTML comment to add")
+
+    parser.add_option("-t", "--html-file",
+                      action="store", type="string", dest="html_file",
+                      default = "glossary.html",
+                      help="HTML file to export")
 
     (options, args) = parser.parse_args()
     src_directory = options.src_directory
-    
+    html_comment = options.html_comment
+    html_file = options.html_file
 
 def main():
     
