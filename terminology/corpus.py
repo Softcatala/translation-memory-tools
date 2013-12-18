@@ -38,7 +38,7 @@ class Corpus:
     def _clean_string(self, result):
 
         chars = {'_', '&', '~',  # Accelarators
-                ':', ',' # Punctuations
+                ':', ',', '...' # Punctuations
               }
 
         for c in chars:
