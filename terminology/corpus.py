@@ -91,8 +91,8 @@ class Corpus:
                 self.strings_selected = self.strings_selected + 1
                 msgstr = self._clean_string(entry.msgstr)
 
-                log = u'source:{0} ({1}) - target:{2} ({3})\n'.format(msgid, entry.msgid, \
-                        msgstr, entry.msgstr)
+                log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'.format(msgid, entry.msgid, \
+                        msgstr, entry.msgstr, filename)
 
                 f.write(log.encode('utf-8')) 
 
