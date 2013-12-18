@@ -72,6 +72,8 @@ class Corpus:
 
         findFiles = FindFiles()
 
+        f = open('corpus.txt','w')
+
         for filename in findFiles.find(self.directory, '*.po'):
             print "Reading: " + filename
 
@@ -89,6 +91,11 @@ class Corpus:
                 self.strings_selected = self.strings_selected + 1
                 msgstr = self._clean_string(entry.msgstr)
 
+                log = u'source:{0} ({1}) - target:{2} ({3})\n'.format(msgid, entry.msgid, \
+                        msgstr, entry.msgstr)
+
+                f.write(log.encode('utf-8')) 
+
                 if not msgid in terms.keys():
                     translations = []
                 else:
@@ -103,6 +110,7 @@ class Corpus:
             #if self.files > 3:
             #    break
 
+        f.close()
         #self.dump_documents()
 
     def dump_documents(self):
