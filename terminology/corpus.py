@@ -78,7 +78,7 @@ class Corpus:
             pofile = polib.pofile(filename)
 
             terms = {}
-            for entry in pofile:
+            for entry in pofile.translated_entries():
 
                 self.strings = self.strings + 1
 
