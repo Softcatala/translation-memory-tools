@@ -26,6 +26,8 @@ import math
 import polib
 import datetime
 import cgi
+import os
+import logging
 from optparse import OptionParser
 from corpus import Corpus
 
@@ -361,25 +363,30 @@ def read_parameters():
     html_comment = options.html_comment
     html_file = options.html_file
 
+def init_logging():
+    logfile = 'term-extract.log'
+
+    if os.path.isfile(logfile):
+        os.remove(logfile)
+
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
+    logger = logging.getLogger('')
+    console = logging.StreamHandler()
+    console.setLevel(logging.INFO)
+    logger.addHandler(console)
+
 def main():
     
     print "Extracts terminology"
     print "Use --help for assistance"
 
+    start_time = time.time()
+    init_logging()
     read_parameters()
     process_projects()
-    return
+    end_time = time.time() - start_time
+    print "time used to create the glossaries: " + str(end_time)
 
-    try:
-        start_time = time.time()
-        process_projects()
-        end_time = time.time() - start_time
-        print "time used to create the glossaries: " + str(end_time)
-
-    except Exception as detail:
-        print "Exception!"
-        print detail
-    
 
 if __name__ == "__main__":
     main()

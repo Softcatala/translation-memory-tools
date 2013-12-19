@@ -19,6 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import polib
+
 from findfiles import FindFiles
 
 class Corpus:
@@ -63,6 +64,10 @@ class Corpus:
         # Single chars provide no value
         if len(source) < 2:
             return False
+
+        # Numeric only strings should not be considered
+        if source.isdigit():
+            return False            
 
         return True
 
