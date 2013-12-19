@@ -26,7 +26,7 @@ class Corpus:
     '''Loads different PO files that build the corpus'''
     '''Strings that are not suitable candidates are discared'''
     '''We do a minimum clean up of strings'''
-    
+
     def __init__(self, directory):
         self.directory = directory
         self.source_words = set()
@@ -35,11 +35,25 @@ class Corpus:
         self.strings = 0
         self.strings_selected = 0
         self.translations = 0
+        self.stop_words = set()
+
+    def _read_stop_words(self):
+
+        _file = open("stop-words.txt")
+
+        while True:
+            line = _file.readline()
+            if not line:
+                break
+
+            word = line.strip()
+            word = word.lower()
+            self.stop_words.add(word)
 
     def _clean_string(self, result):
 
         chars = {'_', '&', '~',  # Accelarators
-                ':', ',', '...', u'…' # Punctuations
+                ':', ',', '...', u'…'  # Punctuations
               }
 
         for c in chars:
@@ -67,7 +81,10 @@ class Corpus:
 
         # Numeric only strings should not be considered
         if source.isdigit():
-            return False            
+            return False
+
+        if source in self.stop_words:
+            return False
 
         return True
 
@@ -77,9 +94,11 @@ class Corpus:
     #
     def process(self):
 
+        self._read_stop_words()
+
         findFiles = FindFiles()
 
-        f = open('corpus.txt','w')
+        f = open('corpus.txt', 'w')
 
         for filename in findFiles.find(self.directory, '*.po'):
             print "Reading: " + filename
@@ -91,7 +110,7 @@ class Corpus:
 
                 self.strings = self.strings + 1
 
-                msgid = self._clean_string(entry.msgid)             
+                msgid = self._clean_string(entry.msgid)
                 if self._should_select_string(msgid) is False:
                     continue
     
@@ -101,7 +120,7 @@ class Corpus:
                 log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'.format(msgid, entry.msgid, \
                         msgstr, entry.msgstr, filename)
 
-                f.write(log.encode('utf-8')) 
+                f.write(log.encode('utf-8'))
 
                 if not msgid in terms.keys():
                     translations = []
