@@ -33,12 +33,12 @@ class Corpus:
         self.files = 0
         self.strings = 0
         self.strings_selected = 0
-
+        self.translations = 0
 
     def _clean_string(self, result):
 
         chars = {'_', '&', '~',  # Accelarators
-                ':', ',', '...' # Punctuations
+                ':', ',', '...', u'…' # Punctuations
               }
 
         for c in chars:
