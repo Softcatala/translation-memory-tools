@@ -44,7 +44,9 @@ class Corpus:
         for c in chars:
             result = result.replace(c, '')
 
-        result = result.lower()
+        #remove all the leading and trailing whitespace characters 
+        result = result.strip()
+        result = r.lower()
         return result
 
 
