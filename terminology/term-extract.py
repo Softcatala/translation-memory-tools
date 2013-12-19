@@ -108,7 +108,7 @@ def create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recul
    
     f.close()
 
-def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull, strings, strings_selected):
+def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull, terms_microsoft, strings, strings_selected):
 
     global html_file
 
@@ -126,6 +126,7 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     html += u'<li>La columna català és l\'opció més comuna.</li>'
     html += u'<li>Usada indica el % d\'ús respecte a altres opcions i coincidències els cops que s\'ha trobat.</li>'
     html += u'<li>(r) indica el terme es troba a l\'últim Recull de termes publicat.</li>'    
+    html += u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'    
     html += u'</ul>'
     
     html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
@@ -141,12 +142,23 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     first_50 = 0
     first_100 = 0
     first_500 = 0
+    first_50_m = 0
+    first_100_m = 0
+    first_500_m = 0
     for term in terms:
         if term in terms_recull.keys():
-            inrecull = ' (r)'
+            sources = ' (r)'
+            in_recull = True
         else:
-            inrecull = ''
+            sources = ''
+            in_recull = False
 
+        if term in terms_microsoft.keys():
+            sources += ' (m)'
+            in_microsoft = True
+        else:
+            in_microsoft = False
+       
         item += 1
 
         translations = create_translations_for_word_sorted_by_frequency(documents, term)
@@ -158,20 +170,29 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     
         html = u"<tr>\r"
         html += u'<td>{0}</td>'.format(item)
-        html += u'<td>{0}{1}</td>'.format(cgi.escape(term), inrecull)
+        html += u'<td>{0}{1}</td>'.format(cgi.escape(term), sources)
         html += u'<td>{0}</td>'.format(cgi.escape(translations[0].translation))
         html += u'<td>{0}</td>'.format(options)
         html += u"</tr>\r"
         f.write(html.encode('utf-8'))
 
-        if item < 50 and len(inrecull) > 0:
+        if item < 50 and in_recull:
             first_50 += 1
         
-        if item < 100 and len(inrecull) > 0:
+        if item < 100 and in_recull:
             first_100 += 1
 
-        if item < 500 and len(inrecull) > 0:
+        if item < 500 and in_recull:
             first_500 += 1
+
+        if item < 50 and in_microsoft:
+            first_50_m += 1
+        
+        if item < 100 and in_microsoft:
+            first_100_m += 1
+
+        if item < 500 and in_microsoft:
+            first_500_m += 1
 
         if item >= 1000:
             break
@@ -184,10 +205,13 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     html += '<p>Cadenes analitzades: {0}</p>'.format(strings) 
     html += '<p>Cadenes seleccionades: {0} - {1}%</p>'.format(strings_selected, 100 * strings_selected / strings) 
     html += u'<p>Termes únics totals selecionats: {0}</p>'.format(len(source_words))
+    html += u'<p><b>Mesures de qualitat</b></p>'
     html += '<p>Dels 50 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_50 * 100 / 50, first_50)
     html += '<p>Dels 100 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_100 * 100 / 100, first_100)       
     html += '<p>Dels 500 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_500 * 100 / 500, first_500) 
-
+    html += '<p>Dels 50 primers termes quants eren al glossari de Microsoft: {0}% ({1})</p>'.format(first_50_m * 100 / 50, first_50_m)
+    html += '<p>Dels 100 primers termes quants eren al glossari de Microsoft: {0}% ({1})</p>'.format(first_100_m * 100 / 100, first_100_m)       
+    html += '<p>Dels 500 primers termes quants eren al glossari de Microsoft: {0}% ({1})</p>'.format(first_500_m * 100 / 500, first_500_m) 
     if len(html_comment) > 0:
         u = unicode(html_comment, "UTF-8") # utf-8 is the system encoding
         html += u"Comentari de generació: " + u 
@@ -200,6 +224,16 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
 def read_recull():
 
     pofile = polib.pofile('recull/recull-glossary.po')
+        
+    terms = {}
+    for entry in pofile:
+        terms[entry.msgid.lower()] = entry.msgstr.lower()
+
+    return terms
+
+def read_microsoft():
+
+    pofile = polib.pofile('microsoft/microsoft-terms.po')
         
     terms = {}
     for entry in pofile:
@@ -282,10 +316,11 @@ def process_projects():
         #print 'Source word {0} - {1} - {2}'.format(source_word.encode('utf-8'), frequency, _idf)
 
     terms_recull = read_recull()
+    terms_microsoft = read_microsoft()
 
     calculate_most_frequent(corpus.source_words, tf, df, tfxdf, terms_recull)
     #create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull)
-    create_html_glossary_for_all_projects(corpus.documents, corpus.source_words, tfxdf, terms_recull, 
+    create_html_glossary_for_all_projects(corpus.documents, corpus.source_words, tfxdf, terms_recull, terms_microsoft,
                                           corpus.strings, corpus.strings_selected)
 
     # tf x idf
