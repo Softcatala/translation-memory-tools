@@ -65,7 +65,7 @@ class Corpus:
         return result
 
 
-    def _should_select_string(self, source):
+    def _should_select_string(self, source, target):
 
         # Only 1 word terms for now
         if len(source.split()) > 1:
@@ -84,6 +84,9 @@ class Corpus:
             return False
 
         if source in self.stop_words:
+            return False
+
+        if len(target) == 0:
             return False
 
         return True
@@ -111,11 +114,13 @@ class Corpus:
                 self.strings = self.strings + 1
 
                 msgid = self._clean_string(entry.msgid)
-                if self._should_select_string(msgid) is False:
+                msgstr = self._clean_string(entry.msgstr)
+
+                if self._should_select_string(msgid, msgstr) is False:
                     continue
     
                 self.strings_selected = self.strings_selected + 1
-                msgstr = self._clean_string(entry.msgstr)
+         
 
                 log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'.format(msgid, entry.msgid, \
                         msgstr, entry.msgstr, filename)
