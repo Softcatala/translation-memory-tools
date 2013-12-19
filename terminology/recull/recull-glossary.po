@@ -1,0 +1,6124 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: info@softcatala.org\n"
+"POT-Creation-Date: 2007-10-18 14:00+0100\n"
+"PO-Revision-Date: 2007-10-18 14:00+0100\n"
+"Last-Translator: info@softcatala.org\n"
+"Language-Team: Catalan <info@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "3D shading"
+msgstr "Ombreig en 3D"
+
+msgid "Abnormal termination"
+msgstr "Fi anormal"
+
+msgid "Abort"
+msgstr "Interrupció"
+
+msgid "Abort"
+msgstr "Interrompre"
+
+msgid "Aborted"
+msgstr "Interromput -uda"
+
+msgid "Abortion"
+msgstr "Interrupció"
+
+msgid "About"
+msgstr "Quant a"
+
+msgid "Above"
+msgstr "Més amunt, a sobre, abans"
+
+msgid "Above"
+msgstr "Superior"
+
+msgid "Accelerator"
+msgstr "(tecla de) drecera"
+
+msgid "Accept"
+msgstr "Acceptar"
+
+msgid "Acceptable use policy"
+msgstr "Normes d'ús"
+
+msgid "Access"
+msgstr "Accés"
+
+msgid "Access code"
+msgstr "Contrasenya"
+
+msgid "Access control"
+msgstr "Control d'accés"
+
+msgid "Access key"
+msgstr "Contrasenya"
+
+msgid "Access permission"
+msgstr "Permís d'accés"
+
+msgid "Access time"
+msgstr "Temps d'accés"
+
+msgid "Access"
+msgstr "Accedir"
+
+msgid "Account"
+msgstr "Compte"
+
+msgid "Account name"
+msgstr "Nom de compte"
+
+msgid "Account policy"
+msgstr "Política de comptes"
+
+msgid "Accrued interest"
+msgstr "Interès acumulat"
+
+msgid "Acknowledgement"
+msgstr "Justificant de recepció || agraïments (m pl)"
+
+msgid "Acronym"
+msgstr "Acrònim"
+
+msgid "Action"
+msgstr "Acció"
+
+msgid "Activate"
+msgstr "Activar"
+
+msgid "Ad"
+msgstr "Anunci"
+
+msgid "Ad banner"
+msgstr "Bàner"
+
+msgid "Adapt"
+msgstr "Adaptar"
+
+msgid "Adaptation"
+msgstr "Adaptació"
+
+msgid "Adapter"
+msgstr "Adaptador"
+
+msgid "Adapter dongle"
+msgstr "Motxilla"
+
+msgid "Add-in"
+msgstr "Complement"
+
+msgid "Add-on"
+msgstr "Complement"
+
+msgid "Add"
+msgstr "Afegir"
+
+msgid "Address"
+msgstr "Adreça"
+
+msgid "Address bar"
+msgstr "Barra d'adreces"
+
+msgid "Address book"
+msgstr "Llibreta d'adreces"
+
+msgid "Advanced"
+msgstr "Avançat -ada"
+
+msgid "Advanced search"
+msgstr "Cerca avançada"
+
+msgid "Advert"
+msgstr "Anunci"
+
+msgid "Advertisement"
+msgstr "Anunci"
+
+msgid "Advertising"
+msgstr "Publicitari -ària"
+
+msgid "Advertising"
+msgstr "Publicitat"
+
+msgid "Advertising banner"
+msgstr "Bàner"
+
+msgid "Advisor"
+msgstr "Guia"
+
+msgid "Adware"
+msgstr "Programari de publicitat"
+
+msgid "Again"
+msgstr "Tornar a..., ...de nou, ...una altra vegada"
+
+msgid "Alert"
+msgstr "(missatge d') avís || atenció (f)"
+
+msgid "Alert"
+msgstr "Avisar"
+
+msgid "Algorithm"
+msgstr "Algorisme, algoritme"
+
+msgid "Alias"
+msgstr "Àlies"
+
+msgid "Aliasing"
+msgstr "Aliàsing"
+
+msgid "Align"
+msgstr "Alinear"
+
+msgid "Alignment"
+msgstr "Alineació"
+
+msgid "Alphanumeric"
+msgstr "Alfanumèric -a"
+
+msgid "Alt key"
+msgstr "Tecla d'alternativa"
+
+msgid "Alternate key"
+msgstr "Tecla d'alternativa"
+
+msgid "Alternate"
+msgstr "Alternatiu -iva"
+
+msgid "Alternate"
+msgstr "Alternar"
+
+msgid "AltGr key"
+msgstr "Tecla d'alternativa gràfica"
+
+msgid "Alt graphic key"
+msgstr "Tecla d'alternativa gràfica"
+
+msgid "Always"
+msgstr "Sempre"
+
+msgid "Always on top"
+msgstr "Sempre visible"
+
+msgid "Allocate"
+msgstr "Assignar"
+
+msgid "Allocation"
+msgstr "Assignació"
+
+msgid "Allow"
+msgstr "Autoritzar, permetre"
+
+msgid "Allowed"
+msgstr "Autoritzat -ada, permès -esa"
+
+msgid "Amplification"
+msgstr "Amplificació"
+
+msgid "Amplifier"
+msgstr "Amplificador"
+
+msgid "Amplify"
+msgstr "Amplificar"
+
+msgid "Analog"
+msgstr "Analògic -a"
+
+msgid "Analogic"
+msgstr "Analògic -a"
+
+msgid "Analyst"
+msgstr "Analista"
+
+msgid "Analyzer"
+msgstr "Analitzador"
+
+msgid "Anchor"
+msgstr "Àncora"
+
+msgid "Anchor"
+msgstr "Ancorar"
+
+msgid "Animated"
+msgstr "Animat -ada"
+
+msgid "Animatics"
+msgstr "Animació assistida per ordinador"
+
+msgid "Animation"
+msgstr "Animació"
+
+msgid "Animatronics"
+msgstr "Animació electrònica"
+
+msgid "Announcement"
+msgstr "Avís"
+
+msgid "Annoying"
+msgstr "Molest -a"
+
+msgid "Anonymous"
+msgstr "Anònim -a"
+
+msgid "Anonymous mail"
+msgstr "Correu anònim"
+
+msgid "Antenna"
+msgstr "Antena"
+
+msgid "Antialiasing"
+msgstr "Antialiàsing"
+
+msgid "Antidote"
+msgstr "Antídot"
+
+msgid "Antivirus"
+msgstr "Antivirus"
+
+msgid "Antivirus program"
+msgstr "Antivirus"
+
+msgid "Anyway"
+msgstr "Igualment"
+
+msgid "Appear"
+msgstr "Aparèixer || semblar (v tr)"
+
+msgid "Appearance"
+msgstr "Aparença"
+
+msgid "Append"
+msgstr "Afegir"
+
+msgid "Applet"
+msgstr "Miniaplicació"
+
+msgid "Application"
+msgstr "Aplicació || sol·licitud"
+
+msgid "Apply"
+msgstr "Aplicar || sol·licitar"
+
+msgid "Approximate"
+msgstr "Aproximat -ada"
+
+msgid "Archive"
+msgstr "Arxiu"
+
+msgid "Archive"
+msgstr "Arxivar"
+
+msgid "Archiver"
+msgstr "Arxivador"
+
+msgid "Archiving"
+msgstr "Arxivament"
+
+msgid "Argument"
+msgstr "Argument"
+
+msgid "Arrange"
+msgstr "Organitzar"
+
+msgid "Arrangement"
+msgstr "Configuració"
+
+msgid "Array"
+msgstr "Matriu"
+
+msgid "Arrow key"
+msgstr "Tecla de cursor, tecla de desplaçament"
+
+msgid "Arrowhead"
+msgstr "Extrem de fletxa"
+
+msgid "Artificial language"
+msgstr "Llenguatge artificial"
+
+msgid "Ascending"
+msgstr "Ascendent"
+
+msgid "Ask"
+msgstr "Preguntar, demanar"
+
+msgid "Aspect"
+msgstr "Aspecte"
+
+msgid "Aspect ratio"
+msgstr "Relació d'aspecte"
+
+msgid "Assemble"
+msgstr "Assemblar"
+
+msgid "Assembler"
+msgstr "Assemblador"
+
+msgid "Assembler language"
+msgstr "Llenguatge d'assemblador"
+
+msgid "Assembling"
+msgstr "Assemblatge"
+
+msgid "Assembly language"
+msgstr "Llenguatge d'assemblador"
+
+msgid "Assertion"
+msgstr "Asserció"
+
+msgid "Asset"
+msgstr "Bé (financer)"
+
+msgid "Assistive technology"
+msgstr "Tecnologies d'assistència"
+
+msgid "Assistive tools"
+msgstr "Eines d'assistència"
+
+msgid "Associated"
+msgstr "Associat -ada"
+
+msgid "Assume"
+msgstr "Assumir"
+
+msgid "Asterisk key"
+msgstr "Tecla d'asterisc"
+
+msgid "At (@)"
+msgstr "Arrova"
+
+msgid "Attach"
+msgstr "Adjuntar"
+
+msgid "Attached"
+msgstr "Adjunt -a"
+
+msgid "Attachment"
+msgstr "Adjunció, annex (m), fitxer (m) adjunt"
+
+msgid "Attempt"
+msgstr "Intentar"
+
+msgid "Attribute"
+msgstr "Atribut"
+
+msgid "Audio"
+msgstr "Àudio"
+
+msgid "Audio codec"
+msgstr "Còdec d'àudio"
+
+msgid "Audio ripper"
+msgstr "Capturador d'àudio"
+
+msgid "Audiobook"
+msgstr "Audiollibre"
+
+msgid "Authenticate"
+msgstr "Autenticar"
+
+msgid "Authenticated"
+msgstr "Autenticat -ada"
+
+msgid "Authentication"
+msgstr "Autenticació"
+
+msgid "Authoring"
+msgstr "Creació personalitzada"
+
+msgid "Authorization"
+msgstr "Autorització"
+
+msgid "Auto-"
+msgstr "Automàtic-a || automàticament (adv)"
+
+msgid "Autocomplete"
+msgstr "Compleció automàtica"
+
+msgid "Autocompletion"
+msgstr "Compleció automàtica"
+
+msgid "Autoconfiguration"
+msgstr "Configuració automàtica"
+
+msgid "Autoconfigure"
+msgstr "Configurar automàticament"
+
+msgid "Autodetection"
+msgstr "Detecció automàtica"
+
+msgid "Autoload"
+msgstr "Càrrega automàtica"
+
+msgid "Automate"
+msgstr "Automatitzar"
+
+msgid "Automatic"
+msgstr "Automàtic -a"
+
+msgid "Automatics"
+msgstr "Automàtica"
+
+msgid "Autosaving"
+msgstr "Desament automàtic"
+
+msgid "Autoscroll"
+msgstr "Desplaçament automàtic"
+
+msgid "Available"
+msgstr "Disponible"
+
+msgid "Avatar"
+msgstr "Avatar"
+
+msgid "Average"
+msgstr "Mitjà -ana"
+
+msgid "Average"
+msgstr "Mitjana"
+
+msgid "Back"
+msgstr "Enrere"
+
+msgid "Back end"
+msgstr "Rerefons, segon pla en execució, execució secundària (f)"
+
+msgid "Backbone"
+msgstr "Xarxa troncal"
+
+msgid "Backbone network"
+msgstr "Xarxa troncal"
+
+msgid "Backend"
+msgstr "Rerefons, segon pla en execució, execució secundària (f)"
+
+msgid "Background"
+msgstr "Segon pla, fons"
+
+msgid "Backslash"
+msgstr "Barra inversa"
+
+msgid "Backslash key"
+msgstr "Tecla de barra inversa"
+
+msgid "Backtrack"
+msgstr "Tornar enrere"
+
+msgid "Backup"
+msgstr "Còpia de seguretat"
+
+msgid "Backup copy"
+msgstr "Còpia de seguretat"
+
+msgid "Backup"
+msgstr "Fer còpies de seguretat"
+
+msgid "Bad"
+msgstr "Incorrecte -a, erroni -ònia"
+
+msgid "Bad read"
+msgstr "Lectura errònia"
+
+msgid "Balance"
+msgstr "Equilibrar"
+
+msgid "Ban"
+msgstr "Bandejar, expulsar"
+
+msgid "Bandwidth"
+msgstr "Amplada de banda"
+
+msgid "Banner"
+msgstr "Bàner"
+
+msgid "Bar"
+msgstr "Barra"
+
+msgid "Bar code"
+msgstr "Codi de barres"
+
+msgid "Baseline"
+msgstr "Punt de referència"
+
+msgid "Batch"
+msgstr "Lot"
+
+msgid "Batch"
+msgstr "Massiu -iva"
+
+msgid "Batch file"
+msgstr "Fitxer de lot"
+
+msgid "Batch processing"
+msgstr "Processament per lots, processament en temps diferit"
+
+msgid "Battery"
+msgstr "Bateria"
+
+msgid "Baud"
+msgstr "Baud"
+
+msgid "BBS"
+msgstr "BBS"
+
+msgid "Beeper"
+msgstr "Cercapersones"
+
+msgid "Below"
+msgstr "Inferior"
+
+msgid "Below"
+msgstr "Més avall, a sota, a continuació"
+
+msgid "Benchmark"
+msgstr "Test de referència"
+
+msgid "Beta version"
+msgstr "Versió beta"
+
+msgid "Billing information"
+msgstr "Dades de facturació"
+
+msgid "Binary"
+msgstr "Binari -ària"
+
+msgid "Binary code"
+msgstr "Codi binari"
+
+msgid "Bind"
+msgstr "Vincular"
+
+msgid "Binding"
+msgstr "Vinculació"
+
+msgid "Bit"
+msgstr "Bit (sbl. b)"
+
+msgid "Bit rate"
+msgstr "Velocitat de transmissió || taxa de bits"
+
+msgid "Bitrate"
+msgstr "Velocitat de transmissió || taxa de bits"
+
+msgid "Bitmap"
+msgstr "Mapa de bits"
+
+msgid "Bitwise"
+msgstr "Bit a bit"
+
+msgid "Blank"
+msgstr "En blanc"
+
+msgid "Blend"
+msgstr "Barrejar"
+
+msgid "Blink"
+msgstr "Parpellejar"
+
+msgid "Blinking"
+msgstr "Parpelleig"
+
+msgid "Block"
+msgstr "Bloc"
+
+msgid "Block"
+msgstr "Bloquejar, blocar"
+
+msgid "Blog"
+msgstr "Bloc"
+
+msgid "Blur"
+msgstr "Difuminar"
+
+msgid "Board"
+msgstr "Targeta"
+
+msgid "Body"
+msgstr "Cos"
+
+msgid "Bold"
+msgstr "Negreta"
+
+msgid "Bond"
+msgstr "Bo (financer)"
+
+msgid "Bookmark"
+msgstr "Adreça d'interès, preferit (m)"
+
+msgid "Bookmarks"
+msgstr "(llista d') adreces d'interès"
+
+msgid "Boolean"
+msgstr "Booleà -ana"
+
+msgid "Boot"
+msgstr "Arrencada"
+
+msgid "Boot"
+msgstr "Arrencar"
+
+msgid "Bootloader"
+msgstr "Carregador de l'arrencada"
+
+msgid "Bootstrap"
+msgstr "Arrencar"
+
+msgid "Border"
+msgstr "Vora, contorn (m)"
+
+msgid "Bottom"
+msgstr "Inferior"
+
+msgid "Bottom"
+msgstr "Part inferior"
+
+msgid "Bounce"
+msgstr "Retornar"
+
+msgid "Bounced message"
+msgstr "Missatge retornat"
+
+msgid "Bound"
+msgstr "Límit"
+
+msgid "Box"
+msgstr "Quadre || casella (f) || bústia (f)"
+
+msgid "Bracket"
+msgstr "Claudàtor"
+
+msgid "Branch"
+msgstr "Bifurcació"
+
+msgid "Branch instruction"
+msgstr "Bifurcació"
+
+msgid "Branch"
+msgstr "Bifurcar"
+
+msgid "Branching"
+msgstr "Bifurcació"
+
+msgid "Branching point"
+msgstr "Punt de ramificació"
+
+msgid "Breadcrumb"
+msgstr "Ruta de navegació"
+
+msgid "Break"
+msgstr "Salt || pausa (f)"
+
+msgid "Break"
+msgstr "Tecla d'interrupció"
+
+msgid "Break key"
+msgstr "Tecla d'interrupció"
+
+msgid "Break"
+msgstr "Interrompre"
+
+msgid "Bridge"
+msgstr "Pont"
+
+msgid "Brightness"
+msgstr "Brillantor"
+
+msgid "Bring up"
+msgstr "Mostrar"
+
+msgid "Broadband"
+msgstr "Banda ampla"
+
+msgid "Broadcast"
+msgstr "Difusió"
+
+msgid "Broken link"
+msgstr "Enllaç no vàlid"
+
+msgid "Browse for"
+msgstr "Cercar"
+
+msgid "Browse"
+msgstr "Navegar, explorar (v tr)"
+
+msgid "Browser"
+msgstr "Navegador"
+
+msgid "Browsing"
+msgstr "Navegació"
+
+msgid "BS"
+msgstr "Tecla de retrocés"
+
+msgid "Backspace key"
+msgstr "Tecla de retrocés"
+
+msgid "Buddy list"
+msgstr "Llista d'amics"
+
+msgid "Buffer"
+msgstr "Memòria intermèdia"
+
+msgid "Bug"
+msgstr "Error, error de programació"
+
+msgid "Build"
+msgstr "Muntatge"
+
+msgid "Built-in"
+msgstr "Integrat -ada"
+
+msgid "Bullet"
+msgstr "Pic"
+
+msgid "Bulleted list"
+msgstr "Llista de pics"
+
+msgid "Bulletin board"
+msgstr "BBS"
+
+msgid "Bulletin board system"
+msgstr "BBS"
+
+msgid "Burn"
+msgstr "Enregistrar"
+
+msgid "Burner"
+msgstr "Enregistrador"
+
+msgid "Bus"
+msgstr "Bus"
+
+msgid "Busy"
+msgstr "Ocupat -ada"
+
+msgid "Button"
+msgstr "Botó"
+
+msgid "Byte"
+msgstr "Byte (sbl. B)"
+
+msgid "Cache busting"
+msgstr "Bloqueig de memòria cau"
+
+msgid "Cache"
+msgstr "Memòria cau"
+
+msgid "Cache memory"
+msgstr "Memòria cau"
+
+msgid "Call"
+msgstr "Cridar"
+
+msgid "Callback"
+msgstr "Crida de retorn, repetició de trucada"
+
+msgid "Cancel"
+msgstr "Cancel·lar, anul·lar"
+
+msgid "Cancelled"
+msgstr "Cancel·lat -ada, anul·lat -ada"
+
+msgid "Canvas"
+msgstr "Llenç"
+
+msgid "Capability"
+msgstr "Capacitat, aptitud"
+
+msgid "Capital letter"
+msgstr "Majúscula"
+
+msgid "Capitalized words"
+msgstr "Paraules amb  majúscula inicial"
+
+msgid "CapsLock"
+msgstr "Tecla de fixació de majúscules"
+
+msgid "Caps lock key"
+msgstr "Tecla de fixació de majúscules"
+
+msgid "Caption"
+msgstr "Títol, llegenda (f)"
+
+msgid "Card"
+msgstr "Targeta"
+
+msgid "Cascade"
+msgstr "En cascada"
+
+msgid "Case sensitive"
+msgstr "(que) distingeix entre majúscules i minúscules"
+
+msgid "Catch"
+msgstr "Capturar"
+
+msgid "Catcher"
+msgstr "Capturador"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Cause"
+msgstr "Motiu"
+
+msgid "Cause"
+msgstr "Provocar, causar"
+
+msgid "Cell"
+msgstr "Cel·la"
+
+msgid "Cellular telephone"
+msgstr "(telèfon) mòbil"
+
+msgid "Center"
+msgstr "Centrar"
+
+msgid "Certificate"
+msgstr "Certificat"
+
+msgid "Certificate authority"
+msgstr "Entitat certificadora"
+
+msgid "Certificate revocation list"
+msgstr "Llista de revocació de certificats"
+
+msgid "Cipher"
+msgstr "Xifra"
+
+msgid "Cipher"
+msgstr "Xifrar, encriptar"
+
+msgid "Circuit"
+msgstr "Circuit"
+
+msgid "Class"
+msgstr "Classe"
+
+msgid "Classification"
+msgstr "Classificació"
+
+msgid "Clear"
+msgstr "Buidar, esborrar, netejar, suprimir"
+
+msgid "Click"
+msgstr "Clic"
+
+msgid "Click"
+msgstr "Fer clic, clicar"
+
+msgid "Clickthrough"
+msgstr "Clic d'entrada"
+
+msgid "Click-through"
+msgstr "Clic d'entrada"
+
+msgid "Client"
+msgstr "Client"
+
+msgid "Client-server architecture"
+msgstr "Arquitectura client-servidor"
+
+msgid "Clipart"
+msgstr "Fitxer d'imatges"
+
+msgid "Clipboard"
+msgstr "Porta-retalls"
+
+msgid "Close"
+msgstr "Tancar"
+
+msgid "Cluster"
+msgstr "Grup de sectors ||  centre de servidors"
+
+msgid "Cluster"
+msgstr "Clusteritzar"
+
+msgid "Clustering"
+msgstr "Clusterització"
+
+msgid "Clusterization"
+msgstr "Clusterització"
+
+msgid "Clusterize"
+msgstr "Clusteritzar"
+
+msgid "Code"
+msgstr "Codi"
+
+msgid "Code"
+msgstr "Codificar"
+
+msgid "Codec"
+msgstr "Còdec"
+
+msgid "Coder"
+msgstr "Codificador"
+
+msgid "Coder-decoder"
+msgstr "Còdec"
+
+msgid "Coding"
+msgstr "Codificació"
+
+msgid "Color depth"
+msgstr "Profunditat de color"
+
+msgid "Color scheme"
+msgstr "Combinació de colors"
+
+msgid "Collapse"
+msgstr "Reduir"
+
+msgid "Collate"
+msgstr "Compaginar"
+
+msgid "Collect"
+msgstr "Recollir, aplegar"
+
+msgid "Collision"
+msgstr "Col·lisió"
+
+msgid "Combined"
+msgstr "Combinat -ada"
+
+msgid "Combo box"
+msgstr "Quadre combinat"
+
+msgid "Command"
+msgstr "Ordre"
+
+msgid "Command key"
+msgstr "Tecla d'ordre (Macintosh)"
+
+msgid "Command line"
+msgstr "Línia d'ordres"
+
+msgid "Comment"
+msgstr "Comentari"
+
+msgid "Commit"
+msgstr "Validar || publicar"
+
+msgid "Communicate"
+msgstr "Comunicar"
+
+msgid "Communication"
+msgstr "Comunicació"
+
+msgid "Compact"
+msgstr "Compactar"
+
+msgid "Compaction"
+msgstr "Compactació"
+
+msgid "Compilation"
+msgstr "Compilació"
+
+msgid "Compiler"
+msgstr "Compilador"
+
+msgid "Compiling program"
+msgstr "Compilador"
+
+msgid "Completed"
+msgstr "Acabat -ada"
+
+msgid "Component"
+msgstr "Component, element"
+
+msgid "Component bar"
+msgstr "Barra d'elements"
+
+msgid "Compose"
+msgstr "Redactar, compondre"
+
+msgid "Composition"
+msgstr "Redacció"
+
+msgid "Compress"
+msgstr "Comprimir"
+
+msgid "Compression"
+msgstr "Compressió"
+
+msgid "Compression algorithm"
+msgstr "Algorisme de compressió"
+
+msgid "Compression ratio"
+msgstr "Ràtio de compressió"
+
+msgid "Compression software"
+msgstr "Compressor"
+
+msgid "Compressor"
+msgstr "Compressor"
+
+msgid "Compressor-decompressor"
+msgstr "Còdec"
+
+msgid "Compute"
+msgstr "Calcular"
+
+msgid "Computer"
+msgstr "Ordinador"
+
+msgid "Computer architecture"
+msgstr "Arquitectura d'ordinador"
+
+msgid "Computer crime"
+msgstr "Delicte informàtic"
+
+msgid "Computer network"
+msgstr "Xarxa informàtica"
+
+msgid "Computer science"
+msgstr "Informàtica"
+
+msgid "Computer security"
+msgstr "Seguretat informàtica"
+
+msgid "Computer system"
+msgstr "Sistema informàtic"
+
+msgid "Computer system administrator"
+msgstr "Administrador -a o gestor -a de sistemes informàtics"
+
+msgid "Computer-aided"
+msgstr "Assistit -ida per ordinador"
+
+msgid "Computer-assisted"
+msgstr "Assistit -ida per ordinador"
+
+msgid "Computer-assisted animation"
+msgstr "Animació assistida per ordinador"
+
+msgid "Computing system"
+msgstr "Sistema informàtic"
+
+msgid "Conductivity"
+msgstr "Conductivitat"
+
+msgid "Conductor"
+msgstr "Conductor"
+
+msgid "Config"
+msgstr "Configuració"
+
+msgid "Configuration"
+msgstr "Configuració"
+
+msgid "Configure"
+msgstr "Configurar"
+
+msgid "Confirm delivery"
+msgstr "Confirmació de recepció"
+
+msgid "Connect"
+msgstr "Connectar"
+
+msgid "Connection"
+msgstr "Connexió"
+
+msgid "Connection accelerator"
+msgstr "Accelerador de connexió"
+
+msgid "Connectivity"
+msgstr "Connectivitat"
+
+msgid "Connector"
+msgstr "Connector"
+
+msgid "Console"
+msgstr "Consola"
+
+msgid "Constraint"
+msgstr "Restricció"
+
+msgid "Contact sheet"
+msgstr "Full de contactes"
+
+msgid "Contact"
+msgstr "Contactar"
+
+msgid "Contain"
+msgstr "Contenir"
+
+msgid "Content"
+msgstr "Contingut"
+
+msgid "Content syndication"
+msgstr "Sindicació de continguts"
+
+msgid "Context sensitive help"
+msgstr "Ajuda contextual"
+
+msgid "Continent"
+msgstr "Continent"
+
+msgid "Continue"
+msgstr "Continuar, seguir"
+
+msgid "Contributor"
+msgstr "Col·laborador -a"
+
+msgid "Control panel"
+msgstr "Tauler de control"
+
+msgid "Controller"
+msgstr "Controlador"
+
+msgid "Conversion"
+msgstr "Conversió"
+
+msgid "Convert"
+msgstr "Convertir"
+
+msgid "Converter"
+msgstr "Convertidor"
+
+msgid "Cookie"
+msgstr "Galeta"
+
+msgid "Copy"
+msgstr "Còpia"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Core"
+msgstr "Ànima"
+
+msgid "Coroutine"
+msgstr "Corutina"
+
+msgid "Correct"
+msgstr "Correcte -a"
+
+msgid "Corrupted"
+msgstr "Malmès -a, corrupte -a"
+
+msgid "Corruption"
+msgstr "Corrupció"
+
+msgid "Count"
+msgstr "Comptar"
+
+msgid "Counter"
+msgstr "Comptador"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Coupon"
+msgstr "Cupó (financer)"
+
+msgid "Coverage"
+msgstr "Cobertura"
+
+msgid "Cracker"
+msgstr "Pirata"
+
+msgid "Crash"
+msgstr "Fallada (f) || accident, trencament"
+
+msgid "Crash"
+msgstr "Fallar"
+
+msgid "Create"
+msgstr "Crear"
+
+msgid "Creation"
+msgstr "Creació"
+
+msgid "Credentials"
+msgstr "Credencials"
+
+msgid "Credit"
+msgstr "Crèdit"
+
+msgid "Credit card"
+msgstr "Targeta de crèdit"
+
+msgid "Credits"
+msgstr "Crèdits"
+
+msgid "Crop"
+msgstr "Escapçar"
+
+msgid "Cross-reference"
+msgstr "Referència encreuada"
+
+msgid "Crossposting"
+msgstr "Enviament múltiple"
+
+msgid "Cryptographic"
+msgstr "Criptogràfic -a"
+
+msgid "Cryptography"
+msgstr "Criptografia"
+
+msgid "Ctrl"
+msgstr "Tecla de control"
+
+msgid "Control key"
+msgstr "Tecla de control"
+
+msgid "Currency"
+msgstr "Moneda"
+
+msgid "Current"
+msgstr "Actual"
+
+msgid "Cursor"
+msgstr "Cursor"
+
+msgid "Custom"
+msgstr "Personalitzat -ada"
+
+msgid "Customer service"
+msgstr "Servei d'atenció al client"
+
+msgid "Customization"
+msgstr "Personalització"
+
+msgid "Customize"
+msgstr "Personalitzar"
+
+msgid "Customized"
+msgstr "Personalitzat -ada"
+
+msgid "Customized catalog"
+msgstr "Catàleg electrònic"
+
+msgid "Cut"
+msgstr "Retallar"
+
+msgid "Cybercafé"
+msgstr "Cibercafè"
+
+msgid "Cybernetics"
+msgstr "Cibernètica"
+
+msgid "Cyberspace"
+msgstr "Ciberespai"
+
+msgid "Cylinder"
+msgstr "Cilindre"
+
+msgid "Chain"
+msgstr "Cadena"
+
+msgid "Change"
+msgstr "Canviar"
+
+msgid "Channel"
+msgstr "Canal"
+
+msgid "Character"
+msgstr "Caràcter"
+
+msgid "Character key"
+msgstr "Tecla de caràcter"
+
+msgid "Character set"
+msgstr "Joc de caràcters"
+
+msgid "Charset"
+msgstr "Joc de caràcters"
+
+msgid "Chart"
+msgstr "Diagrama"
+
+msgid "Chat"
+msgstr "Xat"
+
+msgid "Chat"
+msgstr "Fer un xat, fer xats"
+
+msgid "Cheat"
+msgstr "Fer trampes"
+
+msgid "Check box"
+msgstr "Casella de selecció"
+
+msgid "Check"
+msgstr ""
+"Comprovar, revisar (ortografia), verificar || activar (una casella de "
+"selecció)"
+
+msgid "Checkbox"
+msgstr "Casella de selecció"
+
+msgid "Checker"
+msgstr "Verificador -a"
+
+msgid "Checksum"
+msgstr "Suma de verificació"
+
+msgid "Chip"
+msgstr "Xip"
+
+msgid "Chipset"
+msgstr "Joc de xips"
+
+msgid "Choice"
+msgstr "Opció"
+
+msgid "Choose"
+msgstr "Triar"
+
+msgid "Chunk"
+msgstr "Fragment"
+
+msgid "Daemon"
+msgstr "Dimoni"
+
+msgid "Damaged"
+msgstr "Malmès -esa"
+
+msgid "Dangerous"
+msgstr "Perillós -osa"
+
+msgid "Dash"
+msgstr "Traç"
+
+msgid "Dashboard"
+msgstr "Consola"
+
+msgid "Data"
+msgstr "Dades, informació (f)"
+
+msgid "Data bank"
+msgstr "Banc de dades"
+
+msgid "Data management"
+msgstr "Gestió de dades"
+
+msgid "Data processing"
+msgstr "Processament de dades"
+
+msgid "Data source"
+msgstr "Font de dades"
+
+msgid "Data stream"
+msgstr "Flux de dades"
+
+msgid "Database"
+msgstr "Base de dades"
+
+msgid "Database administrator"
+msgstr "Administrador -a o gestor -a de bases de dades"
+
+msgid "Database manager"
+msgstr "Gestor -a o administrador -a de bases de dades"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Day"
+msgstr "Dia"
+
+msgid "Days ago"
+msgstr "Fa … dies"
+
+msgid "Deadlock"
+msgstr "Interbloqueig"
+
+msgid "Debug"
+msgstr "Depuració"
+
+msgid "Debug"
+msgstr "Depurar"
+
+msgid "Debugger"
+msgstr "Depurador"
+
+msgid "Declaration"
+msgstr "Declaració"
+
+msgid "Decode"
+msgstr "Descodificar"
+
+msgid "Decoder"
+msgstr "Descodificador"
+
+msgid "Decoding"
+msgstr "Descodificació"
+
+msgid "Decompilation"
+msgstr "Descompilació"
+
+msgid "Decompile"
+msgstr "Descompilar"
+
+msgid "Decompiler"
+msgstr "Descompilador"
+
+msgid "Decompression"
+msgstr "Descompressió"
+
+msgid "Decrease"
+msgstr "Reduir"
+
+msgid "Decrypt"
+msgstr "Desencriptar"
+
+msgid "Decryption"
+msgstr "Desencriptatge"
+
+msgid "Default"
+msgstr "Per defecte, predeterminat -ada (adj)"
+
+msgid "Default"
+msgstr "Valor per defecte"
+
+msgid "Definition"
+msgstr "Definició"
+
+msgid "Deinterlace"
+msgstr "Desentrellaçar"
+
+msgid "Del"
+msgstr "Tecla de supressió"
+
+msgid "Delete key"
+msgstr "Tecla de supressió"
+
+msgid "Delay"
+msgstr "Retard"
+
+msgid "Delayed"
+msgstr "Retardat -ada"
+
+msgid "Delete"
+msgstr "Suprimir, eliminar"
+
+msgid "Delimiter"
+msgstr "Delimitador"
+
+msgid "Deliver"
+msgstr "Lliurar"
+
+msgid "Delivery"
+msgstr "Lliurament"
+
+msgid "Denied"
+msgstr "Denegat -ada"
+
+msgid "Deny"
+msgstr "Denegar"
+
+msgid "Dependency"
+msgstr "Dependència"
+
+msgid "Deploy"
+msgstr "Desplegar"
+
+msgid "Deployment"
+msgstr "Desplegament"
+
+msgid "Deprecated"
+msgstr "Desfasat -ada"
+
+msgid "Descending"
+msgstr "Descendent"
+
+msgid "Description"
+msgstr "Descripció"
+
+msgid "Deselect"
+msgstr "Desseleccionar"
+
+msgid "Desktop"
+msgstr "Escriptori"
+
+msgid "Desktop computer"
+msgstr "Ordinador de taula"
+
+msgid "Destination"
+msgstr "Destí, destinació (f)"
+
+msgid "Detach"
+msgstr "Separar"
+
+msgid "Developer"
+msgstr "Desenvolupador -a"
+
+msgid "Device"
+msgstr "Dispositiu, perifèric"
+
+msgid "Dial-in"
+msgstr "Marcatge d'entrada"
+
+msgid "Dial"
+msgstr "Marcar"
+
+msgid "Dialer"
+msgstr "Marcador"
+
+msgid "Dialing"
+msgstr "Marcatge"
+
+msgid "Dialing pad"
+msgstr "Teclat de marcatge"
+
+msgid "Dialog"
+msgstr "Diàleg"
+
+msgid "Dialog box"
+msgstr "Quadre de diàleg"
+
+msgid "Dialup"
+msgstr "Marcatge directe"
+
+msgid "Dial-up"
+msgstr "Marcatge directe"
+
+msgid "Diff"
+msgstr "Comparació de fitxers (terme provisional)"
+
+msgid "Different"
+msgstr "Diferent, altre -a"
+
+msgid "Digital"
+msgstr "Digital"
+
+msgid "Digital camera"
+msgstr "Càmera fotogràfica digital"
+
+msgid "Digital signature"
+msgstr "Signatura digital"
+
+msgid "Digital video camera"
+msgstr "Càmera de vídeo digital, videocàmera digital"
+
+msgid "Digitizing"
+msgstr "Digitalització"
+
+msgid "Dim"
+msgstr "Atenuar"
+
+msgid "Direct access"
+msgstr "Accés directe"
+
+msgid "Directory"
+msgstr "Directori, carpeta (f)"
+
+msgid "Disable"
+msgstr "Inhabilitar, desactivar"
+
+msgid "Disabled"
+msgstr "Inhabilitat -ada, desactivat -ada"
+
+msgid "Disc"
+msgstr "Disc"
+
+msgid "Discard"
+msgstr "Descartar"
+
+msgid "Disclaimer"
+msgstr "Descàrrec"
+
+msgid "Disconnect"
+msgstr "Desconnectar, desconnectar-se (v pron)"
+
+msgid "Disconnection"
+msgstr "Desconnexió"
+
+msgid "Discussion"
+msgstr "Debat"
+
+msgid "Discussion forum"
+msgstr "Fòrum, grup de discussió"
+
+msgid "Discussion group"
+msgstr "Grup de discussió"
+
+msgid "Discussion list"
+msgstr "Llista de distribució"
+
+msgid "Discussion thread"
+msgstr "Fil de discussió"
+
+msgid "Disk"
+msgstr "Disc"
+
+msgid "Disk cache"
+msgstr "Memòria cau de disc"
+
+msgid "Disk drive"
+msgstr "Unitat de disc"
+
+msgid "Disk space"
+msgstr "Espai de disc"
+
+msgid "Diskette"
+msgstr "Disquet"
+
+msgid "Display"
+msgstr "Pantalla || visualització"
+
+msgid "Display"
+msgstr "Mostrar, visualitzar"
+
+msgid "Displayer"
+msgstr "Visualitzador"
+
+msgid "Distributed application"
+msgstr "Aplicació distribuïda"
+
+msgid "Distributed database"
+msgstr "Base de dades distribuïda"
+
+msgid "Distribution"
+msgstr "Distribució"
+
+msgid "Distribution list"
+msgstr "Llista de distribució"
+
+msgid "Dither"
+msgstr "Trama"
+
+msgid "Dithering"
+msgstr "Tramat"
+
+msgid "Dock"
+msgstr "Acoblador"
+
+msgid "Dock"
+msgstr "Acoblar"
+
+msgid "Docking"
+msgstr "Acoblament"
+
+msgid "Domain"
+msgstr "Domini"
+
+msgid "Domain name resolution"
+msgstr "Resolució de noms de domini"
+
+msgid "Domestic"
+msgstr "Local, intern -a"
+
+msgid "Domotics"
+msgstr "Domòtica"
+
+msgid "Done"
+msgstr "Fet -a"
+
+msgid "Dongle"
+msgstr "Motxilla"
+
+msgid "Dot"
+msgstr "Punt"
+
+msgid "Dot com"
+msgstr "Puntcom"
+
+msgid "Dot pitch"
+msgstr "Densitat de punts"
+
+msgid "Dotcom"
+msgstr "Puntcom"
+
+msgid "Dot-com"
+msgstr "Puntcom"
+
+msgid "Double click"
+msgstr "Doble clic"
+
+msgid "Double click"
+msgstr "Fer doble clic"
+
+msgid "Double size"
+msgstr "Mida doble"
+
+msgid "Double-click"
+msgstr "Doble clic"
+
+msgid "Double-click"
+msgstr "Fer doble clic"
+
+msgid "Download"
+msgstr "Baixada"
+
+msgid "Download manager"
+msgstr "Gestor de baixades"
+
+msgid "Download"
+msgstr "Baixar(-se)"
+
+msgid "Downloading"
+msgstr "Baixada"
+
+msgid "Downloading manager"
+msgstr "Gestor de baixades"
+
+msgid "Draft"
+msgstr "Esborrany"
+
+msgid "Drag and drop"
+msgstr "Arrossegar i deixar anar"
+
+msgid "Drag"
+msgstr "Arrossegar"
+
+msgid "Drawable"
+msgstr "Dibuixable"
+
+msgid "Drawable"
+msgstr "Dibuixable"
+
+msgid "Drive"
+msgstr "Unitat"
+
+msgid "Driver"
+msgstr "Controlador, programa de control"
+
+msgid "Drop-out"
+msgstr "Pèrdua d'informació"
+
+msgid "Drop"
+msgstr "Deixar anar || perdre || caure (v intr)"
+
+msgid "Dumb terminal"
+msgstr "Terminal passiu"
+
+msgid "Dynamic IP addressing"
+msgstr "Assignació dinàmica d'adreces IP"
+
+msgid "Dynamic range"
+msgstr "Marge dinàmic"
+
+msgid "E-banking"
+msgstr "Banca electrònica"
+
+msgid "E-book"
+msgstr "Llibre electrònic"
+
+msgid "E-commerce"
+msgstr "Comerç electrònic"
+
+msgid "E-mail"
+msgstr "Adreça electrònica, correu electrònic (m)"
+
+msgid "E-mail account"
+msgstr "Compte de correu"
+
+msgid "E-mail address"
+msgstr "Adreça electrònica"
+
+msgid "E-mail program"
+msgstr "Programa de correu electrònic"
+
+msgid "Edge"
+msgstr "Vora, aresta"
+
+msgid "Edit box"
+msgstr "Quadre d'edició"
+
+msgid "Edit control"
+msgstr "Control d'edició"
+
+msgid "Edit"
+msgstr "Editar, canviar, modificar"
+
+msgid "Editor"
+msgstr "Editor"
+
+msgid "Effect"
+msgstr "Efecte"
+
+msgid "Eject"
+msgstr "Expulsar"
+
+msgid "Ejection"
+msgstr "Expulsió"
+
+msgid "Elapsed"
+msgstr "Transcorregut -uda"
+
+msgid "Electronic"
+msgstr "Electrònic -a"
+
+msgid "Electronic banking"
+msgstr "Banca electrònica"
+
+msgid "Electronic catalog"
+msgstr "Catàleg electrònic"
+
+msgid "Electronic certificate"
+msgstr "Certificat electrònic"
+
+msgid "Electronic commerce"
+msgstr "Comerç electrònic"
+
+msgid "Electronic contract"
+msgstr "Contracte electrònic"
+
+msgid "Electronic library"
+msgstr "Biblioteca electrònica"
+
+msgid "Electronic mail"
+msgstr "Correu electrònic"
+
+msgid "Electronic mail account"
+msgstr "Compte de correu"
+
+msgid "Electronic mail address"
+msgstr "Adreça electrònica (abrev. a/e)"
+
+msgid "Electronic mailbox"
+msgstr "Bústia electrònica"
+
+msgid "Electronic message"
+msgstr "Correu electrònic"
+
+msgid "Electronic newspaper"
+msgstr "Diari electrònic"
+
+msgid "Electronic purchase order"
+msgstr "Comanda electrònica"
+
+msgid "Electronic shop"
+msgstr "Botiga electrònica"
+
+msgid "Electronic shopping"
+msgstr "Compra electrònica"
+
+msgid "Electrònic shopping cart"
+msgstr "Carretó electrònic"
+
+msgid "Electronic stock exchange"
+msgstr "Borsa electrònica"
+
+msgid "Electronic wallet"
+msgstr "Cartera electrònica"
+
+msgid "Email"
+msgstr "Enviar correu(s) (electrònics)"
+
+msgid "Embed"
+msgstr "Incrustar"
+
+msgid "Embedded"
+msgstr "Incrustat -ada"
+
+msgid "Embedding"
+msgstr "Incrustació"
+
+msgid "Emboss"
+msgstr "Relleu, efecte de relleu"
+
+msgid "Emboss"
+msgstr "Gravar en relleu"
+
+msgid "Emphasized"
+msgstr "Destacat -ada"
+
+msgid "Empty"
+msgstr "Buit, buida"
+
+msgid "Empty"
+msgstr "Buidar"
+
+msgid "Emulation"
+msgstr "Emulació"
+
+msgid "Enable"
+msgstr "Habilitar, activar"
+
+msgid "Enabled"
+msgstr "Habilitat -ada, activat -ada"
+
+msgid "Encapsulation"
+msgstr "Encapsulament"
+
+msgid "Encipher"
+msgstr "Xifrar, encriptar"
+
+msgid "Enciphered"
+msgstr "Xifrat -ada, encriptat -ada"
+
+msgid "Encipherment"
+msgstr "Xifratge, encriptatge"
+
+msgid "Encipherment algorithm"
+msgstr "Algorisme de xifratge, d'encriptatge"
+
+msgid "Encode"
+msgstr "Codificar"
+
+msgid "Encoder"
+msgstr "Codificador"
+
+msgid "Encoding"
+msgstr "Codificació"
+
+msgid "Encounter"
+msgstr "Trobar"
+
+msgid "Encrypt"
+msgstr "Encriptar"
+
+msgid "Encrypted"
+msgstr "Encriptat -ada"
+
+msgid "Encryption"
+msgstr "Encriptatge"
+
+msgid "Encryption algorithm"
+msgstr "Algorisme de d'encriptatge"
+
+msgid "End"
+msgstr "Tecla de final"
+
+msgid "End key"
+msgstr "Tecla de final"
+
+msgid "Endnote"
+msgstr "Nota al final"
+
+msgid "Enlarge"
+msgstr "Ampliar"
+
+msgid "Enqueue"
+msgstr "Enviar a la cua"
+
+msgid "Enter"
+msgstr "Tecla de retorn"
+
+msgid "Enter key"
+msgstr "Tecla de retorn"
+
+msgid "Enter"
+msgstr "Introduir"
+
+msgid "Entry"
+msgstr "Entrada || registre (m)"
+
+msgid "Environment"
+msgstr "Entorn"
+
+msgid "Environment variable"
+msgstr "Variable d'entorn"
+
+msgid "Equalizer"
+msgstr "Equalitzador"
+
+msgid "Erase head"
+msgstr "Capçal d'esborrament"
+
+msgid "Erase"
+msgstr "Esborrar, suprimir"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Esc"
+msgstr "Tecla d'escapada"
+
+msgid "Escape key"
+msgstr "Tecla d'escapada"
+
+msgid "Escape"
+msgstr "Interrompre || escapar, sortir (v intr)"
+
+msgid "Escaped character"
+msgstr "Caràcter alterat"
+
+msgid "Evaluation copy"
+msgstr "Còpia d'avaluació"
+
+msgid "Event"
+msgstr "Esdeveniment || incidència (f)"
+
+msgid "Exception"
+msgstr "Excepció"
+
+msgid "Executable"
+msgstr "Executable"
+
+msgid "Execute"
+msgstr "Executar"
+
+msgid "Execution time"
+msgstr "Temps d'execució"
+
+msgid "Exit"
+msgstr "Sortir"
+
+msgid "Expand"
+msgstr "Ampliar"
+
+msgid "Expansion slot"
+msgstr "Ranura d'expansió"
+
+msgid "Expected"
+msgstr "Esperat -ada"
+
+msgid "Expiration"
+msgstr "Venciment"
+
+msgid "Expire"
+msgstr "Vèncer"
+
+msgid "Export"
+msgstr "Exportar"
+
+msgid "Expression"
+msgstr "Expressió"
+
+msgid "Extended partition"
+msgstr "Partició ampliada"
+
+msgid "Extension"
+msgstr "Extensió"
+
+msgid "Extract"
+msgstr "Extreure"
+
+msgid "Extraction"
+msgstr "Extracció"
+
+msgid "Extranet"
+msgstr "Extranet"
+
+msgid "Face value"
+msgstr "Valor nominal"
+
+msgid "Factory"
+msgstr "Fàbrica"
+
+msgid "Fadeout"
+msgstr "Esvair"
+
+msgid "Fail"
+msgstr "Fallar"
+
+msgid "Fallback"
+msgstr "Alternatiu -iva"
+
+msgid "Fallback"
+msgstr "Sistema alternatiu"
+
+msgid "Falloff"
+msgstr "Descens"
+
+msgid "FAQ (Frequently Asked Questions)"
+msgstr "PMF (preguntes més freqüents)"
+
+msgid "Fastforward"
+msgstr "Avanç ràpid"
+
+msgid "Favorite"
+msgstr "Adreça d'interès, preferit (m)"
+
+msgid "Favourite"
+msgstr "Adreça d'interès, preferit (m)"
+
+msgid "Feature"
+msgstr "Funció, característica"
+
+msgid "Feed"
+msgstr "Canal (d'informació)"
+
+msgid "Feedback"
+msgstr "Comentaris, opinions (f pl), retroacció (f)"
+
+msgid "Fetch"
+msgstr "Recollir"
+
+msgid "Field"
+msgstr "Camp"
+
+msgid "File"
+msgstr "Fitxer"
+
+msgid "File handle"
+msgstr "Identificador de(l) fitxer"
+
+msgid "File transfer"
+msgstr "Transferència de fitxers"
+
+msgid "File"
+msgstr "Arxivar"
+
+msgid "Filename"
+msgstr "Nom de(l) fitxer"
+
+msgid "Filespec"
+msgstr "Especificació de(l) fitxer"
+
+msgid "Filesystem"
+msgstr "Sistema de fitxers"
+
+msgid "Filing"
+msgstr "Arxivament"
+
+msgid "Filmstrip"
+msgstr "Filmina"
+
+msgid "Filter"
+msgstr "Filtre"
+
+msgid "Filtering"
+msgstr "Filtratge"
+
+msgid "Fill"
+msgstr "Omplir"
+
+msgid "Find"
+msgstr "Cerca"
+
+msgid "Find"
+msgstr "Cercar, trobar"
+
+msgid "Finding"
+msgstr "Descobriment"
+
+msgid "Fine-tune"
+msgstr "Ajustar"
+
+msgid "Finger"
+msgstr "Cercausuaris"
+
+msgid "Finish"
+msgstr "Finalitzar"
+
+msgid "Firewall"
+msgstr "Tallafoc"
+
+msgid "Firmware"
+msgstr "Microprogramari"
+
+msgid "Fit"
+msgstr "Ajustar(-se), adaptar(-se)"
+
+msgid "Fix"
+msgstr "Solucionar, arreglar"
+
+msgid "Fixed"
+msgstr "Fix -a, fixat -ada"
+
+msgid "Flag"
+msgstr "Indicador, senyalador"
+
+msgid "Flag"
+msgstr "Senyalar"
+
+msgid "Flagged"
+msgstr "Senyalat -ada"
+
+msgid "Flash memory"
+msgstr "Memòria flaix"
+
+msgid "Flip"
+msgstr "Invertir"
+
+msgid "Floating"
+msgstr "Flotant"
+
+msgid "Floating point"
+msgstr "Coma flotant"
+
+msgid "Flood"
+msgstr "Inundació"
+
+msgid "Flood"
+msgstr "Inundar"
+
+msgid "Floppy"
+msgstr "Disquet"
+
+msgid "Floppy disk"
+msgstr "Disquet"
+
+msgid "Flow"
+msgstr "Flux"
+
+msgid "Flowchart"
+msgstr "Diagrama de flux"
+
+msgid "Flush"
+msgstr "Buidar"
+
+msgid "Folder"
+msgstr "Carpeta, directori (m)"
+
+msgid "Followup"
+msgstr "Seguiment"
+
+msgid "Font"
+msgstr "(tipus de) lletra"
+
+msgid "Footer"
+msgstr "Peu de pàgina"
+
+msgid "Footnote"
+msgstr "Nota al peu"
+
+msgid "Force"
+msgstr "Imposar"
+
+msgid "Foreground"
+msgstr "Primer pla"
+
+msgid "Fork"
+msgstr "Bifurcar-se"
+
+msgid "Forked process"
+msgstr "Procés bifurcat"
+
+msgid "Form"
+msgstr "Formulari"
+
+msgid "Form factor"
+msgstr "Format"
+
+msgid "Format"
+msgstr "Format"
+
+msgid "Format"
+msgstr "Formatar"
+
+msgid "Formatted"
+msgstr "Formatat -ada"
+
+msgid "Formatting"
+msgstr "Formatació"
+
+msgid "Fortune"
+msgstr "Dita"
+
+msgid "Forum"
+msgstr "Fòrum"
+
+msgid "Forward"
+msgstr "Endavant"
+
+msgid "Forward"
+msgstr "Reenviar || avançar"
+
+msgid "Forwarded"
+msgstr "Reenviat -ada"
+
+msgid "Forwarding"
+msgstr "Reenviament"
+
+msgid "Found"
+msgstr "Trobat - ada"
+
+msgid "Fragmentation"
+msgstr "Fragmentació"
+
+msgid "Frame"
+msgstr "Marc || fotograma || segment sonor"
+
+msgid "Frame relay"
+msgstr "Relé de trama"
+
+msgid "Framerate"
+msgstr "Imatges per segon"
+
+msgid "Free software"
+msgstr "Programari lliure"
+
+msgid "Freeware"
+msgstr "Programari gratuït"
+
+msgid "Frequency"
+msgstr "Freqüència"
+
+msgid "Frequently asked questions"
+msgstr "Preguntes més freqüents"
+
+msgid "Fresh"
+msgstr "Actualitzar, refrescar"
+
+msgid "Freshen"
+msgstr "Actualitzar, refrescar"
+
+msgid "Friendly"
+msgstr "Amigable"
+
+msgid "Front end"
+msgstr "Frontal"
+
+msgid "Frontend"
+msgstr "Frontal"
+
+msgid "Full"
+msgstr "Ple, plena"
+
+msgid "Full screen"
+msgstr "Pantalla completa"
+
+msgid "Full size"
+msgstr "Mida màxima"
+
+msgid "Function key"
+msgstr "Tecla de funció"
+
+msgid "Fuzzy"
+msgstr "Borrós -a, dubtós -a, difús -a"
+
+msgid "Gateway"
+msgstr "Passarel·la"
+
+msgid "Generate"
+msgstr "Generar"
+
+msgid "Geometry"
+msgstr "Geometria"
+
+msgid "Get"
+msgstr "Aconseguir, obtenir, recuperar, rebre..."
+
+msgid "Gigabit"
+msgstr "Gigabit (sbl. Gb)"
+
+msgid "Gigabyte"
+msgstr "Gigabyte (sbl. GB)"
+
+msgid "Gradient"
+msgstr "Degradat"
+
+msgid "Graphics card"
+msgstr "Targeta gràfica"
+
+msgid "Grid"
+msgstr "Graella"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "Groupware"
+msgstr "Programari de grup"
+
+msgid "Guess"
+msgstr "Suposició"
+
+msgid "Guest"
+msgstr "Visitant"
+
+msgid "Guide"
+msgstr "Guia"
+
+msgid "Hacker"
+msgstr "Hacker"
+
+msgid "Handle"
+msgstr "Nansa, ansa"
+
+msgid "Handle"
+msgstr "Gestionar"
+
+msgid "Handler"
+msgstr "Gestor -a"
+
+msgid "Handout"
+msgstr "Prospecte"
+
+msgid "Handshaking"
+msgstr "Conformitat de connexió"
+
+msgid "Hangup"
+msgstr "Penjar, penjar-se (v pron)"
+
+msgid "Hang-up"
+msgstr "Penjar, penjar-se (v pron)"
+
+msgid "Hard disk"
+msgstr "Disc dur"
+
+msgid "Hardware"
+msgstr "Maquinari, màquines (f pl)"
+
+msgid "Hardware key"
+msgstr "Motxilla"
+
+msgid "Hardware keyboard"
+msgstr "Teclat físic"
+
+msgid "Hash table"
+msgstr "Taula de dispersió"
+
+msgid "Hash(ing) function"
+msgstr "Funció resum"
+
+msgid "Hatching"
+msgstr "Ombreig"
+
+msgid "Hazardous"
+msgstr "Arriscat -ada"
+
+msgid "Head"
+msgstr "Capçal"
+
+msgid "Header"
+msgstr "Capçalera"
+
+msgid "Heading"
+msgstr "Encapçalament"
+
+msgid "Headset"
+msgstr "Auricular"
+
+msgid "Height"
+msgstr "Alçada"
+
+msgid "Help"
+msgstr "Ajuda"
+
+msgid "Help topics"
+msgstr "Temes de l'ajuda"
+
+msgid "Helper"
+msgstr "Aplicació d'ajuda"
+
+msgid "Helper application"
+msgstr "Aplicació d'ajuda"
+
+msgid "Hertz"
+msgstr "Hertz (sbl. MHz)"
+
+msgid "Hidden"
+msgstr "Ocult -a"
+
+msgid "Hide"
+msgstr "Ocultar"
+
+msgid "Hierarchy"
+msgstr "Jerarquia"
+
+msgid "High"
+msgstr "Alt -a"
+
+msgid "High level language"
+msgstr "Llenguatge d'alt nivell"
+
+msgid "Highlight"
+msgstr "Realçar"
+
+msgid "Highlighted"
+msgstr "Realçat -ada"
+
+msgid "History"
+msgstr "Historial"
+
+msgid "Hit"
+msgstr "Prémer"
+
+msgid "Hoax"
+msgstr "Falsa alarma"
+
+msgid "Hoaxing"
+msgstr "Falsa alarma"
+
+msgid "Hoaxing virus"
+msgstr "Falsa alarma"
+
+msgid "Hold down"
+msgstr "Mantenir premuda (una tecla)"
+
+msgid "Hold"
+msgstr "Mantenir, retenir"
+
+msgid "Holder"
+msgstr "Titular, posseïdor-a"
+
+msgid "Home"
+msgstr "Inici, pàgina inicial (f)"
+
+msgid "Home banking"
+msgstr "Banca electrònica"
+
+msgid "Home directory"
+msgstr "Directori de l'usuari"
+
+msgid "Home page"
+msgstr "Pàgina inicial"
+
+msgid "Home"
+msgstr "Tecla d'inici"
+
+msgid "Home key"
+msgstr "Tecla d'inici"
+
+msgid "Honeypot"
+msgstr "Esquer"
+
+msgid "Horizontal"
+msgstr "Horitzontal"
+
+msgid "Host"
+msgstr "Amfitrió, ordinador central"
+
+msgid "Host computer"
+msgstr "Amfitrió, ordinador central"
+
+msgid "Hosted"
+msgstr "Hostatjat"
+
+msgid "Hosting"
+msgstr "Hostatge"
+
+msgid "Hot key"
+msgstr "Drecera, tecla de drecera"
+
+msgid "Hotkey"
+msgstr "Drecera, tecla de drecera"
+
+msgid "Hotlist"
+msgstr "Llista d'adreces d'interès"
+
+msgid "House"
+msgstr "Allotjar"
+
+msgid "Housing"
+msgstr "Allotjament"
+
+msgid "Hover"
+msgstr "Mantenir"
+
+msgid "Hub"
+msgstr "Concentrador"
+
+msgid "Hue"
+msgstr "To"
+
+msgid "Hyperlink"
+msgstr "Enllaç"
+
+msgid "Hypertext"
+msgstr "Hipertext"
+
+msgid "Hyphenate"
+msgstr "Partir mots"
+
+msgid "Hyphenation"
+msgstr "Partició de mots"
+
+msgid "Icon"
+msgstr "Icona"
+
+msgid "Iconify"
+msgstr "Iconitzar"
+
+msgid "ID"
+msgstr "Identificador"
+
+msgid "Identifier"
+msgstr "Identificador"
+
+msgid "Idle"
+msgstr "Inactiu -iva"
+
+msgid "Ignore"
+msgstr "Ignorar"
+
+msgid "Image"
+msgstr "Imatge"
+
+msgid "Image ad"
+msgstr "Anunci gràfic"
+
+msgid "Image bank"
+msgstr "Banc d'imatges"
+
+msgid "Image map"
+msgstr "Mapa d'imatge"
+
+msgid "Implement"
+msgstr "Implementar"
+
+msgid "Implementation"
+msgstr "Implementació"
+
+msgid "Import"
+msgstr "Importar"
+
+msgid "Improper"
+msgstr "Inadequat -ada"
+
+msgid "Improvement"
+msgstr "Millora"
+
+msgid "In progress"
+msgstr "En curs"
+
+msgid "Inbox"
+msgstr "Safata d'entrada"
+
+msgid "Include"
+msgstr "Incloure"
+
+msgid "Incoming"
+msgstr "D'entrada"
+
+msgid "Incoming message"
+msgstr "Missatge d'entrada"
+
+msgid "Increase"
+msgstr "Augmentar"
+
+msgid "Inch"
+msgstr "Polzada"
+
+msgid "Indent"
+msgstr "Sagnar"
+
+msgid "Indent"
+msgstr "Sagnar"
+
+msgid "Index"
+msgstr "Índex"
+
+msgid "Index"
+msgstr "Indexar"
+
+msgid "Info"
+msgstr "Informació, dades (f pl)"
+
+msgid "Information"
+msgstr "Informació, dades (f pl)"
+
+msgid "Information culture"
+msgstr "Cultura de la informació"
+
+msgid "Information highway"
+msgstr "Infopista, autopista de la informació"
+
+msgid "Information society"
+msgstr "Societat de la informació"
+
+msgid "Information superhighway"
+msgstr "Infopista, autopista de la informació"
+
+msgid "Infrared"
+msgstr "Infraroig -oja"
+
+msgid "Initialization"
+msgstr "Inicialització"
+
+msgid "Initialize"
+msgstr "Inicialitzar"
+
+msgid "Inline"
+msgstr "En línia"
+
+msgid "Inline"
+msgstr "Inserir"
+
+msgid "Inlined"
+msgstr "Inserit -ida"
+
+msgid "Inode"
+msgstr "Node d'identificació"
+
+msgid "Input"
+msgstr "Entrada"
+
+msgid "Input device"
+msgstr "Perifèric d'entrada"
+
+msgid "Input medium"
+msgstr "Suport d'entrada"
+
+msgid "Inquiry"
+msgstr "Consulta"
+
+msgid "Ins"
+msgstr "Tecla d'inserció"
+
+msgid "Insert key"
+msgstr "Tecla d'inserció"
+
+msgid "Insecure"
+msgstr "No segur -a"
+
+msgid "Insert"
+msgstr "Inserir"
+
+msgid "Insertion location"
+msgstr "Posició d'inserció"
+
+msgid "Insertion point"
+msgstr "Punt d'inserció"
+
+msgid "Inset"
+msgstr "Inserció"
+
+msgid "Inset"
+msgstr "Inserir"
+
+msgid "Install"
+msgstr "Instal·lar"
+
+msgid "Installation"
+msgstr "Instal·lació"
+
+msgid "Installer"
+msgstr "Instal·lador"
+
+msgid "Instance"
+msgstr "Instància, aparició"
+
+msgid "Instant messaging"
+msgstr "Missatgeria instantània"
+
+msgid "Instantiate"
+msgstr "Instanciar"
+
+msgid "Instead"
+msgstr "En comptes de, en lloc de"
+
+msgid "Instruction"
+msgstr "Instrucció"
+
+msgid "Integer"
+msgstr "(nombre) enter"
+
+msgid "Integrate"
+msgstr "Integrar"
+
+msgid "Integration"
+msgstr "Integració"
+
+msgid "Interactive"
+msgstr "Interactiu -iva"
+
+msgid "Interconnect"
+msgstr "Interconnectar"
+
+msgid "Interconnection"
+msgstr "Interconnexió"
+
+msgid "Interest group"
+msgstr "Grup de discussió"
+
+msgid "Interface"
+msgstr "Interfície"
+
+msgid "Interlaced"
+msgstr "Entrellaçat -ada"
+
+msgid "Internal"
+msgstr "Intern -a"
+
+msgid "Internaut"
+msgstr "Internauta"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "Internet address"
+msgstr "Adreça d'Internet"
+
+msgid "Internet service provider"
+msgstr "Proveïdor d'Internet"
+
+msgid "Interpreted language"
+msgstr "Llenguatge interpretat"
+
+msgid "Interstitial ad(vertisement)"
+msgstr "Anunci intersticial"
+
+msgid "Intranet"
+msgstr "Intranet"
+
+msgid "Intro"
+msgstr "Tecla de retorn"
+
+msgid "Intro key"
+msgstr "Tecla de retorn"
+
+msgid "Invalid"
+msgstr "No vàlid -a"
+
+msgid "Invert"
+msgstr "Invertir"
+
+msgid "Invisible pixel"
+msgstr "Píxel invisible"
+
+msgid "IP address"
+msgstr "Adreça IP"
+
+msgid "Issue"
+msgstr "Tema, assumpte, problema"
+
+msgid "Issue"
+msgstr "Emetre, publicar"
+
+msgid "Issuer"
+msgstr "Emissor -a"
+
+msgid "Italic"
+msgstr "Cursiva"
+
+msgid "Item"
+msgstr "Element, ítem"
+
+msgid "Java applet"
+msgstr "Miniaplicació de Java"
+
+msgid "Job"
+msgstr "Tasca, feina"
+
+msgid "Join"
+msgstr "Unir, unir-se (v pron)"
+
+msgid "Jump"
+msgstr "Saltar"
+
+msgid "Jumper"
+msgstr "Pont"
+
+msgid "Junk mail"
+msgstr "Correu brossa"
+
+msgid "Justification"
+msgstr "Justificació"
+
+msgid "Justify"
+msgstr "Justificar"
+
+msgid "Keep"
+msgstr "Conservar, mantenir"
+
+msgid "Kernel"
+msgstr "Nucli"
+
+msgid "Kerning"
+msgstr "Interlletratge"
+
+msgid "Key"
+msgstr "Tecla || clau"
+
+msgid "Key binding"
+msgstr "Assignació de tecles"
+
+msgid "Keyboard"
+msgstr "Teclat"
+
+msgid "Keyboard layout"
+msgstr "Disposició del teclat"
+
+msgid "Keyboard shortcut"
+msgstr "Tecla de drecera"
+
+msgid "Keypair"
+msgstr "Parella de claus"
+
+msgid "Keyphrase"
+msgstr "Frase clau"
+
+msgid "Keyring"
+msgstr "Anell de claus"
+
+msgid "Keystroke"
+msgstr "Pulsació de tecla"
+
+msgid "Keyword"
+msgstr "Paraula clau"
+
+msgid "Kick"
+msgstr "Expulsar"
+
+msgid "Kilobit"
+msgstr "Kilobit (sbl. kb)"
+
+msgid "Kilobyte"
+msgstr "Kilobyte (sbl. kB)"
+
+msgid "Kilohertz"
+msgstr "Kilohertz (sbl. KHz)"
+
+msgid "Kill"
+msgstr "Matar"
+
+msgid "Knowledge base"
+msgstr "Base de coneixements"
+
+msgid "Knowledge society"
+msgstr "Societat de la informació"
+
+msgid "Label"
+msgstr "Etiqueta"
+
+msgid "Language"
+msgstr "Llengua (f) || llenguatge"
+
+msgid "Language pack"
+msgstr "Paquet de llengua"
+
+msgid "Langpack"
+msgstr "Paquet de llengua"
+
+msgid "Laptop (computer)"
+msgstr "Ordinador portàtil"
+
+msgid "Last"
+msgstr "Darrer -a, últim -a"
+
+msgid "Last accessed"
+msgstr "Darrer accés"
+
+msgid "Last modified"
+msgstr "Darrera modificació"
+
+msgid "Last name"
+msgstr "Cognom"
+
+msgid "Last updated"
+msgstr "Darrera actualització"
+
+msgid "Later"
+msgstr "Més tard, més endavant, després"
+
+msgid "Launch"
+msgstr "Executar"
+
+msgid "Layer"
+msgstr "Capa"
+
+msgid "Layout"
+msgstr "Format"
+
+msgid "Leak"
+msgstr "Pèrdua"
+
+msgid "Leave"
+msgstr "Deixar"
+
+msgid "Legacy"
+msgstr "Antic"
+
+msgid "Length"
+msgstr "Longitud || durada"
+
+msgid "Let"
+msgstr "Permetre"
+
+msgid "Level"
+msgstr "Nivell"
+
+msgid "Lexicon"
+msgstr "Diccionari, lèxic"
+
+msgid "Library"
+msgstr "Biblioteca"
+
+msgid "Light"
+msgstr "Clar -a"
+
+msgid "Lightness"
+msgstr "Lluminositat"
+
+msgid "Line"
+msgstr "Línia"
+
+msgid "Line adapter"
+msgstr "Adaptador de línia"
+
+msgid "Linear"
+msgstr "Lineal"
+
+msgid "Link"
+msgstr "Enllaç"
+
+msgid "Link"
+msgstr "Enllaçar"
+
+msgid "Linked"
+msgstr "Enllaçat -ada"
+
+msgid "Liquid crystal"
+msgstr "Cristall líquid"
+
+msgid "List"
+msgstr "Llista"
+
+msgid "List box"
+msgstr "Quadre de llista"
+
+msgid "List view"
+msgstr "Visualització en llista"
+
+msgid "List"
+msgstr "Relacionar, indicar, llistar"
+
+msgid "Listen port"
+msgstr "Port que rep connexions"
+
+msgid "Listen"
+msgstr "Escoltar"
+
+msgid "Listener"
+msgstr "Receptor de connexions, de serveis"
+
+msgid "Listfile"
+msgstr "Fitxer de llista"
+
+msgid "Listing"
+msgstr "Llistat"
+
+msgid "Load"
+msgstr "Càrrega"
+
+msgid "Load"
+msgstr "Carregar"
+
+msgid "Loading"
+msgstr "Càrrega"
+
+msgid "Local"
+msgstr "Local"
+
+msgid "Locale"
+msgstr "Configuració local"
+
+msgid "Localization"
+msgstr "Localització"
+
+msgid "Localize"
+msgstr "Localitzar"
+
+msgid "Located"
+msgstr "Ubicat -ada"
+
+msgid "Location"
+msgstr "Ubicació, lloc (m)"
+
+msgid "Lock"
+msgstr "Bloqueig, blocatge"
+
+msgid "Lock"
+msgstr "Bloquejar, blocar"
+
+msgid "Locking"
+msgstr "Bloqueig, blocatge"
+
+msgid "Log"
+msgstr "Registre"
+
+msgid "Log file"
+msgstr "Fitxer de registre"
+
+msgid "Log in"
+msgstr "Iniciar la/una sessió, entrar, connectar(-se)"
+
+msgid "Log off"
+msgstr "Finalitzar la/una sessió, sortir, desconnectar(-se)"
+
+msgid "Log on"
+msgstr "Iniciar la/una sessió, entrar, connectar(-se)"
+
+msgid "Log out"
+msgstr "Finalitzar la/una sessió, sortir, desconnectar(-se)"
+
+msgid "Log"
+msgstr "Registrar"
+
+msgid "Logical partition"
+msgstr "Partició lògica"
+
+msgid "Login"
+msgstr ""
+"Dades d'inici de sessió || inici de sessió (m), entrada (f), connexió (f)"
+
+msgid "Login script"
+msgstr "Script d'inici de sessió    [ l'script ]"
+
+msgid "Logoff"
+msgstr "Final de sessió (m), sortida, desconnexió"
+
+msgid "Logoff"
+msgstr "Sortir, desconnectar(-se), finalitzar la sessió"
+
+msgid "Logon"
+msgstr "Inici de sessió (m), entrada, connexió"
+
+msgid "Logon"
+msgstr "Iniciar la/una sessió, entrar, connectar(-se)"
+
+msgid "Logout"
+msgstr "Final de sessió (m), sortida, desconnexió"
+
+msgid "Logout"
+msgstr "Finalitzar la/una sessió, sortir, desconnectar(-se)"
+
+msgid "Long press"
+msgstr "Mantenir premut -da"
+
+msgid "Look and feel"
+msgstr "Aspecte i comportament"
+
+msgid "Look for"
+msgstr "Cercar"
+
+msgid "Look up"
+msgstr "Cercar"
+
+msgid "Looking"
+msgstr "Aspecte"
+
+msgid "Loop"
+msgstr "Bucle || repetició (f)"
+
+msgid "Lossless"
+msgstr "Sense pèrdua"
+
+msgid "Low"
+msgstr "Baix -a"
+
+msgid "Low level language"
+msgstr "Llenguatge de baix nivell"
+
+msgid "Lower case"
+msgstr "Minúscula"
+
+msgid "Lowercase"
+msgstr "Minúscula"
+
+msgid "Luminance"
+msgstr "Luminància"
+
+msgid "Luminosity"
+msgstr "Lluminositat"
+
+msgid "Macro"
+msgstr "Macro, macroinstrucció"
+
+msgid "Macroinstruction"
+msgstr "Macro, macroinstrucció"
+
+msgid "Machine"
+msgstr "Màquina"
+
+msgid "Machine language"
+msgstr "Llenguatge de màquina"
+
+msgid "Magnetic head"
+msgstr "Capçal magnètic"
+
+msgid "Magnetic tape"
+msgstr "Cinta magnètica"
+
+msgid "Mail"
+msgstr "Correu, correu electrònic"
+
+msgid "Mail bombe"
+msgstr "Bombardejar"
+
+msgid "Mail bombing"
+msgstr "Bombardeig"
+
+msgid "Mail merge"
+msgstr "Combinació de correu"
+
+msgid "Mailbox"
+msgstr "Bústia"
+
+msgid "Mailer"
+msgstr "Administrador de correu"
+
+msgid "Mailing list"
+msgstr "Llista de correu"
+
+msgid "Main"
+msgstr "Principal"
+
+msgid "Main menu"
+msgstr "Menú principal"
+
+msgid "Make"
+msgstr "Crear"
+
+msgid "Malicious"
+msgstr "Maliciós -osa"
+
+msgid "Malware"
+msgstr "Programari maliciós"
+
+msgid "Manage"
+msgstr "Gestionar"
+
+msgid "Management"
+msgstr "Gestió"
+
+msgid "Manager"
+msgstr "Gestor -a"
+
+msgid "Map"
+msgstr "Mapa"
+
+msgid "Map"
+msgstr "Mapar"
+
+msgid "Mapped image"
+msgstr "Imatge mapada"
+
+msgid "Mapping"
+msgstr "Mapatge || cartografia (f)"
+
+msgid "Margin"
+msgstr "Marge"
+
+msgid "Mark"
+msgstr "Marca"
+
+msgid "Mark"
+msgstr "Marcar"
+
+msgid "Marker"
+msgstr "Marcador"
+
+msgid "Markup"
+msgstr "Etiquetatge"
+
+msgid "Markup language"
+msgstr "Llenguatge de marques"
+
+msgid "Markup tag"
+msgstr "Etiqueta"
+
+msgid "Match"
+msgstr "Coincidència, concordança"
+
+msgid "Match case"
+msgstr "(que) distingeix entre majúscules i minúscules"
+
+msgid "Match"
+msgstr "Coincidir, concordar"
+
+msgid "Maturity"
+msgstr "Venciment"
+
+msgid "Maximize"
+msgstr "Maximitzar"
+
+msgid "Media"
+msgstr "Suports"
+
+msgid "Medium"
+msgstr "Mig, mitja"
+
+msgid "Medium"
+msgstr "Suport"
+
+msgid "Megabit"
+msgstr "Megabit (sbl. Mb)"
+
+msgid "Megabyte"
+msgstr "Megabyte (sbl. MB)"
+
+msgid "Megahertz"
+msgstr "Megahertz (sbl. MHz)"
+
+msgid "Membership"
+msgstr "Afiliació"
+
+msgid "Memory"
+msgstr "Memòria"
+
+msgid "Memory cache"
+msgstr "Memòria cau"
+
+msgid "Memory leak"
+msgstr "Pèrdua de memòria"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Menu bar"
+msgstr "Barra de menú"
+
+msgid "Merchantability"
+msgstr "Comerciabilitat"
+
+msgid "Merge"
+msgstr "Fusionar"
+
+msgid "Message"
+msgstr "Missatge"
+
+msgid "Metadata"
+msgstr "Metadades"
+
+msgid "Metafile"
+msgstr "Metafitxer"
+
+msgid "Metasearch"
+msgstr "Metacerca"
+
+msgid "Method"
+msgstr "Mètode"
+
+msgid "Microphone"
+msgstr "Micròfon"
+
+msgid "Microprocessor"
+msgstr "Microprocessador"
+
+msgid "Migrate"
+msgstr "Migrar"
+
+msgid "Migration"
+msgstr "Migració"
+
+msgid "MIME type"
+msgstr "Tipus MIME"
+
+msgid "Minimize"
+msgstr "Minimitzar"
+
+msgid "Minus key"
+msgstr "Tecla de menys"
+
+msgid "Mirror"
+msgstr "Rèplica"
+
+msgid "Misc"
+msgstr "Miscel·lani -ània"
+
+msgid "Miscellaneous"
+msgstr "Miscel·lani -ània"
+
+msgid "Misspelling"
+msgstr "Error ortogràfic"
+
+msgid "Mobile telephone"
+msgstr "(telèfon) mòbil"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "Modem"
+msgstr "Mòdem"
+
+msgid "Modem pool"
+msgstr "Bateria de mòdems"
+
+msgid "Moderate"
+msgstr "Moderar, revisar"
+
+msgid "Moderator"
+msgstr "Moderador"
+
+msgid "Modify"
+msgstr "Modificar, canviar"
+
+msgid "Module"
+msgstr "Mòdul"
+
+msgid "Monitor"
+msgstr "Monitor"
+
+msgid "Monitor"
+msgstr "Fer un seguiment"
+
+msgid "Morphing"
+msgstr "Metamorfosi"
+
+msgid "Motherboard"
+msgstr "Placa base"
+
+msgid "Motion capture"
+msgstr "Captació de moviment"
+
+msgid "Mount point"
+msgstr "Punt de muntatge"
+
+msgid "Mounted"
+msgstr "Muntat -ada"
+
+msgid "Mouse"
+msgstr "Ratolí"
+
+msgid "Move"
+msgstr "Moure, desplaçar"
+
+msgid "Multi-touch screen"
+msgstr "Pantalla multitàctil"
+
+msgid "Multimedia computer"
+msgstr "Ordinador multimèdia"
+
+msgid "Multipart"
+msgstr "Multipart"
+
+msgid "Multiple access"
+msgstr "Accés múltiple"
+
+msgid "Multiplex"
+msgstr "Multiplexar"
+
+msgid "Multipoint connection"
+msgstr "Connexió multipunt"
+
+msgid "Multitasking"
+msgstr "Multitasca"
+
+msgid "Multiuser"
+msgstr "Multiusuari -ària"
+
+msgid "Muxer"
+msgstr "Multiplexor"
+
+msgid "Named"
+msgstr "Anomenat -ada"
+
+msgid "Namespace"
+msgstr "Espai de noms"
+
+msgid "Navigate"
+msgstr "Navegar"
+
+msgid "Navigation bar"
+msgstr "Barra de navegació"
+
+msgid "Navigation toolbar"
+msgstr "Barra d'eines de navegació"
+
+msgid "Nested"
+msgstr "Imbricat -ada"
+
+msgid "Netbook"
+msgstr "Ordinador ultraportàtil"
+
+msgid "Netiquette"
+msgstr "Etiqueta"
+
+msgid "Network"
+msgstr "Xarxa"
+
+msgid "Network adapter"
+msgstr "Adaptador de xarxa"
+
+msgid "Network administrator"
+msgstr "Administrador -a o gestor -a de xarxes"
+
+msgid "Network analyst"
+msgstr "Analista de xarxes"
+
+msgid "Network architecture"
+msgstr "Arquitectura de xarxa"
+
+msgid "Network etiquette"
+msgstr "Etiqueta"
+
+msgid "Network management"
+msgstr "Gestió de xarxes"
+
+msgid "Network manager"
+msgstr "Administrador -a o gestor -a de xarxes"
+
+msgid "Networking"
+msgstr "Treball en xarxa, gestió de xarxes (f)"
+
+msgid "Newbie"
+msgstr "Aprenent -a"
+
+msgid "News"
+msgstr "Missatges"
+
+msgid "Newsgroup"
+msgstr "Grup de discussió, fòrum"
+
+msgid "Newsletter"
+msgstr "Butlletí (d'informació)"
+
+msgid "Next"
+msgstr "Següent"
+
+msgid "Nickname"
+msgstr "Sobrenom, àlies"
+
+msgid "Node"
+msgstr "Node"
+
+msgid "Note"
+msgstr "Nota"
+
+msgid "Note"
+msgstr "Tenir en compte"
+
+msgid "Notebook"
+msgstr "Ordinador portàtil"
+
+msgid "Notification"
+msgstr "Notificació, avís (m)"
+
+msgid "Notification of reading"
+msgstr "Confirmació de lectura"
+
+msgid "Notification of receipt"
+msgstr "Confirmació de recepció"
+
+msgid "Number"
+msgstr "Nombre || número"
+
+msgid "Number pad"
+msgstr "Teclat numèric"
+
+msgid "NumLock"
+msgstr "Tecla de fixació de teclat numèric"
+
+msgid "Numeric lock key"
+msgstr "Tecla de fixació de teclat numèric"
+
+msgid "Obey"
+msgstr "Obeir"
+
+msgid "Object"
+msgstr "Objecte"
+
+msgid "Object-oriented programming"
+msgstr "Programació orientada a objectes"
+
+msgid "Occur"
+msgstr "Produir-se"
+
+msgid "Off"
+msgstr "Inactiu -iva"
+
+msgid "Off line"
+msgstr "Fora de línia"
+
+msgid "Off-line processing"
+msgstr "Processament per lots, processament en temps diferit"
+
+msgid "Off-topic"
+msgstr "Fora de tema"
+
+msgid "Office automation"
+msgstr "Ofimàtica"
+
+msgid "Offline"
+msgstr "Fora de línia"
+
+msgid "Off-line"
+msgstr "Fora de línia"
+
+msgid "Offset"
+msgstr "Òfset"
+
+msgid "Offsite links"
+msgstr "Enllaços externs"
+
+msgid "OK"
+msgstr "D'acord"
+
+msgid "On"
+msgstr "Actiu -iva"
+
+msgid "On hold"
+msgstr "En espera"
+
+msgid "On line"
+msgstr "En línia"
+
+msgid "Online"
+msgstr "En línia"
+
+msgid "On-line"
+msgstr "En línia"
+
+msgid "Online help"
+msgstr "Ajuda en línia"
+
+msgid "Opacity"
+msgstr "Opacitat"
+
+msgid "Open source"
+msgstr "Codi font obert"
+
+msgid "Open"
+msgstr "Obrir"
+
+msgid "Operating system"
+msgstr "Sistema operatiu"
+
+msgid "Operation time"
+msgstr "Temps d'execució"
+
+msgid "Optical mouse"
+msgstr "Ratolí òptic"
+
+msgid "Option"
+msgstr "Opció"
+
+msgid "Organization"
+msgstr "Organització"
+
+msgid "Original size"
+msgstr "Mida original"
+
+msgid "Out of memory"
+msgstr "Sense memòria"
+
+msgid "Outbox"
+msgstr "Safata de sortida"
+
+msgid "Outgoing"
+msgstr "De sortida"
+
+msgid "Outgoing mail server"
+msgstr "Servidor de correu de sortida"
+
+msgid "Outgoing message"
+msgstr "Missatge de sortida"
+
+msgid "Outline"
+msgstr "Contorn"
+
+msgid "Output"
+msgstr "Sortida"
+
+msgid "Output device"
+msgstr "Perifèric de sortida"
+
+msgid "Output"
+msgstr "Donar com a resultat || imprimir"
+
+msgid "Overflow"
+msgstr "Desbordament"
+
+msgid "Overline"
+msgstr "Sobreratllat"
+
+msgid "Override"
+msgstr "Substituir, sobreescriure"
+
+msgid "Overwhelming"
+msgstr "Aclaparador -a"
+
+msgid "Overwrite"
+msgstr "Sobreescriure"
+
+msgid "Owner"
+msgstr "Propietari"
+
+msgid "Ownership"
+msgstr "Propietat"
+
+msgid "Pack"
+msgstr "Comprimir, empaquetar"
+
+msgid "Package"
+msgstr "Paquet informàtic"
+
+msgid "Package dependencies"
+msgstr "Dependència de paquets"
+
+msgid "Packet"
+msgstr "Paquet"
+
+msgid "Packing"
+msgstr "Compressió"
+
+msgid "Padding"
+msgstr "Separació"
+
+msgid "Padlock"
+msgstr "Cadenat"
+
+msgid "Page"
+msgstr "Pàgina"
+
+msgid "Page break"
+msgstr "Salt de pàgina"
+
+msgid "Page composer"
+msgstr "Editor de pàgines"
+
+msgid "Pager"
+msgstr "Cercapersones"
+
+msgid "Pair"
+msgstr "Parella"
+
+msgid "Palette"
+msgstr "Paleta"
+
+msgid "Pane"
+msgstr "Subfinestra"
+
+msgid "Panel"
+msgstr "Quadre, tauler"
+
+msgid "Paper jam"
+msgstr "Embús"
+
+msgid "Par"
+msgstr "Paritat"
+
+msgid "Paragraph"
+msgstr "Paràgraf"
+
+msgid "Parallel port"
+msgstr "Port en paral·lel"
+
+msgid "Parameters"
+msgstr "Paràmetres"
+
+msgid "Parcel"
+msgstr "Paquet"
+
+msgid "Parity"
+msgstr "Paritat"
+
+msgid "Parse"
+msgstr "Analitzar"
+
+msgid "Partition"
+msgstr "Partició"
+
+msgid "Partition"
+msgstr "Partir, fer particions (a un disc)"
+
+msgid "Partitioner"
+msgstr "Partidor"
+
+msgid "Passphrase"
+msgstr "Contrasenya"
+
+msgid "Password"
+msgstr "Contrasenya"
+
+msgid "Paste"
+msgstr "Enganxar"
+
+msgid "Patch"
+msgstr "Pedaç"
+
+msgid "Path"
+msgstr "Camí"
+
+msgid "Pattern"
+msgstr "Patró"
+
+msgid "Pause"
+msgstr "Pausa"
+
+msgid "Pause"
+msgstr "Tecla de pausa"
+
+msgid "Pause key"
+msgstr "Tecla de pausa"
+
+msgid "Pause"
+msgstr "Aturar, posar en pausa"
+
+msgid "Pause"
+msgstr "Fer una pausa"
+
+msgid "Peak"
+msgstr "Pic"
+
+msgid "Peer-to-peer"
+msgstr "D'igual a igual"
+
+msgid "Per second"
+msgstr "Per segon"
+
+msgid "Perform"
+msgstr "Realitzar"
+
+msgid "Peripheral"
+msgstr "Perifèric -a"
+
+msgid "Peripheral"
+msgstr "Perifèric"
+
+msgid "Peripheral device"
+msgstr "Perifèric"
+
+msgid "Personal address book"
+msgstr "Llibreta d'adreces personal"
+
+msgid "Personal bar"
+msgstr "Barra personal"
+
+msgid "Personal computer"
+msgstr "Ordinador personal"
+
+msgid "Personal digital assistant"
+msgstr "Organitzador personal"
+
+msgid "Personal information"
+msgstr "Dades personals"
+
+msgid "Personalize"
+msgstr "Personalitzar"
+
+msgid "Personalized"
+msgstr "Personalitzat -ada"
+
+msgid "PgDn"
+msgstr "Tecla d'avançar pàgina"
+
+msgid "Page down key"
+msgstr "Tecla d'avançar pàgina"
+
+msgid "PgUp"
+msgstr "Tecla de retrocedir pàgina"
+
+msgid "Page up key"
+msgstr "Tecla de retrocedir pàgina"
+
+msgid "Pharming"
+msgstr "Descaminament"
+
+msgid "Phishing"
+msgstr "Pesca"
+
+msgid "Pic"
+msgstr "Imatge, fotografia"
+
+msgid "Picture"
+msgstr "Imatge, fotografia"
+
+msgid "Pick"
+msgstr "Triar"
+
+msgid "Picker"
+msgstr "Capturador"
+
+msgid "Ping"
+msgstr "Fer ping"
+
+msgid "Pipe"
+msgstr "Conducte"
+
+msgid "Piracy"
+msgstr "Pirateria"
+
+msgid "Pirate"
+msgstr "Piratejar"
+
+msgid "Pixel"
+msgstr "Píxel"
+
+msgid "Pixelation"
+msgstr "Pixelació"
+
+msgid "Pixelated"
+msgstr "Pixelat -da"
+
+msgid "Pixelize"
+msgstr "Pixelar"
+
+msgid "Pixmap"
+msgstr "Mapa de píxels"
+
+msgid "Place"
+msgstr "Emplaçament"
+
+msgid "Place"
+msgstr "Situar"
+
+msgid "Placeholder"
+msgstr "Text variable"
+
+msgid "Plain"
+msgstr "Senzill -a"
+
+msgid "Plain text"
+msgstr "Text net"
+
+msgid "Platform"
+msgstr "Plataforma"
+
+msgid "Play"
+msgstr "Reproduir"
+
+msgid "Playback"
+msgstr "Reproducció"
+
+msgid "Player"
+msgstr "Reproductor, lector"
+
+msgid "Playlist"
+msgstr "Llista de reproducció, selecció de peces"
+
+msgid "Please"
+msgstr "Si us plau"
+
+msgid "Plot"
+msgstr "Impressió, traçat (m), plànol (m)"
+
+msgid "Plot"
+msgstr "Traçar, dibuixar"
+
+msgid "Plotter"
+msgstr "Plòter, traçador"
+
+msgid "Plotting"
+msgstr "Impressió amb traçador, traçatge"
+
+msgid "Plug and play"
+msgstr "Integració automàtica"
+
+msgid "Plugin"
+msgstr "Connector"
+
+msgid "Plug-in"
+msgstr "Connector"
+
+msgid "Plus key"
+msgstr "Tecla de més"
+
+msgid "Point to point connection"
+msgstr "Connexió punt a punt"
+
+msgid "Pointer"
+msgstr "Busca, punter (m)"
+
+msgid "Policy"
+msgstr "Política"
+
+msgid "Polling"
+msgstr "Sondeig"
+
+msgid "Pop up"
+msgstr "Emergent"
+
+msgid "Pop-up"
+msgstr "Emergent"
+
+msgid "Pop up"
+msgstr "Mostrar"
+
+msgid "Pop-down"
+msgstr "Desplegable"
+
+msgid "Pop-under ad"
+msgstr "Anunci latent"
+
+msgid "Pop-under window"
+msgstr "Finestra latent"
+
+msgid "Pop-up ad"
+msgstr "Anunci emergent"
+
+msgid "Pop-up menu"
+msgstr "Menú emergent"
+
+msgid "Pop-up window"
+msgstr "Finestra emergent"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Portal"
+msgstr "Portal"
+
+msgid "Porting"
+msgstr "Portabilitat"
+
+msgid "Post"
+msgstr "Article, missatge, escrit, entrada (f)"
+
+msgid "Post"
+msgstr "Enviar, publicar"
+
+msgid "Postmaster"
+msgstr "Administrador -a de correu"
+
+msgid "Powered by"
+msgstr "Funciona amb, basat en"
+
+msgid "Prefer"
+msgstr "Preferir"
+
+msgid "Preferences"
+msgstr "Preferències"
+
+msgid "Preferred"
+msgstr "Preferit -ida"
+
+msgid "Prepare"
+msgstr "Preparar"
+
+msgid "Prerelease"
+msgstr "Versió provisional"
+
+msgid "Preset"
+msgstr "Predefinir"
+
+msgid "Press"
+msgstr "Prémer"
+
+msgid "Preview"
+msgstr "Previsualització"
+
+msgid "Preview"
+msgstr "Previsualitzar"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Primary"
+msgstr "Primari"
+
+msgid "Principal"
+msgstr "Principal (financer)"
+
+msgid "Print"
+msgstr "Impressió"
+
+msgid "Print preview"
+msgstr "Exemple d'impressió"
+
+msgid "Print"
+msgstr "Imprimir"
+
+msgid "Printer"
+msgstr "Impressora"
+
+msgid "Printing"
+msgstr "Impressió"
+
+msgid "Printing head"
+msgstr "Capçal d'impressió"
+
+msgid "Priority"
+msgstr "Prioritat"
+
+msgid "Privacy"
+msgstr "Privadesa"
+
+msgid "Privacy policy"
+msgstr "Política de privadesa"
+
+msgid "Private key"
+msgstr "Clau privada"
+
+msgid "Process"
+msgstr "Procés"
+
+msgid "Process"
+msgstr "Processar"
+
+msgid "Processing"
+msgstr "Processament"
+
+msgid "Processor"
+msgstr "Processador"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Profile manager"
+msgstr "Gestor de perfils"
+
+msgid "Program"
+msgstr "Programa"
+
+msgid "Program directory"
+msgstr "Directori del programa"
+
+msgid "Program"
+msgstr "Programar"
+
+msgid "Programmer"
+msgstr "Programador -a"
+
+msgid "Programming"
+msgstr "Programació"
+
+msgid "Programming language"
+msgstr "Llenguatge de programació"
+
+msgid "Progress"
+msgstr "En curs"
+
+msgid "In"
+msgstr "En curs"
+
+msgid "Project"
+msgstr "Projecte"
+
+msgid "Prompt"
+msgstr "Pregunta, sol·licitud || indicador (m)"
+
+msgid "Prompt"
+msgstr "Preguntar, sol·licitar || indicar"
+
+msgid "Properties"
+msgstr "Propietats"
+
+msgid "Proprietary software"
+msgstr "Programari de propietat"
+
+msgid "Protected"
+msgstr "Protegit -ida"
+
+msgid "Protocol"
+msgstr "Protocol"
+
+msgid "Provider"
+msgstr "Proveïdor -a"
+
+msgid "Proxy"
+msgstr "Servidor intermediari"
+
+msgid "Proxy server"
+msgstr "Servidor intermediari"
+
+msgid "PrtScr"
+msgstr "Tecla d'impressió de pantalla"
+
+msgid "Print screen key"
+msgstr "Tecla d'impressió de pantalla"
+
+msgid "Public"
+msgstr "Públic -a"
+
+msgid "Public domain"
+msgstr "Domini públic"
+
+msgid "Public key"
+msgstr "Clau pública"
+
+msgid "Publish"
+msgstr "Publicar"
+
+msgid "Publisher"
+msgstr "Editor"
+
+msgid "Pull down menu"
+msgstr "Menú desplegable"
+
+msgid "Push channel"
+msgstr "Canal web"
+
+msgid "Put"
+msgstr "Posar"
+
+msgid "Qualified"
+msgstr "Qualificat -ada"
+
+msgid "Query"
+msgstr "Consulta"
+
+msgid "Query language"
+msgstr "Llenguatge d'interrogació"
+
+msgid "Querying server"
+msgstr "Servidor de consultes"
+
+msgid "Queue"
+msgstr "Cua"
+
+msgid "Queue"
+msgstr "Enviar a la cua"
+
+msgid "Quick launch bar"
+msgstr "Barra d'execució ràpida"
+
+msgid "Quit"
+msgstr "Sortir"
+
+msgid "Quotation"
+msgstr "Citació"
+
+msgid "Quote"
+msgstr "Citar"
+
+msgid "Quotes"
+msgstr "Cometes"
+
+msgid "Radio button"
+msgstr "Botó d'opció"
+
+msgid "Raise"
+msgstr "Relleu"
+
+msgid "Random"
+msgstr "Aleatori -òria"
+
+msgid "Random access"
+msgstr "Accés aleatori"
+
+msgid "Random data"
+msgstr "Dades aleatòries"
+
+msgid "Randomize"
+msgstr "Generar aleatòriament"
+
+msgid "Range"
+msgstr "Interval || àrea (f)"
+
+msgid "Print range"
+msgstr "Àrea d'impressió"
+
+msgid "Rate"
+msgstr "Velocitat"
+
+msgid "Rating"
+msgstr "Valoració"
+
+msgid "Ratio"
+msgstr "Ràtio"
+
+msgid "Raw"
+msgstr "Cru -a"
+
+msgid "Re-install"
+msgstr "Tornar a instal·lar"
+
+msgid "Re-open"
+msgstr "Tornar a obrir"
+
+msgid "Read head"
+msgstr "Capçal de lectura"
+
+msgid "Read notification"
+msgstr "Confirmació de lectura"
+
+msgid "Read only"
+msgstr "Només de lectura"
+
+msgid "Read"
+msgstr "Llegir"
+
+msgid "Read/write head"
+msgstr "Capçal de lectura/escriptura"
+
+msgid "Reader"
+msgstr "Lector"
+
+msgid "Ready"
+msgstr "Preparat -ada"
+
+msgid "Real"
+msgstr "Autèntic -a, real"
+
+msgid "Real time"
+msgstr "En temps real"
+
+msgid "Reboot"
+msgstr "Arrencar de nou"
+
+msgid "Receipt"
+msgstr "Confirmació"
+
+msgid "Receipt notification"
+msgstr "Confirmació de recepció"
+
+msgid "Received"
+msgstr "Rebut -uda"
+
+msgid "Recent"
+msgstr "Recent"
+
+msgid "Recipient"
+msgstr "Destinatari"
+
+msgid "Recognition"
+msgstr "Reconeixement"
+
+msgid "Reconfigured"
+msgstr "Reconfigurat -ada"
+
+msgid "Reconnect"
+msgstr "Tornar a connectar"
+
+msgid "Record"
+msgstr "Registre || enregistrament"
+
+msgid "Record"
+msgstr "Enregistrar"
+
+msgid "Recorder"
+msgstr "Gravadora, enregistrador (m)"
+
+msgid "Recover"
+msgstr "Restablir"
+
+msgid "Recovered"
+msgstr "Restablert -a"
+
+msgid "Recovery"
+msgstr "Restabliment"
+
+msgid "Recreate"
+msgstr "Tornar a crear"
+
+msgid "Recurse (subdirectories)"
+msgstr "Incloure (els subdirectoris)"
+
+msgid "Recursive"
+msgstr "Recursiu -iva"
+
+msgid "Redemption"
+msgstr "Amortització (financera)"
+
+msgid "Redial"
+msgstr "Tornar a marcar"
+
+msgid "Redirect"
+msgstr "Redirigir"
+
+msgid "Redo"
+msgstr "Refer"
+
+msgid "Reduce"
+msgstr "Reduir"
+
+msgid "Reengineering"
+msgstr "Reenginyeria"
+
+msgid "Reenter"
+msgstr "Tornar a introduir"
+
+msgid "Reestablish"
+msgstr "Restablir"
+
+msgid "Refactor"
+msgstr "Refacció"
+
+msgid "Reference"
+msgstr "Referència"
+
+msgid "Reformat"
+msgstr "Reformatar"
+
+msgid "Reformatting"
+msgstr "Reformatació"
+
+msgid "Refresh rate"
+msgstr "Velocitat de refresc"
+
+msgid "Refresh"
+msgstr "Actualitzar, refrescar"
+
+msgid "Refreshing"
+msgstr "Refrescament"
+
+msgid "Refuse"
+msgstr "Rebutjar"
+
+msgid "Refused"
+msgstr "Rebutjat -ada"
+
+msgid "Regenerate"
+msgstr "Regenerar"
+
+msgid "Register"
+msgstr "Registrar-se"
+
+msgid "Registration"
+msgstr "Registre"
+
+msgid "Registration authority"
+msgstr "Entitat registradora"
+
+msgid "Registry"
+msgstr "Registre"
+
+msgid "Regular"
+msgstr "Habitual, regular"
+
+msgid "Regular copy"
+msgstr "Versió estàndard"
+
+msgid "Reinitialize"
+msgstr "Reinicialitzar"
+
+msgid "Rejected"
+msgstr "Rebutjat -ada"
+
+msgid "Relay"
+msgstr "Repetidor"
+
+msgid "Release"
+msgstr "Llançament || versió (f)"
+
+msgid "Release"
+msgstr "Llançar"
+
+msgid "Reload"
+msgstr "Actualitzar || tornar a carregar"
+
+msgid "Remaining"
+msgstr "Restant"
+
+msgid "Remark"
+msgstr "Comentari"
+
+msgid "Reminder"
+msgstr "Recordatori"
+
+msgid "Remote"
+msgstr "Remot -a"
+
+msgid "Remote access"
+msgstr "Accés remot"
+
+msgid "Removable"
+msgstr "Extraïble"
+
+msgid "Remove"
+msgstr "Eliminar, suprimir || treure"
+
+msgid "Rename"
+msgstr "Canviar el nom, tornar a anomenar (v tr)"
+
+msgid "Render"
+msgstr "Renderitzar"
+
+msgid "Rendering"
+msgstr "Renderització"
+
+msgid "Renew"
+msgstr "Renovar"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Replace"
+msgstr "Reemplaçar"
+
+msgid "Replied"
+msgstr "Respost -a"
+
+msgid "Reply"
+msgstr "Resposta"
+
+msgid "Reply"
+msgstr "Respondre"
+
+msgid "Report"
+msgstr "Informe"
+
+msgid "Report"
+msgstr "Llistar"
+
+msgid "Repository"
+msgstr "Dipòsit"
+
+msgid "Request"
+msgstr "Sol·licitud"
+
+msgid "Require"
+msgstr "Requerir, necessitar"
+
+msgid "Required"
+msgstr "Necessari -ària"
+
+msgid "Requirement"
+msgstr "Requeriment, requisit, exigència (f)"
+
+msgid "Resend"
+msgstr "Reenviar"
+
+msgid "Reset"
+msgstr "Reiniciar, reinicialitzar"
+
+msgid "Resident program"
+msgstr "Programa resident"
+
+msgid "Resize"
+msgstr "Redimensionar, canviar la mida (loc)"
+
+msgid "Resolution"
+msgstr "Resolució"
+
+msgid "Resolver"
+msgstr "Sistema de resolució || resolutor"
+
+msgid "Resource"
+msgstr "Recurs"
+
+msgid "Respawn"
+msgstr "Tornar a engendrar"
+
+msgid "Response"
+msgstr "Resposta"
+
+msgid "Restart"
+msgstr "Reinici"
+
+msgid "Restart"
+msgstr "Reiniciar"
+
+msgid "Restore"
+msgstr "Restaurar"
+
+msgid "Resume"
+msgstr "Reprendre"
+
+msgid "Retrieval"
+msgstr "Recuperació"
+
+msgid "Retrieve"
+msgstr "Recuperar"
+
+msgid "Retry"
+msgstr "Reintent"
+
+msgid "Retry"
+msgstr "Reintentar"
+
+msgid "Return address"
+msgstr "Adreça de resposta"
+
+msgid "Return"
+msgstr "Tecla de retorn"
+
+msgid "Return key"
+msgstr "Tecla de retorn"
+
+msgid "Reuse"
+msgstr "Reutilitzar"
+
+msgid "Reverse"
+msgstr "Invertir"
+
+msgid "Revocation"
+msgstr "Revocació"
+
+msgid "Revoke"
+msgstr "Revocar"
+
+msgid "Revoker"
+msgstr "Revocador"
+
+msgid "Rewind"
+msgstr "Rebobinar"
+
+msgid "Rich edit"
+msgstr "Edició enriquida"
+
+msgid "Rich text"
+msgstr "Text enriquit"
+
+msgid "Rid"
+msgstr "Alliberar, fer desaparèixer"
+
+msgid "Ring"
+msgstr "Anell"
+
+msgid "Ring"
+msgstr "Trucar"
+
+msgid "Ringing tone"
+msgstr "So de trucada"
+
+msgid "Roaming"
+msgstr "Itinerància"
+
+msgid "Roaming access"
+msgstr "Accés itinerant"
+
+msgid "Roaming access server"
+msgstr "Servidor d'accés itinerant"
+
+msgid "Robot"
+msgstr "Robot"
+
+msgid "Robotics"
+msgstr "Robòtica"
+
+msgid "Rollback"
+msgstr "Desfer"
+
+msgid "Roll back"
+msgstr "Desfer"
+
+msgid "Root"
+msgstr "Arrel"
+
+msgid "Root directory"
+msgstr "Directori arrel"
+
+msgid "Root user"
+msgstr "Usuari primari"
+
+msgid "Round bracket"
+msgstr "Clau (caràcters { i })"
+
+msgid "Router"
+msgstr "Encaminador"
+
+msgid "Routine"
+msgstr "Rutina"
+
+msgid "Row"
+msgstr "Fila"
+
+msgid "Row break"
+msgstr "Salt de fila"
+
+msgid "Ruler"
+msgstr "Regle"
+
+msgid "Run"
+msgstr "Execució"
+
+msgid "Run level"
+msgstr "Nivell d'execució"
+
+msgid "Run time"
+msgstr "Temps d'execució || versió d'execució"
+
+msgid "Run"
+msgstr "Executar"
+
+msgid "Running time"
+msgstr "Temps d'execució"
+
+msgid "Runtime application"
+msgstr "Versió d'execució"
+
+msgid "Runtime program"
+msgstr "Versió d'execució"
+
+msgid "Runtime version"
+msgstr "Versió d'execució"
+
+msgid "Runtime"
+msgstr "Temps d'execució || versió d'execució (f)"
+
+msgid "Run-time"
+msgstr "Temps d'execució || versió d'execució (f)"
+
+msgid "Safe"
+msgstr "Segur -a"
+
+msgid "Salvage"
+msgstr "Salvament (financer) || recuperació (xarxes) (f)"
+
+msgid "Sample"
+msgstr "Mostra"
+
+msgid "Sampling rate"
+msgstr "Freqüència de mostratge"
+
+msgid "Sandbox"
+msgstr "Entorn de proves"
+
+msgid "Save as"
+msgstr "Anomenar i desar"
+
+msgid "Save"
+msgstr "Desar"
+
+msgid "Saving"
+msgstr "Desament"
+
+msgid "Scalable"
+msgstr "Escalable"
+
+msgid "Scale"
+msgstr "Canviar d'escala"
+
+msgid "Scan"
+msgstr "Escanejar"
+
+msgid "Scanner"
+msgstr "Escàner"
+
+msgid "Scanning"
+msgstr "Escaneig"
+
+msgid "Score"
+msgstr "Puntuació"
+
+msgid "Screen"
+msgstr "Pantalla"
+
+msgid "Screen saver"
+msgstr "Estalvi de pantalla"
+
+msgid "Screensaver"
+msgstr "Estalvi de pantalla"
+
+msgid "Screenshot"
+msgstr "Captura de pantalla"
+
+msgid "Script"
+msgstr "Script    [ l'script ]"
+
+msgid "Script file"
+msgstr "Fitxer script"
+
+msgid "Scripting language"
+msgstr "Llenguatge script"
+
+msgid "ScrLock"
+msgstr "Tecla de fixació de desplaçament"
+
+msgid "Scroll lock key"
+msgstr "Tecla de fixació de desplaçament"
+
+msgid "Scroll bar"
+msgstr "Barra de desplaçament"
+
+msgid "Scroll"
+msgstr "Desplaçar"
+
+msgid "Schedule"
+msgstr "Planificació, programa (m), agenda"
+
+msgid "Schedule"
+msgstr "Planificar, programar"
+
+msgid "Scheduler"
+msgstr "Dietari, planificador de tasques"
+
+msgid "Scheduling"
+msgstr "Planificació, programació"
+
+msgid "Schema"
+msgstr "Esquema"
+
+msgid "Scheme"
+msgstr "Combinació"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "Search box"
+msgstr "Quadre de cerca"
+
+msgid "Search engine"
+msgstr "Cercador, motor de cerca"
+
+msgid "Search results"
+msgstr "Resultats de (la) cerca"
+
+msgid "Search"
+msgstr "Cercar"
+
+msgid "Secret key"
+msgstr "Clau secreta"
+
+msgid "Sector"
+msgstr "Sector"
+
+msgid "Secure"
+msgstr "Segur -a"
+
+msgid "Secure-HTTP"
+msgstr "HTTP segur"
+
+msgid "Secure"
+msgstr "Assegurar"
+
+msgid "Securely"
+msgstr "De manera segura"
+
+msgid "Security"
+msgstr "Seguretat || títol (financer) (m)"
+
+msgid "Security breach"
+msgstr "Forat de seguretat"
+
+msgid "Seek"
+msgstr "Cerca"
+
+msgid "Seek bar"
+msgstr "Barra de cerques"
+
+msgid "Seek"
+msgstr "Cercar"
+
+msgid "Select"
+msgstr "Seleccionar"
+
+msgid "Selfextracting"
+msgstr "Autoextraïble"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Sender"
+msgstr "Remitent"
+
+msgid "Sensor"
+msgstr "Sensor"
+
+msgid "Sequential access"
+msgstr "Accés seqüencial"
+
+msgid "Serial number"
+msgstr "Número de sèrie"
+
+msgid "Serial port"
+msgstr "Port en sèrie"
+
+msgid "Server"
+msgstr "Servidor"
+
+msgid "Server farm"
+msgstr "Centre de servidors"
+
+msgid "Servername"
+msgstr "Nom de servidor"
+
+msgid "Servlet"
+msgstr "Miniaplicació de servidor"
+
+msgid "Session"
+msgstr "Sessió"
+
+msgid "Set"
+msgstr "Definir, establir, fixar, indicar, determinar..."
+
+msgid "Setting"
+msgstr "Paràmetre"
+
+msgid "Settings"
+msgstr "Configuració, paràmetres (m pl)"
+
+msgid "Settlement"
+msgstr "Liquidació (financera)"
+
+msgid "Setup"
+msgstr "Configuració || instal·lació, programa d'instal·lació (m)"
+
+msgid "Shared"
+msgstr "Compartit -ida"
+
+msgid "Shareware"
+msgstr "Programari de prova"
+
+msgid "Sharpen"
+msgstr "Aguditzar (una imatge)"
+
+msgid "Sharpness"
+msgstr "Nitidesa"
+
+msgid "Shell"
+msgstr "Intèrpret d'ordres"
+
+msgid "Shift"
+msgstr "Tecla de majúscules"
+
+msgid "Shift key"
+msgstr "Tecla de majúscules"
+
+msgid "Shopping cart"
+msgstr "Carretó electrònic"
+
+msgid "Shortcut"
+msgstr "Drecera"
+
+msgid "Shortcut icon"
+msgstr "Icona de drecera"
+
+msgid "Shortcut key"
+msgstr "Tecla de drecera"
+
+msgid "Show"
+msgstr "Mostrar"
+
+msgid "Shrink"
+msgstr "Encongir"
+
+msgid "Shuffle"
+msgstr "Mescla"
+
+msgid "Shuffle"
+msgstr "Mesclar"
+
+msgid "Shutdown"
+msgstr "Aturada"
+
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+msgid "Sign in"
+msgstr "Iniciar la/una sessió, entrar, connectar(-se)"
+
+msgid "Sign up"
+msgstr "Registrar-se"
+
+msgid "Signal"
+msgstr "Senyal"
+
+msgid "Signature"
+msgstr "Signatura"
+
+msgid "Signed"
+msgstr "Signat -ada"
+
+msgid "Signer"
+msgstr "Signant"
+
+msgid "Signing key"
+msgstr "Clau de signatura"
+
+msgid "Signup"
+msgstr "(procés de) registre"
+
+msgid "Simulate"
+msgstr "Simular"
+
+msgid "Simulation"
+msgstr "Simulació"
+
+msgid "Simulator"
+msgstr "Simulador"
+
+msgid "Single"
+msgstr "Senzill -a, simple"
+
+msgid "Site"
+msgstr "Lloc (web)"
+
+msgid "Site manager"
+msgstr "Gestor de llocs"
+
+msgid "Size"
+msgstr "Mida, ocupació, dimensió"
+
+msgid "Skin"
+msgstr "Aparença"
+
+msgid "Skip"
+msgstr "Ometre"
+
+msgid "Slash"
+msgstr "Barra, barra inclinada"
+
+msgid "Slash key"
+msgstr "Tecla de barra inclinada"
+
+msgid "Slide"
+msgstr "Diapositiva"
+
+msgid "Slider button"
+msgstr "Botó lliscant"
+
+msgid "Slideshow"
+msgstr "Presentació amb diapositives, projecció de diapositives"
+
+msgid "Slot"
+msgstr "Ranura"
+
+msgid "Slot time"
+msgstr "Temps d'espera"
+
+msgid "Smart"
+msgstr "Intel·ligent"
+
+msgid "Smiley"
+msgstr "Emoticona"
+
+msgid "Smooth"
+msgstr "Suau"
+
+msgid "Snap"
+msgstr "Desplaçar"
+
+msgid "Snapshot"
+msgstr "Instantània"
+
+msgid "Socket"
+msgstr "Sòcol"
+
+msgid "Socket number"
+msgstr "Número de sòcol"
+
+msgid "Soft key"
+msgstr "Tecla programable"
+
+msgid "Software"
+msgstr "Programari, programa, programes (m pl)"
+
+msgid "Software architect"
+msgstr "Arquitecte -a de programari"
+
+msgid "Software keyboard"
+msgstr "Teclat virtual"
+
+msgid "Software packet"
+msgstr "Paquet informàtic"
+
+msgid "Sort ascending"
+msgstr "Ordenar en sentit ascendent"
+
+msgid "Sort by"
+msgstr "Ordenar per"
+
+msgid "Sort descending"
+msgstr "Ordenar en sentit descendent"
+
+msgid "Sort"
+msgstr "Ordenar"
+
+msgid "Sound card"
+msgstr "Targeta de so"
+
+msgid "Soundcard"
+msgstr "Targeta de so"
+
+msgid "Source"
+msgstr "Font, origen (m) || codi font (m)"
+
+msgid "Source code"
+msgstr "Codi font"
+
+msgid "Source language"
+msgstr "Llenguatge font"
+
+msgid "Source program"
+msgstr "Programa font"
+
+msgid "Space bar"
+msgstr "Barra espaiadora"
+
+msgid "Spacing"
+msgstr "Espaiat"
+
+msgid "Spam"
+msgstr "Correu brossa"
+
+msgid "Spam"
+msgstr "Enviar correu brossa"
+
+msgid "Spamming"
+msgstr "Enviament de correu brossa"
+
+msgid "Spawn"
+msgstr "Engendrar"
+
+msgid "Specify"
+msgstr "Indicar, especificar"
+
+msgid "Speed"
+msgstr "Velocitat"
+
+msgid "Spell checking"
+msgstr "Verificació de l'ortografia, verificació de la sintaxi"
+
+msgid "Spelling"
+msgstr "Ortografia"
+
+msgid "Spelling checker"
+msgstr "Verificador ortogràfic, corrector ortogràfic"
+
+msgid "Spider"
+msgstr "Aranya"
+
+msgid "Spin button"
+msgstr "Botó de selecció de valor"
+
+msgid "Splash page"
+msgstr "Pàgina flaix, pàgina de presentació"
+
+msgid "Splash screen"
+msgstr "Pantalla de presentació"
+
+msgid "Split"
+msgstr "Divisió"
+
+msgid "Split"
+msgstr "Dividir"
+
+msgid "Splitter"
+msgstr "Separador"
+
+msgid "Sponsor"
+msgstr "Patrocinador -a"
+
+msgid "Spoofing"
+msgstr "Falsejament d'identitat"
+
+msgid "Spool"
+msgstr "Gestió de cues"
+
+msgid "Spooler"
+msgstr "Gestor de cues"
+
+msgid "Spooling"
+msgstr "Gestió de cues"
+
+msgid "Spread"
+msgstr "Escampar"
+
+msgid "Spreadsheet"
+msgstr "Full de càlcul"
+
+msgid "Spreadsheet manager"
+msgstr "Gestor de fulls de càlcul"
+
+msgid "Spreadsheet program"
+msgstr "Gestor de fulls de càlcul"
+
+msgid "Spreadsheet publisher"
+msgstr "Gestor de fulls de càlcul"
+
+msgid "Spyware"
+msgstr "Programari espia"
+
+msgid "Square bracket"
+msgstr "Claudàtor (caràcters [ i ])"
+
+msgid "Stack"
+msgstr "Pila"
+
+msgid "Stand by"
+msgstr "En espera"
+
+msgid "Standard"
+msgstr "Estàndard"
+
+msgid "Standard"
+msgstr "Estàndard"
+
+msgid "Start menu"
+msgstr "Menú d'inici"
+
+msgid "Start"
+msgstr "Iniciar"
+
+msgid "Starting page"
+msgstr "Pàgina inicial"
+
+msgid "Startup"
+msgstr "Engegada, inicialització"
+
+msgid "Startup"
+msgstr "Engegar, inicialitzar"
+
+msgid "Static text control"
+msgstr "Control de text estàtic"
+
+msgid "Stationery"
+msgstr "Material de papereria || disseny de fons"
+
+msgid "Status"
+msgstr "Estat"
+
+msgid "Status bar"
+msgstr "Barra d'estat"
+
+msgid "Step"
+msgstr "Pas"
+
+msgid "Sticky note"
+msgstr "Nota adhesiva"
+
+msgid "Sticky topic"
+msgstr "Tema recurrent"
+
+msgid "Stop"
+msgstr "Aturar"
+
+msgid "Storage"
+msgstr "Emmagatzematge"
+
+msgid "Store"
+msgstr "Emmagatzemar"
+
+msgid "Stream"
+msgstr "Flux (de dades)"
+
+msgid "Stream"
+msgstr "Transmetre (un flux de dades)"
+
+msgid "Stretch"
+msgstr "Ampliar"
+
+msgid "Strikethrough"
+msgstr "Barrat"
+
+msgid "String"
+msgstr "Cadena"
+
+msgid "Stripchart"
+msgstr "Diagrama de tira, diagrama lineal continu, gràfic multilineal"
+
+msgid "Structure"
+msgstr "Estructura"
+
+msgid "Style"
+msgstr "Estil"
+
+msgid "Style sheet"
+msgstr "Full d'estil"
+
+msgid "Styled text"
+msgstr "Text amb estil"
+
+msgid "Subdirectory"
+msgstr "Subdirectori, subcarpeta (f)"
+
+msgid "Subdomain"
+msgstr "Subdomini"
+
+msgid "Subfolder"
+msgstr "Subcarpeta, subdirectori (m)"
+
+msgid "Subject"
+msgstr "Assumpte"
+
+msgid "Submask"
+msgstr "Submàscara"
+
+msgid "Submenu"
+msgstr "Submenú"
+
+msgid "Submission"
+msgstr "Tramesa"
+
+msgid "Submit"
+msgstr "Trametre"
+
+msgid "Subnet"
+msgstr "Subxarxa"
+
+msgid "Subprogram"
+msgstr "Subprograma"
+
+msgid "Subscribe"
+msgstr "Subscriure's"
+
+msgid "Subscript"
+msgstr "Subíndex"
+
+msgid "Succeed"
+msgstr "Reeixir, sortir-se'n, tenir èxit"
+
+msgid "Successfully"
+msgstr "Correctament, amb èxit (loc)"
+
+msgid "Suggest"
+msgstr "Suggerir"
+
+msgid "Suggestion"
+msgstr "Suggeriment"
+
+msgid "Suite"
+msgstr "Paquet ofimàtic, conjunt de programes"
+
+msgid "Summary"
+msgstr "Resum"
+
+msgid "Superscript"
+msgstr "Superíndex"
+
+msgid "Superuser"
+msgstr "Superusuari"
+
+msgid "Support"
+msgstr "Assistència || compatibilitat, admissió"
+
+msgid "Support"
+msgstr "Permetre l'ús de, ser compatible amb, admetre, funcionar amb..."
+
+msgid "Suspicious"
+msgstr "Sospitós -osa"
+
+msgid "Swap"
+msgstr "Intercanvi"
+
+msgid "Swap"
+msgstr "Intercanviar"
+
+msgid "Swipe"
+msgstr "Fer lliscar (el dit)"
+
+msgid "Switch"
+msgstr "Commutador"
+
+msgid "Switch"
+msgstr "Commutar, canviar a"
+
+msgid "Switchboard"
+msgstr "Centraleta"
+
+msgid "Switched line"
+msgstr "Connexió commutada"
+
+msgid "Switched network"
+msgstr "Xarxa commutada"
+
+msgid "Switching"
+msgstr "Commutació"
+
+msgid "Symbolic link"
+msgstr "Enllaç simbòlic"
+
+msgid "Synchronize"
+msgstr "Sincronitzar"
+
+msgid "Synchronous"
+msgstr "Síncron -a"
+
+msgid "Synthesis"
+msgstr "Síntesi"
+
+msgid "Sysadmin"
+msgstr "Administrador -a o gestor -a de sistemes informàtics"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "System call"
+msgstr "Crida del sistema"
+
+msgid "System computing"
+msgstr "Informàtica de sistemes"
+
+msgid "System tray"
+msgstr "Safata del sistema"
+
+msgid "Tab"
+msgstr "Tabulació || pestanya"
+
+msgid "Tab"
+msgstr "Tecla de tabulació"
+
+msgid "Tabulation key"
+msgstr "Tecla de tabulació"
+
+msgid "Table"
+msgstr "Taula"
+
+msgid "Table of contents"
+msgstr "Índex"
+
+msgid "Tag"
+msgstr "Etiqueta || marcador (m)"
+
+msgid "Tagging"
+msgstr "Etiquetatge"
+
+msgid "Tailor"
+msgstr "Fer a mida"
+
+msgid "Tailored"
+msgstr "Fet -a a mida"
+
+msgid "Talk"
+msgstr "Diàleg"
+
+msgid "Tap"
+msgstr "Fer un toc"
+
+msgid "Target"
+msgstr "Objectiu"
+
+msgid "Target"
+msgstr "Adreçar, adreçar-se (v pron)"
+
+msgid "Task"
+msgstr "Tasca"
+
+msgid "Task bar"
+msgstr "Barra de tasques"
+
+msgid "Task list"
+msgstr "Llista de tasques"
+
+msgid "Taskbar"
+msgstr "Barra de tasques"
+
+msgid "Telebanking"
+msgstr "Banca electrònica"
+
+msgid "Telematics"
+msgstr "Telemàtica"
+
+msgid "Telnet"
+msgstr "Telnet"
+
+msgid "Telnet"
+msgstr "Fer un Telnet"
+
+msgid "Template"
+msgstr "Plantilla"
+
+msgid "Temporary"
+msgstr "Temporal, provisional"
+
+msgid "Terminal"
+msgstr "Terminal, consola (f)"
+
+msgid "Test"
+msgstr "Prova, verificació"
+
+msgid "Test"
+msgstr "Provar, verificar"
+
+msgid "Tester"
+msgstr "Provador -a, verificador -a"
+
+msgid "Testing"
+msgstr "Prova, verificació"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Thickness"
+msgstr "Gruix"
+
+msgid "Thread"
+msgstr "Fil (de discussió)"
+
+msgid "Threshold"
+msgstr "Llindar"
+
+msgid "Throughput"
+msgstr "Velocitat de transferència de dades"
+
+msgid "Thumbnail"
+msgstr "Miniatura || contacte fotogràfic (m)"
+
+msgid "Tile"
+msgstr "Mosaic"
+
+msgid "Tiled"
+msgstr "En mosaic"
+
+msgid "Time"
+msgstr "Hora || temps (m)"
+
+msgid "Timeout"
+msgstr "Temps d'espera, temps excedit"
+
+msgid "Timestamp"
+msgstr "Marca horària"
+
+msgid "Timezone"
+msgstr "Zona horària, fus horari (m)"
+
+msgid "Tint"
+msgstr "Matís"
+
+msgid "Tip"
+msgstr "Consell"
+
+msgid "Title"
+msgstr "Títol"
+
+msgid "Toggle"
+msgstr "Commutar"
+
+msgid "Token"
+msgstr "Testimoni"
+
+msgid "Token bus"
+msgstr "Bus de testimoni"
+
+msgid "Token ringken passing ring"
+msgstr "Anell de testimoni"
+
+msgid "Tool"
+msgstr "Eina"
+
+msgid "Toolbar"
+msgstr "Barra d'eines"
+
+msgid "Toolkit"
+msgstr "Joc d'eines"
+
+msgid "Tooltip"
+msgstr "Indicador de funció"
+
+msgid "Top"
+msgstr "Part superior"
+
+msgid "Top"
+msgstr "Superior"
+
+msgid "Top level domain"
+msgstr "Domini de primer nivell"
+
+msgid "Topic"
+msgstr "Tema"
+
+msgid "Touchpad"
+msgstr "Ratolí tàctil"
+
+msgid "Touchscreen"
+msgstr "Pantalla tàctil"
+
+msgid "Track"
+msgstr "Pista || peça (musical)"
+
+msgid "Track ball"
+msgstr "Ratolí de bola"
+
+msgid "Track"
+msgstr "Fer un seguiment"
+
+msgid "Trackback"
+msgstr "Retroenllaç"
+
+msgid "Trackpad"
+msgstr "Ratolí tàctil"
+
+msgid "Transcoding"
+msgstr "Transcodificació"
+
+msgid "Transfer"
+msgstr "Transferència"
+
+msgid "Transfer"
+msgstr "Transferir"
+
+msgid "Translation memory"
+msgstr "Memòria de traducció"
+
+msgid "Transmission"
+msgstr "Transmissió"
+
+msgid "Transmission speed"
+msgstr "Velocitat de transmissió"
+
+msgid "Transmit"
+msgstr "Transmetre"
+
+msgid "Trash"
+msgstr "Paperera"
+
+msgid "Tray"
+msgstr "Safata"
+
+msgid "Treasury bill"
+msgstr "Lletra del tresor"
+
+msgid "Tree"
+msgstr "Arbre"
+
+msgid "Tree control"
+msgstr "Control d'arbre"
+
+msgid "Tree view"
+msgstr "Visualització en arbre"
+
+msgid "Trial"
+msgstr "Avaluació"
+
+msgid "Trigger"
+msgstr "Activador"
+
+msgid "Trigger"
+msgstr "Activar"
+
+msgid "Trim"
+msgstr "Retallar"
+
+msgid "Tristate"
+msgstr "Estat triple"
+
+msgid "Trojan"
+msgstr "Cavall de Troia"
+
+msgid "Trojan horse"
+msgstr "Cavall de Troia"
+
+msgid "Troubleshooting"
+msgstr "Resolució de problemes"
+
+msgid "Truncate"
+msgstr "Truncar"
+
+msgid "Trust"
+msgstr "Confiança"
+
+msgid "Trust"
+msgstr "Confiar"
+
+msgid "Trusted"
+msgstr "Fiable"
+
+msgid "Trusted computing"
+msgstr "Informàtica de confiança"
+
+msgid "Try"
+msgstr "Prova, intent (m)"
+
+msgid "Try again"
+msgstr "Tornar-ho a provar"
+
+msgid "Try"
+msgstr "Provar"
+
+msgid "Tune"
+msgstr "Ajustar"
+
+msgid "Turn off"
+msgstr "Apagar || desactivar"
+
+msgid "Turn on"
+msgstr "Activar || engegar"
+
+msgid "Tutorial"
+msgstr "Programa d'aprenentatge"
+
+msgid "Type"
+msgstr "Tipus"
+
+msgid "Type"
+msgstr "Teclejar"
+
+msgid "Typeahead"
+msgstr "Memòria intermèdia de teclat"
+
+msgid "Typeface"
+msgstr "Tipografia"
+
+msgid "Unavailable"
+msgstr "No disponible"
+
+msgid "Uncheck"
+msgstr "Desactivar (una casella de selecció)"
+
+msgid "Undelete"
+msgstr "Recuperar"
+
+msgid "Underline"
+msgstr "Subratllat"
+
+msgid "Underscore"
+msgstr "Caràcter de subratllat"
+
+msgid "Undo"
+msgstr "Desfer"
+
+msgid "Undock"
+msgstr "Desacoblar"
+
+msgid "Undocking"
+msgstr "Desacoblament"
+
+msgid "Unencrypted"
+msgstr "Sense encriptar"
+
+msgid "Unexpected"
+msgstr "Inesperat -ada"
+
+msgid "Unflag"
+msgstr "Treure el senyal"
+
+msgid "Unformatted"
+msgstr "Sense format"
+
+msgid "Unindent"
+msgstr "Desfer el sagnat"
+
+msgid "Uninstall"
+msgstr "Desinstal·lar"
+
+msgid "Unknown"
+msgstr "Desconegut -uda"
+
+msgid "Unmap"
+msgstr "Desassociar"
+
+msgid "Unmount"
+msgstr "Desmuntar"
+
+msgid "Unmounted"
+msgstr "Desmuntat -ada"
+
+msgid "Unnamed"
+msgstr "Sense nom"
+
+msgid "Unpack"
+msgstr "Descomprimir"
+
+msgid "Unpacked"
+msgstr "Descomprimit -ida"
+
+msgid "Unpacking"
+msgstr "Descompressió"
+
+msgid "Unreachable"
+msgstr "No accessible, no abastable"
+
+msgid "Unread"
+msgstr "No llegit -ida, per llegir (loc)"
+
+msgid "Unrecognized"
+msgstr "No reconegut -uda"
+
+msgid "Unregistered"
+msgstr "No registrat -ada"
+
+msgid "Unrequested"
+msgstr "No sol·licitat -ada"
+
+msgid "Unscramble"
+msgstr "Descodificar"
+
+msgid "Unselect"
+msgstr "Desseleccionar"
+
+msgid "Unsendable"
+msgstr "No enviable"
+
+msgid "Unsent"
+msgstr "Per enviar"
+
+msgid "Unspecified"
+msgstr "No especificat -ada, sense especificar (loc)"
+
+msgid "Unsubscribe"
+msgstr "Donar-se de baixa, cancel·lar la subscripció"
+
+msgid "Unsupported"
+msgstr "No implementat -ada, no admès -esa, no compatible"
+
+msgid "Untitled"
+msgstr "Sense títol"
+
+msgid "Untrusted"
+msgstr "No fiable"
+
+msgid "Unverified"
+msgstr "Sense verificar"
+
+msgid "Unvisited"
+msgstr "No visitat -ada"
+
+msgid "Update"
+msgstr "Actualització"
+
+msgid "Update"
+msgstr "Actualitzar"
+
+msgid "Upgrade"
+msgstr "Actualització, millora"
+
+msgid "Upgrade"
+msgstr "Actualitzar"
+
+msgid "Upload"
+msgstr "Càrrega, penjada"
+
+msgid "Upload"
+msgstr "Penjar"
+
+msgid "Upper case"
+msgstr "Majúscula"
+
+msgid "Uppercase"
+msgstr "Majúscula"
+
+msgid "Usability"
+msgstr "Usabilitat"
+
+msgid "Usage"
+msgstr "Sintaxi"
+
+msgid "Use"
+msgstr "Utilització"
+
+msgid "Use"
+msgstr "Utilitzar"
+
+msgid "User"
+msgstr "Usuari -ària"
+
+msgid "User friendly"
+msgstr "Amigable"
+
+msgid "User-friendly"
+msgstr "Amigable"
+
+msgid "User interface"
+msgstr "Interfície d'usuari"
+
+msgid "User name"
+msgstr "Nom d'usuari"
+
+msgid "Username"
+msgstr "Nom d'usuari"
+
+msgid "User profile"
+msgstr "Perfil d'usuari"
+
+msgid "User-defined key"
+msgstr "Tecla programable"
+
+msgid "Username"
+msgstr "Nom d'usuari"
+
+msgid "Utility"
+msgstr "Utilitat"
+
+msgid "Vaccine program"
+msgstr "Antivirus"
+
+msgid "Validate"
+msgstr "Validar"
+
+msgid "Validity"
+msgstr "Validesa"
+
+msgid "Value"
+msgstr "Valor"
+
+msgid "Variable"
+msgstr "Variable"
+
+msgid "Vendor"
+msgstr "Proveïdor"
+
+msgid "Verbatim copy"
+msgstr "Còpia literal"
+
+msgid "Verbosely"
+msgstr "Detalladament"
+
+msgid "Verifier"
+msgstr "Verificador -a"
+
+msgid "Verify"
+msgstr "Verificar"
+
+msgid "Version"
+msgstr "Versió"
+
+msgid "Video"
+msgstr "Vídeo"
+
+msgid "Video camera"
+msgstr "Càmera de vídeo, videocàmera"
+
+msgid "Video codec"
+msgstr "Còdec de vídeo"
+
+msgid "View"
+msgstr "Visualització || vista"
+
+msgid "View"
+msgstr "Visualitzar, mostrar"
+
+msgid "Viewer"
+msgstr "Visualitzador"
+
+msgid "Viewport"
+msgstr "Subàrea de visualització"
+
+msgid "Violation"
+msgstr "Violació"
+
+msgid "Virus"
+msgstr "Virus"
+
+msgid "Visitor"
+msgstr "Visitant"
+
+msgid "Voice mailbox"
+msgstr "Bústia de veu"
+
+msgid "Voicemail"
+msgstr "Correu de veu"
+
+msgid "Voxel"
+msgstr "Vòxel"
+
+msgid "Wait"
+msgstr "Esperar"
+
+msgid "Wallpaper"
+msgstr "Empaperat"
+
+msgid "Warning"
+msgstr "Advertiment, avís"
+
+msgid "Watch"
+msgstr "Mirar"
+
+msgid "Watcher"
+msgstr "Monitor"
+
+msgid "Watermark"
+msgstr "Marca d'aigua"
+
+msgid "Web"
+msgstr "Web"
+
+msgid "Web"
+msgstr "Web, lloc web, pàgina web (f)"
+
+msgid "Web bug"
+msgstr "Píxel invisible"
+
+msgid "Web collaboration"
+msgstr "Col·laboració per web"
+
+msgid "Web feed"
+msgstr "Canal (d'informació)"
+
+msgid "Web map"
+msgstr "Mapa del web"
+
+msgid "Web page"
+msgstr "Pàgina web"
+
+msgid "Web ripper"
+msgstr "Capturador de llocs web"
+
+msgid "Web site"
+msgstr "Lloc web"
+
+msgid "Website"
+msgstr "Lloc web"
+
+msgid "Web spoofing"
+msgstr "Falsejament d'identitat"
+
+msgid "Webcam"
+msgstr "Càmera web"
+
+msgid "Webcasting"
+msgstr "Difusió per web"
+
+msgid "Weblog"
+msgstr "Bloc"
+
+msgid "Webmail"
+msgstr "Correu web"
+
+msgid "Webmaster"
+msgstr "Administrador -a de webs"
+
+msgid "Webpage"
+msgstr "Pàgina web"
+
+msgid "Webring"
+msgstr "Anella de webs"
+
+msgid "Website"
+msgstr "Lloc web"
+
+msgid "What's New?"
+msgstr "Novetats"
+
+msgid "What's Related"
+msgstr "Llocs afins"
+
+msgid "Whitepoint"
+msgstr "Temperatura de color"
+
+msgid "Whois"
+msgstr "Whois"
+
+msgid "Wideband"
+msgstr "Banda ampla"
+
+msgid "Widget"
+msgstr "Giny"
+
+msgid "Width"
+msgstr "Amplada"
+
+msgid "Wild card"
+msgstr "Comodí"
+
+msgid "Wildcard"
+msgstr "Comodí"
+
+msgid "Window"
+msgstr "Finestra"
+
+msgid "Window manager"
+msgstr "Gestor de finestres"
+
+msgid "Windows key"
+msgstr "Tecla de Windows"
+
+msgid "Wipe"
+msgstr "Esborrar"
+
+msgid "Wireless"
+msgstr "Sense fil"
+
+msgid "Wiretapping"
+msgstr "Connexió clandestina"
+
+msgid "Wiz"
+msgstr "Auxiliar"
+
+msgid "Wizard"
+msgstr "Auxiliar"
+
+msgid "Word processing"
+msgstr "Processament de textos"
+
+msgid "Word processor"
+msgstr "Processador de textos"
+
+msgid "Workaround"
+msgstr "Solució temporal"
+
+msgid "Workday"
+msgstr "Dia feiner"
+
+msgid "Workgroup"
+msgstr "Grup de treball"
+
+msgid "Workplace"
+msgstr "Lloc de treball"
+
+msgid "Workstation"
+msgstr "Estació de treball"
+
+msgid "World Wide Web"
+msgstr "Web"
+
+msgid "Worm"
+msgstr "Cuc"
+
+msgid "Wrap"
+msgstr "Ajustar"
+
+msgid "Write head"
+msgstr "Capçal d'escriptura"
+
+msgid "Write only"
+msgstr "Només d'escriptura"
+
+msgid "Write"
+msgstr "Escriure"
+
+msgid "Writing"
+msgstr "Escriptura"
+
+msgid "Wrong"
+msgstr "Erroni -ònia"
+
+msgid "Yield"
+msgstr "Rendiment (financer)"
+
+msgid "Zip code"
+msgstr "Codi postal"
+
+msgid "Zoom"
+msgstr "Zoom, escala (f)"
+
+msgid "Zoom in"
+msgstr "Ampliar, apropar"
+
+msgid "Zoom out"
+msgstr "Reduir, allunyar"
+
+msgid "Cloud computing"
+msgstr "Informàtica en núvol"

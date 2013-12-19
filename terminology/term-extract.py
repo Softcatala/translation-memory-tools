@@ -199,7 +199,7 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
 
 def read_recull():
 
-    pofile = polib.pofile('recull/recull.po')
+    pofile = polib.pofile('recull/recull-glossary.po')
         
     terms = {}
     for entry in pofile:
