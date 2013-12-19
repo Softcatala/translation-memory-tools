@@ -67,8 +67,8 @@ def read_xml():
             entry = polib.POEntry(msgid=source, msgstr=target) 
             pofile.append(entry)
 
-        pofile.save("microsoft-terms.po")
-        print "Terms : " + terms
+    pofile.save("microsoft-terms.po")
+    print "Terms : " + str(terms)
     
 def main():
     '''
