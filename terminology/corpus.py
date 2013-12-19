@@ -46,7 +46,7 @@ class Corpus:
 
         #remove all the leading and trailing whitespace characters 
         result = result.strip()
-        result = r.lower()
+        result = result.lower()
         return result
 
 
