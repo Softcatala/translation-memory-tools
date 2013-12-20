@@ -1,0 +1,6796 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: info@softcatala.org\n"
+"POT-Creation-Date: 2007-10-18 14:00+0100\n"
+"PO-Revision-Date: 2007-10-18 14:00+0100\n"
+"Last-Translator: info@softcatala.org\n"
+"Language-Team: Catalan <info@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "access, to"
+msgstr "accedir"
+
+msgid "connection accelerator"
+msgstr "accelerador de connexió"
+
+msgid "access"
+msgstr "accés"
+
+msgid "direct access"
+msgstr "accés aleatori"
+
+msgid "random access"
+msgstr "accés aleatori"
+
+msgid "multiple access"
+msgstr "accés múltiple"
+
+msgid "carrier sense multiple access"
+msgstr "accés múltiple amb escolta de portadora"
+
+msgid "CSMA"
+msgstr "accés múltiple amb escolta de portadora"
+
+msgid "carrier sense multiple access with collision detection"
+msgstr "accés múltiple amb escolta de portadora i detecció de col·lisió"
+
+msgid "CSMA/CD"
+msgstr "accés múltiple amb escolta de portadora i detecció de col·lisió"
+
+msgid "code division multiple access"
+msgstr "accés múltiple per divisió de codi"
+
+msgid "CDMA"
+msgstr "accés múltiple per divisió de codi"
+
+msgid "time division multiple access"
+msgstr "accés múltiple per divisió de temps"
+
+msgid "TDMA"
+msgstr "accés múltiple per divisió de temps"
+
+msgid "remote access"
+msgstr "accés remot"
+
+msgid "sequential access"
+msgstr "accés seqüencial"
+
+msgid "dock"
+msgstr "acoblador"
+
+msgid "transmission coupler"
+msgstr "acoblador de transmissió"
+
+msgid "docking"
+msgstr "acoblament"
+
+msgid "dock, to"
+msgstr "acoblar"
+
+msgid "couple, to"
+msgstr "acoblar"
+
+msgid "update"
+msgstr "actualització"
+
+msgid "upgrade"
+msgstr "actualització"
+
+msgid "refreshing"
+msgstr "actualització"
+
+msgid "refresh, to"
+msgstr "actualitzar"
+
+msgid "reload, to"
+msgstr "actualitzar"
+
+msgid "update, to"
+msgstr "actualitzar"
+
+msgid "upgrade, to"
+msgstr "actualitzar"
+
+msgid "adaptation"
+msgstr "adaptació"
+
+msgid "adapter"
+msgstr "adaptador"
+
+msgid "line adapter"
+msgstr "adaptador de línia"
+
+msgid "network adapter"
+msgstr "adaptador de xarxa"
+
+msgid "adapt, to"
+msgstr "adaptar"
+
+msgid "attachment"
+msgstr "adjunció"
+
+msgid "attach, to"
+msgstr "adjuntar"
+
+msgid "database administrator"
+msgstr "administrador -a de bases de dades"
+
+msgid "database manager"
+msgstr "administrador -a de bases de dades"
+
+msgid "postmaster"
+msgstr "administrador -a de correu"
+
+msgid "computer system administrator"
+msgstr "administrador -a de sistemes informàtics"
+
+msgid "superuser"
+msgstr "administrador -a de sistemes informàtics"
+
+msgid "sysadmin"
+msgstr "administrador -a de sistemes informàtics"
+
+msgid "webmaster"
+msgstr "administrador -a de webs"
+
+msgid "network administrator"
+msgstr "administrador -a de xarxes"
+
+msgid "network manager"
+msgstr "administrador -a de xarxes"
+
+msgid "bookmark"
+msgstr "adreça d'interès"
+
+msgid "favourite"
+msgstr "adreça d'interès"
+
+msgid "Internet address"
+msgstr "adreça d'Internet"
+
+msgid "e-mail"
+msgstr "adreça electrònica"
+
+msgid "electronic mail address"
+msgstr "adreça electrònica"
+
+msgid "IP address"
+msgstr "adreça IP"
+
+msgid "electronic diary"
+msgstr "agenda electrònica"
+
+msgid "schedule"
+msgstr "agenda electrònica"
+
+msgid "agent"
+msgstr "agent"
+
+msgid "robot"
+msgstr "agent"
+
+msgid "cancelbot"
+msgstr "agent d'anul·lació"
+
+msgid "knowbot"
+msgstr "agent d'informació"
+
+msgid "roboshopper"
+msgstr "agent de compres"
+
+msgid "shopbot"
+msgstr "agent de compres"
+
+msgid "shopping robot"
+msgstr "agent de compres"
+
+msgid "alphanumeric"
+msgstr "alfanumèric -a"
+
+msgid "algorithm"
+msgstr "algorisme"
+
+msgid "encipherment algorithm"
+msgstr "algorisme d'encriptació"
+
+msgid "encryption algorithm"
+msgstr "algorisme d'encriptació"
+
+msgid "B + B algorithm"
+msgstr "algorisme de branca i límit"
+
+msgid "branch and bound algorithm"
+msgstr "algorisme de branca i límit"
+
+msgid "compression algorithm"
+msgstr "algorisme de compressió"
+
+msgid "alias"
+msgstr "àlies"
+
+msgid "nickname"
+msgstr "àlies"
+
+msgid "housing"
+msgstr "allotjament"
+
+msgid "house, to"
+msgstr "allotjar"
+
+msgid "high technology"
+msgstr "alta tecnologia"
+
+msgid "host"
+msgstr "amfitrió"
+
+msgid "host computer"
+msgstr "amfitrió"
+
+msgid "friendly"
+msgstr "amigable"
+
+msgid "bandwidth"
+msgstr "amplada de banda"
+
+msgid "amplification"
+msgstr "amplificació"
+
+msgid "amplifier"
+msgstr "amplificador"
+
+msgid "optical amplifier"
+msgstr "amplificador òptic"
+
+msgid "amplify, to"
+msgstr "amplificar"
+
+msgid "computer illiterate"
+msgstr "analfabet -a digital"
+
+msgid "digital illiterate"
+msgstr "analfabet -a digital"
+
+msgid "analyst"
+msgstr "analista"
+
+msgid "network analyst"
+msgstr "analista de xarxes"
+
+msgid "programmer analyst"
+msgstr "analista programador -a"
+
+msgid "analog"
+msgstr "analògic -a"
+
+msgid "anchor"
+msgstr "àncora"
+
+msgid "virtual android"
+msgstr "androide virtual"
+
+msgid "ring"
+msgstr "anell"
+
+msgid "token passing ring"
+msgstr "anell de testimoni"
+
+msgid "token ring"
+msgstr "anell de testimoni"
+
+msgid "webring"
+msgstr "anella de webs"
+
+msgid "core"
+msgstr "ànima"
+
+msgid "animation"
+msgstr "animació"
+
+msgid "animatics"
+msgstr "animació assistida per ordinador"
+
+msgid "computer-assisted animation"
+msgstr "animació assistida per ordinador"
+
+msgid "animatronics"
+msgstr "animació electrònica"
+
+msgid "real time animation"
+msgstr "animació en temps real"
+
+msgid "computer animator"
+msgstr "animador -a"
+
+msgid "2D animator"
+msgstr "animador -a en 2D"
+
+msgid "3D animator"
+msgstr "animador -a en 3D"
+
+msgid "anonymous"
+msgstr "anònim"
+
+msgid "handle"
+msgstr "ansa"
+
+msgid "antenna"
+msgstr "antena"
+
+msgid "community antenna"
+msgstr "antena col·lectiva"
+
+msgid "master antenna"
+msgstr "antena col·lectiva"
+
+msgid "directional antenna"
+msgstr "antena direccional"
+
+msgid "omnidirectional antenna"
+msgstr "antena omnidireccional"
+
+msgid "parabolic antenna"
+msgstr "antena parabòlica"
+
+msgid "antidote"
+msgstr "antídot"
+
+msgid "antivirus program"
+msgstr "antivirus"
+
+msgid "vaccine program"
+msgstr "antivirus"
+
+msgid "ad"
+msgstr "anunci"
+
+msgid "advert"
+msgstr "anunci"
+
+msgid "advertisement"
+msgstr "anunci"
+
+msgid "web year"
+msgstr "any web"
+
+msgid "virtual storefront"
+msgstr "aparador virtual"
+
+msgid "intelligent parking"
+msgstr "aparcament intel·ligent"
+
+msgid "application"
+msgstr "aplicació"
+
+msgid "active application"
+msgstr "aplicació activa"
+
+msgid "scientific application"
+msgstr "aplicació científica"
+
+msgid "helper"
+msgstr "aplicació d'ajuda"
+
+msgid "helper application"
+msgstr "aplicació d'ajuda"
+
+msgid "distributed application"
+msgstr "aplicació distribuïda"
+
+msgid "computer-aided learning"
+msgstr "aprenentatge assistit per ordinador"
+
+msgid "computer-assisted learning"
+msgstr "aprenentatge assistit per ordinador"
+
+msgid "CAL"
+msgstr "aprenentatge assistit per ordinador"
+
+msgid "automatic learning"
+msgstr "aprenentatge automàtic"
+
+msgid "computer supported cooperative learning"
+msgstr "aprenentatge cooperatiu assistit per ordinador"
+
+msgid "CSCL"
+msgstr "aprenentatge cooperatiu assistit per ordinador"
+
+msgid "spider"
+msgstr "aranya"
+
+msgid "Archie"
+msgstr "Archie"
+
+msgid "coverage area"
+msgstr "àrea de cobertura"
+
+msgid "software architect"
+msgstr "arquitecte de programari"
+
+msgid "client-server architecture"
+msgstr "arquitectura client-servidor"
+
+msgid "computer architecture"
+msgstr "arquitectura d'ordinador"
+
+msgid "network architecture"
+msgstr "arquitectura de xarxa"
+
+msgid "at"
+msgstr "arrova"
+
+msgid "filing"
+msgstr "arxivament"
+
+msgid "file, to"
+msgstr "arxivar"
+
+msgid "ASCII"
+msgstr "ASCII"
+
+msgid "asynchronous"
+msgstr "asíncron -a"
+
+msgid "assembler"
+msgstr "assemblador"
+
+msgid "assemble, to"
+msgstr "assemblar"
+
+msgid "assembling"
+msgstr "assemblatge"
+
+msgid "assembly"
+msgstr "assemblatge"
+
+msgid "dynamic IP addressing"
+msgstr "assignació dinàmica d'adreces IP"
+
+msgid "computer-aided"
+msgstr "assistit -ida per ordinador"
+
+msgid "computer-assisted"
+msgstr "assistit -ida per ordinador"
+
+msgid "ASVD"
+msgstr "ASVD"
+
+msgid "attenuation"
+msgstr "atenuació"
+
+msgid "audio"
+msgstr "àudio"
+
+msgid "audioconference"
+msgstr "audioconferència"
+
+msgid "audiophone"
+msgstr "audiòfon"
+
+msgid "audio frequency"
+msgstr "audiofreqüència"
+
+msgid "audiometer"
+msgstr "audiòmetre"
+
+msgid "audiometry"
+msgstr "audiometria"
+
+msgid "audiotex"
+msgstr "audiotext"
+
+msgid "information audit"
+msgstr "auditoria d'informació"
+
+msgid "communication audit"
+msgstr "auditoria de comunicació"
+
+msgid "computer security audit"
+msgstr "auditoria de seguretat informàtica"
+
+msgid "computer audit"
+msgstr "auditoria informàtica"
+
+msgid "headset"
+msgstr "auricular"
+
+msgid "authentication"
+msgstr "autenticació"
+
+msgid "message authentication"
+msgstr "autenticació de missatge"
+
+msgid "authenticate, to"
+msgstr "autenticar"
+
+msgid "automaton"
+msgstr "autòmat"
+
+msgid "automatic"
+msgstr "automàtic -a"
+
+msgid "automatics"
+msgstr "automàtica"
+
+msgid "automatism"
+msgstr "automatisme"
+
+msgid "automation"
+msgstr "automatització"
+
+msgid "automate, to"
+msgstr "automatitzar"
+
+msgid "info highway"
+msgstr "autopista de la informació"
+
+msgid "information superhighway"
+msgstr "autopista de la informació"
+
+msgid "authorization"
+msgstr "autorització"
+
+msgid "avatar"
+msgstr "avatar"
+
+msgid "abort"
+msgstr "avortament"
+
+msgid "abortion"
+msgstr "avortament"
+
+msgid "abort, to"
+msgstr "avortar"
+
+msgid "B"
+msgstr "B"
+
+msgid "b"
+msgstr "b"
+
+msgid "B2B"
+msgstr "B2B"
+
+msgid "download"
+msgstr "baixada"
+
+msgid "downloading"
+msgstr "baixada"
+
+msgid "download, to"
+msgstr "baixar"
+
+msgid "image bank"
+msgstr "banc d'imatges"
+
+msgid "data bank"
+msgstr "banc de dades"
+
+msgid "virus bank"
+msgstr "banc de virus"
+
+msgid "virus definitions"
+msgstr "banc de virus"
+
+msgid "e-banking"
+msgstr "banca electrònica"
+
+msgid "electronic banking"
+msgstr "banca electrònica"
+
+msgid "home banking"
+msgstr "banca electrònica"
+
+msgid "telebanking"
+msgstr "banca electrònica"
+
+msgid "broadband"
+msgstr "banda ampla"
+
+msgid "wideband"
+msgstr "banda ampla"
+
+msgid "baseband"
+msgstr "banda de base"
+
+msgid "frequency band"
+msgstr "banda de freqüències"
+
+msgid "narrowband"
+msgstr "banda estreta"
+
+msgid "advertising banner"
+msgstr "bàner"
+
+msgid "banner"
+msgstr "bàner"
+
+msgid "pancarta"
+msgstr "bàner"
+
+msgid "flamewar"
+msgstr "baralla"
+
+msgid "address bar"
+msgstr "barra d'adreces"
+
+msgid "toolbar"
+msgstr "barra d'eines"
+
+msgid "status bar"
+msgstr "barra d'estat"
+
+msgid "scroll bar"
+msgstr "barra de desplaçament"
+
+msgid "menu bar"
+msgstr "barra de menú"
+
+msgid "navigation bar"
+msgstr "barra de navegació"
+
+msgid "personal bar"
+msgstr "barra personal"
+
+msgid "knowledge base"
+msgstr "base de coneixements"
+
+msgid "cradle"
+msgstr "base de connexió"
+
+msgid "docking cradle"
+msgstr "base de connexió"
+
+msgid "docking station"
+msgstr "base de connexió"
+
+msgid "database"
+msgstr "base de dades"
+
+msgid "distributed database"
+msgstr "base de dades distribuïda"
+
+msgid "battery"
+msgstr "bateria"
+
+msgid "modem pool"
+msgstr "bateria de mòdems"
+
+msgid "baud"
+msgstr "baud"
+
+msgid "BBS"
+msgstr "BBS"
+
+msgid "bulletin board"
+msgstr "BBS"
+
+msgid "bulletin board system"
+msgstr "BBS"
+
+msgid "library"
+msgstr "biblioteca"
+
+msgid "electronic library"
+msgstr "biblioteca electrònica"
+
+msgid "bidimensional"
+msgstr "bidimensional"
+
+msgid "two-dimensional"
+msgstr "bidimensional"
+
+msgid "2D"
+msgstr "bidimensional"
+
+msgid "branching"
+msgstr "bifurcació"
+
+msgid "branch"
+msgstr "bifurcació"
+
+msgid "branch instruction"
+msgstr "bifurcació"
+
+msgid "branch, to"
+msgstr "bifurcar"
+
+msgid "binary"
+msgstr "binari -ària"
+
+msgid "biocomputer specialist"
+msgstr "bioinformàtic -a"
+
+msgid "biocomputer science"
+msgstr "bioinformàtica"
+
+msgid "biotechnology"
+msgstr "biotecnologia"
+
+msgid "biotelemetry"
+msgstr "biotelemetria"
+
+msgid "bit per second"
+msgstr "bit per segon"
+
+msgid "block"
+msgstr "bloc"
+
+msgid "blog"
+msgstr "bloc"
+
+msgid "weblog"
+msgstr "bloc"
+
+msgid "lock"
+msgstr "bloqueig"
+
+msgid "locking"
+msgstr "bloqueig"
+
+msgid "SIM lock"
+msgstr "bloqueig de SIM"
+
+msgid "long distance lock"
+msgstr "bloqueig interurbà"
+
+msgid "lock, to"
+msgstr "bloquejar"
+
+msgid "mail bombing"
+msgstr "bombardeig"
+
+msgid "mail bombe, to"
+msgstr "bombardejar"
+
+msgid "Boolean"
+msgstr "booleà -ana"
+
+msgid "electronic stock exchange"
+msgstr "borsa electrònica"
+
+msgid "electronic shop"
+msgstr "botiga electrònica"
+
+msgid "button"
+msgstr "botó"
+
+msgid "loop"
+msgstr "bucle"
+
+msgid "bus"
+msgstr "bus"
+
+msgid "token bus"
+msgstr "bus de testimoni"
+
+msgid "pointer"
+msgstr "busca"
+
+msgid "search, to"
+msgstr "buscar"
+
+msgid "voice mailbox"
+msgstr "bústia de veu"
+
+msgid "electronic mailbox"
+msgstr "bústia electrònica"
+
+msgid "newsletter"
+msgstr "butlletí d'informació"
+
+msgid "byte"
+msgstr "byte [en]"
+
+msgid "byte per second"
+msgstr "byte per segon [byte: en]"
+
+msgid "byte per second"
+msgstr "byte per segon [byte: en]"
+
+msgid "wire, to"
+msgstr "cablar"
+
+msgid "wiring"
+msgstr "cablatge"
+
+msgid "cable"
+msgstr "cable"
+
+msgid "aerial cable"
+msgstr "cable aeri"
+
+msgid "coaxial cable"
+msgstr "cable coaxial"
+
+msgid "feeder cable"
+msgstr "cable d'alimentació"
+
+msgid "junction cable"
+msgstr "cable d'enllaç"
+
+msgid "trunk cable"
+msgstr "cable d'entroncament"
+
+msgid "broadband cable"
+msgstr "cable de banda ampla"
+
+msgid "wideband cable"
+msgstr "cable de banda ampla"
+
+msgid "ribbon cable"
+msgstr "cable de cintes"
+
+msgid "dispersion cable"
+msgstr "cable de dispersió"
+
+msgid "distribution cable"
+msgstr "cable de distribució"
+
+msgid "optical fiber cable"
+msgstr "cable de fibra òptica"
+
+msgid "paired cable"
+msgstr "cable de parells"
+
+msgid "twisted wire pair"
+msgstr "cable de parells trenats"
+
+msgid "multicore cable"
+msgstr "cable multipolar"
+
+msgid "ocean cable"
+msgstr "cable submarí"
+
+msgid "underground cable"
+msgstr "cable subterrani"
+
+msgid "land cable"
+msgstr "cable terrestre"
+
+msgid "adapter"
+msgstr "caixa d'adaptació"
+
+msgid "connecting box"
+msgstr "caixa de connexió"
+
+msgid "video camera"
+msgstr "càmera de vídeo"
+
+msgid "digital video camera"
+msgstr "càmera de vídeo digital"
+
+msgid "digital camera"
+msgstr "càmera fotogràfica digital"
+
+msgid "web camera"
+msgstr "càmera web"
+
+msgid "webcam"
+msgstr "càmera web"
+
+msgid "virtual campus"
+msgstr "campus virtual"
+
+msgid "channel"
+msgstr "canal"
+
+msgid "automatic channel"
+msgstr "canal automàtic"
+
+msgid "forward channel"
+msgstr "canal d'anada"
+
+msgid "return channel"
+msgstr "canal de retorn"
+
+msgid "experimental channel"
+msgstr "canal experimental"
+
+msgid "multiplex channel"
+msgstr "canal múltiplex"
+
+msgid "specialized channel"
+msgstr "canal temàtic"
+
+msgid "push channel"
+msgstr "canal web"
+
+msgid "cancel, to"
+msgstr "cancel·lar"
+
+msgid "layer"
+msgstr "capa"
+
+msgid "erase head"
+msgstr "capçal d'esborrament"
+
+msgid "write head"
+msgstr "capçal d'escriptura"
+
+msgid "printing head"
+msgstr "capçal d'impressió"
+
+msgid "read head"
+msgstr "capçal de lectura"
+
+msgid "read/write head"
+msgstr "capçal de lectura/escriptura"
+
+msgid "magnetic head"
+msgstr "capçal magnètic"
+
+msgid "header"
+msgstr "capçalera"
+
+msgid "network head end"
+msgstr "capçalera de xarxa"
+
+msgid "human capital"
+msgstr "capital intel·lectual"
+
+msgid "motion capture"
+msgstr "captació de moviment"
+
+msgid "web ripper"
+msgstr "capturador de llocs web"
+
+msgid "character"
+msgstr "caràcter"
+
+msgid "optical character"
+msgstr "caràcter òptic"
+
+msgid "intelligent driving licence"
+msgstr "carnet de conduir intel·ligent"
+
+msgid "directory"
+msgstr "carpeta"
+
+msgid "folder"
+msgstr "carpeta"
+
+msgid "load"
+msgstr "càrrega"
+
+msgid "loading"
+msgstr "càrrega"
+
+msgid "load, to"
+msgstr "carregar"
+
+msgid "electronic shopping cart"
+msgstr "carretó electrònic"
+
+msgid "shopping cart"
+msgstr "carretó electrònic"
+
+msgid "electronic wallet"
+msgstr "cartera electrònica"
+
+msgid "virtual purse"
+msgstr "cartera electrònica"
+
+msgid "head-mounted display"
+msgstr "casc de realitat virtual"
+
+msgid "customized catalog"
+msgstr "catàleg electrònic"
+
+msgid "electronic catalog"
+msgstr "catàleg electrònic"
+
+msgid "reverse catalog"
+msgstr "catàleg invers"
+
+msgid "personalized catalog"
+msgstr "catàleg personalitzat"
+
+msgid "Trojan"
+msgstr "cavall de Troia"
+
+msgid "Trojan horse"
+msgstr "cavall de Troia"
+
+msgid "cell"
+msgstr "cel·la"
+
+msgid "automatic exchange"
+msgstr "central automàtica"
+
+msgid "digital exchange"
+msgstr "central digital"
+
+msgid "telephone exchange"
+msgstr "central telefònica"
+
+msgid "switchboard"
+msgstr "centraleta"
+
+msgid "virtual mall"
+msgstr "centre comercial virtual"
+
+msgid "virtual shopping center [US]"
+msgstr "centre comercial virtual"
+
+msgid "virtual shopping centre [GB]"
+msgstr "centre comercial virtual"
+
+msgid "operation center [US]"
+msgstr "centre d'explotació"
+
+msgid "operation centre [GB]"
+msgstr "centre d'explotació"
+
+msgid "switching center [US]"
+msgstr "centre de commutació"
+
+msgid "switching centre [GB]"
+msgstr "centre de commutació"
+
+msgid "distribution center [US]"
+msgstr "centre de distribució"
+
+msgid "distribution centre [GB]"
+msgstr "centre de distribució"
+
+msgid "documentation center [US]"
+msgstr "centre de documentació"
+
+msgid "documentation centre [GB]"
+msgstr "centre de documentació"
+
+msgid "special library"
+msgstr "centre de documentació"
+
+msgid "search"
+msgstr "cerca"
+
+msgid "advanced search"
+msgstr "cerca avançada"
+
+msgid "search engine"
+msgstr "cercador"
+
+msgid "beeper"
+msgstr "cercapersones"
+
+msgid "pager"
+msgstr "cercapersones"
+
+msgid "finger"
+msgstr "cercausuaris"
+
+msgid "electronic certificate"
+msgstr "certificat electrònic"
+
+msgid "cyberstudent"
+msgstr "ciberalumne -a"
+
+msgid "cyberfriend"
+msgstr "ciberamic -iga"
+
+msgid "newbie"
+msgstr "ciberaprenent -a"
+
+msgid "cybercafé"
+msgstr "cibercafè"
+
+msgid "cybercriminology"
+msgstr "cibercriminologia"
+
+msgid "cyberculture"
+msgstr "cibercultura"
+
+msgid "cybercrime"
+msgstr "ciberdelicte"
+
+msgid "cyberdelinquent"
+msgstr "ciberdelinqüent"
+
+msgid "cyberdependence"
+msgstr "ciberdependència"
+
+msgid "cyberspace"
+msgstr "ciberespai"
+
+msgid "cyberphobia"
+msgstr "ciberfòbia"
+
+msgid "cyberlegislation"
+msgstr "ciberlegislació"
+
+msgid "cyberspeak"
+msgstr "ciberllenguatge"
+
+msgid "cybernetic"
+msgstr "cibernètic -a"
+
+msgid "cybernetics"
+msgstr "cibernètica"
+
+msgid "cybercop"
+msgstr "ciberpolicia"
+
+msgid "cyberpolice"
+msgstr "ciberpolicia"
+
+msgid "cybersoap"
+msgstr "ciberserial"
+
+msgid "cinemascope"
+msgstr "cinemascop"
+
+msgid "magnetic tape"
+msgstr "cinta magnètica"
+
+msgid "circuit"
+msgstr "circuit"
+
+msgid "electric circuit"
+msgstr "circuit elèctric"
+
+msgid "printed circuit"
+msgstr "circuit imprès"
+
+msgid "integrated circuit"
+msgstr "circuit integrat"
+
+msgid "multipoint circuit"
+msgstr "circuit multipunt"
+
+msgid "point to point circuit"
+msgstr "circuit punt a punt"
+
+msgid "closed circuit"
+msgstr "circuit tancat"
+
+msgid "class"
+msgstr "classe"
+
+msgid "key"
+msgstr "clau"
+
+msgid "private key"
+msgstr "clau privada"
+
+msgid "public key"
+msgstr "clau pública"
+
+msgid "secret key"
+msgstr "clau secreta"
+
+msgid "click"
+msgstr "clic"
+
+msgid "click-through"
+msgstr "clic d'entrada"
+
+msgid "clickthrough"
+msgstr "clic d'entrada"
+
+msgid "click, to"
+msgstr "clicar"
+
+msgid "client"
+msgstr "client"
+
+msgid "client computer"
+msgstr "client"
+
+msgid "client"
+msgstr "client"
+
+msgid "client program"
+msgstr "client"
+
+msgid "thin client"
+msgstr "client lleuger"
+
+msgid "fat client"
+msgstr "client pesant"
+
+msgid "thick client"
+msgstr "client pesant"
+
+msgid "cluster"
+msgstr "clúster"
+
+msgid "clustering"
+msgstr "clusterització"
+
+msgid "clusterization"
+msgstr "clusterització"
+
+msgid "cluster, to"
+msgstr "clusteritzar"
+
+msgid "clusterize, to"
+msgstr "clusteritzar"
+
+msgid "coverage"
+msgstr "cobertura"
+
+msgid "codec"
+msgstr "còdec"
+
+msgid "coder-decoder"
+msgstr "còdec"
+
+msgid "compressor-decompressor"
+msgstr "còdec"
+
+msgid "audio codec"
+msgstr "còdec d'àudio"
+
+msgid "audio coder-decoder"
+msgstr "còdec d'àudio"
+
+msgid "audio compressor-decompressor"
+msgstr "còdec d'àudio"
+
+msgid "video codec"
+msgstr "còdec de vídeo"
+
+msgid "video coder-decoder"
+msgstr "còdec de vídeo"
+
+msgid "video compressor-decompressor"
+msgstr "còdec de vídeo"
+
+msgid "code"
+msgstr "codi"
+
+msgid "binary code"
+msgstr "codi binari"
+
+msgid "bar code"
+msgstr "codi de barres"
+
+msgid "source"
+msgstr "codi font"
+
+msgid "source code"
+msgstr "codi font"
+
+msgid "coding"
+msgstr "codificació"
+
+msgid "encoding"
+msgstr "codificació"
+
+msgid "speech coding"
+msgstr "codificació de la parla"
+
+msgid "speech encoding"
+msgstr "codificació de la parla"
+
+msgid "voice coding"
+msgstr "codificació de la parla"
+
+msgid "voice encoding"
+msgstr "codificació de la parla"
+
+msgid "coder"
+msgstr "codificador"
+
+msgid "encoder"
+msgstr "codificador"
+
+msgid "coder"
+msgstr "codificador -a"
+
+msgid "encoder"
+msgstr "codificador -a"
+
+msgid "code, to"
+msgstr "codificar"
+
+msgid "encode, to"
+msgstr "codificar"
+
+msgid "web collaboration"
+msgstr "col·laboració per web"
+
+msgid "collision"
+msgstr "col·lisió"
+
+msgid "electronic purchase order"
+msgstr "comanda electrònica"
+
+msgid "remote control"
+msgstr "comandament a distància"
+
+msgid "telecommand"
+msgstr "comandament a distància"
+
+msgid "e-commerce"
+msgstr "comerç electrònic"
+
+msgid "electronic commerce"
+msgstr "comerç electrònic"
+
+msgid "switching"
+msgstr "commutació"
+
+msgid "circuit switching"
+msgstr "commutació de circuits"
+
+msgid "message switching"
+msgstr "commutació de missatges"
+
+msgid "packet switching"
+msgstr "commutació de paquets"
+
+msgid "switch"
+msgstr "commutador"
+
+msgid "remote access switch"
+msgstr "commutador d'accés remot"
+
+msgid "mobile telephony switch"
+msgstr "commutador de telefonia mòbil"
+
+msgid "multifunction switch"
+msgstr "commutador multifuncional"
+
+msgid "switch, to"
+msgstr "commutar"
+
+msgid "wild card"
+msgstr "comodí"
+
+msgid "compaction"
+msgstr "compactació"
+
+msgid "compact, to"
+msgstr "compactar"
+
+msgid "compilation"
+msgstr "compilació"
+
+msgid "compiler"
+msgstr "compilador"
+
+msgid "compiling program"
+msgstr "compilador"
+
+msgid "compile, to"
+msgstr "compilar"
+
+msgid "add-in"
+msgstr "complement"
+
+msgid "add-on"
+msgstr "complement"
+
+msgid "electronic shopping"
+msgstr "compra electrònica"
+
+msgid "compression"
+msgstr "compressió"
+
+msgid "packing"
+msgstr "compressió"
+
+msgid "speech compression"
+msgstr "compressió de la parla"
+
+msgid "voice compression"
+msgstr "compressió de la parla"
+
+msgid "compression software"
+msgstr "compressor"
+
+msgid "compressor"
+msgstr "compressor"
+
+msgid "access counter"
+msgstr "comptador"
+
+msgid "counter"
+msgstr "comptador"
+
+msgid "hit counter"
+msgstr "comptador"
+
+msgid "visitor counter"
+msgstr "comptador"
+
+msgid "Web counter"
+msgstr "comptador"
+
+msgid "account"
+msgstr "compte"
+
+msgid "e-mail account"
+msgstr "compte de correu"
+
+msgid "electronic mail account"
+msgstr "compte de correu"
+
+msgid "FTP account"
+msgstr "compte FTP"
+
+msgid "communication"
+msgstr "comunicació"
+
+msgid "audiovisual communication"
+msgstr "comunicació audiovisual"
+
+msgid "multimedia communication"
+msgstr "comunicació multimèdia"
+
+msgid "communicate, to"
+msgstr "comunicar"
+
+msgid "be busy, to"
+msgstr "comunicar"
+
+msgid "be engaged, to"
+msgstr "comunicar"
+
+msgid "virtual community"
+msgstr "comunitat virtual"
+
+msgid "hub"
+msgstr "concentrador"
+
+msgid "conductivity"
+msgstr "conductivitat"
+
+msgid "conductor"
+msgstr "conductor"
+
+msgid "three-party conferencing"
+msgstr "conferència a tres"
+
+msgid "configuration"
+msgstr "configuració"
+
+msgid "configure, to"
+msgstr "configurar"
+
+msgid "notification of reading"
+msgstr "confirmació de lectura"
+
+msgid "read notification"
+msgstr "confirmació de lectura"
+
+msgid "confirm delivery"
+msgstr "confirmació de recepció"
+
+msgid "notification of receipt"
+msgstr "confirmació de recepció"
+
+msgid "receipt notification"
+msgstr "confirmació de recepció"
+
+msgid "handshaking"
+msgstr "conformitat de connexió"
+
+msgid "connect, to"
+msgstr "connectar"
+
+msgid "connectivity"
+msgstr "connectivitat"
+
+msgid "connector"
+msgstr "connector"
+
+msgid "plug-in"
+msgstr "connector"
+
+msgid "connection"
+msgstr "connexió"
+
+msgid "wiretapping"
+msgstr "connexió clandestina"
+
+msgid "switched line"
+msgstr "connexió commutada"
+
+msgid "multipoint connection"
+msgstr "connexió multipunt"
+
+msgid "point to point connection"
+msgstr "connexió punt a punt"
+
+msgid "console"
+msgstr "consola"
+
+msgid "game console"
+msgstr "consola de joc"
+
+msgid "inquiry"
+msgstr "consulta"
+
+msgid "query"
+msgstr "consulta"
+
+msgid "pass-through query"
+msgstr "consulta traspassada"
+
+msgid "ICT consultant"
+msgstr "consultor -a de TIC"
+
+msgid "automatic answering machine"
+msgstr "contestador automàtic"
+
+msgid "digital answering machine"
+msgstr "contestador automàtic digital"
+
+msgid "net answering machine"
+msgstr "contestador automàtic en xarxa"
+
+msgid "content"
+msgstr "contingut"
+
+msgid "push content"
+msgstr "contingut de tramesa automàtica"
+
+msgid "push media"
+msgstr "contingut de tramesa automàtica"
+
+msgid "electronic contract"
+msgstr "contracte electrònic"
+
+msgid "access code"
+msgstr "contrasenya"
+
+msgid "access key"
+msgstr "contrasenya"
+
+msgid "password"
+msgstr "contrasenya"
+
+msgid "access control"
+msgstr "control d'accés"
+
+msgid "controller"
+msgstr "controlador d'entrada/sortida"
+
+msgid "I/O controller"
+msgstr "controlador d'entrada/sortida"
+
+msgid "input/output controller"
+msgstr "controlador d'entrada/sortida"
+
+msgid "IOC"
+msgstr "controlador d'entrada/sortida"
+
+msgid "multipoint controller"
+msgstr "controlador multipunt"
+
+msgid "conversion"
+msgstr "conversió"
+
+msgid "analog-to-digital conversion"
+msgstr "conversió analògica-digital"
+
+msgid "digitizing"
+msgstr "conversió analògica-digital"
+
+msgid "speech-to-text conversion"
+msgstr "conversió de parla a text"
+
+msgid "voice-to-text conversion"
+msgstr "conversió de parla a text"
+
+msgid "text-to-speech conversion"
+msgstr "conversió de text a parla"
+
+msgid "text-to-voice conversion"
+msgstr "conversió de text a parla"
+
+msgid "digital-to-analog conversion"
+msgstr "conversió digital-analògica"
+
+msgid "converter"
+msgstr "convertidor"
+
+msgid "analog-to-digital converter"
+msgstr "convertidor analògic-digital"
+
+msgid "digitizer"
+msgstr "convertidor analògic-digital"
+
+msgid "digital-to-analog converter"
+msgstr "convertidor digital-analògic"
+
+msgid "convert, to"
+msgstr "convertir"
+
+msgid "backup"
+msgstr "còpia de seguretat"
+
+msgid "backup copy"
+msgstr "còpia de seguretat"
+
+msgid "current"
+msgstr "corrent"
+
+msgid "anonymous mail"
+msgstr "correu anònim"
+
+msgid "junk mail"
+msgstr "correu brossa"
+
+msgid "spam"
+msgstr "correu brossa"
+
+msgid "e-mail"
+msgstr "correu electrònic"
+
+msgid "electronic mail"
+msgstr "correu electrònic"
+
+msgid "e-mail"
+msgstr "correu electrònic"
+
+msgid "electronic mail"
+msgstr "correu electrònic"
+
+msgid "electronic message"
+msgstr "correu electrònic"
+
+msgid "FTP mail"
+msgstr "correu FTP"
+
+msgid "webmail"
+msgstr "correu web"
+
+msgid "coroutine"
+msgstr "corutina"
+
+msgid "authoring"
+msgstr "creació personalitzada"
+
+msgid "cryptophony"
+msgstr "criptofonia"
+
+msgid "cryptography"
+msgstr "criptografia"
+
+msgid "liquid crystal"
+msgstr "cristall líquid"
+
+msgid "queue"
+msgstr "cua"
+
+msgid "worm"
+msgstr "cuc"
+
+msgid "information culture"
+msgstr "cultura de la informació"
+
+msgid "cursor"
+msgstr "cursor"
+
+msgid "administration to consumer"
+msgstr "d'administració a consumidor"
+
+msgid "A2C"
+msgstr "d'administració a consumidor"
+
+msgid "business to administration"
+msgstr "d'empresa a administració"
+
+msgid "B2A"
+msgstr "d'empresa a administració"
+
+msgid "business to consumer"
+msgstr "d'empresa a consumidor"
+
+msgid "B2C"
+msgstr "d'empresa a consumidor"
+
+msgid "business to employee"
+msgstr "d'empresa a empleat"
+
+msgid "B2E"
+msgstr "d'empresa a empleat"
+
+msgid "P2P"
+msgstr "d'igual a igual"
+
+msgid "peer-to-peer"
+msgstr "d'igual a igual"
+
+msgid "data"
+msgstr "dada"
+
+msgid "intelligent CAD"
+msgstr "DAO intel·ligent"
+
+msgid "datagram"
+msgstr "datagrama"
+
+msgid "consumer to administration"
+msgstr "de consumidor a administració"
+
+msgid "C2A"
+msgstr "de consumidor a administració"
+
+msgid "consumer to consumer"
+msgstr "de consumidor a consumidor"
+
+msgid "C2C"
+msgstr "de consumidor a consumidor"
+
+msgid "consumer to business"
+msgstr "de consumidor a empresa"
+
+msgid "C2B"
+msgstr "de consumidor a empresa"
+
+msgid "definition"
+msgstr "definició"
+
+msgid "computer crime"
+msgstr "delicte informàtic"
+
+msgid "delimiter"
+msgstr "delimitador"
+
+msgid "dot pitch"
+msgstr "densitat de punts"
+
+msgid "debugging"
+msgstr "depuració"
+
+msgid "trouble shooting"
+msgstr "depuració"
+
+msgid "debugger"
+msgstr "depurador"
+
+msgid "debug, to"
+msgstr "depurar"
+
+msgid "undocking"
+msgstr "desacoblament"
+
+msgid "undock, to"
+msgstr "desacoblar"
+
+msgid "saving"
+msgstr "desament"
+
+msgid "save, to"
+msgstr "desar"
+
+msgid "downsizing"
+msgstr "descentralització"
+
+msgid "decoding"
+msgstr "descodificació"
+
+msgid "decoder"
+msgstr "descodificador"
+
+msgid "home net box"
+msgstr "descodificador d'Internet"
+
+msgid "Internet box"
+msgstr "descodificador d'Internet"
+
+msgid "set-top box"
+msgstr "descodificador d'Internet"
+
+msgid "decode, to"
+msgstr "descodificar"
+
+msgid "decompilation"
+msgstr "descompilació"
+
+msgid "decompiler"
+msgstr "descompilador"
+
+msgid "decompile, to"
+msgstr "descompilar"
+
+msgid "decompression"
+msgstr "descompressió"
+
+msgid "unpacking"
+msgstr "descompressió"
+
+msgid "disconnect, to"
+msgstr "desconnectar"
+
+msgid "disconnection"
+msgstr "desconnexió"
+
+msgid "description"
+msgstr "descripció"
+
+msgid "unpack, to"
+msgstr "desempaquetar"
+
+msgid "pop, to"
+msgstr "desempilar"
+
+msgid "disinfection"
+msgstr "desinfecció"
+
+msgid "eradication"
+msgstr "desinfecció"
+
+msgid "demodulation"
+msgstr "desmodulació"
+
+msgid "demodulator"
+msgstr "desmodulador"
+
+msgid "demodulate, to"
+msgstr "desmodular"
+
+msgid "demultiplexing"
+msgstr "desmultiplexatge"
+
+msgid "demultiplexer"
+msgstr "desmultiplexor"
+
+msgid "call forwarding"
+msgstr "desviació de trucada"
+
+msgid "sniffer"
+msgstr "detector"
+
+msgid "detector"
+msgstr "detector"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "talk"
+msgstr "diàleg"
+
+msgid "journal"
+msgstr "diari"
+
+msgid "log"
+msgstr "diari"
+
+msgid "electronic newspaper"
+msgstr "diari electrònic"
+
+msgid "drawable"
+msgstr "dibuixable"
+
+msgid "electronic dictionary"
+msgstr "diccionari electrònic"
+
+msgid "dictaphone"
+msgstr "dictàfon"
+
+msgid "electronic dictation"
+msgstr "dictat electrònic"
+
+msgid "webcasting"
+msgstr "difusió per web"
+
+msgid "digital"
+msgstr "digital"
+
+msgid "speech digitization"
+msgstr "digitalització de la parla"
+
+msgid "voice digitization"
+msgstr "digitalització de la parla"
+
+msgid "digitize, to"
+msgstr "digitalitzar"
+
+msgid "diode"
+msgstr "díode"
+
+msgid "dipole"
+msgstr "dipol"
+
+msgid "repository"
+msgstr "dipòsit"
+
+msgid "content manager"
+msgstr "director -a de continguts"
+
+msgid "directory"
+msgstr "directori"
+
+msgid "disc [GB]"
+msgstr "disc"
+
+msgid "disk [US]"
+msgstr "disc"
+
+msgid "compact disc"
+msgstr "disc compacte"
+
+msgid "compact disk"
+msgstr "disc compacte"
+
+msgid "CD"
+msgstr "disc compacte"
+
+msgid "compact disc recordable [GB]"
+msgstr "disc compacte enregistrable"
+
+msgid "compact disk recordable [US]"
+msgstr "disc compacte enregistrable"
+
+msgid "recordable compact disc [GB]"
+msgstr "disc compacte enregistrable"
+
+msgid "recordable compact disk [US]"
+msgstr "disc compacte enregistrable"
+
+msgid "CD-R"
+msgstr "disc compacte enregistrable"
+
+msgid "compact disc interactive [GB]"
+msgstr "disc compacte interactiu"
+
+msgid "compact disk interactive [US]"
+msgstr "disc compacte interactiu"
+
+msgid "CD-I"
+msgstr "disc compacte interactiu"
+
+msgid "compact disc rewritable [GB]"
+msgstr "disc compacte reenregistrable"
+
+msgid "compact disk rewritable [US]"
+msgstr "disc compacte reenregistrable"
+
+msgid "rewritable compact disc [GB]"
+msgstr "disc compacte reenregistrable"
+
+msgid "rewritable compact disk [US]"
+msgstr "disc compacte reenregistrable"
+
+msgid "CD-RW"
+msgstr "disc compacte reenregistrable"
+
+msgid "hard disk"
+msgstr "disc dur"
+
+msgid "magnetic disc [GB]"
+msgstr "disc magnètic"
+
+msgid "magnetic disk [US]"
+msgstr "disc magnètic"
+
+msgid "magneto-optical disc [GB]"
+msgstr "disc magnetoòptic"
+
+msgid "magneto-optical disk [US]"
+msgstr "disc magnetoòptic"
+
+msgid "optical disc [GB]"
+msgstr "disc òptic"
+
+msgid "optical disk [US]"
+msgstr "disc òptic"
+
+msgid "discrete"
+msgstr "discret -a"
+
+msgid "device"
+msgstr "dispositiu"
+
+msgid "diskette"
+msgstr "disquet"
+
+msgid "flexible disk"
+msgstr "disquet"
+
+msgid "floppy disk"
+msgstr "disquet"
+
+msgid "computer-aided design"
+msgstr "disseny assistit per ordinador"
+
+msgid "computer-assisted design"
+msgstr "disseny assistit per ordinador"
+
+msgid "CAD"
+msgstr "disseny assistit per ordinador"
+
+msgid "web designer"
+msgstr "dissenyador -a de webs"
+
+msgid "interactive designer"
+msgstr "dissenyador -a interactiu -iva"
+
+msgid "distribution"
+msgstr "distribució"
+
+msgid "electronic software distribution"
+msgstr "distribució electrònica de programari"
+
+msgid "dispatcher"
+msgstr "distribuïdor"
+
+msgid "dispatch, to"
+msgstr "distribuir"
+
+msgid "double-click"
+msgstr "doble clic"
+
+msgid "HTML document"
+msgstr "document HTML"
+
+msgid "RFC document"
+msgstr "document RFC"
+
+msgid "documentalist"
+msgstr "documentalista"
+
+msgid "domain"
+msgstr "domini"
+
+msgid "domain name"
+msgstr "domini"
+
+msgid "top level domain"
+msgstr "domini de primer nivell"
+
+msgid "second level domain"
+msgstr "domini de segon nivell"
+
+msgid "home automation specialist"
+msgstr "domòtic -a"
+
+msgid "domotics"
+msgstr "domòtica"
+
+msgid "home automation"
+msgstr "domòtica"
+
+msgid "DSVD"
+msgstr "DSVD"
+
+msgid "duplex"
+msgstr "dúplex"
+
+msgid "DVD recordable"
+msgstr "DVD enregistrable"
+
+msgid "recordable DVD"
+msgstr "DVD enregistrable"
+
+msgid "DVD-R"
+msgstr "DVD enregistrable"
+
+msgid "DVD rewritable"
+msgstr "DVD reenregistrable"
+
+msgid "rewritable DVD"
+msgstr "DVD reenregistrable"
+
+msgid "DVD-RW"
+msgstr "DVD reenregistrable"
+
+msgid "intelligent building"
+msgstr "edifici intel·ligent"
+
+msgid "smart building"
+msgstr "edifici intel·ligent"
+
+msgid "edit, to"
+msgstr "editar"
+
+msgid "editor"
+msgstr "editor"
+
+msgid "web editor"
+msgstr "editor -a de webs"
+
+msgid "webeditor"
+msgstr "editor -a de webs"
+
+msgid "HTML editor"
+msgstr "editor d'HTML"
+
+msgid "web editor"
+msgstr "editor de pàgines web"
+
+msgid "electric"
+msgstr "elèctric -a"
+
+msgid "electricity"
+msgstr "electricitat"
+
+msgid "electrode"
+msgstr "elèctrode"
+
+msgid "digital electric appliance"
+msgstr "electrodomèstic digital"
+
+msgid "electromagnetic"
+msgstr "electromagnètic -a"
+
+msgid "electromagnetism"
+msgstr "electromagnetisme"
+
+msgid "electronic"
+msgstr "electrònic -a"
+
+msgid "electronics"
+msgstr "electrònica"
+
+msgid "emit, to"
+msgstr "emetre"
+
+msgid "transmit, to"
+msgstr "emetre"
+
+msgid "emission"
+msgstr "emissió"
+
+msgid "transmission"
+msgstr "emissió"
+
+msgid "transmitter"
+msgstr "emissor"
+
+msgid "optical transmitter"
+msgstr "emissor òptic"
+
+msgid "store, to"
+msgstr "emmagatzemar"
+
+msgid "storage"
+msgstr "emmagatzematge"
+
+msgid "emoticon"
+msgstr "emoticona"
+
+msgid "smiley"
+msgstr "emoticona"
+
+msgid "compress, to"
+msgstr "empaquetar"
+
+msgid "pack, to"
+msgstr "empaquetar"
+
+msgid "push, to"
+msgstr "empilar"
+
+msgid "emulation"
+msgstr "emulació"
+
+msgid "emulator"
+msgstr "emulador"
+
+msgid "emulate, to"
+msgstr "emular"
+
+msgid "cascade"
+msgstr "en cascada"
+
+msgid "stand by"
+msgstr "en espera"
+
+msgid "on line"
+msgstr "en línia"
+
+msgid "on-line"
+msgstr "en línia"
+
+msgid "open"
+msgstr "en obert"
+
+msgid "parallel"
+msgstr "en paral·lel"
+
+msgid "serial"
+msgstr "en sèrie"
+
+msgid "time sharing"
+msgstr "en temps compartit"
+
+msgid "delayed"
+msgstr "en temps diferit"
+
+msgid "real time"
+msgstr "en temps real"
+
+msgid "router"
+msgstr "encaminador"
+
+msgid "routing"
+msgstr "encaminament"
+
+msgid "route, to"
+msgstr "encaminar"
+
+msgid "encapsulation"
+msgstr "encapsulació"
+
+msgid "encipherment"
+msgstr "encriptació"
+
+msgid "encryption"
+msgstr "encriptació"
+
+msgid "asymmetric encipherment"
+msgstr "encriptació asimètrica"
+
+msgid "asymmetric encryption"
+msgstr "encriptació asimètrica"
+
+msgid "irreversible encipherment"
+msgstr "encriptació irreversible"
+
+msgid "irreversible encryption"
+msgstr "encriptació irreversible"
+
+msgid "one way encipherment"
+msgstr "encriptació irreversible"
+
+msgid "one way encryption"
+msgstr "encriptació irreversible"
+
+msgid "reversible encipherment"
+msgstr "encriptació reversible"
+
+msgid "reversible encryption"
+msgstr "encriptació reversible"
+
+msgid "symmetric encipherment"
+msgstr "encriptació simètrica"
+
+msgid "symmetric encryption"
+msgstr "encriptació simètrica"
+
+msgid "encipher, to"
+msgstr "encriptar"
+
+msgid "encrypt, to"
+msgstr "encriptar"
+
+msgid "enciphered"
+msgstr "encriptat -ada"
+
+msgid "encrypted"
+msgstr "encriptat -ada"
+
+msgid "virtual endoscopy"
+msgstr "endoscòpia virtual"
+
+msgid "hardware engineer"
+msgstr "enginyer -a de maquinari"
+
+msgid "speech processing engineer"
+msgstr "enginyer -a de processament de la parla"
+
+msgid "voice processing engineer"
+msgstr "enginyer -a de processament de la parla"
+
+msgid "software engineer"
+msgstr "enginyer -a de programari"
+
+msgid "radio frequency engineer"
+msgstr "enginyer -a de radiofreqüència"
+
+msgid "system engineer"
+msgstr "enginyer -a de sistemes informàtics"
+
+msgid "telecommunications engineer"
+msgstr "enginyer -a de telecomunicacions"
+
+msgid "knowledge engineer"
+msgstr "enginyer -a del coneixement"
+
+msgid "electronic engineer"
+msgstr "enginyer -a electrònic -a"
+
+msgid "computer specialist"
+msgstr "enginyer -a informàtic -a"
+
+msgid "data processing engineer"
+msgstr "enginyer -a informàtic -a"
+
+msgid "linguistic engineer"
+msgstr "enginyer -a lingüístic -a"
+
+msgid "engineering"
+msgstr "enginyeria"
+
+msgid "computer-aided engineering"
+msgstr "enginyeria assistida per ordinador"
+
+msgid "computer-assisted engineering"
+msgstr "enginyeria assistida per ordinador"
+
+msgid "CAE"
+msgstr "enginyeria assistida per ordinador"
+
+msgid "information engineering"
+msgstr "enginyeria de la informació"
+
+msgid "speech processing engineering"
+msgstr "enginyeria de processament de la parla"
+
+msgid "voice processing engineering"
+msgstr "enginyeria de processament de la parla"
+
+msgid "integrated CASE"
+msgstr "enginyeria de sistemes integrats per ordinador"
+
+msgid "integrated-computer aided software engineering"
+msgstr "enginyeria de sistemes integrats per ordinador"
+
+msgid "I-CASE"
+msgstr "enginyeria de sistemes integrats per ordinador"
+
+msgid "computer-aided software engineering"
+msgstr "enginyeria de sistemes per ordinador"
+
+msgid "computer-aided systems engineering"
+msgstr "enginyeria de sistemes per ordinador"
+
+msgid "CASE"
+msgstr "enginyeria de sistemes per ordinador"
+
+msgid "linguistic engineering"
+msgstr "enginyeria lingüística"
+
+msgid "link"
+msgstr "enllaç"
+
+msgid "hyperlink"
+msgstr "enllaç"
+
+msgid "hypertext link"
+msgstr "enllaç"
+
+msgid "link"
+msgstr "enllaç"
+
+msgid "link, to"
+msgstr "enllaçar"
+
+msgid "linked"
+msgstr "enllaçat -ada"
+
+msgid "recorder"
+msgstr "enregistrador"
+
+msgid "CD burner"
+msgstr "enregistrador de CD"
+
+msgid "CD recorder"
+msgstr "enregistrador de CD"
+
+msgid "CD writer"
+msgstr "enregistrador de CD"
+
+msgid "DVD burner"
+msgstr "enregistrador de DVD"
+
+msgid "DVD recorder"
+msgstr "enregistrador de DVD"
+
+msgid "DVD writer"
+msgstr "enregistrador de DVD"
+
+msgid "record"
+msgstr "enregistrament"
+
+msgid "record, to"
+msgstr "enregistrar"
+
+msgid "computer-aided teaching"
+msgstr "ensenyament assistit per ordinador"
+
+msgid "computer-assisted teaching"
+msgstr "ensenyament assistit per ordinador"
+
+msgid "CAT"
+msgstr "ensenyament assistit per ordinador"
+
+msgid "certificate authority"
+msgstr "entitat certificadora"
+
+msgid "registration authority"
+msgstr "entitat registradora"
+
+msgid "crossposting"
+msgstr "enviament múltiple"
+
+msgid "installation equipment"
+msgstr "equip d'instal·lació"
+
+msgid "user equipment"
+msgstr "equip d'usuari"
+
+msgid "connection kit"
+msgstr "equip de connexió"
+
+msgid "peripheral equipment"
+msgstr "equip perifèric"
+
+msgid "ergonomics"
+msgstr "ergonomia"
+
+msgid "bug"
+msgstr "error"
+
+msgid "scalability"
+msgstr "escalabilitat"
+
+msgid "scalable"
+msgstr "escalable"
+
+msgid "scanning"
+msgstr "escaneig"
+
+msgid "scan, to"
+msgstr "escanejar"
+
+msgid "scanner"
+msgstr "escàner"
+
+msgid "desktop scanner"
+msgstr "escàner de taula"
+
+msgid "raster"
+msgstr "escombratge"
+
+msgid "desktop"
+msgstr "escriptori"
+
+msgid "writing"
+msgstr "escriptura"
+
+msgid "write, to"
+msgstr "escriure"
+
+msgid "ad space"
+msgstr "espai publicitari"
+
+msgid "advertising space"
+msgstr "espai publicitari"
+
+msgid "spectrum"
+msgstr "espectre"
+
+msgid "spectrograph"
+msgstr "espectrògraf"
+
+msgid "spectrography"
+msgstr "espectrografia"
+
+msgid "spectrogram"
+msgstr "espectrograma"
+
+msgid "speech spectrogram"
+msgstr "espectrograma de la parla"
+
+msgid "utterance spectrogram"
+msgstr "espectrograma de la parla"
+
+msgid "voice spectrogram"
+msgstr "espectrograma de la parla"
+
+msgid "base station"
+msgstr "estació base"
+
+msgid "docking station"
+msgstr "estació d'acoblament"
+
+msgid "relay base"
+msgstr "estació de retransmissió"
+
+msgid "workstation"
+msgstr "estació de treball"
+
+msgid "sending station"
+msgstr "estació emissora"
+
+msgid "mobile station"
+msgstr "estació mòbil"
+
+msgid "multimedia station"
+msgstr "estació multimèdia"
+
+msgid "earth station"
+msgstr "estació terrestre"
+
+msgid "screen saver"
+msgstr "estalvi de pantalla"
+
+msgid "standard"
+msgstr "estàndard"
+
+msgid "standard"
+msgstr "estàndard"
+
+msgid "JPEG standard"
+msgstr "estàndard JPEG"
+
+msgid "MPEG standard"
+msgstr "estàndard MPEG"
+
+msgid "steganography"
+msgstr "esteganografia"
+
+msgid "stenography"
+msgstr "esteganografia"
+
+msgid "stereophony"
+msgstr "estereofonia"
+
+msgid "stereoscope"
+msgstr "estereoscopi"
+
+msgid "stereoscopic vision"
+msgstr "estereovisió"
+
+msgid "stereovision"
+msgstr "estereovisió"
+
+msgid "star"
+msgstr "estrella"
+
+msgid "markup tag"
+msgstr "etiqueta"
+
+msgid "tag"
+msgstr "etiqueta"
+
+msgid "netiquette"
+msgstr "etiqueta"
+
+msgid "network etiquette"
+msgstr "etiqueta"
+
+msgid "markup, to"
+msgstr "etiquetar"
+
+msgid "tag, to"
+msgstr "etiquetar"
+
+msgid "markup"
+msgstr "etiquetatge"
+
+msgid "tagging"
+msgstr "etiquetatge"
+
+msgid "execute, to"
+msgstr "executar"
+
+msgid "run, to"
+msgstr "executar"
+
+msgid "exportation"
+msgstr "exportació"
+
+msgid "export, to"
+msgstr "exportar"
+
+msgid "extranet"
+msgstr "extranet"
+
+msgid "electronic bill"
+msgstr "factura electrònica"
+
+msgid "hoax"
+msgstr "falsa alarma"
+
+msgid "hoax virus"
+msgstr "falsa alarma"
+
+msgid "hoaxing virus"
+msgstr "falsa alarma"
+
+msgid "spoofing"
+msgstr "falsejament d'identitat"
+
+msgid "web spoofing"
+msgstr "falsejament d'identitat"
+
+msgid "spam indexing"
+msgstr "falsejament d'índexs"
+
+msgid "spamdexing"
+msgstr "falsejament d'índexs"
+
+msgid "beamed particles"
+msgstr "feix de partícules"
+
+msgid "chat, to"
+msgstr "fer (una) tertúlia"
+
+msgid "telnet, to"
+msgstr "fer un Telnet"
+
+msgid "abend"
+msgstr "fi anormal"
+
+msgid "abnormal end"
+msgstr "fi anormal"
+
+msgid "abnormal termination"
+msgstr "fi anormal"
+
+msgid "optical fiber"
+msgstr "fibra òptica"
+
+msgid "discussion thread"
+msgstr "fil de discussió"
+
+msgid "open wire"
+msgstr "fil nu"
+
+msgid "digital tattoo"
+msgstr "filigrana"
+
+msgid "watermark"
+msgstr "filigrana"
+
+msgid "filter"
+msgstr "filtre"
+
+msgid "logoff"
+msgstr "final de sessió"
+
+msgid "logout"
+msgstr "final de sessió"
+
+msgid "log off, to"
+msgstr "finalitzar la sessió"
+
+msgid "log out, to"
+msgstr "finalitzar la sessió"
+
+msgid "window"
+msgstr "finestra"
+
+msgid "active window"
+msgstr "finestra activa"
+
+msgid "query window"
+msgstr "finestra d'interrogació"
+
+msgid "floating window"
+msgstr "finestra flotant"
+
+msgid "waypoint"
+msgstr "fita"
+
+msgid "file"
+msgstr "fitxer"
+
+msgid "attached file"
+msgstr "fitxer adjunt"
+
+msgid "attachment"
+msgstr "fitxer adjunt"
+
+msgid "scrap file"
+msgstr "fitxer de retalls"
+
+msgid "flexographic printing"
+msgstr "flexografia"
+
+msgid "flexography"
+msgstr "flexografia"
+
+msgid "off line"
+msgstr "fora de línia"
+
+msgid "off-line"
+msgstr "fora de línia"
+
+msgid "format"
+msgstr "format"
+
+msgid "graphics interchange format"
+msgstr "format d'intercanvi de gràfics"
+
+msgid "GIF"
+msgstr "format d'intercanvi de gràfics"
+
+msgid "formatting"
+msgstr "formatació"
+
+msgid "format, to"
+msgstr "formatar"
+
+msgid "conference group"
+msgstr "fòrum"
+
+msgid "discussion forum"
+msgstr "fòrum"
+
+msgid "discussion group"
+msgstr "fòrum"
+
+msgid "forum"
+msgstr "fòrum"
+
+msgid "interest group"
+msgstr "fòrum"
+
+msgid "newsgroup"
+msgstr "fòrum"
+
+msgid "photodetector"
+msgstr "fotodetector"
+
+msgid "digital photography"
+msgstr "fotografia digital"
+
+msgid "photosensitive"
+msgstr "fotosensible"
+
+msgid "photosensor"
+msgstr "fotosensor"
+
+msgid "photoplotter"
+msgstr "fototraçador"
+
+msgid "storage fragmentation"
+msgstr "fragmentació"
+
+msgid "Frame Relay"
+msgstr "Frame Relay"
+
+msgid "frequency"
+msgstr "freqüència"
+
+msgid "frequency"
+msgstr "freqüència"
+
+msgid "front end"
+msgstr "frontal"
+
+msgid "anonymous FTP"
+msgstr "FTP anònim"
+
+msgid "spreadsheet"
+msgstr "full de càlcul"
+
+msgid "computer hacker"
+msgstr "furoner -a"
+
+msgid "hacker"
+msgstr "furoner -a"
+
+msgid "white hat hacker"
+msgstr "furoner -a"
+
+msgid "cookie"
+msgstr "galeta"
+
+msgid "blank cookie"
+msgstr "galeta buida"
+
+msgid "generate, to"
+msgstr "generar"
+
+msgid "GIS specialist"
+msgstr "geomàtic -a"
+
+msgid "geomatic"
+msgstr "geomàtic -a"
+
+msgid "geomatics"
+msgstr "geomàtica"
+
+msgid "GIS implementation"
+msgstr "geomatització"
+
+msgid "geomatize, to"
+msgstr "geomatitzar"
+
+msgid "geosynchronous"
+msgstr "geosincrònic -a"
+
+msgid "geostationary"
+msgstr "geostacionari -ària"
+
+msgid "computer-assisted ticketing"
+msgstr "gestió automatitzada de bitllets"
+
+msgid "electronic ticketing"
+msgstr "gestió automatitzada de bitllets"
+
+msgid "spool"
+msgstr "gestió de cues"
+
+msgid "spooling"
+msgstr "gestió de cues"
+
+msgid "data management"
+msgstr "gestió de dades"
+
+msgid "network computing"
+msgstr "gestió de xarxes"
+
+msgid "network management"
+msgstr "gestió de xarxes"
+
+msgid "networking"
+msgstr "gestió de xarxes"
+
+msgid "knowledge management"
+msgstr "gestió del coneixement"
+
+msgid "spool, to"
+msgstr "gestionar cues"
+
+msgid "chief information officer"
+msgstr "gestor -a d'informació"
+
+msgid "information broker"
+msgstr "gestor -a d'informació"
+
+msgid "information manager"
+msgstr "gestor -a d'informació"
+
+msgid "information resources director"
+msgstr "gestor -a d'informació"
+
+msgid "information resources manager"
+msgstr "gestor -a d'informació"
+
+msgid "chief knowledge manager"
+msgstr "gestor -a del coneixement"
+
+msgid "chief knowledge officer"
+msgstr "gestor -a del coneixement"
+
+msgid "download manager"
+msgstr "gestor de baixades"
+
+msgid "downloading manager"
+msgstr "gestor de baixades"
+
+msgid "database management program"
+msgstr "gestor de bases de dades"
+
+msgid "spooler"
+msgstr "gestor de cues"
+
+msgid "data warehouse"
+msgstr "gestor de dades"
+
+msgid "data warehousing"
+msgstr "gestor de dades"
+
+msgid "spreadsheet program"
+msgstr "gestor de fulls de càlcul"
+
+msgid "gigabit"
+msgstr "gigabit"
+
+msgid "Gb"
+msgstr "gigabit"
+
+msgid "gigabit per second"
+msgstr "gigabit per segon"
+
+msgid "Gbps"
+msgstr "gigabit per segon"
+
+msgid "gigabyte"
+msgstr "gigabyte"
+
+msgid "GB"
+msgstr "gigabyte"
+
+msgid "Gb"
+msgstr "gigabyte"
+
+msgid "gigabyte per second"
+msgstr "gigabyte per segon"
+
+msgid "Gbps"
+msgstr "gigabyte per segon"
+
+msgid "GBps"
+msgstr "gigabyte per segon"
+
+msgid "gigahertz"
+msgstr "gigahertz"
+
+msgid "disk drive"
+msgstr "giradiscos"
+
+msgid "Gopher"
+msgstr "Gopher"
+
+msgid "block"
+msgstr "grup de sectors"
+
+msgid "cluster"
+msgstr "grup de sectors"
+
+msgid "electronic programming guide"
+msgstr "guia electrònica de programació"
+
+msgid "EPG"
+msgstr "guia electrònica de programació"
+
+msgid "trolling"
+msgstr "ham"
+
+msgid "hertz"
+msgstr "hertz"
+
+msgid "hyperband"
+msgstr "hiperbanda"
+
+msgid "hypermedia"
+msgstr "hipermèdia"
+
+msgid "hypermedia"
+msgstr "hipermèdia"
+
+msgid "hypertext"
+msgstr "hipertext"
+
+msgid "hypertextual"
+msgstr "hipertextual"
+
+msgid "history"
+msgstr "historial"
+
+msgid "computer-based patient record"
+msgstr "historial clínic informatitzat"
+
+msgid "hosting"
+msgstr "hostatge"
+
+msgid "guest"
+msgstr "hoste"
+
+msgid "guest computer"
+msgstr "hoste"
+
+msgid "HTML"
+msgstr "HTML"
+
+msgid "dynamic HTML"
+msgstr "HTML dinàmic"
+
+msgid "icon"
+msgstr "icona"
+
+msgid "alias"
+msgstr "icona de drecera"
+
+msgid "shortcut"
+msgstr "icona de drecera"
+
+msgid "shortcut icon"
+msgstr "icona de drecera"
+
+msgid "calling line identification"
+msgstr "identificació de trucada"
+
+msgid "CLI"
+msgstr "identificació de trucada"
+
+msgid "identifier"
+msgstr "identificador"
+
+msgid "magnet"
+msgstr "imant"
+
+msgid "IMAP"
+msgstr "IMAP"
+
+msgid "mouseover"
+msgstr "imatge canviant"
+
+msgid "mouseover image"
+msgstr "imatge canviant"
+
+msgid "rollover"
+msgstr "imatge canviant"
+
+msgid "rollover image"
+msgstr "imatge canviant"
+
+msgid "swap image"
+msgstr "imatge canviant"
+
+msgid "mouseover"
+msgstr "imatge canviant"
+
+msgid "mouseover technique"
+msgstr "imatge canviant"
+
+msgid "rollover"
+msgstr "imatge canviant"
+
+msgid "rollover technique"
+msgstr "imatge canviant"
+
+msgid "computer generated image"
+msgstr "imatge de síntesi"
+
+msgid "synthesis image"
+msgstr "imatge de síntesi"
+
+msgid "synthesis picture"
+msgstr "imatge de síntesi"
+
+msgid "digital image"
+msgstr "imatge digital"
+
+msgid "digital picture"
+msgstr "imatge digital"
+
+msgid "active image"
+msgstr "imatge sensible"
+
+msgid "clickable image"
+msgstr "imatge sensible"
+
+msgid "image map"
+msgstr "imatge sensible"
+
+msgid "immersion"
+msgstr "immersió"
+
+msgid "impact"
+msgstr "impacte"
+
+msgid "impression"
+msgstr "impacte"
+
+msgid "visit"
+msgstr "impacte"
+
+msgid "implementation"
+msgstr "implementació"
+
+msgid "implement, to"
+msgstr "implementar"
+
+msgid "importation"
+msgstr "importació"
+
+msgid "import, to"
+msgstr "importar"
+
+msgid "exposure"
+msgstr "impressió"
+
+msgid "print"
+msgstr "impressió"
+
+msgid "printing"
+msgstr "impressió"
+
+msgid "digital printing"
+msgstr "impressió digital"
+
+msgid "laser printing"
+msgstr "impressió làser"
+
+msgid "thermal printing"
+msgstr "impressió tèrmica"
+
+msgid "printer"
+msgstr "impressora"
+
+msgid "ink jet printer"
+msgstr "impressora de raig de tinta"
+
+msgid "laser printer"
+msgstr "impressora làser"
+
+msgid "magnetographic printer"
+msgstr "impressora magnetogràfica"
+
+msgid "thermal printer"
+msgstr "impressora tèrmica"
+
+msgid "print, to"
+msgstr "imprimir"
+
+msgid "event"
+msgstr "incidència"
+
+msgid "index"
+msgstr "índex"
+
+msgid "indexer"
+msgstr "indexador"
+
+msgid "index, to"
+msgstr "indexar"
+
+msgid "balloon help"
+msgstr "indicador de funció"
+
+msgid "help balloon"
+msgstr "indicador de funció"
+
+msgid "tooltip"
+msgstr "indicador de funció"
+
+msgid "language industries"
+msgstr "indústries de la llengua"
+
+msgid "infection"
+msgstr "infecció"
+
+msgid "info-"
+msgstr "info-"
+
+msgid "infoaddict"
+msgstr "infoaddicte -a"
+
+msgid "computer graphics designer"
+msgstr "infògraf -a"
+
+msgid "infography"
+msgstr "infografia"
+
+msgid "computer graphics"
+msgstr "infografia"
+
+msgid "infography"
+msgstr "infografia"
+
+msgid "electronic information"
+msgstr "informació electrònica"
+
+msgid "computer"
+msgstr "informàtic -a"
+
+msgid "computer science"
+msgstr "informàtica"
+
+msgid "enterprise computing"
+msgstr "informàtica d'empresa"
+
+msgid "business data processing"
+msgstr "informàtica de gestió"
+
+msgid "management information system"
+msgstr "informàtica de gestió"
+
+msgid "system computing"
+msgstr "informàtica de sistemes"
+
+msgid "computer music"
+msgstr "informàtica musical"
+
+msgid "computerization"
+msgstr "informatització"
+
+msgid "computerize, to"
+msgstr "informatitzar"
+
+msgid "login"
+msgstr "inici de sessió"
+
+msgid "logon"
+msgstr "inici de sessió"
+
+msgid "log in, to"
+msgstr "iniciar la sessió"
+
+msgid "log on, to"
+msgstr "iniciar la sessió"
+
+msgid "installation"
+msgstr "instal·lació"
+
+msgid "install, to"
+msgstr "instal·lar"
+
+msgid "instance"
+msgstr "instància"
+
+msgid "instance object"
+msgstr "instància"
+
+msgid "instantiate, to"
+msgstr "instanciar"
+
+msgid "instruction"
+msgstr "instrucció"
+
+msgid "plug and play"
+msgstr "integració automàtica"
+
+msgid "artificial intelligence"
+msgstr "intel·ligència artificial"
+
+msgid "AI"
+msgstr "intel·ligència artificial"
+
+msgid "intelligent"
+msgstr "intel·ligent"
+
+msgid "interactive"
+msgstr "interactiu -iva"
+
+msgid "interactivity"
+msgstr "interactivitat"
+
+msgid "deadlock"
+msgstr "interbloqueig"
+
+msgid "electronic data interchange"
+msgstr "intercanvi electrònic de dades"
+
+msgid "EDI"
+msgstr "intercanvi electrònic de dades"
+
+msgid "interconnect, to"
+msgstr "interconnectar"
+
+msgid "interconnection"
+msgstr "interconnexió"
+
+msgid "interface"
+msgstr "interfície"
+
+msgid "common gateway interface"
+msgstr "interfície comuna de passarel·la"
+
+msgid "CGI"
+msgstr "interfície comuna de passarel·la"
+
+msgid "user interface"
+msgstr "interfície d'usuari"
+
+msgid "graphical user interface"
+msgstr "interfície gràfica d'usuari"
+
+msgid "GUI"
+msgstr "interfície gràfica d'usuari"
+
+msgid "man-in-the-middle"
+msgstr "intermediari -ària"
+
+msgid "infomediary"
+msgstr "intermediari -ària de la informació"
+
+msgid "infomediary"
+msgstr "intermediari de la informació"
+
+msgid "cybernaut"
+msgstr "internauta"
+
+msgid "internaut"
+msgstr "internauta"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "high speed network"
+msgstr "Internet-2"
+
+msgid "Internet II"
+msgstr "Internet-2"
+
+msgid "Internet-2"
+msgstr "Internet-2"
+
+msgid "time slot"
+msgstr "interval de temps"
+
+msgid "intranet"
+msgstr "intranet"
+
+msgid "data entry clerk"
+msgstr "introductor -a de dades"
+
+msgid "data entry operator"
+msgstr "introductor -a de dades"
+
+msgid "spamming"
+msgstr "inundació"
+
+msgid "flood, to"
+msgstr "inundar"
+
+msgid "spam, to"
+msgstr "inundar"
+
+msgid "IPNG"
+msgstr "IPNG"
+
+msgid "IPsec"
+msgstr "IPsec"
+
+msgid "IRC"
+msgstr "IRC"
+
+msgid "roaming"
+msgstr "itinerància"
+
+msgid "Java"
+msgstr "Java"
+
+msgid "character set"
+msgstr "joc de caràcters"
+
+msgid "electronic game"
+msgstr "joc electrònic"
+
+msgid "acknowledgement"
+msgstr "justificant de recepció"
+
+msgid "ACK"
+msgstr "justificant de recepció"
+
+msgid "negative acknowledgement"
+msgstr "justificant de recepció negatiu"
+
+msgid "NACK"
+msgstr "justificant de recepció negatiu"
+
+msgid "kilobit"
+msgstr "kilobit"
+
+msgid "kb"
+msgstr "kilobit"
+
+msgid "kilobit per second"
+msgstr "kilobit per segon"
+
+msgid "kbps"
+msgstr "kilobit per segon"
+
+msgid "kilobyte"
+msgstr "kilobyte"
+
+msgid "kB"
+msgstr "kilobyte"
+
+msgid "kb"
+msgstr "kilobyte"
+
+msgid "kilobyte per second"
+msgstr "kilobyte per segon"
+
+msgid "kBps"
+msgstr "kilobyte per segon"
+
+msgid "kbps"
+msgstr "kilobyte per segon"
+
+msgid "kilohertz"
+msgstr "kilohertz"
+
+msgid "LDAP"
+msgstr "LDAP"
+
+msgid "player"
+msgstr "lector"
+
+msgid "reader"
+msgstr "lector"
+
+msgid "CD drive"
+msgstr "lector de CD"
+
+msgid "bar code reader"
+msgstr "lector de codi de barres"
+
+msgid "DVD drive"
+msgstr "lector de DVD"
+
+msgid "newsreader"
+msgstr "lector de missatges"
+
+msgid "newsreader software"
+msgstr "lector de missatges"
+
+msgid "optical reader"
+msgstr "lector òptic"
+
+msgid "e-tendering"
+msgstr "licitació electrònica"
+
+msgid "electronic tendering"
+msgstr "licitació electrònica"
+
+msgid "computational linguist"
+msgstr "lingüista computacional"
+
+msgid "computational linguistics"
+msgstr "lingüística computacional"
+
+msgid "dial-up line"
+msgstr "línia commutada"
+
+msgid "switched line"
+msgstr "línia commutada"
+
+msgid "subscriber line"
+msgstr "línia d'abonat"
+
+msgid "digital subscriber line"
+msgstr "línia d'abonat digital"
+
+msgid "DSL"
+msgstr "línia d'abonat digital"
+
+msgid "asymmetric digital subscriber line"
+msgstr "línia d'abonat digital asimètrica"
+
+msgid "ADSL"
+msgstr "línia d'abonat digital asimètrica"
+
+msgid "symmetric digital subscriber line"
+msgstr "línia d'abonat digital simètrica"
+
+msgid "SDSL"
+msgstr "línia d'abonat digital simètrica"
+
+msgid "electric line"
+msgstr "línia elèctrica"
+
+msgid "telephone line"
+msgstr "línia telefònica"
+
+msgid "language"
+msgstr "llenguatge"
+
+msgid "artificial language"
+msgstr "llenguatge artificial"
+
+msgid "high level language"
+msgstr "llenguatge d'alt nivell"
+
+msgid "high order language"
+msgstr "llenguatge d'alt nivell"
+
+msgid "assembler language"
+msgstr "llenguatge d'assemblador"
+
+msgid "assembly language"
+msgstr "llenguatge d'assemblador"
+
+msgid "author language"
+msgstr "llenguatge d'autors"
+
+msgid "authoring language"
+msgstr "llenguatge d'autors"
+
+msgid "interrogation language"
+msgstr "llenguatge d'interrogació"
+
+msgid "QL"
+msgstr "llenguatge d'interrogació"
+
+msgid "query language"
+msgstr "llenguatge d'interrogació"
+
+msgid "low level language"
+msgstr "llenguatge de baix nivell"
+
+msgid "machine language"
+msgstr "llenguatge de màquina"
+
+msgid "programming language"
+msgstr "llenguatge de programació"
+
+msgid "source language"
+msgstr "llenguatge font"
+
+msgid "formal language"
+msgstr "llenguatge formal"
+
+msgid "natural language"
+msgstr "llenguatge natural"
+
+msgid "object languaje"
+msgstr "llenguatge resultant"
+
+msgid "target language"
+msgstr "llenguatge resultant"
+
+msgid "universal networking language"
+msgstr "llenguatge universal de xarxa"
+
+msgid "UNL"
+msgstr "llenguatge universal de xarxa"
+
+msgid "e-book"
+msgstr "llibre digital"
+
+msgid "electronic book"
+msgstr "llibre digital"
+
+msgid "electronic bookshop"
+msgstr "llibreria electrònica"
+
+msgid "address book"
+msgstr "llibreta d'adreces"
+
+msgid "list"
+msgstr "llista"
+
+msgid "bookmark list"
+msgstr "llista d'adreces d'interès"
+
+msgid "bookmarks"
+msgstr "llista d'adreces d'interès"
+
+msgid "favourites"
+msgstr "llista d'adreces d'interès"
+
+msgid "hot list"
+msgstr "llista d'adreces d'interès"
+
+msgid "hotlist"
+msgstr "llista d'adreces d'interès"
+
+msgid "buddy list"
+msgstr "llista d'amics"
+
+msgid "mailing list"
+msgstr "llista de correu"
+
+msgid "discussion list"
+msgstr "llista de distribució"
+
+msgid "distribution list"
+msgstr "llista de distribució"
+
+msgid "listing"
+msgstr "llistat"
+
+msgid "Internet site"
+msgstr "lloc d'Internet"
+
+msgid "download site"
+msgstr "lloc de baixada"
+
+msgid "upload site"
+msgstr "lloc de penjada"
+
+msgid "FTP site"
+msgstr "lloc FTP"
+
+msgid "Gopher site"
+msgstr "lloc Gopher"
+
+msgid "LMDS"
+msgstr "LMDS"
+
+msgid "local"
+msgstr "local"
+
+msgid "localization"
+msgstr "localització"
+
+msgid "localize, to"
+msgstr "localitzar"
+
+msgid "e-logistics"
+msgstr "logística electrònica"
+
+msgid "electronic logistics"
+msgstr "logística electrònica"
+
+msgid "wave length"
+msgstr "longitud d'ona"
+
+msgid "batch"
+msgstr "lot"
+
+msgid "luminescence"
+msgstr "luminescència"
+
+msgid "macroinstruction"
+msgstr "macroinstrucció"
+
+msgid "e-zine"
+msgstr "magazín electrònic"
+
+msgid "electronic magazine"
+msgstr "magazín electrònic"
+
+msgid "webzine"
+msgstr "magazín electrònic"
+
+msgid "magnetic"
+msgstr "magnètic -a"
+
+msgid "magnetism"
+msgstr "magnetisme"
+
+msgid "magnetize, to"
+msgstr "magnetitzar"
+
+msgid "hand"
+msgstr "maneta"
+
+msgid "bitmap"
+msgstr "mapa de bits"
+
+msgid "pixmap"
+msgstr "mapa de píxels"
+
+msgid "web map"
+msgstr "mapa del web"
+
+msgid "machine"
+msgstr "màquina"
+
+msgid "hardware"
+msgstr "maquinari"
+
+msgid "frame"
+msgstr "marc"
+
+msgid "dial, to"
+msgstr "marcar"
+
+msgid "dialling"
+msgstr "marcatge"
+
+msgid "digital tattooing"
+msgstr "marcatge"
+
+msgid "fingerprinting"
+msgstr "marcatge"
+
+msgid "watermarking"
+msgstr "marcatge"
+
+msgid "speed calling"
+msgstr "marcatge abreujat"
+
+msgid "emergency dialing"
+msgstr "marcatge d'urgència"
+
+msgid "voice dialing"
+msgstr "marcatge per veu"
+
+msgid "e-marketing"
+msgstr "màrqueting electrònic"
+
+msgid "electronic marketing"
+msgstr "màrqueting electrònic"
+
+msgid "netmarketing"
+msgstr "màrqueting electrònic"
+
+msgid "e-mail marketing"
+msgstr "màrqueting per correu electrònic"
+
+msgid "telemarketing"
+msgstr "màrqueting telefònic"
+
+msgid "telephone marketing"
+msgstr "màrqueting telefònic"
+
+msgid "viral marketing"
+msgstr "màrqueting viral"
+
+msgid "switching matrix"
+msgstr "matriu de commutació"
+
+msgid "maximization"
+msgstr "maximització"
+
+msgid "maximize, to"
+msgstr "maximitzar"
+
+msgid "MBps"
+msgstr "MBps"
+
+msgid "Mbps"
+msgstr "MBps"
+
+msgid "Mbps"
+msgstr "Mbps"
+
+msgid "megabit"
+msgstr "megabit"
+
+msgid "megabit per second"
+msgstr "megabit per segon"
+
+msgid "megabyte"
+msgstr "megabyte [en]"
+
+msgid "megabyte per second"
+msgstr "megabyte per segon [megabyte: en]"
+
+msgid "megahertz"
+msgstr "megahertz"
+
+msgid "memory"
+msgstr "memòria"
+
+msgid "storage"
+msgstr "memòria"
+
+msgid "auxiliary memory"
+msgstr "memòria auxiliar"
+
+msgid "auxiliary storage"
+msgstr "memòria auxiliar"
+
+msgid "external memory"
+msgstr "memòria auxiliar"
+
+msgid "external storage"
+msgstr "memòria auxiliar"
+
+msgid "cache memory"
+msgstr "memòria cau"
+
+msgid "core memory"
+msgstr "memòria central"
+
+msgid "core storage"
+msgstr "memòria central"
+
+msgid "main memory"
+msgstr "memòria central"
+
+msgid "main storage"
+msgstr "memòria central"
+
+msgid "random access memory"
+msgstr "memòria d'accés aleatori"
+
+msgid "RAM"
+msgstr "memòria d'accés aleatori"
+
+msgid "sequential access memory"
+msgstr "memòria d'accés seqüencial"
+
+msgid "sequential access storage"
+msgstr "memòria d'accés seqüencial"
+
+msgid "translation memory"
+msgstr "memòria de traducció"
+
+msgid "working memory"
+msgstr "memòria de treball"
+
+msgid "working space"
+msgstr "memòria de treball"
+
+msgid "working storage"
+msgstr "memòria de treball"
+
+msgid "buffer"
+msgstr "memòria intermèdia"
+
+msgid "buffer storage"
+msgstr "memòria intermèdia"
+
+msgid "typeahead"
+msgstr "memòria intermèdia de teclat"
+
+msgid "internal memory"
+msgstr "memòria interna"
+
+msgid "internal storage"
+msgstr "memòria interna"
+
+msgid "read only memory"
+msgstr "memòria només de lectura"
+
+msgid "ROM"
+msgstr "memòria només de lectura"
+
+msgid "programmable read only memory"
+msgstr "memòria només de lectura programable"
+
+msgid "PROM"
+msgstr "memòria només de lectura programable"
+
+msgid "permanent memory"
+msgstr "memòria permanent"
+
+msgid "permanent storage"
+msgstr "memòria permanent"
+
+msgid "volatile memory"
+msgstr "memòria volàtil"
+
+msgid "volatile storage"
+msgstr "memòria volàtil"
+
+msgid "menu"
+msgstr "menú"
+
+msgid "pull down menu"
+msgstr "menú desplegable"
+
+msgid "contextual menu"
+msgstr "menú emergent"
+
+msgid "pop up menu"
+msgstr "menú emergent"
+
+msgid "main menu"
+msgstr "menú principal"
+
+msgid "e-market"
+msgstr "mercat electrònic"
+
+msgid "electronic market"
+msgstr "mercat electrònic"
+
+msgid "reverse market"
+msgstr "mercat invers"
+
+msgid "marketplace"
+msgstr "mercat web"
+
+msgid "metasearch"
+msgstr "metacerca"
+
+msgid "meta search engine"
+msgstr "metacercador"
+
+msgid "metadata"
+msgstr "metadada"
+
+msgid "metatag"
+msgstr "metaetiqueta"
+
+msgid "morphing"
+msgstr "metamorfosi"
+
+msgid "headset microphone"
+msgstr "microauricular"
+
+msgid "microelectronics"
+msgstr "microelectrònica"
+
+msgid "microphone"
+msgstr "micròfon"
+
+msgid "microcomputing"
+msgstr "microinformàtica"
+
+msgid "web microsite"
+msgstr "microlloc web"
+
+msgid "micropayment"
+msgstr "micropagament"
+
+msgid "microprocessor"
+msgstr "microprocessador"
+
+msgid "firmware"
+msgstr "microprogramari"
+
+msgid "handset"
+msgstr "microtelèfon"
+
+msgid "MIDI"
+msgstr "MIDI"
+
+msgid "migration"
+msgstr "migració"
+
+msgid "migrate, to"
+msgstr "migrar"
+
+msgid "MIME"
+msgstr "MIME"
+
+msgid "data harvesting"
+msgstr "mineria de dades"
+
+msgid "data mining"
+msgstr "mineria de dades"
+
+msgid "applet"
+msgstr "miniaplicació"
+
+msgid "servlet"
+msgstr "miniaplicació de servidor"
+
+msgid "miniaturization"
+msgstr "miniaturització"
+
+msgid "miniaturize, to"
+msgstr "miniaturitzar"
+
+msgid "minimization"
+msgstr "minimització"
+
+msgid "minimize, to"
+msgstr "minimitzar"
+
+msgid "MIPS"
+msgstr "MIPS"
+
+msgid "incoming message"
+msgstr "missatge d'entrada"
+
+msgid "outgoing message"
+msgstr "missatge de sortida"
+
+msgid "voice message"
+msgstr "missatge de veu"
+
+msgid "message of the day"
+msgstr "missatge del dia"
+
+msgid "e-mail chain"
+msgstr "missatge en cadena"
+
+msgid "off subject note"
+msgstr "missatge fora de lloc"
+
+msgid "bounced message"
+msgstr "missatge retornat"
+
+msgid "voice messaging"
+msgstr "missatgeria de veu"
+
+msgid "instant messaging"
+msgstr "missatgeria instantània"
+
+msgid "netnews"
+msgstr "missatges"
+
+msgid "network news"
+msgstr "missatges"
+
+msgid "news"
+msgstr "missatges"
+
+msgid "asynchronous transfer mode"
+msgstr "mode de transferència asíncrona"
+
+msgid "ATM"
+msgstr "mode de transferència asíncrona"
+
+msgid "client-server model"
+msgstr "model client-servidor"
+
+msgid "modeling"
+msgstr "modelització"
+
+msgid "modem"
+msgstr "mòdem"
+
+msgid "asynchronous modem"
+msgstr "mòdem asíncron"
+
+msgid "ASVD modem"
+msgstr "mòdem ASVD"
+
+msgid "cable modem"
+msgstr "mòdem de cable"
+
+msgid "asymmetric cable modem"
+msgstr "mòdem de cable asimètric"
+
+msgid "symmetrical cable modem"
+msgstr "mòdem de cable simètric"
+
+msgid "voice modem"
+msgstr "mòdem de veu"
+
+msgid "DSVD modem"
+msgstr "mòdem DSVD"
+
+msgid "external modem"
+msgstr "mòdem extern"
+
+msgid "integrated modem"
+msgstr "mòdem integrat"
+
+msgid "internal modem"
+msgstr "mòdem intern"
+
+msgid "wireless modem"
+msgstr "mòdem sense fil"
+
+msgid "synchronous modem"
+msgstr "mòdem síncron"
+
+msgid "moderator"
+msgstr "moderador -a"
+
+msgid "sysop"
+msgstr "moderador -a"
+
+msgid "system operator"
+msgstr "moderador -a"
+
+msgid "moderate, to"
+msgstr "moderar"
+
+msgid "runtime version"
+msgstr "mòdul d'execució"
+
+msgid "subscriber identity module"
+msgstr "mòdul d'identificació de l'abonat"
+
+msgid "SIM"
+msgstr "mòdul d'identificació de l'abonat"
+
+msgid "modulation"
+msgstr "modulació"
+
+msgid "modulator"
+msgstr "modulador"
+
+msgid "modulate, to"
+msgstr "modular"
+
+msgid "modularity"
+msgstr "modularitat"
+
+msgid "electronic cash card"
+msgstr "moneder electrònic"
+
+msgid "electronic purse"
+msgstr "moneder electrònic"
+
+msgid "monitor"
+msgstr "monitor"
+
+msgid "monitor"
+msgstr "monitor"
+
+msgid "cathode ray tube"
+msgstr "monitor de tub de raigs catòdics"
+
+msgid "single user"
+msgstr "monousuari -ària"
+
+msgid "inference engine"
+msgstr "motor d'inferències"
+
+msgid "search engine"
+msgstr "motor de cerca"
+
+msgid "adapter dongle"
+msgstr "motxilla"
+
+msgid "dongle"
+msgstr "motxilla"
+
+msgid "hardware key"
+msgstr "motxilla"
+
+msgid "MP3"
+msgstr "MP3"
+
+msgid "multiconferencing"
+msgstr "multiconferència"
+
+msgid "multiplex"
+msgstr "múltiplex"
+
+msgid "multiplex transmission"
+msgstr "multiplexació"
+
+msgid "multiplex, to"
+msgstr "multiplexar"
+
+msgid "multiplexing"
+msgstr "multiplexatge"
+
+msgid "frecuency division multiplexing"
+msgstr "multiplexatge per divisió de freqüència"
+
+msgid "FDM"
+msgstr "multiplexatge per divisió de freqüència"
+
+msgid "time division multiplexing"
+msgstr "multiplexatge per divisió de temps"
+
+msgid "TDM"
+msgstr "multiplexatge per divisió de temps"
+
+msgid "multiplexer"
+msgstr "multiplexor"
+
+msgid "multiprocessor"
+msgstr "multiprocessador"
+
+msgid "multiprocessing"
+msgstr "multiprocessament"
+
+msgid "multitasking"
+msgstr "multitasca"
+
+msgid "multiuser"
+msgstr "multiusuari -ària"
+
+msgid "build"
+msgstr "muntatge"
+
+msgid "build"
+msgstr "muntatge"
+
+msgid "electronic music"
+msgstr "música electrònica"
+
+msgid "browser"
+msgstr "navegador"
+
+msgid "explorer"
+msgstr "navegador"
+
+msgid "navigator"
+msgstr "navegador"
+
+msgid "browse, to"
+msgstr "navegar"
+
+msgid "navigate, to"
+msgstr "navegar"
+
+msgid "e-business"
+msgstr "negoci electrònic"
+
+msgid "electronic business"
+msgstr "negoci electrònic"
+
+msgid "artificial neuron"
+msgstr "neurona artificial"
+
+msgid "neurochip"
+msgstr "neurona artificial"
+
+msgid "NNTP"
+msgstr "NNTP"
+
+msgid "node"
+msgstr "node"
+
+msgid "user name"
+msgstr "nom d'usuari"
+
+msgid "account name"
+msgstr "nom de compte"
+
+msgid "acceptable use policy"
+msgstr "normes d'ús"
+
+msgid "new economy"
+msgstr "nova economia"
+
+msgid "new enterprise"
+msgstr "nova empresa"
+
+msgid "start-up"
+msgstr "nova empresa"
+
+msgid "NTP"
+msgstr "NTP"
+
+msgid "personal identification number"
+msgstr "número d'identificació personal"
+
+msgid "PIN"
+msgstr "número d'identificació personal"
+
+msgid "socket"
+msgstr "número de sòcol"
+
+msgid "socket number"
+msgstr "número de sòcol"
+
+msgid "personal unblocking key"
+msgstr "número personal de desbloqueig"
+
+msgid "PUK"
+msgstr "número personal de desbloqueig"
+
+msgid "universal number"
+msgstr "número universal"
+
+msgid "lurker"
+msgstr "observador -a"
+
+msgid "mobile office"
+msgstr "oficina mòbil"
+
+msgid "office automation agent"
+msgstr "ofimàtic -a"
+
+msgid "office automation"
+msgstr "ofimàtica"
+
+msgid "wave"
+msgstr "ona"
+
+msgid "electromagnetic wave"
+msgstr "ona electromagnètica"
+
+msgid "hertzian wave"
+msgstr "ona electromagnètica"
+
+msgid "radio wave"
+msgstr "ona radioelèctrica"
+
+msgid "housekeeping operation"
+msgstr "operació de sistema"
+
+msgid "overhead operation"
+msgstr "operació de sistema"
+
+msgid "logic operation"
+msgstr "operació lògica"
+
+msgid "carrier"
+msgstr "operador"
+
+msgid "operator"
+msgstr "operador"
+
+msgid "computer operator"
+msgstr "operador -a d'ordinadors"
+
+msgid "system operator"
+msgstr "operador -a de sistemes informàtics"
+
+msgid "optical"
+msgstr "òptic -a"
+
+msgid "optics"
+msgstr "òptica"
+
+msgid "computer"
+msgstr "ordinador"
+
+msgid "host computer"
+msgstr "ordinador central"
+
+msgid "hand-held computer"
+msgstr "ordinador de butxaca"
+
+msgid "palmtop computer"
+msgstr "ordinador de butxaca"
+
+msgid "pocket computer"
+msgstr "ordinador de butxaca"
+
+msgid "desktop computer"
+msgstr "ordinador de taula"
+
+msgid "network computer"
+msgstr "ordinador de xarxa"
+
+msgid "home control computer"
+msgstr "ordinador domòtic"
+
+msgid "multimedia computer"
+msgstr "ordinador multimèdia"
+
+msgid "neural computer"
+msgstr "ordinador neuronal"
+
+msgid "neurocomputer"
+msgstr "ordinador neuronal"
+
+msgid "neuronal computer"
+msgstr "ordinador neuronal"
+
+msgid "microcomputer"
+msgstr "ordinador personal"
+
+msgid "personal computer"
+msgstr "ordinador personal"
+
+msgid "PC"
+msgstr "ordinador personal"
+
+msgid "wearable computer"
+msgstr "ordinador portable"
+
+msgid "laptop computer"
+msgstr "ordinador portàtil"
+
+msgid "notebook computer"
+msgstr "ordinador portàtil"
+
+msgid "portable computer"
+msgstr "ordinador portàtil"
+
+msgid "remote computer"
+msgstr "ordinador remot"
+
+msgid "electronic assistant"
+msgstr "organitzador personal"
+
+msgid "personal digital assistant"
+msgstr "organitzador personal"
+
+msgid "PDA"
+msgstr "organitzador personal"
+
+msgid "OSI"
+msgstr "OSI"
+
+msgid "PABX"
+msgstr "PABX"
+
+msgid "electronic payment"
+msgstr "pagament electrònic"
+
+msgid "telepayment"
+msgstr "pagament electrònic"
+
+msgid "click payment"
+msgstr "pagament per clic"
+
+msgid "pay-per-click"
+msgstr "pagament per clic"
+
+msgid "lead payment"
+msgstr "pagament per comanda"
+
+msgid "pay per lead"
+msgstr "pagament per comanda"
+
+msgid "pay by use"
+msgstr "pagament per consulta"
+
+msgid "use payment"
+msgstr "pagament per consulta"
+
+msgid "display payment"
+msgstr "pagament per visió"
+
+msgid "pay-per-view"
+msgstr "pagament per visió"
+
+msgid "redirect page"
+msgstr "pàgina de redirecció"
+
+msgid "splash page"
+msgstr "pàgina flaix"
+
+msgid "home page"
+msgstr "pàgina inicial"
+
+msgid "web page"
+msgstr "pàgina web"
+
+msgid "white pages"
+msgstr "pàgines blanques"
+
+msgid "joystick"
+msgstr "palanca de control"
+
+msgid "flicker"
+msgstr "pampallugueig"
+
+msgid "screen"
+msgstr "pantalla"
+
+msgid "high resolution display"
+msgstr "pantalla d'alta definició"
+
+msgid "liquid crystal display"
+msgstr "pantalla de cristall líquid"
+
+msgid "LCD"
+msgstr "pantalla de cristall líquid"
+
+msgid "plasma display"
+msgstr "pantalla de plasma"
+
+msgid "splash screen"
+msgstr "pantalla flaix"
+
+msgid "graphic screen"
+msgstr "pantalla gràfica"
+
+msgid "hemispheric screen"
+msgstr "pantalla hemisfèrica"
+
+msgid "panoramic display"
+msgstr "pantalla panoràmica"
+
+msgid "flat screen"
+msgstr "pantalla plana"
+
+msgid "touch screen"
+msgstr "pantalla tàctil"
+
+msgid "electronic paper"
+msgstr "paper electrònic"
+
+msgid "thermal paper"
+msgstr "paper tèrmic"
+
+msgid "packet"
+msgstr "paquet"
+
+msgid "software package"
+msgstr "paquet informàtic"
+
+msgid "suite"
+msgstr "paquet ofimàtic"
+
+msgid "blinking"
+msgstr "parpelleig"
+
+msgid "hyphenation"
+msgstr "partició de mots"
+
+msgid "hyphenate, to"
+msgstr "partir mots"
+
+msgid "token passing"
+msgstr "pas de testimoni"
+
+msgid "gateway"
+msgstr "passarel·la"
+
+msgid "mail gateway"
+msgstr "passarel·la de correu"
+
+msgid "PBX"
+msgstr "PBX"
+
+msgid "PDF"
+msgstr "PDF"
+
+msgid "pay per channel"
+msgstr "peatge per canal"
+
+msgid "pay per minute"
+msgstr "peatge per minut"
+
+msgid "upload"
+msgstr "penjada"
+
+msgid "upload, to"
+msgstr "penjar"
+
+msgid "default"
+msgstr "per defecte"
+
+msgid "information profile"
+msgstr "perfil d'informació"
+
+msgid "identity"
+msgstr "perfil d'usuari"
+
+msgid "user profile"
+msgstr "perfil d'usuari"
+
+msgid "peripheral device"
+msgstr "perifèric"
+
+msgid "input device"
+msgstr "perifèric d'entrada"
+
+msgid "input/output device"
+msgstr "perifèric d'entrada/sortida"
+
+msgid "output device"
+msgstr "perifèric de sortida"
+
+msgid "access permission"
+msgstr "permís d'accés"
+
+msgid "customization"
+msgstr "personalització"
+
+msgid "customization"
+msgstr "personalització"
+
+msgid "hit"
+msgstr "petició de fitxer"
+
+msgid "PGP"
+msgstr "PGP"
+
+msgid "PICS"
+msgstr "PICS"
+
+msgid "pushdown list"
+msgstr "pila"
+
+msgid "disk pack"
+msgstr "pila de discos"
+
+msgid "PING"
+msgstr "PING"
+
+msgid "black hat hacker"
+msgstr "pirata"
+
+msgid "cracker"
+msgstr "pirata"
+
+msgid "phone phreak"
+msgstr "pirata telefònic -a"
+
+msgid "phreaker"
+msgstr "pirata telefònic -a"
+
+msgid "piracy"
+msgstr "pirateria"
+
+msgid "whiteboard"
+msgstr "pissarra electrònica"
+
+msgid "track"
+msgstr "pista"
+
+msgid "pixel"
+msgstr "píxel"
+
+msgid "invisible pixel"
+msgstr "píxel invisible"
+
+msgid "web bug"
+msgstr "píxel invisible"
+
+msgid "job scheduling"
+msgstr "planificació de tasques"
+
+msgid "scheduling"
+msgstr "planificació de tasques"
+
+msgid "telecommunications planner"
+msgstr "planificador -a de telecomunicacions"
+
+msgid "network planner"
+msgstr "planificador -a de xarxes"
+
+msgid "job scheduler"
+msgstr "planificador de tasques"
+
+msgid "scheduler"
+msgstr "planificador de tasques"
+
+msgid "schedule, to"
+msgstr "planificar tasques"
+
+msgid "plasma"
+msgstr "plasma"
+
+msgid "platform"
+msgstr "plataforma"
+
+msgid "platform"
+msgstr "plataforma"
+
+msgid "open platform"
+msgstr "plataforma oberta"
+
+msgid "closed platform"
+msgstr "plataforma tancada"
+
+msgid "Plug and Play"
+msgstr "Plug and Play"
+
+msgid "Plug-and-Play"
+msgstr "Plug and Play"
+
+msgid "PnP"
+msgstr "Plug and Play"
+
+msgid "PNG"
+msgstr "PNG"
+
+msgid "resolution power"
+msgstr "poder de resolució"
+
+msgid "bridge"
+msgstr "pont"
+
+msgid "multiconference bridge"
+msgstr "pont de multiconferència"
+
+msgid "port"
+msgstr "port"
+
+msgid "parallel port"
+msgstr "port en paral·lel"
+
+msgid "serial port"
+msgstr "port en sèrie"
+
+msgid "clipboard"
+msgstr "porta-retalls"
+
+msgid "porting"
+msgstr "portabilitat"
+
+msgid "carrier"
+msgstr "portadora"
+
+msgid "portal"
+msgstr "portal"
+
+msgid "PostScript"
+msgstr "PostScript"
+
+msgid "Frequently Asked Questions"
+msgstr "preguntes més freqüents"
+
+msgid "FAQ"
+msgstr "preguntes més freqüents"
+
+msgid "electronic press"
+msgstr "premsa electrònica"
+
+msgid "processor"
+msgstr "processador"
+
+msgid "CPU"
+msgstr "processador"
+
+msgid "digital signal processor"
+msgstr "processador de senyals digitals"
+
+msgid "DSP"
+msgstr "processador de senyals digitals"
+
+msgid "word processor"
+msgstr "processador de textos"
+
+msgid "multipoint processor"
+msgstr "processador multipunt"
+
+msgid "processing"
+msgstr "processament"
+
+msgid "image processing"
+msgstr "processament d'imatges"
+
+msgid "picture processing"
+msgstr "processament d'imatges"
+
+msgid "data processing"
+msgstr "processament de dades"
+
+msgid "distributed data processing"
+msgstr "processament de dades distribuït"
+
+msgid "speech processing"
+msgstr "processament de la parla"
+
+msgid "voice processing"
+msgstr "processament de la parla"
+
+msgid "text processing"
+msgstr "processament de textos"
+
+msgid "word processing"
+msgstr "processament de textos"
+
+msgid "process, to"
+msgstr "processar"
+
+msgid "computer-aided manufacturing"
+msgstr "producció assistida per ordinador"
+
+msgid "computer-assisted manufacturing"
+msgstr "producció assistida per ordinador"
+
+msgid "CAM"
+msgstr "producció assistida per ordinador"
+
+msgid "program"
+msgstr "programa"
+
+msgid "program on demand"
+msgstr "programa a la carta"
+
+msgid "active program"
+msgstr "programa actiu"
+
+msgid "tutorial"
+msgstr "programa d'aprenentatge"
+
+msgid "tutorial help"
+msgstr "programa d'aprenentatge"
+
+msgid "utility program"
+msgstr "programa d'utilitats"
+
+msgid "compaction program"
+msgstr "programa de compactació"
+
+msgid "driver"
+msgstr "programa de control"
+
+msgid "e-mail program"
+msgstr "programa de correu electrònic"
+
+msgid "electronic mail program"
+msgstr "programa de correu electrònic"
+
+msgid "autoresponder"
+msgstr "programa de resposta automàtica"
+
+msgid "autoresponse program"
+msgstr "programa de resposta automàtica"
+
+msgid "source code program"
+msgstr "programa font"
+
+msgid "source program"
+msgstr "programa font"
+
+msgid "resident program"
+msgstr "programa resident"
+
+msgid "object program"
+msgstr "programa resultant"
+
+msgid "target program"
+msgstr "programa resultant"
+
+msgid "programming"
+msgstr "programació"
+
+msgid "object-oriented programming"
+msgstr "programació orientada a objectes"
+
+msgid "OOP"
+msgstr "programació orientada a objectes"
+
+msgid "programmer"
+msgstr "programador -a"
+
+msgid "multimedia programmer"
+msgstr "programador -a de multimèdia"
+
+msgid "program, to"
+msgstr "programar"
+
+msgid "software"
+msgstr "programari"
+
+msgid "author software"
+msgstr "programari d'autors"
+
+msgid "authoring software"
+msgstr "programari d'autors"
+
+msgid "authorware"
+msgstr "programari d'autors"
+
+msgid "public domaine software"
+msgstr "programari de domini públic"
+
+msgid "filtering software"
+msgstr "programari de filtratge"
+
+msgid "enterprise resource planning"
+msgstr "programari de gestió integrada"
+
+msgid "ERP"
+msgstr "programari de gestió integrada"
+
+msgid "groupware"
+msgstr "programari de grup"
+
+msgid "proprietary software"
+msgstr "programari de propietat"
+
+msgid "shareware"
+msgstr "programari de prova"
+
+msgid "chat client software"
+msgstr "programari de tertúlia"
+
+msgid "gamez"
+msgstr "programari de videojocs piratejat"
+
+msgid "courseware"
+msgstr "programari educatiu"
+
+msgid "educational software"
+msgstr "programari educatiu"
+
+msgid "teachware"
+msgstr "programari educatiu"
+
+msgid "freeware"
+msgstr "programari gratuït"
+
+msgid "middleware"
+msgstr "programari intermediari"
+
+msgid "lingware"
+msgstr "programari lingüístic"
+
+msgid "free software"
+msgstr "programari lliure"
+
+msgid "warez"
+msgstr "programari piratejat"
+
+msgid "protocol"
+msgstr "protocol"
+
+msgid "wireless application protocol"
+msgstr "protocol d'aplicació sense fil"
+
+msgid "WAP"
+msgstr "protocol d'aplicació sense fil"
+
+msgid "routing information protocol"
+msgstr "protocol d'encaminament"
+
+msgid "RIP"
+msgstr "protocol d'encaminament"
+
+msgid "radio link protocol"
+msgstr "protocol d'enllaç per ràdio"
+
+msgid "RLP"
+msgstr "protocol d'enllaç per ràdio"
+
+msgid "Internet printing protocol"
+msgstr "protocol d'impressió per Internet"
+
+msgid "IPP"
+msgstr "protocol d'impressió per Internet"
+
+msgid "Internet protocol"
+msgstr "protocol d'Internet"
+
+msgid "IP"
+msgstr "protocol d'Internet"
+
+msgid "post office protocol"
+msgstr "protocol d'oficina de correus"
+
+msgid "POP"
+msgstr "protocol d'oficina de correus"
+
+msgid "transmission control protocol"
+msgstr "protocol de control de transmissió"
+
+msgid "TCP"
+msgstr "protocol de control de transmissió"
+
+msgid "modem error checking protocol"
+msgstr "protocol de correcció d'errors de mòdem"
+
+msgid "modem error correcting protocol"
+msgstr "protocol de correcció d'errors de mòdem"
+
+msgid "security protocol"
+msgstr "protocol de seguretat"
+
+msgid "secure electronic transaction"
+msgstr "protocol de transacció segura"
+
+msgid "SET"
+msgstr "protocol de transacció segura"
+
+msgid "hypertext transfer protocol"
+msgstr "protocol de transferència d'hipertext"
+
+msgid "HTTP"
+msgstr "protocol de transferència d'hipertext"
+
+msgid "file transfer protocol"
+msgstr "protocol de transferència de fitxers"
+
+msgid "FTP"
+msgstr "protocol de transferència de fitxers"
+
+msgid "real time transport protocol"
+msgstr "protocol de transmissió en temps real"
+
+msgid "RTP"
+msgstr "protocol de transmissió en temps real"
+
+msgid "point to point tunnelling protocol"
+msgstr "protocol de tunelització punt a punt"
+
+msgid "PPTP"
+msgstr "protocol de tunelització punt a punt"
+
+msgid "point to point protocol"
+msgstr "protocol punt a punt"
+
+msgid "PPP"
+msgstr "protocol punt a punt"
+
+msgid "application service provider"
+msgstr "proveïdor d'aplicacions"
+
+msgid "ASP"
+msgstr "proveïdor d'aplicacions"
+
+msgid "IAP"
+msgstr "proveïdor d'Internet"
+
+msgid "Internet acces provider"
+msgstr "proveïdor d'Internet"
+
+msgid "Internet service provider"
+msgstr "proveïdor d'Internet"
+
+msgid "ISP"
+msgstr "proveïdor d'Internet"
+
+msgid "e-procurement"
+msgstr "proveïment electrònic"
+
+msgid "electronic procurement"
+msgstr "proveïment electrònic"
+
+msgid "flame bait"
+msgstr "provocació"
+
+msgid "flame bait"
+msgstr "provocació"
+
+msgid "flame baiter"
+msgstr "provocador -a"
+
+msgid "desktop publishing"
+msgstr "publicació assistida per ordinador"
+
+msgid "direct advertising"
+msgstr "publicitat directa"
+
+msgid "direct response advertising"
+msgstr "publicitat directa"
+
+msgid "electronic advertising"
+msgstr "publicitat electrònica"
+
+msgid "interstitial advertising"
+msgstr "publicitat intersticial"
+
+msgid "point of presence"
+msgstr "punt de presència"
+
+msgid "POP"
+msgstr "punt de presència"
+
+msgid "branching point"
+msgstr "punt de ramificació"
+
+msgid "neutral point"
+msgstr "punt neutre"
+
+msgid "dot com"
+msgstr "puntcom"
+
+msgid "dot-com"
+msgstr "puntcom"
+
+msgid "dotcom"
+msgstr "puntcom"
+
+msgid "search box"
+msgstr "quadre de cerca"
+
+msgid "dialog box"
+msgstr "quadre de diàleg"
+
+msgid "Internet kiosk"
+msgstr "quiosc d'Internet"
+
+msgid "radiation"
+msgstr "radiació"
+
+msgid "radiocommunication"
+msgstr "radiocomunicació"
+
+msgid "broadcasting"
+msgstr "radiodifusió"
+
+msgid "radioelectric"
+msgstr "radioelèctric -a"
+
+msgid "radioelectricity"
+msgstr "radioelectricitat"
+
+msgid "radio link"
+msgstr "radioenllaç"
+
+msgid "radio frequency"
+msgstr "radiofreqüència"
+
+msgid "radio paging"
+msgstr "radiomissatgeria"
+
+msgid "two way paging"
+msgstr "radiomissatgeria bilateral"
+
+msgid "one way paging"
+msgstr "radiomissatgeria unilateral"
+
+msgid "radiotelephony"
+msgstr "radiotelefonia"
+
+msgid "closed user group radiotelephony"
+msgstr "radiotelefonia de grup tancat"
+
+msgid "expansion slot"
+msgstr "ranura d'expansió"
+
+msgid "RARP"
+msgstr "RARP"
+
+msgid "track ball"
+msgstr "ratolí de bola"
+
+msgid "isometric joystick"
+msgstr "ratolí de botó"
+
+msgid "trackpoint"
+msgstr "ratolí de botó"
+
+msgid "optical mouse"
+msgstr "ratolí òptic"
+
+msgid "cordless mouse"
+msgstr "ratolí sense cable"
+
+msgid "wireless mouse"
+msgstr "ratolí sense cable"
+
+msgid "touch pad"
+msgstr "ratolí tàctil"
+
+msgid "track pad"
+msgstr "ratolí tàctil"
+
+msgid "RDF"
+msgstr "RDF"
+
+msgid "virtual reality"
+msgstr "realitat virtual"
+
+msgid "VR"
+msgstr "realitat virtual"
+
+msgid "receiver"
+msgstr "receptor"
+
+msgid "fetch, to"
+msgstr "recollir"
+
+msgid "speech recognizer"
+msgstr "reconeixedor de la parla"
+
+msgid "voice recognizer"
+msgstr "reconeixedor de la parla"
+
+msgid "character recognition"
+msgstr "reconeixement de caràcters"
+
+msgid "pattern recognition"
+msgstr "reconeixement de formes"
+
+msgid "speech recognition"
+msgstr "reconeixement de la parla"
+
+msgid "voice recognition"
+msgstr "reconeixement de la parla"
+
+msgid "optical character recognition"
+msgstr "reconeixement òptic de caràcters"
+
+msgid "OCR"
+msgstr "reconeixement òptic de caràcters"
+
+msgid "retrieval"
+msgstr "recuperació"
+
+msgid "retrieve, to"
+msgstr "recuperar"
+
+msgid "resource"
+msgstr "recurs"
+
+msgid "resource"
+msgstr "recurs"
+
+msgid "content copywriter"
+msgstr "redactor -a de continguts"
+
+msgid "web writer"
+msgstr "redactor -a de continguts"
+
+msgid "content syndication"
+msgstr "redifusió"
+
+msgid "redirect"
+msgstr "redirigir"
+
+msgid "reengineering"
+msgstr "reenginyeria"
+
+msgid "call transfer"
+msgstr "reenviament de trucada"
+
+msgid "refactoring"
+msgstr "refacció"
+
+msgid "reformatting"
+msgstr "reformatació"
+
+msgid "reformat, to"
+msgstr "reformatar"
+
+msgid "network information center"
+msgstr "registre d'Internet"
+
+msgid "frame relay"
+msgstr "relé de trama"
+
+msgid "remote"
+msgstr "remot -a"
+
+msgid "distribution frame"
+msgstr "repartidor"
+
+msgid "main distribution frame"
+msgstr "repartidor d'entrada"
+
+msgid "MDF"
+msgstr "repartidor d'entrada"
+
+msgid "intermediate distribution frame"
+msgstr "repartidor intermediari"
+
+msgid "IDF"
+msgstr "repartidor intermediari"
+
+msgid "combined distribution frame"
+msgstr "repartidor mixt"
+
+msgid "CDF"
+msgstr "repartidor mixt"
+
+msgid "automatic call back"
+msgstr "repetició de trucada"
+
+msgid "repeater"
+msgstr "repetidor"
+
+msgid "satellite repeater"
+msgstr "repetidor de satèl·lit"
+
+msgid "optical repeater"
+msgstr "repetidor òptic"
+
+msgid "mirror"
+msgstr "rèplica"
+
+msgid "wristrest"
+msgstr "reposacanells"
+
+msgid "real time system"
+msgstr "reproducció en temps real"
+
+msgid "streaming system"
+msgstr "reproducció en temps real"
+
+msgid "reprogrammable"
+msgstr "reprogramable"
+
+msgid "online reservation"
+msgstr "reserva en línia"
+
+msgid "resolution"
+msgstr "resolució"
+
+msgid "flame"
+msgstr "resposta irada"
+
+msgid "call barring"
+msgstr "restricció de trucada"
+
+msgid "call restriction"
+msgstr "restricció de trucada"
+
+msgid "call hold"
+msgstr "retenció de trucada"
+
+msgid "bounce, to"
+msgstr "retornar"
+
+msgid "feedback"
+msgstr "retroacció"
+
+msgid "electronic magazine"
+msgstr "revista electrònica"
+
+msgid "robot"
+msgstr "robot"
+
+msgid "industrial robot"
+msgstr "robot industrial"
+
+msgid "intelligent robot"
+msgstr "robot intel·ligent"
+
+msgid "reactive robot"
+msgstr "robot intel·ligent"
+
+msgid "robotics"
+msgstr "robòtica"
+
+msgid "outlet"
+msgstr "roseta de connexió"
+
+msgid "rosette"
+msgstr "roseta de connexió"
+
+msgid "ad rotation"
+msgstr "rotació d'anuncis"
+
+msgid "route"
+msgstr "ruta"
+
+msgid "routine"
+msgstr "rutina"
+
+msgid "inbasket"
+msgstr "safata d'entrada"
+
+msgid "inbox"
+msgstr "safata d'entrada"
+
+msgid "outbasket"
+msgstr "safata de sortida"
+
+msgid "outbox"
+msgstr "safata de sortida"
+
+msgid "artificial satellite"
+msgstr "satèl·lit artificial"
+
+msgid "low earth orbit satellite"
+msgstr "satèl·lit d'òrbita baixa"
+
+msgid "medium earth orbit satellite"
+msgstr "satèl·lit d'òrbita mitjana"
+
+msgid "communication satellite"
+msgstr "satèl·lit de comunicació"
+
+msgid "geostationary satellite"
+msgstr "satèl·lit geostacionari"
+
+msgid "launching"
+msgstr "satel·lització"
+
+msgid "satellization"
+msgstr "satel·lització"
+
+msgid "launch, to"
+msgstr "satel·litzar"
+
+msgid "computer security"
+msgstr "seguretat informàtica"
+
+msgid "cordless"
+msgstr "sense fil"
+
+msgid "wireless"
+msgstr "sense fil"
+
+msgid "sensor"
+msgstr "sensor"
+
+msgid "image sensor"
+msgstr "sensor d'imatge"
+
+msgid "force sensor"
+msgstr "sensor de força"
+
+msgid "movement sensor"
+msgstr "sensor de moviment"
+
+msgid "position sensor"
+msgstr "sensor de posició"
+
+msgid "vision sensor"
+msgstr "sensor de visió"
+
+msgid "optical sensor"
+msgstr "sensor òptic"
+
+msgid "tactile sensor"
+msgstr "sensor tàctil"
+
+msgid "signal"
+msgstr "senyal"
+
+msgid "analog signal"
+msgstr "senyal analògic"
+
+msgid "binary signal"
+msgstr "senyal binari"
+
+msgid "dial signal"
+msgstr "senyal de marcar"
+
+msgid "calling signal"
+msgstr "senyal de trucada"
+
+msgid "digital signal"
+msgstr "senyal digital"
+
+msgid "splitter"
+msgstr "separador"
+
+msgid "login script"
+msgstr "seqüència d'inici de sessió"
+
+msgid "advanced mobile phone service"
+msgstr "servei avançat de telefonia mòbil"
+
+msgid "AMPS"
+msgstr "servei avançat de telefonia mòbil"
+
+msgid "cable basic service"
+msgstr "servei bàsic de cable"
+
+msgid "diary service"
+msgstr "servei d'agenda"
+
+msgid "customer service"
+msgstr "servei d'atenció al client"
+
+msgid "Internet service"
+msgstr "servei d'Internet"
+
+msgid "automatic mail answering service"
+msgstr "servei de resposta automàtica de correu"
+
+msgid "value added service"
+msgstr "servei de valor afegit"
+
+msgid "online service"
+msgstr "servei en línia"
+
+msgid "server"
+msgstr "servidor"
+
+msgid "server"
+msgstr "servidor"
+
+msgid "server program"
+msgstr "servidor"
+
+msgid "remote access server"
+msgstr "servidor d'accés remot"
+
+msgid "e-mail server"
+msgstr "servidor de correu electrònic"
+
+msgid "electronic mail server"
+msgstr "servidor de correu electrònic"
+
+msgid "listserver"
+msgstr "servidor de llistes"
+
+msgid "mailing list manager"
+msgstr "servidor de llistes"
+
+msgid "mailing list server"
+msgstr "servidor de llistes"
+
+msgid "news server"
+msgstr "servidor de missatges"
+
+msgid "domain name server"
+msgstr "servidor de noms de domini"
+
+msgid "DNS"
+msgstr "servidor de noms de domini"
+
+msgid "voice server"
+msgstr "servidor de veu"
+
+msgid "interactive voice server"
+msgstr "servidor de veu interactiu"
+
+msgid "video server"
+msgstr "servidor de vídeo"
+
+msgid "FTP server"
+msgstr "servidor FTP"
+
+msgid "anonymous FTP server"
+msgstr "servidor FTP anònim"
+
+msgid "Gopher server"
+msgstr "servidor Gopher"
+
+msgid "proxy"
+msgstr "servidor intermediari"
+
+msgid "proxy server"
+msgstr "servidor intermediari"
+
+msgid "thin server"
+msgstr "servidor lleuger"
+
+msgid "fat server"
+msgstr "servidor pesant"
+
+msgid "thick server"
+msgstr "servidor pesant"
+
+msgid "web server"
+msgstr "servidor web"
+
+msgid "session"
+msgstr "sessió"
+
+msgid "SGML"
+msgstr "SGML"
+
+msgid "signature"
+msgstr "signatura"
+
+msgid "simplex"
+msgstr "símplex"
+
+msgid "simulation"
+msgstr "simulació"
+
+msgid "simulated flight"
+msgstr "simulació de vol"
+
+msgid "real time simulation"
+msgstr "simulació en temps real"
+
+msgid "simulator"
+msgstr "simulador"
+
+msgid "simulate, to"
+msgstr "simular"
+
+msgid "synchronous"
+msgstr "síncron -a"
+
+msgid "synchronize, to"
+msgstr "sincronitzar"
+
+msgid "synthesis"
+msgstr "síntesi"
+
+msgid "speech synthesis"
+msgstr "síntesi de la parla"
+
+msgid "voice synthesis"
+msgstr "síntesi de la parla"
+
+msgid "synthesizer"
+msgstr "sintetitzador"
+
+msgid "speech synthesizer"
+msgstr "sintetitzador de la parla"
+
+msgid "voice synthesizer"
+msgstr "sintetitzador de la parla"
+
+msgid "syntony"
+msgstr "sintonia"
+
+msgid "tuner"
+msgstr "sintonitzador"
+
+msgid "tune, to"
+msgstr "sintonitzar"
+
+msgid "system"
+msgstr "sistema"
+
+msgid "author system"
+msgstr "sistema d'autors"
+
+msgid "authoring system"
+msgstr "sistema d'autors"
+
+msgid "ciphersystem"
+msgstr "sistema d'encriptació"
+
+msgid "cryptographic system"
+msgstr "sistema d'encriptació"
+
+msgid "cryptosystem"
+msgstr "sistema d'encriptació"
+
+msgid "geographic information system"
+msgstr "sistema d'informació geogràfica"
+
+msgid "GIS"
+msgstr "sistema d'informació geogràfica"
+
+msgid "multipoint distribution system"
+msgstr "sistema de distribució multipunt"
+
+msgid "MDS"
+msgstr "sistema de distribució multipunt"
+
+msgid "multiwindowing"
+msgstr "sistema de finestres"
+
+msgid "windowing"
+msgstr "sistema de finestres"
+
+msgid "windowing system"
+msgstr "sistema de finestres"
+
+msgid "database management system"
+msgstr "sistema de gestió de bases de dades"
+
+msgid "DBMS"
+msgstr "sistema de gestió de bases de dades"
+
+msgid "domain name system"
+msgstr "sistema de noms de domini"
+
+msgid "DNS"
+msgstr "sistema de noms de domini"
+
+msgid "global positioning system"
+msgstr "sistema de posició global"
+
+msgid "GPS"
+msgstr "sistema de posició global"
+
+msgid "telecommunications system"
+msgstr "sistema de telecomunicacions"
+
+msgid "universal mobile telecommunications system"
+msgstr "sistema de telecomunicacions mòbils universals"
+
+msgid "UMTS"
+msgstr "sistema de telecomunicacions mòbils universals"
+
+msgid "artificial vision system"
+msgstr "sistema de visió artificial"
+
+msgid "double band system"
+msgstr "sistema dual"
+
+msgid "dual system"
+msgstr "sistema dual"
+
+msgid "expert system"
+msgstr "sistema expert"
+
+msgid "global system for mobile communications"
+msgstr "sistema global per a comunicacions mòbils"
+
+msgid "global system for mobiles"
+msgstr "sistema global per a comunicacions mòbils"
+
+msgid "GSM"
+msgstr "sistema global per a comunicacions mòbils"
+
+msgid "computer system"
+msgstr "sistema informàtic"
+
+msgid "computing system"
+msgstr "sistema informàtic"
+
+msgid "operating system"
+msgstr "sistema operatiu"
+
+msgid "SMTP"
+msgstr "SMTP"
+
+msgid "busy signal"
+msgstr "so de línia ocupada"
+
+msgid "information society"
+msgstr "societat de la informació"
+
+msgid "knowledge society"
+msgstr "societat de la informació"
+
+msgid "socket"
+msgstr "sòcol"
+
+msgid "socket"
+msgstr "sòcol"
+
+msgid "polling"
+msgstr "sondeig"
+
+msgid "noise"
+msgstr "soroll"
+
+msgid "noise"
+msgstr "soroll"
+
+msgid "SQL"
+msgstr "SQL"
+
+msgid "SSL"
+msgstr "SSL"
+
+msgid "subdirectory"
+msgstr "subcarpeta"
+
+msgid "subfolder"
+msgstr "subcarpeta"
+
+msgid "subdomain"
+msgstr "subdomini"
+
+msgid "auction sale site"
+msgstr "subhasta electrònica"
+
+msgid "e-auction"
+msgstr "subhasta electrònica"
+
+msgid "electronic auction"
+msgstr "subhasta electrònica"
+
+msgid "submenu"
+msgstr "submenú"
+
+msgid "subprogram"
+msgstr "subprograma"
+
+msgid "subscribe"
+msgstr "subscriure's"
+
+msgid "subnet"
+msgstr "subxarxa"
+
+msgid "subnetwork"
+msgstr "subxarxa"
+
+msgid "supercluster"
+msgstr "superclúster"
+
+msgid "supercomputing"
+msgstr "supercomputació"
+
+msgid "supercomputer"
+msgstr "supercomputador"
+
+msgid "medium"
+msgstr "suport"
+
+msgid "input medium"
+msgstr "suport d'entrada"
+
+msgid "firewall"
+msgstr "tallafoc"
+
+msgid "electronic ticket office"
+msgstr "taquilla electrònica"
+
+msgid "adapter"
+msgstr "targeta"
+
+msgid "card"
+msgstr "targeta"
+
+msgid "accelerator card"
+msgstr "targeta acceleradora"
+
+msgid "graphics accelerator card"
+msgstr "targeta acceleradora de gràfics"
+
+msgid "adapter card"
+msgstr "targeta adaptadora"
+
+msgid "video capture card"
+msgstr "targeta capturadora de vídeo"
+
+msgid "remote access card"
+msgstr "targeta d'accés remot"
+
+msgid "expansion card"
+msgstr "targeta d'expansió"
+
+msgid "SIM card"
+msgstr "targeta d'identificació d'abonat"
+
+msgid "subscriber identification module card"
+msgstr "targeta d'identificació d'abonat"
+
+msgid "credit card"
+msgstr "targeta de crèdit"
+
+msgid "modem card"
+msgstr "targeta de mòdem"
+
+msgid "sound card"
+msgstr "targeta de so"
+
+msgid "network interface card"
+msgstr "targeta de xarxa"
+
+msgid "cross-connect panel"
+msgstr "targeta gràfica"
+
+msgid "graphics card"
+msgstr "targeta gràfica"
+
+msgid "video card"
+msgstr "targeta gràfica"
+
+msgid "smart card"
+msgstr "targeta intel·ligent"
+
+msgid "health card"
+msgstr "targeta sanitària"
+
+msgid "prepaid phone card"
+msgstr "targeta telefònica de prepagament"
+
+msgid "local rate"
+msgstr "tarifa local"
+
+msgid "tariff device"
+msgstr "tarifador"
+
+msgid "task"
+msgstr "tasca"
+
+msgid "task"
+msgstr "tasca"
+
+msgid "TCP/IP"
+msgstr "TCP/IP"
+
+msgid "hold button"
+msgstr "tecla d'espera"
+
+msgid "hold key"
+msgstr "tecla d'espera"
+
+msgid "mute button"
+msgstr "tecla de discreció"
+
+msgid "mute key"
+msgstr "tecla de discreció"
+
+msgid "accelerator"
+msgstr "tecla de drecera"
+
+msgid "hot key"
+msgstr "tecla de drecera"
+
+msgid "keyboard shortcut"
+msgstr "tecla de drecera"
+
+msgid "shortcut key"
+msgstr "tecla de drecera"
+
+msgid "Fn"
+msgstr "tecla de funció"
+
+msgid "function key"
+msgstr "tecla de funció"
+
+msgid "redial button"
+msgstr "tecla de repetició de trucada"
+
+msgid "redial key"
+msgstr "tecla de repetició de trucada"
+
+msgid "keyboard"
+msgstr "teclat"
+
+msgid "push technology"
+msgstr "tecnologia de tramesa automàtica"
+
+msgid "push-pull technology"
+msgstr "tecnologia de tramesa automàtica induïda"
+
+msgid "pull technology"
+msgstr "tecnologia de tramesa induïda"
+
+msgid "information and communication technologies"
+msgstr "tecnologies de la informació i la comunicació"
+
+msgid "ICT"
+msgstr "tecnologies de la informació i la comunicació"
+
+msgid "language technologies"
+msgstr "tecnologies del llenguatge"
+
+msgid "tele-"
+msgstr "tele-"
+
+msgid "tele-"
+msgstr "tele-"
+
+msgid "tele-"
+msgstr "tele-"
+
+msgid "remote alarm"
+msgstr "telealarma"
+
+msgid "telealarm"
+msgstr "telealarma"
+
+msgid "telelearning"
+msgstr "teleaprenentatge"
+
+msgid "medical teleassistance"
+msgstr "teleassistència mèdica"
+
+msgid "teleshop"
+msgstr "telebotiga"
+
+msgid "telecenter [US]"
+msgstr "telecentre"
+
+msgid "telecentre [GB]"
+msgstr "telecentre"
+
+msgid "telecottage"
+msgstr "telecentre rural"
+
+msgid "teleshopping"
+msgstr "telecompra"
+
+msgid "telecommunication"
+msgstr "telecomunicació"
+
+msgid "teleconsultation"
+msgstr "teleconsulta"
+
+msgid "remote control"
+msgstr "telecontrol"
+
+msgid "telecontrol"
+msgstr "telecontrol"
+
+msgid "remote detection"
+msgstr "teledetecció"
+
+msgid "teledetection"
+msgstr "teledetecció"
+
+msgid "telediagnostic"
+msgstr "telediagnòstic"
+
+msgid "teledistribution"
+msgstr "teledistribució"
+
+msgid "teleeducation"
+msgstr "teleeducació"
+
+msgid "teleteaching"
+msgstr "teleensenyament"
+
+msgid "phone"
+msgstr "telèfon"
+
+msgid "telephone"
+msgstr "telèfon"
+
+msgid "fixed telephone"
+msgstr "telèfon fix"
+
+msgid "in-wats"
+msgstr "telèfon gratuït"
+
+msgid "inward WATS"
+msgstr "telèfon gratuït"
+
+msgid "toll free number"
+msgstr "telèfon gratuït"
+
+msgid "intelligent telephone"
+msgstr "telèfon intel·ligent"
+
+msgid "smart phone"
+msgstr "telèfon intel·ligent"
+
+msgid "cellular telephone"
+msgstr "telèfon mòbil"
+
+msgid "mobile telephone"
+msgstr "telèfon mòbil"
+
+msgid "analog cellular telephone"
+msgstr "telèfon mòbil analògic"
+
+msgid "analog mobile telephone"
+msgstr "telèfon mòbil analògic"
+
+msgid "digital cellular telephone"
+msgstr "telèfon mòbil digital"
+
+msgid "digital mobile telephone"
+msgstr "telèfon mòbil digital"
+
+msgid "Internet telephone"
+msgstr "telèfon per Internet"
+
+msgid "wireless telephone"
+msgstr "telèfon sense fil"
+
+msgid "telephony"
+msgstr "telefonia"
+
+msgid "computer-aided telephony"
+msgstr "telefonia assistida per ordinador"
+
+msgid "trunking telephony"
+msgstr "telefonia d'entroncament"
+
+msgid "fixed telephony"
+msgstr "telefonia fixa"
+
+msgid "cellular telephony"
+msgstr "telefonia mòbil"
+
+msgid "mobile telephony"
+msgstr "telefonia mòbil"
+
+msgid "analog cellular telephony"
+msgstr "telefonia mòbil analògica"
+
+msgid "analog mobile telephony"
+msgstr "telefonia mòbil analògica"
+
+msgid "digital cellular telephony"
+msgstr "telefonia mòbil digital"
+
+msgid "digital mobile telephony"
+msgstr "telefonia mòbil digital"
+
+msgid "cable telephony"
+msgstr "telefonia per cable"
+
+msgid "Internet telephony"
+msgstr "telefonia per Internet"
+
+msgid "remote manipulator"
+msgstr "telemanipulador"
+
+msgid "telemanipulator"
+msgstr "telemanipulador"
+
+msgid "remote maintenance"
+msgstr "telemanteniment"
+
+msgid "telemaintenance"
+msgstr "telemanteniment"
+
+msgid "teleinformatic"
+msgstr "telemàtic -a"
+
+msgid "telematic"
+msgstr "telemàtic -a"
+
+msgid "telematics"
+msgstr "telemàtica"
+
+msgid "telemedicine"
+msgstr "telemedicina"
+
+msgid "telemeter"
+msgstr "telèmetre"
+
+msgid "telemetering"
+msgstr "telemetria"
+
+msgid "telemetry"
+msgstr "telemetria"
+
+msgid "teleoperation"
+msgstr "teleoperació"
+
+msgid "telecomputer"
+msgstr "teleordinador"
+
+msgid "teleputer"
+msgstr "teleordinador"
+
+msgid "remote security"
+msgstr "teleseguretat"
+
+msgid "telesecurity"
+msgstr "teleseguretat"
+
+msgid "teletext"
+msgstr "teletext"
+
+msgid "telecommuting"
+msgstr "teletreball"
+
+msgid "teleworking"
+msgstr "teletreball"
+
+msgid "telecommuter"
+msgstr "teletreballador -a"
+
+msgid "teleworker"
+msgstr "teletreballador -a"
+
+msgid "telecommute, to"
+msgstr "teletreballar"
+
+msgid "telework, to"
+msgstr "teletreballar"
+
+msgid "teleshopping"
+msgstr "televenda"
+
+msgid "televideo library"
+msgstr "televideoteca"
+
+msgid "remote monitoring"
+msgstr "televigilància"
+
+msgid "telemonitoring"
+msgstr "televigilància"
+
+msgid "television"
+msgstr "televisió"
+
+msgid "high definition television"
+msgstr "televisió d'alta definició"
+
+msgid "HDTV"
+msgstr "televisió d'alta definició"
+
+msgid "low power television"
+msgstr "televisió de baixa potència"
+
+msgid "digital television"
+msgstr "televisió digital"
+
+msgid "terrestrial digital television"
+msgstr "televisió digital terrestre"
+
+msgid "hertzian television"
+msgstr "televisió hertziana"
+
+msgid "interactive television"
+msgstr "televisió interactiva"
+
+msgid "cable television"
+msgstr "televisió per cable"
+
+msgid "satellite television"
+msgstr "televisió per satèl·lit"
+
+msgid "terrestrial television"
+msgstr "televisió terrestre"
+
+msgid "television set"
+msgstr "televisor"
+
+msgid "Telnet"
+msgstr "Telnet"
+
+msgid "access time"
+msgstr "temps d'accés"
+
+msgid "slot time"
+msgstr "temps d'espera"
+
+msgid "execution time"
+msgstr "temps d'execució"
+
+msgid "operation time"
+msgstr "temps d'execució"
+
+msgid "run time"
+msgstr "temps d'execució"
+
+msgid "running time"
+msgstr "temps d'execució"
+
+msgid "runtime"
+msgstr "temps d'execució"
+
+msgid "lag time"
+msgstr "temps de resposta"
+
+msgid "response time"
+msgstr "temps de resposta"
+
+msgid "overhead"
+msgstr "temps de sistema"
+
+msgid "overhead time"
+msgstr "temps de sistema"
+
+msgid "terminator"
+msgstr "terminador"
+
+msgid "console"
+msgstr "terminal"
+
+msgid "terminal"
+msgstr "terminal"
+
+msgid "terminal"
+msgstr "terminal"
+
+msgid "intelligent terminal"
+msgstr "terminal intel·ligent"
+
+msgid "multiservice terminal"
+msgstr "terminal multiservei"
+
+msgid "dumb terminal"
+msgstr "terminal passiu"
+
+msgid "chat"
+msgstr "tertúlia"
+
+msgid "chatroom"
+msgstr "tertúlia restringida"
+
+msgid "benchmark test"
+msgstr "test de referència"
+
+msgid "token"
+msgstr "testimoni"
+
+msgid "ringing signal"
+msgstr "timbre"
+
+msgid "e-ink"
+msgstr "tinta electrònica"
+
+msgid "electronic ink"
+msgstr "tinta electrònica"
+
+msgid "topology"
+msgstr "topologia"
+
+msgid "physical topology"
+msgstr "topologia física"
+
+msgid "logical topology"
+msgstr "topologia lògica"
+
+msgid "backtracking"
+msgstr "tornada enrere"
+
+msgid "telecommunication tower"
+msgstr "torre de telecomunicacions"
+
+msgid "plotter"
+msgstr "traçador"
+
+msgid "ray tracing"
+msgstr "traçat de raigs"
+
+msgid "computer-aided translation"
+msgstr "traducció assistida per ordinador"
+
+msgid "computer-assisted translation"
+msgstr "traducció assistida per ordinador"
+
+msgid "CAT"
+msgstr "traducció assistida per ordinador"
+
+msgid "machine translation"
+msgstr "traducció automàtica"
+
+msgid "MT"
+msgstr "traducció automàtica"
+
+msgid "domain name resolution"
+msgstr "traducció de noms de domini"
+
+msgid "leg"
+msgstr "tram"
+
+msgid "frame"
+msgstr "trama"
+
+msgid "electronic transaction"
+msgstr "transacció electrònica"
+
+msgid "transducer"
+msgstr "transductor"
+
+msgid "handoff"
+msgstr "transferència"
+
+msgid "handover"
+msgstr "transferència"
+
+msgid "file transfer"
+msgstr "transferència de fitxers"
+
+msgid "electronic funds transfer"
+msgstr "transferència electrònica de fons"
+
+msgid "EFT"
+msgstr "transferència electrònica de fons"
+
+msgid "transistor"
+msgstr "transistor"
+
+msgid "transmit, to"
+msgstr "transmetre"
+
+msgid "transmission"
+msgstr "transmissió"
+
+msgid "analog transmission"
+msgstr "transmissió analògica"
+
+msgid "asynchronous transmission"
+msgstr "transmissió asíncrona"
+
+msgid "delayed transmission"
+msgstr "transmissió diferida"
+
+msgid "digital transmission"
+msgstr "transmissió digital"
+
+msgid "bidirectional transmission"
+msgstr "transmissió dúplex"
+
+msgid "duplex transmission"
+msgstr "transmissió dúplex"
+
+msgid "parallel transmission"
+msgstr "transmissió en paral·lel"
+
+msgid "serial transmission"
+msgstr "transmissió en sèrie"
+
+msgid "one way transmission"
+msgstr "transmissió símplex"
+
+msgid "simplex transmission"
+msgstr "transmissió símplex"
+
+msgid "synchronous transmission"
+msgstr "transmissió síncrona"
+
+msgid "transmitter"
+msgstr "transmissor"
+
+msgid "transponder"
+msgstr "transponedor"
+
+msgid "networking"
+msgstr "treball en xarxa"
+
+msgid "train of waves"
+msgstr "tren d'ones"
+
+msgid "three-dimensional"
+msgstr "tridimensional"
+
+msgid "3D"
+msgstr "tridimensional"
+
+msgid "in-call"
+msgstr "trucada d'entrada"
+
+msgid "inbound call"
+msgstr "trucada d'entrada"
+
+msgid "incoming call"
+msgstr "trucada d'entrada"
+
+msgid "inward call"
+msgstr "trucada d'entrada"
+
+msgid "collect call"
+msgstr "trucada de cobrament a destinació"
+
+msgid "reverse-charge call"
+msgstr "trucada de cobrament a destinació"
+
+msgid "group call"
+msgstr "trucada de grup"
+
+msgid "outgoing call"
+msgstr "trucada de sortida"
+
+msgid "waiting call"
+msgstr "trucada en espera"
+
+msgid "Internet call"
+msgstr "trucada per Internet"
+
+msgid "selective calling"
+msgstr "trucada selectiva"
+
+msgid "picture tube"
+msgstr "tub d'imatge"
+
+msgid "cathode ray tube"
+msgstr "tub de raigs catòdics"
+
+msgid "tunnelling"
+msgstr "tunelització"
+
+msgid "CPU"
+msgstr "UCP"
+
+msgid "3D glasses"
+msgstr "ulleres estereoscòpiques"
+
+msgid "stereoscopic glasses"
+msgstr "ulleres estereoscòpiques"
+
+msgid "arithmetic unit"
+msgstr "unitat aritmètica"
+
+msgid "input unit"
+msgstr "unitat d'entrada"
+
+msgid "control unit"
+msgstr "unitat de control"
+
+msgid "multipoint control unit"
+msgstr "unitat de control multipunt"
+
+msgid "disk unit"
+msgstr "unitat de discos"
+
+msgid "diskette unit"
+msgstr "unitat de disquets"
+
+msgid "floppy disk unit"
+msgstr "unitat de disquets"
+
+msgid "output unit"
+msgstr "unitat de sortida"
+
+msgid "functional unit"
+msgstr "unitat funcional"
+
+msgid "logic unit"
+msgstr "unitat lògica"
+
+msgid "main control unit"
+msgstr "unitat principal de control"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "usability"
+msgstr "usabilitat"
+
+msgid "USB"
+msgstr "USB"
+
+msgid "Usenet"
+msgstr "Usenet"
+
+msgid "user"
+msgstr "usuari -ària"
+
+msgid "remote user"
+msgstr "usuari -ària remot -a"
+
+msgid "utility"
+msgstr "utilitat"
+
+msgid "connected vehicle"
+msgstr "vehicle connectat"
+
+msgid "intelligent vehicle"
+msgstr "vehicle intel·ligent"
+
+msgid "interactive vehicle"
+msgstr "vehicle interactiu"
+
+msgid "transmission speed"
+msgstr "velocitat de transmissió"
+
+msgid "electronic sale"
+msgstr "venda electrònica"
+
+msgid "blank"
+msgstr "verge"
+
+msgid "test"
+msgstr "verificació"
+
+msgid "testing"
+msgstr "verificació"
+
+msgid "checker"
+msgstr "verificador"
+
+msgid "tester"
+msgstr "verificador"
+
+msgid "verifier"
+msgstr "verificador"
+
+msgid "checker"
+msgstr "verificador -a"
+
+msgid "tester"
+msgstr "verificador -a"
+
+msgid "verifier"
+msgstr "verificador -a"
+
+msgid "spelling checker"
+msgstr "verificador ortogràfic"
+
+msgid "check, to"
+msgstr "verificar"
+
+msgid "test, to"
+msgstr "verificar"
+
+msgid "verify, to"
+msgstr "verificar"
+
+msgid "beta version"
+msgstr "versió beta"
+
+msgid "run time"
+msgstr "versió d'execució"
+
+msgid "runtime"
+msgstr "versió d'execució"
+
+msgid "runtime application"
+msgstr "versió d'execució"
+
+msgid "runtime program"
+msgstr "versió d'execució"
+
+msgid "runtime version"
+msgstr "versió d'execució"
+
+msgid "video"
+msgstr "vídeo"
+
+msgid "community video"
+msgstr "vídeo comunitari"
+
+msgid "digital video"
+msgstr "vídeo digital"
+
+msgid "interactive video"
+msgstr "vídeo interactiu"
+
+msgid "video conferencing"
+msgstr "videoconferència"
+
+msgid "videodisc"
+msgstr "videodisc"
+
+msgid "videophone"
+msgstr "videòfon"
+
+msgid "viewphone"
+msgstr "videòfon"
+
+msgid "visual telephone"
+msgstr "videòfon"
+
+msgid "videophony"
+msgstr "videofonia"
+
+msgid "videotelephony"
+msgstr "videofonia"
+
+msgid "video frequency"
+msgstr "videofreqüència"
+
+msgid "computer virology"
+msgstr "virologia informàtica"
+
+msgid "virtual"
+msgstr "virtual"
+
+msgid "virus"
+msgstr "virus"
+
+msgid "artificial vision"
+msgstr "visió artificial"
+
+msgid "computer vision"
+msgstr "visió artificial"
+
+msgid "guest"
+msgstr "visitant"
+
+msgid "visitor"
+msgstr "visitant"
+
+msgid "viewing"
+msgstr "visualització"
+
+msgid "visual display"
+msgstr "visualització"
+
+msgid "display unit"
+msgstr "visualitzador"
+
+msgid "view unit"
+msgstr "visualitzador"
+
+msgid "display, to"
+msgstr "visualitzar"
+
+msgid "view, to"
+msgstr "visualitzar"
+
+msgid "volt"
+msgstr "volt"
+
+msgid "voltage"
+msgstr "voltatge"
+
+msgid "electronic voting"
+msgstr "votació electrònica"
+
+msgid "volume cell element"
+msgstr "vòxel"
+
+msgid "voxel"
+msgstr "vòxel"
+
+msgid "VRML"
+msgstr "VRML"
+
+msgid "WAIS"
+msgstr "WAIS"
+
+msgid "Web"
+msgstr "web"
+
+msgid "World Wide Web"
+msgstr "web"
+
+msgid "W3"
+msgstr "web"
+
+msgid "WWW"
+msgstr "web"
+
+msgid "Whois"
+msgstr "Whois"
+
+msgid "WML"
+msgstr "WML"
+
+msgid "network"
+msgstr "xarxa"
+
+msgid "citizen network"
+msgstr "xarxa ciutadana"
+
+msgid "switched network"
+msgstr "xarxa commutada"
+
+msgid "wide area network"
+msgstr "xarxa d'àrea estesa"
+
+msgid "WAN"
+msgstr "xarxa d'àrea estesa"
+
+msgid "local area network"
+msgstr "xarxa d'àrea local"
+
+msgid "LAN"
+msgstr "xarxa d'àrea local"
+
+msgid "metropolitan area network"
+msgstr "xarxa d'àrea metropolitana"
+
+msgid "MAN"
+msgstr "xarxa d'àrea metropolitana"
+
+msgid "storage-area network"
+msgstr "xarxa d'emmagatzematge"
+
+msgid "SAN"
+msgstr "xarxa d'emmagatzematge"
+
+msgid "cable network"
+msgstr "xarxa de cable"
+
+msgid "coaxial cable network"
+msgstr "xarxa de cable coaxial"
+
+msgid "circuit switching network"
+msgstr "xarxa de commutació de circuits"
+
+msgid "message switching network"
+msgstr "xarxa de commutació de missatges"
+
+msgid "packet switched network"
+msgstr "xarxa de commutació de paquets"
+
+msgid "delivery network"
+msgstr "xarxa de distribució"
+
+msgid "distribution network"
+msgstr "xarxa de distribució"
+
+msgid "feeder network"
+msgstr "xarxa de distribució"
+
+msgid "single frequency network"
+msgstr "xarxa de freqüència única"
+
+msgid "multifrequency network"
+msgstr "xarxa de multifreqüència"
+
+msgid "radiocommunication network"
+msgstr "xarxa de radiocomunicacions"
+
+msgid "mobile radiocommunication network"
+msgstr "xarxa de radiocomunicacions mòbils"
+
+msgid "telecommunication network"
+msgstr "xarxa de telecomunicacions"
+
+msgid "value added network"
+msgstr "xarxa de valor afegit"
+
+msgid "VAN"
+msgstr "xarxa de valor afegit"
+
+msgid "integrated services digital network"
+msgstr "xarxa digital de serveis integrats"
+
+msgid "ISDN"
+msgstr "xarxa digital de serveis integrats"
+
+msgid "home LAN"
+msgstr "xarxa domèstica"
+
+msgid "home network"
+msgstr "xarxa domèstica"
+
+msgid "home system network"
+msgstr "xarxa domèstica"
+
+msgid "duplex network"
+msgstr "xarxa dúplex"
+
+msgid "two way network"
+msgstr "xarxa dúplex"
+
+msgid "ring network"
+msgstr "xarxa en anell"
+
+msgid "token passing ring network"
+msgstr "xarxa en anell de testimoni"
+
+msgid "token ring network"
+msgstr "xarxa en anell de testimoni"
+
+msgid "bus network"
+msgstr "xarxa en bus"
+
+msgid "token-bus local area network"
+msgstr "xarxa en bus de testimoni"
+
+msgid "token-bus network"
+msgstr "xarxa en bus de testimoni"
+
+msgid "radial network"
+msgstr "xarxa en estrella"
+
+msgid "star network"
+msgstr "xarxa en estrella"
+
+msgid "heterogeneous network"
+msgstr "xarxa heterogènia"
+
+msgid "homogeneous network"
+msgstr "xarxa homogènia"
+
+msgid "computer network"
+msgstr "xarxa informàtica"
+
+msgid "hierarchical network"
+msgstr "xarxa jeràrquica"
+
+msgid "mesh network"
+msgstr "xarxa mallada"
+
+msgid "multipoint network"
+msgstr "xarxa multipunt"
+
+msgid "neural network"
+msgstr "xarxa neuronal"
+
+msgid "neuronal network"
+msgstr "xarxa neuronal"
+
+msgid "private network"
+msgstr "xarxa privada"
+
+msgid "virtual private network"
+msgstr "xarxa privada virtual"
+
+msgid "VPN"
+msgstr "xarxa privada virtual"
+
+msgid "public network"
+msgstr "xarxa pública"
+
+msgid "peer to peer network"
+msgstr "xarxa punt a punt"
+
+msgid "point to point network"
+msgstr "xarxa punt a punt"
+
+msgid "one way network"
+msgstr "xarxa símplex"
+
+msgid "simplex network"
+msgstr "xarxa símplex"
+
+msgid "telephone network"
+msgstr "xarxa telefònica"
+
+msgid "analog telephone network"
+msgstr "xarxa telefònica analògica"
+
+msgid "switched telephone network"
+msgstr "xarxa telefònica commutada"
+
+msgid "STN"
+msgstr "xarxa telefònica commutada"
+
+msgid "digital telephone network"
+msgstr "xarxa telefònica digital"
+
+msgid "fixed telephone network"
+msgstr "xarxa telefònica fixa"
+
+msgid "mobile telephone network"
+msgstr "xarxa telefònica mòbil"
+
+msgid "telematic network"
+msgstr "xarxa telemàtica"
+
+msgid "backbone"
+msgstr "xarxa troncal"
+
+msgid "backbone network"
+msgstr "xarxa troncal"
+
+msgid "Mbone"
+msgstr "xarxa troncal multimèdia"
+
+msgid "Multicast  Backbone"
+msgstr "xarxa troncal multimèdia"
+
+msgid "chip"
+msgstr "xip"
+
+msgid "XML"
+msgstr "XML"
+
+msgid "hot area"
+msgstr "zona sensible"
+
+msgid "hotspot"
+msgstr "zona sensible"
