@@ -30,6 +30,7 @@ import os
 import logging
 from optparse import OptionParser
 from corpus import Corpus
+from referencesources import ReferenceSources
 
 src_directory = None
 html_comment = ''
@@ -86,22 +87,14 @@ def create_translations_for_word_sorted_by_frequency(documents, term):
 
     return translation_obj_list_sorted  
 
-def create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull):
+def create_glossary_for_all_projects(documents, source_words, tfxdf):
 
     f = open('glossary.txt', 'w')
     terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
 
-    item = 1
     for term in terms:
-        if term in terms_recull.keys():
-            inrecull = '- Recull'
-        else:
-            inrecull = ''
-
-        f.write('{0} - {1} {2}\n'.format(item, term.encode('utf-8'),
-                inrecull))
-        item += 1
-
+        f.write('{0} - {1}\n'.format(item, term.encode('utf-8')))
+       
         translations = create_translations_for_word_sorted_by_frequency(documents, term)
 
         for translation in translations:
@@ -110,7 +103,14 @@ def create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recul
    
     f.close()
 
-def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull, terms_microsoft, strings, strings_selected):
+class ReferenceMatches:
+
+    def __init__(self):
+        self.first_50 = 0
+        self.first_100 = 0
+        self.first_500 = 0
+
+def create_html_glossary_for_all_projects(documents, source_words, tfxdf, reference_sources, strings, strings_selected):
 
     global html_file
 
@@ -140,27 +140,30 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     html += '</tr>\r'
     f.write(html.encode('utf-8'))
 
+    references = reference_sources.references
     item = 0
-    first_50 = 0
-    first_100 = 0
-    first_500 = 0
-    first_50_m = 0
-    first_100_m = 0
-    first_500_m = 0
-    for term in terms:
-        if term in terms_recull.keys():
-            sources = ' (r)'
-            in_recull = True
-        else:
-            sources = ''
-            in_recull = False
 
-        if term in terms_microsoft.keys():
-            sources += ' (m)'
-            in_microsoft = True
-        else:
-            in_microsoft = False
-       
+    reference_matches = {}
+    for reference in references:
+        reference_matches[reference.name] = ReferenceMatches()
+    
+    for term in terms:
+
+        sources = ' '
+        for reference in reference_sources.get_references_for_term_in(term):    
+            
+            if reference is not None:
+                sources += '({0})'.format(reference.short_name)
+
+                if item < 50:
+                    reference_matches[reference.name].first_50 += 1
+                
+                if item < 100:
+                    reference_matches[reference.name].first_100 += 1
+
+                if item < 500:
+                    reference_matches[reference.name].first_500 += 1
+        
         item += 1
 
         translations = create_translations_for_word_sorted_by_frequency(documents, term)
@@ -178,24 +181,6 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
         html += u"</tr>\r"
         f.write(html.encode('utf-8'))
 
-        if item < 50 and in_recull:
-            first_50 += 1
-        
-        if item < 100 and in_recull:
-            first_100 += 1
-
-        if item < 500 and in_recull:
-            first_500 += 1
-
-        if item < 50 and in_microsoft:
-            first_50_m += 1
-        
-        if item < 100 and in_microsoft:
-            first_100_m += 1
-
-        if item < 500 and in_microsoft:
-            first_500_m += 1
-
         if item >= 1000:
             break
 
@@ -208,12 +193,16 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     html += '<p>Cadenes seleccionades: {0} - {1}%</p>'.format(strings_selected, 100 * strings_selected / strings) 
     html += u'<p>Termes únics totals selecionats: {0}</p>'.format(len(source_words))
     html += u'<p><b>Mesures de qualitat</b></p>'
-    html += '<p>Dels 50 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_50 * 100 / 50, first_50)
-    html += '<p>Dels 100 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_100 * 100 / 100, first_100)       
-    html += '<p>Dels 500 primers termes quants eren al Recull: {0}% ({1})</p>'.format(first_500 * 100 / 500, first_500) 
-    html += '<p>Dels 50 primers termes quants eren al glossari de Microsoft: {0}% ({1})</p>'.format(first_50_m * 100 / 50, first_50_m)
-    html += '<p>Dels 100 primers termes quants eren al glossari de Microsoft: {0}% ({1})</p>'.format(first_100_m * 100 / 100, first_100_m)       
-    html += '<p>Dels 500 primers termes quants eren al glossari de Microsoft: {0}% ({1})</p>'.format(first_500_m * 100 / 500, first_500_m) 
+    
+    for name in reference_matches.keys():
+        match = reference_matches[name]
+        html += u'<p>Dels 50 primers termes quants eren al {0}: {1}% ({2})</p>'. \
+                format(name, match.first_50 * 100 / 50, match.first_50)
+        html += u'<p>Dels 100 primers termes quants eren al {0}: {1}% ({2})</p>'. \
+                format(name, match.first_100 * 100 / 100, match.first_100)
+        html += u'<p>Dels 500 primers termes quants eren al {0}: {1}% ({2})</p>'. \
+                format(name, match.first_500 * 100 / 500, match.first_500)
+    
     if len(html_comment) > 0:
         u = unicode(html_comment, "UTF-8") # utf-8 is the system encoding
         html += u"Comentari de generació: " + u 
@@ -223,47 +212,18 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, terms_
     f.write('</head></html>\n')
     f.close()
 
-def read_recull():
 
-    pofile = polib.pofile('recull/recull-glossary.po')
-        
-    terms = {}
-    for entry in pofile:
-        terms[entry.msgid.lower()] = entry.msgstr.lower()
-
-    return terms
-
-def read_microsoft():
-
-    pofile = polib.pofile('microsoft/microsoft-terms.po')
-        
-    terms = {}
-    for entry in pofile:
-        terms[entry.msgid.lower()] = entry.msgstr.lower()
-
-    return terms
-
-def calculate_most_frequent(source_words, tf, df, tfxdf, terms_recull):
+def calculate_most_frequent(source_words, tf, df, tfxdf):
 
     # Most frequent
     f = open('most-frequent.txt','w')
     terms = sorted(tfxdf, key=tfxdf.get,reverse=True)
 
     item = 1
-    first_50 = 0
-    first_100 = 0
     for term in terms:
-        if term in terms_recull.keys():
-            inrecull = '- Recull'
-        else:
-            inrecull = ''
-        f.write('{0} - {1} - {2} (tf: {3}, idf: {4}) {5}\n'.format(item, term.encode('utf-8'), tfxdf[term],
-               tf[term], df[term], inrecull))
+        f.write('{0} - {1} - {2} (tf: {3}, idf: {4})\n'.format(item, term.encode('utf-8'), tfxdf[term],
+               tf[term], df[term]))
         item += 1
-        if item < 50 and len(inrecull) > 0:
-            first_50 += 1
-        if item < 100 and len(inrecull) > 0:
-            first_100 += 1
 
     f.close()
       
@@ -317,12 +277,10 @@ def process_projects():
         tfxdf[source_word] = frequency * documents_appear
         #print 'Source word {0} - {1} - {2}'.format(source_word.encode('utf-8'), frequency, _idf)
 
-    terms_recull = read_recull()
-    terms_microsoft = read_microsoft()
-
-    calculate_most_frequent(corpus.source_words, tf, df, tfxdf, terms_recull)
-    #create_glossary_for_all_projects(documents, source_words, tfxdf, terms_recull)
-    create_html_glossary_for_all_projects(corpus.documents, corpus.source_words, tfxdf, terms_recull, terms_microsoft,
+    reference_sources = ReferenceSources()
+    reference_sources.read_sources()
+    calculate_most_frequent(corpus.source_words, tf, df, tfxdf)
+    create_html_glossary_for_all_projects(corpus.documents, corpus.source_words, tfxdf, reference_sources,
                                           corpus.strings, corpus.strings_selected)
 
     # tf x idf
