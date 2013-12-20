@@ -86,6 +86,11 @@ class Corpus:
         if source in self.stop_words:
             return False
 
+        # We are ignoring strings with html tags 
+        # This also affects strings like <shift>f10
+        if '<' in source and '>' in source:
+            return False
+
         if len(target) == 0:
             return False
 
