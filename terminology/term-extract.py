@@ -127,8 +127,9 @@ def create_html_glossary_for_all_projects(documents, source_words, tfxdf, refere
     html += u'<li>La columna opcions considerades indica quines altres traduccions apareixen per aquest terme i s\'han considerat.</li>'
     html += u'<li>La columna català és l\'opció més comuna.</li>'
     html += u'<li>Usada indica el % d\'ús respecte a altres opcions i coincidències els cops que s\'ha trobat.</li>'
-    html += u'<li>(r) indica el terme es troba a l\'últim Recull de termes publicat.</li>'    
-    html += u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'    
+    html += u'<li>(r) indica el terme es troba a l\'últim Recull de termes publicat.</li>'
+    html += u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'
+    html += u'<li>(t) indica el terme es troba a la terminologia del TERMCAT.</li>'
     html += u'</ul>'
     
     html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'

@@ -56,4 +56,5 @@ class ReferenceSources:
     def read_sources(self):
         self._read_source('Recull de Softcatalà', 'r', 'recull/recull-glossary.po')
         self._read_source('Terminologia de Microsoft', 'm', 'microsoft/microsoft-terms.po')
+        self._read_source('TERMCAT', 't', 'termcat/termcat.po')
 
