@@ -32,6 +32,7 @@ from optparse import OptionParser
 from corpus import Corpus
 from referencesources import ReferenceSources
 from devglossaryserializer import DevGlossarySerializer
+from metrics import Metrics
 
 src_directory = None
 html_comment = ''
@@ -44,59 +45,17 @@ def process_projects():
 
     corpus = Corpus(src_directory)
     corpus.process()
-
-    # 
-    # Processed
-    #  
-    #  1. term -> tf, idf, tfxidf
-
-    # TF
-    # Count the number of times each term occurs in each document and sum them all together; 
-    # the number of times a term occurs in a document is called its term frequency.
-    tf = {} # keyword -> frequency
-
-    # IDF
-    # It is obtained by dividing the total number of documents by the number of documents containing the term,
-    idf = {}
-
-    # TFxIDF
-    # It is obtained by dividing the total number of documents by the number of documents containing the term,
-    tfxidf = {}
-
-    tfxdf = {}
-    df = {}
-
-    for source_word in corpus.source_words:
-        frequency = 0
-        documents_appear = 0
-        for document_key_filename in corpus.documents.keys():
-            if source_word in corpus.documents[document_key_filename]: # Word not in the file
-                documents_appear += 1
-                terms = corpus.documents[document_key_filename][source_word]
-                frequency += len(terms)
-
-        tf[source_word] = frequency
-        _idf = math.log(len(corpus.documents) / documents_appear)
-        idf[source_word] = _idf
-        df[source_word] = documents_appear
-        tfxidf[source_word] = frequency * _idf
-        tfxdf[source_word] = frequency * documents_appear
-        #print 'Source word {0} - {1} - {2}'.format(source_word.encode('utf-8'), frequency, _idf)
-
+   
     reference_sources = ReferenceSources()
     reference_sources.read_sources()
-    
+
+    metrics = Metrics()
+    metrics.create(corpus)
+
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(html_file, html_comment, corpus, tfxdf, reference_sources)
+    dev_glossary_serializer.create(html_file, html_comment, corpus, 
+                                   metrics.tfxdf, reference_sources)
 
-    # tf x idf
-    f = open('td-idx.txt','w')        
-    terms = sorted(tfxidf, key=tfxidf.get,reverse=True)
-
-    for term in terms:
-        f.write('{0} - {1} (tf: {2}, idf: {3})\n'.format(term.encode('utf-8'), tfxidf[term],
-               tf[term], idf[term]))
-    f.close()
         
 def read_parameters():
 
