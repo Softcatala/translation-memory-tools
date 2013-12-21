@@ -31,211 +31,16 @@ import logging
 from optparse import OptionParser
 from corpus import Corpus
 from referencesources import ReferenceSources
+from devglossaryserializer import DevGlossarySerializer
 
 src_directory = None
 html_comment = ''
 hmtl_file = None
 
-class Translation:
-    def __init__(self):
-        self.translation = ''
-        self.frequency = 0
-        self.percentage = 0  # Percentage of frequency across all options
 
-def create_translations_for_word_sorted_by_frequency(documents, term):
-
-    translations = {} # key: english keyword -> value: list of translation objects
-    for document_key_filename in documents.keys():
-        if term not in documents[document_key_filename]:
-            continue
-
-        for translated in documents[document_key_filename][term]:
-            #print "     t:" +m translated.encode('utf-8')
-            if term in translations:
-                translation_list = translations[term]
-            else:
-                translation_list = []
-
-            found = False
-            for i in range(0, len(translation_list)):
-                if translation_list[i].translation == translated:
-                    translation_obj_item = translation_list[i]
-                    translation_obj_item.frequency += 1
-                    translation_list[i] = translation_obj_item
-                    found = True
-                    break
-
-            if found is False:
-                translation_obj_item = Translation()
-                translation_obj_item.translation = translated
-                translation_obj_item.frequency = 1
-                translation_list.append(translation_obj_item)
-
-            translations[term] = translation_list
-    
-    for translation_obj_list in translations.values():
-
-        translation_obj_list_sorted = sorted(translation_obj_list, key=lambda x: x.frequency, reverse=True)
-
-        all_frequencies = 0
-
-        for translation in translation_obj_list_sorted:
-            all_frequencies += translation.frequency
-
-        for translation in translation_obj_list_sorted:
-            translation.percentage = translation.frequency * 100 / all_frequencies
-
-    return translation_obj_list_sorted  
-
-def create_glossary_for_all_projects(documents, source_words, tfxdf):
-
-    f = open('glossary.txt', 'w')
-    terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
-
-    for term in terms:
-        f.write('{0} - {1}\n'.format(item, term.encode('utf-8')))
-       
-        translations = create_translations_for_word_sorted_by_frequency(documents, term)
-
-        for translation in translations:
-            f.write('  {0} - {1}% ({2})\n'.format(translation.translation.encode('utf-8'), 
-                    translation.percentage, translation.frequency)) 
-   
-    f.close()
-
-class ReferenceMatches:
-
-    def __init__(self):
-        self.first_50 = 0
-        self.first_100 = 0
-        self.first_500 = 0
-
-def create_html_glossary_for_all_projects(documents, source_words, tfxdf, reference_sources, strings, strings_selected):
-
-    global html_file
-
-    terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
-
-    f = open(html_file,'w')
-
-    f.write(u'<html><head>\n')
-    f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8">')
-    html = ''
-
-    html += u'<p><b>Comentaris</b></p><ul>'
-    html += u'<li>Glossari generat computacionalment al final del mateix hi ha dades sobre la generació.</li>'
-    html += u'<li>La columna opcions considerades indica quines altres traduccions apareixen per aquest terme i s\'han considerat.</li>'
-    html += u'<li>La columna català és l\'opció més comuna.</li>'
-    html += u'<li>Usada indica el % d\'ús respecte a altres opcions i coincidències els cops que s\'ha trobat.</li>'
-    html += u'<li>(r) indica el terme es troba a l\'últim Recull de termes publicat.</li>'
-    html += u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'
-    html += u'<li>(t) indica el terme es troba a la terminologia del TERMCAT.</li>'
-    html += u'</ul>'
-    
-    html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
-    html += u'<tr>\r'
-    html += u'<th>#</th>\r'
-    html += u'<th>Anglès</th>\r'
-    html += u'<th>Català</th>\r'
-    html += u'<th>Opcions considerades</th>\r'
-    html += '</tr>\r'
-    f.write(html.encode('utf-8'))
-
-    references = reference_sources.references
-    item = 0
-
-    reference_matches = {}
-    for reference in references:
-        reference_matches[reference.name] = ReferenceMatches()
-    
-    for term in terms:
-
-        sources = ' '
-        for reference in reference_sources.get_references_for_term_in(term):    
-            
-            if reference is not None:
-                sources += '({0})'.format(reference.short_name)
-
-                if item < 50:
-                    reference_matches[reference.name].first_50 += 1
-                
-                if item < 100:
-                    reference_matches[reference.name].first_100 += 1
-
-                if item < 500:
-                    reference_matches[reference.name].first_500 += 1
-        
-        item += 1
-
-        translations = create_translations_for_word_sorted_by_frequency(documents, term)
-
-        options = ''
-        for translation in translations:
-            options += u'<p>- {0} (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
-                        translation.percentage, translation.frequency)
-    
-        html = u"<tr>\r"
-        html += u'<td>{0}</td>'.format(item)
-        html += u'<td>{0}{1}</td>'.format(cgi.escape(term), sources)
-        html += u'<td>{0}</td>'.format(cgi.escape(translations[0].translation))
-        html += u'<td>{0}</td>'.format(options)
-        html += u"</tr>\r"
-        f.write(html.encode('utf-8'))
-
-        if item >= 1000:
-            break
-
-    f.write('</table>\n')
-
-    global html_comment
-
-    html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
-    html += '<p>Cadenes analitzades: {0}</p>'.format(strings) 
-    html += '<p>Cadenes seleccionades: {0} - {1}%</p>'.format(strings_selected, 100 * strings_selected / strings) 
-    html += u'<p>Termes únics totals selecionats: {0}</p>'.format(len(source_words))
-    html += u'<p><b>Mesures de qualitat</b></p>'
-    
-    for name in reference_matches.keys():
-        match = reference_matches[name]
-        html += u'<p>Dels 50 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                format(name, match.first_50 * 100 / 50, match.first_50)
-        html += u'<p>Dels 100 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                format(name, match.first_100 * 100 / 100, match.first_100)
-        html += u'<p>Dels 500 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                format(name, match.first_500 * 100 / 500, match.first_500)
-    
-    if len(html_comment) > 0:
-        u = unicode(html_comment, "UTF-8") # utf-8 is the system encoding
-        html += u"Comentari de generació: " + u 
-
-    f.write(html.encode('utf-8'))
-  
-    f.write('</head></html>\n')
-    f.close()
-
-
-def calculate_most_frequent(source_words, tf, df, tfxdf):
-
-    # Most frequent
-    f = open('most-frequent.txt','w')
-    terms = sorted(tfxdf, key=tfxdf.get,reverse=True)
-
-    item = 1
-    for term in terms:
-        f.write('{0} - {1} - {2} (tf: {3}, idf: {4})\n'.format(item, term.encode('utf-8'), tfxdf[term],
-               tf[term], df[term]))
-        item += 1
-
-    f.close()
-      
-    # Use cases
-    #  1. Calculate TF -> need term, frequency in the document
-    #  2. Calculate IDF -> need n of documents, documents containing the term
-    #  3. Search all words 
-    #
-    # Values 
-    
 def process_projects():
+
+    global html_file, html_comment
 
     corpus = Corpus(src_directory)
     corpus.process()
@@ -280,9 +85,9 @@ def process_projects():
 
     reference_sources = ReferenceSources()
     reference_sources.read_sources()
-    calculate_most_frequent(corpus.source_words, tf, df, tfxdf)
-    create_html_glossary_for_all_projects(corpus.documents, corpus.source_words, tfxdf, reference_sources,
-                                          corpus.strings, corpus.strings_selected)
+    
+    dev_glossary_serializer = DevGlossarySerializer()
+    dev_glossary_serializer.create(html_file, html_comment, corpus, tfxdf, reference_sources)
 
     # tf x idf
     f = open('td-idx.txt','w')        
