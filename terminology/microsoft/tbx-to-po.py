@@ -26,11 +26,11 @@ import xml.etree.ElementTree as ET
 def get_metadata():
     metadata = {
         'Project-Id-Version': '1.0',
-        'Report-Msgid-Bugs-To': 'info@softcatala.org',
+        'Report-Msgid-Bugs-To': 'nobody@nobody',
         'POT-Creation-Date': '2007-10-18 14:00+0100',
         'PO-Revision-Date': '2007-10-18 14:00+0100',
-        'Last-Translator': 'info@softcatala.org',
-        'Language-Team': 'Catalan <info@softcatala.org>',
+        'Last-Translator': 'microsoft@microsoft.com',
+        'Language-Team': 'Microsoft',
         'MIME-Version': '1.0',
         'Content-Type': 'text/plain; charset=utf-8',
         'Content-Transfer-Encoding': '8bit',
@@ -45,26 +45,41 @@ def read_xml():
 
     tree = ET.parse('MicrosoftTermCollection.tbx')
     root = tree.getroot()
-    src = True
     terms = 0
-    for term_entry in root.iter('termGrp'):
-        #print term_entry.attrib
-        for term_subentry in term_entry:
-            if not term_subentry.attrib.keys()[0] == 'id':
-                continue
-
-            #print term_subentry.text
-
-            if src:
-                src = False
-                source = unicode(term_subentry.text)
-                continue
-
-            src = True
-            target = unicode(term_subentry.text)
-            terms += 1
+    
+    # Gets all the list of terms    
+    for term_entry in root.iter('termEntry'):
  
-            entry = polib.POEntry(msgid=source, msgstr=target) 
+        # English terms appear only once but an English term can have more than
+        # one translation (e.g.: "home page")
+        source = ''
+        targets = []
+        is_source = True
+          
+        # Process a single term
+        for term_subitems in term_entry:
+
+            for i in term_subitems.iter():
+        
+                #print i.tag
+                if i.tag == 'langSet':
+                    lang = i.get('{http://www.w3.org/XML/1998/namespace}lang')
+
+                    if lang == 'en-US':
+                        is_source = True
+                    else:
+                        is_source = False
+                        
+                if i.tag == 'term':
+                    if is_source:
+                        source = unicode(i.text)
+                    else:
+                        targets.append(unicode(i.text))
+
+        terms += len(targets)
+
+        for target in targets:
+            entry = polib.POEntry(msgid=source, msgstr=target)
             pofile.append(entry)
 
     pofile.save("microsoft-terms.po")
