@@ -48,7 +48,7 @@ class Metrics:
             frequency = 0
             documents_appear = 0
             for document_key_filename in corpus.documents.keys():
-                if source_word in corpus.documents[document_key_filename]:  # Word not in the file
+                if source_word in corpus.documents[document_key_filename]:  # Word is the file
                     documents_appear += 1
                     terms = corpus.documents[document_key_filename][source_word]
                     frequency += len(terms)

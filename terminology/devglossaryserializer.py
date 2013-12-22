@@ -42,19 +42,15 @@ class ReferenceMatches:
 
 class DevGlossarySerializer(Serializer):
 
-    def create_glossary_for_all_projects(self, documents, source_words, tfxdf):
+    def create_text_dump(self, documents, terms):
 
         f = open('glossary.txt', 'w')
-        terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
-
+      
         for term in terms:
-            f.write('{0} - {1}\n'.format(item, term.encode('utf-8')))
-           
-            translations = create_translations_for_word_sorted_by_frequency(documents, term)
+            translations = self.create_translations_for_word_sorted_by_frequency(documents, term)
 
-            for translation in translations:
-                f.write('  {0} - {1}% ({2})\n'.format(translation.translation.encode('utf-8'), 
-                        translation.percentage, translation.frequency)) 
+            f.write('{0};{1}\n'.format(term.encode('utf-8'), 
+                    translations[0].translation.encode('utf-8')))
        
         f.close()
 
@@ -186,4 +182,6 @@ class DevGlossarySerializer(Serializer):
 
         f.write('</head></html>\n')
         f.close()
+
+        self.create_text_dump(corpus.documents, terms)
 
