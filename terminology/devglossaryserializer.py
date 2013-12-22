@@ -114,6 +114,7 @@ class DevGlossarySerializer(Serializer):
         for reference in references:
             reference_matches[reference.name] = ReferenceMatches()
 
+        words_cnt = [0, 0, 0]
         for term in terms:
 
             sources = ' '
@@ -147,7 +148,11 @@ class DevGlossarySerializer(Serializer):
             html += u'<td>{0}</td>'.format(options)
             html += u"</tr>\r"
             f.write(html.encode('utf-8'))
-
+     
+            word_len = len(term.split(' '))
+            if word_len <= 3:     
+                words_cnt[word_len - 1] += 1
+            
             if item >= 1000:
                 break
 
@@ -173,6 +178,9 @@ class DevGlossarySerializer(Serializer):
                     format(name, match.first_100 * 100 / 100, match.first_100)
             html += u'<p>Dels 500 primers termes quants eren al {0}: {1}% ({2})</p>'. \
                     format(name, match.first_500 * 100 / 500, match.first_500)
+
+        html += u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, {2}'\
+                 ' cadenes amb 3 paraules'.format(words_cnt[0], words_cnt[1], words_cnt[2])
 
         if len(html_comment) > 0:
             comment = unicode(html_comment, "UTF-8")  # utf-8 is the system encoding

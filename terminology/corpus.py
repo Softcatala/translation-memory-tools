@@ -68,7 +68,7 @@ class Corpus:
     def _should_select_string(self, source, target):
 
         # Only 1 word terms for now
-        if len(source.split()) > 1:
+        if len(source.split()) > 3:
             return False
 
         # Single words without spaces that are very long
