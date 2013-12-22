@@ -22,7 +22,7 @@ import polib
 
 class Reference:
     def __init__(self, name, short_name):
-        self.name = unicode(name, "utf-8")
+        self.name = name
         self.short_name = short_name
         self.terms = {}
 
@@ -41,12 +41,29 @@ class ReferenceSources:
                 references.append(reference)
 
         return references
+
+    def get_terms_not_used_from_references(self, terms):
         
+        not_used_references = []
+
+        for reference in self.references:
+            not_used_reference = Reference(reference.name, reference.short_name)
+            not_used_references.append(not_used_reference)
+
+            for term in reference.terms:
+                if term not in terms:
+                    # Terms should contain a trasnlation but we do not need
+                    # for this propoused. Review data structures
+                    not_used_reference.terms[term] = None
+
+        return not_used_references
+
+
     def _read_source(self, name, short_name, filename):
 
         pofile = polib.pofile(filename)
             
-        reference = Reference(name, short_name)
+        reference = Reference(unicode(name, "utf-8"), short_name)
 
         for entry in pofile:
             reference.terms[entry.msgid.lower()] = entry.msgstr.lower()

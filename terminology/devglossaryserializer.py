@@ -58,6 +58,30 @@ class DevGlossarySerializer(Serializer):
        
         f.close()
 
+
+    def get_terms_from_sources_not_used(self, reference_sources, terms):
+
+        not_used = reference_sources.get_terms_not_used_from_references(terms)
+
+        html = u''
+        for reference in not_used:
+
+            html += u'<p><b>Termes no usats de la font {0}</b></p>'.format(reference.name)
+            html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
+            html += u'<tr>\r'
+            html += u'<th>Terme</th>\r'
+            html += u'</tr>\r'
+
+            terms = sorted(reference.terms.iterkeys())
+            for term in terms:
+                html += u"<tr>\r"
+                html += u'<td>{0}</td>'.format(cgi.escape(term))
+                html += u"</tr>\r"
+
+            html += u'</table>'
+
+        return html
+
     def create(self, html_file, html_comment, corpus, tfxdf, reference_sources):
 
         terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
@@ -132,6 +156,9 @@ class DevGlossarySerializer(Serializer):
                 break
 
         f.write('</table>\n')
+    
+        html = self.get_terms_from_sources_not_used(reference_sources, corpus.source_words)
+        f.write(html.encode('utf-8'))
 
         html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
         html += '<p>Cadenes analitzades: {0}</p>'.format(corpus.strings)
