@@ -39,7 +39,7 @@ class Corpus:
 
     def _read_stop_words(self):
 
-        _file = open("stop-words.txt")
+        _file = open("stop-words/stop-words.txt")
 
         while True:
             line = _file.readline()
