@@ -39,6 +39,7 @@ class ReferenceMatches:
         self.first_50 = 0
         self.first_100 = 0
         self.first_500 = 0
+        self.first_2000 = 0
 
 class DevGlossarySerializer(Serializer):
 
@@ -131,6 +132,9 @@ class DevGlossarySerializer(Serializer):
 
                     if item < 500:
                         reference_matches[reference.name].first_500 += 1
+
+                    if item < 2000:
+                        reference_matches[reference.name].first_2000 += 1
             
             item += 1
 
@@ -148,7 +152,7 @@ class DevGlossarySerializer(Serializer):
             html += u'<td>{0}</td>'.format(options)
             html += u"</tr>\r"
             f.write(html.encode('utf-8'))
-     
+    
             word_len = len(term.split(' '))
             if word_len <= 3:     
                 words_cnt[word_len - 1] += 1
@@ -178,6 +182,8 @@ class DevGlossarySerializer(Serializer):
                     format(name, match.first_100 * 100 / 100, match.first_100)
             html += u'<p>Dels 500 primers termes quants eren al {0}: {1}% ({2})</p>'. \
                     format(name, match.first_500 * 100 / 500, match.first_500)
+            html += u'<p>Dels 2000 primers termes quants eren al {0}: {1}% ({2})</p>'. \
+                    format(name, match.first_2000 * 100 / 2000, match.first_2000)
 
         html += u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, {2}'\
                  ' cadenes amb 3 paraules'.format(words_cnt[0], words_cnt[1], words_cnt[2])
