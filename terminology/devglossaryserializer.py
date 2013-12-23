@@ -186,7 +186,7 @@ class DevGlossarySerializer(Serializer):
                     format(name, match.first_2000 * 100 / 2000, match.first_2000)
 
         html += u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, {2}'\
-                 ' cadenes amb 3 paraules'.format(words_cnt[0], words_cnt[1], words_cnt[2])
+                 ' cadenes amb 3 paraules</p>'.format(words_cnt[0], words_cnt[1], words_cnt[2])
 
         if len(html_comment) > 0:
             comment = unicode(html_comment, "UTF-8")  # utf-8 is the system encoding

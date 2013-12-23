@@ -32,6 +32,7 @@ from optparse import OptionParser
 from corpus import Corpus
 from referencesources import ReferenceSources
 from devglossaryserializer import DevGlossarySerializer
+from userglossaryserializer import UserGlossarySerializer
 from metrics import Metrics
 
 src_directory = None
@@ -53,9 +54,12 @@ def process_projects():
     metrics.create(corpus)
 
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(html_file, html_comment, corpus, 
+    dev_glossary_serializer.create(u"dev-" + html_file, html_comment, corpus, 
                                    metrics.tfxdf, reference_sources)
 
+    user_glossary_serializer = UserGlossarySerializer()
+    user_glossary_serializer.create(html_file, html_comment, corpus, 
+                                   metrics.tfxdf, reference_sources)
         
 def read_parameters():
 
