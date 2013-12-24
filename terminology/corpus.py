@@ -99,10 +99,12 @@ class Corpus:
 
         # We are ignoring strings with html tags 
         # This also affects strings like <shift>f10
-        if '<' in source and '>' in source:
-            msg = "Discard: invalid chars '{0}'".format(source.encode('utf-8'))
-            logging.info(msg)            
-            return False
+        chars = {'<', '>', '%', '{', '}'}
+        for c in chars:
+            if c in source:
+                msg = "Discard: invalid chars '{0}'".format(source.encode('utf-8'))
+                logging.info(msg)            
+                return False
 
         if len(target) == 0:
             return False
