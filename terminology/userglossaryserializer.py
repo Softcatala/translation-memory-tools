@@ -54,12 +54,22 @@ class UserGlossarySerializer(Serializer):
         for term in terms:
 
             item += 1
-            translations = self.create_translations_for_word_sorted_by_frequency(corpus.documents, term)
+            translations = self.create_translations_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
             options = ''
             for translation in translations:
-                options += u'<p>- {0} (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
-                           translation.percentage, translation.frequency)
+                if len(translation.references_short_name) > 0:
+                    recommended = True
+                else:
+                    recommended = False
+
+                if recommended:
+                    options += u'<p>- <font color="green">{0}</font> (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
+                                translation.percentage, translation.frequency)
+                
+                else:
+                    options += u'<p>- {0} (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
+                                translation.percentage, translation.frequency)
 
             html = u"<tr>\r"
             html += u'<td>{0}</td>'.format(cgi.escape(term))

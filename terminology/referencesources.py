@@ -24,7 +24,7 @@ class Reference:
     def __init__(self, name, short_name):
         self.name = name
         self.short_name = short_name
-        self.terms = {}
+        self.terms = {}  # key -> source term, value: list of translations
 
 class ReferenceSources:
     '''Loads different PO files that we use as reference sources'''
@@ -42,6 +42,19 @@ class ReferenceSources:
 
         return references
 
+    def get_translations_for_term_in_reference(self, term, short_name):
+        references = []
+
+        for ref in self.references:
+            if ref.short_name is short_name:
+                reference = ref
+                break
+
+        if term in reference.terms.keys():        
+            return reference.terms[term]
+        else:
+            return []
+
     def get_terms_not_used_from_references(self, terms):
         
         not_used_references = []
@@ -52,8 +65,8 @@ class ReferenceSources:
 
             for term in reference.terms:
                 if term not in terms:
-                    # Terms should contain a trasnlation but we do not need
-                    # for this propoused. Review data structures
+                    # Terms should contain a translation but we do not need
+                    # for this propouse. Review data structures
                     not_used_reference.terms[term] = None
 
         return not_used_references
@@ -66,7 +79,16 @@ class ReferenceSources:
         reference = Reference(unicode(name, "utf-8"), short_name)
 
         for entry in pofile:
-            reference.terms[entry.msgid.lower()] = entry.msgstr.lower()
+            term = entry.msgid.lower()
+            translation = entry.msgstr.lower()
+    
+            if term in reference.terms:
+                translations = reference.terms[term]
+            else:
+                translations = []
+
+            translations.append(translation)
+            reference.terms[term] = translations
 
         self.references.append(reference)
 

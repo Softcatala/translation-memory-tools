@@ -43,12 +43,12 @@ class ReferenceMatches:
 
 class DevGlossarySerializer(Serializer):
 
-    def create_text_dump(self, documents, terms):
+    def create_text_dump(self, documents, terms, reference_sources):
 
         f = open('glossary.txt', 'w')
       
         for term in terms:
-            translations = self.create_translations_for_word_sorted_by_frequency(documents, term)
+            translations = self.create_translations_for_word_sorted_by_frequency(documents, term, reference_sources)
 
             f.write('{0};{1}\n'.format(term.encode('utf-8'), 
                     translations[0].translation.encode('utf-8')))
@@ -138,7 +138,7 @@ class DevGlossarySerializer(Serializer):
             
             item += 1
 
-            translations = self.create_translations_for_word_sorted_by_frequency(corpus.documents, term)
+            translations = self.create_translations_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
             options = ''
             for translation in translations:
@@ -197,5 +197,5 @@ class DevGlossarySerializer(Serializer):
         f.write('</head></html>\n')
         f.close()
 
-        self.create_text_dump(corpus.documents, terms)
+        self.create_text_dump(corpus.documents, terms, reference_sources)
 
