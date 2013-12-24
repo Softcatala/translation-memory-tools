@@ -19,6 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import polib
+import logging
 
 from findfiles import FindFiles
 
@@ -67,28 +68,40 @@ class Corpus:
 
     def _should_select_string(self, source, target):
 
+        words = len(source.split())
+ 
         # Only 1 word terms for now
-        if len(source.split()) > 3:
+        if words > 3:
             return False
 
         # Single words without spaces that are very long
-        if len(source) > 30:
+        if words == 1 and len(source) > 30:
+            msg = "Discard: long word '{0}'".format(source.encode('utf-8'))
+            logging.info(msg)
             return False
     
         # Single chars provide no value
         if len(source) < 2:
+            msg = "Discard: single chart '{0}'".format(source.encode('utf-8'))
+            logging.info(msg)
             return False
 
         # Numeric only strings should not be considered
         if source.isdigit():
+            msg = "Discard: is digit '{0}'".format(source.encode('utf-8'))
+            logging.info(msg)
             return False
 
         if source in self.stop_words:
+            msg = "Discard: stop word '{0}'".format(source.encode('utf-8'))
+            logging.info(msg)
             return False
 
         # We are ignoring strings with html tags 
         # This also affects strings like <shift>f10
         if '<' in source and '>' in source:
+            msg = "Discard: invalid chars '{0}'".format(source.encode('utf-8'))
+            logging.info(msg)            
             return False
 
         if len(target) == 0:
@@ -126,7 +139,6 @@ class Corpus:
     
                 self.strings_selected = self.strings_selected + 1
          
-
                 log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'.format(msgid, entry.msgid, \
                         msgstr, entry.msgstr, filename)
 

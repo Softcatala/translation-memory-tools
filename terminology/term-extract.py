@@ -98,9 +98,7 @@ def init_logging():
 
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     logger = logging.getLogger('')
-    console = logging.StreamHandler()
-    console.setLevel(logging.INFO)
-    logger.addHandler(console)
+
 
 def main():
     
