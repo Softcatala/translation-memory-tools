@@ -669,8 +669,51 @@
                             "target": "eliot-ca.po"
                     }
             }
+        },
+    "SMPlayer": {
+            "projectweb" : "http://smplayer.sourceforge.net/",
+            "fileset": {
+                    "SMPlayer": {
+                            "url" : "https://www.transifex.com/projects/p/smplayer",
+                            "type": "transifex"
+                    }
+            }
+        },
+    "PoEdit": {
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Eines_inform%C3%A0tiques_per_a_traductors",
+            "softcatala" : true,
+            "fileset": {
+                    "PoEdit": {
+                            "url" : "https://raw.github.com/vslavik/poedit/stable/locales/ca.po",
+                            "type": "file",
+                            "target": "poedit-ca.po"
+                    }
+            }
+        },
+    "Lxde": {
+            "projectweb" : "http://wiki.lxde.org/en/Category:Translations:ca",
+            "fileset": {
+                    "GPicView": {
+                            "url" : "http://pootle.lxde.org/ca/gpicview/export/zip",
+                            "type": "compressed",
+                            "target": "GPicView.zip"
+                    },
+                    "libfm": {
+                            "url" : "http://pootle.lxde.org/ca/libfm/export/zip",
+                            "type": "compressed",
+                            "target": "libfm.zip"
+                    },
+                    "lxpanel": {
+                            "url" : "http://pootle.lxde.org/ca/lxpanel/export/zip",
+                            "type": "compressed",
+                            "target": "lxpanel.zip"
+                    },
+                    "pcmanfm": {
+                            "url" : "http://pootle.lxde.org/ca/pcmanfm/export/zip",
+                            "type": "compressed",
+                            "target": "pcmanfm.zip"
+                    }
+            }
         }
-
-        
     }
 }
