@@ -38,10 +38,11 @@ class UserGlossarySerializer(Serializer):
 
         f.write(u'<html><head>\n')
         f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8">')
-        html = ''
+        html = 'Les formes <font color="green">en color verd</font> són les recomanades pel TERMCAT'
 
         comment = unicode(html_comment, "UTF-8")  # utf-8 is the system encoding
         html += u'<p>{0}</p>'.format(comment)
+        html += u'<p>{0}</p>'
         html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
         html += u'<tr>\r'
         html += u'<th>Anglès</th>\r'
