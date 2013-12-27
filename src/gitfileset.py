@@ -27,27 +27,21 @@ import re
 
 class GitFileSet(FileSet):
 
-    def __init__(self, project_name, name, url, filename):
-        FileSet.__init__(self, project_name, name, url, filename)
-        self.AndroidRemove = False
+    def set_pattern(self, pattern):
+        self.pattern = pattern
 
     def _get_filename(self):
         filename = self.url.split('/')[-1]
         return filename
 
-    def _remove_non_translation_files_for_android(self):
+    def _remove_non_translation_files(self):
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
-            # Some Android projects contain there own po files like
-            # https://android.googlesource.com/platform/ndk and they have
-            # the name standard "ca.po"
-            # The rest are produced by a2po then they have the pattern '-ca.po'
-            if re.match('.*?ca.po', filename) is None:
-                if os.path.exists(filename):
-                    os.remove(filename)
-            else:
-                logging.debug("Keeping file:" + filename)
+
+            if re.match(self.pattern, filename) is None and \
+                    os.path.exists(filename):
+                os.remove(filename)
 
     def _php_conversion_for_moodle(self):
 
@@ -61,7 +55,7 @@ class GitFileSet(FileSet):
               '-o {2}'.format(self.temp_dir, GIT_DIRNAME, OUT_DIRNAME)
         os.system(cmd)
 
-    def convert_android_resources_files_to_po(self):
+    def _convert_android_resources_files_to_po(self):
 
         filename = self._get_filename()
 
@@ -78,10 +72,8 @@ class GitFileSet(FileSet):
         ))
 
         self._php_conversion_for_moodle()
-        self.convert_android_resources_files_to_po()
-
-        if self.AndroidRemove:
-            self._remove_non_translation_files_for_android()
+        self._convert_android_resources_files_to_po()
+        self._remove_non_translation_files()
 
         self.add_comments()
         self.build()

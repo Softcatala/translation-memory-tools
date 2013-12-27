@@ -87,7 +87,12 @@ class GerritDirectoryFileSet(FileSet):
                     continue
                     
                 fileset = GitFileSet(self.project_name, name, url, '')
-                fileset.AndroidRemove = True
+
+                # Some Android projects contain there own po files like
+                # https://android.googlesource.com/platform/ndk and they have
+                # the name standard "ca.po"
+                # The rest are produced by a2po then they have the pattern '-ca.po'
+                fileset.set_pattern('.*?ca.po')
                 logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))                
                 self.project.add(fileset)
 
