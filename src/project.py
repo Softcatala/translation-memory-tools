@@ -107,7 +107,6 @@ class Project:
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
-                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'gerrit-directory':
                 fs = GerritDirectoryFileSet(self.name,
                                   fileset.name,

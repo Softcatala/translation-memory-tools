@@ -48,7 +48,7 @@ class GerritDirectoryFileSet(FileSet):
         file = open(filename, 'w')
         cnt =  0
         for line in lines:
-            cnt = cnt + 1
+            cnt += 1
             if (cnt == 1):
                 continue
 
@@ -87,6 +87,7 @@ class GerritDirectoryFileSet(FileSet):
                     continue
                     
                 fileset = GitFileSet(self.project_name, name, url, '')
+                fileset.AndroidRemove = True
                 logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))                
                 self.project.add(fileset)
 

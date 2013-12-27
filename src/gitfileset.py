@@ -27,6 +27,10 @@ import re
 
 class GitFileSet(FileSet):
 
+    def __init__(self, project_name, name, url, filename):
+        FileSet.__init__(self, project_name, name, url, filename)
+        self.AndroidRemove = False
+
     def _get_filename(self):
         filename = self.url.split('/')[-1]
         return filename
@@ -45,6 +49,18 @@ class GitFileSet(FileSet):
             else:
                 logging.debug("Keeping file:" + filename)
 
+    def _php_conversion_for_moodle(self):
+
+        findFiles = FindFiles()
+        if len(findFiles.find(self.temp_dir, '*.php')) == 0:
+            return
+
+        GIT_DIRNAME = 'moodle-langpacks'
+        OUT_DIRNAME = 'po-files'
+        cmd = 'cd {0} && php2po -t {1}/en -i {1}/ca ' \
+              '-o {2}'.format(self.temp_dir, GIT_DIRNAME, OUT_DIRNAME)
+        os.system(cmd)
+
     def convert_android_resources_files_to_po(self):
 
         filename = self._get_filename()
@@ -61,8 +77,12 @@ class GitFileSet(FileSet):
             self.url
         ))
 
+        self._php_conversion_for_moodle()
         self.convert_android_resources_files_to_po()
-        self._remove_non_translation_files_for_android()
+
+        if self.AndroidRemove:
+            self._remove_non_translation_files_for_android()
+
         self.add_comments()
         self.build()
 

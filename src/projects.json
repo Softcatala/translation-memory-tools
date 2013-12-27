@@ -714,6 +714,18 @@
                             "target": "pcmanfm.zip"
                     }
             }
+        },
+    "Moodle": {
+            "projectweb" : "",
+            "fileset": {
+                    "Moodle": {
+                            "url" : "-b MOODLE_27_STABLE git://git.moodle.org/moodle-langpacks.git",
+                            "type": "git"
+                    }
+            }
         }
+
+
+
     }
 }
