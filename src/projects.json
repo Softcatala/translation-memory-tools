@@ -126,16 +126,6 @@
                             "type": "compressed",
                             "target": "gnome-infrastructure.tar.gz"
                     },
-                    "gimp": {
-                            "url" : "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz",
-                            "type": "compressed",
-                            "target": "gimp.tar.gz"
-                    },
-                    "gnome-inkscape": {
-                            "url" : "lp:inkscape/po/ca.po",
-                            "type": "bazaar",
-                            "target": "ca.po"
-                    },
                     "freedesktop": {
                             "url" : "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz",
                             "type": "compressed",
@@ -754,9 +744,47 @@
                             "target": "pidgin-ca.po"
                     }
             }
+    },
+    "GIMP": {
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Inkscape",
+            "softcatala" : true,
+            "fileset": {
+                    "gimp": {
+                            "url" : "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz",
+                            "type": "compressed",
+                            "target": "gimp.tar.gz"
+                    }
+            }
+    },
+    "Inkscape": {
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/Gimp",
+            "softcatala" : true,
+            "fileset": {
+                    "inkscape": {
+                            "url" : "lp:inkscape/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    }
+            }
+    },
+    "TinyMCE": {
+            "projectweb" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
+            "fileset": {
+                    "xfce" : {
+                            "url" : "https://www.transifex.com/projects/p/tinymce/r/all-resources/",
+                            "type": "transifex"
+                    }
+            }
+    },
+    "Scribus": {
+            "projectweb" : "http://wiki.scribus.net/canvas/Official:Translation_Howto",
+            "disabled": true,
+            "fileset": {
+                    "scribus" : {
+                            "url" : "svn://scribus.net/branches/Version14x/Scribus/resources/translations/po/",
+                            "type": "subversion"
+                    }
+            }
     }
-
-
-
     }
 }
