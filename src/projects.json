@@ -778,13 +778,14 @@
     },
     "Scribus": {
             "projectweb" : "http://wiki.scribus.net/canvas/Official:Translation_Howto",
-            "disabled": true,
             "fileset": {
                     "scribus" : {
-                            "url" : "svn://scribus.net/branches/Version14x/Scribus/resources/translations/po/",
-                            "type": "subversion"
+                            "url" : "svn://scribus.net/trunk/Scribus/resources/translations/scribus.ca.ts",
+                            "type": "subversion",
+                            "target": "scribus.ca.ts"
                     }
             }
     }
+
     }
 }
