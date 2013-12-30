@@ -2,17 +2,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: info@softcatala.org\n"
+"Report-Msgid-Bugs-To: info@termcat.cat\n"
 "POT-Creation-Date: 2007-10-18 14:00+0100\n"
 "PO-Revision-Date: 2007-10-18 14:00+0100\n"
-"Last-Translator: info@softcatala.org\n"
-"Language-Team: Catalan <info@softcatala.org>\n"
+"Last-Translator: info@termcat.cat\n"
+"Language-Team: Catalan <info@termcat.cat>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-msgid "access, to"
+msgid "access"
 msgstr "accedir"
 
 msgid "connection accelerator"
@@ -69,10 +69,10 @@ msgstr "acoblador de transmissió"
 msgid "docking"
 msgstr "acoblament"
 
-msgid "dock, to"
+msgid "dock"
 msgstr "acoblar"
 
-msgid "couple, to"
+msgid "couple"
 msgstr "acoblar"
 
 msgid "update"
@@ -84,16 +84,16 @@ msgstr "actualització"
 msgid "refreshing"
 msgstr "actualització"
 
-msgid "refresh, to"
+msgid "refresh"
 msgstr "actualitzar"
 
-msgid "reload, to"
+msgid "reload"
 msgstr "actualitzar"
 
-msgid "update, to"
+msgid "update"
 msgstr "actualitzar"
 
-msgid "upgrade, to"
+msgid "upgrade"
 msgstr "actualitzar"
 
 msgid "adaptation"
@@ -108,13 +108,13 @@ msgstr "adaptador de línia"
 msgid "network adapter"
 msgstr "adaptador de xarxa"
 
-msgid "adapt, to"
+msgid "adapt"
 msgstr "adaptar"
 
 msgid "attachment"
 msgstr "adjunció"
 
-msgid "attach, to"
+msgid "attach"
 msgstr "adjuntar"
 
 msgid "database administrator"
@@ -219,7 +219,7 @@ msgstr "àlies"
 msgid "housing"
 msgstr "allotjament"
 
-msgid "house, to"
+msgid "house"
 msgstr "allotjar"
 
 msgid "high technology"
@@ -246,7 +246,7 @@ msgstr "amplificador"
 msgid "optical amplifier"
 msgstr "amplificador òptic"
 
-msgid "amplify, to"
+msgid "amplify"
 msgstr "amplificar"
 
 msgid "computer illiterate"
@@ -426,7 +426,7 @@ msgstr "arrova"
 msgid "filing"
 msgstr "arxivament"
 
-msgid "file, to"
+msgid "file"
 msgstr "arxivar"
 
 msgid "ASCII"
@@ -438,7 +438,7 @@ msgstr "asíncron -a"
 msgid "assembler"
 msgstr "assemblador"
 
-msgid "assemble, to"
+msgid "assemble"
 msgstr "assemblar"
 
 msgid "assembling"
@@ -504,7 +504,7 @@ msgstr "autenticació"
 msgid "message authentication"
 msgstr "autenticació de missatge"
 
-msgid "authenticate, to"
+msgid "authenticate"
 msgstr "autenticar"
 
 msgid "automaton"
@@ -522,7 +522,7 @@ msgstr "automatisme"
 msgid "automation"
 msgstr "automatització"
 
-msgid "automate, to"
+msgid "automate"
 msgstr "automatitzar"
 
 msgid "info highway"
@@ -543,7 +543,7 @@ msgstr "avortament"
 msgid "abortion"
 msgstr "avortament"
 
-msgid "abort, to"
+msgid "abort"
 msgstr "avortar"
 
 msgid "B"
@@ -561,7 +561,7 @@ msgstr "baixada"
 msgid "downloading"
 msgstr "baixada"
 
-msgid "download, to"
+msgid "download"
 msgstr "baixar"
 
 msgid "image bank"
@@ -696,7 +696,7 @@ msgstr "bifurcació"
 msgid "branch instruction"
 msgstr "bifurcació"
 
-msgid "branch, to"
+msgid "branch"
 msgstr "bifurcar"
 
 msgid "binary"
@@ -738,13 +738,13 @@ msgstr "bloqueig de SIM"
 msgid "long distance lock"
 msgstr "bloqueig interurbà"
 
-msgid "lock, to"
+msgid "lock"
 msgstr "bloquejar"
 
 msgid "mail bombing"
 msgstr "bombardeig"
 
-msgid "mail bombe, to"
+msgid "mail bombe"
 msgstr "bombardejar"
 
 msgid "Boolean"
@@ -771,7 +771,7 @@ msgstr "bus de testimoni"
 msgid "pointer"
 msgstr "busca"
 
-msgid "search, to"
+msgid "search"
 msgstr "buscar"
 
 msgid "voice mailbox"
@@ -792,7 +792,7 @@ msgstr "byte per segon [byte: en]"
 msgid "byte per second"
 msgstr "byte per segon [byte: en]"
 
-msgid "wire, to"
+msgid "wire"
 msgstr "cablar"
 
 msgid "wiring"
@@ -900,7 +900,7 @@ msgstr "canal temàtic"
 msgid "push channel"
 msgstr "canal web"
 
-msgid "cancel, to"
+msgid "cancel"
 msgstr "cancel·lar"
 
 msgid "layer"
@@ -960,7 +960,7 @@ msgstr "càrrega"
 msgid "loading"
 msgstr "càrrega"
 
-msgid "load, to"
+msgid "load"
 msgstr "carregar"
 
 msgid "electronic shopping cart"
@@ -1173,7 +1173,7 @@ msgstr "clic d'entrada"
 msgid "clickthrough"
 msgstr "clic d'entrada"
 
-msgid "click, to"
+msgid "click"
 msgstr "clicar"
 
 msgid "client"
@@ -1206,10 +1206,10 @@ msgstr "clusterització"
 msgid "clusterization"
 msgstr "clusterització"
 
-msgid "cluster, to"
+msgid "cluster"
 msgstr "clusteritzar"
 
-msgid "clusterize, to"
+msgid "clusterize"
 msgstr "clusteritzar"
 
 msgid "coverage"
@@ -1287,10 +1287,10 @@ msgstr "codificador -a"
 msgid "encoder"
 msgstr "codificador -a"
 
-msgid "code, to"
+msgid "code"
 msgstr "codificar"
 
-msgid "encode, to"
+msgid "encode"
 msgstr "codificar"
 
 msgid "web collaboration"
@@ -1338,7 +1338,7 @@ msgstr "commutador de telefonia mòbil"
 msgid "multifunction switch"
 msgstr "commutador multifuncional"
 
-msgid "switch, to"
+msgid "switch"
 msgstr "commutar"
 
 msgid "wild card"
@@ -1347,7 +1347,7 @@ msgstr "comodí"
 msgid "compaction"
 msgstr "compactació"
 
-msgid "compact, to"
+msgid "compact"
 msgstr "compactar"
 
 msgid "compilation"
@@ -1359,7 +1359,7 @@ msgstr "compilador"
 msgid "compiling program"
 msgstr "compilador"
 
-msgid "compile, to"
+msgid "compile"
 msgstr "compilar"
 
 msgid "add-in"
@@ -1425,13 +1425,13 @@ msgstr "comunicació audiovisual"
 msgid "multimedia communication"
 msgstr "comunicació multimèdia"
 
-msgid "communicate, to"
+msgid "communicate"
 msgstr "comunicar"
 
-msgid "be busy, to"
+msgid "be busy"
 msgstr "comunicar"
 
-msgid "be engaged, to"
+msgid "be engaged"
 msgstr "comunicar"
 
 msgid "virtual community"
@@ -1452,7 +1452,7 @@ msgstr "conferència a tres"
 msgid "configuration"
 msgstr "configuració"
 
-msgid "configure, to"
+msgid "configure"
 msgstr "configurar"
 
 msgid "notification of reading"
@@ -1473,7 +1473,7 @@ msgstr "confirmació de recepció"
 msgid "handshaking"
 msgstr "conformitat de connexió"
 
-msgid "connect, to"
+msgid "connect"
 msgstr "connectar"
 
 msgid "connectivity"
@@ -1602,7 +1602,7 @@ msgstr "convertidor analògic-digital"
 msgid "digital-to-analog converter"
 msgstr "convertidor digital-analògic"
 
-msgid "convert, to"
+msgid "convert"
 msgstr "convertir"
 
 msgid "backup"
@@ -1749,19 +1749,19 @@ msgstr "depuració"
 msgid "debugger"
 msgstr "depurador"
 
-msgid "debug, to"
+msgid "debug"
 msgstr "depurar"
 
 msgid "undocking"
 msgstr "desacoblament"
 
-msgid "undock, to"
+msgid "undock"
 msgstr "desacoblar"
 
 msgid "saving"
 msgstr "desament"
 
-msgid "save, to"
+msgid "save"
 msgstr "desar"
 
 msgid "downsizing"
@@ -1782,7 +1782,7 @@ msgstr "descodificador d'Internet"
 msgid "set-top box"
 msgstr "descodificador d'Internet"
 
-msgid "decode, to"
+msgid "decode"
 msgstr "descodificar"
 
 msgid "decompilation"
@@ -1791,7 +1791,7 @@ msgstr "descompilació"
 msgid "decompiler"
 msgstr "descompilador"
 
-msgid "decompile, to"
+msgid "decompile"
 msgstr "descompilar"
 
 msgid "decompression"
@@ -1800,7 +1800,7 @@ msgstr "descompressió"
 msgid "unpacking"
 msgstr "descompressió"
 
-msgid "disconnect, to"
+msgid "disconnect"
 msgstr "desconnectar"
 
 msgid "disconnection"
@@ -1809,10 +1809,10 @@ msgstr "desconnexió"
 msgid "description"
 msgstr "descripció"
 
-msgid "unpack, to"
+msgid "unpack"
 msgstr "desempaquetar"
 
-msgid "pop, to"
+msgid "pop"
 msgstr "desempilar"
 
 msgid "disinfection"
@@ -1827,7 +1827,7 @@ msgstr "desmodulació"
 msgid "demodulator"
 msgstr "desmodulador"
 
-msgid "demodulate, to"
+msgid "demodulate"
 msgstr "desmodular"
 
 msgid "demultiplexing"
@@ -1884,7 +1884,7 @@ msgstr "digitalització de la parla"
 msgid "voice digitization"
 msgstr "digitalització de la parla"
 
-msgid "digitize, to"
+msgid "digitize"
 msgstr "digitalitzar"
 
 msgid "diode"
@@ -2016,7 +2016,7 @@ msgstr "distribució electrònica de programari"
 msgid "dispatcher"
 msgstr "distribuïdor"
 
-msgid "dispatch, to"
+msgid "dispatch"
 msgstr "distribuir"
 
 msgid "double-click"
@@ -2082,7 +2082,7 @@ msgstr "edifici intel·ligent"
 msgid "smart building"
 msgstr "edifici intel·ligent"
 
-msgid "edit, to"
+msgid "edit"
 msgstr "editar"
 
 msgid "editor"
@@ -2124,10 +2124,10 @@ msgstr "electrònic -a"
 msgid "electronics"
 msgstr "electrònica"
 
-msgid "emit, to"
+msgid "emit"
 msgstr "emetre"
 
-msgid "transmit, to"
+msgid "transmit"
 msgstr "emetre"
 
 msgid "emission"
@@ -2142,7 +2142,7 @@ msgstr "emissor"
 msgid "optical transmitter"
 msgstr "emissor òptic"
 
-msgid "store, to"
+msgid "store"
 msgstr "emmagatzemar"
 
 msgid "storage"
@@ -2154,13 +2154,13 @@ msgstr "emoticona"
 msgid "smiley"
 msgstr "emoticona"
 
-msgid "compress, to"
+msgid "compress"
 msgstr "empaquetar"
 
-msgid "pack, to"
+msgid "pack"
 msgstr "empaquetar"
 
-msgid "push, to"
+msgid "push"
 msgstr "empilar"
 
 msgid "emulation"
@@ -2169,7 +2169,7 @@ msgstr "emulació"
 msgid "emulator"
 msgstr "emulador"
 
-msgid "emulate, to"
+msgid "emulate"
 msgstr "emular"
 
 msgid "cascade"
@@ -2208,7 +2208,7 @@ msgstr "encaminador"
 msgid "routing"
 msgstr "encaminament"
 
-msgid "route, to"
+msgid "route"
 msgstr "encaminar"
 
 msgid "encapsulation"
@@ -2250,10 +2250,10 @@ msgstr "encriptació simètrica"
 msgid "symmetric encryption"
 msgstr "encriptació simètrica"
 
-msgid "encipher, to"
+msgid "encipher"
 msgstr "encriptar"
 
-msgid "encrypt, to"
+msgid "encrypt"
 msgstr "encriptar"
 
 msgid "enciphered"
@@ -2355,7 +2355,7 @@ msgstr "enllaç"
 msgid "link"
 msgstr "enllaç"
 
-msgid "link, to"
+msgid "link"
 msgstr "enllaçar"
 
 msgid "linked"
@@ -2385,7 +2385,7 @@ msgstr "enregistrador de DVD"
 msgid "record"
 msgstr "enregistrament"
 
-msgid "record, to"
+msgid "record"
 msgstr "enregistrar"
 
 msgid "computer-aided teaching"
@@ -2433,7 +2433,7 @@ msgstr "escalable"
 msgid "scanning"
 msgstr "escaneig"
 
-msgid "scan, to"
+msgid "scan"
 msgstr "escanejar"
 
 msgid "scanner"
@@ -2451,7 +2451,7 @@ msgstr "escriptori"
 msgid "writing"
 msgstr "escriptura"
 
-msgid "write, to"
+msgid "write"
 msgstr "escriure"
 
 msgid "ad space"
@@ -2553,10 +2553,10 @@ msgstr "etiqueta"
 msgid "network etiquette"
 msgstr "etiqueta"
 
-msgid "markup, to"
+msgid "markup"
 msgstr "etiquetar"
 
-msgid "tag, to"
+msgid "tag"
 msgstr "etiquetar"
 
 msgid "markup"
@@ -2565,16 +2565,16 @@ msgstr "etiquetatge"
 msgid "tagging"
 msgstr "etiquetatge"
 
-msgid "execute, to"
+msgid "execute"
 msgstr "executar"
 
-msgid "run, to"
+msgid "run"
 msgstr "executar"
 
 msgid "exportation"
 msgstr "exportació"
 
-msgid "export, to"
+msgid "export"
 msgstr "exportar"
 
 msgid "extranet"
@@ -2607,10 +2607,10 @@ msgstr "falsejament d'índexs"
 msgid "beamed particles"
 msgstr "feix de partícules"
 
-msgid "chat, to"
+msgid "chat"
 msgstr "fer (una) tertúlia"
 
-msgid "telnet, to"
+msgid "telnet"
 msgstr "fer un Telnet"
 
 msgid "abend"
@@ -2646,10 +2646,10 @@ msgstr "final de sessió"
 msgid "logout"
 msgstr "final de sessió"
 
-msgid "log off, to"
+msgid "log off"
 msgstr "finalitzar la sessió"
 
-msgid "log out, to"
+msgid "log out"
 msgstr "finalitzar la sessió"
 
 msgid "window"
@@ -2703,7 +2703,7 @@ msgstr "format d'intercanvi de gràfics"
 msgid "formatting"
 msgstr "formatació"
 
-msgid "format, to"
+msgid "format"
 msgstr "formatar"
 
 msgid "conference group"
@@ -2775,7 +2775,7 @@ msgstr "galeta"
 msgid "blank cookie"
 msgstr "galeta buida"
 
-msgid "generate, to"
+msgid "generate"
 msgstr "generar"
 
 msgid "GIS specialist"
@@ -2790,7 +2790,7 @@ msgstr "geomàtica"
 msgid "GIS implementation"
 msgstr "geomatització"
 
-msgid "geomatize, to"
+msgid "geomatize"
 msgstr "geomatitzar"
 
 msgid "geosynchronous"
@@ -2826,7 +2826,7 @@ msgstr "gestió de xarxes"
 msgid "knowledge management"
 msgstr "gestió del coneixement"
 
-msgid "spool, to"
+msgid "spool"
 msgstr "gestionar cues"
 
 msgid "chief information officer"
@@ -3057,13 +3057,13 @@ msgstr "impacte"
 msgid "implementation"
 msgstr "implementació"
 
-msgid "implement, to"
+msgid "implement"
 msgstr "implementar"
 
 msgid "importation"
 msgstr "importació"
 
-msgid "import, to"
+msgid "import"
 msgstr "importar"
 
 msgid "exposure"
@@ -3099,7 +3099,7 @@ msgstr "impressora magnetogràfica"
 msgid "thermal printer"
 msgstr "impressora tèrmica"
 
-msgid "print, to"
+msgid "print"
 msgstr "imprimir"
 
 msgid "event"
@@ -3111,7 +3111,7 @@ msgstr "índex"
 msgid "indexer"
 msgstr "indexador"
 
-msgid "index, to"
+msgid "index"
 msgstr "indexar"
 
 msgid "balloon help"
@@ -3174,7 +3174,7 @@ msgstr "informàtica musical"
 msgid "computerization"
 msgstr "informatització"
 
-msgid "computerize, to"
+msgid "computerize"
 msgstr "informatitzar"
 
 msgid "login"
@@ -3183,16 +3183,16 @@ msgstr "inici de sessió"
 msgid "logon"
 msgstr "inici de sessió"
 
-msgid "log in, to"
+msgid "log in"
 msgstr "iniciar la sessió"
 
-msgid "log on, to"
+msgid "log on"
 msgstr "iniciar la sessió"
 
 msgid "installation"
 msgstr "instal·lació"
 
-msgid "install, to"
+msgid "install"
 msgstr "instal·lar"
 
 msgid "instance"
@@ -3201,7 +3201,7 @@ msgstr "instància"
 msgid "instance object"
 msgstr "instància"
 
-msgid "instantiate, to"
+msgid "instantiate"
 msgstr "instanciar"
 
 msgid "instruction"
@@ -3234,7 +3234,7 @@ msgstr "intercanvi electrònic de dades"
 msgid "EDI"
 msgstr "intercanvi electrònic de dades"
 
-msgid "interconnect, to"
+msgid "interconnect"
 msgstr "interconnectar"
 
 msgid "interconnection"
@@ -3300,10 +3300,10 @@ msgstr "introductor -a de dades"
 msgid "spamming"
 msgstr "inundació"
 
-msgid "flood, to"
+msgid "flood"
 msgstr "inundar"
 
-msgid "spam, to"
+msgid "spam"
 msgstr "inundar"
 
 msgid "IPNG"
@@ -3576,7 +3576,7 @@ msgstr "local"
 msgid "localization"
 msgstr "localització"
 
-msgid "localize, to"
+msgid "localize"
 msgstr "localitzar"
 
 msgid "e-logistics"
@@ -3612,7 +3612,7 @@ msgstr "magnètic -a"
 msgid "magnetism"
 msgstr "magnetisme"
 
-msgid "magnetize, to"
+msgid "magnetize"
 msgstr "magnetitzar"
 
 msgid "hand"
@@ -3636,7 +3636,7 @@ msgstr "maquinari"
 msgid "frame"
 msgstr "marc"
 
-msgid "dial, to"
+msgid "dial"
 msgstr "marcar"
 
 msgid "dialling"
@@ -3687,7 +3687,7 @@ msgstr "matriu de commutació"
 msgid "maximization"
 msgstr "maximització"
 
-msgid "maximize, to"
+msgid "maximize"
 msgstr "maximitzar"
 
 msgid "MBps"
@@ -3885,7 +3885,7 @@ msgstr "MIDI"
 msgid "migration"
 msgstr "migració"
 
-msgid "migrate, to"
+msgid "migrate"
 msgstr "migrar"
 
 msgid "MIME"
@@ -3906,13 +3906,13 @@ msgstr "miniaplicació de servidor"
 msgid "miniaturization"
 msgstr "miniaturització"
 
-msgid "miniaturize, to"
+msgid "miniaturize"
 msgstr "miniaturitzar"
 
 msgid "minimization"
 msgstr "minimització"
 
-msgid "minimize, to"
+msgid "minimize"
 msgstr "minimitzar"
 
 msgid "MIPS"
@@ -4014,7 +4014,7 @@ msgstr "moderador -a"
 msgid "system operator"
 msgstr "moderador -a"
 
-msgid "moderate, to"
+msgid "moderate"
 msgstr "moderar"
 
 msgid "runtime version"
@@ -4032,7 +4032,7 @@ msgstr "modulació"
 msgid "modulator"
 msgstr "modulador"
 
-msgid "modulate, to"
+msgid "modulate"
 msgstr "modular"
 
 msgid "modularity"
@@ -4083,7 +4083,7 @@ msgstr "múltiplex"
 msgid "multiplex transmission"
 msgstr "multiplexació"
 
-msgid "multiplex, to"
+msgid "multiplex"
 msgstr "multiplexar"
 
 msgid "multiplexing"
@@ -4134,10 +4134,10 @@ msgstr "navegador"
 msgid "navigator"
 msgstr "navegador"
 
-msgid "browse, to"
+msgid "browse"
 msgstr "navegar"
 
-msgid "navigate, to"
+msgid "navigate"
 msgstr "navegar"
 
 msgid "e-business"
@@ -4431,7 +4431,7 @@ msgstr "parpelleig"
 msgid "hyphenation"
 msgstr "partició de mots"
 
-msgid "hyphenate, to"
+msgid "hyphenate"
 msgstr "partir mots"
 
 msgid "token passing"
@@ -4458,7 +4458,7 @@ msgstr "peatge per minut"
 msgid "upload"
 msgstr "penjada"
 
-msgid "upload, to"
+msgid "upload"
 msgstr "penjar"
 
 msgid "default"
@@ -4560,7 +4560,7 @@ msgstr "planificador de tasques"
 msgid "scheduler"
 msgstr "planificador de tasques"
 
-msgid "schedule, to"
+msgid "schedule"
 msgstr "planificar tasques"
 
 msgid "plasma"
@@ -4677,7 +4677,7 @@ msgstr "processament de textos"
 msgid "word processing"
 msgstr "processament de textos"
 
-msgid "process, to"
+msgid "process"
 msgstr "processar"
 
 msgid "computer-aided manufacturing"
@@ -4755,7 +4755,7 @@ msgstr "programador -a"
 msgid "multimedia programmer"
 msgstr "programador -a de multimèdia"
 
-msgid "program, to"
+msgid "program"
 msgstr "programar"
 
 msgid "software"
@@ -5067,7 +5067,7 @@ msgstr "realitat virtual"
 msgid "receiver"
 msgstr "receptor"
 
-msgid "fetch, to"
+msgid "fetch"
 msgstr "recollir"
 
 msgid "speech recognizer"
@@ -5097,7 +5097,7 @@ msgstr "reconeixement òptic de caràcters"
 msgid "retrieval"
 msgstr "recuperació"
 
-msgid "retrieve, to"
+msgid "retrieve"
 msgstr "recuperar"
 
 msgid "resource"
@@ -5130,7 +5130,7 @@ msgstr "refacció"
 msgid "reformatting"
 msgstr "reformatació"
 
-msgid "reformat, to"
+msgid "reformat"
 msgstr "reformatar"
 
 msgid "network information center"
@@ -5208,7 +5208,7 @@ msgstr "restricció de trucada"
 msgid "call hold"
 msgstr "retenció de trucada"
 
-msgid "bounce, to"
+msgid "bounce"
 msgstr "retornar"
 
 msgid "feedback"
@@ -5280,7 +5280,7 @@ msgstr "satel·lització"
 msgid "satellization"
 msgstr "satel·lització"
 
-msgid "launch, to"
+msgid "launch"
 msgstr "satel·litzar"
 
 msgid "computer security"
@@ -5463,13 +5463,13 @@ msgstr "simulació en temps real"
 msgid "simulator"
 msgstr "simulador"
 
-msgid "simulate, to"
+msgid "simulate"
 msgstr "simular"
 
 msgid "synchronous"
 msgstr "síncron -a"
 
-msgid "synchronize, to"
+msgid "synchronize"
 msgstr "sincronitzar"
 
 msgid "synthesis"
@@ -5496,7 +5496,7 @@ msgstr "sintonia"
 msgid "tuner"
 msgstr "sintonitzador"
 
-msgid "tune, to"
+msgid "tune"
 msgstr "sintonitzar"
 
 msgid "system"
@@ -6027,10 +6027,10 @@ msgstr "teletreballador -a"
 msgid "teleworker"
 msgstr "teletreballador -a"
 
-msgid "telecommute, to"
+msgid "telecommute"
 msgstr "teletreballar"
 
-msgid "telework, to"
+msgid "telework"
 msgstr "teletreballar"
 
 msgid "teleshopping"
@@ -6228,7 +6228,7 @@ msgstr "transferència electrònica de fons"
 msgid "transistor"
 msgstr "transistor"
 
-msgid "transmit, to"
+msgid "transmit"
 msgstr "transmetre"
 
 msgid "transmission"
@@ -6435,13 +6435,13 @@ msgstr "verificador -a"
 msgid "spelling checker"
 msgstr "verificador ortogràfic"
 
-msgid "check, to"
+msgid "check"
 msgstr "verificar"
 
-msgid "test, to"
+msgid "test"
 msgstr "verificar"
 
-msgid "verify, to"
+msgid "verify"
 msgstr "verificar"
 
 msgid "beta version"
@@ -6531,10 +6531,10 @@ msgstr "visualitzador"
 msgid "view unit"
 msgstr "visualitzador"
 
-msgid "display, to"
+msgid "display"
 msgstr "visualitzar"
 
-msgid "view, to"
+msgid "view"
 msgstr "visualitzar"
 
 msgid "volt"

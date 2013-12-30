@@ -26,11 +26,11 @@ import xml.etree.ElementTree as ET
 def get_metadata():
     metadata = {
         'Project-Id-Version': '1.0',
-        'Report-Msgid-Bugs-To': 'info@softcatala.org',
+        'Report-Msgid-Bugs-To': 'info@termcat.cat',
         'POT-Creation-Date': '2007-10-18 14:00+0100',
         'PO-Revision-Date': '2007-10-18 14:00+0100',
-        'Last-Translator': 'info@softcatala.org',
-        'Language-Team': 'Catalan <info@softcatala.org>',
+        'Last-Translator': 'info@termcat.cat',
+        'Language-Team': 'Catalan <info@termcat.cat>',
         'MIME-Version': '1.0',
         'Content-Type': 'text/plain; charset=utf-8',
         'Content-Transfer-Encoding': '8bit',
@@ -49,7 +49,7 @@ def read_xml():
     for term_entry in root.iter('fitxa'):
    
         # Text can be any order (en->ca) or (ca->en) and also you can
-        # can have serveral en or ca strings
+        # can have several en or ca strings
         sources = []
         translations = []
 
@@ -60,14 +60,16 @@ def read_xml():
 
             llengua = unicode(term_subentry.attrib['llengua'])
             if llengua == 'en':
-                sources.append(term_subentry.text)
+                # Remove the indication that is a verb to facilitate matching
+                term = term_subentry.text.replace(", to", '')
+                sources.append(term)
             elif llengua == 'ca':
                 translations.append(term_subentry.text)
             else:
                 continue  # We are not interested in other languages
 
         # For every English term available write an entry with the first Catalan
-        # translation avaiable
+        # translation available
         for source in sources:
             source = unicode(source)
             translation = unicode(translations[0])
