@@ -68,5 +68,15 @@ th
     background-color: #F2F0E5;
 }
 
+.main-table
+{ 
+    margin-left: 20px;
+}
+
+.main-table td
+{ 
+    padding-right: 20px; 
+    padding-top: 20px
+}
 
 
