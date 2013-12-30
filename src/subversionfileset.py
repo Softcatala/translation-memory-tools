@@ -22,13 +22,18 @@ from fileset import FileSet
 import os
 
 
-CMD = 'cd {0} && svn co --trust-server-cert ' \
-    '--non-interactive {1}'
-
-
 class SubversionFileSet(FileSet):
 
     def do(self):
+
+        if len(self.filename) == 0:
+            CMD = 'cd {0} && svn co --trust-server-cert ' \
+                '--non-interactive {1}'
+        else:
+            # Single file checkout
+            CMD = 'cd {0} && svn export --trust-server-cert ' \
+                '--non-interactive {1}'
+
         self.create_tmp_directory()
         cmd = CMD.format(self.temp_dir, self.url)
         os.system(cmd)
