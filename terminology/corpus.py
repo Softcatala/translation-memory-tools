@@ -38,29 +38,27 @@ class Corpus:
         self.translations = 0
         self.stop_words = set()
 
-    def _read_stop_words(self):
-
-        _file = open("stop-words/stop-words.txt")
+    def _read_stop_words(self, stopwords_file):
 
         while True:
-            line = _file.readline()
+            line = stopwords_file.readline()
             if not line:
                 break
 
             word = line.strip()
             word = word.lower()
             self.stop_words.add(word)
-
+      
     def _clean_string(self, result):
 
-        chars = {'_', '&', '~',  # Accelarators
+        chars = {'_', '&', '~',  # Accelerators
                 ':', ',', '...', u'…'  # Punctuations
               }
 
         for c in chars:
             result = result.replace(c, '')
 
-        #remove all the leading and trailing whitespace characters 
+        #remove all the leading and trailing whitespace characters
         result = result.strip()
         result = result.lower()
         return result
@@ -70,7 +68,7 @@ class Corpus:
 
         words = len(source.split())
  
-        # Only 1 word terms for now
+        # Only up to 3 words terms for now
         if words > 3:
             return False
 
@@ -97,7 +95,7 @@ class Corpus:
             logging.info(msg)
             return False
 
-        # We are ignoring strings with html tags 
+        # We are ignoring strings with html tags or string formatters
         # This also affects strings like <shift>f10
         chars = {'<', '>', '%', '{', '}'}
         for c in chars:
@@ -116,8 +114,9 @@ class Corpus:
     #          Terms dictionary -> key: source term (delete), value:list <trgs> (suprimeix, esborra)
     #
     def process(self):
-
-        self._read_stop_words()
+    
+        stopwords_file = open("stop-words/stop-words.txt")
+        self._read_stop_words(stopwords_file)
 
         findFiles = FindFiles()
 
@@ -139,7 +138,7 @@ class Corpus:
                 if self._should_select_string(msgid, msgstr) is False:
                     continue
     
-                self.strings_selected = self.strings_selected + 1
+                self.strings_selected += 1
          
                 log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'.format(msgid, entry.msgid, \
                         msgstr, entry.msgstr, filename)
