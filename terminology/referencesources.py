@@ -66,7 +66,7 @@ class ReferenceSources:
             for term in reference.terms:
                 if term not in terms:
                     # Terms should contain a translation but we do not need
-                    # for this propouse. Review data structures
+                    # for this propose. Review data structures
                     not_used_reference.terms[term] = None
 
         return not_used_references

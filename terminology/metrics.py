@@ -23,8 +23,8 @@ import math
 class Metrics:
 
     def __init__(self):
-        # All the dictionary are keyword -> metric
-        # TODO: Consider a keyword pointing to a class with all the metrics for the word
+        # All the dictionaries are word -> metric
+        # TODO: Consider a word pointing to a class with all the metrics for the word
 
         # TF
         # Count the number of times each term occurs in each document and sum them all together;
