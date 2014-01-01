@@ -23,16 +23,10 @@ sys.path.append('../src/')
 
 import datetime
 import cgi
-from serializer import Serializer
 
-class UserGlossarySerializer(Serializer):
+class UserGlossarySerializer():
 
-    def create(self, html_file, html_comment, corpus, tfxdf, reference_sources):
-
-        MAX_TERMS = 1000
-
-        _terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
-        terms = sorted(_terms[:MAX_TERMS])
+    def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
 
         f = open(html_file, 'w')
 
@@ -51,10 +45,10 @@ class UserGlossarySerializer(Serializer):
         f.write(html.encode('utf-8'))
 
         item = 0
-        for term in terms:
+        for term in glossary_entries:
 
             item += 1
-            translations = self.create_translations_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+            translations = glossary_entries[term]
 
             options = ''
             for translation in translations:

@@ -31,7 +31,6 @@ import logging
 from optparse import OptionParser
 from corpus import Corpus
 from referencesources import ReferenceSources
-from serializer import Serializer
 
 class ReferenceMatches:
 
@@ -41,14 +40,14 @@ class ReferenceMatches:
         self.first_500 = 0
         self.first_2000 = 0
 
-class DevGlossarySerializer(Serializer):
+class DevGlossarySerializer():
 
-    def create_text_dump(self, documents, terms, reference_sources):
+    def create_text_dump(self, documents, glossary_entries, reference_sources):
 
         f = open('glossary.txt', 'w')
       
-        for term in terms:
-            translations = self.create_translations_for_word_sorted_by_frequency(documents, term, reference_sources)
+        for term in glossary_entries:
+            translations = glossary_entries[term]
 
             f.write('{0};{1}\n'.format(term.encode('utf-8'), 
                     translations[0].translation.encode('utf-8')))
@@ -79,9 +78,7 @@ class DevGlossarySerializer(Serializer):
 
         return html
 
-    def create(self, html_file, html_comment, corpus, tfxdf, reference_sources):
-
-        terms = sorted(tfxdf, key=tfxdf.get, reverse=True)
+    def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
 
         f = open(html_file, 'w')
 
@@ -116,7 +113,7 @@ class DevGlossarySerializer(Serializer):
             reference_matches[reference.name] = ReferenceMatches()
 
         words_cnt = [0, 0, 0]
-        for term in terms:
+        for term in glossary_entries:
 
             sources = ' '
             for reference in reference_sources.get_references_for_term_in(term):
@@ -138,9 +135,8 @@ class DevGlossarySerializer(Serializer):
             
             item += 1
 
-            translations = self.create_translations_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
-
             options = ''
+            translations = glossary_entries[term]
             for translation in translations:
                 options += u'<p>- {0} (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
                            translation.percentage, translation.frequency)
@@ -156,9 +152,6 @@ class DevGlossarySerializer(Serializer):
             word_len = len(term.split(' '))
             if word_len <= 3:     
                 words_cnt[word_len - 1] += 1
-            
-            if item >= 1000:
-                break
 
         f.write('</table>\n')
     
@@ -197,5 +190,5 @@ class DevGlossarySerializer(Serializer):
         f.write('</head></html>\n')
         f.close()
 
-        self.create_text_dump(corpus.documents, terms, reference_sources)
+        self.create_text_dump(corpus.documents, glossary_entries, reference_sources)
 

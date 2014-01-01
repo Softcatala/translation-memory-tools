@@ -25,9 +25,9 @@ class Translation:
         self.percentage = 0  # Percentage of frequency across all options
         self.references_short_name = []  # A list of references
 
-class Serializer:
+class Translations:
 
-    def add_reference_translations(self, term, reference_sources, translations):
+    def _add_reference_translations(self, term, reference_sources, translations):
 
         # Translations from references (TERMCAT only for now)
         reference_translations = reference_sources.get_translations_for_term_in_reference(term, 't')
@@ -89,7 +89,7 @@ class Serializer:
 
                 translations[term] = translation_list
 
-        translations[term] = self.add_reference_translations(term, reference_sources, translations[term])
+        translations[term] = self._add_reference_translations(term, reference_sources, translations[term])
 
         # Calculate frequencies and percentages
         for translation_obj_list in translations.values():
