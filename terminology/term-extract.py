@@ -67,7 +67,7 @@ def process_projects():
     selected_terms = sorted_terms_by_tfxdf[:MAX_TERMS] # Sorted by frequency
 
     for term in selected_terms:
-        glossary_entries[term] = translations.create_translations_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
     dev_glossary_serializer = DevGlossarySerializer()
     dev_glossary_serializer.create(u"dev-" + html_file, html_comment, corpus, 
@@ -78,10 +78,10 @@ def process_projects():
     selected_terms = sorted(sorted_terms_by_tfxdf[:MAX_TERMS]) # Sorted by term
 
     for term in selected_terms:
-        glossary_entries[term] = translations.create_translations_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
     user_glossary_serializer = UserGlossarySerializer()
-    user_glossary_serializer.create(html_file, html_comment, corpus, 
+    user_glossary_serializer.create(html_file, html_comment, corpus,
                                    glossary_entries, reference_sources)
         
 def read_parameters():

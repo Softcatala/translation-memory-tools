@@ -26,7 +26,10 @@ class Translation:
         self.references_short_name = []  # A list of references
 
 class Translations:
-
+    '''From a list of unsorted translations creates the final translations'''
+    '''for the glossary, grouping same translation units and sorting them by'''
+    '''frequency'''
+ 
     def _add_reference_translations(self, term, reference_sources, translations):
 
         # Translations from references (TERMCAT only for now)
@@ -56,7 +59,7 @@ class Translations:
 
         return translations_with_references
 
-    def create_translations_for_word_sorted_by_frequency(self, documents, term, reference_sources):
+    def create_for_word_sorted_by_frequency(self, documents, term, reference_sources):
 
         translations = {} # key: english keyword -> value: list of translation objects
         for document_key_filename in documents.keys():
