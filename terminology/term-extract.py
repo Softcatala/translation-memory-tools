@@ -38,13 +38,13 @@ from glossary import Glossary
 from collections import OrderedDict
 
 src_directory = None
-glossary_comment = ''
+glossary_description = ''
 glossary_file = None
 
 
 def process_projects():
 
-    global glossary_file, glossary_comment
+    global glossary_file, glossary_description
 
     corpus = Corpus(src_directory)
     corpus.process()
@@ -66,16 +66,16 @@ def process_projects():
 
     for term in selected_terms:
         glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
-
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_comment, corpus,
+    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_description, corpus,
                                    glossary_entries, reference_sources)
 
     # User report
     glossary_entries = []
-    selected_terms = sorted(sorted_terms_by_tfxdf[:MAX_TERMS]) # Sorted by term
+    selected_terms = sorted(sorted_terms_by_tfxdf[:MAX_TERMS])  # Sorted by term
 
     glossary = Glossary()
+    glossary.description = glossary_description
     for term in selected_terms:
         glossary_entry = GlossaryEntry()
         glossary_entry.source_term = term
@@ -83,13 +83,14 @@ def process_projects():
         glossary.entries.append(glossary_entry)
 
     user_glossary_serializer = UserGlossarySerializer()
-    user_glossary_serializer.create(glossary_file, glossary_comment,
-                                    glossary.get_dict(), reference_sources)
+    user_glossary_serializer.create(glossary_file, glossary.get_dict(),
+                                    reference_sources)
+
 
 def read_parameters():
 
     global src_directory
-    global glossary_comment
+    global glossary_description
     global glossary_file
 
     parser = OptionParser()
@@ -100,7 +101,7 @@ def read_parameters():
                       help="Directory to find the PO files")
 
     parser.add_option("-c", "--comment",
-                      action="store", type="string", dest="glossary_comment",
+                      action="store", type="string", dest="glossary_description",
                       default="",
                       help="HTML comment to add")
 
@@ -111,7 +112,7 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
     src_directory = options.src_directory
-    glossary_comment = options.glossary_comment
+    glossary_description = options.glossary_description
     glossary_file = options.glossary_file
 
 def init_logging():

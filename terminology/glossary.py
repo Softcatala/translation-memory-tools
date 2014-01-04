@@ -22,11 +22,12 @@ import datetime
 
 
 class Glossary:
-    '''Represents a glossary'''
+    '''Represents all the data need to generate a  glossary'''
 
     def __init__(self):
         self.date = datetime.date.today().strftime("%d/%m/%Y")
         self.entries = []
+        self.description = u''
 
     def get_dict(self):
 
@@ -37,6 +38,7 @@ class Glossary:
             entries.append(entry.get_dict())
 
         glossary_dict['entries'] = entries
-        glossary_dict['date'] = self.date
+        glossary_dict['date'] = unicode(self.date, "utf-8")
+        glossary_dict['description'] = unicode(self.description, "utf-8")
         return glossary_dict
 
