@@ -1,0 +1,21 @@
+* Com baixar la terminologia
+ 
+Els termes normalitzats es troben a la Neoloteca
+
+A la Terminologia Oberta <http://www.termcat.cat/ca/TerminologiaOberta/>
+has de buscar el fitxer "Neoloteca" i baixar-te'l sencer en XML:
+
+http://www.termcat.cat/Thor/files/diccionaris/cneoloteca.xml
+
+Podràs seleccionar els que t’interessin segons l’etiqueta Àrea temàtica.
+
+Si no vols descarregar-te només els normalitzats sinó tots els termes
+difosos en diversos productes de l’àmbit tecnològic, a la Terminologia
+Oberta busca repertoris dels àmbits “Informàtica. Electrònica.
+Telecomunicacions” o bé “Societat de la informació. Internet”
+
+* Fitxers
+
+- cneoloteca.xml -> Bolcat de la Neoloteca
+- to_termes.xml -> Termes Societat de la informació
+

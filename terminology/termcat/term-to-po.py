@@ -37,13 +37,13 @@ def get_metadata():
         'Plural-Forms': 'nplurals=2; plural=n != 1;',
     }
     return metadata
-
+    
 def read_xml():
 
     pofile = polib.POFile()
     pofile.metadata = get_metadata()
 
-    tree = ET.parse('to_termes.xml')
+    tree = ET.parse('cneoloteca.xml')
     root = tree.getroot()
     terms = 0
     for term_entry in root.iter('fitxa'):
@@ -53,9 +53,14 @@ def read_xml():
         sources = []
         translations = []
 
+        informatica_term = False
         # This loops areatematica and denominacio tags
         for term_subentry in term_entry:
-            if not 'llengua' in term_subentry.keys():
+            if term_subentry.tag == 'areatematica':
+                if u'Informàtica' in term_subentry.text:    
+                    informatica_term = True
+
+            if not term_subentry.tag == 'denominacio':
                 continue
 
             llengua = unicode(term_subentry.attrib['llengua'])
@@ -67,6 +72,9 @@ def read_xml():
                 translations.append(term_subentry.text)
             else:
                 continue  # We are not interested in other languages
+
+        if informatica_term is False:
+            continue
 
         # For every English term available write an entry with the first Catalan
         # translation available
