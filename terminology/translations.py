@@ -20,10 +20,23 @@
 
 class Translation:
     def __init__(self):
-        self.translation = ''
+        self.translation = u''
         self.frequency = 0
         self.percentage = 0  # Percentage of frequency across all options
         self.references_short_name = []  # A list of references
+
+
+    def get_dict(self):
+        d = {}
+        d[u'translation'] = self.translation
+        d[u'frequency'] = self.frequency
+        d[u'percentage'] = self.percentage
+        
+        if len(self.references_short_name) > 0:
+            d[u'termcat'] = True
+        
+        return d
+ 
 
 class Translations:
     '''From a list of unsorted translations creates the final translations'''

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
-# Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2013-2014 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -18,65 +18,28 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-sys.path.append('../src/')
-
-import datetime
-import cgi
+import pystache
 
 class UserGlossarySerializer():
 
-    def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
+    def _create(self, template, filename, comment, glossary_entries,
+                reference_sources):
 
-        f = open(html_file, 'w')
+        # Load template and process it
+        template = open(template, 'r').read()
+        parsed = pystache.Renderer()
+        s = parsed.render(unicode(template, "utf-8"), glossary_entries)
 
-        f.write(u'<html><head>\n')
-        f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8">')
-        html = u'Les formes <font color="green">en color verd</font> són les recomanades pel TERMCAT'
-
-        comment = unicode(html_comment, "UTF-8")  # utf-8 is the system encoding
-        html += u'<p>{0}</p>'.format(comment)
-        html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
-        html += u'<tr>\r'
-        html += u'<th>Anglès</th>\r'
-        html += u'<th>Català</th>\r'
-        html += u'<th>Opcions considerades</th>\r'
-        html += u'</tr>\r'
-        f.write(html.encode('utf-8'))
-
-        item = 0
-        for term in glossary_entries:
-
-            item += 1
-            translations = glossary_entries[term]
-
-            options = ''
-            for translation in translations:
-                if len(translation.references_short_name) > 0:
-                    recommended = True
-                else:
-                    recommended = False
-
-                if recommended:
-                    options += u'<p>- <font color="green">{0}</font> (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
-                                translation.percentage, translation.frequency)
-                
-                else:
-                    options += u'<p>- {0} (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
-                                translation.percentage, translation.frequency)
-
-            html = u"<tr>\r"
-            html += u'<td>{0}</td>'.format(cgi.escape(term))
-            html += u'<td>{0}</td>'.format(cgi.escape(translations[0].translation))
-            html += u'<td>{0}</td>'.format(options)
-            html += u"</tr>\r"
-            f.write(html.encode('utf-8'))
-
-        f.write('</table>\n')
-
-        html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
-        f.write(html.encode('utf-8'))
-
-        f.write('</head></html>\n')
+        # Write output
+        f = open(filename, 'w')
+        f.write(s.encode("utf-8"))
         f.close()
+
+    def create(self, filename, comment, glossary_entries, reference_sources):
+
+        self._create('userglossary-html.mustache', filename + ".html", comment,
+                     glossary_entries, reference_sources)
+
+        self._create('userglossary-csv.mustache', filename + ".csv", comment,
+                     glossary_entries, reference_sources)
 

@@ -22,10 +22,6 @@ import sys
 sys.path.append('../src/')
 
 import time
-import math
-import polib
-import datetime
-import cgi
 import os
 import logging
 import resource
@@ -37,20 +33,22 @@ from devglossaryserializer import DevGlossarySerializer
 from userglossaryserializer import UserGlossarySerializer
 from metrics import Metrics
 from translations import Translations
+from glossaryentry import GlossaryEntry
+from glossary import Glossary
 from collections import OrderedDict
 
 src_directory = None
-html_comment = ''
-hmtl_file = None
+glossary_comment = ''
+glossary_file = None
 
 
 def process_projects():
 
-    global html_file, html_comment
+    global glossary_file, glossary_comment
 
     corpus = Corpus(src_directory)
     corpus.process()
-   
+
     reference_sources = ReferenceSources()
     reference_sources.read_sources()
 
@@ -60,7 +58,7 @@ def process_projects():
     # Select terms
     MAX_TERMS = 1000
     sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get, reverse=True)
-   
+
     # Developer report
     glossary_entries = OrderedDict()
     translations = Translations()
@@ -70,48 +68,51 @@ def process_projects():
         glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(u"dev-" + html_file, html_comment, corpus, 
+    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_comment, corpus,
                                    glossary_entries, reference_sources)
 
     # User report
-    glossary_entries = OrderedDict()
+    glossary_entries = []
     selected_terms = sorted(sorted_terms_by_tfxdf[:MAX_TERMS]) # Sorted by term
 
+    glossary = Glossary()
     for term in selected_terms:
-        glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary_entry = GlossaryEntry()
+        glossary_entry.source_term = term
+        glossary_entry.translations = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary.entries.append(glossary_entry)
 
     user_glossary_serializer = UserGlossarySerializer()
-    user_glossary_serializer.create(html_file, html_comment, corpus,
-                                   glossary_entries, reference_sources)
-        
+    user_glossary_serializer.create(glossary_file, glossary_comment,
+                                    glossary.get_dict(), reference_sources)
+
 def read_parameters():
 
     global src_directory
-    global html_comment
-    global html_file
-   
+    global glossary_comment
+    global glossary_file
+
     parser = OptionParser()
 
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
-                      #default = "/home/jordi/sc/other/src/pos/",
-                      default = "sc-tm-pos/",
+                      default="sc-tm-pos/",
                       help="Directory to find the PO files")
 
     parser.add_option("-c", "--comment",
-                      action="store", type="string", dest="html_comment",
-                      default = "",
+                      action="store", type="string", dest="glossary_comment",
+                      default="",
                       help="HTML comment to add")
 
     parser.add_option("-t", "--html-file",
-                      action="store", type="string", dest="html_file",
-                      default = "glossary.html",
-                      help="HTML file to export")
+                      action="store", type="string", dest="glossary_file",
+                      default="glossary",
+                      help="Glossary file name to export")
 
     (options, args) = parser.parse_args()
     src_directory = options.src_directory
-    html_comment = options.html_comment
-    html_file = options.html_file
+    glossary_comment = options.glossary_comment
+    glossary_file = options.glossary_file
 
 def init_logging():
     logfile = 'term-extract.log'
@@ -122,11 +123,14 @@ def init_logging():
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     logger = logging.getLogger('')
 
+
 def using():
     usage=resource.getrusage(resource.RUSAGE_SELF)
     return '''usertime=%s systime=%s mem=%s mb
            '''%(usage[0],usage[1],
-                (usage[2]*resource.getpagesize())/1000000.0 )
+                (usage[2]*resource.getpagesize())/1000000.0)
+
+
 def main():
     
     print "Extracts terminology"

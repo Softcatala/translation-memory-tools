@@ -1,0 +1,24 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">Les formes 
+<font color="green">en color verd</font> són les recomanades pel TERMCAT<p></p>
+
+<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">
+
+    <tr>
+    <th>Anglès</th>
+    <th>Català</th>
+    <th>Opcions considerades</th>
+    </tr>
+    {{#entries}}
+    <tr>
+        <td>{{source}}</td>
+        <td>{{translation}}</td>
+        <td> {{#translations}}
+                {{#termcat}}<font color="green"> {{/termcat}}
+                <p>- {{translation}} (usada {{percentage}}%, coincidències {{frequency}})</p>
+                {{#termcat}}</font>{{/termcat}}
+            {{/translations}} </td>
+    <tr>
+    {{/entries}}
+</table>
+<p>Data de generació: {{date}}</p></head></html>

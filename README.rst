@@ -28,6 +28,7 @@ Dependencies
 * Git
 * a2po (using 'pip install android2po')
 * Whoosh (using 'pip install whoosh')
+* Pystache
 
 Setting up before execution
 ===========================
