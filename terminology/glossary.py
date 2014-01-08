@@ -22,7 +22,7 @@ import datetime
 
 
 class Glossary:
-    '''Represents all the data need to generate a  glossary'''
+    '''Represents all the data need to generate a glossary'''
 
     def __init__(self):
         self.date = datetime.date.today().strftime("%d/%m/%Y")
