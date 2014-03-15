@@ -56,4 +56,4 @@ class TransifexFileSet(FileSet):
         self.convert_ini_files_to_po()
         self.add_comments()
         self.build()
-        self.remove_tmp_directory()
+        #self.remove_tmp_directory()
