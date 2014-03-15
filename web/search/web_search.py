@@ -103,6 +103,7 @@ class WebSerializer:
         print 'Content-type: text/html\n\n'
         print '<html><head>'
         print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
+        print '<meta name="robots" content="noindex, nofollow">'
         print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
 
     def write_html_header(self, term, results, time):
