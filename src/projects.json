@@ -839,7 +839,32 @@
                             "type": "transifex"
                 }
             }
-    }
+    },
+    "Plone": {
+            "projectweb" : "http://www.softcatala.org/wiki/Plone",
+            "fileset": {
+                    "Plone": {
+                            "url" : "https://raw.github.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plone.po",
+                            "type": "file",
+                            "target": "plone.po"
+                    },
+                    "Atcontenttypes": {
+                            "url" : "https://raw.github.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/atcontenttypes.po",
+                            "type": "file",
+                            "target": "atcontenttypes.po"
+                    },
+                    "Plonefrontpage": {
+                            "url" : "https://raw.github.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plonefrontpage.po",
+                            "type": "file",
+                            "target": "plonefrontpage.po"
+                    },
+                    "Plonelocales": {
+                            "url" : "https://raw.github.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plonelocales.po",
+                            "type": "file",
+                            "target": "atcontenttypes.po"
+                    }
+            }
+        }
 
     }
 }
