@@ -842,6 +842,8 @@
     },
     "Plone": {
             "projectweb" : "http://www.softcatala.org/wiki/Plone",
+            "comment" : "Source string contain ids in some cases instead of the source string",
+            "disabled": true,
             "fileset": {
                     "Plone": {
                             "url" : "https://raw.github.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plone.po",
