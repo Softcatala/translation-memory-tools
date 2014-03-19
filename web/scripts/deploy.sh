@@ -67,6 +67,10 @@ if [ ! -z "$DEVENV" ]; then
     TARGET_DIR=/var/www/recursos.softcatala.org/dev
 fi
 
+#Softcatalà headers and footers
+cp $ROOT/mediawiki-Softcatala/ssi/header.html $TARGET_DIR
+cp $ROOT/mediawiki-Softcatala/ssi/footer-g.html $TARGET_DIR
+
 # Index
 rm -r -f $TARGET_DIR/indexdir
 mkdir $TARGET_DIR/indexdir
