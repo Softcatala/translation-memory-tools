@@ -79,4 +79,27 @@ th
     padding-top: 20px
 }
 
+/* SC specific headers includes*/
+
+#bodyContent {
+	margin: auto;
+    text-align: left;
+    width: 1015px;
+}
+
+#boxheader {
+    float: left;
+    margin-top: -21px;
+    width: 1025px;
+    margin-bottom: 13px;
+}
+
+.fondo3 {
+    background: url("http://www.softcatala.org/img/fonsscp.jpg") repeat scroll 10px -95px rgba(0, 0, 0, 0)
+}
+
+.section {
+    color: #FFFFFF;
+    margin-bottom: 39px;
+}
 
