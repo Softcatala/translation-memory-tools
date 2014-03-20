@@ -494,7 +494,7 @@
                     }
             }
     },
-    "Track": {
+    "Trac": {
             "projectweb" : "http://trac.edgewall.org/ticket/7353",
             "fileset": {
                     "main": {
