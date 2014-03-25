@@ -124,9 +124,9 @@ def read_parameters():
 
     enviroments = {
         'localhost': 'http://localhost:8080/',
-        'dev': 'http://recursos.softcatala.org/dev/',
-        'preprod': 'http://recursos.softcatala.org/preprod/',
-        'prod': 'http://recursos.softcatala.org/'
+        'dev': 'http://www.softcatala.org/recursos/dev/',
+        'preprod': 'http://www.softcatala.org/recursos/preprod/',
+        'prod': 'http://www.softcatala.org/recursos/'
         }
 
     opt_enviroments = "localhost, dev, prepod, prod"
