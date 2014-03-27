@@ -145,8 +145,9 @@ class Search:
 
         MIN_WORDSIZE_TO_IDX = 1
 
-        schema = Schema(source=TEXT(stored=True), target=TEXT(stored=True,
-                        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)),
+        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)
+        schema = Schema(source=TEXT(stored=True, analyzer=analyzer), 
+                        target=TEXT(stored=True, analyzer=analyzer),
                         comment=TEXT(stored=True), context=TEXT(stored=True),
                         softcatala=BOOLEAN(stored=True), project=TEXT(stored=True))
 
