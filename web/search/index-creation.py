@@ -145,7 +145,7 @@ class Search:
 
         MIN_WORDSIZE_TO_IDX = 1
 
-        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX)
+        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX, stoplist=None)
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer), 
                         target=TEXT(stored=True, analyzer=analyzer),
                         comment=TEXT(stored=True), context=TEXT(stored=True),
