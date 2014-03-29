@@ -174,7 +174,7 @@ def read_parameters():
     parser.add_option('-k', '--keyword',
                       action='store', type='string', dest='debug_keyword',
                       default=None,
-                      help='Output debug information for a keyword (for '
+                      help='Output debug information for a source keyword (for '
                       'debugging)')
 
     parser.add_option('-p',
