@@ -36,13 +36,15 @@ debug_keyword = None
 projects_names = None
 
 
-class Search:
+class IndexCreator:
 
     dir_name = "indexdir"
     writer = None
     words = 0
     projects = 0
     options = []
+    sentences_indexed = 0
+    sentences = 0
 
     def process_projects(self, po_directory):
 
@@ -72,34 +74,8 @@ class Search:
                                   project_dto.softcatala)
             self.projects = self.projects + 1
 
-        self._write_statistics()
-        self._write_select_projects()
-
-    def _write_statistics(self):
-
-        today = datetime.date.today()
-        html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
-        html += u' i conté ' + str(self.projects) + ' projectes amb un total de '
-        html += locale.format("%d", self.words, grouping=True) + ' paraules</p>'
-        html_file = open("statistics.html", "w")
-        html_file.write(html.encode('utf-8'))
-        html_file.close()
-
-    def _write_select_projects(self):
-
-        html = u'<p>Àmbit de cerca: '
-        html += u'<select name ="project">\r'
-        html += u'<option value="tots" selected="selected">Tots els projectes</option>\r'
-        html += u'<option value="softcatala">Tots els projectes de Softcatalà</option>\r'
-
-        options = sorted(self.options, key=lambda x: x.lower())
-        for option in options:
-            html += u'<option value="{0}">Projecte {1}</option>\r'.format(option, option)
-
-        html += u'</select></p>\r'
-        html_file = open("select-projects.html", "w")
-        html_file.write(html.encode('utf-8'))
-        html_file.close()
+        print 'Total sentences {0}, indexed {1}'.format(self.sentences, 
+              self.sentences_indexed)
 
     def _process_project(self, po_directory, name, filename, softcatala):
 
@@ -112,6 +88,7 @@ class Search:
             input_po = polib.pofile(full_filename)
 
             for entry in input_po:
+                self.sentences += 1 
                 s = unicode(entry.msgid)
                 t = unicode(entry.msgstr)
                 p = unicode(name)
@@ -132,6 +109,10 @@ class Search:
                     print "Context: " + str(x)
                     print "Comment: " + str(c)
 
+                if s is None or len(s) == 0 or t is None or len(t) == 0:
+                    continue    
+
+                self.sentences_indexed += 1
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
                 self.writer.add_document(source=s, target=t, comment=c,
@@ -141,7 +122,7 @@ class Search:
         except Exception as detail:
             print "Exception: " + str(detail)
 
-    def create_index(self):
+    def create(self):
 
         MIN_WORDSIZE_TO_IDX = 1
 
@@ -156,6 +137,34 @@ class Search:
 
         ix = create_in(self.dir_name, schema)
         self.writer = ix.writer()
+
+
+def _write_statistics(projects, words):
+
+    today = datetime.date.today()
+    html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
+    html += u' i conté ' + str(projects) + ' projectes amb un total de '
+    html += locale.format("%d", words, grouping=True) + ' paraules</p>'
+    html_file = open("statistics.html", "w")
+    html_file.write(html.encode('utf-8'))
+    html_file.close()
+
+
+def _write_select_projects(options):
+
+    html = u'<p>Àmbit de cerca: '
+    html += u'<select name ="project">\r'
+    html += u'<option value="tots" selected="selected">Tots els projectes</option>\r'
+    html += u'<option value="softcatala">Tots els projectes de Softcatalà</option>\r'
+
+    options = sorted(options, key=lambda x: x.lower())
+    for option in options:
+        html += u'<option value="{0}">Projecte {1}</option>\r'.format(option, option)
+
+    html += u'</select></p>\r'
+    html_file = open("select-projects.html", "w")
+    html_file.write(html.encode('utf-8'))
+    html_file.close()
 
 
 def read_parameters():
@@ -214,10 +223,13 @@ def main():
         print "Exception: " + str(detail)
 
     read_parameters()
-    search = Search()
-    search.create_index()
-    search.process_projects(po_directory)
-    search.writer.commit()
+    indexCreator = IndexCreator()
+    indexCreator.create()
+    indexCreator.process_projects(po_directory)
+    indexCreator.writer.commit()
+
+    _write_statistics(indexCreator.projects, indexCreator.words)
+    _write_select_projects(indexCreator.options)
 
     end_time = time.time() - start_time
     print "time used to create the index: " + str(end_time)
