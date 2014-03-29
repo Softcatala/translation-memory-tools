@@ -84,43 +84,46 @@ class IndexCreator:
         full_filename = os.path.join(po_directory, filename)
         print "Processing: " + full_filename
 
-        try:
-            input_po = polib.pofile(full_filename)
+        input_po = polib.pofile(full_filename)
 
-            for entry in input_po:
-                self.sentences += 1 
-                s = unicode(entry.msgid)
-                t = unicode(entry.msgstr)
-                p = unicode(name)
+        for entry in input_po:
+            self.sentences += 1 
+            s = unicode(entry.msgid)
+            t = unicode(entry.msgstr)
+            p = unicode(name)
 
-                if (entry.msgctxt is None):
-                    x = entry.msgctxt
-                else:
-                    x = unicode(entry.msgctxt)
+            if (entry.msgctxt is None):
+                x = entry.msgctxt
+            else:
+                x = unicode(entry.msgctxt)
 
-                if (entry.tcomment is None):
-                    c = entry.tcomment
-                else:
-                    c = unicode(entry.tcomment)
+            if (entry.tcomment is None):
+                c = entry.tcomment
+            else:
+                c = unicode(entry.tcomment)
 
-                if debug_keyword is not None and debug_keyword.strip() == s:
-                    print "Source: " + s
-                    print "Translation: " + t
-                    print "Context: " + str(x)
-                    print "Comment: " + str(c)
+            if t is None or len(t) == 0:
+                # msgstr_plural is a dictionary where the key is the index and
+                # the value is the localised string
+                if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
+                    t = unicode(entry.msgstr_plural["0"])
+                   
+            if debug_keyword is not None and debug_keyword.strip() == s:
+                print "Source: " + s
+                print "Translation: " + t
+                print "Context: " + str(x)
+                print "Comment: " + str(c)
 
-                if s is None or len(s) == 0 or t is None or len(t) == 0:
-                    continue    
+            if s is None or len(s) == 0 or t is None or len(t) == 0:
+                continue    
 
-                self.sentences_indexed += 1
-                string_words = entry.msgstr.split(' ')
-                self.words += len(string_words)
-                self.writer.add_document(source=s, target=t, comment=c,
-                                         context=x, project=p,
-                                         softcatala=softcatala)
+            self.sentences_indexed += 1
+            string_words = entry.msgstr.split(' ')
+            self.words += len(string_words)
+            self.writer.add_document(source=s, target=t, comment=c,
+                                     context=x, project=p,
+                                     softcatala=softcatala)
 
-        except Exception as detail:
-            print "Exception: " + str(detail)
 
     def create(self):
 
