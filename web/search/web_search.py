@@ -50,23 +50,23 @@ class WebSerializer:
 
         print '<div class = "result">'
         print "<b>Projecte:</b> " + result["project"].encode('utf-8')
-        print "</br>"
+        print "<br>"
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             print "<b>Comentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
-            print "</br>"
+            print "<br>"
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             print "<b>Context:</b> " + cgi.escape(result["context"].encode('utf-8'))
-            print "</br>"
+            print "<br>"
 
         if org is True:
             print "<b>Original:</b> " + result.highlights("source").encode('utf-8')
-            print "</br>"
+            print "<br>"
             print "<b>Traducció:</b> " + cgi.escape(result["target"].encode('utf-8'))
         else:
             print "<b>Original:</b> " + cgi.escape(result["source"].encode('utf-8'))
-            print "</br>"
+            print "<br>"
             print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
 
         print '</div>'
@@ -102,18 +102,20 @@ class WebSerializer:
     def open_html(self):
         print 'Content-type: text/html\n\n'
         print '<html><head>'
+        print '<title>Resultats de la cerca</title>'
         print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
         print '<meta name="robots" content="noindex, nofollow">'
         print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
+        print '</head><body>'
 
     def write_html_header(self, term, results, time):
         t = term.encode('utf-8')
-        print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span></br>'
+        print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span><br>'
         print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
-        print '<a href = "./index.html">< Torna a la pàgina anterior</a></br></br>'
+        print '<a href = "./index.html"> &lt; Torna a la pàgina anterior</a><br><br>'
 
     def close_html(self):
-        print '</head><body>'
+        print '</body></html>'
 
 
 class Search:
