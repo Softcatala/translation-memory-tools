@@ -89,7 +89,7 @@ class WebSerializer:
             results = search.get_results()
             end_time = time.time() - start_time
 
-            self.write_html_header(search.term, len(results), end_time)
+            self.write_html_header(search.term, results.scored_length(), end_time)
             for result in results:
                 self.print_result(result, search.org)
 
@@ -136,7 +136,7 @@ class Search:
         if self.searcher is None:
             self.search()
 
-        results = self.searcher.search(self.query, limit=None)
+        results = self.searcher.search(self.query, limit=5000)
         my_cf = WholeFragmenter()
         results.fragmenter = my_cf
         return results
