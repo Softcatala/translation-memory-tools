@@ -136,6 +136,7 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
     site_url = enviroments.get(options.enviroment, None)
+    site_url += "memories.html"
 
 
 if __name__ == '__main__':
