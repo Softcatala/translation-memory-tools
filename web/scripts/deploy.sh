@@ -25,7 +25,8 @@ cp $ROOT/tm-git/web/search/statistics.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/download.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/select-projects.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/robots.txt $TARGET_DIR
-cp $ROOT/tm-git/web/search/main-index.html $TARGET_DIR
+cp $ROOT/tm-git/web/search/memories.html $TARGET_DIR
+cp $ROOT/tm-git/web/search/terminologia.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/*.png $TARGET_DIR
 
 
@@ -84,7 +85,8 @@ cp $ROOT/tm-git/web/search/statistics.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/download.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/select-projects.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/robots.txt $TARGET_DIR
-cp $ROOT/tm-git/web/search/main-index.html $TARGET_DIR
+cp $ROOT/tm-git/web/search/memories.html $TARGET_DIR
+cp $ROOT/tm-git/web/search/terminologia.html $TARGET_DIR
 cp $ROOT/tm-git/web/search/*.png $TARGET_DIR
 
 
