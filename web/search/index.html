@@ -3,9 +3,9 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/sc.css?g" />
-    <title>Memòries de traducció lliures al català</title>
+    <title>Eines lingüístiques per a la traducció de Softcatalà</title>
 </head>
- <body class="thrColHybHdr fondo3">
+  <body class="thrColHybHdr fondo3">
     <div id="container">
     <!--#include virtual="header.html" -->
     </div>
@@ -14,35 +14,38 @@
 		<div id="bodyContent" class="boxwhite3">
 			
 			<div class="body_white3">
-    <h1 class ="section">Memòries de traducció</h1>
-    Aquesta pàgina recull les memòries de traducció de projectes lliures traduïts per diferents comunitats. 
-    Es posa a l'abast de tothom amb l'esperit  que es puguin aprofitar per a altres projectes, així com per tenir 
-    un corpus informàtic anglès-català lliure de referència de programari traduït al català. Usem la llista 
-    <a href='http://llistes.softcatala.org/mailman/listinfo/recursos'>recursos</a> per coordinar-ne el desenvolupament.
-    <h2 class ="recursos-section">Cerca a la memòries de traducció</h2>
-    <div class = "search-box">
-        <p class>Escriviu el text que voleu cercar a les memòries de traducció i premeu el botó de cerca</p>
-        <form enctype="multipart/form-data"  method='GET' action='web_search.py' id='form' name='form'>
-        <input type="text" name="query" size="40" value="">
-        <input type="submit" value="Cerca">
-        <input type="radio" name="where" value="source" checked>Cerca a l'original (anglès)
-        <input type="radio" name="where" value="translation">Cerca a la traducció (català)
-        <!--#include virtual="select-projects.html" -->
-        </form>
-    </div>
-    <div class = "search-samples">
-        <p>Exemples de cerques</p>
-        <ul>
-            <li>"<a href='./web_search.py?query="Audio+file"&where=source'>Audio file</a>" - Cerca el terme complet com una cadena (exemple a la cadena original)</li>
-            <li><a href='./web_search.py?query=Audio+OR+music&where=source'>Audio OR music</a> - Cerca cadenes amb el terme 'audio' o bé 'music' (exemple a la cadena original)</li>
-            <li><a href='./web_search.py?query=Audio+NOT+music&where=source'>Audio NOT music</a> - Cerca cadenes amb el terme 'audio' però sense 'music' (exemple a la cadena original)</li>
-            <li><a href='./web_search.py?query=entrella%C3%A7a*&where=translation'>entrellaça*</a> - Cerca cadenes amb els caràcters 'entrellaça' i després qualsevol altres caràcters (exemple a la cadena traduïda)</li>
-        </ul>
-    </div>
-<i><!--#include virtual="statistics.html" --></i>
-<!--#include virtual="download.html" -->
-  </div></div>
+    <h1 class ="section">Recursos lingüístics</h1>
+    <p>Aquesta pàgina recull els recursos lingüístics per a traductors que Softcatalà ha desenvolupat en el transcurs de la seva feina.</p>
+    <p>Publicant aquests recursos, Softcatalà vol posar la seva experiència i coneixements a l'abast de tothom qui vulgui escriure programes en català, 
+    traduir-los d'altres llengües, o simplement per aquells a qui els serveix com a eina de consulta.</p>      
+    <table class ="main-table" width ="80%">
+    <tr>
+        <td witdh ="50%" class="main-table"> 
+            <a href = "http://www.softcatala.org/wiki/Guia_d%27estil/Guia_2010"> <img src = "sample-image.png"/> </a>
+            <a href = "http://www.softcatala.org/wiki/Guia_d%27estil/Guia_2010"> <h3>Guia d'estil</h3> </a>
+            <p>Estableix les normes que s'han d'aplicar a totes i cadascuna de les traduccions que es fan a Softcatalà.</p>
+        </td>
+        <td witdh ="50%" class="main-table">
+            <a href = "memories.html"> <img src = "sample-image.png"/> </a>
+            <a href = "memories.html"> <h3>Memòries de traducció</h3> </a>
+            <p>Bases de dades que conten el text original d'un programa i la seva traducció al català.</p>
+        </td>
+    </tr>
+    <tr>
+        <td witdh ="50%" class="main-table">
+            <a href = "http://recursos.softcatala.org/dev/terminologia/"> <img src = "sample-image.png"/> </a>
+            <a href = "http://recursos.softcatala.org/dev/terminologia/">  <h3>Recull de termes</h3> </a>
+            <p>Glossaris que recullen la terminologia utilitzada en diferents projectes.</p>
+        </td>
+       
+        <td witdh ="50%" class="main-table"> 
+            <a href = "http://www.softvalencia.org/adaptador/"> <img src = "sample-image.png"/></a>
+            <a href = "http://www.softvalencia.org/adaptador/"> <h3>Adaptador a variant dialectal valenciana</h3></a>
+            <p>Adaptador de la variant general en català a la variant valenciana.</p>
+        </td>
+    </tr>
+    </table>
+    </div></div>
     <!--#include virtual="footer-g.html" -->
 </body>
 </html>
-
