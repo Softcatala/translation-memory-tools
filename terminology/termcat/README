@@ -35,7 +35,10 @@ Terminologia dels videojocs
 Tots quatre són productes disponibles per a la descàrrega a la
 Terminologia Oberta.
 
-L'únic procés que hem fet al fitxer és eliminar les etiquetes <i> i </i>
+Preprocessament que realitzat al fitxer:
+
+- Suprimir les etiquetes '<i>' i '</i>'
+- Suprimir la cadena ' [en]' indicant mot en anglès en l'adaptació catalana
 
 * Fitxers
 

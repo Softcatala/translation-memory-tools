@@ -1585,7 +1585,7 @@ msgid "newsletter"
 msgstr "butlletí d'informació"
 
 msgid "byte"
-msgstr "byte [en]"
+msgstr "byte"
 
 msgid "byte per second"
 msgstr "byte per segon [byte: en]"
@@ -1963,28 +1963,28 @@ msgid "Trojan horse"
 msgstr "cavall de Troia"
 
 msgid "cartoon shading"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "cel shading"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "cel-shaded animation"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "toon shading"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "cartoon shading"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "cel shading"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "cel-shaded animation"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "toon shading"
-msgstr "cel shading [en]"
+msgstr "cel shading"
 
 msgid "cell"
 msgstr "cel·la"
@@ -3025,7 +3025,7 @@ msgid "copy"
 msgstr "copiar"
 
 msgid "copyright"
-msgstr "copyright [en]"
+msgstr "copyright"
 
 msgid "style correction"
 msgstr "correcció d'estil"
@@ -6832,16 +6832,16 @@ msgid "luminescence"
 msgstr "luminescència"
 
 msgid "machinima"
-msgstr "machinima [en]"
+msgstr "machinima"
 
 msgid "machinima"
-msgstr "machinima [en]"
+msgstr "machinima"
 
 msgid "machinima"
-msgstr "machinima [en]"
+msgstr "machinima"
 
 msgid "machinima"
-msgstr "machinima [en]"
+msgstr "machinima"
 
 msgid "macroinstruction"
 msgstr "macroinstrucció"
@@ -7096,7 +7096,7 @@ msgid "megabit per second"
 msgstr "megabit per segon"
 
 msgid "megabyte"
-msgstr "megabyte [en]"
+msgstr "megabyte"
 
 msgid "megabyte per second"
 msgstr "megabyte per segon [megabyte: en]"
@@ -10132,16 +10132,16 @@ msgid "SGML"
 msgstr "SGML"
 
 msgid "shader"
-msgstr "shader [en]"
+msgstr "shader"
 
 msgid "shader"
-msgstr "shader [en]"
+msgstr "shader"
 
 msgid "shading"
-msgstr "shading [en]"
+msgstr "shading"
 
 msgid "shading"
-msgstr "shading [en]"
+msgstr "shading"
 
 msgid "colour interpolation shading"
 msgstr "shading de Gouraud [shading: en]"
@@ -10453,16 +10453,16 @@ msgid "noise"
 msgstr "soroll"
 
 msgid "object image"
-msgstr "sprite [en]"
+msgstr "sprite"
 
 msgid "sprite"
-msgstr "sprite [en]"
+msgstr "sprite"
 
 msgid "object image"
-msgstr "sprite [en]"
+msgstr "sprite"
 
 msgid "sprite"
-msgstr "sprite [en]"
+msgstr "sprite"
 
 msgid "SQL"
 msgstr "SQL"

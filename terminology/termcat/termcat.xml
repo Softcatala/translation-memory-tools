@@ -2077,7 +2077,7 @@
 		</fitxa>
 		<fitxa num="372">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">byte [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">byte</denominacio>
 			<denominacio llengua="ca" tipus="remissio" jerarquia="terme pral." categoria="n m">octet</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">byte</denominacio>
 		</fitxa>
@@ -2604,7 +2604,7 @@
 		</fitxa>
 		<fitxa num="467">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">cel shading [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">cel shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">cartoon shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">cel shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">cel-shaded animation</denominacio>
@@ -2612,7 +2612,7 @@
 		</fitxa>
 		<fitxa num="468">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">cel shading [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">cel shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">cartoon shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">cel shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">cel-shaded animation</denominacio>
@@ -3925,7 +3925,7 @@
 		</fitxa>
 		<fitxa num="700">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">copyright [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">copyright</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">copyright</denominacio>
 		</fitxa>
 		<fitxa num="701">
@@ -6587,7 +6587,7 @@
 		<fitxa num="1174">
 			<areatematica>TIC</areatematica>
 			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m, f">furoner -a</denominacio>
-			<denominacio llengua="ca" tipus="remissio" jerarquia="terme pral." categoria="n m, f">hacker [en]</denominacio>
+			<denominacio llengua="ca" tipus="remissio" jerarquia="terme pral." categoria="n m, f">hacker</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">computer hacker</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">hacker</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">white hat hacker</denominacio>
@@ -8836,22 +8836,22 @@
 		</fitxa>
 		<fitxa num="1569">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">machinima</denominacio>
 		</fitxa>
 		<fitxa num="1570">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">machinima</denominacio>
 		</fitxa>
 		<fitxa num="1571">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">machinima</denominacio>
 		</fitxa>
 		<fitxa num="1572">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n f">machinima</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">machinima</denominacio>
 		</fitxa>
 		<fitxa num="1573">
@@ -9173,7 +9173,7 @@
 		</fitxa>
 		<fitxa num="1630">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">megabyte [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">megabyte</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">megabyte</denominacio>
 		</fitxa>
 		<fitxa num="1631">
@@ -12363,7 +12363,7 @@
 		<fitxa num="2200">
 			<areatematica>TIC</areatematica>
 			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="v tr">recollir</denominacio>
-			<denominacio llengua="ca" tipus="remissio" jerarquia="sin. compl." categoria="v tr">fetch [en]</denominacio>
+			<denominacio llengua="ca" tipus="remissio" jerarquia="sin. compl." categoria="v tr">fetch</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">fetch, to</denominacio>
 		</fitxa>
 		<fitxa num="2201">
@@ -13302,22 +13302,22 @@
 		</fitxa>
 		<fitxa num="2374">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shader [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shader</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">shader</denominacio>
 		</fitxa>
 		<fitxa num="2375">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shader [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shader</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">shader</denominacio>
 		</fitxa>
 		<fitxa num="2376">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shading [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">shading</denominacio>
 		</fitxa>
 		<fitxa num="2377">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shading [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">shading</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">shading</denominacio>
 		</fitxa>
 		<fitxa num="2378">
@@ -13706,13 +13706,13 @@
 		</fitxa>
 		<fitxa num="2445">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">sprite [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">sprite</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">object image</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">sprite</denominacio>
 		</fitxa>
 		<fitxa num="2446">
 			<areatematica>TIC</areatematica>
-			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">sprite [en]</denominacio>
+			<denominacio llengua="ca" tipus="principal" jerarquia="terme pral." categoria="n m">sprite</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">object image</denominacio>
 			<denominacio llengua="en" tipus="equivalent" jerarquia="terme pral." categoria="">sprite</denominacio>
 		</fitxa>
