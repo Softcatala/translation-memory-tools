@@ -43,7 +43,7 @@ def read_xml():
     pofile = polib.POFile()
     pofile.metadata = get_metadata()
 
-    tree = ET.parse('cneoloteca.xml')
+    tree = ET.parse('4sources_termes.xml')
     root = tree.getroot()
     terms = 0
     for term_entry in root.iter('fitxa'):
@@ -57,7 +57,7 @@ def read_xml():
         # This loops areatematica and denominacio tags
         for term_subentry in term_entry:
             if term_subentry.tag == 'areatematica':
-                if u'Informàtica' in term_subentry.text:    
+                if u'TIC' in term_subentry.text:    
                     informatica_term = True
 
             if not term_subentry.tag == 'denominacio':

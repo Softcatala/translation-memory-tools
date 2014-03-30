@@ -1,4 +1,4 @@
-* Com baixar la terminologia
+* Informació general sobre la Neoloteca
  
 Els termes normalitzats es troben a la Neoloteca
 
@@ -14,8 +14,34 @@ difosos en diversos productes de l’àmbit tecnològic, a la Terminologia
 Oberta busca repertoris dels àmbits “Informàtica. Electrònica.
 Telecomunicacions” o bé “Societat de la informació. Internet”
 
+* Fitxer que usem 
+
+A finals de març 2014 el TERMCAT ens facilita un fitxer xml que conté 2.281 
+fitxes procedents dels productes del TERMCAT següents:
+
+Terminologia dels productes informàtics
+<http://www.termcat.cat/ca/Diccionaris_En_Linia/123/Presentacio/> (hem
+exclòs la fraseologia)
+
+Terminologia bàsica de les xarxes socials
+<http://www.termcat.cat/ca/Diccionaris_En_Linia/156/Presentacio/>
+
+Terminologia bàsica dels dispositius mòbils
+<http://www.termcat.cat/ca/Diccionaris_En_Linia/171/Presentacio/>
+
+Terminologia dels videojocs
+<http://www.termcat.cat/ca/Diccionaris_En_Linia/9/Presentacio/>
+
+Tots quatre són productes disponibles per a la descàrrega a la
+Terminologia Oberta.
+
+L'únic procés que hem fet al fitxer és eliminar les etiquetes <i> i </i>
+
 * Fitxers
 
 - cneoloteca.xml -> Bolcat de la Neoloteca
 - to_termes.xml -> Termes Societat de la informació
+- termcat.xml -> Fitxer facilitat pel TERMCAT (el que usem)
+
+
 
