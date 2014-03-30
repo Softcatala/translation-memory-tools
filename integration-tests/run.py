@@ -136,7 +136,6 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
     site_url = enviroments.get(options.enviroment, None)
-    site_url += "memories.html"
 
 
 if __name__ == '__main__':
@@ -152,7 +151,7 @@ if __name__ == '__main__':
     if search.check() is False:
         sys.exit(error)
 
-    crawler = Crawler(site_url)
+    crawler = Crawler(site_url + "memories.html")
     crawler.run()
 
     downloads = CheckDownloads(crawler.get_links())
