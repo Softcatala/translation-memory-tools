@@ -20,7 +20,7 @@
 
 import sys
 import locale
-sys.path.append('../../src/')
+sys.path.append('../src/')
 from jsonbackend import JsonBackend
 import os
 import datetime
@@ -156,7 +156,7 @@ def build_invidual_projects_memory(json, html):
 
 def process_projects():
 
-    json = JsonBackend("../../src/projects.json")
+    json = JsonBackend("../src/projects.json")
     json.load()
 
     html = u'<h1 class ="recursos-section">Baixa les memòries de traducció</h1>\r'
@@ -224,12 +224,12 @@ def read_parameters():
 
     parser.add_option("-d", "--podir",
                       action="store", type="string", dest="po_directory",
-                      default="../../src/",
+                      default="../src/",
                       help="Directory to find the PO files")
 
     parser.add_option("-t", "--tmxdir",
                       action="store", type="string", dest="tmx_directory",
-                      default="../../src/",
+                      default="../src/",
                       help="Directory to find the TMX files")
 
     parser.add_option("-o", "--ouputdir",

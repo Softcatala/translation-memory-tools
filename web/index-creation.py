@@ -20,7 +20,7 @@
 
 import sys
 import locale
-sys.path.append('../../src/')
+sys.path.append('../src/')
 
 import polib
 import time
@@ -50,7 +50,7 @@ class IndexCreator:
 
         global projects_names
 
-        json = JsonBackend("../../src/projects.json")
+        json = JsonBackend("../src/projects.json")
         json.load()
 
         for project_dto in json.projects:
@@ -185,7 +185,7 @@ def read_parameters():
 
     parser.add_option('-d', '--directory',
                       action='store', type='string', dest='po_directory',
-                      default='../../src/',
+                      default='../src/',
                       help='Directory to find the PO files')
 
     parser.add_option('-k', '--keyword',
