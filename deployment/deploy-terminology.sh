@@ -27,9 +27,8 @@ rm -f tots-tm.po
 cd ..
 
 # Build
-python term-extract.py -s sc-tm -t sc-glossary -c "Glossari construït a partir de les memòries dels projectes de Softcatalà" 
-
-python term-extract.py -s all-tm -t all-glossary -c "Glossari construït a partir de les memòries de tots els projectes"
+python term-extract.py -s sc-tm -t sc-glossary -c "Glossari construït a partir de les memòries de traducció dels projectes traduïts per Softcatalà" 
+python term-extract.py -s all-tm -t all-glossary -c "Glossari construït a partir de les memòries de de traducció de tots els projectes que podeu trobar a http://www.softcatala.org/recursos/memories.html"
 
 # Deploy
 cp *.html $TARGET_DIR
