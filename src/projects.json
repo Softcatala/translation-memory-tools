@@ -311,15 +311,6 @@
                     }
             }
     },
-    "Mandriva": {
-            "softcatala" : true,
-            "fileset": {
-                    "mandriva": {
-                            "url" : "../source-pos/mandriva-po/*.po",
-                            "type": "local-dir"
-                    }
-            }
-    },
     "Monodevelop": {
             "softcatala" : true,
             "fileset": {
