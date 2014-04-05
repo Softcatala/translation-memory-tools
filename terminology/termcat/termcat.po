@@ -21,12 +21,6 @@ msgstr "accedir"
 msgid "physical acceleration"
 msgstr "acceleració física"
 
-msgid "physical acceleration"
-msgstr "acceleració física"
-
-msgid "hardware acceleration"
-msgstr "acceleració per maquinari"
-
 msgid "hardware acceleration"
 msgstr "acceleració per maquinari"
 
@@ -156,12 +150,6 @@ msgstr "adaptar"
 msgid "video game addiction"
 msgstr "addicció als videojocs"
 
-msgid "video game addiction"
-msgstr "addicció als videojocs"
-
-msgid "addictive"
-msgstr "addictiu -iva"
-
 msgid "addictive"
 msgstr "addictiu -iva"
 
@@ -170,18 +158,6 @@ msgstr "adjunció"
 
 msgid "attach"
 msgstr "adjuntar"
-
-msgid "e-administration"
-msgstr "administració electrònica"
-
-msgid "e-government"
-msgstr "administració electrònica"
-
-msgid "electronic administration"
-msgstr "administració electrònica"
-
-msgid "electronic government"
-msgstr "administració electrònica"
 
 msgid "e-administration"
 msgstr "administració electrònica"
@@ -206,12 +182,6 @@ msgstr "administrador -a de bases de dades"
 
 msgid "postmaster"
 msgstr "administrador -a de correu"
-
-msgid "gamemaster"
-msgstr "administrador -a de joc"
-
-msgid "GM"
-msgstr "administrador -a de joc"
 
 msgid "gamemaster"
 msgstr "administrador -a de joc"
@@ -321,24 +291,6 @@ msgstr "agregador"
 msgid "RSS reader"
 msgstr "agregador"
 
-msgid "aggregator"
-msgstr "agregador"
-
-msgid "feed aggregator"
-msgstr "agregador"
-
-msgid "feed reader"
-msgstr "agregador"
-
-msgid "news aggregator"
-msgstr "agregador"
-
-msgid "news reader"
-msgstr "agregador"
-
-msgid "RSS reader"
-msgstr "agregador"
-
 msgid "help"
 msgstr "ajuda"
 
@@ -347,9 +299,6 @@ msgstr "ajuda contextual"
 
 msgid "contextual help"
 msgstr "ajuda contextual"
-
-msgid "album"
-msgstr "àlbum"
 
 msgid "album"
 msgstr "àlbum"
@@ -380,12 +329,6 @@ msgstr "algorisme de compressió"
 
 msgid "genetic algorithm"
 msgstr "algorisme genètic"
-
-msgid "genetic algorithm"
-msgstr "algorisme genètic"
-
-msgid "aliasing"
-msgstr "aliàsing"
 
 msgid "aliasing"
 msgstr "aliàsing"
@@ -477,14 +420,8 @@ msgstr "analfabet -a digital"
 msgid "preview"
 msgstr "anàlisi"
 
-msgid "preview"
-msgstr "anàlisi"
-
 msgid "profiling"
 msgstr "anàlisi de perfils"
-
-msgid "postmortem"
-msgstr "anàlisi post mortem [post mortem: la]"
 
 msgid "postmortem"
 msgstr "anàlisi post mortem [post mortem: la]"
@@ -537,9 +474,6 @@ msgstr "ànima"
 msgid "animation"
 msgstr "animació"
 
-msgid "animation"
-msgstr "animació"
-
 msgid "animatics"
 msgstr "animació assistida per ordinador"
 
@@ -551,15 +485,6 @@ msgstr "animació d'esquelet"
 
 msgid "skeleton animation"
 msgstr "animació d'esquelet"
-
-msgid "skeletal animation"
-msgstr "animació d'esquelet"
-
-msgid "skeleton animation"
-msgstr "animació d'esquelet"
-
-msgid "character animation"
-msgstr "animació de personatges"
 
 msgid "character animation"
 msgstr "animació de personatges"
@@ -575,21 +500,6 @@ msgstr "animació per interpolació"
 
 msgid "keyframe animation"
 msgstr "animació per interpolació"
-
-msgid "key animation"
-msgstr "animació per interpolació"
-
-msgid "keyframe animation"
-msgstr "animació per interpolació"
-
-msgid "morph target animation"
-msgstr "animació per vèrtexs"
-
-msgid "per-vertex animation"
-msgstr "animació per vèrtexs"
-
-msgid "vertex animation"
-msgstr "animació per vèrtexs"
 
 msgid "morph target animation"
 msgstr "animació per vèrtexs"
@@ -635,9 +545,6 @@ msgstr "antena omnidireccional"
 
 msgid "parabolic antenna"
 msgstr "antena parabòlica"
-
-msgid "antialiasing"
-msgstr "antialiàsing"
 
 msgid "antialiasing"
 msgstr "antialiàsing"
@@ -702,12 +609,6 @@ msgstr "aparició sobtada"
 msgid "popping"
 msgstr "aparició sobtada"
 
-msgid "pop effect"
-msgstr "aparició sobtada"
-
-msgid "popping"
-msgstr "aparició sobtada"
-
 msgid "application"
 msgstr "aplicació"
 
@@ -732,12 +633,6 @@ msgstr "aplicació mòbil"
 msgid "app"
 msgstr "aplicació mòbil"
 
-msgid "mobile application"
-msgstr "aplicació mòbil"
-
-msgid "app"
-msgstr "aplicació mòbil"
-
 msgid "native application"
 msgstr "aplicació nativa"
 
@@ -748,21 +643,6 @@ msgid "leader application"
 msgstr "aplicació rupturista"
 
 msgid "killer app"
-msgstr "aplicació rupturista"
-
-msgid "killer application"
-msgstr "aplicació rupturista"
-
-msgid "leader application"
-msgstr "aplicació rupturista"
-
-msgid "killer app"
-msgstr "aplicació rupturista"
-
-msgid "killer application"
-msgstr "aplicació rupturista"
-
-msgid "leader application"
 msgstr "aplicació rupturista"
 
 msgid "web application"
@@ -801,20 +681,8 @@ msgstr "aranya"
 msgid "tree"
 msgstr "arbre"
 
-msgid "tree"
-msgstr "arbre"
-
 msgid "binary tree"
 msgstr "arbre binari"
-
-msgid "binary tree"
-msgstr "arbre binari"
-
-msgid "binary space partitioning tree"
-msgstr "arbre BSP"
-
-msgid "BSP tree"
-msgstr "arbre BSP"
 
 msgid "binary space partitioning tree"
 msgstr "arbre BSP"
@@ -828,26 +696,11 @@ msgstr "arbre k-dimensional"
 msgid "k-dimensional tree"
 msgstr "arbre k-dimensional"
 
-msgid "k-d-tree"
-msgstr "arbre k-dimensional"
-
-msgid "k-dimensional tree"
-msgstr "arbre k-dimensional"
-
-msgid "octree"
-msgstr "arbre octal"
-
 msgid "octree"
 msgstr "arbre octal"
 
 msgid "quadtree"
 msgstr "arbre quaternari"
-
-msgid "quadtree"
-msgstr "arbre quaternari"
-
-msgid "arcade game"
-msgstr "arcade"
 
 msgid "arcade game"
 msgstr "arcade"
@@ -900,17 +753,11 @@ msgstr "arrencar"
 msgid "drag"
 msgstr "arrossegar"
 
-msgid "drag"
-msgstr "arrossegar"
-
 msgid "drag finger"
 msgstr "arrossegar el dit"
 
 msgid "at"
 msgstr "arrova"
-
-msgid "concept art"
-msgstr "art conceptual"
 
 msgid "concept art"
 msgstr "art conceptual"
@@ -1041,24 +888,6 @@ msgstr "autòmat"
 msgid "state machine"
 msgstr "autòmat"
 
-msgid "automaton"
-msgstr "autòmat"
-
-msgid "automaton"
-msgstr "autòmat"
-
-msgid "state machine"
-msgstr "autòmat"
-
-msgid "finite state automaton"
-msgstr "autòmat finit"
-
-msgid "finite state machine"
-msgstr "autòmat finit"
-
-msgid "FSM"
-msgstr "autòmat finit"
-
 msgid "finite state automaton"
 msgstr "autòmat finit"
 
@@ -1106,18 +935,6 @@ msgstr "auxiliar"
 
 msgid "avatar"
 msgstr "avatar"
-
-msgid "avatar"
-msgstr "avatar"
-
-msgid "avatar"
-msgstr "avatar"
-
-msgid "avatar"
-msgstr "avatar"
-
-msgid "graphic adventure"
-msgstr "aventura gràfica"
 
 msgid "graphic adventure"
 msgstr "aventura gràfica"
@@ -1263,12 +1080,6 @@ msgstr "base de coneixements"
 msgid "knowledge database"
 msgstr "base de coneixements"
 
-msgid "knowledge base"
-msgstr "base de coneixements"
-
-msgid "knowledge database"
-msgstr "base de coneixements"
-
 msgid "cradle"
 msgstr "base de connexió"
 
@@ -1289,12 +1100,6 @@ msgstr "base de dades relacional"
 
 msgid "RDB"
 msgstr "base de dades relacional"
-
-msgid "fact base"
-msgstr "base de fets"
-
-msgid "factual database"
-msgstr "base de fets"
 
 msgid "fact base"
 msgstr "base de fets"
@@ -1329,20 +1134,8 @@ msgstr "biblioteca electrònica"
 msgid "graphics library"
 msgstr "biblioteca gràfica"
 
-msgid "graphics library"
-msgstr "biblioteca gràfica"
-
 msgid "two-colour printing"
 msgstr "bicromia"
-
-msgid "bidimensional"
-msgstr "bidimensional"
-
-msgid "two-dimensional"
-msgstr "bidimensional"
-
-msgid "2D"
-msgstr "bidimensional"
 
 msgid "bidimensional"
 msgstr "bidimensional"
@@ -1409,12 +1202,6 @@ msgstr "blanc"
 
 msgid "block"
 msgstr "bloc"
-
-msgid "blog"
-msgstr "blog"
-
-msgid "weblog"
-msgstr "blog"
 
 msgid "blog"
 msgstr "blog"
@@ -1518,9 +1305,6 @@ msgstr "botó d'ordre"
 msgid "directional button"
 msgstr "botó de direcció"
 
-msgid "directional button"
-msgstr "botó de direcció"
-
 msgid "menu button"
 msgstr "botó de menú"
 
@@ -1544,9 +1328,6 @@ msgstr "botó publicitari"
 
 msgid "loop"
 msgstr "bucle"
-
-msgid "game loop"
-msgstr "bucle de joc"
 
 msgid "game loop"
 msgstr "bucle de joc"
@@ -1662,9 +1443,6 @@ msgstr "calendari"
 msgid "camera"
 msgstr "càmera"
 
-msgid "camera"
-msgstr "càmera"
-
 msgid "video camera"
 msgstr "càmera de vídeo"
 
@@ -1673,12 +1451,6 @@ msgstr "càmera de vídeo digital"
 
 msgid "digital camera"
 msgstr "càmera fotogràfica digital"
-
-msgid "web camera"
-msgstr "càmera web"
-
-msgid "webcam"
-msgstr "càmera web"
 
 msgid "web camera"
 msgstr "càmera web"
@@ -1704,26 +1476,11 @@ msgstr "canal"
 msgid "alpha channel"
 msgstr "canal alfa"
 
-msgid "alpha channel"
-msgstr "canal alfa"
-
 msgid "automatic channel"
 msgstr "canal automàtic"
 
 msgid "forward channel"
 msgstr "canal d'anada"
-
-msgid "feed"
-msgstr "canal de continguts"
-
-msgid "news feed"
-msgstr "canal de continguts"
-
-msgid "syndication feed"
-msgstr "canal de continguts"
-
-msgid "web feed"
-msgstr "canal de continguts"
 
 msgid "feed"
 msgstr "canal de continguts"
@@ -1755,17 +1512,11 @@ msgstr "canal temàtic"
 msgid "push channel"
 msgstr "canal web"
 
-msgid "push channel"
-msgstr "canal web"
-
 msgid "cancel"
 msgstr "cancel·lar"
 
 msgid "resize"
 msgstr "canviar la mida"
-
-msgid "layer"
-msgstr "capa"
 
 msgid "layer"
 msgstr "capa"
@@ -1805,12 +1556,6 @@ msgstr "capítol"
 
 msgid "motion capture"
 msgstr "captació de moviment"
-
-msgid "motion capture"
-msgstr "captura de moviment"
-
-msgid "mocap"
-msgstr "captura de moviment"
 
 msgid "motion capture"
 msgstr "captura de moviment"
@@ -1908,9 +1653,6 @@ msgstr "cartera electrònica"
 msgid "cartridge"
 msgstr "cartutx"
 
-msgid "cartridge"
-msgstr "cartutx"
-
 msgid "head-mounted display"
 msgstr "casc de realitat virtual"
 
@@ -1974,21 +1716,6 @@ msgstr "cel shading"
 msgid "toon shading"
 msgstr "cel shading"
 
-msgid "cartoon shading"
-msgstr "cel shading"
-
-msgid "cel shading"
-msgstr "cel shading"
-
-msgid "cel-shaded animation"
-msgstr "cel shading"
-
-msgid "toon shading"
-msgstr "cel shading"
-
-msgid "cell"
-msgstr "cel·la"
-
 msgid "cell"
 msgstr "cel·la"
 
@@ -2051,9 +1778,6 @@ msgstr "cerca"
 
 msgid "advanced search"
 msgstr "cerca avançada"
-
-msgid "path finding"
-msgstr "cerca de camins"
 
 msgid "path finding"
 msgstr "cerca de camins"
@@ -2163,21 +1887,6 @@ msgstr "cinemàtica directa"
 msgid "DK"
 msgstr "cinemàtica directa"
 
-msgid "direct kinematics"
-msgstr "cinemàtica directa"
-
-msgid "forward kinematics"
-msgstr "cinemàtica directa"
-
-msgid "DK"
-msgstr "cinemàtica directa"
-
-msgid "inverse kinematics"
-msgstr "cinemàtica inversa"
-
-msgid "IK"
-msgstr "cinemàtica inversa"
-
 msgid "inverse kinematics"
 msgstr "cinemàtica inversa"
 
@@ -2207,12 +1916,6 @@ msgstr "circuit punt a punt"
 
 msgid "closed circuit"
 msgstr "circuit tancat"
-
-msgid "clan"
-msgstr "clan"
-
-msgid "guild"
-msgstr "clan"
 
 msgid "clan"
 msgstr "clan"
@@ -2259,13 +1962,7 @@ msgstr "client"
 msgid "client program"
 msgstr "client"
 
-msgid "client"
-msgstr "client"
-
 msgid "client computer"
-msgstr "client"
-
-msgid "client"
 msgstr "client"
 
 msgid "online client"
@@ -2354,9 +2051,6 @@ msgstr "codi de barres"
 
 msgid "code of conduct"
 msgstr "codi de conducta"
-
-msgid "region encoding"
-msgstr "codi de regió"
 
 msgid "region encoding"
 msgstr "codi de regió"
@@ -2451,9 +2145,6 @@ msgstr "color"
 msgid "column"
 msgstr "columna"
 
-msgid "column"
-msgstr "columna"
-
 msgid "e-purchase"
 msgstr "comanda electrònica"
 
@@ -2475,15 +2166,6 @@ msgstr "comandament de joc"
 msgid "paddle"
 msgstr "comandament de joc"
 
-msgid "gamepad"
-msgstr "comandament de joc"
-
-msgid "joypad"
-msgstr "comandament de joc"
-
-msgid "paddle"
-msgstr "comandament de joc"
-
 msgid "voice-activated"
 msgstr "comandat -ada per la veu"
 
@@ -2495,12 +2177,6 @@ msgstr "comandat -ada per la veu"
 
 msgid "voice-operated"
 msgstr "comandat -ada per la veu"
-
-msgid "combination"
-msgstr "combinació"
-
-msgid "combo"
-msgstr "combinació"
 
 msgid "combination"
 msgstr "combinació"
@@ -2610,18 +2286,6 @@ msgstr "compilador"
 msgid "compiling program"
 msgstr "compilador"
 
-msgid "compiler"
-msgstr "compilador"
-
-msgid "compiling program"
-msgstr "compilador"
-
-msgid "compiler"
-msgstr "compilador"
-
-msgid "compiling program"
-msgstr "compilador"
-
 msgid "compile"
 msgstr "compilar"
 
@@ -2703,9 +2367,6 @@ msgstr "comptador"
 msgid "account"
 msgstr "compte"
 
-msgid "account"
-msgstr "compte"
-
 msgid "e-mail account"
 msgstr "compte de correu"
 
@@ -2748,9 +2409,6 @@ msgstr "comunicar"
 msgid "virtual community"
 msgstr "comunitat virtual"
 
-msgid "virtual community"
-msgstr "comunitat virtual"
-
 msgid "hub"
 msgstr "concentrador"
 
@@ -2774,9 +2432,6 @@ msgstr "confiança electrònica"
 
 msgid "confidentiality"
 msgstr "confidencialitat"
-
-msgid "configuration"
-msgstr "configuració"
 
 msgid "configuration"
 msgstr "configuració"
@@ -2817,9 +2472,6 @@ msgstr "connector"
 msgid "plug-in"
 msgstr "connector"
 
-msgid "plug-in"
-msgstr "connector"
-
 msgid "connection"
 msgstr "connexió"
 
@@ -2844,23 +2496,8 @@ msgstr "consola de joc"
 msgid "video game console"
 msgstr "consola de joc"
 
-msgid "game console"
-msgstr "consola de joc"
-
-msgid "video game console"
-msgstr "consola de joc"
-
 msgid "domestic console"
 msgstr "consola domèstica"
-
-msgid "domestic console"
-msgstr "consola domèstica"
-
-msgid "handheld console"
-msgstr "consola portàtil"
-
-msgid "portable console"
-msgstr "consola portàtil"
 
 msgid "handheld console"
 msgstr "consola portàtil"
@@ -2918,15 +2555,6 @@ msgstr "contracte electrònic"
 
 msgid "back cover"
 msgstr "contraportada"
-
-msgid "access code"
-msgstr "contrasenya"
-
-msgid "access key"
-msgstr "contrasenya"
-
-msgid "password"
-msgstr "contrasenya"
 
 msgid "access code"
 msgstr "contrasenya"
@@ -3054,18 +2682,6 @@ msgstr "correu electrònic"
 msgid "electronic mail"
 msgstr "correu electrònic"
 
-msgid "electronic mail"
-msgstr "correu electrònic"
-
-msgid "electronic message"
-msgstr "correu electrònic"
-
-msgid "e-mail"
-msgstr "correu electrònic"
-
-msgid "electronic mail"
-msgstr "correu electrònic"
-
 msgid "electronic message"
 msgstr "correu electrònic"
 
@@ -3104,9 +2720,6 @@ msgstr "criteri de cerca"
 
 msgid "search value"
 msgstr "criteri de cerca"
-
-msgid "timeline"
-msgstr "cronologia"
 
 msgid "timeline"
 msgstr "cronologia"
@@ -3354,9 +2967,6 @@ msgstr "desenvolupador -a"
 msgid "video game developer"
 msgstr "desenvolupador -a de videojocs"
 
-msgid "video game developer"
-msgstr "desenvolupador -a de videojocs"
-
 msgid "undo"
 msgstr "desfer"
 
@@ -3402,21 +3012,6 @@ msgstr "despinçar"
 msgid "scrolling"
 msgstr "desplaçament"
 
-msgid "scrolling"
-msgstr "desplaçament"
-
-msgid "free roaming mode"
-msgstr "desplaçament lliure"
-
-msgid "free wandering mode"
-msgstr "desplaçament lliure"
-
-msgid "hit'n'run"
-msgstr "desplaçament lliure"
-
-msgid "sandbox mode"
-msgstr "desplaçament lliure"
-
 msgid "free roaming mode"
 msgstr "desplaçament lliure"
 
@@ -3449,9 +3044,6 @@ msgstr "desviació de trucada"
 
 msgid "forward"
 msgstr "desviar"
-
-msgid "collision detection"
-msgstr "detecció de col·lisions"
 
 msgid "collision detection"
 msgstr "detecció de col·lisions"
@@ -3497,9 +3089,6 @@ msgstr "dictàfon"
 
 msgid "electronic dictation"
 msgstr "dictat electrònic"
-
-msgid "webcasting"
-msgstr "difusió per web"
 
 msgid "webcasting"
 msgstr "difusió per web"
@@ -3551,12 +3140,6 @@ msgstr "díptic"
 
 msgid "content manager"
 msgstr "director -a de continguts"
-
-msgid "art director"
-msgstr "director d'art"
-
-msgid "artistic director"
-msgstr "director d'art"
 
 msgid "art director"
 msgstr "director d'art"
@@ -3654,9 +3237,6 @@ msgstr "disc òptic"
 msgid "optical disk [US]"
 msgstr "disc òptic"
 
-msgid "optical disc"
-msgstr "disc òptic"
-
 msgid "discrete"
 msgstr "discret -a"
 
@@ -3689,15 +3269,6 @@ msgstr "disseny assistit per ordinador"
 
 msgid "game design"
 msgstr "disseny de joc"
-
-msgid "game design"
-msgstr "disseny de joc"
-
-msgid "game mapping"
-msgstr "disseny de nivells"
-
-msgid "level design"
-msgstr "disseny de nivells"
 
 msgid "game mapping"
 msgstr "disseny de nivells"
@@ -3741,17 +3312,11 @@ msgstr "doble clic"
 msgid "double jump"
 msgstr "doble salt"
 
-msgid "double jump"
-msgstr "doble salt"
-
 msgid "document"
 msgstr "document"
 
 msgid "document file"
 msgstr "document"
-
-msgid "design document"
-msgstr "document de disseny"
 
 msgid "design document"
 msgstr "document de disseny"
@@ -3861,9 +3426,6 @@ msgstr "editor de pàgines web"
 msgid "tool"
 msgstr "eina"
 
-msgid "tool"
-msgstr "eina"
-
 msgid "electric"
 msgstr "elèctric -a"
 
@@ -3903,26 +3465,11 @@ msgstr "element de menú"
 msgid "culling"
 msgstr "eliminació"
 
-msgid "culling"
-msgstr "eliminació"
-
 msgid "back-face culling"
 msgstr "eliminació de cares posteriors"
 
 msgid "back-face removal"
 msgstr "eliminació de cares posteriors"
-
-msgid "back-face culling"
-msgstr "eliminació de cares posteriors"
-
-msgid "back-face removal"
-msgstr "eliminació de cares posteriors"
-
-msgid "hidden surface determination"
-msgstr "eliminació de parts ocultes"
-
-msgid "occlusion culling"
-msgstr "eliminació de parts ocultes"
 
 msgid "hidden surface determination"
 msgstr "eliminació de parts ocultes"
@@ -3983,12 +3530,6 @@ msgstr "empresa emergent"
 
 msgid "emulation"
 msgstr "emulació"
-
-msgid "emulator"
-msgstr "emulador"
-
-msgid "emulator"
-msgstr "emulador"
 
 msgid "emulator"
 msgstr "emulador"
@@ -4092,9 +3633,6 @@ msgstr "endoscòpia virtual"
 msgid "boss"
 msgstr "enemic final"
 
-msgid "boss"
-msgstr "enemic final"
-
 msgid "paste special"
 msgstr "enganxada amb format"
 
@@ -4180,9 +3718,6 @@ msgid "hyperlink"
 msgstr "enllaç"
 
 msgid "hypertext link"
-msgstr "enllaç"
-
-msgid "link"
 msgstr "enllaç"
 
 msgid "broken hyperlink"
@@ -4293,15 +3828,6 @@ msgstr "errata"
 msgid "bug"
 msgstr "error"
 
-msgid "bug"
-msgstr "error"
-
-msgid "glitch"
-msgstr "error"
-
-msgid "bug"
-msgstr "error"
-
 msgid "glitch"
 msgstr "error"
 
@@ -4316,9 +3842,6 @@ msgstr "escalabilitat"
 
 msgid "scalable"
 msgstr "escalable"
-
-msgid "scaling"
-msgstr "escalat"
 
 msgid "scaling"
 msgstr "escalat"
@@ -4343,9 +3866,6 @@ msgstr "escàner pla"
 
 msgid "scanner"
 msgstr "escanista"
-
-msgid "scene"
-msgstr "escena"
 
 msgid "scene"
 msgstr "escena"
@@ -4473,9 +3993,6 @@ msgstr "estalvi de pantalla"
 msgid "standard"
 msgstr "estàndard"
 
-msgid "standard"
-msgstr "estàndard"
-
 msgid "JPEG standard"
 msgstr "estàndard JPEG"
 
@@ -4509,15 +4026,6 @@ msgstr "estrella"
 msgid "video game development studio"
 msgstr "estudi de desenvolupament de videojocs"
 
-msgid "video game development studio"
-msgstr "estudi de desenvolupament de videojocs"
-
-msgid "second party developer"
-msgstr "estudi exclusiu"
-
-msgid "second party studio"
-msgstr "estudi exclusiu"
-
 msgid "second party developer"
 msgstr "estudi exclusiu"
 
@@ -4529,18 +4037,6 @@ msgstr "estudi independent"
 
 msgid "third party studio"
 msgstr "estudi independent"
-
-msgid "third party developer"
-msgstr "estudi independent"
-
-msgid "third party studio"
-msgstr "estudi independent"
-
-msgid "first party developer"
-msgstr "estudi intern"
-
-msgid "first party studio"
-msgstr "estudi intern"
 
 msgid "first party developer"
 msgstr "estudi intern"
@@ -4566,31 +4062,10 @@ msgstr "etiqueta"
 msgid "network etiquette"
 msgstr "etiqueta"
 
-msgid "label"
-msgstr "etiqueta"
-
-msgid "hashtag"
-msgstr "etiqueta"
-
-msgid "netiquette"
-msgstr "etiqueta"
-
-msgid "network etiquette"
-msgstr "etiqueta"
-
-msgid "tag"
-msgstr "etiqueta"
-
-msgid "tag"
-msgstr "etiquetar"
-
 msgid "tag"
 msgstr "etiquetar"
 
 msgid "markup"
-msgstr "etiquetatge"
-
-msgid "tagging"
 msgstr "etiquetatge"
 
 msgid "tagging"
@@ -4698,9 +4173,6 @@ msgstr "fibra òptica"
 msgid "discussion thread"
 msgstr "fil de discussió"
 
-msgid "discussion thread"
-msgstr "fil de discussió"
-
 msgid "open wire"
 msgstr "fil nu"
 
@@ -4718,15 +4190,6 @@ msgstr "filtració"
 
 msgid "spoiler warning"
 msgstr "filtració"
-
-msgid "spoiler"
-msgstr "filtració"
-
-msgid "spoiler warning"
-msgstr "filtració"
-
-msgid "texture filtering"
-msgstr "filtratge de textura"
 
 msgid "texture filtering"
 msgstr "filtratge de textura"
@@ -4775,9 +4238,6 @@ msgstr "finestra principal"
 
 msgid "one-stop"
 msgstr "finestreta única"
-
-msgid "waypoint"
-msgstr "fita"
 
 msgid "waypoint"
 msgstr "fita"
@@ -4887,42 +4347,6 @@ msgstr "fòrum"
 msgid "newsgroup"
 msgstr "fòrum"
 
-msgid "conference group"
-msgstr "fòrum"
-
-msgid "discussion forum"
-msgstr "fòrum"
-
-msgid "discussion group"
-msgstr "fòrum"
-
-msgid "forum"
-msgstr "fòrum"
-
-msgid "interest group"
-msgstr "fòrum"
-
-msgid "newsgroup"
-msgstr "fòrum"
-
-msgid "conference group"
-msgstr "fòrum"
-
-msgid "discussion forum"
-msgstr "fòrum"
-
-msgid "discussion group"
-msgstr "fòrum"
-
-msgid "forum"
-msgstr "fòrum"
-
-msgid "interest group"
-msgstr "fòrum"
-
-msgid "newsgroup"
-msgstr "fòrum"
-
 msgid "phototypesetter"
 msgstr "fotocomponedora"
 
@@ -4940,18 +4364,6 @@ msgstr "fotografia"
 
 msgid "digital photography"
 msgstr "fotografia digital"
-
-msgid "frame rate"
-msgstr "fotogrames per segon"
-
-msgid "frames per second"
-msgstr "fotogrames per segon"
-
-msgid "FPS"
-msgstr "fotogrames per segon"
-
-msgid "fps"
-msgstr "fotogrames per segon"
 
 msgid "frame rate"
 msgstr "fotogrames per segon"
@@ -5040,9 +4452,6 @@ msgstr "galerada"
 msgid "gallery"
 msgstr "galeria"
 
-msgid "gallery"
-msgstr "galeria"
-
 msgid "cookie"
 msgstr "galeta"
 
@@ -5055,23 +4464,11 @@ msgstr "gallet"
 msgid "trigger"
 msgstr "gallet"
 
-msgid "shoulder button"
-msgstr "gallet"
-
-msgid "trigger"
-msgstr "gallet"
-
-msgid "generation"
-msgstr "generació"
-
 msgid "generation"
 msgstr "generació"
 
 msgid "generate"
 msgstr "generar"
-
-msgid "genre"
-msgstr "gènere"
 
 msgid "genre"
 msgstr "gènere"
@@ -5235,18 +4632,6 @@ msgstr "giny"
 msgid "gadget"
 msgstr "giny"
 
-msgid "widget"
-msgstr "giny"
-
-msgid "desktop widget"
-msgstr "giny"
-
-msgid "gadget"
-msgstr "giny"
-
-msgid "widget"
-msgstr "giny"
-
 msgid "disk drive"
 msgstr "giradiscos"
 
@@ -5261,9 +4646,6 @@ msgstr "gra"
 
 msgid "graphic"
 msgstr "gràfic"
-
-msgid "vector graphics"
-msgstr "gràfic vectorial"
 
 msgid "vector graphics"
 msgstr "gràfic vectorial"
@@ -5289,9 +4671,6 @@ msgstr "grup de sectors"
 msgid "walkthrough"
 msgstr "guia"
 
-msgid "walkthrough"
-msgstr "guia"
-
 msgid "electronic programming guide"
 msgstr "guia electrònica de programació"
 
@@ -5301,23 +4680,11 @@ msgstr "guia electrònica de programació"
 msgid "storyline"
 msgstr "guió"
 
-msgid "storyline"
-msgstr "guió"
-
-msgid "storyboard"
-msgstr "guió il·lustrat"
-
 msgid "storyboard"
 msgstr "guió il·lustrat"
 
 msgid "writer"
 msgstr "guionista"
-
-msgid "writer"
-msgstr "guionista"
-
-msgid "skill"
-msgstr "habilitat"
 
 msgid "skill"
 msgstr "habilitat"
@@ -5330,9 +4697,6 @@ msgstr "hertz"
 
 msgid "hyperband"
 msgstr "hiperbanda"
-
-msgid "hypermedia"
-msgstr "hipermèdia"
 
 msgid "hypermedia"
 msgstr "hipermèdia"
@@ -5397,26 +4761,11 @@ msgstr "identificador uniforme de recursos"
 msgid "lighting"
 msgstr "il·luminació"
 
-msgid "lighting"
-msgstr "il·luminació"
-
 msgid "per-pixel lighting"
 msgstr "il·luminació per píxels"
 
 msgid "pixel based lighting"
 msgstr "il·luminació per píxels"
-
-msgid "per-pixel lighting"
-msgstr "il·luminació per píxels"
-
-msgid "pixel based lighting"
-msgstr "il·luminació per píxels"
-
-msgid "per vertex based lighting"
-msgstr "il·luminació per vèrtexs"
-
-msgid "per-vertex lighting"
-msgstr "il·luminació per vèrtexs"
 
 msgid "per vertex based lighting"
 msgstr "il·luminació per vèrtexs"
@@ -5583,12 +4932,6 @@ msgstr "indicador en pantalla"
 msgid "HUD"
 msgstr "indicador en pantalla"
 
-msgid "head-up display"
-msgstr "indicador en pantalla"
-
-msgid "HUD"
-msgstr "indicador en pantalla"
-
 msgid "language industries"
 msgstr "indústries de la llengua"
 
@@ -5605,9 +4948,6 @@ msgid "computer graphics designer"
 msgstr "infògraf -a"
 
 msgid "computer graphics"
-msgstr "infografia"
-
-msgid "infography"
 msgstr "infografia"
 
 msgid "infography"
@@ -5664,12 +5004,6 @@ msgstr "iniciar la sessió"
 msgid "log on"
 msgstr "iniciar la sessió"
 
-msgid "log in"
-msgstr "iniciar la sessió"
-
-msgid "log on"
-msgstr "iniciar la sessió"
-
 msgid "installation"
 msgstr "instal·lació"
 
@@ -5715,17 +5049,8 @@ msgstr "intel·ligència artificial"
 msgid "AI"
 msgstr "intel·ligència artificial"
 
-msgid "artificial intelligence"
-msgstr "intel·ligència artificial"
-
-msgid "AI"
-msgstr "intel·ligència artificial"
-
 msgid "intelligent"
 msgstr "intel·ligent"
-
-msgid "interaction"
-msgstr "interacció"
 
 msgid "interaction"
 msgstr "interacció"
@@ -5784,24 +5109,6 @@ msgstr "interfície de programació d'aplicacions"
 msgid "application program interface"
 msgstr "interfície de programació d'aplicacions"
 
-msgid "application programming interface"
-msgstr "interfície de programació d'aplicacions"
-
-msgid "API"
-msgstr "interfície de programació d'aplicacions"
-
-msgid "application programming interface"
-msgstr "interfície de programació d'aplicacions"
-
-msgid "API"
-msgstr "interfície de programació d'aplicacions"
-
-msgid "graphical user interface"
-msgstr "interfície gràfica d'usuari"
-
-msgid "GUI"
-msgstr "interfície gràfica d'usuari"
-
 msgid "graphical user interface"
 msgstr "interfície gràfica d'usuari"
 
@@ -5859,26 +5166,8 @@ msgstr "interpolació"
 msgid "tweening"
 msgstr "interpolació"
 
-msgid "in-betweening"
-msgstr "interpolació"
-
-msgid "interpolation"
-msgstr "interpolació"
-
-msgid "lerping"
-msgstr "interpolació"
-
-msgid "tweening"
-msgstr "interpolació"
-
 msgid "bicubic interpolation"
 msgstr "interpolació bicúbica"
-
-msgid "bicubic interpolation"
-msgstr "interpolació bicúbica"
-
-msgid "bilinear interpolation"
-msgstr "interpolació bilineal"
 
 msgid "bilinear interpolation"
 msgstr "interpolació bilineal"
@@ -5886,20 +5175,8 @@ msgstr "interpolació bilineal"
 msgid "cubic interpolation"
 msgstr "interpolació cúbica"
 
-msgid "cubic interpolation"
-msgstr "interpolació cúbica"
-
 msgid "linear interpolation"
 msgstr "interpolació lineal"
-
-msgid "linear interpolation"
-msgstr "interpolació lineal"
-
-msgid "nearest neighbour interpolation"
-msgstr "interpolació per proximitat"
-
-msgid "proximal interpolation"
-msgstr "interpolació per proximitat"
 
 msgid "nearest neighbour interpolation"
 msgstr "interpolació per proximitat"
@@ -5946,9 +5223,6 @@ msgstr "irrefutabilitat"
 msgid "roaming"
 msgstr "itinerància"
 
-msgid "roaming"
-msgstr "itinerància"
-
 msgid "Java"
 msgstr "Java"
 
@@ -5958,17 +5232,8 @@ msgstr "JEPI"
 msgid "action game"
 msgstr "joc d'acció"
 
-msgid "action game"
-msgstr "joc d'acció"
-
 msgid "action adventure game"
 msgstr "joc d'acció i aventures"
-
-msgid "action adventure game"
-msgstr "joc d'acció i aventures"
-
-msgid "adventure game"
-msgstr "joc d'aventures"
 
 msgid "adventure game"
 msgstr "joc d'aventures"
@@ -5979,9 +5244,6 @@ msgstr "joc d'eines"
 msgid "strategy game"
 msgstr "joc d'estratègia"
 
-msgid "strategy game"
-msgstr "joc d'estratègia"
-
 msgid "brain game"
 msgstr "joc d'habilitat mental"
 
@@ -5990,21 +5252,6 @@ msgstr "joc d'habilitat mental"
 
 msgid "puzzle game"
 msgstr "joc d'habilitat mental"
-
-msgid "brain game"
-msgstr "joc d'habilitat mental"
-
-msgid "mind game"
-msgstr "joc d'habilitat mental"
-
-msgid "puzzle game"
-msgstr "joc d'habilitat mental"
-
-msgid "computer game"
-msgstr "joc d'ordinador"
-
-msgid "PC video game"
-msgstr "joc d'ordinador"
 
 msgid "computer game"
 msgstr "joc d'ordinador"
@@ -6018,18 +5265,6 @@ msgstr "joc de caràcters"
 msgid "console game"
 msgstr "joc de consola"
 
-msgid "console game"
-msgstr "joc de consola"
-
-msgid "auto race game"
-msgstr "joc de curses"
-
-msgid "car racing game"
-msgstr "joc de curses"
-
-msgid "race game"
-msgstr "joc de curses"
-
 msgid "auto race game"
 msgstr "joc de curses"
 
@@ -6042,26 +5277,11 @@ msgstr "joc de curses"
 msgid "casual game"
 msgstr "joc de gran públic"
 
-msgid "casual game"
-msgstr "joc de gran públic"
-
 msgid "war simulation game"
 msgstr "joc de guerra"
 
 msgid "wargame"
 msgstr "joc de guerra"
-
-msgid "war simulation game"
-msgstr "joc de guerra"
-
-msgid "wargame"
-msgstr "joc de guerra"
-
-msgid "launch game"
-msgstr "joc de llançament"
-
-msgid "launch title"
-msgstr "joc de llançament"
 
 msgid "launch game"
 msgstr "joc de llançament"
@@ -6081,35 +5301,11 @@ msgstr "joc de lluita"
 msgid "fighting game"
 msgstr "joc de lluita"
 
-msgid "beat them up"
-msgstr "joc de lluita"
-
-msgid "beat'em up"
-msgstr "joc de lluita"
-
-msgid "combat game"
-msgstr "joc de lluita"
-
-msgid "fighting game"
-msgstr "joc de lluita"
-
 msgid "advergame"
 msgstr "joc de marca"
 
 msgid "advertising game"
 msgstr "joc de marca"
-
-msgid "advergame"
-msgstr "joc de marca"
-
-msgid "advertising game"
-msgstr "joc de marca"
-
-msgid "mobile game"
-msgstr "joc de mòbil"
-
-msgid "mobile video game"
-msgstr "joc de mòbil"
 
 msgid "mobile game"
 msgstr "joc de mòbil"
@@ -6123,15 +5319,6 @@ msgstr "joc de navegador"
 msgid "browser-based game"
 msgstr "joc de navegador"
 
-msgid "browser game"
-msgstr "joc de navegador"
-
-msgid "browser-based game"
-msgstr "joc de navegador"
-
-msgid "platform game"
-msgstr "joc de plataformes"
-
 msgid "platform game"
 msgstr "joc de plataformes"
 
@@ -6140,21 +5327,6 @@ msgstr "joc de rol"
 
 msgid "RPG"
 msgstr "joc de rol"
-
-msgid "role-playing game"
-msgstr "joc de rol"
-
-msgid "RPG"
-msgstr "joc de rol"
-
-msgid "simulation game"
-msgstr "joc de simulació"
-
-msgid "simulator"
-msgstr "joc de simulació"
-
-msgid "sim"
-msgstr "joc de simulació"
 
 msgid "simulation game"
 msgstr "joc de simulació"
@@ -6174,21 +5346,6 @@ msgstr "joc de simulació de vol"
 msgid "flying simulation game"
 msgstr "joc de simulació de vol"
 
-msgid "flight sim"
-msgstr "joc de simulació de vol"
-
-msgid "flight simulator"
-msgstr "joc de simulació de vol"
-
-msgid "flying simulation game"
-msgstr "joc de simulació de vol"
-
-msgid "life simulator"
-msgstr "joc de simulació social"
-
-msgid "management game"
-msgstr "joc de simulació social"
-
 msgid "life simulator"
 msgstr "joc de simulació social"
 
@@ -6200,27 +5357,6 @@ msgstr "joc de supervivència"
 
 msgid "survival horror game"
 msgstr "joc de supervivència"
-
-msgid "survival horror"
-msgstr "joc de supervivència"
-
-msgid "survival horror game"
-msgstr "joc de supervivència"
-
-msgid "shoot them up"
-msgstr "joc de trets"
-
-msgid "shoot'em up"
-msgstr "joc de trets"
-
-msgid "shooter"
-msgstr "joc de trets"
-
-msgid "shooting game"
-msgstr "joc de trets"
-
-msgid "shmup"
-msgstr "joc de trets"
 
 msgid "shoot them up"
 msgstr "joc de trets"
@@ -6246,29 +5382,11 @@ msgstr "joc de trets en primera persona"
 msgid "FPS"
 msgstr "joc de trets en primera persona"
 
-msgid "ego-shooter game"
-msgstr "joc de trets en primera persona"
-
-msgid "first-person shooter"
-msgstr "joc de trets en primera persona"
-
-msgid "FPS"
-msgstr "joc de trets en primera persona"
-
 msgid "third-person shooter"
 msgstr "joc de trets en tercera persona"
 
 msgid "TPS"
 msgstr "joc de trets en tercera persona"
-
-msgid "third-person shooter"
-msgstr "joc de trets en tercera persona"
-
-msgid "TPS"
-msgstr "joc de trets en tercera persona"
-
-msgid "educative game"
-msgstr "joc educatiu"
 
 msgid "educative game"
 msgstr "joc educatiu"
@@ -6282,29 +5400,8 @@ msgstr "joc en temps real"
 msgid "simultaneous game"
 msgstr "joc en temps real"
 
-msgid "real-time game"
-msgstr "joc en temps real"
-
-msgid "RTG"
-msgstr "joc en temps real"
-
-msgid "simultaneous game"
-msgstr "joc en temps real"
-
 msgid "network game"
 msgstr "joc en xarxa"
-
-msgid "network game"
-msgstr "joc en xarxa"
-
-msgid "massively multiplayer online game"
-msgstr "joc en xarxa massiu"
-
-msgid "persistent world game"
-msgstr "joc en xarxa massiu"
-
-msgid "MMOG"
-msgstr "joc en xarxa massiu"
 
 msgid "massively multiplayer online game"
 msgstr "joc en xarxa massiu"
@@ -6321,26 +5418,11 @@ msgstr "joc esportiu"
 msgid "sport simulator"
 msgstr "joc esportiu"
 
-msgid "sport game"
-msgstr "joc esportiu"
-
-msgid "sport simulator"
-msgstr "joc esportiu"
-
 msgid "single-player game"
 msgstr "joc individual"
 
 msgid "one-player game"
 msgstr "joc individual"
-
-msgid "single-player game"
-msgstr "joc individual"
-
-msgid "one-player game"
-msgstr "joc individual"
-
-msgid "multiplayer game"
-msgstr "joc multijugador"
 
 msgid "multiplayer game"
 msgstr "joc multijugador"
@@ -6351,29 +5433,11 @@ msgstr "joc multiplataforma"
 msgid "multi-platform game"
 msgstr "joc multiplataforma"
 
-msgid "cross-platform game"
-msgstr "joc multiplataforma"
-
-msgid "multi-platform game"
-msgstr "joc multiplataforma"
-
-msgid "music game"
-msgstr "joc musical"
-
 msgid "music game"
 msgstr "joc musical"
 
 msgid "pirated game"
 msgstr "joc piratejat"
-
-msgid "pirated game"
-msgstr "joc piratejat"
-
-msgid "gameplay"
-msgstr "jugabilitat"
-
-msgid "playability"
-msgstr "jugabilitat"
 
 msgid "gameplay"
 msgstr "jugabilitat"
@@ -6387,23 +5451,8 @@ msgstr "jugador -a expert -a"
 msgid "hardcore gamer"
 msgstr "jugador -a expert -a"
 
-msgid "core gamer"
-msgstr "jugador -a expert -a"
-
-msgid "hardcore gamer"
-msgstr "jugador -a expert -a"
-
 msgid "casual gamer"
 msgstr "jugador -a ocasional"
-
-msgid "casual gamer"
-msgstr "jugador -a ocasional"
-
-msgid "game"
-msgstr "jugar"
-
-msgid "play"
-msgstr "jugar"
 
 msgid "game"
 msgstr "jugar"
@@ -6504,9 +5553,6 @@ msgstr "limitador de freqüència"
 msgid "linear"
 msgstr "lineal"
 
-msgid "linear"
-msgstr "lineal"
-
 msgid "computational linguist"
 msgstr "lingüista computacional"
 
@@ -6567,12 +5613,6 @@ msgstr "llenguatge d'alt nivell"
 msgid "high order language"
 msgstr "llenguatge d'alt nivell"
 
-msgid "high level language"
-msgstr "llenguatge d'alt nivell"
-
-msgid "high order language"
-msgstr "llenguatge d'alt nivell"
-
 msgid "assembler language"
 msgstr "llenguatge d'assemblador"
 
@@ -6597,9 +5637,6 @@ msgstr "llenguatge d'interrogació"
 msgid "low level language"
 msgstr "llenguatge de baix nivell"
 
-msgid "low level language"
-msgstr "llenguatge de baix nivell"
-
 msgid "machine language"
 msgstr "llenguatge de màquina"
 
@@ -6620,12 +5657,6 @@ msgstr "llenguatge resultant"
 
 msgid "target language"
 msgstr "llenguatge resultant"
-
-msgid "script language"
-msgstr "llenguatge script"
-
-msgid "scripting language"
-msgstr "llenguatge script"
 
 msgid "script language"
 msgstr "llenguatge script"
@@ -6714,9 +5745,6 @@ msgstr "llista de distribució"
 msgid "distribution list"
 msgstr "llista de distribució"
 
-msgid "distribution list"
-msgstr "llista de distribució"
-
 msgid "play list"
 msgstr "llista de reproducció"
 
@@ -6765,9 +5793,6 @@ msgstr "lloc wiki"
 msgid "ambient light"
 msgstr "llum ambiental"
 
-msgid "ambient light"
-msgstr "llum ambiental"
-
 msgid "LMDS"
 msgstr "LMDS"
 
@@ -6795,32 +5820,14 @@ msgstr "longitud d'ona"
 msgid "pack"
 msgstr "lot"
 
-msgid "pack"
-msgstr "lot"
-
 msgid "batch"
 msgstr "lot"
 
-msgid "pack"
-msgstr "lot"
-
 msgid "game studies"
 msgstr "ludologia"
 
 msgid "ludology"
 msgstr "ludologia"
-
-msgid "game studies"
-msgstr "ludologia"
-
-msgid "ludology"
-msgstr "ludologia"
-
-msgid "lumel"
-msgstr "lúmel"
-
-msgid "luxel"
-msgstr "lúmel"
 
 msgid "lumel"
 msgstr "lúmel"
@@ -6830,15 +5837,6 @@ msgstr "lúmel"
 
 msgid "luminescence"
 msgstr "luminescència"
-
-msgid "machinima"
-msgstr "machinima"
-
-msgid "machinima"
-msgstr "machinima"
-
-msgid "machinima"
-msgstr "machinima"
 
 msgid "machinima"
 msgstr "machinima"
@@ -6885,9 +5883,6 @@ msgstr "majúscula"
 msgid "polygon mesh"
 msgstr "malla de polígons"
 
-msgid "polygon mesh"
-msgstr "malla de polígons"
-
 msgid "hand"
 msgstr "maneta"
 
@@ -6897,23 +5892,11 @@ msgstr "mapa d'il·luminació"
 msgid "lightmap"
 msgstr "mapa d'il·luminació"
 
-msgid "light map"
-msgstr "mapa d'il·luminació"
-
-msgid "lightmap"
-msgstr "mapa d'il·luminació"
-
-msgid "bitmap"
-msgstr "mapa de bits"
-
 msgid "bitmap"
 msgstr "mapa de bits"
 
 msgid "pixmap"
 msgstr "mapa de píxels"
-
-msgid "texture map"
-msgstr "mapa de textura"
 
 msgid "texture map"
 msgstr "mapa de textura"
@@ -6927,15 +5910,6 @@ msgstr "mapatge d'entorn"
 msgid "reflection mapping"
 msgstr "mapatge d'entorn"
 
-msgid "environment mapping"
-msgstr "mapatge d'entorn"
-
-msgid "reflection mapping"
-msgstr "mapatge d'entorn"
-
-msgid "bump mapping"
-msgstr "mapatge de relleu"
-
 msgid "bump mapping"
 msgstr "mapatge de relleu"
 
@@ -6944,18 +5918,6 @@ msgstr "mapatge de textura"
 
 msgid "texture mapping technique"
 msgstr "mapatge de textura"
-
-msgid "texture mapping"
-msgstr "mapatge de textura"
-
-msgid "texture mapping technique"
-msgstr "mapatge de textura"
-
-msgid "MIP mapping"
-msgstr "mapatge MIP"
-
-msgid "mipmapping"
-msgstr "mapatge MIP"
 
 msgid "MIP mapping"
 msgstr "mapatge MIP"
@@ -6971,21 +5933,6 @@ msgstr "maquetació"
 
 msgid "machine"
 msgstr "màquina"
-
-msgid "arcade cabinet"
-msgstr "màquina recreativa"
-
-msgid "arcade kiosk"
-msgstr "màquina recreativa"
-
-msgid "arcade machine"
-msgstr "màquina recreativa"
-
-msgid "coin-op machine"
-msgstr "màquina recreativa"
-
-msgid "recreational machine"
-msgstr "màquina recreativa"
 
 msgid "arcade cabinet"
 msgstr "màquina recreativa"
@@ -7086,9 +6033,6 @@ msgstr "maximitzar"
 msgid "game mechanics"
 msgstr "mecànica de joc"
 
-msgid "game mechanics"
-msgstr "mecànica de joc"
-
 msgid "megabit"
 msgstr "megabit"
 
@@ -7179,12 +6123,6 @@ msgstr "memòria intermèdia"
 msgid "buffer storage"
 msgstr "memòria intermèdia"
 
-msgid "buffer"
-msgstr "memòria intermèdia"
-
-msgid "buffer storage"
-msgstr "memòria intermèdia"
-
 msgid "typeahead"
 msgstr "memòria intermèdia de teclat"
 
@@ -7266,14 +6204,8 @@ msgstr "metaetiqueta"
 msgid "morphing"
 msgstr "metamorfosi"
 
-msgid "morphing"
-msgstr "metamorfosi"
-
 msgid "headset microphone"
 msgstr "microauricular"
-
-msgid "microblog"
-msgstr "microblog"
 
 msgid "microblog"
 msgstr "microblog"
@@ -7302,9 +6234,6 @@ msgstr "microprocessador"
 msgid "firmware"
 msgstr "microprogramari"
 
-msgid "firmware"
-msgstr "microprogramari"
-
 msgid "handset"
 msgstr "microtelèfon"
 
@@ -7326,9 +6255,6 @@ msgstr "mineria de dades"
 msgid "applet"
 msgstr "miniaplicació"
 
-msgid "applet"
-msgstr "miniaplicació"
-
 msgid "servlet"
 msgstr "miniaplicació de servidor"
 
@@ -7340,12 +6266,6 @@ msgstr "miniaturització"
 
 msgid "miniaturize"
 msgstr "miniaturitzar"
-
-msgid "minigame"
-msgstr "minijoc"
-
-msgid "subgame"
-msgstr "minijoc"
 
 msgid "minigame"
 msgstr "minijoc"
@@ -7392,9 +6312,6 @@ msgstr "missatge de text"
 msgid "SMS message"
 msgstr "missatge de text"
 
-msgid "text message"
-msgstr "missatge de text"
-
 msgid "SMS"
 msgstr "missatge de text"
 
@@ -7425,9 +6342,6 @@ msgstr "missatgeria de veu"
 msgid "instant messaging"
 msgstr "missatgeria instantània"
 
-msgid "instant messaging"
-msgstr "missatgeria instantània"
-
 msgid "netnews"
 msgstr "missatges"
 
@@ -7439,15 +6353,6 @@ msgstr "missatges"
 
 msgid "quest"
 msgstr "missió"
-
-msgid "quest"
-msgstr "missió"
-
-msgid "time trial quest"
-msgstr "missió contrarellotge"
-
-msgid "time trial"
-msgstr "missió contrarellotge"
 
 msgid "time trial quest"
 msgstr "missió contrarellotge"
@@ -7482,20 +6387,8 @@ msgstr "model d'il·luminació"
 msgid "lighting model"
 msgstr "model d'il·luminació"
 
-msgid "illumination model"
-msgstr "model d'il·luminació"
-
-msgid "lighting model"
-msgstr "model d'il·luminació"
-
 msgid "shading model"
 msgstr "model de shading [shading: en]"
-
-msgid "shading model"
-msgstr "model de shading [shading: en]"
-
-msgid "modelling"
-msgstr "modelatge"
 
 msgid "modelling"
 msgstr "modelatge"
@@ -7587,21 +6480,6 @@ msgstr "món persistent"
 msgid "PW"
 msgstr "món persistent"
 
-msgid "persistent universe"
-msgstr "món persistent"
-
-msgid "persistent world"
-msgstr "món persistent"
-
-msgid "PW"
-msgstr "món persistent"
-
-msgid "virtual universe"
-msgstr "món virtual"
-
-msgid "virtual world"
-msgstr "món virtual"
-
 msgid "virtual universe"
 msgstr "món virtual"
 
@@ -7616,9 +6494,6 @@ msgstr "moneder electrònic"
 
 msgid "electronic purse"
 msgstr "moneder electrònic"
-
-msgid "monitor"
-msgstr "monitor"
 
 msgid "monitor"
 msgstr "monitor"
@@ -7638,23 +6513,11 @@ msgstr "monousuari -ària"
 msgid "sampling"
 msgstr "mostreig"
 
-msgid "sampling"
-msgstr "mostreig"
-
 msgid "sound engine"
 msgstr "motor d'àudio"
 
 msgid "sound system"
 msgstr "motor d'àudio"
-
-msgid "sound engine"
-msgstr "motor d'àudio"
-
-msgid "sound system"
-msgstr "motor d'àudio"
-
-msgid "inference engine"
-msgstr "motor d'inferències"
 
 msgid "inference engine"
 msgstr "motor d'inferències"
@@ -7664,12 +6527,6 @@ msgstr "motor de cerca"
 
 msgid "game engine"
 msgstr "motor de joc"
-
-msgid "game engine"
-msgstr "motor de joc"
-
-msgid "graphics engine"
-msgstr "motor gràfic"
 
 msgid "graphics engine"
 msgstr "motor gràfic"
@@ -7743,9 +6600,6 @@ msgstr "multiusuari -ària"
 msgid "build"
 msgstr "muntatge"
 
-msgid "build"
-msgstr "muntatge"
-
 msgid "wall"
 msgstr "mur"
 
@@ -7812,15 +6666,6 @@ msgstr "nivell"
 msgid "stage"
 msgstr "nivell"
 
-msgid "level"
-msgstr "nivell"
-
-msgid "stage"
-msgstr "nivell"
-
-msgid "bonus level"
-msgstr "nivell extra"
-
 msgid "bonus level"
 msgstr "nivell extra"
 
@@ -7829,9 +6674,6 @@ msgstr "NNTP"
 
 msgid "node"
 msgstr "node"
-
-msgid "user name"
-msgstr "nom d'usuari"
 
 msgid "user name"
 msgstr "nom d'usuari"
@@ -7886,9 +6728,6 @@ msgstr "número personal de desbloqueig"
 
 msgid "universal number"
 msgstr "número universal"
-
-msgid "clip art"
-msgstr "objecte gràfic"
 
 msgid "clip art"
 msgstr "objecte gràfic"
@@ -7958,9 +6797,6 @@ msgstr "òptic -a"
 
 msgid "optics"
 msgstr "òptica"
-
-msgid "computer"
-msgstr "ordinador"
 
 msgid "computer"
 msgstr "ordinador"
@@ -8046,9 +6882,6 @@ msgstr "OSI"
 msgid "Easter egg"
 msgstr "ou de Pasqua"
 
-msgid "Easter egg"
-msgstr "ou de Pasqua"
-
 msgid "PABX"
 msgstr "PABX"
 
@@ -8091,9 +6924,6 @@ msgstr "pagament per visió"
 msgid "page"
 msgstr "pàgina"
 
-msgid "page"
-msgstr "pàgina"
-
 msgid "redirect page"
 msgstr "pàgina de redirecció"
 
@@ -8112,9 +6942,6 @@ msgstr "pàgina vista"
 msgid "web page"
 msgstr "pàgina web"
 
-msgid "web page"
-msgstr "pàgina web"
-
 msgid "white pages"
 msgstr "pàgines blanques"
 
@@ -8123,18 +6950,6 @@ msgstr "palanca de control"
 
 msgid "control stick"
 msgstr "palanca de control"
-
-msgid "joystick"
-msgstr "palanca de control"
-
-msgid "control stick"
-msgstr "palanca de control"
-
-msgid "colour palette"
-msgstr "paleta de colors"
-
-msgid "colour palette"
-msgstr "paleta de colors"
 
 msgid "colour palette"
 msgstr "paleta de colors"
@@ -8177,9 +6992,6 @@ msgstr "pantalla panoràmica"
 
 msgid "flat screen"
 msgstr "pantalla plana"
-
-msgid "touch screen"
-msgstr "pantalla tàctil"
 
 msgid "touch screen"
 msgstr "pantalla tàctil"
@@ -8229,12 +7041,6 @@ msgstr "paraula clau"
 msgid "keyword"
 msgstr "paraula clau"
 
-msgid "key word"
-msgstr "paraula clau"
-
-msgid "keyword"
-msgstr "paraula clau"
-
 msgid "blinking"
 msgstr "parpelleig"
 
@@ -8247,29 +7053,11 @@ msgstr "partició binària de l'espai"
 msgid "BSP"
 msgstr "partició binària de l'espai"
 
-msgid "binary space partitioning"
-msgstr "partició binària de l'espai"
-
-msgid "BSP"
-msgstr "partició binària de l'espai"
-
-msgid "space partitioning"
-msgstr "partició de l'espai"
-
 msgid "space partitioning"
 msgstr "partició de l'espai"
 
 msgid "hyphenation"
 msgstr "partició de mots"
-
-msgid "game save"
-msgstr "partida guardada"
-
-msgid "saved game"
-msgstr "partida guardada"
-
-msgid "savegame"
-msgstr "partida guardada"
 
 msgid "game save"
 msgstr "partida guardada"
@@ -8310,15 +7098,6 @@ msgstr "peatge per minut"
 msgid "patch"
 msgstr "pedaç"
 
-msgid "patch"
-msgstr "pedaç"
-
-msgid "pedal assembly"
-msgstr "pedal"
-
-msgid "pedal system"
-msgstr "pedal"
-
 msgid "pedal assembly"
 msgstr "pedal"
 
@@ -8333,9 +7112,6 @@ msgstr "penjar"
 
 msgid "default"
 msgstr "per defecte"
-
-msgid "turn-based"
-msgstr "per torns"
 
 msgid "turn-based"
 msgstr "per torns"
@@ -8382,18 +7158,6 @@ msgstr "permís de lectura"
 msgid "customization"
 msgstr "personalització"
 
-msgid "customization"
-msgstr "personalització"
-
-msgid "customization"
-msgstr "personalització"
-
-msgid "character"
-msgstr "personatge"
-
-msgid "video game character"
-msgstr "personatge"
-
 msgid "character"
 msgstr "personatge"
 
@@ -8411,24 +7175,6 @@ msgstr "personatge jugador"
 
 msgid "PC"
 msgstr "personatge jugador"
-
-msgid "playable character"
-msgstr "personatge jugador"
-
-msgid "player"
-msgstr "personatge jugador"
-
-msgid "player character"
-msgstr "personatge jugador"
-
-msgid "PC"
-msgstr "personatge jugador"
-
-msgid "non-player character"
-msgstr "personatge no jugador"
-
-msgid "NPC"
-msgstr "personatge no jugador"
 
 msgid "non-player character"
 msgstr "personatge no jugador"
@@ -8484,12 +7230,6 @@ msgstr "pipeline de renderització [pipeline: en]"
 msgid "rendering pipeline"
 msgstr "pipeline de renderització [pipeline: en]"
 
-msgid "graphics pipeline"
-msgstr "pipeline de renderització [pipeline: en]"
-
-msgid "rendering pipeline"
-msgstr "pipeline de renderització [pipeline: en]"
-
 msgid "black hat hacker"
 msgstr "pirata"
 
@@ -8520,38 +7260,17 @@ msgstr "piulada"
 msgid "twitt"
 msgstr "piulada"
 
-msgid "micropost"
-msgstr "piulada"
-
-msgid "tweet"
-msgstr "piulada"
-
 msgid "tweeter"
 msgstr "piulador -a"
 
 msgid "twitterer"
-msgstr "piulador -a"
-
-msgid "twitterer"
-msgstr "piulador -a"
-
-msgid "tweeter"
 msgstr "piulador -a"
 
 msgid "twitter"
 msgstr "piulador -a"
 
-msgid "twitterer"
-msgstr "piulador -a"
-
 msgid "tweet"
 msgstr "piular"
-
-msgid "tweet"
-msgstr "piular"
-
-msgid "pixel"
-msgstr "píxel"
 
 msgid "pixel"
 msgstr "píxel"
@@ -8628,29 +7347,11 @@ msgstr "plasma"
 msgid "platform"
 msgstr "plataforma"
 
-msgid "platform"
-msgstr "plataforma"
-
-msgid "platform"
-msgstr "plataforma"
-
 msgid "game platform"
 msgstr "plataforma de joc"
 
 msgid "video game platform"
 msgstr "plataforma de joc"
-
-msgid "game platform"
-msgstr "plataforma de joc"
-
-msgid "video game platform"
-msgstr "plataforma de joc"
-
-msgid "microblog platform"
-msgstr "plataforma de microblogs"
-
-msgid "microblogging platform"
-msgstr "plataforma de microblogs"
 
 msgid "microblog platform"
 msgstr "plataforma de microblogs"
@@ -8688,9 +7389,6 @@ msgstr "poder de resolució"
 msgid "polygon"
 msgstr "polígon"
 
-msgid "polygon"
-msgstr "polígon"
-
 msgid "bridge"
 msgstr "pont"
 
@@ -8718,22 +7416,10 @@ msgstr "porta-retalls"
 msgid "portability"
 msgstr "portabilitat"
 
-msgid "portability"
-msgstr "portabilitat"
-
 msgid "transferability"
 msgstr "portabilitat"
 
 msgid "porting"
-msgstr "portabilitat"
-
-msgid "porting"
-msgstr "portabilitat"
-
-msgid "porting"
-msgstr "portabilitat"
-
-msgid "portability"
 msgstr "portabilitat"
 
 msgid "wearable"
@@ -8769,9 +7455,6 @@ msgstr "portar"
 msgid "postproduction"
 msgstr "postproducció"
 
-msgid "postproduction"
-msgstr "postproducció"
-
 msgid "PostScript"
 msgstr "PostScript"
 
@@ -8789,9 +7472,6 @@ msgstr "premsa electrònica"
 
 msgid "prepayment"
 msgstr "prepagament"
-
-msgid "preproduction"
-msgstr "preproducció"
 
 msgid "preproduction"
 msgstr "preproducció"
@@ -8823,12 +7503,6 @@ msgstr "previsualitzar"
 msgid "first person"
 msgstr "primera persona"
 
-msgid "first person"
-msgstr "primera persona"
-
-msgid "privacy"
-msgstr "privacitat"
-
 msgid "privacy"
 msgstr "privacitat"
 
@@ -8852,15 +7526,6 @@ msgstr "processador de senyals digitals"
 
 msgid "word processor"
 msgstr "processador de textos"
-
-msgid "graphics hardware"
-msgstr "processador gràfic"
-
-msgid "graphics processor"
-msgstr "processador gràfic"
-
-msgid "GPU"
-msgstr "processador gràfic"
 
 msgid "graphics hardware"
 msgstr "processador gràfic"
@@ -8909,9 +7574,6 @@ msgstr "processament per lots"
 
 msgid "process"
 msgstr "processar"
-
-msgid "production"
-msgstr "producció"
 
 msgid "production"
 msgstr "producció"
@@ -8997,12 +7659,6 @@ msgstr "programació orientada a objectes"
 msgid "OOP"
 msgstr "programació orientada a objectes"
 
-msgid "object-oriented programming"
-msgstr "programació orientada a objectes"
-
-msgid "OOP"
-msgstr "programació orientada a objectes"
-
 msgid "programmer"
 msgstr "programador -a"
 
@@ -9063,12 +7719,6 @@ msgstr "programari descatalogat"
 msgid "discontinued software"
 msgstr "programari descatalogat"
 
-msgid "abandonware"
-msgstr "programari descatalogat"
-
-msgid "discontinued software"
-msgstr "programari descatalogat"
-
 msgid "courseware"
 msgstr "programari educatiu"
 
@@ -9083,9 +7733,6 @@ msgstr "programari espia"
 
 msgid "freeware"
 msgstr "programari gratuït"
-
-msgid "middleware"
-msgstr "programari intermediari"
 
 msgid "middleware"
 msgstr "programari intermediari"
@@ -9204,12 +7851,6 @@ msgstr "protocol punt a punt"
 msgid "prototype"
 msgstr "prototip"
 
-msgid "prototype"
-msgstr "prototip"
-
-msgid "prototyping"
-msgstr "prototipatge"
-
 msgid "prototyping"
 msgstr "prototipatge"
 
@@ -9252,9 +7893,6 @@ msgstr "publicació"
 msgid "posting"
 msgstr "publicació"
 
-msgid "publication"
-msgstr "publicació"
-
 msgid "desktop publishing"
 msgstr "publicació assistida per ordinador"
 
@@ -9288,12 +7926,6 @@ msgstr "publicitat intrajoc"
 msgid "IGA"
 msgstr "publicitat intrajoc"
 
-msgid "ingame advertising"
-msgstr "publicitat intrajoc"
-
-msgid "IGA"
-msgstr "publicitat intrajoc"
-
 msgid "e-mailing"
 msgstr "publitramesa electrònica"
 
@@ -9305,12 +7937,6 @@ msgstr "pujar"
 
 msgid "hotspot"
 msgstr "punt d'accés Wi-Fi"
-
-msgid "checkpoint"
-msgstr "punt de control"
-
-msgid "save-point"
-msgstr "punt de control"
 
 msgid "checkpoint"
 msgstr "punt de control"
@@ -9362,9 +7988,6 @@ msgstr "quadre de diàleg"
 
 msgid "list box"
 msgstr "quadre de llista"
-
-msgid "text box"
-msgstr "quadre de text"
 
 msgid "text box"
 msgstr "quadre de text"
@@ -9431,9 +8054,6 @@ msgstr "RARP"
 
 msgid "click-through rate"
 msgstr "ràtio de clics d'entrada"
-
-msgid "mouse"
-msgstr "ratolí"
 
 msgid "mouse"
 msgstr "ratolí"
@@ -9525,15 +8145,6 @@ msgstr "redactor -a de continguts"
 msgid "syndicate"
 msgstr "redifondre"
 
-msgid "syndicate"
-msgstr "redifondre"
-
-msgid "content syndication"
-msgstr "redifusió"
-
-msgid "web syndication"
-msgstr "redifusió"
-
 msgid "content syndication"
 msgstr "redifusió"
 
@@ -9542,9 +8153,6 @@ msgstr "redifusió"
 
 msgid "sizing gripper"
 msgstr "redimensionador"
-
-msgid "redirect"
-msgstr "redirigir"
 
 msgid "redirect"
 msgstr "redirigir"
@@ -9569,12 +8177,6 @@ msgstr "refinar"
 
 msgid "diffuse reflection"
 msgstr "reflexió difusa"
-
-msgid "diffuse reflection"
-msgstr "reflexió difusa"
-
-msgid "specular reflection"
-msgstr "reflexió especular"
 
 msgid "specular reflection"
 msgstr "reflexió especular"
@@ -9624,14 +8226,8 @@ msgstr "relé de trama"
 msgid "resampling"
 msgstr "remostreig"
 
-msgid "resampling"
-msgstr "remostreig"
-
 msgid "remote"
 msgstr "remot -a"
-
-msgid "rendering"
-msgstr "renderització"
 
 msgid "rendering"
 msgstr "renderització"
@@ -9705,13 +8301,7 @@ msgstr "reproducció en temps real"
 msgid "streaming system"
 msgstr "reproducció en temps real"
 
-msgid "real time system"
-msgstr "reproducció en temps real"
-
 msgid "streaming"
-msgstr "reproducció en temps real"
-
-msgid "streaming system"
 msgstr "reproducció en temps real"
 
 msgid "media player"
@@ -9725,12 +8315,6 @@ msgstr "reprogramable"
 
 msgid "online reservation"
 msgstr "reserva en línia"
-
-msgid "resolution"
-msgstr "resolució"
-
-msgid "resolution"
-msgstr "resolució"
 
 msgid "resolution"
 msgstr "resolució"
@@ -9753,12 +8337,6 @@ msgstr "retallada"
 msgid "scissoring"
 msgstr "retallada"
 
-msgid "clipping"
-msgstr "retallada"
-
-msgid "scissoring"
-msgstr "retallada"
-
 msgid "cut"
 msgstr "retallar"
 
@@ -9773,12 +8351,6 @@ msgstr "retornar"
 
 msgid "feedback"
 msgstr "retroacció"
-
-msgid "backward compatibility"
-msgstr "retrocompatibilitat"
-
-msgid "downward compatibility"
-msgstr "retrocompatibilitat"
 
 msgid "backward compatibility"
 msgstr "retrocompatibilitat"
@@ -9831,14 +8403,8 @@ msgstr "roseta de connexió"
 msgid "rotation"
 msgstr "rotació"
 
-msgid "rotation"
-msgstr "rotació"
-
 msgid "ad rotation"
 msgstr "rotació d'anuncis"
-
-msgid "RSS"
-msgstr "RSS"
 
 msgid "RSS"
 msgstr "RSS"
@@ -9851,9 +8417,6 @@ msgstr "ruta"
 
 msgid "routine"
 msgstr "rutina"
-
-msgid "series"
-msgstr "saga"
 
 msgid "series"
 msgstr "saga"
@@ -9890,9 +8453,6 @@ msgstr "satel·lització"
 
 msgid "launch"
 msgstr "satel·litzar"
-
-msgid "script"
-msgstr "script"
 
 msgid "script"
 msgstr "script"
@@ -9972,18 +8532,6 @@ msgstr "separador"
 msgid "sequel"
 msgstr "seqüela"
 
-msgid "sequel"
-msgstr "seqüela"
-
-msgid "cinematic"
-msgstr "seqüència cinemàtica"
-
-msgid "cut scene"
-msgstr "seqüència cinemàtica"
-
-msgid "cutscene"
-msgstr "seqüència cinemàtica"
-
 msgid "cinematic"
 msgstr "seqüència cinemàtica"
 
@@ -10045,9 +8593,6 @@ msgid "server"
 msgstr "servidor"
 
 msgid "server program"
-msgstr "servidor"
-
-msgid "server"
 msgstr "servidor"
 
 msgid "AAA server"
@@ -10125,35 +8670,14 @@ msgstr "servidor web"
 msgid "session"
 msgstr "sessió"
 
-msgid "session"
-msgstr "sessió"
-
 msgid "SGML"
 msgstr "SGML"
 
 msgid "shader"
 msgstr "shader"
 
-msgid "shader"
-msgstr "shader"
-
 msgid "shading"
 msgstr "shading"
-
-msgid "shading"
-msgstr "shading"
-
-msgid "colour interpolation shading"
-msgstr "shading de Gouraud [shading: en]"
-
-msgid "Gouraud shading"
-msgstr "shading de Gouraud [shading: en]"
-
-msgid "intensity interpolation shading"
-msgstr "shading de Gouraud [shading: en]"
-
-msgid "smooth shading"
-msgstr "shading de Gouraud [shading: en]"
 
 msgid "colour interpolation shading"
 msgstr "shading de Gouraud [shading: en]"
@@ -10172,18 +8696,6 @@ msgstr "shading de Phong [shading: en]"
 
 msgid "Phong shading"
 msgstr "shading de Phong [shading: en]"
-
-msgid "normal-vector interpolation shading"
-msgstr "shading de Phong [shading: en]"
-
-msgid "Phong shading"
-msgstr "shading de Phong [shading: en]"
-
-msgid "constant shading"
-msgstr "shading pla [shading: en]"
-
-msgid "flat shading"
-msgstr "shading pla [shading: en]"
 
 msgid "constant shading"
 msgstr "shading pla [shading: en]"
@@ -10241,9 +8753,6 @@ msgstr "simular"
 
 msgid "synchronous"
 msgstr "síncron -a"
-
-msgid "synchronize"
-msgstr "sincronitzar"
 
 msgid "synchronize"
 msgstr "sincronitzar"
@@ -10347,21 +8856,6 @@ msgstr "sistema de posicionament global"
 msgid "GPS"
 msgstr "sistema de posicionament global"
 
-msgid "global positioning system"
-msgstr "sistema de posicionament global"
-
-msgid "GPS"
-msgstr "sistema de posicionament global"
-
-msgid "rule system"
-msgstr "sistema de regles"
-
-msgid "rule-based system"
-msgstr "sistema de regles"
-
-msgid "RBS"
-msgstr "sistema de regles"
-
 msgid "rule system"
 msgstr "sistema de regles"
 
@@ -10388,9 +8882,6 @@ msgstr "sistema dual"
 
 msgid "dual system"
 msgstr "sistema dual"
-
-msgid "expert system"
-msgstr "sistema expert"
 
 msgid "expert system"
 msgstr "sistema expert"
@@ -10428,9 +8919,6 @@ msgstr "sobreescriure"
 msgid "oversampling"
 msgstr "sobremostreig"
 
-msgid "oversampling"
-msgstr "sobremostreig"
-
 msgid "information society"
 msgstr "societat de la informació"
 
@@ -10440,23 +8928,11 @@ msgstr "societat de la informació"
 msgid "socket"
 msgstr "sòcol"
 
-msgid "socket"
-msgstr "sòcol"
-
 msgid "polling"
 msgstr "sondeig"
 
 msgid "noise"
 msgstr "soroll"
-
-msgid "noise"
-msgstr "soroll"
-
-msgid "object image"
-msgstr "sprite"
-
-msgid "sprite"
-msgstr "sprite"
 
 msgid "object image"
 msgstr "sprite"
@@ -10526,9 +9002,6 @@ msgstr "supercomputador"
 
 msgid "superfine"
 msgstr "superfina"
-
-msgid "supersampling"
-msgstr "supermostreig"
 
 msgid "supersampling"
 msgstr "supermostreig"
@@ -10605,17 +9078,8 @@ msgstr "targeta de mòdem"
 msgid "sound card"
 msgstr "targeta de so"
 
-msgid "sound card"
-msgstr "targeta de so"
-
 msgid "network interface card"
 msgstr "targeta de xarxa"
-
-msgid "graphics card"
-msgstr "targeta gràfica"
-
-msgid "video card"
-msgstr "targeta gràfica"
 
 msgid "graphics card"
 msgstr "targeta gràfica"
@@ -10658,9 +9122,6 @@ msgstr "taula"
 
 msgid "tablet"
 msgstr "tauleta tàctil"
-
-msgid "fillrate"
-msgstr "taxa d'ompliment"
 
 msgid "fillrate"
 msgstr "taxa d'ompliment"
@@ -10851,12 +9312,6 @@ msgstr "tecla de funció"
 msgid "function key"
 msgstr "tecla de funció"
 
-msgid "Fn"
-msgstr "tecla de funció"
-
-msgid "function key"
-msgstr "tecla de funció"
-
 msgid "Shift"
 msgstr "tecla de majúscules"
 
@@ -10917,9 +9372,6 @@ msgstr "tecla programable"
 msgid "keyboard"
 msgstr "teclat"
 
-msgid "keyboard"
-msgstr "teclat"
-
 msgid "type"
 msgstr "teclejar"
 
@@ -10932,15 +9384,6 @@ msgstr "tècnica de nivell de detall"
 msgid "LOD technique"
 msgstr "tècnica de nivell de detall"
 
-msgid "level of detail"
-msgstr "tècnica de nivell de detall"
-
-msgid "level-of-detail technique"
-msgstr "tècnica de nivell de detall"
-
-msgid "LOD technique"
-msgstr "tècnica de nivell de detall"
-
 msgid "continuous level of detail"
 msgstr "tècnica de nivell de detall contínua"
 
@@ -10949,24 +9392,6 @@ msgstr "tècnica de nivell de detall contínua"
 
 msgid "CLOD"
 msgstr "tècnica de nivell de detall contínua"
-
-msgid "continuous level of detail"
-msgstr "tècnica de nivell de detall contínua"
-
-msgid "continuous LOD"
-msgstr "tècnica de nivell de detall contínua"
-
-msgid "CLOD"
-msgstr "tècnica de nivell de detall contínua"
-
-msgid "discrete level of detail"
-msgstr "tècnica de nivell de detall discreta"
-
-msgid "discrete LOD"
-msgstr "tècnica de nivell de detall discreta"
-
-msgid "DLOD"
-msgstr "tècnica de nivell de detall discreta"
 
 msgid "discrete level of detail"
 msgstr "tècnica de nivell de detall discreta"
@@ -10994,9 +9419,6 @@ msgstr "tecnologies de la informació i la comunicació"
 
 msgid "language technologies"
 msgstr "tecnologies del llenguatge"
-
-msgid "tele-"
-msgstr "tele-"
 
 msgid "tele-"
 msgstr "tele-"
@@ -11082,20 +9504,8 @@ msgstr "telèfon intel·ligent"
 msgid "smartphone"
 msgstr "telèfon intel·ligent"
 
-msgid "intelligent telephone"
-msgstr "telèfon intel·ligent"
-
-msgid "smartphone"
-msgstr "telèfon intel·ligent"
-
 msgid "unlocked phone"
 msgstr "telèfon lliure"
-
-msgid "cellular telephone"
-msgstr "telèfon mòbil"
-
-msgid "mobile telephone"
-msgstr "telèfon mòbil"
 
 msgid "cellular telephone"
 msgstr "telèfon mòbil"
@@ -11316,12 +9726,6 @@ msgstr "temps de resposta"
 msgid "response time"
 msgstr "temps de resposta"
 
-msgid "lag time"
-msgstr "temps de resposta"
-
-msgid "response time"
-msgstr "temps de resposta"
-
 msgid "overhead"
 msgstr "temps de sistema"
 
@@ -11343,9 +9747,6 @@ msgstr "tercera generació"
 msgid "third person"
 msgstr "tercera persona"
 
-msgid "third person"
-msgstr "tercera persona"
-
 msgid "terminator"
 msgstr "terminador"
 
@@ -11353,9 +9754,6 @@ msgid "terminal"
 msgstr "terminal"
 
 msgid "console"
-msgstr "terminal"
-
-msgid "terminal"
 msgstr "terminal"
 
 msgid "intelligent terminal"
@@ -11379,12 +9777,6 @@ msgstr "tèxel"
 msgid "texture element"
 msgstr "tèxel"
 
-msgid "texel"
-msgstr "tèxel"
-
-msgid "texture element"
-msgstr "tèxel"
-
 msgid "text"
 msgstr "text"
 
@@ -11393,9 +9785,6 @@ msgstr "text net"
 
 msgid "plaintext"
 msgstr "text net"
-
-msgid "texture"
-msgstr "textura"
 
 msgid "texture"
 msgstr "textura"
@@ -11429,9 +9818,6 @@ msgstr "tipus de lletra"
 
 msgid "type fount"
 msgstr "tipus de lletra"
-
-msgid "rapid fire"
-msgstr "tir ràpid"
 
 msgid "rapid fire"
 msgstr "tir ràpid"
@@ -11532,15 +9918,6 @@ msgstr "translació"
 msgid "translation"
 msgstr "translació"
 
-msgid "shift"
-msgstr "translació"
-
-msgid "translating"
-msgstr "translació"
-
-msgid "translation"
-msgstr "translació"
-
 msgid "transmit"
 msgstr "transmetre"
 
@@ -11601,15 +9978,6 @@ msgstr "tridimensional"
 msgid "3D"
 msgstr "tridimensional"
 
-msgid "three-dimensional"
-msgstr "tridimensional"
-
-msgid "tridimensional"
-msgstr "tridimensional"
-
-msgid "3D"
-msgstr "tridimensional"
-
 msgid "brochure"
 msgstr "tríptic"
 
@@ -11622,17 +9990,8 @@ msgstr "tríptic"
 msgid "LAN party"
 msgstr "trobada LAN"
 
-msgid "LAN party"
-msgstr "trobada LAN"
-
 msgid "troll"
 msgstr "trol"
-
-msgid "troll"
-msgstr "trol"
-
-msgid "cheat"
-msgstr "truc"
 
 msgid "cheat"
 msgstr "truc"
@@ -11745,23 +10104,11 @@ msgstr "URL"
 msgid "usability"
 msgstr "usabilitat"
 
-msgid "usability"
-msgstr "usabilitat"
-
-msgid "usability"
-msgstr "usabilitat"
-
-msgid "usability"
-msgstr "usabilitat"
-
 msgid "USB"
 msgstr "USB"
 
 msgid "Usenet"
 msgstr "Usenet"
-
-msgid "user"
-msgstr "usuari -ària"
 
 msgid "user"
 msgstr "usuari -ària"
@@ -11829,24 +10176,6 @@ msgstr "verificador -a"
 msgid "verifier"
 msgstr "verificador -a"
 
-msgid "checker"
-msgstr "verificador -a"
-
-msgid "tester"
-msgstr "verificador -a"
-
-msgid "verifier"
-msgstr "verificador -a"
-
-msgid "checker"
-msgstr "verificador -a"
-
-msgid "tester"
-msgstr "verificador -a"
-
-msgid "verifier"
-msgstr "verificador -a"
-
 msgid "spelling checker"
 msgstr "verificador ortogràfic"
 
@@ -11865,29 +10194,8 @@ msgstr "versaleta"
 msgid "alpha version"
 msgstr "versió alfa"
 
-msgid "alpha version"
-msgstr "versió alfa"
-
 msgid "beta version"
 msgstr "versió beta"
-
-msgid "beta version"
-msgstr "versió beta"
-
-msgid "beta version"
-msgstr "versió beta"
-
-msgid "RC version"
-msgstr "versió candidata"
-
-msgid "release candidate"
-msgstr "versió candidata"
-
-msgid "release candidate version"
-msgstr "versió candidata"
-
-msgid "RC"
-msgstr "versió candidata"
 
 msgid "RC version"
 msgstr "versió candidata"
@@ -11922,18 +10230,6 @@ msgstr "versió d'execució"
 msgid "game demo"
 msgstr "versió de demostració"
 
-msgid "game demo"
-msgstr "versió de demostració"
-
-msgid "gold version"
-msgstr "versió final"
-
-msgid "release to manufacturing version"
-msgstr "versió final"
-
-msgid "RTM version"
-msgstr "versió final"
-
 msgid "gold version"
 msgstr "versió final"
 
@@ -11948,15 +10244,6 @@ msgstr "via"
 
 msgid "life"
 msgstr "vida"
-
-msgid "life"
-msgstr "vida"
-
-msgid "a-life"
-msgstr "vida artificial"
-
-msgid "artificial life"
-msgstr "vida artificial"
 
 msgid "a-life"
 msgstr "vida artificial"
@@ -12024,12 +10311,6 @@ msgstr "videojoc"
 msgid "video game"
 msgstr "videojoc"
 
-msgid "electronic game"
-msgstr "videojoc"
-
-msgid "video game"
-msgstr "videojoc"
-
 msgid "vignette"
 msgstr "vinyeta"
 
@@ -12066,12 +10347,6 @@ msgstr "visualització"
 msgid "real-time display"
 msgstr "visualització en temps real"
 
-msgid "real-time display"
-msgstr "visualització en temps real"
-
-msgid "pre-rendered display"
-msgstr "visualització prerenderitzada"
-
 msgid "pre-rendered display"
 msgstr "visualització prerenderitzada"
 
@@ -12093,9 +10368,6 @@ msgstr "VoIP"
 msgid "steering wheel"
 msgstr "volant"
 
-msgid "steering wheel"
-msgstr "volant"
-
 msgid "superscript"
 msgstr "volat -ada"
 
@@ -12110,15 +10382,6 @@ msgstr "volum"
 
 msgid "electronic voting"
 msgstr "votació electrònica"
-
-msgid "volume cell element"
-msgstr "vòxel"
-
-msgid "volumetric pixel"
-msgstr "vòxel"
-
-msgid "voxel"
-msgstr "vòxel"
 
 msgid "volume cell element"
 msgstr "vòxel"
@@ -12306,12 +10569,6 @@ msgstr "xarxa neuronal"
 msgid "neuronal network"
 msgstr "xarxa neuronal"
 
-msgid "neural network"
-msgstr "xarxa neuronal"
-
-msgid "neuronal network"
-msgstr "xarxa neuronal"
-
 msgid "private network"
 msgstr "xarxa privada"
 
@@ -12335,9 +10592,6 @@ msgstr "xarxa símplex"
 
 msgid "simplex network"
 msgstr "xarxa símplex"
-
-msgid "social network"
-msgstr "xarxa social"
 
 msgid "social network"
 msgstr "xarxa social"
@@ -12377,9 +10631,6 @@ msgstr "xarxa troncal multimèdia"
 
 msgid "Multicast  Backbone"
 msgstr "xarxa troncal multimèdia"
-
-msgid "chat"
-msgstr "xat"
 
 msgid "chat"
 msgstr "xat"
