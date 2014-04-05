@@ -46,6 +46,7 @@ def read_xml():
     tree = ET.parse('4sources_termes.xml')
     root = tree.getroot()
     terms = 0
+    stored_terms = {}
     for term_entry in root.iter('fitxa'):
    
         # Text can be any order (en->ca) or (ca->en) and also you can
@@ -81,6 +82,12 @@ def read_xml():
         for source in sources:
             source = unicode(source)
             translation = unicode(translations[0])
+            
+            if source in stored_terms and stored_terms[source] == translation:
+                print u'Skipping duplicated term: {0}'.format(source)
+                continue
+        
+            stored_terms[source] = translation
             entry = polib.POEntry(msgid=source,
                                   msgstr=translation)
             pofile.append(entry)
