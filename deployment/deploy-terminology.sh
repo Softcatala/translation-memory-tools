@@ -14,14 +14,14 @@ cd $ROOT/tm-git/terminology
 # Get files
 cd sc-tm
 rm *.po
-cp $ROOT/tm-git/web/search/memories/softcatala-tm.po.zip .
+cp $ROOT/tm-git/web/memories/softcatala-tm.po.zip .
 unzip softcatala-tm.po.zip
 rm -f softcatala-tm.po
 cd ..
 
 cd all-tm
 rm *.po
-cp $ROOT/tm-git/web/search/memories/tots-tm.po.zip .
+cp $ROOT/tm-git/web/memories/tots-tm.po.zip .
 unzip tots-tm.po.zip
 rm -f tots-tm.po
 cd ..
