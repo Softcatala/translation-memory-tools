@@ -105,7 +105,6 @@ class FileSet():
             # The rename operations can be removed when the issue is fixed
             os.rename('{0}/en.ini'.format(dirName),
                       '{0}/en.strings'.format(dirName))
-                      
         
             os.rename('{0}/ca.ini'.format(dirName),
                       '{0}/ca.strings'.format(dirName))
