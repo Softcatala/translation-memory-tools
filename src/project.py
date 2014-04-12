@@ -26,6 +26,7 @@ from localfileset import LocalFileSet
 from polib import pofile
 from subversionfileset import SubversionFileSet
 from transifexfileset import TransifexFileSet
+from transifexhubfileset import TransifexHubFileSet
 from gitfileset import GitFileSet
 from gerritdirectoryfileset import GerritDirectoryFileSet
 
@@ -81,6 +82,12 @@ class Project:
                                       fileset.name,
                                       fileset.url,
                                       fileset.target)
+            elif fileset.type == 'transifexhub':
+                fs = TransifexHubFileSet(self.name,
+                                      fileset.name,
+                                      fileset.url,
+                                      fileset.target)
+                fs.set_project(self)
             elif fileset.type == 'local-dir':
                 fs = LocalDirFileSet(self.name,
                                      fileset.name,

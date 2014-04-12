@@ -241,21 +241,9 @@
             "projectweb" : "http://www.softcatala.org/wiki/Fedora",
             "softcatala" : true,
             "fileset": {
-                    "main": {
-                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-main/",
-                            "type": "transifex"
-                    },
-                    "docs": {
-                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-docs/",
-                            "type": "transifex"
-                    },
-                    "websites": {
-                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-websites/",
-                            "type": "transifex"
-                    },
-                    "upstream": {
-                            "url" : "https://fedora.transifex.com/projects/p/fedora/r/fedora-upstream-projects/",
-                            "type": "transifex"
+                    "fedora": {
+                            "url" : "https://fedora.transifex.com/projects/p/fedora/language/ca/",
+                            "type": "transifexhub"
                     }
             }
     },
@@ -528,8 +516,8 @@
             "projectweb" : "http://wiki.xfce.org/translations/team_ca",
             "fileset": {
                     "Xfce" : {
-                            "url" : "https://www.transifex.com/projects/p/xfce/r/all-resources/",
-                            "type": "transifex"
+                            "url" : "https://www.transifex.com/projects/p/xfce/language/ca/",
+                            "type": "transifexhub"
                     }
             }
     },
@@ -588,8 +576,8 @@
             "projectweb" : "https://wiki.openstack.org/wiki/Translations",
             "fileset": {
                     "main": {
-                            "url" : "https://www.transifex.com/projects/p/openstack/r/all-resources/",
-                            "type": "transifex"
+                            "url" : "https://www.transifex.com/projects/p/openstack/language/ca/",
+                            "type": "transifexhub"
                     }
             }
         },
@@ -597,8 +585,8 @@
             "projectweb" : "https://code.djangoproject.com/wiki/Localization",
             "fileset": {
                     "main": {
-                            "url" : "https://www.transifex.com/projects/p/django/r/all-resources/",
-                            "type": "transifex"
+                            "url" : "https://www.transifex.com/projects/p/django/language/ca/",
+                            "type": "transifexhub"
                     }
             }
         },
@@ -762,8 +750,8 @@
             "projectweb" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
             "fileset": {
                     "xfce" : {
-                            "url" : "https://www.transifex.com/projects/p/tinymce/r/all-resources/",
-                            "type": "transifex"
+                            "url" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
+                            "type": "transifexhub"
                     }
             }
     },
