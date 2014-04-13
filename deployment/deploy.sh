@@ -97,7 +97,7 @@ cp $ROOT/tm-git/web/memories/*.zip $TARGET_DIR/memories
 cp $ROOT/tm-git/src/report.txt $TARGET_DIR
 
 # Deploy terminology
-cp $ROOT/tm-git/terminology
+cd $ROOT/tm-git/terminology
 cp *.html $TARGET_DIR
 cp *.csv $TARGET_DIR
 
