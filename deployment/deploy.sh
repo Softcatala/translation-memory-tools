@@ -90,11 +90,15 @@ cp $ROOT/tm-git/web/terminologia.html $TARGET_DIR
 cp $ROOT/tm-git/web/*.png $TARGET_DIR
 
 
-# Download memories
 cp $ROOT/tm-git/web/download.html $TARGET_DIR
 rm -r -f $TARGET_DIR/memories
 mkdir $TARGET_DIR/memories
 cp $ROOT/tm-git/web/memories/*.zip $TARGET_DIR/memories
 cp $ROOT/tm-git/src/report.txt $TARGET_DIR
+
+# Deploy terminology
+cp $ROOT/tm-git/terminology
+cp *.html $TARGET_DIR
+cp *.csv $TARGET_DIR
 
 echo Deployment completed
