@@ -21,8 +21,8 @@
 import sys
 import unittest
 
-sys.path.append('../../terminology/')
-sys.path.append('../../src/')
+sys.path.append('../terminology/')
+sys.path.append('../src/')
 from corpus import Corpus
 from StringIO import StringIO
 
