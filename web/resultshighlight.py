@@ -180,6 +180,5 @@ class ResultsHighlight:
                 result += source[i]
 
             i = i + 1
-            print result
 
         return result

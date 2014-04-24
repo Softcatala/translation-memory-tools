@@ -93,8 +93,8 @@ class IndexCreator:
                 self.sentences += 1 
                 s = unicode(entry.msgid)
                 t = unicode(entry.msgstr)
-                s_clean = CleanString.get(s)
-                t_clean = CleanString.get(t)
+                s_clean = CleanString.get_strip(s)
+                t_clean = CleanString.get_strip(t)
                 p = unicode(name)
 
                 if (entry.msgctxt is None):
@@ -112,7 +112,7 @@ class IndexCreator:
                     # the value is the localised string
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
                         t = unicode(entry.msgstr_plural["0"])
-                        t_clean = CleanString.get(t)
+                        t_clean = CleanString.get_strip(t)
                        
                 if debug_keyword is not None and debug_keyword.strip() == s:
                     print "Source: " + s

@@ -30,8 +30,12 @@ class CleanString:
         for c in chars:
             result = result.replace(c, '')
 
-        # TODO: The strip should be only done when inporting from PO
-        #remove all the leading and trailing whitespace characters
-        #result = result.strip()
         result = result.lower()
+        return result
+
+    @staticmethod
+    def get_strip(result):
+
+        #removes all the leading and trailing whitespace characters
+        result = get(result).strip()
         return result
