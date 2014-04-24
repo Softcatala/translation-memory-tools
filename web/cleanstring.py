@@ -37,5 +37,5 @@ class CleanString:
     def get_strip(result):
 
         #removes all the leading and trailing whitespace characters
-        result = get(result).strip()
+        result = CleanString.get(result).strip()
         return result
