@@ -30,6 +30,7 @@ from whoosh.index import create_in
 from whoosh.analysis import StandardAnalyzer
 from jsonbackend import JsonBackend
 from optparse import OptionParser
+from cleanstring import CleanString
 
 po_directory = None
 debug_keyword = None
@@ -92,6 +93,8 @@ class IndexCreator:
                 self.sentences += 1 
                 s = unicode(entry.msgid)
                 t = unicode(entry.msgstr)
+                s_clean = CleanString.get(s)
+                t_clean = CleanString.get(t)
                 p = unicode(name)
 
                 if (entry.msgctxt is None):
@@ -109,6 +112,7 @@ class IndexCreator:
                     # the value is the localised string
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
                         t = unicode(entry.msgstr_plural["0"])
+                        t_clean = CleanString.get(t)
                        
                 if debug_keyword is not None and debug_keyword.strip() == s:
                     print "Source: " + s
@@ -122,7 +126,11 @@ class IndexCreator:
                 self.sentences_indexed += 1
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
-                self.writer.add_document(source=s, target=t, comment=c,
+                self.writer.add_document(source=s, 
+                                         target=t,
+                                         source_clean = s_clean,
+                                         target_clean = t_clean,
+                                         comment=c,
                                          context=x, project=p,
                                          softcatala=softcatala)
 
@@ -137,6 +145,8 @@ class IndexCreator:
         analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX, stoplist=None)
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer), 
                         target=TEXT(stored=True, analyzer=analyzer),
+                        source_clean=TEXT(stored=True, analyzer=analyzer), 
+                        target_clean=TEXT(stored=True, analyzer=analyzer),
                         comment=TEXT(stored=True), context=TEXT(stored=True),
                         softcatala=BOOLEAN(stored=True), project=TEXT(stored=True))
 
