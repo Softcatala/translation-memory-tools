@@ -27,12 +27,20 @@ from resultshighlight import ResultsHighlight
 
 class TestResultsHighlight(unittest.TestCase):
 
-    def test_get(self):
+    def test_get_simple(self):
         result = ResultsHighlight.get(u"Unselec_t all",  # source
             u'unselect all',  # clean
             u"un<b class = 'match term1'>sel</b>ect all")  #clean_highlighted
 
         assert result == "Un<b class = 'match term1'>sel</b>ect all"
+    
+    def test_get_multiple_highlights(self):
+        result = ResultsHighlight.get(u"Select &All",  # source
+            u'select all',  # clean
+            u'<b class="match term0">select</b> <b class="match term1">all</b>')  #clean_highlighted
+
+        assert result == '<b class="match term0">Select</b> <b class="match term1">&All</b>'
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -20,6 +20,7 @@
 
 from cleanstring import CleanString
 
+
 class HighlightFragment:
     '''
             Stores a highlighted fragment
@@ -70,7 +71,7 @@ class ResultsHighlight:
                    'html' (<b class = 'match term1'>)
         '''
 
-        print clean_highlighted
+        #print "clean_highlighted:" + clean_highlighted
         cnt = len(clean_highlighted)
         i = 0
 
@@ -124,28 +125,48 @@ class ResultsHighlight:
         return fragments
 
     @staticmethod
+    def _get_source_matched_chars(source, text): 
+        ''' 
+            We need to find out how many chars from the source string
+            were necessary to get the clean fragment
+
+            Example: source: '_Sel' and clean:'sel'
+        '''
+        cnt = len(source)
+        i = 0
+        while i < cnt:
+            i += 1
+            clean_source = CleanString.get(source[:i])
+            if text == clean_source:
+                return i
+             
+
+    @staticmethod
     def _get_clean_fragment_match(source, fragment):        
         clean_source = CleanString.get(source)
 
         if fragment.text == clean_source[:len(fragment.text)]:
             matches = True
-            # TODO: This is incorrect if source: '_Sel' and clean:'sel'
-            size = len(fragment.text)
+            size = ResultsHighlight._get_source_matched_chars(source, fragment.text)
             text = '{0}{1}{2}'.format(fragment.html_start, source[:size], fragment.html_end)
         else:
             matches = False
             size = 0
             text = None
 
-        print 'matches {0}, size {1}, text {2}'.format(matches, size, text)
+        #print 'matches {0}, size {1}, text {2} ({3})'.format(matches, size, text, source)
         return matches, size, text
         
     @staticmethod
     def get(source, clean, clean_highlighted):
         fragments = ResultsHighlight._read_fragments(clean_highlighted)
-        print "Fragments"      
-        for fragment in fragments:
-            print fragment
+        #print "source:" + source
+        #print "clean:" + clean
+        #print "clean_highlighted:" + clean_highlighted
+        
+        #print "Fragments"      
+        #for fragment in fragments:
+            #print fragment
         
         '''
         2. Loop the 'source string'
@@ -161,8 +182,8 @@ class ResultsHighlight:
         result = ''
         
         while i < cnt:
-            if fragment_idx < len(fragments):            
-                size = len(fragment.text)
+            if fragment_idx < len(fragments):
+                size = len(fragments[fragment_idx].text)
             else:
                 size = 0
 
@@ -181,4 +202,5 @@ class ResultsHighlight:
 
             i = i + 1
 
+        #print "result:" + result
         return result
