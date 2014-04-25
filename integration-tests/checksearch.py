@@ -71,7 +71,7 @@ class CheckSearch:
         self._assert_that(data[0]['context'], u'Palindromics.context')
         self._assert_contains(data[0]['comment'], u'Títol de preferències')
 
-    def _check_common_seaches(self):
+    def _check_common_searches(self):
 
         string = u'File'
         data = self.search_source(string)
@@ -83,7 +83,7 @@ class CheckSearch:
 
         try:
 
-            self._check_common_seaches()
+            self._check_common_searches()
             self._check_integration_data()
             return True
 
