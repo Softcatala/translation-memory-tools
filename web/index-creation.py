@@ -31,6 +31,7 @@ from whoosh.analysis import StandardAnalyzer
 from jsonbackend import JsonBackend
 from optparse import OptionParser
 from cleanstring import CleanString
+from cleanupfilter import CleanUpFilter
 
 po_directory = None
 debug_keyword = None
@@ -142,7 +143,7 @@ class IndexCreator:
 
         MIN_WORDSIZE_TO_IDX = 1
 
-        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX, stoplist=None)
+        analyzer=StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX, stoplist=None) | CleanUpFilter()
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer), 
                         target=TEXT(stored=True, analyzer=analyzer),
                         source_clean=TEXT(stored=True, analyzer=analyzer), 

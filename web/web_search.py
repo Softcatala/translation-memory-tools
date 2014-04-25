@@ -21,15 +21,14 @@
 import cgi
 import time
 
-
 from whoosh.index import open_dir
 from whoosh.fields import *
 from whoosh.highlight import *
 from whoosh.qparser import MultifieldParser
+from whoosh.analysis import *
 import traceback
 import json
-from resultshighlight import *
-
+from cleanupfilter import CleanUpFilter
 
 class JsonSerializer:
 
@@ -48,7 +47,7 @@ class JsonSerializer:
 
 class WebSerializer:
 
-    def print_result(self, result, org, clean):
+    def print_result(self, result, org):
 
         print '<div class = "result">'
         print "<b>Projecte:</b> " + result["project"].encode('utf-8')
@@ -63,25 +62,13 @@ class WebSerializer:
             print "<br>"
 
         if org is True:
-            if clean is True:
-                highlighted = ResultsHighlight.get(result["source"], result["source_clean"], result.highlights("source_clean")) 
-            else:
-                highlighted = result.highlights("source") 
-                
-            print "<b>Original:</b> " + highlighted.encode('utf-8')
-            
-            #print "<b>Original:</b> " + result.highlights("source").encode('utf-8')
+            print "<b>Original:</b> " + result.highlights("source").encode('utf-8')
             print "<br>"
             print "<b>Traducció:</b> " + cgi.escape(result["target"].encode('utf-8'))
         else:
-            if clean is True:
-                highlighted = ResultsHighlight.get(result["target"], result["target_clean"], result.highlights("target_clean")) 
-            else:
-                highlighted = result.highlights("target") 
-            
             print "<b>Original:</b> " + cgi.escape(result["source"].encode('utf-8'))
             print "<br>"
-            print "<b>Traducció:</b> " + highlighted.encode('utf-8')
+            print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
 
         print '</div>'
 
@@ -105,13 +92,14 @@ class WebSerializer:
 
             self.write_html_header(search.term, results.scored_length(), end_time)
             for result in results:
-                self.print_result(result, search.org, search.clean)
+                self.print_result(result, search.org)
 
             self.close_html()
 
         except Exception as details:
-            print "Error:" + str(details)
             traceback.print_exc()
+            print str(details)
+            
 
     def open_html(self):
         print 'Content-type: text/html\n\n'
@@ -139,13 +127,12 @@ class Search:
 
     dir_name = "indexdir"
 
-    def __init__(self, term, org, project, clean):
+    def __init__(self, term, org, project):
         self.term = term
         self.org = org
         self.project = project
         self.searcher = None
         self.query = None
-        self.clean = clean
 
     def get_results(self):
         if self.searcher is None:
@@ -161,25 +148,17 @@ class Search:
         self.searcher = ix.searcher()
 
         if self.org is True:
-            if self.clean is True:
-                qs = u'source_clean:{0}'.format(self.term)
-            else:
-                qs = u'source:{0}'.format(self.term)
+            qs = u'source:{0}'.format(self.term)
         else:
-            if self.clean is True:
-                qs = u'target_clean:{0}'.format(self.term)
-            else:
-                qs = u'target:{0}'.format(self.term)
-    
+            qs = u'target:{0}'.format(self.term)
+
         if self.project is not None and self.project != 'tots':
             if self.project == 'softcatala':
                 qs += u' softcatala:true'
             else:
                 qs += u' project:{0}'.format(self.project)
 
-        self.query = MultifieldParser(["source", "source_clean",
-                                      "target", "target_clean",
-                                      "project", "softcatala"],
+        self.query = MultifieldParser(["source", "target", "project", "softcatala"],
                                       ix.schema).parse(qs)
 
 
@@ -190,12 +169,6 @@ def main():
     where = form.getvalue("where", None)
     project = form.getvalue("project", None)
     json = form.getvalue("json", None)
-    clean_qs = form.getvalue("clean", None)    
-
-    if clean_qs == 'on':
-        clean = True
-    else:
-        clean = False
 
     if where == 'source':
         org = True
@@ -203,9 +176,8 @@ def main():
         org = False
 
     term = unicode(term, 'utf-8')
-
-    search = Search(term, org, project, clean)
-
+    search = Search(term, org, project)
+    
     if (json is None):
         web_serializer = WebSerializer()
         web_serializer.do(search)
