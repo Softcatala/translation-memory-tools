@@ -177,7 +177,9 @@ class Search:
             else:
                 qs += u' project:{0}'.format(self.project)
 
-        self.query = MultifieldParser(["source_clean", "project", "softcatala"],
+        self.query = MultifieldParser(["source", "source_clean",
+                                      "target", "target_clean",
+                                      "project", "softcatala"],
                                       ix.schema).parse(qs)
 
 
