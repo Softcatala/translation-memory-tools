@@ -12,6 +12,7 @@ if [ ! -z "$DEVENV" ]; then
     echo Development enviroment set to $TARGET_DIR
 fi
 
+
 # Index
 rm -r -f $TARGET_DIR/indexdir
 mkdir $TARGET_DIR/indexdir
@@ -23,6 +24,7 @@ cp $ROOT/tm-git/web/index.html $TARGET_DIR
 cp $ROOT/tm-git/web/web_search.py $TARGET_DIR
 cp $ROOT/tm-git/web/resultshighlight.py $TARGET_DIR
 cp $ROOT/tm-git/web/cleanstring.py $TARGET_DIR
+cp $ROOT/tm-git/web/cleanupfilter.py $TARGET_DIR
 cp $ROOT/tm-git/web/statistics.html $TARGET_DIR
 cp $ROOT/tm-git/web/download.html $TARGET_DIR
 cp $ROOT/tm-git/web/select-projects.html $TARGET_DIR
@@ -85,6 +87,7 @@ cp $ROOT/tm-git/web/index.html $TARGET_DIR
 cp $ROOT/tm-git/web/web_search.py $TARGET_DIR
 cp $ROOT/tm-git/web/resultshighlight.py $TARGET_DIR
 cp $ROOT/tm-git/web/cleanstring.py $TARGET_DIR
+cp $ROOT/tm-git/web/cleanupfilter.py $TARGET_DIR
 cp $ROOT/tm-git/web/statistics.html $TARGET_DIR
 cp $ROOT/tm-git/web/download.html $TARGET_DIR
 cp $ROOT/tm-git/web/select-projects.html $TARGET_DIR
