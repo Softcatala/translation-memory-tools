@@ -79,6 +79,31 @@ class IndexCreator:
         print 'Total sentences {0}, indexed {1}'.format(self.sentences, 
               self.sentences_indexed)
 
+    def _get_comment(self, entry):
+        '''
+            PO files can contain 3 types of comments:
+         
+                # translators comments
+                #. extracted 
+                #: location
+
+            We import only translator's comments and extracted that we concatenate
+            to make it transparent to the search
+        '''
+
+        if (entry.tcomment is None):
+            comment = entry.tcomment
+        else:
+            comment = unicode(entry.tcomment)
+
+        if entry.comment is not None:
+            if entry.tcomment is None:
+                comment = unicode(entry.comment) 
+            else:
+                comment += u'\r\n' + unicode(entry.comment)
+
+        return comment
+
     def _process_project(self, po_directory, name, filename, softcatala):
 
         global debug_keyword
@@ -103,17 +128,8 @@ class IndexCreator:
                 else:
                     x = unicode(entry.msgctxt)
 
-                if (entry.tcomment is None):
-                    c = entry.tcomment
-                else:
-                    c = unicode(entry.tcomment)
-
-                if entry.comment is not None:
-                    if entry.tcomment is None:
-                        c = unicode(entry.comment) 
-                    else:
-                        c += u'\r\n' + unicode(entry.comment)
-
+                c = self._get_comment(entry)
+                
                 if t is None or len(t) == 0:
                     # msgstr_plural is a dictionary where the key is the index and
                     # the value is the localised string
