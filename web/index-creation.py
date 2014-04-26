@@ -108,6 +108,12 @@ class IndexCreator:
                 else:
                     c = unicode(entry.tcomment)
 
+                if entry.comment is not None:
+                    if entry.tcomment is None:
+                        c = unicode(entry.comment) 
+                    else:
+                        c += u'\r\n' + unicode(entry.comment)
+
                 if t is None or len(t) == 0:
                     # msgstr_plural is a dictionary where the key is the index and
                     # the value is the localised string

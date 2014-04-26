@@ -53,6 +53,11 @@ class WebSerializer:
 
         return cgi.escape(source.encode('utf-8'))
 
+    def _get_formatted_comment(self, comment):
+        comment = comment.replace('\n', '<br>')
+        comment = comment.replace('\r', '')
+        return comment
+
     def print_result(self, result):
 
         print '<div class = "result">'
@@ -60,7 +65,8 @@ class WebSerializer:
         print "<br>"
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
-            print "<b>Comentari:</b> " + cgi.escape(result["comment"].encode('utf-8'))
+            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8')
+            print "<b>Comentari:</b> " + comment
             print "<br>"
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
