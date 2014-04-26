@@ -30,7 +30,7 @@ class CheckSearch:
 
     def search_source(self, term):
 
-        url = '{0}/web_search.py?query={1}&where=source&project=tots' \
+        url = '{0}/web_search.py?source={1}&project=tots' \
               '&json=1'.format(self.url, term)
 
         urllib.urlretrieve(url, 'file.txt')

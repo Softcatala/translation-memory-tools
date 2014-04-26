@@ -41,13 +41,19 @@ class JsonSerializer:
         all_results = []
         for result in results:
             all_results.append(result.fields())
-
         print json.dumps(all_results, indent=4, separators=(',', ': '))
 
 
 class WebSerializer:
 
-    def print_result(self, result, org):
+    def _get_result_text(self, source, highlighted):
+
+        if highlighted is not None and len (highlighted) > 0:
+            return highlighted.encode('utf-8')
+
+        return cgi.escape(source.encode('utf-8'))
+
+    def print_result(self, result):
 
         print '<div class = "result">'
         print "<b>Projecte:</b> " + result["project"].encode('utf-8')
@@ -61,16 +67,22 @@ class WebSerializer:
             print "<b>Context:</b> " + cgi.escape(result["context"].encode('utf-8'))
             print "<br>"
 
-        if org is True:
-            print "<b>Original:</b> " + result.highlights("source").encode('utf-8')
-            print "<br>"
-            print "<b>Traducció:</b> " + cgi.escape(result["target"].encode('utf-8'))
-        else:
-            print "<b>Original:</b> " + cgi.escape(result["source"].encode('utf-8'))
-            print "<br>"
-            print "<b>Traducció:</b> " + result.highlights("target").encode('utf-8')
-
+        print "<b>Original:</b> " + self._get_result_text(result["source"], result.highlights("source"))
+        print "<br>"
+        print "<b>Traducció:</b> " + self._get_result_text(result["target"], result.highlights("target"))
         print '</div>'
+
+    def get_search_term_for_display(self, search):
+
+        text = ''
+
+        if search.source is not None and len(search.source) > 0:
+            text += search.source
+        
+        if search.target is not None and len(search.target) > 0:
+            text += ' ' + search.target
+        
+        return text
 
     def do(self, search):
         '''
@@ -80,8 +92,9 @@ class WebSerializer:
         try:
             self.open_html()
 
-            if len(search.term) < 2:
-                self.write_html_header(search.term, 0, 0)
+            if ((search.source is None or len(search.source) < 2) and
+               (search.target is None or len(search.target) < 2)): 
+                self.write_html_header(self.get_search_term_for_display(search), 0, 0)
                 print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
                 return
 
@@ -90,9 +103,10 @@ class WebSerializer:
             results = search.get_results()
             end_time = time.time() - start_time
 
-            self.write_html_header(search.term, results.scored_length(), end_time)
+            self.write_html_header(self.get_search_term_for_display(search), 
+                                   results.scored_length(), end_time)
             for result in results:
-                self.print_result(result, search.org)
+                self.print_result(result)
 
             self.close_html()
 
@@ -127,9 +141,9 @@ class Search:
 
     dir_name = "indexdir"
 
-    def __init__(self, term, org, project):
-        self.term = term
-        self.org = org
+    def __init__(self, source, target, project):
+        self.source = source
+        self.target = target
         self.project = project
         self.searcher = None
         self.query = None
@@ -147,11 +161,14 @@ class Search:
         ix = open_dir(self.dir_name)
         self.searcher = ix.searcher()
 
-        if self.org is True:
-            qs = u'source:{0}'.format(self.term)
-        else:
-            qs = u'target:{0}'.format(self.term)
+        qs = ''
 
+        if self.source is not None and len(self.source) > 0:
+            qs += u' source:{0}'.format(self.source)
+        
+        if self.target is not None and len(self.target) > 0:
+            qs += u' target:{0}'.format(self.target)
+        
         if self.project is not None and self.project != 'tots':
             if self.project == 'softcatala':
                 qs += u' softcatala:true'
@@ -165,18 +182,18 @@ class Search:
 def main():
 
     form = cgi.FieldStorage()
-    term = form.getvalue("query", '')
-    where = form.getvalue("where", None)
+    source = form.getvalue("source", '')
+    target = form.getvalue("target", None)
     project = form.getvalue("project", None)
     json = form.getvalue("json", None)
 
-    if where == 'source':
-        org = True
-    else:
-        org = False
-
-    term = unicode(term, 'utf-8')
-    search = Search(term, org, project)
+    if source is not None:
+        source = unicode(source, 'utf-8')
+    
+    if target is not None:
+        target = unicode(target, 'utf-8')
+    
+    search = Search(source, target, project)
     
     if (json is None):
         web_serializer = WebSerializer()

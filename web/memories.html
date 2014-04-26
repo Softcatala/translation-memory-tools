@@ -22,20 +22,22 @@
     <div class = "search-box">
         <p class>Escriviu el text que voleu cercar a les memòries de traducció i premeu el botó de cerca</p>
         <form enctype="multipart/form-data"  method='GET' action='web_search.py' id='form' name='form'>
-        <input type="text" name="query" size="40" value="">
+        Anglès <input type="text" name="source" size="60" value="">
+        <br>
+        Català <input type="text" name="target" size="60" value="">
+        <br>        
         <input type="submit" value="Cerca">
-        <input type="radio" name="where" value="source" checked>Cerca a l'original (anglès)
-        <input type="radio" name="where" value="translation">Cerca a la traducció (català)
         <!--#include virtual="select-projects.html" -->
         </form>
     </div>
     <div class = "search-samples">
         <p>Exemples de cerques</p>
         <ul>
-            <li>"<a href='./web_search.py?query="Audio+file"&where=source'>Audio file</a>" - Cerca el terme complet com una cadena (exemple a la cadena original)</li>
-            <li><a href='./web_search.py?query=Audio+OR+music&where=source'>Audio OR music</a> - Cerca cadenes amb el terme 'audio' o bé 'music' (exemple a la cadena original)</li>
-            <li><a href='./web_search.py?query=Audio+NOT+music&where=source'>Audio NOT music</a> - Cerca cadenes amb el terme 'audio' però sense 'music' (exemple a la cadena original)</li>
-            <li><a href='./web_search.py?query=entrella%C3%A7a*&where=translation'>entrellaça*</a> - Cerca cadenes amb els caràcters 'entrellaça' i després qualsevol altres caràcters (exemple a la cadena traduïda)</li>
+            <li>"<a href='./web_search.py?source="Audio+file"'>Audio file</a>" - Cerca el terme complet com una cadena (exemple de cerca en anglès)</li>
+            <li><a href='./web_search.py?source=Audio+OR+music'>Audio OR music</a> - Cerca cadenes amb el terme 'audio' o bé 'music' (exemple de cerca en anglès)</li>
+            <li><a href='./web_search.py?source=Audio+NOT+music'>Audio NOT music</a> - Cerca cadenes amb el terme 'audio' però sense 'music' (exemple de cerca en anglès)</li>
+            <li><a href='./web_search.py?target=entrella%C3%A7a*'>entrellaça*</a> - Cerca cadenes amb els caràcters 'entrellaça' i després qualsevol altres caràcters (exemple de cerca en català)</li>
+            <li><a href='./web_search.py?source=File&target=arxiu'>file arxiu</a> - Cerca cadenes que en anglès conten 'file' i en han estat traduïdes per 'arxiu' (exemple de cerca en anglès i català)</li>
         </ul>
     </div>
 <i><!--#include virtual="statistics.html" --></i>
