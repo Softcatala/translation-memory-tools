@@ -48,7 +48,7 @@ class WebSerializer:
 
     def _get_result_text(self, source, highlighted):
 
-        if highlighted is not None and len (highlighted) > 0:
+        if highlighted is not None and len(highlighted) > 0:
             return highlighted.encode('utf-8')
 
         return cgi.escape(source.encode('utf-8'))
@@ -160,23 +160,27 @@ class Search:
     def search(self):
         ix = open_dir(self.dir_name)
         self.searcher = ix.searcher()
+        fields = []
 
         qs = ''
 
         if self.source is not None and len(self.source) > 0:
             qs += u' source:{0}'.format(self.source)
+            fields.append("source")
         
         if self.target is not None and len(self.target) > 0:
             qs += u' target:{0}'.format(self.target)
+            fields.append("target")
         
         if self.project is not None and self.project != 'tots':
             if self.project == 'softcatala':
                 qs += u' softcatala:true'
+                fields.append("softcatala")
             else:
                 qs += u' project:{0}'.format(self.project)
+                fields.append("project")
 
-        self.query = MultifieldParser(["source", "target", "project", "softcatala"],
-                                      ix.schema).parse(qs)
+        self.query = MultifieldParser(fields, ix.schema).parse(qs)
 
 
 def main():
