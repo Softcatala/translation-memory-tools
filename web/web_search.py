@@ -65,22 +65,32 @@ class WebSerializer:
     def print_result(self, result):
 
         print '<div class = "result">'
-        print "<b>Projecte:</b> " + result["project"].encode('utf-8')
-        print "<br>"
+        print '<table>'
+        print '<tr>'
+        print "<td><b>Projecte:</b></td>" + "<td>" + result["project"].encode('utf-8') + "<td/>"
+        print "</tr>"
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
-            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8')
-            print "<b>Comentari:</b> " + comment
+            print '<tr>'
+            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8') 
+            print "<td><b>Comentari:</b></td>" + "<td>" + comment + "</td>"
+            print '</tr>'
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            print "<b>Context:</b> " + cgi.escape(result["context"].encode('utf-8'))
-            print "<br>"
+            print '<tr>'
+            print "<td><b>Context:</b></td>" + "<td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
+            print '</tr>'
+           
+        print '<tr>'
+        print "<td><b>Original:</b></td>" + "<td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
+        print '</tr>'
+        
+        print '<tr>'
+        print "<td><b>Traducció:</b></td>" + "<td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>" 
+        print '</tr>'
 
-        print "<b>Original:</b> " + self._get_result_text(result["source"], result.highlights("source"))
-        print "<br>"
-        print "<b>Traducció:</b> " + self._get_result_text(result["target"], result.highlights("target"))
-        print '</div>'
-
+        print "</table></div>"
+        
     def get_search_term_for_display(self, search):
 
         text = ''
