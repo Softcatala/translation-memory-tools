@@ -17,6 +17,10 @@
     padding-bottom: 10px;
 }
 
+.result-table td {
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
 
 b[class^='match'],b[class*=' match']
 {

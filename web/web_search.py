@@ -65,7 +65,7 @@ class WebSerializer:
     def print_result(self, result):
 
         print '<div class = "result">'
-        print '<table>'
+        print '<table class = "result-table">'
         print '<tr>'
         print "<td><b>Projecte:</b></td>" + "<td>" + result["project"].encode('utf-8') + "<td/>"
         print "</tr>"
@@ -73,7 +73,7 @@ class WebSerializer:
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             print '<tr>'
             comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8') 
-            print "<td><b>Comentari:</b></td>" + "<td>" + comment + "</td>"
+            print "<td><b>Comentaris:</b></td>" + "<td>" + comment + "</td>"
             print '</tr>'
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
