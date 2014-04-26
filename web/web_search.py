@@ -71,7 +71,6 @@ class WebSerializer:
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8')
             print "<b>Comentari:</b> " + comment
-            print "<br>"
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             print "<b>Context:</b> " + cgi.escape(result["context"].encode('utf-8'))
