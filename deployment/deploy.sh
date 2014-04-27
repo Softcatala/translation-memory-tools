@@ -22,7 +22,6 @@ cp -r $ROOT/tm-git/web/indexdir/* $TARGET_DIR/indexdir
 cp $ROOT/tm-git/web/recursos.css $TARGET_DIR
 cp $ROOT/tm-git/web/index.html $TARGET_DIR
 cp $ROOT/tm-git/web/web_search.py $TARGET_DIR
-cp $ROOT/tm-git/web/resultshighlight.py $TARGET_DIR
 cp $ROOT/tm-git/web/cleanstring.py $TARGET_DIR
 cp $ROOT/tm-git/web/cleanupfilter.py $TARGET_DIR
 cp $ROOT/tm-git/web/statistics.html $TARGET_DIR
@@ -85,7 +84,6 @@ cp -r $ROOT/tm-git/web/indexdir/* $TARGET_DIR/indexdir
 cp $ROOT/tm-git/web/recursos.css $TARGET_DIR
 cp $ROOT/tm-git/web/index.html $TARGET_DIR
 cp $ROOT/tm-git/web/web_search.py $TARGET_DIR
-cp $ROOT/tm-git/web/resultshighlight.py $TARGET_DIR
 cp $ROOT/tm-git/web/cleanstring.py $TARGET_DIR
 cp $ROOT/tm-git/web/cleanupfilter.py $TARGET_DIR
 cp $ROOT/tm-git/web/statistics.html $TARGET_DIR
