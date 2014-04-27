@@ -33,15 +33,15 @@ if [ -z "$NOPOBUILD" ]; then
     rm -f *.tmx
     rm -f *.log
     python builder.py
+
+    # Build aggregated memories
+    cd $INTERMEDIATE_PO/
+    python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --all
+    python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --softcatala
+    cp tots-tm.tmx $INTERMEDIATE_TMX/
+    cp softcatala-tm.tmx $INTERMEDIATE_TMX/
+
 fi
-
-# Build aggregated memories
-cd $INTERMEDIATE_PO/
-python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --all
-python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --softcatala
-cp tots-tm.tmx $INTERMEDIATE_TMX/
-cp softcatala-tm.tmx $INTERMEDIATE_TMX/
-
 
 cd $PROGRAMS
 # Copy only new PO files
