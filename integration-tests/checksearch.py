@@ -69,7 +69,8 @@ class CheckSearch:
         self._assert_that(data[0]['source'], u'Palindromics numbers remain the same when its digits are reversed')
         self._assert_that(data[0]['target'], u'Els nombres capicua no varien quan les seves xifres s\'inverteixen')
         self._assert_that(data[0]['context'], u'Palindromics.context')
-        self._assert_contains(data[0]['comment'], u'Títol de preferències')
+        self._assert_contains(data[0]['comment'], u'n.t.: títol de preferències')
+        self._assert_contains(data[0]['comment'], u'translators: comment for translators')
 
     def _check_common_searches(self):
 

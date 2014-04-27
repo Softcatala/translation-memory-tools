@@ -13,6 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 # N.T.: Títol de preferències
+#. Translators: Comment for translators
 msgctxt "Palindromics.context"
 msgid ""
 "Palindromics numbers remain the same when its digits are reversed"
