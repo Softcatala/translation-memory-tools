@@ -79,6 +79,10 @@ msgstr "Apaga les màquines virtuals seleccionades"
         self.assertEquals(stored['comment'], 'Please remember to do something\r\n')
         self.assertEquals(stored['softcatala'], False)
         self.assertEquals(stored['project'], 'test_project')
+        self.assertEquals(index.words, 5)
+        self.assertEquals(index.sentences, 1)
+        self.assertEquals(index.sentences_indexed, 1)
+
 
     def test_get_comment_both(self):
         index = IndexCreator('.')
