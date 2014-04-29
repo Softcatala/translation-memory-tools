@@ -26,6 +26,11 @@ import pystache
 from optparse import OptionParser
 from indexcreator import IndexCreator
 
+class Option(object):
+
+    def __init__(self, option):
+        self.option = option
+
 def _process_template(template, filename, variables):
 
         # Load template and process it
@@ -42,29 +47,21 @@ def _write_statistics(projects, words):
 
     variables = {}
 
-    today = datetime.date.today()
-    
+    today = datetime.date.today()    
     variables['date'] = today.strftime("%d/%m/%Y")
     variables['projects'] = str(projects)
     variables['words'] = locale.format("%d", words, grouping=True)
     _process_template("statistics.mustache", "statistics.html", variables)
 
-def _write_select_projects(options):
+def _write_select_projects(project_names):
 
-    html = u'<p>Àmbit de cerca: '
-    html += u'<select name ="project">\r'
-    html += u'<option value="tots" selected="selected">Tots els projectes</option>\r'
-    html += u'<option value="softcatala">Tots els projectes de Softcatalà</option>\r'
+    variables = {}
+    options = []
+    for project_name in sorted(project_names, key=lambda x: x.lower()):
+         options.append(Option(project_name))
 
-    options = sorted(options, key=lambda x: x.lower())
-    for option in options:
-        html += u'<option value="{0}">Projecte {1}</option>\r'.format(option, option)
-
-    html += u'</select></p>\r'
-    html_file = open("select-projects.html", "w")
-    html_file.write(html.encode('utf-8'))
-    html_file.close()
-
+    variables['options'] = options
+    _process_template("select-projects.mustache", "select-projects.html", variables)
 
 def read_parameters():
 
