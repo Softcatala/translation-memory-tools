@@ -39,8 +39,7 @@ class IndexWriterMock (IndexWriter):
 
 class TestIndexCreator(unittest.TestCase):
 
-    minipo = r"""# Afrikaans translation of program ABC
-#
+    minipo = r"""#
 msgid ""
 msgstr ""
 "Project-Id-Version: program 2.1-branch\n"
