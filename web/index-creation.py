@@ -21,20 +21,33 @@
 import locale
 import datetime
 import time
+import pystache
+
 from optparse import OptionParser
 from indexcreator import IndexCreator
 
+def _process_template(template, filename, variables):
+
+        # Load template and process it
+        template = open(template, 'r').read()
+        parsed = pystache.Renderer()
+        s = parsed.render(unicode(template, "utf-8"), variables)
+
+        # Write output
+        f = open(filename, 'w')
+        f.write(s.encode("utf-8"))
+        f.close()
 
 def _write_statistics(projects, words):
 
-    today = datetime.date.today()
-    html = u'<p>L\'índex va ser actualitzat per últim cop el ' + today.strftime("%d/%m/%Y")
-    html += u' i conté ' + str(projects) + ' projectes amb un total de '
-    html += locale.format("%d", words, grouping=True) + ' paraules</p>'
-    html_file = open("statistics.html", "w")
-    html_file.write(html.encode('utf-8'))
-    html_file.close()
+    variables = {}
 
+    today = datetime.date.today()
+    
+    variables['date'] = today.strftime("%d/%m/%Y")
+    variables['projects'] = str(projects)
+    variables['words'] = locale.format("%d", words, grouping=True)
+    _process_template("statistics.mustache", "statistics.html", variables)
 
 def _write_select_projects(options):
 
