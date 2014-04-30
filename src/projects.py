@@ -23,18 +23,23 @@ from project import Project
 import logging
 import os
 import shutil
+import datetime
 
+from projectmetadatadao import ProjectMetaDataDao
+from projectmetadatadto import ProjectMetaDataDto
 
 class Projects:
 
     def __init__(self):
         self.projects = list()
         self.set_tm_file('tots-tm.po')
-            
+        self.metadata_dao = ProjectMetaDataDao()
+        self.metadata_dao.open('statistics.db3')
+          
     def set_tm_file(self, filename):
         self.tm_file = filename
         self.tm_project = Project('Translation memory', self.tm_file)
-
+  
     def add(self, project):
         self.projects.append(project)
 
@@ -49,6 +54,16 @@ class Projects:
         """Process all projects"""
         for project in self.projects:
             project.do()
+
+            metadata_dto = self.metadata_dao.get(project.name)
+            if (metadata_dto == None):
+                metadata_dto = ProjectMetaDataDto(project.name)
+
+            words, entries = project.get_words_entries()
+            metadata_dto.last_translation_update = datetime.datetime.now()
+            metadata_dto.last_fetch = datetime.datetime.now()
+            metadata_dto.words = words
+            self.metadata_dao.put(metadata_dto)
 
         self.create_tm_for_all_projects()
 
@@ -77,6 +92,8 @@ class Projects:
             project.statistics()
 
         self.tm_project.statistics()
+        self.metadata_dao.dump()
+        self.metadata_dao.close()
 
     def to_tmx(self):
         for project in self.projects:

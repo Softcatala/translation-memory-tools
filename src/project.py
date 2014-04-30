@@ -145,19 +145,24 @@ class Project:
                 logging.error(detail)
                 pass
 
-    def statistics(self):
+    def get_words_entries(self):
+
         words = 0
         entries = 0
 
+        poFile = pofile(self.filename)
+
+        for entry in poFile:
+            string_words = entry.msgstr.split(' ')
+            words += len(string_words)
+
+        entries = len(poFile.translated_entries())
+        return words, entries
+
+    def statistics(self):
+
         try:
-            poFile = pofile(self.filename)
-
-            for entry in poFile:
-                string_words = entry.msgstr.split(' ')
-                words += len(string_words)
-
-            entries = len(poFile.translated_entries())
-
+            words, entries = self.get_words_entries()
         except Exception as detail:
             msg = 'Project. statistics exception {0}'
             logging.error(msg.format(self.filename))
