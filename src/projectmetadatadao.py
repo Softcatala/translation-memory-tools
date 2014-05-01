@@ -33,9 +33,7 @@ class ProjectMetaDataDao:
                   last_fetch timestamp, last_translation_update timestamp, \
                   words integer);'''
 
-        print command
         c.execute(command)
-
         self.connection.commit()
 
 
