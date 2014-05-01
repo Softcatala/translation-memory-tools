@@ -44,7 +44,7 @@ class ProjectMetaDataDao:
 
     def put(self, dto):
         c = self.connection.cursor()
-        command = "insert or replace into 'projects' values ('{0}', '{1}', '{2}', {3}, '{4}');". \
+        command = u"insert or replace into 'projects' values ('{0}', '{1}', '{2}', {3}, '{4}');". \
                   format(dto.name, dto.last_fetch, dto.last_translation_update,
                   dto.words, dto.checksum)
 
@@ -54,7 +54,7 @@ class ProjectMetaDataDao:
 
     def get(self, name):
         c = self.connection.cursor()
-        command = 'SELECT * FROM projects where name=\'{0}\''.format(name)
+        command = u'SELECT * FROM projects where name=\'{0}\''.format(name)
         result = c.execute(command)
         row = result.fetchone()
 
@@ -71,7 +71,7 @@ class ProjectMetaDataDao:
 
     def dump(self):
         c = self.connection.cursor()
-        command = 'SELECT * FROM projects'
+        command = u'SELECT * FROM projects'
         result = c.execute(command)
         print 'Database rows'
         for row in result:

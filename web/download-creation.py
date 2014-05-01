@@ -26,6 +26,8 @@ import os
 import datetime
 from optparse import OptionParser
 from pofile import POFile
+from projectmetadatadao import ProjectMetaDataDao
+from projectmetadatadto import ProjectMetaDataDto
 
 po_directory = None
 tmx_directory = None
@@ -46,7 +48,7 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
         print "Skipping empty translation memory: " + potext
         return ''
 
-    date = get_file_date(potext)
+    last_fetch, last_translation_update = get_project_dates(name)
     html = "<tr>\r"
     if (len(projectweb) > 0):
         html += "<td><a href='" + projectweb + "'>" + name + "</a></td>\r"
@@ -56,7 +58,8 @@ def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
     html += "<td>" + link(get_zip_file(potext), pofile) + "</td>\r"
     html += "<td>" + link(get_zip_file(tmxtext), tmxfile) + "</td>\r"
     html += "<td>" + locale.format("%d", words, grouping=True) + "</td>\r"
-    html += "<td>" + date + "</td>\r"
+    html += "<td>" + last_fetch + "</td>\r"
+    html += "<td>" + last_translation_update + "</td>\r"
     html += "</tr>\r"
     return html
 
@@ -93,13 +96,24 @@ def table_row(name, projectweb, potext):
                               get_zip_file(get_path_to_tmx(potext)))
 
 
-def get_file_date(filename):
+def _convert_date_to_string(date):
+    return date.strftime("%d/%m/%Y")
 
-    full_path = os.path.join(po_directory, filename)
-    last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
-    last_date = last_ctime.strftime("%d/%m/%Y")
-    return last_date
 
+def get_project_dates(name):
+
+    project_dao = ProjectMetaDataDao()
+    project_dao.open('../src/statistics.db3')
+    dto = project_dao.get(name)
+
+    if dto == None:
+        last_fetch = ''
+        last_translation = ''
+    else:
+        last_fetch = _convert_date_to_string(dto.get_last_fetch())
+        last_translation = _convert_date_to_string(dto.get_last_translation_update())
+
+    return last_fetch, last_translation 
 
 def build_all_projects_memory(json, html):
     '''Builds zip file that contains all memories for all projects'''
@@ -170,7 +184,8 @@ def process_projects():
     html += '<th>Fitxer PO</th>\r'
     html += '<th>Fitxer TMX</th>\r'
     html += u'<th>Paraules traduïdes</th>\r'
-    html += u'<th>Última actualització</th>\r'
+    html += u'<th>Última baixada de la memòria</th>\r'
+    html += u'<th>Última actualització la traducció</th>\r'
     html += '</tr>\r'
 
     html = build_all_projects_memory(json, html)
