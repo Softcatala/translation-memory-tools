@@ -161,6 +161,9 @@ class Project:
 
     def statistics(self):
 
+        words = 0
+        entries = 0
+
         try:
             words, entries = self.get_words_entries()
         except Exception as detail:
