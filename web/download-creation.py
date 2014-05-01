@@ -185,7 +185,7 @@ def process_projects():
     html += '<th>Fitxer TMX</th>\r'
     html += u'<th>Paraules traduïdes</th>\r'
     html += u'<th>Última baixada de la memòria</th>\r'
-    html += u'<th>Última actualització la traducció</th>\r'
+    html += u'<th>Última actualització de la traducció</th>\r'
     html += '</tr>\r'
 
     html = build_all_projects_memory(json, html)
