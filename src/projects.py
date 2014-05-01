@@ -55,11 +55,15 @@ class Projects:
         for project in self.projects:
             project.do()
 
+            words, entries = project.get_words_entries()
+
+            if words == -1:
+                continue
+
             metadata_dto = self.metadata_dao.get(project.name)
             if (metadata_dto == None):
                 metadata_dto = ProjectMetaDataDto(project.name)
 
-            words, entries = project.get_words_entries()
             metadata_dto.last_translation_update = datetime.datetime.now()
             metadata_dto.last_fetch = datetime.datetime.now()
             metadata_dto.words = words

@@ -147,33 +147,30 @@ class Project:
 
     def get_words_entries(self):
 
-        words = 0
-        entries = 0
-
-        poFile = pofile(self.filename)
-
-        for entry in poFile:
-            string_words = entry.msgstr.split(' ')
-            words += len(string_words)
-
-        entries = len(poFile.translated_entries())
-        return words, entries
-
-    def statistics(self):
-
-        words = 0
-        entries = 0
+        words = -1
+        entries = -1
 
         try:
-            words, entries = self.get_words_entries()
+            poFile = pofile(self.filename)
+
+            for entry in poFile:
+                string_words = entry.msgstr.split(' ')
+                words += len(string_words)
+
+            entries = len(poFile.translated_entries())
+
         except Exception as detail:
-            msg = 'Project. statistics exception {0}'
+            msg = 'Project. get_words_entries exception {0}'
             logging.error(msg.format(self.filename))
             logging.error(detail)
 
-        finally:
-            msg = '{0} project. {1} translated strings, words {2}'
-            logging.info(msg.format(self.name, entries, words))
+        return words, entries
+
+    def statistics(self):
+        
+        words, entries = self.get_words_entries()
+        msg = '{0} project. {1} translated strings, words {2}'
+        logging.info(msg.format(self.name, entries, words))
 
     def to_tmx(self):
         fileName, fileExtension = os.path.splitext(self.filename)
