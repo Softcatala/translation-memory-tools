@@ -22,6 +22,7 @@ import sys
 import unittest
 import polib
 import tempfile
+import hashlib
 
 sys.path.append('../src/')
 from pofile import POFile
@@ -29,7 +30,7 @@ from pofile import POFile
 
 class TestPOFile(unittest.TestCase):
 
-    minipo = r"""# Afrikaans translation of program ABC
+    minipo = ur"""# Afrikaans translation of program ABC
 #
 msgid ""
 msgstr ""
@@ -44,8 +45,8 @@ msgstr ""
 # Please remember to do something
 #: ../dir/file.xml.in.h:1 ../dir/file2.xml.in.h:4
 msgctxt 'Context'
-msgid u'Power off the selected virtual machines'
-msgstr u'Apaga les màquines virtuals seleccionades'
+msgid 'Power off the selected virtual machines'
+msgstr 'Apaga les màquines virtuals seleccionades'
 """
 
     def test_get_statistics(self):
@@ -55,7 +56,7 @@ msgstr u'Apaga les màquines virtuals seleccionades'
     def test_add_comment_to_all_entries(self):
         tmpfile = tempfile.NamedTemporaryFile()
         f = open(tmpfile.name, 'w')
-        f.write(self.minipo)
+        f.write(self.minipo.encode('utf-8'))
         f.close()
 
         pofile = POFile(tmpfile.name)
@@ -65,6 +66,14 @@ msgstr u'Apaga les màquines virtuals seleccionades'
 
         for entry in input_po:
             assert entry.tcomment == u'Comment test\nPlease remember to do something'
+
+    def test_calculate_localized_string_checksum(self):
+        pofile = POFile(self.minipo)
+        checksum = hashlib.new('sha1')
+        pofile.calculate_localized_string_checksum(checksum)
+        self.assertEquals(u'edf879d0199103cc09cc464deebdfd3e98613e4b', 
+                    checksum.hexdigest())
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -41,6 +41,20 @@ class POFile:
 
         input_po.save(self.filename)
 
+    def calculate_localized_string_checksum(self, checksum):
+
+        try:
+
+            poFile = polib.pofile(self.filename)
+            for entry in poFile:
+                # hashlib.sha1 isn't expecting a unicode object, but rather a 
+                # sequence of bytes in a str object
+                checksum.update(entry.msgstr.encode('utf-8'))
+
+        except Exception as detail:
+            print("POFile.get_checksum exception " + self.filename)
+            print(detail)
+
     def get_statistics(self):
 
         words = 0

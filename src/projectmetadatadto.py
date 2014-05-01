@@ -26,6 +26,7 @@ class ProjectMetaDataDto:
         self._last_translation_update = None 
         self._last_fetch = None
         self.words = 0
+        self.checksum = ''
 
     def get_last_translation_update(self):
         return self._last_translation_update

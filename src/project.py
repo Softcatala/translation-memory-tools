@@ -32,7 +32,7 @@ from gerritdirectoryfileset import GerritDirectoryFileSet
 
 import logging
 import os
-
+import hashlib
 
 class Project:
 
@@ -41,6 +41,7 @@ class Project:
         self.filename = filename
         self.filesets = []
         self.name = name
+        self.checksum = None
 
     def get_filename(self):
         return self.filename
@@ -131,10 +132,12 @@ class Project:
 
     def do(self):
         self._delete_po_file()
+        checksum = hashlib.new('sha1')
 
         for fileset in self.filesets:
             try:
 
+                fileset.set_checksum(checksum)
                 fileset.set_add_source(self.add_source)
                 fileset.do()
 
@@ -144,6 +147,8 @@ class Project:
                 logging.exception(msg.format(self.filename))
                 logging.error(detail)
                 pass
+
+        self.checksum = checksum.hexdigest()
 
     def get_words_entries(self):
 

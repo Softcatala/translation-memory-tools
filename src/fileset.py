@@ -37,6 +37,9 @@ class FileSet():
         self.add_source = True
         self.excluded = []
 
+    def set_checksum(self, checksum):
+        self.checksum = checksum
+
     def set_add_source(self, add_source):
         self.add_source = add_source
 
@@ -66,6 +69,7 @@ class FileSet():
                     .format(relative, self.project_name, self.name)
                 
             pofile.add_comment_to_all_entries(msg)
+            pofile.calculate_localized_string_checksum(self.checksum)
 
     def _clean_up(self):
         backup = 'tm-project-previous.po'
@@ -171,7 +175,7 @@ class FileSet():
         if os.path.exists(localtm):
             os.remove(localtm)
         self._clean_up()
-
+       
     def create_tmp_directory(self):
         self.remove_tmp_directory()
         os.makedirs(self.temp_dir)

@@ -31,7 +31,7 @@ class ProjectMetaDataDao:
 
         command = '''create table if not exists projects (name text primary key,  \
                   last_fetch timestamp, last_translation_update timestamp, \
-                  words integer);'''
+                  words integer, checksum text);'''
 
         c.execute(command)
         self.connection.commit()
@@ -44,9 +44,9 @@ class ProjectMetaDataDao:
 
     def put(self, dto):
         c = self.connection.cursor()
-        command = "insert or replace into 'projects' values ('{0}', '{1}', '{2}', {3});". \
+        command = "insert or replace into 'projects' values ('{0}', '{1}', '{2}', {3}, '{4}');". \
                   format(dto.name, dto.last_fetch, dto.last_translation_update,
-                  dto.words)
+                  dto.words, dto.checksum)
 
         c.execute(command)
         self.connection.commit()
@@ -65,6 +65,7 @@ class ProjectMetaDataDao:
         dto.set_last_fetch(row[1])
         dto.set_last_translation_update(row[2])
         dto.words = row[3]
+        dto.checksum = row[4]
         return dto
 
 
