@@ -23,36 +23,36 @@ class ProjectMetaDataDto:
 
     def __init__(self, name):
         self.name = name
-        self.last_translation_update = None
-        self.last_fetch = None
-        self.words = 0      
+        self._last_translation_update = None 
+        self._last_fetch = None
+        self.words = 0
 
-    def _get_last_translation_update(self):
-        return self.__last_translation_update
+    def get_last_translation_update(self):
+        return self._last_translation_update
 
-    def _set_last_translation_update(self, value):
+    def set_last_translation_update(self, value):
         if not isinstance(value, datetime.datetime):
             raise TypeError("Property must be set to a datetime. Type:" 
                             + str(type(value)))
 
-        self.__last_translation_update = value
+        self._last_translation_update = value
 
 
-    last_translation_update = property(_get_last_translation_update, 
-                                      _set_last_translation_update)
+    last_translation_update = property(get_last_translation_update, 
+                                      set_last_translation_update)
 
     
-    def _get_last_fetch(self):
-        return self.__last_fetch
+    def get_last_fetch(self):
+        return self._last_fetch
 
-    def _set_last_fetch(self, value):
+    def set_last_fetch(self, value):
         if not isinstance(value, datetime.datetime):
             raise TypeError("Property must be set to a datetime. Type:" 
                             + str(type(value)))
 
-        self.__last_fetch = value
+        self._last_fetch = value
 
-    _last_fetch = property(_get_last_fetch, _set_last_fetch)
+    _last_fetch = property(get_last_fetch, set_last_fetch)
 
   
     def __str__(self):
@@ -60,6 +60,6 @@ class ProjectMetaDataDto:
         text = 'ProjectMetaDataDto. Name: {0}, last_translation_update: {1}, ' \
             'last_fetch: {2}, words {3}'
 
-        return text.format(self.name, self.last_translation_update, 
-                          self.last_fetch, self.words)
+        return text.format(self.name, self._last_translation_update, 
+                          self._last_fetch, self.words)
    
