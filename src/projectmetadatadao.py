@@ -33,6 +33,8 @@ class ProjectMetaDataDao:
                   last_fetch timestamp, last_translation_update timestamp, \
                   words integer, checksum text);'''
 
+        // TODO: Create index for name field
+
         c.execute(command)
         self.connection.commit()
 
