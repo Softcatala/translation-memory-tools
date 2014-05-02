@@ -27,40 +27,29 @@ import datetime
 from optparse import OptionParser
 from pofile import POFile
 from projectmetadatadao import ProjectMetaDataDao
-from projectmetadatadto import ProjectMetaDataDto
+import pystache
 
 po_directory = None
 tmx_directory = None
 out_directory = None
 
+class TranslationMemory(object):
+    
+    def __init__(self):
+        self.name = None
+        self.projectweb = None
+        self.po_file_text = None
+        self.tmx_file_text = None
+        self.po_file_link = None
+        self.tmx_file_link = None
+        self.words = None
+        self.last_fetch = None
+        self.last_translation_update = None
+
 
 def link(text, link):
     html = '<a href="' + link + '">'
     html += text + '</a>'
-    return html
-
-
-def table_row_generate(name, projectweb, potext, pofile, tmxtext, tmxfile):
-
-    full_filename = os.path.join(po_directory, potext)
-    words = POFile(full_filename).get_statistics()
-    if (words == 0):
-        print "Skipping empty translation memory: " + potext
-        return ''
-
-    last_fetch, last_translation_update = get_project_dates(name)
-    html = "<tr>\r"
-    if (len(projectweb) > 0):
-        html += "<td><a href='" + projectweb + "'>" + name + "</a></td>\r"
-    else:
-        html += "<td>" + name + "</td>\r"
-
-    html += "<td>" + link(get_zip_file(potext), pofile) + "</td>\r"
-    html += "<td>" + link(get_zip_file(tmxtext), tmxfile) + "</td>\r"
-    html += "<td>" + locale.format("%d", words, grouping=True) + "</td>\r"
-    html += "<td>" + last_fetch + "</td>\r"
-    html += "<td>" + last_translation_update + "</td>\r"
-    html += "</tr>\r"
     return html
 
 
@@ -88,17 +77,14 @@ def get_zip_file(filename):
     return filename + ".zip"
 
 
-def table_row(name, projectweb, potext):
-
-    return table_row_generate(name, projectweb, potext,
-                              get_zip_file(get_path_to_po(potext)),
-                              get_tmx_file(potext),
-                              get_zip_file(get_path_to_tmx(potext)))
-
-
-def _convert_date_to_string(date):
+def convert_date_to_string(date):
     return date.strftime("%d/%m/%Y")
 
+def get_file_date(filename):
+    full_path = os.path.join(po_directory, filename)
+    last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
+    last_date = last_ctime.strftime("%d/%m/%Y")
+    return last_date
 
 def get_project_dates(name):
 
@@ -106,22 +92,51 @@ def get_project_dates(name):
     project_dao.open('../src/statistics.db3')
     dto = project_dao.get(name)
 
-    if dto == None:
+    if dto is None:
         last_fetch = ''
         last_translation = ''
     else:
-        last_fetch = _convert_date_to_string(dto.get_last_fetch())
-        last_translation = _convert_date_to_string(dto.get_last_translation_update())
+        last_fetch = convert_date_to_string(dto.get_last_fetch())
+        last_translation = convert_date_to_string(dto.get_last_translation_update())
 
-    return last_fetch, last_translation 
+    return last_fetch, last_translation
 
-def build_all_projects_memory(json, html):
+
+def propulate_project_links(translation_memory, filename):
+
+    potext = filename
+    pofile = get_zip_file(get_path_to_po(potext))
+    tmxtext = get_tmx_file(potext)
+    tmxfile = get_zip_file(get_path_to_tmx(potext))
+
+    translation_memory.po_file_text = get_zip_file(potext)
+    translation_memory.po_file_link = pofile
+    translation_memory.tmx_file_text = get_zip_file(tmxtext)
+    translation_memory.tmx_file_link = tmxfile
+
+
+def build_all_projects_memory(json, memories):
     '''Builds zip file that contains all memories for all projects'''
 
     name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
+   
+    words = get_words(filename)
 
-    html += table_row(name, '', filename)
+    if words is None:
+        return
+
+    potext = filename
+    translation_memory = TranslationMemory()
+    translation_memory.words = locale.format("%d", words, grouping=True)
+
+    propulate_project_links(translation_memory, filename)
+    translation_memory.name = name
+    date = get_file_date(potext)
+    translation_memory.last_fetch = date
+    translation_memory.last_translation_update = date
+    memories.append(translation_memory)
+
     create_zipfile(po_directory, filename)
     create_zipfile(tmx_directory, get_tmx_file(filename))
 
@@ -131,16 +146,29 @@ def build_all_projects_memory(json, html):
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
-    return html
+   
 
-
-def build_all_softcatala_memory(json, html):
+def build_all_softcatala_memory(json, memories):
     '''Builds zip file that contains all memories for the Softcatalà projects'''
 
     name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
-    html += table_row(name, '', filename)
+    words = get_words(filename)
+
+    if words == None:
+        return
+
+    translation_memory = TranslationMemory()
+    translation_memory.words = locale.format("%d", words, grouping=True)
+    propulate_project_links(translation_memory, filename)
+
+    translation_memory.name = name
+    date = get_file_date(filename)
+    translation_memory.last_fetch = date
+    translation_memory.last_translation_update = date
+    memories.append(translation_memory)
+
     create_zipfile(po_directory, filename)
     create_zipfile(tmx_directory, get_tmx_file(filename))
 
@@ -150,22 +178,56 @@ def build_all_softcatala_memory(json, html):
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
-    return html
+
+def get_words(potext):
+    full_filename = os.path.join(po_directory, potext)
+    words = POFile(full_filename).get_statistics()
+    if (words == 0):
+        print "Skipping empty translation memory: " + potext
+        return None
+
+    return words
 
 
-def build_invidual_projects_memory(json, html):
+def build_invidual_projects_memory(json, memories):
     '''Builds zip file that contains a memory for every project'''
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable is True:
 
+            words = get_words(project_dto.filename)
+
+            if words is None:
+                continue
+
+            translation_memory = TranslationMemory()
+            translation_memory.words = locale.format("%d", words, grouping=True)
+
+            propulate_project_links(translation_memory, project_dto.filename)
+
+            translation_memory.projectweb = project_dto.projectweb
+            translation_memory.name = project_dto.name
+            last_fetch, last_translation_update = get_project_dates(project_dto.name)
+            translation_memory.last_fetch = last_fetch
+            translation_memory.last_translation_update = last_translation_update
+            memories.append(translation_memory)
+
             create_zipfile(po_directory, project_dto.filename)
             create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
 
-            html += table_row(project_dto.name, project_dto.projectweb,
-                              project_dto.filename)
-    return html
+   
+def _process_template(template, filename, variables):
+
+        # Load template and process it
+        template = open(template, 'r').read()
+        parsed = pystache.Renderer()
+        s = parsed.render(unicode(template, "utf-8"), variables)
+
+        # Write output
+        f = open(filename, 'w')
+        f.write(s.encode("utf-8"))
+        f.close()
 
 
 def process_projects():
@@ -173,31 +235,17 @@ def process_projects():
     json = JsonBackend("../src/projects.json")
     json.load()
 
-    html = u'<h1 class ="recursos-section">Baixa les memòries de traducció</h1>\r'
-    html += u'<p>Baixeu les memòries de traducció per poder-les afegir al vostre programa de traducció habitual.</p>\r'
-    html += u'<p>Disposem dels següents documents que descriuen com usar memòries de traducció amb diferents eines:</p>\r'
-    html += u'<ul><li><a href="http://www.softcatala.org/wiki/Configurar_PoEdit_amb_mem%C3%B2ries_de_traducci%C3%B3">Com configurar el PoEdit amb memòries de traducció</a>\r'
-    html += u'<li><a href="http://www.softcatala.org/wiki/Configurar_Lokalize_amb_mem%C3%B2ries_de_traducci%C3%B3">Com configurar el Lokalize amb memòries de traducció</a></ul>\r'
-    html += '<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
-    html += '<tr>\r'
-    html += '<th>Projecte</th>\r'
-    html += '<th>Fitxer PO</th>\r'
-    html += '<th>Fitxer TMX</th>\r'
-    html += u'<th>Paraules traduïdes</th>\r'
-    html += u'<th>Última baixada de la memòria</th>\r'
-    html += u'<th>Última actualització de la traducció</th>\r'
-    html += '</tr>\r'
+    variables = {}
+    memories = []
 
-    html = build_all_projects_memory(json, html)
-    html = build_all_softcatala_memory(json, html)
-    html = build_invidual_projects_memory(json, html)
+    build_all_projects_memory(json, memories)
+    build_all_softcatala_memory(json, memories)
+    build_invidual_projects_memory(json, memories)
 
-    html += '</table>\r'
     today = datetime.date.today()
-    html += '<br>\r'
-    html += u'Data de generació d\'aquesta pàgina: ' + today.strftime("%d/%m/%Y")
-    html += '<br>\r'
-    return html
+    variables['generation_date'] = today.strftime("%d/%m/%Y")
+    variables['memories'] = memories
+    _process_template("download.mustache", "download.html", variables)
 
 
 def update_zipfile(src_directory, filename, file_to_add):
@@ -286,10 +334,7 @@ def main():
     create_output_dir("memories")
 
     download = os.path.join(out_directory, "download.html")
-    html = process_projects()
-    html_file = open(download, "w")
-    html_file.write(html.encode('utf-8'))
-    html_file.close()
+    process_projects()
 
 if __name__ == "__main__":
     main()
