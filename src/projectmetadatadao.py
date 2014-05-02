@@ -32,10 +32,11 @@ class ProjectMetaDataDao:
         command = '''create table if not exists projects (name text primary key,  \
                   last_fetch timestamp, last_translation_update timestamp, \
                   words integer, checksum text);'''
-
-        // TODO: Create index for name field
-
         c.execute(command)
+
+        command = '''create index if not exists [ix_name] on [projects] ([name]);'''
+        c.execute(command)
+
         self.connection.commit()
 
 
