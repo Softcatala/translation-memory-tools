@@ -26,7 +26,7 @@ from transifexfileset import TransifexFileSet
 import urllib2
 import urlparse
 import os
-
+import logging
 
 class OptionsExtractor(HTMLParser):
     """Customized HTMLParser that extracts options values from a form"""
@@ -123,6 +123,9 @@ class TransifexHubFileSet(FileSet):
             self.project.filesets = []
             page = Page(self.url)
             options = page.get_all_options()
+
+            if len(options) == 0:
+                logging.info('TransifexHubFileSet.Do. Unable not find any project to add')
 
             for option in options:
                 url =  transifex_url
