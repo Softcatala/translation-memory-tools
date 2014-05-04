@@ -32,6 +32,9 @@ import shutil
 
 class CheckDownloads:
 
+    HTTP_STATUS_CODE_OK = 200
+    HTTP_STATUS_CODE_NOT_FOUND = 404
+
     def __init__(self, links):
         self.links = links
         self.temp_dir = './tmp'
@@ -52,7 +55,7 @@ class CheckDownloads:
 
         link = self._get_link_from_filename(filename)
         if (link is not None):
-            code = 404
+            code = CheckDownloads.HTTP_STATUS_CODE_NOT_FOUND
             try:
                 rtr = urllib2.urlopen(link)
                 code = rtr.getcode()
@@ -60,7 +63,7 @@ class CheckDownloads:
             except Exception:
                 pass
 
-            if code != 200:
+            if code != CheckDownloads.HTTP_STATUS_CODE_OK:
                 print 'link {0} returns {1}'.format(link, str(code))
             else:
                 found = True
@@ -130,6 +133,26 @@ class CheckDownloads:
             self.check_zipfile(tmx_zip_file, '*.tmx', expected_files,
                                MIN_TMX_SIZE)
 
+    def check_project_link(self, project_web):
+    
+        if project_web is None or len(project_web) == 0:
+            return
+
+        code = CheckDownloads.HTTP_STATUS_CODE_NOT_FOUND
+        try:
+            rtr = urllib2.urlopen(project_web)
+            code = rtr.getcode()
+
+        except Exception:
+            pass
+
+        if code != CheckDownloads.HTTP_STATUS_CODE_OK:
+            print 'Project link {0} returns {1}'.format(project_web, str(code))
+            return False
+        else:
+            return True
+
+
     def check(self):
 
         '''Reads the json and makes sure that for every project we have a'''
@@ -155,4 +178,6 @@ class CheckDownloads:
                 continue
 
             self.downloads_for_project(project_dto.name, expected_files)
+            self.check_project_link(project_dto.projectweb)
+
 
