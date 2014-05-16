@@ -242,7 +242,7 @@
             "softcatala" : true,
             "fileset": {
                     "fedora": {
-                            "url" : "https://fedora.transifex.com/projects/p/fedora/language/ca/",
+                            "url" : "https://www.transifex.com/organization/fedora",
                             "type": "transifexhub"
                     }
             }
@@ -576,7 +576,7 @@
             "projectweb" : "https://wiki.openstack.org/wiki/Translations",
             "fileset": {
                     "main": {
-                            "url" : "https://www.transifex.com/projects/p/openstack/language/ca/",
+                            "url" : "https://www.transifex.com/organization/openstack",
                             "type": "transifexhub"
                     }
             }
@@ -750,7 +750,7 @@
             "projectweb" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
             "fileset": {
                     "xfce" : {
-                            "url" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
+                            "url" : "https://www.transifex.com/organization/xfce",
                             "type": "transifexhub"
                     }
             }

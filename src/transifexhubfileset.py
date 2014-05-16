@@ -18,18 +18,21 @@
 # Boston, MA 02111-1307, USA.
 
 from fileset import FileSet
-from findfiles import FindFiles
 from urlparse import urlparse
 from HTMLParser import HTMLParser
 from transifexfileset import TransifexFileSet
 
 import urllib2
 import urlparse
-import os
 import logging
 
 class OptionsExtractor(HTMLParser):
-    """Customized HTMLParser that extracts options values from a form"""
+    """
+        Customized HTMLParser that extracts options values from a Fedora page
+        There are two kinds of pages:
+            * Hub pages: https://www.transifex.com/projects/p/django/language/ca/
+            * Organization pages: https://www.transifex.com/organization/xfce
+    """
 
     def __init__(self, base_url):
         HTMLParser.__init__(self)
@@ -37,10 +40,24 @@ class OptionsExtractor(HTMLParser):
         self.options = []
        
     def get_options(self):
-        return self.options 
+        return self.options
   
-    def get_project_name(self, url):
+    def get_project_name_from_tr(self, url):
         prefix = '/ajax/projects/p/'
+        
+        if url.startswith(prefix) is False:
+            return None
+
+        url = url[len(prefix):]
+        idx = url.find('/')
+        if (idx == -1):
+            return None
+
+        return url[:idx]
+
+
+    def get_project_name_from_ahref(self, url):
+        prefix = '/projects/p/'
         
         if url.startswith(prefix) is False:
             return None
@@ -59,12 +76,21 @@ class OptionsExtractor(HTMLParser):
             attrs = dict(attrs)
             if 'data-actions-url' in attrs:
                 url = attrs['data-actions-url']
-                print "data-actions-url:" + url
                 if url is not None:
-                    name = self.get_project_name(url)
+                    name = self.get_project_name_tr(url)
                     if name is not None and name not in self.options:
                         self.options.append(name)
-            
+
+        elif tag == 'a':
+            attrs = dict(attrs)
+            if 'href' in attrs:
+                url = attrs['href']
+                if url is not None:
+                    name = self.get_project_name_from_ahref(url)
+                    if name is not None and name not in self.options:
+                        self.options.append(name)
+                
+    
 class Page:
     """Represents a downloaded web page and its content"""
 
@@ -128,8 +154,8 @@ class TransifexHubFileSet(FileSet):
                 logging.info('TransifexHubFileSet.Do. Unable not find any project to add')
 
             for option in options:
-                url =  transifex_url
-                url =  url + self._clean_string(option)
+                url = transifex_url
+                url = url + self._clean_string(option)
                 fileset = TransifexFileSet(self.project_name, option, url, '')
                 self.project.add(fileset)
 
