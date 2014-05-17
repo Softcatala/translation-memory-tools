@@ -32,13 +32,18 @@ class OptionsExtractor(HTMLParser):
         There are two kinds of pages:
             * Hub pages: https://www.transifex.com/projects/p/django/language/ca/
             * Organization pages: https://www.transifex.com/organization/xfce
+                * These are paginated and have the concept of 'next page'
     """
 
     def __init__(self, base_url):
         HTMLParser.__init__(self)
         self.base_url = base_url
         self.options = []
-       
+        self.next_page = None
+   
+    def get_next_page(self):
+        return self.next_page
+      
     def get_options(self):
         return self.options
   
@@ -83,13 +88,22 @@ class OptionsExtractor(HTMLParser):
 
         elif tag == 'a':
             attrs = dict(attrs)
+
             if 'href' in attrs:
                 url = attrs['href']
                 if url is not None:
-                    name = self.get_project_name_from_ahref(url)
-                    if name is not None and name not in self.options:
-                        self.options.append(name)
-                
+                    if 'class' in attrs:
+                        klass = attrs['class']
+                    else:
+                        klass = None
+      
+                    if klass == 'next':
+                        self.next_page = url
+                    else:
+                        name = self.get_project_name_from_ahref(url)
+                        if name is not None and name not in self.options:
+                            self.options.append(name)
+                    
     
 class Page:
     """Represents a downloaded web page and its content"""
@@ -97,6 +111,7 @@ class Page:
     def __init__(self, url):
         self.content = None
         self.url = url
+        self.next_page = None
         self.options = []
         self.base_url = self._get_base_url(url)
         self._download_page()
@@ -121,9 +136,14 @@ class Page:
         parser.feed(self.content)
         parser.close()
         self.options = parser.get_options()
+        self.next_page = parser.get_next_page()
 
     def get_all_options(self):
         return self.options
+
+    def get_next_page(self):
+        return self.next_page
+      
 
 
 class TransifexHubFileSet(FileSet):
@@ -147,8 +167,16 @@ class TransifexHubFileSet(FileSet):
             # This project has a single fileset assigned (this)
             # We empty the fileset and add dynamically the ones referenced by Gerrit
             self.project.filesets = []
-            page = Page(self.url)
-            options = page.get_all_options()
+            options = []
+            url = self.url
+
+            while url is not None:
+                page = Page(url)
+                for option in page.get_all_options():
+                    options.append(option)
+                url = page.get_next_page()
+                if url is not None:
+                    url = self.url + url
 
             if len(options) == 0:
                 logging.info('TransifexHubFileSet.Do. Unable not find any project to add')
