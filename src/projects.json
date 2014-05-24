@@ -516,7 +516,7 @@
             "projectweb" : "http://wiki.xfce.org/translations/team_ca",
             "fileset": {
                     "Xfce" : {
-                            "url" : "https://www.transifex.com/projects/p/xfce/language/ca/",
+                            "url" : "https://www.transifex.com/organization/xfce",
                             "type": "transifexhub"
                     }
             }
@@ -749,8 +749,8 @@
     "TinyMCE": {
             "projectweb" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
             "fileset": {
-                    "xfce" : {
-                            "url" : "https://www.transifex.com/organization/xfce",
+                    "TinyMCE" : {
+                            "url" : "https://www.transifex.com/projects/p/tinymce/",
                             "type": "transifexhub"
                     }
             }
