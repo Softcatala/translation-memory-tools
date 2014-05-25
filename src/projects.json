@@ -854,6 +854,15 @@
                             "type": "transifex"
                 }
             }
+    },
+    "Mailpile": {
+            "projectweb" : "https://www.mailpile.is",
+            "fileset": {
+                    "Mailpile" : {
+                            "url" : "https://www.transifex.com/projects/p/mailpile",
+                            "type": "transifex"
+                }
+            }
     }
 
     }
