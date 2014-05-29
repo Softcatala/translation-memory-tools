@@ -99,7 +99,6 @@ class Projects:
             project.statistics()
 
         self.tm_project.statistics()
-        self.metadata_dao.dump()
         self.metadata_dao.close()
 
     def to_tmx(self):
