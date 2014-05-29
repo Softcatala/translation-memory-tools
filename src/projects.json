@@ -270,6 +270,21 @@
                             "url" : "lp:ubuntu/ubuntuone-control-panel/po/ca.po",
                             "type": "bazaar",
                             "target": "ca.po"
+                    },
+                    "indicator": {
+                            "url" : "lp:ubuntu/indicator/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    },
+                    "unity-control-center": {
+                            "url" : "lp:ubuntu/unity-control-center/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
+                    },
+                    "unity": {
+                            "url" : "lp:ubuntu/unity/po/ca.po",
+                            "type": "bazaar",
+                            "target": "ca.po"
                     }
             }
     },
