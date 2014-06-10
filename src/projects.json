@@ -102,7 +102,7 @@
             "softcatala" : true,
             "fileset": {
                     "gnome-ui": {
-                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-12/ui.tar.gz",
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-14/ui.tar.gz",
                             "type": "compressed",
                             "target": "gnome-ui.tar.gz"
                     },
