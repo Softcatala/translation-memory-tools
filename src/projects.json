@@ -272,7 +272,7 @@
                             "target": "ca.po"
                     },
                     "indicator": {
-                            "url" : "lp:ubuntu/indicator/po/ca.po",
+                            "url" : "lp:~rye/indicator-ubuntuone/trunk/po/ca.po",
                             "type": "bazaar",
                             "target": "ca.po"
                     },
@@ -282,7 +282,7 @@
                             "target": "ca.po"
                     },
                     "unity": {
-                            "url" : "lp:ubuntu/unity/po/ca.po",
+                            "url" : "lp:~unity-team/unity/8.0/view/head:/po/ca.po",
                             "type": "bazaar",
                             "target": "ca.po"
                     }
