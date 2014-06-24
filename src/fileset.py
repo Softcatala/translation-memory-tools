@@ -94,8 +94,9 @@ class FileSet():
             dirName = os.path.dirname(tsfile)
             logging.info('convert strings file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
+            # Allow process files with duplicated entries
             cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
-                '--personality strings -o {1}'
+                '--personality strings --duplicates merge -o {1}'
             os.system(cmd.format(dirName, filename))
 
     def convert_ini_files_to_po(self):
