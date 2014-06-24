@@ -167,7 +167,6 @@ class Project:
         except Exception as detail:
             msg = 'Project. get_words_entries exception {0}'
             logging.error(msg.format(self.filename))
-            logging.error(detail)
 
         return words, entries
 
