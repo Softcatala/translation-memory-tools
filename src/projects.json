@@ -878,7 +878,16 @@
                             "type": "transifex"
                 }
             }
+    },
+    "Cyberduck": {
+            "projectweb" : "https://www.mailpile.is",
+            "fileset": {
+                    "Cyberduck" : {
+                            "url" : "https://www.transifex.com/projects/p/cyberduck",
+                            "type": "transifex"
+                }
+            }
     }
-
+    
     }
 }
