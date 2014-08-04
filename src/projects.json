@@ -887,7 +887,15 @@
                             "type": "transifex"
                 }
             }
+    },
+    "Qgis": {
+            "projectweb" : "http://www.qgis.org/ca/site/",
+            "fileset": {
+                    "Qgis" : {
+                            "url" : "https://www.transifex.com/projects/p/QGIS",
+                            "type": "transifex"
+                }
+            }
     }
-    
     }
 }
