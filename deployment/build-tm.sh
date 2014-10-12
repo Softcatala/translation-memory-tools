@@ -40,10 +40,10 @@ if [ -z "$NOPOBUILD" ]; then
     python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --softcatala
     cp tots-tm.tmx $INTERMEDIATE_TMX/
     cp softcatala-tm.tmx $INTERMEDIATE_TMX/
-
 fi
 
 cd $PROGRAMS
+
 # Copy only new PO files
 for filename in *.po
   do
