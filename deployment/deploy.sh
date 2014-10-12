@@ -45,8 +45,8 @@ cd $ROOT/tm-git/unittests/
 nosetests
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then
-   echo "Aborting deployment. Unit tests did not pass"
-   exit
+    echo "Aborting deployment. Unit tests did not pass"
+    exit
 fi
 
 # Run integration tests
@@ -55,8 +55,8 @@ python run.py -e preprod
 
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then 
-   echo "Aborting deployment. Integration tests did not pass"
-   exit
+    echo "Aborting deployment. Integration tests did not pass"
+    exit
 fi
 
 #
