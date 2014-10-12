@@ -45,40 +45,33 @@ fi
 cd $PROGRAMS
 
 # Copy only new PO files
-for filename in *.po
-  do
+for filename in *.po; do
     # If file exists and size is greater than 200 bytes
-    if [ -e  $filename ]
-      then
+    if [ -e  $filename ]; then
         fsize=$(du -b "$filename" | cut -f 1)
-        if [ $fsize -ge 200 ];
-          then
-	        if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
-	          then
+        if [ $fsize -ge 200 ]; then
+	        if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null; then
 	            echo "Copying $filename"
                 cp $filename $INTERMEDIATE_PO/$filename
             fi
         fi
     fi
-  done
+done
 
 
 # Copy only new TMX files
-for filename in *.tmx
-  do
+for filename in *.tmx; do
     # If file exists and size is greater than 350 bytes
-    if [ -e  $filename ]
-      then
+    if [ -e  $filename ]; then
         fsize=$(du -b "$filename" | cut -f 1)
         # Empty TMX files are 275 bytes (just the header)
         # Files with one short translation 450 bytes
-        if [ $fsize -ge 350 ];
-          then
+        if [ $fsize -ge 350 ]; then
             echo "Copying $filename"
             cp $filename $INTERMEDIATE_TMX/$filename
         fi
     fi
-  done
+done
 
 # Update download file & index
 cd $ROOT/tm-git/web
