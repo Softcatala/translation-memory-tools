@@ -3,13 +3,13 @@ ROOT=/home/jmas
 
 if [ ! -z "$DEVENV" ]; then
     ROOT=/home/jmas/dev
-    echo Development enviroment set to $ROOT
+    echo "Development enviroment set to $ROOT"
     cd $ROOT/tm-git/src
     git pull
 fi
 
 if [ ! -z "$NOPOBUILD" ]; then
-    echo Skipping bulding of PO files
+    echo "Skipping bulding of PO files"
 fi
 
 INTERMEDIATE_PO=$ROOT/translation-memories/po
@@ -55,7 +55,7 @@ for filename in *.po
           then
 	        if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null
 	          then
-	            echo Copying $filename
+	            echo "Copying $filename"
                 cp $filename $INTERMEDIATE_PO/$filename
             fi
         fi
@@ -74,7 +74,7 @@ for filename in *.tmx
         # Files with one short translation 450 bytes
         if [ $fsize -ge 350 ];
           then
-            echo Copying $filename
+            echo "Copying $filename"
             cp $filename $INTERMEDIATE_TMX/$filename
         fi
     fi

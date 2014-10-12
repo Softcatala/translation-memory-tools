@@ -9,7 +9,7 @@ ROOT=/home/jmas
 
 if [ ! -z "$DEVENV" ]; then
     ROOT=/home/jmas/dev
-    echo Development enviroment set to $TARGET_DIR
+    echo "Development enviroment set to $TARGET_DIR"
 fi
 
 
@@ -45,7 +45,7 @@ cd $ROOT/tm-git/unittests/
 nosetests
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then
-   echo Aborting deployment. Unit tests did not passs
+   echo "Aborting deployment. Unit tests did not pass"
    exit
 fi
 
@@ -55,7 +55,7 @@ python run.py -e preprod
 
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then 
-   echo Aborting deployment. Integration tests did not pass
+   echo "Aborting deployment. Integration tests did not pass"
    exit
 fi
 
@@ -106,4 +106,4 @@ cd $ROOT/tm-git/terminology
 cp *.html $TARGET_DIR
 cp *.csv $TARGET_DIR
 
-echo Deployment completed
+echo "Deployment completed"

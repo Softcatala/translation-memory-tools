@@ -1,14 +1,14 @@
 #!/bin/bash
 
 
-echo Deploy terminology
+echo "Deploy terminology"
 
 TARGET_DIR=/var/www/recursos.softcatala.org/preprod
 ROOT=/home/jmas
 
 if [ ! -z "$DEVENV" ]; then
     ROOT=/home/jmas/dev
-    echo Development enviroment set to $TARGET_DIR
+    echo "Development enviroment set to $TARGET_DIR"
 fi
 
 cd $ROOT/tm-git/terminology
