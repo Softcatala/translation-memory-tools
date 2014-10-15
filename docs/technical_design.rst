@@ -23,13 +23,14 @@ Every project can contain a group of filesets. We support serveral fetch mecanis
 
 The process of building a transtlation memories works as follows:
 
-* Every fileset is downloaded using its downloaded mecanism (git, svn, file download, etc)
+* Every fileset is download using its downloaded mecanism (git, svn, file download, etc)
 * All the files download (e.g ts, xml, etc) are converted to PO (the interal format to build the memories)
 * All the segments are added a comment that indicates where the translation was imported from
 * Translations memories are build using GNU Text (msgcat)
 * When the process is finished we generate a TMX from the PO file
 
 Limations:
+
 * msgcat is slow with large files (e.g. KDE or GNOME)
 * To convert to PO we use the translation toolkit. For XML you need to specify the format but we do not.
 * PO as native format is limited. For example, to indicate the source of the translation (we use a comment)
