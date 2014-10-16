@@ -16,6 +16,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from os import path
 import sys
 import unittest
 
@@ -27,7 +28,8 @@ class FilePage(Page):
 
     def _download_page(self):
         """Reads a file from disk instead from http connection"""
-        f = open('testcrawler.html')
+        folder = path.dirname(path.realpath(__file__))
+        f = open(path.join(folder, 'testcrawler.html'))
         self.content = unicode(f.read(), 'utf-8', errors='replace')
         f.close()
 

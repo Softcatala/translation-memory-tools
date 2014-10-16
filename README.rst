@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/Softcatala/translation-memory-tools.svg
+    :target: https://travis-ci.org/Softcatala/translation-memory-tools
+
 ============
 Introduction
 ============
@@ -34,7 +37,7 @@ Setting up before execution
 ===========================
 
 For Transifex's project (all projects with type ``transifex`` at
-``projects.jon``) ask for credential at their Transifex servers the first
+``projects.json``) ask for credential at their Transifex servers the first
 time that they get executed. After the first execution, they get recorded
 in the ``.transifexrc`` file.
 

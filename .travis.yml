@@ -1,0 +1,4 @@
+language: python
+script:
+    - export PYTHONPATH=$PYTHONPATH:./src
+    - python -m unittest discover -s unittests
