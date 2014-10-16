@@ -16,7 +16,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
+from os import path
 import sys
 import unittest
 
@@ -48,7 +48,8 @@ class TestJsonBackend(unittest.TestCase):
 
     def test_processFileSet(self):
 
-        json = JsonBackend('testjsonbackend.json')
+        folder = path.dirname(path.realpath(__file__))
+        json = JsonBackend(path.join(folder, 'testjsonbackend.json'))
         json.load()
 
         self.assertEquals(len(json.projects), 2)
