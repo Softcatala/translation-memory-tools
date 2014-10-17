@@ -22,16 +22,15 @@ import urllib
 import json
 
 
-class CheckSearch:
-    '''Check if the search capabilities of the site work as expected'''
+class CheckSearch(object):
+    """Check if the search capabilities of the site work as expected"""
 
     def __init__(self, url):
         self.url = url
 
     def search_source(self, term):
-
-        url = '{0}/web_search.py?source={1}&project=tots' \
-              '&json=1'.format(self.url, term)
+        url = '{0}/web_search.py?source={1}&project=tots&json=1'
+        url = url.format(self.url, term)
 
         urllib.urlretrieve(url, 'file.txt')
         with open('file.txt') as json_data:
@@ -39,41 +38,41 @@ class CheckSearch:
             return data
 
     def _assert_contains(self, actual, expected):
-
         actual = actual.lower()
         expected = expected.lower()
         if expected not in actual:
-            raise Exception(u"Expected '{0}' contains '{1}'".
-                            format(expected, actual))
+            text = u"Expected '{0}' contains '{1}"
+            raise Exception(text.format(expected, actual))
 
     def _assert_that(self, actual, expected):
-
         actual = actual.lower()
         expected = expected.lower()
         if not expected == actual:
-            raise Exception(u"Expected '{0}' equals '{1}'".
-                            format(expected, actual))
+            text = u"Expected '{0}' equals '{1}'"
+            raise Exception(text.format(expected, actual))
 
     def _assert_greater(self, actual, minimum):
-
         if minimum > actual:
-            raise Exception(u'Expected {0} to be greater than minimum {1}'.
-                            format(minimum, actual))
+            text = u'Expected {0} to be greater than minimum {1}'
+            raise Exception(text.format(minimum, actual))
 
     def _check_integration_data(self):
-
-        string = u'"Palindromics numbers remain the same when its digits are reversed"'
+        string = u'Palindromics numbers remain the same when ' \
+                 u'its digits are reversed'
         data = self.search_source(string)
 
         self._assert_greater(len(data), 1)
-        self._assert_that(data[0]['source'], u'Palindromics numbers remain the same when its digits are reversed')
-        self._assert_that(data[0]['target'], u'Els nombres capicua no varien quan les seves xifres s\'inverteixen')
+        self._assert_that(data[0]['source'], string)
+        self._assert_that(data[0]['target'],
+                          u'Els nombres capicua no varien quan les '
+                          u'seves xifres s\'inverteixen')
         self._assert_that(data[0]['context'], u'Palindromics.context')
-        self._assert_contains(data[0]['comment'], u'n.t.: títol de preferències')
-        self._assert_contains(data[0]['comment'], u'translators: comment for translators')
+        self._assert_contains(data[0]['comment'],
+                              u'n.t.: títol de preferències')
+        self._assert_contains(data[0]['comment'],
+                              u'translators: comment for translators')
 
     def _check_common_searches(self):
-
         string = u'File'
         data = self.search_source(string)
 
@@ -81,9 +80,7 @@ class CheckSearch:
         self._assert_contains(data[0]['source'], string)
 
     def check(self):
-
         try:
-
             self._check_common_searches()
             self._check_integration_data()
             return True

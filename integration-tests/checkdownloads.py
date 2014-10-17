@@ -30,7 +30,7 @@ import os
 import shutil
 
 
-class CheckDownloads:
+class CheckDownloads(object):
 
     HTTP_STATUS_CODE_OK = 200
     HTTP_STATUS_CODE_NOT_FOUND = 404
@@ -41,20 +41,18 @@ class CheckDownloads:
         self.errors = 0
 
     def _get_link_from_filename(self, filename):
-
         for link in self.links:
             pos = link.find(filename)
-            if (pos != -1):
+            if pos != -1:
                 return link
 
         return None
 
     def is_filename_a_download(self, filename):
-
         found = False
 
         link = self._get_link_from_filename(filename)
-        if (link is not None):
+        if link is not None:
             code = CheckDownloads.HTTP_STATUS_CODE_NOT_FOUND
             try:
                 rtr = urllib2.urlopen(link)
@@ -68,8 +66,8 @@ class CheckDownloads:
             else:
                 found = True
 
-        if found is False:
-            self.errors = self.errors + 1
+        if not found:
+            self.errors += 1
             print 'Missing link {0}'.format(filename)
 
         return found
@@ -82,20 +80,25 @@ class CheckDownloads:
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def check_zipfile(self, filename, extensions, expected_files, minimum_size):
-
+    def check_zipfile(self,
+                      filename,
+                      extensions,
+                      expected_files,
+                      minimum_size):
         tmp_file = tempfile.NamedTemporaryFile()
         link = self._get_link_from_filename(filename)
 
-        if (link is None):
+        if link is None:
             return
 
         urllib.urlretrieve(link, tmp_file.name)
 
         self._create_tmp_directory()
 
-        cmd = 'unzip {0} -d {1} > /dev/null'.format(tmp_file.name,
-              self.temp_dir)
+        cmd = 'unzip {0} -d {1} > /dev/null'.format(
+            tmp_file.name,
+            self.temp_dir
+        )
         os.system(cmd)
 
         files = 0
@@ -105,26 +108,31 @@ class CheckDownloads:
 
             size = os.path.getsize(filename)
             if size < minimum_size:
-                self.errors = self.errors + 1
+                self.errors += 1
                 print 'File {0} has size {1} but expected was at least {2}'. \
                       format(filename, size, minimum_size)
 
-        if (files != expected_files):
-            self.errors = self.errors + 1
-            print '{0} expected {1} files but contains {2}'.format(link,
-                  expected_files, files)
+        if files != expected_files:
+            self.errors += 1
+            print '{0} expected {1} files but contains {2}'.format(
+                link,
+                expected_files,
+                files
+            )
 
         self._remove_tmp_directory()
 
     def downloads_for_project(self, name, expected_files):
-
         print "Processing:" + name
 
         # Po files
         MIN_PO_SIZE = 1500
         po_zip_file = '{0}-tm.po.zip'.format(name.lower())
         if self.is_filename_a_download(po_zip_file):
-            self.check_zipfile(po_zip_file, '*.po', expected_files, MIN_PO_SIZE)
+            self.check_zipfile(po_zip_file,
+                               '*.po',
+                               expected_files,
+                               MIN_PO_SIZE)
 
         # Tmx files
         MIN_TMX_SIZE = 350
@@ -134,7 +142,6 @@ class CheckDownloads:
                                MIN_TMX_SIZE)
 
     def check_project_link(self, project_web):
-    
         if project_web is None or len(project_web) == 0:
             return
 
@@ -152,12 +159,10 @@ class CheckDownloads:
         else:
             return True
 
-
     def check(self):
-
-        '''Reads the json and makes sure that for every project we have a'''
-        '''po and a tmx that is a download published with the expected files'''
-
+        """Reads the json and makes sure that for every project we have a
+        po and a tmx that is a download published with the expected files
+        """
         json = JsonBackend("../src/projects.json")
         json.load()
 
@@ -179,5 +184,3 @@ class CheckDownloads:
 
             self.downloads_for_project(project_dto.name, expected_files)
             self.check_project_link(project_dto.projectweb)
-
-
