@@ -10,3 +10,5 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   technical_design
