@@ -210,7 +210,7 @@ def main():
 
     search = Search(source, target, project)
 
-    if (json is None):
+    if json is None:
         web_serializer = WebSerializer()
         web_serializer.do(search)
     else:

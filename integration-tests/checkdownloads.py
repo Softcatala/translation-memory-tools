@@ -175,7 +175,7 @@ class CheckDownloads(object):
 
         expected_files = 1
         for project_dto in json.projects:
-            if project_dto.downloadable is False:
+            if not project_dto.downloadable:
                 continue
 
             self.downloads_for_project(project_dto.name, expected_files)

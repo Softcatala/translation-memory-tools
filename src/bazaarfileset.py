@@ -45,8 +45,8 @@ class BazaarFileSet(FileSet):
 
         for filename in findFiles.find(self.temp_dir, '*'):
 
-            if re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
+            if (re.match(self.pattern, filename) is None and
+                os.path.exists(filename)):
                 os.remove(filename)
 
     def do(self):

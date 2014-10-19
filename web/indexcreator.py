@@ -83,7 +83,7 @@ class IndexCreator:
             We import only translator's comments and extracted that we concatenate
             to make it transparent to the search
         '''
-        if (entry.tcomment is None):
+        if entry.tcomment is None:
             comment = entry.tcomment
         else:
             comment = unicode(entry.tcomment)
@@ -109,7 +109,7 @@ class IndexCreator:
                 t = unicode(entry.msgstr)
                 p = unicode(name)
 
-                if (entry.msgctxt is None):
+                if entry.msgctxt is None:
                     x = entry.msgctxt
                 else:
                     x = unicode(entry.msgctxt)

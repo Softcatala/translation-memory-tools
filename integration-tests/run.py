@@ -144,7 +144,7 @@ if __name__ == '__main__':
     print("Use --help for assistance")
 
     search = CheckSearch(site_url)
-    if search.check() is False:
+    if not search.check():
         sys.exit(error)
 
     crawler = Crawler(site_url + "memories.html")
