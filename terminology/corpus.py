@@ -99,9 +99,7 @@ class Corpus(object):
                 logging.info(msg)
                 return False
 
-        if len(target) == 0:
-            return False
-        return True
+        return len(target) != 0
 
 
     #
