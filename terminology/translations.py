@@ -27,10 +27,11 @@ class Translation:
         self.references_short_name = []  # A list of references
 
     def get_dict(self):
-        d = {}
-        d[u'translation'] = self.translation
-        d[u'frequency'] = self.frequency
-        d[u'percentage'] = self.percentage
+        d = {
+            u'translation': self.translation,
+            u'frequency': self.frequency,
+            u'percentage': self.percentage,
+        }
 
         if len(self.references_short_name) > 0:
             d[u'termcat'] = True

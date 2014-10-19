@@ -30,13 +30,13 @@ class Glossary:
         self.description = u''
 
     def get_dict(self):
-        glossary_dict = {}
         entries = []
 
         for entry in self.entries:
             entries.append(entry.get_dict())
 
-        glossary_dict['entries'] = entries
-        glossary_dict['date'] = unicode(self.date, "utf-8")
-        glossary_dict['description'] = unicode(self.description, "utf-8")
-        return glossary_dict
+        return {
+            'entries': entries,
+            'date': unicode(self.date, "utf-8"),
+            'description': unicode(self.description, "utf-8"),
+        }

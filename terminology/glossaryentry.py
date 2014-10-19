@@ -28,13 +28,13 @@ class GlossaryEntry:
         self.percentage = 0  # Percentage of frequency across all options
 
     def get_dict(self):
-        d = {}
-        d[u'source'] = self.source_term
-        d[u'translation'] = self.translations[0].translation
         translations = []
 
         for translation in self.translations:
             translations.append(translation.get_dict())
 
-        d[u'translations'] = translations
-        return d
+        return {
+            u'source': self.source_term,
+            u'translation': self.translations[0].translation,
+            u'translations': translations,
+        }
