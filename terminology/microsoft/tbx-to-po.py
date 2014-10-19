@@ -23,8 +23,10 @@ import xml.etree.ElementTree as ET
 import polib
 
 
-def get_metadata():
-    metadata = {
+def main():
+    """Converts TBX to PO"""
+    pofile = polib.POFile()
+    pofile.metadata = {
         'Project-Id-Version': '1.0',
         'Report-Msgid-Bugs-To': 'nobody@nobody',
         'POT-Creation-Date': '2007-10-18 14:00+0100',
@@ -36,12 +38,6 @@ def get_metadata():
         'Content-Transfer-Encoding': '8bit',
         'Plural-Forms': 'nplurals=2; plural=n != 1;',
     }
-    return metadata
-
-
-def read_xml():
-    pofile = polib.POFile()
-    pofile.metadata = get_metadata()
 
     tree = ET.parse('MicrosoftTermCollection.tbx')
     root = tree.getroot()
@@ -76,13 +72,6 @@ def read_xml():
 
     pofile.save("microsoft-terms.po")
     print("Terms : " + str(terms))
-
-
-def main():
-    '''
-        Converts TBX to PO
-    '''
-    read_xml()
 
 
 if __name__ == "__main__":
