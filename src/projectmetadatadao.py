@@ -64,7 +64,7 @@ class ProjectMetaDataDao:
 
         dto = ProjectMetaDataDto(row[0])
         dto.last_fetch(row[1])
-        dto.set_last_translation_update(row[2])
+        dto.last_translation_update(row[2])
         dto.words = row[3]
         dto.checksum = row[4]
         return dto
