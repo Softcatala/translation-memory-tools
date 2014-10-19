@@ -17,10 +17,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from collections import OrderedDict
-
-import logging
 import json
+import logging
+from collections import OrderedDict
 
 
 class ProjectDTO:

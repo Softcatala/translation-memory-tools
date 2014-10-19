@@ -17,12 +17,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import FileSet
-from findfiles import FindFiles
-
 import os
 import logging
 import re
+
+from fileset import FileSet
+from findfiles import FindFiles
 
 
 class GitFileSet(FileSet):

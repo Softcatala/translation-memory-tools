@@ -20,6 +20,7 @@
 
 import polib
 
+
 class Reference:
     def __init__(self, name, short_name):
         self.name = name

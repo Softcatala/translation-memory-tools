@@ -18,9 +18,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import xml.etree.ElementTree as ET
 
 import polib
-import xml.etree.ElementTree as ET
 
 
 def get_metadata():

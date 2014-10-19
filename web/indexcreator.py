@@ -29,6 +29,7 @@ from whoosh.analysis import StandardAnalyzer
 from jsonbackend import JsonBackend
 from cleanupfilter import CleanUpFilter
 
+
 class IndexCreator:
 
     def __init__(self, po_directory):

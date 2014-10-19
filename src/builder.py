@@ -18,13 +18,13 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from jsonbackend import JsonBackend
-from optparse import OptionParser
-from projects import Projects
-
 import logging
 import os
 import time
+from optparse import OptionParser
+
+from jsonbackend import JsonBackend
+from projects import Projects
 
 
 projects = Projects()

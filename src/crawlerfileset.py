@@ -18,12 +18,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import os
+import re
+
 from crawler import Crawler
 from downloadfile import DownloadFile
 from fileset import FileSet
-
-import os
-import re
 
 
 class CrawlFileSet(FileSet):

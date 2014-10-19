@@ -18,9 +18,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from whoosh.fields import *
 from whoosh.analysis import *
+from whoosh.fields import *
+
 from cleanstring import CleanString
+
 
 class CleanUpFilter(Filter):
     '''

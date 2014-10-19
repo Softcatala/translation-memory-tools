@@ -18,15 +18,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from project import Project
-
+import datetime
 import logging
 import os
 import shutil
-import datetime
 
+from project import Project
 from projectmetadatadao import ProjectMetaDataDao
 from projectmetadatadto import ProjectMetaDataDto
+
 
 class Projects:
 

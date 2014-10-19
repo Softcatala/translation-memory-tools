@@ -21,21 +21,22 @@
 import sys
 sys.path.append('../src/')
 
-import time
-import os
 import logging
+import os
 import resource
-
-from optparse import OptionParser
-from corpus import Corpus
-from referencesources import ReferenceSources
-from devglossaryserializer import DevGlossarySerializer
-from userglossaryserializer import UserGlossarySerializer
-from metrics import Metrics
-from translations import Translations
-from glossaryentry import GlossaryEntry
-from glossary import Glossary
+import time
 from collections import OrderedDict
+from optparse import OptionParser
+
+from corpus import Corpus
+from devglossaryserializer import DevGlossarySerializer
+from glossary import Glossary
+from glossaryentry import GlossaryEntry
+from metrics import Metrics
+from referencesources import ReferenceSources
+from translations import Translations
+from userglossaryserializer import UserGlossarySerializer
+
 
 src_directory = None
 glossary_description = ''
