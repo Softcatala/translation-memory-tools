@@ -100,7 +100,7 @@ def get_project_dates(name):
         last_fetch = ''
         last_translation = ''
     else:
-        last_fetch = convert_date_to_string(dto.get_last_fetch())
+        last_fetch = convert_date_to_string(dto.last_fetch)
         last_translation = convert_date_to_string(dto.get_last_translation_update())
 
     return last_fetch, last_translation

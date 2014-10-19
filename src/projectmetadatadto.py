@@ -41,16 +41,16 @@ class ProjectMetaDataDto:
     last_translation_update = property(get_last_translation_update, 
                                       set_last_translation_update)
 
-    def get_last_fetch(self):
+    @property
+    def last_fetch(self):
         return self._last_fetch
 
-    def set_last_fetch(self, value):
+    @last_fetch.setter
+    def last_fetch(self, value):
         if not isinstance(value, datetime.datetime):
             raise TypeError("Property must be set to a datetime. Type:"
                             + str(type(value)))
         self._last_fetch = value
-
-    _last_fetch = property(get_last_fetch, set_last_fetch)
 
     def __str__(self):
         text = 'ProjectMetaDataDto. Name: {0}, last_translation_update: {1}, ' \
