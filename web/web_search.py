@@ -19,22 +19,21 @@
 # Boston, MA 02111-1307, USA.
 
 import cgi
+import json
 import time
+import traceback
 
-from whoosh.index import open_dir
+from whoosh.analysis import *
 from whoosh.fields import *
 from whoosh.highlight import *
+from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
-from whoosh.analysis import *
-import traceback
-import json
 
 
 class JsonSerializer:
 
     def do(self, search):
-
-        print 'Content-type: application/json\n\n'
+        print('Content-type: application/json\n\n')
 
         results = search.get_results()
 
@@ -47,7 +46,6 @@ class JsonSerializer:
 class WebSerializer:
 
     def _get_result_text(self, source, highlighted):
-
         if highlighted is not None and len(highlighted) > 0:
             return highlighted.encode('utf-8')
 
@@ -58,41 +56,39 @@ class WebSerializer:
             Comments can be multi-line because they contain multiple lines
             or because we concatenated tcomments with comments from the PO
         '''
-        comment = comment.replace('\n', '<br>')
+        comment = comment.replace('\n', '<br />')
         comment = comment.replace('\r', '')
         return comment
 
     def print_result(self, result):
-
-        print '<div class = "result">'
-        print '<table class = "result-table">'
+        print('<div class="result">')
+        print('<table class="result-table">')
         print '<tr>'
-        print "<td><b>Projecte:</b></td>" + "<td>" + result["project"].encode('utf-8') + "<td/>"
+        print "<td><b>Projecte:</b></td><td>" + result["project"].encode('utf-8') + "<td/>"
         print "</tr>"
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             print '<tr>'
-            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8') 
-            print "<td><b>Comentaris:</b></td>" + "<td>" + comment + "</td>"
+            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8')
+            print "<td><b>Comentaris:</b></td><td>" + comment + "</td>"
             print '</tr>'
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             print '<tr>'
-            print "<td><b>Context:</b></td>" + "<td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
+            print "<td><b>Context:</b></td><td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
             print '</tr>'
-           
+
         print '<tr>'
-        print "<td><b>Original:</b></td>" + "<td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
+        print "<td><b>Original:</b></td><td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
         print '</tr>'
-        
+
         print '<tr>'
-        print "<td><b>Traducció:</b></td>" + "<td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>" 
+        print "<td><b>Traducció:</b></td><td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>"
         print '</tr>'
 
         print "</table></div>"
-        
-    def get_search_term_for_display(self, search):
 
+    def get_search_term_for_display(self, search):
         text = ''
 
         if search.source is not None and len(search.source) > 0:
@@ -107,18 +103,17 @@ class WebSerializer:
         '''
             Search a term in the Whoosh index
         '''
-
         try:
             self.open_html()
 
             if ((search.source is None or len(search.source) < 2) and
-               (search.target is None or len(search.target) < 2)):
+                (search.target is None or len(search.target) < 2)):
                 self.write_html_header(self.get_search_term_for_display(search), 0, 0)
-                print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
+                print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
+                self.close_html()
                 return
 
             start_time = time.time()
-
             results = search.get_results()
             end_time = time.time() - start_time
 
@@ -139,14 +134,14 @@ class WebSerializer:
         print '<title>Resultats de la cerca</title>'
         print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
         print '<meta name="robots" content="noindex, nofollow">'
-        print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
+        print('<link type="text/css" rel="stylesheet" media="screen" href="recursos.css" />')
         print '</head><body>'
 
     def write_html_header(self, term, results, time):
         t = term.encode('utf-8')
-        print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span><br>'
+        print '<span class="searched">Resultats de la cerca del terme:</span><span class="searched-term"> ' + t + '</span><br>'
         print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
-        print '<a href = "./memories.html"> &lt; Torna a la pàgina anterior</a><br><br>'
+        print '<a href="./memories.html"> &lt; Torna a la pàgina anterior</a><br /><br />'
 
     def close_html(self):
         print '</body></html>'
@@ -156,7 +151,6 @@ class Search:
     '''
             Search a term in the Whoosh index
     '''
-
     dir_name = "indexdir"
 
     def __init__(self, source, target, project):
@@ -202,7 +196,6 @@ class Search:
 
 
 def main():
-
     form = cgi.FieldStorage()
     source = form.getvalue("source", '')
     target = form.getvalue("target", None)
@@ -211,18 +204,19 @@ def main():
 
     if source is not None:
         source = unicode(source, 'utf-8')
-    
+
     if target is not None:
         target = unicode(target, 'utf-8')
-    
+
     search = Search(source, target, project)
-    
-    if (json is None):
+
+    if json is None:
         web_serializer = WebSerializer()
         web_serializer.do(search)
     else:
         json_serializer = JsonSerializer()
         json_serializer.do(search)
+
 
 if __name__ == "__main__":
     main()

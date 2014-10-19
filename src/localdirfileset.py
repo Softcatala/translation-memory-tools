@@ -17,21 +17,22 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import glob
+import shutil
+
 from fileset import FileSet
 
-import shutil
-import glob
 
 class LocalDirFileSet(FileSet):
 
     def do(self):
         self.create_tmp_directory()
-        
+
         out = '{0}/{1}'.format(self.temp_dir, self.filename)
-        
+
         for filename in glob.glob(self.url):
             shutil.copy(filename, out)
-        
+
         self.convert_ts_files_to_po()
         self.add_comments()
         self.build()

@@ -24,7 +24,6 @@ import os
 class FindFiles:
 
     def find(self, directory, pattern):
-
         filelist = []
 
         for root, dirs, files in os.walk(directory):

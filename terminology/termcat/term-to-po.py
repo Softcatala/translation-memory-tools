@@ -18,13 +18,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-
-import polib
 import xml.etree.ElementTree as ET
 
+import polib
 
-def get_metadata():
-    metadata = {
+
+def main():
+    """Converts TERMCAT 'TERM' own format to PO"""
+    pofile = polib.POFile()
+    pofile.metadata = {
         'Project-Id-Version': '1.0',
         'Report-Msgid-Bugs-To': 'info@termcat.cat',
         'POT-Creation-Date': '2007-10-18 14:00+0100',
@@ -36,19 +38,12 @@ def get_metadata():
         'Content-Transfer-Encoding': '8bit',
         'Plural-Forms': 'nplurals=2; plural=n != 1;',
     }
-    return metadata
-    
-def read_xml():
-
-    pofile = polib.POFile()
-    pofile.metadata = get_metadata()
 
     tree = ET.parse('4sources_termes.xml')
     root = tree.getroot()
     terms = 0
     stored_terms = {}
     for term_entry in root.iter('fitxa'):
-   
         # Text can be any order (en->ca) or (ca->en) and also you can
         # can have several en or ca strings
         sources = []
@@ -58,7 +53,7 @@ def read_xml():
         # This loops areatematica and denominacio tags
         for term_subentry in term_entry:
             if term_subentry.tag == 'areatematica':
-                if u'TIC' in term_subentry.text:    
+                if u'TIC' in term_subentry.text:
                     informatica_term = True
 
             if not term_subentry.tag == 'denominacio':
@@ -82,26 +77,19 @@ def read_xml():
         for source in sources:
             source = unicode(source)
             translation = unicode(translations[0])
-            
+
             if source in stored_terms and stored_terms[source] == translation:
-                print u'Skipping duplicated term: {0}'.format(source)
+                print(u'Skipping duplicated term: {0}'.format(source))
                 continue
-        
+
             stored_terms[source] = translation
-            entry = polib.POEntry(msgid=source,
-                                  msgstr=translation)
+            entry = polib.POEntry(msgid=source, msgstr=translation)
             pofile.append(entry)
             terms += 1
 
     pofile.save("termcat.po")
-    print "Terms : " + str(terms)
+    print("Terms : " + str(terms))
 
-def main():
-    '''
-        Converts TERMCAT 'TERM' own format to PO
-    '''
-
-    read_xml()
 
 if __name__ == "__main__":
     main()

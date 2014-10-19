@@ -21,6 +21,7 @@ import sqlite3
 
 from projectmetadatadto import ProjectMetaDataDto
 
+
 class ProjectMetaDataDao:
 
     def __init__(self):
@@ -28,17 +29,18 @@ class ProjectMetaDataDao:
 
     def create_model(self):
         c = self.connection.cursor()
-
-        command = '''create table if not exists projects (name text primary key,  \
-                  last_fetch timestamp, last_translation_update timestamp, \
-                  words integer, checksum text);'''
+        command = ('CREATE TABLE IF NOT EXISTS projects ('
+                   'name TEXT PRIMARY KEY,'
+                   'last_fetch TIMESTAMP,'
+                   'last_translation_update TIMESTAMP,'
+                   'words INTEGER,'
+                   'checksum TEXT'
+                   ');')
         c.execute(command)
 
-        command = '''create index if not exists [ix_name] on [projects] ([name]);'''
+        command = 'CREATE INDEX IF NOT EXISTS [ix_name] ON [projects] ([name]);'
         c.execute(command)
-
         self.connection.commit()
-
 
     def open(self, database_name):
         self.connection = sqlite3.connect(database_name,
@@ -47,40 +49,36 @@ class ProjectMetaDataDao:
 
     def put(self, dto):
         c = self.connection.cursor()
-        command = u"insert or replace into 'projects' values ('{0}', '{1}', '{2}', {3}, '{4}');". \
-                  format(dto.name, dto.last_fetch, dto.last_translation_update,
-                  dto.words, dto.checksum)
-
+        command = (u"INSERT OR REPLACE INTO 'projects' VALUES ('{0}', '{1}', "
+                   u"'{2}', {3}, '{4}');".format(dto.name, dto.last_fetch,
+                                                 dto.last_translation_update,
+                                                 dto.words, dto.checksum))
         c.execute(command)
         self.connection.commit()
 
-
     def get(self, name):
         c = self.connection.cursor()
-        command = u'SELECT * FROM projects where name=\'{0}\''.format(name)
+        command = u"SELECT * FROM projects WHERE name='{0}'".format(name)
         result = c.execute(command)
         row = result.fetchone()
 
-        if (row is None):
+        if row is None:
             return None
 
         dto = ProjectMetaDataDto(row[0])
-        dto.set_last_fetch(row[1])
-        dto.set_last_translation_update(row[2])
+        dto.last_fetch(row[1])
+        dto.last_translation_update(row[2])
         dto.words = row[3]
         dto.checksum = row[4]
         return dto
-
 
     def dump(self):
         c = self.connection.cursor()
         command = u'SELECT * FROM projects'
         result = c.execute(command)
-        print 'Database rows'
+        print('Database rows')
         for row in result:
             print row
       
     def close(self):
         self.connection.close()
-
-

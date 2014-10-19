@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -18,13 +19,13 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from jsonbackend import JsonBackend
-from optparse import OptionParser
-from projects import Projects
-
 import logging
 import os
 import time
+from optparse import OptionParser
+
+from jsonbackend import JsonBackend
+from projects import Projects
 
 
 projects = Projects()
@@ -94,7 +95,7 @@ def read_parameters():
         help='Looks for already existing PO files in the current directory '
         'and creates a new tm.po with all memories'
     )
-    
+
     parser.add_option(
         '-c',
         '--softcatala',
@@ -117,17 +118,18 @@ def read_parameters():
     only_all_projects_tm = options.only_all_projects_tm
     softcatala_only = options.softcatala_only
 
+
 def load_projects_from_json():
+    global softcatala_only
+
     json = JsonBackend(projects_json)
     json.load()
-    
-    global softcatala_only
 
     msg = 'Projects defined in json file {0}'.format(len(json.projects))
     logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
-        
+
         if softcatala_only is True and project_dto.softcatala is False:
             continue
 

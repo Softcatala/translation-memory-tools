@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -25,10 +26,11 @@ from findfiles import FindFiles
 
 
 class Corpus:
-    '''Loads different PO files that build the corpus'''
-    '''Strings that are not suitable candidates are discarded'''
-    '''We do a minimum clean up of strings'''
+    """Loads different PO files that build the corpus.
 
+    Strings that are not suitable candidates are discarded. We do a minimum
+    clean up of strings.
+    """
     def __init__(self, directory):
         self.directory = directory
         self.source_words = set()
@@ -40,32 +42,26 @@ class Corpus:
         self.stop_words = set()
 
     def _read_stop_words(self, stopwords_file):
-
         while True:
             line = stopwords_file.readline()
             if not line:
                 break
-
-            word = line.strip()
-            word = word.lower()
+            word = line.strip().lower()
             self.stop_words.add(word)
 
     def _clean_string(self, result):
-
-        chars = {'_', '&', '~',  # Accelerators
-                 ':', ',', '...', u'…'  # Punctuations
-        }
-
-        for c in chars:
+        CHARS = (
+            '_', '&', '~',  # Accelerators.
+            ':', ',', '...', u'…'  # Punctuations.
+        )
+        for c in CHARS:
             result = result.replace(c, '')
 
-        #remove all the leading and trailing whitespace characters
-        result = result.strip()
-        result = result.lower()
+        # Remove all the leading and trailing whitespace characters.
+        result = result.strip().lower()
         return result
 
     def _should_select_string(self, source, target):
-
         words = len(source.split())
 
         # Only up to 3 words terms for now
@@ -97,24 +93,21 @@ class Corpus:
 
         # We are ignoring strings with html tags or string formatters
         # This also affects strings like <shift>f10
-        chars = {'<', '>', '%', '{', '}'}
-        for c in chars:
+        CHARS = ('<', '>', '%', '{', '}')
+        for c in CHARS:
             if c in source:
                 msg = "Discard: invalid chars '{0}'".format(source.encode('utf-8'))
                 logging.info(msg)
                 return False
 
-        if len(target) == 0:
-            return False
+        return len(target) != 0
 
-        return True
 
     #
     # Output: Dictionary key: document, terms dictionary:
     #          Terms dictionary -> key: source term (delete), value:list <trgs> (suprimeix, esborra)
     #
     def process(self):
-
         stopwords_file = open("stop-words/stop-words.txt")
         self._read_stop_words(stopwords_file)
 
@@ -123,7 +116,7 @@ class Corpus:
         f = open('corpus.txt', 'w')
 
         for filename in findFiles.find(self.directory, '*.po'):
-            print "Reading: " + filename
+            print("Reading: " + filename)
 
             pofile = polib.pofile(filename)
 
@@ -164,11 +157,9 @@ class Corpus:
 
     def dump_documents(self):
         '''For debugging proposes'''
-
         for document_key_filename in self.documents.keys():
             print document_key_filename
             for terms in self.documents[document_key_filename].keys():
                 print "  s({0}):{1}".format(len(self.documents[document_key_filename][terms]), terms.encode('utf-8'))
                 for translation in self.documents[document_key_filename][terms]:
                     print "     t:" + translation.encode('utf-8')
-

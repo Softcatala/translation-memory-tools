@@ -17,12 +17,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from findfiles import FindFiles
-from pofile import POFile
-
 import logging
 import os
 import shutil
+
+from findfiles import FindFiles
+from pofile import POFile
 
 
 class FileSet():
@@ -51,7 +51,6 @@ class FileSet():
             self.excluded.append(filename)
 
     def add_comments(self):
-
         if not self.add_source:
             return
 
@@ -67,7 +66,7 @@ class FileSet():
             else:
                 msg = 'Source: {0} from project \'{1} - {2}\'' \
                     .format(relative, self.project_name, self.name)
-                
+
             pofile.add_comment_to_all_entries(msg)
             pofile.calculate_localized_string_checksum(self.checksum)
 
@@ -105,22 +104,21 @@ class FileSet():
         for inifile in findFiles.find(self.temp_dir, 'ca.ini'):
             dirName = os.path.dirname(inifile)
             logging.info('convert ini file: {0}'.format(inifile))
-            
+
             # http://bugs.locamotion.org/show_bug.cgi?id=3148
             # The rename operations can be removed when the issue is fixed
             os.rename('{0}/en.ini'.format(dirName),
                       '{0}/en.strings'.format(dirName))
-        
+
             os.rename('{0}/ca.ini'.format(dirName),
                       '{0}/ca.strings'.format(dirName))
-        
+
             filename = '{0}/strings-ca.po'.format(dirName)
             cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 ' \
                 '--personality=strings -o {1}'
             os.system(cmd.format(dirName, filename))
-            
-    def _should_exclude_file(self, filename):
 
+    def _should_exclude_file(self, filename):
         exclude = False
         for exfilename in self.excluded:
             if filename.find(exfilename) != -1:
@@ -128,17 +126,16 @@ class FileSet():
 
         if exclude:
             logging.info('Excluding file: {0}'.format(filename))
-                
+
         return exclude
-        
 
     def build(self):
         findFiles = FindFiles()
         localtm = 'tm-local.po'
-        
+
         files = findFiles.find(self.temp_dir, '*.po')
-        
-        if (len(files) == 0):
+
+        if len(files) == 0:
             logging.info('No files to add in fileset: {0}'. format(self.name))
             return
 
@@ -176,7 +173,7 @@ class FileSet():
         if os.path.exists(localtm):
             os.remove(localtm)
         self._clean_up()
-       
+
     def create_tmp_directory(self):
         self.remove_tmp_directory()
         os.makedirs(self.temp_dir)

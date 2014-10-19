@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -18,15 +19,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from project import Project
-
+import datetime
 import logging
 import os
 import shutil
-import datetime
 
+from project import Project
 from projectmetadatadao import ProjectMetaDataDao
 from projectmetadatadto import ProjectMetaDataDto
+
 
 class Projects:
 
@@ -35,11 +36,11 @@ class Projects:
         self.set_tm_file('tots-tm.po')
         self.metadata_dao = ProjectMetaDataDao()
         self.metadata_dao.open('statistics.db3')
-          
+
     def set_tm_file(self, filename):
         self.tm_file = filename
         self.tm_project = Project('Translation memory', self.tm_file)
-  
+
     def add(self, project):
         self.projects.append(project)
 
@@ -61,13 +62,14 @@ class Projects:
                 continue
 
             metadata_dto = self.metadata_dao.get(project.name)
-            if (metadata_dto == None):
+            if metadata_dto is None:
                 metadata_dto = ProjectMetaDataDto(project.name)
 
-            if metadata_dto.checksum == None or metadata_dto.checksum != project.checksum:
+            if (metadata_dto.checksum is None or
+                metadata_dto.checksum != project.checksum):
                 metadata_dto.last_translation_update = datetime.datetime.now()
-                metadata_dto.checksum = project.checksum 
-            
+                metadata_dto.checksum = project.checksum
+
             metadata_dto.last_fetch = datetime.datetime.now()
             metadata_dto.words = words
             self.metadata_dao.put(metadata_dto)
@@ -76,7 +78,6 @@ class Projects:
 
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
-        
         if os.path.isfile(self.tm_file):
             os.remove(self.tm_file)
 
@@ -85,8 +86,7 @@ class Projects:
                 backup_file = 'tm-previous.po'
                 shutil.copy(self.tm_file, backup_file)
                 cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-                os.system(cmd.format(self.tm_file,
-                                     backup_file,
+                os.system(cmd.format(self.tm_file, backup_file,
                                      project.get_filename()))
                 os.remove(backup_file)
             else:

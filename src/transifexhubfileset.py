@@ -17,14 +17,14 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import FileSet
-from urlparse import urlparse
-from HTMLParser import HTMLParser
-from transifexfileset import TransifexFileSet
-
+import logging
 import urllib2
 import urlparse
-import logging
+from HTMLParser import HTMLParser
+
+from fileset import FileSet
+from transifexfileset import TransifexFileSet
+
 
 class OptionsExtractor(HTMLParser):
     """
@@ -34,49 +34,45 @@ class OptionsExtractor(HTMLParser):
             * Organization pages: https://www.transifex.com/organization/xfce
                 * These are paginated and have the concept of 'next page'
     """
-
     def __init__(self, base_url):
         HTMLParser.__init__(self)
         self.base_url = base_url
         self.options = []
         self.next_page = None
-   
+
     def get_next_page(self):
         return self.next_page
-      
+
     def get_options(self):
         return self.options
-  
+
     def get_project_name_from_tr(self, url):
         prefix = '/ajax/projects/p/'
-        
-        if url.startswith(prefix) is False:
+
+        if not url.startswith(prefix):
             return None
 
         url = url[len(prefix):]
         idx = url.find('/')
-        if (idx == -1):
+        if idx == -1:
             return None
 
         return url[:idx]
-
 
     def get_project_name_from_ahref(self, url):
         prefix = '/projects/p/'
-        
-        if url.startswith(prefix) is False:
+
+        if not url.startswith(prefix):
             return None
 
         url = url[len(prefix):]
         idx = url.find('/')
-        if (idx == -1):
+        if idx == -1:
             return None
 
         return url[:idx]
 
-
     def handle_starttag(self, tag, attrs):
-
         if tag == 'tr':
             attrs = dict(attrs)
             if 'data-actions-url' in attrs:
@@ -85,7 +81,6 @@ class OptionsExtractor(HTMLParser):
                     name = self.get_project_name_tr(url)
                     if name is not None and name not in self.options:
                         self.options.append(name)
-
         elif tag == 'a':
             attrs = dict(attrs)
 
@@ -96,15 +91,15 @@ class OptionsExtractor(HTMLParser):
                         klass = attrs['class']
                     else:
                         klass = None
-      
+
                     if klass == 'next':
                         self.next_page = url
                     else:
                         name = self.get_project_name_from_ahref(url)
                         if name is not None and name not in self.options:
                             self.options.append(name)
-                    
-    
+
+
 class Page:
     """Represents a downloaded web page and its content"""
 
@@ -124,12 +119,8 @@ class Page:
     def _download_page(self):
         request = urllib2.Request(self.url)
         handle = urllib2.build_opener()
-
-        self.content = unicode(
-            handle.open(request).read(),
-            'utf-8',
-            errors='replace'
-        )
+        self.content = unicode(handle.open(request).read(), 'utf-8',
+                               errors='replace')
 
     def _process_options(self):
         parser = OptionsExtractor(self.url)
@@ -143,27 +134,22 @@ class Page:
 
     def get_next_page(self):
         return self.next_page
-      
 
 
 class TransifexHubFileSet(FileSet):
-    
+
     def set_project(self, project):
         self.project = project
 
     def _clean_string(self, result):
-
         result = result.replace(' ', '-')
         result = result.strip()
         result = result.lower()
         return result
 
     def do(self):
-
-        transifex_url = "https://www.transifex.com/projects/p/"       
-            
+        transifex_url = "https://www.transifex.com/projects/p/"
         try:
-
             # This project has a single fileset assigned (this)
             # We empty the fileset and add dynamically the ones referenced by Gerrit
             self.project.filesets = []
@@ -189,7 +175,5 @@ class TransifexHubFileSet(FileSet):
 
             # All the new filesets have been added re-process project now
             self.project.do()
-
         except Exception as detail:
             print(detail)
-

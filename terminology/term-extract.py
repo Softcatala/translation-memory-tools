@@ -21,21 +21,22 @@
 import sys
 sys.path.append('../src/')
 
-import time
-import os
 import logging
+import os
 import resource
-
-from optparse import OptionParser
-from corpus import Corpus
-from referencesources import ReferenceSources
-from devglossaryserializer import DevGlossarySerializer
-from userglossaryserializer import UserGlossarySerializer
-from metrics import Metrics
-from translations import Translations
-from glossaryentry import GlossaryEntry
-from glossary import Glossary
+import time
 from collections import OrderedDict
+from optparse import OptionParser
+
+from corpus import Corpus
+from devglossaryserializer import DevGlossarySerializer
+from glossary import Glossary
+from glossaryentry import GlossaryEntry
+from metrics import Metrics
+from referencesources import ReferenceSources
+from translations import Translations
+from userglossaryserializer import UserGlossarySerializer
+
 
 src_directory = None
 glossary_description = ''
@@ -43,8 +44,8 @@ glossary_file = None
 
 
 def process_projects():
-
-    global glossary_file, glossary_description
+    global glossary_description
+    global glossary_file
 
     corpus = Corpus(src_directory)
     corpus.process()
@@ -57,7 +58,8 @@ def process_projects():
 
     # Select terms
     MAX_TERMS = 1000
-    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get, reverse=True)
+    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get,
+                                   reverse=True)
 
     # Developer report
     glossary_entries = OrderedDict()
@@ -67,7 +69,8 @@ def process_projects():
     for term in selected_terms:
         glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_description, corpus,
+    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html",
+                                   glossary_description, corpus,
                                    glossary_entries, reference_sources)
 
     # User report
@@ -88,23 +91,19 @@ def process_projects():
 
 
 def read_parameters():
-
     global src_directory
     global glossary_description
     global glossary_file
 
     parser = OptionParser()
-
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
                       default="sc-tm-pos/",
                       help="Directory to find the PO files")
-
     parser.add_option("-c", "--comment",
                       action="store", type="string", dest="glossary_description",
                       default="",
                       help="HTML comment to add")
-
     parser.add_option("-t", "--html-file",
                       action="store", type="string", dest="glossary_file",
                       default="glossary",
@@ -114,6 +113,7 @@ def read_parameters():
     src_directory = options.src_directory
     glossary_description = options.glossary_description
     glossary_file = options.glossary_file
+
 
 def init_logging():
     logfile = 'term-extract.log'
@@ -127,25 +127,21 @@ def init_logging():
 
 def using():
     usage=resource.getrusage(resource.RUSAGE_SELF)
-    return '''usertime=%s systime=%s mem=%s mb
-           '''%(usage[0],usage[1],
-                (usage[2]*resource.getpagesize())/1000000.0)
+    return ("usertime=%s systime=%s mem=%s mb" % (usage[0],usage[1],
+            (usage[2]*resource.getpagesize())/1000000.0))
 
 
 def main():
-    
-    print "Extracts terminology"
-    print "Use --help for assistance"
-
+    print("Extracts terminology")
+    print("Use --help for assistance")
     start_time = time.time()
     init_logging()
     read_parameters()
     process_projects()
     end_time = time.time() - start_time
-    print "time used to create the glossaries: " + str(end_time)
+    print("time used to create the glossaries: " + str(end_time))
     print using()
 
 
 if __name__ == "__main__":
     main()
-

@@ -18,8 +18,8 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import urllib
 import json
+import urllib
 
 
 class CheckSearch(object):
@@ -29,8 +29,8 @@ class CheckSearch(object):
         self.url = url
 
     def search_source(self, term):
-        url = '{0}/web_search.py?source={1}&project=tots&json=1'
-        url = url.format(self.url, term)
+        url = ('{0}/web_search.py?source={1}&project=tots'
+               '&json=1'.format(self.url, term))
 
         urllib.urlretrieve(url, 'file.txt')
         with open('file.txt') as json_data:
@@ -57,8 +57,8 @@ class CheckSearch(object):
             raise Exception(text.format(minimum, actual))
 
     def _check_integration_data(self):
-        string = u'Palindromics numbers remain the same when ' \
-                 u'its digits are reversed'
+        string = (u'"Palindromics numbers remain the same when its digits are '
+                  u'reversed"')
         data = self.search_source(string)
 
         self._assert_greater(len(data), 1)
@@ -84,7 +84,6 @@ class CheckSearch(object):
             self._check_common_searches()
             self._check_integration_data()
             return True
-
         except Exception as detail:
-            print u'Error checking search results: ' + unicode(detail)
+            print(u'Error checking search results: ' + unicode(detail))
             return False

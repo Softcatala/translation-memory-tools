@@ -17,11 +17,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import FileSet
-from findfiles import FindFiles
-
 import os
 import re
+
+from fileset import FileSet
+from findfiles import FindFiles
 
 
 class BazaarFileSet(FileSet):
@@ -45,8 +45,8 @@ class BazaarFileSet(FileSet):
 
         for filename in findFiles.find(self.temp_dir, '*'):
 
-            if re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
+            if (re.match(self.pattern, filename) is None and
+                os.path.exists(filename)):
                 os.remove(filename)
 
     def do(self):

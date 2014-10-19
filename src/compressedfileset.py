@@ -17,20 +17,18 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from downloadfile import DownloadFile
-from fileset import FileSet
-
 import logging
 import os
+
+from downloadfile import DownloadFile
+from fileset import FileSet
 
 
 class CompressedFileSet(FileSet):
 
     def _uncompress(self):
-
         if self.filename.endswith('.zip'):
             os.system('unzip {0} -d {1}'.format(self.filename, self.temp_dir))
-
         elif self.filename.endswith('tar.gz'):
             if len(self.pattern) > 0:
                 cmd = 'tar --wildcards -xvf {0} -C {1} {2}'.format(
@@ -45,7 +43,6 @@ class CompressedFileSet(FileSet):
                     self.temp_dir
                 )
                 os.system(cmd)
-
         elif self.filename.endswith('.gz'):
             # We are assuming that the .gz file will contain a single PO
             cmd = 'gunzip {0} -c > {1}/ca.po'.format(

@@ -20,6 +20,7 @@
 
 import math
 
+
 class Metrics:
 
     def __init__(self):
@@ -30,11 +31,11 @@ class Metrics:
         # Count the number of times each term occurs in each document and sum them all together;
         # the number of times a term occurs in a document is called its term frequency.
         self.tf = {}
-  
+
         # IDF
         # It is obtained by dividing the total number of documents by the number of documents containing the term,
         self.idf = {}
- 
+
         # TFxIDF
         self.tfxidf = {}
 
@@ -59,4 +60,3 @@ class Metrics:
             self.df[source_word] = documents_appear
             self.tfxidf[source_word] = frequency * idf
             self.tfxdf[source_word] = frequency * documents_appear
-

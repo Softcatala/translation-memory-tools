@@ -18,18 +18,19 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
 import datetime
-from pofile import POFile
-from jsonbackend import JsonBackend
+import os
 from optparse import OptionParser
+
+from jsonbackend import JsonBackend
+from pofile import POFile
+
 
 src_directory = None
 trg_directory = None
 
 
 def process_projects():
-
     json = JsonBackend("projects.json")
     json.load()
 
@@ -53,7 +54,6 @@ def process_projects():
 
 
 def read_parameters():
-
     global src_directory
     global trg_directory
 
@@ -84,13 +84,13 @@ def main():
         Reads the projects and generates an HTML to enable downloading all
         the translation memories
     '''
-
     print "Compares two sets of PO files and shows the difference"
     print "Use --help for assistance"
     print datetime.datetime.now()
 
     read_parameters()
     process_projects()
+
 
 if __name__ == "__main__":
     main()

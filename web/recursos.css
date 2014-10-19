@@ -1,4 +1,5 @@
-.boxwhite3 {
+.boxwhite3
+{
     font-family: Verdana,Arial,Helvetica,sans-serif;
     color: #191919;
     font-size: 13px;
@@ -7,24 +8,26 @@
 
 .recursos-section
 { 
-	 color: #BA2626;
+    color: #ba2626;
 }
 
 .result
 { 
-    border-top: 5px solid #E7E7E7;
+    border-top: 5px solid #e7e7e7;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.result-table td {
+.result-table td
+{
     padding-top: 0em;
     padding-bottom: 0em;
 }
 
-b[class^='match'],b[class*=' match']
+b[class^='match'],
+b[class*=' match']
 {
-	 color: #BA2626;
+    color: #ba2626;
 }
 
 .searched
@@ -32,7 +35,7 @@ b[class^='match'],b[class*=' match']
     font-weight:bold;
     font-size: 20px;
     font-family: Arial;
-    color: #BA2626;
+    color: #ba2626;
 }
 
 .searched-term
@@ -42,10 +45,9 @@ b[class^='match'],b[class*=' match']
     font-family: Arial;
 }
 
-
 .search-box
 { 
-    background-color: #E5E3D8;
+    background-color: #e5e3d8;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -57,7 +59,7 @@ b[class^='match'],b[class*=' match']
 
 .search-samples
 { 
-    background-color: #F2F0E5;
+    background-color: #f2f0e5;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -69,7 +71,7 @@ table
  
 th
 {
-    background-color: #F2F0E5;
+    background-color: #f2f0e5;
 }
 
 .main-table
@@ -83,12 +85,13 @@ th
     padding-top: 20px
 }
 
-
-.section {
-    color: #FFFFFF;
+.section
+{
+    color: #fff;
     margin-top: 4.5em;
 }
 
-.bodyRecurs {
+.bodyRecurs
+{
     margin-top: 4.5em;
 }

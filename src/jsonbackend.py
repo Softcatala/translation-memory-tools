@@ -17,10 +17,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from collections import OrderedDict
-
-import logging
 import json
+import logging
+from collections import OrderedDict
 
 
 class ProjectDTO:
@@ -36,9 +35,9 @@ class ProjectDTO:
         self.filesets = []
 
     def __str__(self):
-        text = 'ProjectDTO. Name: {0}, filename: {1}, project web: {2}, ' \
-            'disabled {3}'
-        return text.format(self.name, self.filename, self.projectweb, 
+        text = ('ProjectDTO. Name: {0}, filename: {1}, project web: {2}, '
+                'disabled {3}')
+        return text.format(self.name, self.filename, self.projectweb,
                            self.disabled)
 
 
@@ -53,8 +52,8 @@ class FileSetDTO:
         self.pattern = ''
 
     def __str__(self):
-        text = 'FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, ' \
-            'target: {4}, pattern: {5}'
+        text = ('FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, '
+                'target: {4}, pattern: {5}')
         return text.format(self.name, self.url, self.type, self.excluded,
                            self.target, self.pattern)
 
@@ -89,7 +88,7 @@ class JsonBackend:
             elif fileset_properties_attr == 'pattern':
                 fileset.pattern = fileset_properties_value
             else:
-                msg = 'Field \'{0}\' not recognized'
+                msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))
 
     def load(self):
@@ -99,16 +98,16 @@ class JsonBackend:
             # Parse projects
             for attribute, value in data['projects'].items():
                 project = ProjectDTO(attribute)
-                
+
                 # Get project properties
                 for prop in ('filename', 'projectweb', 'softcatala', 'disabled',
                              'downloadable', 'selectable'):
                     if prop in value:
                         setattr(project, prop, value[prop])
 
-                if (project.disabled is True):
+                if project.disabled:
                     continue
-                
+
                 project.filename = '{0}-tm.po'.format(project.name.lower())
                 self.projects.append(project)
 

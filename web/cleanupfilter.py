@@ -18,16 +18,17 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from whoosh.fields import *
 from whoosh.analysis import *
+from whoosh.fields import *
+
 from cleanstring import CleanString
+
 
 class CleanUpFilter(Filter):
     '''
         Clean ups acceleators when generating the tokens for the index
         allowing to ignore them
     '''
-
     def __call__(self, tokens):
         for t in tokens:
             t.text = CleanString.get(t.text)

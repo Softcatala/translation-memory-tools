@@ -23,19 +23,13 @@ class CleanString:
 
     @staticmethod
     def get(result):
+        CHARS = ('_', '&', '~')  # Accelerators
+        for char in CHARS:
+            result = result.replace(char, '')
 
-        chars = {'_', '&', '~',  # Accelerators
-        }
-
-        for c in chars:
-            result = result.replace(c, '')
-
-        result = result.lower()
-        return result
+        return result.lower()
 
     @staticmethod
     def get_strip(result):
-
-        #removes all the leading and trailing whitespace characters
-        result = CleanString.get(result).strip()
-        return result
+        """Remove all the leading and trailing whitespace characters."""
+        return CleanString.get(result).strip()

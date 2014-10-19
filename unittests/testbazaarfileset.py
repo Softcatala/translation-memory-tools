@@ -20,6 +20,7 @@ import sys
 import unittest
 
 sys.path.append('../src/')
+
 from bazaarfileset import BazaarFileSet
 
 
@@ -33,8 +34,10 @@ class TestBazaarFileSet(unittest.TestCase):
         self.assertTrue(bazaar._has_filename())
 
     def test_has_filename_path(self):
-        bazaar = BazaarFileSet('project none', 'filesetname', 'lp:~mailman-l10n-ca/', 'none.po')
+        bazaar = BazaarFileSet('project none', 'filesetname',
+                               'lp:~mailman-l10n-ca/', 'none.po')
         self.assertFalse(bazaar._has_filename())
+
 
 if __name__ == '__main__':
     unittest.main()

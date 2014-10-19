@@ -21,22 +21,23 @@
 import sys
 from collections import OrderedDict
 
+
 class DumpEntry:
 
     def _init__(self):
-        self.target = None          
+        self.target = None
+
 
 class Dump:
 
     def __init__(self):
-        # key text -> 
+        # key text ->
         self.entries = OrderedDict()
 
     def read(self, filename):
-
         _file = open(filename)
 
-        lines = 0   
+        lines = 0
         while True:
             line = _file.readline()
             if not line:
@@ -53,14 +54,14 @@ class Dump:
 
             lines += 1
             dump_entry = DumpEntry()
-            dump_entry.target = columns[1] 
+            dump_entry.target = columns[1]
             self.entries[columns[0]] = dump_entry
 
     def compare(self, dump):
         # Missing terms
         items = 0
         MAX = 100
-        
+
         reduced = OrderedDict()
         items = 0
         for i in dump.entries:
@@ -68,32 +69,29 @@ class Dump:
             items += 1
             if items > MAX:
                 break
-      
+
         items = 0
         for entry in self.entries:
             if entry not in reduced:
-                print u" " + unicode(entry, "utf-8")
+                print(u" " + unicode(entry, "utf-8"))
 
             items += 1
             if items > MAX:
                 break
 
-def main():
-    
-    print "Compare terminology dumps"
-    print "Use --help for assistance"
 
+def main():
+    print("Compare terminology dumps")
+    print("Use --help for assistance")
     new = Dump()
     new.read('glossary.txt')
     old = Dump()
     old.read('glossary-old.txt')
-
-    print "New items"
+    print("New items")
     new.compare(old)
-  
-    print "Old items"
+    print("Old items")
     old.compare(new)
- 
+
+
 if __name__ == "__main__":
     main()
-

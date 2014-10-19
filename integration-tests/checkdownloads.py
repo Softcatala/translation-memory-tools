@@ -20,14 +20,14 @@
 
 import sys
 sys.path.append('../src/')
-from jsonbackend import JsonBackend
-from findfiles import FindFiles
-
-import urllib
-import urllib2
-import tempfile
 import os
 import shutil
+import tempfile
+import urllib
+import urllib2
+
+from jsonbackend import JsonBackend
+from findfiles import FindFiles
 
 
 class CheckDownloads(object):
@@ -57,18 +57,17 @@ class CheckDownloads(object):
             try:
                 rtr = urllib2.urlopen(link)
                 code = rtr.getcode()
-
             except Exception:
                 pass
 
             if code != CheckDownloads.HTTP_STATUS_CODE_OK:
-                print 'link {0} returns {1}'.format(link, str(code))
+                print('link {0} returns {1}'.format(link, str(code)))
             else:
                 found = True
 
         if not found:
             self.errors += 1
-            print 'Missing link {0}'.format(filename)
+            print('Missing link {0}'.format(filename))
 
         return found
 
@@ -80,10 +79,7 @@ class CheckDownloads(object):
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def check_zipfile(self,
-                      filename,
-                      extensions,
-                      expected_files,
+    def check_zipfile(self, filename, extensions, expected_files,
                       minimum_size):
         tmp_file = tempfile.NamedTemporaryFile()
         link = self._get_link_from_filename(filename)
@@ -109,21 +105,18 @@ class CheckDownloads(object):
             size = os.path.getsize(filename)
             if size < minimum_size:
                 self.errors += 1
-                print 'File {0} has size {1} but expected was at least {2}'. \
-                      format(filename, size, minimum_size)
+                print('File {0} has size {1} but expected was at least {2}'. \
+                      format(filename, size, minimum_size))
 
         if files != expected_files:
             self.errors += 1
-            print '{0} expected {1} files but contains {2}'.format(
-                link,
-                expected_files,
-                files
-            )
+            print('{0} expected {1} files but contains {2}'.format(link,
+                  expected_files, files))
 
         self._remove_tmp_directory()
 
     def downloads_for_project(self, name, expected_files):
-        print "Processing:" + name
+        print("Processing:" + name)
 
         # Po files
         MIN_PO_SIZE = 1500
@@ -149,12 +142,12 @@ class CheckDownloads(object):
         try:
             rtr = urllib2.urlopen(project_web)
             code = rtr.getcode()
-
         except Exception:
             pass
 
         if code != CheckDownloads.HTTP_STATUS_CODE_OK:
-            print 'Project link {0} returns {1}'.format(project_web, str(code))
+            print('Project link {0} returns {1}'.format(project_web,
+                                                        str(code)))
             return False
         else:
             return True
@@ -179,7 +172,7 @@ class CheckDownloads(object):
 
         expected_files = 1
         for project_dto in json.projects:
-            if project_dto.downloadable is False:
+            if not project_dto.downloadable:
                 continue
 
             self.downloads_for_project(project_dto.name, expected_files)

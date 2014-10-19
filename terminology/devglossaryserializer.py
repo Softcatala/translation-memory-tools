@@ -32,6 +32,7 @@ from optparse import OptionParser
 from corpus import Corpus
 from referencesources import ReferenceSources
 
+
 class ReferenceMatches:
 
     def __init__(self):
@@ -40,23 +41,21 @@ class ReferenceMatches:
         self.first_500 = 0
         self.first_2000 = 0
 
+
 class DevGlossarySerializer():
 
     def create_text_dump(self, documents, glossary_entries, reference_sources):
-
         f = open('glossary.txt', 'w')
-      
+
         for term in glossary_entries:
             translations = glossary_entries[term]
-
-            f.write('{0};{1}\n'.format(term.encode('utf-8'), 
+            f.write('{0};{1}\n'.format(term.encode('utf-8'),
                     translations[0].translation.encode('utf-8')))
-       
+
         f.close()
 
 
     def get_terms_from_sources_not_used(self, reference_sources, terms):
-
         not_used = reference_sources.get_terms_not_used_from_references(terms)
 
         html = u''
@@ -79,7 +78,6 @@ class DevGlossarySerializer():
         return html
 
     def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
-
         f = open(html_file, 'w')
 
         f.write(u'<html><head>\n')
@@ -117,13 +115,13 @@ class DevGlossarySerializer():
 
             sources = ' '
             for reference in reference_sources.get_references_for_term_in(term):
-                
+
                 if reference is not None:
                     sources += '({0})'.format(reference.short_name)
 
                     if item < 50:
                         reference_matches[reference.name].first_50 += 1
-                    
+
                     if item < 100:
                         reference_matches[reference.name].first_100 += 1
 
@@ -132,7 +130,7 @@ class DevGlossarySerializer():
 
                     if item < 2000:
                         reference_matches[reference.name].first_2000 += 1
-            
+
             item += 1
 
             options = ''
@@ -148,13 +146,13 @@ class DevGlossarySerializer():
             html += u'<td>{0}</td>'.format(options)
             html += u"</tr>\r"
             f.write(html.encode('utf-8'))
-    
+
             word_len = len(term.split(' '))
-            if word_len <= 3:     
+            if word_len <= 3:
                 words_cnt[word_len - 1] += 1
 
         f.write('</table>\n')
-    
+
         html = self.get_terms_from_sources_not_used(reference_sources, corpus.source_words)
         f.write(html.encode('utf-8'))
 
@@ -191,4 +189,3 @@ class DevGlossarySerializer():
         f.close()
 
         self.create_text_dump(corpus.documents, glossary_entries, reference_sources)
-
