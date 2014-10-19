@@ -115,6 +115,7 @@ class WebSerializer:
                (search.target is None or len(search.target) < 2)):
                 self.write_html_header(self.get_search_term_for_display(search), 0, 0)
                 print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
+                self.close_html()
                 return
 
             start_time = time.time()
