@@ -61,10 +61,11 @@ class Projects:
                 continue
 
             metadata_dto = self.metadata_dao.get(project.name)
-            if (metadata_dto == None):
+            if metadata_dto is None:
                 metadata_dto = ProjectMetaDataDto(project.name)
 
-            if metadata_dto.checksum == None or metadata_dto.checksum != project.checksum:
+            if (metadata_dto.checksum is None or
+                metadata_dto.checksum != project.checksum):
                 metadata_dto.last_translation_update = datetime.datetime.now()
                 metadata_dto.checksum = project.checksum
 

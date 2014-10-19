@@ -49,7 +49,7 @@ class GerritDirectoryFileSet(FileSet):
         cnt =  0
         for line in lines:
             cnt += 1
-            if (cnt == 1):
+            if cnt == 1:
                 continue
 
             file.write(line)

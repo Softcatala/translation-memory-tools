@@ -59,7 +59,7 @@ class ProjectMetaDataDao:
         result = c.execute(command)
         row = result.fetchone()
 
-        if (row is None):
+        if row is None:
             return None
 
         dto = ProjectMetaDataDto(row[0])

@@ -135,7 +135,7 @@ class FileSet():
 
         files = findFiles.find(self.temp_dir, '*.po')
 
-        if (len(files) == 0):
+        if len(files) == 0:
             logging.info('No files to add in fileset: {0}'. format(self.name))
             return
 

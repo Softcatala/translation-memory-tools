@@ -175,7 +175,7 @@ def build_all_softcatala_memory(json, memories):
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable is True and project_dto.softcatala is True:
+        if project_dto.downloadable and project_dto.softcatala:
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
@@ -184,7 +184,7 @@ def build_all_softcatala_memory(json, memories):
 def get_words(potext):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
-    if (words == 0):
+    if words == 0:
         print("Skipping empty translation memory: " + potext)
         return None
 
@@ -195,7 +195,7 @@ def build_invidual_projects_memory(json, memories):
     '''Builds zip file that contains a memory for every project'''
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable is True:
+        if project_dto.downloadable:
             words = get_words(project_dto.filename)
 
             if words is None:

@@ -49,12 +49,12 @@ class OptionsExtractor(HTMLParser):
     def get_project_name_from_tr(self, url):
         prefix = '/ajax/projects/p/'
 
-        if url.startswith(prefix) is False:
+        if not url.startswith(prefix):
             return None
 
         url = url[len(prefix):]
         idx = url.find('/')
-        if (idx == -1):
+        if idx == -1:
             return None
 
         return url[:idx]
@@ -62,12 +62,12 @@ class OptionsExtractor(HTMLParser):
     def get_project_name_from_ahref(self, url):
         prefix = '/projects/p/'
 
-        if url.startswith(prefix) is False:
+        if not url.startswith(prefix):
             return None
 
         url = url[len(prefix):]
         idx = url.find('/')
-        if (idx == -1):
+        if idx == -1:
             return None
 
         return url[:idx]

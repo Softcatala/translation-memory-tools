@@ -105,7 +105,7 @@ class JsonBackend:
                     if prop in value:
                         setattr(project, prop, value[prop])
 
-                if (project.disabled is True):
+                if project.disabled:
                     continue
 
                 project.filename = '{0}-tm.po'.format(project.name.lower())
