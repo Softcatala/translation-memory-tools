@@ -29,18 +29,18 @@ class TestProjectMetaDataDto(unittest.TestCase):
     def test_set_get_last_translation_update(self):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)
         metadata_dto = ProjectMetaDataDto('')
-        metadata_dto.set_last_translation_update(DATE)
-        self.assertEquals(DATE, metadata_dto.get_last_translation_update())
+        metadata_dto.last_translation_update(DATE)
+        self.assertEquals(DATE, metadata_dto.last_translation_update)
 
     def test_set_last_translation_update_not_set(self):
         metadata_dto = ProjectMetaDataDto('')
-        self.assertEquals(None, metadata_dto.get_last_translation_update())
+        self.assertEquals(None, metadata_dto.last_translation_update)
 
     def test_set_last_translation_update_wrong_type(self):
         metadata_dto = ProjectMetaDataDto('')
         date = 1
         with self.assertRaises(TypeError):
-            metadata_dto.set_last_translation_update(date)
+            metadata_dto.last_translation_update(date)
 
     def test_set_get_last_fetch(self):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)

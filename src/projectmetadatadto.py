@@ -29,17 +29,16 @@ class ProjectMetaDataDto:
         self.words = 0
         self.checksum = ''
 
-    def get_last_translation_update(self):
+    @property
+    def last_translation_update(self):
         return self._last_translation_update
 
-    def set_last_translation_update(self, value):
+    @last_translation_update.setter
+    def last_translation_update(self, value):
         if not isinstance(value, datetime.datetime):
             raise TypeError("Property must be set to a datetime. Type:"
                             + str(type(value)))
         self._last_translation_update = value
-
-    last_translation_update = property(get_last_translation_update, 
-                                      set_last_translation_update)
 
     @property
     def last_fetch(self):
