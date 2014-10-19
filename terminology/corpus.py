@@ -49,10 +49,11 @@ class Corpus(object):
             self.stop_words.add(word)
 
     def _clean_string(self, result):
-        chars = {'_', '&', '~',  # Accelerators
-                 ':', ',', '...', u'…'  # Punctuations
-        }
-        for c in chars:
+        CHARS = (
+            '_', '&', '~',  # Accelerators.
+            ':', ',', '...', u'…'  # Punctuations.
+        )
+        for c in CHARS:
             result = result.replace(c, '')
 
         #remove all the leading and trailing whitespace characters
@@ -92,8 +93,8 @@ class Corpus(object):
 
         # We are ignoring strings with html tags or string formatters
         # This also affects strings like <shift>f10
-        chars = {'<', '>', '%', '{', '}'}
-        for c in chars:
+        CHARS = ('<', '>', '%', '{', '}')
+        for c in CHARS:
             if c in source:
                 msg = "Discard: invalid chars '{0}'".format(source.encode('utf-8'))
                 logging.info(msg)
