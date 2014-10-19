@@ -136,16 +136,13 @@ def read_parameters():
 
 
 if __name__ == '__main__':
-    ok = 0
-    error = 1
-
     read_parameters()
     print("Integration tests for: " + site_url)
     print("Use --help for assistance")
 
     search = CheckSearch(site_url)
     if not search.check():
-        sys.exit(error)
+        sys.exit(1)
 
     crawler = Crawler(site_url + "memories.html")
     crawler.run()
@@ -155,6 +152,6 @@ if __name__ == '__main__':
 
     if downloads.errors > 0:
         print('Total download errors {0}'.format(downloads.errors))
-        sys.exit(error)
+        sys.exit(1)
 
-    sys.exit(ok)
+    sys.exit(0)
