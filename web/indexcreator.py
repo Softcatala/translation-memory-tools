@@ -68,8 +68,8 @@ class IndexCreator:
                                   project_dto.softcatala)
             self.projects = self.projects + 1
 
-        print 'Total sentences {0}, indexed {1}'.format(self.sentences, 
-              self.sentences_indexed)
+        print('Total sentences {0}, indexed {1}'.format(self.sentences,
+                                                        self.sentences_indexed))
         self.writer.commit()
 
     def _get_comment(self, entry):
@@ -98,7 +98,7 @@ class IndexCreator:
 
     def _process_project(self, name, filename, softcatala):
         full_filename = os.path.join(self.po_directory, filename)
-        print "Processing: " + full_filename
+        print("Processing: " + full_filename)
 
         try:
             input_po = polib.pofile(full_filename)
@@ -123,10 +123,10 @@ class IndexCreator:
                         t = unicode(entry.msgstr_plural["0"])
 
                 if self.debug_keyword is not None and self.debug_keyword.strip() == s:
-                    print "Source: " + s
-                    print "Translation: " + t
-                    print "Context: " + str(x)
-                    print "Comment: " + str(c)
+                    print("Source: " + s)
+                    print("Translation: " + t)
+                    print("Context: " + str(x))
+                    print("Comment: " + str(c))
 
                 if s is None or len(s) == 0 or t is None or len(t) == 0:
                     continue

@@ -61,13 +61,13 @@ class CheckDownloads(object):
                 pass
 
             if code != CheckDownloads.HTTP_STATUS_CODE_OK:
-                print 'link {0} returns {1}'.format(link, str(code))
+                print('link {0} returns {1}'.format(link, str(code)))
             else:
                 found = True
 
         if not found:
             self.errors += 1
-            print 'Missing link {0}'.format(filename)
+            print('Missing link {0}'.format(filename))
 
         return found
 
@@ -108,21 +108,18 @@ class CheckDownloads(object):
             size = os.path.getsize(filename)
             if size < minimum_size:
                 self.errors += 1
-                print 'File {0} has size {1} but expected was at least {2}'. \
-                      format(filename, size, minimum_size)
+                print('File {0} has size {1} but expected was at least {2}'. \
+                      format(filename, size, minimum_size))
 
         if files != expected_files:
             self.errors += 1
-            print '{0} expected {1} files but contains {2}'.format(
-                link,
-                expected_files,
-                files
-            )
+            print('{0} expected {1} files but contains {2}'.format(link,
+                  expected_files, files))
 
         self._remove_tmp_directory()
 
     def downloads_for_project(self, name, expected_files):
-        print "Processing:" + name
+        print("Processing:" + name)
 
         # Po files
         MIN_PO_SIZE = 1500
@@ -152,7 +149,8 @@ class CheckDownloads(object):
             pass
 
         if code != CheckDownloads.HTTP_STATUS_CODE_OK:
-            print 'Project link {0} returns {1}'.format(project_web, str(code))
+            print('Project link {0} returns {1}'.format(project_web,
+                                                        str(code)))
             return False
         else:
             return True

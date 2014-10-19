@@ -140,8 +140,8 @@ if __name__ == '__main__':
     error = 1
 
     read_parameters()
-    print "Integration tests for: " + site_url
-    print "Use --help for assistance"
+    print("Integration tests for: " + site_url)
+    print("Use --help for assistance")
 
     search = CheckSearch(site_url)
     if search.check() is False:
@@ -154,7 +154,7 @@ if __name__ == '__main__':
     downloads.check()
 
     if downloads.errors > 0:
-        print 'Total download errors {0}'.format(downloads.errors)
+        print('Total download errors {0}'.format(downloads.errors))
         sys.exit(error)
 
     sys.exit(ok)

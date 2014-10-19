@@ -73,7 +73,7 @@ class ProjectMetaDataDao:
         c = self.connection.cursor()
         command = u'SELECT * FROM projects'
         result = c.execute(command)
-        print 'Database rows'
+        print('Database rows')
         for row in result:
             print row
       

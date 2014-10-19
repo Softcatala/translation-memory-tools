@@ -33,7 +33,7 @@ from whoosh.qparser import MultifieldParser
 class JsonSerializer:
 
     def do(self, search):
-        print 'Content-type: application/json\n\n'
+        print('Content-type: application/json\n\n')
 
         results = search.get_results()
 
@@ -109,7 +109,7 @@ class WebSerializer:
             if ((search.source is None or len(search.source) < 2) and
                 (search.target is None or len(search.target) < 2)):
                 self.write_html_header(self.get_search_term_for_display(search), 0, 0)
-                print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
+                print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
                 self.close_html()
                 return
 

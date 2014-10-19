@@ -73,7 +73,7 @@ class Dump:
         items = 0
         for entry in self.entries:
             if entry not in reduced:
-                print u" " + unicode(entry, "utf-8")
+                print(u" " + unicode(entry, "utf-8"))
 
             items += 1
             if items > MAX:
@@ -81,15 +81,15 @@ class Dump:
 
 
 def main():
-    print "Compare terminology dumps"
-    print "Use --help for assistance"
+    print("Compare terminology dumps")
+    print("Use --help for assistance")
     new = Dump()
     new.read('glossary.txt')
     old = Dump()
     old.read('glossary-old.txt')
-    print "New items"
+    print("New items")
     new.compare(old)
-    print "Old items"
+    print("Old items")
     old.compare(new)
 
 
