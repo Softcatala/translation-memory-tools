@@ -21,6 +21,7 @@ import sqlite3
 
 from projectmetadatadto import ProjectMetaDataDto
 
+
 class ProjectMetaDataDao:
 
     def __init__(self):

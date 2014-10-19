@@ -18,11 +18,10 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from HTMLParser import HTMLParser
-from Queue import Queue
-
 import urllib2
 import urlparse
+from HTMLParser import HTMLParser
+from Queue import Queue
 
 
 class LinkExtractor(HTMLParser):

@@ -20,14 +20,14 @@
 
 import sys
 sys.path.append('../src/')
-from jsonbackend import JsonBackend
-from findfiles import FindFiles
-
-import urllib
-import urllib2
-import tempfile
 import os
 import shutil
+import tempfile
+import urllib
+import urllib2
+
+from jsonbackend import JsonBackend
+from findfiles import FindFiles
 
 
 class CheckDownloads(object):

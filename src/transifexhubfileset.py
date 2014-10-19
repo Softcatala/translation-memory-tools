@@ -17,14 +17,14 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import FileSet
-from urlparse import urlparse
-from HTMLParser import HTMLParser
-from transifexfileset import TransifexFileSet
-
+import logging
 import urllib2
 import urlparse
-import logging
+from HTMLParser import HTMLParser
+
+from fileset import FileSet
+from transifexfileset import TransifexFileSet
+
 
 class OptionsExtractor(HTMLParser):
     """

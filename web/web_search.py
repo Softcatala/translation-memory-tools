@@ -19,15 +19,15 @@
 # Boston, MA 02111-1307, USA.
 
 import cgi
+import json
 import time
+import traceback
 
-from whoosh.index import open_dir
+from whoosh.analysis import *
 from whoosh.fields import *
 from whoosh.highlight import *
+from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
-from whoosh.analysis import *
-import traceback
-import json
 
 
 class JsonSerializer:

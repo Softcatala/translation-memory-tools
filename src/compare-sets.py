@@ -18,11 +18,13 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
 import datetime
-from pofile import POFile
-from jsonbackend import JsonBackend
+import os
 from optparse import OptionParser
+
+from jsonbackend import JsonBackend
+from pofile import POFile
+
 
 src_directory = None
 trg_directory = None

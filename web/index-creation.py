@@ -18,13 +18,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import locale
 import datetime
+import locale
 import time
+from optparse import OptionParser
+
 import pystache
 
-from optparse import OptionParser
 from indexcreator import IndexCreator
+
 
 class Option(object):
 

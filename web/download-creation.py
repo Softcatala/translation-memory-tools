@@ -27,7 +27,9 @@ import datetime
 from optparse import OptionParser
 from pofile import POFile
 from projectmetadatadao import ProjectMetaDataDao
+
 import pystache
+
 
 po_directory = None
 tmx_directory = None

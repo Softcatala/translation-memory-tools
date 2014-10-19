@@ -17,15 +17,16 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from fileset import FileSet
-from gitfileset import GitFileSet
-from findfiles import FindFiles
-from downloadfile import DownloadFile
 import json
-import re
-import os
-import shutil
 import logging
+import os
+import re
+import shutil
+
+from downloadfile import DownloadFile
+from fileset import FileSet
+from findfiles import FindFiles
+from gitfileset import GitFileSet
 
 
 class GerritDirectoryFileSet(FileSet):
