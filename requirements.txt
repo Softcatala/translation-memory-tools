@@ -1,1 +1,20 @@
+# For importing translations/creating TM files
 polib
+transifex-client
+translate-toolkit
+android2po
+pystache
+
+# fix android2po requirements
+babel >= 1.0
+
+# For server
+Whoosh
+
+# For testing
+pytest
+flake8
+nose
+
+# Documentation
+Sphinx>=1.2.2
