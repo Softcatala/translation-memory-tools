@@ -65,7 +65,7 @@ def read_xml():
                         is_source = True
                     else:
                         is_source = False
-                if i.tag == 'term':
+                elif i.tag == 'term':
                     if is_source:
                         source = unicode(i.text)
                     else:
