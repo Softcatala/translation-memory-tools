@@ -61,10 +61,7 @@ def read_xml():
                 #print i.tag
                 if i.tag == 'langSet':
                     lang = i.get('{http://www.w3.org/XML/1998/namespace}lang')
-                    if lang == 'en-US':
-                        is_source = True
-                    else:
-                        is_source = False
+                    is_source = lang == 'en-US'
                 elif i.tag == 'term':
                     if is_source:
                         source = unicode(i.text)
