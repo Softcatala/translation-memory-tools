@@ -1,52 +1,81 @@
 <html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" media="screen" href="recursos.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/sc.css?g" />
-    <link href="/css/cookies/cookiecuttr.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="/css/cookies/cookiecuttr.css" />
     <script type="text/javascript" src="/js/cookies/jquery.cookie.js"></script>
     <script type="text/javascript" src="/js/cookies/jquery.cookiecuttr.js"></script>
     <script type="text/javascript" src="/js/softcatala.js"></script>
-    <script type='text/javascript' src='http://ad.softcatala.org/www/delivery/spcjs.php?id=1'></script>
+    <script type="text/javascript" src="http://ad.softcatala.org/www/delivery/spcjs.php?id=1"></script>
     <title>Memòries de traducció lliures al català</title>
-</head>
+  </head>
   <body class="thrColHybHdr fondo3">
     <div id="container">
     <!--#include virtual="/ssi/ads/superior.html" -->
     <!--#include virtual="/ssi/header.html" -->
     <!-- bodyContent -->
-    <h1 class ="section">Memòries de traducció</h1>
-    <div class="bodyRecurs">
-    Aquesta pàgina recull les memòries de traducció de projectes lliures traduïts per diferents comunitats. 
-    Es posa a l'abast de tothom amb l'esperit  que es puguin aprofitar per a altres projectes, així com per tenir 
-    un corpus informàtic anglès-català lliure de referència de programari traduït al català. Usem la llista 
-    <a href='http://llistes.softcatala.org/mailman/listinfo/recursos'>recursos</a> per coordinar-ne el desenvolupament.
-    <h2 class ="recursos-section">Cerca a la memòries de traducció</h2>
-    <div class = "search-box">
-        <p class>Escriviu el text que voleu cercar a les memòries de traducció i premeu el botó de cerca</p>
-        <form enctype="multipart/form-data"  method='GET' action='web_search.py' id='form' name='form'>
-        Anglès <input type="text" name="source" size="60" value="">
-        <br>
-        Català <input type="text" name="target" size="60" value="">
-        <br>
-        <!--#include virtual="select-projects.html" -->        
-        <input type="submit" value="Cerca">
-        </form>
-    </div>
-    <div class = "search-samples">
-        <p>Exemples de cerques</p>
-        <ul>
-            <li>"<a href='./web_search.py?source="Audio+file"'>Audio file</a>" - Cerca el terme complet com una cadena (exemple de cerca en anglès)</li>
-            <li><a href='./web_search.py?source=Audio+OR+music'>Audio OR music</a> - Cerca cadenes amb el terme 'audio' o bé 'music' (exemple de cerca en anglès)</li>
-            <li><a href='./web_search.py?source=Audio+NOT+music'>Audio NOT music</a> - Cerca cadenes amb el terme 'audio' però sense 'music' (exemple de cerca en anglès)</li>
-            <li><a href='./web_search.py?target=entrella%C3%A7a*'>entrellaça*</a> - Cerca cadenes amb els caràcters 'entrellaça' i després qualsevol altres caràcters (exemple de cerca en català)</li>
-            <li><a href='./web_search.py?source=File&target=arxiu'>file arxiu</a> - Cerca cadenes que en anglès conten 'file' i en han estat traduïdes per 'arxiu' (exemple de cerca en anglès i català)</li>
-        </ul>
-    </div>
-<i><!--#include virtual="statistics.html" --></i>
-<!--#include virtual="download.html" -->
-  </div></div>
-    <!--#include virtual="footer-g.html" -->
-</body>
-</html>
+    <h1 class="section">Memòries de traducció</h1>
+      <div class="bodyRecurs">
+        <p>Aquesta pàgina recull les memòries de traducció de projectes lliures
+          traduïts per diferents comunitats. Es posa a l'abast de tothom amb
+          l'esperit  que es puguin aprofitar per a altres projectes, així com
+          per tenir un corpus informàtic anglès-català lliure de referència de
+          programari traduït al català. Usem la llista
+          <a href="http://llistes.softcatala.org/mailman/listinfo/recursos">recursos</a>
+          per coordinar-ne el desenvolupament.
+        </p>
 
+        <h2 class="recursos-section">Cerca a la memòries de traducció</h2>
+        <div class="search-box">
+          <p>Escriviu el text que voleu cercar a les memòries de traducció i
+            premeu el botó de cerca
+          </p>
+          <form enctype="multipart/form-data" method="GET"
+            action="web_search.py" id="form" name="form">
+            Anglès <input type="text" name="source" size="60" value="" />
+            <br />
+            Català <input type="text" name="target" size="60" value="" />
+            <br />
+            <!--#include virtual="select-projects.html" -->
+            <input type="submit" value="Cerca">
+          </form>
+        </div>
+        <div class="search-samples">
+          <p>Exemples de cerques</p>
+          <ul>
+            <li>
+              "<a href="./web_search.py?source='Audio+file'">Audio file</a>"
+              - Cerca el terme complet com una cadena (exemple de cerca en
+              anglès)
+            </li>
+            <li>
+              <a href="./web_search.py?source=Audio+OR+music">Audio OR music</a>
+              - Cerca cadenes amb el terme 'audio' o bé 'music' (exemple de
+              cerca en anglès)
+            </li>
+            <li>
+              <a href="./web_search.py?source=Audio+NOT+music">Audio NOT music</a>
+              - Cerca cadenes amb el terme 'audio' però sense 'music' (exemple
+              de cerca en anglès)</li>
+            <li>
+              <a href="./web_search.py?target=entrella%C3%A7a*">entrellaça*</a>
+              - Cerca cadenes amb els caràcters 'entrellaça' i després
+              qualsevol altres caràcters (exemple de cerca en català)
+            </li>
+            <li>
+              <a href="./web_search.py?source=File&target=arxiu">file arxiu</a>
+              - Cerca cadenes que en anglès conten 'file' i en han estat
+              traduïdes per 'arxiu' (exemple de cerca en anglès i català)
+            </li>
+          </ul>
+        </div>
+
+        <i><!--#include virtual="statistics.html" --></i>
+
+        <!--#include virtual="download.html" -->
+      </div>
+    </div>
+    <!--#include virtual="footer-g.html" -->
+  </body>
+</html>
