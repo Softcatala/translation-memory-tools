@@ -36,7 +36,6 @@ class LinkExtractor(HTMLParser):
         return self.links
 
     def handle_starttag(self, tag, attrs):
-
         if tag == 'a':
             attrs = dict(attrs)
             link = attrs['href']

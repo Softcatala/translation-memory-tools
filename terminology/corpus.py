@@ -40,22 +40,18 @@ class Corpus:
         self.stop_words = set()
 
     def _read_stop_words(self, stopwords_file):
-
         while True:
             line = stopwords_file.readline()
             if not line:
                 break
-
             word = line.strip()
             word = word.lower()
             self.stop_words.add(word)
 
     def _clean_string(self, result):
-
         chars = {'_', '&', '~',  # Accelerators
                  ':', ',', '...', u'…'  # Punctuations
         }
-
         for c in chars:
             result = result.replace(c, '')
 
@@ -65,7 +61,6 @@ class Corpus:
         return result
 
     def _should_select_string(self, source, target):
-
         words = len(source.split())
 
         # Only up to 3 words terms for now
@@ -106,15 +101,14 @@ class Corpus:
 
         if len(target) == 0:
             return False
-
         return True
+
 
     #
     # Output: Dictionary key: document, terms dictionary:
     #          Terms dictionary -> key: source term (delete), value:list <trgs> (suprimeix, esborra)
     #
     def process(self):
-
         stopwords_file = open("stop-words/stop-words.txt")
         self._read_stop_words(stopwords_file)
 
@@ -164,11 +158,9 @@ class Corpus:
 
     def dump_documents(self):
         '''For debugging proposes'''
-
         for document_key_filename in self.documents.keys():
             print document_key_filename
             for terms in self.documents[document_key_filename].keys():
                 print "  s({0}):{1}".format(len(self.documents[document_key_filename][terms]), terms.encode('utf-8'))
                 for translation in self.documents[document_key_filename][terms]:
                     print "     t:" + translation.encode('utf-8')
-

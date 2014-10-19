@@ -18,6 +18,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+
 class Translation:
     def __init__(self):
         self.translation = u''
@@ -25,24 +26,23 @@ class Translation:
         self.percentage = 0  # Percentage of frequency across all options
         self.references_short_name = []  # A list of references
 
-
     def get_dict(self):
         d = {}
         d[u'translation'] = self.translation
         d[u'frequency'] = self.frequency
         d[u'percentage'] = self.percentage
-        
+
         if len(self.references_short_name) > 0:
             d[u'termcat'] = True
-        
+
         return d
- 
+
 
 class Translations:
     '''From a list of unsorted translations creates the final translations'''
     '''for the glossary, grouping same translation units and sorting them by'''
     '''frequency'''
- 
+
     def _add_reference_translations(self, term, reference_sources, translations):
 
         # Translations from references (TERMCAT only for now)
@@ -62,7 +62,7 @@ class Translations:
                     translations_with_references[idx] = translation_obj_item
                     found = True
                     break
-                
+
             if not found:
                 translation_obj_item = Translation()
                 translation_obj_item.translation = reference_translation
@@ -73,7 +73,6 @@ class Translations:
         return translations_with_references
 
     def create_for_word_sorted_by_frequency(self, documents, term, reference_sources):
-
         translations = {} # key: english keyword -> value: list of translation objects
         for document_key_filename in documents.keys():
             if term not in documents[document_key_filename]:

@@ -33,7 +33,6 @@ from whoosh.qparser import MultifieldParser
 class JsonSerializer:
 
     def do(self, search):
-
         print 'Content-type: application/json\n\n'
 
         results = search.get_results()
@@ -47,7 +46,6 @@ class JsonSerializer:
 class WebSerializer:
 
     def _get_result_text(self, source, highlighted):
-
         if highlighted is not None and len(highlighted) > 0:
             return highlighted.encode('utf-8')
 
@@ -79,19 +77,18 @@ class WebSerializer:
             print '<tr>'
             print "<td><b>Context:</b></td>" + "<td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
             print '</tr>'
-           
+
         print '<tr>'
         print "<td><b>Original:</b></td>" + "<td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
         print '</tr>'
-        
+
         print '<tr>'
         print "<td><b>Traducció:</b></td>" + "<td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>" 
         print '</tr>'
 
         print "</table></div>"
-        
-    def get_search_term_for_display(self, search):
 
+    def get_search_term_for_display(self, search):
         text = ''
 
         if search.source is not None and len(search.source) > 0:
@@ -106,19 +103,17 @@ class WebSerializer:
         '''
             Search a term in the Whoosh index
         '''
-
         try:
             self.open_html()
 
             if ((search.source is None or len(search.source) < 2) and
-               (search.target is None or len(search.target) < 2)):
+                (search.target is None or len(search.target) < 2)):
                 self.write_html_header(self.get_search_term_for_display(search), 0, 0)
                 print "<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>"
                 self.close_html()
                 return
 
             start_time = time.time()
-
             results = search.get_results()
             end_time = time.time() - start_time
 
@@ -156,7 +151,6 @@ class Search:
     '''
             Search a term in the Whoosh index
     '''
-
     dir_name = "indexdir"
 
     def __init__(self, source, target, project):
@@ -202,7 +196,6 @@ class Search:
 
 
 def main():
-
     form = cgi.FieldStorage()
     source = form.getvalue("source", '')
     target = form.getvalue("target", None)
@@ -211,18 +204,19 @@ def main():
 
     if source is not None:
         source = unicode(source, 'utf-8')
-    
+
     if target is not None:
         target = unicode(target, 'utf-8')
-    
+
     search = Search(source, target, project)
-    
+
     if (json is None):
         web_serializer = WebSerializer()
         web_serializer.do(search)
     else:
         json_serializer = JsonSerializer()
         json_serializer.do(search)
+
 
 if __name__ == "__main__":
     main()

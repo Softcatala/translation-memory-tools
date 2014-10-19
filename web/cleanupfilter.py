@@ -29,7 +29,6 @@ class CleanUpFilter(Filter):
         Clean ups acceleators when generating the tokens for the index
         allowing to ignore them
     '''
-
     def __call__(self, tokens):
         for t in tokens:
             t.text = CleanString.get(t.text)

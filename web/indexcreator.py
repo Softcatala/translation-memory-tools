@@ -44,14 +44,11 @@ class IndexCreator:
         self.debug_keyword = None
         self.projects_names = None
 
-
     def process_projects(self):
-
         json = JsonBackend("../src/projects.json")
         json.load()
 
         for project_dto in json.projects:
-
             if self.projects_names:
                 found = False
 
@@ -73,22 +70,19 @@ class IndexCreator:
 
         print 'Total sentences {0}, indexed {1}'.format(self.sentences, 
               self.sentences_indexed)
-        
         self.writer.commit()
-
 
     def _get_comment(self, entry):
         '''
             PO files can contain 3 types of comments:
-         
+
                 # translators comments
-                #. extracted 
+                #. extracted
                 #: location
 
             We import only translator's comments and extracted that we concatenate
             to make it transparent to the search
         '''
-
         if (entry.tcomment is None):
             comment = entry.tcomment
         else:
@@ -103,12 +97,10 @@ class IndexCreator:
         return comment
 
     def _process_project(self, name, filename, softcatala):
-
         full_filename = os.path.join(self.po_directory, filename)
         print "Processing: " + full_filename
 
         try:
-
             input_po = polib.pofile(full_filename)
 
             for entry in input_po:
@@ -123,13 +115,13 @@ class IndexCreator:
                     x = unicode(entry.msgctxt)
 
                 c = self._get_comment(entry)
-                
+
                 if t is None or len(t) == 0:
                     # msgstr_plural is a dictionary where the key is the index and
                     # the value is the localised string
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
                         t = unicode(entry.msgstr_plural["0"])
-                       
+
                 if self.debug_keyword is not None and self.debug_keyword.strip() == s:
                     print "Source: " + s
                     print "Translation: " + t
@@ -147,13 +139,10 @@ class IndexCreator:
                                          comment=c,
                                          context=x, project=p,
                                          softcatala=softcatala)
-
         except Exception as detail:
-          print "Exception: " + str(detail)
-
+            print "Exception: " + str(detail)
 
     def create(self):
-
         MIN_WORDSIZE_TO_IDX = 1
 
         analyzer = StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX, stoplist=None) | CleanUpFilter()
@@ -167,4 +156,3 @@ class IndexCreator:
 
         ix = create_in(self.dir_name, schema)
         self.writer = ix.writer()
-

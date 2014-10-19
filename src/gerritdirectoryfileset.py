@@ -33,18 +33,17 @@ class GerritDirectoryFileSet(FileSet):
 
     def set_pattern(self, pattern):
         self.pattern = pattern
-        
+
     def set_project(self, project):
         self.project = project
-        
+
     def _remove_first_line_from_file(self, filename):
         '''Garbage prefix inserted before JSON output to prevent XSSI.''' 
         '''This prefix is ")]}'\n" and is designed to prevent a web browser''' 
         '''from executing the response body'''
-        
         working_file = filename + ".old"
         shutil.copy(filename, working_file)
-        
+
         lines = open(working_file, 'r').readlines()
         file = open(filename, 'w')
         cnt =  0
@@ -59,20 +58,19 @@ class GerritDirectoryFileSet(FileSet):
         os.remove(working_file)
 
     def do(self):
-       
         # Download JSON file
         download = DownloadFile()
         download.get_file(self.url, self.filename)
-        
+
         self._remove_first_line_from_file(self.filename)
-        
+
         # The Gerrit project has a single fileset assigned (this)
         # We empty the fileset and add dynamically the ones referenced by Gerrit
         self.project.filesets = []
-        
+
         with open(self.filename) as json_data:
             data = json.load(json_data)
-            
+
             # Get every project entry
             for attribute, value in data.items():
                 name = None
@@ -82,11 +80,11 @@ class GerritDirectoryFileSet(FileSet):
                         name = prj_value
                     elif prj_attribute == 'clone_url':
                         url = prj_value
-                        
+
                 if not re.match(self.pattern, name):
                     logging.debug ('GerritDirectoryFileSet. Discarding:' + name)
                     continue
-                    
+
                 fileset = GitFileSet(self.project_name, name, url, '')
 
                 # Some Android projects contain there own po files like
@@ -94,7 +92,7 @@ class GerritDirectoryFileSet(FileSet):
                 # the name standard "ca.po"
                 # The rest are produced by a2po then they have the pattern '-ca.po'
                 fileset.set_pattern('.*?ca.po')
-                logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))                
+                logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))
                 self.project.add(fileset)
 
         # All the new filesets have been added re-process project now
@@ -102,4 +100,3 @@ class GerritDirectoryFileSet(FileSet):
             format(len(self.project.filesets)))
 
         self.project.do()
-

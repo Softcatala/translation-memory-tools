@@ -94,7 +94,7 @@ def read_parameters():
         help='Looks for already existing PO files in the current directory '
         'and creates a new tm.po with all memories'
     )
-    
+
     parser.add_option(
         '-c',
         '--softcatala',
@@ -117,6 +117,7 @@ def read_parameters():
     only_all_projects_tm = options.only_all_projects_tm
     softcatala_only = options.softcatala_only
 
+
 def load_projects_from_json():
     json = JsonBackend(projects_json)
     json.load()
@@ -127,7 +128,7 @@ def load_projects_from_json():
     logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
-        
+
         if softcatala_only is True and project_dto.softcatala is False:
             continue
 

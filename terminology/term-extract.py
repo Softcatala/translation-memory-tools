@@ -44,7 +44,6 @@ glossary_file = None
 
 
 def process_projects():
-
     global glossary_file, glossary_description
 
     corpus = Corpus(src_directory)
@@ -89,23 +88,19 @@ def process_projects():
 
 
 def read_parameters():
-
     global src_directory
     global glossary_description
     global glossary_file
 
     parser = OptionParser()
-
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
                       default="sc-tm-pos/",
                       help="Directory to find the PO files")
-
     parser.add_option("-c", "--comment",
                       action="store", type="string", dest="glossary_description",
                       default="",
                       help="HTML comment to add")
-
     parser.add_option("-t", "--html-file",
                       action="store", type="string", dest="glossary_file",
                       default="glossary",
@@ -115,6 +110,7 @@ def read_parameters():
     src_directory = options.src_directory
     glossary_description = options.glossary_description
     glossary_file = options.glossary_file
+
 
 def init_logging():
     logfile = 'term-extract.log'
@@ -134,10 +130,8 @@ def using():
 
 
 def main():
-    
     print "Extracts terminology"
     print "Use --help for assistance"
-
     start_time = time.time()
     init_logging()
     read_parameters()
@@ -149,4 +143,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

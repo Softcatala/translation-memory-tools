@@ -27,10 +27,10 @@ class Reference:
         self.short_name = short_name
         self.terms = {}  # key -> source term, value: list of translations
 
+
 class ReferenceSources:
     '''Loads different PO files that we use as reference sources'''
     '''like TERMCAT or Microsoft glossaries'''
-   
     def __init__(self):
         self.stop_words = set()
         self.references = []
@@ -51,13 +51,12 @@ class ReferenceSources:
                 reference = ref
                 break
 
-        if term in reference.terms.keys():        
+        if term in reference.terms.keys():
             return reference.terms[term]
         else:
             return []
 
     def get_terms_not_used_from_references(self, terms):
-        
         not_used_references = []
 
         for reference in self.references:
@@ -72,17 +71,14 @@ class ReferenceSources:
 
         return not_used_references
 
-
     def _read_source(self, name, short_name, filename):
-
         pofile = polib.pofile(filename)
-            
         reference = Reference(unicode(name, "utf-8"), short_name)
 
         for entry in pofile:
             term = entry.msgid.lower()
             translation = entry.msgstr.lower()
-    
+
             if term in reference.terms:
                 translations = reference.terms[term]
             else:
@@ -97,4 +93,3 @@ class ReferenceSources:
         self._read_source('Recull de Softcatalà', 'r', 'recull/recull-glossary.po')
         self._read_source('Terminologia de Microsoft', 'm', 'microsoft/microsoft-terms.po')
         self._read_source('TERMCAT', 't', 'termcat/termcat.po')
-

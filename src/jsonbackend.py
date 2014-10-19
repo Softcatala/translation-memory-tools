@@ -37,7 +37,7 @@ class ProjectDTO:
     def __str__(self):
         text = 'ProjectDTO. Name: {0}, filename: {1}, project web: {2}, ' \
             'disabled {3}'
-        return text.format(self.name, self.filename, self.projectweb, 
+        return text.format(self.name, self.filename, self.projectweb,
                            self.disabled)
 
 
@@ -98,7 +98,7 @@ class JsonBackend:
             # Parse projects
             for attribute, value in data['projects'].items():
                 project = ProjectDTO(attribute)
-                
+
                 # Get project properties
                 for prop in ('filename', 'projectweb', 'softcatala', 'disabled',
                              'downloadable', 'selectable'):
@@ -107,7 +107,7 @@ class JsonBackend:
 
                 if (project.disabled is True):
                     continue
-                
+
                 project.filename = '{0}-tm.po'.format(project.name.lower())
                 self.projects.append(project)
 

@@ -37,9 +37,7 @@ class ProjectMetaDataDao:
 
         command = '''create index if not exists [ix_name] on [projects] ([name]);'''
         c.execute(command)
-
         self.connection.commit()
-
 
     def open(self, database_name):
         self.connection = sqlite3.connect(database_name,
@@ -54,7 +52,6 @@ class ProjectMetaDataDao:
 
         c.execute(command)
         self.connection.commit()
-
 
     def get(self, name):
         c = self.connection.cursor()
@@ -72,7 +69,6 @@ class ProjectMetaDataDao:
         dto.checksum = row[4]
         return dto
 
-
     def dump(self):
         c = self.connection.cursor()
         command = u'SELECT * FROM projects'
@@ -83,5 +79,3 @@ class ProjectMetaDataDao:
       
     def close(self):
         self.connection.close()
-
-

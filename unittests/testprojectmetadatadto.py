@@ -30,7 +30,6 @@ class TestProjectMetaDataDto(unittest.TestCase):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)
         metadata_dto = ProjectMetaDataDto('')
         metadata_dto.set_last_translation_update(DATE)
-
         self.assertEquals(DATE, metadata_dto.get_last_translation_update())
 
     def test_set_last_translation_update_not_set(self):
@@ -40,7 +39,6 @@ class TestProjectMetaDataDto(unittest.TestCase):
     def test_set_last_translation_update_wrong_type(self):
         metadata_dto = ProjectMetaDataDto('')
         date = 1
-
         with self.assertRaises(TypeError):
             metadata_dto.set_last_translation_update(date)
 
@@ -48,7 +46,6 @@ class TestProjectMetaDataDto(unittest.TestCase):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)
         metadata_dto = ProjectMetaDataDto('')
         metadata_dto.set_last_fetch(DATE)
-
         self.assertEquals(DATE, metadata_dto.get_last_fetch())
 
     def test_set_last_fetch_update_not_set(self):
@@ -58,9 +55,9 @@ class TestProjectMetaDataDto(unittest.TestCase):
     def test_set_last_fetch_update_wrong_type(self):
         metadata_dto = ProjectMetaDataDto('')
         date = 1
-
         with self.assertRaises(TypeError):
             metadata_dto.set_last_fetch(date)
+
 
 if __name__ == '__main__':
     unittest.main()

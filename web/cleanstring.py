@@ -23,10 +23,8 @@ class CleanString:
 
     @staticmethod
     def get(result):
-
         chars = {'_', '&', '~',  # Accelerators
         }
-
         for c in chars:
             result = result.replace(c, '')
 
@@ -35,7 +33,6 @@ class CleanString:
 
     @staticmethod
     def get_strip(result):
-
         #removes all the leading and trailing whitespace characters
         result = CleanString.get(result).strip()
         return result
