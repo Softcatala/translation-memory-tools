@@ -87,8 +87,7 @@ def read_xml():
                 continue
 
             stored_terms[source] = translation
-            entry = polib.POEntry(msgid=source,
-                                  msgstr=translation)
+            entry = polib.POEntry(msgid=source, msgstr=translation)
             pofile.append(entry)
             terms += 1
 

@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2014 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -20,12 +21,12 @@
 
 
 class GlossaryEntry:
-    '''Represents an entry to be written in a glossary'''
+    """Represents an entry to be written in a glossary."""
 
     def __init__(self):
         self.source_term = u''
         self.translations = []
-        self.percentage = 0  # Percentage of frequency across all options
+        self.percentage = 0  # Percentage of frequency across all options.
 
     def get_dict(self):
         d = {}

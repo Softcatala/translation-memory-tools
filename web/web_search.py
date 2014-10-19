@@ -64,26 +64,26 @@ class WebSerializer:
         print('<div class="result">')
         print('<table class="result-table">')
         print '<tr>'
-        print "<td><b>Projecte:</b></td>" + "<td>" + result["project"].encode('utf-8') + "<td/>"
+        print "<td><b>Projecte:</b></td><td>" + result["project"].encode('utf-8') + "<td/>"
         print "</tr>"
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             print '<tr>'
-            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8') 
-            print "<td><b>Comentaris:</b></td>" + "<td>" + comment + "</td>"
+            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8')
+            print "<td><b>Comentaris:</b></td><td>" + comment + "</td>"
             print '</tr>'
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             print '<tr>'
-            print "<td><b>Context:</b></td>" + "<td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
+            print "<td><b>Context:</b></td><td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
             print '</tr>'
 
         print '<tr>'
-        print "<td><b>Original:</b></td>" + "<td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
+        print "<td><b>Original:</b></td><td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
         print '</tr>'
 
         print '<tr>'
-        print "<td><b>Traducció:</b></td>" + "<td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>" 
+        print "<td><b>Traducció:</b></td><td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>"
         print '</tr>'
 
         print "</table></div>"

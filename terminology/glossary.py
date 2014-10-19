@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2014 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -22,7 +23,7 @@ import datetime
 
 
 class Glossary:
-    '''Represents all the data need to generate a glossary'''
+    """Represents all the data need to generate a glossary."""
 
     def __init__(self):
         self.date = datetime.date.today().strftime("%d/%m/%Y")

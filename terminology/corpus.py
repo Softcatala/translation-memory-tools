@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -25,10 +26,11 @@ from findfiles import FindFiles
 
 
 class Corpus:
-    '''Loads different PO files that build the corpus'''
-    '''Strings that are not suitable candidates are discarded'''
-    '''We do a minimum clean up of strings'''
+    """Loads different PO files that build the corpus.
 
+    Strings that are not suitable candidates are discarded. We do a minimum
+    clean up of strings.
+    """
     def __init__(self, directory):
         self.directory = directory
         self.source_words = set()
@@ -44,8 +46,7 @@ class Corpus:
             line = stopwords_file.readline()
             if not line:
                 break
-            word = line.strip()
-            word = word.lower()
+            word = line.strip().lower()
             self.stop_words.add(word)
 
     def _clean_string(self, result):
@@ -55,9 +56,8 @@ class Corpus:
         for c in chars:
             result = result.replace(c, '')
 
-        #remove all the leading and trailing whitespace characters
-        result = result.strip()
-        result = result.lower()
+        # Remove all the leading and trailing whitespace characters.
+        result = result.strip().lower()
         return result
 
     def _should_select_string(self, source, target):

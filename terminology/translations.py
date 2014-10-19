@@ -43,7 +43,8 @@ class Translations:
     '''for the glossary, grouping same translation units and sorting them by'''
     '''frequency'''
 
-    def _add_reference_translations(self, term, reference_sources, translations):
+    def _add_reference_translations(self, term, reference_sources,
+                                    translations):
 
         # Translations from references (TERMCAT only for now)
         reference_translations = reference_sources.get_translations_for_term_in_reference(term, 't')
@@ -72,7 +73,8 @@ class Translations:
 
         return translations_with_references
 
-    def create_for_word_sorted_by_frequency(self, documents, term, reference_sources):
+    def create_for_word_sorted_by_frequency(self, documents, term,
+                                            reference_sources):
         translations = {} # key: english keyword -> value: list of translation objects
         for document_key_filename in documents.keys():
             if term not in documents[document_key_filename]:

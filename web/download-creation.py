@@ -51,9 +51,7 @@ class TranslationMemory(object):
 
 
 def link(text, link):
-    html = '<a href="' + link + '">'
-    html += text + '</a>'
-    return html
+    return '<a href="' + link + '">' + text + '</a>'
 
 
 def get_subdir():
@@ -192,7 +190,7 @@ def get_words(potext):
 
 
 def build_invidual_projects_memory(json, memories):
-    '''Builds zip file that contains a memory for every project'''
+    """Builds zip file that contains a memory for every project"""
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable:

@@ -119,11 +119,8 @@ class Page:
     def _download_page(self):
         request = urllib2.Request(self.url)
         handle = urllib2.build_opener()
-        self.content = unicode(
-            handle.open(request).read(),
-            'utf-8',
-            errors='replace'
-        )
+        self.content = unicode(handle.open(request).read(), 'utf-8',
+                               errors='replace')
 
     def _process_options(self):
         parser = OptionsExtractor(self.url)

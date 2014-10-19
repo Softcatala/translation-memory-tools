@@ -79,10 +79,7 @@ class CheckDownloads(object):
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def check_zipfile(self,
-                      filename,
-                      extensions,
-                      expected_files,
+    def check_zipfile(self, filename, extensions, expected_files,
                       minimum_size):
         tmp_file = tempfile.NamedTemporaryFile()
         link = self._get_link_from_filename(filename)

@@ -29,8 +29,10 @@ class Reference:
 
 
 class ReferenceSources:
-    '''Loads different PO files that we use as reference sources'''
-    '''like TERMCAT or Microsoft glossaries'''
+    """Loads different PO files that we use as reference sources.
+
+    Like TERMCAT or Microsoft glossaries.
+    """
     def __init__(self):
         self.stop_words = set()
         self.references = []

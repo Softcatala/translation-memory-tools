@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -85,8 +86,7 @@ class Projects:
                 backup_file = 'tm-previous.po'
                 shutil.copy(self.tm_file, backup_file)
                 cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-                os.system(cmd.format(self.tm_file,
-                                     backup_file,
+                os.system(cmd.format(self.tm_file, backup_file,
                                      project.get_filename()))
                 os.remove(backup_file)
             else:
