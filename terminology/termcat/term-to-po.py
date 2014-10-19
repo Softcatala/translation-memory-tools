@@ -83,7 +83,7 @@ def read_xml():
             translation = unicode(translations[0])
 
             if source in stored_terms and stored_terms[source] == translation:
-                print u'Skipping duplicated term: {0}'.format(source)
+                print(u'Skipping duplicated term: {0}'.format(source))
                 continue
 
             stored_terms[source] = translation
@@ -93,7 +93,7 @@ def read_xml():
             terms += 1
 
     pofile.save("termcat.po")
-    print "Terms : " + str(terms)
+    print("Terms : " + str(terms))
 
 
 def main():

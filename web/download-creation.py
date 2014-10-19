@@ -185,7 +185,7 @@ def get_words(potext):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
     if (words == 0):
-        print "Skipping empty translation memory: " + potext
+        print("Skipping empty translation memory: " + potext)
         return None
 
     return words
@@ -313,8 +313,8 @@ def main():
         Reads the projects and generates an HTML to enable downloading all
         the translation memories
     '''
-    print "Creates download.html file"
-    print "Use --help for assistance"
+    print("Creates download.html file")
+    print("Use --help for assistance")
 
     try:
         locale.setlocale(locale.LC_ALL, '')

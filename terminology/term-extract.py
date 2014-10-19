@@ -130,14 +130,14 @@ def using():
 
 
 def main():
-    print "Extracts terminology"
-    print "Use --help for assistance"
+    print("Extracts terminology")
+    print("Use --help for assistance")
     start_time = time.time()
     init_logging()
     read_parameters()
     process_projects()
     end_time = time.time() - start_time
-    print "time used to create the glossaries: " + str(end_time)
+    print("time used to create the glossaries: " + str(end_time))
     print using()
 
 

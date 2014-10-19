@@ -78,7 +78,7 @@ def read_xml():
             pofile.append(entry)
 
     pofile.save("microsoft-terms.po")
-    print "Terms : " + str(terms)
+    print("Terms : " + str(terms))
 
 
 def main():

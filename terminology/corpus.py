@@ -117,7 +117,7 @@ class Corpus:
         f = open('corpus.txt', 'w')
 
         for filename in findFiles.find(self.directory, '*.po'):
-            print "Reading: " + filename
+            print("Reading: " + filename)
 
             pofile = polib.pofile(filename)
 
