@@ -57,7 +57,6 @@ class CheckDownloads(object):
             try:
                 rtr = urllib2.urlopen(link)
                 code = rtr.getcode()
-
             except Exception:
                 pass
 
@@ -149,7 +148,6 @@ class CheckDownloads(object):
         try:
             rtr = urllib2.urlopen(project_web)
             code = rtr.getcode()
-
         except Exception:
             pass
 

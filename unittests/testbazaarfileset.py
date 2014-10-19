@@ -37,5 +37,6 @@ class TestBazaarFileSet(unittest.TestCase):
         bazaar = BazaarFileSet('project none', 'filesetname', 'lp:~mailman-l10n-ca/', 'none.po')
         self.assertFalse(bazaar._has_filename())
 
+
 if __name__ == '__main__':
     unittest.main()

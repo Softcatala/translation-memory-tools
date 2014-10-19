@@ -24,7 +24,6 @@ import pystache
 class UserGlossarySerializer():
 
     def _create(self, template, filename, glossary_entries, reference_sources):
-
         # Load template and process it
         template = open(template, 'r').read()
         parsed = pystache.Renderer()
@@ -36,10 +35,7 @@ class UserGlossarySerializer():
         f.close()
 
     def create(self, filename, glossary_entries, reference_sources):
-
         self._create('userglossary-html.mustache', filename + ".html",
                      glossary_entries, reference_sources)
-
         self._create('userglossary-csv.mustache', filename + ".csv",
                      glossary_entries, reference_sources)
-

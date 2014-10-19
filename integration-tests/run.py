@@ -46,7 +46,6 @@ class LinkExtractor(HTMLParser):
         return self.links
 
     def handle_starttag(self, tag, attrs):
-
         if tag == 'a':
             attrs = dict(attrs)
             link = attrs['href']
@@ -74,7 +73,6 @@ class Page:
     def _download_page(self):
         request = urllib2.Request(self.url)
         handle = urllib2.build_opener()
-
         self.content = unicode(
             handle.open(request).read(),
             'utf-8',
@@ -109,7 +107,6 @@ class Crawler:
 
     def run(self):
         url = self.urls.get()
-
         page = Page(url)
         self.links = page.get_all_links()
 
@@ -118,7 +115,6 @@ class Crawler:
 
 
 def read_parameters():
-
     global site_url
 
     parser = OptionParser()
@@ -128,7 +124,7 @@ def read_parameters():
         'dev': 'http://www.softcatala.org/recursos/dev/',
         'preprod': 'http://www.softcatala.org/recursos/preprod/',
         'prod': 'http://www.softcatala.org/recursos/'
-        }
+    }
 
     opt_enviroments = "localhost, dev, prepod, prod"
     parser.add_option("-e", "--enviroment", dest="enviroment", default="prod",
@@ -140,7 +136,6 @@ def read_parameters():
 
 
 if __name__ == '__main__':
-
     ok = 0
     error = 1
 

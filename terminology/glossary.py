@@ -30,7 +30,6 @@ class Glossary:
         self.description = u''
 
     def get_dict(self):
-
         glossary_dict = {}
         entries = []
 
@@ -41,4 +40,3 @@ class Glossary:
         glossary_dict['date'] = unicode(self.date, "utf-8")
         glossary_dict['description'] = unicode(self.description, "utf-8")
         return glossary_dict
-

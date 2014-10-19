@@ -35,8 +35,9 @@ po_directory = None
 tmx_directory = None
 out_directory = None
 
+
 class TranslationMemory(object):
-    
+
     def __init__(self):
         self.name = None
         self.projectweb = None
@@ -82,14 +83,15 @@ def get_zip_file(filename):
 def convert_date_to_string(date):
     return date.strftime("%d/%m/%Y")
 
+
 def get_file_date(filename):
     full_path = os.path.join(po_directory, filename)
     last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
     last_date = last_ctime.strftime("%d/%m/%Y")
     return last_date
 
-def get_project_dates(name):
 
+def get_project_dates(name):
     project_dao = ProjectMetaDataDao()
     project_dao.open('../src/statistics.db3')
     dto = project_dao.get(name)
@@ -105,7 +107,6 @@ def get_project_dates(name):
 
 
 def propulate_project_links(translation_memory, filename):
-
     potext = filename
     pofile = get_zip_file(get_path_to_po(potext))
     tmxtext = get_tmx_file(potext)
@@ -119,10 +120,9 @@ def propulate_project_links(translation_memory, filename):
 
 def build_all_projects_memory(json, memories):
     '''Builds zip file that contains all memories for all projects'''
-
     name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
-   
+
     words = get_words(filename)
 
     if words is None:
@@ -148,11 +148,10 @@ def build_all_projects_memory(json, memories):
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
-   
+
 
 def build_all_softcatala_memory(json, memories):
     '''Builds zip file that contains all memories for the Softcatalà projects'''
-
     name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
@@ -181,6 +180,7 @@ def build_all_softcatala_memory(json, memories):
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
 
+
 def get_words(potext):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
@@ -193,11 +193,9 @@ def get_words(potext):
 
 def build_invidual_projects_memory(json, memories):
     '''Builds zip file that contains a memory for every project'''
-
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable is True:
-
             words = get_words(project_dto.filename)
 
             if words is None:
@@ -218,9 +216,8 @@ def build_invidual_projects_memory(json, memories):
             create_zipfile(po_directory, project_dto.filename)
             create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
 
-   
-def _process_template(template, filename, variables):
 
+def _process_template(template, filename, variables):
         # Load template and process it
         template = open(template, 'r').read()
         parsed = pystache.Renderer()
@@ -233,7 +230,6 @@ def _process_template(template, filename, variables):
 
 
 def process_projects():
-
     json = JsonBackend("../src/projects.json")
     json.load()
 
@@ -251,7 +247,6 @@ def process_projects():
 
 
 def update_zipfile(src_directory, filename, file_to_add):
-
     srcfile = os.path.join(src_directory, file_to_add)
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
@@ -264,7 +259,6 @@ def update_zipfile(src_directory, filename, file_to_add):
 
 
 def create_zipfile(src_directory, filename):
-
     srcfile = os.path.join(src_directory, filename)
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
@@ -280,7 +274,6 @@ def create_zipfile(src_directory, filename):
 
 
 def read_parameters():
-
     global po_directory
     global tmx_directory
     global out_directory
@@ -310,7 +303,6 @@ def read_parameters():
 
 
 def create_output_dir(subdirectory):
-
     directory = os.path.join(out_directory, subdirectory)
     if not os.path.exists(directory):
         os.mkdir(directory)
@@ -321,22 +313,19 @@ def main():
         Reads the projects and generates an HTML to enable downloading all
         the translation memories
     '''
-
     print "Creates download.html file"
     print "Use --help for assistance"
 
     try:
         locale.setlocale(locale.LC_ALL, '')
-
     except Exception as detail:
         print "Exception: " + str(detail)
 
     read_parameters()
-
     create_output_dir("memories")
-
     download = os.path.join(out_directory, "download.html")
     process_projects()
+
 
 if __name__ == "__main__":
     main()

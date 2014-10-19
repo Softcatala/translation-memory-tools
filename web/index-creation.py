@@ -33,30 +33,29 @@ class Option(object):
     def __init__(self, option):
         self.option = option
 
+
 def _process_template(template, filename, variables):
+    # Load template and process it
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), variables)
 
-        # Load template and process it
-        template = open(template, 'r').read()
-        parsed = pystache.Renderer()
-        s = parsed.render(unicode(template, "utf-8"), variables)
+    # Write output
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
 
-        # Write output
-        f = open(filename, 'w')
-        f.write(s.encode("utf-8"))
-        f.close()
 
 def _write_statistics(projects, words):
-
     variables = {}
-
-    today = datetime.date.today()    
+    today = datetime.date.today()
     variables['date'] = today.strftime("%d/%m/%Y")
     variables['projects'] = str(projects)
     variables['words'] = locale.format("%d", words, grouping=True)
     _process_template("statistics.mustache", "statistics.html", variables)
 
-def _write_select_projects(project_names):
 
+def _write_select_projects(project_names):
     variables = {}
     options = []
     for project_name in sorted(project_names, key=lambda x: x.lower()):
@@ -65,8 +64,8 @@ def _write_select_projects(project_names):
     variables['options'] = options
     _process_template("select-projects.mustache", "select-projects.html", variables)
 
-def read_parameters():
 
+def read_parameters():
     po_directory = None
     debug_keyword = None
     projects_names = None
@@ -110,7 +109,6 @@ def main():
         Given a PO file, enumerates all the strings, and creates a Whoosh
         index to be able to search later
     '''
-
     print "Create Whoosh index from a PO file"
     print "Use --help for assistance"
 
@@ -118,7 +116,6 @@ def main():
 
     try:
         locale.setlocale(locale.LC_ALL, '')
-
     except Exception as detail:
         print "Exception: " + str(detail)
 
@@ -134,6 +131,7 @@ def main():
 
     end_time = time.time() - start_time
     print "time used to create the index: " + str(end_time)
+
 
 if __name__ == "__main__":
     main()

@@ -35,11 +35,11 @@ class Projects:
         self.set_tm_file('tots-tm.po')
         self.metadata_dao = ProjectMetaDataDao()
         self.metadata_dao.open('statistics.db3')
-          
+
     def set_tm_file(self, filename):
         self.tm_file = filename
         self.tm_project = Project('Translation memory', self.tm_file)
-  
+
     def add(self, project):
         self.projects.append(project)
 
@@ -66,8 +66,8 @@ class Projects:
 
             if metadata_dto.checksum == None or metadata_dto.checksum != project.checksum:
                 metadata_dto.last_translation_update = datetime.datetime.now()
-                metadata_dto.checksum = project.checksum 
-            
+                metadata_dto.checksum = project.checksum
+
             metadata_dto.last_fetch = datetime.datetime.now()
             metadata_dto.words = words
             self.metadata_dao.put(metadata_dto)
@@ -76,7 +76,6 @@ class Projects:
 
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
-        
         if os.path.isfile(self.tm_file):
             os.remove(self.tm_file)
 

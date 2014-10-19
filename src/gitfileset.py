@@ -44,7 +44,6 @@ class GitFileSet(FileSet):
                 os.remove(filename)
 
     def _php_conversion_for_moodle(self):
-
         findFiles = FindFiles()
         if len(findFiles.find(self.temp_dir, '*.php')) == 0:
             return
@@ -56,7 +55,6 @@ class GitFileSet(FileSet):
         os.system(cmd)
 
     def _convert_android_resources_files_to_po(self):
-
         filename = self._get_filename()
 
         # See: https://pypi.python.org/pypi/android2po/1.2.0

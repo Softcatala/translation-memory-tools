@@ -18,6 +18,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+
 class GlossaryEntry:
     '''Represents an entry to be written in a glossary'''
 
@@ -30,7 +31,6 @@ class GlossaryEntry:
         d = {}
         d[u'source'] = self.source_term
         d[u'translation'] = self.translations[0].translation
-
         translations = []
 
         for translation in self.translations:
@@ -38,4 +38,3 @@ class GlossaryEntry:
 
         d[u'translations'] = translations
         return d
- 

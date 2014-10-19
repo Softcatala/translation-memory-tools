@@ -84,7 +84,6 @@ class CheckSearch(object):
             self._check_common_searches()
             self._check_integration_data()
             return True
-
         except Exception as detail:
             print u'Error checking search results: ' + unicode(detail)
             return False
