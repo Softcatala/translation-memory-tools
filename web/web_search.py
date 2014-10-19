@@ -58,14 +58,13 @@ class WebSerializer:
             Comments can be multi-line because they contain multiple lines
             or because we concatenated tcomments with comments from the PO
         '''
-        comment = comment.replace('\n', '<br>')
+        comment = comment.replace('\n', '<br />')
         comment = comment.replace('\r', '')
         return comment
 
     def print_result(self, result):
-
-        print '<div class = "result">'
-        print '<table class = "result-table">'
+        print('<div class="result">')
+        print('<table class="result-table">')
         print '<tr>'
         print "<td><b>Projecte:</b></td>" + "<td>" + result["project"].encode('utf-8') + "<td/>"
         print "</tr>"
@@ -140,14 +139,14 @@ class WebSerializer:
         print '<title>Resultats de la cerca</title>'
         print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
         print '<meta name="robots" content="noindex, nofollow">'
-        print '<link rel="stylesheet" type="text/css" href="recursos.css" media="screen" />'
+        print('<link type="text/css" rel="stylesheet" media="screen" href="recursos.css" />')
         print '</head><body>'
 
     def write_html_header(self, term, results, time):
         t = term.encode('utf-8')
-        print '<span class = \'searched\'>Resultats de la cerca del terme:</span><span class = \'searched-term\'> ' + t + '</span><br>'
+        print '<span class="searched">Resultats de la cerca del terme:</span><span class="searched-term"> ' + t + '</span><br>'
         print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
-        print '<a href = "./memories.html"> &lt; Torna a la pàgina anterior</a><br><br>'
+        print '<a href="./memories.html"> &lt; Torna a la pàgina anterior</a><br /><br />'
 
     def close_html(self):
         print '</body></html>'
