@@ -1,0 +1,20 @@
+# /docs/
+/docs/_build/
+
+# General
+*.bak
+*.pyc
+*.pyo
+
+# ViM-generated
+*.swn
+*.swo
+*.swp
+*~
+
+# Emacs-generated
+.#*
+\#*#
+
+# Coverage
+.coverage.*
