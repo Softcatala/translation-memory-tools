@@ -29,7 +29,7 @@ class TestProjectMetaDataDto(unittest.TestCase):
     def test_set_get_last_translation_update(self):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)
         metadata_dto = ProjectMetaDataDto('')
-        metadata_dto.last_translation_update(DATE)
+        metadata_dto.last_translation_update = DATE
         self.assertEquals(DATE, metadata_dto.last_translation_update)
 
     def test_set_last_translation_update_not_set(self):
@@ -45,7 +45,7 @@ class TestProjectMetaDataDto(unittest.TestCase):
     def test_set_get_last_fetch(self):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)
         metadata_dto = ProjectMetaDataDto('')
-        metadata_dto.last_fetch(DATE)
+        metadata_dto.last_fetch = DATE
         self.assertEquals(DATE, metadata_dto.last_fetch)
 
     def test_set_last_fetch_update_not_set(self):
