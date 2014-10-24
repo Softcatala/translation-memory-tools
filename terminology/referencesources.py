@@ -21,14 +21,14 @@
 import polib
 
 
-class Reference:
+class Reference(object):
     def __init__(self, name, short_name):
         self.name = name
         self.short_name = short_name
         self.terms = {}  # key -> source term, value: list of translations
 
 
-class ReferenceSources:
+class ReferenceSources(object):
     '''Loads different PO files that we use as reference sources'''
     '''like TERMCAT or Microsoft glossaries'''
     def __init__(self):

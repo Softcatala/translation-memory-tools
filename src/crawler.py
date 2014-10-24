@@ -45,7 +45,7 @@ class LinkExtractor(HTMLParser):
                 self.links.append(absolute)
 
 
-class Page:
+class Page(object):
     """Represents a downloaded web page and its content"""
 
     def __init__(self, url):
@@ -88,7 +88,7 @@ class Page:
         return children
 
 
-class Crawler:
+class Crawler(object):
     """Crawls urls and gets the links to translations files"""
 
     def __init__(self, root):

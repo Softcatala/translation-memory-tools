@@ -21,7 +21,7 @@ import polib
 import shutil
 
 
-class POFile:
+class POFile(object):
 
     def __init__(self, filename):
         self.filename = filename

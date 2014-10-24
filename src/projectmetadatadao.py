@@ -22,7 +22,7 @@ import sqlite3
 from projectmetadatadto import ProjectMetaDataDto
 
 
-class ProjectMetaDataDao:
+class ProjectMetaDataDao(object):
 
     def __init__(self):
         self.connection = None

@@ -21,7 +21,7 @@
 import math
 
 
-class Metrics:
+class Metrics(object):
 
     def __init__(self):
         # All the dictionaries are word -> metric

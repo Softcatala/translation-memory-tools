@@ -30,7 +30,7 @@ from jsonbackend import JsonBackend
 from cleanupfilter import CleanUpFilter
 
 
-class IndexCreator:
+class IndexCreator(object):
 
     def __init__(self, po_directory):
         self.dir_name = "indexdir"

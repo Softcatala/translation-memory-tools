@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 
-class GlossaryEntry:
+class GlossaryEntry(object):
     '''Represents an entry to be written in a glossary'''
 
     def __init__(self):

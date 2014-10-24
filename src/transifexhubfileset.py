@@ -100,7 +100,7 @@ class OptionsExtractor(HTMLParser):
                             self.options.append(name)
 
 
-class Page:
+class Page(object):
     """Represents a downloaded web page and its content"""
 
     def __init__(self, url):

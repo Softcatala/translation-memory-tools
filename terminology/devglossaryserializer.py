@@ -33,7 +33,7 @@ from corpus import Corpus
 from referencesources import ReferenceSources
 
 
-class ReferenceMatches:
+class ReferenceMatches(object):
 
     def __init__(self):
         self.first_50 = 0

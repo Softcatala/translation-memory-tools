@@ -22,7 +22,7 @@ import logging
 from collections import OrderedDict
 
 
-class ProjectDTO:
+class ProjectDTO(object):
 
     def __init__(self, name):
         self.name = name
@@ -41,7 +41,7 @@ class ProjectDTO:
                            self.disabled)
 
 
-class FileSetDTO:
+class FileSetDTO(object):
 
     def __init__(self):
         self.name = ''
@@ -58,7 +58,7 @@ class FileSetDTO:
                            self.target, self.pattern)
 
 
-class JsonBackend:
+class JsonBackend(object):
 
     def __init__(self, filename):
         self.filename = filename

@@ -22,13 +22,13 @@ import sys
 from collections import OrderedDict
 
 
-class DumpEntry:
+class DumpEntry(object):
 
     def _init__(self):
         self.target = None
 
 
-class Dump:
+class Dump(object):
 
     def __init__(self):
         # key text ->

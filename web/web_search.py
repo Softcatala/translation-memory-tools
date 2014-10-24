@@ -30,7 +30,7 @@ from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
 
 
-class JsonSerializer:
+class JsonSerializer(object):
 
     def do(self, search):
         print('Content-type: application/json\n\n')
@@ -43,7 +43,7 @@ class JsonSerializer:
         print json.dumps(all_results, indent=4, separators=(',', ': '))
 
 
-class WebSerializer:
+class WebSerializer(object):
 
     def _get_result_text(self, source, highlighted):
         if highlighted is not None and len(highlighted) > 0:
@@ -147,7 +147,7 @@ class WebSerializer:
         print '</body></html>'
 
 
-class Search:
+class Search(object):
     '''
             Search a term in the Whoosh index
     '''

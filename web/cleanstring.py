@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 
-class CleanString:
+class CleanString(object):
 
     @staticmethod
     def get(result):

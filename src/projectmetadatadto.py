@@ -20,7 +20,7 @@
 import datetime
 
 
-class ProjectMetaDataDto:
+class ProjectMetaDataDto(object):
 
     def __init__(self, name):
         self.name = name

@@ -28,7 +28,7 @@ from projectmetadatadao import ProjectMetaDataDao
 from projectmetadatadto import ProjectMetaDataDto
 
 
-class Projects:
+class Projects(object):
 
     def __init__(self):
         self.projects = list()

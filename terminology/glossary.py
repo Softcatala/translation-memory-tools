@@ -21,7 +21,7 @@
 import datetime
 
 
-class Glossary:
+class Glossary(object):
     '''Represents all the data need to generate a glossary'''
 
     def __init__(self):

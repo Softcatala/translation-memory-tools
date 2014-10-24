@@ -21,7 +21,7 @@ import fnmatch
 import os
 
 
-class FindFiles:
+class FindFiles(object):
 
     def find(self, directory, pattern):
         filelist = []

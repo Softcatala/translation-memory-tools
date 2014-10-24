@@ -24,7 +24,7 @@ import logging
 from findfiles import FindFiles
 
 
-class Corpus:
+class Corpus(object):
     '''Loads different PO files that build the corpus'''
     '''Strings that are not suitable candidates are discarded'''
     '''We do a minimum clean up of strings'''

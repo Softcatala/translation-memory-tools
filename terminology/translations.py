@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 
-class Translation:
+class Translation(object):
     def __init__(self):
         self.translation = u''
         self.frequency = 0
@@ -39,7 +39,7 @@ class Translation:
         return d
 
 
-class Translations:
+class Translations(object):
     '''From a list of unsorted translations creates the final translations'''
     '''for the glossary, grouping same translation units and sorting them by'''
     '''frequency'''

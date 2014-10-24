@@ -34,7 +34,7 @@ import logging
 import os
 import hashlib
 
-class Project:
+class Project(object):
 
     def __init__(self, name, filename):
         self.add_source = True

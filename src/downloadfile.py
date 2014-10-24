@@ -21,7 +21,7 @@ import logging
 import urllib2
 
 
-class DownloadFile:
+class DownloadFile(object):
 
     def get_file(self, url, filename):
         msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
