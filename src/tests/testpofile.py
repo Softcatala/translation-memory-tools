@@ -18,14 +18,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
+from pofile import POFile
 import unittest
 import polib
 import tempfile
 import hashlib
 
-sys.path.append('../src/')
-from pofile import POFile
 
 
 class TestPOFile(unittest.TestCase):

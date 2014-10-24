@@ -18,13 +18,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-import unittest
-
-sys.path.append('../terminology/')
-sys.path.append('../src/')
-from corpus import Corpus
+from terminology.corpus import Corpus
 from StringIO import StringIO
+import unittest
 
 
 class TestPage(unittest.TestCase):
