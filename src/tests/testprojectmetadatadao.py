@@ -16,13 +16,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
+from projectmetadatadao import ProjectMetaDataDao
+from projectmetadatadto import ProjectMetaDataDto
 import unittest
 import datetime
 
-sys.path.append('../src/')
-from projectmetadatadao import ProjectMetaDataDao
-from projectmetadatadto import ProjectMetaDataDto
 
 
 class TestProjectMetaDataDao(unittest.TestCase):

@@ -18,14 +18,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
+from web.indexcreator import IndexCreator
 import unittest
 import polib
 import tempfile
 from whoosh.writing import *
 
-sys.path.append('../web/')
-from indexcreator import IndexCreator
 
 
 class IndexWriterMock (IndexWriter):

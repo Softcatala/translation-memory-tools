@@ -16,12 +16,9 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from os import path
-import sys
-import unittest
-
-sys.path.append('../src/')
 from crawler import Page
+from os import path
+import unittest
 
 
 class FilePage(Page):
