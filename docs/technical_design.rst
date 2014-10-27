@@ -29,12 +29,6 @@ The process of building a transtlation memories works as follows:
 * Translations memories are build using GNU Text (msgcat)
 * When the process is finished we generate a TMX from the PO file
 
-Limations:
-
-* msgcat is slow with large files (e.g. KDE or GNOME)
-* To convert to PO we use the translation toolkit. For XML you need to specify the format but we do not.
-* PO as native format is limited. For example, to indicate the source of the translation (we use a comment)
-
 Searchable index
 ================
 
