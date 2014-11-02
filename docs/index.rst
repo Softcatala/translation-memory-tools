@@ -13,3 +13,4 @@ Contents:
 
    styleguide
    technical_design
+   deployment
