@@ -18,27 +18,27 @@ copy_files() {
     # Index
     rm -r -f $TARGET_DIR/indexdir
     mkdir $TARGET_DIR/indexdir
-    cp -r $ROOT/tm-git/web/indexdir/* $TARGET_DIR/indexdir
+    cp -r $ROOT/tm-git/src/web/indexdir/* $TARGET_DIR/indexdir
 
     # Search TM app
-    cp $ROOT/tm-git/web/recursos.css $TARGET_DIR
-    cp $ROOT/tm-git/web/index.html $TARGET_DIR
-    cp $ROOT/tm-git/web/web_search.py $TARGET_DIR
-    cp $ROOT/tm-git/web/cleanstring.py $TARGET_DIR
-    cp $ROOT/tm-git/web/cleanupfilter.py $TARGET_DIR
-    cp $ROOT/tm-git/web/statistics.html $TARGET_DIR
-    cp $ROOT/tm-git/web/download.html $TARGET_DIR
-    cp $ROOT/tm-git/web/select-projects.html $TARGET_DIR
-    cp $ROOT/tm-git/web/robots.txt $TARGET_DIR
-    cp $ROOT/tm-git/web/memories.html $TARGET_DIR
-    cp $ROOT/tm-git/web/terminologia.html $TARGET_DIR
-    cp $ROOT/tm-git/web/*.png $TARGET_DIR
+    cp $ROOT/tm-git/src/web/recursos.css $TARGET_DIR
+    cp $ROOT/tm-git/src/web/index.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/web_search.py $TARGET_DIR
+    cp $ROOT/tm-git/src/web/cleanstring.py $TARGET_DIR
+    cp $ROOT/tm-git/src/web/cleanupfilter.py $TARGET_DIR
+    cp $ROOT/tm-git/src/web/statistics.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/download.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/select-projects.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/robots.txt $TARGET_DIR
+    cp $ROOT/tm-git/src/web/memories.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/terminologia.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/*.png $TARGET_DIR
 
     # Download memories
-    cp $ROOT/tm-git/web/download.html $TARGET_DIR
+    cp $ROOT/tm-git/src/web/download.html $TARGET_DIR
     rm -r -f $TARGET_DIR/memories
     mkdir $TARGET_DIR/memories
-    cp $ROOT/tm-git/web/memories/*.zip $TARGET_DIR/memories
+    cp $ROOT/tm-git/src/web/memories/*.zip $TARGET_DIR/memories
     cp $ROOT/tm-git/src/report.txt $TARGET_DIR
 
     # Deploy terminology

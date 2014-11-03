@@ -82,7 +82,7 @@ for filename in *.tmx; do
 done
 
 # Update download file & index
-cd $ROOT/tm-git/web
+cd $PROGRAMS/web
 python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
 python index-creation.py -d $INTERMEDIATE_PO
 
