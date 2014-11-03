@@ -13,7 +13,7 @@ if [ ! -z "$DEVENV" ]; then
     echo "Development environment set to $ROOT"
 fi
 
-cd $ROOT/tm-git/terminology
+cd $ROOT/tm-git/src/terminology
 
 # Get files
 rm -r -f sc-tm
