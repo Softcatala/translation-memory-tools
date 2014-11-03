@@ -1,9 +1,16 @@
 #!/bin/bash
-ROOT=/home/jmas
+
+if [ "$#" -ne 1 ] ; then
+    echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
+    echo "Invalid number of parameters"
+    exit
+fi 
+
+ROOT="$1"
 
 if [ ! -z "$DEVENV" ]; then
-    ROOT=/home/jmas/dev
-    echo "Development enviroment set to $ROOT"
+    ROOT=$ROOT/dev
+    echo "Development environment set to $ROOT"
     cd $ROOT/tm-git/src
     git pull
 fi
@@ -26,12 +33,13 @@ mkdir $BACKUP_DIR
 cd $BACKUP_DIR
 cp $INTERMEDIATE_PO/* $BACKUP_DIR
 
-# Download new translation files
 if [ -z "$NOPOBUILD" ]; then
     cd $PROGRAMS
     rm -f *.po
     rm -f *.tmx
     rm -f *.log
+
+    # Download new translation files
     python builder.py
 
     # Build aggregated memories

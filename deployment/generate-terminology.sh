@@ -1,14 +1,16 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ] ; then
+    echo "Usage: generate-terminology.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
+    echo "Invalid number of parameters"
+    exit
+fi 
 
-echo "Deploy terminology"
-
-TARGET_DIR=/var/www/recursos.softcatala.org/preprod
-ROOT=/home/jmas
+ROOT="$1"
 
 if [ ! -z "$DEVENV" ]; then
-    ROOT=/home/jmas/dev
-    echo "Development enviroment set to $TARGET_DIR"
+    ROOT=$ROOT/dev
+    echo "Development environment set to $ROOT"
 fi
 
 cd $ROOT/tm-git/terminology
