@@ -20,7 +20,7 @@
 
 import sys
 import locale
-sys.path.append('../src/')
+sys.path.append('../')
 from jsonbackend import JsonBackend
 import os
 import datetime
@@ -93,7 +93,7 @@ def get_file_date(filename):
 
 def get_project_dates(name):
     project_dao = ProjectMetaDataDao()
-    project_dao.open('../src/statistics.db3')
+    project_dao.open('../statistics.db3')
     dto = project_dao.get(name)
 
     if dto is None:
@@ -101,7 +101,7 @@ def get_project_dates(name):
         last_translation = ''
     else:
         last_fetch = convert_date_to_string(dto.last_fetch)
-        last_translation = convert_date_to_string(dto.get_last_translation_update())
+        last_translation = convert_date_to_string(dto.last_translation_update)
 
     return last_fetch, last_translation
 
@@ -230,7 +230,7 @@ def _process_template(template, filename, variables):
 
 
 def process_projects():
-    json = JsonBackend("../src/projects.json")
+    json = JsonBackend("../projects.json")
     json.load()
 
     variables = {}
@@ -282,12 +282,12 @@ def read_parameters():
 
     parser.add_option("-d", "--podir",
                       action="store", type="string", dest="po_directory",
-                      default="../src/",
+                      default="../",
                       help="Directory to find the PO files")
 
     parser.add_option("-t", "--tmxdir",
                       action="store", type="string", dest="tmx_directory",
-                      default="../src/",
+                      default="../",
                       help="Directory to find the TMX files")
 
     parser.add_option("-o", "--ouputdir",
