@@ -1,11 +1,5 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ] ; then
-    echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION"
-    echo "Invalid number of parameters"
-    exit
-fi  
-
 copy_files() {
 
     ROOT="$1"
@@ -47,10 +41,19 @@ copy_files() {
     cp *.csv $TARGET_DIR
 }
 
+
+if [ "$#" -ne 2 ] ; then
+    echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION"
+    echo "Invalid number of parameters"
+    exit
+fi  
+
 ROOT="$1"
+TARGET_DIR="$2"
 
 if [ ! -z "$DEVENV" ]; then
     ROOT=$ROOT/dev
+    TARGET_DIR=$TARGET_DIR/dev
     echo "Development enviroment set to $ROOT"
 fi
 
@@ -77,6 +80,6 @@ if [ $RETVAL -ne 0 ]; then
 fi
 
 # Deployment to production environment
-copy_files $ROOT "$2"
+copy_files $ROOT $TARGET_DIR
 
 echo "Deployment completed"
