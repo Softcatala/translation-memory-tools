@@ -19,7 +19,6 @@
 # Boston, MA 02111-1307, USA.
 
 import sys
-sys.path.append('../src/')
 
 import time
 import math
@@ -158,9 +157,9 @@ class DevGlossarySerializer():
 
         html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
         html += '<p>Cadenes analitzades: {0}</p>'.format(corpus.strings)
+        percentage = 100 * corpus.strings_selected / corpus.strings if corpus.strings > 0 else 0
         html += '<p>Cadenes seleccionades: {0} - {1}%</p>'. \
-                format(corpus.strings_selected,
-                       100 * corpus.strings_selected / corpus.strings)
+                format(corpus.strings_selected, percentage)
         html += u'<p>Termes únics totals selecionats: {0}</p>'. \
                 format(len(corpus.source_words))
         html += u'<p><b>Mesures de qualitat</b></p>'

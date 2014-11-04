@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import sys
-sys.path.append('../src/')
+sys.path.append('../')
 
 import logging
 import os
@@ -66,6 +66,7 @@ def process_projects():
 
     for term in selected_terms:
         glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+
     dev_glossary_serializer = DevGlossarySerializer()
     dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_description, corpus,
                                    glossary_entries, reference_sources)
