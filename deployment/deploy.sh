@@ -47,7 +47,7 @@ fi
 
 ROOT="$1"
 TARGET_DIR="$2"
-TARGET_PREPROD="$2"
+TARGET_PREPROD="$3"
 
 # Run unit tests
 cd $ROOT/tm-git/unittests/
