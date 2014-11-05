@@ -25,8 +25,3 @@ Finally, you need to execute the deploy script (deploy.sh) that creates a pre-pr
 
 In git's deployment subdirectory there is a file generate-and-deploy.sh that shows how to use the different scripts to build the data files and deploy the application.
 
-Dev environment 
-===============
-
-It is possible to have a stagging environment (called 'dev'). If you define the environment variable DEVENV you can have second copy of the system that lives in the 'dev' subdirectory.
-
