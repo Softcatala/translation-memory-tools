@@ -8,11 +8,6 @@ fi
 
 ROOT="$1"
 
-if [ ! -z "$DEVENV" ]; then
-    ROOT=$ROOT/dev
-    echo "Development environment set to $ROOT"
-fi
-
 cd $ROOT/tm-git/src/terminology
 
 # Get files

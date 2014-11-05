@@ -8,13 +8,6 @@ fi
 
 ROOT="$1"
 
-if [ ! -z "$DEVENV" ]; then
-    ROOT=$ROOT/dev
-    echo "Development environment set to $ROOT"
-    cd $ROOT/tm-git/src
-    git pull
-fi
-
 if [ ! -z "$NOPOBUILD" ]; then
     echo "Skipping bulding of PO files"
 fi

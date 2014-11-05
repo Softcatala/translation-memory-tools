@@ -2,60 +2,52 @@
 
 copy_files() {
 
-    ROOT="$1"
-    TARGET_DIR="$2"
-
     #Softcatalà headers and footers
-    cp $ROOT/mediawiki-Softcatala/ssi/header.html $TARGET_DIR
-    cp $ROOT/mediawiki-Softcatala/ssi/footer-g.html $TARGET_DIR
+    cp $1/mediawiki-Softcatala/ssi/header.html $2
+    cp $1/mediawiki-Softcatala/ssi/footer-g.html $2
 
     # Index
-    rm -r -f $TARGET_DIR/indexdir
-    mkdir $TARGET_DIR/indexdir
-    cp -r $ROOT/tm-git/src/web/indexdir/* $TARGET_DIR/indexdir
+    rm -r -f $2/indexdir
+    mkdir $2/indexdir
+    cp -r $1/tm-git/src/web/indexdir/* $2/indexdir
 
     # Search TM app
-    cp $ROOT/tm-git/src/web/recursos.css $TARGET_DIR
-    cp $ROOT/tm-git/src/web/index.html $TARGET_DIR
-    cp $ROOT/tm-git/src/web/web_search.py $TARGET_DIR
-    cp $ROOT/tm-git/src/web/cleanstring.py $TARGET_DIR
-    cp $ROOT/tm-git/src/web/cleanupfilter.py $TARGET_DIR
-    cp $ROOT/tm-git/src/web/statistics.html $TARGET_DIR
-    cp $ROOT/tm-git/src/web/download.html $TARGET_DIR
-    cp $ROOT/tm-git/src/web/select-projects.html $TARGET_DIR
-    cp $ROOT/tm-git/src/web/robots.txt $TARGET_DIR
-    cp $ROOT/tm-git/src/web/memories.html $TARGET_DIR
-    cp $ROOT/tm-git/src/web/terminologia.html $TARGET_DIR
-    cp $ROOT/tm-git/src/web/*.png $TARGET_DIR
+    cp $1/tm-git/src/web/recursos.css $2
+    cp $1/tm-git/src/web/index.html $2
+    cp $1/tm-git/src/web/web_search.py $2
+    cp $1/tm-git/src/web/cleanstring.py $2
+    cp $1/tm-git/src/web/cleanupfilter.py $2
+    cp $1/tm-git/src/web/statistics.html $2
+    cp $1/tm-git/src/web/download.html $2
+    cp $1/tm-git/src/web/select-projects.html $2
+    cp $1/tm-git/src/web/robots.txt $2
+    cp $1/tm-git/src/web/memories.html $2
+    cp $1/tm-git/src/web/terminologia.html $2
+    cp $1/tm-git/src/web/*.png $2
 
     # Download memories
-    cp $ROOT/tm-git/src/web/download.html $TARGET_DIR
-    rm -r -f $TARGET_DIR/memories
-    mkdir $TARGET_DIR/memories
-    cp $ROOT/tm-git/src/web/memories/*.zip $TARGET_DIR/memories
-    cp $ROOT/tm-git/src/report.txt $TARGET_DIR
+    cp $1/tm-git/src/web/download.html $2
+    rm -r -f $2/memories
+    mkdir $2/memories
+    cp $1/tm-git/src/web/memories/*.zip $2/memories
+    cp $1/tm-git/src/report.txt $2
 
     # Deploy terminology
-    cd $ROOT/tm-git/terminology
-    cp *.html $TARGET_DIR
-    cp *.csv $TARGET_DIR
+    cd $1/tm-git/terminology
+    cp *.html $2
+    cp *.csv $2
 }
 
 
-if [ "$#" -ne 2 ] ; then
-    echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION"
+if [ "$#" -ne 3 ] ; then
+    echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION TARGET_PREPROD"
     echo "Invalid number of parameters"
     exit
 fi  
 
 ROOT="$1"
 TARGET_DIR="$2"
-
-if [ ! -z "$DEVENV" ]; then
-    ROOT=$ROOT/dev
-    TARGET_DIR=$TARGET_DIR/dev
-    echo "Development enviroment set to $ROOT"
-fi
+TARGET_PREPROD="$2"
 
 # Run unit tests
 cd $ROOT/tm-git/unittests/
@@ -67,7 +59,7 @@ if [ $RETVAL -ne 0 ]; then
 fi
 
 # Deploy to a pre-production environment where we can run integration tests
-copy_files $ROOT "$2"/preprod
+copy_files $ROOT $TARGET_PREPROD
 
 # Run integration tests
 cd $ROOT/tm-git/integration-tests/
