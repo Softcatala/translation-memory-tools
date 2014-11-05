@@ -509,7 +509,7 @@
 			}
     },
     "ownCloud": {
-            "projectweb" : "http://www.transifex.com/projects/p/owncloud/language/ca/",
+            "projectweb" : "http://www.transifex.com/projects/p/owncloud",
             "fileset": {
                     "ownCloud" : {
                             "url" : "https://www.transifex.com/projects/p/owncloud/",
@@ -547,7 +547,7 @@
             }
     },
     "Sigil": {
-            "projectweb" : "https://www.transifex.com/projects/p/sigil/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/sigil",
             "fileset": {
                     "sigil": {
                             "url" : "https://www.transifex.com/projects/p/sigil/",
@@ -557,7 +557,7 @@
             }
     },
     "MATE": {
-            "projectweb" : "https://www.transifex.com/projects/p/MATE/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/MATE",
             "fileset": {
                     "mate": {
                             "url" : "https://www.transifex.com/projects/p/MATE/",
@@ -567,7 +567,7 @@
             }
     },
     "Audacity": {
-            "projectweb" : "https://www.transifex.com/projects/p/audacity/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/audacity",
             "fileset": {
                     "audacity": {
                             "url" : "https://www.transifex.com/projects/p/audacity/",
@@ -577,7 +577,7 @@
             }
     },
     "iDEditor": {
-            "projectweb" : "https://www.transifex.com/projects/p/id-editor/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/id-editor",
             "disabled": true,
             "fileset": {
                     "audacity": {
@@ -626,7 +626,7 @@
             }
         },
     "CiviCRM": {
-            "projectweb" : "https://www.transifex.com/projects/p/civicrm/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/civicrm",
             "fileset": {
                     "CiviCRM": {
                             "url" : "https://www.transifex.com/projects/p/civicrm/",
@@ -762,7 +762,7 @@
             }
     },
     "TinyMCE": {
-            "projectweb" : "https://www.transifex.com/projects/p/tinymce/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/tinymce",
             "fileset": {
                     "TinyMCE" : {
                             "url" : "https://www.transifex.com/projects/p/tinymce/",
@@ -781,7 +781,7 @@
             }
     },
     "XBMC": {
-            "projectweb" : "https://www.transifex.com/projects/p/xbmc-main/language/ca/",
+            "projectweb" : "https://www.transifex.com/projects/p/xbmc-main",
             "fileset": {
                     "xbmc-main" : {
                             "url" : "https://www.transifex.com/projects/p/xbmc-main/",
