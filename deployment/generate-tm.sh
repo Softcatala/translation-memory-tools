@@ -1,5 +1,23 @@
 #!/bin/bash
 
+copy_tm_files() {
+
+    cd $PROGRAMS
+    # Copy only new PO files
+    for filename in $1; do
+        # If file exists and size is greater than 200 bytes
+        if [ -e  $filename ]; then
+            fsize=$(du -b "$filename" | cut -f 1)
+            if [ $fsize -ge $2 ]; then
+                if ! diff -q $filename $3/$filename > /dev/null; then
+                    echo "Copying $filename"
+                    cp $filename $3/$filename
+                fi
+            fi
+        fi
+    done
+}
+
 if [ "$#" -ne 1 ] ; then
     echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
     echo "Invalid number of parameters"
@@ -43,36 +61,11 @@ if [ -z "$NOPOBUILD" ]; then
     cp softcatala-tm.tmx $INTERMEDIATE_TMX/
 fi
 
-cd $PROGRAMS
+copy_tm_files "*.po" 200 $INTERMEDIATE_PO
 
-# Copy only new PO files
-for filename in *.po; do
-    # If file exists and size is greater than 200 bytes
-    if [ -e  $filename ]; then
-        fsize=$(du -b "$filename" | cut -f 1)
-        if [ $fsize -ge 200 ]; then
-            if ! diff -q $filename $INTERMEDIATE_PO/$filename > /dev/null; then
-                echo "Copying $filename"
-                cp $filename $INTERMEDIATE_PO/$filename
-            fi
-        fi
-    fi
-done
-
-
-# Copy only new TMX files
-for filename in *.tmx; do
-    # If file exists and size is greater than 350 bytes
-    if [ -e  $filename ]; then
-        fsize=$(du -b "$filename" | cut -f 1)
-        # Empty TMX files are 275 bytes (just the header)
-        # Files with one short translation 450 bytes
-        if [ $fsize -ge 350 ]; then
-            echo "Copying $filename"
-            cp $filename $INTERMEDIATE_TMX/$filename
-        fi
-    fi
-done
+# Empty TMX files are 275 bytes (just the header)
+# Files with one short translation 450 bytes       
+copy_tm_files "*.tmx" 350 $INTERMEDIATE_TMX
 
 # Update download file & index
 cd $PROGRAMS/web
