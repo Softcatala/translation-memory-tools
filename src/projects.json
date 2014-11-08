@@ -906,6 +906,17 @@
                             "type": "transifex"
                 }
             }
+    },
+    "Lemonpos": {
+            "projectweb" : "http://sourceforge.net/projects/lemonpos/",
+            "fileset": {
+                    "TorProject" : {
+                            "url" : "https://www.transifex.com/projects/p/lemonpos/",
+                            "type": "transifex"
+                }
+            }
     }
+
+
     }
 }
