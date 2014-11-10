@@ -33,6 +33,7 @@ class ConvertFiles():
         self._convert_ini_files_to_po()
         self._php_conversion_for_moodle()
         self._convert_android_resources_files_to_po()
+        self. _convert_properties_files_to_po()
 
     def _convert_ts_files_to_po(self):
         findFiles = FindFiles()
@@ -52,6 +53,18 @@ class ConvertFiles():
             # Allow process files with duplicated entries
             cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
                 '--personality strings --duplicates merge -o {1}'
+            os.system(cmd.format(dirName, filename))
+
+    def _convert_properties_files_to_po(self):
+        findFiles = FindFiles()
+
+        for tsfile in findFiles.find(self.temp_dir, '*.properties'):
+            dirName = os.path.dirname(tsfile)
+            logging.info('convert properties file: {0}'.format(dirName))
+            filename = '{0}/properties-ca.po'.format(dirName)
+            # Allow process files with duplicated entries
+            cmd = 'prop2po -t {0}/en.properties {0}/ca.properties ' \
+                '--personality java --duplicates merge -o {1}'
             os.system(cmd.format(dirName, filename))
 
     def _convert_ini_files_to_po(self):
