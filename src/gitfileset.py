@@ -18,7 +18,6 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-import logging
 import re
 
 from fileset import FileSet
@@ -43,24 +42,6 @@ class GitFileSet(FileSet):
                     os.path.exists(filename):
                 os.remove(filename)
 
-    def _php_conversion_for_moodle(self):
-        findFiles = FindFiles()
-        if len(findFiles.find(self.temp_dir, '*.php')) == 0:
-            return
-
-        GIT_DIRNAME = 'moodle-langpacks'
-        OUT_DIRNAME = 'po-files'
-        cmd = 'cd {0} && php2po -t {1}/en -i {1}/ca ' \
-              '-o {2}'.format(self.temp_dir, GIT_DIRNAME, OUT_DIRNAME)
-        os.system(cmd)
-
-    def _convert_android_resources_files_to_po(self):
-        filename = self._get_filename()
-
-        # See: https://pypi.python.org/pypi/android2po/1.2.0
-        cmd = 'cd {0}/{1} && a2po init ca'.format(self.temp_dir, filename)
-        os.system(cmd)
-
     def do(self):
         self.create_tmp_directory()
 
@@ -69,11 +50,6 @@ class GitFileSet(FileSet):
             self.url
         ))
 
-        self._php_conversion_for_moodle()
-        self._convert_android_resources_files_to_po()
         self._remove_non_translation_files()
-
-        self.add_comments()
         self.build()
-
         self.remove_tmp_directory()

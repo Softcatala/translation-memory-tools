@@ -33,7 +33,5 @@ class LocalDirFileSet(FileSet):
         for filename in glob.glob(self.url):
             shutil.copy(filename, out)
 
-        self.convert_ts_files_to_po()
-        self.add_comments()
         self.build()
         self.remove_tmp_directory()

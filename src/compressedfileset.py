@@ -68,8 +68,6 @@ class CompressedFileSet(FileSet):
         download.get_file(self.url, self.filename)
 
         self._uncompress()
-        self.convert_ts_files_to_po()
-        self.add_comments()
         self.build()
 
         if os.path.exists(self.filename):

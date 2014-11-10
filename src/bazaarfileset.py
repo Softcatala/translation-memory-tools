@@ -62,7 +62,5 @@ class BazaarFileSet(FileSet):
             ))
             self._remove_non_translation_files()
 
-        self.add_comments()
         self.build()
-
         self.remove_tmp_directory()

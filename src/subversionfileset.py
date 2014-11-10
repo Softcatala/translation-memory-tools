@@ -38,7 +38,5 @@ class SubversionFileSet(FileSet):
         cmd = CMD.format(self.temp_dir, self.url)
         os.system(cmd)
 
-        self.convert_ts_files_to_po()
-        self.add_comments()
         self.build()
         self.remove_tmp_directory()

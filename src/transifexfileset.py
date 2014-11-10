@@ -51,9 +51,5 @@ class TransifexFileSet(FileSet):
         os.chdir(prevdir)
         self._remove_non_translation_only_files()
 
-        self.convert_ts_files_to_po()
-        self.convert_string_files_to_po()
-        self.convert_ini_files_to_po()
-        self.add_comments()
         self.build()
         #self.remove_tmp_directory()

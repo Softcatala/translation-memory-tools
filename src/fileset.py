@@ -23,7 +23,7 @@ import shutil
 
 from findfiles import FindFiles
 from pofile import POFile
-
+from convertfiles import ConvertFiles
 
 class FileSet():
 
@@ -78,46 +78,6 @@ class FileSet():
         os.system(cmd.format(backup, self.tm_file))
         os.remove(backup)
 
-    def convert_ts_files_to_po(self):
-        findFiles = FindFiles()
-
-        for tsfile in findFiles.find(self.temp_dir, '*.ts'):
-            fileName, fileExtension = os.path.splitext(tsfile)
-            logging.info('convert ts file: {0}'.format(fileName))
-            os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
-
-    def convert_string_files_to_po(self):
-        findFiles = FindFiles()
-
-        for tsfile in findFiles.find(self.temp_dir, '*.strings'):
-            dirName = os.path.dirname(tsfile)
-            logging.info('convert strings file: {0}'.format(dirName))
-            filename = '{0}/strings-ca.po'.format(dirName)
-            # Allow process files with duplicated entries
-            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
-                '--personality strings --duplicates merge -o {1}'
-            os.system(cmd.format(dirName, filename))
-
-    def convert_ini_files_to_po(self):
-        findFiles = FindFiles()
-
-        for inifile in findFiles.find(self.temp_dir, 'ca.ini'):
-            dirName = os.path.dirname(inifile)
-            logging.info('convert ini file: {0}'.format(inifile))
-
-            # http://bugs.locamotion.org/show_bug.cgi?id=3148
-            # The rename operations can be removed when the issue is fixed
-            os.rename('{0}/en.ini'.format(dirName),
-                      '{0}/en.strings'.format(dirName))
-
-            os.rename('{0}/ca.ini'.format(dirName),
-                      '{0}/ca.strings'.format(dirName))
-
-            filename = '{0}/strings-ca.po'.format(dirName)
-            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 ' \
-                '--personality=strings -o {1}'
-            os.system(cmd.format(dirName, filename))
-
     def _should_exclude_file(self, filename):
         exclude = False
         for exfilename in self.excluded:
@@ -130,6 +90,12 @@ class FileSet():
         return exclude
 
     def build(self):
+
+        self.add_comments()
+
+        convert = ConvertFiles() 
+        convert.convert()
+
         findFiles = FindFiles()
         localtm = 'tm-local.po'
 

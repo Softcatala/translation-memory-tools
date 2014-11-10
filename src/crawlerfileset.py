@@ -46,7 +46,5 @@ class CrawlFileSet(FileSet):
         links = crawler.run()
         self._download_links(links, self.temp_dir)
 
-        self.convert_ts_files_to_po()
-        self.add_comments()
         self.build()
         self.remove_tmp_directory()

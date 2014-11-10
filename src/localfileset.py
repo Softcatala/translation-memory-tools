@@ -29,8 +29,6 @@ class LocalFileSet(FileSet):
         self.create_tmp_directory()
 
         shutil.copy(self.url, '{0}/{1}'.format(self.temp_dir, self.filename))
-        self.convert_ts_files_to_po()
-        self.add_comments()
         self.build()
 
         if os.path.exists(self.filename):
