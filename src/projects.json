@@ -925,6 +925,15 @@
                             "pattern" : ".*ca.po"
                     }
             }
+        },
+    "LanguageTool": {
+            "projectweb" : "http://www.softcatala.org/wiki/Projectes/LanguageTool",
+            "fileset": {
+                    "LanguageTool" : {
+                            "url" : "https://www.transifex.com/projects/p/languagetool/",
+                            "type": "transifex"
+                }
+            }
         }
 
 
