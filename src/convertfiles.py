@@ -31,9 +31,9 @@ class ConvertFiles():
         self._convert_ts_files_to_po()
         self._convert_string_files_to_po()
         self._convert_ini_files_to_po()
-        self._php_conversion_for_moodle()
+        self._convert_php_resources_files_to_po()
         self._convert_android_resources_files_to_po()
-        self. _convert_properties_files_to_po()
+        self._convert_properties_files_to_po()
 
     def _convert_ts_files_to_po(self):
         findFiles = FindFiles()
@@ -87,19 +87,21 @@ class ConvertFiles():
                 '--personality=strings -o {1}'
             os.system(cmd.format(dirName, filename))
 
-    def _php_conversion_for_moodle(self):
+    def _convert_php_resources_files_to_po(self):
         findFiles = FindFiles()
         if len(findFiles.find(self.temp_dir, '*.php')) == 0:
             return
 
-        GIT_DIRNAME = 'moodle-langpacks'
+        # Name arbitrary choosen (not sepecific to an expected dir structure)
         OUT_DIRNAME = 'po-files'
-        cmd = 'cd {0} && php2po -t {1}/en -i {1}/ca ' \
-              '-o {2}'.format(self.temp_dir, GIT_DIRNAME, OUT_DIRNAME)
+        cmd = 'cd {0} && php2po -t en -i ca ' \
+              '-o {1}'.format(self.temp_dir, OUT_DIRNAME)
         os.system(cmd)
 
     def _convert_android_resources_files_to_po(self):
 
         # See: https://pypi.python.org/pypi/android2po/1.2.0
-        cmd = 'cd {0}/{1} && a2po init ca'.format(self.temp_dir, "ca.po")
+        # If you do not specify --gettext ., the file is writen in ../locale
+        # outside the tmp directory in our case
+        cmd = 'cd {0} && a2po init ca --gettext .'.format(self.temp_dir)
         os.system(cmd)

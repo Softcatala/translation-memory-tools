@@ -45,10 +45,14 @@ class GitFileSet(FileSet):
     def do(self):
         self.create_tmp_directory()
 
-        os.system('cd {0} && git clone --depth=1 {1}'.format(
-            self.temp_dir,
-            self.url
-        ))
+        cmd = 'cd {0} && git clone --depth=1 {1} _git'.format(
+            self.temp_dir, self.url)
+        os.system(cmd)
+
+        # Move it to the root to avoid git default behavior to clone
+        # into a subdirectory
+        cmd = 'cd {0} && mv _git/* .'.format(self.temp_dir)
+        os.system(cmd)
 
         self._remove_non_translation_files()
         self.build()
