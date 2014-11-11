@@ -881,7 +881,7 @@
             }
     },
     "Cyberduck": {
-            "projectweb" : "https://www.mailpile.is",
+            "projectweb" : "https://cyberduck.io/",
             "fileset": {
                     "Cyberduck" : {
                             "url" : "https://www.transifex.com/projects/p/cyberduck",
