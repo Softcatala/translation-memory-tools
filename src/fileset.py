@@ -91,10 +91,10 @@ class FileSet():
 
     def build(self):
 
-        self.add_comments()
-
         convert = ConvertFiles() 
         convert.convert()
+
+        self.add_comments()
 
         findFiles = FindFiles()
         localtm = 'tm-local.po'
