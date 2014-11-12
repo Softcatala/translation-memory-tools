@@ -39,17 +39,33 @@
             "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
             "softcatala" : true,
             "fileset": {
-                    "mozilla": {
-                            "url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
+                    "firefox": {
+                            "url" : "http://mozilla.locamotion.org/ca/firefox/export/zip",
                             "type": "compressed",
                             "target": "mozilla.zip",
                             "excluded" : "region.properties.po"
                     },
-                    "mozilla-gaia": {
-                            "url" : "http://pootle.softcatala.org/ca/gaia/export/zip",
+                    "mobile": {
+                            "url" : "http://mozilla.locamotion.org/ca/mobile/export/zip",
                             "type": "compressed",
-                            "target": "gaia.zip"
+                            "target": "mobile.zip"
                     },
+                    "firefoxos": {
+                            "url" : "http://mozilla.locamotion.org/ca/firefoxos/export/zip",
+                            "type": "compressed",
+                            "target": "firefoxos.zip"
+                    },
+                    "lightning": {
+                            "url" : "http://mozilla.locamotion.org/ca/lightning/export/zip",
+                            "type": "compressed",
+                            "target": "lightning.zip"
+                    },
+                    "thunderbird": {
+                            "url" : "http://mozilla.locamotion.org/ca/thunderbird/export/zip",
+                            "type": "compressed",
+                            "target": "thunderbird.zip"
+                    },
+                    
                     "mozilla-addons": {
                             "url" : "http://localize.mozilla.org/ca/amo/export/zip",
                             "type": "compressed",
