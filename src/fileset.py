@@ -89,6 +89,9 @@ class FileSet():
 
         return exclude
 
+    def clean_up_after_convert(self):
+        pass
+
     def build(self):
 
         convert = ConvertFiles() 

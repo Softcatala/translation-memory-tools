@@ -34,6 +34,10 @@ class GitFileSet(FileSet):
         return filename
 
     def _remove_non_translation_files(self):
+        '''
+            We clean up other PO files like fr.po, es.po, to prevent to be
+            added to the translation memory
+        '''
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
@@ -41,6 +45,9 @@ class GitFileSet(FileSet):
             if re.match(self.pattern, filename) is None and \
                     os.path.exists(filename):
                 os.remove(filename)
+
+    def clean_up_after_convert(self):
+        self._remove_non_translation_files()
 
     def do(self):
         self.create_tmp_directory()
@@ -54,6 +61,5 @@ class GitFileSet(FileSet):
         cmd = 'cd {0} && mv _git/* .'.format(self.temp_dir)
         os.system(cmd)
 
-        self._remove_non_translation_files()
         self.build()
         self.remove_tmp_directory()
