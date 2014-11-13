@@ -97,6 +97,7 @@ class FileSet():
         convert = ConvertFiles() 
         convert.convert()
 
+        self.clean_up_after_convert()
         self.add_comments()
 
         findFiles = FindFiles()
