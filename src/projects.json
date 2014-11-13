@@ -122,6 +122,11 @@
                             "type": "compressed",
                             "target": "gnome-ui.tar.gz"
                     },
+                    "gnome-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-16/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "gnome-doc.tar.gz"
+                    },
                     "gnome-office": {
                             "url" : "http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz",
                             "type": "compressed",
@@ -151,11 +156,6 @@
                             "url" : "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz",
                             "type": "compressed",
                             "target": "olpc.tar.gz"
-                    },
-                    "gnome-doc": {
-                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-12/doc.tar.gz",
-                            "type": "compressed",
-                            "target": "gnome-doc.tar.gz"
                     },
                     "gnome-infrastructure-doc": {
                             "url" : "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
