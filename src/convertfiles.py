@@ -100,6 +100,10 @@ class ConvertFiles():
 
     def _convert_android_resources_files_to_po(self):
 
+        findFiles = FindFiles()
+        if len(findFiles.find(self.temp_dir, '*.xml')) == 0:
+            return
+
         # See: https://pypi.python.org/pypi/android2po/1.2.0
         # If you do not specify --gettext ., the file is writen in ../locale
         # outside the tmp directory in our case
