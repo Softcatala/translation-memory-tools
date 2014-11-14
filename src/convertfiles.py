@@ -25,28 +25,28 @@ from findfiles import FindFiles
 
 class ConvertFiles():
 
-    temp_dir = './tmp'
+    def __init__(self):
+        self.temp_dir = './tmp'
+        self.findFiles = None
 
     def convert(self):
+        self.findFiles = FindFiles()
         self._convert_ts_files_to_po()
         self._convert_string_files_to_po()
         self._convert_ini_files_to_po()
         self._convert_php_resources_files_to_po()
         self._convert_android_resources_files_to_po()
         self._convert_properties_files_to_po()
+        self.findFiles = None
 
     def _convert_ts_files_to_po(self):
-        findFiles = FindFiles()
-
-        for tsfile in findFiles.find(self.temp_dir, '*.ts'):
+        for tsfile in self.findFiles.find(self.temp_dir, '*.ts'):
             fileName, fileExtension = os.path.splitext(tsfile)
             logging.info('convert ts file: {0}'.format(fileName))
             os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def _convert_string_files_to_po(self):
-        findFiles = FindFiles()
-
-        for tsfile in findFiles.find(self.temp_dir, '*.strings'):
+        for tsfile in self.findFiles.find(self.temp_dir, '*.strings'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert strings file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
@@ -56,9 +56,7 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _convert_properties_files_to_po(self):
-        findFiles = FindFiles()
-
-        for tsfile in findFiles.find(self.temp_dir, '*.properties'):
+        for tsfile in self.findFiles.find(self.temp_dir, '*.properties'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert properties file: {0}'.format(dirName))
             filename = '{0}/properties-ca.po'.format(dirName)
@@ -68,9 +66,7 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _convert_ini_files_to_po(self):
-        findFiles = FindFiles()
-
-        for inifile in findFiles.find(self.temp_dir, 'ca.ini'):
+        for inifile in self.findFiles.find(self.temp_dir, 'ca.ini'):
             dirName = os.path.dirname(inifile)
             logging.info('convert ini file: {0}'.format(inifile))
 
@@ -83,13 +79,12 @@ class ConvertFiles():
                       '{0}/ca.strings'.format(dirName))
 
             filename = '{0}/strings-ca.po'.format(dirName)
-            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 ' \
+            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 '\
                 '--personality=strings -o {1}'
             os.system(cmd.format(dirName, filename))
 
     def _convert_php_resources_files_to_po(self):
-        findFiles = FindFiles()
-        if len(findFiles.find(self.temp_dir, '*.php')) == 0:
+        if len(self.findFiles.find(self.temp_dir, '*.php')) == 0:
             return
 
         # Name arbitrary choosen (not sepecific to an expected dir structure)
@@ -99,9 +94,7 @@ class ConvertFiles():
         os.system(cmd)
 
     def _convert_android_resources_files_to_po(self):
-
-        findFiles = FindFiles()
-        if len(findFiles.find(self.temp_dir, '*.xml')) == 0:
+        if len(self.findFiles.find(self.temp_dir, '*.xml')) == 0:
             return
 
         # See: https://pypi.python.org/pypi/android2po/1.2.0
