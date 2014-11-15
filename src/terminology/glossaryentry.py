@@ -26,7 +26,7 @@ class GlossaryEntry(object):
     def __init__(self):
         self.source_term = u''
         self.translations = []
-        self.percentage = 0  # Percentage of frequency across all options
+        self.percentage = 0  # Percentage of frequency across all options.
 
     def get_dict(self):
         translations = []

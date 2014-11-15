@@ -24,7 +24,7 @@ class CleanString(object):
 
     @staticmethod
     def get(result):
-        CHARS = ('_', '&', '~')  # Accelerators
+        CHARS = ('_', '&', '~')  # Accelerators.
         for char in CHARS:
             result = result.replace(char, '')
 
