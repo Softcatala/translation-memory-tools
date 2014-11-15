@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2014 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -25,10 +26,9 @@ from cleanstring import CleanString
 
 
 class CleanUpFilter(Filter):
-    '''
-        Clean ups acceleators when generating the tokens for the index
-        allowing to ignore them
-    '''
+    """Clean up accelerators when generating the tokens for the index
+        allowing to ignore them.
+    """
     def __call__(self, tokens):
         for t in tokens:
             t.text = CleanString.get(t.text)

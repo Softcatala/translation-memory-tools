@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013-2014 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -105,10 +106,11 @@ def read_parameters():
 
 
 def main():
-    '''
-        Given a PO file, enumerates all the strings, and creates a Whoosh
-        index to be able to search later
-    '''
+    """Create a Whoosh index for a PO file.
+
+    Given a PO file, enumerates all the strings, and creates a Whoosh index to
+    be able to search later.
+    """
     print "Create Whoosh index from a PO file"
     print "Use --help for assistance"
 
