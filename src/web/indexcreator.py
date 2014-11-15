@@ -61,7 +61,7 @@ class IndexCreator(object):
                 if not found:
                     continue
 
-            if project_dto.selectable is True:
+            if project_dto.selectable:
                 self.options.append(project_dto.name)
 
             self._process_project(project_dto.name,
