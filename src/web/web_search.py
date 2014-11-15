@@ -44,17 +44,17 @@ class JsonSerializer(object):
 
 class WebSerializer(object):
 
-    def _get_result_text(self, source, highlighted):
+    def _get_result_text(self, result, key):
+        highlighted = result.highlights(key)
         if highlighted is not None and len(highlighted) > 0:
             return highlighted.encode('utf-8')
 
+        source = result[key]
         return cgi.escape(source.encode('utf-8'))
 
     def print_result(self, result):
-        source = self._get_result_text(result["source"],
-                                       result.highlights("source"))
-        target = self._get_result_text(result["target"],
-                                       result.highlights("target"))
+        source = self._get_result_text(result, "source")
+        target = self._get_result_text(result, "target")
         project = result["project"].encode('utf-8')
         comment = None
         context = None
