@@ -35,8 +35,8 @@ class ProjectDTO(object):
         self.filesets = []
 
     def __str__(self):
-        text = 'ProjectDTO. Name: {0}, filename: {1}, project web: {2}, ' \
-            'disabled {3}'
+        text = ('ProjectDTO. Name: {0}, filename: {1}, project web: {2}, '
+                'disabled {3}')
         return text.format(self.name, self.filename, self.projectweb,
                            self.disabled)
 
@@ -52,8 +52,8 @@ class FileSetDTO(object):
         self.pattern = ''
 
     def __str__(self):
-        text = 'FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, ' \
-            'target: {4}, pattern: {5}'
+        text = ('FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, '
+                'target: {4}, pattern: {5}')
         return text.format(self.name, self.url, self.type, self.excluded,
                            self.target, self.pattern)
 
