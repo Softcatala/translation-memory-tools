@@ -58,7 +58,7 @@ class Corpus(object):
         for c in CHARS:
             result = result.replace(c, '')
 
-        #remove all the leading and trailing whitespace characters
+        # Remove all the leading and trailing whitespace characters.
         result = result.strip()
         result = result.lower()
         return result
@@ -66,23 +66,23 @@ class Corpus(object):
     def _should_select_string(self, source, target):
         words = len(source.split())
 
-        # Only up to 3 words terms for now
+        # Only up to 3 words terms for now.
         if words > 3:
             return False
 
-        # Single words without spaces that are very long
+        # Single words without spaces that are very long.
         if words == 1 and len(source) > 30:
             msg = "Discard: long word '{0}'".format(source.encode('utf-8'))
             logging.info(msg)
             return False
 
-        # Single chars provide no value
+        # Single chars provide no value.
         if len(source) < 2:
             msg = "Discard: single chart '{0}'".format(source.encode('utf-8'))
             logging.info(msg)
             return False
 
-        # Numeric only strings should not be considered
+        # Numeric only strings should not be considered.
         if source.isdigit():
             msg = "Discard: is digit '{0}'".format(source.encode('utf-8'))
             logging.info(msg)
@@ -93,7 +93,7 @@ class Corpus(object):
             logging.info(msg)
             return False
 
-        # We are ignoring strings with html tags or string formatters
+        # We are ignoring strings with html tags or string formatters.
         # This also affects strings like <shift>f10
         CHARS = ('<', '>', '%', '{', '}')
         for c in CHARS:
