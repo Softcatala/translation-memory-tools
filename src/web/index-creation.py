@@ -111,15 +111,15 @@ def main():
     Given a PO file, enumerates all the strings, and creates a Whoosh index to
     be able to search later.
     """
-    print "Create Whoosh index from a PO file"
-    print "Use --help for assistance"
+    print("Create Whoosh index from a PO file")
+    print("Use --help for assistance")
 
     start_time = time.time()
 
     try:
         locale.setlocale(locale.LC_ALL, '')
     except Exception as detail:
-        print "Exception: " + str(detail)
+        print("Exception: " + str(detail))
 
     po_directory, debug_keyword, projects_names = read_parameters()
     indexCreator = IndexCreator(po_directory)
@@ -132,7 +132,7 @@ def main():
     _write_select_projects(indexCreator.options)
 
     end_time = time.time() - start_time
-    print "time used to create the index: " + str(end_time)
+    print("time used to create the index: " + str(end_time))
 
 
 if __name__ == "__main__":

@@ -143,7 +143,7 @@ class IndexCreator(object):
                                          context=x, project=p,
                                          softcatala=softcatala)
         except Exception as detail:
-            print "Exception: " + str(detail)
+            print("Exception: " + str(detail))
 
     def create(self):
         MIN_WORDSIZE_TO_IDX = 1

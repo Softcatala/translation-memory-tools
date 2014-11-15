@@ -41,7 +41,7 @@ class JsonSerializer(object):
         all_results = []
         for result in results:
             all_results.append(result.fields())
-        print json.dumps(all_results, indent=4, separators=(',', ': '))
+        print(json.dumps(all_results, indent=4, separators=(',', ': ')))
 
 
 class WebSerializer(object):
