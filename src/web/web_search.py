@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -52,10 +53,11 @@ class WebSerializer(object):
         return cgi.escape(source.encode('utf-8'))
 
     def _get_formatted_comment(self, comment):
-        '''
-            Comments can be multi-line because they contain multiple lines
-            or because we concatenated tcomments with comments from the PO
-        '''
+        """Return the comment adapted to properly integrate into HTML.
+
+        Comments can be multi-line because they contain multiple lines or
+        because we concatenated tcomments with comments from the PO.
+        """
         comment = comment.replace('\n', '<br />')
         comment = comment.replace('\r', '')
         return comment
@@ -100,9 +102,7 @@ class WebSerializer(object):
         return text
 
     def do(self, search):
-        '''
-            Search a term in the Whoosh index
-        '''
+        """Search a term in the Whoosh index."""
         try:
             self.open_html()
 
@@ -148,9 +148,7 @@ class WebSerializer(object):
 
 
 class Search(object):
-    '''
-            Search a term in the Whoosh index
-    '''
+    """Search a term in the Whoosh index."""
     dir_name = "indexdir"
 
     def __init__(self, source, target, project):

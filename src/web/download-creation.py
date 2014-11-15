@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -119,7 +120,7 @@ def propulate_project_links(translation_memory, filename):
 
 
 def build_all_projects_memory(json, memories):
-    '''Builds zip file that contains all memories for all projects'''
+    """Build zip file that contains all memories for all projects."""
     name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
 
@@ -151,7 +152,7 @@ def build_all_projects_memory(json, memories):
 
 
 def build_all_softcatala_memory(json, memories):
-    '''Builds zip file that contains all memories for the Softcatalà projects'''
+    """Build zip file containing all memories for all Softcatalà projects."""
     name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
@@ -192,7 +193,7 @@ def get_words(potext):
 
 
 def build_invidual_projects_memory(json, memories):
-    '''Builds zip file that contains a memory for every project'''
+    """Build zip file that contains a memory for every project."""
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable:
@@ -309,10 +310,11 @@ def create_output_dir(subdirectory):
 
 
 def main():
-    '''
-        Reads the projects and generates an HTML to enable downloading all
-        the translation memories
-    '''
+    """Generate an HTML listing all the translation memories.
+
+    Read the projects and generate an HTML to enable downloading all the
+    translation memories.
+    """
     print("Creates download.html file")
     print("Use --help for assistance")
 

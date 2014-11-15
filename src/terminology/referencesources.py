@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -29,8 +30,10 @@ class Reference(object):
 
 
 class ReferenceSources(object):
-    '''Loads different PO files that we use as reference sources'''
-    '''like TERMCAT or Microsoft glossaries'''
+    """Loads different PO files that we use as reference sources.
+
+    Like TERMCAT or Microsoft glossaries.
+    """
     def __init__(self):
         self.stop_words = set()
         self.references = []
