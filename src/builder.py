@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -119,10 +120,10 @@ def read_parameters():
 
 
 def load_projects_from_json():
+    global softcatala_only
+
     json = JsonBackend(projects_json)
     json.load()
-    
-    global softcatala_only
 
     msg = 'Projects defined in json file {0}'.format(len(json.projects))
     logging.info(msg)
