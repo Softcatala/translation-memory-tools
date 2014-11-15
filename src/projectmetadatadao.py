@@ -29,7 +29,6 @@ class ProjectMetaDataDao(object):
 
     def create_model(self):
         c = self.connection.cursor()
-
         command = ('CREATE TABLE IF NOT EXISTS projects ('
                    'name TEXT PRIMARY KEY,'
                    'last_fetch TIMESTAMP,'
@@ -55,7 +54,6 @@ class ProjectMetaDataDao(object):
         command = command.format(dto.name, dto.last_fetch,
                                  dto.last_translation_update, dto.words,
                                  dto.checksum)
-
         c.execute(command)
         self.connection.commit()
 

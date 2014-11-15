@@ -61,7 +61,8 @@ def _write_select_projects(project_names):
         'options': [Option(project_name) for project_name
                     in sorted(project_names, key=lambda x: x.lower())],
     }
-    _process_template("select-projects.mustache", "select-projects.html", variables)
+    _process_template("select-projects.mustache", "select-projects.html",
+                      variables)
 
 
 def read_parameters():

@@ -35,9 +35,7 @@ class JsonSerializer(object):
 
     def do(self, search):
         print('Content-type: application/json\n\n')
-
         results = search.get_results()
-
         all_results = []
         for result in results:
             all_results.append(result.fields())
