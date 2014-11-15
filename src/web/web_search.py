@@ -88,17 +88,6 @@ class WebSerializer(object):
 
         print "</table></div>"
 
-    def get_search_term_for_display(self, search):
-        text = ''
-
-        if search.source is not None and len(search.source) > 0:
-            text += search.source
-
-        if search.target is not None and len(search.target) > 0:
-            text += ' ' + search.target
-
-        return text
-
     def do(self, search):
         """Search a term in the Whoosh index."""
         try:
@@ -106,14 +95,14 @@ class WebSerializer(object):
 
             if ((search.source is None or len(search.source) < 2) and
                 (search.target is None or len(search.target) < 2)):
-                self.write_html_header(self.get_search_term_for_display(search), 0, 0)
+                self.write_html_header(search.search_term_display, 0, 0)
                 print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
             else:
                 start_time = time.time()
                 results = search.get_results()
                 end_time = time.time() - start_time
 
-                self.write_html_header(self.get_search_term_for_display(search),
+                self.write_html_header(search.search_term_display,
                                        results.scored_length(), end_time)
                 for result in results:
                     self.print_result(result)
@@ -133,8 +122,7 @@ class WebSerializer(object):
         print '</head><body>'
 
     def write_html_header(self, term, results, time):
-        t = term.encode('utf-8')
-        print '<span class="searched">Resultats de la cerca del terme:</span><span class="searched-term"> ' + t + '</span><br>'
+        print '<span class="searched">Resultats de la cerca del terme:</span><span class="searched-term"> ' + term + '</span><br>'
         print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
         print '<a href="./memories.html"> &lt; Torna a la pàgina anterior</a><br /><br />'
 
@@ -152,6 +140,18 @@ class Search(object):
         self.project = project
         self.searcher = None
         self.query = None
+
+    @property
+    def search_term_display(self):
+        text = ''
+
+        if self.source is not None and len(self.source) > 0:
+            text += self.source
+
+        if self.target is not None and len(self.target) > 0:
+            text += ' ' + self.target
+
+        return text.encode('utf-8')
 
     def get_results(self):
         if self.searcher is None:
