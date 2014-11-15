@@ -88,7 +88,7 @@ class JsonBackend(object):
             elif fileset_properties_attr == 'pattern':
                 fileset.pattern = fileset_properties_value
             else:
-                msg = 'Field \'{0}\' not recognized'
+                msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))
 
     def load(self):
