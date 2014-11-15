@@ -59,7 +59,8 @@ def process_projects():
 
     # Select terms
     MAX_TERMS = 1000
-    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get, reverse=True)
+    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get,
+                                   reverse=True)
 
     # Developer report
     glossary_entries = OrderedDict()
@@ -70,7 +71,8 @@ def process_projects():
         glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_description, corpus,
+    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html",
+                                   glossary_description, corpus,
                                    glossary_entries, reference_sources)
 
     # User report

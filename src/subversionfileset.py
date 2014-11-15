@@ -25,7 +25,6 @@ from fileset import FileSet
 class SubversionFileSet(FileSet):
 
     def do(self):
-
         if len(self.filename) == 0:
             CMD = 'cd {0} && svn co --trust-server-cert --non-interactive {1}'
         else:
