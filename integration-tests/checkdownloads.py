@@ -28,6 +28,7 @@ import urllib2
 
 from jsonbackend import JsonBackend
 from findfiles import FindFiles
+from polib import pofile
 
 
 class CheckDownloads(object):
@@ -48,7 +49,7 @@ class CheckDownloads(object):
 
         return None
 
-    def is_filename_a_download(self, filename):
+    def _is_filename_a_download(self, filename):
         found = False
 
         link = self._get_link_from_filename(filename)
@@ -79,11 +80,7 @@ class CheckDownloads(object):
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
 
-    def check_zipfile(self,
-                      filename,
-                      extensions,
-                      expected_files,
-                      minimum_size):
+    def _download_and_unzip_file(self, filename):
         tmp_file = tempfile.NamedTemporaryFile()
         link = self._get_link_from_filename(filename)
 
@@ -92,14 +89,17 @@ class CheckDownloads(object):
 
         urllib.urlretrieve(link, tmp_file.name)
 
-        self._create_tmp_directory()
-
         cmd = 'unzip {0} -d {1} > /dev/null'.format(
             tmp_file.name,
             self.temp_dir
         )
         os.system(cmd)
 
+    def _check_number_of_files(self,
+                               tm_filename,
+                               extensions,
+                               expected_files,
+                               minimum_size):
         files = 0
         findFiles = FindFiles()
         for filename in findFiles.find(self.temp_dir, extensions):
@@ -108,15 +108,51 @@ class CheckDownloads(object):
             size = os.path.getsize(filename)
             if size < minimum_size:
                 self.errors += 1
-                print('File {0} has size {1} but expected was at least {2}'. \
+                print('File {0} has size {1} but expected was at least {2}'.
                       format(filename, size, minimum_size))
 
         if files != expected_files:
             self.errors += 1
-            print('{0} expected {1} files but contains {2}'.format(link,
+            print('{0} expected {1} files but contains {2}'.format(tm_filename,
                   expected_files, files))
 
-        self._remove_tmp_directory()
+    def _check_pofiles_content(self):
+        """
+            Check if by mistake we have included non Catalan language
+            strings in the transtation memories
+        """
+
+        # The list of invalid chars is specific to Catalan language
+        invalid_chars = {u'á', u'ñ', u'ë', u'ù', u'â', u'ê', u'î', u'ô', u'û',
+                         u'ë', u'ÿ', u'ä', u'ö'}
+
+        try:
+
+            THRESHOLD_PERCENTAGE = 1
+            findFiles = FindFiles()
+            for filename in findFiles.find(self.temp_dir, "*.po"):
+                poFile = pofile(filename)
+
+                invalid = 0
+                for entry in poFile:
+                    # Only localized segments. Skips developers names,
+                    # untranslated country names, etc
+                    if entry.msgid == entry.msgstr:
+                        continue
+
+                    for char in entry.msgstr.lower():
+                        if char in invalid_chars:
+                            invalid = invalid + 1
+
+                if len(poFile) > 100 and invalid > 0:
+                    percentage = 100.0 * invalid / len(poFile)
+                    if percentage > THRESHOLD_PERCENTAGE:
+                        self.errors = self.errors + 1
+                        print "Unsual number of invalid chars at {0} ({1}%)".\
+                              format(filename, str(percentage))
+
+        except Exception as detail:
+            print detail
 
     def downloads_for_project(self, name, expected_files):
         print("Processing:" + name)
@@ -124,18 +160,23 @@ class CheckDownloads(object):
         # Po files
         MIN_PO_SIZE = 1500
         po_zip_file = '{0}-tm.po.zip'.format(name.lower())
-        if self.is_filename_a_download(po_zip_file):
-            self.check_zipfile(po_zip_file,
-                               '*.po',
-                               expected_files,
-                               MIN_PO_SIZE)
+        if self._is_filename_a_download(po_zip_file):
+            self._create_tmp_directory()
+            self._download_and_unzip_file(po_zip_file)
+            self._check_number_of_files(po_zip_file,
+                                        '*.po', expected_files, MIN_PO_SIZE)
+            self._check_pofiles_content()
+            self._remove_tmp_directory()
 
         # Tmx files
         MIN_TMX_SIZE = 350
         tmx_zip_file = '{0}-tm.tmx.zip'.format(name.lower())
-        if self.is_filename_a_download(tmx_zip_file):
-            self.check_zipfile(tmx_zip_file, '*.tmx', expected_files,
-                               MIN_TMX_SIZE)
+        if self._is_filename_a_download(tmx_zip_file):
+            self._create_tmp_directory()
+            self._download_and_unzip_file(tmx_zip_file)
+            self._check_number_of_files(tmx_zip_file,
+                                        '*.tmx', expected_files, MIN_TMX_SIZE)
+            self._remove_tmp_directory()
 
     def check_project_link(self, project_web):
         if project_web is None or len(project_web) == 0:
