@@ -28,11 +28,9 @@ class CleanString(object):
         for char in CHARS:
             result = result.replace(char, '')
 
-        result = result.lower()
-        return result
+        return result.lower()
 
     @staticmethod
     def get_strip(result):
         """Remove all the leading and trailing whitespace characters."""
-        result = CleanString.get(result).strip()
-        return result
+        return CleanString.get(result).strip()

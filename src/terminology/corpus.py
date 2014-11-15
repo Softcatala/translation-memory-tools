@@ -46,8 +46,7 @@ class Corpus(object):
             line = stopwords_file.readline()
             if not line:
                 break
-            word = line.strip()
-            word = word.lower()
+            word = line.strip().lower()
             self.stop_words.add(word)
 
     def _clean_string(self, result):
@@ -59,9 +58,7 @@ class Corpus(object):
             result = result.replace(c, '')
 
         # Remove all the leading and trailing whitespace characters.
-        result = result.strip()
-        result = result.lower()
-        return result
+        return result.strip().lower()
 
     def _should_select_string(self, source, target):
         words = len(source.split())
