@@ -252,7 +252,7 @@ def update_zipfile(src_directory, filename, file_to_add):
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
-        print 'File {0} does not exists and cannot be zipped'.format(srcfile)
+        print('File {0} does not exists and cannot be zipped'.format(srcfile))
         return
 
     cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
@@ -264,7 +264,7 @@ def create_zipfile(src_directory, filename):
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
-        print 'File {0} does not exists and cannot be zipped'.format(srcfile)
+        print('File {0} does not exists and cannot be zipped'.format(srcfile))
         return
 
     if os.path.isfile(zipfile):
@@ -321,7 +321,7 @@ def main():
     try:
         locale.setlocale(locale.LC_ALL, '')
     except Exception as detail:
-        print "Exception: " + str(detail)
+        print("Exception: " + str(detail))
 
     read_parameters()
     create_output_dir("memories")
