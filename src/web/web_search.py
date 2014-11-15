@@ -50,14 +50,6 @@ class WebSerializer(object):
 
         return cgi.escape(source.encode('utf-8'))
 
-    def _get_formatted_comment(self, comment):
-        """Return the comment adapted to properly integrate into HTML.
-
-        Comments can be multi-line because they contain multiple lines or
-        because we concatenated tcomments with comments from the PO.
-        """
-        return comment.replace('\n', '<br />').replace('\r', '')
-
     def print_result(self, result):
         source = self._get_result_text(result["source"],
                                        result.highlights("source"))
@@ -70,7 +62,8 @@ class WebSerializer(object):
         if ('comment' in result.fields() and result["comment"] is not None and
             len(result["comment"]) > 0):
             comment = cgi.escape(result["comment"])
-            comment = self._get_formatted_comment(comment).encode('utf-8')
+            comment = comment.replace('\n', '<br />').replace('\r', '')
+            comment = comment.encode('utf-8')
 
         if ('context' in result.fields() and result["context"] is not None and
             len(result["context"]) > 0):
