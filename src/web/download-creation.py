@@ -234,16 +234,16 @@ def process_projects():
     json = JsonBackend("../projects.json")
     json.load()
 
-    variables = {}
     memories = []
 
     build_all_projects_memory(json, memories)
     build_all_softcatala_memory(json, memories)
     build_invidual_projects_memory(json, memories)
 
-    today = datetime.date.today()
-    variables['generation_date'] = today.strftime("%d/%m/%Y")
-    variables['memories'] = memories
+    variables = {
+        'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
+        'memories': memories,
+    }
     _process_template("download.mustache", "download.html", variables)
 
 

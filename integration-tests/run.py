@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -123,7 +124,7 @@ def read_parameters():
         'localhost': 'http://localhost:8080/',
         'dev': 'http://www.softcatala.org/recursos/dev/',
         'preprod': 'http://www.softcatala.org/recursos/preprod/',
-        'prod': 'http://www.softcatala.org/recursos/'
+        'prod': 'http://www.softcatala.org/recursos/',
     }
 
     opt_enviroments = "localhost, dev, prepod, prod"
