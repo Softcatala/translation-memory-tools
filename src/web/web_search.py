@@ -95,8 +95,7 @@ class WebSerializer(object):
         try:
             self.open_html()
 
-            if ((search.source is None or len(search.source) < 2) and
-                (search.target is None or len(search.target) < 2)):
+            if search.has_invalid_search_term:
                 self.write_html_header(search.search_term_display, 0, 0)
                 print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
             else:
@@ -142,6 +141,11 @@ class Search(object):
         self.project = project
         self.searcher = None
         self.query = None
+
+    @property
+    def has_invalid_search_term(self):
+        return ((self.source is None or len(self.source) < 2) and
+                (self.target is None or len(self.target) < 2))
 
     @property
     def search_term_display(self):
