@@ -127,13 +127,6 @@ def init_logging():
     logger = logging.getLogger('')
 
 
-def using():
-    usage=resource.getrusage(resource.RUSAGE_SELF)
-    return '''usertime=%s systime=%s mem=%s mb
-           '''%(usage[0],usage[1],
-                (usage[2]*resource.getpagesize())/1000000.0)
-
-
 def main():
     print("Extracts terminology")
     print("Use --help for assistance")
@@ -143,7 +136,9 @@ def main():
     process_projects()
     end_time = time.time() - start_time
     print("time used to create the glossaries: " + str(end_time))
-    print using()
+    usage = resource.getrusage(resource.RUSAGE_SELF)
+    print("usertime=%s systime=%s mem=%s mb" %
+          (usage[0], usage[1], (usage[2]*resource.getpagesize())/1000000.0))
 
 
 if __name__ == "__main__":
