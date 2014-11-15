@@ -108,20 +108,17 @@ class WebSerializer(object):
                 (search.target is None or len(search.target) < 2)):
                 self.write_html_header(self.get_search_term_for_display(search), 0, 0)
                 print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
-                self.close_html()
-                return
+            else:
+                start_time = time.time()
+                results = search.get_results()
+                end_time = time.time() - start_time
 
-            start_time = time.time()
-            results = search.get_results()
-            end_time = time.time() - start_time
-
-            self.write_html_header(self.get_search_term_for_display(search),
-                                   results.scored_length(), end_time)
-            for result in results:
-                self.print_result(result)
+                self.write_html_header(self.get_search_term_for_display(search),
+                                       results.scored_length(), end_time)
+                for result in results:
+                    self.print_result(result)
 
             self.close_html()
-
         except Exception as details:
             traceback.print_exc()
             print str(details)
