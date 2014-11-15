@@ -48,21 +48,19 @@ def _process_template(template, filename, variables):
 
 
 def _write_statistics(projects, words):
-    variables = {}
-    today = datetime.date.today()
-    variables['date'] = today.strftime("%d/%m/%Y")
-    variables['projects'] = str(projects)
-    variables['words'] = locale.format("%d", words, grouping=True)
+    variables = {
+        'date': datetime.date.today().strftime("%d/%m/%Y"),
+        'projects': str(projects),
+        'words': locale.format("%d", words, grouping=True),
+    }
     _process_template("statistics.mustache", "statistics.html", variables)
 
 
 def _write_select_projects(project_names):
-    variables = {}
-    options = []
-    for project_name in sorted(project_names, key=lambda x: x.lower()):
-         options.append(Option(project_name))
-
-    variables['options'] = options
+    variables = {
+        'options': [Option(project_name) for project_name
+                    in sorted(project_names, key=lambda x: x.lower())],
+    }
     _process_template("select-projects.mustache", "select-projects.html", variables)
 
 
