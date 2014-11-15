@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -119,10 +120,12 @@ class IndexCreator(object):
                 if t is None or len(t) == 0:
                     # msgstr_plural is a dictionary where the key is the index and
                     # the value is the localised string
-                    if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
+                    if (entry.msgstr_plural is not None and
+                        len(entry.msgstr_plural) > 0):
                         t = unicode(entry.msgstr_plural["0"])
 
-                if self.debug_keyword is not None and self.debug_keyword.strip() == s:
+                if (self.debug_keyword is not None and
+                    self.debug_keyword.strip() == s):
                     print("Source: " + s)
                     print("Translation: " + t)
                     print("Context: " + str(x))
