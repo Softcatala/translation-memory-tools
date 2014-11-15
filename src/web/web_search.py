@@ -58,9 +58,7 @@ class WebSerializer(object):
         Comments can be multi-line because they contain multiple lines or
         because we concatenated tcomments with comments from the PO.
         """
-        comment = comment.replace('\n', '<br />')
-        comment = comment.replace('\r', '')
-        return comment
+        return comment.replace('\n', '<br />').replace('\r', '')
 
     def print_result(self, result):
         print('<div class="result">')
@@ -163,8 +161,7 @@ class Search(object):
             self.search()
 
         results = self.searcher.search(self.query, limit=5000)
-        my_cf = WholeFragmenter()
-        results.fragmenter = my_cf
+        results.fragmenter = WholeFragmenter()
         return results
 
     def search(self):

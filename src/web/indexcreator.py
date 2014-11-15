@@ -66,7 +66,7 @@ class IndexCreator(object):
             self._process_project(project_dto.name,
                                   project_dto.filename,
                                   project_dto.softcatala)
-            self.projects = self.projects + 1
+            self.projects += 1
 
         print('Total sentences {0}, indexed {1}'.format(self.sentences,
                                                         self.sentences_indexed))

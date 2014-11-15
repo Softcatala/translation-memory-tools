@@ -52,9 +52,7 @@ class TranslationMemory(object):
 
 
 def link(text, link):
-    html = '<a href="' + link + '">'
-    html += text + '</a>'
-    return html
+    return '<a href="{0}">{1}</a>'.format(link, text)
 
 
 def get_subdir():
@@ -73,8 +71,7 @@ def get_path_to_tmx(po_file):
 
 def get_tmx_file(po_file):
     filename, file_extension = os.path.splitext(po_file)
-    tmxfile = filename + ".tmx"
-    return tmxfile
+    return filename + ".tmx"
 
 
 def get_zip_file(filename):
@@ -98,12 +95,10 @@ def get_project_dates(name):
     dto = project_dao.get(name)
 
     if dto is None:
-        last_fetch = ''
-        last_translation = ''
-    else:
-        last_fetch = convert_date_to_string(dto.last_fetch)
-        last_translation = convert_date_to_string(dto.last_translation_update)
+        return '', ''
 
+    last_fetch = convert_date_to_string(dto.last_fetch)
+    last_translation = convert_date_to_string(dto.last_translation_update)
     return last_fetch, last_translation
 
 
