@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resultats de la cerca</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link type="text/css" rel="stylesheet" media="screen" href="css/recursos.css" />
+  </head>
+  <body>
+    <span class="searched">Resultats de la cerca del terme:</span>
+    <span class="searched-term">{{ search_term }}</span>
+    <br />
+    <p>{{ num_results }} resultats. Temps de cerca: {{ time }} segons</p>
+    <a href="memories.html">&lt; Torna a la pàgina anterior</a>
+    <br />
+    <br />
+
+    {% if aborted_search %}
+    <p>Avís: el text a cercar ha de tenir un mínim d'un caràcter.</p>
+    {% endif %}
+
+    {% for results in results %}
+    <div class="result">
+      <table class="result-table">
+        <tr>
+          <td><b>Projecte:</b></td>
+          <td>{{ result.project }}</td>
+        </tr>
+        {% if result.comment %}
+        <tr>
+          <td><b>Comentaris:</b></td>
+          <td>{{ result.comment }}</td>
+        </tr>
+        {% endif %}
+        {% if result.context %}
+        <tr>
+          <td><b>Context:</b></td>
+          <td>{{ result.context }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td><b>Original:</b></td>
+          <td>{{ result.source }}</td>
+        </tr>
+        <tr>
+          <td><b>Traducció:</b></td>
+          <td>{{ result.target }}</td>
+        </tr>
+      </table>
+    </div>
+    {% endfor %}
+  </body>
+</html>
