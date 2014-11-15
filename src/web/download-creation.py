@@ -145,7 +145,7 @@ def build_all_projects_memory(json, memories):
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable is True:
+        if project_dto.downloadable:
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
