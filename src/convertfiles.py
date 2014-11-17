@@ -37,7 +37,6 @@ class ConvertFiles():
         self._convert_php_resources_files_to_po()
         self._convert_android_resources_files_to_po()
         self._convert_properties_files_to_po()
-        self.findFiles = None
 
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find(self.temp_dir, '*.ts'):
