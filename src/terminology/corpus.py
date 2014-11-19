@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -25,10 +26,11 @@ from findfiles import FindFiles
 
 
 class Corpus(object):
-    '''Loads different PO files that build the corpus'''
-    '''Strings that are not suitable candidates are discarded'''
-    '''We do a minimum clean up of strings'''
+    """Loads different PO files that build the corpus.
 
+    Strings that are not suitable candidates are discarded. We do a minimum
+    clean up of strings.
+    """
     def __init__(self, directory):
         self.directory = directory
         self.source_words = set()
@@ -44,8 +46,7 @@ class Corpus(object):
             line = stopwords_file.readline()
             if not line:
                 break
-            word = line.strip()
-            word = word.lower()
+            word = line.strip().lower()
             self.stop_words.add(word)
 
     def _clean_string(self, result):
@@ -56,31 +57,29 @@ class Corpus(object):
         for c in CHARS:
             result = result.replace(c, '')
 
-        #remove all the leading and trailing whitespace characters
-        result = result.strip()
-        result = result.lower()
-        return result
+        # Remove all the leading and trailing whitespace characters.
+        return result.strip().lower()
 
     def _should_select_string(self, source, target):
         words = len(source.split())
 
-        # Only up to 3 words terms for now
+        # Only up to 3 words terms for now.
         if words > 3:
             return False
 
-        # Single words without spaces that are very long
+        # Single words without spaces that are very long.
         if words == 1 and len(source) > 30:
             msg = "Discard: long word '{0}'".format(source.encode('utf-8'))
             logging.info(msg)
             return False
 
-        # Single chars provide no value
+        # Single chars provide no value.
         if len(source) < 2:
             msg = "Discard: single chart '{0}'".format(source.encode('utf-8'))
             logging.info(msg)
             return False
 
-        # Numeric only strings should not be considered
+        # Numeric only strings should not be considered.
         if source.isdigit():
             msg = "Discard: is digit '{0}'".format(source.encode('utf-8'))
             logging.info(msg)
@@ -91,7 +90,7 @@ class Corpus(object):
             logging.info(msg)
             return False
 
-        # We are ignoring strings with html tags or string formatters
+        # We are ignoring strings with html tags or string formatters.
         # This also affects strings like <shift>f10
         CHARS = ('<', '>', '%', '{', '}')
         for c in CHARS:

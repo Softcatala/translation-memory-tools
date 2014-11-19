@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -38,9 +39,11 @@ class GerritDirectoryFileSet(FileSet):
         self.project = project
 
     def _remove_first_line_from_file(self, filename):
-        '''Garbage prefix inserted before JSON output to prevent XSSI.''' 
-        '''This prefix is ")]}'\n" and is designed to prevent a web browser''' 
-        '''from executing the response body'''
+        """Garbage prefix inserted before JSON output to prevent XSSI.
+
+        This prefix is ")]}'\n" and is designed to prevent a web browser from
+        executing the response body.
+        """
         working_file = filename + ".old"
         shutil.copy(filename, working_file)
 

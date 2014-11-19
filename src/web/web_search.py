@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -34,123 +35,120 @@ class JsonSerializer(object):
 
     def do(self, search):
         print('Content-type: application/json\n\n')
-
         results = search.get_results()
-
         all_results = []
         for result in results:
             all_results.append(result.fields())
-        print json.dumps(all_results, indent=4, separators=(',', ': '))
+        print(json.dumps(all_results, indent=4, separators=(',', ': ')))
 
 
 class WebSerializer(object):
 
-    def _get_result_text(self, source, highlighted):
+    def _get_result_text(self, result, key):
+        highlighted = result.highlights(key)
         if highlighted is not None and len(highlighted) > 0:
             return highlighted.encode('utf-8')
 
+        source = result[key]
         return cgi.escape(source.encode('utf-8'))
 
-    def _get_formatted_comment(self, comment):
-        '''
-            Comments can be multi-line because they contain multiple lines
-            or because we concatenated tcomments with comments from the PO
-        '''
-        comment = comment.replace('\n', '<br />')
-        comment = comment.replace('\r', '')
-        return comment
-
     def print_result(self, result):
-        print('<div class="result">')
-        print('<table class="result-table">')
-        print '<tr>'
-        print "<td><b>Projecte:</b></td>" + "<td>" + result["project"].encode('utf-8') + "<td/>"
-        print "</tr>"
+        source = self._get_result_text(result, "source")
+        target = self._get_result_text(result, "target")
+        project = result["project"].encode('utf-8')
+        comment = None
+        context = None
 
-        if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
-            print '<tr>'
-            comment = self._get_formatted_comment(cgi.escape(result["comment"])).encode('utf-8') 
-            print "<td><b>Comentaris:</b></td>" + "<td>" + comment + "</td>"
-            print '</tr>'
+        if ('comment' in result.fields() and result["comment"] is not None and
+            len(result["comment"]) > 0):
+            comment = cgi.escape(result["comment"])
+            comment = comment.replace('\n', '<br />').replace('\r', '')
+            comment = comment.encode('utf-8')
 
-        if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            print '<tr>'
-            print "<td><b>Context:</b></td>" + "<td>" + cgi.escape(result["context"].encode('utf-8')) + "</td>"
-            print '</tr>'
+        if ('context' in result.fields() and result["context"] is not None and
+            len(result["context"]) > 0):
+            context = cgi.escape(result["context"].encode('utf-8'))
 
-        print '<tr>'
-        print "<td><b>Original:</b></td>" + "<td>" + self._get_result_text(result["source"], result.highlights("source")) + "</td>"
-        print '</tr>'
+        print('<div class="result">'
+              '<table class="result-table">'
+              '<tr>'
+              '<td><b>Projecte:</b></td>'
+              '<td>{0}</td>'
+              '</tr>'.format(project))
 
-        print '<tr>'
-        print "<td><b>Traducció:</b></td>" + "<td>" + self._get_result_text(result["target"], result.highlights("target")) + "</td>" 
-        print '</tr>'
+        if comment is not None:
+            print('<tr>'
+                  '<td><b>Comentaris:</b></td>'
+                  '<td>{0}</td>'
+                  '</tr>'.format(comment))
 
-        print "</table></div>"
+        if context is not None:
+            print('<tr>'
+                  '<td><b>Context:</b></td>'
+                  '<td>{0}</td>'
+                  '</tr>'.format(context))
 
-    def get_search_term_for_display(self, search):
-        text = ''
-
-        if search.source is not None and len(search.source) > 0:
-            text += search.source
-
-        if search.target is not None and len(search.target) > 0:
-            text += ' ' + search.target
-
-        return text
+        print('<tr>'
+              '<td><b>Original:</b></td>'
+              '<td>{0}</td>'
+              '</tr>'
+              '<tr>'
+              '<td><b>Traducció:</b></td>'
+              '<td>{1}</td>'
+              '</tr>'
+              '</table>'
+              '</div>'.format(source, target))
 
     def do(self, search):
-        '''
-            Search a term in the Whoosh index
-        '''
+        """Search a term in the Whoosh index."""
         try:
             self.open_html()
 
-            if ((search.source is None or len(search.source) < 2) and
-                (search.target is None or len(search.target) < 2)):
-                self.write_html_header(self.get_search_term_for_display(search), 0, 0)
+            if search.has_invalid_search_term:
+                self.write_html_header(search.search_term_display, 0, 0)
                 print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
-                self.close_html()
-                return
+            else:
+                start_time = time.time()
+                results = search.get_results()
+                end_time = time.time() - start_time
 
-            start_time = time.time()
-            results = search.get_results()
-            end_time = time.time() - start_time
-
-            self.write_html_header(self.get_search_term_for_display(search),
-                                   results.scored_length(), end_time)
-            for result in results:
-                self.print_result(result)
+                self.write_html_header(search.search_term_display,
+                                       results.scored_length(), end_time)
+                for result in results:
+                    self.print_result(result)
 
             self.close_html()
-
         except Exception as details:
             traceback.print_exc()
             print str(details)
 
     def open_html(self):
-        print 'Content-type: text/html\n\n'
-        print '<html><head>'
-        print '<title>Resultats de la cerca</title>'
-        print '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
-        print '<meta name="robots" content="noindex, nofollow">'
-        print('<link type="text/css" rel="stylesheet" media="screen" href="recursos.css" />')
-        print '</head><body>'
+        print('Content-type: text/html\n\n'
+              '<html>'
+              '<head>'
+              '<title>Resultats de la cerca</title>'
+              '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
+              '<meta name="robots" content="noindex, nofollow">'
+              '<link type="text/css" rel="stylesheet" media="screen" href="recursos.css" />'
+              '</head>'
+              '<body>')
 
     def write_html_header(self, term, results, time):
-        t = term.encode('utf-8')
-        print '<span class="searched">Resultats de la cerca del terme:</span><span class="searched-term"> ' + t + '</span><br>'
-        print '<p>{0} resultats. Temps de cerca: {1} segons</p>'.format(results, time)
-        print '<a href="./memories.html"> &lt; Torna a la pàgina anterior</a><br /><br />'
+        print('<span class="searched">Resultats de la cerca del terme:</span>'
+              '<span class="searched-term">{0}</span>'
+              '<br />'
+              '<p>{1} resultats. Temps de cerca: {2} segons</p>'
+              '<a href="./memories.html">&lt; Torna a la pàgina anterior</a>'
+              '<br />'
+              '<br />'.format(term, results, time))
 
     def close_html(self):
-        print '</body></html>'
+        print('</body>'
+              '</html>')
 
 
 class Search(object):
-    '''
-            Search a term in the Whoosh index
-    '''
+    """Search a term in the Whoosh index."""
     dir_name = "indexdir"
 
     def __init__(self, source, target, project):
@@ -160,13 +158,29 @@ class Search(object):
         self.searcher = None
         self.query = None
 
+    @property
+    def has_invalid_search_term(self):
+        return ((self.source is None or len(self.source) < 2) and
+                (self.target is None or len(self.target) < 2))
+
+    @property
+    def search_term_display(self):
+        text = ''
+
+        if self.source is not None and len(self.source) > 0:
+            text += self.source
+
+        if self.target is not None and len(self.target) > 0:
+            text += ' ' + self.target
+
+        return text.encode('utf-8')
+
     def get_results(self):
         if self.searcher is None:
             self.search()
 
         results = self.searcher.search(self.query, limit=5000)
-        my_cf = WholeFragmenter()
-        results.fragmenter = my_cf
+        results.fragmenter = WholeFragmenter()
         return results
 
     def search(self):

@@ -57,8 +57,8 @@ class CheckSearch(object):
             raise Exception(text.format(minimum, actual))
 
     def _check_integration_data(self):
-        string = u'Palindromics numbers remain the same when ' \
-                 u'its digits are reversed'
+        string = (u'Palindromics numbers remain the same when its digits are '
+                  u'reversed')
         data = self.search_source(string)
 
         self._assert_greater(len(data), 1)

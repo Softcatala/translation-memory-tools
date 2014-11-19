@@ -52,7 +52,7 @@ class ProjectMetaDataDto(object):
         self._last_fetch = value
 
     def __str__(self):
-        text = 'ProjectMetaDataDto. Name: {0}, last_translation_update: {1}, ' \
-            'last_fetch: {2}, words {3}'
-        return text.format(self.name, self._last_translation_update, 
-                          self._last_fetch, self.words)
+        text = ('ProjectMetaDataDto. Name: {0}, last_translation_update: {1}, '
+                'last_fetch: {2}, words {3}')
+        return text.format(self.name, self._last_translation_update,
+                           self._last_fetch, self.words)

@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -44,7 +45,8 @@ glossary_file = None
 
 
 def process_projects():
-    global glossary_file, glossary_description
+    global glossary_file
+    global glossary_description
 
     corpus = Corpus(src_directory)
     corpus.process()
@@ -57,7 +59,8 @@ def process_projects():
 
     # Select terms
     MAX_TERMS = 1000
-    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get, reverse=True)
+    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get,
+                                   reverse=True)
 
     # Developer report
     glossary_entries = OrderedDict()
@@ -68,7 +71,8 @@ def process_projects():
         glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
 
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html", glossary_description, corpus,
+    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html",
+                                   glossary_description, corpus,
                                    glossary_entries, reference_sources)
 
     # User report
@@ -123,13 +127,6 @@ def init_logging():
     logger = logging.getLogger('')
 
 
-def using():
-    usage=resource.getrusage(resource.RUSAGE_SELF)
-    return '''usertime=%s systime=%s mem=%s mb
-           '''%(usage[0],usage[1],
-                (usage[2]*resource.getpagesize())/1000000.0)
-
-
 def main():
     print("Extracts terminology")
     print("Use --help for assistance")
@@ -139,7 +136,9 @@ def main():
     process_projects()
     end_time = time.time() - start_time
     print("time used to create the glossaries: " + str(end_time))
-    print using()
+    usage = resource.getrusage(resource.RUSAGE_SELF)
+    print("usertime=%s systime=%s mem=%s mb" %
+          (usage[0], usage[1], (usage[2]*resource.getpagesize())/1000000.0))
 
 
 if __name__ == "__main__":

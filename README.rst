@@ -20,7 +20,7 @@ The toolset performs the following tasks:
 Dependencies
 ============
 
-* python 2.7 or higher
+* python 2.7
 * python-polib
 * transifex-client
 * bzr (bazaar distributed version control client)

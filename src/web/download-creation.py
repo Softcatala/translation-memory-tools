@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -51,9 +52,7 @@ class TranslationMemory(object):
 
 
 def link(text, link):
-    html = '<a href="' + link + '">'
-    html += text + '</a>'
-    return html
+    return '<a href="{0}">{1}</a>'.format(link, text)
 
 
 def get_subdir():
@@ -72,8 +71,7 @@ def get_path_to_tmx(po_file):
 
 def get_tmx_file(po_file):
     filename, file_extension = os.path.splitext(po_file)
-    tmxfile = filename + ".tmx"
-    return tmxfile
+    return filename + ".tmx"
 
 
 def get_zip_file(filename):
@@ -97,12 +95,10 @@ def get_project_dates(name):
     dto = project_dao.get(name)
 
     if dto is None:
-        last_fetch = ''
-        last_translation = ''
-    else:
-        last_fetch = convert_date_to_string(dto.last_fetch)
-        last_translation = convert_date_to_string(dto.last_translation_update)
+        return '', ''
 
+    last_fetch = convert_date_to_string(dto.last_fetch)
+    last_translation = convert_date_to_string(dto.last_translation_update)
     return last_fetch, last_translation
 
 
@@ -119,7 +115,7 @@ def propulate_project_links(translation_memory, filename):
 
 
 def build_all_projects_memory(json, memories):
-    '''Builds zip file that contains all memories for all projects'''
+    """Build zip file that contains all memories for all projects."""
     name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
 
@@ -144,14 +140,14 @@ def build_all_projects_memory(json, memories):
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable is True:
+        if project_dto.downloadable:
             update_zipfile(po_directory, filename, project_dto.filename)
             update_zipfile(tmx_directory, get_tmx_file(filename),
                            get_tmx_file(project_dto.filename))
 
 
 def build_all_softcatala_memory(json, memories):
-    '''Builds zip file that contains all memories for the Softcatalà projects'''
+    """Build zip file containing all memories for all Softcatalà projects."""
     name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
@@ -192,7 +188,7 @@ def get_words(potext):
 
 
 def build_invidual_projects_memory(json, memories):
-    '''Builds zip file that contains a memory for every project'''
+    """Build zip file that contains a memory for every project."""
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable:
@@ -233,16 +229,16 @@ def process_projects():
     json = JsonBackend("../projects.json")
     json.load()
 
-    variables = {}
     memories = []
 
     build_all_projects_memory(json, memories)
     build_all_softcatala_memory(json, memories)
     build_invidual_projects_memory(json, memories)
 
-    today = datetime.date.today()
-    variables['generation_date'] = today.strftime("%d/%m/%Y")
-    variables['memories'] = memories
+    variables = {
+        'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
+        'memories': memories,
+    }
     _process_template("download.mustache", "download.html", variables)
 
 
@@ -251,7 +247,7 @@ def update_zipfile(src_directory, filename, file_to_add):
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
-        print 'File {0} does not exists and cannot be zipped'.format(srcfile)
+        print('File {0} does not exists and cannot be zipped'.format(srcfile))
         return
 
     cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
@@ -263,7 +259,7 @@ def create_zipfile(src_directory, filename):
     zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
-        print 'File {0} does not exists and cannot be zipped'.format(srcfile)
+        print('File {0} does not exists and cannot be zipped'.format(srcfile))
         return
 
     if os.path.isfile(zipfile):
@@ -309,17 +305,18 @@ def create_output_dir(subdirectory):
 
 
 def main():
-    '''
-        Reads the projects and generates an HTML to enable downloading all
-        the translation memories
-    '''
+    """Generate an HTML listing all the translation memories.
+
+    Read the projects and generate an HTML to enable downloading all the
+    translation memories.
+    """
     print("Creates download.html file")
     print("Use --help for assistance")
 
     try:
         locale.setlocale(locale.LC_ALL, '')
     except Exception as detail:
-        print "Exception: " + str(detail)
+        print("Exception: " + str(detail))
 
     read_parameters()
     create_output_dir("memories")

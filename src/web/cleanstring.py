@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2014 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -23,15 +24,13 @@ class CleanString(object):
 
     @staticmethod
     def get(result):
-        CHARS = ('_', '&', '~')  # Accelerators
+        CHARS = ('_', '&', '~')  # Accelerators.
         for char in CHARS:
             result = result.replace(char, '')
 
-        result = result.lower()
-        return result
+        return result.lower()
 
     @staticmethod
     def get_strip(result):
-        #removes all the leading and trailing whitespace characters
-        result = CleanString.get(result).strip()
-        return result
+        """Remove all the leading and trailing whitespace characters."""
+        return CleanString.get(result).strip()
