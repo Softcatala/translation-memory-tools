@@ -22,32 +22,32 @@
 import sys
 sys.path.append('../src/')
 
-from HTMLParser import HTMLParser
-from Queue import Queue
 from optparse import OptionParser
 from checkdownloads import CheckDownloads
 from checksearch import CheckSearch
 from crawler import Crawler
-import urllib2
-import urlparse
+import ConfigParser
+from collections import OrderedDict
 
 site_url = None
 
+
 def read_parameters():
     global site_url
+    SECTION = "default"
 
     parser = OptionParser()
+    config = ConfigParser.ConfigParser()
+    config.read("environments.conf")
+    environments = OrderedDict()
 
-    environments = {
-        'localhost': 'http://localhost:8080/',
-        'dev': 'http://www.softcatala.org/recursos/dev/',
-        'preprod': 'http://www.softcatala.org/recursos/preprod/',
-        'prod': 'http://www.softcatala.org/recursos/',
-    }
+    for option in config.options(SECTION):
+        environments[option] = config.get(SECTION, option)
 
-    opt_environments = "localhost, dev, prepod, prod"
-    parser.add_option("-e", "--environment", dest="environment", default="prod",
-                      type="choice", choices=environments.keys(),
+    opt_environments = ', '.join(environments.keys())
+    default = next(reversed(environments))
+    parser.add_option("-e", "--environment", dest="environment", 
+                      default=default, type="choice", choices=environments.keys(),
                       help="set default environment to: " + opt_environments)
 
     (options, args) = parser.parse_args()
