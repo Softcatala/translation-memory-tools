@@ -1,6 +1,10 @@
 .. image:: https://travis-ci.org/Softcatala/translation-memory-tools.svg
     :target: https://travis-ci.org/Softcatala/translation-memory-tools
 
+.. image:: https://coveralls.io/repos/Softcatala/translation-memory-tools/badge.png?branch=master
+  :target: https://coveralls.io/r/Softcatala/translation-memory-tools?branch=master
+
+
 ============
 Introduction
 ============
