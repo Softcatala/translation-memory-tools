@@ -94,11 +94,14 @@ class Crawler(object):
     def __init__(self, root):
         self.urls = Queue()
         self.urls.put(root)
+        self.links = None
+
+    def get_all_links(self):
+        return self.links
 
     def run(self):
         url = self.urls.get()
 
         page = Page(url)
-        links = page.get_all_links()
+        self.links = page.get_all_links()
 
-        return links

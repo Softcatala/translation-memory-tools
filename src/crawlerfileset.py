@@ -43,7 +43,8 @@ class CrawlFileSet(FileSet):
         self.create_tmp_directory()
 
         crawler = Crawler(self.url)
-        links = crawler.run()
+        crawler.run()
+        links = crawler.get_all_links()
         self._download_links(links, self.temp_dir)
 
         self.build()
