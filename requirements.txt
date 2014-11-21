@@ -15,6 +15,7 @@ Whoosh
 pytest
 flake8
 nose
+coveralls
 
 # Documentation
 Sphinx>=1.2.2
