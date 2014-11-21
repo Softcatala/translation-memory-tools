@@ -38,20 +38,20 @@ def read_parameters():
 
     parser = OptionParser()
 
-    enviroments = {
+    environments = {
         'localhost': 'http://localhost:8080/',
         'dev': 'http://www.softcatala.org/recursos/dev/',
         'preprod': 'http://www.softcatala.org/recursos/preprod/',
         'prod': 'http://www.softcatala.org/recursos/',
     }
 
-    opt_enviroments = "localhost, dev, prepod, prod"
-    parser.add_option("-e", "--enviroment", dest="enviroment", default="prod",
-                      type="choice", choices=enviroments.keys(),
-                      help="set default enviroment to: " + opt_enviroments)
+    opt_environments = "localhost, dev, prepod, prod"
+    parser.add_option("-e", "--environment", dest="environment", default="prod",
+                      type="choice", choices=environments.keys(),
+                      help="set default environment to: " + opt_environments)
 
     (options, args) = parser.parse_args()
-    site_url = enviroments.get(options.enviroment, None)
+    site_url = environments.get(options.environment, None)
 
 
 if __name__ == '__main__':
