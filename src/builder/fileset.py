@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2012-2014 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -24,6 +24,7 @@ import shutil
 from findfiles import FindFiles
 from pofile import POFile
 from convertfiles import ConvertFiles
+
 
 class FileSet():
 
@@ -92,27 +93,11 @@ class FileSet():
     def clean_up_after_convert(self):
         pass
 
-    def build(self):
+    def _delete_tm_fileset(self, fileset_tm):
+        if os.path.isfile(fileset_tm):
+            os.remove(fileset_tm)
 
-        convert = ConvertFiles() 
-        convert.convert()
-
-        self.clean_up_after_convert()
-        self.add_comments()
-
-        findFiles = FindFiles()
-        localtm = 'tm-local.po'
-
-        files = findFiles.find(self.temp_dir, '*.po')
-
-        if len(files) == 0:
-            logging.info('No files to add in fileset: {0}'. format(self.name))
-            return
-
-        if os.path.isfile(localtm):
-            os.remove(localtm)
-
-        # Build using a local memory translation file
+    def _build_tm_for_fileset(self, fileset_tm, files):
         for filename in files:
 
             if self._should_exclude_file(filename):
@@ -121,27 +106,43 @@ class FileSet():
             msg = 'Adding file: {0} to translation memory'
             logging.info(msg.format(filename))
 
-            if os.path.isfile(localtm):
+            if os.path.isfile(fileset_tm):
                 backup = 'tm-project-previous.po'
-                shutil.copy(localtm, backup)
+                shutil.copy(fileset_tm, backup)
                 cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-                os.system(cmd.format(localtm, backup, filename))
+                os.system(cmd.format(fileset_tm, backup, filename))
                 os.remove(backup)
             else:
-                shutil.copy(filename, localtm)
+                shutil.copy(filename, fileset_tm)
 
-        # Add to the project TM
+    def _add_tm_for_fileset_to_project_tm(self, fileset_tm):
         if os.path.isfile(self.tm_file):
             backup = 'tm-project-previous.po'
             shutil.copy(self.tm_file, backup)
             cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-            os.system(cmd.format(self.tm_file, backup, localtm))
+            os.system(cmd.format(self.tm_file, backup, fileset_tm))
             os.remove(backup)
         else:
-            shutil.copy(localtm, self.tm_file)
+            shutil.copy(fileset_tm, self.tm_file)
 
-        if os.path.exists(localtm):
-            os.remove(localtm)
+    def build(self):
+        convert = ConvertFiles()
+        convert.convert()
+
+        self.clean_up_after_convert()
+        self.add_comments()
+
+        findFiles = FindFiles()
+        files = findFiles.find(self.temp_dir, '*.po')
+
+        if len(files) == 0:
+            logging.info('No files to add in fileset: {0}'. format(self.name))
+            return
+
+        fileset_tm = 'fileset-tm.po'
+        self._build_tm_for_fileset(fileset_tm, files)
+        self._add_tm_for_fileset_to_project_tm(fileset_tm)
+        self._delete_tm_fileset(fileset_tm)
         self._clean_up()
 
     def create_tmp_directory(self):
