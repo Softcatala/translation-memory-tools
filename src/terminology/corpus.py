@@ -21,6 +21,8 @@
 
 import polib
 import logging
+import sys
+sys.path.append('../builder/')
 
 from findfiles import FindFiles
 

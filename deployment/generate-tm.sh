@@ -32,7 +32,7 @@ fi
 
 INTERMEDIATE_PO=$ROOT/translation-memories/po
 INTERMEDIATE_TMX=$ROOT/translation-memories/tmx
-PROGRAMS=$ROOT/tm-git/src
+PROGRAMS=$ROOT/tm-git/src/builder
 BACKUP_DIR=$ROOT/previous
 
 # Catalan locale does not support thousand separator

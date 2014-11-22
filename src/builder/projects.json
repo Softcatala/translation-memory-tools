@@ -6,7 +6,7 @@
             "downloadable" : false,
             "fileset": {
                     "header": {
-                            "url" : "../source-pos/header/header.po",
+                            "url" : "../../source-pos/header/header.po",
                             "type": "local-file",
                             "target": "header.po"
                     }
@@ -18,7 +18,7 @@
             "selectable" : false,
             "fileset": {
                     "IntegrationTests": {
-                            "url" : "../source-pos/integration-tests/integration-tests.po",
+                            "url" : "../../source-pos/integration-tests/integration-tests.po",
                             "type": "local-file",
                             "target": "integration-tests.po"
                     }
@@ -29,7 +29,7 @@
             "softcatala" : true,
             "fileset": {
                     "recull": {
-                            "url" : "../source-pos/recull/recull.po",
+                            "url" : "../../source-pos/recull/recull.po",
                             "type": "local-file",
                             "target": "recull.po"
                     }

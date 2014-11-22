@@ -30,7 +30,7 @@ copy_files() {
     rm -r -f $2/memories
     mkdir $2/memories
     cp $1/tm-git/src/web/memories/*.zip $2/memories
-    cp $1/tm-git/src/report.txt $2
+    cp $1/tm-git/src/builder/report.txt $2
 
     # Deploy terminology
     cd $1/tm-git/terminology

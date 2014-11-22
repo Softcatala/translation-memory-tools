@@ -74,7 +74,7 @@ def read_parameters():
 
     parser.add_option('-d', '--directory',
                       action='store', type='string', dest='po_directory',
-                      default='../',
+                      default='../builder',
                       help='Directory to find the PO files')
 
     parser.add_option('-k', '--keyword',

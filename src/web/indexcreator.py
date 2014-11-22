@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import sys
-sys.path.append('../')
+sys.path.append('../builder/')
 
 import polib
 import os
@@ -45,7 +45,7 @@ class IndexCreator(object):
         self.projects_names = None
 
     def process_projects(self):
-        json = JsonBackend("../projects.json")
+        json = JsonBackend("../builder/projects.json")
         json.load()
 
         for project_dto in json.projects:

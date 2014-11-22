@@ -21,7 +21,7 @@
 
 import sys
 import locale
-sys.path.append('../')
+sys.path.append('../builder')
 from jsonbackend import JsonBackend
 import os
 import datetime
@@ -91,7 +91,7 @@ def get_file_date(filename):
 
 def get_project_dates(name):
     project_dao = ProjectMetaDataDao()
-    project_dao.open('../statistics.db3')
+    project_dao.open('../builder/statistics.db3')
     dto = project_dao.get(name)
 
     if dto is None:
@@ -226,7 +226,7 @@ def _process_template(template, filename, variables):
 
 
 def process_projects():
-    json = JsonBackend("../projects.json")
+    json = JsonBackend("../builder/projects.json")
     json.load()
 
     memories = []
@@ -278,12 +278,12 @@ def read_parameters():
 
     parser.add_option("-d", "--podir",
                       action="store", type="string", dest="po_directory",
-                      default="../",
+                      default="../builder",
                       help="Directory to find the PO files")
 
     parser.add_option("-t", "--tmxdir",
                       action="store", type="string", dest="tmx_directory",
-                      default="../",
+                      default="../builder",
                       help="Directory to find the TMX files")
 
     parser.add_option("-o", "--ouputdir",
