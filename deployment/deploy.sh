@@ -50,7 +50,7 @@ TARGET_DIR="$2"
 TARGET_PREPROD="$3"
 
 # Run unit tests
-cd $ROOT/tm-git/unittests/
+cd $ROOT/tm-git/
 nosetests
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then
