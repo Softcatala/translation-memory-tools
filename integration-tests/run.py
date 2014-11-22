@@ -25,7 +25,7 @@ sys.path.append('../src/')
 from optparse import OptionParser
 from checkdownloads import CheckDownloads
 from checksearch import CheckSearch
-from crawler import Crawler
+from builder.crawler import Crawler
 import ConfigParser
 from collections import OrderedDict
 

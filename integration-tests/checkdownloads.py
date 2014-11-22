@@ -26,8 +26,8 @@ import tempfile
 import urllib
 import urllib2
 
-from jsonbackend import JsonBackend
-from findfiles import FindFiles
+from builder.jsonbackend import JsonBackend
+from builder.findfiles import FindFiles
 from polib import pofile
 
 
@@ -200,7 +200,7 @@ class CheckDownloads(object):
         """Reads the json and makes sure that for every project we have a
         po and a tmx that is a download published with the expected files
         """
-        json = JsonBackend("../src/projects.json")
+        json = JsonBackend("../src/builder/projects.json")
         json.load()
 
         TM_ITSELF = 1
