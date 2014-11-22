@@ -32,7 +32,8 @@ fi
 
 INTERMEDIATE_PO=$ROOT/translation-memories/po
 INTERMEDIATE_TMX=$ROOT/translation-memories/tmx
-PROGRAMS=$ROOT/tm-git/src/builder
+PROGRAMS=$ROOT/tm-git/src
+BUILDER=$PROGRAMS/builder
 BACKUP_DIR=$ROOT/previous
 
 # Catalan locale does not support thousand separator
@@ -45,7 +46,7 @@ cd $BACKUP_DIR
 cp $INTERMEDIATE_PO/* $BACKUP_DIR
 
 if [ -z "$NOPOBUILD" ]; then
-    cd $PROGRAMS
+    cd $BUILDER
     rm -f *.po
     rm -f *.tmx
     rm -f *.log
@@ -55,8 +56,8 @@ if [ -z "$NOPOBUILD" ]; then
 
     # Build aggregated memories
     cd $INTERMEDIATE_PO/
-    python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --all
-    python $PROGRAMS/builder.py -s $PROGRAMS/projects.json --softcatala
+    python $BUILDER/builder.py -s $BUILDER/projects.json --all
+    python $BUILDER/builder.py -s $BUILDER/projects.json --softcatala
     cp tots-tm.tmx $INTERMEDIATE_TMX/
     cp softcatala-tm.tmx $INTERMEDIATE_TMX/
 fi
@@ -73,6 +74,6 @@ python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
 python index-creation.py -d $INTERMEDIATE_PO
 
 # Notify completion
-cd $PROGRAMS
+cd $BUILDER
 pwd
 python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO 
