@@ -16,8 +16,8 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from projectmetadatadao import ProjectMetaDataDao
-from projectmetadatadto import ProjectMetaDataDto
+from builder.projectmetadatadao import ProjectMetaDataDao
+from builder.projectmetadatadto import ProjectMetaDataDto
 import unittest
 import datetime
 

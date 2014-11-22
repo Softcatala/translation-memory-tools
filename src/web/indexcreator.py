@@ -19,14 +19,15 @@
 # Boston, MA 02111-1307, USA.
 
 import sys
-sys.path.append('../builder/')
+sys.path.append('../')
+
 
 import polib
 import os
 from whoosh.fields import *
 from whoosh.index import create_in
 from whoosh.analysis import StandardAnalyzer
-from jsonbackend import JsonBackend
+from builder.jsonbackend import JsonBackend
 from cleanupfilter import CleanUpFilter
 
 

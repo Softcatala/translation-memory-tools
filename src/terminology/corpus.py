@@ -21,10 +21,8 @@
 
 import polib
 import logging
-import sys
-sys.path.append('../builder/')
 
-from findfiles import FindFiles
+from builder.findfiles import FindFiles
 
 
 class Corpus(object):
