@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013-2014 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -21,21 +22,22 @@
 import pystache
 
 
+def process_template(template, filename, ctx):
+    # Load template and process it.
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), ctx)
+
+    # Write output.
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
+
+
 class UserGlossarySerializer():
 
-    def _create(self, template, filename, glossary_entries):
-        # Load template and process it
-        template = open(template, 'r').read()
-        parsed = pystache.Renderer()
-        s = parsed.render(unicode(template, "utf-8"), glossary_entries)
-
-        # Write output
-        f = open(filename, 'w')
-        f.write(s.encode("utf-8"))
-        f.close()
-
     def create(self, filename, glossary_entries):
-        self._create('templates/userglossary-html.mustache',
-                     filename + ".html", glossary_entries)
-        self._create('templates/userglossary-csv.mustache', filename + ".csv",
-                     glossary_entries)
+        process_template('templates/userglossary-html.mustache',
+                         filename + ".html", glossary_entries)
+        process_template('templates/userglossary-csv.mustache',
+                         filename + ".csv", glossary_entries)
