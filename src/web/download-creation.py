@@ -90,7 +90,7 @@ def get_project_dates(name):
     return last_fetch, last_translation
 
 
-def build_all_projects_memory(json, memories, po_directory, tmx_directory,
+def build_all_projects_memory(projects, memories, po_directory, tmx_directory,
                               out_directory):
     """Build zip file that contains all memories for all projects."""
     filename = 'tots-tm.po'
@@ -114,17 +114,15 @@ def build_all_projects_memory(json, memories, po_directory, tmx_directory,
     create_zipfile(po_directory, filename, out_directory)
     create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable:
-            update_zipfile(po_directory, filename, project_dto.filename,
-                           out_directory)
-            update_zipfile(tmx_directory, get_tmx_file(filename),
-                           get_tmx_file(project_dto.filename), out_directory)
+        update_zipfile(po_directory, filename, project_dto.filename,
+                       out_directory)
+        update_zipfile(tmx_directory, get_tmx_file(filename),
+                       get_tmx_file(project_dto.filename), out_directory)
 
 
-def build_all_softcatala_memory(json, memories, po_directory, tmx_directory,
-                                out_directory):
+def build_all_softcatala_memory(projects, memories, po_directory,
+                                tmx_directory, out_directory):
     """Build zip file containing all memories for all Softcatalà projects."""
     filename = 'softcatala-tm.po'
 
@@ -147,13 +145,11 @@ def build_all_softcatala_memory(json, memories, po_directory, tmx_directory,
     create_zipfile(po_directory, filename, out_directory)
     create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable and project_dto.softcatala:
-            update_zipfile(po_directory, filename, project_dto.filename,
-                           out_directory)
-            update_zipfile(tmx_directory, get_tmx_file(filename),
-                           get_tmx_file(project_dto.filename), out_directory)
+        update_zipfile(po_directory, filename, project_dto.filename,
+                       out_directory)
+        update_zipfile(tmx_directory, get_tmx_file(filename),
+                       get_tmx_file(project_dto.filename), out_directory)
 
 
 def get_words(potext, po_directory):
@@ -166,33 +162,31 @@ def get_words(potext, po_directory):
     return words
 
 
-def build_invidual_projects_memory(json, memories, po_directory,
+def build_invidual_projects_memory(projects, memories, po_directory,
                                    tmx_directory, out_directory):
     """Build zip file that contains a memory for every project."""
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable:
-            words = get_words(project_dto.filename, po_directory)
+        words = get_words(project_dto.filename, po_directory)
 
-            if words is None:
-                continue
+        if words is None:
+            continue
 
-            name = project_dto.name
-            last_fetch, last_translation_update = get_project_dates(name)
+        name = project_dto.name
+        last_fetch, last_translation_update = get_project_dates(name)
 
-            translation_memory = TranslationMemory(
-                words=locale.format("%d", words, grouping=True),
-                name=name,
-                last_fetch=last_fetch,
-                last_translation_update=last_translation_update,
-                projectweb=project_dto.projectweb,
-                filename=project_dto.filename,
-            )
-            memories.append(translation_memory)
+        translation_memory = TranslationMemory(
+            words=locale.format("%d", words, grouping=True),
+            name=name,
+            last_fetch=last_fetch,
+            last_translation_update=last_translation_update,
+            projectweb=project_dto.projectweb,
+            filename=project_dto.filename,
+        )
+        memories.append(translation_memory)
 
-            create_zipfile(po_directory, project_dto.filename, out_directory)
-            create_zipfile(tmx_directory, get_tmx_file(project_dto.filename),
-                           out_directory)
+        create_zipfile(po_directory, project_dto.filename, out_directory)
+        create_zipfile(tmx_directory, get_tmx_file(project_dto.filename),
+                       out_directory)
 
 
 def process_template(template, filename, ctx):
@@ -210,15 +204,19 @@ def process_template(template, filename, ctx):
 def process_projects(po_directory, tmx_directory, out_directory):
     json = JsonBackend("../builder/projects.json")
     json.load()
+    projects = sorted(json.projects, key=lambda x: x.name.lower())
+
+    all_projects = [proj for proj in projects if proj.downloadable]
+    softcatala_projects = [proj for proj in all_projects if proj.softcatala]
 
     memories = []
 
-    build_all_projects_memory(json, memories, po_directory, tmx_directory,
-                              out_directory)
-    build_all_softcatala_memory(json, memories, po_directory, tmx_directory,
-                                out_directory)
-    build_invidual_projects_memory(json, memories, po_directory, tmx_directory,
-                                   out_directory)
+    build_all_projects_memory(all_projects, memories, po_directory,
+                              tmx_directory, out_directory)
+    build_all_softcatala_memory(softcatala_projects, memories, po_directory,
+                                tmx_directory, out_directory)
+    build_invidual_projects_memory(all_projects, memories, po_directory,
+                                   tmx_directory, out_directory)
 
     ctx = {
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
