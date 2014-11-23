@@ -92,8 +92,7 @@ def process_projects():
     glossary_entries = []
     selected_terms = sorted(sorted_terms_by_tfxdf[:MAX_TERMS])  # Sorted by term
 
-    glossary = Glossary()
-    glossary.description = glossary_description
+    glossary = Glossary(glossary_description)
     for term in selected_terms:
         glossary_entry = GlossaryEntry(
             term,
