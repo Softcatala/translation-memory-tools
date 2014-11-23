@@ -64,5 +64,6 @@ class TestPage(unittest.TestCase):
         corpus._read_stop_words(stopwords_file)
         assert not corpus._should_select_string(u'translator-credits', 'user@test.com')
 
+
 if __name__ == '__main__':
     unittest.main()

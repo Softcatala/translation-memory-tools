@@ -51,5 +51,6 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(len(json.projects), 2)
         self._validate_mozilla_project(json.projects[0])
 
+
 if __name__ == '__main__':
     unittest.main()

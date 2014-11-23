@@ -35,5 +35,6 @@ class TestFileSet(unittest.TestCase):
         self.assertTrue(fileset._should_exclude_file('Includesexcluded.po'))
         self.assertFalse(fileset._should_exclude_file('eXcluded.po'))
 
+
 if __name__ == '__main__':
     unittest.main()
