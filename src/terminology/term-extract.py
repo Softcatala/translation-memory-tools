@@ -29,6 +29,8 @@ import time
 from collections import OrderedDict
 from optparse import OptionParser
 
+import pystache
+
 from corpus import Corpus
 from devglossaryserializer import DevGlossarySerializer
 from glossary import Glossary
@@ -36,18 +38,21 @@ from glossaryentry import GlossaryEntry
 from metrics import Metrics
 from referencesources import ReferenceSources
 from translations import Translations
-from userglossaryserializer import UserGlossarySerializer
 
 
-src_directory = None
-glossary_description = ''
-glossary_file = None
+def process_template(template, filename, ctx):
+    # Load template and process it.
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), ctx)
+
+    # Write output.
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
 
 
-def process_projects():
-    global glossary_file
-    global glossary_description
-
+def process_projects(src_directory, glossary_description, glossary_file):
     corpus = Corpus(src_directory)
     corpus.process()
 
@@ -79,24 +84,24 @@ def process_projects():
     glossary_entries = []
     selected_terms = sorted(sorted_terms_by_tfxdf[:MAX_TERMS])  # Sorted by term
 
-    glossary = Glossary()
-    glossary.description = glossary_description
+    glossary = Glossary(glossary_description)
     for term in selected_terms:
-        glossary_entry = GlossaryEntry()
-        glossary_entry.source_term = term
-        glossary_entry.translations = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary_entry = GlossaryEntry(
+            term,
+            translations.create_for_word_sorted_by_frequency(corpus.documents,
+                                                             term,
+                                                             reference_sources)
+        )
         glossary.entries.append(glossary_entry)
 
-    user_glossary_serializer = UserGlossarySerializer()
-    user_glossary_serializer.create(glossary_file, glossary.get_dict(),
-                                    reference_sources)
+    glossary_entries = glossary.get_dict()
+    process_template('templates/userglossary-html.mustache',
+                     glossary_file + ".html", glossary_entries)
+    process_template('templates/userglossary-csv.mustache',
+                     glossary_file + ".csv", glossary_entries)
 
 
 def read_parameters():
-    global src_directory
-    global glossary_description
-    global glossary_file
-
     parser = OptionParser()
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
@@ -112,9 +117,9 @@ def read_parameters():
                       help="Glossary file name to export")
 
     (options, args) = parser.parse_args()
-    src_directory = options.src_directory
-    glossary_description = options.glossary_description
-    glossary_file = options.glossary_file
+
+    return (options.src_directory, options.glossary_description,
+            options.glossary_file)
 
 
 def init_logging():
@@ -130,11 +135,13 @@ def init_logging():
 def main():
     print("Extracts terminology")
     print("Use --help for assistance")
+
     start_time = time.time()
     init_logging()
-    read_parameters()
-    process_projects()
+    src_directory, glossary_description, glossary_file = read_parameters()
+    process_projects(src_directory, glossary_description, glossary_file)
     end_time = time.time() - start_time
+
     print("time used to create the glossaries: " + str(end_time))
     usage = resource.getrusage(resource.RUSAGE_SELF)
     print("usertime=%s systime=%s mem=%s mb" %

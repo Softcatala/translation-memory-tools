@@ -32,27 +32,19 @@ from projectmetadatadao import ProjectMetaDataDao
 import pystache
 
 
-po_directory = None
-tmx_directory = None
-out_directory = None
-
-
 class TranslationMemory(object):
 
-    def __init__(self):
-        self.name = None
-        self.projectweb = None
-        self.po_file_text = None
-        self.tmx_file_text = None
-        self.po_file_link = None
-        self.tmx_file_link = None
-        self.words = None
-        self.last_fetch = None
-        self.last_translation_update = None
-
-
-def link(text, link):
-    return '<a href="{0}">{1}</a>'.format(link, text)
+    def __init__(self, words=None, name=None, last_fetch=None,
+                 last_translation_update=None, projectweb=None, filename=None):
+        self.name = name
+        self.projectweb = projectweb
+        self.po_file_text = get_zip_file(filename)
+        self.po_file_link = get_zip_file(get_path_to_po(filename))
+        self.tmx_file_text = get_zip_file(get_tmx_file(filename))
+        self.tmx_file_link = get_zip_file(get_path_to_tmx(filename))
+        self.words = words
+        self.last_fetch = last_fetch
+        self.last_translation_update = last_translation_update
 
 
 def get_subdir():
@@ -78,11 +70,7 @@ def get_zip_file(filename):
     return filename + ".zip"
 
 
-def convert_date_to_string(date):
-    return date.strftime("%d/%m/%Y")
-
-
-def get_file_date(filename):
+def get_file_date(filename, po_directory):
     full_path = os.path.join(po_directory, filename)
     last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
     last_date = last_ctime.strftime("%d/%m/%Y")
@@ -97,87 +85,74 @@ def get_project_dates(name):
     if dto is None:
         return '', ''
 
-    last_fetch = convert_date_to_string(dto.last_fetch)
-    last_translation = convert_date_to_string(dto.last_translation_update)
+    last_fetch = dto.last_fetch.strftime("%d/%m/%Y")
+    last_translation = dto.last_translation_update.strftime("%d/%m/%Y")
     return last_fetch, last_translation
 
 
-def propulate_project_links(translation_memory, filename):
-    potext = filename
-    pofile = get_zip_file(get_path_to_po(potext))
-    tmxtext = get_tmx_file(potext)
-    tmxfile = get_zip_file(get_path_to_tmx(potext))
-
-    translation_memory.po_file_text = get_zip_file(potext)
-    translation_memory.po_file_link = pofile
-    translation_memory.tmx_file_text = get_zip_file(tmxtext)
-    translation_memory.tmx_file_link = tmxfile
-
-
-def build_all_projects_memory(json, memories):
+def build_all_projects_memory(projects, memories, po_directory, tmx_directory,
+                              out_directory):
     """Build zip file that contains all memories for all projects."""
-    name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
 
-    words = get_words(filename)
+    words = get_words(filename, po_directory)
 
     if words is None:
         return
 
-    potext = filename
-    translation_memory = TranslationMemory()
-    translation_memory.words = locale.format("%d", words, grouping=True)
+    date = get_file_date(filename, po_directory)
 
-    propulate_project_links(translation_memory, filename)
-    translation_memory.name = name
-    date = get_file_date(potext)
-    translation_memory.last_fetch = date
-    translation_memory.last_translation_update = date
+    translation_memory = TranslationMemory(
+        words=locale.format("%d", words, grouping=True),
+        name=u'Totes les memòries de tots els projectes',
+        last_fetch=date,
+        last_translation_update=date,
+        filename=filename,
+    )
     memories.append(translation_memory)
 
-    create_zipfile(po_directory, filename)
-    create_zipfile(tmx_directory, get_tmx_file(filename))
+    create_zipfile(po_directory, filename, out_directory)
+    create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable:
-            update_zipfile(po_directory, filename, project_dto.filename)
-            update_zipfile(tmx_directory, get_tmx_file(filename),
-                           get_tmx_file(project_dto.filename))
+        update_zipfile(po_directory, filename, project_dto.filename,
+                       out_directory)
+        update_zipfile(tmx_directory, get_tmx_file(filename),
+                       get_tmx_file(project_dto.filename), out_directory)
 
 
-def build_all_softcatala_memory(json, memories):
+def build_all_softcatala_memory(projects, memories, po_directory,
+                                tmx_directory, out_directory):
     """Build zip file containing all memories for all Softcatalà projects."""
-    name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
-    words = get_words(filename)
+    words = get_words(filename, po_directory)
 
     if words == None:
         return
 
-    translation_memory = TranslationMemory()
-    translation_memory.words = locale.format("%d", words, grouping=True)
-    propulate_project_links(translation_memory, filename)
+    date = get_file_date(filename, po_directory)
 
-    translation_memory.name = name
-    date = get_file_date(filename)
-    translation_memory.last_fetch = date
-    translation_memory.last_translation_update = date
+    translation_memory = TranslationMemory(
+        words=locale.format("%d", words, grouping=True),
+        name=u'Totes les memòries de projectes de Softcatalà',
+        last_fetch=date,
+        last_translation_update=date,
+        filename=filename,
+    )
     memories.append(translation_memory)
 
-    create_zipfile(po_directory, filename)
-    create_zipfile(tmx_directory, get_tmx_file(filename))
+    create_zipfile(po_directory, filename, out_directory)
+    create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable and project_dto.softcatala:
-            update_zipfile(po_directory, filename, project_dto.filename)
-            update_zipfile(tmx_directory, get_tmx_file(filename),
-                           get_tmx_file(project_dto.filename))
+        update_zipfile(po_directory, filename, project_dto.filename,
+                       out_directory)
+        update_zipfile(tmx_directory, get_tmx_file(filename),
+                       get_tmx_file(project_dto.filename), out_directory)
 
 
-def get_words(potext):
+def get_words(potext, po_directory):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
     if words == 0:
@@ -187,64 +162,72 @@ def get_words(potext):
     return words
 
 
-def build_invidual_projects_memory(json, memories):
+def build_invidual_projects_memory(projects, memories, po_directory,
+                                   tmx_directory, out_directory):
     """Build zip file that contains a memory for every project."""
-    projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable:
-            words = get_words(project_dto.filename)
+        words = get_words(project_dto.filename, po_directory)
 
-            if words is None:
-                continue
+        if words is None:
+            continue
 
-            translation_memory = TranslationMemory()
-            translation_memory.words = locale.format("%d", words, grouping=True)
+        name = project_dto.name
+        last_fetch, last_translation_update = get_project_dates(name)
 
-            propulate_project_links(translation_memory, project_dto.filename)
+        translation_memory = TranslationMemory(
+            words=locale.format("%d", words, grouping=True),
+            name=name,
+            last_fetch=last_fetch,
+            last_translation_update=last_translation_update,
+            projectweb=project_dto.projectweb,
+            filename=project_dto.filename,
+        )
+        memories.append(translation_memory)
 
-            translation_memory.projectweb = project_dto.projectweb
-            translation_memory.name = project_dto.name
-            last_fetch, last_translation_update = get_project_dates(project_dto.name)
-            translation_memory.last_fetch = last_fetch
-            translation_memory.last_translation_update = last_translation_update
-            memories.append(translation_memory)
-
-            create_zipfile(po_directory, project_dto.filename)
-            create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
-
-
-def _process_template(template, filename, variables):
-        # Load template and process it
-        template = open(template, 'r').read()
-        parsed = pystache.Renderer()
-        s = parsed.render(unicode(template, "utf-8"), variables)
-
-        # Write output
-        f = open(filename, 'w')
-        f.write(s.encode("utf-8"))
-        f.close()
+        create_zipfile(po_directory, project_dto.filename, out_directory)
+        create_zipfile(tmx_directory, get_tmx_file(project_dto.filename),
+                       out_directory)
 
 
-def process_projects():
+def process_template(template, filename, ctx):
+    # Load template and process it.
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), ctx)
+
+    # Write output.
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
+
+
+def process_projects(po_directory, tmx_directory, out_directory):
     json = JsonBackend("../builder/projects.json")
     json.load()
+    projects = sorted(json.projects, key=lambda x: x.name.lower())
+
+    all_projects = [proj for proj in projects if proj.downloadable]
+    softcatala_projects = [proj for proj in all_projects if proj.softcatala]
 
     memories = []
 
-    build_all_projects_memory(json, memories)
-    build_all_softcatala_memory(json, memories)
-    build_invidual_projects_memory(json, memories)
+    build_all_projects_memory(all_projects, memories, po_directory,
+                              tmx_directory, out_directory)
+    build_all_softcatala_memory(softcatala_projects, memories, po_directory,
+                                tmx_directory, out_directory)
+    build_invidual_projects_memory(all_projects, memories, po_directory,
+                                   tmx_directory, out_directory)
 
-    variables = {
+    ctx = {
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
         'memories': memories,
     }
-    _process_template("download.mustache", "download.html", variables)
+    process_template("templates/download.mustache", "download.html", ctx)
 
 
-def update_zipfile(src_directory, filename, file_to_add):
+def update_zipfile(src_directory, filename, file_to_add, out_directory):
     srcfile = os.path.join(src_directory, file_to_add)
-    zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
+    zipfile = os.path.join(out_directory, get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
         print('File {0} does not exists and cannot be zipped'.format(srcfile))
@@ -254,9 +237,9 @@ def update_zipfile(src_directory, filename, file_to_add):
     os.system(cmd)
 
 
-def create_zipfile(src_directory, filename):
+def create_zipfile(src_directory, filename, out_directory):
     srcfile = os.path.join(src_directory, filename)
-    zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
+    zipfile = os.path.join(out_directory, get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
         print('File {0} does not exists and cannot be zipped'.format(srcfile))
@@ -270,10 +253,6 @@ def create_zipfile(src_directory, filename):
 
 
 def read_parameters():
-    global po_directory
-    global tmx_directory
-    global out_directory
-
     parser = OptionParser()
 
     parser.add_option("-d", "--podir",
@@ -293,12 +272,10 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
 
-    po_directory = options.po_directory
-    tmx_directory = options.tmx_directory
-    out_directory = options.out_directory
+    return options.po_directory, options.tmx_directory, options.out_directory
 
 
-def create_output_dir(subdirectory):
+def create_output_dir(subdirectory, out_directory):
     directory = os.path.join(out_directory, subdirectory)
     if not os.path.exists(directory):
         os.mkdir(directory)
@@ -318,10 +295,10 @@ def main():
     except Exception as detail:
         print("Exception: " + str(detail))
 
-    read_parameters()
-    create_output_dir("memories")
+    po_directory, tmx_directory, out_directory = read_parameters()
+    create_output_dir("memories", out_directory)
     download = os.path.join(out_directory, "download.html")
-    process_projects()
+    process_projects(po_directory, tmx_directory, out_directory)
 
 
 if __name__ == "__main__":

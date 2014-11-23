@@ -29,17 +29,11 @@ import pystache
 from indexcreator import IndexCreator
 
 
-class Option(object):
-
-    def __init__(self, option):
-        self.option = option
-
-
-def _process_template(template, filename, variables):
+def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(template, 'r').read()
     parsed = pystache.Renderer()
-    s = parsed.render(unicode(template, "utf-8"), variables)
+    s = parsed.render(unicode(template, "utf-8"), ctx)
 
     # Write output.
     f = open(filename, 'w')
@@ -48,28 +42,23 @@ def _process_template(template, filename, variables):
 
 
 def _write_statistics(projects, words):
-    variables = {
+    ctx = {
         'date': datetime.date.today().strftime("%d/%m/%Y"),
         'projects': str(projects),
         'words': locale.format("%d", words, grouping=True),
     }
-    _process_template("statistics.mustache", "statistics.html", variables)
+    process_template("templates/statistics.mustache", "statistics.html", ctx)
 
 
 def _write_select_projects(project_names):
-    variables = {
-        'options': [Option(project_name) for project_name
-                    in sorted(project_names, key=lambda x: x.lower())],
+    ctx = {
+        'options': sorted(project_names, key=lambda x: x.lower()),
     }
-    _process_template("select-projects.mustache", "select-projects.html",
-                      variables)
+    process_template("templates/select-projects.mustache",
+                     "select-projects.html", ctx)
 
 
 def read_parameters():
-    po_directory = None
-    debug_keyword = None
-    projects_names = None
-
     parser = OptionParser()
 
     parser.add_option('-d', '--directory',
@@ -93,15 +82,12 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
 
-    po_directory = options.po_directory
-
-    if options.debug_keyword is not None:
-        debug_keyword = options.debug_keyword
+    projects_names = None
 
     if options.projects_names is not None:
         projects_names = options.projects_names.split(',')
 
-    return po_directory, debug_keyword, projects_names
+    return options.po_directory, options.debug_keyword, projects_names
 
 
 def main():
@@ -121,9 +107,7 @@ def main():
         print("Exception: " + str(detail))
 
     po_directory, debug_keyword, projects_names = read_parameters()
-    indexCreator = IndexCreator(po_directory)
-    indexCreator.debug_keyword = debug_keyword
-    indexCreator.projects_names = projects_names
+    indexCreator = IndexCreator(po_directory, debug_keyword, projects_names)
     indexCreator.create()
     indexCreator.process_projects()
 

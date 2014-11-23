@@ -24,18 +24,13 @@ The toolset performs the following tasks:
 Dependencies
 ============
 
-* python 2.7
-* python-polib
-* transifex-client
-* bzr (bazaar distributed version control client)
+* Python 2.7
 * gettext
-* translate-toolkit
+* Bazaar
 * Subversion 1.7 or higher
-* nose (using 'pip install nose')
 * Git
-* a2po (using 'pip install android2po')
-* Whoosh (using 'pip install whoosh')
-* Pystache
+* Other requirements listed in requirements.txt
+
 
 Setting up before execution
 ===========================
@@ -110,12 +105,6 @@ Merging the translation memory with a new file::
 You can also use translate-toolkit's pretranslate tool
 
 
-Coding Style guide
-==================
-
-`PEP8`_
-
-
 Contact Information
 ===================
 
@@ -123,4 +112,3 @@ Jordi Mas: jmas@softcatala.org
 
 
 .. _`Web page of the project`: http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà
-.. _`PEP8`: http://www.python.org/dev/peps/pep-0008/
