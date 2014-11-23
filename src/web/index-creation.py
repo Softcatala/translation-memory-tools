@@ -35,7 +35,7 @@ class Option(object):
         self.option = option
 
 
-def _process_template(template, filename, ctx):
+def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(template, 'r').read()
     parsed = pystache.Renderer()
@@ -53,7 +53,7 @@ def _write_statistics(projects, words):
         'projects': str(projects),
         'words': locale.format("%d", words, grouping=True),
     }
-    _process_template("statistics.mustache", "statistics.html", ctx)
+    process_template("statistics.mustache", "statistics.html", ctx)
 
 
 def _write_select_projects(project_names):
@@ -61,7 +61,7 @@ def _write_select_projects(project_names):
         'options': [Option(project_name) for project_name
                     in sorted(project_names, key=lambda x: x.lower())],
     }
-    _process_template("select-projects.mustache", "select-projects.html", ctx)
+    process_template("select-projects.mustache", "select-projects.html", ctx)
 
 
 def read_parameters():
