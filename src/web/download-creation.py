@@ -51,10 +51,6 @@ class TranslationMemory(object):
         self.last_translation_update = None
 
 
-def link(text, link):
-    return '<a href="{0}">{1}</a>'.format(link, text)
-
-
 def get_subdir():
     return "memories/"
 
