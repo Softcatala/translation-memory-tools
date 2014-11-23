@@ -209,7 +209,7 @@ def build_invidual_projects_memory(json, memories):
             create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
 
 
-def _process_template(template, filename, ctx):
+def process_template(template, filename, ctx):
     # Load template and process it
     template = open(template, 'r').read()
     parsed = pystache.Renderer()
@@ -235,7 +235,7 @@ def process_projects():
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
         'memories': memories,
     }
-    _process_template("download.mustache", "download.html", ctx)
+    process_template("download.mustache", "download.html", ctx)
 
 
 def update_zipfile(src_directory, filename, file_to_add):
