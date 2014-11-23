@@ -210,15 +210,15 @@ def build_invidual_projects_memory(json, memories):
 
 
 def _process_template(template, filename, variables):
-        # Load template and process it
-        template = open(template, 'r').read()
-        parsed = pystache.Renderer()
-        s = parsed.render(unicode(template, "utf-8"), variables)
+    # Load template and process it
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), variables)
 
-        # Write output
-        f = open(filename, 'w')
-        f.write(s.encode("utf-8"))
-        f.close()
+    # Write output
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
 
 
 def process_projects():
