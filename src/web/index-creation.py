@@ -107,9 +107,7 @@ def main():
         print("Exception: " + str(detail))
 
     po_directory, debug_keyword, projects_names = read_parameters()
-    indexCreator = IndexCreator(po_directory)
-    indexCreator.debug_keyword = debug_keyword
-    indexCreator.projects_names = projects_names
+    indexCreator = IndexCreator(po_directory, debug_keyword, projects_names)
     indexCreator.create()
     indexCreator.process_projects()
 
