@@ -53,7 +53,7 @@ def _write_statistics(projects, words):
         'projects': str(projects),
         'words': locale.format("%d", words, grouping=True),
     }
-    process_template("statistics.mustache", "statistics.html", ctx)
+    process_template("templates/statistics.mustache", "statistics.html", ctx)
 
 
 def _write_select_projects(project_names):
@@ -61,7 +61,8 @@ def _write_select_projects(project_names):
         'options': [Option(project_name) for project_name
                     in sorted(project_names, key=lambda x: x.lower())],
     }
-    process_template("select-projects.mustache", "select-projects.html", ctx)
+    process_template("templates/select-projects.mustache",
+                     "select-projects.html", ctx)
 
 
 def read_parameters():

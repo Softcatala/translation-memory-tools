@@ -35,7 +35,7 @@ class UserGlossarySerializer():
         f.close()
 
     def create(self, filename, glossary_entries, reference_sources):
-        self._create('userglossary-html.mustache', filename + ".html",
-                     glossary_entries, reference_sources)
-        self._create('userglossary-csv.mustache', filename + ".csv",
+        self._create('templates/userglossary-html.mustache',
+                     filename + ".html", glossary_entries, reference_sources)
+        self._create('templates/userglossary-csv.mustache', filename + ".csv",
                      glossary_entries, reference_sources)
