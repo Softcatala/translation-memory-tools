@@ -40,11 +40,6 @@ from referencesources import ReferenceSources
 from translations import Translations
 
 
-src_directory = None
-glossary_description = ''
-glossary_file = None
-
-
 def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(template, 'r').read()
@@ -57,10 +52,7 @@ def process_template(template, filename, ctx):
     f.close()
 
 
-def process_projects():
-    global glossary_file
-    global glossary_description
-
+def process_projects(src_directory, glossary_description, glossary_file):
     corpus = Corpus(src_directory)
     corpus.process()
 
@@ -110,10 +102,6 @@ def process_projects():
 
 
 def read_parameters():
-    global src_directory
-    global glossary_description
-    global glossary_file
-
     parser = OptionParser()
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
@@ -129,9 +117,9 @@ def read_parameters():
                       help="Glossary file name to export")
 
     (options, args) = parser.parse_args()
-    src_directory = options.src_directory
-    glossary_description = options.glossary_description
-    glossary_file = options.glossary_file
+
+    return (options.src_directory, options.glossary_description,
+            options.glossary_file)
 
 
 def init_logging():
@@ -147,11 +135,13 @@ def init_logging():
 def main():
     print("Extracts terminology")
     print("Use --help for assistance")
+
     start_time = time.time()
     init_logging()
-    read_parameters()
-    process_projects()
+    src_directory, glossary_description, glossary_file = read_parameters()
+    process_projects(src_directory, glossary_description, glossary_file)
     end_time = time.time() - start_time
+
     print("time used to create the glossaries: " + str(end_time))
     usage = resource.getrusage(resource.RUSAGE_SELF)
     print("usertime=%s systime=%s mem=%s mb" %
