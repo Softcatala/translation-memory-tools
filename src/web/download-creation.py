@@ -32,11 +32,6 @@ from projectmetadatadao import ProjectMetaDataDao
 import pystache
 
 
-po_directory = None
-tmx_directory = None
-out_directory = None
-
-
 class TranslationMemory(object):
 
     def __init__(self, words=None, name=None, last_fetch=None,
@@ -75,7 +70,7 @@ def get_zip_file(filename):
     return filename + ".zip"
 
 
-def get_file_date(filename):
+def get_file_date(filename, po_directory):
     full_path = os.path.join(po_directory, filename)
     last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
     last_date = last_ctime.strftime("%d/%m/%Y")
@@ -95,16 +90,17 @@ def get_project_dates(name):
     return last_fetch, last_translation
 
 
-def build_all_projects_memory(json, memories):
+def build_all_projects_memory(json, memories, po_directory, tmx_directory,
+                              out_directory):
     """Build zip file that contains all memories for all projects."""
     filename = 'tots-tm.po'
 
-    words = get_words(filename)
+    words = get_words(filename, po_directory)
 
     if words is None:
         return
 
-    date = get_file_date(filename)
+    date = get_file_date(filename, po_directory)
 
     translation_memory = TranslationMemory(
         words=locale.format("%d", words, grouping=True),
@@ -115,27 +111,29 @@ def build_all_projects_memory(json, memories):
     )
     memories.append(translation_memory)
 
-    create_zipfile(po_directory, filename)
-    create_zipfile(tmx_directory, get_tmx_file(filename))
+    create_zipfile(po_directory, filename, out_directory)
+    create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable:
-            update_zipfile(po_directory, filename, project_dto.filename)
+            update_zipfile(po_directory, filename, project_dto.filename,
+                           out_directory)
             update_zipfile(tmx_directory, get_tmx_file(filename),
-                           get_tmx_file(project_dto.filename))
+                           get_tmx_file(project_dto.filename), out_directory)
 
 
-def build_all_softcatala_memory(json, memories):
+def build_all_softcatala_memory(json, memories, po_directory, tmx_directory,
+                                out_directory):
     """Build zip file containing all memories for all Softcatalà projects."""
     filename = 'softcatala-tm.po'
 
-    words = get_words(filename)
+    words = get_words(filename, po_directory)
 
     if words == None:
         return
 
-    date = get_file_date(filename)
+    date = get_file_date(filename, po_directory)
 
     translation_memory = TranslationMemory(
         words=locale.format("%d", words, grouping=True),
@@ -146,18 +144,19 @@ def build_all_softcatala_memory(json, memories):
     )
     memories.append(translation_memory)
 
-    create_zipfile(po_directory, filename)
-    create_zipfile(tmx_directory, get_tmx_file(filename))
+    create_zipfile(po_directory, filename, out_directory)
+    create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable and project_dto.softcatala:
-            update_zipfile(po_directory, filename, project_dto.filename)
+            update_zipfile(po_directory, filename, project_dto.filename,
+                           out_directory)
             update_zipfile(tmx_directory, get_tmx_file(filename),
-                           get_tmx_file(project_dto.filename))
+                           get_tmx_file(project_dto.filename), out_directory)
 
 
-def get_words(potext):
+def get_words(potext, po_directory):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
     if words == 0:
@@ -167,12 +166,13 @@ def get_words(potext):
     return words
 
 
-def build_invidual_projects_memory(json, memories):
+def build_invidual_projects_memory(json, memories, po_directory,
+                                   tmx_directory, out_directory):
     """Build zip file that contains a memory for every project."""
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable:
-            words = get_words(project_dto.filename)
+            words = get_words(project_dto.filename, po_directory)
 
             if words is None:
                 continue
@@ -190,8 +190,9 @@ def build_invidual_projects_memory(json, memories):
             )
             memories.append(translation_memory)
 
-            create_zipfile(po_directory, project_dto.filename)
-            create_zipfile(tmx_directory, get_tmx_file(project_dto.filename))
+            create_zipfile(po_directory, project_dto.filename, out_directory)
+            create_zipfile(tmx_directory, get_tmx_file(project_dto.filename),
+                           out_directory)
 
 
 def process_template(template, filename, ctx):
@@ -206,15 +207,18 @@ def process_template(template, filename, ctx):
     f.close()
 
 
-def process_projects():
+def process_projects(po_directory, tmx_directory, out_directory):
     json = JsonBackend("../builder/projects.json")
     json.load()
 
     memories = []
 
-    build_all_projects_memory(json, memories)
-    build_all_softcatala_memory(json, memories)
-    build_invidual_projects_memory(json, memories)
+    build_all_projects_memory(json, memories, po_directory, tmx_directory,
+                              out_directory)
+    build_all_softcatala_memory(json, memories, po_directory, tmx_directory,
+                                out_directory)
+    build_invidual_projects_memory(json, memories, po_directory, tmx_directory,
+                                   out_directory)
 
     ctx = {
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
@@ -223,9 +227,9 @@ def process_projects():
     process_template("templates/download.mustache", "download.html", ctx)
 
 
-def update_zipfile(src_directory, filename, file_to_add):
+def update_zipfile(src_directory, filename, file_to_add, out_directory):
     srcfile = os.path.join(src_directory, file_to_add)
-    zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
+    zipfile = os.path.join(out_directory, get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
         print('File {0} does not exists and cannot be zipped'.format(srcfile))
@@ -235,9 +239,9 @@ def update_zipfile(src_directory, filename, file_to_add):
     os.system(cmd)
 
 
-def create_zipfile(src_directory, filename):
+def create_zipfile(src_directory, filename, out_directory):
     srcfile = os.path.join(src_directory, filename)
-    zipfile = os.path.join(out_directory,  get_subdir(), get_zip_file(filename))
+    zipfile = os.path.join(out_directory, get_subdir(), get_zip_file(filename))
 
     if not os.path.exists(srcfile):
         print('File {0} does not exists and cannot be zipped'.format(srcfile))
@@ -251,10 +255,6 @@ def create_zipfile(src_directory, filename):
 
 
 def read_parameters():
-    global po_directory
-    global tmx_directory
-    global out_directory
-
     parser = OptionParser()
 
     parser.add_option("-d", "--podir",
@@ -274,12 +274,10 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
 
-    po_directory = options.po_directory
-    tmx_directory = options.tmx_directory
-    out_directory = options.out_directory
+    return options.po_directory, options.tmx_directory, options.out_directory
 
 
-def create_output_dir(subdirectory):
+def create_output_dir(subdirectory, out_directory):
     directory = os.path.join(out_directory, subdirectory)
     if not os.path.exists(directory):
         os.mkdir(directory)
@@ -299,10 +297,10 @@ def main():
     except Exception as detail:
         print("Exception: " + str(detail))
 
-    read_parameters()
-    create_output_dir("memories")
+    po_directory, tmx_directory, out_directory = read_parameters()
+    create_output_dir("memories", out_directory)
     download = os.path.join(out_directory, "download.html")
-    process_projects()
+    process_projects(po_directory, tmx_directory, out_directory)
 
 
 if __name__ == "__main__":

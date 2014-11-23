@@ -29,11 +29,8 @@ from builder.crawler import Crawler
 import ConfigParser
 from collections import OrderedDict
 
-site_url = None
-
 
 def read_parameters():
-    global site_url
     SECTION = "default"
 
     parser = OptionParser()
@@ -51,11 +48,12 @@ def read_parameters():
                       help="set default environment to: " + opt_environments)
 
     (options, args) = parser.parse_args()
-    site_url = environments.get(options.environment, None)
+
+    return environments.get(options.environment, None)
 
 
 if __name__ == '__main__':
-    read_parameters()
+    site_url = read_parameters()
     print("Integration tests for: " + site_url)
     print("Use --help for assistance")
 
