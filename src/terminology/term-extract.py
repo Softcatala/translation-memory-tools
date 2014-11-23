@@ -88,8 +88,7 @@ def process_projects():
         glossary.entries.append(glossary_entry)
 
     user_glossary_serializer = UserGlossarySerializer()
-    user_glossary_serializer.create(glossary_file, glossary.get_dict(),
-                                    reference_sources)
+    user_glossary_serializer.create(glossary_file, glossary.get_dict())
 
 
 def read_parameters():
