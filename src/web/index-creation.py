@@ -35,11 +35,11 @@ class Option(object):
         self.option = option
 
 
-def _process_template(template, filename, variables):
+def _process_template(template, filename, ctx):
     # Load template and process it.
     template = open(template, 'r').read()
     parsed = pystache.Renderer()
-    s = parsed.render(unicode(template, "utf-8"), variables)
+    s = parsed.render(unicode(template, "utf-8"), ctx)
 
     # Write output.
     f = open(filename, 'w')
@@ -48,21 +48,20 @@ def _process_template(template, filename, variables):
 
 
 def _write_statistics(projects, words):
-    variables = {
+    ctx = {
         'date': datetime.date.today().strftime("%d/%m/%Y"),
         'projects': str(projects),
         'words': locale.format("%d", words, grouping=True),
     }
-    _process_template("statistics.mustache", "statistics.html", variables)
+    _process_template("statistics.mustache", "statistics.html", ctx)
 
 
 def _write_select_projects(project_names):
-    variables = {
+    ctx = {
         'options': [Option(project_name) for project_name
                     in sorted(project_names, key=lambda x: x.lower())],
     }
-    _process_template("select-projects.mustache", "select-projects.html",
-                      variables)
+    _process_template("select-projects.mustache", "select-projects.html", ctx)
 
 
 def read_parameters():
