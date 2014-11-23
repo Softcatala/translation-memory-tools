@@ -33,7 +33,7 @@ from cleanupfilter import CleanUpFilter
 
 class IndexCreator(object):
 
-    def __init__(self, po_directory):
+    def __init__(self, po_directory, debug_keyword=None, projects_names=None):
         self.dir_name = "indexdir"
         self.writer = None
         self.words = 0
@@ -42,8 +42,8 @@ class IndexCreator(object):
         self.sentences_indexed = 0
         self.sentences = 0
         self.po_directory = po_directory
-        self.debug_keyword = None
-        self.projects_names = None
+        self.debug_keyword = debug_keyword
+        self.projects_names = projects_names
 
     def process_projects(self):
         json = JsonBackend("../builder/projects.json")
