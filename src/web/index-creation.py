@@ -29,12 +29,6 @@ import pystache
 from indexcreator import IndexCreator
 
 
-class Option(object):
-
-    def __init__(self, option):
-        self.option = option
-
-
 def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(template, 'r').read()
@@ -58,8 +52,7 @@ def _write_statistics(projects, words):
 
 def _write_select_projects(project_names):
     ctx = {
-        'options': [Option(project_name) for project_name
-                    in sorted(project_names, key=lambda x: x.lower())],
+        'options': sorted(project_names, key=lambda x: x.lower()),
     }
     process_template("templates/select-projects.mustache",
                      "select-projects.html", ctx)
