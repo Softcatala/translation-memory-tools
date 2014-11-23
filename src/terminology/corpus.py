@@ -127,7 +127,7 @@ class Corpus(object):
                 msgid = self._clean_string(entry.msgid)
                 msgstr = self._clean_string(entry.msgstr)
 
-                if self._should_select_string(msgid, msgstr) is False:
+                if not self._should_select_string(msgid, msgstr):
                     continue
 
                 self.strings_selected += 1

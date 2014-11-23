@@ -69,5 +69,6 @@ class TestProjectMetaDataDao(unittest.TestCase):
 
         self.assertEquals(WORDS, read_project_dto.words)
 
+
 if __name__ == '__main__':
     unittest.main()

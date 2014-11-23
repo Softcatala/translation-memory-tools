@@ -42,5 +42,6 @@ class TestPage(unittest.TestCase):
         url = 'http://translationproject.org/PO-files/ca/cpplib-4.8.0.ca.po'
         self.assertTrue(url in links)
 
+
 if __name__ == '__main__':
     unittest.main()

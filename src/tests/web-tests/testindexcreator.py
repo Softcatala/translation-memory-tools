@@ -81,7 +81,6 @@ msgstr "Apaga les màquines virtuals seleccionades"
         self.assertEquals(index.sentences, 1)
         self.assertEquals(index.sentences_indexed, 1)
 
-
     def test_get_comment_both(self):
         index = IndexCreator('.')
         entry = polib.POEntry()
@@ -90,6 +89,6 @@ msgstr "Apaga les màquines virtuals seleccionades"
         comment = index._get_comment(entry)
         self.assertEquals(comment, 'tcomment\r\ncomment')
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     unittest.main()

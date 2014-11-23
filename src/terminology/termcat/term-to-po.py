@@ -69,7 +69,7 @@ def main():
             else:
                 continue  # We are not interested in other languages
 
-        if informatica_term is False:
+        if not informatica_term:
             continue
 
         # For every English term available write an entry with the first Catalan

@@ -34,35 +34,36 @@ class TestPage(unittest.TestCase):
 
     def test_should_select_string_notags(self):
         corpus = Corpus('')
-        assert corpus._should_select_string(u'<b>_User name</b>', '<b>_Nom d\'usuari</b>') is False
-        assert corpus._should_select_string(u'User name', '_Nom d\'usuari') is True
+        assert not corpus._should_select_string(u'<b>_User name</b>', '<b>_Nom d\'usuari</b>')
+        assert corpus._should_select_string(u'User name', '_Nom d\'usuari')
 
     def test_should_select_string_nospaces(self):
         corpus = Corpus('')
-        assert corpus._should_select_string(u'accessibility;development;test;', 'accessibility;development;test;') is False
+        assert not corpus._should_select_string(u'accessibility;development;test;', 'accessibility;development;test;')
 
     def test_should_select_string_noformatters(self):
         corpus = Corpus('')
-        assert corpus._should_select_string(u'Usage: %s', 'Ús: %s') is False
-        assert corpus._should_select_string(u'Usage: sample', 'Ús: exemple') is True
+        assert not corpus._should_select_string(u'Usage: %s', 'Ús: %s')
+        assert corpus._should_select_string(u'Usage: sample', 'Ús: exemple')
 
     def test_should_select_string_nonumericalonly(self):
         corpus = Corpus('')
-        assert corpus._should_select_string(u'10', '10') is False
-        assert corpus._should_select_string(u'10 minutes ago', 'Fa 10 minuts') is True
+        assert not corpus._should_select_string(u'10', '10')
+        assert corpus._should_select_string(u'10 minutes ago', 'Fa 10 minuts')
 
     def test_should_select_string_empty_target(self):
         corpus = Corpus('')
-        assert corpus._should_select_string(u'This week', 'Aquesta setmana') is True
-        assert corpus._should_select_string(u'This week', '') is False
+        assert corpus._should_select_string(u'This week', 'Aquesta setmana')
+        assert not corpus._should_select_string(u'This week', '')
 
     def test_read_stop_words(self):
         corpus = Corpus('')
         stopwords_file = StringIO('translator-credits')
 
-        assert corpus._should_select_string(u'translator-credits', 'user@test.com') is True
+        assert corpus._should_select_string(u'translator-credits', 'user@test.com')
         corpus._read_stop_words(stopwords_file)
-        assert corpus._should_select_string(u'translator-credits', 'user@test.com') is False
+        assert not corpus._should_select_string(u'translator-credits', 'user@test.com')
+
 
 if __name__ == '__main__':
     unittest.main()

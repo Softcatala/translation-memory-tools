@@ -36,15 +36,15 @@ def process_projects():
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
-        if project_dto.downloadable is True:
+        if project_dto.downloadable:
 
             src_file = os.path.join(src_directory, project_dto.filename)
             trg_file = os.path.join(trg_directory, project_dto.filename)
 
-            if os.path.isfile(src_file) is True and os.path.isfile(trg_file) is False:
+            if os.path.isfile(src_file) and not os.path.isfile(trg_file):
                 print "{0} is missing in the new version".format(project_dto.filename)
 
-            if os.path.isfile(src_file) is False and os.path.isfile(trg_file) is True:
+            if not os.path.isfile(src_file) and os.path.isfile(trg_file):
                 print "{0} has been added in the new version".format(project_dto.filename)
 
             src_stats = POFile(src_file).get_statistics()
