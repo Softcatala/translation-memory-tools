@@ -66,10 +66,6 @@ def _write_select_projects(project_names):
 
 
 def read_parameters():
-    po_directory = None
-    debug_keyword = None
-    projects_names = None
-
     parser = OptionParser()
 
     parser.add_option('-d', '--directory',
@@ -93,15 +89,12 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
 
-    po_directory = options.po_directory
-
-    if options.debug_keyword is not None:
-        debug_keyword = options.debug_keyword
+    projects_names = None
 
     if options.projects_names is not None:
         projects_names = options.projects_names.split(',')
 
-    return po_directory, debug_keyword, projects_names
+    return options.po_directory, options.debug_keyword, projects_names
 
 
 def main():
