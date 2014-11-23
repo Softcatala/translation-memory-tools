@@ -74,10 +74,6 @@ def get_zip_file(filename):
     return filename + ".zip"
 
 
-def convert_date_to_string(date):
-    return date.strftime("%d/%m/%Y")
-
-
 def get_file_date(filename):
     full_path = os.path.join(po_directory, filename)
     last_ctime = datetime.date.fromtimestamp(os.path.getctime(full_path))
@@ -93,8 +89,8 @@ def get_project_dates(name):
     if dto is None:
         return '', ''
 
-    last_fetch = convert_date_to_string(dto.last_fetch)
-    last_translation = convert_date_to_string(dto.last_translation_update)
+    last_fetch = dto.last_fetch.strftime("%d/%m/%Y")
+    last_translation = dto.last_translation_update.strftime("%d/%m/%Y")
     return last_fetch, last_translation
 
 
