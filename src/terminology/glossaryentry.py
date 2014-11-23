@@ -23,9 +23,9 @@
 class GlossaryEntry(object):
     """Represents an entry to be written in a glossary."""
 
-    def __init__(self):
-        self.source_term = u''
-        self.translations = []
+    def __init__(self, source_term=u'', translations=None):
+        self.source_term = source_term
+        self.translations = translations is None and [] or translations
         self.percentage = 0  # Percentage of frequency across all options.
 
     def get_dict(self):

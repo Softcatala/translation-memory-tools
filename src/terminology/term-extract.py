@@ -95,9 +95,12 @@ def process_projects():
     glossary = Glossary()
     glossary.description = glossary_description
     for term in selected_terms:
-        glossary_entry = GlossaryEntry()
-        glossary_entry.source_term = term
-        glossary_entry.translations = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary_entry = GlossaryEntry(
+            term,
+            translations.create_for_word_sorted_by_frequency(corpus.documents,
+                                                             term,
+                                                             reference_sources)
+        )
         glossary.entries.append(glossary_entry)
 
     glossary_entries = glossary.get_dict()
