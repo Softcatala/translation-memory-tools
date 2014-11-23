@@ -40,22 +40,16 @@ out_directory = None
 class TranslationMemory(object):
 
     def __init__(self, words=None, name=None, last_fetch=None,
-                 last_translation_update=None, projectweb=None):
+                 last_translation_update=None, projectweb=None, filename=None):
         self.name = name
         self.projectweb = projectweb
-        self.po_file_text = None
-        self.tmx_file_text = None
-        self.po_file_link = None
-        self.tmx_file_link = None
-        self.words = words
-        self.last_fetch = last_fetch
-        self.last_translation_update = last_translation_update
-
-    def populate_project_links(self, filename):
         self.po_file_text = get_zip_file(filename)
         self.po_file_link = get_zip_file(get_path_to_po(filename))
         self.tmx_file_text = get_zip_file(get_tmx_file(filename))
         self.tmx_file_link = get_zip_file(get_path_to_tmx(filename))
+        self.words = words
+        self.last_fetch = last_fetch
+        self.last_translation_update = last_translation_update
 
 
 def get_subdir():
@@ -117,8 +111,8 @@ def build_all_projects_memory(json, memories):
         name=u'Totes les memòries de tots els projectes',
         last_fetch=date,
         last_translation_update=date,
+        filename=filename,
     )
-    translation_memory.populate_project_links(filename)
     memories.append(translation_memory)
 
     create_zipfile(po_directory, filename)
@@ -148,8 +142,8 @@ def build_all_softcatala_memory(json, memories):
         name=u'Totes les memòries de projectes de Softcatalà',
         last_fetch=date,
         last_translation_update=date,
+        filename=filename,
     )
-    translation_memory.populate_project_links(filename)
     memories.append(translation_memory)
 
     create_zipfile(po_directory, filename)
@@ -192,8 +186,8 @@ def build_invidual_projects_memory(json, memories):
                 last_fetch=last_fetch,
                 last_translation_update=last_translation_update,
                 projectweb=project_dto.projectweb,
+                filename=project_dto.filename,
             )
-            translation_memory.populate_project_links(project_dto.filename)
             memories.append(translation_memory)
 
             create_zipfile(po_directory, project_dto.filename)
