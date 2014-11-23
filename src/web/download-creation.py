@@ -235,7 +235,7 @@ def process_projects():
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
         'memories': memories,
     }
-    process_template("download.mustache", "download.html", ctx)
+    process_template("templates/download.mustache", "download.html", ctx)
 
 
 def update_zipfile(src_directory, filename, file_to_add):
