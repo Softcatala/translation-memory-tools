@@ -29,6 +29,8 @@ import time
 from collections import OrderedDict
 from optparse import OptionParser
 
+import pystache
+
 from corpus import Corpus
 from devglossaryserializer import DevGlossarySerializer
 from glossary import Glossary
@@ -36,12 +38,23 @@ from glossaryentry import GlossaryEntry
 from metrics import Metrics
 from referencesources import ReferenceSources
 from translations import Translations
-from userglossaryserializer import UserGlossarySerializer
 
 
 src_directory = None
 glossary_description = ''
 glossary_file = None
+
+
+def process_template(template, filename, ctx):
+    # Load template and process it.
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), ctx)
+
+    # Write output.
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
 
 
 def process_projects():
@@ -87,8 +100,11 @@ def process_projects():
         glossary_entry.translations = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
         glossary.entries.append(glossary_entry)
 
-    user_glossary_serializer = UserGlossarySerializer()
-    user_glossary_serializer.create(glossary_file, glossary.get_dict())
+    glossary_entries = glossary.get_dict()
+    process_template('templates/userglossary-html.mustache',
+                     glossary_file + ".html", glossary_entries)
+    process_template('templates/userglossary-csv.mustache',
+                     glossary_file + ".csv", glossary_entries)
 
 
 def read_parameters():
