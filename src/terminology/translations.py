@@ -99,7 +99,7 @@ class Translations(object):
                         break
 
                 # It is a new translation
-                if found is False:
+                if not found:
                     translation_obj_item = Translation()
                     translation_obj_item.translation = translated
                     translation_obj_item.frequency = 1
