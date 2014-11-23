@@ -39,16 +39,17 @@ out_directory = None
 
 class TranslationMemory(object):
 
-    def __init__(self):
-        self.name = None
-        self.projectweb = None
+    def __init__(self, words=None, name=None, last_fetch=None,
+                 last_translation_update=None, projectweb=None):
+        self.name = name
+        self.projectweb = projectweb
         self.po_file_text = None
         self.tmx_file_text = None
         self.po_file_link = None
         self.tmx_file_link = None
-        self.words = None
-        self.last_fetch = None
-        self.last_translation_update = None
+        self.words = words
+        self.last_fetch = last_fetch
+        self.last_translation_update = last_translation_update
 
 
 def get_subdir():
@@ -108,7 +109,6 @@ def propulate_project_links(translation_memory, filename):
 
 def build_all_projects_memory(json, memories):
     """Build zip file that contains all memories for all projects."""
-    name = u'Totes les memòries de tots els projectes'
     filename = 'tots-tm.po'
 
     words = get_words(filename)
@@ -116,15 +116,15 @@ def build_all_projects_memory(json, memories):
     if words is None:
         return
 
-    potext = filename
-    translation_memory = TranslationMemory()
-    translation_memory.words = locale.format("%d", words, grouping=True)
+    date = get_file_date(filename)
 
+    translation_memory = TranslationMemory(
+        words=locale.format("%d", words, grouping=True),
+        name=u'Totes les memòries de tots els projectes',
+        last_fetch=date,
+        last_translation_update=date,
+    )
     propulate_project_links(translation_memory, filename)
-    translation_memory.name = name
-    date = get_file_date(potext)
-    translation_memory.last_fetch = date
-    translation_memory.last_translation_update = date
     memories.append(translation_memory)
 
     create_zipfile(po_directory, filename)
@@ -140,7 +140,6 @@ def build_all_projects_memory(json, memories):
 
 def build_all_softcatala_memory(json, memories):
     """Build zip file containing all memories for all Softcatalà projects."""
-    name = u'Totes les memòries de projectes de Softcatalà'
     filename = 'softcatala-tm.po'
 
     words = get_words(filename)
@@ -148,14 +147,15 @@ def build_all_softcatala_memory(json, memories):
     if words == None:
         return
 
-    translation_memory = TranslationMemory()
-    translation_memory.words = locale.format("%d", words, grouping=True)
-    propulate_project_links(translation_memory, filename)
-
-    translation_memory.name = name
     date = get_file_date(filename)
-    translation_memory.last_fetch = date
-    translation_memory.last_translation_update = date
+
+    translation_memory = TranslationMemory(
+        words=locale.format("%d", words, grouping=True),
+        name=u'Totes les memòries de projectes de Softcatalà',
+        last_fetch=date,
+        last_translation_update=date,
+    )
+    propulate_project_links(translation_memory, filename)
     memories.append(translation_memory)
 
     create_zipfile(po_directory, filename)
@@ -189,16 +189,17 @@ def build_invidual_projects_memory(json, memories):
             if words is None:
                 continue
 
-            translation_memory = TranslationMemory()
-            translation_memory.words = locale.format("%d", words, grouping=True)
+            name = project_dto.name
+            last_fetch, last_translation_update = get_project_dates(name)
 
+            translation_memory = TranslationMemory(
+                words=locale.format("%d", words, grouping=True),
+                name=name,
+                last_fetch=last_fetch,
+                last_translation_update=last_translation_update,
+                projectweb=project_dto.projectweb,
+            )
             propulate_project_links(translation_memory, project_dto.filename)
-
-            translation_memory.projectweb = project_dto.projectweb
-            translation_memory.name = project_dto.name
-            last_fetch, last_translation_update = get_project_dates(project_dto.name)
-            translation_memory.last_fetch = last_fetch
-            translation_memory.last_translation_update = last_translation_update
             memories.append(translation_memory)
 
             create_zipfile(po_directory, project_dto.filename)
