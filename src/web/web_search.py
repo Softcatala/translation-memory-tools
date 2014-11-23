@@ -127,7 +127,7 @@ class WebSerializer(object):
               '<title>Resultats de la cerca</title>'
               '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
               '<meta name="robots" content="noindex, nofollow">'
-              '<link type="text/css" rel="stylesheet" media="screen" href="recursos.css" />'
+              '<link type="text/css" rel="stylesheet" media="screen" href="css/recursos.css" />'
               '</head>'
               '<body>')
 
