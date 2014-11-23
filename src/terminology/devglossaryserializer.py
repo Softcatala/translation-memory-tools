@@ -43,7 +43,7 @@ class ReferenceMatches(object):
 
 class DevGlossarySerializer():
 
-    def create_text_dump(self, documents, glossary_entries, reference_sources):
+    def create_text_dump(self, glossary_entries):
         f = open('glossary.txt', 'w')
 
         for term in glossary_entries:
@@ -187,4 +187,4 @@ class DevGlossarySerializer():
         f.write('</head></html>\n')
         f.close()
 
-        self.create_text_dump(corpus.documents, glossary_entries, reference_sources)
+        self.create_text_dump(glossary_entries)
