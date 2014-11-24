@@ -68,7 +68,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         pofile = POFile(self.minipo)
         checksum = hashlib.new('sha1')
         pofile.calculate_localized_string_checksum(checksum)
-        self.assertEquals(u'edf879d0199103cc09cc464deebdfd3e98613e4b', 
+        self.assertEquals(u'edf879d0199103cc09cc464deebdfd3e98613e4b',
                     checksum.hexdigest())
 
 
