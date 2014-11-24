@@ -222,12 +222,12 @@ def main():
 
     search = Search(source, target, project)
 
-    if json is None:
-        web_serializer = WebSerializer()
-        web_serializer.do(search)
-    else:
-        json_serializer = JsonSerializer()
-        json_serializer.do(search)
+    serializer_cls = WebSerializer
+    if json is not None:
+        serializer_cls = JsonSerializer
+
+    serializer = serializer_cls()
+    serializer.do(search)
 
 
 if __name__ == "__main__":
