@@ -171,7 +171,7 @@ class Project(object):
         return words, entries
 
     def statistics(self):
-        
+
         words, entries = self.get_words_entries()
         msg = '{0} project. {1} translated strings, words {2}'
         logging.info(msg.format(self.name, entries, words))

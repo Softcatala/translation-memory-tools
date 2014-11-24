@@ -32,8 +32,8 @@ class POFile(object):
         shutil.copy(self.filename, bakfile)
 
         input_po = polib.pofile(bakfile)
-        
-        for entry in input_po:        
+
+        for entry in input_po:
             if len(entry.tcomment) > 0:
                 entry.tcomment = u'{0}\n{1}'.format(comment, entry.tcomment)
             else:
@@ -47,7 +47,7 @@ class POFile(object):
 
             poFile = polib.pofile(self.filename)
             for entry in poFile:
-                # hashlib.sha1 isn't expecting a unicode object, but rather a 
+                # hashlib.sha1 isn't expecting a unicode object, but rather a
                 # sequence of bytes in a str object
                 checksum.update(entry.msgstr.encode('utf-8'))
 

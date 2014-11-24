@@ -23,14 +23,14 @@ import unittest
 class TestFileSet(unittest.TestCase):
 
     def test_has_filename_filename(self):
-    
+
         fileset = FileSet('project none',
             'filsetname',
             'lp:~mailman-l10n-ca/mailman.po',
             'none.po')
-            
+
         fileset.add_excluded('excluded.po')
-        
+
         self.assertTrue(fileset._should_exclude_file('excluded.po'))
         self.assertTrue(fileset._should_exclude_file('Includesexcluded.po'))
         self.assertFalse(fileset._should_exclude_file('eXcluded.po'))

@@ -80,6 +80,6 @@ class ProjectMetaDataDao(object):
         print('Database rows')
         for row in result:
             print row
-      
+
     def close(self):
         self.connection.close()
