@@ -25,7 +25,6 @@ import tempfile
 from whoosh.writing import *
 
 
-
 class IndexWriterMock (IndexWriter):
 
     def __init__(self):

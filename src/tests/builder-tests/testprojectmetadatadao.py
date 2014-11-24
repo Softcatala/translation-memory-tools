@@ -22,7 +22,6 @@ import unittest
 import datetime
 
 
-
 class TestProjectMetaDataDao(unittest.TestCase):
 
     def test_get_non_existant(self):

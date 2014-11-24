@@ -53,7 +53,6 @@ class DevGlossarySerializer():
 
         f.close()
 
-
     def get_terms_from_sources_not_used(self, reference_sources, terms):
         not_used = reference_sources.get_terms_not_used_from_references(terms)
 

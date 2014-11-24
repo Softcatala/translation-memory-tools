@@ -25,7 +25,6 @@ import tempfile
 import hashlib
 
 
-
 class TestPOFile(unittest.TestCase):
 
     minipo = ur"""# Afrikaans translation of program ABC

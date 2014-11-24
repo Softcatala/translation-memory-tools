@@ -21,7 +21,6 @@ import unittest
 import datetime
 
 
-
 class TestProjectMetaDataDto(unittest.TestCase):
 
     def test_set_get_last_translation_update(self):

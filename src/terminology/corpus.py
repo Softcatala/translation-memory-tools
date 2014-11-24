@@ -101,7 +101,6 @@ class Corpus(object):
 
         return len(target) != 0
 
-
     #
     # Output: Dictionary key: document, terms dictionary:
     #          Terms dictionary -> key: source term (delete), value:list <trgs> (suprimeix, esborra)
