@@ -24,6 +24,7 @@ import shutil
 from findfiles import FindFiles
 from pofile import POFile
 from convertfiles import ConvertFiles
+from pocatalog import POCatalog
 
 
 class FileSet():
@@ -37,6 +38,7 @@ class FileSet():
         self.filename = filename
         self.add_source = True
         self.excluded = []
+        self.po_catalog = None
 
     def set_checksum(self, checksum):
         self.checksum = checksum
@@ -71,14 +73,6 @@ class FileSet():
             pofile.add_comment_to_all_entries(msg)
             pofile.calculate_localized_string_checksum(self.checksum)
 
-    def _clean_up(self):
-        backup = 'tm-project-previous.po'
-        shutil.copy(self.tm_file, backup)
-        cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}' \
-              ' 2> /dev/null'
-        os.system(cmd.format(backup, self.tm_file))
-        os.remove(backup)
-
     def _should_exclude_file(self, filename):
         exclude = False
         for exfilename in self.excluded:
@@ -105,25 +99,12 @@ class FileSet():
 
             msg = 'Adding file: {0} to translation memory'
             logging.info(msg.format(filename))
-
-            if os.path.isfile(fileset_tm):
-                backup = 'tm-project-previous.po'
-                shutil.copy(fileset_tm, backup)
-                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-                os.system(cmd.format(fileset_tm, backup, filename))
-                os.remove(backup)
-            else:
-                shutil.copy(filename, fileset_tm)
+            self.po_catalog.add_pofile(filename)
 
     def _add_tm_for_fileset_to_project_tm(self, fileset_tm):
-        if os.path.isfile(self.tm_file):
-            backup = 'tm-project-previous.po'
-            shutil.copy(self.tm_file, backup)
-            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-            os.system(cmd.format(self.tm_file, backup, fileset_tm))
-            os.remove(backup)
-        else:
-            shutil.copy(fileset_tm, self.tm_file)
+        project_catalog = POCatalog(self.tm_file)
+        project_catalog.add_pofile(self.po_catalog.filename)
+        project_catalog.cleanup()
 
     def build(self):
         convert = ConvertFiles()
@@ -140,10 +121,10 @@ class FileSet():
             return
 
         fileset_tm = 'fileset-tm.po'
+        self.po_catalog = POCatalog(fileset_tm)
         self._build_tm_for_fileset(fileset_tm, files)
         self._add_tm_for_fileset_to_project_tm(fileset_tm)
         self._delete_tm_fileset(fileset_tm)
-        self._clean_up()
 
     def create_tmp_directory(self):
         self.remove_tmp_directory()

@@ -21,11 +21,11 @@
 import datetime
 import logging
 import os
-import shutil
 
 from project import Project
 from projectmetadatadao import ProjectMetaDataDao
 from projectmetadatadto import ProjectMetaDataDto
+from pocatalog import POCatalog
 
 
 class Projects(object):
@@ -77,22 +77,17 @@ class Projects(object):
 
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
+
         if os.path.isfile(self.tm_file):
             os.remove(self.tm_file)
 
-        for project in self.projects:
-            if os.path.isfile(self.tm_file):
-                backup_file = 'tm-previous.po'
-                shutil.copy(self.tm_file, backup_file)
-                cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
-                os.system(cmd.format(self.tm_file,
-                                     backup_file,
-                                     project.get_filename()))
-                os.remove(backup_file)
-            else:
-                shutil.copy(project.get_filename(), self.tm_file)
+        projects_catalog = POCatalog(self.tm_file)
 
-        os.system('msgfmt --statistics {0} 2> /dev/null'.format(self.tm_file))
+        for project in self.projects:
+            project_catalog = POCatalog(project.get_filename())
+            projects_catalog.add_pofile(project_catalog.filename)
+
+        projects_catalog.cleanup()
 
     def statistics(self):
         for project in self.projects:
