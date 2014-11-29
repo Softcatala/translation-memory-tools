@@ -1,8 +1,0 @@
---- Introduction
-
-Web interface to allow applying a translation memory to a file
-provided by the user
-
---- Dependencies
-
-JQuery: obtained from remote serves from the HTML files
