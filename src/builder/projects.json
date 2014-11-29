@@ -201,13 +201,13 @@
             }
     },
     "FileZilla": {
-            "projectweb" : "http://pootle.softcatala.org/projects/filezilla/",
+            "projectweb" : "http://filezilla-project.org/",
             "softcatala" : true,
             "fileset": {
                     "filezilla": {
-                            "url" : "http://pootle.softcatala.org/ca/filezilla/export/zip",
-                            "type": "compressed",
-                            "target": "filezilla.zip"
+                            "url" : "https://filezilla-project.org/locales/ca.po",
+                            "type": "file",
+                            "target": "filezilla-ca.po"
                     }
             }
     },
