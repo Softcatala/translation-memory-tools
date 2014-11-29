@@ -112,44 +112,9 @@ def get_words(potext, po_directory):
     return words
 
 
-def build_all_projects_memory(projects, memories, po_directory, tmx_directory,
-                              out_directory):
-    """Build zip file that contains all memories for all projects."""
-    filename = 'tots-tm.po'
-    name=u'Totes les memòries de tots els projectes'
-
-    words = get_words(filename, po_directory)
-
-    if words is None:
-        return
-
-    date = get_file_date(filename, po_directory)
-
-    translation_memory = TranslationMemory(
-        words=locale.format("%d", words, grouping=True),
-        name=name,
-        last_fetch=date,
-        last_translation_update=date,
-        filename=filename,
-    )
-    memories.append(translation_memory)
-
-    create_zipfile(po_directory, filename, out_directory)
-    create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
-
-    for project_dto in projects:
-        update_zipfile(po_directory, filename, project_dto.filename,
-                       out_directory)
-        update_zipfile(tmx_directory, get_tmx_file(filename),
-                       get_tmx_file(project_dto.filename), out_directory)
-
-
-def build_all_softcatala_memory(projects, memories, po_directory,
-                                tmx_directory, out_directory):
-    """Build zip file containing all memories for all Softcatalà projects."""
-    filename = 'softcatala-tm.po'
-    name=u'Totes les memòries de projectes de Softcatalà'
-
+def build_combined_memory(projects, memories, filename, name, po_directory,
+                          tmx_directory, out_directory):
+    """Build zip file containing all memories for the specified projects."""
     words = get_words(filename, po_directory)
 
     if words is None:
@@ -213,10 +178,14 @@ def process_projects(po_directory, tmx_directory, out_directory):
 
     memories = []
 
-    build_all_projects_memory(all_projects, memories, po_directory,
-                              tmx_directory, out_directory)
-    build_all_softcatala_memory(softcatala_projects, memories, po_directory,
-                                tmx_directory, out_directory)
+    build_combined_memory(all_projects, memories, 'tots-tm.po',
+                          u'Totes les memòries de tots els projectes',
+                          po_directory, tmx_directory, out_directory)
+
+    build_combined_memory(softcatala_projects, memories, 'softcatala-tm.po',
+                          u'Totes les memòries de projectes de Softcatalà',
+                          po_directory, tmx_directory, out_directory)
+
     build_invidual_projects_memory(all_projects, memories, po_directory,
                                    tmx_directory, out_directory)
 
