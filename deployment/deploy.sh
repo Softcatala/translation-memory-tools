@@ -12,7 +12,7 @@ copy_files() {
     cp -r $1/tm-git/src/web/indexdir/* $2/indexdir
 
     # Search TM app
-    cp $1/tm-git/src/web/recursos.css $2
+    cp $1/tm-git/src/web/css/recursos.css $2
     cp $1/tm-git/src/web/index.html $2
     cp $1/tm-git/src/web/web_search.py $2
     cp $1/tm-git/src/web/cleanstring.py $2
@@ -23,14 +23,13 @@ copy_files() {
     cp $1/tm-git/src/web/robots.txt $2
     cp $1/tm-git/src/web/memories.html $2
     cp $1/tm-git/src/web/terminologia.html $2
-    cp $1/tm-git/src/web/*.png $2
+    cp $1/tm-git/src/web/img/*.png $2
 
     # Download memories
     cp $1/tm-git/src/web/download.html $2
     rm -r -f $2/memories
     mkdir $2/memories
     cp $1/tm-git/src/web/memories/*.zip $2/memories
-    cp $1/tm-git/src/builder/report.txt $2
 
     # Deploy terminology
     cd $1/tm-git/terminology
