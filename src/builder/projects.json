@@ -990,6 +990,16 @@
                             "target": "ca.po"
                     }
             }
+    },
+    "Git": {
+            "projectweb" : "https://github.com/git-l10n/git-po/blob/master/po/README",
+            "fileset": {
+                    "Git": {
+                            "url" : "https://raw.githubusercontent.com/git-l10n/git-po/master/po/ca.po",
+                            "type": "file",
+                            "target": "ca.po"
+                    }
+            }
     }
 
 
