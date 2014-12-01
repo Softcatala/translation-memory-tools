@@ -1,8 +1,12 @@
 #!/bin/bash
 
+ROOT="$1"
+PROGRAMS=$ROOT/tm-git/src
+BUILDER=$PROGRAMS/builder
+
 copy_tm_files() {
 
-    cd $PROGRAMS
+    cd $BUILDER
     # Copy only new PO files
     for filename in $1; do
         # If file exists and size is greater than 200 bytes
@@ -24,16 +28,12 @@ if [ "$#" -ne 1 ] ; then
     exit
 fi 
 
-ROOT="$1"
-
 if [ ! -z "$NOPOBUILD" ]; then
     echo "Skipping bulding of PO files"
 fi
 
 INTERMEDIATE_PO=$ROOT/translation-memories/po
 INTERMEDIATE_TMX=$ROOT/translation-memories/tmx
-PROGRAMS=$ROOT/tm-git/src
-BUILDER=$PROGRAMS/builder
 BACKUP_DIR=$ROOT/previous
 
 # Catalan locale does not support thousand separator
