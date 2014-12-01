@@ -32,6 +32,18 @@ from projectmetadatadao import ProjectMetaDataDao
 import pystache
 
 
+def process_template(template, filename, ctx):
+    # Load template and process it.
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(unicode(template, "utf-8"), ctx)
+
+    # Write output.
+    f = open(filename, 'w')
+    f.write(s.encode("utf-8"))
+    f.close()
+
+
 class TranslationMemory(object):
 
     def __init__(self, words=None, name=None, last_fetch=None,
@@ -90,11 +102,19 @@ def get_project_dates(name):
     return last_fetch, last_translation
 
 
-def build_all_projects_memory(projects, memories, po_directory, tmx_directory,
-                              out_directory):
-    """Build zip file that contains all memories for all projects."""
-    filename = 'tots-tm.po'
+def get_words(potext, po_directory):
+    full_filename = os.path.join(po_directory, potext)
+    words = POFile(full_filename).get_statistics()
+    if words == 0:
+        print("Skipping empty translation memory: " + potext)
+        return None
 
+    return words
+
+
+def build_combined_memory(projects, memories, filename, name, po_directory,
+                          tmx_directory, out_directory):
+    """Build zip file containing all memories for the specified projects."""
     words = get_words(filename, po_directory)
 
     if words is None:
@@ -104,7 +124,7 @@ def build_all_projects_memory(projects, memories, po_directory, tmx_directory,
 
     translation_memory = TranslationMemory(
         words=locale.format("%d", words, grouping=True),
-        name=u'Totes les memòries de tots els projectes',
+        name=name,
         last_fetch=date,
         last_translation_update=date,
         filename=filename,
@@ -119,47 +139,6 @@ def build_all_projects_memory(projects, memories, po_directory, tmx_directory,
                        out_directory)
         update_zipfile(tmx_directory, get_tmx_file(filename),
                        get_tmx_file(project_dto.filename), out_directory)
-
-
-def build_all_softcatala_memory(projects, memories, po_directory,
-                                tmx_directory, out_directory):
-    """Build zip file containing all memories for all Softcatalà projects."""
-    filename = 'softcatala-tm.po'
-
-    words = get_words(filename, po_directory)
-
-    if words == None:
-        return
-
-    date = get_file_date(filename, po_directory)
-
-    translation_memory = TranslationMemory(
-        words=locale.format("%d", words, grouping=True),
-        name=u'Totes les memòries de projectes de Softcatalà',
-        last_fetch=date,
-        last_translation_update=date,
-        filename=filename,
-    )
-    memories.append(translation_memory)
-
-    create_zipfile(po_directory, filename, out_directory)
-    create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
-
-    for project_dto in projects:
-        update_zipfile(po_directory, filename, project_dto.filename,
-                       out_directory)
-        update_zipfile(tmx_directory, get_tmx_file(filename),
-                       get_tmx_file(project_dto.filename), out_directory)
-
-
-def get_words(potext, po_directory):
-    full_filename = os.path.join(po_directory, potext)
-    words = POFile(full_filename).get_statistics()
-    if words == 0:
-        print("Skipping empty translation memory: " + potext)
-        return None
-
-    return words
 
 
 def build_invidual_projects_memory(projects, memories, po_directory,
@@ -189,18 +168,6 @@ def build_invidual_projects_memory(projects, memories, po_directory,
                        out_directory)
 
 
-def process_template(template, filename, ctx):
-    # Load template and process it.
-    template = open(template, 'r').read()
-    parsed = pystache.Renderer()
-    s = parsed.render(unicode(template, "utf-8"), ctx)
-
-    # Write output.
-    f = open(filename, 'w')
-    f.write(s.encode("utf-8"))
-    f.close()
-
-
 def process_projects(po_directory, tmx_directory, out_directory):
     json = JsonBackend("../builder/projects.json")
     json.load()
@@ -211,10 +178,14 @@ def process_projects(po_directory, tmx_directory, out_directory):
 
     memories = []
 
-    build_all_projects_memory(all_projects, memories, po_directory,
-                              tmx_directory, out_directory)
-    build_all_softcatala_memory(softcatala_projects, memories, po_directory,
-                                tmx_directory, out_directory)
+    build_combined_memory(all_projects, memories, 'tots-tm.po',
+                          u'Totes les memòries de tots els projectes',
+                          po_directory, tmx_directory, out_directory)
+
+    build_combined_memory(softcatala_projects, memories, 'softcatala-tm.po',
+                          u'Totes les memòries de projectes de Softcatalà',
+                          po_directory, tmx_directory, out_directory)
+
     build_invidual_projects_memory(all_projects, memories, po_directory,
                                    tmx_directory, out_directory)
 

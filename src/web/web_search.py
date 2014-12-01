@@ -61,6 +61,9 @@ class WebSerializer(object):
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             comment = cgi.escape(result["comment"])
+            # Comments can be multi-line because they contain multiple lines or
+            # because we concatenated tcomments with comments from the PO. So
+            # it is necessary to adapt it to properly integrate into HTML.
             comment = comment.replace('\n', '<br />').replace('\r', '')
             comment = comment.encode('utf-8')
 
