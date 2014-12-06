@@ -2,10 +2,6 @@
 
 copy_files() {
 
-    #Softcatalà headers and footers
-    cp $1/mediawiki-Softcatala/ssi/header.html $2
-    cp $1/mediawiki-Softcatala/ssi/footer-g.html $2
-
     # Index
     rm -r -f $2/indexdir
     mkdir $2/indexdir
