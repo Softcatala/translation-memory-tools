@@ -78,9 +78,9 @@ class DevGlossarySerializer():
     def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
         f = open(html_file, 'w')
 
-        f.write(u'<html><head>\n')
-        f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8">')
-        html = ''
+        f.write(u'<!DOCTYPE html>\n<html><head>\n')
+        f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8" />')
+        html = '</head><body>'
 
         html += u'<p><b>Comentaris</b></p><ul>'
         html += u'<li>Glossari generat computacionalment al final del mateix hi ha dades sobre la generació.</li>'
@@ -183,7 +183,7 @@ class DevGlossarySerializer():
 
         f.write(html.encode('utf-8'))
 
-        f.write('</head></html>\n')
+        f.write('</body></html>\n')
         f.close()
 
         self.create_text_dump(glossary_entries)
