@@ -2,6 +2,31 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>
+table
+{
+    border-spacing: 5px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td
+{
+    border: 1px solid black;
+}
+
+th,
+td
+{
+    padding: 5px;
+}
+
+.green
+{
+    color: green;
+}
+    </style>
   </head>
   <body>
     <h1>Introducció</h1>
@@ -30,12 +55,12 @@
       </li>
     </ul>
 
-    <p>Les formes <font color="green">en color verd</font> són les documentades
+    <p>Les formes <span class="green">en color verd</span> són les documentades
       en els recursos en línia del TERMCAT.
     </p>
     <p>{{description}}</p>
 
-    <table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">
+    <table>
       <tr>
         <th>Anglès</th>
         <th>Català</th>
@@ -47,11 +72,10 @@
         <td>{{translation}}</td>
         <td>
         {{#translations}}
-          {{#termcat}}<font color="green">{{/termcat}}
-          <p>- {{translation}} (usada {{percentage}}%, coincidències
+          <p{{#termcat}} class="green"{{/termcat}}>
+            - {{translation}} (usada {{percentage}}%, coincidències
             {{frequency}})
           </p>
-          {{#termcat}}</font>{{/termcat}}
         {{/translations}}
         </td>
       <tr>
