@@ -29,11 +29,6 @@ from projects import Projects
 
 
 projects = Projects()
-add_source = True
-projects_names = None
-projects_json = 'projects.json'
-only_all_projects_tm = None
-softcatala_only = None
 
 
 def init_logging():
@@ -50,12 +45,6 @@ def init_logging():
 
 
 def read_parameters():
-    global add_source
-    global projects_names
-    global projects_json
-    global only_all_projects_tm
-    global softcatala_only
-
     parser = OptionParser()
 
     parser.add_option(
@@ -73,6 +62,7 @@ def read_parameters():
         action='store',
         type='string',
         dest='projects_names',
+        default='',
         help='To restrict the processing of projects to comma separated '
         'given list e.g.: (fedora, ubuntu)'
     )
@@ -83,6 +73,7 @@ def read_parameters():
         action='store',
         type='string',
         dest='projects_json',
+        default='projects.json',
         help="Define the json file contains the project's definitions "
         "(default: projects.json)"
     )
@@ -92,6 +83,7 @@ def read_parameters():
         '--all',
         action='store_true',
         dest='only_all_projects_tm',
+        default=False,
         help='Looks for already existing PO files in the current directory '
         'and creates a new tm.po with all memories'
     )
@@ -107,21 +99,15 @@ def read_parameters():
 
     (options, args) = parser.parse_args()
 
-    add_source = options.add_source
-
-    if options.projects_json is not None:
-        projects_json = options.projects_json
-
-    if options.projects_names is not None:
+    projects_names = ''
+    if options.projects_names:
         projects_names = options.projects_names.split(',')
 
-    only_all_projects_tm = options.only_all_projects_tm
-    softcatala_only = options.softcatala_only
+    return (options.add_source, projects_names, options.projects_json,
+            options.only_all_projects_tm, options.softcatala_only)
 
 
-def load_projects_from_json():
-    global softcatala_only
-
+def load_projects_from_json(add_source, projects_names, projects_json, softcatala_only):
     json = JsonBackend(projects_json)
     json.load()
 
@@ -151,8 +137,10 @@ if __name__ == '__main__':
 
     start_time = time.time()
     init_logging()
-    read_parameters()
-    load_projects_from_json()
+    (add_source, projects_names, projects_json, only_all_projects_tm,
+     softcatala_only) = read_parameters()
+    load_projects_from_json(add_source, projects_names, projects_json,
+                            softcatala_only)
 
     if only_all_projects_tm:
         projects.create_tm_for_all_projects()
