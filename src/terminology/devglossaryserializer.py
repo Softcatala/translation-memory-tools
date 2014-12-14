@@ -18,16 +18,13 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-
-import time
-import math
-import polib
-import datetime
 import cgi
-import os
-import logging
-from optparse import OptionParser
+import datetime
+import sys
+import time
+
+import polib
+
 from corpus import Corpus
 from referencesources import ReferenceSources
 

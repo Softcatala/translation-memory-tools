@@ -19,17 +19,19 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-import locale
-sys.path.append('../builder')
-from jsonbackend import JsonBackend
-import os
 import datetime
+import locale
+import os
+import sys
 from optparse import OptionParser
-from pofile import POFile
-from projectmetadatadao import ProjectMetaDataDao
 
 import pystache
+
+sys.path.append('../builder')
+
+from jsonbackend import JsonBackend
+from pofile import POFile
+from projectmetadatadao import ProjectMetaDataDao
 
 
 def process_template(template, filename, ctx):

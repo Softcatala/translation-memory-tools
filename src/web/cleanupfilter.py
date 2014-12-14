@@ -19,8 +19,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from whoosh.analysis import *
-from whoosh.fields import *
+from whoosh.analysis import Filter
 
 
 def get_clean_string(result):
