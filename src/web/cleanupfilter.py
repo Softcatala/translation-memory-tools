@@ -22,7 +22,13 @@
 from whoosh.analysis import *
 from whoosh.fields import *
 
-from cleanstring import CleanString
+
+def get_clean_string(result):
+    CHARS = ('_', '&', '~')  # Accelerators.
+    for char in CHARS:
+        result = result.replace(char, '')
+
+    return result.lower()
 
 
 class CleanUpFilter(Filter):
@@ -31,5 +37,5 @@ class CleanUpFilter(Filter):
     """
     def __call__(self, tokens):
         for t in tokens:
-            t.text = CleanString.get(t.text)
+            t.text = get_clean_string(t.text)
             yield t
