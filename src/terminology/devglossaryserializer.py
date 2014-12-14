@@ -50,27 +50,6 @@ class DevGlossarySerializer():
 
         f.close()
 
-    def get_terms_from_sources_not_used(self, reference_sources, terms):
-        not_used = reference_sources.get_terms_not_used_from_references(terms)
-
-        html = u''
-        for reference in not_used:
-            html += (u'<p><b>Termes no usats de la font {0}</b></p>'
-                     u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">'
-                     u'<tr>'
-                     u'<th>Terme</th>'
-                     u'</tr>').format(reference.name)
-
-            terms = sorted(reference.terms.iterkeys())
-            for term in terms:
-                html += (u'<tr>'
-                         u'<td>{0}</td>'
-                         u'</tr>').format(cgi.escape(term))
-
-            html += u'</table>'
-
-        return html
-
     def create(self, html_file, html_comment, corpus, glossary_entries,
                reference_sources):
         item = 0
@@ -150,8 +129,23 @@ class DevGlossarySerializer():
 
         f.write('</table>')
 
-        html = self.get_terms_from_sources_not_used(reference_sources,
-                                                    corpus.source_words)
+        not_used = reference_sources.get_terms_not_used_from_references(corpus.source_words)
+        html = u''
+        for reference in not_used:
+            html += (u'<p><b>Termes no usats de la font {0}</b></p>'
+                     u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">'
+                     u'<tr>'
+                     u'<th>Terme</th>'
+                     u'</tr>').format(reference.name)
+
+            terms = sorted(reference.terms.iterkeys())
+            for term in terms:
+                html += (u'<tr>'
+                         u'<td>{0}</td>'
+                         u'</tr>').format(cgi.escape(term))
+
+            html += u'</table>'
+
         f.write(html.encode('utf-8'))
 
         percentage = 0
