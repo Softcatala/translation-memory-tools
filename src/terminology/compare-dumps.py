@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -46,11 +47,7 @@ class Dump(object):
             columns = line.split(';')
 
             if len(columns) != 2:
-                #print "Skipping: " + line
                 continue
-
-            #if lines > 50:
-            #    break
 
             lines += 1
             dump_entry = DumpEntry()

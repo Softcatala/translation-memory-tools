@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     crawler = Crawler(site_url + "memories.html")
     crawler.run()
-    
+
     downloads = CheckDownloads(crawler.get_all_links())
     downloads.check()
 

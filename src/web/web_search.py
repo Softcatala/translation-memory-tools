@@ -34,11 +34,12 @@ from whoosh.qparser import MultifieldParser
 class JsonSerializer(object):
 
     def do(self, search):
-        print('Content-type: application/json\n\n')
         results = search.get_results()
         all_results = []
         for result in results:
             all_results.append(result.fields())
+
+        print('Content-type: application/json\n\n')
         print(json.dumps(all_results, indent=4, separators=(',', ': ')))
 
 
@@ -121,7 +122,7 @@ class WebSerializer(object):
             self.close_html()
         except Exception as details:
             traceback.print_exc()
-            print str(details)
+            print(str(details))
 
     def open_html(self):
         print('Content-type: text/html\n\n'

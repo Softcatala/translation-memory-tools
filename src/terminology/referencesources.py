@@ -56,8 +56,8 @@ class ReferenceSources(object):
 
         if term in reference.terms.keys():
             return reference.terms[term]
-        else:
-            return []
+
+        return []
 
     def get_terms_not_used_from_references(self, terms):
         not_used_references = []
@@ -93,6 +93,8 @@ class ReferenceSources(object):
         self.references.append(reference)
 
     def read_sources(self):
-        self._read_source('Recull de Softcatalà', 'r', 'recull/recull-glossary.po')
-        self._read_source('Terminologia de Microsoft', 'm', 'microsoft/microsoft-terms.po')
+        self._read_source('Recull de Softcatalà', 'r',
+                          'recull/recull-glossary.po')
+        self._read_source('Terminologia de Microsoft', 'm',
+                          'microsoft/microsoft-terms.po')
         self._read_source('TERMCAT', 't', 'termcat/termcat.po')

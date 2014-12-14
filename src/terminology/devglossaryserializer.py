@@ -55,7 +55,6 @@ class DevGlossarySerializer():
 
         html = u''
         for reference in not_used:
-
             html += u'<p><b>Termes no usats de la font {0}</b></p>'.format(reference.name)
             html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
             html += u'<tr>\r'
@@ -72,13 +71,19 @@ class DevGlossarySerializer():
 
         return html
 
-    def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
-        f = open(html_file, 'w')
+    def create(self, html_file, html_comment, corpus, glossary_entries,
+               reference_sources):
+        item = 0
+        words_cnt = [0, 0, 0]
 
+        reference_matches = {}
+        for reference in reference_sources.references:
+            reference_matches[reference.name] = ReferenceMatches()
+
+        f = open(html_file, 'w')
         f.write(u'<!DOCTYPE html>\n<html><head>\n')
         f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8" />')
         html = '</head><body>'
-
         html += u'<p><b>Comentaris</b></p><ul>'
         html += u'<li>Glossari generat computacionalment al final del mateix hi ha dades sobre la generació.</li>'
         html += u'<li>La columna opcions considerades indica quines altres traduccions apareixen per aquest terme i s\'han considerat.</li>'
@@ -88,7 +93,6 @@ class DevGlossarySerializer():
         html += u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'
         html += u'<li>(t) indica el terme es troba a la terminologia del TERMCAT.</li>'
         html += u'</ul>'
-
         html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
         html += u'<tr>\r'
         html += u'<th>#</th>\r'
@@ -98,19 +102,9 @@ class DevGlossarySerializer():
         html += '</tr>\r'
         f.write(html.encode('utf-8'))
 
-        references = reference_sources.references
-        item = 0
-
-        reference_matches = {}
-        for reference in references:
-            reference_matches[reference.name] = ReferenceMatches()
-
-        words_cnt = [0, 0, 0]
         for term in glossary_entries:
-
             sources = ' '
             for reference in reference_sources.get_references_for_term_in(term):
-
                 if reference is not None:
                     sources += '({0})'.format(reference.short_name)
 
@@ -148,12 +142,16 @@ class DevGlossarySerializer():
 
         f.write('</table>\n')
 
-        html = self.get_terms_from_sources_not_used(reference_sources, corpus.source_words)
+        html = self.get_terms_from_sources_not_used(reference_sources,
+                                                    corpus.source_words)
         f.write(html.encode('utf-8'))
+
+        percentage = 0
+        if corpus.strings > 0:
+            percentage = 100 * corpus.strings_selected / corpus.strings
 
         html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
         html += '<p>Cadenes analitzades: {0}</p>'.format(corpus.strings)
-        percentage = 100 * corpus.strings_selected / corpus.strings if corpus.strings > 0 else 0
         html += '<p>Cadenes seleccionades: {0} - {1}%</p>'. \
                 format(corpus.strings_selected, percentage)
         html += u'<p>Termes únics totals selecionats: {0}</p>'. \
@@ -175,11 +173,10 @@ class DevGlossarySerializer():
                  ' cadenes amb 3 paraules</p>'.format(words_cnt[0], words_cnt[1], words_cnt[2])
 
         if len(html_comment) > 0:
-            comment = unicode(html_comment, "UTF-8")  # utf-8 is the system encoding
+            comment = unicode(html_comment, "UTF-8")
             html += u"Comentari de generació: " + comment
 
         f.write(html.encode('utf-8'))
-
         f.write('</body></html>\n')
         f.close()
 

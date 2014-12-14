@@ -121,7 +121,6 @@ class Corpus(object):
 
             terms = {}
             for entry in pofile.translated_entries():
-
                 self.strings += 1
 
                 msgid = self._clean_string(entry.msgid)
@@ -132,8 +131,9 @@ class Corpus(object):
 
                 self.strings_selected += 1
 
-                log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'. \
-                      format(msgid, entry.msgid, msgstr, entry.msgstr, filename)
+                log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'
+                log = log.format(msgid, entry.msgid, msgstr, entry.msgstr,
+                                 filename)
 
                 f.write(log.encode('utf-8'))
 
@@ -148,17 +148,15 @@ class Corpus(object):
 
             self.documents[filename] = terms
             self.files += 1
-            #if self.files > 3:
-            #    break
 
         f.close()
-        #self.dump_documents
 
     def dump_documents(self):
-        '''For debugging proposes'''
+        """For debugging proposes."""
         for document_key_filename in self.documents.keys():
-            print document_key_filename
+            print(document_key_filename)
             for terms in self.documents[document_key_filename].keys():
-                print "  s({0}):{1}".format(len(self.documents[document_key_filename][terms]), terms.encode('utf-8'))
+                print("  s({0}):{1}".format(len(self.documents[document_key_filename][terms]),
+                                            terms.encode('utf-8')))
                 for translation in self.documents[document_key_filename][terms]:
-                    print "     t:" + translation.encode('utf-8')
+                    print("     t:" + translation.encode('utf-8'))
