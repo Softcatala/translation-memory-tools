@@ -48,16 +48,16 @@ class WebSerializer(object):
     def _get_result_text(self, result, key):
         highlighted = result.highlights(key)
         if highlighted is not None and len(highlighted) > 0:
-            return highlighted.encode('utf-8')
+            return highlighted
 
         source = result[key]
-        return cgi.escape(source.encode('utf-8'))
+        return cgi.escape(source)
 
     def get_result(self, result):
         result_dict = {
             'source': self._get_result_text(result, "source"),
             'target': self._get_result_text(result, "target"),
-            'project': result["project"].encode('utf-8'),
+            'project': result["project"],
             'comment': None,
             'context': None,
         }
@@ -68,11 +68,10 @@ class WebSerializer(object):
             # because we concatenated tcomments with comments from the PO. So
             # it is necessary to adapt it to properly integrate into HTML.
             comment = comment.replace('\n', '<br />').replace('\r', '')
-            comment = comment.encode('utf-8')
             result_dict['comment'] = comment
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            context = cgi.escape(result["context"].encode('utf-8'))
+            context = result["context"]
             result_dict['context'] = context
 
         return result_dict
@@ -89,11 +88,11 @@ class WebSerializer(object):
                 aborted_search = True
             else:
                 start_time = time.time()
-                results = search.get_results()
+                raw_results = search.get_results()
                 end_time = time.time() - start_time
-                num_results = results.scored_length()
+                num_results = raw_results.scored_length()
 
-                for result in results:
+                for result in raw_results:
                     results.append(self.get_result(result))
 
             ctx = {
@@ -109,7 +108,7 @@ class WebSerializer(object):
             template = env.get_template('templates/search_results.html')
 
             print('Content-type: text/html\n\n')
-            print(template.render(ctx))
+            print template.render(ctx).encode('utf-8')
         except Exception as details:
             traceback.print_exc()
             print(str(details))
@@ -141,7 +140,7 @@ class Search(object):
         if self.target is not None and len(self.target) > 0:
             text += ' ' + self.target
 
-        return text.encode('utf-8')
+        return text
 
     def get_results(self):
         if self.searcher is None:
