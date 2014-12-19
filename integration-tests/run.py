@@ -19,15 +19,16 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+import ConfigParser
 import sys
+from collections import OrderedDict
+from optparse import OptionParser
+
 sys.path.append('../src/')
 
-from optparse import OptionParser
+from builder.crawler import Crawler
 from checkdownloads import CheckDownloads
 from checksearch import CheckSearch
-from builder.crawler import Crawler
-import ConfigParser
-from collections import OrderedDict
 
 
 def read_parameters():
@@ -63,7 +64,7 @@ if __name__ == '__main__':
 
     crawler = Crawler(site_url + "memories.html")
     crawler.run()
-    
+
     downloads = CheckDownloads(crawler.get_all_links())
     downloads.check()
 

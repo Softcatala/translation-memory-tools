@@ -18,16 +18,13 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-
-import time
-import math
-import polib
-import datetime
 import cgi
-import os
-import logging
-from optparse import OptionParser
+import datetime
+import sys
+import time
+
+import polib
+
 from corpus import Corpus
 from referencesources import ReferenceSources
 
@@ -53,67 +50,44 @@ class DevGlossarySerializer():
 
         f.close()
 
-    def get_terms_from_sources_not_used(self, reference_sources, terms):
-        not_used = reference_sources.get_terms_not_used_from_references(terms)
-
-        html = u''
-        for reference in not_used:
-
-            html += u'<p><b>Termes no usats de la font {0}</b></p>'.format(reference.name)
-            html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
-            html += u'<tr>\r'
-            html += u'<th>Terme</th>\r'
-            html += u'</tr>\r'
-
-            terms = sorted(reference.terms.iterkeys())
-            for term in terms:
-                html += u"<tr>\r"
-                html += u'<td>{0}</td>'.format(cgi.escape(term))
-                html += u"</tr>\r"
-
-            html += u'</table>'
-
-        return html
-
-    def create(self, html_file, html_comment, corpus, glossary_entries, reference_sources):
-        f = open(html_file, 'w')
-
-        f.write(u'<html><head>\n')
-        f.write(u'<meta http-equiv="content-type" content="text/html; charset=UTF-8">')
-        html = ''
-
-        html += u'<p><b>Comentaris</b></p><ul>'
-        html += u'<li>Glossari generat computacionalment al final del mateix hi ha dades sobre la generació.</li>'
-        html += u'<li>La columna opcions considerades indica quines altres traduccions apareixen per aquest terme i s\'han considerat.</li>'
-        html += u'<li>La columna català és l\'opció més comuna.</li>'
-        html += u'<li>Usada indica el % d\'ús respecte a altres opcions i coincidències els cops que s\'ha trobat.</li>'
-        html += u'<li>(r) indica el terme es troba a l\'últim Recull de termes publicat.</li>'
-        html += u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'
-        html += u'<li>(t) indica el terme es troba a la terminologia del TERMCAT.</li>'
-        html += u'</ul>'
-
-        html += u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">\r'
-        html += u'<tr>\r'
-        html += u'<th>#</th>\r'
-        html += u'<th>Anglès</th>\r'
-        html += u'<th>Català</th>\r'
-        html += u'<th>Opcions considerades</th>\r'
-        html += '</tr>\r'
-        f.write(html.encode('utf-8'))
-
-        references = reference_sources.references
+    def create(self, html_file, html_comment, corpus, glossary_entries,
+               reference_sources):
         item = 0
+        words_cnt = [0, 0, 0]
 
         reference_matches = {}
-        for reference in references:
+        for reference in reference_sources.references:
             reference_matches[reference.name] = ReferenceMatches()
 
-        words_cnt = [0, 0, 0]
-        for term in glossary_entries:
+        f = open(html_file, 'w')
+        html = (u'<!DOCTYPE html>'
+                u'<html>'
+                u'<head>'
+                u'<meta http-equiv="content-type" content="text/html; charset=UTF-8" />'
+                u'</head>'
+                u'<body>'
+                u'<p><b>Comentaris</b></p>'
+                u'<ul>'
+                u'<li>Glossari generat computacionalment al final del mateix hi ha dades sobre la generació.</li>'
+                u"<li>La columna opcions considerades indica quines altres traduccions apareixen per aquest terme i s'han considerat.</li>"
+                u"<li>La columna català és l'opció més comuna.</li>"
+                u"<li>Usada indica el % d'ús respecte a altres opcions i coincidències els cops que s'ha trobat.</li>"
+                u"<li>(r) indica el terme es troba a l'últim Recull de termes publicat.</li>"
+                u'<li>(m) indica el terme es troba a la terminologia de Microsoft.</li>'
+                u'<li>(t) indica el terme es troba a la terminologia del TERMCAT.</li>'
+                u'</ul>'
+                u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">'
+                u'<tr>'
+                u'<th>#</th>'
+                u'<th>Anglès</th>'
+                u'<th>Català</th>'
+                u'<th>Opcions considerades</th>'
+                u'</tr>')
+        f.write(html.encode('utf-8'))
 
+        for term in glossary_entries:
             sources = ' '
             for reference in reference_sources.get_references_for_term_in(term):
-
                 if reference is not None:
                     sources += '({0})'.format(reference.short_name)
 
@@ -134,56 +108,84 @@ class DevGlossarySerializer():
             options = ''
             translations = glossary_entries[term]
             for translation in translations:
-                options += u'<p>- {0} (usada {1}%, coincidències {2})</p>\n'.format(cgi.escape(translation.translation),
-                           translation.percentage, translation.frequency)
+                opt = u'<p>- {0} (usada {1}%, coincidències {2})</p>'
+                options += opt.format(cgi.escape(translation.translation),
+                                      translation.percentage,
+                                      translation.frequency)
 
-            html = u"<tr>\r"
-            html += u'<td>{0}</td>'.format(item)
-            html += u'<td>{0}{1}</td>'.format(cgi.escape(term), sources)
-            html += u'<td>{0}</td>'.format(cgi.escape(translations[0].translation))
-            html += u'<td>{0}</td>'.format(options)
-            html += u"</tr>\r"
+            html = (u'<tr>'
+                    u'<td>{0}</td>'
+                    u'<td>{1}{2}</td>'
+                    u'<td>{3}</td>'
+                    u'<td>{4}</td>'
+                    u'</tr>').format(item, cgi.escape(term), sources,
+                                     cgi.escape(translations[0].translation),
+                                     options)
             f.write(html.encode('utf-8'))
 
             word_len = len(term.split(' '))
             if word_len <= 3:
                 words_cnt[word_len - 1] += 1
 
-        f.write('</table>\n')
+        f.write('</table>')
 
-        html = self.get_terms_from_sources_not_used(reference_sources, corpus.source_words)
+        not_used = reference_sources.get_terms_not_used_from_references(corpus.source_words)
+        html = u''
+        for reference in not_used:
+            html += (u'<p><b>Termes no usats de la font {0}</b></p>'
+                     u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">'
+                     u'<tr>'
+                     u'<th>Terme</th>'
+                     u'</tr>').format(reference.name)
+
+            terms = sorted(reference.terms.iterkeys())
+            for term in terms:
+                html += (u'<tr>'
+                         u'<td>{0}</td>'
+                         u'</tr>').format(cgi.escape(term))
+
+            html += u'</table>'
+
         f.write(html.encode('utf-8'))
 
-        html = u'<p>Data de generació: {0}</p>'.format(datetime.date.today().strftime("%d/%m/%Y"))
-        html += '<p>Cadenes analitzades: {0}</p>'.format(corpus.strings)
-        percentage = 100 * corpus.strings_selected / corpus.strings if corpus.strings > 0 else 0
-        html += '<p>Cadenes seleccionades: {0} - {1}%</p>'. \
-                format(corpus.strings_selected, percentage)
-        html += u'<p>Termes únics totals selecionats: {0}</p>'. \
-                format(len(corpus.source_words))
-        html += u'<p><b>Mesures de qualitat</b></p>'
+        percentage = 0
+        if corpus.strings > 0:
+            percentage = 100 * corpus.strings_selected / corpus.strings
+
+        html = (u'<p>Data de generació: {0}</p>'
+                u'<p>Cadenes analitzades: {1}</p>'
+                u'<p>Cadenes seleccionades: {2} - {3}%</p>'
+                u'<p>Termes únics totals selecionats: {4}</p>'
+                u'<p><b>Mesures de qualitat</b></p>')
+        html = html.format(datetime.date.today().strftime("%d/%m/%Y"),
+                           corpus.strings, corpus.strings_selected, percentage,
+                           len(corpus.source_words))
 
         for name in reference_matches.keys():
             match = reference_matches[name]
-            html += u'<p>Dels 50 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                    format(name, match.first_50 * 100 / 50, match.first_50)
-            html += u'<p>Dels 100 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                    format(name, match.first_100 * 100 / 100, match.first_100)
-            html += u'<p>Dels 500 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                    format(name, match.first_500 * 100 / 500, match.first_500)
-            html += u'<p>Dels 2000 primers termes quants eren al {0}: {1}% ({2})</p>'. \
-                    format(name, match.first_2000 * 100 / 2000, match.first_2000)
+            temp = (u'<p>Dels 50 primers termes quants eren al {0}: {1}% ({2})</p>'
+                    u'<p>Dels 100 primers termes quants eren al {3}: {4}% ({5})</p>'
+                    u'<p>Dels 500 primers termes quants eren al {6}: {7}% ({8})</p>'
+                    u'<p>Dels 2000 primers termes quants eren al {9}: {10}% ({11})</p>')
+            temp = temp.format(name, match.first_50 * 100 / 50, match.first_50,
+                               name, match.first_100 * 100 / 100,
+                               match.first_100, name,
+                               match.first_500 * 100 / 500, match.first_500,
+                               name, match.first_2000 * 100 / 2000,
+                               match.first_2000)
+            html += temp
 
-        html += u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, {2}'\
-                 ' cadenes amb 3 paraules</p>'.format(words_cnt[0], words_cnt[1], words_cnt[2])
+        temp = (u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, '
+                u'{2} cadenes amb 3 paraules</p>')
+        html += temp.format(words_cnt[0], words_cnt[1], words_cnt[2])
 
         if len(html_comment) > 0:
-            comment = unicode(html_comment, "UTF-8")  # utf-8 is the system encoding
+            comment = unicode(html_comment, "UTF-8")
             html += u"Comentari de generació: " + comment
 
         f.write(html.encode('utf-8'))
-
-        f.write('</head></html>\n')
+        f.write(u'</body>'
+                u'</html>')
         f.close()
 
         self.create_text_dump(glossary_entries)

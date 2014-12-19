@@ -19,17 +19,17 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-sys.path.append('../')
-
 import logging
 import os
 import resource
+import sys
 import time
 from collections import OrderedDict
 from optparse import OptionParser
 
 import pystache
+
+sys.path.append('../')
 
 from corpus import Corpus
 from devglossaryserializer import DevGlossarySerializer

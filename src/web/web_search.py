@@ -34,11 +34,12 @@ from whoosh.qparser import MultifieldParser
 class JsonSerializer(object):
 
     def do(self, search):
-        print('Content-type: application/json\n\n')
         results = search.get_results()
         all_results = []
         for result in results:
             all_results.append(result.fields())
+
+        print('Content-type: application/json\n\n')
         print(json.dumps(all_results, indent=4, separators=(',', ': ')))
 
 
@@ -52,12 +53,14 @@ class WebSerializer(object):
         source = result[key]
         return cgi.escape(source.encode('utf-8'))
 
-    def print_result(self, result):
-        source = self._get_result_text(result, "source")
-        target = self._get_result_text(result, "target")
-        project = result["project"].encode('utf-8')
-        comment = None
-        context = None
+    def get_result(self, result):
+        result_dict = {
+            'source': self._get_result_text(result, "source"),
+            'target': self._get_result_text(result, "target"),
+            'project': result["project"].encode('utf-8'),
+            'comment': None,
+            'context': None,
+        }
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
             comment = cgi.escape(result["comment"])
@@ -66,86 +69,50 @@ class WebSerializer(object):
             # it is necessary to adapt it to properly integrate into HTML.
             comment = comment.replace('\n', '<br />').replace('\r', '')
             comment = comment.encode('utf-8')
+            result_dict['comment'] = comment
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
             context = cgi.escape(result["context"].encode('utf-8'))
+            result_dict['context'] = context
 
-        print('<div class="result">'
-              '<table class="result-table">'
-              '<tr>'
-              '<td><b>Projecte:</b></td>'
-              '<td>{0}</td>'
-              '</tr>'.format(project))
-
-        if comment is not None:
-            print('<tr>'
-                  '<td><b>Comentaris:</b></td>'
-                  '<td>{0}</td>'
-                  '</tr>'.format(comment))
-
-        if context is not None:
-            print('<tr>'
-                  '<td><b>Context:</b></td>'
-                  '<td>{0}</td>'
-                  '</tr>'.format(context))
-
-        print('<tr>'
-              '<td><b>Original:</b></td>'
-              '<td>{0}</td>'
-              '</tr>'
-              '<tr>'
-              '<td><b>Traducció:</b></td>'
-              '<td>{1}</td>'
-              '</tr>'
-              '</table>'
-              '</div>'.format(source, target))
+        return result_dict
 
     def do(self, search):
         """Search a term in the Whoosh index."""
         try:
-            self.open_html()
+            aborted_search = False
+            results = []
+            num_results = 0
+            end_time = 0
 
             if search.has_invalid_search_term:
-                self.write_html_header(search.search_term_display, 0, 0)
-                print("<p>Avís: el text a cercar ha de tenir un mínim d'un caràcter</p>")
+                aborted_search = True
             else:
                 start_time = time.time()
                 results = search.get_results()
                 end_time = time.time() - start_time
+                num_results = results.scored_length()
 
-                self.write_html_header(search.search_term_display,
-                                       results.scored_length(), end_time)
                 for result in results:
-                    self.print_result(result)
+                    results.append(self.get_result(result))
 
-            self.close_html()
+            ctx = {
+                'search_term': search.search_term_display,
+                'results': results,
+                'num_results': num_results,
+                'time': end_time,
+                'aborted_search': aborted_search,
+            }
+
+            from jinja2 import Environment, FileSystemLoader
+            env = Environment(loader=FileSystemLoader('./'))
+            template = env.get_template('templates/search_results.html')
+
+            print('Content-type: text/html\n\n')
+            print(template.render(ctx))
         except Exception as details:
             traceback.print_exc()
-            print str(details)
-
-    def open_html(self):
-        print('Content-type: text/html\n\n'
-              '<html>'
-              '<head>'
-              '<title>Resultats de la cerca</title>'
-              '<meta http-equiv="content-type" content="text/html; charset=UTF-8">'
-              '<meta name="robots" content="noindex, nofollow">'
-              '<link type="text/css" rel="stylesheet" media="screen" href="css/recursos.css" />'
-              '</head>'
-              '<body>')
-
-    def write_html_header(self, term, results, time):
-        print('<span class="searched">Resultats de la cerca del terme:</span>'
-              '<span class="searched-term">{0}</span>'
-              '<br />'
-              '<p>{1} resultats. Temps de cerca: {2} segons</p>'
-              '<a href="./memories.html">&lt; Torna a la pàgina anterior</a>'
-              '<br />'
-              '<br />'.format(term, results, time))
-
-    def close_html(self):
-        print('</body>'
-              '</html>')
+            print(str(details))
 
 
 class Search(object):

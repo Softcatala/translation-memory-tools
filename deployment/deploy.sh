@@ -14,7 +14,6 @@ copy_files() {
     cp $1/tm-git/src/web/css/recursos.css $2/css
     cp $1/tm-git/src/web/index.html $2
     cp $1/tm-git/src/web/web_search.py $2
-    cp $1/tm-git/src/web/cleanstring.py $2
     cp $1/tm-git/src/web/cleanupfilter.py $2
     cp $1/tm-git/src/web/statistics.html $2
     cp $1/tm-git/src/web/download.html $2

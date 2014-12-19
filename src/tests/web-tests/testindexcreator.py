@@ -18,11 +18,13 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from web.indexcreator import IndexCreator
-import unittest
-import polib
 import tempfile
+import unittest
+
+import polib
 from whoosh.writing import *
+
+from web.indexcreator import IndexCreator
 
 
 class IndexWriterMock (IndexWriter):

@@ -26,11 +26,7 @@ from jsonbackend import JsonBackend
 from pofile import POFile
 
 
-src_directory = None
-trg_directory = None
-
-
-def process_projects():
+def process_projects(src_directory, trg_directory):
     json = JsonBackend("projects.json")
     json.load()
 
@@ -54,9 +50,6 @@ def process_projects():
 
 
 def read_parameters():
-    global src_directory
-    global trg_directory
-
     parser = OptionParser()
 
     parser.add_option("-s", "--srcdir",
@@ -75,8 +68,7 @@ def read_parameters():
     if options.trg_directory is None:
         parser.error('target directory not given')
 
-    src_directory = options.src_directory
-    trg_directory = options.trg_directory
+    return (options.src_directory, options.trg_directory)
 
 
 def main():
@@ -88,8 +80,8 @@ def main():
     print "Use --help for assistance"
     print datetime.datetime.now()
 
-    read_parameters()
-    process_projects()
+    src_directory, trg_directory = read_parameters()
+    process_projects(src_directory, trg_directory)
 
 
 if __name__ == "__main__":

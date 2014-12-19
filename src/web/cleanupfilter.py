@@ -19,10 +19,15 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from whoosh.analysis import *
-from whoosh.fields import *
+from whoosh.analysis import Filter
 
-from cleanstring import CleanString
+
+def get_clean_string(result):
+    CHARS = ('_', '&', '~')  # Accelerators.
+    for char in CHARS:
+        result = result.replace(char, '')
+
+    return result.lower()
 
 
 class CleanUpFilter(Filter):
@@ -31,5 +36,5 @@ class CleanUpFilter(Filter):
     """
     def __call__(self, tokens):
         for t in tokens:
-            t.text = CleanString.get(t.text)
+            t.text = get_clean_string(t.text)
             yield t

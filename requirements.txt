@@ -10,6 +10,7 @@ babel >= 1.0
 
 # For server.
 Whoosh
+Jinja2
 
 # For testing.
 pytest
