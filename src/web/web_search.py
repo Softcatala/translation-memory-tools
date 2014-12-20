@@ -179,8 +179,7 @@ def main():
     project = form.getvalue("project", None)
     json = form.getvalue("json", None)
 
-    if source is not None:
-        source = unicode(source, 'utf-8')
+    source = unicode(source, 'utf-8')
 
     if target is not None:
         target = unicode(target, 'utf-8')
