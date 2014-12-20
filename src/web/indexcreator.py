@@ -139,8 +139,10 @@ class IndexCreator(object):
                 self.writer.add_document(source=s,
                                          target=t,
                                          comment=c,
-                                         context=x, project=p,
-                                         softcatala=softcatala)
+                                         context=x,
+                                         project=p,
+                                         softcatala=softcatala,
+                )
         except Exception as detail:
             print("Exception: " + str(detail))
 
@@ -148,9 +150,11 @@ class IndexCreator(object):
         analyzer = StandardAnalyzer(minsize=1, stoplist=None) | CleanUpFilter()
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer),
                         target=TEXT(stored=True, analyzer=analyzer),
-                        comment=TEXT(stored=True), context=TEXT(stored=True),
-                        softcatala=BOOLEAN(stored=True), project=TEXT(stored=True))
-
+                        comment=TEXT(stored=True),
+                        context=TEXT(stored=True),
+                        softcatala=BOOLEAN(stored=True),
+                        project=TEXT(stored=True),
+        )
         if not os.path.exists(self.dir_name):
             os.mkdir(self.dir_name)
 
