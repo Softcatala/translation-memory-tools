@@ -167,13 +167,12 @@ class DevGlossarySerializer():
                     u'<p>Dels 100 primers termes quants eren al {3}: {4}% ({5})</p>'
                     u'<p>Dels 500 primers termes quants eren al {6}: {7}% ({8})</p>'
                     u'<p>Dels 2000 primers termes quants eren al {9}: {10}% ({11})</p>')
-            temp = temp.format(name, match.first_50 * 100 / 50, match.first_50,
-                               name, match.first_100 * 100 / 100,
-                               match.first_100, name,
-                               match.first_500 * 100 / 500, match.first_500,
-                               name, match.first_2000 * 100 / 2000,
-                               match.first_2000)
-            html += temp
+            html += temp.format(name, match.first_50 * 100 / 50, match.first_50,
+                                name, match.first_100 * 100 / 100,
+                                match.first_100, name,
+                                match.first_500 * 100 / 500, match.first_500,
+                                name, match.first_2000 * 100 / 2000,
+                                match.first_2000)
 
         temp = (u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, '
                 u'{2} cadenes amb 3 paraules</p>')

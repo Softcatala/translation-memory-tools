@@ -145,9 +145,7 @@ class IndexCreator(object):
             print("Exception: " + str(detail))
 
     def create(self):
-        MIN_WORDSIZE_TO_IDX = 1
-
-        analyzer = StandardAnalyzer(minsize=MIN_WORDSIZE_TO_IDX, stoplist=None) | CleanUpFilter()
+        analyzer = StandardAnalyzer(minsize=1, stoplist=None) | CleanUpFilter()
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer),
                         target=TEXT(stored=True, analyzer=analyzer),
                         comment=TEXT(stored=True), context=TEXT(stored=True),
