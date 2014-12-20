@@ -50,8 +50,7 @@ class WebSerializer(object):
         if highlighted is not None and len(highlighted) > 0:
             return highlighted
 
-        source = result[key]
-        return cgi.escape(source)
+        return result[key]
 
     def get_result(self, result):
         result_dict = {
@@ -63,16 +62,14 @@ class WebSerializer(object):
         }
 
         if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
-            comment = cgi.escape(result["comment"])
             # Comments can be multi-line because they contain multiple lines or
             # because we concatenated tcomments with comments from the PO. So
             # it is necessary to adapt it to properly integrate into HTML.
-            comment = comment.replace('\n', '<br />').replace('\r', '')
+            comment = result["comment"].replace('\n', '<br />').replace('\r', '')
             result_dict['comment'] = comment
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            context = result["context"]
-            result_dict['context'] = context
+            result_dict['context'] = result["context"]
 
         return result_dict
 
@@ -108,7 +105,7 @@ class WebSerializer(object):
             template = env.get_template('templates/search_results.html')
 
             print('Content-type: text/html\n\n')
-            print template.render(ctx).encode('utf-8')
+            print(template.render(ctx).encode('utf-8'))
         except Exception as details:
             traceback.print_exc()
             print(str(details))
@@ -154,7 +151,6 @@ class Search(object):
         ix = open_dir(self.dir_name)
         self.searcher = ix.searcher()
         fields = []
-
         qs = ''
 
         if self.source is not None and len(self.source) > 0:
