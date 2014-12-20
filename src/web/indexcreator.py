@@ -23,7 +23,7 @@ import sys
 
 import polib
 from whoosh.analysis import StandardAnalyzer
-from whoosh.fields import *
+from whoosh.fields import BOOLEAN, TEXT, Schema
 from whoosh.index import create_in
 
 sys.path.append('../')

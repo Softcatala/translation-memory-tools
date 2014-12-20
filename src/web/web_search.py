@@ -24,9 +24,8 @@ import json
 import time
 import traceback
 
-from whoosh.analysis import *
-from whoosh.fields import *
-from whoosh.highlight import *
+from jinja2 import Environment, FileSystemLoader
+from whoosh.highlight import WholeFragmenter
 from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
 
@@ -100,7 +99,6 @@ class WebSerializer(object):
                 'aborted_search': aborted_search,
             }
 
-            from jinja2 import Environment, FileSystemLoader
             env = Environment(loader=FileSystemLoader('./'))
             template = env.get_template('templates/search_results.html')
 
