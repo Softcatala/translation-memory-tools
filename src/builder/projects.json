@@ -1021,7 +1021,16 @@
                     }
             }
     }
-
-
+    "Darktable": {
+            "projectweb" : "http://www.darktable.org/",
+            "fileset": {
+                    "Darktable": {
+                            "url" : "https://raw.githubusercontent.com/darktable-org/darktable/master/po/ca.po",
+                            "type": "file",
+                            "target": "ca.po"
+                    }
+            }
+    }
+    
     }
 }
