@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -27,13 +28,9 @@ class POFile(object):
         self.filename = filename
 
     def add_comment_to_all_entries(self, comment):
-
         try:
-
             bakfile = self.filename + '.bak'
-
             shutil.copy(self.filename, bakfile)
-
             input_po = polib.pofile(bakfile)
 
             for entry in input_po:
@@ -43,39 +40,31 @@ class POFile(object):
                     entry.tcomment = comment
 
             input_po.save(self.filename)
-
         except Exception as detail:
             print("POFile.add_comment_to_all_entries " + self.filename)
             print(detail)
 
     def calculate_localized_string_checksum(self, checksum):
-
         try:
-
             poFile = polib.pofile(self.filename)
             for entry in poFile:
                 # hashlib.sha1 isn't expecting a unicode object, but rather a
                 # sequence of bytes in a str object
                 checksum.update(entry.msgstr.encode('utf-8'))
-
         except Exception as detail:
             print("POFile.get_checksum exception " + self.filename)
             print(detail)
 
     def get_statistics(self):
-
         words = 0
 
         try:
-
             poFile = polib.pofile(self.filename)
             for entry in poFile:
                 string_words = entry.msgstr.split(' ')
                 words += len(string_words)
-
         except Exception as detail:
             print("POFile.get_statistics exception " + self.filename)
             print(detail)
-
         finally:
             return words
