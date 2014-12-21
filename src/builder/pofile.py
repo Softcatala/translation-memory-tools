@@ -29,19 +29,20 @@ class POFile(object):
     def add_comment_to_all_entries(self, comment):
 
         try:
-                bakfile = self.filename + '.bak'
 
-                shutil.copy(self.filename, bakfile)
+            bakfile = self.filename + '.bak'
 
-                input_po = polib.pofile(bakfile)
+            shutil.copy(self.filename, bakfile)
 
-                for entry in input_po:
-                    if len(entry.tcomment) > 0:
-                        entry.tcomment = u'{0}\n{1}'.format(comment, entry.tcomment)
-                    else:
-                        entry.tcomment = comment
+            input_po = polib.pofile(bakfile)
 
-                input_po.save(self.filename)
+            for entry in input_po:
+                if len(entry.tcomment) > 0:
+                    entry.tcomment = u'{0}\n{1}'.format(comment, entry.tcomment)
+                else:
+                    entry.tcomment = comment
+
+            input_po.save(self.filename)
 
         except Exception as detail:
             print("POFile.add_comment_to_all_entries " + self.filename)
