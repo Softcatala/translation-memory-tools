@@ -1,5 +1,5 @@
 # For importing translations/creating TM files.
-polib
+polib >= 1.0.4
 transifex-client
 translate-toolkit
 android2po
