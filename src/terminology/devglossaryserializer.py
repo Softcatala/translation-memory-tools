@@ -60,6 +60,7 @@ class DevGlossarySerializer():
             reference_matches[reference.name] = ReferenceMatches()
 
         f = open(html_file, 'w')
+
         html = (u'<!DOCTYPE html>'
                 u'<html>'
                 u'<head>'
@@ -87,6 +88,11 @@ class DevGlossarySerializer():
 
         for term in glossary_entries:
             sources = ' '
+
+            word_len = len(term.split(' '))
+            if word_len <= 3:
+                words_cnt[word_len - 1] += 1
+
             for reference in reference_sources.get_references_for_term_in(term):
                 if reference is not None:
                     sources += '({0})'.format(reference.short_name)
@@ -123,14 +129,9 @@ class DevGlossarySerializer():
                                      options)
             f.write(html.encode('utf-8'))
 
-            word_len = len(term.split(' '))
-            if word_len <= 3:
-                words_cnt[word_len - 1] += 1
-
-        f.write('</table>')
+        html = u'</table>'
 
         not_used = reference_sources.get_terms_not_used_from_references(corpus.source_words)
-        html = u''
         for reference in not_used:
             html += (u'<p><b>Termes no usats de la font {0}</b></p>'
                      u'<table border="1" cellpadding="5px" cellspacing="5px" style="border-collapse:collapse;">'
@@ -138,8 +139,7 @@ class DevGlossarySerializer():
                      u'<th>Terme</th>'
                      u'</tr>').format(reference.name)
 
-            terms = sorted(reference.terms.iterkeys())
-            for term in terms:
+            for term in sorted(reference.terms.iterkeys()):
                 html += (u'<tr>'
                          u'<td>{0}</td>'
                          u'</tr>').format(cgi.escape(term))
@@ -167,13 +167,12 @@ class DevGlossarySerializer():
                     u'<p>Dels 100 primers termes quants eren al {3}: {4}% ({5})</p>'
                     u'<p>Dels 500 primers termes quants eren al {6}: {7}% ({8})</p>'
                     u'<p>Dels 2000 primers termes quants eren al {9}: {10}% ({11})</p>')
-            temp = temp.format(name, match.first_50 * 100 / 50, match.first_50,
-                               name, match.first_100 * 100 / 100,
-                               match.first_100, name,
-                               match.first_500 * 100 / 500, match.first_500,
-                               name, match.first_2000 * 100 / 2000,
-                               match.first_2000)
-            html += temp
+            html += temp.format(name, match.first_50 * 100 / 50, match.first_50,
+                                name, match.first_100 * 100 / 100,
+                                match.first_100, name,
+                                match.first_500 * 100 / 500, match.first_500,
+                                name, match.first_2000 * 100 / 2000,
+                                match.first_2000)
 
         temp = (u'<p>{0} cadenes amb 1 paraula, {1} cadenes amb 2 paraules, '
                 u'{2} cadenes amb 3 paraules</p>')
@@ -181,11 +180,11 @@ class DevGlossarySerializer():
 
         if len(html_comment) > 0:
             comment = unicode(html_comment, "UTF-8")
-            html += u"Comentari de generació: " + comment
+            html += u"Comentari de generació: {0}".format(comment)
 
+        html += (u'</body>'
+                 u'</html>')
         f.write(html.encode('utf-8'))
-        f.write(u'</body>'
-                u'</html>')
         f.close()
 
         self.create_text_dump(glossary_entries)

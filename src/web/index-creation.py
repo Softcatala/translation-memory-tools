@@ -41,23 +41,6 @@ def process_template(template, filename, ctx):
     f.close()
 
 
-def _write_statistics(projects, words):
-    ctx = {
-        'date': datetime.date.today().strftime("%d/%m/%Y"),
-        'projects': str(projects),
-        'words': locale.format("%d", words, grouping=True),
-    }
-    process_template("templates/statistics.mustache", "statistics.html", ctx)
-
-
-def _write_select_projects(project_names):
-    ctx = {
-        'options': sorted(project_names, key=lambda x: x.lower()),
-    }
-    process_template("templates/select-projects.mustache",
-                     "select-projects.html", ctx)
-
-
 def read_parameters():
     parser = OptionParser()
 
@@ -111,8 +94,19 @@ def main():
     indexCreator.create()
     indexCreator.process_projects()
 
-    _write_statistics(indexCreator.projects, indexCreator.words)
-    _write_select_projects(indexCreator.options)
+    ctx = {
+        'date': datetime.date.today().strftime("%d/%m/%Y"),
+        'projects': str(indexCreator.projects),
+        'words': locale.format("%d", indexCreator.words, grouping=True),
+    }
+    process_template("templates/statistics.mustache", "statistics.html", ctx)
+
+    ctx = {
+        # This is the list of projects to display for the user to select.
+        'options': sorted(indexCreator.options, key=lambda x: x.lower()),
+    }
+    process_template("templates/select-projects.mustache",
+                     "select-projects.html", ctx)
 
     end_time = time.time() - start_time
     print("time used to create the index: " + str(end_time))
