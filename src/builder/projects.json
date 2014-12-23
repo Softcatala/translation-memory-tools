@@ -1020,7 +1020,7 @@
                             "target": "ca.po"
                     }
             }
-    }
+    },
     "Darktable": {
             "projectweb" : "http://www.darktable.org/",
             "fileset": {
