@@ -1013,6 +1013,7 @@
     },
     "Gramps": {
             "projectweb" : "https://gramps-project.org/",
+            "disabled": true,
             "fileset": {
                     "Gramps": {
                             "url" : "http://sourceforge.net/p/gramps/source/ci/master/tree/po/ca.po?format=raw",
