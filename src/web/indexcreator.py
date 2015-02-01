@@ -122,7 +122,7 @@ class IndexCreator(object):
                     # msgstr_plural is a dictionary where the key is the index and
                     # the value is the localised string
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
-                        t = unicode(entry.msgstr_plural["0"])
+                        t = unicode(entry.msgstr_plural[0])
 
                 if self.debug_keyword is not None and self.debug_keyword.strip() == s:
                     print("Source: " + s)
