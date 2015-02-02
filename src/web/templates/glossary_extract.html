@@ -1,0 +1,27 @@
+{% if glossary %}
+    <div class="terminology">
+    <p>Resum de l'extracció automàtica terminològica del terme: {{ search_term }} </p>
+    <ul>
+    {% for entry in glossary %}
+        <li>
+            <p {% if entry.termcat %} class="green"{% endif %}>{{ entry.translation }} 
+            (usada {{entry.percentage}}%, coincidències {{entry.frequency}}) </p>
+        </li>
+    {% endfor %}
+    </ul>
+
+     <div class="legend">
+         <p>Llegenda:</p>
+            <ul>
+              </li>
+              <li>Per a cada opció, entre parèntesis, <i>usada</i> indica el percentatge
+                d'ús respecte a altres opcions i <i>coincidències</i> els cops que s'ha
+                trobat.
+              </li>
+                <li>Les formes <span class="green">en color verd</span> són les documentades
+                 en els recursos en línia del TERMCAT.
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endif %}

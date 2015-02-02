@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
-# Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2013-2015 Jordi Mas i Hernandez <jmas@softcatala.org>
 # Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
@@ -23,11 +23,15 @@ import cgi
 import json
 import time
 import traceback
+import sys
 
 from jinja2 import Environment, FileSystemLoader
 from whoosh.highlight import WholeFragmenter
 from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
+
+sys.path.append('../terminology')
+from glossarysql import Entry, database
 
 
 class JsonSerializer(object):
@@ -40,6 +44,35 @@ class JsonSerializer(object):
 
         print('Content-type: application/json\n\n')
         print(json.dumps(all_results, indent=4, separators=(',', ': ')))
+
+
+class JsonSerializerGlossary(object):
+
+    def do(self, results):
+        all_results = []
+
+        if results is not None:
+            for result in results:
+                all_results.append(result.dict)
+
+        print('Content-type: application/json\n\n')
+        print(json.dumps(all_results, indent=4, separators=(',', ': ')))
+
+
+class Glossary(object):
+
+    def search(self, search_term_display):
+        try:
+            database.open('glossary.db3')
+            glossary = Entry.select().where(Entry.term == search_term_display)
+
+            if glossary.count() == 0:
+                glossary = None
+
+        except:
+            glossary = None
+
+        return glossary
 
 
 class WebSerializer(object):
@@ -80,6 +113,9 @@ class WebSerializer(object):
             num_results = 0
             end_time = 0
 
+            g = Glossary()
+            glossary = g.search(search.search_term_display)
+
             if search.has_invalid_search_term:
                 aborted_search = True
             else:
@@ -97,6 +133,7 @@ class WebSerializer(object):
                 'num_results': num_results,
                 'time': end_time,
                 'aborted_search': aborted_search,
+                'glossary': glossary,
             }
 
             env = Environment(loader=FileSystemLoader('./'))
@@ -176,6 +213,7 @@ def main():
     target = form.getvalue("target", None)
     project = form.getvalue("project", None)
     json = form.getvalue("json", None)
+    glossary_only = form.getvalue("glossary_only", None)
 
     source = unicode(source, 'utf-8')
 
@@ -188,8 +226,14 @@ def main():
     if json is not None:
         serializer_cls = JsonSerializer
 
-    serializer = serializer_cls()
-    serializer.do(search)
+    if glossary_only is not None:
+        glossary = Glossary()
+        glossary = glossary.search(source)
+        serializer = JsonSerializerGlossary()
+        serializer.do(glossary)
+    else:
+        serializer = serializer_cls()
+        serializer.do(search)
 
 
 if __name__ == "__main__":

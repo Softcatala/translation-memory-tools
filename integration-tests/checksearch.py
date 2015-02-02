@@ -37,6 +37,15 @@ class CheckSearch(object):
             data = json.load(json_data)
             return data
 
+    def search_glossary(self, term):
+        url = '{0}/web_search.py?source={1}&project=tots&json=1&glossary_only=1'
+        url = url.format(self.url, term)
+
+        urllib.urlretrieve(url, 'file.txt')
+        with open('file.txt') as json_data:
+            data = json.load(json_data)
+            return data
+
     def _assert_contains(self, actual, expected):
         actual = actual.lower()
         expected = expected.lower()
@@ -79,10 +88,18 @@ class CheckSearch(object):
         self._assert_greater(len(data), 1)
         self._assert_contains(data[0]['source'], string)
 
+    def _check_glossary_source_search(self):
+        string = u'file'
+        data = self.search_glossary(string)
+
+        self._assert_greater(len(data), 1)
+        self._assert_contains(data[0]['term'], string)
+
     def check(self):
         try:
             self._check_common_searches()
             self._check_integration_data()
+            self._check_glossary_source_search()
             return True
         except Exception as detail:
             print(u'Error checking search results: ' + unicode(detail))

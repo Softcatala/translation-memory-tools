@@ -4,6 +4,7 @@ transifex-client
 translate-toolkit
 android2po
 pystache
+peewee
 
 # Fix android2po requirements.
 babel >= 1.0

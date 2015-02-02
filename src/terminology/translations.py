@@ -26,6 +26,10 @@ class Translation(object):
         self.percentage = 0  # Percentage of frequency across all options
         self.references_short_name = []  # A list of references
 
+    @property
+    def termcat(self):
+        return len(self.references_short_name) > 0
+
     def get_dict(self):
         d = {
             u'translation': self.translation,
@@ -33,7 +37,7 @@ class Translation(object):
             u'percentage': self.percentage,
         }
 
-        if len(self.references_short_name) > 0:
+        if self.termcat:
             d[u'termcat'] = True
 
         return d

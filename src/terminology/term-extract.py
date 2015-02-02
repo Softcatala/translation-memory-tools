@@ -26,6 +26,7 @@ import sys
 import time
 from collections import OrderedDict
 from optparse import OptionParser
+from glossarysql import *
 
 import pystache
 
@@ -50,6 +51,22 @@ def process_template(template, filename, ctx):
     f = open(filename, 'w')
     f.write(s.encode("utf-8"))
     f.close()
+
+def generate_database(glossary, glossary_file):
+
+    database.create(glossary_file + ".db3")
+    database.create_schema()
+    for entry in glossary.entries:
+        for translation in entry.translations:
+            db_entry = Entry()
+            db_entry.term = entry.source_term
+            db_entry.translation = translation.translation
+            db_entry.frequency = translation.frequency
+            db_entry.percentage = translation.percentage
+            db_entry.termcat = translation.termcat
+            db_entry.save()
+    
+    database.close()
 
 
 def process_projects(src_directory, glossary_description, glossary_file):
@@ -100,6 +117,7 @@ def process_projects(src_directory, glossary_description, glossary_file):
     process_template('templates/userglossary-csv.mustache',
                      glossary_file + ".csv", glossary_entries)
 
+    generate_database(glossary, glossary_file)
 
 def read_parameters():
     parser = OptionParser()
