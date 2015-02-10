@@ -5,16 +5,28 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="noindex, nofollow" />
     <link type="text/css" rel="stylesheet" media="screen" href="css/recursos.css" />
+
+    <link type="text/css" rel="stylesheet" media="all" href="/css/sc.css?g" />
+    <link type="text/css" rel="stylesheet" href="/css/cookies/cookiecuttr.css" />
+    <script type="text/javascript" src="/js/cookies/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/cookies/jquery.cookiecuttr.js"></script>
+    <script type="text/javascript" src="/js/softcatala.js"></script>
+    <script type="text/javascript" src="http://ad.softcatala.org/www/delivery/spcjs.php?id=1"></script>
   </head>
-  <body>
+  <body class="thrColHybHdr fondo3">
+  <div id="container">
+     <!--#include virtual="/ssi/ads/superior.html" -->
+     <!--#include virtual="/ssi/header.html" -->
+     <!-- bodyContent -->
+    <h1 class="section">Resultats de la cerca</h1>
+    <div class="bodyRecurs">
     <span class="searched">Resultats de la cerca del terme:</span>
     <span class="searched-term">{{ search_term }}</span>
     <br />
     <p>{{ num_results }} resultats. Temps de cerca: {{ time }} segons</p>
     <a href="memories.html">&lt; Torna a la pàgina anterior</a>
     <br />
-    <br />
-    
+    <br />    
     {% include "templates/glossary_extract.html" %}
 
     {% if aborted_search %}
@@ -51,5 +63,9 @@
       </table>
     </div>
     {% endfor %}
+    {% include "templates/pagination.html" %}
+    </div>
+    </div> 
+    <!--#include virtual="/ssi/footer-g.html" -->
   </body>
 </html>

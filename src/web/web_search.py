@@ -24,14 +24,13 @@ import json
 import time
 import traceback
 import sys
-
+import os
 from jinja2 import Environment, FileSystemLoader
-from whoosh.highlight import WholeFragmenter
-from whoosh.index import open_dir
-from whoosh.qparser import MultifieldParser
 
-sys.path.append('../terminology')
-from glossarysql import Entry, database
+sys.path.append('models/')
+from pagination import Pagination
+from glossary import Glossary
+from search import Search
 
 
 class JsonSerializer(object):
@@ -59,22 +58,6 @@ class JsonSerializerGlossary(object):
         print(json.dumps(all_results, indent=4, separators=(',', ': ')))
 
 
-class Glossary(object):
-
-    def search(self, search_term_display):
-        try:
-            database.open('glossary.db3')
-            glossary = Entry.select().where(Entry.term == search_term_display)
-
-            if glossary.count() == 0:
-                glossary = None
-
-        except:
-            glossary = None
-
-        return glossary
-
-
 class WebSerializer(object):
 
     def _get_result_text(self, result, key):
@@ -82,7 +65,7 @@ class WebSerializer(object):
         if highlighted is not None and len(highlighted) > 0:
             return highlighted
 
-        return result[key]
+        return cgi.escape(result[key])
 
     def get_result(self, result):
         result_dict = {
@@ -97,13 +80,19 @@ class WebSerializer(object):
             # Comments can be multi-line because they contain multiple lines or
             # because we concatenated tcomments with comments from the PO. So
             # it is necessary to adapt it to properly integrate into HTML.
-            comment = result["comment"].replace('\n', '<br />').replace('\r', '')
+            comment = cgi.escape(result["comment"]).replace('\n', '<br />').replace('\r', '')
             result_dict['comment'] = comment
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            result_dict['context'] = result["context"]
+            result_dict['context'] = cgi.escape(result["context"])
 
         return result_dict
+
+    def get_page_url(self):
+        port = os.environ["SERVER_PORT"]
+        port = "" if port == "80" else ":" + port
+        url =  "http://" + os.environ["SERVER_NAME"] + port + os.environ["REQUEST_URI"]
+        return url
 
     def do(self, search):
         """Search a term in the Whoosh index."""
@@ -112,20 +101,37 @@ class WebSerializer(object):
             results = []
             num_results = 0
             end_time = 0
+            PER_PAGE = 100
 
             g = Glossary()
             glossary = g.search(search.search_term_display)
 
             if search.has_invalid_search_term:
                 aborted_search = True
+                pagination = None
             else:
                 start_time = time.time()
                 raw_results = search.get_results()
                 end_time = time.time() - start_time
                 num_results = raw_results.scored_length()
 
-                for result in raw_results:
-                    results.append(self.get_result(result))
+                if len(raw_results) > 0:
+
+                    url = self.get_page_url()
+                    pagination = Pagination(PER_PAGE, len(raw_results), url)
+                    start = (pagination.page - 1) * PER_PAGE
+                    end = start
+
+                    max_end = start + PER_PAGE
+                    if num_results - start < max_end:
+                        end += num_results - start
+                    else:
+                        end += PER_PAGE
+
+                    for i in xrange(start, end):
+                        results.append(self.get_result(raw_results[i]))
+                else:
+                   pagination = None
 
             ctx = {
                 'search_term': search.search_term_display,
@@ -134,6 +140,7 @@ class WebSerializer(object):
                 'time': end_time,
                 'aborted_search': aborted_search,
                 'glossary': glossary,
+                'pagination': pagination,
             }
 
             env = Environment(loader=FileSystemLoader('./'))
@@ -144,67 +151,6 @@ class WebSerializer(object):
         except Exception as details:
             traceback.print_exc()
             print(str(details))
-
-
-class Search(object):
-    """Search a term in the Whoosh index."""
-    dir_name = "indexdir"
-
-    def __init__(self, source, target, project):
-        self.source = source
-        self.target = target
-        self.project = project
-        self.searcher = None
-        self.query = None
-
-    @property
-    def has_invalid_search_term(self):
-        return ((self.source is None or len(self.source) < 2) and
-                (self.target is None or len(self.target) < 2))
-
-    @property
-    def search_term_display(self):
-        text = ''
-
-        if self.source is not None and len(self.source) > 0:
-            text += self.source
-
-        if self.target is not None and len(self.target) > 0:
-            text += ' ' + self.target
-
-        return text
-
-    def get_results(self):
-        if self.searcher is None:
-            self.search()
-
-        results = self.searcher.search(self.query, limit=5000)
-        results.fragmenter = WholeFragmenter()
-        return results
-
-    def search(self):
-        ix = open_dir(self.dir_name)
-        self.searcher = ix.searcher()
-        fields = []
-        qs = ''
-
-        if self.source is not None and len(self.source) > 0:
-            qs += u' source:{0}'.format(self.source)
-            fields.append("source")
-
-        if self.target is not None and len(self.target) > 0:
-            qs += u' target:{0}'.format(self.target)
-            fields.append("target")
-
-        if self.project is not None and self.project != 'tots':
-            if self.project == 'softcatala':
-                qs += u' softcatala:true'
-                fields.append("softcatala")
-            else:
-                qs += u' project:{0}'.format(self.project)
-                fields.append("project")
-
-        self.query = MultifieldParser(fields, ix.schema).parse(qs)
 
 
 def main():
