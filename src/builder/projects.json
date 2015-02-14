@@ -1030,6 +1030,16 @@
                             "target": "ca.po"
                     }
             }
+    },
+    "Openshot": {
+            "projectweb" : "http://www.openshot.org/",
+            "fileset": {
+                    "Openshot": {
+                            "url" : "lp:~openshot.code/openshot/translations",
+                            "type" : "bazaar",
+                            "pattern" : ".*?ca.po"
+                    }
+        }
     }
     
     }
