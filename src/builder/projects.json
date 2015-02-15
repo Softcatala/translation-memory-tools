@@ -774,6 +774,11 @@
                             "url" : "lp:inkscape/po/ca.po",
                             "type": "bazaar",
                             "target": "ca.po"
+                    },
+                    "documentation": {
+                            "url" : " lp:inkscape-docs",
+                            "type" : "bazaar",
+                            "pattern" : ".*?ca.po"
                     }
             }
     },
