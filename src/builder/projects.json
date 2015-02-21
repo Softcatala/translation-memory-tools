@@ -1045,7 +1045,17 @@
                             "pattern" : ".*?ca.po"
                     }
         }
+    },
+    "Mageia": {
+            "projectweb" : "https://www.mageia.org/ca/",
+            "fileset": {
+                    "Mageia" : {
+                            "url" : "https://www.transifex.com/projects/p/mageia",
+                            "type": "transifex"
+                }
+            }
     }
-    
+
+
     }
 }
