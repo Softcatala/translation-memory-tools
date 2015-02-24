@@ -100,6 +100,16 @@ class Corpus(object):
                 logging.info(msg)
                 return False
 
+        # Discard strings without any alpha char
+        alpha = False
+        for c in source:
+            if c.isalpha():
+                alpha = True
+                break
+
+        if not alpha:
+            return False
+
         return len(target) != 0
 
     #

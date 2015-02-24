@@ -54,6 +54,9 @@ class Metrics(object):
                     terms = corpus.documents[document_key_filename][source_word]
                     frequency += len(terms)
 
+            if documents_appear < 2 or frequency < 5:
+                continue
+
             self.tf[source_word] = frequency
             idf = math.log(len(corpus.documents) / documents_appear)
             self.idf[source_word] = idf

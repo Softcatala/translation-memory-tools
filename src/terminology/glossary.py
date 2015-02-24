@@ -38,6 +38,7 @@ class Glossary(object):
 
         return {
             'entries': entries,
+            'num_of_entries': len(entries),
             'date': unicode(self.date, "utf-8"),
             'description': unicode(self.description, "utf-8"),
         }
