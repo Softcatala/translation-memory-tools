@@ -28,9 +28,9 @@ class Search(object):
     dir_name = "indexdir"
 
     def __init__(self, source, target, project):
-        self.source = source
-        self.target = target
-        self.project = project
+        self._source = source
+        self._target = target
+        self._project = project
         self.searcher = None
         self.query = None
 
@@ -40,16 +40,16 @@ class Search(object):
                 (self.target is None or len(self.target) < 2))
 
     @property
-    def search_term_display(self):
-        text = ''
+    def source(self):
+        return self._source
 
-        if self.source is not None and len(self.source) > 0:
-            text += self.source
+    @property
+    def target(self):
+        return self._target
 
-        if self.target is not None and len(self.target) > 0:
-            text += ' ' + self.target
-
-        return text
+    @property
+    def project(self):
+        return self._project
 
     def get_results(self):
         if self.searcher is None:

@@ -100,11 +100,11 @@ class WebSerializer(object):
             aborted_search = False
             results = []
             num_results = 0
-            end_time = 0
+            total_time = 0
             PER_PAGE = 100
 
             g = Glossary()
-            glossary = g.search(search.search_term_display)
+            glossary = g.search(search.source)
 
             if search.has_invalid_search_term:
                 aborted_search = True
@@ -112,7 +112,7 @@ class WebSerializer(object):
             else:
                 start_time = time.time()
                 raw_results = search.get_results()
-                end_time = time.time() - start_time
+                total_time = time.time() - start_time
                 num_results = raw_results.scored_length()
 
                 if len(raw_results) > 0:
@@ -134,10 +134,12 @@ class WebSerializer(object):
                    pagination = None
 
             ctx = {
-                'search_term': search.search_term_display,
+                'source': search.source,
+                'target': search.target,
+                'project': search.project,
                 'results': results,
                 'num_results': num_results,
-                'time': end_time,
+                'time': "{:.2f}".format(total_time),
                 'aborted_search': aborted_search,
                 'glossary': glossary,
                 'pagination': pagination,

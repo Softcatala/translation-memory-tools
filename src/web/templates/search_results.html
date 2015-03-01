@@ -20,9 +20,19 @@
      <!-- bodyContent -->
     <h1 class="section">Resultats de la cerca</h1>
     <div class="bodyRecurs">
-    <span class="searched">Resultats de la cerca del terme:</span>
-    <span class="searched-term">{{ search_term }}</span>
-    <br />
+    <span class="searched">Resultats de la cerca per:</span>
+    <span class="searched-term">
+        {% if source %}
+            {{ source }} <i>(anglès)</i>
+        {% endif %}
+        {% if target %}
+            {{ target }} <i>(català)</i>
+        {% endif %}
+        {% if project %}
+            {{ project }} <i>(projectes)</i>
+        {% endif %}
+    </span>
+    <br/>
     <p>{{ num_results }} resultats. Temps de cerca: {{ time }} segons</p>
     <a href="memories.html">&lt; Torna a la pàgina anterior</a>
     <br />
