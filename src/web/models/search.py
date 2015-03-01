@@ -59,18 +59,24 @@ class Search(object):
         results.fragmenter = WholeFragmenter()
         return results
 
-    def search(self):
-        ix = open_dir(self.dir_name)
+    def search(self, ix=None):
+
+        if ix is None:
+            ix = open_dir(self.dir_name)
+            self.search(ix)
+
         self.searcher = ix.searcher()
         fields = []
         qs = ''
 
+        # We use parenthesis to prevent operators like OR used in source
+        # to affect target
         if self.source is not None and len(self.source) > 0:
-            qs += u' source:{0}'.format(self.source)
+            qs += u' source:({0})'.format(self.source)
             fields.append("source")
 
         if self.target is not None and len(self.target) > 0:
-            qs += u' target:{0}'.format(self.target)
+            qs += u' target:({0})'.format(self.target)
             fields.append("target")
 
         if self.project is not None and self.project != 'tots':

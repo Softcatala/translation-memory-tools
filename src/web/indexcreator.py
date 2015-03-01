@@ -25,6 +25,7 @@ import polib
 from whoosh.analysis import StandardAnalyzer
 from whoosh.fields import BOOLEAN, TEXT, Schema
 from whoosh.index import create_in
+from whoosh.filedb.filestore import RamStorage
 
 sys.path.append('../')
 
@@ -72,7 +73,7 @@ class IndexCreator(object):
 
         print('Total sentences {0}, indexed {1}'.format(self.sentences,
                                                         self.sentences_indexed))
-        self.writer.commit()
+        self.save_index()
 
     def _get_comment(self, entry):
         '''
@@ -136,27 +137,45 @@ class IndexCreator(object):
                 self.sentences_indexed += 1
                 string_words = entry.msgstr.split(' ')
                 self.words += len(string_words)
-                self.writer.add_document(source=s,
-                                         target=t,
-                                         comment=c,
-                                         context=x,
-                                         project=p,
-                                         softcatala=softcatala,
-                )
+                self.write_entry(source=s,
+                                 target=t,
+                                 comment=c,
+                                 context=x,
+                                 project=p,
+                                 softcatala=softcatala)
+
         except Exception as detail:
             print("Exception: " + str(detail))
 
-    def create(self):
+    def write_entry(self, source, target, comment, context, project, softcatala):
+
+        self.writer.add_document(source=source,
+                                 target=target,
+                                 comment=comment,
+                                 context=context,
+                                 project=project,
+                                 softcatala=softcatala)
+
+    def save_index(self):
+        self.writer.commit()
+
+    def create(self, in_memory=False):
         analyzer = StandardAnalyzer(minsize=1, stoplist=None) | CleanUpFilter()
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer),
                         target=TEXT(stored=True, analyzer=analyzer),
                         comment=TEXT(stored=True),
                         context=TEXT(stored=True),
                         softcatala=BOOLEAN(stored=True),
-                        project=TEXT(stored=True),
-        )
-        if not os.path.exists(self.dir_name):
-            os.mkdir(self.dir_name)
+                        project=TEXT(stored=True))
 
-        ix = create_in(self.dir_name, schema)
+        if in_memory:
+            st = RamStorage()
+            ix = st.create_index(schema)
+        else:
+            if not os.path.exists(self.dir_name):
+                os.mkdir(self.dir_name)
+
+            ix = create_in(self.dir_name, schema)
+
         self.writer = ix.writer()
+        return ix
