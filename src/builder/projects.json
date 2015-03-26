@@ -171,6 +171,16 @@
                             "url" : "https://l10n.gnome.org/languages/ca/olpc/doc.tar.gz",
                             "type": "compressed",
                             "target": "olpc-doc.tar.gz"
+                    },
+                    "obsolete-ui": {
+                            "url" : "https://l10n.gnome.org/languages/ca/obsolete/ui-part.tar.gz",
+                            "type": "compressed",
+                            "target": "ui-part.tar.gz"
+                    },
+                    "obsolete-doc": {
+                            "url" : "https://l10n.gnome.org/languages/ca/obsolete/doc.tar.gz",
+                            "type": "compressed",
+                            "target": "doc.tar.gz"
                     }
             }
     },
