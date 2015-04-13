@@ -1,7 +1,7 @@
 {
     "projects": {
     "Header": {
-            "comment" : "This is the first file used when buidling the Softcatalà TM. It contains the hearder with the credits",
+            "comment" : "This is the first file used when buidling the Softcatalà TM. It contains the header with the credits",
             "softcatala" : true,
             "downloadable" : false,
             "fileset": {
