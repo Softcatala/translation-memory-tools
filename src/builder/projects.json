@@ -474,6 +474,15 @@
                     }
             }
     },
+    "WordPress-plugins": {
+            "projectweb" : "https://wordpress.org/plugins/",
+            "fileset": {
+                    "wordpress-seo" : {
+                            "url" : "https://translate.yoast.com/projects/wordpress-seo/ca/default/export-translations",
+                            "type": "wordpress-seo-ca.po"
+                    }
+            }
+    },
     "Blender": {
             "projectweb" : "http://www.blender.cat/",
             "disabled": true,
