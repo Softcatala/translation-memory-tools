@@ -2,6 +2,11 @@
 
 copy_files() {
 
+    #Softcatalà headers and footers
+    rm -r -f $2/ssi
+    mkdir $2/ssi
+    cp -r $1/web-Softcatala/ssi/* $2/ssi
+
     # Index
     rm -r -f $2/indexdir
     mkdir $2/indexdir
@@ -77,4 +82,4 @@ fi
 # Deployment to production environment
 copy_files $ROOT $TARGET_DIR
 
-echo "Deployment completed"
+echo "Deployment completed $ROOT $TARGET_DIR"

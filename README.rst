@@ -40,6 +40,7 @@ For Transifex's project (all projects with type ``transifex`` at
 time that they get executed. After the first execution, they get recorded
 in the ``.transifexrc`` file.
 
+`Flask configuration`_
 
 Logging
 =======
@@ -110,5 +111,6 @@ Contact Information
 
 Jordi Mas: jmas@softcatala.org
 
-
 .. _`Web page of the project`: http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà
+.. _`Flask configuration`: https://realpython.com/blog/python/kickstarting-flask-on-ubuntu-setup-and-deployment/
+

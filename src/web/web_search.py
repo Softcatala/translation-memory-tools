@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
-# Copyright (c) 2013-2015 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2014-2015 Jordi Mas i Hernandez <jmas@softcatala.org>
 # Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
 #
 # This program is free software; you can redistribute it and/or
@@ -19,12 +19,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
+from flask import Flask, request, Response
 import cgi
 import json
 import time
-import traceback
 import sys
-import os
 from jinja2 import Environment, FileSystemLoader
 
 sys.path.append('models/')
@@ -41,8 +40,8 @@ class JsonSerializer(object):
         for result in results:
             all_results.append(result.fields())
 
-        print('Content-type: application/json\n\n')
-        print(json.dumps(all_results, indent=4, separators=(',', ': ')))
+        return Response(json.dumps(all_results, indent=4,
+                        separators=(',', ': ')),  mimetype='application/json')
 
 
 class JsonSerializerGlossary(object):
@@ -54,8 +53,8 @@ class JsonSerializerGlossary(object):
             for result in results:
                 all_results.append(result.dict)
 
-        print('Content-type: application/json\n\n')
-        print(json.dumps(all_results, indent=4, separators=(',', ': ')))
+        return Response(json.dumps(all_results, indent=4,
+                        separators=(',', ': ')),  mimetype='application/json')
 
 
 class WebSerializer(object):
@@ -88,85 +87,74 @@ class WebSerializer(object):
 
         return result_dict
 
-    def get_page_url(self):
-        port = os.environ["SERVER_PORT"]
-        port = "" if port == "80" else ":" + port
-        url =  "http://" + os.environ["SERVER_NAME"] + port + os.environ["REQUEST_URI"]
-        return url
-
     def do(self, search):
         """Search a term in the Whoosh index."""
-        try:
-            aborted_search = False
-            results = []
-            num_results = 0
-            total_time = 0
-            PER_PAGE = 100
+        aborted_search = False
+        results = []
+        num_results = 0
+        total_time = 0
+        PER_PAGE = 100
 
-            g = Glossary()
-            glossary = g.search(search.source)
+        g = Glossary()
+        glossary = g.search(search.source)
 
-            if search.has_invalid_search_term:
-                aborted_search = True
-                pagination = None
-            else:
-                start_time = time.time()
-                raw_results = search.get_results()
-                total_time = time.time() - start_time
-                num_results = raw_results.scored_length()
+        if search.has_invalid_search_term:
+            aborted_search = True
+            pagination = None
+        else:
+            start_time = time.time()
+            raw_results = search.get_results()
+            total_time = time.time() - start_time
+            num_results = raw_results.scored_length()
 
-                if len(raw_results) > 0:
+            if len(raw_results) > 0:
 
-                    url = self.get_page_url()
-                    pagination = Pagination(PER_PAGE, len(raw_results), url)
-                    start = (pagination.page - 1) * PER_PAGE
-                    end = start
+                url = '/'
+                pagination = Pagination(PER_PAGE, len(raw_results), url)
+                start = (pagination.page - 1) * PER_PAGE
+                end = start
 
-                    max_end = start + PER_PAGE
-                    if num_results - start < max_end:
-                        end += num_results - start
-                    else:
-                        end += PER_PAGE
-
-                    for i in xrange(start, end):
-                        results.append(self.get_result(raw_results[i]))
+                max_end = start + PER_PAGE
+                if num_results - start < max_end:
+                    end += num_results - start
                 else:
-                   pagination = None
+                    end += PER_PAGE
 
-            ctx = {
-                'source': search.source,
-                'target': search.target,
-                'project': search.project,
-                'results': results,
-                'num_results': num_results,
-                'time': "{:.2f}".format(total_time),
-                'aborted_search': aborted_search,
-                'glossary': glossary,
-                'pagination': pagination,
-            }
+                for i in xrange(start, end):
+                    results.append(self.get_result(raw_results[i]))
+            else:
+                pagination = None
 
-            env = Environment(loader=FileSystemLoader('./'))
-            template = env.get_template('templates/search_results.html')
+        ctx = {
+            'source': search.source,
+            'target': search.target,
+            'project': search.project,
+            'results': results,
+            'num_results': num_results,
+            'time': "{:.2f}".format(total_time),
+            'aborted_search': aborted_search,
+            'glossary': glossary,
+            'pagination': pagination,
+        }
 
-            print('Content-type: text/html\n\n')
-            print(template.render(ctx).encode('utf-8'))
-        except Exception as details:
-            traceback.print_exc()
-            print(str(details))
+        env = Environment(loader=FileSystemLoader('./'))
+        template = env.get_template('templates/search_results.html')
+
+        r = template.render(ctx).encode('utf-8')
+        return r
 
 
-def main():
-    form = cgi.FieldStorage()
-    source = form.getvalue("source", '')
-    target = form.getvalue("target", None)
-    project = form.getvalue("project", None)
-    json = form.getvalue("json", None)
-    glossary_only = form.getvalue("glossary_only", None)
+app = Flask(__name__)
 
-    source = unicode(source, 'utf-8')
 
-    if target is not None:
-        target = unicode(target, 'utf-8')
+@app.route('/')
+def search_request():
+    source = request.args.get('source')
+    target = request.args.get('target')
+    project = request.args.get('project')
+    json = request.args.get('json')
+    glossary_only = request.args.get('glossary_only')
+    search = Search(source, target, project)
 
     search = Search(source, target, project)
 
@@ -174,15 +162,18 @@ def main():
     if json is not None:
         serializer_cls = JsonSerializer
 
+    result = None
     if glossary_only is not None:
         glossary = Glossary()
         glossary = glossary.search(source)
         serializer = JsonSerializerGlossary()
-        serializer.do(glossary)
+        result = serializer.do(glossary)
     else:
         serializer = serializer_cls()
-        serializer.do(search)
+        result = serializer.do(search)
 
+    return result
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    app.debug = True
+    app.run()

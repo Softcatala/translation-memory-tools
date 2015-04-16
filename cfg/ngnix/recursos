@@ -1,0 +1,24 @@
+server {
+
+        ssi on;
+
+        # See http://www.nginxtips.com/nginx-location-directive/
+        listen 8080 default_server;
+        listen [::]:8080 default_server ipv6only=on;
+
+        root /home/jmas/web/recursos-dev/;
+        #index index.html index.htm;
+
+        # Make site accessible from http://localhost/
+        server_name localhost;
+
+        #location ~* \.(py)$  {
+        location /web_search.py {
+            rewrite ^ / break;
+            proxy_pass http://127.0.0.1:8000;
+        }
+}
+
+
+
+
