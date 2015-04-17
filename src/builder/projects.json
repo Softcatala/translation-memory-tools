@@ -479,7 +479,8 @@
             "fileset": {
                     "wordpress-seo" : {
                             "url" : "https://translate.yoast.com/projects/wordpress-seo/ca/default/export-translations",
-                            "type": "wordpress-seo-ca.po"
+                            "type": "file",
+                            "target": "wordpress-seo-ca.po"
                     }
             }
     },
