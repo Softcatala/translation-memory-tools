@@ -469,8 +469,19 @@
             "projectweb" : "http://ca.wordpress.org/",
             "fileset": {
                     "wordpress" : {
-                            "url" : "http://i18n.svn.wordpress.org/ca/trunk/next-version/messages/",
-                            "type": "subversion"
+                            "url" : "https://translate.wordpress.org/projects/wp/dev/ca/default/export-translations",
+                            "type": "file",
+                            "target": "wp-dev-ca.po"
+                    },
+                    "wordpress-admin" : {
+                            "url" : "https://translate.wordpress.org/projects/wp/dev/admin/ca/default/export-translations",
+                            "type": "file",
+                            "target": "wp-dev-admin-ca.po"
+                    },
+                    "wordpress-admin-network" : {
+                            "url" : "https://translate.wordpress.org/projects/wp/dev/admin/network/ca/default/export-translations",
+                            "type": "file",
+                            "target": "wp-dev-admin-network-ca.po"
                     }
             }
     },
