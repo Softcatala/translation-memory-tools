@@ -1,0 +1,661 @@
+# Catalan typographic rules
+# Copyrigth 2010, Josep Ma. Ferrer (txemaq@gmail.com)
+# by the KDE Catalan Team (kde-i18n-ca@kde.org)
+# based in the work of the KDE Spanish Team
+# License: GPLv3
+
+# Hook to eliminate accel mark,
+# it works with"X-Accelerator-Marker" header in PO files
+addFilterHook name="remove/remove-accel-msg" on="msg"
+
+# la l·l geminada porta un punt volat (no un punt normal)
+# Aquesta regla la poso abans del filter.include perquè en cas contrari hi ha 
+# una regla que l'anul·la («Remove web pages» a filter.include)
+[l\.l]
+valid after="raphae"
+valid after="michae"
+valid after="\<email>"
+valid after="return\s" cat="katepart4,ktexteditor5"
+valid before="unak@kde"
+valid before="udwig@kde"
+hint="La l·l geminada porta un punt volat (no un punt normal) (tipografia)"
+
+include file="filter.include"
+
+validGroup beforePunctuation
+valid after="[a-zA-Z0-9çÇáéíóúàèòÁÉÍÓÚÀÈÒüÜ\>\»\)\]\}\«\%\-\&\<\^\\]"
+valid before="$"
+valid after="\&[\w\-\_]*?\;"
+
+validGroup afterPunctuation
+valid before="[$a-zA-Z0-9çÇáéíóúàèòÁÉÍÓÚÀÈÒüÜ\>\»\(\[\{\«\%\-\&\<\^\\]"
+valid after="^"
+
+validGroup openQuotes
+valid after="[\<\>\(\[\{\-\=\.\,\;\:\s]"
+valid after="\&\w+?\;"
+valid after="^"
+valid before=".+»"
+
+validGroup closeQuotes
+valid before="[\<\>\)\]\}\-\=\.\,\;\:\s]"
+valid after="\&[\w\-\_]*?\;"
+valid before="$"
+valid after="«.+"
+
+[\s\:]
+valid cat="rocs_apiDatastructure,rocs_apiGraphstructure,rocs_apiLinkedListstructure" # docmessages
+valid ctx="Numbers and characters"
+valid ctx="CSV separator"
+valid msgid="\s\:\s" cat="kstars,tellico_details"
+valid before="\{"
+valid before="q\:"
+valid before="local\:"
+valid before="pserver"
+valid before="="
+valid before="ext\:"
+valid before="\svar" cat="analitza"
+valid before="\suncrustify" cat="kdevformatters"
+valid before="\smyformatter" cat="kdevformatters"
+valid before=".+expansió" cat="libksieve"
+valid before="email|count|fullName|password|amount|from|to|all" cat="jointhegame"
+valid after="usr\/s" cat="konsole" # docmessages
+valid after="~" cat="konsole" # docmessages
+valid after="(TEX|BIB|BST)INPUTS\s.+" cat="kile"
+valid after="\d+" before="\s?\d+"
+valid after="^" cat="kalgebra"
+valid after="pty.+" cat="kdevgdb"
+valid cat="amarokcollectionscanner_qt"
+valid cat="baloo_queryparser"
+valid msgstr="src \: bash" cat="konsole" # docmessages
+valid msgstr="H \: màquina remota" cat="konsole" # docmessages
+valid msgstr="\s\:\s" cat="kalgebra" # docmessages
+valid msgstr="par1 \: var" cat="kalgebra_commands" # docmessages
+hint="No s'ha de posar cap espai abans del signe dels dos punts (tipografia)"
+
+[\:\S]
+validGroup beforePunctuation
+valid after="^"
+valid after="file|gg|mailto|man|whatsthis|kmail|addMsg|config"
+valid after="about|audiocd|bookmarks|camera|ed2k|exec|ftps?|fonts|help|https?|lan|lpr|media|news|network|okular|pmp|parallel|smb|system|trash|umax|vdvd|videodvd|webdavs?"
+valid after="\d+\s?" span="\:\d+"
+valid after="hores"
+valid after="minuts"
+valid after="segons"
+valid after="font-family|font-size|font-style|font-weight|text-align|text-decoration|margin-top|margin-bottom|-type"# CSS
+valid after="white-space" # CSS
+valid after="~"
+valid after="mètode\s" cat="cervisia"
+valid after="\[" cat="cervisia,kstars_indi,kcmtelepathyaccounts_plugin_haze"
+valid after="(TEX|BIB|BST)INPUTS\s.+" cat="kile"
+valid after="fontdir\/" cat="kdeprint_cups-config"
+valid after="A-Za-z_.*" cat="lokalize,kate_highlighting"
+valid after="ordinador\["
+valid after="pty.+" cat="kdevgdb"
+valid before="~"
+valid before=".+expansió" cat="libksieve"
+valid ctx=".*regular expression.*" cat="plasma_applet_publictransport,plasma_runner_publictransport"
+valid ctx="List of words.*"
+valid ctx="Numbers and characters"
+valid ctx="Hours:minutes:seconds"
+valid ctx="CSV separator"
+valid ctx="Query"
+valid span="\:$"
+valid span="\:q"
+valid span="\:\'"
+valid span="\:\="
+valid span="\:e"
+valid span="\:(0|1|\*)" cat="kdm_kdmrc-ref" # docmessages
+valid cat="kdevcvs"
+valid cat="jointhegame"
+valid cat="baloo_queryparser"
+valid msgstr="HH:MM\[\:SS\]" # docmessages
+hint="S'ha de posar un espai després del signe dels dos punts (tipografia)"
+
+[\s\;]
+valid ctx="Numbers and characters"
+valid ctx="CSV separator" 
+valid msgid="\s;;" # docmessages
+valid after="Algerian\s*" cat="calligra,koffice"
+valid after="Algerian\s*" cat="calligra,koffice"
+valid after="abans\sde" cat="cantor"
+valid after="pty.+" cat="kdevgdb"
+valid span="\s\;$" cat="kleopatra" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kipi-plugins_geolocation" # docmessages
+valid comment="Tag\:\sscreen" cat="sscd" # docmessages
+valid comment="Tag\:\scommand" cat="konsole" # docmessages
+hint="No s'ha de posar cap espai abans del signe de punt i coma (tipografia)"
+
+[;\S]
+validGroup beforePunctuation
+valid after="&amp;[0-9a-zA-Z\.\-]+"
+valid after="\*\.[a-zA-Z]+" before="\*\.[a-zA-Z]+" # List of extension suffix
+valid after="center|empty|normal|pt|px|pre-wrap|\d+|[a-f]{1,2}" # CSS
+valid after="bold" before="'"   # CSS
+valid after="A-Za-z_.*" cat="lokalize"
+valid after="punt i coma \("
+valid after="RSS.*" cat="simon-touch"
+valid after="pty.+" cat="kdevgdb"
+valid after="[\[|\"|\d]" cat="sheets_functions" # docmessages
+valid before="~"
+valid ctx="Numbers and characters"
+valid ctx="CSV separator" 
+valid ctx="unit synonyms for matching user input"
+valid ctx="Query"
+valid cat="tables,kcells,kspread,sheets,krossmodulesheets"
+valid cat="desktop_kdeplasma-addons" ctx="Keywords"
+valid cat="baloo_queryparser"
+valid span=";$"
+valid span=";*" cat="kfilereplace"
+valid span=";~" cat="kfind" # docmessages
+valid span=";[eN]" cat="kleopatra" # docmessages
+valid msgstr="^[FIXED|YIELDDISC]" cat="sheets_functions" # docmessages
+valid !msgstr=";\<" cat="kmail_configure" # docmessages
+valid !msgstr=";\<" cat="www_www" # messages
+hint="S'ha de posar un espai després del signe de punt i coma (tipografia)"
+
+[\s\!]
+valid ctx="Numbers and characters"
+valid ctx="CSV separator"
+valid after="-"
+valid before="="
+valid before="a="
+valid before="DOCTYPE" cat="quanta,quanta_extending-quanta"
+hint="No s'ha de posar cap espai abans del signe d'admiració (tipografia)"
+
+[\!\S]
+validGroup beforePunctuation
+valid ctx="Numbers and characters"
+valid ctx="CSV separator"
+valid ctx="Description of a condition"
+valid span="\!$"
+valid span="\!D" cat="quanta,quanta_extending-quanta"
+valid after="~"
+valid after="\s\*" cat="konversation"
+valid after="#"
+valid after="\[" cat="kmymoney"
+valid before="="
+valid before="~"
+valid span="\!="
+valid cat="baloo_queryparser"
+hint="S'ha de posar un espai després del signe d'admiració (tipografia)"
+
+[.*?\!\.]
+valid span="Qalculate\!\." cat="plasma_runner_qalculate_runner"
+valid span="\(valor\)\!\." cat="tables,kcells,kspread,sheets"
+valid span="\sx\!\!\." cat="tables,kcells,kspread,sheets"
+valid msgstr="!\.$" cat="sheets_functions" # docmessages
+hint="No s'ha de posar cap punt després del signe d'admiració (tipografia)"
+
+[.*?\!\s[a-z]]
+valid span="Qalculate\!\s." cat="cantor"
+valid span="Yahoo\!\s." cat="knode_using-firststart"
+hint="S'ha de posar en majúscula la paraula posterior al signe d'admiració (tipografia)"
+
+[¡]
+hint="En català no s'utilitza el signe d'obertura d'admiració «¡» (tipografia)"
+
+[\s\?]
+valid ctx="Numbers and characters"
+valid ctx="Query"
+valid comment="Tag\:\suserinput" cat="kioslave_nepomuksearch" # docmessages
+valid after="i" cat="lokalize"
+valid after="TipusAssociació" cat="umbrello"
+valid after="seleccioneu.*" cat="koffice,calligra"
+valid after="Nivell" cat="blinken"
+valid before=".+expansió" cat="libksieve"
+valid before=">\n" cat="kfilereplace" # docmessages
+valid msgstr="^El nivell ?\s" cat="blinken" # docmessages
+valid msgstr="\s\?\s1,\s\?\s0\s" cat="kalgebra_commands" # docmessages
+valid msgstr="\s\?\s" cat="kalgebra" # docmessages
+valid msgstr="\s\.\s\*\s\?\s\/" cat="digikam" # docmessages
+hint="No s'ha de posar cap espai abans del signe d'interrogació (tipografia)"
+
+[\?\S]
+validGroup beforePunctuation
+valid ctx=".*one character"
+valid ctx="Numbers and characters"
+valid ctx="Query"
+valid ctx=".*regular expression.*" cat="plasma_applet_publictransport,plasma_runner_publictransport"
+valid comment="Tag\:\suserinput" cat="kioslave_nepomuksearch" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kdm_theme-ref,kcontrol_kremotecontrol" # docmessages
+valid span="\?$"
+valid span="\?\»"
+valid span="\?d" cat="kio_audiocd,kioslave_audiocd"
+valid span="\?1" cat="plasma_applet_plasmaboard"
+valid span="\?\>" cat="kopete_pipes,quanta_extending-quanta"
+valid span="\?~" cat="kate_highlighting" # docmessages
+valid span="\?\:" cat="quanta"
+valid after="~"
+valid after="i\s" cat="lokalize"
+valid after="\*" cat="adblock"
+valid after="seleccioneu\s.*" cat="koffice,calligra"
+valid before=".+expansió" cat="libksieve"
+valid cat="baloo_queryparser"
+valid msgstr=">\n" cat="kfilereplace" # docmessages
+hint="S'ha de posar un espai després del signe d'interrogació (tipografia)"
+
+[\¿.*?\?\.]
+hint="No s'ha de posar cap punt després del signe d'interrogació (tipografia)"
+
+[\¿.*?\?\s[a-z]]
+hint="S'ha de posar en majúscula la paraula posterior al signe d'interrogació (tipografia)"
+
+[¿]
+hint="En català no s'utilitza el signe d'obertura d'interrogació «¿» (tipografia)"
+
+[\s\,]
+valid ctx="Numbers and characters"
+valid ctx="Keywords" 
+valid ctx="CSV separator"
+valid comment="Tag\:\sprogramlisting" cat="kdm" # docmessages
+valid after="\d+" before="\s?\d+"
+valid after="Delta" cat="kstars"
+valid cat="kst_common"
+valid cat="baloo_queryparser"
+valid comment="Tag\:\sliterallayout" cat="ktimetracker" # docmessages
+hint="No s'ha de posar cap espai abans del signe de coma (tipografia)"
+
+[\,\S]
+validGroup beforePunctuation
+valid msgid="CREDIT_FOR_TRANSLATORS"
+valid ctx="\w+ OF TRANSLATORS"
+valid ctx="trans_comment"
+valid ctx="Numbers and characters"
+valid ctx="Keywords" 
+valid ctx="Query"
+valid ctx="CSV separator"
+valid after="\d+\s?" span="\,\d"
+valid after="0123456789\-\+"
+valid after="(\-|\+)?[0-9]*"
+valid after="DANKA_P450.+" cat="kdeprint_cups-config" # docmessages
+valid after="~" span="\,\." cat="ksystemlog,kig"
+valid span="\,$"
+valid span="\,\?"
+valid span="\,\«"
+valid span="\,~"
+valid span="\,\." cat="ktimetracker"
+valid span="\,1" cat="kate_regular-expressions"
+valid span="\,\}" cat="kdevgrepview,kile"
+hint="S'ha de posar un espai després del signe de coma (tipografia)"
+
+[\»]
+validGroup closeQuotes 
+valid ctx="Numbers and characters"
+hint="S'ha de posar un espai després del signe de cometa llatina de tancament (tipografia)"
+
+[\.\»] 
+valid after="\«(\.)"
+valid after="\.\."
+valid before="\sMeltzer" cat="amarok"
+valid msgstr="«núm\.»" cat="kommander_specials" # docmessages
+hint="S'ha de posar el punt després del signe de cometa llatina de tancament (tipografia)"
+
+[\«]
+validGroup openQuotes
+valid ctx="Numbers and characters"
+hint="S'ha de posar un espai abans del signe de cometa llatina d'obertura (tipografia)"
+
+[\«]
+valid before=".*?[\»\(\{\[\«\"\']"
+valid before=".+Unicode" cat="amarok"
+valid after="contenir\s.+" cat="kile"
+valid cat="kformula"
+hint="Cal obrir i tancar les cometes llatines (tipografia)"
+
+[\s\s+]
+valid msgid="\s\s+"
+valid after="V\sI\sS\sT\sA"
+hint="No s'ha de posar més d'un espai consecutiu (tipografia)"
+
+[\s\%]
+valid msgid="%\\" cat="kile" # docmessages
+valid before="\w"
+valid before="$"
+valid before=":m"
+valid before="\{(APPNAME|AUTHOR|album|title|dest|campa|itemid|\.)"
+valid before="\{(idPrefix|token)" cat="kate,pate"
+valid before="\{" cat="plasma_applet_events"
+valid before="\s"
+valid before="~" cat="krecipes,krusader"
+valid before="#" cat="konsole"
+valid before="\.2f" cat="enzyme"
+valid after="\,"
+valid after="o"
+valid after="-"
+valid after="\(en" cat="amarok"
+valid after="width=\"\d+" before="\"" # HTML
+valid ctx="Numbers and characters"
+valid comment="Tag\:\sprogramlisting" cat="kipi-plugins_geolocation" # docmessages
+hint="No s'ha de posar cap espai abans del signe de percentatge (tipografia)"
+
+[\s\.]
+valid before="\w{2,7}\b" # Extensions
+valid before="\/\w+" # Files
+valid before="h\b" # .h files
+valid before="~"
+valid before="calendar"
+valid before="adiumMessageStyle"
+valid before="cvsignore"
+valid before="\.\." cat="kate_highlighting,quanta_extending-quanta" # docmessages
+valid before="%1" cat="kxsldbg"
+valid after="~" comment="tipoftheday" cat="digikam"
+valid after="\:"
+valid after="exec"
+valid after="gdbserver"
+valid after="-" cat="thesaurus_tool"
+valid after="cmake" cat="jovie,www_www"
+valid after="usant" cat="kile"
+valid after="columna\sn\sentrada.+" cat="kile"
+valid after="paràmetres," cat="analitza"
+valid after="pogut\scopiar" cat="kmail_faq" # docmessages
+valid span="\s\.$" cat="ktouch,kile,kexi"
+valid ctx="function prototype"
+valid comment="Tag\:\suserinput" cat="kioslave_nepomuksearch" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kate_advanced,kleopatra,klettres" # docmessages
+valid comment="Tag\:\sscreen" cat="kturtle_programming-reference" # docmessages
+valid msgstr="\s\.\.\.\)$" cat="kalgebra_commands" # docmessages
+valid msgstr="\s\.\s\*\s\?\s\/" cat="digikam" # docmessages
+hint="No s'ha de posar cap espai abans del signe de punt (tipografia)"
+
+[\.\S]
+validGroup beforePunctuation
+valid ctx="EMAIL OF TRANSLATORS"
+valid ctx="trans_comment"
+valid ctx="Numbers and characters"
+valid ctx="unit synonyms for matching user input"
+valid msgid="CREDIT_FOR_TRANSLATORS"
+valid msgstr="\.\*" cat="knode_using-morefeatures"
+valid msgstr="{{\.\/}" # docmessages
+valid before="D?COPserver"
+valid before="\w{1,16}\b" # Extensions
+valid after="adreces IP.+" cat="kcmkio,kcontrol_proxy"
+valid after="(adreça|adreces).+" cat="smb4k,smb4k-core"
+valid after="~" cat="cupsdconf4,katepart4,ktexteditor5,kfileshare,kppp,calligra,kexi,krusader,kcm_ufw"
+valid after="XXX"
+valid after="\.\." 
+valid after="\*" 
+valid after="\("
+valid after="cmake\s" cat="www_www"
+valid span="\.:" cat="kipiplugin_gpssync"
+valid span="Last\.Fm"
+valid span="\.\." before="\."
+valid span="\.\." after="\."
+valid span="\.$"
+valid span="KDE\se.V."
+valid span="\.~"
+valid span="\.(h|c)" cat="desktop_applications_kate,desktop_kdesdk,kateopenheader,kate_plugins,kdevformatters,kate,pate"
+valid span="\.\*" cat="kdiff3,kdeprint4,amarok"
+valid comment="Tag\:\sscreen" cat="kmail_faq" # docmessages
+valid cat="baloo_queryparser"
+hint="S'ha de posar un espai després d'un signe de punt (tipografia)"
+
+[\.\)]
+valid after="\.\."
+valid after="S\.u\.S\.E"
+valid after="dim" cat="kipiplugin_batchprocessimages"
+valid after="\." cat="krusader"
+valid after="punt \(" cat="kmymoney"
+valid before="\$" cat="quanta"
+valid cat="tables,kcells,kspread"
+valid cat="kstars"
+valid msgstr="\sdim\.\)" cat="kipi-plugins_resizeimages"
+hint="S'ha de posar el punt després del parèntesi i no abans (tipografia)"
+
+[\.\.\.\s\.]
+hint="No s'ha de posar cap signe de punt després de punts suspensius (tipografia)"
+
+[&cr;]
+hint="S'ha detectat un caràcter incorrecte de «retorn de carro» (tipografia)"
+
+#[\S\.\s[a-zç]]
+#valid after="\." span="\.\.\s[a-zç]"
+#valid ctx="unit synonyms for matching user input"
+#hint="S'ha d'utilitzar una majúscula després d'un punt (tipografia)"
+
+[\(]
+valid before=".*?[\)\(\{\[\«\"\'~]"
+valid before="\s(esquerre|dret)" cat="kile"
+valid after="~" cat="kalgebra"
+valid after="\.\s" cat="kstars"
+valid after="CDV\s" cat="kstars"
+valid after="QPixmap" cat="kommander"
+valid after="~" cat="analitza"
+valid ctx="unction name in function prototype"
+valid ctx="inlist all matches should be found"
+valid ctx="calculator button"
+valid span="\(" cat="kteatime,simoncalculatorcommand,digikam_color-management"
+hint="S'han d'obrir i tancar els parèntesis (). Sempre aparellats (tipografia)"
+
+#[\[]
+#valid before=".*?[\]\»\""\']"
+#hint="S'han d'obrir i tancar els claudàtors []. Sempre aparellats (tipografia)"
+
+[\{]
+valid before=".*?[\}\{\(\[\«\"\']"
+valid before="\s(esquerre|dret)" cat="kile"
+valid before="~" after="~" cat="quanta"
+valid after="esperava\s" cat="umbrello"
+hint="S'han d'obrir i tancar les claus {}. Sempre aparellats (tipografia)"
+
+#[\(c\)]
+#valid msgstr="©"
+#hint="Cal utilitzar el símbol «©» en lloc de «(c)» (tipografia)"
+
+[\b[A-Z]{2,6}s\b]
+hint="Cal escriure les sigles en singular en català (treieu la «s» final) (tipografia)"
+
+[\b[A-Z]{2,6}\'s\b]
+valid before="\sJoin" cat="jointhegame"
+hint="Cal escriure les sigles en singular en català (treieu la «'s» final) (tipografia)"
+
+[\b\&[\w\d\-\_]+\;s\b]
+hint="Cal escriure les sigles en singular en català (treieu la «s» final) (tipografia)"
+
+[\b\&[\w\d\-\_]+\;\'s\b]
+hint="Cal escriure les sigles en singular en català (treieu la «'s» final) (tipografia)"
+
+[\b([A-Za-záéíóúàèòüçÁÉÍÓÚÀÈÒÇ])+\b\.{1,2}\b(\1)\b]
+valid span="c\." cat="kleopatra"
+hint="Hi ha una paraula consecutiva repetida en el paràgraf (tipografia)"
+
+[\b(del|dels|el|la|els|les|un|una|uns|unes)\s(el|la|els|les|un|una|uns|unes)\b]
+valid msgstr="(els|les) une?s (de )?(als|les) altres"
+valid after="·" # punt volat de la l·l geminada
+valid after="-"
+valid after="&"
+valid before="·"
+valid cat="baloo_queryparser"
+hint="Hi ha dos articles repetits o consecutius (tipografia)"
+
+[\b(del|dels)\s(del|dels)\b]
+valid before="\sKDE" cat="kcm_platform"
+hint="Hi ha dos articles (del/dels) repetits o consecutius (tipografia)"
+
+# manca apóstrof: el/al/de/del/pel/es/se + vocal (també amb H)
+[{\b(el|al|de|del|pel|es|se)\s(a|e|i|o|u|A|E|I|O|U|h)]
+hint="Cal apostrofar «el/al/de/del/pel/es/se» davant de vocal (o h) (tipografia)"
+
+# manca apóstrof: la + vocal (també amb H -excepte i,u,hi,hu àtones-)
+[\sla\s(a|e|o|A|E|O|ha|he|ho)[a-zéíóúàèòüç]+\b]
+hint="Cal apostrofar «la» davant de vocal (o h), excepte i,u,hi,hu àtones (tipografia)"
+
+# «e» sola és un error.
+[\be\b]
+valid before="\:|\-|/|\.|\^"
+valid after="\-|\~|\{|\%|base\s"
+valid after="\[(sub|i)\]" cat="kalzium"
+valid after="(Malësi|Vielha|Montes)\s" cat="kgeography"
+valid after="seqüència.+" cat="digikam"
+valid after="\(" before="\)" cat="kio4,kio5"
+valid after="\(«" before="~" cat="kate,ktexteditor5"
+valid after="CN\[\$" cat="kleopatra" # docmessages
+valid msgstr="ko r r e u" cat="simon" # docmessages
+valid msgstr="nomi singoli e collettivi" cat="parley" # docmessages
+valid msgstr="^[SEARCH]" cat="sheets_functions" # docmessages
+valid msgstr="\se\s\([erg|dekao]" cat="sheets_functions" # docmessages
+valid ctx="Exponential"
+valid cat="tables,kcells,kspread,kdenlive,sheets,kst_common"
+valid comment="Tag\:\sprogramlisting" cat="rocs" # docmessages
+hint="«e» sola és un error (tipografia)"
+
+# «u» sola és un error.
+[\bu\b]i
+valid before="\:|\-|\s\(massa\)|\sper\scent|\s\(USA\)|\."
+valid after="\-|\~|\{|\%|\+|virtual\s|[Pp]àgina\s|Complement\sa\s"
+valid after="\%\d\s" cat="plasma_engine_kalzium"
+valid after="més\s" cat="kcachegrind_qt"
+valid after="\(" cat="liboktetakasten" 
+valid after="(filtre|en|regions)\s" cat="kstars_colorandtemp" # docmessages
+valid after="prioritats\s.+" cat="korganizer" # docmessages
+valid after="di\(" cat="kate_regular-expressions" # docmessages
+valid after="multiplicitat\sd\'" cat="umbrello_uml_basics" # docmessages
+valid after="accelerador.*" cat="tables_a11y,stage_a11y,kspread_a11y,kpresenter_a11y,kcells_a11y" # docmessages
+valid msgstr="ko r r e u" cat="simon" # docmessages
+valid msgstr="només un u " cat="simon" # docmessages
+valid msgstr="from Sample s inner join User u" cat="sscd" # docmessages
+valid msgstr="(U)" # docmessages
+valid cat="kalzium,plasma_engine_kalzium,plasma_applet_Molmasscalculator,kgoldrunner,kubrick,kfile_exr"
+valid cat="libincidenceeditors,tables,kcells,kspread,kbackgammon,kdenlive,krita,sheets"
+valid ctx="Undefined"
+valid ctx="number 1"
+hint="«u» sola és un error (tipografia)"
+
+# «`» un accent obert sol és un error (ull amb les ordres!).
+[`]
+valid after="Teo" cat="amarok"
+valid after="(Cometes|tabulació)\s.+" cat="kile"
+valid after="PREFIX=|~" cat="amarok"
+valid after="esperava\s`?" cat="kdevcpp"
+valid after="invertides \(" cat="kcmgrub2"
+valid after="CONSOLEOWNER.+" cat="kcontrol_mouse" # docmessages
+valid after="{" # docmessages
+valid cat="kdecalendarsystems,kdecalendarsystems5,kdelibs4support"
+valid comment="Tag\:\sliterallayout" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kdm,tellico_hacking" # docmessages
+valid comment="Tag\:\sscreen" cat="kmail_faq" # docmessages
+valid comment="Tag\:\suserinput" # docmessages
+valid before="\/share\/apps\/" # docmessages
+valid before="kde4-config" # docmessages
+valid before="\/ssc\/texts\/" # docmessages
+hint="Un accent obert sol «`» és un error, excepte a ordres de terminal (tipografia)"
+
+# «’» un accent tancat sol és un error (ull amb les ordres!).
+[’]
+hint="Un accent tancat sol «’» és un error, excepte a ordres de terminal (tipografia)"
+
+# « '» un apóstrof inicial és un error (ull amb les ordres!). Substituir per «
+[\s']
+valid after="servir" cat="kwriteconfig,kconfig5_qt"
+valid after="hh|mm|ss"
+valid after="\'\," cat="analitza"
+valid after="useu" cat="kexi"
+valid after="\ssed\s.+" cat="kopete,sscd" # docmessages
+valid after="_language\s.+" # docmessages
+valid before="1d" cat="sscd" # docmessages
+valid before="$" cat="kdeqt"
+valid before="audio|video" cat="konversation"
+valid comment="Tag\:\sscreen" cat="kdeprint_cups-config,kmail_faq,knode_faq" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kdm,kipi-plugins_geolocation,kate_plugins,kile_scripting" # docmessages
+valid comment="Tag\:\suserinput" cat="kioslave_nepomuksearch,kate_advanced" # docmessages
+valid ctx="identifier separator" cat="kalgebra"
+valid ctx="hour in the messages below"
+# valid msgid="'''" # KDE User_Base
+# valid msgid="''"  # KDE User_Base
+hint="Un apòstrof inicial és un error, excepte a ordres de terminal (tipografia)"
+
+# «' » un apóstrof final és un error (ull amb les ordres!).  Substituir per »
+['\s]
+valid cat="kmplot_using" # docmessages
+valid after="Surfin" cat="amarok"
+valid after="\\a?" cat="kile"
+valid after="esperava\s``\:'" cat="kdevcpp"
+valid after="servir\s'" cat="kwriteconfig,kconfig5_qt"
+valid after="\s00"
+valid after="Luciash\sd" cat="kopete"
+valid after="presa" cat="digikam"
+valid after="\ssed\s.+" cat="kopete,sscd" # docmessages
+valid after="audio|video" cat="konversation"
+valid after="CDV\s.*" cat="kstars"
+valid after="useu\s.*" cat="kexi"
+valid after="rsync\-filter" cat="smb4k,smb4k-core"
+valid after="HCY" cat="krita"
+valid before="mm|ss"
+valid comment="Tag\:\sscreen" cat="kdeprint_cups-config,kmail-faq" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kdm,kipi-plugins_geolocation,kile_scripting" # docmessages
+valid ctx="hour in the messages below"
+# valid msgid="'''" # KDE User_Base
+# valid msgid="''"  # KDE User_Base
+hint="Un apòstrof final és un error, excepte a ordres de terminal (tipografia)"
+
+# Les cometes anglosaxones «"» s'han de substituir per les cometes llatines «»
+# En un teclat català, s'obtenen amb AltGr+z i AltGr+x (ull amb les ordres!).
+[\"]
+valid msgid="K\\\"uhler" # docmessages
+valid msgid="(\")" # docmessages
+valid after="~"
+valid after="~.+" cat="amarokcollectionscanner_qt"
+valid after="00" cat="marble"
+valid after="3\.5|5\.25|\s00\.0|\s00"
+valid after="«.+" before=".+»"
+valid after="^" before="$" cat="konsolekalendar,ktimetracker,calligra,calligrafilters,krossmoduletables,krossmodulesheets,koffice,kofficefilters,krossmodulekspread"
+valid after="(BOOL2STRING|find|CHARTOASCII|DECSEX|ARABIC|DSUM|DAVERAGE|DCOUNTA?|DGET|DMAX|DMIN|DPRODUCT|DSTDEVP?|DVARP?|GETPIVOTDATA|WEEKDAY|DAYS360|TIMEVALUE|DATEVALUE|EDATE|EOMONTH|YEARS?|MONTHS?|DAYS?|HOURS?|MINUTES?|SECONDS?|WEEKS|DATEDIF|DATE2UNIX|CONVERT|OCT2BIN|OCT2DEC|OCT2HEX|BIN2DEC|BIN2OCT|BIN2HEX|HEX2DEC|HEX2OCT|HEX2BIN|IMAGINARY|IMREAL|IMCOSH?|IMSINH?|IMTANH?|IMCSCH?|IMSECH?|IMEXP|IMLN|IMLOG2|IMLOG10|IMSQRT|IMPOWER|IMSUM|IMDIV|IMSUB|IMPRODUCT|IMCONJUGATE|IMARGUMENT|IMABS|ACCRINT|AMORDEGRC|AMORLINC|COUPNUM|DISC|DURATION_ADD|EURO|EUROCONVERT|INTRATE|MDURATION|ACCRINTM|RECEIVED|TBILLEQ|TBILLPRICE|TBILLYIELD|N|ISTIME|ISDATE|ISREF|ISTEXT|ISNONTEXT|ISNOTTEXT|COUNT(A|IF)?|SUMIF|ADDRESS|CHOOSE|INDIRECT|AVERAGEA|SUBSTITUTE|SEARCH|T|TEXT|PROPER|COMPARE|EXACT|REPLACE|FIND|MID|LEN|TRIM|CONCATENATE|RIGHT|LEFT|REPT|ROT13|TOGGLE|SLEEK|UPPER|LOWER|CODE|VALUE|REGEXP|REGEXPRE|UNICODE)\(.*" cat="tables,kcells,kspread,sheets"
+valid after="CELL\(.*" cat="sheets"
+valid after="caràcters\s.?" cat="kexi"
+valid after="query\:.*" cat="kexi"
+valid after="konsolekalendar.+" cat="konsolekalendar"
+valid after="~\." cat="katepart4"
+valid after="~" before="~" cat="quanta"
+valid after="(I18n|type).+" cat="quanta"
+valid after="\s(1\/2|2|7\/16|7|3\/4|4)" cat="ppdtranslations4"
+valid after="AutoAdvance=1" cat="kdiff3"
+valid after="x(5|6|7|8|10|12|18|20|24|30)" cat="digikam"
+valid after="install" cat="amarok"
+valid after="label=.*" cat="kdeprint4"
+valid after="expressió regular.+" cat="kphotoalbum"
+valid after="Sig.+" cat="kstars"
+valid after="guiatge.+" cat="kstars"
+valid after="Escala.+" cat="kstars"
+valid after="Delta.+" cat="kstars"
+valid after="8|12|16" cat="kstars_indi" # docmessages
+valid after="KSpeech\ssay\s.*" cat="jovie" # docmessages
+valid after="\sid\=.*" cat="kopete_chatstyle" # docmessages
+valid after="import\s.*" cat="cervisia" # docmessages
+valid after="(comment|attribute|version).*" cat="kate_highlighting" # docmessages
+valid after="(R|r)egion.*" cat="kate_highlighting" # docmessages
+valid after="^~.+" cat="calligra,koffice" # docmessages
+valid after="~" # docmessages
+valid after="XRenderSetPictureFilter\("
+valid after="TFAQ" cat="glossary_kdeprintingglossary" # docmessages
+valid after="(GET|POST).*" cat="kdeprint_cups-config" # docmessages
+valid after="charset=.+" cat="kontact-admin" # docmessages
+valid after="DIGIT.+" cat="kontact-admin" # docmessages
+valid after=" en_GB" cat="kalarm" # docmessages
+valid after="(echo |executant)" cat="ktimetracker" # docmessages
+valid after="esperava\s" cat="cantor"
+valid before="make" cat="amarok"
+valid before="AutoAdvance=1" cat="kdiff3"
+valid before="GET|POST" cat="kdeprint_cups-config" # docmessages
+valid before="\)\s?~" cat="kcmkwincompositing"
+valid before="fr " cat="kalarm" # docmessages
+valid cat="plasma_applet_kdeobservatory"
+valid cat="marble_qt"
+valid cat="cocoon"
+valid cat="kcontrol_mouse" # docmessages
+valid cat="kopete_pipes" # docmessages
+valid cat="kfilereplace" # docmessages
+valid ctx="Name" cat="desktop_extragear-graphics_kipi-plugins"
+valid ctx="Query" cat="desktop_kdebase_kde-runtime"
+valid ctx="Numbers and characters"
+valid ctx="Qoute character option" cat="kaddressbook"
+valid ctx="angle unit symbol"
+valid ctx="unit synonyms for matching user input"
+valid comment="Tag\:\s(entry|para)" cat="krecipes,quanta_extending-quanta" # docmessages
+valid comment="Tag\:\sscreen" cat="kdm,kdeprint_cups-config,kjs_man-kjs.1,kturtle_glossary,kturtle_programming-reference,kmail_faq,konsolekalendar" # docmessages
+valid comment="Tag\:\sprogramlisting" cat="kile,kdm,kdm_theme-ref,kleopatra,klettres,kcontrol_kremotecontrol,kipi-plugins_geolocation,kate_advanced,kate_plugins" # docmessages
+valid comment="Tag\:\sliterallayout" cat="kabcclient_man-kabcclient.1,ktimetracker" # docmessages
+valid comment="Tag\:\suserinput" cat="kate_advanced,kioslave_nepomuksearch" # docmessages
+valid msgstr="PRINT \"HOLA MÓN\"" cat="kjots" # docmessages
+hint="Cal utilitzar les cometes llatines «» (AltGr+z/x) en lloc de les anglosaxones (tipografia)"
+
+# End of rule file

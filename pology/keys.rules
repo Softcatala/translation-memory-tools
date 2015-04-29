@@ -1,0 +1,160 @@
+# Catalan key names rules
+# Copyrigth 2011, Antoni Bella (antonibella5@orange.es)
+# by the KDE Catalan Team (kde-i18n-ca@kde.org)
+# License: GPLv3
+
+# key names (nom de les tecles)
+# http://techbase.kde.org/Documentation_Primer/Manual/DocBook_Reference/GUI_elements
+
+# Alt
+{(&Alt;|<key(cap|sym)>.?Alt.?</key(cap|sym)>)}
+valid msgstr="&Alt;" # <keycap>Alt</keycap>
+valid msgstr="<keycap>Alt</keycap>"
+hint="Es tradueix per «&Alt;, <keycap>Alt</keycap>» (keys)"
+
+# Backspace -> Retrocés
+{(&Backspace;|<key(cap|sym)>.?Backspace.?</key(cap|sym)>)}
+valid msgstr="&Retro;" # <keycap>Retrocés</keycap>
+valid msgstr="<keycap>Retrocés</keycap>"
+hint="Es tradueix per «&Retro;, <keycap>Retrocés</keycap>» (keys)"
+
+# Caps Lock -> Bloq Maj
+{(<key(cap|sym)>)?.?Caps\sLock.?(</key(cap|sym)>)?}
+valid msgstr="<keycap>Bloq Majús\.</keycap>"
+valid msgstr="Bloq Maj" # A l'IGU
+valid msgstr="(B|b)loqueig de majúscules" # A l'IGU
+hint="Es tradueix per «Bloq Maj i bloqueig de majúscules (a l'IGU), <keycap>Bloq Majús.</keycap> (a la DOC)» (keys)"
+
+# Ctrl
+{(&Ctrl;|<key(cap|sym)>.?Ctrl.?</key(cap|sym)>)}
+valid msgstr="&Ctrl;" # <keycap>Ctrl</keycap>
+valid msgstr="<keycap>Ctrl</keycap>"
+hint="Es tradueix per «&Ctrl;, <keycap>Ctrl</keycap>» (keys)"
+
+# Del -> Supr
+{<key(cap|sym)>.?Del(ete)?.?</key(cap|sym)>}
+valid msgstr="<keycap>Supr</keycap>"
+hint="Es tradueix per «<keycap>Supr</keycap>» (keys)"
+
+# End -> Fi
+{<key(cap|sym)>.?End.?</key(cap|sym)>}
+valid msgstr="<keycap>Fi</keycap>"
+hint="Es tradueix per «<keycap>Fi</keycap>» (keys)"
+
+# Intro/Enter/Return -> Retorn
+{(&Enter;|<key(cap|sym)>.?(Enter|Return).?</key(cap|sym)>)}
+valid msgstr="&Intro;" # <keycap>Retorn</keycap>
+valid msgstr="<keycap>Retorn</keycap>"
+hint="Es tradueix per «&Intro;, <keycap>Retorn</keycap>» (keys)"
+
+# Esc
+{(&Esc;|<key(cap|sym)>.?Esc.?</key(cap|sym)>)}
+valid msgstr="&Esc;" # <keycap>Esc</keycap>
+valid msgstr="<keycap>Esc</keycap>"
+hint="Es tradueix per «&Esc;, <keycap>Esc</keycap>» (keys)"
+
+# Home -> Inici
+{<key(cap|sym)>.?Home.?</key(cap|sym)>}
+valid msgstr="<keycap>Inici</keycap>"
+hint="Es tradueix per «<keycap>Inici</keycap>» (keys)"
+
+# Ins -> Insert
+{<key(cap|sym)>.?Ins(ert)?.?</key(cap|sym)>}
+valid msgstr="<keycap>Insert</keycap>"
+hint="Es tradueix per «<keycap>Insert</keycap>» (keys)"
+
+# Shift -> Majús.
+{(&Shift;|<key(cap|sym)>.?Shift.?</key(cap|sym)>)}
+valid msgstr="&Maj;" # <keycap>Majús.</keycap>
+valid msgstr="<keycap>Majús.</keycap>"
+hint="Es tradueix per «&Maj;, <keycap>Majús.</keycap>» (keys)"
+
+# Space -> Espai
+{<key(cap|sym)>.?Space(\s?-?bar)?.?</key(cap|sym)>}
+valid msgstr="<keycap>Espai</keycap>"
+hint="Es tradueix per «<keycap>Espai</keycap>» (keys)"
+
+# Start -> Inici
+{<key(cap|sym)>.?Start.?</key(cap|sym)>}
+valid msgstr="<keycap>Inici</keycap>"
+hint="Es tradueix per «<keycap>Inici</keycap>» (keys)"
+
+# Tab -> Tabulador
+{(&Tab;|<key(cap|sym)>.?Tab.?</key(cap|sym)>|TAB\skey)}
+valid msgstr="&Tab;" # <keycap>Tabulador</keycap>
+valid msgstr="<keycap>Tabulador</keycap>"
+valid msgstr="tecla &Tab;" # a la doc
+valid msgstr="tecla Tab" # a l'IGU
+hint="Es tradueix per «&Tab;, tecla &Tab;, <keycap>Tabulador</keycap>» (keys)"
+
+# Arrow keys
+# Page Down -> Av. Pàg.
+{(<key(cap|sym)>).?(Page.?Down|PgDown).?(</key(cap|sym))>}
+valid msgstr="<keycap>Av. Pàg.</keycap>"
+valid msgstr="AvPàg" # A l'IGU
+hint="Es tradueix per «AvPàg (a l'IGU), <keycap>Av. Pàg.</keycap> (a la DOC)» (keys)"
+
+# Page Up -> Re. Pàg.
+{(<key(cap|sym)>).?(Page.?Up|PgUp).?(</key(cap|sym))>}
+valid msgstr="<keycap>Re. Pàg.</keycap>"
+valid msgstr="RePàg" # A l'IGU
+hint="Es tradueix per «RePàg (a l'IGU), <keycap>Re. Pàg.</keycap> (a la DOC)» (keys)"
+
+# Cursor keys
+# Down Arrow -> Cursor avall
+{<key(cap|sym)>.?Down(\sArrow)?.?</key(cap|sym)>}
+valid msgstr="<keysym>Cursor avall</keysym>"
+valid msgstr="<keysym>Amunt</keysym> i <keysym>Avall</keysym>"
+valid msgstr="Cursor <keysym>Avall</keysym>/<keysym>Dret</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+valid msgstr="fletxa avall" # A l'IGU
+hint="Es tradueix per «fletxa avall (a l'IGU), <keysym>Cursor avall</keysym>|<keysym>Amunt</keysym> i <keysym>Avall</keysym> (a la DOC)» (keys)"
+
+# Up Arrow -> Cursor amunt
+{<key(cap|sym)>.?Up(\sArrow)?.?</key(cap|sym)>}
+valid msgstr="<keysym>Cursor amunt</keysym>"
+valid msgstr="<keysym>Amunt</keysym> i <keysym>Avall</keysym>"
+valid msgstr="Cursor <keysym>Amunt</keysym>/<keysym>Esquerre</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+valid msgstr="fletxa amunt" # A l'IGU
+hint="Es tradueix per «fletxa amunt (a l'IGU), <keysym>Cursor amunt</keysym>|<keysym>Amunt</keysym> i <keysym>Avall</keysym> (a la DOC)» (keys)"
+
+# Left Arrow -> Cursor esquerre
+{<key(cap|sym)>.?Left(\sArrow)?.?</key(cap|sym)>}
+valid msgstr="<keysym>Cursor esquerre</keysym>"
+valid msgstr="<keysym>Esquerre</keysym> i <keysym>Dret</keysym>"
+valid msgstr="Cursor <keysym>Amunt</keysym>/<keysym>Esquerre</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+valid msgstr="fletxa esquerra" # A l'IGU
+hint="Es tradueix per «fletxa esquerra (a l'IGU), <keysym>Cursor esquerre</keysym>|<keysym>Esquerre</keysym> i <keysym>Dret</keysym> (a la DOC)» (keys)"
+
+# Right Arrow -> Cursor dret
+{<key(cap|sym)>.?Right(\sArrow)?.?</key(cap|sym)>}
+valid msgstr="<keysym>Cursor dret</keysym>"
+valid msgstr="<keysym>Esquerre</keysym> i <keysym>Dret</keysym>"
+valid msgstr="Cursor <keysym>Avall</keysym>/<keysym>Dret</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+valid msgstr="fletxa dreta" # A l'IGU
+hint="Es tradueix per «fletxa dreta (a l'IGU), <keysym>Cursor dret</keysym>, <keysym>Esquerre</keysym> i <keysym>Dret</keysym> (a la DOC)» (keys)"
+
+# Meta keys
+# Unix
+{(&Meta;|<key(cap|sym)>.?Meta.?</key(cap|sym)>)}
+valid msgstr="&Meta;"
+valid msgstr="<keysym>Meta</keysym>"
+hint="Es tradueix per «&Meta;, <keysym>Meta</keysym>» (keys)"
+# logotip -diamant-
+{<key(cap|sym)>.?◆.?</key(cap|sym)>}
+valid msgstr="<keycap>◆</keycap>"
+hint="Es tradueix per «<keycap>◆</keycap>» (keys)"
+
+# Windows
+{<key(cap|sym)>.?Windows.?</key(cap|sym)>}
+valid msgstr="<keysym>Windows</keysym>"
+hint="Es tradueix per «<keysym>Windows</keysym>» (keys)"
+
+# Mac
+{<key(cap|sym)>.?Command.?</key(cap|sym)>}
+valid msgstr="<keysym>Command</keysym>"
+hint="Es tradueix per «<keysym>Command</keysym>» (keys)"
+# logotip -símbol-
+{<key(cap|sym)>.?⌘.?</key(cap|sym)>}
+valid msgstr="<keycap>⌘</keycap>"
+hint="Es tradueix per «<keycap>⌘</keycap>» (keys)"
+

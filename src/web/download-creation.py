@@ -49,16 +49,22 @@ def process_template(template, filename, ctx):
 class TranslationMemory(object):
 
     def __init__(self, words=None, name=None, last_fetch=None,
-                 last_translation_update=None, projectweb=None, filename=None):
+                 last_translation_update=None, projectweb=None, filename=None,
+                 quality_reports=True):
         self.name = name
         self.projectweb = projectweb
         self.po_file_text = get_zip_file(filename)
         self.po_file_link = get_zip_file(get_path_to_po(filename))
         self.tmx_file_text = get_zip_file(get_tmx_file(filename))
         self.tmx_file_link = get_zip_file(get_path_to_tmx(filename))
+        self.quality_file_link = u'pology/' + filename + u'.html'
+        self.quality_file_text = 'Informe Pology'
+        self.lt_file_link = u'lt/' + filename + u'-lt.html'
+        self.lt_file_text = 'Informe LanguageTool'
         self.words = words
         self.last_fetch = last_fetch
         self.last_translation_update = last_translation_update
+        self.quality_reports = quality_reports
 
 
 def get_subdir():
@@ -130,6 +136,7 @@ def build_combined_memory(projects, memories, filename, name, po_directory,
         last_fetch=date,
         last_translation_update=date,
         filename=filename,
+        quality_reports=False,
     )
     memories.append(translation_memory)
 
@@ -270,7 +277,6 @@ def main():
 
     po_directory, tmx_directory, out_directory = read_parameters()
     create_output_dir("memories", out_directory)
-    download = os.path.join(out_directory, "download.html")
     process_projects(po_directory, tmx_directory, out_directory)
 
 

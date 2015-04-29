@@ -28,6 +28,7 @@
     <th>Paraules traduïdes</th>
     <th>Última baixada de la memòria</th>
     <th>Última actualització de la traducció (des que la baixem)</th>
+    <th>Informes de qualitat</th>
   </tr>
 {{#memories}}
   <tr>
@@ -44,6 +45,14 @@
     <td>{{words}}</td>
     <td>{{last_fetch}}</td>
     <td>{{last_translation_update}}</td>
+    <td>
+    {{#quality_reports}}    
+        <ul>
+            <li><a href="{{quality_file_link}}">{{quality_file_text}}</a></li>
+            <li><a href="{{lt_file_link}}">{{lt_file_text}}</a></li>
+        <ul>
+    {{/quality_reports}}
+    </td>
   </tr>
 {{/memories}}
 </table>

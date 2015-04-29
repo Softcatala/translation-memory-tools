@@ -1,0 +1,48 @@
+# Filters include for catalan language
+# by KDE Catalan Team (kde-i18n-ca@kde.org)
+# some ideas taken from spanish filter.include (by Javier Viñal)
+# License: GPLv3
+
+# Remove some types of paragraph tags.
+addFilterHook name="remove/remove-marlits-msg" on="msg"
+addFilterHook name="remove/remove-markup-msg" on="msg"
+addFilterHook name="remove/remove-accel-msg" on="msg"
+addFilterHook name="remove/remove-ignored-entities-msg" on="msg"
+addFilterHook name="remove/remove-paired-ents-tick~'~'" on="msg"
+addFilterHook name="remove/remove-fmtdirs-msg-tick~'~'" on="msg"
+addFilterHook name="remove/remove_literals_msg_tick~'~'" on="msg" 
+
+# Remove XML-like tags.
+addFilterRegex match="\<\s*(bcode|command|envar|filename|icode|shortcut|placeholder|style|code|tt|literal|screen|option|keycap|userinput|systemitem|prompt|function|foreignphrase|varname|programlisting|token|markup|parameter|keysym|methodname|sgmltag|arg|classname|type)\b.*?\b\1\>" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\<\s*(email|link)\s*>\b.*?\b\1\>" repl="~" on="pmsgid,pmsgstr"     
+addFilterRegex match="\<.*?\>" repl="~" on="pmsgid,pmsgstr"
+
+# Extension filter, e.g. "*.png|PNG files"
+addFilterRegex match="^.*\*\..*\|" repl="~" on="pmsgid,pmsgstr"
+
+# Remove web pages.
+addFilterRegex match="((http|https|ftp|sftp)\:\/\/)?([\w\_\-]+\.)+((gov|edu|com|mil|org|net|aero|biz|coop|info|museum|name|pro|mobi)|([a-z]{2,4})|\5\.\6)(\:\d{2,4})?(\/[\w\.\-\_]+)*\/?(\?(\w+\=\w+)(\&(\w+\=\w+))*?)?(\#\w+)?" repl="~" on="pmsgid,pmsgstr"
+
+# Remove system files.
+addFilterRegex match="(file\:|\#\!)?\/(bin|etc|lib|media|proc|srv|var|boot|home|lib32|mnt|root|sys|cdrom|lib64|sbin|tmp|dev|lost\+found|opt|selinux|usr)(\/(\w|\.|\-|\_)+)*\/?" repl="~" on="pmsgid,pmsgstr"
+
+# Remove more important (as I guess) hidden files.
+addFilterRegex match="\.\/?(kateconfig|bash|directory|fonts|ICEauthority|mailcap|kderc|profile|Xauthority|Xclients|Xmodmap|Xsession|Xdefaults|Xresources)" repl="~" on="pmsgid,pmsgstr"
+
+# Remove single characters in quotes.
+addFilterRegex match="«.»" repl="~" on="pmsgid,pmsgstr"
+
+# Remove some abreviations.
+addFilterRegex match="\s?(etc\.|Ex\.|ex\.|P\.\sex\.|p\.\sex\.|EUA|a\.m\.|p\.m\.|n\.t\.\expr\.)" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\s?(Sr\.|Sra\.|Dr\.|Dra\.)" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\s?(apt\.|art\.|avda\.|av\.|cent\.|dept\.)" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\s?(màx.|mín\.|pàg\.)" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\s?(pl\.|pral\.|Prof\.|P\.\s\S\.|Rep\.|R\.\sI\.\P\.)" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\s?(tel\.|trad\.|Univ\.)" repl="~" on="pmsgid,pmsgstr"
+
+# Remove special puntuactions.
+addFilterRegex match="\s*(\?{2,3}|\%{2,3}|\:{2,3}|\_{2,3})" repl="~" on="pmsgid,pmsgstr"
+
+# Remove more usual smileis.
+addFilterRegex match="\s(\:\)|\(\-\:|\:\)|\(\:|\=\)|\)\-\:\)|\:\-\)|\:\-\(|\;\-\)|\;\)|\:D|\:\()" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\s(\"\:\-\)\")" repl="~" on="pmsgid,pmsgstr"

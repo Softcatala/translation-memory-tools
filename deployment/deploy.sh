@@ -44,6 +44,24 @@ copy_files() {
     cp *.html $2
     cp *.csv $2
     cp sc-glossary.db3 $2/glossary.db3
+
+    # Deploy pology reports
+    cd $1/tm-git/src/pology
+    rm -r -f $2/pology
+    mkdir $2/pology
+    cp *.html $2/pology
+
+    # Deploy LT reports
+    cd $1/tm-git/src/lt
+    rm -r -f $2/lt
+    mkdir $2/lt
+    cp *.html $2/lt
+
+    # Log
+    rm -r -f $2/logs
+    mkdir $2/logs
+    cp $1/tm-git/src/lt/*.log $2/logs
+    cp $1/tm-git/src/builder/*.log $2/logs
 }
 
 
