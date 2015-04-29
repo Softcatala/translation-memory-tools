@@ -118,12 +118,12 @@
             "softcatala" : true,
             "fileset": {
                     "gnome-ui": {
-                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-16/ui.tar.gz",
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-18/ui.tar.gz",
                             "type": "compressed",
                             "target": "gnome-ui.tar.gz"
                     },
                     "gnome-doc": {
-                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-16/doc.tar.gz",
+                            "url" : "https://l10n.gnome.org/languages/ca/gnome-3-18/doc.tar.gz",
                             "type": "compressed",
                             "target": "gnome-doc.tar.gz"
                     },
