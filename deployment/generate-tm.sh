@@ -3,6 +3,7 @@
 ROOT="$1"
 PROGRAMS=$ROOT/tm-git/src
 BUILDER=$PROGRAMS/builder
+PROJECTS=$ROOT/tm-git/cfg/projects
 
 copy_tm_files() {
 
@@ -56,8 +57,8 @@ if [ -z "$NOPOBUILD" ]; then
 
     # Build aggregated memories
     cd $INTERMEDIATE_PO/
-    python $BUILDER/builder.py -s $BUILDER/projects.json --all
-    python $BUILDER/builder.py -s $BUILDER/projects.json --softcatala
+    python $BUILDER/builder.py -s $PROJECTS --all
+    python $BUILDER/builder.py -s $PROJECTS --softcatala
     cp tots-tm.tmx $INTERMEDIATE_TMX/
     cp softcatala-tm.tmx $INTERMEDIATE_TMX/
 fi

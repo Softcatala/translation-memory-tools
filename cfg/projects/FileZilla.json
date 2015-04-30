@@ -1,0 +1,12 @@
+{
+    "project": "FileZilla", 
+    "projectweb": "http://filezilla-project.org/", 
+    "softcatala": true, 
+    "fileset": {
+        "filezilla": {
+            "url": "https://filezilla-project.org/locales/ca.po", 
+            "type": "file", 
+            "target": "filezilla-ca.po"
+        }
+    }
+}

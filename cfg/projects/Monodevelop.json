@@ -1,0 +1,11 @@
+{
+    "project": "Monodevelop", 
+    "softcatala": true, 
+    "fileset": {
+        "monodevelop": {
+            "url": "https://raw.github.com/mono/monodevelop/master/main/po/ca.po", 
+            "type": "file", 
+            "target": "monodevelop-ca.po"
+        }
+    }
+}

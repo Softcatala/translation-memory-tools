@@ -1,0 +1,10 @@
+{
+    "project": "TorProject", 
+    "projectweb": "https://www.torproject.org/", 
+    "fileset": {
+        "TorProject": {
+            "url": "https://www.transifex.com/projects/p/torproject", 
+            "type": "transifex"
+        }
+    }
+}

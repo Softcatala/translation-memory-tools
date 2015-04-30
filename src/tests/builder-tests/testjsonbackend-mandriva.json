@@ -1,0 +1,10 @@
+{
+    "project": "Mageia",
+	"fileset": {
+		"mandriva": {
+			"url" : "../source-pos/mandriva-po/*.po",
+			"type": "local-dir"
+		}
+	}
+
+}

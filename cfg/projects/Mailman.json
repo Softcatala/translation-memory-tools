@@ -1,0 +1,12 @@
+{
+    "project": "Mailman", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/Mailman", 
+    "softcatala": true, 
+    "fileset": {
+        "mailman": {
+            "url": "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }
+    }
+}

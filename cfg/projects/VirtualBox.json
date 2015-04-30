@@ -1,0 +1,12 @@
+{
+    "project": "VirtualBox", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/VirtualBox", 
+    "softcatala": true, 
+    "fileset": {
+        "virtualbox": {
+            "url": "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts", 
+            "type": "file", 
+            "target": "virtualbox-ca.ts"
+        }
+    }
+}

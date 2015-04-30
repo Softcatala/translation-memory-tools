@@ -1,0 +1,11 @@
+{
+    "project": "WinMerge", 
+    "projectweb": "http://winmerge.org/translations/", 
+    "fileset": {
+        "WinMerge": {
+            "url": "http://sourceforge.net/p/winmerge/code/HEAD/tree/trunk/Translations/WinMerge/Catalan.po?format=raw", 
+            "type": "file", 
+            "target": "winmerge-ca.po"
+        }
+    }
+}

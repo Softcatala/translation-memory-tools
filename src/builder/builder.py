@@ -72,10 +72,10 @@ def read_parameters():
         '--json',
         action='store',
         type='string',
-        dest='projects_json',
-        default='projects.json',
-        help="Define the json file contains the project's definitions "
-        "(default: projects.json)"
+        dest='projects_dir',
+        default='../../cfg/projects/',
+        help="Define the diretory that contains the json files with the "
+        "project's definitions"
     )
 
     parser.add_option(
@@ -103,12 +103,12 @@ def read_parameters():
     if options.projects_names:
         projects_names = options.projects_names.split(',')
 
-    return (options.add_source, projects_names, options.projects_json,
+    return (options.add_source, projects_names, options.projects_dir,
             options.only_all_projects_tm, options.softcatala_only)
 
 
-def load_projects_from_json(add_source, projects_names, projects_json, softcatala_only):
-    json = JsonBackend(projects_json)
+def load_projects_from_json(add_source, projects_names, projects_dir, softcatala_only):
+    json = JsonBackend(projects_dir)
     json.load()
 
     msg = 'Projects defined in json file {0}'.format(len(json.projects))
@@ -137,9 +137,9 @@ if __name__ == '__main__':
 
     start_time = time.time()
     init_logging()
-    (add_source, projects_names, projects_json, only_all_projects_tm,
+    (add_source, projects_names, projects_dir, only_all_projects_tm,
      softcatala_only) = read_parameters()
-    load_projects_from_json(add_source, projects_names, projects_json,
+    load_projects_from_json(add_source, projects_names, projects_dir,
                             softcatala_only)
 
     if only_all_projects_tm:

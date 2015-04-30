@@ -48,7 +48,7 @@ class IndexCreator(object):
         self.projects_names = projects_names
 
     def process_projects(self):
-        json = JsonBackend("../builder/projects.json")
+        json = JsonBackend("../../cfg/projects/")
         json.load()
 
         for project_dto in json.projects:

@@ -1,0 +1,42 @@
+{
+    "project": "Ubuntu", 
+    "projectweb": "https://wiki.ubuntu.com/UbuntuCatalanTranslators", 
+    "softcatala": true, 
+    "fileset": {
+        "ubuntu-software-center": {
+            "url": "lp:ubuntu/software-center/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "ubuntu-update-manager": {
+            "url": "lp:ubuntu/update-manager/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "ubuntu-release-upgrader": {
+            "url": "lp:ubuntu/ubuntu-release-upgrader/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "ubuntuone-control-panel": {
+            "url": "lp:ubuntu/ubuntuone-control-panel/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "indicator": {
+            "url": "lp:~rye/indicator-ubuntuone/trunk/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "unity-control-center": {
+            "url": "lp:ubuntu/unity-control-center/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "unity": {
+            "url": "lp:~unity-team/unity/8.0/view/head:/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }
+    }
+}

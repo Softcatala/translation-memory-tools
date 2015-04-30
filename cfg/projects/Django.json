@@ -1,0 +1,10 @@
+{
+    "project": "Django", 
+    "projectweb": "https://code.djangoproject.com/wiki/Localization", 
+    "fileset": {
+        "main": {
+            "url": "https://www.transifex.com/organization/django", 
+            "type": "transifexhub"
+        }
+    }
+}

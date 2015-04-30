@@ -1,0 +1,21 @@
+{
+    "project": "WordPress", 
+    "projectweb": "http://ca.wordpress.org/", 
+    "fileset": {
+        "wordpress": {
+            "url": "https://translate.wordpress.org/projects/wp/dev/ca/default/export-translations", 
+            "type": "file", 
+            "target": "wp-dev-ca.po"
+        }, 
+        "wordpress-admin": {
+            "url": "https://translate.wordpress.org/projects/wp/dev/admin/ca/default/export-translations", 
+            "type": "file", 
+            "target": "wp-dev-admin-ca.po"
+        }, 
+        "wordpress-admin-network": {
+            "url": "https://translate.wordpress.org/projects/wp/dev/admin/network/ca/default/export-translations", 
+            "type": "file", 
+            "target": "wp-dev-admin-network-ca.po"
+        }
+    }
+}

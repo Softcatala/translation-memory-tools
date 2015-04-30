@@ -1,0 +1,11 @@
+{
+    "project": "Chromium", 
+    "projectweb": "https://translations.launchpad.net/chromium-browser/translations/+lang/ca", 
+    "fileset": {
+        "chromium": {
+            "url": "lp:chromium-browser/translations", 
+            "type": "bazaar", 
+            "pattern": ".*?ca.po"
+        }
+    }
+}

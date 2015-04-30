@@ -1,0 +1,10 @@
+{
+    "project": "TinyMCE", 
+    "projectweb": "https://www.transifex.com/projects/p/tinymce", 
+    "fileset": {
+        "TinyMCE": {
+            "url": "https://www.transifex.com/projects/p/tinymce/", 
+            "type": "transifexhub"
+        }
+    }
+}

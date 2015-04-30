@@ -1,0 +1,11 @@
+{
+    "project": "Wesnoth", 
+    "projectweb": "http://www.wesnoth.org/gettext/index.lang.php?lang=ca", 
+    "fileset": {
+        "Wesnoth": {
+            "url": "https://github.com/wesnoth/wesnoth-old.git", 
+            "type": "git", 
+            "pattern": ".*?ca.po"
+        }
+    }
+}

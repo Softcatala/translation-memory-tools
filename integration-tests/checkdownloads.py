@@ -200,7 +200,7 @@ class CheckDownloads(object):
         """Reads the json and makes sure that for every project we have a
         po and a tmx that is a download published with the expected files
         """
-        json = JsonBackend("../src/builder/projects.json")
+        json = JsonBackend("../cfg/projects/")
         json.load()
 
         TM_ITSELF = 1

@@ -1,0 +1,11 @@
+{
+    "project": "Odoo", 
+    "projectweb": "https://www.odoo.com/", 
+    "fileset": {
+        "Odoo": {
+            "url": "https://github.com/odoo/odoo.git", 
+            "type": "git", 
+            "pattern": ".*ca.po"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "project": "Gramps", 
+    "projectweb": "https://gramps-project.org/", 
+    "fileset": {
+        "Gramps": {
+            "url": "http://sourceforge.net/p/gramps/source/ci/master/tree/po/ca.po?format=raw", 
+            "type": "file", 
+            "target": "ca.po"
+        }
+    }
+}

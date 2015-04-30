@@ -1,0 +1,11 @@
+{
+    "project": "Sigil", 
+    "projectweb": "https://www.transifex.com/projects/p/sigil", 
+    "fileset": {
+        "sigil": {
+            "url": "https://www.transifex.com/projects/p/sigil/", 
+            "type": "transifex", 
+            "target": "sigil-ca.po"
+        }
+    }
+}

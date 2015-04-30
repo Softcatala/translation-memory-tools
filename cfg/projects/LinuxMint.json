@@ -1,0 +1,19 @@
+{
+    "project": "LinuxMint", 
+    "projectweb": "https://launchpad.net/~linuxmint-translation-team-catalan", 
+    "fileset": {
+        "Cinnamon": {
+            "url": "http://packages.linuxmint.com/pool/main/c/cinnamon/cinnamon_1.8.8%2bolivia.tar.gz", 
+            "type": "compressed", 
+            "pattern": "*cinnamon-ca.po", 
+            "target": "cinnamon.tar.gz"
+        }, 
+        "Nemo": {
+            "url": "http://packages.linuxmint.com/pool/main/n/nemo/nemo_1.8.3%2bolivia.tar.gz", 
+            "type": "compressed", 
+            "pattern": "*nemo-ca.po", 
+            "target": "nemo.tar.gz"
+        }
+    }, 
+    "comment": "Files obtained from http://packages.linuxmint.com/list.php?release=Olivia since cannot be downloaded from https://translations.launchpad.net/linuxmint/latest/+lang/ca"
+}

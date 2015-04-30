@@ -38,7 +38,7 @@ class LinkExtractor(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag == 'a':
             attrs = dict(attrs)
-            link = attrs['href']
+            link = attrs.get('href')
 
             if link is not None:
                 absolute = urlparse.urljoin(self.base_url, link)

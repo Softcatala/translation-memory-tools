@@ -27,7 +27,7 @@ from pofile import POFile
 
 
 def process_projects(src_directory, trg_directory):
-    json = JsonBackend("projects.json")
+    json = JsonBackend("../../cfg/projects/")
     json.load()
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())

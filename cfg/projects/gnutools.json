@@ -1,0 +1,13 @@
+{
+    "project": "gnutools", 
+    "projectweb": "http://translationproject.org/team/ca.html", 
+    "fileset": {
+        "gnutools": {
+            "url": "http://translationproject.org/team/ca.html", 
+            "type": "crawl", 
+            "pattern": "http://.*?/ca/.*?", 
+            "excluded": "xchat-"
+        }
+    }, 
+    "comment": "Xchat exclusion caused by: http://bugs.locamotion.org/show_bug.cgi?id=3147"
+}

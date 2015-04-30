@@ -1,0 +1,11 @@
+{
+    "project": "FreeCiv", 
+    "projectweb": "http://ca.freeciv.wikia.com/wiki/Freeciv_en_catal%C3%A0", 
+    "fileset": {
+        "FreeCiv": {
+            "url": "http://svn.gna.org/svn/freeciv/trunk/translations/freeciv/ca.po", 
+            "type": "file", 
+            "target": "ca.po"
+        }
+    }
+}

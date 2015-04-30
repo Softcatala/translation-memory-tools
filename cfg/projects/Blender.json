@@ -1,0 +1,11 @@
+{
+    "project": "Blender", 
+    "projectweb": "http://www.blender.cat/", 
+    "fileset": {
+        "blender": {
+            "url": "https://svn.blender.org/svnroot/bf-translations/branches/ca/", 
+            "type": "subversion"
+        }
+    }, 
+    "disabled": true
+}

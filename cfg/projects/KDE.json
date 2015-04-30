@@ -1,0 +1,14 @@
+{
+    "project": "KDE", 
+    "projectweb": "http://cat.kde.org/", 
+    "fileset": {
+        "web": {
+            "url": "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/ca/messages/", 
+            "type": "subversion"
+        }, 
+        "documentation": {
+            "url": "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/ca/docmessages/", 
+            "type": "subversion"
+        }
+    }
+}

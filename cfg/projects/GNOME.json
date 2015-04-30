@@ -1,0 +1,72 @@
+{
+    "project": "GNOME", 
+    "projectweb": "http://www.softcatala.org/wiki/GNOME", 
+    "softcatala": true, 
+    "fileset": {
+        "gnome-ui": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-3-18/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-ui.tar.gz"
+        }, 
+        "gnome-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-3-18/doc.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-doc.tar.gz"
+        }, 
+        "gnome-office": {
+            "url": "http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-office.tar.gz"
+        }, 
+        "gnome-extras": {
+            "url": "http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-extras.tar.gz"
+        }, 
+        "gnome-external": {
+            "url": "http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-external.tar.gz"
+        }, 
+        "gnome-infrastructure": {
+            "url": "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-infrastructure.tar.gz"
+        }, 
+        "freedesktop": {
+            "url": "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "freesktop.tar.gz"
+        }, 
+        "olpc": {
+            "url": "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "olpc.tar.gz"
+        }, 
+        "gnome-infrastructure-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-infrastructure-doc.tar.gz"
+        }, 
+        "gnome-extras-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-extras-doc.tar.gz"
+        }, 
+        "olpc-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/olpc/doc.tar.gz", 
+            "type": "compressed", 
+            "target": "olpc-doc.tar.gz"
+        }, 
+        "obsolete-ui": {
+            "url": "https://l10n.gnome.org/languages/ca/obsolete/ui-part.tar.gz", 
+            "type": "compressed", 
+            "target": "ui-part.tar.gz"
+        }, 
+        "obsolete-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/obsolete/doc.tar.gz", 
+            "type": "compressed", 
+            "target": "doc.tar.gz"
+        }
+    }
+}

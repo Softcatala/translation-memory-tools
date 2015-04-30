@@ -45,11 +45,15 @@ class TestJsonBackend(unittest.TestCase):
     def test_processFileSet(self):
 
         folder = path.dirname(path.realpath(__file__))
-        json = JsonBackend(path.join(folder, 'testjsonbackend.json'))
+        json = JsonBackend(folder)
         json.load()
 
         self.assertEquals(len(json.projects), 2)
-        self._validate_mozilla_project(json.projects[0])
+        for project in json.projects:
+            if project.name == 'Mozilla':
+                 mozilla = project
+
+        self._validate_mozilla_project(mozilla)
 
 
 if __name__ == '__main__':

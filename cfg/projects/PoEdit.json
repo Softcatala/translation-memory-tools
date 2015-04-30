@@ -1,0 +1,12 @@
+{
+    "project": "PoEdit", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/Eines_inform%C3%A0tiques_per_a_traductors", 
+    "softcatala": true, 
+    "fileset": {
+        "PoEdit": {
+            "url": "https://raw.githubusercontent.com/vslavik/poedit/master/locales/ca.po", 
+            "type": "file", 
+            "target": "poedit-ca.po"
+        }
+    }
+}

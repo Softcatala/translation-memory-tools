@@ -1,0 +1,25 @@
+{
+    "project": "Mozilla",
+    "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
+    "softcatala" : "true",
+	"fileset": {
+		"mozilla": {
+			"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
+			"type": "compressed",
+			"target": "mozilla.zip",
+			"excluded" : "region.properties.po",
+            "pattern" : "http://.*?/ca/.*?"
+		},
+		"firefox-hackasaurus": {
+			"url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",
+			"type": "compressed",
+			"target": "hackasaurus.zip"
+		},
+		"firefox-sumo": {
+			"url" : "http://localize.mozilla.org/ca/sumo/export/zip",
+			"type": "compressed",
+			"target": "sumo.zip"
+		}
+	}
+}
+

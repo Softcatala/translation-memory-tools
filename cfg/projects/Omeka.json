@@ -1,0 +1,9 @@
+{
+    "project": "Omeka", 
+    "fileset": {
+        "Omeka": {
+            "url": "https://www.transifex.com/projects/p/omeka", 
+            "type": "transifex"
+        }
+    }
+}

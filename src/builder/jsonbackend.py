@@ -20,7 +20,7 @@
 import json
 import logging
 from collections import OrderedDict
-
+from findfiles import FindFiles
 
 class ProjectDTO(object):
 
@@ -36,9 +36,9 @@ class ProjectDTO(object):
 
     def __str__(self):
         text = ('ProjectDTO. Name: {0}, filename: {1}, project web: {2}, '
-                'disabled {3}')
+                'disabled {3}, softcatala {4}')
         return text.format(self.name, self.filename, self.projectweb,
-                           self.disabled)
+                           self.disabled, self.softcatala)
 
 
 class FileSetDTO(object):
@@ -60,8 +60,8 @@ class FileSetDTO(object):
 
 class JsonBackend(object):
 
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(self, directory):
+        self.directory = directory
         self.projects = []
 
     def _process_fileset(self, project, project_value):
@@ -92,24 +92,28 @@ class JsonBackend(object):
                 logging.error(msg.format(fileset_properties_attr))
 
     def load(self):
-        with open(self.filename) as json_data:
+
+        findFiles = FindFiles()
+
+        for filename in findFiles.find(self.directory, '*.json'):
+            self._load_file(filename)
+
+    def _load_file(self, filename):
+        with open(filename) as json_data:
             data = json.load(json_data, object_pairs_hook=OrderedDict)
 
             # Parse projects
-            for attribute, value in data['projects'].items():
-                project = ProjectDTO(attribute)
+            project = ProjectDTO(data['project'])
+            for attribute, value in data.items():
 
-                # Get project properties
-                for prop in ('filename', 'projectweb', 'softcatala', 'disabled',
+                if attribute in ('filename', 'projectweb', 'softcatala', 'disabled',
                              'downloadable', 'selectable'):
-                    if prop in value:
-                        setattr(project, prop, value[prop])
+                    setattr(project, attribute, data[attribute])
 
-                if project.disabled:
-                    continue
 
+                if 'fileset' in attribute:
+                    self._process_fileset(project, data['fileset'])
+
+            if project.disabled is False:
                 project.filename = '{0}-tm.po'.format(project.name.lower())
                 self.projects.append(project)
-
-                if 'fileset' in value:
-                    self._process_fileset(project, value['fileset'])

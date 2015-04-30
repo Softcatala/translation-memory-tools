@@ -1,0 +1,10 @@
+{
+    "project": "Xfce", 
+    "projectweb": "http://wiki.xfce.org/translations/team_ca", 
+    "fileset": {
+        "Xfce": {
+            "url": "https://www.transifex.com/organization/xfce", 
+            "type": "transifexhub"
+        }
+    }
+}

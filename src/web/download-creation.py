@@ -178,7 +178,7 @@ def build_invidual_projects_memory(projects, memories, po_directory,
 
 
 def process_projects(po_directory, tmx_directory, out_directory):
-    json = JsonBackend("../builder/projects.json")
+    json = JsonBackend('../../cfg/projects/')
     json.load()
     projects = sorted(json.projects, key=lambda x: x.name.lower())
 

@@ -1,0 +1,11 @@
+{
+    "project": "Plone", 
+    "projectweb": "http://www.softcatala.org/wiki/Plone", 
+    "fileset": {
+        "Plone": {
+            "url": "https://raw.githubusercontent.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plone.po", 
+            "type": "file", 
+            "target": "ca.po"
+        }
+    }
+}

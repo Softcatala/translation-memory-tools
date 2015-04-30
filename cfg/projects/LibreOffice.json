@@ -1,0 +1,22 @@
+{
+    "project": "LibreOffice", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/LibreOffice", 
+    "softcatala": true, 
+    "fileset": {
+        "UI": {
+            "url": "https://translations.documentfoundation.org/ca/libo_ui/export/zip", 
+            "type": "compressed", 
+            "target": "libreoffice-ui.zip"
+        }, 
+        "Ajuda": {
+            "url": "https://translations.documentfoundation.org/ca/libo_help/export/zip", 
+            "type": "compressed", 
+            "target": "libreoffice-help.zip"
+        }, 
+        "Lloc web": {
+            "url": "https://translations.documentfoundation.org/ca/website/export/zip", 
+            "type": "compressed", 
+            "target": "website.zip"
+        }
+    }
+}

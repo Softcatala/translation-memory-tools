@@ -1,0 +1,78 @@
+{
+    "project": "Mozilla", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/Mozilla", 
+    "softcatala": true, 
+    "fileset": {
+        "firefox": {
+            "url": "http://mozilla.locamotion.org/ca/firefox/export/zip", 
+            "type": "compressed", 
+            "target": "mozilla.zip", 
+            "excluded": "region.properties.po"
+        }, 
+        "mobile": {
+            "url": "http://mozilla.locamotion.org/ca/mobile/export/zip", 
+            "type": "compressed", 
+            "target": "mobile.zip"
+        }, 
+        "firefoxos": {
+            "url": "http://mozilla.locamotion.org/ca/firefoxos/export/zip", 
+            "type": "compressed", 
+            "target": "firefoxos.zip"
+        }, 
+        "lightning": {
+            "url": "http://mozilla.locamotion.org/ca/lightning/export/zip", 
+            "type": "compressed", 
+            "target": "lightning.zip"
+        }, 
+        "thunderbird": {
+            "url": "http://mozilla.locamotion.org/ca/thunderbird/export/zip", 
+            "type": "compressed", 
+            "target": "thunderbird.zip"
+        }, 
+        "mozilla-addons": {
+            "url": "http://localize.mozilla.org/ca/amo/export/zip", 
+            "type": "compressed", 
+            "target": "add-ons.zip"
+        }, 
+        "browserid": {
+            "url": "http://localize.mozilla.org/ca/browserid/export/zip", 
+            "type": "compressed", 
+            "target": "browserid.zip"
+        }, 
+        "firefox-input": {
+            "url": "http://localize.mozilla.org/ca/input/export/zip", 
+            "type": "compressed", 
+            "target": "input.zip"
+        }, 
+        "commbadge": {
+            "url": "http://localize.mozilla.org/ca/commbadge/export/zip", 
+            "type": "compressed", 
+            "target": "commbadge.zip"
+        }, 
+        "fireplace": {
+            "url": "http://localize.mozilla.org/ca/fireplace/export/zip", 
+            "type": "compressed", 
+            "target": "fireplace.zip"
+        }, 
+        "rocketfuel": {
+            "url": "http://localize.mozilla.org/ca/rocketfuel/export/zip", 
+            "type": "compressed", 
+            "target": "rocketfuel.zip"
+        }, 
+        "webpay": {
+            "url": "http://localize.mozilla.org/ca/webpay/export/zip", 
+            "type": "compressed", 
+            "target": "webpay.zip"
+        }, 
+        "mozillians": {
+            "url": "http://localize.mozilla.org/ca/mozillians/export/zip", 
+            "type": "compressed", 
+            "target": "mozillians.zip"
+        }, 
+        "firefox-sumo": {
+            "url": "http://localize.mozilla.org/ca/sumo/export/zip", 
+            "type": "compressed", 
+            "target": "sumo.zip"
+        }
+    }
+}

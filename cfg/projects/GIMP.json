@@ -1,0 +1,17 @@
+{
+    "project": "GIMP", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/Gimp", 
+    "softcatala": true, 
+    "fileset": {
+        "gimp": {
+            "url": "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "gimp.tar.gz"
+        }, 
+        "gnome-gimp-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz", 
+            "type": "compressed", 
+            "target": "gnome-gimp-doc.tar.gz"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "project": "Calibre", 
+    "projectweb": "https://translations.launchpad.net/calibre", 
+    "fileset": {
+        "calibre": {
+            "url": "lp:~kovid/calibre/translations/src/calibre/translations/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }
+    }
+}

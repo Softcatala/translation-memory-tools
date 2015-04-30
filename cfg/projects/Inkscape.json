@@ -1,0 +1,17 @@
+{
+    "project": "Inkscape", 
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/Inkscape", 
+    "softcatala": true, 
+    "fileset": {
+        "inkscape": {
+            "url": "lp:inkscape/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }, 
+        "documentation": {
+            "url": " lp:inkscape-docs", 
+            "type": "bazaar", 
+            "pattern": ".*?ca.po"
+        }
+    }
+}
