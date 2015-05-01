@@ -30,9 +30,7 @@ class POFile(object):
 
     def add_comment_to_all_entries(self, comment):
         try:
-            bakfile = self.filename + '.bak'
-            shutil.copy(self.filename, bakfile)
-            input_po = polib.pofile(bakfile)
+            input_po = polib.pofile(self.filename)
 
             for entry in input_po:
                 if len(entry.tcomment) > 0:
