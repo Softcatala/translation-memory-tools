@@ -25,6 +25,7 @@ import json
 import time
 import sys
 from jinja2 import Environment, FileSystemLoader
+from urlparse import urlparse
 
 sys.path.append('models/')
 from pagination import Pagination
@@ -109,7 +110,10 @@ class WebSerializer(object):
 
             if len(raw_results) > 0:
 
-                url = '/'
+                url = request.url
+                o = urlparse(url)
+                url = '?' + o.query
+
                 pagination = Pagination(PER_PAGE, len(raw_results), url)
                 start = (pagination.page - 1) * PER_PAGE
                 end = start
