@@ -3,9 +3,202 @@
     "projectweb": "http://www.softcatala.org/wiki/Fedora", 
     "softcatala": true, 
     "fileset": {
-        "fedora": {
-            "url": "https://www.transifex.com/organization/fedora", 
-            "type": "transifexhub"
+         "abrt": {
+            "url": "https://fedora.zanata.org/rest/file/translation/abrt/master/ca/po?docId=abrt", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "anaconda": {
+            "url": "https://fedora.zanata.org/rest/file/translation/anaconda/master/ca/po?docId=anaconda", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "audit-viewer": {
+            "url": "https://fedora.zanata.org/rest/file/translation/audit-viewer/default/ca/po?docId=audit-viewer", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "blivet": {
+            "url": "https://fedora.zanata.org/rest/file/translation/blivet/master/ca/po?docId=blivet", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "chkconfig": {
+            "url": "https://fedora.zanata.org/rest/file/translation/chkconfig/master/ca/po?docId=chkconfig", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "firewalld": {
+            "url": "https://fedora.zanata.org/rest/file/translation/firewalld/master/ca/po?docId=po%2Ffirewalld", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "firstboot": {
+            "url": "https://fedora.zanata.org/rest/file/translation/firstboot/master/ca/po?docId=firstboot", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "gnome-abrt": {
+            "url": "https://fedora.zanata.org/rest/file/translation/gnome-abrt/master/ca/po?docId=gnome-abrt", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "initial-setup": {
+            "url": "https://fedora.zanata.org/rest/file/translation/initial-setup/master/ca/po?docId=initial-setup", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "initscripts": {
+            "url": "https://fedora.zanata.org/rest/file/translation/initscripts/master/ca/po?docId=initscripts", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "libpwquality": {
+            "url": "https://fedora.zanata.org/rest/file/translation/libpwquality/master/ca/po?docId=libpwquality", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "libreport": {
+            "url": "https://fedora.zanata.org/rest/file/translation/libreport/master/ca/po?docId=libreport", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "libuser": {
+            "url": "https://fedora.zanata.org/rest/file/translation/libuser/default/ca/po?docId=libuser", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "liveusb-creator": {
+            "url": "https://fedora.zanata.org/rest/file/translation/liveusb-creator/master/ca/po?docId=liveusb-creator", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "mlocate": {
+            "url": "https://fedora.zanata.org/rest/file/translation/mlocate/default/ca/po?docId=mlocate", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "newt": {
+            "url": "https://fedora.zanata.org/rest/file/translation/newt/master/ca/po?docId=newt", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "passwd": {
+            "url": "https://fedora.zanata.org/rest/file/translation/passwd/password/ca/po?docId=passwd", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "pykickstart": {
+            "url": "https://fedora.zanata.org/rest/file/translation/pykickstart/master/ca/po?docId=pykickstart", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "python-meh": {
+            "url": "https://fedora.zanata.org/rest/file/translation/python-meh/master/ca/po?docId=python-meh", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "redhat-menus": {
+            "url": "https://fedora.zanata.org/rest/file/translation/redhat-menus/master/ca/po?docId=default", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "comps": {
+            "url": "https://fedora.zanata.org/rest/file/translation/rhel-comps/master/ca/po?docId=comps", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "policycoreutils": {
+            "url": "https://fedora.zanata.org/rest/file/translation/selinux/master/ca/po?docId=policycoreutils", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "setroubleshoot": {
+            "url": "https://fedora.zanata.org/rest/file/translation/setroubleshoot/master/ca/po?docId=framework%2Fpo%2Fsetroubleshoot", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "setroubleshoot-plugins": {
+            "url": "https://fedora.zanata.org/rest/file/translation/setroubleshoot/master/ca/po?docId=plugins%2Fpo%2Fsetroubleshoot-plugins", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "system-config-audit": {
+            "url": "https://fedora.zanata.org/rest/file/translation/system-config-audit/master/ca/po?docId=system-config-audit", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "system-config-firewall": {
+            "url": "https://fedora.zanata.org/rest/file/translation/system-config-firewall/master/ca/po?docId=po%2Fsystem-config-firewall", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "system-config-kdump": {
+            "url": "https://fedora.zanata.org/rest/file/translation/system-config-kdump/master/ca/po?docId=system-config-kdump", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "system-config-kickstart": {
+            "url": "https://fedora.zanata.org/rest/file/translation/system-config-kickstart/master/ca/po?docId=system-config-kickstart", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "system-config-language": {
+            "url": "https://fedora.zanata.org/rest/file/translation/system-config-language/master/ca/po?docId=system-config-language", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "system-config-printer": {
+            "url": "https://fedora.zanata.org/rest/file/translation/system-config-printer/master/ca/po?docId=system-config-printer", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+         "usermode": {
+            "url": "https://fedora.zanata.org/rest/file/translation/usermode/default/ca/po?docId=usermode", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+
+
+        "fedorahosted": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/fedorahosted.org/ca/po?docId=po%2Ffedorahosted", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "boot.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/boot.fedoraproject.org/ca/po?docId=po%2Fboot.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "fedoracommunity.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/fedoracommunity.org/ca/po?docId=po%2Ffedoracommunity.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "start.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/start.fedoraproject.org/ca/po?docId=po%2Fstart.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "spins.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/spins.fedoraproject.org/ca/po?docId=po%2Fspins.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "getfedora": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/getfedora.org/ca/po?docId=po%2Fgetfedora", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "labs.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/labs.fedoraproject.org/ca/po?docId=po%2Flabs.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "arm.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/arm.fedoraproject.org/ca/po?docId=po%2Farm.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
         }
     }
 }
