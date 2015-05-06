@@ -110,7 +110,7 @@ class WebSerializer(object):
 
             if len(raw_results) > 0:
 
-                url = request.url
+                url = request.url.encode('utf-8')
                 o = urlparse(url)
                 url = '?' + o.query
 
@@ -158,8 +158,6 @@ def search_request():
     project = request.args.get('project')
     json = request.args.get('json')
     glossary_only = request.args.get('glossary_only')
-    search = Search(source, target, project)
-
     search = Search(source, target, project)
 
     serializer_cls = WebSerializer
