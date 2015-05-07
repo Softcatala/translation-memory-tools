@@ -2,6 +2,11 @@
     "project": "WordPress-plugins", 
     "projectweb": "https://wordpress.org/plugins/", 
     "fileset": {
+        "akismet": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/akismet/dev/ca/default/export-translations", 
+            "type": "file", 
+            "target": "wp-plugins-akismet-dev-ca.po"
+        },
         "wordpress-seo": {
             "url": "https://translate.yoast.com/projects/wordpress-seo/ca/default/export-translations", 
             "type": "file", 
