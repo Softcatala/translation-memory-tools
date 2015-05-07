@@ -20,7 +20,7 @@
 import hashlib
 import logging
 import os
-
+import datetime
 from polib import pofile
 
 from bazaarfileset import BazaarFileSet
@@ -133,6 +133,7 @@ class Project(object):
             fs.add_excluded(fileset.excluded)
 
     def do(self):
+        start_time = datetime.datetime.now()
         self._delete_po_file()
         checksum = hashlib.new('sha1')
 
@@ -151,6 +152,9 @@ class Project(object):
                 pass
 
         self.checksum = checksum.hexdigest()
+
+        logging.info('Time need to build project {0}: {1}'.format(self.name,
+                     datetime.datetime.now() - start_time))
 
     def get_words_entries(self):
 
@@ -184,6 +188,6 @@ class Project(object):
         # (https://github.com/translate/translate/releases) we can deploy
         # the version and add the comment parameter to allow export comments
         # to TMX
-        #cmd = 'po2tmx {0} --comment others -l ca-ES -o {1}.tmx'
+        # cmd = 'po2tmx {0} --comment others -l ca-ES -o {1}.tmx'
         cmd = 'po2tmx {0} -l ca-ES -o {1}.tmx'
         os.system(cmd.format(self.filename, fileName))

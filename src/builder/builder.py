@@ -21,7 +21,7 @@
 
 import logging
 import os
-import time
+import datetime
 from optparse import OptionParser
 
 from jsonbackend import JsonBackend
@@ -135,7 +135,7 @@ if __name__ == '__main__':
     print 'Translation memory builder version 0.1'
     print 'Use --help for assistance'
 
-    start_time = time.time()
+    start_time = datetime.datetime.now()
     init_logging()
     (add_source, projects_names, projects_dir, only_all_projects_tm,
      softcatala_only) = read_parameters()
@@ -153,5 +153,5 @@ if __name__ == '__main__':
     projects.to_tmx()
     projects.statistics()
 
-    s = 'Execution time: {0} seconds'.format(str(time.time() - start_time))
+    s = 'Execution time: {0}'.format(datetime.datetime.now() - start_time)
     logging.info(s)
