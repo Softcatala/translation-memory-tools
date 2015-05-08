@@ -45,7 +45,7 @@ class ConvertFiles():
             os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def _convert_string_files_to_po(self):
-        for tsfile in self.findFiles.find(self.temp_dir, '*.strings'):
+        for tsfile in self.findFiles.find(self.temp_dir, 'ca.strings'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert strings file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
@@ -55,7 +55,7 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _convert_properties_files_to_po(self):
-        for tsfile in self.findFiles.find(self.temp_dir, '*.properties'):
+        for tsfile in self.findFiles.find(self.temp_dir, 'ca.properties'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert properties file: {0}'.format(dirName))
             filename = '{0}/properties-ca.po'.format(dirName)
