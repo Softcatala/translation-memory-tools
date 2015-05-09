@@ -1,7 +1,6 @@
 {
     "project": "PopcornTime", 
     "projectweb": "https://popcorntime.io/", 
-    "disabled" : true,
     "fileset": {
         "PopcornTime": {
             "url": "https://www.transifex.com/projects/p/popcorn-time-app/", 
