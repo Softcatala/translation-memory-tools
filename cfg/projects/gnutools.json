@@ -7,7 +7,12 @@
             "type": "crawl", 
             "pattern": "http://.*?/ca/.*?", 
             "excluded": "xchat-"
+        }, 
+        "freedesktop": {
+            "url": "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz", 
+            "type": "compressed", 
+            "target": "freesktop.tar.gz"
         }
-    }, 
-    "comment": "Xchat exclusion caused by: http://bugs.locamotion.org/show_bug.cgi?id=3147"
+    },
+    "comment": "Xchat exclusion caused by: http://bugs.locamotion.org/show_bug.cgi?id=3147. Also we include here all the free desktop translations."
 }

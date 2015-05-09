@@ -32,12 +32,7 @@
             "url": "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz", 
             "type": "compressed", 
             "target": "gnome-infrastructure.tar.gz"
-        }, 
-        "freedesktop": {
-            "url": "http://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz", 
-            "type": "compressed", 
-            "target": "freesktop.tar.gz"
-        }, 
+        },
         "olpc": {
             "url": "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz", 
             "type": "compressed", 
