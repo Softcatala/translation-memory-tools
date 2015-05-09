@@ -86,6 +86,7 @@ class ConvertFiles():
         if len(self.findFiles.find(self.temp_dir, '*.php')) == 0:
             return
 
+        logging.info('convert php directory: {0}'.format(self.temp_dir))
         # Name arbitrary choosen (not sepecific to an expected dir structure)
         OUT_DIRNAME = 'po-files'
         cmd = 'cd {0} && php2po -t en -i ca ' \
@@ -96,6 +97,7 @@ class ConvertFiles():
         if len(self.findFiles.find(self.temp_dir, '*.xml')) == 0:
             return
 
+        logging.info('convert Android directory: {0}'.format(self.temp_dir))
         # See: https://pypi.python.org/pypi/android2po/1.2.0
         # If you do not specify --gettext ., the file is writen in ../locale
         # outside the tmp directory in our case
