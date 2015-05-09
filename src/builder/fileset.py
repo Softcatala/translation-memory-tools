@@ -107,7 +107,7 @@ class FileSet():
         project_catalog.cleanup()
 
     def build(self):
-        convert = ConvertFiles()
+        convert = ConvertFiles(self.temp_dir)
         convert.convert()
 
         self.clean_up_after_convert()

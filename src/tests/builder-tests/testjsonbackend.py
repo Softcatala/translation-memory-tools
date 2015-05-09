@@ -44,14 +44,15 @@ class TestJsonBackend(unittest.TestCase):
 
     def test_processFileSet(self):
 
-        folder = path.dirname(path.realpath(__file__))
-        json = JsonBackend(folder)
+        projects_dir = path.dirname(path.realpath(__file__))
+        projects_dir += '/data/projects'
+        json = JsonBackend(projects_dir)
         json.load()
 
         self.assertEquals(len(json.projects), 2)
         for project in json.projects:
             if project.name == 'Mozilla':
-                 mozilla = project
+                mozilla = project
 
         self._validate_mozilla_project(mozilla)
 

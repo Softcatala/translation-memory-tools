@@ -25,8 +25,8 @@ from findfiles import FindFiles
 
 class ConvertFiles():
 
-    def __init__(self):
-        self.temp_dir = './tmp'
+    def __init__(self, convert_dir):
+        self.convert_dir = convert_dir
         self.findFiles = None
 
     def convert(self):
@@ -37,15 +37,16 @@ class ConvertFiles():
         self._convert_php_resources_files_to_po()
         self._convert_android_resources_files_to_po()
         self._convert_properties_files_to_po()
+        self._convert_json_files_to_po()
 
     def _convert_ts_files_to_po(self):
-        for tsfile in self.findFiles.find(self.temp_dir, '*.ts'):
+        for tsfile in self.findFiles.find(self.convert_dir, '*.ts'):
             fileName, fileExtension = os.path.splitext(tsfile)
             logging.info('convert ts file: {0}'.format(fileName))
             os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def _convert_string_files_to_po(self):
-        for tsfile in self.findFiles.find(self.temp_dir, 'ca.strings'):
+        for tsfile in self.findFiles.find(self.convert_dir, 'ca.strings'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert strings file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
@@ -55,7 +56,7 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _convert_properties_files_to_po(self):
-        for tsfile in self.findFiles.find(self.temp_dir, 'ca.properties'):
+        for tsfile in self.findFiles.find(self.convert_dir, 'ca.properties'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert properties file: {0}'.format(dirName))
             filename = '{0}/properties-ca.po'.format(dirName)
@@ -65,7 +66,7 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _convert_ini_files_to_po(self):
-        for inifile in self.findFiles.find(self.temp_dir, 'ca.ini'):
+        for inifile in self.findFiles.find(self.convert_dir, 'ca.ini'):
             dirName = os.path.dirname(inifile)
             logging.info('convert ini file: {0}'.format(inifile))
 
@@ -83,23 +84,32 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _convert_php_resources_files_to_po(self):
-        if len(self.findFiles.find(self.temp_dir, '*.php')) == 0:
+        if len(self.findFiles.find(self.convert_dir, '*.php')) == 0:
             return
 
-        logging.info('convert php directory: {0}'.format(self.temp_dir))
+        logging.info('convert php directory: {0}'.format(self.convert_dir))
         # Name arbitrary choosen (not sepecific to an expected dir structure)
         OUT_DIRNAME = 'po-files'
         cmd = 'cd {0} && php2po -t en -i ca ' \
-              '-o {1}'.format(self.temp_dir, OUT_DIRNAME)
+              '-o {1}'.format(self.convert_dir, OUT_DIRNAME)
         os.system(cmd)
 
     def _convert_android_resources_files_to_po(self):
-        if len(self.findFiles.find(self.temp_dir, '*.xml')) == 0:
+        if len(self.findFiles.find(self.convert_dir, '*.xml')) == 0:
             return
 
-        logging.info('convert Android directory: {0}'.format(self.temp_dir))
+        logging.info('convert Android directory: {0}'.format(self.convert_dir))
         # See: https://pypi.python.org/pypi/android2po/1.2.0
         # If you do not specify --gettext ., the file is writen in ../locale
         # outside the tmp directory in our case
-        cmd = 'cd {0} && a2po init ca --gettext .'.format(self.temp_dir)
+        cmd = 'cd {0} && a2po init ca --gettext .'.format(self.convert_dir)
         os.system(cmd)
+
+    def _convert_json_files_to_po(self):
+        for jsonfile in self.findFiles.find(self.convert_dir, 'ca.json'):
+            dirName = os.path.dirname(jsonfile)
+            logging.info('convert json file: {0}'.format(dirName))
+            filename = '{0}/json-ca.po'.format(dirName)
+            cmd = 'json2po -t {0}/en.json -i {0}/ca.json ' \
+                  '-o {1}'.format(dirName, filename)
+            os.system(cmd)
