@@ -42,7 +42,7 @@ class ConvertFiles():
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find(self.convert_dir, '*.ts'):
             fileName, fileExtension = os.path.splitext(tsfile)
-            logging.info('convert ts file: {0}'.format(fileName))
+            logging.info('convert ts file: {0}'.format(tsfile))
             os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def _convert_string_files_to_po(self):

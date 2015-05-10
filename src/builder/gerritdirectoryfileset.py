@@ -26,11 +26,14 @@ import shutil
 
 from downloadfile import DownloadFile
 from fileset import FileSet
-from findfiles import FindFiles
 from gitfileset import GitFileSet
 
 
 class GerritDirectoryFileSet(FileSet):
+    """
+        Reads a list of projects from a Gerrit (Git web) server by calling
+        their API and then downloads the projects.
+    """
 
     def set_pattern(self, pattern):
         self.pattern = pattern
@@ -49,7 +52,7 @@ class GerritDirectoryFileSet(FileSet):
 
         lines = open(working_file, 'r').readlines()
         file = open(filename, 'w')
-        cnt =  0
+        cnt = 0
         for line in lines:
             cnt += 1
             if cnt == 1:
@@ -85,7 +88,7 @@ class GerritDirectoryFileSet(FileSet):
                         url = prj_value
 
                 if not re.match(self.pattern, name):
-                    logging.debug ('GerritDirectoryFileSet. Discarding:' + name)
+                    logging.debug('GerritDirectoryFileSet. Discarding:' + name)
                     continue
 
                 fileset = GitFileSet(self.project_name, name, url, '')
@@ -100,6 +103,6 @@ class GerritDirectoryFileSet(FileSet):
 
         # All the new filesets have been added re-process project now
         logging.debug('GerritDirectoryFileSet. Added {0} filesets dynamically'.
-            format(len(self.project.filesets)))
+                      format(len(self.project.filesets)))
 
         self.project.do()
