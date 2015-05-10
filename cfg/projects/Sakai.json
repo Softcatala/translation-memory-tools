@@ -1,0 +1,10 @@
+{
+    "project": "Sakai", 
+    "projectweb": "https://www.sakaiproject.org/", 
+    "fileset": {
+        "Sakai": {
+            "url": "https://www.transifex.com/projects/p/sakai-trunk/", 
+            "type": "transifex"
+        }
+    }
+}

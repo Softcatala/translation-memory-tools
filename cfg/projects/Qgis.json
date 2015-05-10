@@ -5,6 +5,10 @@
         "Qgis": {
             "url": "https://www.transifex.com/projects/p/QGIS", 
             "type": "transifex"
+        },
+        "Qgis-website": {
+            "url": "https://www.transifex.com/projects/p/qgis-website", 
+            "type": "transifex"
         }
     }
 }
