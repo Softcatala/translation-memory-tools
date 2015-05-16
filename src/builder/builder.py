@@ -111,7 +111,7 @@ def load_projects_from_json(add_source, projects_names, projects_dir, softcatala
     json = JsonBackend(projects_dir)
     json.load()
 
-    msg = 'Projects defined in json file {0}'.format(len(json.projects))
+    msg = 'Projects defined in the json directory {0}'.format(len(json.projects))
     logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()

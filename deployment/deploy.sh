@@ -45,23 +45,22 @@ copy_files() {
     cp *.csv $2
     cp sc-glossary.db3 $2/glossary.db3
 
-    # Deploy pology reports
-    cd $1/tm-git/src/pology
-    rm -r -f $2/pology
-    mkdir $2/pology
-    cp *.html $2/pology
-
-    # Deploy LT reports
-    cd $1/tm-git/src/lt
-    rm -r -f $2/lt
-    mkdir $2/lt
-    cp *.html $2/lt
+    # Deploy quality reports
+    cd $1/tm-git/quality
+    rm -r -f $2/quality
+    mkdir $2/quality
+    cp *.html $2/quality
 
     # Log
     rm -r -f $2/logs
     mkdir $2/logs
     cp $1/tm-git/src/lt/*.log $2/logs
     cp $1/tm-git/src/builder/*.log $2/logs
+}
+
+restart_appserver() {
+    sudo supervisorctl stop all
+    sudo supervisorctl start all
 }
 
 
@@ -86,6 +85,7 @@ fi
 
 # Deploy to a pre-production environment where we can run integration tests
 copy_files $ROOT $TARGET_PREPROD
+restart_appserver
 
 # Run integration tests
 cd $ROOT/tm-git/integration-tests/
@@ -99,5 +99,6 @@ fi
 
 # Deployment to production environment
 copy_files $ROOT $TARGET_DIR
+restart_appserver
 
 echo "Deployment completed $ROOT $TARGET_DIR"

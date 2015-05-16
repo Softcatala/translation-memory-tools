@@ -1,0 +1,31 @@
+<a id="inici{{uuid}}"></a>
+<h1>Fitxer analitzat: {{filename}}</h1>
+<h2>Informe de qualitat del LanguageTool</h2>
+{{#hasunknownwords}}
+<hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
+<h2>Paraules desconegudes</h2>
+<p>{{#unknownwords}}{{.}}, {{/unknownwords}}</p>
+{{/hasunknownwords}}
+<a id="indexregles{{uuid}}"></a>
+<hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
+<h2>Regles ordenades per freqüència</h2>
+<div class="twocolumns">
+    <table class="table">
+        <tr><td><b>Codi de regla</b></td><td><b>Ocurrències</b></td></tr>
+        {{#rulelist}}<tr><td><a href="#{{ruleId}}{{uuid}}">{{ruleId}}</a></td><td style="text-align:right">{{count}}</td></tr>
+        {{/rulelist}}<tr><td style="text-align:right">Total:</td><td style="text-align:right">{{totalmatches}}</td></tr>
+    </table>
+</div>
+<h2>Errors trobats per regla</h2>
+{{#rulelist}}
+<a id="{{ruleId}}{{uuid}}"></a>
+<hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
+<b>Regla: {{ruleId}}</b>
+<br/><br/>
+{{#rule_matches}}
+<hr/><b>Missatge:</b> {{msg}}<br/>
+{{#replacements}}<b>Suggeriments:</b> {{replacements}}<br/>{{/replacements}}
+{{#url}}<a href="{{url}}" target="_blank">Més informació</a><br/>{{/url}}
+<p>{{{context}}}</p>
+{{/rule_matches}}
+{{/rulelist}}

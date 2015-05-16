@@ -29,6 +29,7 @@ sys.path.append('../src/')
 from builder.crawler import Crawler
 from checkdownloads import CheckDownloads
 from checksearch import CheckSearch
+from checkqualityreports import CheckQualityReports
 
 
 def read_parameters():
@@ -44,7 +45,7 @@ def read_parameters():
 
     opt_environments = ', '.join(environments.keys())
     default = next(reversed(environments))
-    parser.add_option("-e", "--environment", dest="environment", 
+    parser.add_option("-e", "--environment", dest="environment",
                       default=default, type="choice", choices=environments.keys(),
                       help="set default environment to: " + opt_environments)
 
@@ -71,5 +72,13 @@ if __name__ == '__main__':
     if downloads.errors > 0:
         print('Total download errors {0}'.format(downloads.errors))
         sys.exit(1)
+
+    quality_reports = CheckQualityReports(site_url)
+    quality_reports.check()
+
+    if quality_reports.errors > 0:
+        print('Errors in quality reports {0}'.format(quality_reports.errors))
+        # TODO: Remove after stabilizing lt generation
+        #sys.exit(1)
 
     sys.exit(0)

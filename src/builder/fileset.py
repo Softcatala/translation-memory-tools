@@ -30,6 +30,7 @@ from pofile import POFile
 class FileSet():
 
     temp_dir = './tmp'
+    output_dir = './output'
 
     def __init__(self, project_name, name, url, filename):
         self.project_name = project_name
@@ -39,6 +40,7 @@ class FileSet():
         self.add_source = True
         self.excluded = []
         self.po_catalog = None
+        self.output_dir = self.output_dir + "/" + project_name.lower() + "/" + name.lower()
 
     def set_checksum(self, checksum):
         self.checksum = checksum
@@ -125,6 +127,23 @@ class FileSet():
         self._build_tm_for_fileset(fileset_tm, files)
         self._add_tm_for_fileset_to_project_tm(fileset_tm)
         self._delete_tm_fileset(fileset_tm)
+        self._copy_to_output()
+
+    def _copy_to_output(self):
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+
+        findFiles = FindFiles()
+        files = findFiles.find(self.temp_dir, '*.po')
+        for source in files:
+            dirname = os.path.dirname(source)
+            if dirname != self.temp_dir:
+                d = self.output_dir + dirname[len(self.temp_dir):]
+                if not os.path.exists(d):
+                    os.makedirs(d)
+
+            target = self.output_dir + source[len(self.temp_dir):]
+            shutil.copy(source, target)
 
     def create_tmp_directory(self):
         self.remove_tmp_directory()

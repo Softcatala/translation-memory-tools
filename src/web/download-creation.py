@@ -57,10 +57,8 @@ class TranslationMemory(object):
         self.po_file_link = get_zip_file(get_path_to_po(filename))
         self.tmx_file_text = get_zip_file(get_tmx_file(filename))
         self.tmx_file_link = get_zip_file(get_path_to_tmx(filename))
-        self.quality_file_link = u'pology/' + filename + u'.html'
-        self.quality_file_text = 'Informe Pology'
-        self.lt_file_link = u'lt/' + filename + u'-lt.html'
-        self.lt_file_text = 'Informe LanguageTool'
+        self.quality_file_link = u'quality/' + name.lower() + u'.html'
+        self.quality_file_text = 'Informe de qualitat'
         self.words = words
         self.last_fetch = last_fetch
         self.last_translation_update = last_translation_update

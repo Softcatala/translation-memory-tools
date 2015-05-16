@@ -51,6 +51,7 @@ if [ -z "$NOPOBUILD" ]; then
     rm -f *.po
     rm -f *.tmx
     rm -f *.log
+    rm -f -r output/
 
     # Download new translation files
     python builder.py
