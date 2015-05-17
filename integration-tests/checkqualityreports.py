@@ -34,10 +34,7 @@ class CheckQualityReports(object):
         self.errors = 0
 
     def check_links(self, project):
-        #pology = '{0}pology/{1}-tm.po.html'.format(self.site_url, project)
-        #self._check_link(pology)
-
-        lt = '{0}lt/{1}-lt.html'.format(self.site_url, project)
+        lt = '{0}quality/{1}.html'.format(self.site_url, project)
         self._check_link(lt)
 
     def _check_link(self, link):
