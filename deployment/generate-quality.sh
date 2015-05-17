@@ -37,29 +37,28 @@ cd $root/tm-git/src/builder/output
 for project_dir in */; do
     echo "project_dir:" $project_dir
     # Run LT over all the files
-    project_files=$(find $project_dir -type f -name *.po)
     report_file="${project_dir::-1}.html"
 
     cat $lt_html/header.html > $lt_output/$report_file
-    for file in $project_files; do
-        echo "Executing LT on: " $file
+    find $project_dir -type f -name '*.po' -print0 | while IFS= read -r -d '' file; do
+        echo "Executing LT on: " "$file"
         # Conversion from PO to HTML
-        msgattrib --no-obsolete --no-fuzzy --translated $file > $file-filtrat.po
-        po2txt $file-filtrat.po > $file.html
-        sed -i 's/\\[rtn]/ /g' $file.html
-        rm $file-filtrat.po
+        msgattrib --no-obsolete --no-fuzzy --translated "$file" > "$file-filtrat.po"
+        po2txt "$file-filtrat.po" > "$file.html"
+        sed -i 's/\\[rtn]/ /g' "$file.html"
+        rm "$file-filtrat.po"
 
         # Conversion from HTML to TXT
         java -Dfile.encoding=UTF-8 -jar $tike_path/tika-app-1.7.jar -t "$file.html"  > "$file.txt"
-        sed -i 's/[_&~]//g' $file.txt # remove accelerators
-        rm $file.html
+        sed -i 's/[_&~]//g' "$file.txt" # remove accelerators
+        rm "$file.html"
         
         # Exclude some patterns from LT analysis
         echo "*******************************************" >> $lt_log 
         echo "** Excluded lines from $file"                >> $lt_log
         echo "*******************************************" >> $lt_log
-        grep -E '^([^.]*,[^.]*){8,}$' $file.txt >> $lt_log #comma-separated word list
-        sed -i -r 's/^([^.]*,[^.]*){8,}$//' $file.txt
+        grep -E '^([^.]*,[^.]*){8,}$' "$file.txt" >> $lt_log #comma-separated word list
+        sed -i -r 's/^([^.]*,[^.]*){8,}$//' "$file.txt"
         
         # Run LT
         java -Dfile.encoding=UTF-8 -jar $lt_path/languagetool-commandline.jar $lt_opt "$file.txt" > "$file-results.xml"
@@ -67,13 +66,13 @@ for project_dir in */; do
         source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg
         python $lt_html/lt-results-to-html.py -i "$file-results.xml" -o "$file-report.html"
         sed -i 's/\t/ /g' "$file-report.html" #replace tabs with whitespace for better presentation
-        cat $file-report.html >> $lt_output/$report_file
+        cat "$file-report.html" >> $lt_output/$report_file
 
         # Execute pology
         deactivate  # Specific to SC machine cfg
-        echo "Executing posieve on: " $file
-        posieve set-header -sfield:'Language:ca' -screate $file 
-        posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules $file > "$file-pology.html"
+        echo "Executing posieve on: " "$file"
+        posieve set-header -sfield:'Language:ca' -screate "$file" 
+        posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules "$file" > "$file-pology.html"
 
         echo "<h2>Informe d'errades del Pology</h2><br/>" >> $lt_output/$report_file
         if [ -s "$file-pology.html" ] ; then
@@ -83,10 +82,10 @@ for project_dir in */; do
         fi
         source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg
 
-        rm $file-pology.html
-        rm $file-report.html
-        rm $file-results.xml
-        rm $file.txt
+        rm "$file-pology.html"
+        rm "$file-report.html"
+        rm "$file-results.xml"
+        rm "$file.txt"
         
     done
     cat $lt_html/footer.html >> $lt_output/$report_file
