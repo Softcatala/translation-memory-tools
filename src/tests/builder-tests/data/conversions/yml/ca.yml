@@ -1,0 +1,5 @@
+ca:
+  site_settings:
+    enable_imgur: "Habilita l'API d'imgur per pujades, no allotgis els arxius localment"
+    imgur_client_id: "El teu ID de client d'imgur, necessari per habilitar les pujades"
+    imgur_client_secret: "La teva clau secreta d'imgur.com. Actualment, no és necessària per habilitar les pujades, però s'hi pot tornar en qualsevol moment."

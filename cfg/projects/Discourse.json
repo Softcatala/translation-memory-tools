@@ -1,0 +1,10 @@
+{
+    "project": "Discourse", 
+    "projectweb": "http://www.discourse.org/", 
+    "fileset": {
+        "main": {
+            "url": "https://www.transifex.com/projects/p/discourse-org/", 
+            "type": "transifexhub"
+        }
+    }
+}

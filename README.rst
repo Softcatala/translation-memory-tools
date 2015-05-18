@@ -29,6 +29,7 @@ Dependencies
 * Bazaar
 * Subversion 1.7 or higher
 * Git
+* Ruby + (gem install i18n-translators-tools)
 * Other requirements listed in requirements.txt
 
 

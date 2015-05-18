@@ -38,6 +38,7 @@ class ConvertFiles():
         self._convert_android_resources_files_to_po()
         self._convert_properties_files_to_po()
         self._convert_json_files_to_po()
+        self._convert_yml_files_to_po()
 
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find(self.convert_dir, '*.ts'):
@@ -112,4 +113,11 @@ class ConvertFiles():
             filename = '{0}/json-ca.po'.format(dirName)
             cmd = 'json2po -t {0}/en.json -i {0}/ca.json ' \
                   '-o {1}'.format(dirName, filename)
+            os.system(cmd)
+
+    def _convert_yml_files_to_po(self):
+        for ymlfile in self.findFiles.find(self.convert_dir, 'ca.yml'):
+            dirName = os.path.dirname(ymlfile)
+            logging.info('convert yml file: {0}'.format(dirName))
+            cmd = 'i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en'.format(dirName)
             os.system(cmd)
