@@ -2,7 +2,8 @@ language: python
 python:
   - "2.7"
 before_install:
-  - apt-get install ruby
+  - sudo apt-get update
+  - rvm install ruby
   - gem install i18n-translators-tools
 install:
   pip install -r requirements.txt
