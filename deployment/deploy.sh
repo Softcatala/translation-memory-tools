@@ -54,7 +54,7 @@ copy_files() {
     # Log
     rm -r -f $2/logs
     mkdir $2/logs
-    cp $1/tm-git/src/quality/*.log $2/logs
+    cp $1/tm-git/quality/*.log $2/logs
     cp $1/tm-git/src/builder/*.log $2/logs
 }
 
