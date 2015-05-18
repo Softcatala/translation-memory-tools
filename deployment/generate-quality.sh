@@ -41,6 +41,8 @@ for project_dir in */; do
 
     cat $lt_html/header.html > $lt_output/$report_file
     find $project_dir -type f -name '*.po' -print0 | while IFS= read -r -d '' file; do
+
+        source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg    
         echo "Executing LT on: " "$file"
         # Conversion from PO to HTML
         msgattrib --no-obsolete --no-fuzzy --translated "$file" > "$file-filtrat.po"
@@ -63,7 +65,6 @@ for project_dir in */; do
         # Run LT
         java -Dfile.encoding=UTF-8 -jar $lt_path/languagetool-commandline.jar $lt_opt "$file.txt" > "$file-results.xml"
         
-        source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg
         python $lt_html/lt-results-to-html.py -i "$file-results.xml" -o "$file-report.html"
         sed -i 's/\t/ /g' "$file-report.html" #replace tabs with whitespace for better presentation
         cat "$file-report.html" >> $lt_output/$report_file
