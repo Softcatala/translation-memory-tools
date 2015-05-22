@@ -74,8 +74,3 @@ copy_tm_files "*.tmx" 350 $INTERMEDIATE_TMX
 cd $PROGRAMS/web
 python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
 python index-creation.py -d $INTERMEDIATE_PO
-
-# Notify completion
-cd $BUILDER
-pwd
-python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO 

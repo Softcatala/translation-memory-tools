@@ -101,4 +101,9 @@ fi
 copy_files $ROOT $TARGET_DIR
 restart_appserver
 
+# Notify completion
+cd $ROOT/tm-git/src/builder
+pwd
+python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO 
+
 echo "Deployment completed $ROOT $TARGET_DIR"
