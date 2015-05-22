@@ -73,7 +73,7 @@ for project_dir in */; do
         deactivate  # Specific to SC machine cfg
         echo "Executing posieve on: " "$file"
         posieve set-header -sfield:'Language:ca' -screate "$file" 
-        posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules "$file" > "$file-pology.html"
+        posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules -s rfile:$pology/date-format.rules.rules "$file" > "$file-pology.html"
 
         echo "<h2>Informe d'errades del Pology</h2><br/>" >> $lt_output/$report_file
         if [ -s "$file-pology.html" ] ; then

@@ -1,0 +1,30 @@
+#
+# Time rules for Catalan translations
+# Detects date/time string formaters that have not been properly localized
+# having as result the date/time not been shown correctly.
+#
+# License: GPLv3
+#
+# Author: Jordi Mas <jmas@softcatala.org>
+#  
+
+#
+# C/C++ date/time strings
+# See: http://www.cplusplus.com/reference/ctime/strftime/
+#
+{%B %e}
+valid msgstr="%e de %B"
+hint="En anglès «January 31», en català «31 de gener»"
+
+{%b %e}
+valid msgstr="%e de %b"
+hint="En anglès «Jan 31», en català «31 de gen»"
+
+{%B %e, %Y}
+valid msgstr="%e de %B, %Y"
+hint="En anglès «January 31, 2016», en català «31 de gener, 2016»"
+
+{%b %e, %Y}
+valid msgstr="%e de %b, %Y"
+hint="En anglès «Jan 31, 2016», en català «31 de gen, 2016»"
+
