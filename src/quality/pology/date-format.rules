@@ -1,11 +1,17 @@
 #
 # Time rules for Catalan translations
+#
 # Detects date/time string formaters that have not been properly localized
 # having as result the date/time not been shown correctly.
 #
+# Data time formats are complex because:
+#
+# 1. Translators often not identify the need to localize them
+# 2. Different programing language use different conventions and not all translators are familiar with all these conventions
+#
 # License: GPLv3
 #
-# Author: Jordi Mas <jmas@softcatala.org>
+# Author: Jordi Mas <jmas@softcatala.org>, 2015
 #  
 
 #
@@ -14,17 +20,32 @@
 #
 {%B %e}
 valid msgstr="%e de %B"
-hint="En anglès «January 31», en català «31 de gener»"
+hint="Especificadors de format d'hora incorrectes. En anglès «January 31», en català «31 de gener»"
 
 {%b %e}
 valid msgstr="%e de %b"
-hint="En anglès «Jan 31», en català «31 de gen»"
+hint="Especificadors de format d'hora incorrectes. En anglès «Jan 31», en català «31 de gen»"
 
 {%B %e, %Y}
 valid msgstr="%e de %B, %Y"
-hint="En anglès «January 31, 2016», en català «31 de gener, 2016»"
+hint="Especificadors de format d'hora incorrectes. En anglès «January 31, 2016», en català «31 de gener, 2016»"
 
 {%b %e, %Y}
 valid msgstr="%e de %b, %Y"
-hint="En anglès «Jan 31, 2016», en català «31 de gen, 2016»"
+hint="Especificadors de format d'hora incorrectes. En anglès «Jan 31, 2016», en català «31 de gen, 2016»"
+
+#
+# C# date/time strings
+# See: https://msdn.microsoft.com/en-us/library/8kb3ddd4%28v=vs.110%29.aspx
+#
+{MMMM d yyyy}
+valid msgstr="d MMMM yyyy"
+hint="Especificadors de format d'hora incorrectes. En anglès «January 31 2016», en català «31 de gener 2016»"
+
+{MMMM d}
+valid msgstr="d MMMM"
+hint="Especificadors de format d'hora incorrectes. En anglès «January 31», en català «31 de gener»"
+
+
+
 
