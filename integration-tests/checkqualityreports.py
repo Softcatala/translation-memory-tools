@@ -28,6 +28,7 @@ class CheckQualityReports(object):
 
     HTTP_STATUS_CODE_OK = 200
     HTTP_STATUS_CODE_NOT_FOUND = 404
+    MIN_REPORT_LENGTH = 1400
 
     def __init__(self, site_url):
         self.site_url = site_url
@@ -52,7 +53,7 @@ class CheckQualityReports(object):
             print('Link {0} returns {1}'.format(link, str(code)))
             return False
 
-        if length < 16:
+        if length < self.MIN_REPORT_LENGTH:
             self.errors += 1
             print('Link {0} content is only {1} bytes'.format(link,
                   str(length)))
