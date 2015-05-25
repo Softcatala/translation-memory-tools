@@ -78,7 +78,6 @@ if __name__ == '__main__':
 
     if quality_reports.errors > 0:
         print('Errors in quality reports {0}'.format(quality_reports.errors))
-        # TODO: Remove after stabilizing lt generation
-        #sys.exit(1)
+        sys.exit(1)
 
     sys.exit(0)
