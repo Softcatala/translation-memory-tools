@@ -31,6 +31,11 @@ class rule_match(object):
                break
       self.replacements = replacements_str
       ctx = error.attrib['context']
+
+      # Escape HTML
+      ctx = ctx.replace("<", "&lt;");
+      ctx = ctx.replace(">", "&gt;");
+
       a = int(error.attrib['contextoffset'])
       b = a + int(error.attrib['errorlength'])
       ctxlen = len(ctx)
