@@ -25,12 +25,12 @@
 #
 {%B %e}
 valid msgstr="%e( de| del)? %B"
-#valid msgstr="%e %Eb" # %Eb is Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
+valid msgstr="%e %Eb" # %Eb is Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
 hint="Especificadors de format de data possiblement incorrectes. En anglès «January 31», en català «31 de gener»"
 
 {%b %e}
 valid msgstr="%e( de| del)? %b"
-#valid msgstr="%e %Eb" # %Eb is Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
+valid msgstr="%e %Eb" # %Eb is Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
 hint="Especificadors de format de data possiblement incorrectes. En anglès «Jan 31», en català «31 de gen»"
 
 #
