@@ -40,7 +40,7 @@ for project_dir in */; do
     report_file="${project_dir::-1}.html"
 
     cat $lt_html/header.html > $lt_output/$report_file
-    find $project_dir -type f -name '*.po' -print0 | while IFS= read -r -d '' file; do
+    find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d '' file; do
 
         source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg    
         echo "Executing LT on: " "$file"
