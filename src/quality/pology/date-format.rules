@@ -1,17 +1,19 @@
 #
-# Time rules for Catalan translations
+# Date rules for Catalan translations
+# License: GPLv3
+#
+# Author: Jordi Mas <jmas@softcatala.org>, 2015
 #
 # Detects date/time string formaters that have not been properly localized
 # having as result the date/time not been shown correctly.
 #
-# Data time formats are complex because:
+# When developing this rules I optimized for proviving as little as false positive
+# as possible. This is why we do exact matching.
+#
+# Date time formats are complex because:
 #
 # 1. Translators often not identify the need to localize them
 # 2. Different programing language use different conventions and not all translators are familiar with all these conventions
-#
-# License: GPLv3
-#
-# Author: Jordi Mas <jmas@softcatala.org>, 2015
 #  
 # Comentaris sobre el català
 #
@@ -19,26 +21,40 @@
 # - El sistema de formatadors no permet expressar quan l'article s'apostrofa (d'agost, de setembre) 
 #   i està generalment acceptada l'ús de la forma no apostrofada (de). Excepte Mozilla que ho permet.
 
+
 #
 # C/C++ date/time strings
 # See: http://www.cplusplus.com/reference/ctime/strftime/
 #
-{%B %e}
-valid msgstr="%e( de| del)? %B"
-valid msgstr="%e %Eb" # %Eb is Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
+
+# %Eb is a Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
+{^%B %e$}
+valid msgstr="^%e( de| del)? %B$"
+valid msgstr="^%e %Eb$"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «January 31», en català «31 de gener»"
 
-{%b %e}
-valid msgstr="%e( de| del)? %b"
-valid msgstr="%e %Eb" # %Eb is Mozilla specific token which stands for the month name in the genitive case (d'abril / de gener)
+{^%b %e$}
+valid msgstr="^%e( de| del)? %b$"
+valid msgstr="^%e %Eb$"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «Jan 31», en català «31 de gen»"
+
+{%B %e, %Y}
+valid msgstr="%e( de| del)? %B( de| del)? %Y"
+valid msgstr="%d( de| del)? %B( de| del)? %Y"
+valid msgstr="%e( de| del)? %Eb( de| del)? %Y"
+hint="Especificadors de format de data possiblement incorrectes. En anglès «XX», en català «XX»"
+
+{%m/%d/%y}
+valid msgstr="^%d/%m/%y"
+valid msgstr="^%d-%m-%y"
+hint="Especificadors de format de data possiblement incorrectes. En anglès «XXX», en català «XXX»"
 
 #
 # C# date/time strings
 # See: https://msdn.microsoft.com/en-us/library/8kb3ddd4%28v=vs.110%29.aspx
 #
-{MMMM d}
-valid msgstr="d MMMM"
+{^MMMM d$}
+valid msgstr="^d MMMM$"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «January 31 2016», en català «31 de gener 2016»"
 
 
