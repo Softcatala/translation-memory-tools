@@ -7,7 +7,7 @@
 # Detects date/time string formaters that have not been properly localized
 # having as result the date/time not been shown correctly.
 #
-# When developing this rules I optimized for proviving as little as false positive
+# When developing this rules I optimized for proviving as few false positives
 # as possible. This is why we do exact matching.
 #
 # Date time formats are complex because:
@@ -45,8 +45,8 @@ valid msgstr="%e( de| del)? %Eb( de| del)? %Y"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «XX», en català «XX»"
 
 {%m/%d/%y}
-valid msgstr="^%d/%m/%y"
-valid msgstr="^%d-%m-%y"
+valid msgstr="%d/%m/%y"
+valid msgstr="%d-%m-%y"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «XXX», en català «XXX»"
 
 #
