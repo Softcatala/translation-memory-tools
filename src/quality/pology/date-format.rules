@@ -50,6 +50,13 @@ valid msgstr="%d-%m-%y"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «XXX», en català «XXX»"
 
 #
+# PHP
+#
+{Y[/ -]m[/ -]d}
+valid msgstr="d[-/]m[-/]Y"
+hint="Especificadors de format de data possiblement incorrectes. En anglès «2016/6/31», en català «31/6/2016»"
+
+#
 # C# date/time strings
 # See: https://msdn.microsoft.com/en-us/library/8kb3ddd4%28v=vs.110%29.aspx
 #
