@@ -7,8 +7,8 @@
 # Detects date/time string formaters that have not been properly localized
 # having as result the date/time not been shown correctly.
 #
-# When developing this rules I optimized for proviving as few false positives
-# as possible. This is why we do exact matching.
+# When developing these rules I optimized for proviving as few false positives
+# as possible. This is why we do exact string matching.
 #
 # Date time formats are complex because:
 #
@@ -19,7 +19,7 @@
 #
 # - L'ús d'article davant mes i any és opcional (http://esadir.cat/gramatica/sintaxi/remartmesany) 
 # - El sistema de formatadors no permet expressar quan l'article s'apostrofa (d'agost, de setembre) 
-#   i està generalment acceptada l'ús de la forma no apostrofada (de). Excepte Mozilla que ho permet.
+#   i està generalment acceptada l'ús de la forma no apostrofada (de). Excepte Mozilla que ho permet.   
 
 
 #
@@ -39,10 +39,10 @@ valid msgstr="^%e %Eb$"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «Jan 31», en català «31 de gen»"
 
 {%B %e, %Y}
-valid msgstr="%e( de| del)? %B( de| del)? %Y"
-valid msgstr="%d( de| del)? %B( de| del)? %Y"
-valid msgstr="%e( de| del)? %Eb( de| del)? %Y"
-hint="Especificadors de format de data possiblement incorrectes. En anglès «XX», en català «XX»"
+valid msgstr="%e( de)? %B( de| del)? %Y"
+valid msgstr="%d( de)? %B( de| del)? %Y"
+valid msgstr="%e( de)? %Eb( de| del)? %Y"
+hint="Especificadors de format de data possiblement incorrectes. En anglès «January 31, 2016», en català «31 de gener del 2016»"
 
 {%m/%d/%y}
 valid msgstr="%d/%m/%y"
