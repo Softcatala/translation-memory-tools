@@ -1,18 +1,8 @@
 #!/bin/bash
 
-root="$1"
-lt_output=$root/tm-git/quality
-lt_html=$root/tm-git/src/quality/lt
-tike_path=/home/jmas/tika
-lt_path=/home/jmas/languagetool
-lt_log=$lt_output/excluded-lines.log 
-langcode=ca-ES
-disabledRules="-d MORFOLOGIK_RULE_CA_ES,WHITESPACE_RULE,UPPERCASE_SENTENCE_START,CAMI_DE"
-enabledRules="-e EXIGEIX_PLURALS_S"
-lt_opt="-u -b -c utf-8 -l $langcode $disabledRules $enabledRules --api"
-pology=$root/tm-git/src/quality/pology
-
 # Try to download most recent LT version
+# Not used for now since it is running as a service
+download_language_tool() {
 yesterday=`date -d "yesterday 13:00 " '+%Y%m%d'`
 lt_file=LanguageTool-$yesterday-snapshot.zip
 lt_url="https://languagetool.org/download/snapshots/$lt_file"
@@ -25,6 +15,19 @@ if [[ $? -eq 0 ]]; then
     unzip -d "$lt_path" "$lt_file" && f=("$lt_path"/*) && mv "$lt_path"/*/* "$lt_path" && rmdir "${f[@]}"
     rm -f $lt_file
 fi
+}
+
+root="$1"
+lt_output=$root/tm-git/quality
+lt_html=$root/tm-git/src/quality/lt
+tike_path=/home/jmas/tika
+lt_path=/home/jmas/languagetool
+lt_log=$lt_output/excluded-lines.log 
+langcode=ca-ES
+disabledRules="MORFOLOGIK_RULE_CA_ES,WHITESPACE_RULE,UPPERCASE_SENTENCE_START,CAMI_DE"
+enabledRules="EXIGEIX_PLURALS_S"
+pology=$root/tm-git/src/quality/pology
+
 
 # Delete output dir and files
 rm -r -f $lt_log
@@ -63,7 +66,7 @@ for project_dir in */; do
         sed -i -r 's/^([^.]*,[^.]*){8,}$//' "$file.txt"
         
         # Run LT
-        java -Dfile.encoding=UTF-8 -jar $lt_path/languagetool-commandline.jar $lt_opt "$file.txt" > "$file-results.xml"
+        curl --data "language=$langcode" --data "enabled=$enabledRules" --data "disabled=$disabledRules" --data-urlencode "text@$file.txt" http://localhost:7001 > "$file-results.xml" 2>/dev/null
         
         python $lt_html/lt-results-to-html.py -i "$file-results.xml" -o "$file-report.html"
         sed -i 's/\t/ /g' "$file-report.html" #replace tabs with whitespace for better presentation

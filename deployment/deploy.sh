@@ -59,8 +59,12 @@ copy_files() {
 }
 
 restart_appserver() {
-    sudo supervisorctl stop all
-    sudo supervisorctl start all
+    sudo supervisorctl stop recursos_preprod
+    sudo supervisorctl stop recursos_dev
+    sudo supervisorctl stop recursos
+    sudo supervisorctl start recursos_preprod
+    sudo supervisorctl start recursos_dev
+    sudo supervisorctl start recursos
 }
 
 
