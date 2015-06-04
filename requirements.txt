@@ -5,6 +5,7 @@ translate-toolkit
 android2po
 pystache
 peewee
+hunspell
 
 # Fix android2po requirements.
 babel >= 1.0

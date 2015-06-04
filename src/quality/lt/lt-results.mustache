@@ -1,11 +1,24 @@
 <a id="inici{{uuid}}"></a>
 <h1>Fitxer analitzat: {{filename}}</h1>
-<h2>Informe de qualitat del LanguageTool</h2>
 {{#hasunknownwords}}
 <hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
-<h2>Paraules desconegudes</h2>
-<p>{{#unknownwords}}{{.}}, {{/unknownwords}}</p>
+<h2>Paraules desconegudes ({{.}})</h2>
+<!--<p>{{#unknownwords}}{{.}}, {{/unknownwords}}</p>-->
 {{/hasunknownwords}}
+
+<p>Passeu el cursor per damunt de les paraules per a veure els suggeriments de correcció.</p>
+
+{{#has_uw_rest}}<p><b>Tot minúscules:</b> {{#uw_rest}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_rest}}</p>{{/has_uw_rest}}
+{{#has_uw_firstupper}}<p><b>Primera lletra majúscula:</b> {{#uw_firstupper}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_firstupper}}</p>{{/has_uw_firstupper}}
+{{#has_uw_english}}<p><b>En anglès:</b> {{#uw_english}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_english}}</p>{{/has_uw_english}}
+{{#has_uw_spanish}}<p><b>En castellà:</b> {{#uw_spanish}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_spanish}}</p>{{/has_uw_spanish}}
+{{#has_uw_french}}<p><b>En francès:</b> {{#uw_french}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_french}}</p>{{/has_uw_french}}
+{{#has_uw_oneletter}}<p><b>Lletra solta:</b> {{#uw_oneletter}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_oneletter}}</p>{{/has_uw_oneletter}}
+{{#has_uw_allupper}}<p><b>Tot majúscules:</b> {{#uw_allupper}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_allupper}}</p>{{/has_uw_allupper}}
+{{#has_uw_camel}}<p><b>CamelCase:</b> {{#uw_camel}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_camel}}</p>{{/has_uw_camel}}
+{{#has_uw_digit}}<p><b>Amb dígit:</b> {{#uw_digit}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_digit}}</p>{{/has_uw_digit}}
+{{#has_uw_symbol}}<p><b>Amb símbol:</b> {{#uw_symbol}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_symbol}}</p>{{/has_uw_symbol}}
+
 <a id="indexregles{{uuid}}"></a>
 <hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
 <h2>Regles ordenades per freqüència</h2>
@@ -20,12 +33,12 @@
 {{#rulelist}}
 <a id="{{ruleId}}{{uuid}}"></a>
 <hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
-<b>Regla: {{ruleId}}</b>
+<b>Regla: {{ruleId}} ({{count}}) {{#truncated}}(Només es mostren els 100 primers!){{/truncated}}</b>
 <br/><br/>
 {{#rule_matches}}
 <hr/><b>Missatge:</b> {{msg}}<br/>
 {{#replacements}}<b>Suggeriments:</b> {{replacements}}<br/>{{/replacements}}
 {{#url}}<a href="{{url}}" target="_blank">Més informació</a><br/>{{/url}}
-<p>{{{context}}}</p>
+<p>{{context_before}}<span class="{{context_spanclass}}">{{{context_error}}}</span>{{context_after}}</p>
 {{/rule_matches}}
 {{/rulelist}}
