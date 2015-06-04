@@ -34,14 +34,14 @@ valid msgstr="^%e %Eb$"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «January 31», en català «31 de gener»"
 
 {^%b %e$}
-valid msgstr="^%e( de| del)? %b$"
+valid msgstr="^%e( de)? %b$"
 valid msgstr="^%e %Eb$"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «Jan 31», en català «31 de gen»"
 
 {%B %e, %Y}
-valid msgstr="%e( de)? %B( de| del)? %Y"
-valid msgstr="%d( de)? %B( de| del)? %Y"
-valid msgstr="%e( de)? %Eb( de| del)? %Y"
+valid msgstr="%e( de)? %B( de| del) %Y"
+valid msgstr="%d( de)? %B( de| del) %Y"
+valid msgstr="%e %Eb( de| del) %Y"
 hint="Especificadors de format de data possiblement incorrectes. En anglès «January 31, 2016», en català «31 de gener del 2016»"
 
 {%m/%d/%y}
