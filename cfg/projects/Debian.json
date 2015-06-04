@@ -3,12 +3,12 @@
     "projectweb": "http://www.debian.org/international/l10n/po/ca", 
     "fileset": {
         "apt": {
-            "url": "http://i18n.debian.org/material/po/testing/main/a/apt/po/apt_1.0.9.8_ca.po.gz", 
+            "url": "http://i18n.debian.org/material/po/testing/main/a/apt/po/apt_1.0.9.10_ca.po.gz", 
             "type": "compressed", 
             "target": "apt_ca.po.gz"
         }, 
         "dpkg": {
-            "url": "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/dpkg_1.17.25_ca.po.gz", 
+            "url": "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/dpkg_1.18.0_ca.po.gz", 
             "type": "compressed", 
             "target": "dpkg.gz"
         }, 
@@ -23,7 +23,7 @@
             "target": "aptitude.gz"
         }, 
         "po4a": {
-            "url": "http://i18n.debian.org/material/po/testing/main/p/po4a/po/bin/po4a_0.45-1_ca.po.gz", 
+            "url": "http://i18n.debian.org/material/po/testing/main/p/po4a/po/bin/po4a_0.46-1_ca.po.gz", 
             "type": "compressed", 
             "target": "po4a.gz"
         }
