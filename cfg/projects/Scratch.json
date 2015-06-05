@@ -1,0 +1,26 @@
+{
+    "project": "Scratch", 
+    "projectweb": "http://wiki.scratch.mit.edu/wiki/Language_Forums",  
+    "fileset": {
+        "firefox": {
+            "url": "http://translate.scratch.mit.edu/ca/django-ui/export/zip", 
+            "type": "compressed", 
+            "target": "django-ui.zip"
+        }, 
+        "blocks": {
+            "url": "http://translate.scratch.mit.edu/ca/blocks/export/zip", 
+            "type": "compressed", 
+            "target": "blocks.zip"
+        }, 
+        "editor": {
+            "url": "http://translate.scratch.mit.edu/ca/editor/export/zip", 
+            "type": "compressed", 
+            "target": "editor.zip"
+        }, 
+        "tips": {
+            "url": "http://translate.scratch.mit.edu/ca/django-documentation/export/zip", 
+            "type": "compressed", 
+            "target": "tips.zip"
+        }    
+    }
+}
