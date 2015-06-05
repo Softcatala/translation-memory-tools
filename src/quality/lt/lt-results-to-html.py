@@ -104,18 +104,19 @@ def process_file ( ifile, ofile ):
    errors = root.findall('error')
    for error in errors:
       ruleId = error.attrib['ruleId']
-      r = getRuleById(rulelist, ruleId)
-      if r != None:
-         r.increment()
-      else:
-         r = rule(ruleId)
-         rulelist.append(r)
-      if (r.count > 100):
-         r.truncated = 1
-      else:
-         r.rule_matches.append(rule_match(error))
+      if ruleId != "MORFOLOGIK_RULE_CA_ES":
+         r = getRuleById(rulelist, ruleId)
+         if r != None:
+            r.increment()
+         else:
+            r = rule(ruleId)
+            rulelist.append(r)
+         if (r.count > 100):
+            r.truncated = 1
+         else:
+            r.rule_matches.append(rule_match(error))
       # get unknown words from spelling rule
-      if ruleId == "MORFOLOGIK_RULE_CA_ES":
+      else:
          a = int(error.attrib['contextoffset'])
          b = a + int(error.attrib['errorlength'])
          uw = error.attrib['context'][a:b]
@@ -150,7 +151,6 @@ def process_file ( ifile, ofile ):
                   uw_firstupper.append(rule_match(error))
             elif uw not in uw_rest:
                uw_rest.append(rule_match(error))
-
 
    # sort list of rules
    rulelist.sort(key=lambda x: x.count, reverse=True);
