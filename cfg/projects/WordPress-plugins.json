@@ -7,6 +7,11 @@
             "type": "file", 
             "target": "wp-plugins-akismet-dev-ca.po"
         },
+        "google-analytics-for-wordpress": {
+            "url": "https://translate.yoast.com/projects/google-analytics-for-wordpress/ca/default/export-translations", 
+            "type": "file", 
+            "target": "google-analytics-for-wordpress-ca.po"
+        },
         "wordpress-seo": {
             "url": "https://translate.yoast.com/projects/wordpress-seo/ca/default/export-translations", 
             "type": "file", 
