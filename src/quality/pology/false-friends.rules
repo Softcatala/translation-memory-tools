@@ -2,15 +2,15 @@
 # by KDE Catalan Team (kde-i18n-ca@kde.org)
 # License: GPLv3
 
-# False friends list adapted from (among others): 
-# http://ca.wikipedia.org/wiki/Llista_de_falsos_amics_del_catal%C3%A0_amb_l%27angl%C3%A8s
+# False friends list adapted from (and others): 
+# http://ca.wikipedia.org/wiki/Llista_de_falsos_amics_del_català_amb_l'anglès
 # Guia d'estil (any 2010) de Softcatalà
 
 # Remove XML entities.
 include file="filter.include"
 
-# Remove accelerator and  hyphen inside words.
-addFilterRegex match="(\&|\-)" on="pmsgid,pmsgstr"
+# Remove accelerators and  hyphen inside words.
+addFilterRegex match="(_|~|\&|\-)" on="pmsgid,pmsgstr"
 
 # «Absolutelly» es tradueix per «Completament».
 {\babsolutelly\b}i
@@ -22,20 +22,23 @@ hint="«Absolutelly» es tradueix per «Completament», no per «Absolutament» 
 # «Abstract» es tradueix per «Resum».
 {\babstracts?\b}i
 valid msgstr="resums?"
-valid msgstr="abstract(e|a)" cat="kdevphp,kdevplatform,kdeqt,desktop_kdegames_kmahjongg,desktop_kdegames_ksudoku,krita,umbrello,kdevfiletemplates,rocscore"
-valid msgstr="abstract(e|a|es)" cat="umbrello_uml_basics,digikam_editor-filters" # docmessages
+valid after="(element|key|properties|spiral|type).*\s"
+valid before="\s(artwork|class|declarator|function|image|key|method|name|pattern|separator|type)"
+valid before="\s(green|red|yellow)"
+valid before="\s.*(case|method|operation|pattern|socket)"
 valid !msgstr="abstract(e|a|es)"
 hint="«Abstract» es tradueix per «Resum», no per «Abstracte» (fals amic)"
 
 # «Actual» es tradueix per «Real».
 {\bactual\b}i
-valid msgstr="real"
+valid msgstr="(efectiu|real|veritable)"
 valid !msgstr="actual"
 hint="«Actual» es tradueix per «Real», no per «Actual» (fals amic)"
 
 # «Actually» es tradueix per «Realment».
 {\bactually\b}i
 valid msgstr="de\sfet"
+valid msgstr="efectivament"
 valid msgstr="en\srealitat"
 valid msgstr="realment"
 valid msgstr="veritablement"
@@ -62,17 +65,12 @@ valid !msgstr="avís"
 valid !msgstr="avisos"
 hint="«Advice» es tradueix per «Consell», no per «Avís» (fals amic)"
 
-# «Agenda» es tradueix per «Ordre del dia».
-{\bagenda\b}i
-valid msgstr="ordre\sdel\sdia"
-valid msgstr="agenda" cat="desktop_kdepim" before="\sview"
-valid msgstr="agenda" cat="korganizer,korganizer-mobile"
-valid msgstr="agenda" cat="korganizer_plugins-chapter"
-valid msgstr="agenda" cat="libeventviews"
-valid msgstr="agenda" cat="calendarsupport"
-valid msgstr="agenda" cat="plasma_applet_akonadi_calendars"
-valid !msgstr="agenda"
-hint="«Agenda» es tradueix per «Ordre del dia», no per «Agenda» (fals amic)"
+### Impossible filtrar falsos positius 
+## «Agenda» es tradueix per «Ordre del dia».
+#{\bagenda\b}i
+#valid msgstr="ordre\sdel\sdia"
+#valid !msgstr="agenda"
+#hint="«Agenda» es tradueix per «Ordre del dia», no per «Agenda» (fals amic)"
 
 # «Apology» es tradueix per «Disculpa».
 {\bapology\b}i
@@ -86,7 +84,7 @@ valid msgstr="disculpes"
 valid !msgstr="apologies"
 hint="«Apologies» es tradueix per «Disculpes», no per «Apologies» (fals amic)"
 
-# Regla desactivada: molts falsos positius 
+### Regla desactivada: molts falsos positius 
 ## «Apply» es tradueix per «Sol·licitar».
 #{\bapply\b}i
 #valid msgstr="sol·licitar"
@@ -142,22 +140,23 @@ hint="«Boot» es tradueix per «Arrencar», no per «Botar» (fals amic)"
 
 # «Carbon» es tradueix per «Carboni».
 {\bcarbon\b}i
-valid msgstr="carboni"
-valid msgstr="còpies al carbó" cat="kioslave_mailto,kioslave5_mailto"
+valid msgstr="carboni?"
+valid msgstr="còpies (al|de) carbó"
 valid !msgstr="carbó"
 hint="«Carbon» es tradueix per «Carboni», no per «Carbó» (fals amic)"
 
-#
-# JM: Desactivada. Card es pot traduir per carta en contextos de jocs de cartes (e.g. card games)
-#
 # «Card» es tradueix per «Targeta».
-#{\bcards?\b}i
-#valid msgstr="target(a|es)"
-#valid msgstr="cart(a|es)" #cat="desktop_kdegames_kmahjongg,desktop_kdegames_kpat,desktop_kdegames_lskat,desktop_kdegames_libkdegames,kpoker,lskat,kpat"#
-#valid msgstr="cartes" cat="desktop_kde-runtime,desktop_workspace_plasma-workspace,desktop_extragear-base_kappfinder,libmuon,muon-installer" #before="\sgames?"
-#valid msgstr="baralla de cartes" cat="digikam_editor-transform" # docmessages
-#valid !msgstr="cart(a|es)"
-#hint="«Card» es tradueix per «Targeta», no per «Carta» (fals amic)"
+{\bcards?\b}i
+valid comment="\bSource:.*(aisleriot|game|gcompris|pairs)"
+valid ctx=".*game"
+valid srcref=".*game"
+valid msgstr="target(a|es)"
+valid msgstr="cart(a|es)" after="(animate|base|face-down|next|playing|solitaire)\s"  
+valid msgstr="cart(a|es)" after="playing.+"
+valid msgstr="cart(a|es)" before="\s(games?|themes?)"  
+valid msgstr="baralla de cartes"
+valid !msgstr="cart(a|es)"
+hint="«Card» es tradueix generalment per «Targeta», no per «Carta» excepte jocs (fals amic)"
 
 # «Career» es tradueix per «Professió».
 {\bcareer\b}i
@@ -172,7 +171,7 @@ valid !msgstr="carpet(a|es)"
 hint="«Carpet» es tradueix per «Catifa», no per «Carpeta» (fals amic)"
 
 # «Casual» es tradueix per «Informal».
-{\bcasual\b}i
+{\bcasuals?\b}i
 valid msgstr="informals?"
 valid !msgstr="casuals?"
 hint="«Casual» es tradueix per «Informal», no per «Casual» (fals amic)"
@@ -184,16 +183,16 @@ valid !msgstr="casualment"
 hint="«Casually» es tradueix per «Informalment», no per «Casualment» (fals amic)"
 
 # «Collar» es tradueix per «Coll (de camisa)».
-{\bcollar\b}i
-valid msgstr="coll"
+{\bcollars?\b}i
+valid msgstr="colls?"
 valid !msgstr="collaret"
 hint="«Collar» es tradueix per «Coll», no per «Collaret» (fals amic)"
 
 # «College» es tradueix per «Facultat».
-{\bcollege\b}i
-valid msgstr="facultat"
-valid msgstr="universitat"
-valid !msgstr="col·legi"
+{\bcolleges?\b}i
+valid msgstr="facultats?"
+valid msgstr="universitats?"
+valid !msgstr="col·legis?"
 hint="«College» es tradueix per «Facultat», no per «Col·legi» (fals amic)"
 
 # «Command» es tradueix per «Ordre».
@@ -201,10 +200,10 @@ hint="«College» es tradueix per «Facultat», no per «Col·legi» (fals amic)
 valid msgstr="ordres?"
 valid !msgstr="comand(a|es)"
 valid !msgstr="comandaments?"
-hint="«Command» es tradueix per «Ordre», no per «Comanda» (fals amic)"
+hint="«Command» es tradueix per «Ordre», no per «Comanda» ni «Comandament» (fals amic)"
 
 # «Complexion» es tradueix per «Cutis».
-{\bcomplexion\b}i
+{\bcomplexions?\b}i
 valid msgstr="cutis"
 valid !msgstr="complexió"
 hint="«Complexion» es tradueix per «Cutis», no per «Complexió» (fals amic)"
@@ -216,28 +215,27 @@ valid msgstr="globals?"
 valid !msgstr="comprensi(u|va|us|ves)"
 hint="«Comprehensive» es tradueix per «Exhaustiu o global», no per «Comprensiu» (fals amic)"
 
-# «Conductor» es tradueix per «Revisor, director d'orquestra».
-{\bconductor\b}i
-valid msgstr="revisora?"
-valid msgstr="directora?"
-valid !msgstr="conductora?"
-hint="«Conductor» es tradueix per «Revisor o director d'orquestra», no per «Conductor» (fals amic)"
+### Impossible filtrar falsos positius
+## «Conductor» es tradueix per «Revisor, director d'orquestra».
+#{\bconductor\b}i
+#valid msgstr="revisora?"
+#valid msgstr="directora?"
+#valid !msgstr="conductora?"
+#hint="«Conductor» es tradueix per «Revisor o director d'orquestra», no per «Conductor» (fals amic)"
 
-#
-# JM: Desactivada. Confererence es pot traduir per conferència en molts contextos de forma vàlida. 
-# Per exemple News conference -> Conferència de premsa 
-#
 # «Conference» es tradueix per «Congrés».
-#{\bconference\b}i
-#valid msgstr="congrés"
-#valid msgstr="conferència" cat="kopete"
-#valid msgstr="conferència" cat="ksirk"
-#valid !msgstr="conferència"
-#hint="«Conference» es tradueix per «Congrés», no per «Conferència» (fals amic)"
+{\bconferences?\b}i
+valid msgstr="congrés"
+valid comment="\bSource:.*(chat|dialer|ekiga|kopete|ksirk|pidgin)"
+valid msgstr="conferència" after="(call|manage|video) "
+valid msgstr="conferència" before=" (call|slot)"
+valid msgstr="conferència" before=".*(invitation|tunneling)"
+valid !msgstr="conferència"
+hint="«Conference» es tradueix per «Congrés», no per «Conferència» (fals amic)"
 
 # «Confident» es tradueix per «Confiat».
-{\bconfident\b}i
-valid msgstr="confia(t|da)"
+{\bconfidents?\b}i
+valid msgstr="confia(da|des|t|ts)"
 valid msgstr="segura?"
 valid !msgstr="confident"
 hint="«Confident» es tradueix per «Confiat», no per «Confident» (fals amic)"
@@ -250,8 +248,8 @@ valid !msgstr="contribuents?"
 hint="«Contributor» es tradueix per «Col·laborador», no per «Contribuidor» (fals amic)"
 
 # «Consent» es tradueix per «Consentiment».
-{\bconsent\b}i
-valid msgstr="consentiment"
+{\bconsents?\b}i
+valid msgstr="consentiments?"
 valid !msgstr="consens"
 hint="«Consent» es tradueix per «Consentiment», no per «Consens» (fals amic)"
 
@@ -263,27 +261,35 @@ valid !msgstr="consistents?"
 hint="«Consistent» es tradueix per «Compatible», no per «Consistent» (fals amic)"
 
 # «Constipated» es tradueix per «Restret».
-{\bconstipated\b}i
+{\bconstipateds?\b}i
 valid msgstr="restret"
 valid !msgstr="constipat"
 hint="«Constipated» es tradueix per «Restret», no per «Constipat» (fals amic)"
 
 # «Contest» es tradueix per «Competir».
-{\bcontest\b}i
+{\bcontests?\b}i
 valid msgstr="competir"
 valid msgstr="competició"
 valid !msgstr="contestar"
 valid !msgstr="contestació"
 hint="«Contest» es tradueix per «Competir», no per «Contestar» (fals amic)"
 
+# «Convenience» es tradueix per «Comoditat»/«Avantatge» o «Utilitat».
+{\bconveniences?\b}i
+valid msgstr="comoditat"
+valid msgstr="utilitat"
+valid msgstr="avantatge"
+valid !msgstr="conveniència"
+hint="«Convenience» es tradueix per «Comoditat»/«Avantatge» o «Utilitat» (fals amic)"
+
 # «Coroner» es tradueix per «Jutge».
-{\bcoroner\b}i
+{\bcoroners?\b}i
 valid msgstr="jutge"
 valid !msgstr="coronel"
 hint="«Coroner» es tradueix per «Jutge», no per «Coronel» (fals amic)"
 
 # «Costume» es tradueix per «Disfressa».
-{\bcostume\b}i
+{\bcostumes?\b}i
 valid msgstr="disfressa"
 valid !msgstr="costum"
 hint="«Costume» es tradueix per «Disfressa», no per «Costum» (fals amic)"
@@ -291,14 +297,14 @@ hint="«Costume» es tradueix per «Disfressa», no per «Costum» (fals amic)"
 # «Crime» es tradueix per «Delicte».
 {\bcrimes?\b}i
 valid msgstr="delictes?"
+valid msgstr="policíacs?" # cinema
 valid !msgstr="crims?"
 hint="«Crime» es tradueix per «Delicte», no per «Crim» (fals amic)"
 
 # «Current» es tradueix per «Actual».
 {\bcurrents?\b}i
+valid comment="\bSource:.*(gnome-disk-utility)"
 valid msgstr="actuals?"
-valid msgstr="corrent" cat="skrooge" # Compte corrent
-valid msgstr="al corrent" cat="www_www" # estar al corrent
 valid !msgstr="corrents?"
 hint="«Current» es tradueix per «Actual», no per «Corrent» (fals amic)"
 
@@ -313,7 +319,6 @@ hint="«Curse» es tradueix per «Malefici», no per «Curs» (fals amic)"
 {\bdates?\b}i
 valid msgstr="dat(a|es)"
 valid msgstr="cit(a|es)"
-valid msgstr="dates" before="\sor time" cat="tables_basics,kspread_basics" # docmessages
 valid !msgstr="dada"
 valid !msgstr="dades"
 hint="«Date» es tradueix per «Data», no per «Dada» (fals amic)"
@@ -338,12 +343,12 @@ valid msgstr="dimonis?"
 valid !msgstr="dèbils?"
 hint="«Devil» es tradueix per «Dimoni», no per «Dèbil» (fals amic)"
 
-# «Diary» es tradueix per «Agenda».
-{\bdiary\b}i
-valid msgstr="agenda"
-valid msgstr="diari" cat="desktop_kdepim"
-valid !msgstr="diari"
-hint="«Diary» es tradueix per «Agenda», no per «Diari» (fals amic)"
+### Regla desactivada: molts falsos positius
+## «Diary» es tradueix per «Agenda».
+#{\bdiary\b}i
+#valid msgstr="agenda"
+#valid !msgstr="diari"
+#hint="«Diary» es tradueix per «Agenda», no per «Diari» (fals amic)"
 
 # «Discuss» es tradueix per «Debatre».
 {\bdiscuss\b}i
@@ -368,8 +373,9 @@ hint="«Disgust» es tradueix per «Repugnar», no per «Disgustar» (fals amic)
 
 # «Diversion» es tradueix per «Desviament».
 {\bdiversions?\b}i
-valid msgstr="distracci(ó|ons)"
 valid msgstr="desviaments?"
+valid msgstr="distracci(ó|ons)"
+valid msgstr="diversió" comment="\bSource:.*(wesnoth)" # Context militar
 valid !msgstr="diversi(ó|ons)"
 hint="«Diversion» es tradueix per «Desviament», no per «Diversió» (fals amic)"
 
@@ -385,6 +391,8 @@ hint="«Divert» es tradueix per «Desviar», no per «Divertir» (fals amic)"
 {\bdomestics?\b}i
 valid msgstr="nacionals?"
 valid msgstr="intern(s|a|es)"
+valid msgstr="domèsti(c|ca|ques)" after="adsl "
+valid msgstr="domèsti(c|ca|ques)" before=" (adsl|connection)"
 valid !msgstr="domèsti(c|ca|ques)"
 hint="«Domestic» es tradueix per «Nacional», no per «Domèstic» (fals amic)"
 
@@ -450,6 +458,7 @@ hint="«Evidence» es tradueix per «Prova o indici», no per «Evidència» (fa
 valid msgstr="sortid(a|es)"
 valid msgstr="sortir"
 valid msgstr="surt"
+valid msgstr="tanca"
 valid !msgstr="èxits?"
 hint="«Exit» es tradueix per «Sortida», no per «Èxit» (fals amic)"
 
@@ -460,12 +469,12 @@ valid msgstr="tel(a|es)"
 valid !msgstr="fàbri(ca|ques)"
 hint="«Fabric» es tradueix per «Teixit o tela», no per «Fàbrica» (fals amic)"
 
-# «Facilities» es tradueix per «Instal·lacions».
-{\bfacilities\b}i
-valid msgstr="instal·lacions"
-valid msgstr="facilitats" cat="desktop_kdelibs,desktop_applications_kate"
-valid !msgstr="facilitats"
-hint="«Facilities» es tradueix per «Instal·lacions», no per «Facilitats» (fals amic)"
+# Només hi ha falsos positius 
+## «Facilities» es tradueix per «Instal·lacions».
+#{\bfacilities\b}i
+#valid msgstr="instal·lacions"
+#valid !msgstr="facilitats"
+#hint="«Facilities» es tradueix per «Instal·lacions», no per «Facilitats» (fals amic)"
 
 # «Fiancee» es tradueix per «Promesa».
 {\bfiancee\b}i
@@ -490,19 +499,16 @@ hint="«Firm» es tradueix per «Empresa», no per «Firma» (fals amic)"
 {\bfonts?\b}i
 valid msgstr="tipus"
 valid msgstr="origens?"
-valid msgstr="<font\s"
-valid msgstr="\bfont\b" cat="kleopatra"
-valid msgstr="font" cat="quanta" after="replace\s"
-valid msgstr="font" cat="kdm_theme-ref"
+valid before=".+Sans"
 valid !msgstr="fonts?"
 hint="«Font» es tradueix per «Tipus (de lletra)», no per «Font» (fals amic)"
 
 # «Gradient» es tradueix per «Degradat».
 {\bgradients?\b}i
 valid msgstr="degradats?"
-valid msgstr="gradient" cat="digikam,kmplot,desktop_extragear-graphics_kst-plot,kst_common"
-#valid !msgstr="gradient"
-hint="«Gradient» es tradueix per «Degradat», no per «Gradient» (fals amic)"
+valid msgstr="gradient" comment="\bSource:.*(desktop_extragear-graphics_kst-plot|digikam|kalzium|kmplot|kst_common)"
+valid !msgstr="gradients?"
+hint="«Gradient» es tradueix per «Degradat», no per «Gradient» -excepte la funció matemàtica- (fals amic)"
 
 # «Gripe» es tradueix per «Mal de ventre».
 {\bgripe\b}i
@@ -553,7 +559,6 @@ hint="«Institut» es tradueix per «Fundació o organització», no per «Insti
 {\bintroduce\b}i
 valid msgstr="present(ar|a|em|i)"
 valid msgstr="provo(car|ca|qui)"
-valid msgstr="introduir" cat="bluedevil"
 valid !msgstr="introdu(ir|eixi|eixin)"
 hint="«Introduce» es tradueix per «Presentar», no per «Introduir» (fals amic)"
 
@@ -584,26 +589,18 @@ hint="«Lyrics» es tradueix per «Lletra», no per «Lírica» (fals amic)"
 
 # «Net» es tradueix per «Xarxa».
 {\bnet\b}i
+valid comment="\bSource:.*(smb4k)"
 valid msgstr="xarxa"
-valid msgstr=".net" cat="desktop_extragear-sdk_kdevelop,desktop_extragear-sdk_kdevelop-plugins,desktop_extragear-sdk_php-docs,kdevphpdocs"
-valid msgstr="net" cat="smb4k,smb4k-core"
-valid msgstr="net" cat="kmymoney,sheets_functions" # Valor net
-valid msgstr="net" cat="ksirk" after="@kdetalk\."
-valid msgstr="net" cat="tables,kcells,kspread,sheets" before="\spresent value"# Valor actual net
-valid msgstr="net" cat="kuser" before="\sgetlocalsid"
-valid msgstr="net" cat="marble" after="rotate\.aprs\."
-valid msgstr="net" cat="plasma_applet_pastebin" after="hosting\."
-valid msgstr="net" cat="skrooge" after=">\s" # Categoria
-valid msgstr="net" after="@(att|cberger|comcast|earthlink|example|frogmouth|gmx|ibm|kdab|kdemail|mediaone|meyerhome|nerim|netscape|openprojects|pacbell|planete|telecorp|tuxerver|usa|users\.sf|verticaladdiction)\."
+valid msgstr=".net" 
+valid msgstr=" dot net"
+valid msgstr="net" after="@.+\."
 valid msgstr="net" after="(darkorb|eigentlich|gmx|@gmx\sDOT|kdemail|linux\sru|mis|shani|tantalo)\s"
 valid msgstr="net" after="irc\.freenode\."
 valid msgstr="net" after="keys\.gnupg\."
 valid msgstr="net" after="perldoc:/"
 valid msgstr="net" after="print\.sf\."
 valid msgstr="net" after="sourceforge(\.|\s)"
-valid msgstr="net" before="\seffect"
 valid !msgstr="net"
-valid msgstr=" dot net" # Fals positiu amb les adreces de correu
 hint="«Net» es tradueix per «Xarxa», no per «Net» (fals amic)"
 
 # «Notice» es tradueix per «Anunci».
@@ -639,15 +636,14 @@ hint="«Pair» es tradueix per «Parell/Dos», no per «Parella» (fals amic)"
 
 # «Pan» es tradueix per «Panorama/Cassola».
 {\bpan\b}i
-valid msgid="Agfa Pan" # docmessages
+valid comment="\bSource:.*(kdecalendarsystems|kxsconfig|libplasmanetworkmanagement|pan2)"
+valid msgid="Agfa Pan"
 valid msgstr="cassola"
+valid msgstr="desplaça"
 valid msgstr="paella"
 valid msgstr="panorama"
 valid msgstr="panoràmic"
 valid msgstr="panoràmica"
-valid msgstr="d'una\sa\sl'altre" cat="kxsconfig"
-valid msgstr="pan" cat="digikam" after="agfa\s"
-valid msgstr="pan" cat="kdelibs4,kdelibs4support,kdecalendarsystems,kdecalendarsystems5,desktop_extragear-base_kappfinder,libplasmanetworkmanagement-editor,plasmanetworkmanagement-libs"
 valid msgstr="pan" before="\sflute"
 valid !msgstr="pa"
 hint="«Pan» es tradueix per «Panorama/Cassola», no per «Pa» (fals amic)"
@@ -677,7 +673,7 @@ hint="«Parent» es tradueix per «Pare/mare», no per «Parent» (fals amic)"
 # «Pet» es tradueix per «Animal».
 {\bpet\b}i
 valid msgstr="animal"
-valid msgstr="pet" cat="kxsconfig" after="commodore\s"
+valid msgstr="pet" after="commodore\s" # Commodore PET
 valid !msgstr="pet"
 hint="«Pet» es tradueix per «Animal», no per «Pet» (fals amic)"
 
@@ -692,10 +688,11 @@ hint="«Petrol» es tradueix per «Gasolina», no per «Petroli» (fals amic)"
 valid msgstr="emplaçament"
 valid msgstr="lloc"
 valid msgstr="ubicació"
-valid msgstr="col·loc(ar|o)"
+valid msgstr="col·lo(car|co|queu)"
 valid msgstr="emplaç(a|ar|o)"
 valid msgstr="situ(a|ar|o)"
 valid msgstr="pos(a|ar|o)"
+valid msgstr="produeix" # takes place
 valid !msgstr="plaça"
 hint="«Place» es tradueix per «Lloc», no per «Plaça» (fals amic)"
 
@@ -707,9 +704,9 @@ hint="«Physician» es tradueix per «Metge», no per «Físic» (fals amic)"
 
 # «Plain» es tradueix per «Senzill».
 {\bplains?\b}i
+valid comment="\bSource:.*(FreeCiv|kgeography|wesnoth)"
 valid msgstr="normals?"
 valid msgstr="senzill(a|s|es)"
-valid msgstr="plana" cat="kgeography"
 valid !msgstr="pla(na|nes)"
 hint="«Plain» es tradueix per «Senzill», no per «Pla» (fals amic)"
 
@@ -741,15 +738,12 @@ valid !msgstr="preve(nir|nc|ns)"
 valid !msgstr="previ(nc|ngui)"
 hint="«Prevent» es tradueix per «Evitar», no per «Prevenir» (fals amic)"
 
-#
-# JM: Desactivada. Produce es pot traduir produir en molts contextos (e.g. to produce a report)
-#
 # «Produce» es tradueix per «Presentar».
-#{\bproduce\b}i
-#valid msgstr="present(ar|a|i|en)"
-#valid msgstr="cre(ar|a)"
-#valid !msgstr="produ(ir|eixi)"
-#hint="«Produce» es tradueix per «Presentar», no per «Produir» (fals amic)"
+{\bproduce\b}i
+valid msgstr="present(ar|a|i|en)"
+valid msgstr="cre(ar|a)"
+valid !msgstr="produ(ir|eixi)"
+hint="«Produce» es tradueix per «Presentar», no per «Produir» (fals amic)"
 
 # «Professor» es tradueix per «Catedràtic».
 {\bprofessor\b}i
@@ -813,8 +807,9 @@ hint="«Receipt» es tradueix per «Rebut», no per «Recepta» (fals amic)"
 
 # «Recipient» es tradueix per «Destinatari».
 {\brecipients?\b}i
+valid comment="\bSource:.*(kleopatra)"
 valid msgstr="destinataris?"
-valid msgstr="recipient" cat="kleopatra"
+valid msgstr="%recipient" 
 valid !msgstr="recipients?"
 hint="«recipient» es tradueix per «Destinatari», no per «Recipient» (fals amic)"
 
@@ -848,10 +843,8 @@ hint="«Rest» es tradueix per «Descansar», no per «Restar» (fals amic)"
 
 # «Resume» es tradueix per «Reprendre».
 {\bresume\b}i
+valid comment="\bSource:.*(kdm|konversation|libkdcraw)"
 valid msgstr="repren(dre|c|s)"
-valid msgstr="resumint" cat="libkdcraw"
-valid msgstr="resume" cat="konversation" after="dcc\s"
-valid msgstr="resume" cat="kdm" # docmessages
 valid !msgstr="resum"
 hint="«Resume» es tradueix per «Reprendre», no per «Resum» (fals amic)"
 
@@ -910,10 +903,7 @@ hint="«Silicon» es tradueix per «Silici», no per «Silicona» (fals amic)"
 # «Simple» es tradueix per «Senzill».
 {\bsimple\b}i
 valid msgstr="senzill(a|s|es)"
-valid msgstr="senzilles" cat="umbrello_other_features"
 valid msgstr="mer"
-valid msgstr="simple" cat="kuser" after="LDAP\s"
-valid msgstr="simple" cat="kdeqt"
 valid !msgstr="simples?"
 valid !msgstr="simplement"
 hint="«Simple» es tradueix per «Senzill», no per «Simple» (fals amic)"
@@ -1018,3 +1008,4 @@ valid !msgstr="esperar\sper"
 hint="«Wait» es tradueix per «Esperar», no per «Esperar per» (fals amic)"
 
 # End of false-friends rules file
+
