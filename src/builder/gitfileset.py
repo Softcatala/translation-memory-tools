@@ -19,12 +19,15 @@
 
 import os
 import re
+import shutil
 
 from fileset import FileSet
 from findfiles import FindFiles
 
 
 class GitFileSet(FileSet):
+
+    git_dir = '_git'
 
     def set_pattern(self, pattern):
         self.pattern = pattern
@@ -49,16 +52,21 @@ class GitFileSet(FileSet):
     def clean_up_after_convert(self):
         self._remove_non_translation_files()
 
+    def _remove_git_directory(self):
+        if os.path.exists(self.git_dir):
+            shutil.rmtree(self.git_dir)
+
     def do(self):
+        self._remove_git_directory()
         self.create_tmp_directory()
 
-        cmd = 'cd {0} && git clone --depth=1 {1} _git'.format(
-            self.temp_dir, self.url)
+        cmd = 'cd {0} && git clone --depth=1 {1} {2}'.format(
+            self.temp_dir, self.url, self.git_dir)
         os.system(cmd)
 
         # Move it to the root to avoid git default behavior to clone
         # into a subdirectory
-        cmd = 'cd {0} && mv _git/* .'.format(self.temp_dir)
+        cmd = 'cd {0} && mv {1}/* .'.format(self.temp_dir, self.git_dir)
         os.system(cmd)
 
         self.build()
