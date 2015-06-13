@@ -40,12 +40,9 @@ class CrawlFileSet(FileSet):
                 download.get_file(link, filename)
 
     def do(self):
-        self.create_tmp_directory()
-
         crawler = Crawler(self.url)
         crawler.run()
         links = crawler.get_all_links()
         self._download_links(links, self.temp_dir)
 
         self.build()
-        self.remove_tmp_directory()

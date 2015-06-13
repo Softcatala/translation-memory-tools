@@ -35,8 +35,6 @@ class TransifexFileSet(FileSet):
 
     def do(self):
         prevdir = os.getcwd()
-
-        self.create_tmp_directory()
         os.chdir(self.temp_dir)
 
         url = urlparse(self.url)
@@ -52,4 +50,3 @@ class TransifexFileSet(FileSet):
         self._remove_non_translation_only_files()
 
         self.build()
-        #self.remove_tmp_directory()

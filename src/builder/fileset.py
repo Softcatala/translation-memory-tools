@@ -108,6 +108,11 @@ class FileSet():
         project_catalog.add_pofile(self.po_catalog.filename)
         project_catalog.cleanup()
 
+    def do_withtemp(self):
+        self._create_tmp_directory()
+        self.do()
+        self._remove_tmp_directory()
+        
     def build(self):
         convert = ConvertFiles(self.temp_dir)
         convert.convert()
@@ -145,10 +150,10 @@ class FileSet():
             target = self.output_dir + source[len(self.temp_dir):]
             shutil.copy(source, target)
 
-    def create_tmp_directory(self):
-        self.remove_tmp_directory()
+    def _create_tmp_directory(self):
+        self._remove_tmp_directory()
         os.makedirs(self.temp_dir)
 
-    def remove_tmp_directory(self):
+    def _remove_tmp_directory(self):
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)

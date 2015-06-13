@@ -50,8 +50,6 @@ class BazaarFileSet(FileSet):
                 os.remove(filename)
 
     def do(self):
-        self.create_tmp_directory()
-
         if self._has_filename():
             outfile = os.path.join(self.temp_dir, 'ca.po')
             os.system('bzr cat {0} > {1}'.format(self.url, outfile))
@@ -63,4 +61,3 @@ class BazaarFileSet(FileSet):
             self._remove_non_translation_files()
 
         self.build()
-        self.remove_tmp_directory()

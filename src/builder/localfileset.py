@@ -26,11 +26,8 @@ from fileset import FileSet
 class LocalFileSet(FileSet):
 
     def do(self):
-        self.create_tmp_directory()
-
         shutil.copy(self.url, '{0}/{1}'.format(self.temp_dir, self.filename))
         self.build()
 
         if os.path.exists(self.filename):
             os.remove(self.filename)
-        self.remove_tmp_directory()

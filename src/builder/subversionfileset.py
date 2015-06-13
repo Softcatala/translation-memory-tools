@@ -32,9 +32,7 @@ class SubversionFileSet(FileSet):
             CMD = ('cd {0} && svn export --trust-server-cert '
                    '--non-interactive {1}')
 
-        self.create_tmp_directory()
         cmd = CMD.format(self.temp_dir, self.url)
         os.system(cmd)
 
         self.build()
-        self.remove_tmp_directory()

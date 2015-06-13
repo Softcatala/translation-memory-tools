@@ -26,12 +26,9 @@ from fileset import FileSet
 class LocalDirFileSet(FileSet):
 
     def do(self):
-        self.create_tmp_directory()
-
         out = '{0}/{1}'.format(self.temp_dir, self.filename)
 
         for filename in glob.glob(self.url):
             shutil.copy(filename, out)
 
         self.build()
-        self.remove_tmp_directory()

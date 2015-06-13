@@ -61,8 +61,6 @@ class CompressedFileSet(FileSet):
         self.pattern = pattern
 
     def do(self):
-        self.create_tmp_directory()
-
         # Download po files
         download = DownloadFile()
         download.get_file(self.url, self.filename)
@@ -72,4 +70,3 @@ class CompressedFileSet(FileSet):
 
         if os.path.exists(self.filename):
             os.remove(self.filename)
-        self.remove_tmp_directory()

@@ -26,11 +26,8 @@ from fileset import FileSet
 class FileFileSet(FileSet):
 
     def do(self):
-        self.create_tmp_directory()
-
         # Download local file
         download = DownloadFile()
         download.get_file(self.url, os.path.join(self.temp_dir, self.filename))
 
         self.build()
-        self.remove_tmp_directory()

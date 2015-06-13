@@ -149,7 +149,7 @@ class Project(object):
 
                 fileset.set_checksum(checksum)
                 fileset.set_add_source(self.add_source)
-                fileset.do()
+                fileset.do_withtemp()
 
             except Exception as detail:
                 msg = 'Project.do. Cannot complete project {0}, fileset {1}'. \

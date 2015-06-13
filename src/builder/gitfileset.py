@@ -58,8 +58,6 @@ class GitFileSet(FileSet):
 
     def do(self):
         self._remove_git_directory()
-        self.create_tmp_directory()
-
         cmd = 'cd {0} && git clone --depth=1 {1} {2}'.format(
             self.temp_dir, self.url, self.git_dir)
         os.system(cmd)
@@ -70,4 +68,3 @@ class GitFileSet(FileSet):
         os.system(cmd)
 
         self.build()
-        self.remove_tmp_directory()
