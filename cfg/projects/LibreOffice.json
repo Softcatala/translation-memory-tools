@@ -18,6 +18,5 @@
             "type": "compressed", 
             "target": "website.zip"
         }
-    }, 
-    "disabled": true
+    }
 }

@@ -92,6 +92,7 @@ def process_file ( ifile, ofile ):
    uw_french = []
    uw_firstupper = []
    uw_rest = []
+   totalmatches = 0
 
    # parxe xml
    import xml.etree.ElementTree as ET
@@ -105,6 +106,7 @@ def process_file ( ifile, ofile ):
    for error in errors:
       ruleId = error.attrib['ruleId']
       if ruleId != "MORFOLOGIK_RULE_CA_ES":
+         totalmatches += 1
          r = getRuleById(rulelist, ruleId)
          if r != None:
             r.increment()
@@ -175,7 +177,7 @@ def process_file ( ifile, ofile ):
 
    ctx = {
        'filename': ifile,
-       'totalmatches': len(errors),
+       'totalmatches': totalmatches,
        'rulelist': rulelist,
        'unknownwords': unknownwords,
        'hasunknownwords': len(unknownwords),

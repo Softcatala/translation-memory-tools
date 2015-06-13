@@ -1,22 +1,5 @@
 #!/bin/bash
 
-# Try to download most recent LT version
-# Not used for now since it is running as a service
-download_language_tool() {
-yesterday=`date -d "yesterday 13:00 " '+%Y%m%d'`
-lt_file=LanguageTool-$yesterday-snapshot.zip
-lt_url="https://languagetool.org/download/snapshots/$lt_file"
-wget -q $lt_url
-if [[ $? -eq 0 ]]; then
-    echo downloaded $lt_url
-    rm $lt_path -r -f
-    mkdir $lt_path
-    #Skip the first directory on the zip file (e.g. /LanguageTool-3.0-SNAPSHOT)
-    unzip -d "$lt_path" "$lt_file" && f=("$lt_path"/*) && mv "$lt_path"/*/* "$lt_path" && rmdir "${f[@]}"
-    rm -f $lt_file
-fi
-}
-
 root="$1"
 lt_output=$root/tm-git/quality
 lt_html=$root/tm-git/src/quality/lt
@@ -27,71 +10,26 @@ langcode=ca-ES
 disabledRules="WHITESPACE_RULE,UPPERCASE_SENTENCE_START,CAMI_DE"
 enabledRules="EXIGEIX_PLURALS_S"
 pology=$root/tm-git/src/quality/pology
-
+cnt=0
 
 # Delete output dir and files
 rm -r -f $lt_log
-rm -r -f $lt_output
-mkdir $lt_output
+mkdir -p $lt_output
 
 cd $root/tm-git/src/builder/output
 
 # Every project has its own subdirectory
 for project_dir in */; do
     echo "project_dir:" $project_dir
-    # Run LT over all the files
-    report_file="${project_dir::-1}.html"
+    echo "cnt: " $cnt
+    if [ $cnt == 6 ]; then
+        echo "waiting"
+        wait
+        $cnt=0
+    fi
 
-    cat $lt_html/header.html > $lt_output/$report_file
-    find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d '' file; do
-
-        source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg    
-        echo "Executing LT on: " "$file"
-        # Conversion from PO to HTML
-        msgattrib --no-obsolete --no-fuzzy --translated "$file" > "$file-filtrat.po"
-        po2txt "$file-filtrat.po" > "$file.html"
-        sed -i 's/\\[rtn]/ /g' "$file.html"
-        rm "$file-filtrat.po"
-
-        # Conversion from HTML to TXT
-        java -Dfile.encoding=UTF-8 -jar $tike_path/tika-app-1.7.jar -t "$file.html"  > "$file.txt"
-        sed -i 's/[_&~]//g' "$file.txt" # remove accelerators
-        rm "$file.html"
-        
-        # Exclude some patterns from LT analysis
-        echo "*******************************************" >> $lt_log 
-        echo "** Excluded lines from $file"                >> $lt_log
-        echo "*******************************************" >> $lt_log
-        grep -E '^([^.]*,[^.]*){8,}$' "$file.txt" >> $lt_log #comma-separated word list
-        sed -i -r 's/^([^.]*,[^.]*){8,}$//' "$file.txt"
-        
-        # Run LT
-        curl --data "language=$langcode" --data "enabled=$enabledRules" --data "disabled=$disabledRules" --data-urlencode "text@$file.txt" http://localhost:7001 > "$file-results.xml" 2>/dev/null
-        
-        python $lt_html/lt-results-to-html.py -i "$file-results.xml" -o "$file-report.html"
-        sed -i 's/\t/ /g' "$file-report.html" #replace tabs with whitespace for better presentation
-        cat "$file-report.html" >> $lt_output/$report_file
-
-        # Execute pology
-        deactivate  # Specific to SC machine cfg
-        echo "Executing posieve on: " "$file"
-        posieve set-header -sfield:'Language:ca' -screate "$file" 
-        posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules -s rfile:$pology/date-format.rules "$file" > "$file-pology.html"
-
-        echo "<h2>Informe d'errades del Pology</h2><br/>" >> $lt_output/$report_file
-        if [ -s "$file-pology.html" ] ; then
-            cat "$file-pology.html" >> $lt_output/$report_file
-        else
-            echo "El Pology no detectat cap error." >> $lt_output/$report_file
-        fi
-        source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg
-
-        rm "$file-pology.html"
-        rm "$file-report.html"
-        rm "$file-results.xml"
-        rm "$file.txt"
-        
-    done
-    cat $lt_html/footer.html >> $lt_output/$report_file
+    bash $root/tm-git/deployment/generate-quality-project.sh $root $project_dir &
+    cnt=$((cnt+1))   
 done
+wait
 
