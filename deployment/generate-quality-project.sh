@@ -34,7 +34,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
  
     if [ ! -s  "$file.txt" ]; then
         echo "No translations in file" "$file"
-        msgfmt -c --statistics  "$file"
+        msgfmt -c --statistics "$file-filtrat.po"
         continue
     fi
 
@@ -55,8 +55,8 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     # Execute pology
     deactivate  # Specific to SC machine cfg
     echo "Executing posieve on: " "$file"
-    posieve set-header -sfield:'Language:ca' -screate "$file" 
-    posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules -s rfile:$pology/date-format.rules "$file" > "$file-pology.html"
+    posieve set-header -sfield:'Language:ca' -screate "$file-filtrat.po" 
+    posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/false-friends.rules -s rfile:$pology/keys.rules -s rfile:$pology/date-format.rules "$file-filtrat.po" > "$file-pology.html"
 
     echo "<h2>Informe d'errades del Pology</h2><br/>" >> $lt_output/$report_file
     if [ -s "$file-pology.html" ] ; then
