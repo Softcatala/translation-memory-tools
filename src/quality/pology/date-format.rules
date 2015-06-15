@@ -4,10 +4,10 @@
 #
 # Author: Jordi Mas <jmas@softcatala.org>, 2015
 #
-# Detects date/time string formaters that have not been properly localized
+# Detects date/time string formatters that have not been properly localized
 # having as result the date/time not been shown correctly.
 #
-# When developing these rules I optimized for proviving as few false positives
+# When developing these rules I optimized for providing as few false positives
 # as possible. This is why we do exact string matching.
 #
 # Date time formats are complex because:
