@@ -25,7 +25,6 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     msgattrib --no-obsolete --no-fuzzy --translated "$file" > "$file-filtrat.po"
     po2txt "$file-filtrat.po" > "$file.html"
     sed -i 's/\\[rtn]/ /g' "$file.html"
-    rm "$file-filtrat.po"
 
     # Conversion from HTML to TXT
     java -Dfile.encoding=UTF-8 -jar $tike_path/tika-app-1.7.jar -t "$file.html"  > "$file.txt"
@@ -66,6 +65,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     fi
     source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg
 
+    rm "$file-filtrat.po"
     rm "$file-pology.html"
     rm "$file-report.html"
     rm "$file-results.xml"
