@@ -38,6 +38,7 @@ copy_files() {
     rm -r -f $2/memories
     mkdir $2/memories
     cp $1/tm-git/src/web/memories/*.zip $2/memories
+    cp $1/tm-git/src/builder/tots-pos.zip $2/memories
 
     # Deploy terminology
     cd $1/tm-git/src/terminology
