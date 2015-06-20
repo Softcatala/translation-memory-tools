@@ -1,3 +1,4 @@
 [submodule "src/quality/pology/catalan-pology-rules"]
 	path = src/quality/pology/catalan-pology-rules
-	url = https://github.com/Softcatala/catalan-pology-rules
+	url = git@github.com:Softcatala/catalan-pology-rules.git
+	branch = master
