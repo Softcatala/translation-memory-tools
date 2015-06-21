@@ -21,7 +21,6 @@
 
 from flask import Flask, request, Response
 import cgi
-import json
 import time
 import sys
 from jinja2 import Environment, FileSystemLoader
@@ -33,32 +32,7 @@ from glossary import Glossary
 from search import Search
 
 
-class JsonSerializer(object):
-
-    def do(self, search):
-        results = search.get_results()
-        all_results = []
-        for result in results:
-            all_results.append(result.fields())
-
-        return Response(json.dumps(all_results, indent=4,
-                        separators=(',', ': ')),  mimetype='application/json')
-
-
-class JsonSerializerGlossary(object):
-
-    def do(self, results):
-        all_results = []
-
-        if results is not None:
-            for result in results:
-                all_results.append(result.dict)
-
-        return Response(json.dumps(all_results, indent=4,
-                        separators=(',', ': ')),  mimetype='application/json')
-
-
-class WebSerializer(object):
+class WebView(object):
 
     def _get_result_text(self, result, key):
         highlighted = result.highlights(key)
@@ -96,8 +70,9 @@ class WebSerializer(object):
         total_time = 0
         PER_PAGE = 100
 
-        g = Glossary()
-        glossary = g.search(search.source)
+        g = Glossary(search.source)
+        g.search()
+        glossary = g.get_results()
 
         if search.has_invalid_search_term:
             aborted_search = True
@@ -151,29 +126,34 @@ class WebSerializer(object):
 app = Flask(__name__)
 
 
+@app.route('/api/glossary/search', methods=['GET'])
+def glossary_search_api():
+    source = request.args.get('source')
+
+    glossary = Glossary(source)
+    glossary.search()
+    return Response(glossary.get_json(), mimetype='application/json')
+
+
+@app.route('/api/memory/search', methods=['GET'])
+def memory_search_api():
+    source = request.args.get('source')
+    target = request.args.get('target')
+    project = request.args.get('project')
+
+    search = Search(source, target, project)
+    return Response(search.get_json(), mimetype='application/json')
+
+
 @app.route('/')
 def search_request():
     source = request.args.get('source')
     target = request.args.get('target')
     project = request.args.get('project')
-    json = request.args.get('json')
-    glossary_only = request.args.get('glossary_only')
+
     search = Search(source, target, project)
-
-    serializer_cls = WebSerializer
-    if json is not None:
-        serializer_cls = JsonSerializer
-
-    result = None
-    if glossary_only is not None:
-        glossary = Glossary()
-        glossary = glossary.search(source)
-        serializer = JsonSerializerGlossary()
-        result = serializer.do(glossary)
-    else:
-        serializer = serializer_cls()
-        result = serializer.do(search)
-
+    View = WebView()
+    result = View.do(search)
     return result
 
 if __name__ == '__main__':

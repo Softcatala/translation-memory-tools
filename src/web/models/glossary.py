@@ -22,19 +22,34 @@ import sys
 
 sys.path.append('../terminology')
 from glossarysql import Entry, database
+import json
 
 
 class Glossary(object):
 
-    def search(self, search_term_display):
+    def __init__(self, search_term):
+        self.search_term = search_term
+        self.glossary = None
+
+    def get_results(self):
+        return self.glossary
+
+    def search(self):
         try:
             database.open('glossary.db3')
-            glossary = Entry.select().where(Entry.term == search_term_display)
+            self.glossary = Entry.select().where(Entry.term == self.search_term)
 
-            if glossary.count() == 0:
-                glossary = None
+            if self.glossary.count() == 0:
+                self.glossary = None
 
         except:
-            glossary = None
+            self.glossary = None
 
-        return glossary
+    def get_json(self):
+        all_results = []
+
+        if self.glossary is not None:
+            for result in self.glossary:
+                all_results.append(result.dict)
+
+        return json.dumps(all_results, indent=4, separators=(',', ': '))

@@ -21,6 +21,7 @@
 from whoosh.highlight import WholeFragmenter
 from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
+import json
 
 
 class Search(object):
@@ -88,3 +89,11 @@ class Search(object):
                 fields.append("project")
 
         self.query = MultifieldParser(fields, ix.schema).parse(qs)
+
+    def get_json(self):
+        results = self.get_results()
+        all_results = []
+        for result in results:
+            all_results.append(result.fields())
+
+        return json.dumps(all_results, indent=4, separators=(',', ': '))

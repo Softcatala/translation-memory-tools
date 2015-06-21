@@ -29,7 +29,7 @@ class CheckSearch(object):
         self.url = url
 
     def search_source(self, term):
-        url = '{0}/web_search.py?source={1}&project=tots&json=1'
+        url = '{0}/tm/api/memory/search?source={1}&project=tots'
         url = url.format(self.url, term)
 
         urllib.urlretrieve(url, 'file.txt')
@@ -38,7 +38,7 @@ class CheckSearch(object):
             return data
 
     def search_glossary(self, term):
-        url = '{0}/web_search.py?source={1}&project=tots&json=1&glossary_only=1'
+        url = '{0}/tm/api/glossary/search?source={1}&project=tots'
         url = url.format(self.url, term)
 
         urllib.urlretrieve(url, 'file.txt')

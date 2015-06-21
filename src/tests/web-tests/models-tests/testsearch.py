@@ -19,6 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import unittest
+import json
 
 from web.indexcreator import IndexCreator
 from web.models.search import Search
@@ -108,6 +109,17 @@ class TestSearch(unittest.TestCase):
         self.assertEquals(len(results), 2)
         self.assertEquals(results[0]["source"], u"No Documents Found Today")
         self.assertEquals(results[1]["source"], u"No Documents Found late Yesterday")
+
+    def test_get_json(self):
+        ix = self._create_index()
+        search = Search(u'Today OR No', u'trobat', u'gnome')
+        search.search(ix)
+        results = search.get_json()
+
+        json_array = json.loads(results)
+        self.assertEquals(len(json_array), 2)
+        self.assertEquals(json_array[0]["source"], u"No Documents Found Today")
+        self.assertEquals(json_array[1]["source"], u"No Documents Found late Yesterday")
 
 
 if __name__ == '__main__':
