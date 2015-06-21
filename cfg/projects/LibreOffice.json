@@ -4,19 +4,29 @@
     "softcatala": true, 
     "fileset": {
         "UI": {
-            "url": "https://translations.documentfoundation.org/ca/libo_ui/export/zip", 
+            "url": "https://translations.documentfoundation.org/export/?path=/ca/libo_ui/", 
             "type": "compressed", 
             "target": "libreoffice-ui.zip"
         }, 
         "Ajuda": {
-            "url": "https://translations.documentfoundation.org/ca/libo_help/export/zip", 
+            "url": "https://translations.documentfoundation.org/export/?path=/ca/libo_help/", 
             "type": "compressed", 
             "target": "libreoffice-help.zip"
         }, 
         "Lloc web": {
-            "url": "https://translations.documentfoundation.org/ca/website/export/zip", 
+            "url": "https://translations.documentfoundation.org/export/?path=/ca/web", 
             "type": "compressed", 
             "target": "website.zip"
+        }, 
+        "Android": {
+            "url": "https://translations.documentfoundation.org/export/?path=/ca/android/", 
+            "type": "file", 
+            "target": "ca.po"
+        }, 
+        "iOS": {
+            "url": "https://translations.documentfoundation.org/export/?path=/ca/iosremote/", 
+            "type": "compressed", 
+            "target": "ios.zip"
         }
     }
 }
