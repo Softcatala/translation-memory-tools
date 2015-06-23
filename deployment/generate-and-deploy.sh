@@ -15,7 +15,7 @@ source /home/jmas/web/python-env/bin/activate
 
 # Auto pull changes for dev
 cd $ROOT/tm-git
-git pull && git submodule update
+git pull && git submodule update --remote
 cd $ROOT
 
 bash $ROOT/tm-git/deployment/generate-tm.sh $ROOT
