@@ -54,8 +54,8 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     # Execute pology
     deactivate  # Specific to SC machine cfg
     echo "Executing posieve on: " "$file"
-    posieve set-header -sfield:'Language:ca' -screate "$file-filtrat.po" 
-    posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/upstream/false-friends.rules -s rfile:$pology/upstream/keys.rules -s rfile:$pology/catalan-pology-rules/date-format.rules -s rfile:$pology/catalan-pology-rules/terminology-sc.rules "$file-filtrat.po" > "$file-pology.html"
+    posieve set-header -sfield:'Language:ca' -screate "$file-filtrat.po"
+    posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/upstream/false-friends.rules -s rfile:$pology/upstream/keys.rules -s rfile:$pology/catalan-pology-rules/date-format.rules -s rfile:$pology/catalan-pology-rules/terminology-sc.rules -s rfile:$pology/catalan-pology-rules/iso_639.rules "$file-filtrat.po" > "$file-pology.html"
 
     echo "<h2>Informe d'errades del Pology</h2><br/>" >> $lt_output/$report_file
     if [ -s "$file-pology.html" ] ; then
