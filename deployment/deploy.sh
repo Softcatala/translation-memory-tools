@@ -28,6 +28,7 @@ copy_files() {
     cp $1/tm-git/src/web/robots.txt $2
     cp $1/tm-git/src/web/memories.html $2
     cp $1/tm-git/src/web/terminologia.html $2
+    cp $1/tm-git/src/web/llistats_iso.html $2
     cp $1/tm-git/src/web/img/*.png $2/img
     cp $1/tm-git/src/web/templates/*.html $2/templates
     cp $1/tm-git/src/web/models/*.py $2/models
@@ -51,6 +52,9 @@ copy_files() {
     rm -r -f $2/quality
     mkdir $2/quality
     cp *.html $2/quality
+
+    # ISO lists
+    cp $1/tm-git/src/isolists/*.html $2
 
     # Log
     rm -r -f $2/logs
