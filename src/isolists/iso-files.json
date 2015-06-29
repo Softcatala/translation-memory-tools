@@ -3,14 +3,14 @@
         "input": "../quality/pology/catalan-pology-rules/isos/iso_639-3.57.ca.po",
         "template" : "iso-list.mustache",
         "output" : "iso_639-3.html",
-        "title" : "Llista de nom de llengües",
+        "title" : "Llistat de noms de llengües",
         "text" : "Aquest document és la traducció al català de l'estàndard ISO 639 que defineix els noms d'llengües i famílies lingüístiques."
     },
     "iso_3166-3": {
         "input": "../quality/pology/catalan-pology-rules/isos/iso_3166-3.57.ca.po",
         "template" : "iso-list.mustache",
         "output" : "iso_3166-3.html",
-        "title" : "Llista de nom de països",
+        "title" : "Llistat de noms de països",
         "text" : "Aquest document és la traducció al català de l'estàndard ISO 3166-3 que defineix els noms dels països."
     }
 }
