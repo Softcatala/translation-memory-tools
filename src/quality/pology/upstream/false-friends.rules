@@ -650,6 +650,7 @@ hint="«Institut» es tradueix per «Fundació o organització», no per «Insti
 id="ff_SC-introduce"
 valid msgstr="present(ar|a|em|i)"
 valid msgstr="provo(car|ca|qui)"
+valid msgstr="introduir" after="allow\syou\sto\s"
 valid !msgstr="introdu(ir|eixi|eixin)"
 hint="«Introduce» es tradueix per «Presentar», no per «Introduir» (fals amic)"
 
@@ -860,6 +861,10 @@ hint="«Prevent» es tradueix per «Evitar», no per «Prevenir» (fals amic)"
 id="ff_SC-produce"
 valid msgstr="present(ar|a|i|en)"
 valid msgstr="cre(ar|a)"
+valid msgstr="produeix" after="filter.+"
+valid msgstr="produir" before=".+effect"
+valid msgstr="produirà" after="will.+"
+valid msgstr="produiran" after="larger\svalues.+"
 valid !msgstr="produ(ir|eixi)"
 hint="«Produce» es tradueix per «Presentar», no per «Produir» (fals amic)"
 
