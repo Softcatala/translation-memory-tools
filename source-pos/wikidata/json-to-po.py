@@ -66,12 +66,12 @@ def _create_empty_po_file():
 def is_segment_valid(string):
     # Discard numeric strings only (like years)
     if string.isdigit():
-        print ("Discarded: " + string)
+        print ("Discarded: " + string.encode('utf-8'))
         return False
 
     # On char only (like 'A')
     if len(string) < 2:
-        print ("Discarded: " + string)
+        print ("Discarded: " + string.encode('utf-8'))
         return False
 
     return True
