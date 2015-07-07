@@ -18,7 +18,8 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import ijson
+# yajl2 has 25% better performance than ijson default backend
+import ijson.backends.yajl2 as ijson
 import datetime
 import json
 import urllib
@@ -84,8 +85,8 @@ def _process_json(filename):
     selected = 0
     onlyArticles = True
     PO_NAME = 'wikidata.po'
-    SAVE_INTERVAL = 1000
-    PROCESS_NOF_ENTRIES = 2 * 100000
+    SAVE_INTERVAL = 10000
+    PROCESS_NOF_ENTRIES = 2 * 1000 * 1000
 
     po_file = _create_empty_po_file()
 
