@@ -43,6 +43,7 @@ def exists_in_tm(term):
         print ("Cannot open:" + url.encode("utf-8"))
         return 0
 
+
 def _create_empty_po_file():
     po_file = polib.POFile()
     po_file.check_for_duplicates = True
@@ -61,14 +62,30 @@ def _create_empty_po_file():
     }
     return po_file
 
+def is_segment_valid(string):
+    # Discard numeric strings only (like years)
+    if string.isdigit():
+        print ("Discarded: " + string)
+        return False
+
+    # On char only (like 'A')
+    if len(string) < 2:
+        print ("Discarded: " + string)
+        return False
+
+    return True
+
+
 def _process_json(filename):
     if filename is None:
         return None
 
     cnt = 0
-    exists_cnt = 0
+    selected = 0
     onlyArticles = True
     PO_NAME = 'wikidata.po'
+    SAVE_INTERVAL = 1000
+    PROCESS_NOF_ENTRIES = 2 * 100000
 
     po_file = _create_empty_po_file()
 
@@ -93,13 +110,19 @@ def _process_json(filename):
 
             cnt = cnt + 1
             value = en_label['value']
+
+            if is_segment_valid(value) is False:
+                continue
+
             exists = exists_in_tm(value.encode('utf-8'))
             if exists > 0:
-                exists_cnt = exists_cnt + 1
+                selected = selected + 1
             else:
                 continue
-    
-            entry = polib.POEntry(msgid=en_label['value'], msgstr=ca_label['value'])
+
+            entry = polib.POEntry(msgid=en_label['value'],
+                                  msgstr=ca_label['value'],
+                                  tcomment = item_id.encode('utf-8'))
 
             try:
                 po_file.append(entry)
@@ -107,24 +130,25 @@ def _process_json(filename):
             except ValueError:
                 pass
 
-            if cnt % 1000 == 0:
+            if cnt % SAVE_INTERVAL == 0:
                 po_file.save(PO_NAME)
-               
-            if cnt > 1 * 1000 * 1000:
+
+            if cnt > PROCESS_NOF_ENTRIES:
                 break
 
     po_file.save(PO_NAME)
     print ("Total entries: " + str(cnt))
-    print ("Exists in tm: {0} (%{1})".format(str(exists_cnt), str(percentage(exists_cnt, cnt))))
+    print ("Selected: {0} (%{1})".format(str(selected), str(percentage(selected, cnt))))
 
 
 # https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer
 def main():
 
+    # Download data set from http://dumps.wikimedia.org/other/wikidata/
     # I tried using commons and mediawiki categories without great results
+    # instead we choose a word if this appears on Softcatalà memories.
     print ("Reads a Wikidata json file and generates a PO files with the")
-    print ("strings found in SC TM")
-    print ("Download data set from http://dumps.wikimedia.org/other/wikidata/")
+    print ("strings found in Softcatalà translation memory")
 
     start_time = datetime.datetime.now()
     _process_json('20150629.json')
