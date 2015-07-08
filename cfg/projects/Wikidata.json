@@ -1,0 +1,11 @@
+{
+    "project": "Wikidata", 
+    "projectweb": "https://www.wikidata.org", 
+    "fileset": {
+        "recull": {
+            "url": "../../source-pos/wikidata/wikidata.po", 
+            "type": "local-file", 
+            "target": "wikidata.po"
+        }
+    }
+}
