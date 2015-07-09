@@ -40,8 +40,8 @@ def exists_in_tm(term):
             data = json.load(json_data)
 
         return len(data)
-    except:
-        print ("Cannot open:" + url.encode("utf-8"))
+    except Exception as e:
+        print ("Cannot open: {0}. Error: {1}".format(url.encode("utf-8"), e))
         return 0
 
 
