@@ -32,7 +32,7 @@ def percentage(part, whole):
 
 def exists_in_tm(term):
     try:
-        url = 'http://localhost:8081/tm/api/memory/search?source=\"{1}\"&project=tots'
+        url = u'http://localhost:8081/tm/api/memory/search?source=\"{1}\"&project=tots'
         url = url.format(url, term)
 
         urllib.urlretrieve(url, 'file.txt')
@@ -63,7 +63,7 @@ def _create_empty_po_file():
     }
     return po_file
 
-def is_segment_valid(string):
+def _is_segment_valid(string):
     # Discard numeric strings only (like years)
     if string.isdigit():
         print ("Discarded: " + string.encode('utf-8'))
@@ -75,6 +75,13 @@ def is_segment_valid(string):
         return False
 
     return True
+
+def _insert_entry_inpofile(po_file, entry):
+    try:
+        po_file.append(entry)
+
+    except ValueError:
+        pass
 
 
 def _process_json(filename):
@@ -112,10 +119,10 @@ def _process_json(filename):
             cnt = cnt + 1
             value = en_label['value']
 
-            if is_segment_valid(value) is False:
+            if _is_segment_valid(value) is False:
                 continue
 
-            exists = exists_in_tm(value.encode('utf-8'))
+            exists = exists_in_tm(value)
             if exists > 0:
                 selected = selected + 1
             else:
@@ -123,13 +130,23 @@ def _process_json(filename):
 
             entry = polib.POEntry(msgid=en_label['value'],
                                   msgstr=ca_label['value'],
-                                  tcomment = item_id.encode('utf-8'))
+                                  tcomment = item_id.encode('utf-8') + " (label)")
 
-            try:
-                po_file.append(entry)
+            _insert_entry_inpofile(po_file, entry)
 
-            except ValueError:
-                pass
+            desc = item.get('descriptions')
+            if desc is not None:
+                en_desc = desc.get('en')
+                ca_desc = desc.get('ca')
+
+                if en_desc is not None and ca_desc is not None:
+                    entry = polib.POEntry(msgid=en_desc['value'],
+                                          msgstr=ca_desc['value'],
+                                          tcomment = item_id.encode('utf-8') + " (description)")
+
+                    _insert_entry_inpofile(po_file, entry)
+
+
 
             if cnt % SAVE_INTERVAL == 0:
                 po_file.save(PO_NAME)
