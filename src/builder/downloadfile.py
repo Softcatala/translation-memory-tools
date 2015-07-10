@@ -23,11 +23,20 @@ import urllib2
 
 class DownloadFile(object):
 
+    def urlopen_with_retry(self, url):
+        NTRIES = 3
+
+        for _ in range(NTRIES):
+            try:
+                return urllib2.urlopen(url)
+            except Exception as e:
+                print ("Error on urlopen_with_retry: " + str(e))
+
     def get_file(self, url, filename):
         msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
         logging.info(msg)
 
-        infile = urllib2.urlopen(url)
+        infile = self.urlopen_with_retry(url)
         output = open(filename, 'wb')
         output.write(infile.read())
         output.close()
