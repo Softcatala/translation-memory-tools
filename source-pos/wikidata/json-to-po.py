@@ -35,7 +35,7 @@ def exists_in_tm(term):
         url = u'http://localhost:8081/tm/api/memory/search?source=\"{1}\"&project=tots'
         url = url.format(url, term)
 
-        urllib.urlretrieve(url, 'file.txt')
+        urllib.urlretrieve(url.encode('utf-8'), 'file.txt')
         with open('file.txt') as json_data:
             data = json.load(json_data)
 
@@ -92,7 +92,7 @@ def _process_json(filename):
     selected = 0
     onlyArticles = True
     PO_NAME = 'wikidata.po'
-    SAVE_INTERVAL = 10000
+    SAVE_INTERVAL = 1000
     PROCESS_NOF_ENTRIES = 2 * 1000 * 1000
 
     po_file = _create_empty_po_file()
@@ -105,11 +105,12 @@ def _process_json(filename):
             if label is None:
                 continue
 
+            item_id = item['id']
             if onlyArticles is True:
-                item_id = item['id']
                 if item_id is None or item_id.startswith("Q") is False:
                     continue
 
+            comment = u'Article {0}'.format(item_id)
             en_label = label.get('en')
             ca_label = label.get('ca')
 
@@ -130,7 +131,7 @@ def _process_json(filename):
 
             entry = polib.POEntry(msgid=en_label['value'],
                                   msgstr=ca_label['value'],
-                                  tcomment = item_id.encode('utf-8') + " (label)")
+                                  tcomment = comment + " (label)")
 
             _insert_entry_inpofile(po_file, entry)
 
@@ -142,7 +143,7 @@ def _process_json(filename):
                 if en_desc is not None and ca_desc is not None:
                     entry = polib.POEntry(msgid=en_desc['value'],
                                           msgstr=ca_desc['value'],
-                                          tcomment = item_id.encode('utf-8') + " (description)")
+                                          tcomment = comment + " (description)")
 
                     _insert_entry_inpofile(po_file, entry)
 
