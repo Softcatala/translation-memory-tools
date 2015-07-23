@@ -158,8 +158,6 @@
             "type": "file", 
             "target": "ca.po"
         },
-
-
         "fedorahosted": {
             "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/fedorahosted.org/ca/po?docId=po%2Ffedorahosted", 
             "type": "file", 
@@ -197,6 +195,16 @@
         },
         "arm.fedoraproject.org": {
             "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/arm.fedoraproject.org/ca/po?docId=po%2Farm.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "dnf": {
+            "url": "https://fedora.zanata.org/rest/file/translation/dnf/master/ca/po?docId=dnf", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "cockpit": {
+            "url": "https://fedora.zanata.org/rest/file/translation/cockpit/master/ca/po?docId=cockpit", 
             "type": "file", 
             "target": "ca.po"
         }
