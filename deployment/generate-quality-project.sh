@@ -45,9 +45,9 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     sed -i -r 's/^([^.]*,[^.]*){8,}$//' "$file.txt"
     
     # Run LT
-    curl --data "language=$langcode" --data "enabled=$enabledRules" --data "disabled=$disabledRules" --data-urlencode "text@$file.txt" http://localhost:7001 > "$file-results.xml" 2>/dev/null
+    curl --data "language=$langcode" --data "enabled=$enabledRules" --data "disabled=$disabledRules" --data-urlencode "text@$file.txt" http://localhost:7001 > "$file.xml" 2>/dev/null
     
-    python $lt_html/lt-results-to-html.py -i "$file-results.xml" -o "$file-report.html"
+    python $lt_html/lt-results-to-html.py -i "$file.xml" -o "$file-report.html"
     sed -i 's/\t/ /g' "$file-report.html" #replace tabs with whitespace for better presentation
     cat "$file-report.html" >> $lt_output/$report_file
 
@@ -68,7 +68,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     rm "$file-filtrat.po"
     rm "$file-pology.html"
     rm "$file-report.html"
-    rm "$file-results.xml"
+    rm "$file.xml"
     rm "$file.txt"
     
 done
