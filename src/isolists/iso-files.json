@@ -1,6 +1,6 @@
 {
     "iso_639-3": {
-        "input": "../quality/pology/catalan-pology-rules/isos/iso_639-3.59.ca.po",
+        "input": "../quality/pology/catalan-pology-rules/isos/iso_639-3.57.ca.po",
         "template" : "iso-list.mustache",
         "output" : "iso_639-3.html",
         "title" : "Llistat de noms de llengües",
