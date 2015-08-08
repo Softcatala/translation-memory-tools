@@ -1,6 +1,6 @@
 {% if glossary %}
     <div class="terminology">
-    <p>Resum de l'extracció automàtica terminològica del terme: {{ search_term }} </p>
+    <p>Resum de l'extracció automàtica terminològica sobre el corpus de Softcatalà del terme: {{ search_term }} </p>
     <ul>
     {% for entry in glossary %}
         <li>
@@ -16,7 +16,7 @@
               </li>
               <li>Per a cada opció, entre parèntesis, <i>usada</i> indica el percentatge
                 d'ús respecte a altres opcions i <i>coincidències</i> els cops que s'ha
-                trobat.
+                trobat en cadenes de 3 o menys paraules.
               </li>
                 <li>Les formes <span class="green">en color verd</span> són les documentades
                  en els recursos en línia del TERMCAT.
