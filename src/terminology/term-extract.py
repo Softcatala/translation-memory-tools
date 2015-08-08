@@ -152,6 +152,7 @@ def init_logging():
 
 def main():
     print("Extracts terminology")
+    print("Extraction rule: appears in more than 1 document and has more than 4 occurrences")
     print("Use --help for assistance")
 
     start_time = time.time()
