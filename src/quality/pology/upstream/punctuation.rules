@@ -1,0 +1,27 @@
+# Catalan punctuation rules
+# Copyrigth 2015, Josep Ma. Ferrer
+# by the KDE Catalan Team (kde-i18n-ca@kde.org)
+# License: GPLv3
+
+# If the souce message ends with a colon, the target message must end with a colon.   
+{\:\s*$}i
+id="punctuation-colon"
+valid msgstr="\:\s*$"
+hint="Si el missatge origen acaba amb dos punts, el missatge destí també hauria (punctuation)"
+
+# If the souce message ends with a period, the target message must end with a period.   
+{\.\s*$}i
+id="punctuation-period"
+valid msgstr="\.\s*$"
+valid msgstr="\&(BDR|etc|kde|kimagemapeditor);$"
+valid msgstr="\.»$"
+valid msgid="(id|no|org|U\.S).$"
+valid msgid="\.\.\.</guimenuitem></menuchoice>( menu)?\.$"
+hint="Si el missatge origen acaba amb punt final, el missatge destí també hauria (punctuation)"
+
+# If the souce message ends with 3 periods, the target message must end with 3 periods.   
+{\.\.\.\s*$}i
+id="punctuation-3period"
+valid msgstr="\.\.\.\s*$"
+valid msgstr="\.\.\.»$"
+hint="Si el missatge origen acaba amb punts suspensius, el missatge destí també hauria (punctuation)"
