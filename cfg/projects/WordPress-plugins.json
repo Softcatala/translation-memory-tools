@@ -1,6 +1,7 @@
 {
     "project": "WordPress-plugins", 
-    "projectweb": "https://wordpress.org/plugins/", 
+    "projectweb": "https://wordpress.org/plugins/",
+    "softcatala": true,
     "fileset": {
         "akismet": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/akismet/dev/ca/default/export-translations", 

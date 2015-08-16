@@ -1,6 +1,7 @@
 {
     "project": "WordPress", 
     "projectweb": "http://ca.wordpress.org/", 
+    "softcatala": true,
     "fileset": {
         "wordpress": {
             "url": "https://translate.wordpress.org/projects/wp/dev/ca/default/export-translations", 
