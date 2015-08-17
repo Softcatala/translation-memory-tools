@@ -149,7 +149,7 @@ def memory_search_api():
 def search_request():
     source = request.args.get('source')
     target = request.args.get('target')
-    project = request.args.get('project')
+    project = ','.join(request.args.getlist('project'))
 
     search = Search(source, target, project)
     View = WebView()

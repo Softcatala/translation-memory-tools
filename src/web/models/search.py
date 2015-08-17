@@ -85,7 +85,12 @@ class Search(object):
                 qs += u' softcatala:true'
                 fields.append("softcatala")
             else:
-                qs += u' project:{0}'.format(self.project)
+                if ',' in self.project:
+                    val = self.project.replace(',' , ' OR ')
+                    qs += u' project:({0})'.format(val)   
+                else:
+                    qs += u' project:({0})'.format(self.project)
+
                 fields.append("project")
 
         self.query = MultifieldParser(fields, ix.schema).parse(qs)

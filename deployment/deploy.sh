@@ -32,6 +32,8 @@ copy_files() {
     cp $1/tm-git/src/web/img/*.png $2/img
     cp $1/tm-git/src/web/templates/*.html $2/templates
     cp $1/tm-git/src/web/models/*.py $2/models
+    cp -r $1/tm-git/src/web/chosen/*.css $2/chosen
+    cp -r $1/tm-git/src/web/chosen/*.js $2/chosen
     cp $1/tm-git/src/terminology/glossarysql.py $2/models
 
     # Download memories
