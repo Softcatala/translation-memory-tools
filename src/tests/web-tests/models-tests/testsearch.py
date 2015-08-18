@@ -27,13 +27,16 @@ from web.models.search import Search
 
 class TestSearch(unittest.TestCase):
 
-    PROJECT = u'gnome'
+    PROJECT_GNOME = u'gnome'
+    PROJECT_ABI = u'abiword'
     SC = True
 
     data_set = [
-                u"Nox Documents Found", u"No s'han trobat", PROJECT, SC,
-                u"No Documents Found Today", u"No s'han trobat documents avui", PROJECT, SC,
-                u"No Documents Found late Yesterday", u"No s'han trobat documents ahir", PROJECT, SC]
+                u"Nox Documents Found", u"No s'han trobat", PROJECT_GNOME, SC,
+                u"No Documents Found Today", u"No s'han trobat documents avui", PROJECT_GNOME, SC,
+                u"No Documents Found late Yesterday", u"No s'han trobat documents ahir", PROJECT_GNOME, SC,
+                u"Many documents found Yesterday", u"S'han trobat molts errors ahir", PROJECT_ABI, SC
+                ]
 
     FIELDS = 4
 
@@ -61,6 +64,16 @@ class TestSearch(unittest.TestCase):
 
         self.assertEquals(len(results), 1)
         self.assertEquals(results[0]["source"], u"No Documents Found Today")
+
+    def test_query_simple_query_source_with_two_projects(self):
+        ix = self._create_index()
+        search = Search(u'Yesterday', None, u'gnome,abiword')
+        search.search(ix)
+        results = search.get_results()
+
+        self.assertEquals(len(results), 2)
+        self.assertEquals(results[0]["source"], u"Many documents found Yesterday")
+        self.assertEquals(results[1]["source"], u"No Documents Found late Yesterday")
 
     def test_query_simple_with_or_query_source(self):
         ix = self._create_index()
