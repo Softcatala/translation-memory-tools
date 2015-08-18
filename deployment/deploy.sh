@@ -17,6 +17,7 @@ copy_files() {
     mkdir -p $2/img
     mkdir -p $2/templates
     mkdir -p $2/models
+    mkdir -p $2/chosen
 
     cp $1/tm-git/src/web/css/recursos.css $2/css
     cp $1/tm-git/src/web/index.html $2
@@ -32,9 +33,8 @@ copy_files() {
     cp $1/tm-git/src/web/img/*.png $2/img
     cp $1/tm-git/src/web/templates/*.html $2/templates
     cp $1/tm-git/src/web/models/*.py $2/models
-    cp -r $1/tm-git/src/web/chosen/*.css $2/chosen
-    cp -r $1/tm-git/src/web/chosen/*.js $2/chosen
     cp $1/tm-git/src/terminology/glossarysql.py $2/models
+    cp -r $1/tm-git/src/web/chosen/* $2/chosen
 
     # Download memories
     cp $1/tm-git/src/web/download.html $2
