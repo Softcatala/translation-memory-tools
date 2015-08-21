@@ -23,6 +23,8 @@ copy_files() {
     cp $1/tm-git/src/web/index.html $2
     cp $1/tm-git/src/web/web_search.py $2
     cp $1/tm-git/src/web/cleanupfilter.py $2
+    cp $1/tm-git/src/web/header.html $2
+    cp $1/tm-git/src/web/footer.html $2
     cp $1/tm-git/src/web/statistics.html $2
     cp $1/tm-git/src/web/download.html $2
     cp $1/tm-git/src/web/select-projects.html $2
