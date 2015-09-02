@@ -203,6 +203,36 @@
             "type": "file", 
             "target": "ca.po"
         },
+        "dnf-plugins-extras": {
+            "url": "https://fedora.zanata.org/rest/file/translation/dnf-plugins-core/master/ca/po?docId=dnf-plugins-core", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "dnf-plugin-system-upgrade": {
+            "url": "https://fedora.zanata.org/rest/file/translation/dnf-plugin-system-upgrade/master/ca/po?docId=dnf-plugin-system-upgrade", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "comps": {
+            "url": "https://fedora.zanata.org/rest/file/translation/comps/master/ca/po?docId=comps", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "cockpit": {
+            "url": "https://fedora.zanata.org/rest/file/translation/cockpit/master/ca/po?docId=cockpit", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "virt-manager": {
+            "url": "https://fedora.zanata.org/rest/file/translation/virt-manager/master/ca/po?docId=virt-manager", 
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "virt-top": {
+            "url": "https://fedora.zanata.org/rest/file/translation/virt-top/master/ca/po?docId=virt-top", 
+            "type": "file", 
+            "target": "ca.po"
+        },
         "cockpit": {
             "url": "https://fedora.zanata.org/rest/file/translation/cockpit/master/ca/po?docId=cockpit", 
             "type": "file", 
