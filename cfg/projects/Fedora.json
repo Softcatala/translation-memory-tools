@@ -1,6 +1,6 @@
 {
     "project": "Fedora", 
-    "projectweb": "http://www.softcatala.org/wiki/Fedora", 
+    "projectweb": "https://www.softcatala.org/wiki/Fedora", 
     "softcatala": true, 
     "fileset": {
          "abrt": {

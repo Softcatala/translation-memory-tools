@@ -1,6 +1,6 @@
 {
     "project": "SugarLabs", 
-    "projectweb": "http://www.softcatala.org/wiki/SugarLabs", 
+    "projectweb": "https://www.softcatala.org/wiki/SugarLabs", 
     "softcatala": true,
     "fileset": {
         "abacus": {

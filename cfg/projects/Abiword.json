@@ -1,6 +1,6 @@
 {
     "project": "Abiword", 
-    "projectweb": "http://www.softcatala.org/wiki/Abiword", 
+    "projectweb": "https://www.softcatala.org/wiki/Abiword", 
     "softcatala": true, 
     "fileset": {
         "abiword": {

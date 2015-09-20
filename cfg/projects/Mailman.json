@@ -1,6 +1,6 @@
 {
     "project": "Mailman", 
-    "projectweb": "http://www.softcatala.org/wiki/Projectes/Mailman", 
+    "projectweb": "https://www.softcatala.org/wiki/Projectes/Mailman", 
     "softcatala": true, 
     "fileset": {
         "mailman": {

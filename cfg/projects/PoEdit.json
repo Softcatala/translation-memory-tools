@@ -1,6 +1,6 @@
 {
     "project": "PoEdit", 
-    "projectweb": "http://www.softcatala.org/wiki/Projectes/Eines_inform%C3%A0tiques_per_a_traductors", 
+    "projectweb": "https://www.softcatala.org/wiki/Projectes/Eines_inform%C3%A0tiques_per_a_traductors", 
     "softcatala": true, 
     "fileset": {
         "PoEdit": {

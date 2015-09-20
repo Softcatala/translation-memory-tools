@@ -1,6 +1,6 @@
 {
     "project": "LanguageTool", 
-    "projectweb": "http://www.softcatala.org/wiki/Projectes/LanguageTool", 
+    "projectweb": "https://www.softcatala.org/wiki/Projectes/LanguageTool", 
     "softcatala": true, 
     "fileset": {
         "LanguageTool": {

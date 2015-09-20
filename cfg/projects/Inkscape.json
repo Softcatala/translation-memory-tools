@@ -1,6 +1,6 @@
 {
     "project": "Inkscape", 
-    "projectweb": "http://www.softcatala.org/wiki/Projectes/Inkscape", 
+    "projectweb": "https://www.softcatala.org/wiki/Projectes/Inkscape", 
     "softcatala": true, 
     "fileset": {
         "inkscape": {

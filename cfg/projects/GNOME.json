@@ -1,6 +1,6 @@
 {
     "project": "GNOME", 
-    "projectweb": "http://www.softcatala.org/wiki/GNOME", 
+    "projectweb": "https://www.softcatala.org/wiki/GNOME", 
     "softcatala": true, 
     "fileset": {
         "gnome-ui": {

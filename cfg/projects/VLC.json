@@ -1,6 +1,6 @@
 {
     "project": "VLC", 
-    "projectweb": "http://www.softcatala.org/wiki/Projectes/VLC", 
+    "projectweb": "https://www.softcatala.org/wiki/Projectes/VLC", 
     "softcatala": true, 
     "fileset": {
         "VLC": {
