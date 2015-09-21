@@ -3,7 +3,7 @@
     "projectweb": "https://wiki.openstack.org/wiki/Translations", 
     "fileset": {
         "main": {
-            "url": "https://www.transifex.com/organization/openstack", 
+            "url": "https://www.transifex.com/openstack/public/", 
             "type": "transifexhub"
         }
     }

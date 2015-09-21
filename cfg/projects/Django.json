@@ -3,7 +3,7 @@
     "projectweb": "https://code.djangoproject.com/wiki/Localization", 
     "fileset": {
         "main": {
-            "url": "https://www.transifex.com/organization/django", 
+            "url": "https://www.transifex.com/django/public/", 
             "type": "transifexhub"
         }
     }

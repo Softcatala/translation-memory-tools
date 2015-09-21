@@ -3,7 +3,7 @@
     "projectweb": "http://wiki.xfce.org/translations/team_ca", 
     "fileset": {
         "Xfce": {
-            "url": "https://www.transifex.com/organization/xfce", 
+            "url": "https://www.transifex.com/xfce/public/", 
             "type": "transifexhub"
         }
     }

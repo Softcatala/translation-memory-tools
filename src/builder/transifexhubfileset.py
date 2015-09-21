@@ -30,15 +30,16 @@ class OptionsExtractor(HTMLParser):
     """
         Customized HTMLParser that extracts options values from a Fedora page
         There are two kinds of pages:
-            * Hub pages: https://www.transifex.com/projects/p/django/language/ca/
+            * Hub pages: https://www.transifex.com/django/django/language/ca/
             * Organization pages: https://www.transifex.com/organization/xfce
                 * These are paginated and have the concept of 'next page'
     """
-    def __init__(self, base_url):
+    def __init__(self, base_url, project):
         HTMLParser.__init__(self)
         self.base_url = base_url
         self.options = []
         self.next_page = None
+        self.project = project
 
     def get_next_page(self):
         return self.next_page
@@ -46,21 +47,8 @@ class OptionsExtractor(HTMLParser):
     def get_options(self):
         return self.options
 
-    def get_project_name_from_tr(self, url):
-        prefix = '/ajax/projects/p/'
-
-        if not url.startswith(prefix):
-            return None
-
-        url = url[len(prefix):]
-        idx = url.find('/')
-        if idx == -1:
-            return None
-
-        return url[:idx]
-
     def get_project_name_from_ahref(self, url):
-        prefix = '/projects/p/'
+        prefix = '/{0}/'.format(self.project)
 
         if not url.startswith(prefix):
             return None
@@ -103,9 +91,10 @@ class OptionsExtractor(HTMLParser):
 class Page(object):
     """Represents a downloaded web page and its content"""
 
-    def __init__(self, url):
+    def __init__(self, url, project):
         self.content = None
         self.url = url
+        self.project = project
         self.next_page = None
         self.options = []
         self.base_url = self._get_base_url(url)
@@ -126,7 +115,7 @@ class Page(object):
         )
 
     def _process_options(self):
-        parser = OptionsExtractor(self.url)
+        parser = OptionsExtractor(self.url, self.project)
         parser.feed(self.content)
         parser.close()
         self.options = parser.get_options()
@@ -160,7 +149,8 @@ class TransifexHubFileSet(FileSet):
             url = self.url
 
             while url is not None:
-                page = Page(url)
+                print self.project.name
+                page = Page(url, self.project.name.lower())
                 for option in page.get_all_options():
                     options.append(option)
                 url = page.get_next_page()
