@@ -2,14 +2,7 @@
 
 root="$1"
 lt_output=$root/tm-git/quality
-lt_html=$root/tm-git/src/quality/lt
-tike_path=/home/jmas/tika
-lt_path=/home/jmas/languagetool
 lt_log=$lt_output/excluded-lines.log 
-langcode=ca-ES
-disabledRules="WHITESPACE_RULE,UPPERCASE_SENTENCE_START,CAMI_DE"
-enabledRules="EXIGEIX_PLURALS_S"
-pology=$root/tm-git/src/quality/pology
 cnt=0
 
 # Delete output dir and files
