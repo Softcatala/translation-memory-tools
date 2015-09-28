@@ -2,9 +2,9 @@
     "project": "RPM", 
     "projectweb": "http://rpm.org/", 
     "fileset": {
-        "Xfce": {
-            "url": "https://www.transifex.com/rpm-team/rpm/", 
-            "type": "transifexhub"
+        "RPM": {
+            "url": "https://www.transifex.com/projects/p/rpm/", 
+            "type": "transifex"
         }
     }
 }

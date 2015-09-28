@@ -2,7 +2,7 @@
     "project": "Askbot", 
     "projectweb": "https://askbot.com/", 
     "fileset": {
-        "Xfce": {
+        "Askbot": {
             "url": "https://www.transifex.com/askbot/askbot/", 
             "type": "transifexhub"
         }
