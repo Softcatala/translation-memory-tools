@@ -13,6 +13,11 @@
             "type": "file", 
             "target": "ca.po"
         },
+         "asknot-ng": {
+            "url": "https://fedora.zanata.org/rest/file/translation/asknot-ng/0.1/ca/po?docId=locale%2Fasknot-ng",
+            "type": "file",
+            "target": "ca.po"
+        },
          "audit-viewer": {
             "url": "https://fedora.zanata.org/rest/file/translation/audit-viewer/default/ca/po?docId=audit-viewer", 
             "type": "file", 
@@ -23,9 +28,24 @@
             "type": "file", 
             "target": "ca.po"
         },
+         "certmonger": {
+            "url": "https://fedora.zanata.org/rest/file/translation/certmonger/master/ca/po?docId=certmonger",
+            "type": "file",
+            "target": "ca.po"
+        },
          "chkconfig": {
             "url": "https://fedora.zanata.org/rest/file/translation/chkconfig/master/ca/po?docId=chkconfig", 
             "type": "file", 
+            "target": "ca.po"
+        },
+        "entangle": {
+            "url": "https://fedora.zanata.org/rest/file/translation/entangle/master/ca/po?docId=entangle",
+            "type": "file",
+            "target": "ca.po"
+        },
+        "expendable": {
+            "url": "https://fedora.zanata.org/rest/file/translation/expendable/master/ca/po?docId=expendable",
+            "type": "file",
             "target": "ca.po"
         },
          "firewalld": {
@@ -203,8 +223,13 @@
             "type": "file", 
             "target": "ca.po"
         },
+        "dnf-plugins-core": {
+            "url": "https://fedora.zanata.org/rest/file/translation/dnf-plugins-core/master/ca/po?docId=dnf-plugins-core",
+            "type": "file",
+            "target": "ca.po"
+        },
         "dnf-plugins-extras": {
-            "url": "https://fedora.zanata.org/rest/file/translation/dnf-plugins-core/master/ca/po?docId=dnf-plugins-core", 
+            "url": "https://fedora.zanata.org/rest/file/translation/dnf-plugins-extras/master/ca/po?docId=dnf-plugins-extras", 
             "type": "file", 
             "target": "ca.po"
         },
