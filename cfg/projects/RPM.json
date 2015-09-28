@@ -1,0 +1,10 @@
+{
+    "project": "RPM", 
+    "projectweb": "http://rpm.org/", 
+    "fileset": {
+        "Xfce": {
+            "url": "https://www.transifex.com/rpm-team/rpm/", 
+            "type": "transifexhub"
+        }
+    }
+}
