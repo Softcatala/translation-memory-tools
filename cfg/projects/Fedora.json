@@ -223,6 +223,86 @@
             "type": "file", 
             "target": "ca.po"
         },
+         "hivex": {
+            "url": "https://fedora.zanata.org/rest/file/translation/hivex/master/ca/po?docId=hivex",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus/head/ca/po?docId=ibus10",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus-anthy": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-anthy/head/ca/po?docId=ibus-anthy",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus-chewing": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-chewing/master/ca/po?docId=ibus-chewing",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus-input-pad": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-input-pad/head/ca/po?docId=ibus-input-pad",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus-libpinyin": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-libpinyin/master/ca/po?docId=ibus-libpinyin",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus-table": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-table/1.9.1/ca/po?docId=ibus-table",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "ibus-typing-booster": {
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-typing-booster/1.2.11/ca/po?docId=ibus-typing-booster",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "im-chooser": {
+            "url": "https://fedora.zanata.org/rest/file/translation/im-chooser/master/ca/po?docId=im-chooser",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "imsettings": {
+            "url": "https://fedora.zanata.org/rest/file/translation/imsettings/master/ca/po?docId=imsettings",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "input-pad": {
+            "url": "https://fedora.zanata.org/rest/file/translation/input-pad/head/ca/po?docId=input-pad",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "iok": {
+            "url": "https://fedora.zanata.org/rest/file/translation/iok/master/ca/po?docId=iok",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "libguestfs": {
+            "url": "https://fedora.zanata.org/rest/file/translation/libguestfs/master/ca/po?docId=po%2Flibguestfs",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "libvirt-sandbox": {
+            "url": "https://fedora.zanata.org/rest/file/translation/libvirt-sandbox/master/ca/po?docId=libvirt-sandbox",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "oscap-anaconda-addon": {
+            "url": "https://fedora.zanata.org/rest/file/translation/oscap-anaconda-addon/master/ca/po?docId=oscap-anaconda-addon",
+            "type": "file",
+            "target": "ca.po"
+        },
+         "sssd": {
+            "url": "https://fedora.zanata.org/rest/file/translation/sssd/master/ca/po?docId=po%2Fsssd",
+            "type": "file",
+            "target": "ca.po"
+        },
         "virt-manager": {
             "url": "https://fedora.zanata.org/rest/file/translation/virt-manager/master/ca/po?docId=virt-manager", 
             "type": "file", 
@@ -233,9 +313,14 @@
             "type": "file", 
             "target": "ca.po"
         },
-        "cockpit": {
-            "url": "https://fedora.zanata.org/rest/file/translation/cockpit/master/ca/po?docId=cockpit", 
-            "type": "file", 
+        "virt-viewer": {
+            "url": "https://fedora.zanata.org/rest/file/translation/virt-viewer/master/ca/po?docId=virt-viewer",
+            "type": "file",
+            "target": "ca.po"
+        },
+        "volume_key": {
+            "url": "https://fedora.zanata.org/rest/file/translation/volume_key/master/ca/po?docId=volume_key",
+            "type": "file",
             "target": "ca.po"
         }
     }
