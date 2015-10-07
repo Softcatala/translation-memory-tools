@@ -1,0 +1,11 @@
+{
+    "project": "Darkable",
+    "projectweb": "http://www.darktable.org/",
+    "fileset": {
+        "darkable": {
+            "url": "https://raw.githubusercontent.com/darktable-org/darktable/master/po/ca.po", 
+            "type": "file",
+            "target": "darkable-ca.po"
+        }
+    }
+}
