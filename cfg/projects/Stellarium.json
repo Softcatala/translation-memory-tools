@@ -1,0 +1,21 @@
+{
+    "project": "Stellarium", 
+    "projectweb": "http://www.stellarium.org/", 
+    "fileset": {
+        "stellarium": {
+            "url": "lp:~stellarium/stellarium/trunk/po/stellarium/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "stellarium-desktop": {
+            "url": "lp:~stellarium/stellarium/trunk/po/stellarium-desktop/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "stellarium-skycultures": {
+            "url": "lp:~stellarium/stellarium/trunk/po/stellarium-skycultures/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }
+    }
+}
