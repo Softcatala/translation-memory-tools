@@ -1,0 +1,10 @@
+{
+    "project": "Avahi", 
+    "projectweb": "http://www.avahi.org/", 
+    "fileset": {
+        "appstream": {
+            "url": "https://www.transifex.com/projects/p/avahi",
+            "type": "transifex"
+        }
+    }
+}
