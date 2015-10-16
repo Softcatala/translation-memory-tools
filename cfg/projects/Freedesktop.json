@@ -1,0 +1,42 @@
+{
+    "project": "Freedesktop.org", 
+    "projectweb": "http://freedesktop.org/wiki/Software/", 
+    "fileset": {
+        "accounts-service": {
+            "url": "https://www.transifex.com/projects/p/accountsservice", 
+            "type": "transifex"
+        },
+        "appstream-glib": {
+            "url": "https://www.transifex.com/projects/p/appstream-glib",
+            "type": "transifex"
+        },
+        "cups-pk-helper": {
+            "url": "https://www.transifex.com/projects/p/cups-pk-helper",
+            "type": "transifex"
+        },
+        "fprintd": {
+            "url": "https://www.transifex.com/projects/p/fprintd",
+            "type": "transifex"
+        },
+        "packagekit": {
+            "url": "https://www.transifex.com/projects/p/packagekit",
+            "type": "transifex"
+        },
+        "shared-mime-info": {
+            "url": "https://www.transifex.com/projects/p/shared-mime-info",
+            "type": "transifex"
+        },
+        "udisks": {
+            "url": "https://www.transifex.com/projects/p/udisks",
+            "type": "transifex"
+        },
+        "zif": {
+            "url": "https://www.transifex.com/projects/p/zif",
+            "type": "transifex"
+        },
+        "appstream": {
+            "url": "https://www.transifex.com/projects/p/appstream",
+            "type": "transifex"
+        }
+    }
+}
