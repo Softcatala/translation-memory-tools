@@ -1,5 +1,5 @@
 {
-    "project": "Freedesktop.org", 
+    "project": "Freedesktop", 
     "projectweb": "http://freedesktop.org/wiki/Software/", 
     "fileset": {
         "accounts-service": {
