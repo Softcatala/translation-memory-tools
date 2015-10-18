@@ -308,6 +308,11 @@
             "type": "file",
             "target": "ca.po"
         },
+         "libdvbv5": {
+            "url": "https://fedora.zanata.org/rest/file/translation/v4l-utils/rawhide/ca/po?docId=libdvbv5",
+            "type": "file",
+            "target": "ca.po"
+        },
          "libguestfs": {
             "url": "https://fedora.zanata.org/rest/file/translation/libguestfs/master/ca/po?docId=po%2Flibguestfs",
             "type": "file",
@@ -325,6 +330,16 @@
         },
          "sssd": {
             "url": "https://fedora.zanata.org/rest/file/translation/sssd/master/ca/po?docId=po%2Fsssd",
+            "type": "file",
+            "target": "ca.po"
+        },
+        "tvtime": {
+            "url": "https://fedora.zanata.org/rest/file/translation/tvtime/1.0.6/ca/po?docId=tvtime",
+            "type": "file",
+            "target": "ca.po"
+        },
+        "v4l-utils": {
+            "url": "https://fedora.zanata.org/rest/file/translation/v4l-utils/rawhide/ca/po?docId=v4l-utils",
             "type": "file",
             "target": "ca.po"
         },
