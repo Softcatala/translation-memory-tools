@@ -32,11 +32,6 @@
             "url": "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz", 
             "type": "compressed", 
             "target": "gnome-infrastructure.tar.gz"
-        },
-        "olpc": {
-            "url": "http://l10n.gnome.org/languages/ca/olpc/ui.tar.gz", 
-            "type": "compressed", 
-            "target": "olpc.tar.gz"
         }, 
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz", 
@@ -47,11 +42,6 @@
             "url": "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz", 
             "type": "compressed", 
             "target": "gnome-extras-doc.tar.gz"
-        }, 
-        "olpc-doc": {
-            "url": "https://l10n.gnome.org/languages/ca/olpc/doc.tar.gz", 
-            "type": "compressed", 
-            "target": "olpc-doc.tar.gz"
         }, 
         "obsolete-ui": {
             "url": "https://l10n.gnome.org/languages/ca/obsolete/ui-part.tar.gz", 
