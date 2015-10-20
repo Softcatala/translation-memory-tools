@@ -282,13 +282,15 @@ valid msgstr="consentiment"
 valid !msgstr="consens"
 hint="«Consent» es tradueix per «Consentiment», no per «Consens» (fals amic)"
 
-# «Consistent» es tradueix per «Compatible».
-{\bconsistents?\b}i
-id="ff-consistent"
-valid msgstr="compatibles?"
-valid msgstr="coherents?"
-valid !msgstr="consistents?"
-hint="«Consistent» es tradueix per «Compatible», no per «Consistent» (fals amic)"
+### Regla desactivada: «Consistent» pot ser una traducció adequada per "Consistent", 
+### en funció del context. No apareix a la llista de falsos amics de la viquipèdia (25/10/2015)
+## «Consistent» es tradueix per «Compatible».
+#{\bconsistents?\b}i
+#id="ff-consistent"
+#valid msgstr="compatibles?"
+#valid msgstr="coherents?"
+#valid !msgstr="consistents?"
+#hint="«Consistent» es tradueix per «Compatible», no per «Consistent» (fals amic)"
 
 # «Constipated» es tradueix per «Restret».
 {\bconstipated\b}i
@@ -844,13 +846,15 @@ valid !msgstr="preve(nir|nc|ns)"
 valid !msgstr="previ(nc|ngui)"
 hint="«Prevent» es tradueix per «Evitar», no per «Prevenir» (fals amic)"
 
-# «Produce» es tradueix per «Presentar».
-{\bproduce\b}i
-id="ff-produce"
-valid msgstr="present(ar|a|i|en)"
-valid msgstr="cre(ar|a)"
-valid !msgstr="produ(ir|eixi)"
-hint="«Produce» es tradueix per «Presentar», no per «Produir» (fals amic)"
+### Regla desactivada: «Produir» pot ser una traducció adequada per "Produce", 
+### en funció del context. No apareix a la llista de falsos amics de la viquipèdia (25/10/2015)
+## «Produce» es tradueix per «Presentar».
+#{\bproduce\b}i
+#id="ff-produce"
+#valid msgstr="present(ar|a|i|en)"
+#valid msgstr="cre(ar|a)"
+#valid !msgstr="produ(ir|eixi)"
+#hint="«Produce» es tradueix per «Presentar», no per «Produir» (fals amic)"
 
 # «Professor» es tradueix per «Catedràtic».
 {\bprofessor\b}i
@@ -929,15 +933,17 @@ valid msgstr="recipient" cat="kleopatra"
 valid !msgstr="recipients?"
 hint="«recipient» es tradueix per «Destinatari», no per «Recipient» (fals amic)"
 
-# «Relevant» es tradueix per «Apropiat».
-{\brelevants?\b}i
-id="ff-relevant"
-valid msgstr="apropiats?"
-valid msgstr="aplicables?"
-valid msgstr="pertinents?"
-valid msgstr="importants?"
-valid !msgstr="rellevants?"
-hint="«Relevant» es tradueix per «Apropiat», no per «Rellevant» (fals amic)"
+### Regla desactivada: «Rellevant» pot ser una traducció adequada per "Relevant", 
+### en funció del context. No apareix a la llista de falsos amics de la viquipèdia (25/10/2015)
+## «Relevant» es tradueix per «Apropiat».
+#{\brelevants?\b}i
+#id="ff-relevant"
+#valid msgstr="apropiats?"
+#valid msgstr="aplicables?"
+#valid msgstr="pertinents?"
+#valid msgstr="importants?"
+#valid !msgstr="rellevants?"
+#hint="«Relevant» es tradueix per «Apropiat», no per «Rellevant» (fals amic)"
 
 # «Remove» es tradueix per «Eliminar».
 {\bremove\b}i
@@ -1072,12 +1078,14 @@ valid msgstr="satisfactoria?"
 valid !msgstr="succés"
 hint="«Success» es tradueix per «Éxit», no per «Succés» (fals amic)"
 
-# «Summary» es tradueix per «Resum».
-{\bsummary\b}i
-id="ff-summary"
-valid msgstr="resum"
-valid !msgstr="sumari"
-hint="«Summary» es tradueix per «Resum», no per «Sumari» (fals amic)"
+### Regla desactivada: «Sumari» pot ser una traducció adequada per "Summary", 
+### en funció del context. No apareix a la llista de falsos amics de la viquipèdia (25/10/2015)
+## «Summary» es tradueix per «Resum».
+#{\bsummary\b}i
+#id="ff-summary"
+#valid msgstr="resum"
+#valid !msgstr="sumari"
+#hint="«Summary» es tradueix per «Resum», no per «Sumari» (fals amic)"
 
 # «Support» es tradueix per «Recolzar».
 {\bsupport}i

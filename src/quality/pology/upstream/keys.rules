@@ -6,155 +6,405 @@
 # key names (nom de les tecles)
 # http://techbase.kde.org/Documentation_Primer/Manual/DocBook_Reference/GUI_elements
 
+# 06/07/2015: Added new validations from:
+# http://www.termcat.cat/docs/docs/LocalitzacioProductesInformatics.pdf
+# https://www.softcatala.org/wiki/Guia_d%27estil/Guia_2010/Tota#Tecles
+
+# Remove accelerators inside words.
+addFilterRegex match="(_|~|&)" on="pmsgid,pmsgstr"
+
 # Alt
-{(&Alt;|<key(cap|sym)>.?Alt.?</key(cap|sym)>)}
-valid msgstr="&Alt;" # <keycap>Alt</keycap>
-valid msgstr="<keycap>Alt</keycap>"
-hint="Es tradueix per «&Alt;, <keycap>Alt</keycap>» (keys)"
+{\bAlt\b}
+id="k-Alt-1"
+valid msgid="(\bAlt;|<key(cap|sym)?>.?Alt.?</key(cap|sym)?>)" # k-Alt-2
+valid msgstr="Alt"
+valid msgstr="(T|t)ecla d'alternativa"
+valid msgstr="alt." # Fals positiu
+hint="La tecla «Alt» es tradueix per «Alt»/«tecla d'alternativa» (keys)"
+
+{(\bAlt;|<key(cap|sym)?>.?Alt.?</key(cap|sym)?>)}
+id="k-Alt-2"
+valid msgstr="\bAlt;" # <keycap>Alt</keycap>
+valid msgstr="<key(cap)?>Alt</key(cap)?>"
+hint="Es tradueix per «&Alt;», «<key>Alt</key>(Gnome)/<keycap>Alt</keycap>(KDE)» (keys)"
+
+# Alt Gr
+{\bAlt\s?Gr\b}
+id="k-Alt_Gr" 
+valid msgstr="Alt Gr"
+valid msgstr="(T|t)ecla d'alternativa gràfica"
+hint="La tecla «Alt Gr» es tradueix per «Alt Gr»/«tecla d'alternativa gràfica» (keys)"
 
 # Backspace -> Retrocés
-{(&Backspace;|<key(cap|sym)>.?Backspace.?</key(cap|sym)>)}
-valid msgstr="&Retro;" # <keycap>Retrocés</keycap>
-valid msgstr="<keycap>Retrocés</keycap>"
-hint="Es tradueix per «&Retro;, <keycap>Retrocés</keycap>» (keys)"
+{\bBackspace\b}
+id="k-Backspace-1"
+valid msgid="(\bBackspace;|<key(cap|sym)?>.?Backspace.?</key(cap|sym)?>)" # k-Backspace-2
+valid msgstr="Retrocés"
+valid msgstr="(T|t)ecla de retrocés"
+valid msgstr="\bRetro;" # <keycap>Retrocés</keycap>
+hint="La tecla «Backspace» es tradueix per «Retrocés»/«tecla de retrocés» (keys)"
 
-# Caps Lock -> Bloq Maj
-{(<key(cap|sym)>)?.?Caps\sLock.?(</key(cap|sym)>)?}
-valid msgstr="<keycap>Bloq Majús\.</keycap>"
+{(\bBackspace;|<key(cap|sym)?>.?Backspace.?</key(cap|sym)?>)}
+id="k-Backspace-2"
+valid msgstr="\bRetro;" # <keycap>Retrocés</keycap>
+valid msgstr="<key(cap)?>Retrocés</key(cap)?>"
+hint="Es tradueix per «&Retro;», «<key>Retrocés</key>(Gnome)/<keycap>Retrocés</keycap>(KDE)» (keys)"
+
+# Break key: Break -> Interr
+{\bBreak\b}
+id="k-Break-1"
+valid msgstr="Interr"
+valid msgstr="(T|t)ecla d'interrupció"
+valid msgstr="(A|a)tura"            # Fals positiu
+valid msgstr="(D|d)escans"          # Fals positiu
+valid msgstr="(D|d)esglossament"   # Fals positiu
+valid msgstr="(D|d)ivi"             # Fals positiu
+valid msgstr="(E|e)ntra a la força" # Fals positiu
+valid msgstr="(E|e)scapa"           # Fals positiu
+valid msgstr="(F|f)orça"            # Fals positiu
+valid msgstr="partid(a|es)"         # Fals positiu
+valid msgstr="(S|s)alt"             # Fals positiu
+valid msgstr="(S|s)epara"           # Fals positiu
+valid msgstr="(T|t)ren(ca|queu)"    # Fals positiu
+hint="La tecla «Break» es tradueix per «Interr»/«tecla d'interrupció» (keys)"
+
+{(<key(cap|sym)>)?.?Caps\s?Lock.?(</key(cap|sym)>)?}
+id="k-Caps_Lock"
 valid msgstr="Bloq Maj" # A l'IGU
 valid msgstr="(B|b)loqueig de majúscules" # A l'IGU
-hint="Es tradueix per «Bloq Maj i bloqueig de majúscules (a l'IGU), <keycap>Bloq Majús.</keycap> (a la DOC)» (keys)"
+valid msgstr="(F|f)ixació de majúscules"  # A l'IGU
+valid msgstr="(T|t)ecla de bloqueig de majúscules"
+valid msgstr="(T|t)ecla de fixació de majúscules"
+valid msgstr="<key(cap)?>Bloq Maj</key(cap)?>"
+hint="Es tradueix per «Bloq Maj» o «tecla de bloqueig|fixació de majúscules» (keys)"
 
 # Ctrl
-{(&Ctrl;|<key(cap|sym)>.?Ctrl.?</key(cap|sym)>)}
-valid msgstr="&Ctrl;" # <keycap>Ctrl</keycap>
-valid msgstr="<keycap>Ctrl</keycap>"
-hint="Es tradueix per «&Ctrl;, <keycap>Ctrl</keycap>» (keys)"
+{\bCtrl\b}
+id="k-Ctrl-1"
+valid msgid="(\bCtrl;|<key(cap|sym)?>.?Ctrl.?</key(cap|sym)?>)" # k-Ctrl-2
+valid msgstr="Ctrl"
+valid msgstr="(T|t)ecla de control"
+hint="La tecla «Ctrl» es tradueix per «Ctrl»/«tecla de control» (keys)"
+
+{(\bCtrl;|<key(cap|sym)?>.?Ctrl.?</key(cap|sym)?>)}
+id="k-Ctrl-2"
+valid msgstr="\bCtrl;" # <keycap>Ctrl</keycap>
+valid msgstr="<key(cap)?>Ctrl</key(cap)?>"
+hint="Es tradueix per «&Ctrl;», «<key>Ctrl</key>(Gnome)/<keycap>Ctrl</keycap>(KDE)» (keys)"
 
 # Del -> Supr
-{<key(cap|sym)>.?Del(ete)?.?</key(cap|sym)>}
-valid msgstr="<keycap>Supr</keycap>"
-hint="Es tradueix per «<keycap>Supr</keycap>» (keys)"
+{\bDel\b}
+id="k-Del-1"
+valid msgid="<key(cap|sym)?>.?Del(ete)?.?</key(cap|sym)?>" # k-Del-2
+valid msgstr="Supr"
+valid msgstr="(T|t)ecla de supressió"
+valid msgstr="Del" before="\sRio" # Fals positiu
+hint="La tecla «Del» es tradueix per «Supr»/«tecla de supressió» (keys)"
+
+{<key(cap|sym)?>.?Del(ete)?.?</key(cap|sym)?>}
+id="k-Del-2"
+valid msgstr="<key(cap)?>Supr</key(cap)?>"
+hint="Es tradueix per «<key>Supr</key>(Gnome)/<keycap>Supr</keycap>(KDE)» (keys)"
 
 # End -> Fi
-{<key(cap|sym)>.?End.?</key(cap|sym)>}
-valid msgstr="<keycap>Fi</keycap>"
-hint="Es tradueix per «<keycap>Fi</keycap>» (keys)"
+{\bEnd\b}
+id="k-End-1"
+valid msgid="<key(cap|sym)?>.?End.?</key(cap|sym)?>" # k-End-2
+valid msgstr="Fi"
+valid msgstr="(T|t)ecla de final"
+valid msgstr="(A|a)caba"         # Fals positiu
+valid msgstr="(A|a)tura"         # Fals positiu
+valid msgstr="(D|d)arrer"        # Fals positiu
+valid msgstr="End"               # Fals positiu
+valid msgstr="(E|e)xtrem"        # Fals positiu
+valid msgstr="fi"                # Fals positiu
+valid msgstr="(F|f)inal"         # Fals positiu
+valid msgstr="(T|t)anca"         # Fals positiu
+valid msgstr="(T|t)ermina"       # Fals positiu
+valid after="(Back|Front)(-| )"  # Fals positiu
+valid after="Program "           # Fals positiu
+hint="La tecla «End» es tradueix per «Fi»/«tecla de final» (keys)"
 
-# Intro/Enter/Return -> Retorn
-{(&Enter;|<key(cap|sym)>.?(Enter|Return).?</key(cap|sym)>)}
-valid msgstr="&Intro;" # <keycap>Retorn</keycap>
-valid msgstr="<keycap>Retorn</keycap>"
-hint="Es tradueix per «&Intro;, <keycap>Retorn</keycap>» (keys)"
+{<key(cap|sym)?>.?End.?</key(cap|sym)?>}
+id="k-End-2"
+valid msgstr="<key(cap)?>Fi</key(cap)?>"
+hint="Es tradueix per «<key>Fi</key>(Gnome)/<keycap>Fi</keycap>(KDE)» (keys)"
+
+# Enter/Intro/Return -> Retorn
+{\b(Intro|Return)\b}
+#{\b(Enter|Intro|Return)\b} # S'elimina "Enter" per excés de falsos positius
+id="k-Enter-1"
+valid msgid="(\bEnter;|<key(cap|sym)?>.?(Enter|Return).?</key(cap|sym)?>)" # k-Enter-2
+valid msgstr="Retorn"
+valid msgstr="(T|t)ecla d'introducció"
+valid msgstr="(T|t)ecla de retorn"
+valid msgstr="devolució"         # Fals positiu
+valid msgstr="(I|i)ntroducció"   # Fals positiu
+valid msgstr="(I|i)ntroductori"  # Fals positiu
+valid msgstr="(I|i)ntroductòria" # Fals positiu
+valid msgstr="mostrar"           # Fals positiu
+valid msgstr="obté"              # Fals positiu
+valid msgstr="resposta"          # Fals positiu
+valid msgstr="retorn"            # Fals positiu
+valid msgstr="Return"            # Fals positiu
+valid msgstr="sortida"           # Fals positiu
+valid msgstr="(T|t)orn(a|eu|i)"  # Fals positiu
+valid msgstr="Intro;"           # <keycap>Retorn</keycap>
+hint="La tecla «Enter/Intro/Return» es tradueix per «Retorn»/«tecla de retorn o d'introducció» (keys)"
+
+{(\bEnter;|<key(cap|sym)?>.?(Enter|Return).?</key(cap|sym)?>)}
+id="k-Enter-2"
+valid msgstr="\bIntro;" # <keycap>Retorn</keycap>
+valid msgstr="<key(cap)?>Retorn</key(cap)?>"
+hint="Es tradueix per «&Intro;», «<key>Retorn</key>(Gnome)/<keycap>Retorn</keycap>(KDE)» (keys)"
 
 # Esc
-{(&Esc;|<key(cap|sym)>.?Esc.?</key(cap|sym)>)}
-valid msgstr="&Esc;" # <keycap>Esc</keycap>
-valid msgstr="<keycap>Esc</keycap>"
-hint="Es tradueix per «&Esc;, <keycap>Esc</keycap>» (keys)"
+{\bEsc\b}
+id="k-Esc-1"
+valid msgid="(\bEsc;|<key(cap|sym)?>.?Esc.?</key(cap|sym)?>)" # k-Esc-2
+valid msgstr="Esc"
+valid msgstr="(T|t)ecla d'escapada"
+hint="La tecla «Esc» es tradueix per «Esc»/«tecla d'escapada» (keys)"
 
-# Home -> Inici
-{<key(cap|sym)>.?Home.?</key(cap|sym)>}
-valid msgstr="<keycap>Inici</keycap>"
-hint="Es tradueix per «<keycap>Inici</keycap>» (keys)"
+{(\bEsc;|<key(cap|sym)?>.?Esc.?</key(cap|sym)?>)}
+id="k-Esc-2"
+valid msgstr="Esc;" # <keycap>Esc</keycap>
+valid msgstr="<key(cap)?>Esc</key(cap)?>"
+hint="Es tradueix per «&Esc;», «<key>Esc</key>(Gnome)/<keycap>Esc</keycap>(KDE)» (keys)"
+
+# Ajustada per excés de falsos positius (només es valida per "Home key")
+# Home key -> Tecla d'inici
+{\bHome\s(K|k)ey\b}
+id="k-Home-1"
+valid msgid="<key(cap|sym)?>.?Home.?</key(cap|sym)?>" # k-Home-2
+#valid msgstr="Inici"
+valid msgstr="(T|t)ecla d'inici"
+hint="La tecla «Home» es tradueix per «Inici»/«tecla d'inici» (keys)"
+
+{<key(cap|sym)?>.?Home.?</key(cap|sym)?>}
+id="k-Home-2"
+valid msgstr="<key(cap)?>Inici</key(cap)?>"
+hint="Es tradueix per «<key>Inici</key>(Gnome)/<keycap>Inici</keycap>(KDE)» (keys)"
 
 # Ins -> Insert
-{<key(cap|sym)>.?Ins(ert)?.?</key(cap|sym)>}
-valid msgstr="<keycap>Insert</keycap>"
-hint="Es tradueix per «<keycap>Insert</keycap>» (keys)"
+{\bIns\b}
+id="k-Ins-1"
+valid msgid="<key(cap|sym)?>.?Ins(ert)?.?</key(cap|sym)?>" # k-Ins-2
+valid msgstr="Inser"
+valid msgstr="(T|t)ecla d'inserció"
+valid msgstr="complement" after="Add-"     # Fals positiu
+valid msgstr="(C|c)onnector" after="Plug-" # Fals positiu
+hint="La tecla «Ins» es tradueix per «Inser»/«tecla d'inserció» (keys)"
 
-# Shift -> Majús.
-{(&Shift;|<key(cap|sym)>.?Shift.?</key(cap|sym)>)}
-valid msgstr="&Maj;" # <keycap>Majús.</keycap>
-valid msgstr="<keycap>Majús.</keycap>"
-hint="Es tradueix per «&Maj;, <keycap>Majús.</keycap>» (keys)"
+{<key(cap|sym)?>.?Ins(ert)?.?</key(cap|sym)?>}
+id="k-Ins-2"
+valid msgstr="<key(cap)?>Inser</key(cap)?>"
+hint="Es tradueix per «<key>Inser</key>(Gnome)/<keycap>Inser</keycap>(KDE)» (keys)"
+
+# Num Lock -> Bloq Núm
+{\bNum\s?Lock\b}
+id="k-Num_Lock"
+valid msgstr="Bloq Núm"
+valid msgstr="(T|t)ecla de bloqueig de teclat numèric"
+valid msgstr="(T|t)ecla de fixació de teclat numèric"
+hint="La tecla «Num Lock» es tradueix per «Bloq Núm»/«tecla de bloqueig|fixació de teclat numèric» (keys)"
+
+# Ajustada per excés de falsos positius (només es valida per "Pause key")
+# Pause key -> Tecla de pausa
+{\bPause\s(K|k)ey\b}
+id="k-Pause"
+#valid msgstr="Pausa"
+valid msgstr="(T|t)ecla de pausa"
+hint="La tecla «Pause» es tradueix per «Pausa»/«tecla de pausa» (keys)"
+
+# Page Down/Pg Dn -> Av Pàg
+{\b(Page\s?Down|Pg\s?Dn)\b}
+id="k-PageDown-1"
+valid msgid="(<key(cap|sym)?>).?(Page.?Down|PgDown).?(</key(cap|sym)?>)" # k-PageDown-2
+valid msgstr="Av Pàg"
+valid msgstr="(T|t)ecla d'avançar pàgina"
+valid msgstr="(A|a)vançar pàgina"
+valid msgstr="fi de la pàgina"         # Fals positiu
+hint="La tecla «Page Down/Pg Dn» es tradueix per «Av Pàg»/«tecla d'avançar pàgina» (keys)"
+
+# Page Down -> Av Pàg
+{(<key(cap|sym)?>).?(Page.?Down|PgDown).?(</key(cap|sym)?>)}
+id="k-PageDown-2"
+valid msgstr="<key(cap)?>Av Pàg</key(cap)?>" 
+hint="Es tradueix per «Av Pàg», «<key>Av Pàg</key>(Gnome)/<keycap>Av Pàg</keycap>(KDE)» (keys)"
+
+# Page Up/Pg Up -> Re Pàg
+{\b(Page\s?Up|Pg\s?Up)\b}
+id="k-PageUp-1"
+valid msgid="(<key(cap|sym)?>).?(Page.?Up|PgUp).?(</key(cap|sym)?>)" # k-PageUp-2
+valid msgstr="Re Pàg"
+valid msgstr="(T|t)ecla de retrocedir pàgina"
+valid msgstr="(R|r)etrocedir pàgina"
+valid msgstr="principi de la pàgina"         # Fals positiu
+hint="La tecla «Page Up/Pg Up» es tradueix per «Re Pàg»/«tecla de retrocedir pàgina» (keys)"
+
+# Page Up -> Re Pàg
+{(<key(cap|sym)?>).?(Page.?Up|PgUp).?(</key(cap|sym)?>)}
+id="k-PageUp-2"
+valid msgstr="<key(cap)?>Re Pàg</key(cap)?>"
+hint="Es tradueix per «Re Pàg», «<key>Re Pàg</key>(Gnome)/<keycap>Re Pàg</keycap>(KDE)»» (keys)"
+
+# Print Screen/Prt Scr -> Impr Pant
+{\b(Print\s?Screen|Prt\s?Scr)\b}
+id="k-Print_Screen"
+valid msgstr="Impr Pant"
+valid msgstr="(T|t)ecla d'impressió de pantalla"
+hint="La tecla «Print Screen/Prt Scr» es tradueix per «Impr Pant»/«tecla d'impressió de pantalla» (keys)"
+
+# Scroll Lock -> Bloq Despl
+{\bScroll\s?Lock\b}
+id="k-ScrollLock"
+valid msgstr="Bloq Despl"
+valid msgstr="(T|t)ecla de bloqueig de desplaçament"
+valid msgstr="(T|t)ecla de fixació de desplaçament"
+hint="La tecla «Scroll Lock» es tradueix per «Bloq Despl» /«tecla de bloqueig|fixació de desplaçament» (keys)"
+
+# Shift -> Maj
+{\bShift\b}
+id="k-Shift-1"
+valid msgid="(\bShift;|<key(cap|sym)?>.?Shift.?</key(cap|sym)?>)" # k-Shift-2
+valid msgstr="Maj"
+valid msgstr="(T|t)ecla de majúscules"
+valid msgstr="(C|c)anvi"                   # Fals positiu
+valid msgstr="Cap"                         # Fals positiu
+valid msgstr="(D|d)ecala"                  # Fals positiu
+valid msgstr="(D|d)espla(ça|ceu)"          # Fals positiu
+valid msgstr="Mou"                         # Fals positiu
+valid msgstr="Recarregui" before="-reload" # Fals positiu
+valid msgstr="Shift" after="Time "         # Fals positiu
+valid msgstr="Shift" before="-JIS"         # Fals positiu
+valid msgstr="torn"                        # Fals positiu
+hint="La tecla «Shift» es tradueix per «Maj»/«tecla de majúscules» (keys)"
+
+{(\bShift;|<key(cap|sym)?>.?Shift.?</key(cap|sym)?>)}
+id="k-Shift-2"
+valid msgstr="\bMaj;" # <keycap>Majús.</keycap>
+valid msgstr="<key(cap)?>Maj</key(cap)?>" 
+hint="Es tradueix per «&Maj;», «<key>Maj</key>(Gnome)/<keycap>Maj</keycap>(KDE)» (keys)"
 
 # Space -> Espai
-{<key(cap|sym)>.?Space(\s?-?bar)?.?</key(cap|sym)>}
-valid msgstr="<keycap>Espai</keycap>"
-hint="Es tradueix per «<keycap>Espai</keycap>» (keys)"
+{<key(cap|sym)?>.?Space(\s?-?bar)?.?</key(cap|sym)?>}
+id="k-Space"
+valid msgstr="<key(cap)?>Espai</key(cap)?>"
+hint="Es tradueix per «<key>Espai</key>(Gnome)/<keycap>Espai</keycap>(KDE)» (keys)"
 
 # Start -> Inici
-{<key(cap|sym)>.?Start.?</key(cap|sym)>}
-valid msgstr="<keycap>Inici</keycap>"
-hint="Es tradueix per «<keycap>Inici</keycap>» (keys)"
+{<key(cap|sym)?>.?Start.?</key(cap|sym)?>}
+id="k-Start"
+valid msgstr="<key(cap)?>Inici</key(cap)?>"
+hint="Es tradueix per «<key>Inici</key>(Gnome)/<keycap>Inici</keycap>(KDE)» (keys)"
 
-# Tab -> Tabulador
-{(&Tab;|<key(cap|sym)>.?Tab.?</key(cap|sym)>|TAB\skey)}
-valid msgstr="&Tab;" # <keycap>Tabulador</keycap>
-valid msgstr="<keycap>Tabulador</keycap>"
-valid msgstr="tecla &Tab;" # a la doc
-valid msgstr="tecla Tab" # a l'IGU
-hint="Es tradueix per «&Tab;, tecla &Tab;, <keycap>Tabulador</keycap>» (keys)"
+# Tab -> Tab
+{\b(Tab|TAB\skey)\b}
+id="k-Tab-1"
+valid msgid="(\bTab;|<key(cap|sym)?>.?Tab.?</key(cap|sym)?>)" # k-Tab-2
+valid msgstr="Tab"
+valid msgstr="(T|t)ecla de tabulació"
+valid msgstr="(P|p)estany(a|es)" # Fals positiu
+valid msgstr="(T|t)abloide"      # Fals positiu
+valid msgstr="(T|t)abula(ci|do)" # Fals positiu
+hint="La tecla «Tab» es tradueix per «Tab»/«tecla de tabulació» (keys)"
 
-# Arrow keys
-# Page Down -> Av. Pàg.
-{(<key(cap|sym)>).?(Page.?Down|PgDown).?(</key(cap|sym))>}
-valid msgstr="<keycap>Av. Pàg.</keycap>"
-valid msgstr="AvPàg" # A l'IGU
-hint="Es tradueix per «AvPàg (a l'IGU), <keycap>Av. Pàg.</keycap> (a la DOC)» (keys)"
+{(\bTab;|<key(cap|sym)?>.?Tab.?</key(cap|sym)?>)}
+id="k-Tab-2"
+valid msgstr="\bTab;" # <keycap>Tab</keycap>
+valid msgstr="(T|t)ecla Tab;" # a la doc
+valid msgstr="(T|t)ecla Tab" # a l'IGU
+valid msgstr="<key(cap)?>Tab</key(cap)?>"
+hint="Es tradueix per «&Tab;», «tecla &Tab;», «<key>Tab</key>(Gnome/<keycap>Tab</keycap>(KDE)» (keys)"
 
-# Page Up -> Re. Pàg.
-{(<key(cap|sym)>).?(Page.?Up|PgUp).?(</key(cap|sym))>}
-valid msgstr="<keycap>Re. Pàg.</keycap>"
-valid msgstr="RePàg" # A l'IGU
-hint="Es tradueix per «RePàg (a l'IGU), <keycap>Re. Pàg.</keycap> (a la DOC)» (keys)"
+# Other keys: -----------------------------------------------------------------
+
+# minus key
+{\b(M|m)inus\skey\b}
+id="k-Minus"
+valid msgstr="-"
+valid msgstr="(T|t)ecla de menys"
+hint="Es tradueix per «-»/«tecla de menys» (keys)"
+
+# plus key
+{\b(P|p)lus\skey\b}
+id="k-Plus"
+valid msgstr="\+"
+valid msgstr="(T|t)ecla de més"
+hint="Es tradueix per «+»/«tecla de més» (keys)"
+
+# backslash key
+{\b(B|b)ackslash\skey\b}
+id="k-Backslash"
+valid msgstr="\\"
+valid msgstr="(T|t)ecla de barra inversa"
+hint="Es tradueix per «\» o «tecla de barra inversa» (keys)"
+
+# forward slash key
+{\b((F|f)orward\s)?slash\skey\b}
+id="k-Forwardslash"
+valid msgstr="/"
+valid msgstr="(T|t)ecla de barra inclinada"
+hint="Es tradueix per «/» o «tecla de barra inclinada» (keys)"
 
 # Cursor keys
-# Down Arrow -> Cursor avall
-{<key(cap|sym)>.?Down(\sArrow)?.?</key(cap|sym)>}
-valid msgstr="<keysym>Cursor avall</keysym>"
-valid msgstr="<keysym>Amunt</keysym> i <keysym>Avall</keysym>"
-valid msgstr="Cursor <keysym>Avall</keysym>/<keysym>Dret</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+# Down Arrow -> Fletxa avall
+{<key(cap|sym)?>.?Down(\sArrow)?.?</key(cap|sym)?>}
+id="k-DownArrow"
+valid msgstr="<key(sym)?>Fletxa avall</key(sym)?>"
 valid msgstr="fletxa avall" # A l'IGU
-hint="Es tradueix per «fletxa avall (a l'IGU), <keysym>Cursor avall</keysym>|<keysym>Amunt</keysym> i <keysym>Avall</keysym> (a la DOC)» (keys)"
+hint="Es tradueix per «fletxa avall», «<key>Fletxa avall</key>(Gnome)/<keysym>Fletxa avall</keysym>(KDE)» (keys)"
 
-# Up Arrow -> Cursor amunt
-{<key(cap|sym)>.?Up(\sArrow)?.?</key(cap|sym)>}
-valid msgstr="<keysym>Cursor amunt</keysym>"
-valid msgstr="<keysym>Amunt</keysym> i <keysym>Avall</keysym>"
-valid msgstr="Cursor <keysym>Amunt</keysym>/<keysym>Esquerre</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+# Up Arrow -> Fletxa amunt
+{<key(cap|sym)?>.?Up(\sArrow)?.?</key(cap|sym)?>}
+id="k-UpArrow"
+valid msgstr="<key(sym)?>Fletxa amunt</key(sym)?>"
 valid msgstr="fletxa amunt" # A l'IGU
-hint="Es tradueix per «fletxa amunt (a l'IGU), <keysym>Cursor amunt</keysym>|<keysym>Amunt</keysym> i <keysym>Avall</keysym> (a la DOC)» (keys)"
+hint="Es tradueix per «fletxa amunt», «<key>Fletxa amunt</key>(Gnome)/<keysym>Fletxa amunt</keysym>(KDE)» (keys)"
 
-# Left Arrow -> Cursor esquerre
-{<key(cap|sym)>.?Left(\sArrow)?.?</key(cap|sym)>}
-valid msgstr="<keysym>Cursor esquerre</keysym>"
-valid msgstr="<keysym>Esquerre</keysym> i <keysym>Dret</keysym>"
-valid msgstr="Cursor <keysym>Amunt</keysym>/<keysym>Esquerre</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+# Left Arrow -> Fletxa esquerra
+{<key(cap|sym)?>.?Left(\sArrow)?.?</key(cap|sym)?>}
+id="k-LeftArrow"
+valid msgstr="<key(sym)?>Fletxa esquerra</key(sym)?>"
 valid msgstr="fletxa esquerra" # A l'IGU
-hint="Es tradueix per «fletxa esquerra (a l'IGU), <keysym>Cursor esquerre</keysym>|<keysym>Esquerre</keysym> i <keysym>Dret</keysym> (a la DOC)» (keys)"
+hint="Es tradueix per «fletxa esquerra», «<key>Fletxa esquerra</key>(Gnome)/<keysym>Fletxa esquerra</keysym>(KDE)» (keys)"
 
-# Right Arrow -> Cursor dret
-{<key(cap|sym)>.?Right(\sArrow)?.?</key(cap|sym)>}
-valid msgstr="<keysym>Cursor dret</keysym>"
-valid msgstr="<keysym>Esquerre</keysym> i <keysym>Dret</keysym>"
-valid msgstr="Cursor <keysym>Avall</keysym>/<keysym>Dret</keysym>" cat="kipi-plugins_imageviewer" # docmessages
+# Right Arrow -> Fletxa dreta
+{<key(cap|sym)?>.?Right(\sArrow)?.?</key(cap|sym)?>}
+id="k-RightArrow"
+valid msgstr="<key(sym)?>Fletxa dreta</key(sym)?>"
 valid msgstr="fletxa dreta" # A l'IGU
-hint="Es tradueix per «fletxa dreta (a l'IGU), <keysym>Cursor dret</keysym>, <keysym>Esquerre</keysym> i <keysym>Dret</keysym> (a la DOC)» (keys)"
+hint="Es tradueix per «fletxa dreta», «<key>Fletxa dreta</key>(Gnome)/<keysym>Fletxa dreta</keysym>(KDE)» (keys)"
 
 # Meta keys
 # Unix
-{(&Meta;|<key(cap|sym)>.?Meta.?</key(cap|sym)>)}
-valid msgstr="&Meta;"
-valid msgstr="<keysym>Meta</keysym>"
-hint="Es tradueix per «&Meta;, <keysym>Meta</keysym>» (keys)"
+{(\bMeta;|<key(cap|sym)?>.?Meta.?</key(cap|sym)?>)}
+id="k-Meta"
+valid msgstr="\bMeta;"
+valid msgstr="<key(sym)?>Meta</key(sym)?>"
+hint="Es tradueix per «&Meta;», «<key>Meta</key>(Gnome)/<keysym>Meta</keysym>(KDE)» (keys)"
+
 # logotip -diamant-
-{<key(cap|sym)>.?◆.?</key(cap|sym)>}
-valid msgstr="<keycap>◆</keycap>"
-hint="Es tradueix per «<keycap>◆</keycap>» (keys)"
+{<key(cap|sym)?>.?◆.?</key(cap|sym)?>}
+id="k-logoMeta"
+valid msgstr="<key(cap)?>◆</key(cap)?>"
+hint="Es tradueix per «<key>◆</key>(Gnome)/<keycap>◆</keycap>(KDE)» (keys)"
 
 # Windows
-{<key(cap|sym)>.?Windows.?</key(cap|sym)>}
-valid msgstr="<keysym>Windows</keysym>"
-hint="Es tradueix per «<keysym>Windows</keysym>» (keys)"
+{<key(cap|sym)?>.?Windows.?</key(cap|sym)?>}
+id="k-Windows"
+valid msgstr="<key(sym)?>Windows</key(sym)?>"
+hint="Es tradueix per «<key>Windows</key>(Gnome)/<keysym>Windows</keysym>» (keys)"
 
 # Mac
-{<key(cap|sym)>.?Command.?</key(cap|sym)>}
-valid msgstr="<keysym>Command</keysym>"
-hint="Es tradueix per «<keysym>Command</keysym>» (keys)"
+{<key(cap|sym)?>.?Command.?</key(cap|sym)?>}
+id="k-Mac"
+valid msgstr="<key(sym)?>Ordre</key(sym)?>"
+hint="Es tradueix per «<key>Ordre</key>(Gnome)/<keysym>Ordre</keysym>(KDE)» (keys)"
+
 # logotip -símbol-
 {<key(cap|sym)>.?⌘.?</key(cap|sym)>}
-valid msgstr="<keycap>⌘</keycap>"
-hint="Es tradueix per «<keycap>⌘</keycap>» (keys)"
-
+id="k-logoMac"
+valid msgstr="<key(cap)?>⌘</key(cap)?>"
+hint="Es tradueix per «<key>⌘</key>(Gnome)/<keycap>⌘</keycap>(KDE)» (keys)"
