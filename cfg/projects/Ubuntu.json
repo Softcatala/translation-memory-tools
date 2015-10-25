@@ -4,22 +4,22 @@
     "softcatala": true, 
     "fileset": {
         "ubuntu-software-center": {
-            "url": "lp:ubuntu/software-center/po/ca.po", 
+            "url": "lp:~ubuntuone-control-tower/software-center/trunk/po/ca.po", 
             "type": "bazaar", 
             "target": "ca.po"
         }, 
         "ubuntu-update-manager": {
-            "url": "lp:ubuntu/update-manager/po/ca.po", 
+            "url": "lp:~ubuntu-core-dev/update-manager/main/po/ca.po", 
             "type": "bazaar", 
             "target": "ca.po"
         }, 
         "ubuntu-release-upgrader": {
-            "url": "lp:ubuntu/ubuntu-release-upgrader/po/ca.po", 
+            "url": "lp:~ubuntu-core-dev/ubuntu-release-upgrader/trunk/po/ca.po", 
             "type": "bazaar", 
             "target": "ca.po"
         }, 
         "ubuntuone-control-panel": {
-            "url": "lp:ubuntu/ubuntuone-control-panel/po/ca.po", 
+            "url": "lp:~ubuntuone-control-tower/ubuntuone-control-panel/trunk/po/ca.po", 
             "type": "bazaar", 
             "target": "ca.po"
         }, 
@@ -29,12 +29,12 @@
             "target": "ca.po"
         }, 
         "unity-control-center": {
-            "url": "lp:ubuntu/unity-control-center/po/ca.po", 
+            "url": "lp:~unity-control-center-team/unity-control-center/trunk/po/ca.po",
             "type": "bazaar", 
             "target": "ca.po"
         }, 
         "unity": {
-            "url": "lp:~unity-team/unity/8.0/view/head:/po/ca.po", 
+            "url": "lp:~unity-team/unity/8.0/po/ca.po",
             "type": "bazaar", 
             "target": "ca.po"
         }
