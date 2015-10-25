@@ -1,0 +1,36 @@
+{
+    "project": "ElementaryOS", 
+    "projectweb": "https://elementary.io/ca/", 
+    "fileset": {
+        "noise": {
+            "url": "lp:~elementary-apps/noise/trunk/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "pantheon-files": {
+            "url": "lp:~elementary-apps/pantheon-files/trunk/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "midori": {
+            "url": "lp:~midori/midori/trunk/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "gala": {
+            "url": "lp:~gala-dev/gala/trunk/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "scratch": {
+            "url": "lp:~elementary-apps/scratch/scratch/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        },
+        "pantheon-photos": {
+            "url": "lp:~pantheon-photos/pantheon-photos/trunk/po/ca.po", 
+            "type": "bazaar", 
+            "target": "ca.po"
+        }
+    }
+}
