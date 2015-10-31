@@ -1,0 +1,10 @@
+{
+    "project": "Widelands", 
+    "projectweb": "https://wl.widelands.org/",
+    "fileset": {
+        "Widelands": {
+            "url": "https://www.transifex.com/projects/p/widelands/", 
+            "type": "transifex"
+        }
+    }
+}

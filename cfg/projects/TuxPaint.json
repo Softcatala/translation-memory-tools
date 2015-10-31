@@ -1,7 +1,6 @@
 {
     "project": "TuxPaint", 
-    "projectweb": "http://www.tuxpaint.org/", 
-    "softcatala": true, 
+    "projectweb": "http://www.tuxpaint.org/",
     "fileset": {
         "tuxpaint": {
             "url": "http://tuxpaint.cvs.sourceforge.net/viewvc/tuxpaint/tuxpaint/src/po/ca.po",  
