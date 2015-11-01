@@ -30,7 +30,7 @@
             "target": "thunderbird.zip"
         }, 
         "mozilla.org-web": {
-            "url": "://mozilla.locamotion.org/export/?path=/ca/mozilla_lang", 
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/mozilla_lang", 
             "type": "compressed", 
             "target": "webparts.zip"
         }, 
