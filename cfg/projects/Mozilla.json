@@ -29,6 +29,11 @@
             "type": "compressed", 
             "target": "thunderbird.zip"
         }, 
+        "mozilla.org-web": {
+            "url": "://mozilla.locamotion.org/export/?path=/ca/mozilla_lang", 
+            "type": "compressed", 
+            "target": "webparts.zip"
+        }, 
         "mozilla-addons": {
             "url": "http://localize.mozilla.org/ca/amo/export/zip", 
             "type": "compressed", 
