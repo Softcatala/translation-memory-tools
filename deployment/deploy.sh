@@ -118,7 +118,7 @@ restart_appserver
 INTERMEDIATE_PO=$ROOT/translation-memories/po
 BACKUP_DIR=$ROOT/previous
 cd $ROOT/tm-git/src/builder
-pwd
-python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO 
+python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO
+cat builder-error.log
 
 echo "Deployment completed $ROOT $TARGET_DIR"

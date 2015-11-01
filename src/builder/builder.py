@@ -33,9 +33,13 @@ projects = Projects()
 
 def init_logging():
     logfile = 'builder.log'
+    logfile_error = 'builder-error.log'
 
     if os.path.isfile(logfile):
         os.remove(logfile)
+
+    if os.path.isfile(logfile_error):
+        os.remove(logfile_error)
 
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     logger = logging.getLogger('')
@@ -43,6 +47,11 @@ def init_logging():
     console.setLevel(logging.INFO)
     logger.addHandler(console)
 
+    fh = logging.FileHandler(logfile_error)
+    fh.setLevel(logging.ERROR)
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
 
 def read_parameters():
     parser = OptionParser()
