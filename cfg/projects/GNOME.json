@@ -12,22 +12,12 @@
             "url": "https://l10n.gnome.org/languages/ca/gnome-3-20/doc.tar.gz", 
             "type": "compressed", 
             "target": "gnome-doc.tar.gz"
-        }, 
-        "gnome-office": {
-            "url": "http://l10n.gnome.org/languages/ca/gnome-office/ui.tar.gz", 
-            "type": "compressed", 
-            "target": "gnome-office.tar.gz"
-        }, 
+        },
         "gnome-extras": {
             "url": "http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz", 
             "type": "compressed", 
             "target": "gnome-extras.tar.gz"
-        }, 
-        "gnome-external": {
-            "url": "http://l10n.gnome.org/languages/ca/external-deps/ui.tar.gz", 
-            "type": "compressed", 
-            "target": "gnome-external.tar.gz"
-        }, 
+        },
         "gnome-infrastructure": {
             "url": "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz", 
             "type": "compressed", 
