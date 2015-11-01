@@ -33,10 +33,15 @@ class DownloadFile(object):
                 print ("Error on urlopen_with_retry: " + str(e))
 
     def get_file(self, url, filename):
-        msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
-        logging.info(msg)
+        try:
+            msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
+            logging.info(msg)
 
-        infile = self.urlopen_with_retry(url)
-        output = open(filename, 'wb')
-        output.write(infile.read())
-        output.close()
+            infile = self.urlopen_with_retry(url)
+            output = open(filename, 'wb')
+            output.write(infile.read())
+            output.close()
+        except Exception as e:
+            msg = 'Error downloading file \'{0}\' to {1}'.format(url, filename)
+            logging.error(msg)
+    
