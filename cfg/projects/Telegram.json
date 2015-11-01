@@ -1,11 +1,17 @@
 {
     "project": "Telegram", 
-    "comment": "The string Conversation.Download is incorrectly duplicated and not all strings are processed", 
     "fileset": {
-        "telegram": {
-            "url": "https://www.transifex.com/projects/p/telegram", 
+        "desktop": {
+            "url": "https://www.transifex.com/projects/p/telegram-web", 
+            "type": "transifex"
+        },
+        "iphone": {
+            "url": "https://www.transifex.com/projects/p/iphone-1", 
+            "type": "transifex"
+        },
+        "OSX": {
+            "url": "https://www.transifex.com/projects/p/osx", 
             "type": "transifex"
         }
-    }, 
-    "disabled": true
+    } 
 }
