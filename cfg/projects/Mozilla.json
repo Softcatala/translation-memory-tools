@@ -39,35 +39,60 @@
             "type": "compressed", 
             "target": "add-ons.zip"
         }, 
-        "browserid": {
-            "url": "http://localize.mozilla.org/ca/browserid/export/zip", 
+        "findmydevice": {
+            "url": "http://localize.mozilla.org/ca/findmydevice/export/zip", 
             "type": "compressed", 
-            "target": "browserid.zip"
+            "target": "findmydevice.zip"
+        }, 
+        "firefox-accounts": {
+            "url": "http://localize.mozilla.org/ca/accounts/export/zip", 
+            "type": "compressed", 
+            "target": "accounts.zip"
+        }, 
+        "firefox-payments": {
+            "url": "http://localize.mozilla.org/ca/payments/export/zip", 
+            "type": "compressed", 
+            "target": "payments.zip"
+        }, 
+        "firefox-hello": {
+            "url": "http://localize.mozilla.org/ca/loop/export/zip", 
+            "type": "compressed", 
+            "target": "loop.zip"
         }, 
         "firefox-input": {
             "url": "http://localize.mozilla.org/ca/input/export/zip", 
             "type": "compressed", 
             "target": "input.zip"
         }, 
-        "commbadge": {
+        "marketplace": {
+            "url": "http://localize.mozilla.org/ca/marketplace/export/zip", 
+            "type": "compressed", 
+            "target": "marketplace.zip"
+        }, 
+        "marketplace-commbadge": {
             "url": "http://localize.mozilla.org/ca/commbadge/export/zip", 
             "type": "compressed", 
             "target": "commbadge.zip"
         }, 
-        "fireplace": {
+        "marketplace-fireplace": {
             "url": "http://localize.mozilla.org/ca/fireplace/export/zip", 
             "type": "compressed", 
             "target": "fireplace.zip"
         }, 
-        "rocketfuel": {
-            "url": "http://localize.mozilla.org/ca/rocketfuel/export/zip", 
+        "marketplace-spartacus": {
+            "url": "http://localize.mozilla.org/ca/spartacus/export/zip", 
             "type": "compressed", 
-            "target": "rocketfuel.zip"
+            "target": "spartacus.zip"
         }, 
-        "webpay": {
-            "url": "http://localize.mozilla.org/ca/webpay/export/zip", 
+        "marketplace-stats": {
+            "url": "http://localize.mozilla.org/ca/marketplace_stats/export/zip", 
             "type": "compressed", 
-            "target": "webpay.zip"
+            "target": "marketplace_stats.zip"
+        }, 
+        "marketplace-zippy": {
+            "url": "http://localize.mozilla.org/ca/zippy/export/zip", 
+            "type": "compressed", 
+            "target": "zippy.zip"
         }, 
         "mozillians": {
             "url": "http://localize.mozilla.org/ca/mozillians/export/zip", 
