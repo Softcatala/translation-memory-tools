@@ -41,6 +41,7 @@ class FileSet():
         self.excluded = []
         self.po_catalog = None
         self.output_dir = self.output_dir + "/" + project_name.lower() + "/" + name.lower()
+        self.words = -1
 
     def set_checksum(self, checksum):
         self.checksum = checksum
@@ -71,6 +72,8 @@ class FileSet():
             else:
                 msg = 'Source: {0} from project \'{1} - {2}\'' \
                     .format(relative, self.project_name, self.name)
+
+            self.words += pofile.get_statistics()
 
             pofile.add_comment_to_all_entries(msg)
             pofile.calculate_localized_string_checksum(self.checksum)

@@ -151,6 +151,10 @@ class Project(object):
                 fileset.set_add_source(self.add_source)
                 fileset.do_withtemp()
 
+                if fileset.words <= 0:
+                    logging.error('Project {0}, fileset {1}, words {2}'.format(
+                                self.name, fileset.name, fileset.words))
+
             except Exception as detail:
                 msg = 'Project.do. Cannot complete project {0}, fileset {1}'. \
                       format(self.name, fileset.name)

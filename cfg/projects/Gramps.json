@@ -3,7 +3,7 @@
     "projectweb": "https://gramps-project.org/", 
     "fileset": {
         "Gramps": {
-            "url": "http://sourceforge.net/p/gramps/source/ci/master/tree/po/ca.po?format=raw", 
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps/master/po/ca.po", 
             "type": "file", 
             "target": "ca.po"
         }

@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import shutil
-
+import logging
 import polib
 
 
@@ -40,8 +40,7 @@ class POFile(object):
 
             input_po.save(self.filename)
         except Exception as detail:
-            print("POFile.add_comment_to_all_entries " + self.filename)
-            print(detail)
+            logging.error("POFile.add_comment_to_all_entries " + self.filename)
 
     def calculate_localized_string_checksum(self, checksum):
         try:
@@ -51,8 +50,7 @@ class POFile(object):
                 # sequence of bytes in a str object
                 checksum.update(entry.msgstr.encode('utf-8'))
         except Exception as detail:
-            print("POFile.get_checksum exception " + self.filename)
-            print(detail)
+            logging.error("POFile.get_checksum exception " + self.filename)
 
     def get_statistics(self):
         words = 0
@@ -63,7 +61,6 @@ class POFile(object):
                 string_words = entry.msgstr.split(' ')
                 words += len(string_words)
         except Exception as detail:
-            print("POFile.get_statistics exception " + self.filename)
-            print(detail)
+            logging.error("POFile.get_statistics exception " + self.filename)
         finally:
             return words
