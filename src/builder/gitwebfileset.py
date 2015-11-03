@@ -67,4 +67,5 @@ class GitWebFileSet(FileSet):
             logging.debug("Gitweb adding {0}-{1}".format(self.project_name, name))
             self.project.add(fileset)
 
+        self.project.report_errors = False
         self.project.do()
