@@ -44,6 +44,7 @@ class Project(object):
         self.filesets = []
         self.name = name
         self.checksum = None
+        self.report_errors = True
 
     def get_filename(self):
         return self.filename
@@ -151,7 +152,7 @@ class Project(object):
                 fileset.set_add_source(self.add_source)
                 fileset.do_withtemp()
 
-                if fileset.words <= 0:
+                if self.report_errors is True and fileset.words <= 0:
                     logging.error('Project {0}, fileset {1}, words {2}'.format(
                                 self.name, fileset.name, fileset.words))
 
