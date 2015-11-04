@@ -5,11 +5,7 @@
         "yast": {
             "url": "https://svn.opensuse.org/svn/opensuse-i18n/trunk/yast/ca/po", 
             "type": "subversion"
-        }, 
-        "webyast": {
-            "url": "https://svn.opensuse.org/svn/opensuse-i18n/trunk/webyast/ca/po", 
-            "type": "subversion"
-        }, 
+        },
         "lcn": {
             "url": "https://svn.opensuse.org/svn/opensuse-i18n/trunk/lcn/ca/po", 
             "type": "subversion"
