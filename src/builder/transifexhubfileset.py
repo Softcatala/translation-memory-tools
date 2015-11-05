@@ -167,6 +167,7 @@ class TransifexHubFileSet(FileSet):
                 self.project.add(fileset)
 
             # All the new filesets have been added re-process project now
+            self.project.report_errors = False
             self.project.do()
         except Exception as detail:
             print(detail)
