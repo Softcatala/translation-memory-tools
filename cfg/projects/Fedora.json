@@ -309,7 +309,7 @@
             "target": "ca.po"
         },
          "libdvbv5": {
-            "url": "https://fedora.zanata.org/rest/file/translation/v4l-utils/rawhide/ca/po?docId=libdvbv5",
+            "url": "https://fedora.zanata.org/rest/file/translation/v4l-utils/1.8.1/ca/po?docId=libdvbv5",
             "type": "file",
             "target": "ca.po"
         },
@@ -339,7 +339,7 @@
             "target": "ca.po"
         },
         "v4l-utils": {
-            "url": "https://fedora.zanata.org/rest/file/translation/v4l-utils/rawhide/ca/po?docId=v4l-utils",
+            "url": "https://fedora.zanata.org/rest/file/translation/v4l-utils/1.8.1/ca/po?docId=v4l-utils",
             "type": "file",
             "target": "ca.po"
         },
