@@ -1,0 +1,18 @@
+{
+    "project": "Kodi", 
+    "projectweb": "http://kodi.tv/", 
+    "fileset": {
+        "xbmc-main": {
+            "url": "https://www.transifex.com/projects/p/kodi-main/", 
+            "type": "transifex"
+        }, 
+        "xbmc-addons": {
+            "url": "https://www.transifex.com/projects/p/kodi-addons/", 
+            "type": "transifex"
+        }, 
+        "xbmc-skins": {
+            "url": "https://www.transifex.com/projects/p/kodi-skins/", 
+            "type": "transifex"
+        }
+    }
+}
