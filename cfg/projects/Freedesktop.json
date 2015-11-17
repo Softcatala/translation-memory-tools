@@ -18,8 +18,16 @@
             "url": "https://www.transifex.com/projects/p/fprintd",
             "type": "transifex"
         },
+        "p11-kit": {
+            "url": "https://www.transifex.com/projects/p/p11-kit",
+            "type": "transifex"
+        },
         "packagekit": {
             "url": "https://www.transifex.com/projects/p/packagekit",
+            "type": "transifex"
+        },
+        "realmd": {
+            "url": "https://www.transifex.com/projects/p/realmd",
             "type": "transifex"
         },
         "shared-mime-info": {
