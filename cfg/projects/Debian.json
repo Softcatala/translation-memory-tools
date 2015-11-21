@@ -13,12 +13,12 @@
             "target": "dpkg.gz"
         }, 
         "shadow": {
-            "url": "http://i18n.debian.org/material/po/testing/main/s/shadow/po/shadow_1:4.2-3_ca.po.gz", 
+            "url": "http://i18n.debian.org/material/po/testing/main/s/shadow/po/shadow_1:4.2-3.1_ca.po.gz", 
             "type": "compressed", 
             "target": "shadow.gz"
         }, 
         "aptitude": {
-            "url": "http://i18n.debian.org/material/po/testing/main/a/aptitude/po/aptitude_0.7.2-1_ca.po.gz", 
+            "url": "http://i18n.debian.org/material/po/testing/main/a/aptitude/po/aptitude_0.7.4-1_ca.po.gz", 
             "type": "compressed", 
             "target": "aptitude.gz"
         }, 
