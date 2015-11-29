@@ -24,9 +24,10 @@ import re
 from crawler import Crawler
 from downloadfile import DownloadFile
 from fileset import FileSet
+from compressedfileset import CompressedFileSet
 
 
-class CrawlFileSet(FileSet):
+class CrawlFileSet(CompressedFileSet):
 
     def set_pattern(self, pattern):
         self.pattern = pattern
@@ -38,6 +39,7 @@ class CrawlFileSet(FileSet):
 
                 download = DownloadFile()
                 download.get_file(link, filename)
+                self.uncompress(filename, False)
 
     def do(self):
         crawler = Crawler(self.url)

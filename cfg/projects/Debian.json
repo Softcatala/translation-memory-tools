@@ -2,30 +2,30 @@
     "project": "Debian", 
     "projectweb": "http://www.debian.org/international/l10n/po/ca", 
     "fileset": {
-        "apt": {
-            "url": "http://i18n.debian.org/material/po/testing/main/a/apt/po/apt_1.0.10.2_ca.po.gz", 
-            "type": "compressed", 
-            "target": "apt_ca.po.gz"
-        }, 
+       "apt": {
+            "url": "http://i18n.debian.org/material/po/testing/main/a/apt/po/", 
+            "type": "crawl", 
+            "pattern": "http.*?ca.po.gz"
+        },
         "dpkg": {
-            "url": "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/dpkg_1.18.3_ca.po.gz", 
-            "type": "compressed", 
-            "target": "dpkg.gz"
+            "url": "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/", 
+            "type": "crawl", 
+            "pattern": "http.*?ca.po.gz"
         }, 
         "shadow": {
-            "url": "http://i18n.debian.org/material/po/testing/main/s/shadow/po/shadow_1:4.2-3.1_ca.po.gz", 
-            "type": "compressed", 
-            "target": "shadow.gz"
+            "url": "http://i18n.debian.org/material/po/testing/main/s/shadow/po/", 
+            "type": "crawl", 
+            "pattern": "http.*?ca.po.gz"        
         }, 
         "aptitude": {
-            "url": "http://i18n.debian.org/material/po/testing/main/a/aptitude/po/aptitude_0.7.4-1_ca.po.gz", 
-            "type": "compressed", 
-            "target": "aptitude.gz"
+            "url": "http://i18n.debian.org/material/po/testing/main/a/aptitude/po/", 
+            "type": "crawl", 
+            "pattern": "http.*?ca.po.gz"        
         }, 
         "po4a": {
-            "url": "http://i18n.debian.org/material/po/testing/main/p/po4a/po/bin/po4a_0.47-1_ca.po.gz", 
-            "type": "compressed", 
-            "target": "po4a.gz"
+            "url": "http://i18n.debian.org/material/po/testing/main/p/po4a/po/bin/", 
+            "type": "crawl", 
+            "pattern": "http.*?ca.po.gz"        
         }
     }
 }

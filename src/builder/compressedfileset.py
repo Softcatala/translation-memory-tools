@@ -27,35 +27,39 @@ from fileset import FileSet
 class CompressedFileSet(FileSet):
 
     def _uncompress(self):
-        if self.filename.endswith('.zip'):
-            os.system('unzip {0} -d {1}'.format(self.filename, self.temp_dir))
-        elif self.filename.endswith('tar.gz'):
+        self.uncompress(self.filename, True)
+
+    def uncompress(self, filename, report_error):
+        if filename.endswith('.zip'):
+            os.system('unzip {0} -d {1}'.format(filename, self.temp_dir))
+        elif filename.endswith('tar.gz'):
             if len(self.pattern) > 0:
                 cmd = 'tar --wildcards -xvf {0} -C {1} {2}'.format(
-                    self.filename,
+                    filename,
                     self.temp_dir,
                     self.pattern
                 )
                 os.system(cmd)
             else:
                 cmd = 'tar -xvf {0} -C {1}'.format(
-                    self.filename,
+                    filename,
                     self.temp_dir
                 )
                 os.system(cmd)
-        elif self.filename.endswith('.gz'):
+        elif filename.endswith('.gz'):
             # We are assuming that the .gz file will contain a single PO
             cmd = 'gunzip {0} -c > {1}/ca.po'.format(
-                self.filename,
+                filename,
                 self.temp_dir
             )
             os.system(cmd)
-        elif self.filename.endswith('tar.xz'):
-            cmd = 'tar -Jxf {0} -C {1}'.format(self.filename, self.temp_dir)
+        elif filename.endswith('tar.xz'):
+            cmd = 'tar -Jxf {0} -C {1}'.format(filename, self.temp_dir)
             os.system(cmd)
         else:
-            msg = 'Unsupported file extension for filename: {0}'
-            logging.error(msg.format(self.filename))
+            if report_error is True:
+                msg = 'Unsupported file extension for filename: {0}'
+                logging.error(msg.format(filename))
 
     def set_pattern(self, pattern):
         self.pattern = pattern
