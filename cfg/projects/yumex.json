@@ -1,0 +1,10 @@
+{
+    "project": "YumExtender",
+    "projectweb": "http://www.yumex.dk/",
+    "fileset": {
+        "yumex": {
+            "url": "https://www.transifex.com/projects/p/yumex",
+            "type": "transifex"
+        }
+    }
+}
