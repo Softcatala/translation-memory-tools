@@ -323,6 +323,11 @@
             "type": "file",
             "target": "ca.po"
         },
+         "NetworkManager": {
+            "url": "https://fedora.zanata.org/rest/file/translation/NetworkManager/master/ca/po?docId=NetworkManager",
+            "type": "file",
+            "target": "ca.po"
+        },
          "oscap-anaconda-addon": {
             "url": "https://fedora.zanata.org/rest/file/translation/oscap-anaconda-addon/master/ca/po?docId=oscap-anaconda-addon",
             "type": "file",
