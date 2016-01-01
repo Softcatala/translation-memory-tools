@@ -32,7 +32,7 @@ class TransvisionFileSet(FileSet):
     def _download_files(self, tmxfile):
         # Download file selection
         download = DownloadFile()
-        download.get_file(self.url, os.path.join(self.url, 'tempfile'))
+        download.get_file(self.url, os.path.join(self.temp_dir, 'tempfile'))
 
         # Download translations
         download = DownloadFile()
@@ -85,7 +85,6 @@ class TransvisionFileSet(FileSet):
             po.append(entry)
 
         po.save(pofile)
-        print "PO saved entries to: " + pofile
 
     def do(self):
         tmxfile = 'mozilla_en-US_ca.tmx'
