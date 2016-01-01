@@ -35,6 +35,7 @@ from subversionfileset import SubversionFileSet
 from transifexfileset import TransifexFileSet
 from transifexhubfileset import TransifexHubFileSet
 from gitwebfileset import GitWebFileSet
+from transvisionfileset import TransvisionFileSet
 
 class Project(object):
 
@@ -133,6 +134,11 @@ class Project(object):
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
                 fs.set_project(self)
+            elif fileset.type == 'transvision':
+                fs = TransvisionFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
