@@ -2,10 +2,37 @@
     "project": "Mozilla", 
     "projectweb": "https://www.softcatala.org/wiki/Projectes/Mozilla", 
     "softcatala": true, 
-     "fileset": {
-        "Mozilla": {
-            "url": "https://transvision.mozfr.org/downloads/?locale=ca&tmx_format=normal&release=release&beta=beta&aurora=aurora&central=central&firefox_ios=firefox_ios&gaia=gaia&mozilla_org=mozilla_org", 
-            "type": "transvision"
+    "fileset": {
+        "firefox": {
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/firefox", 
+            "type": "compressed", 
+            "target": "mozilla.zip", 
+            "excluded": "region.properties.po"
+        }, 
+        "mobile": {
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/mobile", 
+            "type": "compressed", 
+            "target": "mobile.zip"
+        }, 
+        "firefoxos": {
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/firefoxos", 
+            "type": "compressed", 
+            "target": "firefoxos.zip"
+        }, 
+        "lightning": {
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/lightning", 
+            "type": "compressed", 
+            "target": "lightning.zip"
+        }, 
+        "thunderbird": {
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/thunderbird", 
+            "type": "compressed", 
+            "target": "thunderbird.zip"
+        }, 
+        "mozilla.org-web": {
+            "url": "http://mozilla.locamotion.org/export/?path=/ca/mozilla_lang", 
+            "type": "compressed", 
+            "target": "webparts.zip"
         }
     }
 }
