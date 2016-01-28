@@ -1,0 +1,10 @@
+{
+    "project": "Subsurface", 
+    "projectweb": "http://subsurface-divelog.org/", 
+    "fileset": {
+        "Subsurface": {
+            "url": "https://www.transifex.com/projects/p/subsurface/", 
+            "type": "transifex"
+        }
+    }
+}
