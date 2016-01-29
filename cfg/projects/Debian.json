@@ -3,29 +3,29 @@
     "projectweb": "http://www.debian.org/international/l10n/po/ca", 
     "fileset": {
        "apt": {
-            "url": "http://i18n.debian.org/material/po/testing/main/a/apt/po/", 
-            "type": "crawl", 
-            "pattern": "http.*?ca.po.gz"
+            "url": "https://anonscm.debian.org/cgit/apt/apt.git/plain/po/ca.po", 
+            "type": "file", 
+            "target": "apt-ca.po"  
         },
         "dpkg": {
-            "url": "http://i18n.debian.org/material/po/testing/main/d/dpkg/po/", 
-            "type": "crawl", 
-            "pattern": "http.*?ca.po.gz"
-        }, 
+            "url": "https://anonscm.debian.org/cgit/dpkg/dpkg.git/plain/po/ca.po", 
+            "type": "file", 
+            "target": "dpkg-ca.po"       
+        },
         "shadow": {
-            "url": "http://i18n.debian.org/material/po/testing/main/s/shadow/po/", 
-            "type": "crawl", 
-            "pattern": "http.*?ca.po.gz"        
+            "url": "https://raw.githubusercontent.com/shadow-maint/shadow/master/po/ca.po", 
+            "type": "file", 
+            "target": "shadow-ca.po"       
         }, 
         "aptitude": {
-            "url": "http://i18n.debian.org/material/po/testing/main/a/aptitude/po/", 
-            "type": "crawl", 
-            "pattern": "http.*?ca.po.gz"        
+            "url": "https://raw.githubusercontent.com/Debian/apt/master/po/ca.po", 
+            "type": "file", 
+            "target": "aptitude-ca.po" 
         }, 
         "po4a": {
-            "url": "http://i18n.debian.org/material/po/testing/main/p/po4a/po/bin/", 
-            "type": "crawl", 
-            "pattern": "http.*?ca.po.gz"        
+            "url": "https://anonscm.debian.org/cgit/po4a/po4a.git/plain/po/pod/ca.po", 
+            "type": "file", 
+            "target": "po4a-ca.po"       
         }
     }
 }
