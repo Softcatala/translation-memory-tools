@@ -3,7 +3,7 @@
     "projectweb": "http://www.limesurvey.org/translationstatus/", 
     "fileset": {
         "limesurvey": {
-            "url": "http://www.limesurvey.org/translationstatus/ca.po", 
+            "url": "https://www.limesurvey.org/translationstatus/206/ca.po", 
             "type": "file", 
             "target": "limesurvey-ca.po"
         }
