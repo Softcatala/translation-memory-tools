@@ -333,13 +333,18 @@
             "type": "file",
             "target": "ca.po"
         },
+         "pulseaudio": {
+            "url": "https://fedora.zanata.org/rest/file/translation/pulseaudio/6.0/ca/po?docId=pulseaudio.pot",
+            "type": "file",
+            "target": "ca.po"
+        },
          "sssd": {
             "url": "https://fedora.zanata.org/rest/file/translation/sssd/master/ca/po?docId=po%2Fsssd",
             "type": "file",
             "target": "ca.po"
         },
         "tvtime": {
-            "url": "https://fedora.zanata.org/rest/file/translation/tvtime/1.0.6/ca/po?docId=tvtime",
+            "url": "https://fedora.zanata.org/rest/file/translation/tvtime/1.0.7/ca/po?docId=tvtime",
             "type": "file",
             "target": "ca.po"
         },
