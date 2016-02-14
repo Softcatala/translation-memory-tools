@@ -14,7 +14,7 @@
             "target": "ca.po"
         },
          "asknot-ng": {
-            "url": "https://fedora.zanata.org/rest/file/translation/asknot-ng/0.1/ca/po?docId=locale%2Fasknot-ng",
+            "url": "https://fedora.zanata.org/rest/file/translation/asknot-ng/1.0/ca/po?docId=locale%2Fasknot-ng",
             "type": "file",
             "target": "ca.po"
         },
