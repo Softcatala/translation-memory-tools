@@ -76,7 +76,7 @@ class ReferenceSources(object):
 
     def _read_source(self, name, short_name, filename):
         pofile = polib.pofile(filename)
-        reference = Reference(unicode(name, "utf-8"), short_name)
+        reference = Reference(name, short_name)
 
         for entry in pofile:
             term = entry.msgid.lower()

@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -29,8 +28,9 @@ from whoosh.filedb.filestore import RamStorage
 
 sys.path.append('../')
 
+from builder.findfiles import FindFiles
 from builder.jsonbackend import JsonBackend
-from cleanupfilter import CleanUpFilter
+from .cleanupfilter import CleanUpFilter
 
 
 class IndexCreator(object):
@@ -89,13 +89,13 @@ class IndexCreator(object):
         if entry.tcomment is None:
             comment = entry.tcomment
         else:
-            comment = unicode(entry.tcomment)
+            comment = entry.tcomment
 
         if entry.comment is not None:
             if entry.tcomment is None:
-                comment = unicode(entry.comment)
+                comment = entry.comment
             else:
-                comment += u'\r\n' + unicode(entry.comment)
+                comment += u'\r\n' + entry.comment
 
         return comment
 
@@ -108,14 +108,14 @@ class IndexCreator(object):
 
             for entry in input_po:
                 self.sentences += 1
-                s = unicode(entry.msgid)
-                t = unicode(entry.msgstr)
-                p = unicode(name)
+                s = entry.msgid
+                t = entry.msgstr
+                p = name
 
                 if entry.msgctxt is None:
                     x = entry.msgctxt
                 else:
-                    x = unicode(entry.msgctxt)
+                    x = entry.msgctxt
 
                 c = self._get_comment(entry)
 
@@ -123,7 +123,7 @@ class IndexCreator(object):
                     # msgstr_plural is a dictionary where the key is the index and
                     # the value is the localised string
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
-                        t = unicode(entry.msgstr_plural[0])
+                        t = entry.msgstr_plural[0]
 
                 if self.debug_keyword is not None and self.debug_keyword.strip() == s:
                     print("Source: " + s)

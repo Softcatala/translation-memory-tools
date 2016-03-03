@@ -18,9 +18,8 @@
 # Boston, MA 02111-1307, USA.
 
 import logging
-import urllib2
-import urlparse
-from HTMLParser import HTMLParser
+import urllib
+from html.parser import HTMLParser
 
 from fileset import FileSet
 from transifexfileset import TransifexFileSet
@@ -149,7 +148,6 @@ class TransifexHubFileSet(FileSet):
             url = self.url
 
             while url is not None:
-                print self.project.name
                 page = Page(url, self.project.name.lower())
                 for option in page.get_all_options():
                     options.append(option)

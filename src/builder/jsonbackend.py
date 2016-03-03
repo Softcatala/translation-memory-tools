@@ -19,8 +19,9 @@
 
 import json
 import logging
+
 from collections import OrderedDict
-from findfiles import FindFiles
+from .findfiles import FindFiles
 
 class ProjectDTO(object):
 
@@ -65,7 +66,7 @@ class JsonBackend(object):
         self.projects = []
 
     def _process_fileset(self, project, project_value):
-        for fileset_attr, fileset_value in project_value.iteritems():
+        for fileset_attr, fileset_value in project_value.items():
             fileset = FileSetDTO()
             project.filesets.append(fileset)
             fileset.name = fileset_attr
@@ -74,7 +75,7 @@ class JsonBackend(object):
 
     def _process_file_set_attributes(self, fileset, fileset_value):
         for fileset_properties_attr, fileset_properties_value in \
-                fileset_value.iteritems():
+                fileset_value.items():
             if fileset_properties_attr == 'name':
                 fileset.name = fileset_properties_value
             elif fileset_properties_attr == 'url':

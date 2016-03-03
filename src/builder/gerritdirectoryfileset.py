@@ -81,7 +81,7 @@ class GerritDirectoryFileSet(FileSet):
             for attribute, value in data.items():
                 name = None
                 url = None
-                for prj_attribute, prj_value in value.iteritems():
+                for prj_attribute, prj_value in value.items():
                     if prj_attribute == 'name':
                         name = prj_value
                     elif prj_attribute == 'clone_url':

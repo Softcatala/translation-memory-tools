@@ -20,8 +20,8 @@
 import os
 import re
 
-from fileset import FileSet
-from findfiles import FindFiles
+from .fileset import FileSet
+from .findfiles import FindFiles
 
 
 class BazaarFileSet(FileSet):

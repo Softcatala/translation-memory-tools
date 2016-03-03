@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2012 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -141,8 +141,8 @@ def load_projects_from_json(add_source, projects_names, projects_dir, softcatala
 
 
 if __name__ == '__main__':
-    print 'Translation memory builder version 0.1'
-    print 'Use --help for assistance'
+    print ('Translation memory builder version 0.1')
+    print ('Use --help for assistance')
 
     start_time = datetime.datetime.now()
     init_logging()

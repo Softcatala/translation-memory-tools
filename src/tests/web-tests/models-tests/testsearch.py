@@ -45,7 +45,7 @@ class TestSearch(unittest.TestCase):
         self.index = IndexCreator('')
         index = self.index.create(True)
 
-        for idx in xrange(0, len(self.data_set), self.FIELDS):
+        for idx in range(0, len(self.data_set), self.FIELDS):
             self.index.write_entry(source=self.data_set[idx + 0],
                                    target=self.data_set[idx + 1],
                                    comment=u'',
@@ -92,7 +92,7 @@ class TestSearch(unittest.TestCase):
         results = search.get_results()
 
         self.assertEquals(len(results), 2)
-        for i in xrange(0, len(results)):
+        for i in range(0, len(results)):
             self.assertFalse(u'Yesterday' in results[i]["source"])
 
     def test_query_simple_with_and_query_source(self):

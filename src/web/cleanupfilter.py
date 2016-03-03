@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2014 Jordi Mas i Hernandez <jmas@softcatala.org>

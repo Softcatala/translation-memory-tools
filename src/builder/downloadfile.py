@@ -18,7 +18,7 @@
 # Boston, MA 02111-1307, USA.
 
 import logging
-import urllib2
+import urllib.request
 
 
 class DownloadFile(object):
@@ -28,7 +28,7 @@ class DownloadFile(object):
 
         for _ in range(NTRIES):
             try:
-                return urllib2.urlopen(url)
+                return urllib.request.urlopen(url)
             except Exception as e:
                 print ("Error on urlopen_with_retry: " + str(e))
 
@@ -41,7 +41,6 @@ class DownloadFile(object):
             output = open(filename, 'wb')
             output.write(infile.read())
             output.close()
-        except Exception as e:
+        except Exception:
             msg = 'Error downloading file \'{0}\' to {1}'.format(url, filename)
             logging.error(msg)
-    

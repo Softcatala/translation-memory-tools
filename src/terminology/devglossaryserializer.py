@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -84,7 +83,7 @@ class DevGlossarySerializer():
                 u'<th>Català</th>'
                 u'<th>Opcions considerades</th>'
                 u'</tr>')
-        f.write(html.encode('utf-8'))
+        f.write(html)
 
         for term in glossary_entries:
             sources = ' '
@@ -127,7 +126,7 @@ class DevGlossarySerializer():
                     u'</tr>').format(item, cgi.escape(term), sources,
                                      cgi.escape(translations[0].translation),
                                      options)
-            f.write(html.encode('utf-8'))
+            f.write(html)
 
         html = u'</table>'
 
@@ -139,14 +138,14 @@ class DevGlossarySerializer():
                      u'<th>Terme</th>'
                      u'</tr>').format(reference.name)
 
-            for term in sorted(reference.terms.iterkeys()):
+            for term in sorted(reference.terms.keys()):
                 html += (u'<tr>'
                          u'<td>{0}</td>'
                          u'</tr>').format(cgi.escape(term))
 
             html += u'</table>'
 
-        f.write(html.encode('utf-8'))
+        f.write(html)
 
         percentage = 0
         if corpus.strings > 0:
@@ -179,12 +178,12 @@ class DevGlossarySerializer():
         html += temp.format(words_cnt[0], words_cnt[1], words_cnt[2])
 
         if len(html_comment) > 0:
-            comment = unicode(html_comment, "UTF-8")
+            comment = html_comment
             html += u"Comentari de generació: {0}".format(comment)
 
         html += (u'</body>'
                  u'</html>')
-        f.write(html.encode('utf-8'))
+        f.write(html)
         f.close()
 
         self.create_text_dump(glossary_entries)

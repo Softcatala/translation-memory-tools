@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -27,7 +26,7 @@ import hashlib
 
 class TestPOFile(unittest.TestCase):
 
-    minipo = ur"""# Afrikaans translation of program ABC
+    minipo = r"""# Afrikaans translation of program ABC
 #
 msgid ""
 msgstr ""
@@ -53,7 +52,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
     def test_add_comment_to_all_entries(self):
         tmpfile = tempfile.NamedTemporaryFile()
         f = open(tmpfile.name, 'w')
-        f.write(self.minipo.encode('utf-8'))
+        f.write(self.minipo)
         f.close()
 
         pofile = POFile(tmpfile.name)

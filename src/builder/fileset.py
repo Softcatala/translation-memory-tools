@@ -21,10 +21,10 @@ import logging
 import os
 import shutil
 
-from convertfiles import ConvertFiles
-from findfiles import FindFiles
-from pocatalog import POCatalog
-from pofile import POFile
+from .convertfiles import ConvertFiles
+from .findfiles import FindFiles
+from .pocatalog import POCatalog
+from .pofile import POFile
 
 
 class FileSet():

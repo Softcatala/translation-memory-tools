@@ -27,7 +27,7 @@ class FilePage(Page):
         """Reads a file from disk instead from http connection"""
         folder = path.dirname(path.realpath(__file__))
         f = open(path.join(folder, 'testcrawler.html'))
-        self.content = unicode(f.read(), 'utf-8', errors='replace')
+        self.content = f.read()
         f.close()
 
 
@@ -36,7 +36,6 @@ class TestPage(unittest.TestCase):
     def test_get_links(self):
         page = FilePage('http://translationproject.org/team/ca.html')
         links = page.get_all_links()
-        print str(len(links))
 
         self.assertEquals(len(links), 432)
         url = 'http://translationproject.org/PO-files/ca/cpplib-4.8.0.ca.po'

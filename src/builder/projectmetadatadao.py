@@ -19,7 +19,7 @@
 
 import sqlite3
 
-from projectmetadatadto import ProjectMetaDataDto
+from .projectmetadatadto import ProjectMetaDataDto
 
 
 class ProjectMetaDataDao(object):
@@ -79,7 +79,7 @@ class ProjectMetaDataDao(object):
         result = c.execute(command)
         print('Database rows')
         for row in result:
-            print row
+            print (row)
 
     def close(self):
         self.connection.close()

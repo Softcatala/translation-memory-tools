@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2014 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -39,6 +38,6 @@ class Glossary(object):
         return {
             'entries': entries,
             'num_of_entries': len(entries),
-            'date': unicode(self.date, "utf-8"),
-            'description': unicode(self.description, "utf-8"),
+            'date': self.date,
+            'description': self.description,
         }

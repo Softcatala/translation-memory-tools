@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -18,10 +17,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import urllib2
-import urlparse
-from HTMLParser import HTMLParser
-from Queue import Queue
+import urllib
+import urllib.parse
+import urllib.request
+from html.parser import HTMLParser
+from queue import Queue
 
 
 class LinkExtractor(HTMLParser):
@@ -41,7 +41,7 @@ class LinkExtractor(HTMLParser):
             link = attrs.get('href')
 
             if link is not None:
-                absolute = urlparse.urljoin(self.base_url, link)
+                absolute = urllib.parse.urljoin(self.base_url, link)
                 self.links.append(absolute)
 
 
@@ -57,14 +57,14 @@ class Page(object):
         self._process_links()
 
     def _get_base_url(self, url):
-        u = urlparse.urlparse(url)
+        u = urllib.parse.urlparse(url)
         return u.geturl()
 
     def _download_page(self):
-        request = urllib2.Request(self.url)
-        handle = urllib2.build_opener()
+        request = urllib.request.Request(self.url)
+        handle = urllib.request.build_opener()
 
-        self.content = unicode(
+        self.content = str(
             handle.open(request).read(),
             'utf-8',
             errors='replace'

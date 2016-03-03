@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013-2014 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -33,11 +33,11 @@ def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(template, 'r').read()
     parsed = pystache.Renderer()
-    s = parsed.render(unicode(template, "utf-8"), ctx)
+    s = parsed.render(template, ctx)
 
     # Write output.
     f = open(filename, 'w')
-    f.write(s.encode("utf-8"))
+    f.write(s)
     f.close()
 
 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2015 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -19,8 +18,7 @@
 # Boston, MA 02111-1307, USA.
 
 from math import ceil
-from urllib import urlencode
-from urlparse import urlparse, urlunparse, parse_qs
+import urllib.parse
 
 class Pagination(object):
     ''' Model object that manages the pagination of results'''
@@ -44,14 +42,14 @@ class Pagination(object):
         return self.page < self.pages
 
     def _remove_page_query_string(self, url):
-        u = urlparse(url)
-        query = parse_qs(u.query)
+        u = urllib.parse.urlparse(url)
+        query = urllib.parse.parse_qs(u.query)
         query.pop('page', None)
-        u = u._replace(query=urlencode(query, True))
-        return urlunparse(u)
+        u = u._replace(query=urllib.parse.urlencode(query, True))
+        return urllib.parse.urlunparse(u)
 
     def _get_current_page(self, url):
-        parsed = parse_qs(urlparse(url).query)
+        parsed = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
         if 'page' in parsed:
             page = int(parsed['page'][0])
         else:
@@ -62,7 +60,7 @@ class Pagination(object):
     def iter_pages(self, left_edge=2, left_current=2,
                    right_current=5, right_edge=2):
         last = 0
-        for num in xrange(1, self.pages + 1):
+        for num in range(1, self.pages + 1):
             if num <= left_edge or \
                (num > self.page - left_current - 1 and \
                 num < self.page + right_current) or \

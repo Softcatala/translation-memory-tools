@@ -23,8 +23,9 @@ from flask import Flask, request, Response
 import cgi
 import time
 import sys
+import urllib.parse
 from jinja2 import Environment, FileSystemLoader
-from urlparse import urlparse
+
 
 sys.path.append('models/')
 from pagination import Pagination
@@ -85,8 +86,8 @@ class WebView(object):
 
             if len(raw_results) > 0:
 
-                url = request.url.encode('utf-8')
-                o = urlparse(url)
+                url = request.url
+                o = urllib.parse.urlparse(url)
                 url = '?' + o.query
 
                 pagination = Pagination(PER_PAGE, len(raw_results), url)
@@ -99,7 +100,7 @@ class WebView(object):
                 else:
                     end += PER_PAGE
 
-                for i in xrange(start, end):
+                for i in range(start, end):
                     results.append(self.get_result(raw_results[i]))
             else:
                 pagination = None

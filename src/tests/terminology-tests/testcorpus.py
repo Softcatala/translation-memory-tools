@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 from terminology.corpus import Corpus
-from StringIO import StringIO
+from io import StringIO
 import unittest
 
 

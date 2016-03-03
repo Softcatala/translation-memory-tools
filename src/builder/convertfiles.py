@@ -20,7 +20,7 @@
 import logging
 import os
 
-from findfiles import FindFiles
+from .findfiles import FindFiles
 
 
 class ConvertFiles():

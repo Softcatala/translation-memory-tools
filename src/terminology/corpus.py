@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -145,7 +144,7 @@ class Corpus(object):
                 log = log.format(msgid, entry.msgid, msgstr, entry.msgstr,
                                  filename)
 
-                f.write(log.encode('utf-8'))
+                f.write(log)
 
                 if not msgid in terms.keys():
                     translations = []

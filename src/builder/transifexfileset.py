@@ -18,7 +18,8 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-from urlparse import urlparse
+import urllib
+import urllib.parse
 
 from fileset import FileSet
 from findfiles import FindFiles
@@ -37,7 +38,7 @@ class TransifexFileSet(FileSet):
         prevdir = os.getcwd()
         os.chdir(self.temp_dir)
 
-        url = urlparse(self.url)
+        url = urllib.parse.urlparse(self.url)
         uri = '{0}://{1}'.format(url.scheme, url.netloc)
         os.system('tx init --host {0}'.format(uri))
         os.system('tx set --auto-remote {0}'.format(self.url))
