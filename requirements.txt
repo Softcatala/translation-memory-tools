@@ -1,7 +1,8 @@
 # For importing translations/creating TM files.
 polib >= 1.0.4
 transifex-client
-translate-toolkit
+# Versions 1.13 in Python 3 were broken
+translate-toolkit <= 1.10
 android2po
 pystache
 peewee

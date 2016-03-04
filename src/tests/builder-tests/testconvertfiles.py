@@ -40,7 +40,7 @@ class ConvertFilesTest(unittest.TestCase):
         for filename in findFiles.find(directory, '*.po'):
             remove(filename)
 
-    '''def test_convert_json_files_to_po(self):
+    def test_convert_json_files_to_po(self):
 
         json_dir = path.dirname(path.realpath(__file__))
         json_dir += '/data/conversions/json/'
@@ -49,7 +49,7 @@ class ConvertFilesTest(unittest.TestCase):
 
         entries = self._get_po_entries(json_dir)
         self._clean_pos(json_dir)
-        self.assertEquals(entries, 517)'''
+        self.assertEquals(entries, 517)
 
     def test_convert_yml_files_to_po(self):
 
