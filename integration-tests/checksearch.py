@@ -19,7 +19,7 @@
 # Boston, MA 02111-1307, USA.
 
 import json
-import urllib
+import urllib.request
 
 
 class CheckSearch(object):
@@ -32,7 +32,7 @@ class CheckSearch(object):
         url = '{0}/tm/api/memory/search?source={1}&project=tots'
         url = url.format(self.url, term)
 
-        urllib.urlretrieve(url, 'file.txt')
+        urllib.request.urlretrieve(url, 'file.txt')
         with open('file.txt') as json_data:
             data = json.load(json_data)
             return data
@@ -41,7 +41,7 @@ class CheckSearch(object):
         url = '{0}/tm/api/glossary/search?source={1}&project=tots'
         url = url.format(self.url, term)
 
-        urllib.urlretrieve(url, 'file.txt')
+        urllib.request.urlretrieve(url, 'file.txt')
         with open('file.txt') as json_data:
             data = json.load(json_data)
             return data
@@ -102,5 +102,5 @@ class CheckSearch(object):
             self._check_glossary_source_search()
             return True
         except Exception as detail:
-            print(u'Error checking search results: ' + unicode(detail))
+            print('Error checking search results: ' + detail)
             return False

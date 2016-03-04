@@ -20,7 +20,7 @@
 
 import sys
 sys.path.append('../src/')
-import urllib2
+import urllib
 from builder.jsonbackend import JsonBackend
 
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -19,7 +19,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import ConfigParser
+import configparser
 import sys
 from collections import OrderedDict
 from optparse import OptionParser
@@ -36,17 +36,17 @@ def read_parameters():
     SECTION = "default"
 
     parser = OptionParser()
-    config = ConfigParser.ConfigParser()
+    config = configparser.ConfigParser()
     config.read("environments.conf")
     environments = OrderedDict()
 
     for option in config.options(SECTION):
         environments[option] = config.get(SECTION, option)
-
+   
     opt_environments = ', '.join(environments.keys())
     default = next(reversed(environments))
     parser.add_option("-e", "--environment", dest="environment",
-                      default=default, type="choice", choices=environments.keys(),
+                      default=default, type="choice", choices=list(environments.keys()),
                       help="set default environment to: " + opt_environments)
 
     (options, args) = parser.parse_args()

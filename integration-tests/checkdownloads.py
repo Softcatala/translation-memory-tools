@@ -24,7 +24,6 @@ import os
 import shutil
 import tempfile
 import urllib
-import urllib2
 
 from builder.jsonbackend import JsonBackend
 from builder.findfiles import FindFiles
@@ -148,11 +147,11 @@ class CheckDownloads(object):
                     percentage = 100.0 * invalid / len(poFile)
                     if percentage > THRESHOLD_PERCENTAGE:
                         self.errors = self.errors + 1
-                        print "Unsual number of invalid chars at {0} ({1}%)".\
+                        print("Unsual number of invalid chars at {0} ({1}%)").\
                               format(filename, str(percentage))
 
         except Exception as detail:
-            print detail
+            print(detail)
 
     def downloads_for_project(self, name, expected_files):
         print("Processing:" + name)
