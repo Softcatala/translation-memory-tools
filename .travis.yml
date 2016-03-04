@@ -10,9 +10,8 @@ install:
   pip install -r requirements.txt
 script:
   - nosetests --with-coverage --cover-package=src
-  - cd src/builder
+  - cd src
   - python builder.py -pFileZilla
-  - cd ../web/
   - python index-creation.py -pFileZilla
 after_success:
   coveralls
