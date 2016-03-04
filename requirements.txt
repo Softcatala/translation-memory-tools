@@ -2,7 +2,7 @@
 polib >= 1.0.4
 transifex-client
 # Versions 1.13 in Python 3 were broken
-translate-toolkit <= 1.11
+#translate-toolkit <= 1.11
 android2po
 pystache
 peewee
