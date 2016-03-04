@@ -27,7 +27,7 @@ from builder.pofile import POFile
 
 
 def process_projects(src_directory, trg_directory):
-    json = JsonBackend("../../cfg/projects/")
+    json = JsonBackend("../cfg/projects/")
     json.load()
 
     projects = sorted(json.projects, key=lambda x: x.name.lower())
@@ -38,15 +38,15 @@ def process_projects(src_directory, trg_directory):
             trg_file = os.path.join(trg_directory, project_dto.filename)
 
             if os.path.isfile(src_file) and not os.path.isfile(trg_file):
-                print ("{0} is missing in the new version").format(project_dto.filename)
+                print ("{0} is missing in the new version".format(project_dto.filename))
 
             if not os.path.isfile(src_file) and os.path.isfile(trg_file):
-                print ("{0} has been added in the new version").format(project_dto.filename)
+                print ("{0} has been added in the new version".format(project_dto.filename))
 
             src_stats = POFile(src_file).get_statistics()
             trg_stats = POFile(trg_file).get_statistics()
 
-            print ("{0} project {1}: words (before), {2} words (now), delta {3}").format(project_dto.filename, src_stats, trg_stats, trg_stats - src_stats)
+            print ("{0} project {1}: words (before), {2} words (now), delta {3}".format(project_dto.filename, src_stats, trg_stats, trg_stats - src_stats))
 
 
 def read_parameters():
