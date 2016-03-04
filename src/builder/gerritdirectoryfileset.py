@@ -24,9 +24,9 @@ import os
 import re
 import shutil
 
-from downloadfile import DownloadFile
-from fileset import FileSet
-from gitfileset import GitFileSet
+from .downloadfile import DownloadFile
+from .fileset import FileSet
+from .gitfileset import GitFileSet
 
 
 class GerritDirectoryFileSet(FileSet):

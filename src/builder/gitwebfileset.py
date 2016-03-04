@@ -20,9 +20,9 @@
 import logging
 import re
 
-from fileset import FileSet
-from gitfileset import GitFileSet
-from crawler import Crawler
+from .fileset import FileSet
+from .gitfileset import GitFileSet
+from .crawler import Crawler
 
 
 class GitWebFileSet(FileSet):

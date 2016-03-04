@@ -19,7 +19,7 @@
 
 import os
 
-from fileset import FileSet
+from .fileset import FileSet
 
 
 class SubversionFileSet(FileSet):

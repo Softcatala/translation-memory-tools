@@ -21,8 +21,8 @@ import os
 import re
 import shutil
 
-from fileset import FileSet
-from findfiles import FindFiles
+from .fileset import FileSet
+from .findfiles import FindFiles
 
 
 class GitFileSet(FileSet):

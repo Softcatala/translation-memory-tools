@@ -22,16 +22,16 @@
 import datetime
 import locale
 import os
-import sys
+#import sys
 from optparse import OptionParser
 
 import pystache
 
-sys.path.append('../builder')
+#sys.path.append('../builder')
 
-from jsonbackend import JsonBackend
-from pofile import POFile
-from projectmetadatadao import ProjectMetaDataDao
+from builder.jsonbackend import JsonBackend
+from builder.pofile import POFile
+from builder.projectmetadatadao import ProjectMetaDataDao
 
 
 def process_template(template, filename, ctx):
@@ -200,7 +200,7 @@ def process_projects(po_directory, tmx_directory, out_directory):
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
         'memories': memories,
     }
-    process_template("templates/download.mustache", "download.html", ctx)
+    process_template("web/templates/download.mustache", "download.html", ctx)
 
 
 def update_zipfile(src_directory, filename, file_to_add, out_directory):
@@ -235,12 +235,12 @@ def read_parameters():
 
     parser.add_option("-d", "--podir",
                       action="store", type="string", dest="po_directory",
-                      default="../builder",
+                      default=".",
                       help="Directory to find the PO files")
 
     parser.add_option("-t", "--tmxdir",
                       action="store", type="string", dest="tmx_directory",
-                      default="../builder",
+                      default=".",
                       help="Directory to find the TMX files")
 
     parser.add_option("-o", "--ouputdir",

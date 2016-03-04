@@ -19,10 +19,10 @@
 
 import os
 import polib
-
-from fileset import FileSet
-from downloadfile import DownloadFile
 import xml.etree.ElementTree
+
+from .fileset import FileSet
+from .downloadfile import DownloadFile
 
 class TransvisionFileSet(FileSet):
     """

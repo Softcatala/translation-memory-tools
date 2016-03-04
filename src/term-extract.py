@@ -26,19 +26,17 @@ import sys
 import time
 from collections import OrderedDict
 from optparse import OptionParser
-from glossarysql import *
+from terminology.glossarysql import *
 
 import pystache
 
-sys.path.append('../')
-
-from corpus import Corpus
-from devglossaryserializer import DevGlossarySerializer
-from glossary import Glossary
-from glossaryentry import GlossaryEntry
-from metrics import Metrics
-from referencesources import ReferenceSources
-from translations import Translations
+from terminology.corpus import Corpus
+from terminology.devglossaryserializer import DevGlossarySerializer
+from terminology.glossary import Glossary
+from terminology.glossaryentry import GlossaryEntry
+from terminology.metrics import Metrics
+from terminology.referencesources import ReferenceSources
+from terminology.translations import Translations
 
 
 def process_template(template, filename, ctx):
@@ -112,9 +110,9 @@ def process_projects(src_directory, glossary_description, glossary_file):
         glossary.entries.append(glossary_entry)
 
     glossary_entries = glossary.get_dict()
-    process_template('templates/userglossary-html.mustache',
+    process_template('terminology/templates/userglossary-html.mustache',
                      glossary_file + ".html", glossary_entries)
-    process_template('templates/userglossary-csv.mustache',
+    process_template('terminology/templates/userglossary-csv.mustache',
                      glossary_file + ".csv", glossary_entries)
 
     generate_database(glossary, glossary_file)
@@ -123,7 +121,7 @@ def read_parameters():
     parser = OptionParser()
     parser.add_option("-s", "--srcdir",
                       action="store", type="string", dest="src_directory",
-                      default="sc-tm-pos/",
+                      default="terminology/sc-tm-pos/",
                       help="Directory to find the PO files")
     parser.add_option("-c", "--comment",
                       action="store", type="string", dest="glossary_description",

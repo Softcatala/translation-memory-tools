@@ -20,8 +20,8 @@
 import logging
 import os
 
-from downloadfile import DownloadFile
-from fileset import FileSet
+from .downloadfile import DownloadFile
+from .fileset import FileSet
 
 
 class CompressedFileSet(FileSet):

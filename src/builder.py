@@ -24,8 +24,8 @@ import os
 import datetime
 from optparse import OptionParser
 
-from jsonbackend import JsonBackend
-from projects import Projects
+from builder.jsonbackend import JsonBackend
+from builder.projects import Projects
 
 
 projects = Projects()
@@ -82,7 +82,7 @@ def read_parameters():
         action='store',
         type='string',
         dest='projects_dir',
-        default='../../cfg/projects/',
+        default='../cfg/projects/',
         help="Define the diretory that contains the json files with the "
         "project's definitions"
     )

@@ -24,8 +24,8 @@ import time
 
 import polib
 
-from corpus import Corpus
-from referencesources import ReferenceSources
+from .corpus import Corpus
+from .referencesources import ReferenceSources
 
 
 class ReferenceMatches(object):

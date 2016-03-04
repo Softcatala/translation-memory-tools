@@ -26,7 +26,7 @@ from optparse import OptionParser
 
 import pystache
 
-from indexcreator import IndexCreator
+from web.indexcreator import IndexCreator
 
 
 def process_template(template, filename, ctx):
@@ -46,7 +46,7 @@ def read_parameters():
 
     parser.add_option('-d', '--directory',
                       action='store', type='string', dest='po_directory',
-                      default='../builder',
+                      default='.',
                       help='Directory to find the PO files')
 
     parser.add_option('-k', '--keyword',
@@ -99,13 +99,13 @@ def main():
         'projects': str(indexCreator.projects),
         'words': locale.format("%d", indexCreator.words, grouping=True),
     }
-    process_template("templates/statistics.mustache", "statistics.html", ctx)
+    process_template("web/templates/statistics.mustache", "statistics.html", ctx)
 
     ctx = {
         # This is the list of projects to display for the user to select.
         'options': sorted(indexCreator.options, key=lambda x: x.lower()),
     }
-    process_template("templates/select-projects.mustache",
+    process_template("web/templates/select-projects.mustache",
                      "select-projects.html", ctx)
 
     end_time = time.time() - start_time

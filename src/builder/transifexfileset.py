@@ -21,8 +21,8 @@ import os
 import urllib
 import urllib.parse
 
-from fileset import FileSet
-from findfiles import FindFiles
+from .fileset import FileSet
+from .findfiles import FindFiles
 
 
 class TransifexFileSet(FileSet):

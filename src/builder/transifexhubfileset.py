@@ -21,8 +21,8 @@ import logging
 import urllib
 from html.parser import HTMLParser
 
-from fileset import FileSet
-from transifexfileset import TransifexFileSet
+from .fileset import FileSet
+from .transifexfileset import TransifexFileSet
 
 
 class OptionsExtractor(HTMLParser):

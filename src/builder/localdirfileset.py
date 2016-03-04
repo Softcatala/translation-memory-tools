@@ -20,7 +20,7 @@
 import glob
 import shutil
 
-from fileset import FileSet
+from .fileset import FileSet
 
 
 class LocalDirFileSet(FileSet):

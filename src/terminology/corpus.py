@@ -21,6 +21,10 @@
 import logging
 
 import polib
+import sys
+
+sys.path.append('../')
+
 
 from builder.findfiles import FindFiles
 
@@ -116,7 +120,7 @@ class Corpus(object):
     #          Terms dictionary -> key: source term (delete), value:list <trgs> (suprimeix, esborra)
     #
     def process(self):
-        stopwords_file = open("stop-words/stop-words.txt")
+        stopwords_file = open("terminology/stop-words/stop-words.txt")
         self._read_stop_words(stopwords_file)
 
         findFiles = FindFiles()

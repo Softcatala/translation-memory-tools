@@ -23,19 +23,19 @@ import os
 import datetime
 from polib import pofile
 
-from bazaarfileset import BazaarFileSet
-from compressedfileset import CompressedFileSet
-from crawlerfileset import CrawlFileSet
-from filefileset import FileFileSet
-from gerritdirectoryfileset import GerritDirectoryFileSet
-from gitfileset import GitFileSet
-from localdirfileset import LocalDirFileSet
-from localfileset import LocalFileSet
-from subversionfileset import SubversionFileSet
-from transifexfileset import TransifexFileSet
-from transifexhubfileset import TransifexHubFileSet
-from gitwebfileset import GitWebFileSet
-from transvisionfileset import TransvisionFileSet
+from .bazaarfileset import BazaarFileSet
+from .compressedfileset import CompressedFileSet
+from .crawlerfileset import CrawlFileSet
+from .filefileset import FileFileSet
+from .gerritdirectoryfileset import GerritDirectoryFileSet
+from .gitfileset import GitFileSet
+from .localdirfileset import LocalDirFileSet
+from .localfileset import LocalFileSet
+from .subversionfileset import SubversionFileSet
+from .transifexfileset import TransifexFileSet
+from .transifexhubfileset import TransifexHubFileSet
+from .gitwebfileset import GitWebFileSet
+from .transvisionfileset import TransvisionFileSet
 
 class Project(object):
 

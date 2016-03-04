@@ -21,10 +21,10 @@ import datetime
 import logging
 import os
 
-from project import Project
-from projectmetadatadao import ProjectMetaDataDao
-from projectmetadatadto import ProjectMetaDataDto
-from pocatalog import POCatalog
+from .project import Project
+from .projectmetadatadao import ProjectMetaDataDao
+from .projectmetadatadto import ProjectMetaDataDto
+from .pocatalog import POCatalog
 
 
 class Projects(object):

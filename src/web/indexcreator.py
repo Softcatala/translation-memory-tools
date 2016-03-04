@@ -18,15 +18,12 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-import sys
-
 import polib
+
 from whoosh.analysis import StandardAnalyzer
 from whoosh.fields import BOOLEAN, TEXT, Schema
 from whoosh.index import create_in
 from whoosh.filedb.filestore import RamStorage
-
-sys.path.append('../')
 
 from builder.findfiles import FindFiles
 from builder.jsonbackend import JsonBackend
@@ -48,7 +45,7 @@ class IndexCreator(object):
         self.projects_names = projects_names
 
     def process_projects(self):
-        json = JsonBackend("../../cfg/projects/")
+        json = JsonBackend("../cfg/projects/")
         json.load()
 
         for project_dto in json.projects:
