@@ -10,7 +10,7 @@ copy_files() {
     # Index
     rm -r -f $2/indexdir
     mkdir $2/indexdir
-    cp -r $1/tm-git/src/web/indexdir/* $2/indexdir
+    cp -r $1/tm-git/src/indexdir/* $2/indexdir
 
     # Search TM app
     mkdir -p $2/css
@@ -39,11 +39,11 @@ copy_files() {
     cp -r $1/tm-git/src/web/chosen/* $2/chosen
 
     # Download memories
-    cp $1/tm-git/src/web/download.html $2
+    cp $1/tm-git/src/download.html $2
     rm -r -f $2/memories
     mkdir $2/memories
-    cp $1/tm-git/src/web/memories/*.zip $2/memories
-    cp $1/tm-git/src/builder/tots-pos.zip $2/memories
+    cp $1/tm-git/src/memories/*.zip $2/memories
+    cp $1/tm-git/src/tots-pos.zip $2/memories
 
     # Deploy terminology
     cd $1/tm-git/src/terminology
@@ -64,7 +64,7 @@ copy_files() {
     rm -r -f $2/logs
     mkdir $2/logs
     cp $1/tm-git/quality/*.log $2/logs
-    cp $1/tm-git/src/builder/*.log $2/logs
+    cp $1/tm-git/src/*.log $2/logs
 }
 
 restart_appserver() {

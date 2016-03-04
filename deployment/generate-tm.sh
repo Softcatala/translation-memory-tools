@@ -2,7 +2,7 @@
 
 ROOT="$1"
 PROGRAMS=$ROOT/tm-git/src
-BUILDER=$PROGRAMS/builder
+BUILDER=$PROGRAMS
 PROJECTS=$ROOT/tm-git/cfg/projects
 
 copy_tm_files() {
@@ -73,6 +73,6 @@ copy_tm_files "*.po" 200 $INTERMEDIATE_PO
 copy_tm_files "*.tmx" 350 $INTERMEDIATE_TMX
 
 # Update download file & index
-cd $PROGRAMS/web
+cd $PROGRAMS
 python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
 python index-creation.py -d $INTERMEDIATE_PO
