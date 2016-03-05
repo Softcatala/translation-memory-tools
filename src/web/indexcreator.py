@@ -33,7 +33,7 @@ from .cleanupfilter import CleanUpFilter
 class IndexCreator(object):
 
     def __init__(self, po_directory, debug_keyword=None, projects_names=None):
-        self.dir_name = "indexdir"
+        self.dir_name = "web/indexdir"
         self.writer = None
         self.words = 0
         self.projects = 0

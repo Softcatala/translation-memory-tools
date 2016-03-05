@@ -10,7 +10,7 @@ copy_files() {
     # Index
     rm -r -f $2/indexdir
     mkdir $2/indexdir
-    cp -r $1/tm-git/src/indexdir/* $2/indexdir
+    cp -r $1/tm-git/src/web/indexdir/* $2/indexdir
 
     # Search TM app
     mkdir -p $2/css
