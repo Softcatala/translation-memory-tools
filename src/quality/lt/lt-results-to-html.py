@@ -9,11 +9,11 @@ def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(os.path.join(__location__, template), 'r').read()
     parsed = pystache.Renderer()
-    s = parsed.render(unicode(template, "utf-8"), ctx)
+    s = parsed.render(template), ctx)
 
     # Write output.
     f = open(filename, 'w')
-    f.write(s.encode("utf-8"))
+    f.write(s)
     f.close()
 
 class rule_match(object):
