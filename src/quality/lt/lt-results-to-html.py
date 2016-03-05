@@ -68,7 +68,7 @@ _digits = re.compile('\d')
 def contains_digits(d):
     return bool(_digits.search(d))
 
-_noletter = re.compile(ur'[^a-zA-ZûêáàéèíòóúïüäöîâÄÖÁÀÈÉÍÒÓÚÏÜÎÂçÇñÑ·0-9]', re.UNICODE)
+_noletter = re.compile(r'[^a-zA-ZûêáàéèíòóúïüäöîâÄÖÁÀÈÉÍÒÓÚÏÜÎÂçÇñÑ·0-9]', re.UNICODE)
 def contains_symbols(d):
     return bool(_noletter.search(d))
 
@@ -211,11 +211,11 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
    except getopt.GetoptError:
-      print 'Use: lt-results-to-html.py -i <inputfile> -o <outputfile>'
+      print('Use: lt-results-to-html.py -i <inputfile> -o <outputfile>')
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'Use: lt-results-to-html.py -i <inputfile> -o <outputfile>'
+         print('Use: lt-results-to-html.py -i <inputfile> -o <outputfile>')
          sys.exit()
       elif opt in ("-i", "--ifile"):
          inputfile = arg
