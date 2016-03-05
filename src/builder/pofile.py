@@ -18,7 +18,6 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import shutil
 import logging
 import polib
 
@@ -39,7 +38,7 @@ class POFile(object):
                     entry.tcomment = comment
 
             input_po.save(self.filename)
-        except Exception as detail:
+        except Exception:
             logging.error("POFile.add_comment_to_all_entries " + self.filename)
 
     def calculate_localized_string_checksum(self, checksum):
@@ -49,7 +48,7 @@ class POFile(object):
                 # hashlib.sha1 isn't expecting a unicode object, but rather a
                 # sequence of bytes in a str object
                 checksum.update(entry.msgstr.encode('utf-8'))
-        except Exception as detail:
+        except Exception:
             logging.error("POFile.get_checksum exception " + self.filename)
 
     def get_statistics(self):
@@ -60,7 +59,7 @@ class POFile(object):
             for entry in poFile:
                 string_words = entry.msgstr.split(' ')
                 words += len(string_words)
-        except Exception as detail:
+        except Exception:
             logging.error("POFile.get_statistics exception " + self.filename)
         finally:
             return words

@@ -22,7 +22,6 @@ import re
 
 from .crawler import Crawler
 from .downloadfile import DownloadFile
-from .fileset import FileSet
 from .compressedfileset import CompressedFileSet
 
 

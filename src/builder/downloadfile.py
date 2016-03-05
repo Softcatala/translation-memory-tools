@@ -30,7 +30,7 @@ class DownloadFile(object):
             try:
                 return urllib.request.urlopen(url)
             except Exception as e:
-                print ("Error on urlopen_with_retry: " + str(e))
+                print("Error on urlopen_with_retry: " + str(e))
 
     def get_file(self, url, filename):
         try:
