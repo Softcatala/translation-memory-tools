@@ -18,7 +18,7 @@ report_file="${project_dir::-1}.html"
 cat $lt_html/header.html > $lt_output/$report_file
 find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d '' file; do
 
-    source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg    
+    source /home/jmas/web/python3-env/bin/activate # Specific to SC machine cfg
     echo "Executing LT on: " "$file"
     # Conversion from PO to HTML
     msgattrib --no-obsolete --no-fuzzy --translated "$file" > "$file-filtrat.po"
@@ -62,7 +62,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     else
         echo "El Pology no detectat cap error." >> $lt_output/$report_file
     fi
-    source /home/jmas/web/python-env/bin/activate # Specific to SC machine cfg
+    source /home/jmas/web/python3-env/bin/activate # Specific to SC machine cfg
 
     rm "$file-filtrat.po"
     rm "$file-pology.html"
