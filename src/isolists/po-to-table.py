@@ -55,7 +55,7 @@ def read_po_file(filename):
 def process_template(template, filename, ctx):
     template = open(template, 'r').read()
     parsed = pystache.Renderer()
-    s = parsed.render(unicode(template, "utf-8"), ctx)
+    s = parsed.render(template, ctx)
 
     f = open(filename, 'w')
     f.write(s.encode("utf-8"))
@@ -83,7 +83,7 @@ class IsoEntry(object):
 
 def main():
 
-    print "Generates Html files from a list of PO files"
+    print ("Generates Html files from a list of PO files")
 
     iso_files = _load_iso_files('iso-files.json')
     isos_list = []
