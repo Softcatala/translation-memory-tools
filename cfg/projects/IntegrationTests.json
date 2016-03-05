@@ -5,7 +5,7 @@
     "selectable": false, 
     "fileset": {
         "IntegrationTests": {
-            "url": "../../source-pos/integration-tests/integration-tests.po", 
+            "url": "../source-pos/integration-tests/integration-tests.po", 
             "type": "local-file", 
             "target": "integration-tests.po"
         }

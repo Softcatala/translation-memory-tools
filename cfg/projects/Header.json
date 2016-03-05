@@ -5,7 +5,7 @@
     "downloadable": false, 
     "fileset": {
         "header": {
-            "url": "../../source-pos/header/header.po", 
+            "url": "../source-pos/header/header.po", 
             "type": "local-file", 
             "target": "header.po"
         }
