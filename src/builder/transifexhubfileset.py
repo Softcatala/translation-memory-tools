@@ -19,6 +19,9 @@
 
 import logging
 import urllib
+import urllib.parse
+import urllib.request
+from urllib.parse import urlparse
 from html.parser import HTMLParser
 
 from .fileset import FileSet
@@ -101,13 +104,13 @@ class Page(object):
         self._process_options()
 
     def _get_base_url(self, url):
-        u = urlparse.urlparse(url)
+        u = urlparse(url)
         return u.geturl()
 
     def _download_page(self):
-        request = urllib2.Request(self.url)
-        handle = urllib2.build_opener()
-        self.content = unicode(
+        request = urllib.request.Request(self.url)
+        handle = urllib.request.build_opener()
+        self.content = str(
             handle.open(request).read(),
             'utf-8',
             errors='replace'

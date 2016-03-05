@@ -24,6 +24,7 @@ import xml.etree.ElementTree
 from .fileset import FileSet
 from .downloadfile import DownloadFile
 
+
 class TransvisionFileSet(FileSet):
     """
         For Mozilla FR Transvision localization tool
@@ -66,15 +67,15 @@ class TransvisionFileSet(FileSet):
             source = u''
             target = u''
             context = None
-            comment = unicode(tu.get('tuid'))
+            comment = tu.get('tuid')
             for tuv in tu.findall('tuv'):
                 # attribute xml:lang
                 lang = tuv.get('{http://www.w3.org/XML/1998/namespace}lang')
                 seg = tuv.find('seg')
                 if lang == 'en-US':
-                    source = unicode(seg.text)
+                    source = seg.text
                 elif lang == 'ca':
-                    target = unicode(seg.text)
+                    target = seg.text
 
             if source in msgids:
                 context = comment
