@@ -38,6 +38,11 @@ copy_files() {
     cp $1/tm-git/src/terminology/glossarysql.py $2/models
     cp -r $1/tm-git/src/web/chosen/* $2/chosen
 
+    # Web dependencies
+    mkdir $2/builder
+    cp $1/tm-git/src/builder/cleanupfilter.py $2/builder
+
+
     # Download memories
     cp $1/tm-git/src/download.html $2
     rm -r -f $2/memories
