@@ -22,6 +22,10 @@ from whoosh.index import open_dir
 from whoosh.qparser import MultifieldParser
 import json
 
+import sys
+# This is needed because CleanUpFilter defined at index creation time is used
+# also when searching
+sys.path.append('../')
 
 class Search(object):
     """Search a term in the Whoosh index."""

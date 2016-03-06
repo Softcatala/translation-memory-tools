@@ -27,7 +27,7 @@ from whoosh.filedb.filestore import RamStorage
 
 from builder.findfiles import FindFiles
 from builder.jsonbackend import JsonBackend
-from .cleanupfilter import CleanUpFilter
+from builder.cleanupfilter import CleanUpFilter
 
 
 class IndexCreator(object):
