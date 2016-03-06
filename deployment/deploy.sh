@@ -121,7 +121,7 @@ restart_appserver
 # Notify completion
 INTERMEDIATE_PO=$ROOT/translation-memories/po
 BACKUP_DIR=$ROOT/previous
-cd $ROOT/tm-git/src/builder
+cd $ROOT/tm-git/src
 python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO
 cat builder-error.log
 
