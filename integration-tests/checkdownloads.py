@@ -23,7 +23,7 @@ sys.path.append('../src/')
 import os
 import shutil
 import tempfile
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 from builder.jsonbackend import JsonBackend
 from builder.findfiles import FindFiles
@@ -55,7 +55,7 @@ class CheckDownloads(object):
         if link is not None:
             code = CheckDownloads.HTTP_STATUS_CODE_NOT_FOUND
             try:
-                rtr = urllib2.urlopen(link)
+                rtr = urllib.request.urlopen(link)
                 code = rtr.getcode()
             except Exception:
                 pass
@@ -86,7 +86,7 @@ class CheckDownloads(object):
         if link is None:
             return
 
-        urllib.urlretrieve(link, tmp_file.name)
+        urllib.request.urlretrieve(link, tmp_file.name)
 
         cmd = 'unzip {0} -d {1} > /dev/null'.format(
             tmp_file.name,
@@ -122,8 +122,8 @@ class CheckDownloads(object):
         """
 
         # The list of invalid chars is specific to Catalan language
-        invalid_chars = {u'á', u'ñ', u'ë', u'ù', u'â', u'ê', u'î', u'ô', u'û',
-                         u'ë', u'ÿ', u'ä', u'ö'}
+        invalid_chars = {'á', 'ñ', 'ë', 'ù', 'â', 'ê', 'î', 'ô', 'û',
+                         'ë', 'ÿ', 'ä', 'ö'}
 
         try:
 
@@ -183,9 +183,10 @@ class CheckDownloads(object):
 
         code = CheckDownloads.HTTP_STATUS_CODE_NOT_FOUND
         try:
-            rtr = urllib2.urlopen(project_web)
+            rtr = urllib.request.urlopen(project_web)
             code = rtr.getcode()
-        except Exception:
+        except Exception as detail:
+            print(detail)
             pass
 
         if code != CheckDownloads.HTTP_STATUS_CODE_OK:

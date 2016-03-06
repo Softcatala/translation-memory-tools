@@ -39,9 +39,9 @@ copy_files() {
     cp -r $1/tm-git/src/web/chosen/* $2/chosen
 
     # Web dependencies
+    rm -r -f $2/builder
     mkdir $2/builder
     cp $1/tm-git/src/builder/cleanupfilter.py $2/builder
-
 
     # Download memories
     cp $1/tm-git/src/download.html $2
