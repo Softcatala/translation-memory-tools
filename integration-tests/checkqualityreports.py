@@ -18,8 +18,6 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
-sys.path.append('../src/')
 import urllib
 from builder.jsonbackend import JsonBackend
 
@@ -42,7 +40,7 @@ class CheckQualityReports(object):
         code = CheckQualityReports.HTTP_STATUS_CODE_NOT_FOUND
         length = 0
         try:
-            rtr = urllib2.urlopen(link)
+            rtr = urllib.request.urlopen(link)
             code = rtr.getcode()
             length = len(rtr.read())
         except Exception:
