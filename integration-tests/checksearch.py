@@ -102,5 +102,5 @@ class CheckSearch(object):
             self._check_glossary_source_search()
             return True
         except Exception as detail:
-            print('Error checking search results: ' + detail)
+            print('Error checking search results: ' + str(detail))
             return False
