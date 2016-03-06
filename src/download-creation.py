@@ -97,7 +97,7 @@ def get_file_date(filename, po_directory):
 
 def get_project_dates(name):
     project_dao = ProjectMetaDataDao()
-    project_dao.open('../builder/statistics.db3')
+    project_dao.open('builder/statistics.db3')
     dto = project_dao.get(name)
 
     if dto is None:
