@@ -5,7 +5,7 @@
     {% for entry in glossary %}
         <li>
             <p {% if entry.termcat %} class="green"{% endif %}>{{ entry.translation }} 
-            (usada {{entry.percentage}}%, coincidències {{entry.frequency}}) </p>
+            (usada  {{'%0.2f'|format(entry.percentage)}}%, coincidències {{entry.frequency}}) </p>
         </li>
     {% endfor %}
     </ul>
