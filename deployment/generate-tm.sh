@@ -62,8 +62,6 @@ if [ -z "$NOPOBUILD" ]; then
     python $BUILDER/builder.py -s $PROJECTS --softcatala
     cp tots-tm.tmx $INTERMEDIATE_TMX/
     cp softcatala-tm.tmx $INTERMEDIATE_TMX/
-    # Zip all individual pos
-    zip tots-pos output/
 fi
 
 copy_tm_files "*.po" 200 $INTERMEDIATE_PO
