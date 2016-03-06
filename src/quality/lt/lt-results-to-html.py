@@ -9,7 +9,7 @@ def process_template(template, filename, ctx):
     # Load template and process it.
     template = open(os.path.join(__location__, template), 'r').read()
     parsed = pystache.Renderer()
-    s = parsed.render(template), ctx)
+    s = parsed.render(template, ctx)
 
     # Write output.
     f = open(filename, 'w')
