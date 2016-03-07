@@ -1,9 +1,12 @@
+# Translate toolkit 1.3 and android2po 1.5 did not work well on python 3
+# Instead we install them in the system as python 2 dependencies
+# translate-toolkit 
+# android2po
+
+
 # For importing translations/creating TM files.
 polib >= 1.0.4
 transifex-client
-# Versions 1.13 in Python 3 were broken
-#translate-toolkit <= 1.11
-android2po
 pystache
 peewee
 hunspell
