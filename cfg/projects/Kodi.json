@@ -1,6 +1,6 @@
 {
     "project": "Kodi", 
-    "projectweb": "http://kodi.tv/", 
+    "projectweb": "https://kodi.tv/",
     "fileset": {
         "kodi-main": {
             "url": "https://www.transifex.com/projects/p/kodi-main/",
