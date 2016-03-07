@@ -22,13 +22,9 @@
 import datetime
 import locale
 import os
-#import sys
-from optparse import OptionParser
-
 import pystache
 
-#sys.path.append('../builder')
-
+from optparse import OptionParser
 from builder.jsonbackend import JsonBackend
 from builder.pofile import POFile
 from builder.projectmetadatadao import ProjectMetaDataDao
@@ -97,7 +93,7 @@ def get_file_date(filename, po_directory):
 
 def get_project_dates(name):
     project_dao = ProjectMetaDataDao()
-    project_dao.open('builder/statistics.db3')
+    project_dao.open('statistics.db3')
     dto = project_dao.get(name)
 
     if dto is None:
