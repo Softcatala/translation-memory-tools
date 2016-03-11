@@ -46,6 +46,7 @@ class Project(object):
         self.name = name
         self.checksum = None
         self.report_errors = True
+        self.out_directory = ""
 
     def get_filename(self):
         return self.filename
@@ -53,9 +54,13 @@ class Project(object):
     def set_add_source(self, add_source):
         self.add_source = add_source
 
+    def set_out_directory(self, out_directory):
+        self.out_directory = out_directory
+
     def _delete_po_file(self):
-        if os.path.isfile(self.filename):
-            os.remove(self.filename)
+        filename = self._get_filename_at_output(self.filename)
+        if os.path.isfile(filename):
+            os.remove(filename)
 
     def add(self, fileset):
         fileset.set_tm_file(self.filename)
@@ -143,6 +148,7 @@ class Project(object):
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
 
+            fs.set_out_directory(self.out_directory)
             self.add(fs)
             fs.add_excluded(fileset.excluded)
 
@@ -180,7 +186,7 @@ class Project(object):
         entries = -1
 
         try:
-            poFile = pofile(self.filename)
+            poFile = pofile(self._get_filename_at_output(self.filename))
 
             for entry in poFile:
                 string_words = entry.msgstr.split(' ')
@@ -195,10 +201,12 @@ class Project(object):
         return words, entries
 
     def statistics(self):
-
         words, entries = self.get_words_entries()
         msg = '{0} project. {1} translated strings, words {2}'
         logging.info(msg.format(self.name, entries, words))
+
+    def _get_filename_at_output(self, filename):
+        return os.path.join(self.out_directory, filename)
 
     def to_tmx(self):
         fileName, fileExtension = os.path.splitext(self.filename)
@@ -208,4 +216,6 @@ class Project(object):
         # to TMX
         # cmd = 'po2tmx {0} --comment others -l ca-ES -o {1}.tmx'
         cmd = 'po2tmx {0} -l ca-ES -o {1}.tmx'
-        os.system(cmd.format(self.filename, fileName))
+        cmd = cmd.format(self._get_filename_at_output(self.filename), 
+                         self._get_filename_at_output(fileName))
+        os.system(cmd)

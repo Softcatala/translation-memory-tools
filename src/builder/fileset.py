@@ -30,7 +30,7 @@ from .pofile import POFile
 class FileSet():
 
     temp_dir = './tmp'
-    output_dir = './output'
+    invidual_pos_dir = ''
 
     def __init__(self, project_name, name, url, filename):
         self.project_name = project_name
@@ -40,11 +40,19 @@ class FileSet():
         self.add_source = True
         self.excluded = []
         self.po_catalog = None
-        self.output_dir = self.output_dir + "/" + project_name.lower() + "/" + name.lower()
         self.words = -1
+        self.set_out_directory("")
 
     def set_checksum(self, checksum):
         self.checksum = checksum
+
+    def set_out_directory(self, out_directory):
+        POS_DIR = 'invididual_pos/'
+        self.out_directory = out_directory
+        self.invidual_pos_dir = os.path.join(out_directory,
+                                             POS_DIR,
+                                             self.project_name.lower(),
+                                             self.name.lower())
 
     def set_add_source(self, add_source):
         self.add_source = add_source
@@ -107,7 +115,8 @@ class FileSet():
             self.po_catalog.add_pofile(filename)
 
     def _add_tm_for_fileset_to_project_tm(self, fileset_tm):
-        project_catalog = POCatalog(self.tm_file)
+        filename = os.path.join(self.out_directory, self.tm_file)
+        project_catalog = POCatalog(filename)
         project_catalog.add_pofile(self.po_catalog.filename)
         project_catalog.cleanup()
 
@@ -115,7 +124,7 @@ class FileSet():
         self._create_tmp_directory()
         self.do()
         self._remove_tmp_directory()
-        
+
     def build(self):
         convert = ConvertFiles(self.temp_dir)
         convert.convert()
@@ -138,19 +147,23 @@ class FileSet():
         self._copy_to_output()
 
     def _copy_to_output(self):
-        if not os.path.exists(self.output_dir):
-            os.makedirs(self.output_dir)
+        if not os.path.exists(self.invidual_pos_dir):
+            os.makedirs(self.invidual_pos_dir)
 
         findFiles = FindFiles()
         files = findFiles.find(self.temp_dir, '*.po')
         for source in files:
             dirname = os.path.dirname(source)
             if dirname != self.temp_dir:
-                d = self.output_dir + dirname[len(self.temp_dir):]
+                d = os.path.join(self.invidual_pos_dir, 
+                                dirname[len(self.temp_dir):])
                 if not os.path.exists(d):
                     os.makedirs(d)
 
-            target = self.output_dir + source[len(self.temp_dir):]
+            target = os.path.join(self.invidual_pos_dir,
+                                 source[len(self.temp_dir) + 1:])
+            print(source)
+            print(target)
             shutil.copy(source, target)
 
     def _create_tmp_directory(self):

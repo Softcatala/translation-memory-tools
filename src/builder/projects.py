@@ -34,10 +34,14 @@ class Projects(object):
         self.set_tm_file('tots-tm.po')
         self.metadata_dao = ProjectMetaDataDao()
         self.metadata_dao.open('statistics.db3')
+        self.out_directory = ""
 
     def set_tm_file(self, filename):
         self.tm_file = filename
         self.tm_project = Project('Translation memory', self.tm_file)
+
+    def set_out_directory(self, out_directory):
+        self.out_directory = out_directory 
 
     def add(self, project):
         self.projects.append(project)
@@ -45,6 +49,7 @@ class Projects(object):
     def add_project(self, project_dto, add_source):
         project = Project(project_dto.name, project_dto.filename)
         project.set_add_source(add_source)
+        project.set_out_directory(self.out_directory)
         project.add_filesets(project_dto)
         self.add(project)
         logging.debug(project_dto)

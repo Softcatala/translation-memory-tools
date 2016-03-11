@@ -4,10 +4,11 @@ ROOT="$1"
 PROGRAMS=$ROOT/tm-git/src
 BUILDER=$PROGRAMS
 PROJECTS=$ROOT/tm-git/cfg/projects
+NEW_POS=$PROGRAMS/output
 
 copy_tm_files() {
 
-    cd $BUILDER
+    cd $NEW_POS
     # Copy only new PO files
     for filename in $1; do
         # If file exists and size is greater than 200 bytes
@@ -48,8 +49,6 @@ cp $INTERMEDIATE_PO/* $BACKUP_DIR
 
 if [ -z "$NOPOBUILD" ]; then
     cd $BUILDER
-    rm -f *.po
-    rm -f *.tmx
     rm -f *.log
     rm -f -r output/
 

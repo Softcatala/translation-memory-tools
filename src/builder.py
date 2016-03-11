@@ -53,6 +53,7 @@ def init_logging():
     fh.setFormatter(formatter)
     logger.addHandler(fh)
 
+
 def read_parameters():
     parser = OptionParser()
 
@@ -106,6 +107,15 @@ def read_parameters():
         help=u'Process only Softcatalà memories'
     )
 
+    parser.add_option(
+        "-o",
+        "--outputdir",
+        action="store",
+        type="string",
+        dest="out_directory",
+        default="output/",
+        help="Directory to output the files")
+
     (options, args) = parser.parse_args()
 
     projects_names = ''
@@ -113,10 +123,12 @@ def read_parameters():
         projects_names = options.projects_names.split(',')
 
     return (options.add_source, projects_names, options.projects_dir,
-            options.only_all_projects_tm, options.softcatala_only)
+            options.only_all_projects_tm, options.softcatala_only,
+            options.out_directory)
 
 
-def load_projects_from_json(add_source, projects_names, projects_dir, softcatala_only):
+def load_projects_from_json(add_source, projects_names, projects_dir,
+                            softcatala_only):
     json = JsonBackend(projects_dir)
     json.load()
 
@@ -140,6 +152,10 @@ def load_projects_from_json(add_source, projects_names, projects_dir, softcatala
         projects.add_project(project_dto, add_source)
 
 
+def create_output_dir(directory):
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+
 if __name__ == '__main__':
     print ('Translation memory builder version 0.1')
     print ('Use --help for assistance')
@@ -147,7 +163,11 @@ if __name__ == '__main__':
     start_time = datetime.datetime.now()
     init_logging()
     (add_source, projects_names, projects_dir, only_all_projects_tm,
-     softcatala_only) = read_parameters()
+     softcatala_only, out_directory) = read_parameters()
+
+    projects.set_out_directory(out_directory)
+    create_output_dir(out_directory)
+
     load_projects_from_json(add_source, projects_names, projects_dir,
                             softcatala_only)
 
