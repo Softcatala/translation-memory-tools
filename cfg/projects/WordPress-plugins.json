@@ -21,7 +21,12 @@
         "wordpress-seo-premium": {
             "url": "https://translate.yoast.com/projects/wordpress-seo-premium/ca/default/export-translations", 
             "type": "file", 
-            "target": "wordpress-seo--premium-ca.po"
+            "target": "wordpress-seo-premium-ca.po"
+        },
+        "woocommerce": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/woocommerce/dev/ca/default/export-translations",
+            "type": "file",
+            "target": "woocommerce-ca.po"
         }
     }
 }
