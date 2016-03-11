@@ -162,8 +162,6 @@ class FileSet():
 
             target = os.path.join(self.invidual_pos_dir,
                                  source[len(self.temp_dir) + 1:])
-            print(source)
-            print(target)
             shutil.copy(source, target)
 
     def _create_tmp_directory(self):
