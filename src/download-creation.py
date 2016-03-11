@@ -239,7 +239,7 @@ def read_parameters():
                       default=".",
                       help="Directory to find the TMX files")
 
-    parser.add_option("-o", "--ouputdir",
+    parser.add_option("-o", "--outputdir",
                       action="store", type="string", dest="out_directory",
                       default="",
                       help="Directory to output the files")
