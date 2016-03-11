@@ -156,7 +156,7 @@ class FileSet():
             dirname = os.path.dirname(source)
             if dirname != self.temp_dir:
                 d = os.path.join(self.invidual_pos_dir, 
-                                dirname[len(self.temp_dir):])
+                                dirname[len(self.temp_dir) + 1:])
                 if not os.path.exists(d):
                     os.makedirs(d)
 

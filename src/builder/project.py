@@ -51,6 +51,9 @@ class Project(object):
     def get_filename(self):
         return self.filename
 
+    def get_filename_fullpath(self):
+        return self._get_filename_at_output(self.filename)
+
     def set_add_source(self, add_source):
         self.add_source = add_source
 
@@ -186,7 +189,8 @@ class Project(object):
         entries = -1
 
         try:
-            poFile = pofile(self._get_filename_at_output(self.filename))
+            filename = self._get_filename_at_output(self.filename)
+            poFile = pofile(filename)
 
             for entry in poFile:
                 string_words = entry.msgstr.split(' ')
@@ -196,7 +200,7 @@ class Project(object):
 
         except Exception as detail:
             msg = 'Project. get_words_entries exception {0}'
-            logging.error(msg.format(self.filename))
+            logging.error(msg.format(filename))
 
         return words, entries
 

@@ -31,17 +31,19 @@ class Projects(object):
 
     def __init__(self):
         self.projects = list()
+        self.out_directory = ""
         self.set_tm_file('tots-tm.po')
         self.metadata_dao = ProjectMetaDataDao()
         self.metadata_dao.open('statistics.db3')
-        self.out_directory = ""
 
     def set_tm_file(self, filename):
         self.tm_file = filename
         self.tm_project = Project('Translation memory', self.tm_file)
+        self.tm_project.set_out_directory(self.out_directory)
 
     def set_out_directory(self, out_directory):
-        self.out_directory = out_directory 
+        self.out_directory = out_directory
+        self.tm_project.set_out_directory(out_directory)
 
     def add(self, project):
         self.projects.append(project)
@@ -82,13 +84,14 @@ class Projects(object):
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
-        if os.path.isfile(self.tm_file):
-            os.remove(self.tm_file)
+        tm_file = os.path.join(self.out_directory, self.tm_file)
+        if os.path.isfile(tm_file):
+            os.remove(tm_file)
 
-        projects_catalog = POCatalog(self.tm_file)
+        projects_catalog = POCatalog(tm_file)
 
         for project in self.projects:
-            project_catalog = POCatalog(project.get_filename())
+            project_catalog = POCatalog(project.get_filename_fullpath())
             projects_catalog.add_pofile(project_catalog.filename)
 
         projects_catalog.cleanup()
