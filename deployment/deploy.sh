@@ -24,9 +24,9 @@ copy_files() {
     cp $1/tm-git/src/web/web_search.py $2
     cp $1/tm-git/src/web/header.html $2
     cp $1/tm-git/src/web/footer.html $2
-    cp $1/tm-git/src/web/statistics.html $2
-    cp $1/tm-git/src/web/download.html $2
-    cp $1/tm-git/src/web/select-projects.html $2
+    cp $1/tm-git/src/statistics.html $2
+    cp $1/tm-git/src/download.html $2
+    cp $1/tm-git/src/select-projects.html $2
     cp $1/tm-git/src/web/robots.txt $2
     cp $1/tm-git/src/web/memories.html $2
     cp $1/tm-git/src/web/terminologia.html $2
