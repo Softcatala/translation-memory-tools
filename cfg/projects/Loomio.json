@@ -1,0 +1,10 @@
+{
+    "project": "Loomio",
+    "projectweb": "https://www.loomio.org/",
+    "fileset": {
+        "Loomio": {
+            "url": "https://www.transifex.com/projects/p/loomio-1/", 
+            "type": "transifex"
+        }
+    }
+}
