@@ -98,6 +98,7 @@ class GerritDirectoryFileSet(FileSet):
                 # the name standard "ca.po"
                 # The rest are produced by a2po then they have the pattern '-ca.po'
                 fileset.set_pattern('.*?ca.po')
+                fileset.set_out_directory(self.out_directory)
                 logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))
                 self.project.add(fileset)
 
