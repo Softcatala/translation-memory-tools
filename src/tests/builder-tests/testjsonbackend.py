@@ -31,6 +31,7 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(fileset.excluded, 'region.properties.po')
         self.assertEquals(fileset.excluded, 'region.properties.po')
         self.assertEquals(fileset.pattern, 'http://.*?/ca/.*?')
+        self.assertEquals(fileset.duplicates, 'msgctxt')
         return
 
     def _validate_mozilla_project(self, project):
