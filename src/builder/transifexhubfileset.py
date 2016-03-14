@@ -165,8 +165,7 @@ class TransifexHubFileSet(FileSet):
                 url = transifex_url
                 url = url + self._clean_string(option)
                 fileset = TransifexFileSet(self.project_name, option, url, '')
-                fileset.set_out_directory(self.out_directory)
-                self.project.add(fileset)
+                self.project.add_fileset(fileset)
 
             # All the new filesets have been added re-process project now
             self.project.report_errors = False

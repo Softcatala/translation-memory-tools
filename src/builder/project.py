@@ -65,8 +65,10 @@ class Project(object):
         if os.path.isfile(filename):
             os.remove(filename)
 
-    def add(self, fileset):
+    def add_fileset(self, fileset):
         fileset.set_tm_file(self.filename)
+        fileset.add_excluded(fileset.excluded)
+        fileset.set_out_directory(self.out_directory)
         self.filesets.append(fileset)
 
     def add_filesets(self, project_dto):
@@ -151,9 +153,7 @@ class Project(object):
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
 
-            fs.set_out_directory(self.out_directory)
-            self.add(fs)
-            fs.add_excluded(fileset.excluded)
+            self.add_fileset(fs)
 
     def do(self):
         start_time = datetime.datetime.now()
