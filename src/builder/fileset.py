@@ -41,6 +41,7 @@ class FileSet():
         self.excluded = []
         self.po_catalog = None
         self.words = -1
+        self.duplicates = ''
         self.set_out_directory("")
 
     def set_checksum(self, checksum):
@@ -56,6 +57,9 @@ class FileSet():
 
     def set_add_source(self, add_source):
         self.add_source = add_source
+
+    def set_duplicates(self, duplicates):
+        self.duplicates = duplicates
 
     def set_tm_file(self, tm_file):
         self.tm_file = tm_file
@@ -111,6 +115,11 @@ class FileSet():
                 continue
 
             msg = 'Adding file: {0} to translation memory'
+
+            if self.duplicates == 'msgctxt':
+                pofile = POFile(filename)
+                pofile.add_msgctxt_to_duplicates()
+
             logging.info(msg.format(filename))
             self.po_catalog.add_pofile(filename)
 
@@ -155,7 +164,7 @@ class FileSet():
         for source in files:
             dirname = os.path.dirname(source)
             if dirname != self.temp_dir:
-                d = os.path.join(self.invidual_pos_dir, 
+                d = os.path.join(self.invidual_pos_dir,
                                 dirname[len(self.temp_dir) + 1:])
                 if not os.path.exists(d):
                     os.makedirs(d)

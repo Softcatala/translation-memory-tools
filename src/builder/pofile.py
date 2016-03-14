@@ -41,6 +41,26 @@ class POFile(object):
         except Exception:
             logging.error("POFile.add_comment_to_all_entries " + self.filename)
 
+
+    def add_msgctxt_to_duplicates(self):
+        logging.error("POFile.add_msgctxt_to_duplicates for " + self.filename)
+
+        try:
+            input_po = polib.pofile(self.filename)
+            msgids = dict()
+
+            cnt = 0
+            for entry in input_po:
+                if entry.msgid in msgids:
+                    entry.msgctxt = str(cnt)
+                else:
+                    msgids[entry.msgid] = True
+
+                cnt = cnt +1
+            input_po.save(self.filename)
+        except Exception as e:
+            print(e)
+            logging.error("POFile.add_msgctxt_to_duplicates " + self.filename)
     def calculate_localized_string_checksum(self, checksum):
         try:
             poFile = polib.pofile(self.filename)

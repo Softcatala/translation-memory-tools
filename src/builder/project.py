@@ -67,7 +67,6 @@ class Project(object):
 
     def add_fileset(self, fileset):
         fileset.set_tm_file(self.filename)
-        fileset.add_excluded(fileset.excluded)
         fileset.set_out_directory(self.out_directory)
         self.filesets.append(fileset)
 
@@ -153,6 +152,8 @@ class Project(object):
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
 
+            fs.add_excluded(fileset.excluded)
+            fs.set_duplicates(fileset.duplicates)
             self.add_fileset(fs)
 
     def do(self):

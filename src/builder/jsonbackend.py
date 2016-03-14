@@ -51,12 +51,13 @@ class FileSetDTO(object):
         self.excluded = ''
         self.target = ''
         self.pattern = ''
+        self.duplicates = ''
 
     def __str__(self):
         text = ('FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, '
-                'target: {4}, pattern: {5}')
+                'target: {4}, pattern: {5}, duplicates: {6}')
         return text.format(self.name, self.url, self.type, self.excluded,
-                           self.target, self.pattern)
+                           self.target, self.pattern, self.duplicates)
 
 
 class JsonBackend(object):
@@ -88,6 +89,8 @@ class JsonBackend(object):
                 fileset.excluded = fileset_properties_value
             elif fileset_properties_attr == 'pattern':
                 fileset.pattern = fileset_properties_value
+            elif fileset_properties_attr == 'duplicates':
+                fileset.duplicates = fileset_properties_value
             else:
                 msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))
