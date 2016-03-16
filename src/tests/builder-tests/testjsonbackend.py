@@ -32,6 +32,13 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(fileset.excluded, 'region.properties.po')
         self.assertEquals(fileset.pattern, 'http://.*?/ca/.*?')
         self.assertEquals(fileset.duplicates, 'msgctxt')
+        self._validate_mozilla_project_conversor(fileset.conversor_setup)
+        return
+
+    def _validate_mozilla_project_conversor(self, conversor):
+        self.assertEquals(conversor.type, 'string')
+        self.assertEquals(conversor.verb, 'add')
+        self.assertEquals(conversor.command, ' --encoding=utf-8')
         return
 
     def _validate_mozilla_project(self, project):

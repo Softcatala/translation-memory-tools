@@ -52,6 +52,7 @@ class FileSetDTO(object):
         self.target = ''
         self.pattern = ''
         self.duplicates = ''
+        self.conversor_setup = None
 
     def __str__(self):
         text = ('FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, '
@@ -59,12 +60,36 @@ class FileSetDTO(object):
         return text.format(self.name, self.url, self.type, self.excluded,
                            self.target, self.pattern, self.duplicates)
 
+class ConversorSetupDTO(object):
+
+    def __init__(self):
+        self.type = ''
+        self.verb = ''
+        self.command = ''
+
+    def __str__(self):
+        text = ('ConversorSetupDTO. Type: {0}, verb: {1}, command: {2}')
+        return text.format(self.type, self.verb, self.command)
+
 
 class JsonBackend(object):
 
     def __init__(self, directory):
         self.directory = directory
         self.projects = []
+
+    def _process_conversor(self, fileset, conversor_values):
+        conversor_setup = ConversorSetupDTO()
+
+        for properties_attr, properties_value in conversor_values.items():
+            if properties_attr == 'type':
+                conversor_setup.type = properties_value
+            elif properties_attr == 'verb':
+                conversor_setup.verb = properties_value
+            elif properties_attr == 'command':
+                conversor_setup.command = properties_value
+
+        fileset.conversor_setup = conversor_setup
 
     def _process_fileset(self, project, project_value):
         for fileset_attr, fileset_value in project_value.items():
@@ -91,6 +116,8 @@ class JsonBackend(object):
                 fileset.pattern = fileset_properties_value
             elif fileset_properties_attr == 'duplicates':
                 fileset.duplicates = fileset_properties_value
+            elif fileset_properties_attr == 'conversor_setup':
+                self._process_conversor(fileset, fileset_value['conversor_setup'])
             else:
                 msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))
@@ -113,7 +140,6 @@ class JsonBackend(object):
                 if attribute in ('filename', 'projectweb', 'softcatala', 'disabled',
                              'downloadable', 'selectable'):
                     setattr(project, attribute, data[attribute])
-
 
                 if 'fileset' in attribute:
                     self._process_fileset(project, data['fileset'])

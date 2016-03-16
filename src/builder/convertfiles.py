@@ -25,9 +25,10 @@ from .findfiles import FindFiles
 
 class ConvertFiles():
 
-    def __init__(self, convert_dir):
+    def __init__(self, convert_dir, conversor_setup):
         self.convert_dir = convert_dir
         self.findFiles = None
+        self.conversor_setup = conversor_setup
 
     def convert(self):
         self.findFiles = FindFiles()
@@ -64,6 +65,14 @@ class ConvertFiles():
             # Allow process files with duplicated entries
             cmd = 'prop2po -t {0}/en.properties {0}/ca.properties ' \
                 '--personality java --duplicates merge -o {1}'
+
+            if self.conversor_setup is not None and \
+               self.conversor_setup.type == 'string' and \
+               self.conversor_setup.verb == 'add':
+                cmd += self.conversor_setup.command
+                logging.info('Adding parameter to conversor: {0}'.
+                             format(self.conversor_setup.command))
+
             os.system(cmd.format(dirName, filename))
 
     def _convert_ini_files_to_po(self):

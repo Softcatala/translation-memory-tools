@@ -43,6 +43,7 @@ class FileSet():
         self.words = -1
         self.duplicates = ''
         self.set_out_directory("")
+        self.conversor_setup = None
 
     def set_checksum(self, checksum):
         self.checksum = checksum
@@ -60,6 +61,9 @@ class FileSet():
 
     def set_duplicates(self, duplicates):
         self.duplicates = duplicates
+
+    def set_conversor_setup(self, conversor):
+        self.conversor_setup = conversor
 
     def set_tm_file(self, tm_file):
         self.tm_file = tm_file
@@ -135,7 +139,7 @@ class FileSet():
         self._remove_tmp_directory()
 
     def build(self):
-        convert = ConvertFiles(self.temp_dir)
+        convert = ConvertFiles(self.temp_dir, self.conversor_setup)
         convert.convert()
 
         self.clean_up_after_convert()

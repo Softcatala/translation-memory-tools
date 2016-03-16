@@ -9,7 +9,12 @@
 			"target": "mozilla.zip",
 			"excluded" : "region.properties.po",
             "pattern" : "http://.*?/ca/.*?",
-            "duplicates" : "msgctxt"
+            "duplicates" : "msgctxt",
+            "conversor_setup": {
+                "type"       : "string",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
 		},
 		"firefox-hackasaurus": {
 			"url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",

@@ -44,7 +44,7 @@ class ConvertFilesTest(unittest.TestCase):
 
         json_dir = path.dirname(path.realpath(__file__))
         json_dir += '/data/conversions/json/'
-        convert = ConvertFiles(json_dir)
+        convert = ConvertFiles(json_dir, None)
         convert.convert()
 
         entries = self._get_po_entries(json_dir)
@@ -55,7 +55,7 @@ class ConvertFilesTest(unittest.TestCase):
 
         yml_dir = path.dirname(path.realpath(__file__))
         yml_dir += '/data/conversions/yml/'
-        convert = ConvertFiles(yml_dir)
+        convert = ConvertFiles(yml_dir, None)
         convert.convert()
 
         entries = self._get_po_entries(yml_dir)

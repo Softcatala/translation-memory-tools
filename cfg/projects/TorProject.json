@@ -4,7 +4,12 @@
     "fileset": {
         "TorProject": {
             "url": "https://www.transifex.com/projects/p/torproject", 
-            "type": "transifex"
+            "type": "transifex",
+            "conversor_setup": {
+                "type"       : "string",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
         }
     }
 }
