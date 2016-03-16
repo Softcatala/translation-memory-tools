@@ -68,8 +68,41 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         checksum = hashlib.new('sha1')
         pofile.calculate_localized_string_checksum(checksum)
         self.assertEquals(u'edf879d0199103cc09cc464deebdfd3e98613e4b',
-                    checksum.hexdigest())
+                          checksum.hexdigest())
 
+    def _create_po_with_duplicated_strings(self, filename):
+        pofile = polib.POFile()
+        entry = polib.POEntry(msgid='File', msgstr='Fitxer')
+        pofile.append(entry)
+        pofile.append(entry)
+        pofile.save(filename)
+
+    def _does_pofile_contains_duplicated_strings(self, filename):
+        strs = []
+
+        print(filename)
+        po = polib.pofile(filename)
+        for entry in po:
+            _str = entry.msgid
+            if entry.msgctxt is not None:
+                _str += entry.msgid
+
+            if _str in strs:
+                return True
+            strs.append(_str)
+
+        return False
+
+    def test_add_msgctxt_to_duplicates(self):
+        tmpfile = tempfile.NamedTemporaryFile()
+        filename = tmpfile.name + ".po"
+        self._create_po_with_duplicated_strings(filename)
+
+        poFile = POFile(filename)
+        poFile.add_msgctxt_to_duplicates()
+
+        rslt = self._does_pofile_contains_duplicated_strings(filename)
+        self.assertEquals(False, rslt)
 
 if __name__ == '__main__':
     unittest.main()

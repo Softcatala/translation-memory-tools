@@ -43,7 +43,7 @@ class POFile(object):
 
 
     def add_msgctxt_to_duplicates(self):
-        logging.error("POFile.add_msgctxt_to_duplicates for " + self.filename)
+        logging.debug("POFile.add_msgctxt_to_duplicates for " + self.filename)
 
         try:
             input_po = polib.pofile(self.filename)
