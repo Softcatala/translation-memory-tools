@@ -217,7 +217,7 @@
             "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/arm.fedoraproject.org/ca/po?docId=po%2Farm.fedoraproject.org", 
             "type": "file", 
             "target": "ca.po"
-        }
+        },
         "budget.fedoraproject.org": {
             "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/budget.fedoraproject.org/ca/po?docId=po%2Fbudget.fedoraproject.org", 
             "type": "file", 
