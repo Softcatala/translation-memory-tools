@@ -130,20 +130,25 @@ class JsonBackend(object):
             self._load_file(filename)
 
     def _load_file(self, filename):
-        with open(filename) as json_data:
-            data = json.load(json_data, object_pairs_hook=OrderedDict)
+        try:
+            with open(filename) as json_data:
+                data = json.load(json_data, object_pairs_hook=OrderedDict)
 
-            # Parse projects
-            project = ProjectDTO(data['project'])
-            for attribute, value in data.items():
+                # Parse projects
+                project = ProjectDTO(data['project'])
+                for attribute, value in data.items():
 
-                if attribute in ('filename', 'projectweb', 'softcatala', 'disabled',
-                             'downloadable', 'selectable'):
-                    setattr(project, attribute, data[attribute])
+                    if attribute in ('filename', 'projectweb', 'softcatala', 'disabled',
+                                 'downloadable', 'selectable'):
+                        setattr(project, attribute, data[attribute])
 
-                if 'fileset' in attribute:
-                    self._process_fileset(project, data['fileset'])
+                    if 'fileset' in attribute:
+                        self._process_fileset(project, data['fileset'])
 
-            if project.disabled is False:
-                project.filename = '{0}-tm.po'.format(project.name.lower())
-                self.projects.append(project)
+                if project.disabled is False:
+                    project.filename = '{0}-tm.po'.format(project.name.lower())
+                    self.projects.append(project)
+        except Exception as detail:
+            msg = 'JsonBackend._load_file. Cannot load {0}. Error: {1}'. \
+                  format(filename, detail)
+            logging.error(msg)
