@@ -217,6 +217,11 @@
             "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/arm.fedoraproject.org/ca/po?docId=po%2Farm.fedoraproject.org", 
             "type": "file", 
             "target": "ca.po"
+        }
+        "budget.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/budget.fedoraproject.org/ca/po?docId=po%2Fbudget.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
         },
         "dnf": {
             "url": "https://fedora.zanata.org/rest/file/translation/dnf/master/ca/po?docId=dnf", 
@@ -333,6 +338,11 @@
             "type": "file",
             "target": "ca.po"
         },
+         "osinfo-db-tools": {
+            "url": "https://fedora.zanata.org/rest/file/translation/osinfo-db-tools/master/ca/po?docId=osinfo-db-tools",
+            "type": "file",
+            "target": "ca.po"
+        },
          "pulseaudio": {
             "url": "https://fedora.zanata.org/rest/file/translation/pulseaudio/6.0/ca/po?docId=pulseaudio.pot",
             "type": "file",
@@ -344,7 +354,7 @@
             "target": "ca.po"
         },
         "tvtime": {
-            "url": "https://fedora.zanata.org/rest/file/translation/tvtime/1.0.7/ca/po?docId=tvtime",
+            "url": "https://fedora.zanata.org/rest/file/translation/tvtime/1.0.9/ca/po?docId=tvtime",
             "type": "file",
             "target": "ca.po"
         },
