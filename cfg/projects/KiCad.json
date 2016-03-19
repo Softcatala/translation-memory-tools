@@ -1,0 +1,11 @@
+{
+    "project": "KiCad",
+    "projectweb": "http://docs.kicad-pcb.org/en/gui_translation_howto.html",
+    "fileset": {
+        "LibreCAD": {
+            "url": "https://github.com/KiCad/kicad-i18n/blob/master/ca/kicad.po",
+            "type": "file",
+            "target": "kicad-ca.po"
+        }
+    }
+}
