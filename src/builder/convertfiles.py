@@ -75,23 +75,43 @@ class ConvertFiles():
 
             os.system(cmd.format(dirName, filename))
 
+    def _execute_convert_ini_files_to_po(self, src, trg, dirName):
+        os.rename(src, '{0}/en.strings'.format(dirName))
+        os.rename(trg, '{0}/ca.strings'.format(dirName))
+
+        filename = '{0}/strings-ca.po'.format(dirName)
+        cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 '\
+            '--personality=strings -o {1}'
+        os.system(cmd.format(dirName, filename))
+
     def _convert_ini_files_to_po(self):
-        for inifile in self.findFiles.find(self.convert_dir, 'ca.ini'):
+        for inifile in self.findFiles.find(self.convert_dir, 'ca*.ini'):
             dirName = os.path.dirname(inifile)
             logging.info('convert ini file: {0}'.format(inifile))
 
             # http://bugs.locamotion.org/show_bug.cgi?id=3148
             # The rename operations can be removed when the issue is fixed
-            os.rename('{0}/en.ini'.format(dirName),
-                      '{0}/en.strings'.format(dirName))
 
-            os.rename('{0}/ca.ini'.format(dirName),
-                      '{0}/ca.strings'.format(dirName))
+            src = None
+            filename = '{0}/en.ini'.format(dirName)
+            if os.path.isfile(filename):
+                src = filename
+            else:
+                filename = '{0}/en_GB.ini'.format(dirName)
+                if os.path.isfile(filename):
+                    src = filename
 
-            filename = '{0}/strings-ca.po'.format(dirName)
-            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 '\
-                '--personality=strings -o {1}'
-            os.system(cmd.format(dirName, filename))
+            trg = None
+            filename = '{0}/ca.ini'.format(dirName)
+            if os.path.isfile(filename):
+                trg = filename
+            else:
+                filename = '{0}/ca_ES.ini'.format(dirName)
+                if os.path.isfile(filename):
+                    trg = filename
+
+            if src is not None and trg is not None:
+                self._execute_convert_ini_files_to_po(src, trg, dirName)
 
     def _convert_php_resources_files_to_po(self):
         if len(self.findFiles.find(self.convert_dir, '*.php')) == 0:

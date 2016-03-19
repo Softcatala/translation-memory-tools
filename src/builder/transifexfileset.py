@@ -46,7 +46,7 @@ class TransifexFileSet(FileSet):
         # To be able to process files with no English source (.strings, .xml,
         # etc) we pull the English files too and then we delete the ones that
         # include source and target
-        os.system('tx pull -f -lca,ca_ES,en')
+        os.system('tx pull -f -lca,ca_ES,en,en_GB')
         os.chdir(prevdir)
         self._remove_non_translation_only_files()
 

@@ -1,0 +1,11 @@
+{
+    "project": "EasyDiscuss",
+    "projectweb": "http://stackideas.com/easydiscuss",
+    "fileset": {
+        "EasyDiscuss": {
+            "url": "https://www.transifex.com/projects/p/ed4",
+            "type": "transifex",
+            "duplicates" : "msgctxt"
+        }
+    }
+}
