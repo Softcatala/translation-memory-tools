@@ -49,7 +49,7 @@ class FileSet():
         self.checksum = checksum
 
     def set_out_directory(self, out_directory):
-        POS_DIR = 'invididual_pos/'
+        POS_DIR = 'individual_pos/'
         self.out_directory = out_directory
         self.invidual_pos_dir = os.path.join(out_directory,
                                              POS_DIR,
