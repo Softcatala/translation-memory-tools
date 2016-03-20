@@ -14,7 +14,7 @@ cd $ROOT/tm-git/src/terminology
 rm -r -f sc-tm
 mkdir sc-tm
 cd sc-tm
-cp $ROOT/tm-git/src/web/memories/softcatala-tm.po.zip .
+cp $ROOT/tm-git/src/memories/softcatala-tm.po.zip .
 unzip softcatala-tm.po.zip
 rm -f softcatala-tm.po
 cd ..
@@ -22,7 +22,7 @@ cd ..
 rm -r -f tots-tm
 mkdir tots-tm
 cd tots-tm
-cp $ROOT/tm-git/src/web/memories/tots-tm.po.zip .
+cp $ROOT/tm-git/src/memories/tots-tm.po.zip .
 unzip tots-tm.po.zip
 rm -f tots-tm.po
 cd ..
