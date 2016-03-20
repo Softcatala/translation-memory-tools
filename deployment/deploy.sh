@@ -49,7 +49,7 @@ copy_files() {
     cp $1/tm-git/src/memories/*.zip $2/memories
 
     # Deploy terminology
-    cd $1/tm-git/src/terminology
+    cd $1/tm-git/src/
     cp *.html $2
     cp *.csv $2
     cp sc-glossary.db3 $2/glossary.db3

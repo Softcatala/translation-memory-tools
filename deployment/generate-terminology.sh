@@ -8,7 +8,7 @@ fi
 
 ROOT="$1"
 
-cd $ROOT/tm-git/src/terminology
+cd $ROOT/tm-git/src/
 
 # Get files
 rm -r -f sc-tm
