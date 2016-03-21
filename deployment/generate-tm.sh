@@ -57,8 +57,8 @@ if [ -z "$NOPOBUILD" ]; then
 
     # Build aggregated memories
     cd $INTERMEDIATE_PO/
-    python $BUILDER/builder.py -s $PROJECTS --all
-    python $BUILDER/builder.py -s $PROJECTS --softcatala
+    python $BUILDER/builder.py -s $PROJECTS -o . --all
+    python $BUILDER/builder.py -s $PROJECTS -o . --softcatala
     cp tots-tm.tmx $INTERMEDIATE_TMX/
     cp softcatala-tm.tmx $INTERMEDIATE_TMX/
 fi
