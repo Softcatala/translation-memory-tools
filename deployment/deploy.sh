@@ -55,7 +55,7 @@ copy_files() {
     cp sc-glossary.db3 $2/glossary.db3
 
     # Deploy quality reports
-    cd $1/tm-git/quality
+    cd $1/tm-git/src/output/quality
     rm -r -f $2/quality
     mkdir $2/quality
     cp *.html $2/quality

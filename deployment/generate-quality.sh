@@ -1,7 +1,7 @@
 #!/bin/bash
 
 root="$1"
-lt_output=$root/tm-git/quality
+lt_output=$root/tm-git/src/output/quality
 lt_log=$lt_output/excluded-lines.log 
 cnt=0
 
