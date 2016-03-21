@@ -22,8 +22,6 @@ import polib
 import pystache
 import json
 
-from optparse import OptionParser
-
 
 class Target(object):
 
@@ -58,7 +56,7 @@ def process_template(template, filename, ctx):
     s = parsed.render(template, ctx)
 
     f = open(filename, 'w')
-    f.write(s.encode("utf-8"))
+    f.write(s)
     f.close()
 
 
@@ -70,7 +68,6 @@ def _load_iso_files(filename):
         data = json.load(json_data)
 
     return data
-
 
 
 class IsoEntry(object):
@@ -100,15 +97,14 @@ def main():
 
         ctx = {
             'entries': translations,
-            'title' : title,
-            'text' : text,
+            'title': title,
+            'text': text,
         }
 
         process_template(template, output, ctx)
 
         iso_entry = IsoEntry(key, output, title)
         isos_list.append(iso_entry)
-    
 
     ctx = {
         'entries': isos_list,
