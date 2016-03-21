@@ -32,7 +32,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
  
     if [ ! -s  "$file.txt" ]; then
         echo "No translations in file" "$file"
-        msgfmt -c --statistics "$file-filtrat.po"
+        rm "$file-filtrat.po"
         continue
     fi
 
