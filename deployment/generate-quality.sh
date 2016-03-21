@@ -9,7 +9,7 @@ cnt=0
 rm -r -f $lt_log
 mkdir -p $lt_output
 
-cd $root/tm-git/src/output/invididual_pos
+cd $root/tm-git/src/output/individual_pos
 
 # Every project has its own subdirectory
 for project_dir in */; do
