@@ -146,8 +146,7 @@ class CheckDownloads(object):
                 if len(poFile) > 100 and invalid > 0:
                     percentage = 100.0 * invalid / len(poFile)
                     if percentage > THRESHOLD_PERCENTAGE:
-                        self.errors = self.errors + 1
-                        print("Unsual number of invalid chars at {0} ({1}%)".\
+                        print("Unsual number of invalid chars at {0} ({1}%)".
                               format(filename, str(percentage)))
 
         except Exception as detail:
