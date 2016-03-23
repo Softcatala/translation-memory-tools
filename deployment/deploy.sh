@@ -110,6 +110,7 @@ python run.py -e preprod
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then 
     echo "Aborting deployment. Integration tests did not pass"
+    cat builder-error.log
     exit
 fi
 
