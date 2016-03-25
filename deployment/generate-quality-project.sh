@@ -76,4 +76,4 @@ done
 cat $lt_html/footer.html >> $lt_output/$report_file
 
 duration=$SECONDS
-echo "Generate quality for $project_dir: $(($duration / 60))m $(($duration % 60))s."
+echo "Generated quality for $project_dir: $(($duration / 60))m $(($duration % 60))s."
