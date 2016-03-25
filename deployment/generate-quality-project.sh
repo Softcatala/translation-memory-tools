@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SECONDS=0
 root="$1"
 lt_output=$root/tm-git/src/output/quality
 lt_html=$root/tm-git/src/quality/lt
@@ -73,3 +74,5 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
 done
 cat $lt_html/footer.html >> $lt_output/$report_file
 
+duration=$SECONDS
+echo "Generate quality for $project_dir: $(($duration / 60))m $(($duration % 60))s."
