@@ -40,5 +40,4 @@ class Glossary(object):
             'num_of_entries': len(entries),
             'date': self.date,
             'description': self.description,
-            'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
         }
