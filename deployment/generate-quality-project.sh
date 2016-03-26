@@ -17,7 +17,6 @@ echo "project_dir_project:" $project_dir
 report_file="${project_dir::-1}.html"
 
 cat $lt_html/header.html > $lt_output/$report_file
-echo "<p><i>Informe generat el `date +%Y-%m-%d`</i></p>" >> $lt_output/$report_file
 find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d '' file; do
 
     source /home/jmas/web/python3-env/bin/activate # Specific to SC machine cfg
@@ -73,6 +72,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     rm "$file.txt"
     
 done
+echo "<p><i>Informe generat el `date +%Y-%m-%d`</i></p>" >> $lt_output/$report_file
 cat $lt_html/footer.html >> $lt_output/$report_file
 
 duration=$SECONDS
