@@ -14,7 +14,6 @@
 
   </head>
   <body>
-  <div id="container">
 <!--#include virtual="/ssi/menu-header.html" -->
 
 <section role="main" class="content-wrapper" id="content">
@@ -38,6 +37,7 @@
     </section>
 
      <!-- bodyContent -->
+    <div class="container-fluid">   
     <div>
     <span class="searched">Resultats de la cerca per:</span>
     <span class="searched-term">
@@ -94,7 +94,8 @@
     {% endfor %}
     {% include "templates/pagination.html" %}
     </div>
-    </div> 
+    </div>
+    
      <!--#include virtual="/ssi/footer-content.html" -->
   </body>
 </html>
