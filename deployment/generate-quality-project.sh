@@ -23,13 +23,10 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     echo "Executing LT on: " "$file"
     # Conversion from PO to HTML
     msgattrib --no-obsolete --no-fuzzy --translated "$file" > "$file-filtrat.po"
-    po2txt "$file-filtrat.po" > "$file.html"
-    sed -i 's/\\[rtn]/ /g' "$file.html"
+    po2txt "$file-filtrat.po" > "$file.txt"
+    sed -i 's/\\[rtn]/ /g' "$file.txt"
 
-    # Conversion from HTML to TXT
-    java -Dfile.encoding=UTF-8 -jar $tike_path/tika-app-1.7.jar -t "$file.html"  > "$file.txt"
     sed -i 's/[_&~]//g' "$file.txt" # remove accelerators
-    rm "$file.html"
  
     if [ ! -s  "$file.txt" ]; then
         echo "No translations in file" "$file"
