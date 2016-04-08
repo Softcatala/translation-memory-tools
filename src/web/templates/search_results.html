@@ -16,9 +16,29 @@
   <body>
   <div id="container">
 <!--#include virtual="/ssi/menu-header.html" -->
+
+<section role="main" class="content-wrapper" id="content">
+    <header class="main-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-8 col-sm-9">
+                    <h1>Resultats de la cerca</h1>
+                    <div class="compartiu">
+                        <p>Compartiu</p>
+                        <ul class="compartiu-media">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.softcatala.org/recursos"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/intent/tweet?text= Recursos per a traductors de #softcatala https://www.softcatala.org/recursos"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://plus.google.com/share?url=https://www.softcatala.org/recursos"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    </section>
+
      <!-- bodyContent -->
-    <h1 class="section">Resultats de la cerca</h1>
-    <div class="bodyRecurs">
+    <div>
     <span class="searched">Resultats de la cerca per:</span>
     <span class="searched-term">
         {% if source %}
