@@ -5,7 +5,7 @@ copy_files() {
     #Softcatalà headers and footers
     rm -r -f $2/ssi
     mkdir $2/ssi
-    cp -r $1/web-Softcatala/ssi/* $2/ssi
+    cp -r $1/web-2015/ssi/* $2/ssi
 
     # Index
     rm -r -f $2/indexdir
