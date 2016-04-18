@@ -6,6 +6,11 @@
             "url": "https://raw.githubusercontent.com/KiCad/kicad-i18n/master/ca/kicad.po",
             "type": "file",
             "target": "kicad-ca.po"
+        },
+        "kicad-doc": {
+            "url": "https://raw.githubusercontent.com/KiCad/kicad-doc/master/src/kicad/po/ca.po",
+            "type": "file",
+            "target": "kicad-doc-ca.po"
         }
     }
 }
