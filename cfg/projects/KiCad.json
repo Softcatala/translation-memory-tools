@@ -11,6 +11,11 @@
             "url": "https://raw.githubusercontent.com/KiCad/kicad-doc/master/src/kicad/po/ca.po",
             "type": "file",
             "target": "kicad-doc-ca.po"
+        },
+	"getting-started-doc": {
+            "url": "https://raw.githubusercontent.com/KiCad/kicad-doc/master/src/getting_started_in_kicad/po/ca.po",
+            "type": "file",
+            "target": "getting-started-doc-ca.po"
         }
     }
 }
