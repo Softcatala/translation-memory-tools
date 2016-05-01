@@ -124,7 +124,7 @@
             "target": "ca.po"
         },
          "comps": {
-            "url": "https://fedora.zanata.org/rest/file/translation/rhel-comps/master/ca/po?docId=comps", 
+            "url": "https://fedora.zanata.org/rest/file/translation/comps/master/ca/po?docId=po%2Fcomps", 
             "type": "file", 
             "target": "ca.po"
         },
@@ -325,11 +325,6 @@
         },
          "libvirt-sandbox": {
             "url": "https://fedora.zanata.org/rest/file/translation/libvirt-sandbox/master/ca/po?docId=libvirt-sandbox",
-            "type": "file",
-            "target": "ca.po"
-        },
-         "NetworkManager": {
-            "url": "https://fedora.zanata.org/rest/file/translation/NetworkManager/master/ca/po?docId=NetworkManager",
             "type": "file",
             "target": "ca.po"
         },
