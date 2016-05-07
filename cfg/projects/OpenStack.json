@@ -1,5 +1,6 @@
 {
-    "project": "OpenStack", 
+    "project": "OpenStack",
+    "disabled": true,
     "projectweb": "https://wiki.openstack.org/wiki/Translations", 
     "fileset": {
         "main": {
