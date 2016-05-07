@@ -1,6 +1,6 @@
 {
     "project": "LibreOffice", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/LibreOffice", 
+    "projectweb": "https://www.softcatala.org/projectes/libreoffice/", 
     "softcatala": true, 
     "fileset": {
         "UI": {

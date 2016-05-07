@@ -1,6 +1,6 @@
 {
     "project": "VirtualBox", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/VirtualBox", 
+    "projectweb": "https://www.softcatala.org/projectes/virtualbox/", 
     "softcatala": true, 
     "fileset": {
         "virtualbox": {

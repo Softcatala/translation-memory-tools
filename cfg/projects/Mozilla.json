@@ -1,6 +1,6 @@
 {
     "project": "Mozilla", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/Mozilla", 
+    "projectweb": "https://www.softcatala.org/projectes/mozilla/", 
     "softcatala": true, 
     "fileset": {
         "firefox": {

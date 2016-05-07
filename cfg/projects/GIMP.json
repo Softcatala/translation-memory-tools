@@ -1,6 +1,6 @@
 {
     "project": "GIMP", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/Gimp", 
+    "projectweb": "https://www.softcatala.org/projectes/gimp/", 
     "softcatala": true, 
     "fileset": {
         "gimp": {

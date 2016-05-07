@@ -1,6 +1,6 @@
 {
     "project": "GPGTools", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/GPGTools", 
+    "projectweb": "https://www.softcatala.org/projectes/gpgtools/", 
     "softcatala": true, 
     "fileset": {
         "GPGMail": {

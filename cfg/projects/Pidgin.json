@@ -1,6 +1,6 @@
 {
     "project": "Pidgin", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/Pidgin", 
+    "projectweb": "https://www.softcatala.org/projectes/pidgin/", 
     "softcatala": true, 
     "fileset": {
         "Pidgin": {
