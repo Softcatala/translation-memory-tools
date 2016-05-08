@@ -2,7 +2,7 @@
     "project": "Audacity", 
     "projectweb": "http://www.audacityteam.org/", 
     "fileset": {
-        "Git": {
+        "Audacity": {
             "url": "https://raw.githubusercontent.com/audacity/audacity/master/locale/ca.po", 
             "type": "file", 
             "target": "ca-audacity.po"
