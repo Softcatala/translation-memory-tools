@@ -2,7 +2,7 @@
     "project": "Exaile", 
     "projectweb": "http://www.exaile.org", 
     "fileset": {
-        "Git": {
+        "Exaile": {
             "url": "https://raw.githubusercontent.com/exaile/exaile/master/po/ca.po", 
             "type": "file", 
             "target": "ca-exaile.po"
