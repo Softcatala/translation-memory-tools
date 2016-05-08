@@ -1,11 +1,11 @@
 {
     "project": "Audacity", 
-    "projectweb": "https://www.transifex.com/projects/p/audacity", 
+    "projectweb": "http://www.audacityteam.org/", 
     "fileset": {
-        "audacity": {
-            "url": "https://www.transifex.com/projects/p/audacity/", 
-            "type": "transifex", 
-            "target": "audacity-ca.po"
+        "Git": {
+            "url": "https://raw.githubusercontent.com/audacity/audacity/master/locale/ca.po", 
+            "type": "file", 
+            "target": "ca-audacity.po"
         }
     }
 }
