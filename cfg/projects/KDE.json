@@ -3,19 +3,19 @@
     "projectweb": "http://cat.kde.org/", 
     "fileset": {
         "web": {
-            "url": "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/ca/messages/", 
+            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/ca/messages/", 
             "type": "subversion"
         }, 
         "documentation": {
-            "url": "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/ca/docmessages/", 
+            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/ca/docmessages/", 
             "type": "subversion"
         },
         "web-kde5": {
-            "url": "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kf5/ca/messages/",
+            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/messages/",
             "type": "subversion"
         },
         "documentation-kde5": {
-            "url": "svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kf5/ca/docmessages/",
+            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/docmessages/",
             "type": "subversion"
         }
     }
