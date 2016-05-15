@@ -28,6 +28,11 @@
             "type": "file", 
             "target": "ca.po"
         },
+         "blivet-gui": {
+            "url": "https://fedora.zanata.org/rest/file/translation/blivet-gui/f24-branch/ca/po?docId=po%2Fblivet-gui", 
+            "type": "file", 
+            "target": "ca.po"
+        },
          "certmonger": {
             "url": "https://fedora.zanata.org/rest/file/translation/certmonger/master/ca/po?docId=certmonger",
             "type": "file",
