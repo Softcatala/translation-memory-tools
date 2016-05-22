@@ -1,6 +1,6 @@
 {
     "project": "Scribus", 
-    "projectweb": "http://wiki.scribus.net/canvas/Official:Translation_Howto", 
+    "projectweb": "https://wiki.scribus.net/canvas/Official:Translation_Howto", 
     "fileset": {
         "scribus": {
             "url": "svn://scribus.net/trunk/Scribus/resources/translations/scribus.ca.ts", 
