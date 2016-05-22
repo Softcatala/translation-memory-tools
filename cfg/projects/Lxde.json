@@ -1,5 +1,6 @@
 {
-    "project": "Lxde", 
+    "project": "Lxde",
+    "disabled": true,
     "projectweb": "http://wiki.lxde.org/en/Category:Translations:ca",
     "fileset": {
         "Lxde": {
