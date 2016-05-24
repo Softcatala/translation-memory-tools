@@ -31,6 +31,11 @@
             "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-experimental/master/po/ca.po", 
             "type": "file", 
             "target": "ca-compiz-plugins-experimental.po"
+        },
+	"emerald": {
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/emerald/master/po/ca.po", 
+            "type": "file", 
+            "target": "ca-emerald.po"
         }
     }
 }
