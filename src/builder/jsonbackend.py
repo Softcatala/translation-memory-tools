@@ -53,12 +53,14 @@ class FileSetDTO(object):
         self.pattern = ''
         self.duplicates = ''
         self.conversor_setup = None
+        self.remove_untranslated = False
 
     def __str__(self):
         text = ('FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, '
-                'target: {4}, pattern: {5}, duplicates: {6}')
+                'target: {4}, pattern: {5}, duplicates: {6}, remove_untranslated {7}')
         return text.format(self.name, self.url, self.type, self.excluded,
-                           self.target, self.pattern, self.duplicates)
+                           self.target, self.pattern, self.duplicates,
+                           self.remove_untranslated)
 
 class ConversorSetupDTO(object):
 
