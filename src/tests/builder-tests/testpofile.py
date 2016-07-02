@@ -77,6 +77,14 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         pofile.append(entry)
         pofile.save(filename)
 
+    def _create_po_with_untranslated_strings(self, filename):
+        pofile = polib.POFile()
+        entry = polib.POEntry(msgid='File', msgstr='File')
+        pofile.append(entry)
+        entry = polib.POEntry(msgid='Exit', msgstr='Surt')
+        pofile.append(entry)
+        pofile.save(filename)
+
     def _does_pofile_contains_duplicated_strings(self, filename):
         strs = []
 
@@ -103,6 +111,17 @@ msgstr 'Apaga les màquines virtuals seleccionades'
 
         rslt = self._does_pofile_contains_duplicated_strings(filename)
         self.assertEquals(False, rslt)
+
+    def test_remove_untranslated_strings(self):
+        tmpfile = tempfile.NamedTemporaryFile()
+        filename = tmpfile.name + ".po"
+        self._create_po_with_untranslated_strings(filename)
+
+        poFile = POFile(filename)
+        poFile._remove_untranslated_strings()
+
+        po = polib.pofile(filename)
+        self.assertEquals(1, len(po))
 
 if __name__ == '__main__':
     unittest.main()

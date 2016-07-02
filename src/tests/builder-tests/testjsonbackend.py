@@ -41,6 +41,10 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(conversor.command, ' --encoding=utf-8')
         return
 
+    def _validate_firefox_fileset(self, fileset):
+        self.assertTrue(fileset.remove_untranslated)
+        return
+
     def _validate_mozilla_project(self, project):
         url = 'http://www.softcatala.org/wiki/Projectes/Mozilla'
         self.assertEquals(project.name, 'Mozilla')
@@ -48,6 +52,7 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(project.projectweb, url)
         self.assertEquals(len(project.filesets), 3)
         self._validate_mozilla_project_mozilla_fileset(project.filesets[0])
+        self._validate_firefox_fileset(project.filesets[1])
         return
 
     def test_processFileSet(self):

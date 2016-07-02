@@ -4,7 +4,8 @@
     "fileset": {
         "Piwik": {
             "url": "https://www.transifex.com/projects/p/piwik/",
-            "type": "transifex"
+            "type": "transifex",
+            "remove_untranslated" : true
         }
     }
 }

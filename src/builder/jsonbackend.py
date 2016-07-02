@@ -118,6 +118,8 @@ class JsonBackend(object):
                 fileset.duplicates = fileset_properties_value
             elif fileset_properties_attr == 'conversor_setup':
                 self._process_conversor(fileset, fileset_value['conversor_setup'])
+            elif fileset_properties_attr == 'remove_untranslated':
+                fileset.remove_untranslated = fileset_properties_value
             else:
                 msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))

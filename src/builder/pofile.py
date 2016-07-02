@@ -83,3 +83,16 @@ class POFile(object):
             logging.error("POFile.get_statistics exception " + self.filename)
         finally:
             return words
+
+    def _remove_untranslated_strings(self):
+        try:
+            input_po = polib.pofile(self.filename)
+
+            for entry in input_po:
+                if entry.msgid == entry.msgstr:
+                    input_po.remove(entry)
+
+            input_po.save(self.filename)
+        except Exception:
+            logging.error("POFile._remove_untranslated_string " + self.filename)
+

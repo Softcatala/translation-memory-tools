@@ -155,6 +155,7 @@ class Project(object):
             fs.add_excluded(fileset.excluded)
             fs.set_duplicates(fileset.duplicates)
             fs.set_conversor_setup(fileset.conversor_setup)
+            fs.set_remove_untranslated(fileset.remove_untranslated)
             self.add_fileset(fs)
 
     def do(self):

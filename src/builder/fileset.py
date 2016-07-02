@@ -44,6 +44,7 @@ class FileSet():
         self.duplicates = ''
         self.set_out_directory("")
         self.conversor_setup = None
+        self.remove_untranslated = False
 
     def set_checksum(self, checksum):
         self.checksum = checksum
@@ -72,12 +73,14 @@ class FileSet():
         if len(filename) > 0:
             self.excluded.append(filename)
 
+    def set_remove_untranslated(self, remove_untranslated):
+        self.remove_untranslated = remove_untranslated
+
     def add_comments(self):
         if not self.add_source:
             return
 
         findFiles = FindFiles()
-
         for filename in findFiles.find(self.temp_dir, '*.po'):
             relative = filename.replace(self.temp_dir, '')
             pofile = POFile(filename)
@@ -93,6 +96,15 @@ class FileSet():
 
             pofile.add_comment_to_all_entries(msg)
             pofile.calculate_localized_string_checksum(self.checksum)
+
+    def _remove_untranslated_strings(self):
+        if self.remove_untranslated is False:
+            return
+
+        findFiles = FindFiles()
+        for filename in findFiles.find(self.temp_dir, '*.po'):
+            pofile = POFile(filename)
+            pofile._remove_untranslated_strings()
 
     def _should_exclude_file(self, filename):
         exclude = False
@@ -143,6 +155,7 @@ class FileSet():
         convert.convert()
 
         self.clean_up_after_convert()
+        self._remove_untranslated_strings()
         self.add_comments()
 
         findFiles = FindFiles()
