@@ -1,0 +1,10 @@
+{
+    "project": "Amara",
+    "projectweb": "https://amara.org/ca/",
+    "fileset": {
+        "Amara": {
+            "url": "https://www.transifex.com/projects/p/universalsubtitles/",
+            "type": "transifex"
+        }
+    }
+}
