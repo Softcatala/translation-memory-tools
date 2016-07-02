@@ -127,26 +127,38 @@ class CheckDownloads(object):
 
         try:
 
-            THRESHOLD_PERCENTAGE = 1
+            THRESHOLD_PERCENTAGE_INVALID_CHARS = 1
+            THRESHOLD_PERCENTAGE_NOT_LOCALIZED = 30
             findFiles = FindFiles()
             for filename in findFiles.find(self.temp_dir, "*.po"):
                 poFile = pofile(filename)
 
                 invalid = 0
+                not_localized = 0
                 for entry in poFile:
                     # Only localized segments. Skips developers names,
                     # untranslated country names, etc
                     if entry.msgid == entry.msgstr:
+                        not_localized = not_localized + 1
                         continue
 
                     for char in entry.msgstr.lower():
                         if char in invalid_chars:
                             invalid = invalid + 1
 
-                if len(poFile) > 100 and invalid > 0:
+                if len(poFile) < 100:
+                    continue
+
+                if invalid > 0:
                     percentage = 100.0 * invalid / len(poFile)
-                    if percentage > THRESHOLD_PERCENTAGE:
+                    if percentage > THRESHOLD_PERCENTAGE_INVALID_CHARS:
                         print("Unsual number of invalid chars at {0} ({1}%)".
+                              format(filename, str(percentage)))
+
+                if not_localized > 0:
+                    percentage = 100.0 * not_localized / len(poFile)
+                    if percentage > THRESHOLD_PERCENTAGE_NOT_LOCALIZED:
+                        print("Unsual number of untranslated strings at {0} ({1}%)".
                               format(filename, str(percentage)))
 
         except Exception as detail:
