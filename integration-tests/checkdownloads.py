@@ -193,7 +193,9 @@ class CheckDownloads(object):
 
         code = CheckDownloads.HTTP_STATUS_CODE_NOT_FOUND
         try:
-            rtr = urllib.request.urlopen(project_web)
+            # Python 3.x user agent returns 403 by some sites. Using a standard one instead
+            req = urllib.request.Request(project_web, headers={'User-Agent': 'Mozilla/5.0'})
+            rtr = urllib.request.urlopen(req)
             code = rtr.getcode()
         except urllib.error.HTTPError as err:
             print("HTTPError Exception: " + str(err))
