@@ -1,4 +1,3 @@
-#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -196,9 +195,12 @@ class CheckDownloads(object):
         try:
             rtr = urllib.request.urlopen(project_web)
             code = rtr.getcode()
+        except urllib.error.HTTPError as err:
+            print("HTTPError Exception: " + str(err))
+            code = err.code
+
         except Exception as detail:
-            print(detail)
-            pass
+            print("Exception: " + str(detail))
 
         if code != CheckDownloads.HTTP_STATUS_CODE_OK:
             print('Project link {0} returns {1}'.format(project_web,
