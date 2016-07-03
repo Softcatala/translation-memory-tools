@@ -2,15 +2,20 @@
     "project": "Pootle", 
     "softcatala": true, 
     "fileset": {
-        "Pootle": {
-            "url": "http://pootle.locamotion.org/ca/pootle/export/zip", 
-            "type": "compressed", 
-            "target": "pootle.zip"
-        }, 
+        "pootle": {
+            "url": "https://raw.githubusercontent.com/translate/pootle/master/pootle/locale/ca/pootle.po",
+            "type": "file",
+            "target": "pootle.po"
+        },
+        "pootle_js": {
+            "url": "https://raw.githubusercontent.com/translate/pootle/master/pootle/locale/ca/pootle_js.po",
+            "type": "file",
+            "target": "pootle_js.po"
+        },
         "virtaal": {
-            "url": "http://pootle.locamotion.org/ca/virtaal/export/zip", 
-            "type": "compressed", 
-            "target": "virtaal.zip"
+            "url": "https://raw.githubusercontent.com/translate/virtaal/master/po/ca.po",
+            "type": "file",
+            "target": "virtaal.po"
         }
     }
 }
