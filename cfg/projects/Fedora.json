@@ -248,11 +248,6 @@
             "type": "file", 
             "target": "ca.po"
         },
-        "comps": {
-            "url": "https://fedora.zanata.org/rest/file/translation/comps/master/ca/po?docId=comps", 
-            "type": "file", 
-            "target": "ca.po"
-        },
         "cockpit": {
             "url": "https://fedora.zanata.org/rest/file/translation/cockpit/master/ca/po?docId=cockpit", 
             "type": "file", 
