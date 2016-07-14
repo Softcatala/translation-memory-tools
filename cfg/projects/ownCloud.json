@@ -4,7 +4,8 @@
     "fileset": {
             "ownCloud" : {
                     "url" : "https://www.transifex.com/projects/p/owncloud/",
-                    "type": "transifex"
+                    "type": "transifex",
+                    "remove_untranslated" : true
             }
     }
 }

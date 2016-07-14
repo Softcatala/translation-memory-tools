@@ -4,7 +4,8 @@
     "fileset": {
         "CiviCRM": {
             "url": "https://www.transifex.com/projects/p/civicrm/", 
-            "type": "transifex"
+            "type": "transifex",
+            "remove_untranslated" : true
         }
     }
 }
