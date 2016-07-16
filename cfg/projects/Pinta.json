@@ -1,0 +1,11 @@
+{
+    "project": "Pinta", 
+    "projectweb": "https://translations.launchpad.net/pinta", 
+    "fileset": {
+        "Pinta": {
+            "url": "https://raw.githubusercontent.com/PintaProject/Pinta/master/po/ca.po", 
+            "type": "file",
+            "target" : "ca.po"
+        }
+    }
+}
