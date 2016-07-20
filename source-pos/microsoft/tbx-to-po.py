@@ -22,6 +22,12 @@ import xml.etree.ElementTree as ET
 
 import polib
 
+def line_prepender(filename, line):
+    with open(filename, 'r+') as f:
+        content = f.read()
+        f.seek(0, 0)
+        f.write(line.rstrip('\r\n') + '\n' + content)
+
 
 def main():
     """Converts TBX to PO"""
@@ -36,7 +42,7 @@ def main():
         'MIME-Version': '1.0',
         'Content-Type': 'text/plain; charset=utf-8',
         'Content-Transfer-Encoding': '8bit',
-        'Plural-Forms': 'nplurals=2; plural=n != 1;',
+        'Plural-Forms': 'nplurals=2; plural=n != 1;'
     }
 
     tree = ET.parse('MicrosoftTermCollection.tbx')
@@ -49,13 +55,16 @@ def main():
         # one translation (e.g.: "home page")
         source = ''
         targets = []
+        description = ''
         is_source = True
 
         # Process a single term
         for term_subitems in term_entry:
             for i in term_subitems.iter():
                 #print i.tag
-                if i.tag == 'langSet':
+                if i.tag == 'descrip':
+                    description = unicode(i.text)
+                elif i.tag == 'langSet':
                     lang = i.get('{http://www.w3.org/XML/1998/namespace}lang')
                     is_source = lang == 'en-US'
                 elif i.tag == 'term':
@@ -67,10 +76,12 @@ def main():
         terms += len(targets)
 
         for target in targets:
-            entry = polib.POEntry(msgid=source, msgstr=target)
+            entry = polib.POEntry(msgid=source, msgstr=target, tcomment=description)
             pofile.append(entry)
 
-    pofile.save("microsoft-terms.po")
+    filename = "microsoft-terms.po"
+    pofile.save(filename)
+    line_prepender(filename, "# See Microsoft license terms for this file: https://www.microsoft.com/Language/en-US/LicenseAgreement.aspx")
     print("Terms : " + str(terms))
 
 
