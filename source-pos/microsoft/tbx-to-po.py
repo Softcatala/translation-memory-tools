@@ -19,7 +19,6 @@
 # Boston, MA 02111-1307, USA.
 
 import xml.etree.ElementTree as ET
-
 import polib
 
 def line_prepender(filename, line):
@@ -39,6 +38,7 @@ def main():
         'PO-Revision-Date': '2007-10-18 14:00+0100',
         'Last-Translator': 'microsoft@microsoft.com',
         'Language-Team': 'Microsoft',
+        'Language': 'ca',
         'MIME-Version': '1.0',
         'Content-Type': 'text/plain; charset=utf-8',
         'Content-Transfer-Encoding': '8bit',
@@ -56,12 +56,12 @@ def main():
         source = ''
         targets = []
         description = ''
+        term_ids = []
         is_source = True
 
         # Process a single term
         for term_subitems in term_entry:
             for i in term_subitems.iter():
-                #print i.tag
                 if i.tag == 'descrip':
                     description = unicode(i.text)
                 elif i.tag == 'langSet':
@@ -72,11 +72,12 @@ def main():
                         source = unicode(i.text)
                     else:
                         targets.append(unicode(i.text))
+                        term_ids.append(unicode(i.get('id')))
 
         terms += len(targets)
 
-        for target in targets:
-            entry = polib.POEntry(msgid=source, msgstr=target, tcomment=description)
+        for i in xrange(len(targets)):
+            entry = polib.POEntry(msgid=source, msgstr=targets[i], tcomment=description, msgctxt=term_ids[i])
             pofile.append(entry)
 
     filename = "microsoft-terms.po"
