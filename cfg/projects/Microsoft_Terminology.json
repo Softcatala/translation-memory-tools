@@ -1,0 +1,11 @@
+{
+    "project": "Microsoft_Terminology", 
+    "projectweb": "https://www.microsoft.com/language/",
+    "fileset": {
+        "Microsoft Terminology": {
+            "url": "../source-pos/microsoft/microsoft-terms.po", 
+            "type": "local-file", 
+            "target": "microsoft-terms.po"
+        }
+    }
+}
