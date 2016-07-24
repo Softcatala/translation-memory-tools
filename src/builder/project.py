@@ -222,7 +222,7 @@ class Project(object):
         # the version and add the comment parameter to allow export comments
         # to TMX
         # cmd = 'po2tmx {0} --comment others -l ca-ES -o {1}.tmx'
-        cmd = 'po2tmx {0} -l ca-ES -o {1}.tmx'
+        cmd = 'po2tmx "{0}" -l ca-ES -o "{1}.tmx"'
         cmd = cmd.format(self._get_filename_at_output(self.filename), 
                          self._get_filename_at_output(fileName))
         os.system(cmd)
