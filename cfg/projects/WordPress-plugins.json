@@ -27,6 +27,11 @@
             "url": "https://translate.wordpress.org/projects/wp-plugins/woocommerce/dev/ca/default/export-translations",
             "type": "file",
             "target": "woocommerce-ca.po"
+        },
+        "nelio-content": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/nelio-content/stable/ca/default/export-translations",
+            "type": "file",
+            "target": "nelio-content-ca.po"
         }
     }
 }
