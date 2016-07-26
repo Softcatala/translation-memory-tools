@@ -207,7 +207,7 @@ def update_zipfile(src_directory, filename, file_to_add, out_directory):
         print('File {0} does not exists and cannot be zipped'.format(srcfile))
         return
 
-    cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
+    cmd = 'zip -j "{0}" "{1}"'.format(zipfile, srcfile)
     os.system(cmd)
 
 
@@ -222,7 +222,7 @@ def create_zipfile(src_directory, filename, out_directory):
     if os.path.isfile(zipfile):
         os.remove(zipfile)
 
-    cmd = 'zip -j {0} {1}'.format(zipfile, srcfile)
+    cmd = 'zip -j "{0}" "{1}"'.format(zipfile, srcfile)
     os.system(cmd)
 
 

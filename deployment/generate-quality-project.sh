@@ -16,8 +16,8 @@ echo "project_dir_project:" $project_dir
 # Run LT over all the files
 report_file="${project_dir::-1}.html"
 
-cat $lt_html/header.html > $lt_output/$report_file
-find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d '' file; do
+cat $lt_html/header.html > "$lt_output/$report_file"
+find "$project_dir" -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d '' file; do
 
     source /home/jmas/web/python3-env/bin/activate # Specific to SC machine cfg
     echo "Executing LT on: " "$file"
@@ -46,7 +46,7 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     
     python $lt_html/lt-results-to-html.py -i "$file.xml" -o "$file-report.html"
     sed -i 's/\t/ /g' "$file-report.html" #replace tabs with whitespace for better presentation
-    cat "$file-report.html" >> $lt_output/$report_file
+    cat "$file-report.html" >> "$lt_output/$report_file"
 
     # Execute pology
     deactivate  # Specific to SC machine cfg
@@ -54,11 +54,11 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     posieve set-header -sfield:'Language:ca' -screate "$file-filtrat.po"
     posieve --skip-obsolete --coloring-type=html check-rules -s rfile:$pology/upstream/punctuation.rules -s rfile:$pology/upstream/false-friends.rules -s rfile:$pology/upstream/keys.rules -s rfile:$pology/catalan-pology-rules/date-format.rules -s rfile:$pology/catalan-pology-rules/terminology-sc.rules -s rfile:$pology/catalan-pology-rules/iso_639.rules -s rfile:$pology/catalan-pology-rules/acronyms.rules "$file-filtrat.po" > "$file-pology.html"
 
-    echo "<h2>Informe d'errades del Pology</h2><br/>" >> $lt_output/$report_file
+    echo "<h2>Informe d'errades del Pology</h2><br/>" >> "$lt_output/$report_file"
     if [ -s "$file-pology.html" ] ; then
-        cat "$file-pology.html" >> $lt_output/$report_file
+        cat "$file-pology.html" >> "$lt_output/$report_file"
     else
-        echo "El Pology no detectat cap error." >> $lt_output/$report_file
+        echo "El Pology no detectat cap error." >> "$lt_output/$report_file"
     fi
     source /home/jmas/web/python3-env/bin/activate # Specific to SC machine cfg
 
@@ -69,8 +69,8 @@ find $project_dir -type f -name '*.po' -print0 | sort -z | while IFS= read -r -d
     rm "$file.txt"
     
 done
-echo "<p><i>Informe generat el `date +%Y-%m-%d`</i></p>" >> $lt_output/$report_file
-cat $lt_html/footer.html >> $lt_output/$report_file
+echo "<p><i>Informe generat el `date +%Y-%m-%d`</i></p>" >> "$lt_output/$report_file"
+cat $lt_html/footer.html >> "$lt_output/$report_file"
 
 duration=$SECONDS
 echo "Generated quality for $project_dir: $(($duration / 60))m $(($duration % 60))s."

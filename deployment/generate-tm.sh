@@ -12,12 +12,12 @@ copy_tm_files() {
     # Copy only new PO files
     for filename in $1; do
         # If file exists and size is greater than 200 bytes
-        if [ -e  $filename ]; then
+        if [ -e  "$filename" ]; then
             fsize=$(du -b "$filename" | cut -f 1)
             if [ $fsize -ge $2 ]; then
-                if ! diff -q $filename $3/$filename > /dev/null; then
+                if ! diff -q "$filename" "$3/$filename" > /dev/null; then
                     echo "Copying $filename"
-                    cp $filename $3/$filename
+                    cp "$filename" "$3/$filename"
                 fi
             fi
         fi

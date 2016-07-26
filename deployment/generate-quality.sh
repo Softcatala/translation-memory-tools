@@ -21,7 +21,7 @@ for project_dir in */; do
         $cnt=0
     fi
 
-    bash $root/tm-git/deployment/generate-quality-project.sh $root $project_dir &
+    bash $root/tm-git/deployment/generate-quality-project.sh $root "$project_dir" &
     cnt=$((cnt+1))   
 done
 wait
