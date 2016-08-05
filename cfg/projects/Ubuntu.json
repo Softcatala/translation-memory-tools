@@ -48,6 +48,11 @@
             "url": "lp:~onboard/onboard/trunk/po/ca.po",
             "type": "bazaar",
             "target": "ca.po"
+        },
+        "ubiquity-slideshow": {
+            "url": "lp:ubiquity-slideshow-ubuntu",
+            "type": "bazaar",
+            "pattern": ".*?ca.po"
         }
     }
 }
