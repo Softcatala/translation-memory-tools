@@ -1,10 +1,10 @@
 {
     "project": "Pidgin", 
     "projectweb": "https://www.softcatala.org/projectes/pidgin/", 
-    "softcatala": true, 
+    "softcatala": true,
     "fileset": {
         "Pidgin": {
-            "url": "http://hg.pidgin.im/pidgin/main/raw-file/ba7dbf5e91d3/po/ca.po", 
+            "url": "https://bitbucket.org/pidgin/main/raw/1cf07b94c6ca44814ad456de985947be66a391c8/po/ca.po", 
             "type": "file", 
             "target": "pidgin-ca.po"
         }
