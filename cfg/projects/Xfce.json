@@ -2,9 +2,321 @@
     "project": "Xfce", 
     "projectweb": "http://wiki.xfce.org/translations/team_ca", 
     "fileset": {
-        "Xfce": {
-            "url": "https://www.transifex.com/xfce/public/", 
-            "type": "transifexhub"
+        "thunar": {
+            "url": "https://git.xfce.org/xfce/thunar/plain/po/ca.po", 
+            "type": "file", 
+            "target": "thunar_ca.po"
+        },
+        "thunar-archive-plugin": {
+            "url": "https://git.xfce.org/thunar-plugins/thunar-archive-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "thunar-archive-plugin_ca.po"
+        },
+        "thunar-media-tags-plugin": {
+            "url": "https://git.xfce.org/thunar-plugins/thunar-media-tags-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "thunar-media-tags-plugin_ca.po"
+        },
+        "thunar-shares-plugin": {
+            "url": "https://git.xfce.org/thunar-plugins/thunar-shares-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "thunar-shares-plugin_ca.po"
+        },
+        "thunar-vcs-plugin": {
+            "url": "https://git.xfce.org/thunar-plugins/thunar-vcs-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "thunar-vcs-plugin_ca.po"
+        },
+        "thunar-volman": {
+            "url": "https://git.xfce.org/xfce/thunar-volman/plain/po/ca.po", 
+            "type": "file", 
+            "target": "thunar-volman_ca.po"
+        },
+        "transd": {
+            "url": "https://git.xfce.org/apps/transd/plain/po/ca.po", 
+            "type": "file", 
+            "target": "transd_ca.po"
+        },
+        "tumbler": {
+            "url": "https://git.xfce.org/xfce/tumbler/plain/po/ca.po", 
+            "type": "file", 
+            "target": "tumbler_ca.po"
+        },
+        "xfburn": {
+            "url": "https://git.xfce.org/apps/xfburn/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfburn_ca.po"
+        },
+        "xfce4-appfinder": {
+            "url": "https://git.xfce.org/xfce/xfce4-appfinder/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-appfinder_ca.po"
+        },
+        "xfce4-battery-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-battery-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-battery-plugin_ca.po"
+        },
+        "xfce4-calculator-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-calculator-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-calculator-plugin_ca.po"
+        },
+        "xfce4-cellmodem-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-cellmodem-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-cellmodem-plugin_ca.po"
+        },
+        "xfce4-clipman-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-clipman-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-clipman-plugin_ca.po"
+        },
+        "xfce4-cpufreq-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-cpufreq-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-cpufreq-plugin_ca.po"
+        },
+        "xfce4-cpugraph-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-cpugraph-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-cpugraph-plugin_ca.po"
+        },
+        "xfce4-datetime-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-datetime-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-datetime-plugin_ca.po"
+        },
+        "xfce4-dict": {
+            "url": "https://git.xfce.org/apps/xfce4-dict/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-dict_ca.po"
+        },
+        "xfce4-diskperf-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-diskperf-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-diskperf-plugin_ca.po"
+        },
+        "xfce4-embed-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-embed-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-embed-plugin_ca.po"
+        },
+        "xfce4-eyes-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-eyes-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-eyes-plugin_ca.po"
+        },
+        "xfce4-fsguard-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-fsguard-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-fsguard-plugin_ca.po"
+        },
+        "xfce4-genmon-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-genmon-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-genmon-plugin_ca.po"
+        },
+        "xfce4-hardware-monitor-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-hardware-monitor-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-hardware-monitor-plugin_ca.po"
+        },
+        "xfce4-indicator-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-indicator-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-indicator-plugin_ca.po"
+        },
+        "xfce4-mailwatch-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-mailwatch-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-mailwatch-plugin_ca.po"
+        },
+        "xfce4-mixer": {
+            "url": "https://git.xfce.org/apps/xfce4-mixer/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-mixer_ca.po"
+        },
+        "xfce4-mount-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-mount-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-mount-plugin_ca.po"
+        },
+        "xfce4-mpc-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-mpc-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-mpc-plugin_ca.po"
+        },
+        "xfce4-netload-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-netload-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-netload-plugin_ca.po"
+        },
+        "xfce4-notes-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-notes-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-notes-plugin_ca.po"
+        },
+        "xfce4-notifyd": {
+            "url": "https://git.xfce.org/apps/xfce4-notifyd/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-notifyd_ca.po"
+        },
+        "xfce4-panel": {
+            "url": "https://git.xfce.org/xfce/xfce4-panel/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-panel_ca.po"
+        },
+        "xfce4-places-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-places-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-places-plugin_ca.po"
+        },
+        "xfce4-power-manager": {
+            "url": "https://git.xfce.org/xfce/xfce4-power-manager/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-power-manager_ca.po"
+        },
+        "xfce4-radio-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-radio-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-radio-plugin_ca.po"
+        },
+        "xfce4-rss-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-rss-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-rss-plugin_ca.po"
+        },
+        "xfce4-screenshooter": {
+            "url": "https://git.xfce.org/apps/xfce4-screenshooter/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-screenshooter_ca.po"
+        },
+        "xfce4-session": {
+            "url": "https://git.xfce.org/xfce/xfce4-session/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-session_ca.po"
+        },
+        "xfce4-settings": {
+            "url": "https://git.xfce.org/xfce/xfce4-settings/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-settings_ca.po"
+        },
+        "xfce4-smartbookmark-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-smartbookmark-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-smartbookmark-plugin_ca.po"
+        },
+        "xfce4-stopwatch-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-stopwatch-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-stopwatch-plugin_ca.po"
+        },
+        "xfce4-systemload-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-systemload-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-systemload-plugin_ca.po"
+        },
+        "xfce4-taskmanager": {
+            "url": "https://git.xfce.org/apps/xfce4-taskmanager/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-taskmanager_ca.po"
+        },
+        "xfce4-terminal": {
+            "url": "https://git.xfce.org/apps/xfce4-terminal/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-terminal_ca.po"
+        },
+        "xfce4-timer-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-timer-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-timer-plugin_ca.po"
+        },
+        "xfce4-time-out-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-time-out-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-time-out-plugin_ca.po"
+        },
+        "xfce4-trigger-launcher": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-trigger-launcher/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-trigger-launcher_ca.po"
+        },
+        "xfce4-verve-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-verve-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-verve-plugin_ca.po"
+        },
+        "xfce4-volstatus-icon": {
+            "url": "https://git.xfce.org/apps/xfce4-volstatus-icon/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-volstatus-icon_ca.po"
+        },
+        "xfce4-volumed": {
+            "url": "https://git.xfce.org/apps/xfce4-volumed/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-volumed_ca.po"
+        },
+        "xfce4-wavelan-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-wavelan-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-wavelan-plugin_ca.po"
+        },
+        "xfce4-weather-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-weather-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-weather-plugin_ca.po"
+        },
+        "xfce4-websearch-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-websearch-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-websearch-plugin_ca.po"
+        },
+        "xfce4-whiskermenu-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-whiskermenu-plugin_ca.po"
+        },
+        "xfce4-xfapplet-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-xfapplet-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-xfapplet-plugin_ca.po"
+        },
+        "xfce4-xkb-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-xkb-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-xkb-plugin_ca.po"
+        },
+        "xfce4-xmms-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfce4-xmms-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfce4-xmms-plugin_ca.po"
+        },
+        "xfdashboard": {
+            "url": "https://git.xfce.org/apps/xfdashboard/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfdashboard_ca.po"
+        },
+        "xfdesktop": {
+            "url": "https://git.xfce.org/xfce/xfdesktop/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfdesktop_ca.po"
+        },
+        "xfmedia-remote-plugin": {
+            "url": "https://git.xfce.org/panel-plugins/xfmedia-remote-plugin/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfmedia-remote-plugin_ca.po"
+        },
+        "xfmpc": {
+            "url": "https://git.xfce.org/apps/xfmpc/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfmpc_ca.po"
+        },
+        "xfwm4": {
+            "url": "https://git.xfce.org/xfce/xfwm4/plain/po/ca.po", 
+            "type": "file", 
+            "target": "xfwm4_ca.po"
         }
     }
 }
+
