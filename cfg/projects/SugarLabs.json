@@ -3,280 +3,415 @@
     "projectweb": "https://www.softcatala.org/projectes/sugarlabs/", 
     "softcatala": true,
     "fileset": {
-        "abacus": {
-              "url": "http://translate.sugarlabs.org/export/Abacus/ca.po", 
-              "type": "file", 
-              "target": "abacus-ca.po"
+        "sugar": {
+            "url": "http://translate.sugarlabs.org/export/sugar/ca.po", 
+            "type": "file",
+            "target": "sugar_ca.po"
         },
-        "analyzejournal": {
-              "url": "http://translate.sugarlabs.org/export/AnalyzeJournal/ca.po", 
-              "type": "file", 
-              "target": "analyzejournal-ca.po"
+        "sugar-toolkit-gtk3": {
+            "url": "http://translate.sugarlabs.org/export/sugar-toolkit-gtk3/ca.po", 
+            "type": "file",
+            "target": "sugar-toolkit-gtk3_ca.po"
         },
-        "biorhythm": {
-              "url": "http://translate.sugarlabs.org/export/Biorhythm/ca.po", 
-              "type": "file", 
-              "target": "biorhythm-ca.po"
+        "AEIOU": {
+            "url": "http://translate.sugarlabs.org/export/AEIOU/ca.po", 
+            "type": "file", 
+            "target": "AEIOU_ca.po"
         },
-        "calculate": {
-              "url": "http://translate.sugarlabs.org/export/Calculate/ca.po", 
-              "type": "file", 
-              "target": "calculate-ca.po"
+        "Abacus": {
+            "url": "http://translate.sugarlabs.org/export/Abacus/ca.po", 
+            "type": "file", 
+            "target": "Abacus_ca.po"
         },
-        "cardsort": {
-              "url": "http://translate.sugarlabs.org/export/CardSort/ca.po", 
-              "type": "file", 
-              "target": "cardsort-ca.po"
+        "Analyze": {
+            "url": "http://translate.sugarlabs.org/export/Analyze/ca.po", 
+            "type": "file", 
+            "target": "Analyze_ca.po"
         },
-        "chat": {
-              "url": "http://translate.sugarlabs.org/export/Chat/ca.po", 
-              "type": "file", 
-              "target": "chat-ca.po"
+        "AnalyzeJournal": {
+            "url": "http://translate.sugarlabs.org/export/AnalyzeJournal/ca.po", 
+            "type": "file", 
+            "target": "AnalyzeJournal_ca.po"
         },
-        "cookiesearch": {
-              "url": "http://translate.sugarlabs.org/export/CookieSearch/ca.po", 
-              "type": "file", 
-              "target": "cookiesearch-ca.po"
+        "Annotate": {
+            "url": "http://translate.sugarlabs.org/export/Annotate/ca.po", 
+            "type": "file", 
+            "target": "Annotate_ca.po"
         },
-        "deducto": {
-              "url": "http://translate.sugarlabs.org/export/Deducto/ca.po", 
-              "type": "file", 
-              "target": "deducto-ca.po"
+        "Arithmetic": {
+            "url": "http://translate.sugarlabs.org/export/Arithmetic/ca.po", 
+            "type": "file", 
+            "target": "Arithmetic_ca.po"
         },
-        "domino": {
-              "url": "http://translate.sugarlabs.org/export/Domino/ca.po", 
-              "type": "file", 
-              "target": "domino-ca.po"
+        "Bridge": {
+            "url": "http://translate.sugarlabs.org/export/Bridge/ca.po", 
+            "type": "file", 
+            "target": "Bridge_ca.po"
         },
-        "dotsandboxes": {
-              "url": "http://translate.sugarlabs.org/export/DotsAndBoxes/ca.po", 
-              "type": "file", 
-              "target": "dotsandboxes-ca.po"
+        "Calculate": {
+            "url": "http://translate.sugarlabs.org/export/Calculate/ca.po", 
+            "type": "file", 
+            "target": "Calculate_ca.po"
         },
-        "erikos": {
-              "url": "http://translate.sugarlabs.org/export/Erikos/ca.po", 
-              "type": "file", 
-              "target": "erikos-ca.po"
+        "Calendario": {
+            "url": "http://translate.sugarlabs.org/export/Calendario/ca.po", 
+            "type": "file", 
+            "target": "Calendario_ca.po"
         },
-        "finance": {
-              "url": "http://translate.sugarlabs.org/export/Finance/ca.po", 
-              "type": "file", 
-              "target": "finance-ca.po"
+        "CardSort": {
+            "url": "http://translate.sugarlabs.org/export/CardSort/ca.po", 
+            "type": "file", 
+            "target": "CardSort_ca.po"
         },
-        "flip": {
-              "url": "http://translate.sugarlabs.org/export/Flip/ca.po", 
-              "type": "file", 
-              "target": "flip-ca.po"
+        "Chat": {
+            "url": "http://translate.sugarlabs.org/export/Chat/ca.po", 
+            "type": "file", 
+            "target": "Chat_ca.po"
         },
-        "followmebutia": {
-              "url": "http://translate.sugarlabs.org/export/FollowMeButia/ca.po", 
-              "type": "file", 
-              "target": "followmebutia-ca.po"
+        "ClassroomBroadcast": {
+            "url": "http://translate.sugarlabs.org/export/ClassroomBroadcast/ca.po", 
+            "type": "file", 
+            "target": "ClassroomBroadcast_ca.po"
         },
-        "fototoon": {
-              "url": "http://translate.sugarlabs.org/export/FotoToon/ca.po", 
-              "type": "file", 
-              "target": "fototoon-ca.po"
+        "ClipArt": {
+            "url": "http://translate.sugarlabs.org/export/ClipArt/ca.po", 
+            "type": "file", 
+            "target": "ClipArt_ca.po"
         },
-        "fractionbounce": {
-              "url": "http://translate.sugarlabs.org/export/FractionBounce/ca.po", 
-              "type": "file", 
-              "target": "fractionbounce-ca.po"
+        "Clock": {
+            "url": "http://translate.sugarlabs.org/export/Clock/ca.po", 
+            "type": "file", 
+            "target": "Clock_ca.po"
         },
-        "getbooks": {
-              "url": "http://translate.sugarlabs.org/export/GetBooks/ca.po", 
-              "type": "file", 
-              "target": "getbooks-ca.po"
+        "Colors": {
+            "url": "http://translate.sugarlabs.org/export/Colors/ca.po", 
+            "type": "file", 
+            "target": "Colors_ca.po"
         },
-        "getiabooks": {
-              "url": "http://translate.sugarlabs.org/export/GetIABooks/ca.po", 
-              "type": "file", 
-              "target": "getiabooks-ca.po"
+        "ConnecttheDots": {
+            "url": "http://translate.sugarlabs.org/export/ConnecttheDots/ca.po", 
+            "type": "file", 
+            "target": "ConnecttheDots_ca.po"
         },
-        "imageviewer": {
-              "url": "http://translate.sugarlabs.org/export/ImageViewer/ca.po", 
-              "type": "file", 
-              "target": "imageviewer-ca.po"
+        "Convert": {
+            "url": "http://translate.sugarlabs.org/export/Convert/ca.po", 
+            "type": "file", 
+            "target": "Convert_ca.po"
         },
-        "infoslicer": {
-              "url": "http://translate.sugarlabs.org/export/InfoSlicer/ca.po", 
-              "type": "file", 
-              "target": "infoslicer-ca.po"
+        "Deducto": {
+            "url": "http://translate.sugarlabs.org/export/Deducto/ca.po", 
+            "type": "file", 
+            "target": "Deducto_ca.po"
         },
-        "jukebox": {
-              "url": "http://translate.sugarlabs.org/export/Jukebox/ca.po", 
-              "type": "file", 
-              "target": "jukebox-ca.po"
+        "Dimensions": {
+            "url": "http://translate.sugarlabs.org/export/Dimensions/ca.po", 
+            "type": "file", 
+            "target": "Dimensions_ca.po"
         },
-        "level": {
-              "url": "http://translate.sugarlabs.org/export/Level/ca.po", 
-              "type": "file", 
-              "target": "level-ca.po"
+        "DotsAndBoxes": {
+            "url": "http://translate.sugarlabs.org/export/DotsAndBoxes/ca.po", 
+            "type": "file", 
+            "target": "DotsAndBoxes_ca.po"
         },
-        "log": {
-              "url": "http://translate.sugarlabs.org/export/Log/ca.po", 
-              "type": "file", 
-              "target": "log-ca.po"
+        "Erikos": {
+            "url": "http://translate.sugarlabs.org/export/Erikos/ca.po", 
+            "type": "file", 
+            "target": "Erikos_ca.po"
         },
-        "maze": {
-              "url": "http://translate.sugarlabs.org/export/Maze/ca.po", 
-              "type": "file", 
-              "target": "maze-ca.po"
+        "Finance": {
+            "url": "http://translate.sugarlabs.org/export/Finance/ca.po", 
+            "type": "file", 
+            "target": "Finance_ca.po"
         },
-        "measure": {
-              "url": "http://translate.sugarlabs.org/export/Measure/ca.po", 
-              "type": "file", 
-              "target": "measure-ca.po"
+        "Flip": {
+            "url": "http://translate.sugarlabs.org/export/Flip/ca.po", 
+            "type": "file", 
+            "target": "Flip_ca.po"
         },
-        "memorize": {
-              "url": "http://translate.sugarlabs.org/export/Memorize/ca.po", 
-              "type": "file", 
-              "target": "memorize-ca.po"
+        "Flipsticks": {
+            "url": "http://translate.sugarlabs.org/export/Flipsticks/ca.po", 
+            "type": "file", 
+            "target": "Flipsticks_ca.po"
         },
-        "newaslo": {
-              "url": "http://translate.sugarlabs.org/export/NewAslo/ca.po", 
-              "type": "file", 
-              "target": "newaslo-ca.po"
+        "FollowMeButia": {
+            "url": "http://translate.sugarlabs.org/export/FollowMeButia/ca.po", 
+            "type": "file", 
+            "target": "FollowMeButia_ca.po"
         },
-        "nutrition": {
-              "url": "http://translate.sugarlabs.org/export/Nutrition/ca.po", 
-              "type": "file", 
-              "target": "nutrition-ca.po"
+        "FotoToon": {
+            "url": "http://translate.sugarlabs.org/export/FotoToon/ca.po", 
+            "type": "file", 
+            "target": "FotoToon_ca.po"
         },
-        "paint": {
-              "url": "http://translate.sugarlabs.org/export/Paint/ca.po", 
-              "type": "file", 
-              "target": "paint-ca.po"
+        "FractionBounce": {
+            "url": "http://translate.sugarlabs.org/export/FractionBounce/ca.po", 
+            "type": "file", 
+            "target": "FractionBounce_ca.po"
         },
-        "panorama": {
-              "url": "http://translate.sugarlabs.org/export/Panorama/ca.po", 
-              "type": "file", 
-              "target": "panorama-ca.po"
+        "GetBooks": {
+            "url": "http://translate.sugarlabs.org/export/GetBooks/ca.po", 
+            "type": "file", 
+            "target": "GetBooks_ca.po"
         },
-        "paths": {
-              "url": "http://translate.sugarlabs.org/export/Paths/ca.po", 
-              "type": "file", 
-              "target": "paths-ca.po"
+        "GetIABooks": {
+            "url": "http://translate.sugarlabs.org/export/GetIABooks/ca.po", 
+            "type": "file", 
+            "target": "GetIABooks_ca.po"
         },
-        "physics": {
-              "url": "http://translate.sugarlabs.org/export/Physics/ca.po", 
-              "type": "file", 
-              "target": "physics-ca.po"
+        "hMouse": {
+            "url": "http://translate.sugarlabs.org/export/hMouse/ca.po", 
+            "type": "file", 
+            "target": "hMouse_ca.po"
         },
-        "pippy": {
-              "url": "http://translate.sugarlabs.org/export/Pippy/ca.po", 
-              "type": "file", 
-              "target": "pippy-ca.po"
+        "IKnowMyABCs": {
+            "url": "http://translate.sugarlabs.org/export/IKnowMyABCs/ca.po", 
+            "type": "file", 
+            "target": "IKnowMyABCs_ca.po"
         },
-        "portfolio": {
-              "url": "http://translate.sugarlabs.org/export/Portfolio/ca.po", 
-              "type": "file", 
-              "target": "portfolio-ca.po"
+        "Implode": {
+            "url": "http://translate.sugarlabs.org/export/Implode/ca.po", 
+            "type": "file", 
+            "target": "Implode_ca.po"
         },
-        "pukllanapac": {
-              "url": "http://translate.sugarlabs.org/export/Pukllanapac/ca.po", 
-              "type": "file", 
-              "target": "pukllanapac-ca.po"
+        "ImageViewer": {
+            "url": "http://translate.sugarlabs.org/export/ImageViewer/ca.po", 
+            "type": "file", 
+            "target": "ImageViewer_ca.po"
         },
-        "ruler": {
-              "url": "http://translate.sugarlabs.org/export/Ruler/ca.po", 
-              "type": "file", 
-              "target": "ruler-ca.po"
+        "InfoSlicer": {
+            "url": "http://translate.sugarlabs.org/export/InfoSlicer/ca.po", 
+            "type": "file", 
+            "target": "InfoSlicer_ca.po"
         },
-        "read": {
-              "url": "http://translate.sugarlabs.org/export/Read/ca.po", 
-              "type": "file", 
-              "target": "read-ca.po"
+        "JigsawPuzzle": {
+            "url": "http://translate.sugarlabs.org/export/Jigsaw-Puzzle/ca.po", 
+            "type": "file", 
+            "target": "JigsawPuzzle_ca.po"
         },
-        "readetexts": {
-              "url": "http://translate.sugarlabs.org/export/ReadETexts/ca.po", 
-              "type": "file", 
-              "target": "readetexts-ca.po"
+        "Jukebox": {
+            "url": "http://translate.sugarlabs.org/export/Jukebox/ca.po", 
+            "type": "file", 
+            "target": "Jukebox_ca.po"
         },
-        "readsdcomics": {
-              "url": "http://translate.sugarlabs.org/export/ReadSDComics/ca.po", 
-              "type": "file", 
-              "target": "readsdcomics-ca.po"
+        "Jump": {
+            "url": "http://translate.sugarlabs.org/export/Jump/ca.po", 
+            "type": "file", 
+            "target": "Jump_ca.po"
         },
-        "record": {
-              "url": "http://translate.sugarlabs.org/export/Record/ca.po", 
-              "type": "file", 
-              "target": "record-ca.po"
+        "Level": {
+            "url": "http://translate.sugarlabs.org/export/Level/ca.po", 
+            "type": "file", 
+            "target": "Level_ca.po"
         },
-        "reflection": {
-              "url": "http://translate.sugarlabs.org/export/Reflection/ca.po", 
-              "type": "file", 
-              "target": "reflection-ca.po"
+        "Log": {
+            "url": "http://translate.sugarlabs.org/export/Log/ca.po", 
+            "type": "file", 
+            "target": "Log_ca.po"
         },
-        "simplegnuchess": {
-              "url": "http://translate.sugarlabs.org/export/SimpleGNUChess/ca.po", 
-              "type": "file", 
-              "target": "simplegnuchess-ca.po"
+        "MakeyMakey": {
+            "url": "http://translate.sugarlabs.org/export/MakeyMakey/ca.po", 
+            "type": "file", 
+            "target": "MakeyMakey_ca.po"
         },
-        "speak": {
-              "url": "http://translate.sugarlabs.org/export/Speak/ca.po", 
-              "type": "file", 
-              "target": "speak-ca.po"
+        "Mateton": {
+            "url": "http://translate.sugarlabs.org/export/Mateton/ca.po", 
+            "type": "file", 
+            "target": "Mateton_ca.po"
         },
-        "story": {
-              "url": "http://translate.sugarlabs.org/export/Story/ca.po", 
-              "type": "file", 
-              "target": "story-ca.po"
+        "Maze": {
+            "url": "http://translate.sugarlabs.org/export/Maze/ca.po", 
+            "type": "file", 
+            "target": "Maze_ca.po"
         },
-        "terminal": {
-              "url": "http://translate.sugarlabs.org/export/Terminal/ca.po", 
-              "type": "file", 
-              "target": "terminal-ca.po"
+        "Measure": {
+            "url": "http://translate.sugarlabs.org/export/Measure/ca.po", 
+            "type": "file", 
+            "target": "Measure_ca.po"
         },
-        "turtleart": {
-              "url": "http://translate.sugarlabs.org/export/TurtleArt/ca.po", 
-              "type": "file", 
-              "target": "turtleart-ca.po"
+        "Memorize": {
+            "url": "http://translate.sugarlabs.org/export/Memorize/ca.po", 
+            "type": "file", 
+            "target": "Memorize_ca.po"
         },
-        "turtleartextras": {
-              "url": "http://translate.sugarlabs.org/export/TurtleArtExtras/ca.po", 
-              "type": "file", 
-              "target": "turtleartextras-ca.po"
+        "Moon": {
+            "url": "http://translate.sugarlabs.org/export/Moon/ca.po", 
+            "type": "file", 
+            "target": "Moon_ca.po"
         },
-        "typingturtle": {
-              "url": "http://translate.sugarlabs.org/export/TypingTurtle/ca.po", 
-              "type": "file", 
-              "target": "typingturtle-ca.po"
+        "Napier": {
+            "url": "http://translate.sugarlabs.org/export/Napier/ca.po", 
+            "type": "file", 
+            "target": "Napier_ca.po"
         },
-        "viewslides": {
-              "url": "http://translate.sugarlabs.org/export/ViewSlides/ca.po", 
-              "type": "file", 
-              "target": "viewslides-ca.po"
+        "Nutrition": {
+            "url": "http://translate.sugarlabs.org/export/Nutrition/ca.po", 
+            "type": "file", 
+            "target": "Nutrition_ca.po"
         },
-        "visualmatch": {
-              "url": "http://translate.sugarlabs.org/export/Dimensions/ca.po", 
-              "type": "file", 
-              "target": "visualmatch-ca.po"
+        "Paint": {
+            "url": "http://translate.sugarlabs.org/export/Paint/ca.po", 
+            "type": "file", 
+            "target": "Paint_ca.po"
         },
-        "browse": {
-              "url": "http://translate.sugarlabs.org/export/Web/ca.po", 
-              "type": "file", 
-              "target": "browse-ca.po"
+        "Paths": {
+            "url": "http://translate.sugarlabs.org/export/Paths/ca.po", 
+            "type": "file", 
+            "target": "Paths_ca.po"
         },
-        "words": {
-              "url": "http://translate.sugarlabs.org/export/Words/ca.po", 
-              "type": "file", 
-              "target": "words-ca.po"
+        "Physics": {
+            "url": "http://translate.sugarlabs.org/export/Physics/ca.po", 
+            "type": "file", 
+            "target": "Physics_ca.po"
         },
-        "write": {
-              "url": "http://translate.sugarlabs.org/export/Write/ca.po", 
-              "type": "file", 
-              "target": "write-ca.po"
+        "Pippy": {
+            "url": "http://translate.sugarlabs.org/export/Pippy/ca.po", 
+            "type": "file", 
+            "target": "Pippy_ca.po"
         },
-        "writebooks": {
-              "url": "http://translate.sugarlabs.org/export/WriteBooks/ca.po", 
-              "type": "file", 
-              "target": "writebooks-ca.po"
+        "Pointillism": {
+            "url": "http://translate.sugarlabs.org/export/Pointillism/ca.po", 
+            "type": "file", 
+            "target": "Pointillism_ca.po"
         },
-        "xoeditor": {
-              "url": "http://translate.sugarlabs.org/export/XoEditor/ca.po", 
-              "type": "file", 
-              "target": "xoeditor-ca.po"
+        "Portfolio": {
+            "url": "http://translate.sugarlabs.org/export/Portfolio/ca.po", 
+            "type": "file", 
+            "target": "Portfolio_ca.po"
+        },
+        "Pukllanapac": {
+            "url": "http://translate.sugarlabs.org/export/Pukllanapac/ca.po", 
+            "type": "file", 
+            "target": "Pukllanapac_ca.po"
+        },
+        "Read": {
+            "url": "http://translate.sugarlabs.org/export/Read/ca.po", 
+            "type": "file", 
+            "target": "Read_ca.po"
+        },
+        "ReadETexts": {
+            "url": "http://translate.sugarlabs.org/export/ReadETexts/ca.po", 
+            "type": "file", 
+            "target": "ReadETexts_ca.po"
+        },
+        "ReadSDComics": {
+            "url": "http://translate.sugarlabs.org/export/ReadSDComics/ca.po", 
+            "type": "file", 
+            "target": "ReadSDComics_ca.po"
+        },
+        "Recall": {
+            "url": "http://translate.sugarlabs.org/export/Recall/ca.po", 
+            "type": "file", 
+            "target": "Recall_ca.po"
+        },
+        "Record": {
+            "url": "http://translate.sugarlabs.org/export/Record/ca.po", 
+            "type": "file", 
+            "target": "Record_ca.po"
+        },
+        "Reflection": {
+            "url": "http://translate.sugarlabs.org/export/Reflection/ca.po", 
+            "type": "file", 
+            "target": "Reflection_ca.po"
+        },
+        "Ruler": {
+            "url": "http://translate.sugarlabs.org/export/Ruler/ca.po", 
+            "type": "file", 
+            "target": "Ruler_ca.po"
+        },
+        "SimpleGraph": {
+            "url": "http://translate.sugarlabs.org/export/SimpleGraph/ca.po", 
+            "type": "file", 
+            "target": "SimpleGraph_ca.po"
+        },
+        "SimpleGNUChess": {
+            "url": "http://translate.sugarlabs.org/export/SimpleGNUChess/ca.po", 
+            "type": "file", 
+            "target": "SimpleGNUChess_ca.po"
+        },
+        "Speak": {
+            "url": "http://translate.sugarlabs.org/export/Speak/ca.po", 
+            "type": "file", 
+            "target": "Speak_ca.po"
+        },
+        "StarChart": {
+            "url": "http://translate.sugarlabs.org/export/StarChart/ca.po", 
+            "type": "file", 
+            "target": "StarChart_ca.po"
+        },
+        "StopWatch": {
+            "url": "http://translate.sugarlabs.org/export/StopWatch/ca.po", 
+            "type": "file", 
+            "target": "StopWatch_ca.po"
+        },
+        "Story": {
+            "url": "http://translate.sugarlabs.org/export/Story/ca.po", 
+            "type": "file", 
+            "target": "Story_ca.po"
+        },
+        "SugarCommander": {
+            "url": "http://translate.sugarlabs.org/export/SugarCommander/ca.po", 
+            "type": "file", 
+            "target": "SugarCommander_ca.po"
+        },
+        "Terminal": {
+            "url": "http://translate.sugarlabs.org/export/Terminal/ca.po", 
+            "type": "file", 
+            "target": "Terminal_ca.po"
+        },
+        "TurtleArt": {
+            "url": "http://translate.sugarlabs.org/export/TurtleArt/ca.po", 
+            "type": "file", 
+            "target": "TurtleArt_ca.po"
+        },
+        "TurtleArtExtras": {
+            "url": "http://translate.sugarlabs.org/export/TurtleArtExtras/ca.po", 
+            "type": "file", 
+            "target": "TurtleArtExtras_ca.po"
+        },
+        "TurtlePond": {
+            "url": "http://translate.sugarlabs.org/export/TurtlePond/ca.po", 
+            "type": "file", 
+            "target": "TurtlePond_ca.po"
+        },
+        "TypingTurtle": {
+            "url": "http://translate.sugarlabs.org/export/TypingTurtle/ca.po", 
+            "type": "file", 
+            "target": "TypingTurtle_ca.po"
+        },
+        "ViewSlides": {
+            "url": "http://translate.sugarlabs.org/export/ViewSlides/ca.po", 
+            "type": "file", 
+            "target": "ViewSlides_ca.po"
+        },
+        "Web": {
+            "url": "http://translate.sugarlabs.org/export/Web/ca.po", 
+            "type": "file", 
+            "target": "Web_ca.po"
+        },
+        "Words": {
+            "url": "http://translate.sugarlabs.org/export/Words/ca.po", 
+            "type": "file", 
+            "target": "Words_ca.po"
+        },
+        "Write": {
+            "url": "http://translate.sugarlabs.org/export/Write/ca.po", 
+            "type": "file", 
+            "target": "Write_ca.po"
+        },
+        "WriteBooks": {
+            "url": "http://translate.sugarlabs.org/export/WriteBooks/ca.po", 
+            "type": "file", 
+            "target": "WriteBooks_ca.po"
+        },
+        "XoEditor": {
+            "url": "http://translate.sugarlabs.org/export/XoEditor/ca.po", 
+            "type": "file", 
+            "target": "XoEditor_ca.po"
+        },
+        "Yupana": {
+            "url": "http://translate.sugarlabs.org/export/Yupana/ca.po", 
+            "type": "file", 
+            "target": "Yupana_ca.po"
         }
     }
 }
