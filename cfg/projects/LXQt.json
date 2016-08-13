@@ -1,0 +1,211 @@
+{
+    "project": "LXQt", 
+    "projectweb": "http://lxqt.org/", 
+    "fileset": {
+        "liblxqt": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/liblxqt/liblxqt_ca.ts", 
+            "type": "file", 
+            "target": "liblxqt_ca.ts"
+        },
+        "lximage-qt": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lximage-qt/lximage-qt_ca.ts", 
+            "type": "file", 
+            "target": "lximage-qt_ca.ts"
+        },
+        "lxqt-about": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-about/lxqt-about_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-about_ca.ts"
+        },
+        "lxqt-config": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config/lxqt-config_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config_ca.ts"
+        },
+        "lxqt-admin-time": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-admin/lxqt-admin-time/lxqt-admin-time_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-admin-time_ca.ts"
+        },
+        "lxqt-admin-user": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-admin/lxqt-admin-user/lxqt-admin-user_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-admin-user_ca.ts"
+        },
+        "lxqt-config-appearance": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-appearance/lxqt-config-appearance_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-appearance_ca.ts"
+        },
+        "lxqt-config-brightness": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-brightness/lxqt-config-brightness_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-brightness_ca.ts"
+        },
+        "lxqt-config-file-associations": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-file-associations/lxqt-config-file-associations_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-file-associations_ca.ts"
+        },
+	"lxqt-config-globalkeyshortcuts": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-globalkeys/lxqt-config-globalkeyshortcuts/lxqt-config-globalkeyshortcuts_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-globalkeyshortcuts_ca.ts"
+        },
+        "lxqt-config-input": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-input/lxqt-config-input_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-input_ca.ts"
+        },
+        "lxqt-config-locale": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-locale/lxqt-config-locale_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-locale_ca.ts"
+        },
+        "lxqt-config-monitor": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-monitor/lxqt-config-monitor_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-monitor_ca.ts"
+        },
+        "lxqt-config-notificationd": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-notificationd/lxqt-config-notificationd/lxqt-config-notificationd_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-notificationd_ca.ts"
+        },
+	"lxqt-config-powermanagement": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-powermanagement/lxqt-config-powermanagement/lxqt-config-powermanagement_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-powermanagement_ca.ts"
+        },
+	"lxqt-config-session": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-session/lxqt-config-session/lxqt-config-session_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-config-session_ca.ts"
+        },
+	"lxqt-leave_ca.ts": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-session/lxqt-leave/lxqt-leave_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-leave_ca.ts"
+        },
+        "lxqt-notificationd": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-notificationd/lxqt-notificationd/lxqt-notificationd_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-notificationd_ca.ts"
+        },
+        "lxqt-panel": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/panel/lxqt-panel_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-panel_ca.ts"
+        },
+        "lxqt-panel-plugin-clock": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-clock/clock_ca.ts", 
+            "type": "file", 
+            "target": "clock_ca.ts"
+        },
+        "lxqt-panel-plugin-cpuload": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-cpuload/cpuload_ca.ts", 
+            "type": "file", 
+            "target": "cpuload_ca.ts"
+        },
+        "lxqt-panel-plugin-desktopswitch": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-desktopswitch/desktopswitch_ca.ts", 
+            "type": "file", 
+            "target": "desktopswitch_ca.ts"
+        },
+        "lxqt-panel-plugin-directorymenu": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-directorymenu/directorymenu_ca.ts", 
+            "type": "file", 
+            "target": "directorymenu_ca.ts"
+        },
+        "lxqt-panel-plugin-dom": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-dom/dom_ca.ts", 
+            "type": "file", 
+            "target": "dom_ca.ts"
+        },
+        "lxqt-panel-plugin-kbindicator": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-kbindicator/kbindicator_ca.ts", 
+            "type": "file", 
+            "target": "kbindicator_ca.ts"
+        },
+        "lxqt-panel-plugin-mainmenu": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-mainmenu/mainmenu_ca.ts", 
+            "type": "file", 
+            "target": "mainmenu_ca.ts"
+        },
+        "lxqt-panel-plugin-mount": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-mount/mount_ca.ts", 
+            "type": "file", 
+            "target": "mount_ca.ts"
+        },
+        "lxqt-panel-plugin-networkmonitor": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-networkmonitor/networkmonitor_ca.ts", 
+            "type": "file", 
+            "target": "networkmonitor_ca.ts"
+        },
+        "lxqt-panel-plugin-quicklaunch": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-quicklaunch/quicklaunch_ca.ts", 
+            "type": "file", 
+            "target": "quicklaunch_ca.ts"
+        },
+        "lxqt-panel-plugin-sensors": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-sensors/sensors_ca.ts", 
+            "type": "file", 
+            "target": "sensors_ca.ts"
+        },
+        "lxqt-panel-plugin-showdesktop": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-showdesktop/showdesktop_ca.ts", 
+            "type": "file", 
+            "target": "showdesktop_ca.ts"
+        },
+	"lxqt-panel-plugin-spacer": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-spacer/spacer_ca.ts", 
+            "type": "file", 
+            "target": "spacer_ca.ts"
+        },
+	"lxqt-panel-plugin-sysstat": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-sysstat/sysstat_ca.ts", 
+            "type": "file", 
+            "target": "sysstat_ca.ts"
+        },
+	"lxqt-panel-plugin-taskbar": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-taskbar/taskbar_ca.ts", 
+            "type": "file", 
+            "target": "taskbar_ca.ts"
+        },
+	"lxqt-panel-plugin-volume": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-volume/volume_ca.ts", 
+            "type": "file", 
+            "target": "volume_ca.ts"
+        },
+	"lxqt-panel-plugin-worldclock": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/plugin-worldclock/worldclock_ca.ts", 
+            "type": "file", 
+            "target": "worldclock_ca.ts"
+        },
+	"lxqt-policykit-agent": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-policykit/lxqt-policykit-agent/lxqt-policykit-agent_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-policykit-agent_ca.ts"
+        },
+	"lxqt-powermanagement": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-powermanagement/lxqt-powermanagement/lxqt-powermanagement_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-powermanagement_ca.ts"
+        },
+	"lxqt-session": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-session/lxqt-session/lxqt-session_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-session_ca.ts"
+        },
+	"lxqt-sudo": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-sudo/lxqt-sudo_ca.ts", 
+            "type": "file", 
+            "target": "lxqt-sudo_ca.ts"
+        },
+        "obconf-qt": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/obconf-qt/obconf-qt_ca.ts", 
+            "type": "file", 
+            "target": "obconf-qt_ca.ts"
+        }
+    }
+}
