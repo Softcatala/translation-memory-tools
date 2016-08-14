@@ -34,3 +34,15 @@ class FindFiles(object):
 
         filelist.sort()
         return filelist
+
+    def find_dirs(self, directory, pattern):
+        dirlist = []
+
+        for root, dirs, files in os.walk(directory):
+            for basename in dirs:
+                if fnmatch.fnmatch(basename, pattern):
+                    filename = os.path.join(root, basename)
+                    dirlist.append(filename)
+
+        dirlist.sort()
+        return dirlist
