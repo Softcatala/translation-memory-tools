@@ -56,7 +56,7 @@ class GitFileSet(FileSet):
         if os.path.exists(self.git_dir):
             shutil.rmtree(self.git_dir)
 
-    def do(self):
+    def download(self):
         self._remove_git_directory()
         cmd = 'cd {0} && git clone --depth=1 {1} {2}'.format(
             self.temp_dir, self.url, self.git_dir)
@@ -64,7 +64,9 @@ class GitFileSet(FileSet):
 
         # Move it to the root to avoid git default behavior to clone
         # into a subdirectory
-        cmd = 'cd {0} && mv {1}/* .'.format(self.temp_dir, self.git_dir)
+        cmd = 'cd {0} && mv {1}/* . && rm -r -f {1}'.format(self.temp_dir, self.git_dir)
         os.system(cmd)
 
+    def do(self):
+        self.download()
         self.build()
