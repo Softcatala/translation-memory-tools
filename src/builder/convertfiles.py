@@ -29,6 +29,7 @@ class ConvertFiles():
         self.convert_dir = convert_dir
         self.findFiles = None
         self.conversor_setup = conversor_setup
+        self.android_dir = None
 
     def convert(self):
         self.findFiles = FindFiles()
@@ -133,6 +134,9 @@ class ConvertFiles():
         # If you do not specify --gettext ., the file is writen in ../locale
         # outside the tmp directory in our case
         cmd = 'cd {0} && a2po init ca --gettext .'.format(self.convert_dir)
+        if self.android_dir is not None:
+            cmd += " --android {0}".format(self.android_dir)
+
         os.system(cmd)
 
     def _convert_json_files_to_po(self):

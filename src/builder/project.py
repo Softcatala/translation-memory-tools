@@ -36,6 +36,7 @@ from .transifexfileset import TransifexFileSet
 from .transifexhubfileset import TransifexHubFileSet
 from .gitwebfileset import GitWebFileSet
 from .transvisionfileset import TransvisionFileSet
+from .xiaomifileset import XiaomiFileSet
 
 class Project(object):
 
@@ -145,6 +146,11 @@ class Project(object):
                 fs.set_project(self)
             elif fileset.type == 'transvision':
                 fs = TransvisionFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+            elif fileset.type == 'xiaomi':
+                fs = XiaomiFileSet(self.name,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
