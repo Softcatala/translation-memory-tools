@@ -53,6 +53,10 @@
             "url": "lp:ubiquity-slideshow-ubuntu",
             "type": "bazaar",
             "pattern": ".*?ca.po"
+        },
+        "ubuntu-mate-welcome": {
+            "url": "https://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/",
+            "type": "transifexhub"
         }
     }
 }
