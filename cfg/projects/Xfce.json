@@ -32,11 +32,6 @@
             "type": "file", 
             "target": "thunar-volman_ca.po"
         },
-        "transd": {
-            "url": "https://git.xfce.org/apps/transd/plain/po/ca.po", 
-            "type": "file", 
-            "target": "transd_ca.po"
-        },
         "tumbler": {
             "url": "https://git.xfce.org/xfce/tumbler/plain/po/ca.po", 
             "type": "file", 
@@ -56,16 +51,6 @@
             "url": "https://git.xfce.org/panel-plugins/xfce4-battery-plugin/plain/po/ca.po", 
             "type": "file", 
             "target": "xfce4-battery-plugin_ca.po"
-        },
-        "xfce4-calculator-plugin": {
-            "url": "https://git.xfce.org/panel-plugins/xfce4-calculator-plugin/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-calculator-plugin_ca.po"
-        },
-        "xfce4-cellmodem-plugin": {
-            "url": "https://git.xfce.org/panel-plugins/xfce4-cellmodem-plugin/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-cellmodem-plugin_ca.po"
         },
         "xfce4-clipman-plugin": {
             "url": "https://git.xfce.org/panel-plugins/xfce4-clipman-plugin/plain/po/ca.po", 
@@ -237,25 +222,10 @@
             "type": "file", 
             "target": "xfce4-time-out-plugin_ca.po"
         },
-        "xfce4-trigger-launcher": {
-            "url": "https://git.xfce.org/panel-plugins/xfce4-trigger-launcher/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-trigger-launcher_ca.po"
-        },
         "xfce4-verve-plugin": {
             "url": "https://git.xfce.org/panel-plugins/xfce4-verve-plugin/plain/po/ca.po", 
             "type": "file", 
             "target": "xfce4-verve-plugin_ca.po"
-        },
-        "xfce4-volstatus-icon": {
-            "url": "https://git.xfce.org/apps/xfce4-volstatus-icon/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-volstatus-icon_ca.po"
-        },
-        "xfce4-volumed": {
-            "url": "https://git.xfce.org/apps/xfce4-volumed/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-volumed_ca.po"
         },
         "xfce4-wavelan-plugin": {
             "url": "https://git.xfce.org/panel-plugins/xfce4-wavelan-plugin/plain/po/ca.po", 
@@ -267,30 +237,15 @@
             "type": "file", 
             "target": "xfce4-weather-plugin_ca.po"
         },
-        "xfce4-websearch-plugin": {
-            "url": "https://git.xfce.org/panel-plugins/xfce4-websearch-plugin/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-websearch-plugin_ca.po"
-        },
         "xfce4-whiskermenu-plugin": {
             "url": "https://git.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/plain/po/ca.po", 
             "type": "file", 
             "target": "xfce4-whiskermenu-plugin_ca.po"
         },
-        "xfce4-xfapplet-plugin": {
-            "url": "https://git.xfce.org/panel-plugins/xfce4-xfapplet-plugin/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-xfapplet-plugin_ca.po"
-        },
         "xfce4-xkb-plugin": {
             "url": "https://git.xfce.org/panel-plugins/xfce4-xkb-plugin/plain/po/ca.po", 
             "type": "file", 
             "target": "xfce4-xkb-plugin_ca.po"
-        },
-        "xfce4-xmms-plugin": {
-            "url": "https://git.xfce.org/panel-plugins/xfce4-xmms-plugin/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfce4-xmms-plugin_ca.po"
         },
         "xfdashboard": {
             "url": "https://git.xfce.org/apps/xfdashboard/plain/po/ca.po", 
@@ -301,11 +256,6 @@
             "url": "https://git.xfce.org/xfce/xfdesktop/plain/po/ca.po", 
             "type": "file", 
             "target": "xfdesktop_ca.po"
-        },
-        "xfmedia-remote-plugin": {
-            "url": "https://git.xfce.org/panel-plugins/xfmedia-remote-plugin/plain/po/ca.po", 
-            "type": "file", 
-            "target": "xfmedia-remote-plugin_ca.po"
         },
         "xfmpc": {
             "url": "https://git.xfce.org/apps/xfmpc/plain/po/ca.po", 
@@ -319,4 +269,3 @@
         }
     }
 }
-
