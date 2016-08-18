@@ -1,0 +1,26 @@
+{
+    "project": "Hawaii", 
+    "projectweb": "http://hawaiios.org", 
+    "fileset": {
+        "hawaii": {
+            "url": "https://www.transifex.com/projects/p/hawaii", 
+            "type": "transifex"
+        },
+        "eyesight": {
+            "url": "https://www.transifex.com/projects/p/eyesight", 
+            "type": "transifex"
+        },
+        "system-preferences": {
+            "url": "https://www.transifex.com/projects/p/system-preferences", 
+            "type": "transifex"
+        },
+	"terminal": {
+            "url": "https://www.transifex.com/projects/p/terminal", 
+            "type": "transifex"
+        },
+	"hawaii-workspace": {
+            "url": "https://www.transifex.com/projects/p/hawaii-workspace", 
+            "type": "transifex"
+        }
+    } 
+}
