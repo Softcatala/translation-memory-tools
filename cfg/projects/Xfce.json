@@ -266,6 +266,10 @@
             "url": "https://git.xfce.org/xfce/xfwm4/plain/po/ca.po", 
             "type": "file", 
             "target": "xfwm4_ca.po"
+        },
+	"www-xfce-org": {
+            "url": "https://www.transifex.com/projects/p/xfce-www",
+            "type": "transifex"
         }
     }
 }
