@@ -1,0 +1,16 @@
+{
+    "project": "Audacious",
+    "projectweb": "http://audacious-media-player.org/",
+    "fileset": {
+        "audacious": {
+            "url": "https://raw.githubusercontent.com/audacious-media-player/audacious/master/po/ca.po",
+            "type": "file",
+            "target": "ca-audacious.po"
+        },
+        "audacious-plugins": {
+            "url": "https://raw.githubusercontent.com/audacious-media-player/audacious-plugins/master/po/ca.po",
+            "type": "file",
+            "target": "ca-audacious-plugins.po"
+        }
+    }
+}
