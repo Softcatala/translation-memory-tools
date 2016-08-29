@@ -2,7 +2,7 @@
     "project": "Geany", 
     "projectweb": "http://www.geany.org/Contribute/Translators", 
     "fileset": {
-        "thunar": {
+        "geany": {
             "url": "https://raw.githubusercontent.com/geany/geany/master/po/ca.po", 
             "type": "file", 
             "target": "geany_ca.po"
