@@ -289,7 +289,7 @@
             "target": "ca.po"
         },
          "ibus-typing-booster": {
-            "url": "https://fedora.zanata.org/rest/file/translation/ibus-typing-booster/1.2.11/ca/po?docId=ibus-typing-booster",
+            "url": "https://fedora.zanata.org/rest/file/translation/ibus-typing-booster/master/ca/po?docId=ibus-typing-booster",
             "type": "file",
             "target": "ca.po"
         },
