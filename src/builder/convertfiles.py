@@ -19,6 +19,7 @@
 
 import logging
 import os
+import shutil
 
 from .findfiles import FindFiles
 
@@ -125,6 +126,50 @@ class ConvertFiles():
               '-o {1}'.format(self.convert_dir, OUT_DIRNAME)
         os.system(cmd)
 
+    '''
+        OpenWhisperSystems conditional conversion code for Android
+        To be refactor when patterns for Android dir structure is clear, 
+        including Xiaomi
+    '''
+    def _process_ows_projects(self):
+        ca_file = os.path.join(self.convert_dir, 
+                               "translations/signal-android.master/ca.xml")
+
+        en_file = os.path.join(self.convert_dir, 
+                               "translations/signal-android.master/en.xml")
+
+        if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
+            ca_file = os.path.join(self.convert_dir, 
+                                   "translations/redphone.master/ca.xml")
+
+            en_file = os.path.join(self.convert_dir, 
+                                   "translations/redphone.master/en.xml")
+
+            if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
+                return
+
+        directory = os.path.join(self.convert_dir, 'signal')
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+        directory = os.path.join(self.convert_dir,'signal/res')
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        
+        directory = os.path.join(self.convert_dir,'signal/res/values-ca')
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+                
+        shutil.copy2(ca_file, os.path.join(directory, "strings.xml"))
+
+        directory = os.path.join(self.convert_dir,'signal/res/values')
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+                
+        shutil.copy2(en_file, os.path.join(directory, "strings.xml"))
+        self.android_dir = 'signal/res'
+
+
     def _convert_android_resources_files_to_po(self):
         if len(self.findFiles.find(self.convert_dir, '*.xml')) == 0:
             return
@@ -134,6 +179,9 @@ class ConvertFiles():
         # If you do not specify --gettext ., the file is writen in ../locale
         # outside the tmp directory in our case
         cmd = 'cd {0} && a2po init ca --gettext .'.format(self.convert_dir)
+
+        self._process_ows_projects()
+
         if self.android_dir is not None:
             cmd += " --android {0}".format(self.android_dir)
 
