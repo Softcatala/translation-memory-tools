@@ -3,15 +3,15 @@
     "projectweb": "https://whispersystems.org/", 
     "fileset": {
         "signal-android": {
-            "url": "https://www.transifex.com/moxie/signal-android/", 
+            "url": "https://www.transifex.com/projects/p/signal-android/",
             "type": "transifex"
         },
         "signal-ios": {
-            "url": "https://www.transifex.com/open-whisper-systems/signal-ios/", 
+            "url": "https://www.transifex.com/projects/p/signal-ios/",
             "type": "transifex"
         },
         "redphone": {
-            "url": "https://www.transifex.com/moxie/redphone/", 
+            "url": "https://www.transifex.com/projects/p/redphone/",
             "type": "transifex"
         }
     }
