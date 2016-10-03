@@ -3,7 +3,7 @@
     "projectweb": "https://drupal.org/project/ca", 
     "fileset": {
         "drupal": {
-            "url": "https://ftp.drupal.org/files/translations/8.x/drupal/drupal-8.1.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/8.x/drupal/drupal-8.2.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "drupal-ca.po"
