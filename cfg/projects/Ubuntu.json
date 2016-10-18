@@ -56,7 +56,15 @@
         },
         "ubuntu-mate-welcome": {
             "url": "https://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/",
-            "type": "transifexhub"
+            "type": "transifex"
+        },"ubuntu-terminal": {
+            "url": "lp:~ubuntu-terminal-dev/ubuntu-terminal-app/reboot/po/ca.po",
+            "type": "bazaar",
+            "target": "ca.po"
+        },"libqtelegram": {
+            "url": "lp:~libqtelegram-team/telegram-app/telegram/telegram/po/ca.po",
+            "type": "bazaar",
+            "target": "ca.po"
         }
     }
 }
