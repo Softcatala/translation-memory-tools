@@ -145,7 +145,7 @@ class TransifexHubFileSet(FileSet):
         transifex_url = "https://www.transifex.com/projects/p/"
         try:
             # This project has a single fileset assigned (this)
-            # We empty the fileset and add dynamically the ones referenced by Gerrit
+            # We empty the fileset and add dynamically the ones referenced by Transifex
             self.project.filesets = []
             options = []
             url = self.url
