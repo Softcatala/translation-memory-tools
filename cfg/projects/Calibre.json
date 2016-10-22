@@ -1,11 +1,14 @@
 {
-    "project": "Calibre", 
-    "projectweb": "https://translations.launchpad.net/calibre", 
+    "project": "Calibre",
+    "projectweb": "https://calibre-ebook.com/",
     "fileset": {
         "calibre": {
-            "url": "lp:~kovid/calibre/translations/src/calibre/translations/ca.po", 
-            "type": "bazaar", 
-            "target": "ca.po"
+            "url": "https://www.transifex.com/calibre/calibre/",
+            "type": "transifex"
+        },
+        "calibre-plugins": {
+            "url": "https://www.transifex.com/calibre/calibre-plugins/",
+            "type": "transifex"
         }
     }
 }
