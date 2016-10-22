@@ -34,7 +34,7 @@ class Translation(object):
         d = {
             u'translation': self.translation,
             u'frequency': self.frequency,
-            u'percentage': self.percentage,
+            u'percentage': '{:0.2f}'.format(self.percentage),
         }
 
         if self.termcat:
