@@ -3,11 +3,11 @@
     "projectweb": "https://calibre-ebook.com/",
     "fileset": {
         "calibre": {
-            "url": "https://www.transifex.com/calibre/calibre/",
+            "url": "https://www.transifex.com/projects/p/calibre/",
             "type": "transifex"
         },
         "calibre-plugins": {
-            "url": "https://www.transifex.com/calibre/calibre-plugins/",
+            "url": "https://www.transifex.com/projects/p/calibre-plugins/",
             "type": "transifex"
         }
     }
