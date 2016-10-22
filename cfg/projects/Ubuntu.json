@@ -55,7 +55,7 @@
             "pattern": ".*?ca.po"
         },
         "ubuntu-mate-welcome": {
-            "url": "https://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/",
+            "url": "https://www.transifex.com/projects/p/ubuntu-mate-welcome/",
             "type": "transifex"
         },"ubuntu-terminal": {
             "url": "lp:~ubuntu-terminal-dev/ubuntu-terminal-app/reboot/po/ca.po",
