@@ -1,16 +1,19 @@
 {
     "project": "GIMP", 
     "projectweb": "https://www.softcatala.org/projectes/gimp/", 
-    "softcatala": true, 
+    "softcatala": true,
+    "comment": "The 2-8 excluded in to exclude the latest stable version",
     "fileset": {
         "gimp": {
             "url": "http://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz", 
-            "type": "compressed", 
+            "type": "compressed",
+            "excluded": "2-8",
             "target": "gimp.tar.gz"
         }, 
         "gnome-gimp-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz", 
-            "type": "compressed", 
+            "type": "compressed",
+            "excluded": "2-8",
             "target": "gnome-gimp-doc.tar.gz"
         }
     }
