@@ -218,6 +218,11 @@
             "type": "file", 
             "target": "ca.po"
         },
+        "alt.fedoraproject.org": {
+            "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/alt.fedoraproject.org/ca/po?docId=po%2Falt.fedoraproject.org", 
+            "type": "file", 
+            "target": "ca.po"
+        },
         "arm.fedoraproject.org": {
             "url": "https://fedora.zanata.org/rest/file/translation/fedora-web/arm.fedoraproject.org/ca/po?docId=po%2Farm.fedoraproject.org", 
             "type": "file", 
