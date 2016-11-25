@@ -5,7 +5,7 @@
         "Lumina": {
             "url": "https://github.com/trueos/lumina-i18n.git",
             "type": "git",
-            "pattern": ".*?/ca/.*?.ts"
+            "pattern": ".*?/ca/.*?.po"
         }
     }
 }
