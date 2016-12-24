@@ -1,0 +1,11 @@
+{
+    "project": "Shortcut", 
+    "projectweb": "https://www.shotcut.org/",  
+    "fileset": {
+        "Shortcut": {
+            "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/translations/shotcut_ca.ts",
+            "type": "file", 
+            "target": "shotcut_ca.ts"
+        }
+    }
+}
