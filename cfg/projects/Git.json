@@ -6,6 +6,11 @@
             "url": "https://raw.githubusercontent.com/git-l10n/git-po/master/po/ca.po", 
             "type": "file", 
             "target": "ca.po"
+        },
+        "Git-k": {
+            "url": "https://raw.githubusercontent.com/git-l10n/git-po/master/gitk-git/po/ca.po",
+            "type": "file",
+            "target": "ca.po"
         }
     }
 }
