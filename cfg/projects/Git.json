@@ -1,6 +1,7 @@
 {
     "project": "Git", 
-    "projectweb": "https://github.com/git-l10n/git-po/blob/master/po/README", 
+    "projectweb": "https://github.com/git-l10n/git-po/blob/master/po/README",
+    "softcatala": true,
     "fileset": {
         "Git": {
             "url": "https://raw.githubusercontent.com/git-l10n/git-po/master/po/ca.po", 
