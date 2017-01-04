@@ -1,6 +1,6 @@
 {
     "project": "Git", 
-    "projectweb": "https://github.com/git-l10n/git-po/blob/master/po/README",
+    "projectweb": "https://www.softcatala.org/projectes/git/",
     "softcatala": true,
     "fileset": {
         "Git": {
