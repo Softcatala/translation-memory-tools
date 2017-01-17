@@ -1,0 +1,22 @@
+{
+    "project": "PDFCreator", 
+    "projectweb": "https://hosted.weblate.org/projects/weblate/", 
+    "softcatala": false, 
+    "fileset": {
+        "setup": {
+            "url": "http://translate.pdfforge.org/download/pdfcreator/innosetup/ca/", 
+            "type": "file", 
+            "target": "pdfcreator-setup-ca.po"
+        },
+        "messages": {
+            "url": "http://translate.pdfforge.org/download/pdfcreator/messages/ca/", 
+            "type": "file", 
+            "target": "pdfcreator-messages-ca.po"
+        },
+        "legacy-messages": {
+            "url": "http://translate.pdfforge.org/download/pdfcreator/legacy-messages/ca/", 
+            "type": "file", 
+            "target": "pdfcreator-legacy-messages-ca.po"
+        }
+    }
+}
