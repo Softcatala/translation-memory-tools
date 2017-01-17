@@ -1,6 +1,6 @@
 {
     "project": "PDFCreator", 
-    "projectweb": "https://hosted.weblate.org/projects/weblate/", 
+    "projectweb": "http://translate.pdfforge.org/", 
     "softcatala": false, 
     "fileset": {
         "setup": {
