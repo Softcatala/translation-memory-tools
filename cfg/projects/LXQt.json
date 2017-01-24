@@ -42,6 +42,11 @@
             "type": "file", 
             "target": "lxqt-config-brightness_ca.ts"
         },
+        "lxqt-config-cursor": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/liblxqt-config-cursor/lxqt-config-cursor_ca.ts",
+            "type": "file",
+            "target": "lxqt-config-cursor_ca.ts"
+        },
         "lxqt-config-file-associations": {
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-config/lxqt-config-file-associations/lxqt-config-file-associations_ca.ts", 
             "type": "file", 
@@ -91,6 +96,11 @@
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-notificationd/lxqt-notificationd/lxqt-notificationd_ca.ts", 
             "type": "file", 
             "target": "lxqt-notificationd_ca.ts"
+        },
+        "lxqt-openssh-askpass": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-openssh-askpass/lxqt-openssh-askpass_ca.ts",
+            "type": "file",
+            "target": "lxqt-openssh-askpass_ca.ts"
         },
         "lxqt-panel": {
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-panel/panel/lxqt-panel_ca.ts", 
@@ -192,6 +202,11 @@
             "type": "file", 
             "target": "lxqt-powermanagement_ca.ts"
         },
+        "lxqt-runner": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-runner/lxqt-runner_ca.ts",
+            "type": "file",
+            "target": "lxqt-runner_ca.ts"
+        },
 	"lxqt-session": {
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/lxqt-session/lxqt-session/lxqt-session_ca.ts", 
             "type": "file", 
@@ -206,6 +221,16 @@
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/obconf-qt/obconf-qt_ca.ts", 
             "type": "file", 
             "target": "obconf-qt_ca.ts"
+        },
+        "pavucontrol-qt": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/pavucontrol-qt/pavucontrol-qt_ca.ts",
+            "type": "file",
+            "target": "pavucontrol-qt_ca.ts"
+        },
+        "pcmanfm-qt": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/pcmanfm-qt/pcmanfm-qt_ca.ts",
+            "type": "file",
+            "target": "pcmanfm-qt_ca.ts"
         }
     }
 }
