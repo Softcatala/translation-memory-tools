@@ -3,9 +3,8 @@
     "projectweb": "https://wiki.scribus.net/canvas/Official:Translation_Howto", 
     "fileset": {
         "scribus": {
-            "url": "svn://scribus.net/trunk/Scribus/resources/translations/scribus.ca.ts", 
-            "type": "subversion", 
-            "target": "scribus.ca.ts"
+            "url": "https://www.transifex.com/projects/p/scribus/",
+            "type": "transifex"
         }
     }
 }
