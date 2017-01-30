@@ -1,0 +1,14 @@
+{
+    "project": "Solus",
+    "projectweb": "https://solus-project.com/",
+    "fileset": {
+        "SC": {
+            "url": "https://www.transifex.com/solus-project/solus-sc/", 
+            "type": "transifex"
+        },
+        "BriskMenu": {
+            "url": "https://www.transifex.com/solus-project/brisk-menu/", 
+            "type": "transifex"
+        }
+    }
+}
