@@ -21,6 +21,7 @@ import logging
 import os
 import shutil
 
+from .converttmx import ConvertTmx
 from .findfiles import FindFiles
 
 
@@ -34,6 +35,8 @@ class ConvertFiles():
 
     def convert(self):
         self.findFiles = FindFiles()
+        self._uncompress_files()
+        self._convert_tmx_files_to_po()
         self._convert_ts_files_to_po()
         self._convert_string_files_to_po()
         self._convert_ini_files_to_po()
@@ -58,6 +61,18 @@ class ConvertFiles():
             cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
                 '--personality strings --duplicates merge -o {1}'
             os.system(cmd.format(dirName, filename))
+
+    def _uncompress_files(self):
+        for zipfile in self.findFiles.find(self.convert_dir, '*.zip'):
+            cmd = 'unzip -t {0}'.format(zipfile)
+            os.system(cmd)
+
+    def _convert_tmx_files_to_po(self):
+        for tmxfile in self.findFiles.find(self.convert_dir, '*.tmx'):
+            tmx = ConvertTmx(tmxfile, self.convert_dir + "/ca.po")
+            tmx.convert()
+            logging.info('convert tmx file: {0}'.format(tmxfile))
+
 
     def _convert_properties_files_to_po(self):
         for tsfile in self.findFiles.find(self.convert_dir, 'ca.properties'):

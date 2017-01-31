@@ -4,33 +4,33 @@
     "softcatala": true, 
     "fileset": {
         "firefox": {
-            "url": "http://mozilla.locamotion.org/export/?path=/ca/firefox", 
+            "url": "https://mozilla.locamotion.org/++offline_tm/ca/firefox/",
             "type": "compressed", 
             "target": "mozilla.zip", 
             "excluded": "region.properties.po"
         }, 
         "mobile": {
-            "url": "http://mozilla.locamotion.org/export/?path=/ca/mobile", 
+            "url": "https://mozilla.locamotion.org/++offline_tm/ca/mobile/",
             "type": "compressed", 
             "target": "mobile.zip"
         }, 
-        "firefoxos": {
-            "url": "http://mozilla.locamotion.org/export/?path=/ca/firefoxos", 
+        "ios": {
+            "url": "https://mozilla.locamotion.org/++offline_tm/ca/ios/",
             "type": "compressed", 
             "target": "firefoxos.zip"
         }, 
         "lightning": {
-            "url": "http://mozilla.locamotion.org/export/?path=/ca/lightning", 
+            "url": "https://mozilla.locamotion.org/++offline_tm/ca/lightning/",
             "type": "compressed", 
             "target": "lightning.zip"
         }, 
         "thunderbird": {
-            "url": "http://mozilla.locamotion.org/export/?path=/ca/thunderbird", 
+            "url": "https://mozilla.locamotion.org/++offline_tm/ca/thunderbird/",
             "type": "compressed", 
             "target": "thunderbird.zip"
         }, 
         "mozilla.org-web": {
-            "url": "http://mozilla.locamotion.org/export/?path=/ca/mozilla_lang", 
+            "url": "https://mozilla.locamotion.org/++offline_tm/ca/mozilla_lang/",
             "type": "compressed", 
             "target": "webparts.zip"
         }
