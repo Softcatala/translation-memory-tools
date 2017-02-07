@@ -15,7 +15,7 @@ cd $root/tm-git/src/output/individual_pos
 for project_dir in */; do
     echo "project_dir:" $project_dir
     echo "cnt: " $cnt
-    if [ $cnt == 6 ]; then
+    if [ $cnt == 2 ]; then
         echo "waiting"
         wait
         $cnt=0
