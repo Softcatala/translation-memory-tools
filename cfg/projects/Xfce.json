@@ -5,27 +5,27 @@
         "exo": {
             "url": "https://www.transifex.com/projects/p/exo/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "garcon": {
             "url": "https://www.transifex.com/projects/p/garcon/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "libxfce4ui": {
             "url": "https://www.transifex.com/projects/p/libxfce4ui/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "libxfce4util": {
             "url": "https://www.transifex.com/projects/p/libxfce4util/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "thunar": {
             "url": "https://www.transifex.com/projects/p/thunar/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "thunar-plugins": {
             "url": "https://www.transifex.com/projects/p/thunar-plugins/",
@@ -35,12 +35,7 @@
         "thunar-volman": {
             "url": "https://www.transifex.com/projects/p/thunar-volman/",
             "type": "transifex",
-            "excluded" : "/en"
-        },
-        "tumbler": {
-            "url": "https://www.transifex.com/projects/p/tumbler/",
-            "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
 	"xfce4-whiskermenu-plugin": {
             "url": "https://www.transifex.com/projects/p/xfce4-whiskermenu-plugin/",
@@ -65,42 +60,42 @@
 	"xfce4-appfinder": {
             "url": "https://www.transifex.com/projects/p/xfce4-appfinder/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
 	"xfce4-panel": {
             "url": "https://www.transifex.com/projects/p/xfce4-panel/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
 	"xfce4-power-manager": {
             "url": "https://www.transifex.com/projects/p/xfce4-power-manager/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
 	"xfce4-session": {
             "url": "https://www.transifex.com/projects/p/xfce4-session/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
 	"xfce4-settings": {
             "url": "https://www.transifex.com/projects/p/xfce4-settings/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "xfconf": {
             "url": "https://www.transifex.com/projects/p/xfconf/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "xfdesktop": {
             "url": "https://www.transifex.com/projects/p/xfdesktop/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         },
         "xfwm4": {
             "url": "https://www.transifex.com/projects/p/xfwm4/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "xfce-4-10"
         }
     }
 }
