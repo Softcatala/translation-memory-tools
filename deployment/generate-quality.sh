@@ -14,6 +14,13 @@ cd $root/tm-git/src/output/individual_pos
 # Every project has its own subdirectory
 for project_dir in */; do
     echo "project_dir:" $project_dir
+
+    has_files=`find . -type f -name "*.po" -print0`
+    if [ -z $has_files ]; then
+        echo "Skipping quality report since no po files"
+        continue
+    fi
+
     echo "cnt: " $cnt
     if [ $cnt == 2 ]; then
         echo "waiting"

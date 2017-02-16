@@ -55,8 +55,7 @@ copy_files() {
 
     # Deploy quality reports
     cd $1/tm-git/src/output/quality
-    rm -r -f $2/quality
-    mkdir $2/quality
+    mkdir -p $2/quality
     cp *.html $2/quality
 
     # ISO lists
