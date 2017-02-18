@@ -102,7 +102,7 @@ class GerritDirectoryFileSet(FileSet):
                 self.project.add_fileset(fileset)
 
         # All the new filesets have been added re-process project now
-        logging.debug('GerritDirectoryFileSet. Added {0} filesets dynamically'.
+        logging.info('GerritDirectoryFileSet. Added {0} filesets dynamically'.
                       format(len(self.project.filesets)))
 
         self.project.report_errors = False
