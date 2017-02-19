@@ -6,7 +6,7 @@
             "url": "https://android.googlesource.com/?format=JSON", 
             "type": "gerrit-directory", 
             "target": "gerrit-projects.json", 
-            "pattern": "^(?!.*device).*"
+            "pattern": "^(?!.*(device|prebuilts|hardware|chromium_org)).*"
         }
     }
 }
