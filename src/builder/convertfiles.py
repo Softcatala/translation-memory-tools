@@ -64,7 +64,7 @@ class ConvertFiles():
 
     def _uncompress_files(self):
         for zipfile in self.findFiles.find(self.convert_dir, '*.zip'):
-            cmd = 'unzip -t {0}'.format(zipfile)
+            cmd = 'unzip -t {0} > /dev/null '.format(zipfile)
             os.system(cmd)
 
     def _convert_tmx_files_to_po(self):
