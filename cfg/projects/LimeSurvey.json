@@ -1,9 +1,9 @@
 {
     "project": "LimeSurvey", 
-    "projectweb": "http://www.limesurvey.org/translationstatus/", 
+    "projectweb": "https://manual.limesurvey.org/Translating_LimeSurvey", 
     "fileset": {
         "limesurvey": {
-            "url": "https://www.limesurvey.org/translationstatus/206/ca.po", 
+            "url": "https://translate.limesurvey.org/projects/limesurvey-25/ca/default/export-translations/?format=po", 
             "type": "file", 
             "target": "limesurvey-ca.po"
         }
