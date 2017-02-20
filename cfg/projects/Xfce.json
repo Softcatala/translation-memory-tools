@@ -5,97 +5,97 @@
         "exo": {
             "url": "https://www.transifex.com/projects/p/exo/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "garcon": {
             "url": "https://www.transifex.com/projects/p/garcon/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "libxfce4ui": {
             "url": "https://www.transifex.com/projects/p/libxfce4ui/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "libxfce4util": {
             "url": "https://www.transifex.com/projects/p/libxfce4util/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "thunar": {
             "url": "https://www.transifex.com/projects/p/thunar/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "thunar-plugins": {
             "url": "https://www.transifex.com/projects/p/thunar-plugins/",
             "type": "transifex",
-            "excluded" : "/en"
+            "pattern" : ".*?ca.po"
         },
         "thunar-volman": {
             "url": "https://www.transifex.com/projects/p/thunar-volman/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
 	"xfce4-whiskermenu-plugin": {
             "url": "https://www.transifex.com/projects/p/xfce4-whiskermenu-plugin/",
             "type": "transifex",
-            "excluded" : "/en"
+            "pattern" : ".*?ca.po"
         },
         "xfce-apps": {
             "url": "https://www.transifex.com/projects/p/xfce-apps/",
             "type": "transifex",
-            "excluded" : "/en"
+            "pattern" : ".*?ca.po"
         },
 	"xfce-panel-plugins": {
             "url": "https://www.transifex.com/projects/p/xfce-panel-plugins/",
             "type": "transifex",
-            "excluded" : "/en"
+            "pattern" : ".*?ca.po"
         },
 	"xfce-www": {
             "url": "https://www.transifex.com/projects/p/xfce-www/",
             "type": "transifex",
-            "excluded" : "/en"
+            "pattern" : ".*?ca.po"
         },
 	"xfce4-appfinder": {
             "url": "https://www.transifex.com/projects/p/xfce4-appfinder/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
 	"xfce4-panel": {
             "url": "https://www.transifex.com/projects/p/xfce4-panel/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
 	"xfce4-power-manager": {
             "url": "https://www.transifex.com/projects/p/xfce4-power-manager/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
 	"xfce4-session": {
             "url": "https://www.transifex.com/projects/p/xfce4-session/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
 	"xfce4-settings": {
             "url": "https://www.transifex.com/projects/p/xfce4-settings/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "xfconf": {
             "url": "https://www.transifex.com/projects/p/xfconf/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "xfdesktop": {
             "url": "https://www.transifex.com/projects/p/xfdesktop/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         },
         "xfwm4": {
             "url": "https://www.transifex.com/projects/p/xfwm4/",
             "type": "transifex",
-            "excluded" : "xfce-4-10"
+            "pattern" : ".*?master/ca.po"
         }
     }
 }
