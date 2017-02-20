@@ -4,15 +4,18 @@
     "fileset": {
         "kodi-main": {
             "url": "https://www.transifex.com/projects/p/kodi-main/",
-            "type": "transifex"
+            "type": "transifex",
+            "pattern": ".*?ca(_ES)?.po"
         },
         "kodi-addons": {
             "url": "https://www.transifex.com/projects/p/kodi-addons/",
-            "type": "transifex"
+            "type": "transifex",
+            "pattern": ".*?ca(_ES)?.po"
         },
         "kodi-skins": {
             "url": "https://www.transifex.com/projects/p/kodi-skins/",
-            "type": "transifex"
+            "type": "transifex",
+            "pattern": ".*?ca(_ES)?.po"
         }
     }
 }
