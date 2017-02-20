@@ -2,7 +2,7 @@
     "project": "Foreman",
     "projectweb": "http://theforeman.org/",
     "fileset": {
-        "yumex": {
+        "theforeman": {
             "url": "https://www.transifex.com/projects/p/foreman",
             "type": "transifex"
         }
