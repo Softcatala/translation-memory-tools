@@ -4,7 +4,8 @@
     "fileset": {
         "mate": {
             "url": "https://www.transifex.com/projects/p/MATE/", 
-            "type": "transifex"
+            "type": "transifex",
+            "pattern": ".*?ca.po"
         }
     }
 }
