@@ -5,7 +5,7 @@
         "SMPlayer": {
             "url": "https://www.transifex.com/projects/p/smplayer", 
             "type": "transifex",
-            "excluded": "en_"
+            "pattern": ".*?ca.po"
         }
     }
 }
