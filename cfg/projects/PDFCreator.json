@@ -12,11 +12,6 @@
             "url": "http://translate.pdfforge.org/download/pdfcreator/messages/ca/", 
             "type": "file", 
             "target": "pdfcreator-messages-ca.po"
-        },
-        "legacy-messages": {
-            "url": "http://translate.pdfforge.org/download/pdfcreator/legacy-messages/ca/", 
-            "type": "file", 
-            "target": "pdfcreator-legacy-messages-ca.po"
         }
     }
 }
