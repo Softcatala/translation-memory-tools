@@ -242,7 +242,7 @@ def read_parameters():
     parser.add_option("-o", "--outputdir",
                       action="store", type="string", dest="out_directory",
                       default="",
-                      help="Directory to output the files")
+                      help="Directory to output the files (files will be at 'memories' subdir)")
 
     (options, args) = parser.parse_args()
 
