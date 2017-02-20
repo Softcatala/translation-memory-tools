@@ -15,8 +15,8 @@ cd $root/tm-git/src/output/individual_pos
 for project_dir in */; do
     echo "project_dir:" $project_dir
 
-    has_files=`find . -type f -name "*.po" -print0`
-    if [ -z $has_files ]; then
+    has_files=`find . -type f -name "*.po"| wc -l
+    if [ $has_files -eq 0 ]; then
         echo "Skipping quality report since no po files"
         continue
     fi
