@@ -4,7 +4,8 @@
     "fileset": {
         "appstream": {
             "url": "https://www.transifex.com/projects/p/avahi",
-            "type": "transifex"
+            "type": "transifex",
+            "pattern": ".*?ca.po"
         }
     }
 }
