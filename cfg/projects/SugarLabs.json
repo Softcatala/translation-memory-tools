@@ -4,412 +4,412 @@
     "softcatala": true,
     "fileset": {
         "sugar": {
-            "url": "http://translate.sugarlabs.org/export/sugar/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/sugar/ca.po", 
             "type": "file",
             "target": "sugar_ca.po"
         },
         "sugar-toolkit-gtk3": {
-            "url": "http://translate.sugarlabs.org/export/sugar-toolkit-gtk3/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/sugar-toolkit-gtk3/ca.po", 
             "type": "file",
             "target": "sugar-toolkit-gtk3_ca.po"
         },
         "AEIOU": {
-            "url": "http://translate.sugarlabs.org/export/AEIOU/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/AEIOU/ca.po", 
             "type": "file", 
             "target": "AEIOU_ca.po"
         },
         "Abacus": {
-            "url": "http://translate.sugarlabs.org/export/Abacus/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Abacus/ca.po", 
             "type": "file", 
             "target": "Abacus_ca.po"
         },
         "Analyze": {
-            "url": "http://translate.sugarlabs.org/export/Analyze/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Analyze/ca.po", 
             "type": "file", 
             "target": "Analyze_ca.po"
         },
         "AnalyzeJournal": {
-            "url": "http://translate.sugarlabs.org/export/AnalyzeJournal/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/AnalyzeJournal/ca.po", 
             "type": "file", 
             "target": "AnalyzeJournal_ca.po"
         },
         "Annotate": {
-            "url": "http://translate.sugarlabs.org/export/Annotate/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Annotate/ca.po", 
             "type": "file", 
             "target": "Annotate_ca.po"
         },
         "Arithmetic": {
-            "url": "http://translate.sugarlabs.org/export/Arithmetic/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Arithmetic/ca.po", 
             "type": "file", 
             "target": "Arithmetic_ca.po"
         },
         "Bridge": {
-            "url": "http://translate.sugarlabs.org/export/Bridge/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Bridge/ca.po", 
             "type": "file", 
             "target": "Bridge_ca.po"
         },
         "Calculate": {
-            "url": "http://translate.sugarlabs.org/export/Calculate/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Calculate/ca.po", 
             "type": "file", 
             "target": "Calculate_ca.po"
         },
         "Calendario": {
-            "url": "http://translate.sugarlabs.org/export/Calendario/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Calendario/ca.po", 
             "type": "file", 
             "target": "Calendario_ca.po"
         },
         "CardSort": {
-            "url": "http://translate.sugarlabs.org/export/CardSort/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/CardSort/ca.po", 
             "type": "file", 
             "target": "CardSort_ca.po"
         },
         "Chat": {
-            "url": "http://translate.sugarlabs.org/export/Chat/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Chat/ca.po", 
             "type": "file", 
             "target": "Chat_ca.po"
         },
         "ClassroomBroadcast": {
-            "url": "http://translate.sugarlabs.org/export/ClassroomBroadcast/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ClassroomBroadcast/ca.po", 
             "type": "file", 
             "target": "ClassroomBroadcast_ca.po"
         },
         "ClipArt": {
-            "url": "http://translate.sugarlabs.org/export/ClipArt/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ClipArt/ca.po", 
             "type": "file", 
             "target": "ClipArt_ca.po"
         },
         "Clock": {
-            "url": "http://translate.sugarlabs.org/export/Clock/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Clock/ca.po", 
             "type": "file", 
             "target": "Clock_ca.po"
         },
         "Colors": {
-            "url": "http://translate.sugarlabs.org/export/Colors/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Colors/ca.po", 
             "type": "file", 
             "target": "Colors_ca.po"
         },
         "ConnecttheDots": {
-            "url": "http://translate.sugarlabs.org/export/ConnecttheDots/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ConnecttheDots/ca.po", 
             "type": "file", 
             "target": "ConnecttheDots_ca.po"
         },
         "Convert": {
-            "url": "http://translate.sugarlabs.org/export/Convert/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Convert/ca.po", 
             "type": "file", 
             "target": "Convert_ca.po"
         },
         "Deducto": {
-            "url": "http://translate.sugarlabs.org/export/Deducto/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Deducto/ca.po", 
             "type": "file", 
             "target": "Deducto_ca.po"
         },
         "Dimensions": {
-            "url": "http://translate.sugarlabs.org/export/Dimensions/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Dimensions/ca.po", 
             "type": "file", 
             "target": "Dimensions_ca.po"
         },
         "DotsAndBoxes": {
-            "url": "http://translate.sugarlabs.org/export/DotsAndBoxes/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/DotsAndBoxes/ca.po", 
             "type": "file", 
             "target": "DotsAndBoxes_ca.po"
         },
         "Erikos": {
-            "url": "http://translate.sugarlabs.org/export/Erikos/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Erikos/ca.po", 
             "type": "file", 
             "target": "Erikos_ca.po"
         },
         "Finance": {
-            "url": "http://translate.sugarlabs.org/export/Finance/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Finance/ca.po", 
             "type": "file", 
             "target": "Finance_ca.po"
         },
         "Flip": {
-            "url": "http://translate.sugarlabs.org/export/Flip/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Flip/ca.po", 
             "type": "file", 
             "target": "Flip_ca.po"
         },
         "Flipsticks": {
-            "url": "http://translate.sugarlabs.org/export/Flipsticks/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Flipsticks/ca.po", 
             "type": "file", 
             "target": "Flipsticks_ca.po"
         },
         "FollowMeButia": {
-            "url": "http://translate.sugarlabs.org/export/FollowMeButia/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/FollowMeButia/ca.po", 
             "type": "file", 
             "target": "FollowMeButia_ca.po"
         },
         "FotoToon": {
-            "url": "http://translate.sugarlabs.org/export/FotoToon/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/FotoToon/ca.po", 
             "type": "file", 
             "target": "FotoToon_ca.po"
         },
         "FractionBounce": {
-            "url": "http://translate.sugarlabs.org/export/FractionBounce/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/FractionBounce/ca.po", 
             "type": "file", 
             "target": "FractionBounce_ca.po"
         },
         "GetBooks": {
-            "url": "http://translate.sugarlabs.org/export/GetBooks/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/GetBooks/ca.po", 
             "type": "file", 
             "target": "GetBooks_ca.po"
         },
         "GetIABooks": {
-            "url": "http://translate.sugarlabs.org/export/GetIABooks/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/GetIABooks/ca.po", 
             "type": "file", 
             "target": "GetIABooks_ca.po"
         },
         "hMouse": {
-            "url": "http://translate.sugarlabs.org/export/hMouse/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/hMouse/ca.po", 
             "type": "file", 
             "target": "hMouse_ca.po"
         },
         "IKnowMyABCs": {
-            "url": "http://translate.sugarlabs.org/export/IKnowMyABCs/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/IKnowMyABCs/ca.po", 
             "type": "file", 
             "target": "IKnowMyABCs_ca.po"
         },
         "Implode": {
-            "url": "http://translate.sugarlabs.org/export/Implode/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Implode/ca.po", 
             "type": "file", 
             "target": "Implode_ca.po"
         },
         "ImageViewer": {
-            "url": "http://translate.sugarlabs.org/export/ImageViewer/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ImageViewer/ca.po", 
             "type": "file", 
             "target": "ImageViewer_ca.po"
         },
         "InfoSlicer": {
-            "url": "http://translate.sugarlabs.org/export/InfoSlicer/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/InfoSlicer/ca.po", 
             "type": "file", 
             "target": "InfoSlicer_ca.po"
         },
         "JigsawPuzzle": {
-            "url": "http://translate.sugarlabs.org/export/Jigsaw-Puzzle/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Jigsaw-Puzzle/ca.po", 
             "type": "file", 
             "target": "JigsawPuzzle_ca.po"
         },
         "Jukebox": {
-            "url": "http://translate.sugarlabs.org/export/Jukebox/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Jukebox/ca.po", 
             "type": "file", 
             "target": "Jukebox_ca.po"
         },
         "Jump": {
-            "url": "http://translate.sugarlabs.org/export/Jump/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Jump/ca.po", 
             "type": "file", 
             "target": "Jump_ca.po"
         },
         "Level": {
-            "url": "http://translate.sugarlabs.org/export/Level/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Level/ca.po", 
             "type": "file", 
             "target": "Level_ca.po"
         },
         "Log": {
-            "url": "http://translate.sugarlabs.org/export/Log/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Log/ca.po", 
             "type": "file", 
             "target": "Log_ca.po"
         },
         "MakeyMakey": {
-            "url": "http://translate.sugarlabs.org/export/MakeyMakey/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/MakeyMakey/ca.po", 
             "type": "file", 
             "target": "MakeyMakey_ca.po"
         },
         "Mateton": {
-            "url": "http://translate.sugarlabs.org/export/Mateton/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Mateton/ca.po", 
             "type": "file", 
             "target": "Mateton_ca.po"
         },
         "Maze": {
-            "url": "http://translate.sugarlabs.org/export/Maze/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Maze/ca.po", 
             "type": "file", 
             "target": "Maze_ca.po"
         },
         "Measure": {
-            "url": "http://translate.sugarlabs.org/export/Measure/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Measure/ca.po", 
             "type": "file", 
             "target": "Measure_ca.po"
         },
         "Memorize": {
-            "url": "http://translate.sugarlabs.org/export/Memorize/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Memorize/ca.po", 
             "type": "file", 
             "target": "Memorize_ca.po"
         },
         "Moon": {
-            "url": "http://translate.sugarlabs.org/export/Moon/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Moon/ca.po", 
             "type": "file", 
             "target": "Moon_ca.po"
         },
         "Napier": {
-            "url": "http://translate.sugarlabs.org/export/Napier/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Napier/ca.po", 
             "type": "file", 
             "target": "Napier_ca.po"
         },
         "Nutrition": {
-            "url": "http://translate.sugarlabs.org/export/Nutrition/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Nutrition/ca.po", 
             "type": "file", 
             "target": "Nutrition_ca.po"
         },
         "Paint": {
-            "url": "http://translate.sugarlabs.org/export/Paint/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Paint/ca.po", 
             "type": "file", 
             "target": "Paint_ca.po"
         },
         "Paths": {
-            "url": "http://translate.sugarlabs.org/export/Paths/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Paths/ca.po", 
             "type": "file", 
             "target": "Paths_ca.po"
         },
         "Physics": {
-            "url": "http://translate.sugarlabs.org/export/Physics/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Physics/ca.po", 
             "type": "file", 
             "target": "Physics_ca.po"
         },
         "Pippy": {
-            "url": "http://translate.sugarlabs.org/export/Pippy/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Pippy/ca.po", 
             "type": "file", 
             "target": "Pippy_ca.po"
         },
         "Pointillism": {
-            "url": "http://translate.sugarlabs.org/export/Pointillism/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Pointillism/ca.po", 
             "type": "file", 
             "target": "Pointillism_ca.po"
         },
         "Portfolio": {
-            "url": "http://translate.sugarlabs.org/export/Portfolio/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Portfolio/ca.po", 
             "type": "file", 
             "target": "Portfolio_ca.po"
         },
         "Pukllanapac": {
-            "url": "http://translate.sugarlabs.org/export/Pukllanapac/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Pukllanapac/ca.po", 
             "type": "file", 
             "target": "Pukllanapac_ca.po"
         },
         "Read": {
-            "url": "http://translate.sugarlabs.org/export/Read/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Read/ca.po", 
             "type": "file", 
             "target": "Read_ca.po"
         },
         "ReadETexts": {
-            "url": "http://translate.sugarlabs.org/export/ReadETexts/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ReadETexts/ca.po", 
             "type": "file", 
             "target": "ReadETexts_ca.po"
         },
         "ReadSDComics": {
-            "url": "http://translate.sugarlabs.org/export/ReadSDComics/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ReadSDComics/ca.po", 
             "type": "file", 
             "target": "ReadSDComics_ca.po"
         },
         "Recall": {
-            "url": "http://translate.sugarlabs.org/export/Recall/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Recall/ca.po", 
             "type": "file", 
             "target": "Recall_ca.po"
         },
         "Record": {
-            "url": "http://translate.sugarlabs.org/export/Record/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Record/ca.po", 
             "type": "file", 
             "target": "Record_ca.po"
         },
         "Reflection": {
-            "url": "http://translate.sugarlabs.org/export/Reflection/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Reflection/ca.po", 
             "type": "file", 
             "target": "Reflection_ca.po"
         },
         "Ruler": {
-            "url": "http://translate.sugarlabs.org/export/Ruler/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Ruler/ca.po", 
             "type": "file", 
             "target": "Ruler_ca.po"
         },
         "SimpleGraph": {
-            "url": "http://translate.sugarlabs.org/export/SimpleGraph/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/SimpleGraph/ca.po", 
             "type": "file", 
             "target": "SimpleGraph_ca.po"
         },
         "SimpleGNUChess": {
-            "url": "http://translate.sugarlabs.org/export/SimpleGNUChess/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/SimpleGNUChess/ca.po", 
             "type": "file", 
             "target": "SimpleGNUChess_ca.po"
         },
         "Speak": {
-            "url": "http://translate.sugarlabs.org/export/Speak/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Speak/ca.po", 
             "type": "file", 
             "target": "Speak_ca.po"
         },
         "StarChart": {
-            "url": "http://translate.sugarlabs.org/export/StarChart/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/StarChart/ca.po", 
             "type": "file", 
             "target": "StarChart_ca.po"
         },
         "StopWatch": {
-            "url": "http://translate.sugarlabs.org/export/StopWatch/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/StopWatch/ca.po", 
             "type": "file", 
             "target": "StopWatch_ca.po"
         },
         "Story": {
-            "url": "http://translate.sugarlabs.org/export/Story/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Story/ca.po", 
             "type": "file", 
             "target": "Story_ca.po"
         },
         "SugarCommander": {
-            "url": "http://translate.sugarlabs.org/export/SugarCommander/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/SugarCommander/ca.po", 
             "type": "file", 
             "target": "SugarCommander_ca.po"
         },
         "Terminal": {
-            "url": "http://translate.sugarlabs.org/export/Terminal/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Terminal/ca.po", 
             "type": "file", 
             "target": "Terminal_ca.po"
         },
         "TurtleArt": {
-            "url": "http://translate.sugarlabs.org/export/TurtleArt/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/TurtleArt/ca.po", 
             "type": "file", 
             "target": "TurtleArt_ca.po"
         },
         "TurtleArtExtras": {
-            "url": "http://translate.sugarlabs.org/export/TurtleArtExtras/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/TurtleArtExtras/ca.po", 
             "type": "file", 
             "target": "TurtleArtExtras_ca.po"
         },
         "TurtlePond": {
-            "url": "http://translate.sugarlabs.org/export/TurtlePond/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/TurtlePond/ca.po", 
             "type": "file", 
             "target": "TurtlePond_ca.po"
         },
         "TypingTurtle": {
-            "url": "http://translate.sugarlabs.org/export/TypingTurtle/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/TypingTurtle/ca.po", 
             "type": "file", 
             "target": "TypingTurtle_ca.po"
         },
         "ViewSlides": {
-            "url": "http://translate.sugarlabs.org/export/ViewSlides/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/ViewSlides/ca.po", 
             "type": "file", 
             "target": "ViewSlides_ca.po"
         },
         "Web": {
-            "url": "http://translate.sugarlabs.org/export/Web/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Web/ca.po", 
             "type": "file", 
             "target": "Web_ca.po"
         },
         "Words": {
-            "url": "http://translate.sugarlabs.org/export/Words/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Words/ca.po", 
             "type": "file", 
             "target": "Words_ca.po"
         },
         "Write": {
-            "url": "http://translate.sugarlabs.org/export/Write/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Write/ca.po", 
             "type": "file", 
             "target": "Write_ca.po"
         },
         "WriteBooks": {
-            "url": "http://translate.sugarlabs.org/export/WriteBooks/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/WriteBooks/ca.po", 
             "type": "file", 
             "target": "WriteBooks_ca.po"
         },
         "XoEditor": {
-            "url": "http://translate.sugarlabs.org/export/XoEditor/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/XoEditor/ca.po", 
             "type": "file", 
             "target": "XoEditor_ca.po"
         },
         "Yupana": {
-            "url": "http://translate.sugarlabs.org/export/Yupana/ca.po", 
+            "url": "https://translate.sugarlabs.org/download/ca/Yupana/ca.po", 
             "type": "file", 
             "target": "Yupana_ca.po"
         }
