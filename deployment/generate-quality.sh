@@ -22,10 +22,10 @@ for project_dir in */; do
     fi
 
     echo "cnt: " $cnt
-    if [ $cnt == 2 ]; then
+    if [ $cnt == 12 ]; then
         echo "waiting"
         wait
-        $cnt=0
+        cnt=0
     fi
 
     bash $root/tm-git/deployment/generate-quality-project.sh $root "$project_dir" &
