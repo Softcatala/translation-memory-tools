@@ -30,10 +30,6 @@ if [ "$#" -ne 1 ] ; then
     exit
 fi 
 
-if [ ! -z "$NOPOBUILD" ]; then
-    echo "Skipping bulding of PO files"
-fi
-
 INTERMEDIATE_PO=$ROOT/translation-memories/po
 INTERMEDIATE_TMX=$ROOT/translation-memories/tmx
 BACKUP_DIR=$ROOT/previous
@@ -47,21 +43,15 @@ mkdir $BACKUP_DIR
 cd $BACKUP_DIR
 cp $INTERMEDIATE_PO/* $BACKUP_DIR
 
-if [ -z "$NOPOBUILD" ]; then
-    cd $BUILDER
-    rm -f *.log
-    rm -f -r output/
+# Build new translation files
+cd $BUILDER
+rm -f *.log
+rm -f -r output/
 
-    # Download new translation files
-    python builder.py
-
-    # Build aggregated memories
-    cd $INTERMEDIATE_PO/
-    python $BUILDER/builder.py -s $PROJECTS -o . --all
-    python $BUILDER/builder.py -s $PROJECTS -o . --softcatala
-    cp tots-tm.tmx $INTERMEDIATE_TMX/
-    cp softcatala-tm.tmx $INTERMEDIATE_TMX/
-fi
+# Download new translation files
+python builder.py
+python builder.py --all
+python builder.py --softcatala
 
 copy_tm_files "*.po" 200 $INTERMEDIATE_PO
 
