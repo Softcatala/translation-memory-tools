@@ -29,4 +29,4 @@ cd ..
 
 # Build
 python term-extract.py -s sc-tm -t sc-glossary -c "Glossari generat a partir de les memòries de traducció dels projectes traduïts per Softcatalà" 
-python term-extract.py -s tots-tm -t tots-glossary -c "Glossari generat a partir de les memòries de de traducció de tots els projectes que podeu trobar a http://www.softcatala.org/recursos/memories.html"
+python term-extract.py -s tots-tm -t tots-glossary -c "Glossari generat a partir de les memòries de de traducció de tots els projectes que podeu trobar a https://www.softcatala.org/recursos/memories.html"
