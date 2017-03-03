@@ -97,24 +97,25 @@ class IndexCreator(object):
         return comment
 
     def _process_project(self, name, filename, softcatala):
-        full_filename = os.path.join(self.po_directory, filename)
-        print("Processing: " + full_filename)
+        entries = set()
+        directory = os.path.join(self.po_directory,"individual_pos/", name.lower())
+        findFiles = FindFiles()
+        for filename in findFiles.find_recursive(directory, '*.po'):
+            self._process_file(name, filename, softcatala, entries)
+
+
+    def _process_file(self, name, filename, softcatala, entries):
+        print("Processing: " + filename)
 
         try:
-            input_po = polib.pofile(full_filename)
+            input_po = polib.pofile(filename)
 
-            for entry in input_po:
+            for entry in input_po.translated_entries():
                 self.sentences += 1
                 s = entry.msgid
                 t = entry.msgstr
                 p = name
-
-                if entry.msgctxt is None:
-                    x = entry.msgctxt
-                else:
-                    x = entry.msgctxt
-
-                c = self._get_comment(entry)
+                x = entry.msgctxt
 
                 if t is None or len(t) == 0:
                     # msgstr_plural is a dictionary where the key is the index and
@@ -130,6 +131,14 @@ class IndexCreator(object):
 
                 if s is None or len(s) == 0 or t is None or len(t) == 0:
                     continue
+
+                entry_text = s + t + str(x)
+                if entry_text in entries:
+                    continue
+
+                entries.add(entry_text)
+
+                c = self._get_comment(entry)
 
                 self.sentences_indexed += 1
                 string_words = entry.msgstr.split(' ')

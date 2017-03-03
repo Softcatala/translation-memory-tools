@@ -69,7 +69,7 @@ msgstr "Apaga les màquines virtuals seleccionades"
 
         index = IndexCreator('.')
         index.writer = IndexWriterMock()
-        index._process_project('test_project', tmpfile.name, False)
+        index._process_file('test_project', tmpfile.name, False, set())
         stored = index.writer.store
 
         self.assertEquals(stored['source'], u'Power off the selected virtual machines')

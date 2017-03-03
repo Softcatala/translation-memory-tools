@@ -94,7 +94,7 @@ class FileSet():
 
             self.words += pofile.get_statistics()
 
-            pofile.add_comment_to_all_entries(msg)
+            pofile.add_comment_to_all_entries_and_remove_fuzzys(msg)
             pofile.calculate_localized_string_checksum(self.checksum)
 
     def _remove_untranslated_strings(self):
@@ -128,6 +128,7 @@ class FileSet():
         for filename in files:
 
             if self._should_exclude_file(filename):
+                os.remove(filename)
                 continue
 
             msg = 'Adding file: {0} to translation memory'

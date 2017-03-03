@@ -35,6 +35,17 @@ class FindFiles(object):
         filelist.sort()
         return filelist
 
+    def find_recursive(self, directory, pattern):
+        filelist = []
+        dirs = self.find_dirs(directory, "*")
+        for _dir in dirs:
+            files = self.find(_dir, pattern)
+            for f in files:
+                filelist.append(f)
+
+        filelist.sort()
+        return filelist
+
     def find_dirs(self, directory, pattern):
         dirlist = []
 

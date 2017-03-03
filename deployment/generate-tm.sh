@@ -62,4 +62,4 @@ copy_tm_files "*.tmx" 350 $INTERMEDIATE_TMX
 # Update download file & index
 cd $PROGRAMS
 python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
-python index-creation.py -d $INTERMEDIATE_PO
+python index-creation.py -d output/

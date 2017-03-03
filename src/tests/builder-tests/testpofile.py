@@ -56,7 +56,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         f.close()
 
         pofile = POFile(tmpfile.name)
-        pofile.add_comment_to_all_entries(u'Comment test')
+        pofile.add_comment_to_all_entries_and_remove_fuzzys(u'Comment test')
 
         input_po = polib.pofile(tmpfile.name)
 

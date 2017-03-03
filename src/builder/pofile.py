@@ -27,19 +27,24 @@ class POFile(object):
     def __init__(self, filename):
         self.filename = filename
 
-    def add_comment_to_all_entries(self, comment):
+    def add_comment_to_all_entries_and_remove_fuzzys(self, comment):
         try:
             input_po = polib.pofile(self.filename)
 
             for entry in input_po:
+
                 if len(entry.tcomment) > 0:
                     entry.tcomment = u'{0}\n{1}'.format(comment, entry.tcomment)
                 else:
                     entry.tcomment = comment
 
+                if 'fuzzy' in entry.flags:
+                    entry.obsolete = True
+                    continue
+
             input_po.save(self.filename)
         except Exception:
-            logging.error("POFile.add_comment_to_all_entries " + self.filename)
+            logging.error("POFile.add_comment_to_all_entries_and_remove_fuzzys exception:" + self.filename)
 
 
     def add_msgctxt_to_duplicates(self):
