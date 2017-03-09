@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import sys, getopt, operator, pystache, os.path, uuid, cgi, re, hunspell
+import sys, getopt, operator, pystache, os.path, uuid, cgi, re, hunspell, json
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -18,34 +18,38 @@ def process_template(template, filename, ctx):
 
 class rule_match(object):
    def __init__(self, error):
-      self.msg = error.attrib['msg']
-      replacements_array = error.attrib['replacements'].split("#")
+      self.msg = error['message']
+      replacements_array = error['replacements']
       n = 0;
       replacements_str = ""
       for r in replacements_array:
-         if r:
+         if r['value']:
             if n > 0:
                replacements_str += "; "
-            replacements_str += r 
+            replacements_str += r['value'] 
             n += 1
             if n > 9:
                break
       self.replacements = replacements_str
-      ctx = error.attrib['context']
-      a = int(error.attrib['contextoffset'])
-      b = a + int(error.attrib['errorlength'])
+      a = int(error['context']['offset'])
+      b = a + int(error['context']['length'])
+      uw = error['context']['text'][a:b]
+
+      ctx = error['context']['text']
+      a = int(error['context']['offset'])
+      b = a + int(error['context']['length'])
       ctxlen = len(ctx)
       spanclass = "hiddenGrammarError"
-      if error.attrib['locqualityissuetype'] == "misspelling":
+      if error['rule']['issueType'] == "misspelling":
          spanclass = "hiddenSpellError"
-      if (error.attrib['locqualityissuetype'] == "style") or (error.attrib['locqualityissuetype'] == "locale-violation"):
+      if (error['rule']['issueType'] == "style") or (error['rule']['issueType'] == "locale-violation"):
          spanclass = "hiddenGreenError"
       self.context_before = ctx[0:a]
       self.context_spanclass = spanclass
       self.context_error = cgi.escape(ctx[a:b]).replace(" ","&nbsp;")
       self.context_after = ctx[b:ctxlen]
       try:
-         self.url = error.attrib['url']
+         self.url = error['rule']['urls'][0]['value']
       except KeyError:
          self.url = ""
 
@@ -94,17 +98,15 @@ def process_file ( ifile, ofile ):
    uw_rest = []
    totalmatches = 0
 
-   # parxe xml
-   import xml.etree.ElementTree as ET
-   tree = ET.parse(ifile)
-   root = tree.getroot()
+   with open(ifile) as json_file:
+      parsedresults = json.load(json_file)
+   errors = parsedresults['matches']
 
    # count rules by ruleId & matches per rule
    rulelist = []
    unknownwords = []
-   errors = root.findall('error')
    for error in errors:
-      ruleId = error.attrib['ruleId']
+      ruleId = error['rule']['id']
       if ruleId != "MORFOLOGIK_RULE_CA_ES":
          totalmatches += 1
          r = getRuleById(rulelist, ruleId)
@@ -113,15 +115,15 @@ def process_file ( ifile, ofile ):
          else:
             r = rule(ruleId)
             rulelist.append(r)
-         if (r.count > 100):
+         if (r.count > 10000):
             r.truncated = 1
          else:
             r.rule_matches.append(rule_match(error))
       # get unknown words from spelling rule
       else:
-         a = int(error.attrib['contextoffset'])
-         b = a + int(error.attrib['errorlength'])
-         uw = error.attrib['context'][a:b]
+         a = int(error['context']['offset'])
+         b = a + int(error['context']['length'])
+         uw = error['context']['text'][a:b]
          if uw not in unknownwords:
             unknownwords.append(uw)
             if contains_symbols(uw):
@@ -157,12 +159,6 @@ def process_file ( ifile, ofile ):
    # sort list of rules
    rulelist.sort(key=lambda x: x.count, reverse=True);
 
-   # unknown words from xml
-   #try:
-   #   for word in root.find('unknown_words').findall('word'):
-   #      unknownwords.append(word.text)
-   #except AttributeError:
-   #   pass
    unknownwords.sort()
    uw_oneletter.sort(key=lambda x: x.context_error, reverse=False)
    uw_digit.sort(key=lambda x: x.context_error, reverse=False)
@@ -211,11 +207,11 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
    except getopt.GetoptError:
-      print('Use: lt-results-to-html.py -i <inputfile> -o <outputfile>')
+      print ('Use: lt-results-to-html.py -i <inputfile> -o <outputfile>')
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print('Use: lt-results-to-html.py -i <inputfile> -o <outputfile>')
+         print ('Use: lt-results-to-html.py -i <inputfile> -o <outputfile>')
          sys.exit()
       elif opt in ("-i", "--ifile"):
          inputfile = arg
