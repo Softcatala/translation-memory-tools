@@ -1,0 +1,11 @@
+{
+    "project": "Mame", 
+    "projectweb": "http://mamedev.org/", 
+    "fileset": {
+        "mame": {
+            "url": "https://raw.githubusercontent.com/mamedev/mame/master/language/Catalan/strings.po",
+            "type": "file", 
+            "target": "ca.po"
+        }
+    }
+}
