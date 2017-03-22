@@ -31,8 +31,9 @@ class TransifexFileSet(FileSet):
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
-            if filename.endswith('en.po') or filename.endswith('en.ts'):
-                os.remove(filename)
+            if filename.endswith('en.po') or filename.endswith('en.ts') or\
+               filename.endswith('en_GB.po') or filename.endswith('en_GB.ts'):
+                   os.remove(filename)
 
     def do(self):
         prevdir = os.getcwd()
