@@ -10,13 +10,31 @@ Introduction
 ============
 
 This is the toolset used at Softcatalà to build the translation memories for
-all the projects that we contribute to.
+all the projects that we know exist in Catalan language and have their
+translations available openly.
 
-The toolset performs the following tasks:
+The toolset contains the following components with their own responsibility:
 
+Builder (fetch and build memories)
 * Download and unpack the files from source repositories
-* Create a translation memory for project in PO and TMX format
+* Convert from the different translation formats (ts, strings, etc) to PO
+* Create a translation memory for project in PO and TMX formats
 * Produce a single translation memory file that contains all the projects
+
+Web
+* Provides a web application and an API that allow users download memories
+and search translation
+* Provides an index-creator that creates a Whoosh index with all the strings
+than then the user can search using the web app
+* Provides an download-creation that creates a zip file with all memories that
+the user can download
+
+Terminology (terminology extraction)
+* Analyzes the PO files and creates a report with the most common terminology
+across the projects
+
+Quality (feedback on how to improve translations)
+* Runs Pology and LanguageTool and generates HTML reports on translation quality
 
 `Web page of the project`_
 
@@ -24,7 +42,7 @@ The toolset performs the following tasks:
 Dependencies
 ============
 
-* Python 2.7
+* Python 3.4 or higher
 * gettext
 * Bazaar
 * Subversion 1.7 or higher
@@ -74,7 +92,7 @@ builder.py (main program)
    Builds the translation memory: downloads files, merge them and builds the
    final translation memory
 
-compare-sets.py (for reporting propouses)
+compare-sets.py (for reporting proposes)
    Compares two sets of the PO files and counts the words
     
 Located at ``web`` subdirectory:
@@ -91,7 +109,7 @@ scripts
 Located at root directory:
 
 unittests
-   The unittest to check the funcitionality of different classes
+   The unittest to check the functionality of different classes
    
 integration-tests
    tests that check if what has been generated contains errors 
