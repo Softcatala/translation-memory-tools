@@ -16,24 +16,24 @@ translations available openly.
 The toolset contains the following components with their own responsibility:
 
 Builder (fetch and build memories)
+
 * Download and unpack the files from source repositories
 * Convert from the different translation formats (ts, strings, etc) to PO
 * Create a translation memory for project in PO and TMX formats
 * Produce a single translation memory file that contains all the projects
 
 Web
-* Provides a web application and an API that allow users download memories
-and search translation
-* Provides an index-creator that creates a Whoosh index with all the strings
-than then the user can search using the web app
-* Provides an download-creation that creates a zip file with all memories that
-the user can download
+
+* Provides a web application and an API that allow users download memories and search translation
+* Provides an index-creator that creates a Whoosh index with all the strings than then the user can search using the web app
+* Provides an download-creation that creates a zip file with all memories that the user can download
 
 Terminology (terminology extraction)
-* Analyzes the PO files and creates a report with the most common terminology
-across the projects
+
+* Analyzes the PO files and creates a report with the most common terminology across the projects
 
 Quality (feedback on how to improve translations)
+
 * Runs Pology and LanguageTool and generates HTML reports on translation quality
 
 `Web page of the project`_
