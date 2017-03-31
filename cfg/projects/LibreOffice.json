@@ -4,29 +4,34 @@
     "softcatala": true, 
     "fileset": {
         "UI": {
-            "url": "https://translations.documentfoundation.org/export/?path=/ca/libo_ui/", 
+            "url": "https://translations.documentfoundation.org/++offline_tm/ca/libo_ui/",
             "type": "compressed", 
             "target": "libreoffice-ui.zip"
         }, 
         "Ajuda": {
-            "url": "https://translations.documentfoundation.org/export/?path=/ca/libo_help/", 
+            "url": "https://translations.documentfoundation.org/++offline_tm/ca/libo_help/",
             "type": "compressed", 
             "target": "libreoffice-help.zip"
         }, 
         "Lloc web": {
-            "url": "https://translations.documentfoundation.org/export/?path=/ca/web", 
+            "url": "https://translations.documentfoundation.org/++offline_tm/ca/website/",
             "type": "compressed", 
             "target": "website.zip"
         }, 
         "Android": {
-            "url": "https://translations.documentfoundation.org/export/?path=/ca/android/", 
-            "type": "file", 
-            "target": "ca.po"
+            "url": "https://translations.documentfoundation.org/++offline_tm/ca/android/",
+            "type": "compressed",
+            "target": "android.zip"
         }, 
         "iOS": {
-            "url": "https://translations.documentfoundation.org/export/?path=/ca/iosremote/", 
+            "url": "https://translations.documentfoundation.org/++offline_tm/ca/iosremote/",
             "type": "compressed", 
             "target": "ios.zip"
+        }, 
+        "libo_online": {
+            "url": "https://translations.documentfoundation.org/++offline_tm/ca/libo_online/",
+            "type": "compressed",
+            "target": "libo_online.zip"
         }
     }
 }
