@@ -3,7 +3,7 @@ python:
   - "3.4"
 before_install:
   - sudo apt-get update
-  - sudo apt-get install libhunspell-dev translate-toolkit
+  - sudo apt-get install libhunspell-dev
   - rvm install ruby
   - gem install i18n-translators-tools
 install:
