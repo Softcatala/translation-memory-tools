@@ -1,0 +1,72 @@
+{
+    "project": "OpenEmu",
+    "projectweb": "http://openemu.org/",
+    "fileset": {
+        "ControlLabels": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/ControlLabels.strings",
+            "type": "file",
+            "target": "ControlLabels.strings"
+        },
+        "InfoPlist": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/InfoPlist.strings",
+            "type": "file",
+            "target": "InfoPlist.strings"
+        },
+        "Localizable": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/Localizable.strings",
+            "type": "file",
+            "target": "Localizable.strings"
+        },
+        "MainMenu": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/MainMenu.strings",
+            "type": "file",
+            "target": "MainMenu.strings"
+        },
+        "OECollectionViewController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OECollectionViewController.strings",
+            "type": "file",
+            "target": "OECollectionViewController.strings"
+        },
+        "OEGameScanner": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEGameScanner.strings",
+            "type": "file",
+            "target": "OEGameScanner.strings"
+        },
+        "OELibraryGamesViewController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OELibraryGamesViewController.strings",
+            "type": "file",
+            "target": "OELibraryGamesViewController.strings"
+        },
+        "OEMigrationWindowController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEMigrationWindowController.strings",
+            "type": "file",
+            "target": "OEMigrationWindowController.strings"
+        },
+        "OEPrefControlsController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEPrefControlsController.strings",
+            "type": "file",
+            "target": "OEPrefControlsController.strings"
+        },
+        "OEPrefCoresController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEPrefCoresController.strings",
+            "type": "file",
+            "target": "OEPrefCoresController.strings"
+        },
+        "OEPrefGameplayController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEPrefGameplayController.strings",
+            "type": "file",
+            "target": "OEPrefGameplayController.strings"
+        },
+        "OEPrefLibraryController": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEPrefLibraryController.strings",
+            "type": "file",
+            "target": "OEPrefLibraryController.strings"
+        },
+        "OESetupAssistant": {
+            "url": "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OESetupAssistant.strings",
+            "type": "file",
+            "target": "OESetupAssistant.strings"
+        }
+    },
+    "disabled": true
+}
