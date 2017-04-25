@@ -2,11 +2,6 @@
     "project": "Qt", 
     "projectweb": "https://github.com/qtproject/qttranslations/blob/dev/translations/README", 
     "fileset": {
-        "qt": {
-            "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qt_ca.ts", 
-            "type": "file", 
-            "target": "qt_ca.ts"
-        },
         "qtbase": {
             "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qtbase_ca.ts", 
             "type": "file", 
