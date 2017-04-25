@@ -1,0 +1,11 @@
+{
+    "project": "vokoscreen", 
+    "projectweb": "http://linuxecke.volkoh.de/vokoscreen/vokoscreen.html", 
+    "fileset": {
+        "vokoscreen": {
+            "url": "https://raw.githubusercontent.com/vkohaupt/vokoscreen/master/language/vokoscreen_ca.ts", 
+            "type": "file", 
+            "target": "vokoscreen_ca.ts"
+        }
+    }
+}
