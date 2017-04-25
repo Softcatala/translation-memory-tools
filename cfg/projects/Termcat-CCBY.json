@@ -1,0 +1,11 @@
+{
+    "project": "Termcat-CCBY", 
+    "projectweb": "http://www.termcat.cat/ca/TerminologiaOberta", 
+    "fileset": {
+        "termcat-ccby": {
+            "url": "https://raw.githubusercontent.com/pereorga/termcat-dicts/master/termcat_ccby.po",
+            "type": "file", 
+            "target": "ca.po"
+        }
+    }
+}
