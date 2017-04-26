@@ -3,16 +3,17 @@
 root="$1"
 lt_output=$root/tm-git/src/output/quality
 lt_log=$lt_output/excluded-lines.log 
+location=$root/tm-git/src/output/individual_pos
 cnt=0
 
 # Delete output dir and files
 rm -r -f $lt_log
 mkdir -p $lt_output
 
-cd $root/tm-git/src/output/individual_pos
-
+cd $location
 # Every project has its own subdirectory
 for project_dir in */; do
+    project_dir=$location/$project_dir
     echo "project_dir:" $project_dir
 
     has_files=`find $project_dir -type f -name "*.po"| wc -l`
@@ -28,7 +29,8 @@ for project_dir in */; do
         cnt=0
     fi
 
-    bash $root/tm-git/deployment/generate-quality-project.sh $root "$project_dir" &
+    cd $root/tm-git/src/
+    python generate-quality-reports.py -s "$project_dir" &
     cnt=$((cnt+1))   
 done
 wait

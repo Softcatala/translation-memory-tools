@@ -21,11 +21,7 @@ cd $ROOT
 bash $ROOT/tm-git/deployment/generate-tm.sh $ROOT
 bash $ROOT/tm-git/deployment/generate-terminology.sh $ROOT
 bash $ROOT/tm-git/deployment/generate-isolists.sh $ROOT
-
-deactivate
 bash $ROOT/tm-git/deployment/generate-quality.sh $ROOT
-
-source /home/jmas/web/python-env/bin/activate
 bash $ROOT/tm-git/deployment/deploy.sh $ROOT $DEPLOY_DIR $PREPROD_DEPLOY_DIR
 
 secs=$SECONDS
