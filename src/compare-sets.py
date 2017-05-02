@@ -46,7 +46,7 @@ def process_projects(src_directory, trg_directory):
             src_stats = POFile(src_file).get_statistics()
             trg_stats = POFile(trg_file).get_statistics()
 
-            print("{0} project {1}: words (before), {2} words (now), delta {3}".format(project_dto.filename, src_stats, trg_stats, trg_stats - src_stats))
+            print("{0} project: {1} words (before), {2} words (now), delta {3}".format(project_dto.filename, src_stats, trg_stats, trg_stats - src_stats))
 
 
 def read_parameters():
