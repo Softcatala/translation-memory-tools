@@ -1,6 +1,6 @@
 {
     "project": "Blender", 
-    "projectweb": "http://www.blender.cat/", 
+    "projectweb": "http://www.blenderpro.cat",
     "fileset": {
         "blender": {
             "url": "https://svn.blender.org/svnroot/bf-translations/branches/ca/", 
