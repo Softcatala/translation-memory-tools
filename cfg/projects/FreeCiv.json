@@ -12,5 +12,6 @@
             "type": "file", 
             "target": "ca.po"
         }
-    }
+    },
+    "disabled": true
 }
