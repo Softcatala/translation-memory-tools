@@ -18,6 +18,7 @@
 # Boston, MA 02111-1307, USA.
 
 import logging
+import os
 import urllib.request
 
 
@@ -32,6 +33,10 @@ class DownloadFile(object):
             except Exception as e:
                 print("Error on urlopen_with_retry: " + str(e))
 
+    def _remove_incomplete_file(self, filename):
+        if os.path.exists(filename):
+            os.remove(filename)
+
     def get_file(self, url, filename):
         try:
             msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
@@ -44,3 +49,4 @@ class DownloadFile(object):
         except Exception:
             msg = 'Error downloading file \'{0}\' to {1}'.format(url, filename)
             logging.error(msg)
+            self._remove_incomplete_file(filename)

@@ -40,7 +40,8 @@ class POCatalog(object):
             os.system(cmd.format(self.filename, backup, pofile))
             os.remove(backup)
         else:
-            shutil.copy(pofile, self.filename)
+            if os.path.isfile(pofile):
+                shutil.copy(pofile, self.filename)
 
     def cleanup(self):
         backup = 'tm-project-previous.po'
