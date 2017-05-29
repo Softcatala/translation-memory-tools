@@ -23,7 +23,7 @@ for project_dir in */; do
     fi
 
     echo "cnt: " $cnt
-    if [ $cnt == 12 ]; then
+    if [ $cnt == 4 ]; then
         echo "waiting"
         wait
         cnt=0
