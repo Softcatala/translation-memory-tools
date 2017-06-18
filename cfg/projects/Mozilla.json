@@ -33,6 +33,56 @@
             "url": "https://mozilla.locamotion.org/++offline_tm/ca/mozilla_lang/",
             "type": "compressed", 
             "target": "webparts.zip"
+        }, 
+        "mozilla-activity-stream": {
+            "url": "https://pontoon.mozilla.org/ca/activity-stream-new-tab/ca.activity-stream-new-tab.tmx",
+            "type": "file", 
+            "target": "ca.activity-stream-new-tab.tmx"
+        }, 
+        "amo": {
+            "url": "https://pontoon.mozilla.org/ca/amo/ca.amo.tmx",
+            "type": "file", 
+            "target": "ca.amo.tmx"
+        }
+        "amo-frontend": {
+            "url": "https://pontoon.mozilla.org/ca/amo-frontend/ca.amo-frontend.tmx",
+            "type": "file", 
+            "target": "ca.amo-frontend.tmx"
+        },
+        "appstores": {
+            "url": "https://pontoon.mozilla.org/ca/appstores/ca.appstores.tmx",
+            "type": "file", 
+            "target": "ca.appstores.tmx"
+        }, 
+        "firefox-accounts": {
+            "url": "https://pontoon.mozilla.org/ca/firefox-accounts/ca.firefox-accounts.tmx",
+            "type": "file", 
+            "target": "ca.firefox-accounts.tmx"
+        }, 
+        "firefox-screenshots": {
+            "url": "https://pontoon.mozilla.org/ca/firefox-screenshots/ca.firefox-screenshots.tmx",
+            "type": "file", 
+            "target": "ca.firefox-screenshots.tmx"
+        }, 
+        "fundraising": {
+            "url": "https://pontoon.mozilla.org/ca/fundraising/ca.fundraising.tmx",
+            "type": "file", 
+            "target": "ca.fundraising.tmx"
+        },
+        "mdn": {
+            "url": "https://pontoon.mozilla.org/ca/mdn/ca.mdn.tmx",
+            "type": "file", 
+            "target": "ca.mdn.tmx"
+        }, 
+        "mozillians": {
+            "url": "https://pontoon.mozilla.org/ca/mozillians/ca.mozillians.tmx",
+            "type": "file", 
+            "target": "ca.mozillians.tmx"
+        }, 
+        "pocket": {
+            "url": "https://pontoon.mozilla.org/ca/pocket/ca.pocket.tmx",
+            "type": "file", 
+            "target": "ca.pocket.tmx"
         }
     }
 }
