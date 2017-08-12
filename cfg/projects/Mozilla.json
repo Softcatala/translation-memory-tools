@@ -4,37 +4,36 @@
     "softcatala": true, 
     "fileset": {
         "firefox": {
-            "url": "https://mozilla.locamotion.org/++offline_tm/ca/firefox/",
-            "type": "compressed", 
-            "target": "mozilla.zip", 
-            "excluded": "region.properties.po"
+            "url": "https://pontoon.mozilla.org/ca/firefox/ca.firefox.tmx",
+            "type": "file", 
+            "target": "ca.firefox.tmx", 
         }, 
-        "mobile": {
-            "url": "https://mozilla.locamotion.org/++offline_tm/ca/mobile/",
-            "type": "compressed", 
-            "target": "mobile.zip"
+        "firefox-for-android": {
+            "url": "https://pontoon.mozilla.org/ca/firefox-for-android/ca.firefox-for-android.tmx",
+            "type": "file", 
+            "target": "ca.firefox-for-android.tmx"
         }, 
-        "ios": {
-            "url": "https://mozilla.locamotion.org/++offline_tm/ca/ios/",
-            "type": "compressed", 
-            "target": "firefoxos.zip"
+        "firefox-for-ios": {
+            "url": "https://pontoon.mozilla.org/ca/firefox-for-ios/ca.firefox-for-ios.tmx",
+            "type": "file", 
+            "target": "ca.firefox-for-ios.tmx"
         }, 
         "lightning": {
-            "url": "https://mozilla.locamotion.org/++offline_tm/ca/lightning/",
-            "type": "compressed", 
-            "target": "lightning.zip"
+            "url": "https://pontoon.mozilla.org/ca/lightning/ca.lightning.tmx",
+            "type": "file", 
+            "target": "ca.lightning.tmx"
         }, 
         "thunderbird": {
-            "url": "https://mozilla.locamotion.org/++offline_tm/ca/thunderbird/",
-            "type": "compressed", 
-            "target": "thunderbird.zip"
+            "url": "https://pontoon.mozilla.org/ca/thunderbird/ca.thunderbird.tmx",
+            "type": "file", 
+            "target": "ca.thunderbird.tmx"
         }, 
-        "mozilla.org-web": {
-            "url": "https://mozilla.locamotion.org/++offline_tm/ca/mozilla_lang/",
-            "type": "compressed", 
-            "target": "webparts.zip"
+        "mozilla.org": {
+            "url": "https://pontoon.mozilla.org/ca/mozillaorg/ca.mozillaorg.tmx",
+            "type": "file",
+            "target": "ca.mozillaorg.tmx"
         }, 
-        "mozilla-activity-stream": {
+        "firefox-activity-stream": {
             "url": "https://pontoon.mozilla.org/ca/activity-stream-new-tab/ca.activity-stream-new-tab.tmx",
             "type": "file", 
             "target": "ca.activity-stream-new-tab.tmx"
@@ -83,6 +82,32 @@
             "url": "https://pontoon.mozilla.org/ca/pocket/ca.pocket.tmx",
             "type": "file", 
             "target": "ca.pocket.tmx"
+        }, 
+        "focus-for-android": {
+            "url": "https://pontoon.mozilla.org/ca/focus-for-android/ca.focus-for-android.tmx",
+            "type": "file", 
+            "target": "ca.focus-for-android.tmx"
+        }, 
+        "focus-for-ios": {
+            "url": "https://pontoon.mozilla.org/ca/focus-for-ios/ca.focus-for-ios.tmx",
+            "type": "file", 
+            "target": "ca.focus-for-ios.tmx"
+        }, 
+        "pontoon-intro": {
+            "url": "https://pontoon.mozilla.org/ca/pontoon-intro/ca.pontoon-intro.tmx",
+            "type": "file", 
+            "target": "ca.pontoon-intro.tmx"
+        }, 
+        "test-pilot-firefox-send": {
+            "url": "https://pontoon.mozilla.org/ca/test-pilot-firefox-send/ca.test-pilot-firefox-send.tmx",
+            "type": "file", 
+            "target": "ca.test-pilot-firefox-send.tmx"
+        }, 
+        "sumo": {
+            "url": "https://pontoon.mozilla.org/ca/sumo/ca.sumo.tmx",
+            "type": "file", 
+            "target": "ca.sumo.tmx"
+
         }
     }
 }
