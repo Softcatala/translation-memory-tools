@@ -42,7 +42,7 @@
             "url": "https://pontoon.mozilla.org/ca/amo/ca.amo.tmx",
             "type": "file", 
             "target": "ca.amo.tmx"
-        }
+        },
         "amo-frontend": {
             "url": "https://pontoon.mozilla.org/ca/amo-frontend/ca.amo-frontend.tmx",
             "type": "file", 
