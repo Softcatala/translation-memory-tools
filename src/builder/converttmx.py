@@ -58,7 +58,7 @@ class ConvertTmx():
                 llengua = tuv_entry.attrib['{http://www.w3.org/XML/1998/namespace}lang']
 
                 for seg_entry in tuv_entry.iter('seg'):
-                    if llengua == 'en':
+                    if llengua == 'en' or llengua == 'en-US':
                         source = seg_entry.text
                     elif llengua == 'ca':
                         translation = seg_entry.text
