@@ -6,7 +6,7 @@
         "firefox": {
             "url": "https://pontoon.mozilla.org/ca/firefox/ca.firefox.tmx",
             "type": "file", 
-            "target": "ca.firefox.tmx", 
+            "target": "ca.firefox.tmx"
         }, 
         "firefox-for-android": {
             "url": "https://pontoon.mozilla.org/ca/firefox-for-android/ca.firefox-for-android.tmx",
