@@ -2,6 +2,11 @@
     "project": "LXQt", 
     "projectweb": "http://lxqt.org/", 
     "fileset": {
+        "compton-conf": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/compton-conf/compton-conf_ca.ts",
+            "type": "file",
+            "target": "compton-conf_ca.ts"
+        },
         "liblxqt": {
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/liblxqt/liblxqt_ca.ts", 
             "type": "file", 
@@ -231,6 +236,11 @@
             "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/pcmanfm-qt/pcmanfm-qt_ca.ts",
             "type": "file",
             "target": "pcmanfm-qt_ca.ts"
+        },
+        "qterminal": {
+            "url": "https://raw.githubusercontent.com/lxde/lxqt-l10n/master/qterminal/qterminal_ca.ts",
+            "type": "file",
+            "target": "qterminal_ca.ts"
         }
     }
 }
