@@ -1,6 +1,6 @@
 {
     "project": "Hawaii", 
-    "projectweb": "http://hawaiios.org", 
+    "projectweb": "http://hawaiios.org/",
     "fileset": {
         "hawaii": {
             "url": "https://www.transifex.com/projects/p/hawaii", 
@@ -14,11 +14,11 @@
             "url": "https://www.transifex.com/projects/p/system-preferences", 
             "type": "transifex"
         },
-	"terminal": {
+	    "terminal": {
             "url": "https://www.transifex.com/projects/p/terminal", 
             "type": "transifex"
         },
-	"hawaii-workspace": {
+	    "hawaii-workspace": {
             "url": "https://www.transifex.com/projects/p/hawaii-workspace", 
             "type": "transifex"
         }
