@@ -1,6 +1,6 @@
 {
     "project": "Discourse", 
-    "projectweb": "http://www.discourse.org/", 
+    "projectweb": "https://www.discourse.org/",
     "fileset": {
         "main": {
             "url": "https://www.transifex.com/projects/p/discourse-org/", 
