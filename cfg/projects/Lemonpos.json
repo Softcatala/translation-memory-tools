@@ -2,7 +2,7 @@
     "project": "Lemonpos", 
     "projectweb": "https://sourceforge.net/projects/lemonpos/",
     "fileset": {
-        "TorProject": {
+        "Lemonpos": {
             "url": "https://www.transifex.com/projects/p/lemonpos/", 
             "type": "transifex"
         }
