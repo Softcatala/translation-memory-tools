@@ -5,12 +5,12 @@
         "Mint": {
             "url": "https://github.com/linuxmint/mint-translations.git", 
             "type": "git",
-             "pattern": ".*?ca.po" 
+            "pattern": ".*?ca.po"
         },
         "Cinnamon": {
             "url": "https://github.com/linuxmint/cinnamon-translations.git", 
             "type": "git",
-             "pattern": ".*?ca.po" 
+            "pattern": ".*?ca.po"
         }
     }
 }
