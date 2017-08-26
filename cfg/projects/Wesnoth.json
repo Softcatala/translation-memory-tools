@@ -1,6 +1,6 @@
 {
     "project": "Wesnoth", 
-    "projectweb": "http://www.wesnoth.org/gettext/index.lang.php?lang=ca", 
+    "projectweb": "https://www.wesnoth.org/gettext/",
     "fileset": {
         "Wesnoth": {
             "url": "https://github.com/wesnoth/wesnoth-old.git", 
