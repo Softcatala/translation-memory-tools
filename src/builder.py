@@ -31,14 +31,14 @@ from builder.projects import Projects
 projects = Projects()
 
 
-def init_logging():
+def init_logging(del_logs):
     logfile = 'builder.log'
     logfile_error = 'builder-error.log'
 
-    if os.path.isfile(logfile):
+    if del_logs and os.path.isfile(logfile):
         os.remove(logfile)
 
-    if os.path.isfile(logfile_error):
+    if del_logs and os.path.isfile(logfile_error):
         os.remove(logfile_error)
 
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
@@ -56,6 +56,15 @@ def init_logging():
 
 def read_parameters():
     parser = OptionParser()
+
+    parser.add_option(
+        '-d',
+        '--del-logs',
+        action='store_true',
+        dest='del_logs',
+        default=False,
+        help='Delete previous existing logs'
+    )
 
     parser.add_option(
         '-n',
@@ -124,7 +133,7 @@ def read_parameters():
 
     return (options.add_source, projects_names, options.projects_dir,
             options.only_all_projects_tm, options.softcatala_only,
-            options.out_directory)
+            options.out_directory, options.del_logs)
 
 
 def load_projects_from_json(add_source, projects_names, projects_dir,
@@ -157,14 +166,14 @@ def create_output_dir(directory):
         os.mkdir(directory)
 
 if __name__ == '__main__':
-    print ('Translation memory builder version 0.1')
-    print ('Use --help for assistance')
+    print('Translation memory builder version 0.1')
+    print('Use --help for assistance')
 
     start_time = datetime.datetime.now()
-    init_logging()
     (add_source, projects_names, projects_dir, only_all_projects_tm,
-     softcatala_only, out_directory) = read_parameters()
+     softcatala_only, out_directory, del_logs) = read_parameters()
 
+    init_logging(del_logs)
     projects.set_out_directory(out_directory)
     create_output_dir(out_directory)
 

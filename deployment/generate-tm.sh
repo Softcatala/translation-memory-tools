@@ -49,7 +49,7 @@ rm -f *.log
 rm -f -r output/
 
 # Download new translation files
-python builder.py
+python builder.py -d
 python builder.py --all
 python builder.py --softcatala
 
