@@ -79,7 +79,7 @@
             "target": "ca.po"
         },
          "libpwquality": {
-            "url": "https://fedora.zanata.org/rest/file/translation/libpwquality/master/ca/po?docId=libpwquality", 
+            "url": "https://fedora.zanata.org/rest/file/translation/libpwquality/master/ca/po?docId=po%2Flibpwquality",
             "type": "file", 
             "target": "ca.po"
         },
