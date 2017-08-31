@@ -54,10 +54,11 @@ Dependencies
 Setting up before execution
 ===========================
 
-For Transifex's project (all projects with type ``transifex`` at
-``projects.json``) ask for credential at their Transifex servers the first
-time that they get executed. After the first execution, they get recorded
-in the ``.transifexrc`` file.
+For Transifex's projects (all projects with type ``transifex`` at
+``cfg/projects``), during the first execution you will need to setup
+your Transifex credentials. After the first execution, the credentials will
+be readed from the ``.transifexrc`` file. In order to download the
+translations from a Transifex project, you need to be member of the project.
 
 `Flask configuration`_
 
@@ -71,7 +72,7 @@ execution.
 Projects included in the translation memory
 ===========================================
 
-The file ``projects.json`` contains the description of the projects that
+The  ``cfg/projects`` directory contains the description of the projects that
 are included in the translation memory.
 
 If context is not provided (msgctxt), duplicated translations are not stored.
