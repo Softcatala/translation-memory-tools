@@ -4,12 +4,12 @@
     "softcatala": false, 
     "fileset": {
         "setup": {
-            "url": "http://translate.pdfforge.org/download/pdfcreator/innosetup/ca/", 
+            "url": "https://raw.githubusercontent.com/pdfforge/PDFCreator/master/Source/Languages/ca/LC_MESSAGES/innosetup.po",
             "type": "file", 
             "target": "pdfcreator-setup-ca.po"
         },
         "messages": {
-            "url": "http://translate.pdfforge.org/download/pdfcreator/messages/ca/", 
+            "url": "https://raw.githubusercontent.com/pdfforge/PDFCreator/master/Source/Languages/ca/LC_MESSAGES/messages.po",
             "type": "file", 
             "target": "pdfcreator-messages-ca.po"
         }
