@@ -37,6 +37,7 @@ from .transifexhubfileset import TransifexHubFileSet
 from .gitwebfileset import GitWebFileSet
 from .transvisionfileset import TransvisionFileSet
 from .xiaomifileset import XiaomiFileSet
+from .cgitfileset import CGitFileSet
 
 class Project(object):
 
@@ -154,6 +155,13 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
+            elif fileset.type == 'cgit':
+                fs = CGitFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+                fs.set_pattern(fileset.pattern)
+                fs.set_project(self)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
