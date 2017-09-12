@@ -1,5 +1,6 @@
 {
-    "project": "GPGTools", 
+    "project": "GPGTools",
+    "disabled": true,
     "projectweb": "https://www.softcatala.org/projectes/gpgtools/", 
     "softcatala": true, 
     "fileset": {
