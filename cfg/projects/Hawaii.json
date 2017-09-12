@@ -6,10 +6,6 @@
             "url": "https://www.transifex.com/projects/p/hawaii", 
             "type": "transifex"
         },
-        "eyesight": {
-            "url": "https://www.transifex.com/projects/p/eyesight", 
-            "type": "transifex"
-        },
         "system-preferences": {
             "url": "https://www.transifex.com/projects/p/system-preferences", 
             "type": "transifex"
