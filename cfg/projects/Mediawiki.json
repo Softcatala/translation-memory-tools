@@ -1,6 +1,6 @@
 {
     "project": "Mediawiki", 
-    "projectweb": "http://www.mediawiki.org/wiki/MediaWiki/ca", 
+    "projectweb": "https://www.mediawiki.org/wiki/MediaWiki/ca", 
     "fileset": {
         "main": {
             "url": "https://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=core&language=ca&task=export-as-po", 
@@ -13,7 +13,7 @@
             "target": "mobile-all-ca.po"
         },
         "extensions": {
-            "url": "https://translatewiki.net/w/i.php?title=Special%3ATranslate&taction=export&group=wikia-0-all&language=ca&task=export-as-po", 
+            "url": "https://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=ext-0-all&language=ca&task=export-as-po",
             "type": "file", 
             "target": "extensions-ca.po"
         }
