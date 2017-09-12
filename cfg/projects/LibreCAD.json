@@ -1,14 +1,14 @@
 {
     "project": "LibreCAD", 
-    "projectweb": "http://translate.librecad.org/pootle/ca/", 
+    "projectweb": "https://translate.librecad.org/projects/librecad/",
     "fileset": {
         "LibreCAD": {
-            "url": "http://translate.librecad.org/pootle/export/librecad/ts/librecad_ca.ts", 
+            "url": "https://raw.githubusercontent.com/LibreCAD/LibreCAD/master/librecad/ts/librecad_ca.ts",
             "type": "file", 
             "target": "librecad-ca.ts"
         },
         "plugins": {
-            "url": "http://translate.librecad.org/pootle/export/librecad/plugins/plugins_ca.ts",
+            "url": "https://raw.githubusercontent.com/LibreCAD/LibreCAD/master/plugins/ts/plugins_ca.ts",
             "type": "file",
             "target": "plugins-ca.ts"
         }
