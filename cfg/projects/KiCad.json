@@ -1,6 +1,6 @@
 {
     "project": "KiCad",
-    "projectweb": "http://docs.kicad-pcb.org/en/gui_translation_howto.html",
+    "projectweb": "http://docs.kicad-pcb.org/stable/en/gui_translation_howto.html",
     "fileset": {
         "KiCad": {
             "url": "https://raw.githubusercontent.com/KiCad/kicad-i18n/master/ca/kicad.po",
@@ -12,7 +12,7 @@
             "type": "file",
             "target": "kicad-doc-ca.po"
         },
-	"getting-started-doc": {
+	    "getting-started-doc": {
             "url": "https://raw.githubusercontent.com/KiCad/kicad-doc/master/src/getting_started_in_kicad/po/ca.po",
             "type": "file",
             "target": "getting-started-doc-ca.po"
