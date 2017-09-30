@@ -2,7 +2,7 @@
     "project": "aMule", 
     "projectweb": "http://wiki.amule.org/wiki/Translations", 
     "fileset": {
-        "CoreBird": {
+        "aMule": {
             "url": "http://amule.sourceforge.net/translations/trunk/ca.po", 
             "type": "file", 
             "target": "amule-ca.po"
