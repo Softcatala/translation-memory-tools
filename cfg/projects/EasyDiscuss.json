@@ -7,5 +7,6 @@
             "type": "transifex",
             "duplicates" : "msgctxt"
         }
-    }
+    },
+    "disabled": true
 }
