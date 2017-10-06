@@ -30,8 +30,8 @@ from jinja2 import Environment, FileSystemLoader
 sys.path.append('models/')
 from pagination import Pagination
 from glossary import Glossary
+from stats import Stats
 from search import Search
-
 
 class WebView(object):
 
@@ -144,6 +144,11 @@ def memory_search_api():
 
     search = Search(source, target, project)
     return Response(search.get_json(), mimetype='application/json')
+
+@app.route('/api/stats', methods=['GET'])
+def stats_api():
+    stats = Stats()
+    return Response(stats.get_json(), mimetype='application/json')
 
 
 @app.route('/')

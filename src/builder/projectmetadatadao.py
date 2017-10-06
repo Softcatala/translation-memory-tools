@@ -24,6 +24,12 @@ from .projectmetadatadto import ProjectMetaDataDto
 
 class ProjectMetaDataDao(object):
 
+    NAME = 0
+    LAST_FETCH = 1
+    TRANSLATION_UPDATE = 2
+    WORDS = 3
+    CHECKSUM = 4
+
     def __init__(self):
         self.connection = None
 
@@ -66,12 +72,32 @@ class ProjectMetaDataDao(object):
         if row is None:
             return None
 
-        dto = ProjectMetaDataDto(row[0])
-        dto.last_fetch = row[1]
-        dto.last_translation_update = row[2]
-        dto.words = row[3]
-        dto.checksum = row[4]
+        dto = ProjectMetaDataDto(row[self.NAME])
+        dto.last_fetch = row[self.LAST_FETCH]
+        dto.last_translation_update = row[self.TRANSLATION_UPDATE]
+        dto.words = row[self.WORDS]
+        dto.checksum = row[self.CHECKSUM]
         return dto
+
+    def get_all(self):
+        entries = []
+        c = self.connection.cursor()
+        command = u"SELECT * FROM projects"
+        result = c.execute(command)
+        rows = result.fetchall()
+
+        if rows is None:
+            return entries
+
+        for row in rows:
+            dto = ProjectMetaDataDto(row[self.NAME])
+            dto.last_fetch = row[self.LAST_FETCH]
+            dto.last_translation_update = row[self.TRANSLATION_UPDATE]
+            dto.words = row[self.WORDS]
+            dto.checksum = row[self.CHECKSUM]
+            entries.append(dto)
+
+        return entries
 
     def dump(self):
         c = self.connection.cursor()

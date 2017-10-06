@@ -68,6 +68,25 @@ class TestProjectMetaDataDao(unittest.TestCase):
 
         self.assertEquals(WORDS, read_project_dto.words)
 
+    def test_get_all(self):
+
+        PROJECT_NAME = 'test project get_all'
+
+        project_dto = ProjectMetaDataDto(PROJECT_NAME)
+        project_dto.last_fetch = datetime.datetime.now()
+        project_dto.last_translation_update = datetime.datetime.now()
+
+        project_dto2 = ProjectMetaDataDto(PROJECT_NAME + "2")
+        project_dto2.last_fetch = datetime.datetime.now()
+        project_dto2.last_translation_update = datetime.datetime.now()
+
+        project_dao = ProjectMetaDataDao()
+        project_dao.open(':memory:')
+        project_dao.put(project_dto)
+        project_dao.put(project_dto2)
+
+        project_dtos = project_dao.get_all()
+        self.assertEquals(2, len(project_dtos))
 
 if __name__ == '__main__':
     unittest.main()
