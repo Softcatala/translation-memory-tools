@@ -85,7 +85,10 @@ class ProjectMetaDataDao(object):
         command = u"SELECT * FROM projects"
         result = c.execute(command)
         rows = result.fetchall()
+        return self._fetch_all(rows)
 
+    def _fetch_all(self, rows):
+        entries = []
         if rows is None:
             return entries
 
@@ -98,6 +101,14 @@ class ProjectMetaDataDao(object):
             entries.append(dto)
 
         return entries
+
+    def delete_last_fetch(self, days):
+        entries = []
+        c = self.connection.cursor()
+        command = u"DELETE FROM projects WHERE last_fetch <= date('now','-{0} day')".format(days)
+        result = c.execute(command)
+        self.connection.commit()
+        return result.rowcount
 
     def dump(self):
         c = self.connection.cursor()

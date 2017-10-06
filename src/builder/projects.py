@@ -81,6 +81,10 @@ class Projects(object):
 
         self.create_tm_for_all_projects()
 
+        DAYS_TO_KEEP = 90
+        result = self.metadata_dao.delete_last_fetch(DAYS_TO_KEEP)
+        logging.info("Projects clean up:" + str(result))
+
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
