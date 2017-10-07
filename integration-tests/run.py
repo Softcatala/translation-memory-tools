@@ -30,6 +30,7 @@ from builder.crawler import Crawler
 from checkdownloads import CheckDownloads
 from checksearch import CheckSearch
 from checkqualityreports import CheckQualityReports
+from checkstats import CheckStats
 
 
 def read_parameters():
@@ -61,6 +62,10 @@ if __name__ == '__main__':
 
     search = CheckSearch(site_url)
     if not search.check():
+        sys.exit(1)
+
+    stats = CheckStats(site_url)
+    if not stats.check():
         sys.exit(1)
 
     crawler = Crawler(site_url + "memories.html")
