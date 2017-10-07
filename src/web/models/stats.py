@@ -22,6 +22,7 @@ import sys
 import json
 
 sys.path.append('../')
+sys.path.append('../builder')
 
 from builder.projectmetadatadao import ProjectMetaDataDao
 
@@ -29,7 +30,7 @@ class Stats(object):
 
     def get_json(self):
         dao = ProjectMetaDataDao()
-        dao.open('../statistics.db3')
+        dao.open('statistics.db3')
         total_words = 0
         projects = dao.get_all()
         for project in projects:

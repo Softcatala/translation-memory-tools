@@ -40,6 +40,8 @@ copy_files() {
     rm -r -f $2/builder
     mkdir $2/builder
     cp $1/tm-git/src/builder/cleanupfilter.py $2/builder
+    cp $1/tm-git/src/builder/projectmetadatadao.py $2/builder
+    cp $1/tm-git/src/builder/projectmetadatadto.py $2/builder
 
     # Download memories
     cp $1/tm-git/src/download.html $2
@@ -52,6 +54,7 @@ copy_files() {
     cp *.html $2
     cp *.csv $2
     cp sc-glossary.db3 $2/glossary.db3
+    cp statistics.db3 $2/statistics.db3
 
     # Deploy quality reports
     cd $1/tm-git/src/output/quality
