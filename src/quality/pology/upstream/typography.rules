@@ -72,7 +72,7 @@ valid after="\d+" before="\s?\d+"
 valid after="^" cat="kalgebra"
 valid after="pty.+" cat="kdevgdb"
 valid cat="amarokcollectionscanner_qt"
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 valid cat="www_www"
 valid msgstr="src \: bash" cat="konsole" # docmessages
 valid msgstr="H \: màquina remota" cat="konsole" # docmessages
@@ -119,7 +119,7 @@ valid span="\:-" cat="jovie"
 valid span="\:(0|1|\*)" cat="kdm_kdmrc-ref" # docmessages
 valid cat="kdevcvs"
 valid cat="jointhegame,www_www"
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 valid msgstr="HH:MM\[\:SS\]" # docmessages
 valid comment="Tag\:\sprogramlisting" cat="katepart_development" # docmessages
 hint="S'ha de posar un espai després del signe dels dos punts (tipografia)"
@@ -159,7 +159,7 @@ valid ctx="Query"
 valid ctx="Keywords"
 valid cat="calligrasheets,kcells,krossmodulesheets,kspread,sheets,tables"
 valid cat="desktop_kdeplasma-addons" ctx="Keywords"
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 valid comment="Tag\:\sprogramlisting" cat="kopete_emoticonspec" # docmessages
 valid span=";$"
 valid span=";*" cat="kfilereplace"
@@ -195,7 +195,7 @@ valid after="\[" cat="kmymoney"
 valid before="="
 valid before="~"
 valid span="\!="
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 hint="S'ha de posar un espai després del signe d'admiració (tipografia)"
 
 [.*?\!\.]
@@ -252,7 +252,7 @@ valid after="\*" cat="adblock"
 valid after="select\s.*" cat="koffice,calligra"
 valid after="A-Z.+" cat="kmymoney"
 valid before=".+expansió" cat="libksieve"
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 valid msgstr=">\n" cat="kfilereplace" # docmessages
 hint="S'ha de posar un espai després del signe d'interrogació (tipografia)"
 
@@ -277,7 +277,7 @@ valid comment="Tag\:\sprogramlisting" cat="kdm" # docmessages
 valid after="\d+" before="\s?\d+"
 valid after="Delta" cat="kstars"
 valid cat="kst_common"
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 valid comment="Tag\:\sliterallayout" cat="ktimetracker" # docmessages
 hint="No s'ha de posar cap espai abans del signe de coma (tipografia)"
 
@@ -436,7 +436,7 @@ valid span="\.~"
 valid span="\.(h|c)" cat="desktop_applications_kate,desktop_kdesdk,kateopenheader,kate_plugins,kdevformatters,kate,pate"
 valid span="\.\*" cat="kdiff3,kdeprint4,amarok"
 valid comment="Tag\:\sscreen" cat="kmail_faq" # docmessages
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 hint="S'ha de posar un espai després d'un signe de punt (tipografia)"
 
 [\.\)]
@@ -532,7 +532,7 @@ valid after="·" # punt volat de la l·l geminada
 valid after="-"
 valid after="&"
 valid before="·"
-valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets"
+valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 hint="Hi ha dos articles repetits o consecutius (tipografia)"
 
 [\b(del|dels)\s(del|dels)\b]

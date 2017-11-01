@@ -5,6 +5,7 @@
 
 # key names (nom de les tecles)
 # http://techbase.kde.org/Documentation_Primer/Manual/DocBook_Reference/GUI_elements
+# http://tdg.docbook.org/tdg/5.0/docbook.html for DocBook elements (keycap, keysym, etc.) 
 
 # 06/07/2015: Added new validations from:
 # http://www.termcat.cat/docs/docs/LocalitzacioProductesInformatics.pdf
@@ -101,6 +102,7 @@ hint="Es tradueix per «&Ctrl;», «<key>Ctrl</key>(Gnome)/<keycap>Ctrl</keycap>
 # Del -> Supr
 {\bDel\b}
 id="k-Del-1"
+valid msgstr="\bDel;" # <keycap>Supr</keycap>
 valid msgid="<key(cap|sym)?>.?Del(ete)?.?</key(cap|sym)?>" # k-Del-2
 valid msgstr="Supr"
 valid msgstr="(T|t)ecla de supressió"
@@ -163,7 +165,7 @@ hint="La tecla «Enter/Intro/Return» es tradueix per «Retorn»/«tecla de reto
 {(\bEnter;|<key(cap|sym)?>.?(Enter|Return).?</key(cap|sym)?>)}
 id="k-Enter-2"
 valid msgstr="\bIntro;" # <keysym>Retorn</keysym>
-valid msgstr="<key(sym)?>Retorn</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Retorn</key(cap|sym)?>"
 hint="Es tradueix per «&Intro;», «<key>Retorn</key>(Gnome)/<keysym>Retorn</keysym>(KDE)» (keys)"
 
 # Esc
@@ -240,7 +242,7 @@ hint="La tecla «Page Down/Pg Dn» es tradueix per «Av Pàg»/«tecla d'avança
 {(\bPgDn;|<key(cap|sym)?>.?(Page.?Down|PgDown).?</key(cap|sym)?>)}
 id="k-PageDown-2"
 valid msgstr="\bPgDn;" # <keysym>Av Pàg</keysym>
-valid msgstr="<key(sym)?>Av Pàg</key(sym)?>" 
+valid msgstr="<key(cap|sym)?>Av Pàg</key(cap|sym)?>" 
 hint="Es tradueix per «&PgDn;», «<key>Av Pàg</key>(Gnome)/<keysym>Av Pàg</keysym>(KDE)» (keys)"
 
 # Page Up/Pg Up -> Re Pàg
@@ -257,7 +259,7 @@ hint="La tecla «Page Up/Pg Up» es tradueix per «Re Pàg»/«tecla de retroced
 {(PgUp;|<key(cap|sym)?>.?(Page.?Up|PgUp).?</key(cap|sym)?>)}
 id="k-PageUp-2"
 valid msgstr="\bPgUp;" # <keysym>Re Pàg</keysym>
-valid msgstr="<key(sym)?>Re Pàg</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Re Pàg</key(cap|sym)?>"
 hint="Es tradueix per «&PgUp;», «<key>Re Pàg</key>(Gnome)/<keysym>Re Pàg</keysym>(KDE)»» (keys)"
 
 # Print Screen/Prt Scr -> Impr Pant
@@ -302,7 +304,7 @@ hint="Es tradueix per «&Maj;», «<key>Maj</key>(Gnome)/<keycap>Maj</keycap>(KD
 {(\bSpace;|<key(cap|sym)?>.?Space(\s?-?bar)?.?</key(cap|sym)?>)}
 id="k-Space"
 valid msgstr="\bSpace;" # <keysym>Majús.</keysym>
-valid msgstr="<key(sym)?>Espai</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Espai</key(cap|sym)?>"
 hint="Es tradueix per «&Space;», «<key>Espai</key>(Gnome)/<keysym>Espai</keysym>(KDE)» (keys)"
 
 # Start -> Inici
@@ -365,36 +367,49 @@ hint="Es tradueix per «/» o «tecla de barra inclinada» (keys)"
 {(\bDown;|<key(cap|sym)?>.?Down(\sArrow)?.?</key(cap|sym)?>)}
 id="k-DownArrow"
 valid msgstr="\bDown;" # <keysym>Fletxa avall</keysym>
-valid msgstr="<key(sym)?>Fletxa avall</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Fletxa avall</key(cap|sym)?>"
 hint="Es tradueix per «&Down;», «<key>Fletxa avall</key>(Gnome)/<keysym>Fletxa avall</keysym>(KDE)» (keys)"
 
 # Up Arrow -> Fletxa amunt
 {(\bUp;|<key(cap|sym)?>.?Up(\sArrow)?.?</key(cap|sym)?>)}
 id="k-UpArrow"
 valid msgstr="\bUp;" # <keysym>Fletxa amunt</keysym>
-valid msgstr="<key(sym)?>Fletxa amunt</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Fletxa amunt</key(cap|sym)?>"
 hint="Es tradueix per «&Up;», «<key>Fletxa amunt</key>(Gnome)/<keysym>Fletxa amunt</keysym>(KDE)» (keys)"
 
 # Left Arrow -> Fletxa esquerra
 {(\bLeft;|<key(cap|sym)?>.?Left(\sArrow)?.?</key(cap|sym)?>)}
 id="k-LeftArrow"
 valid msgstr="\bLeft;" # <keysym>Fletxa esquerra</keysym>
-valid msgstr="<key(sym)?>Fletxa esquerra</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Fletxa esquerra</key(cap|sym)?>"
 hint="Es tradueix per «&Left;», «<key>Fletxa esquerra</key>(Gnome)/<keysym>Fletxa esquerra</keysym>(KDE)» (keys)"
 
 # Right Arrow -> Fletxa dreta
 {(\bRight;|<key(cap|sym)?>.?Right(\sArrow)?.?</key(cap|sym)?>)}
 id="k-RightArrow"
 valid msgstr="\bRight;" # <keysym>Fletxa dreta</keysym>
-valid msgstr="<key(sym)?>Fletxa dreta</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Fletxa dreta</key(cap|sym)?>"
 hint="Es tradueix per «&Right;», «<key>Fletxa dreta</key>(Gnome)/<keysym>Fletxa dreta</keysym>(KDE)» (keys)"
+
+# Mouse buttons
+# left -> clic esquerra
+{(\b<mousebutton>.?left.?</mousebutton>)}
+id="k-LeftBMouse"
+valid msgstr="<mousebutton>clic esquerra</mousebutton>"
+hint="Es tradueix per «<mousebutton>clic esquerra</mousebutton> (KDE)» (keys)"
+
+# right -> clic dret
+{(\b<mousebutton>.?right.?</mousebutton>)}
+id="k-RightBMouse"
+valid msgstr="<mousebutton>clic dret</mousebutton>"
+hint="Es tradueix per «<mousebutton>clic dret</mousebutton> (KDE)» (keys)"
 
 # Meta keys
 # Unix
 {(\bMeta;|<key(cap|sym)?>.?Meta.?</key(cap|sym)?>)}
 id="k-Meta"
 valid msgstr="\bMeta;"
-valid msgstr="<key(sym)?>Meta</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Meta</key(cap|sym)?>"
 hint="Es tradueix per «&Meta;», «<key>Meta</key>(Gnome)/<keysym>Meta</keysym>(KDE)» (keys)"
 
 {\bSuper\b}
@@ -420,7 +435,7 @@ hint="Es tradueix per «<key>Windows</key>(Gnome)/<keysym>Windows</keysym>» (ke
 # Mac
 {<key(cap|sym)?>.?Command.?</key(cap|sym)?>}
 id="k-Mac"
-valid msgstr="<key(sym)?>Ordre</key(sym)?>"
+valid msgstr="<key(cap|sym)?>Ordre</key(cap|sym)?>"
 hint="Es tradueix per «<key>Ordre</key>(Gnome)/<keysym>Ordre</keysym>(KDE)» (keys)"
 
 # logotip -símbol-

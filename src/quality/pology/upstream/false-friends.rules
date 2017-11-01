@@ -24,7 +24,7 @@ hint="«Absolutelly» es tradueix per «Completament», no per «Absolutament» 
 {\babstracts?\b}i
 id="ff-abstract"
 valid msgstr="resums?"
-valid msgstr="abstract(e|a)" cat="kdevphp,kdevplatform,kdeqt,desktop_kdegames_kmahjongg,desktop_kdegames_ksudoku,krita,umbrello,kdevfiletemplates,rocscore"
+valid msgstr="abstract(e|a)" cat="kdevphp,kdevplatform,kdeqt,desktop_kdegames_kmahjongg,desktop_kdegames_ksudoku,krita,umbrello,umbrello_kdevphp,kdevfiletemplates,rocscore"
 valid msgstr="abstract(e|a|es)" cat="umbrello_uml_basics,digikam_editor-filters" # docmessages
 valid !msgstr="abstract(e|a|es)"
 hint="«Abstract» es tradueix per «Resum», no per «Abstracte» (fals amic)"
@@ -73,8 +73,8 @@ hint="«Advice» es tradueix per «Consell», no per «Avís» (fals amic)"
 {\bagenda\b}i
 id="ff-agenda"
 valid msgstr="ordre\sdel\sdia"
-valid msgstr="agenda" cat="desktop_kdepim" before="\sview"
-valid msgstr="agenda" cat="korganizer,korganizer-mobile,korganizer_plugins-chapter,korganizer.appdata"
+valid msgstr="agenda" cat="desktop_kdepim,desktop_playground-base_kdepim-addons" before="\sview"
+valid msgstr="agenda" cat="korganizer,korganizer-mobile,korganizer_plugins-chapter"
 valid msgstr="agenda" cat="plasma_applet_org.kde.plasma.calendar"
 valid msgstr="agenda" cat="libeventviews"
 valid msgstr="agenda" cat="calendarsupport"
@@ -169,6 +169,7 @@ hint="«Carbon» es tradueix per «Carboni», no per «Carbó» (fals amic)"
 # «Card» es tradueix per «Targeta».
 {\bcards?\b}i
 id="ff-card"
+valid !msgstr="tarj(a|es)"
 valid msgstr="target(a|es)"
 valid msgstr="cart(a|es)" cat="desktop_kdegames_kmahjongg,desktop_kdegames_kpat,desktop_kdegames_lskat,desktop_kdegames_libkdegames,kpoker,lskat,kpat,pairs.appdata"
 valid msgstr="cartes" cat="desktop_kde-runtime,desktop_workspace_plasma-workspace,desktop_extragear-base_kappfinder,libmuon,muon-installer" before="\sgames?"
@@ -677,11 +678,10 @@ valid msgstr=".net" cat="desktop_extragear-sdk_kdevelop,desktop_extragear-sdk_kd
 valid msgstr="net" cat="smb4k,smb4k-core"
 valid msgstr="net" cat="kmymoney,sheets_functions" # Valor net
 valid msgstr="net" cat="ksirk" after="@kdetalk\."
-valid msgstr="net" cat="tables,kcells,kspread,sheets" before="\spresent value"# Valor actual net
+valid msgstr="net" cat="tables,kcells,kspread,calligrasheets,sheets" before="\spresent value"# Valor actual net
 valid msgstr="net" cat="kuser" before="\sgetlocalsid"
 valid msgstr="net" cat="marble" after="rotate\.aprs\."
 valid msgstr="net" cat="plasma_applet_pastebin" after="hosting\."
-valid msgstr="net" cat="skrooge" after=">\s" # Categoria
 valid msgstr="net" after="@(att|cberger|comcast|earthlink|example|frogmouth|gmx|ibm|kdab|kdemail|mediaone|meyerhome|nerim|netscape|openprojects|pacbell|planete|telecorp|tuxerver|usa|users\.sf|verticaladdiction)\."
 valid msgstr="net" after="(darkorb|eigentlich|gmx|@gmx\sDOT|kdemail|linux\sru|mis|shani|tantalo)\s"
 valid msgstr="net" after="irc\.freenode\."
