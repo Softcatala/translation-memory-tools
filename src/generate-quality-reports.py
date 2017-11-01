@@ -25,6 +25,8 @@ import os
 import shutil
 import re
 import time
+import json
+import pystache
 from collections import OrderedDict
 from optparse import OptionParser
 from builder.findfiles import FindFiles
@@ -125,12 +127,52 @@ def run_pology(pology, po_transonly, html):
     cmd = pology['command'].format(posieve, pology['rules-dir'], po_transonly, html)
     os.system(cmd)
 
-def create_project_report(header_dir, lt_output, project_html):
-    header_filename = os.path.join(header_dir, "header.html")
-    report_filename = os.path.join(lt_output, project_html)
-    shutil.copyfile(header_filename, report_filename)
-    return open(report_filename, "a")
+def _get_lt_version():
+    try:
+        TEXT_FILE = 'version.txt'
+        JSON_FILE = 'version.json'
 
+        lt, pology = read_config()   
+        outfile = open(TEXT_FILE, 'w')
+        outfile.write('Hola')
+        outfile.close()
+      
+        run_lt(lt, TEXT_FILE, JSON_FILE)
+
+        with open(JSON_FILE) as data_file:   
+            data = json.load(data_file)
+
+            os.remove(TEXT_FILE)
+            os.remove(JSON_FILE)
+
+            software = data['software']
+            return '{0} {1}'.format(software['name'], software['version'])
+    except:
+        return "LanguageTool (versió desconeguda)"
+    
+
+def process_template(template, filename, ctx):
+    template = open(template, 'r').read()
+    parsed = pystache.Renderer()
+    s = parsed.render(template, ctx)
+
+    f = open(filename, 'w')
+    f.write(s)
+    f.close()
+
+def create_project_report(header_dir, lt_output, project_html):
+    header_filename = os.path.join(header_dir, "header.mustache")
+    report_filename = os.path.join(lt_output, project_html)
+
+    version = _get_lt_version()
+    ctx = {
+        'date': datetime.date.today().strftime("%d/%m/%Y"),
+        'languagetool': version,
+    }
+
+    process_template(header_filename, report_filename, ctx)
+    return open(report_filename, "a")
+ 
 def add_string_to_project_report(text_file, text):
     text_file.write(text + "\n")
 
@@ -194,9 +236,6 @@ def main():
         os.remove(po_transonly)
         os.remove(file_report)
 
-    dt = datetime.date.today().strftime("%d/%m/%Y")
-    report_date = '<p><i>Informe generat el {0} </i></p>'.format(dt)
-    add_string_to_project_report(project_file, report_date)
     footer_filename = os.path.join(lt['lt-html-dir'], "footer.html")
     add_file_to_project_report(project_file, footer_filename)
     project_file.close()
