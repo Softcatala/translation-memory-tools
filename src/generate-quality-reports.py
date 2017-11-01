@@ -79,8 +79,13 @@ def transonly_po_and_extract_text(po_file, po_transonly, text_file):
     text_file = open(text_file, "w")
     for entry in input_po.translated_entries():
         text = entry.msgstr
+
+        if '@@image' in text:   # GNOME documentation images
+            continue
+
         text = re.sub('[\t]', ' ', entry.msgstr)
         text = re.sub('[_&~]', '', text)
+        text = re.sub('<[^>]*>', '', text) # Remove HTML tags
         #text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
         text += "\n\n"
         text_file.write(text)
