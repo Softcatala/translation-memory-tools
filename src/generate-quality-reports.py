@@ -148,9 +148,8 @@ def _get_lt_version():
             software = data['software']
             return '{0} {1}'.format(software['name'], software['version'])
     except Exception as e:
-        print(e)
+        print("Error {0}".format(str(e)))
         return "LanguageTool (versió desconeguda)"
-    
 
 def process_template(template, filename, ctx):
     template = open(template, 'r').read()
