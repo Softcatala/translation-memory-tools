@@ -22,7 +22,6 @@ import datetime
 import configparser
 import polib
 import os
-import shutil
 import re
 import time
 import json
@@ -44,7 +43,6 @@ def read_parameters():
         default="",
         help="Source directory of po files")
 
-    
     (options, args) = parser.parse_args()
 
     if len(options.source_dir) == 0:
@@ -132,14 +130,14 @@ def _get_lt_version():
         TEXT_FILE = 'version.txt'
         JSON_FILE = 'version.json'
 
-        lt, pology = read_config()   
+        lt, pology = read_config()
         outfile = open(TEXT_FILE, 'w')
         outfile.write('Hola')
         outfile.close()
-      
+
         run_lt(lt, TEXT_FILE, JSON_FILE)
 
-        with open(JSON_FILE) as data_file:   
+        with open(JSON_FILE) as data_file:
             data = json.load(data_file)
 
             os.remove(TEXT_FILE)
@@ -172,7 +170,7 @@ def create_project_report(header_dir, lt_output, project_html):
 
     process_template(header_filename, report_filename, ctx)
     return open(report_filename, "a")
- 
+
 def add_string_to_project_report(text_file, text):
     text_file.write(text + "\n")
 
@@ -198,7 +196,7 @@ def main():
         po_transonly = po_file + "-translated-only.po"
         pology_report = po_file + "-pology.html"
         file_report = po_file + "-report.html"
- 
+
         start_time = time.time()
         rslt = transonly_po_and_extract_text(po_file, po_transonly, txt_file)
         if not rslt:
@@ -211,10 +209,10 @@ def main():
         start_time = time.time()
         run_lt(lt, txt_file, json_file)
         print("LT runned PO {0} {1}".format(po_file, str(time.time() - start_time)))
-        
+
         start_time = time.time()
         generate_lt_report(lt['lt-html-dir'], json_file, file_report)
-        
+
         if os.path.isfile(file_report):
             add_file_to_project_report(project_file, file_report)
         else:
