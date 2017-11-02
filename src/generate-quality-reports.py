@@ -147,7 +147,8 @@ def _get_lt_version():
 
             software = data['software']
             return '{0} {1}'.format(software['name'], software['version'])
-    except:
+    except Exception as e:
+        print(e)
         return "LanguageTool (versió desconeguda)"
     
 
