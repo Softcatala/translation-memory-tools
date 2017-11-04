@@ -26,6 +26,8 @@ import re
 import time
 import json
 import pystache
+import tempfile
+import shutil
 from collections import OrderedDict
 from optparse import OptionParser
 from builder.findfiles import FindFiles
@@ -126,27 +128,31 @@ def run_pology(pology, po_transonly, html):
     os.system(cmd)
 
 def _get_lt_version():
+
+    data_file = None
+    TEXT_FILE = 'version.txt'
+    JSON_FILE = 'version.json'
+
     try:
-        TEXT_FILE = 'version.txt'
-        JSON_FILE = 'version.json'
-
+        dirpath = tempfile.mkdtemp()
         lt, pology = read_config()
-        outfile = open(TEXT_FILE, 'w')
-        outfile.write('Hola')
-        outfile.close()
 
-        run_lt(lt, TEXT_FILE, JSON_FILE)
+        text_filename = os.path.join(dirpath, TEXT_FILE)
+        with open(text_filename, "w") as outfile:
+            outfile.write('Hola')
 
-        with open(JSON_FILE) as data_file:
+        json_filename = os.path.join(dirpath, JSON_FILE)
+        run_lt(lt, text_filename, json_filename)
+
+        with open(json_filename, "r") as data_file:
             data = json.load(data_file)
 
-            os.remove(TEXT_FILE)
-            os.remove(JSON_FILE)
-
-            software = data['software']
-            return '{0} {1}'.format(software['name'], software['version'])
+        software = data['software']
+        version = '{0} {1}'.format(software['name'], software['version'])
+        shutil.rmtree(dirpath)
+        return version
     except Exception as e:
-        print("Error {0}".format(str(e)))
+        print("_get_lt_version.Error {0}".format(str(e)))
         return "LanguageTool (versió desconeguda)"
 
 def process_template(template, filename, ctx):
