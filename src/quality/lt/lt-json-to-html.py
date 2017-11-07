@@ -172,7 +172,7 @@ def process_file ( ifile, ofile ):
    uw_rest.sort(key=lambda x: x.context_error, reverse=False)
 
    ctx = {
-       'filename': ifile,
+       'filename': ifile[:-5] if ifile.endswith('.json') else ifile,
        'totalmatches': totalmatches,
        'rulelist': rulelist,
        'unknownwords': unknownwords,
