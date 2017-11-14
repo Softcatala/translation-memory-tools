@@ -20,14 +20,15 @@ valid msgstr="totalment"
 valid !msgstr="absolutament"
 hint="«Absolutelly» es tradueix per «Completament», no per «Absolutament» (fals amic)"
 
-# «Abstract» es tradueix per «Resum».
-{\babstracts?\b}i
-id="ff-abstract"
-valid msgstr="resums?"
-valid msgstr="abstract(e|a)" cat="kdevphp,kdevplatform,kdeqt,desktop_kdegames_kmahjongg,desktop_kdegames_ksudoku,krita,umbrello,umbrello_kdevphp,kdevfiletemplates,rocscore"
-valid msgstr="abstract(e|a|es)" cat="umbrello_uml_basics,digikam_editor-filters" # docmessages
-valid !msgstr="abstract(e|a|es)"
-hint="«Abstract» es tradueix per «Resum», no per «Abstracte» (fals amic)"
+# Regla desactivada: molts falsos positius 
+## «Abstract» es tradueix per «Resum».
+#{\babstracts?\b}i
+#id="ff-abstract"
+#valid msgstr="resums?"
+#valid msgstr="abstract(e|a)" #cat="kdevphp,kdevplatform,kdeqt,desktop_kdegames_kmahjongg,desktop_kdegames_ksudoku,krita,umbrello,umbrello_kdevphp,kdevfiletemplates,rocscore"
+#valid msgstr="abstract(e|a|es)" cat="umbrello_uml_basics,digikam_editor-filters" # docmessages
+#valid !msgstr="abstract(e|a|es)"
+#hint="«Abstract» es tradueix per «Resum», no per «Abstracte» (fals amic)"
 
 # «Actual» es tradueix per «Real».
 {\bactual\b}i
@@ -69,18 +70,19 @@ valid !msgstr="avís"
 valid !msgstr="avisos"
 hint="«Advice» es tradueix per «Consell», no per «Avís» (fals amic)"
 
-# «Agenda» es tradueix per «Ordre del dia».
-{\bagenda\b}i
-id="ff-agenda"
-valid msgstr="ordre\sdel\sdia"
-valid msgstr="agenda" cat="desktop_kdepim,desktop_playground-base_kdepim-addons" before="\sview"
-valid msgstr="agenda" cat="korganizer,korganizer-mobile,korganizer_plugins-chapter"
-valid msgstr="agenda" cat="plasma_applet_org.kde.plasma.calendar"
-valid msgstr="agenda" cat="libeventviews"
-valid msgstr="agenda" cat="calendarsupport"
-valid msgstr="agenda" cat="plasma_applet_akonadi_calendars"
-valid !msgstr="agenda"
-hint="«Agenda» es tradueix per «Ordre del dia», no per «Agenda» (fals amic)"
+# Regla desactivada: molts falsos positius 
+## «Agenda» es tradueix per «Ordre del dia».
+#{\bagenda\b}i
+#id="ff-agenda"
+#valid msgstr="ordre\sdel\sdia"
+#valid msgstr="agenda" cat="desktop_kdepim,desktop_playground-base_kdepim-addons" before="\sview"
+#valid msgstr="agenda" cat="korganizer,korganizer-mobile,korganizer_plugins-chapter"
+#valid msgstr="agenda" cat="plasma_applet_org.kde.plasma.calendar"
+#valid msgstr="agenda" cat="libeventviews"
+#valid msgstr="agenda" cat="calendarsupport"
+#valid msgstr="agenda" cat="plasma_applet_akonadi_calendars"
+#valid !msgstr="agenda"
+#hint="«Agenda» es tradueix per «Ordre del dia», no per «Agenda» (fals amic)"
 
 # «Apology» es tradueix per «Disculpa».
 {\bapology\b}i
@@ -251,14 +253,15 @@ valid msgstr="directora?"
 valid !msgstr="conductora?"
 hint="«Conductor» es tradueix per «Revisor o director d'orquestra», no per «Conductor» (fals amic)"
 
-# «Conference» es tradueix per «Congrés».
-{\bconference\b}i
-id="ff-conference"
-valid msgstr="congrés"
-valid msgstr="conferència" cat="kopete"
-valid msgstr="conferència" cat="ksirk"
-valid !msgstr="conferència"
-hint="«Conference» es tradueix per «Congrés», no per «Conferència» (fals amic)"
+#Regla desactivada: molts falsos positius 
+## «Conference» es tradueix per «Congrés».
+#{\bconference\b}i
+#id="ff-conference"
+#valid msgstr="congrés"
+#valid msgstr="conferència" cat="kopete"
+#valid msgstr="conferència" cat="ksirk"
+#valid !msgstr="conferència"
+#hint="«Conference» es tradueix per «Congrés», no per «Conferència» (fals amic)"
 
 # «Confident» es tradueix per «Confiat».
 {\bconfident\b}i
@@ -603,12 +606,13 @@ valid msgstr="frases?\sfet(a|es)"
 valid !msgstr="idiom(a|es)"
 hint="«Idiom» es tradueix per «Frase feta», no per «Idioma» (fals amic)"
 
-# «Illusion» es tradueix per «Miratge».
-{\billusion\b}i
-id="ff-illusion"
-valid msgstr="miratge"
-valid !msgstr="il·lusió"
-hint="«Illusion» es tradueix per «Miratge», no per «Il·lusió» (fals amic)"
+#Regla desactivada: molts falsos positius 
+## «Illusion» es tradueix per «Miratge».
+#{\billusion\b}i
+#id="ff-illusion"
+#valid msgstr="miratge"
+#valid !msgstr="il·lusió"
+#hint="«Illusion» es tradueix per «Miratge», no per «Il·lusió» (fals amic)"
 
 # «Inconsistence» es tradueix per «Incoherència».
 {\binconsistence\b}i
@@ -745,15 +749,16 @@ valid msgstr="pan" before="\sflute"
 valid !msgstr="pa"
 hint="«Pan» es tradueix per «Panorama/Cassola», no per «Pa» (fals amic)"
 
-# «Panel» es tradueix per «Equip/Grup/Jurat/Plafó».
-{\bpanels?\b}i
-id="ff-panel"
-valid msgstr="equips?"
-valid msgstr="grups?"
-valid msgstr="jurats?"
-valid msgstr="plaf(ó|on)s?"
-valid !msgstr="panells?"
-hint="«Panel» es tradueix per «Equip/Grup/Jurat/Plafó», no per «Panell» (fals amic)"
+#Regla desactivada: molts falsos positius 
+## «Panel» es tradueix per «Equip/Grup/Jurat/Plafó».
+#{\bpanels?\b}i
+#id="ff-panel"
+#valid msgstr="equips?"
+#valid msgstr="grups?"
+#valid msgstr="jurats?"
+#valid msgstr="plaf(ó|on)s?"
+#valid !msgstr="panells?"
+#hint="«Panel» es tradueix per «Equip/Grup/Jurat/Plafó», no per «Panell» (fals amic)"
 
 # «Parcel» es tradueix per «Paquet».
 {\bparcel\b}i
