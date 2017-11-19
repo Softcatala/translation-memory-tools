@@ -21,6 +21,7 @@
 import polib
 import pystache
 import json
+import re
 
 
 class Target(object):
@@ -31,9 +32,10 @@ class Target(object):
 
 class Translation(object):
 
-    def __init__(self, source, target):
+    def __init__(self, source, target, code):
         self.source = source
         self.target = target
+        self.code = code
 
 
 def read_po_file(filename):
@@ -44,7 +46,12 @@ def read_po_file(filename):
         if entry.translated() is False:
             continue
 
-        translation = Translation(entry.msgid, entry.msgstr)
+        m = re.search('(.*)for[ ](.*)', entry.comment, re.IGNORECASE)
+        code = ''
+        if m:
+            code = m.group(2)
+
+        translation = Translation(entry.msgid, entry.msgstr, code)
         translations.append(translation)
 
     return translations
