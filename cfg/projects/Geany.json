@@ -1,6 +1,6 @@
 {
     "project": "Geany", 
-    "projectweb": "http://www.geany.org/Contribute/Translators", 
+    "projectweb": "https://www.geany.org/Contribute/Translators", 
     "fileset": {
         "geany": {
             "url": "https://raw.githubusercontent.com/geany/geany/master/po/ca.po", 

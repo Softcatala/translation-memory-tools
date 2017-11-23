@@ -1,6 +1,6 @@
 {
     "project": "Freedesktop", 
-    "projectweb": "http://freedesktop.org/wiki/Software/", 
+    "projectweb": "https://freedesktop.org/wiki/Software/", 
     "fileset": {
         "accounts-service": {
             "url": "https://www.transifex.com/projects/p/accountsservice", 

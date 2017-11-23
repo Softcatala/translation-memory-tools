@@ -1,6 +1,6 @@
 {
     "project": "Android", 
-    "projectweb": "http://www.android.com", 
+    "projectweb": "https://www.android.com/", 
     "fileset": {
         "Android": {
             "url": "https://android.googlesource.com/?format=JSON", 

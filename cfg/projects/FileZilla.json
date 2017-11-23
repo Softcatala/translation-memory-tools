@@ -1,6 +1,6 @@
 {
     "project": "FileZilla", 
-    "projectweb": "http://filezilla-project.org/", 
+    "projectweb": "https://filezilla-project.org/", 
     "softcatala": true, 
     "fileset": {
         "filezilla": {

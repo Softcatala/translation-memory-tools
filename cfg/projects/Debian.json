@@ -1,6 +1,6 @@
 {
     "project": "Debian", 
-    "projectweb": "http://www.debian.org/international/l10n/po/ca", 
+    "projectweb": "https://www.debian.org/international/l10n/po/ca", 
     "fileset": {
        "apt": {
             "url": "https://anonscm.debian.org/cgit/apt/apt.git/plain/po/ca.po", 

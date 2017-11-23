@@ -1,6 +1,6 @@
 {
     "project": "KDE", 
-    "projectweb": "http://cat.kde.org/", 
+    "projectweb": "https://cat.kde.org/", 
     "fileset": {
         "gui-kde4": {
             "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/ca/messages/", 

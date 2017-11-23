@@ -1,6 +1,6 @@
 {
     "project": "CoreBird", 
-    "projectweb": "http://corebird.baedert.org/", 
+    "projectweb": "https://corebird.baedert.org/", 
     "fileset": {
         "CoreBird": {
             "url": "https://www.transifex.com/projects/p/corebird/", 

@@ -1,6 +1,6 @@
 {
     "project": "Bitcoin", 
-    "projectweb": "http://bitcoin.org", 
+    "projectweb": "https://bitcoin.org", 
     "softcatala": true, 
     "fileset": {
         "bitcoin": {

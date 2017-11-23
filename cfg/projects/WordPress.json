@@ -1,6 +1,6 @@
 {
     "project": "WordPress", 
-    "projectweb": "http://ca.wordpress.org/", 
+    "projectweb": "https://ca.wordpress.org/", 
     "softcatala": true,
     "fileset": {
         "wordpress": {
