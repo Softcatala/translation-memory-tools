@@ -1,10 +1,10 @@
 {
     "project": "OpenStreetMap", 
-    "projectweb": "http://wiki.openstreetmap.org/wiki/Ca:Main_Page", 
+    "projectweb": "http://wiki.openstreetmap.org/wiki/Ca:Main_Page",
     "fileset": {
         "main": {
-            "url": "http://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=out-osm-0-all&language=ca&task=export-as-po", 
-            "type": "file", 
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-osm-0-all&language=ca&format=export-as-po",
+            "type": "file",
             "target": "main-ca.po"
         }
     }
