@@ -1,0 +1,11 @@
+{
+    "project": "MantisBT",
+    "projectweb": "https://www.mantisbt.org/",
+    "fileset": {
+        "main": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-mantis-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "main-ca.po"
+        }
+    }
+}
