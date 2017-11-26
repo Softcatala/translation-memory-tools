@@ -3,14 +3,29 @@
     "projectweb": "https://www.mediawiki.org/wiki/MediaWiki/ca", 
     "fileset": {
         "main": {
-            "url": "https://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=core&language=ca&task=export-as-po", 
-            "type": "file", 
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=core&language=ca&format=export-as-po",
+            "type": "file",
             "target": "main-ca.po"
         }, 
-        "mobile": {
-            "url": "https://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=out-wikimedia-mobile-0-all&language=ca&task=export-as-po", 
+        "mobile-app": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-mobileapp&language=ca&format=export-to-file",
+            "type": "file",
+            "target": "mobile-app.po"
+        },
+        "mobile-fe": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-mobilefrontend&language=ca&format=export-as-po",
             "type": "file", 
-            "target": "mobile-all-ca.po"
+            "target": "mobile-fe.po"
+        },
+        "wikipedia-ios": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-wikimedia-mobile-wikipedia-ios-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikipedia-ios.po"
+        },
+        "wikipedia-android": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-wikimedia-mobile-wikipedia-android-strings&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikipedia-android.po"
         },
         "extensions": {
             "url": "https://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=ext-0-all&language=ca&task=export-as-po",
