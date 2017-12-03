@@ -3,22 +3,22 @@
     "projectweb": "http://www.tuxpaint.org/",
     "fileset": {
         "tuxpaint": {
-            "url": "http://tuxpaint.cvs.sourceforge.net/viewvc/tuxpaint/tuxpaint/src/po/ca.po",  
+            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/src/po/ca.po?format=raw",
             "type": "file", 
             "target": "ca.po"
         },
         "stamps": {
-            "url": "http://tuxpaint.cvs.sourceforge.net/viewvc/tuxpaint/tuxpaint-stamps/po/tuxpaint-stamps-ca.po", 
+            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-stamps/ci/master/tree/po/tuxpaint-stamps-ca.po?format=raw",
             "type": "file", 
             "target": "ca.po"
         },
         "website": {
-            "url": "http://tuxpaint.cvs.sourceforge.net/viewvc/tuxpaint/tuxpaint-website/po/ca_ES.po", 
+            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/ca_ES.po?format=raw",
             "type": "file", 
             "target": "ca.po"
         },
         "config": {
-            "url": "http://tuxpaint.cvs.sourceforge.net/viewvc/tuxpaint/tuxpaint-config/src/po/ca.po", 
+            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-config/ci/master/tree/src/po/ca.po?format=raw",
             "type": "file", 
             "target": "ca.po"
         }
