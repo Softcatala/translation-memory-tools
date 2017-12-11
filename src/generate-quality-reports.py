@@ -19,7 +19,6 @@
 # Boston, MA 02111-1307, USA.
 
 import datetime
-import configparser
 import polib
 import os
 import re
@@ -31,6 +30,7 @@ import shutil
 from collections import OrderedDict
 from optparse import OptionParser
 from builder.findfiles import FindFiles
+import yaml
 
 
 def read_parameters():
@@ -58,18 +58,21 @@ def read_config():
     SECTION_LT = "lt"
     SECTION_POLOGY = "pology"
 
-    config = configparser.ConfigParser()
-    config.read("../cfg/quality/parameters.conf")
     lt = OrderedDict()
     pology = OrderedDict()
 
-    for option in config.options(SECTION_LT):
-        lt[option] = config.get(SECTION_LT, option)
+    with open('../cfg/quality/parameters.yaml', 'r') as f:
+        doc = yaml.load(f)
+        for dictionaries in doc[SECTION_LT]:
+            for k in dictionaries.keys():
+                lt[k] = dictionaries[k]
 
-    for option in config.options(SECTION_POLOGY):
-        pology[option] = config.get(SECTION_POLOGY, option)
-          
+        for dictionaries in doc[SECTION_POLOGY]:
+            for k in dictionaries.keys():
+                pology[k] = dictionaries[k]
+
     return lt, pology
+
 
 def transonly_po_and_extract_text(po_file, po_transonly, text_file):
     try:
@@ -124,7 +127,11 @@ def run_pology(pology, po_transonly, html):
     cmd = pology['header-fix'].format(posieve, po_transonly)
     os.system(cmd)
 
-    cmd = pology['command'].format(posieve, pology['rules-dir'], po_transonly, html)
+    rules = ''
+    for rule in pology['rules']:
+        rules = rules + ' -s rfile:{0}{1}'.format(pology['rules-dir'], rule)
+
+    cmd = pology['command'].format(posieve, rules, po_transonly, html)
     os.system(cmd)
 
 def _get_lt_version():

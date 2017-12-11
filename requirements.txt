@@ -5,6 +5,7 @@ pystache
 peewee
 hunspell
 translate-toolkit
+pyyaml
 #Version 1.5.0 android2po is need to be installed but executed in Python2
 #android2po
 
