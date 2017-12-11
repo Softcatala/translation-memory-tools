@@ -6,6 +6,11 @@
             "url": "https://www.transifex.com/projects/p/MATE/", 
             "type": "transifex",
             "pattern": ".*?ca.po"
+        },
+        "caja-terminal": {
+            "url": "https://raw.githubusercontent.com/yselkowitz/caja-terminal/master/locales/ca.po",
+            "type": "file",
+            "target": "ca-caja-terminal.po"
         }
     }
 }
