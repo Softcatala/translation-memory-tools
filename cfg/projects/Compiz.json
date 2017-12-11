@@ -32,6 +32,11 @@
             "type": "file", 
             "target": "ca-compiz-plugins-experimental.po"
         },
+        "fusion-icon": {
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/fusion-icon/master/po/ca.po",
+            "type": "file",
+            "target": "ca-fusion-icon.po"
+        },
 	"emerald": {
             "url": "https://raw.githubusercontent.com/compiz-reloaded/emerald/master/po/ca.po", 
             "type": "file", 
