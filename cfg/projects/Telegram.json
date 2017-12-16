@@ -3,7 +3,7 @@
     "projectweb": "https://telegram.org/",
     "fileset": {
         "android": {
-            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-for-android-1"
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-for-android-1",
             "type": "transifex"
         }
         "desktop": {
@@ -19,7 +19,7 @@
             "type": "transifex"
         }
         "web": {
-            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-web-1"
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-web-1",
             "type": "transifex"
        }
     } 
