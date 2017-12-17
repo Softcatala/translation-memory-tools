@@ -5,7 +5,7 @@
         "LXQt": {
             "url": "https://github.com/lxde/lxqt-l10n.git",
             "type": "git",
-            "pattern": ".*?ca.ts"
+            "pattern": ".*?ca.po"
         }
     }
 }
