@@ -2,17 +2,25 @@
     "project": "Telegram", 
     "projectweb": "https://telegram.org/",
     "fileset": {
+        "android": {
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-for-android-1",
+            "type": "transifex"
+        },
         "desktop": {
-            "url": "https://www.transifex.com/projects/p/telegram-web",
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-desktop-2",
             "type": "transifex"
         },
-        "iphone": {
-            "url": "https://www.transifex.com/projects/p/iphone-1", 
+        "ios": {
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-for-ios-1", 
             "type": "transifex"
         },
-        "OSX": {
-            "url": "https://www.transifex.com/projects/p/osx",
+        "macos": {
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-for-macos-1",
             "type": "transifex"
-        }
+        },
+        "web": {
+            "url": "https://www.transifex.com/telegram-unofficial-translations/telegram-web-1",
+            "type": "transifex"
+       }
     } 
 }
