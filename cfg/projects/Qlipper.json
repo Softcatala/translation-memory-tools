@@ -1,10 +1,11 @@
 {
-    "project": "Petr Vanek's Qlipper",
+    "project": "Qlipper",
     "projectweb": "https://github.com/pvanek/qlipper",
     "fileset": {
         "qlipper": {
             "url": "https://raw.githubusercontent.com/pvanek/qlipper/master/ts/qlipper_ca.ts",
-            "type": "file"
+            "type": "file",
+            "target": "qlipper_ca.ts"
         }
     }
 }
