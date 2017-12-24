@@ -1,0 +1,11 @@
+{
+    "project": "TimeShift",
+    "projectweb": "https://github.com/teejee2008/timeshift",
+    "fileset": {
+        "Deluge-1-3": {
+            "url": "https://github.com/teejee2008/timeshift.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        }
+    }
+}
