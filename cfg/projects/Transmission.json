@@ -7,6 +7,5 @@
             "type": "transifex",
             "excluded" : "/en"
         }
-    },
-    "disabled": true
+    }
 }
