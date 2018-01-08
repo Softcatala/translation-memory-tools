@@ -11,6 +11,11 @@
             "url": "https://github.com/linuxmint/cinnamon-translations.git", 
             "type": "git",
             "pattern": ".*?ca.po"
+        },
+        "cinnamon-spices-desklets": {
+            "url": "https://github.com/linuxmint/cinnamon-spices-desklets.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
         }
     }
 }
