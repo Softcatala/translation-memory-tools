@@ -1,0 +1,11 @@
+{
+    "project": "Matomo",
+    "projectweb": "https://matomo.org/",
+    "fileset": {
+        "Piwik": {
+            "url": "https://www.transifex.com/projects/p/matomo/",
+            "type": "transifex",
+            "remove_untranslated" : true
+        }
+    }
+}
