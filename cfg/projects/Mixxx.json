@@ -1,0 +1,10 @@
+{
+    "project": "Mixxx",
+    "projectweb": "https://www.mixxx.org/",
+    "fileset": {
+        "Mixxx": {
+            "url": "https://www.transifex.com/mixxx-dj-software/public/",
+            "type": "transifexhub"
+        }
+    }
+}

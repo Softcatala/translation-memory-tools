@@ -21,6 +21,7 @@ import logging
 import urllib
 import urllib.parse
 import urllib.request
+import os.path
 from urllib.parse import urlparse
 from html.parser import HTMLParser
 
@@ -50,7 +51,11 @@ class OptionsExtractor(HTMLParser):
         return self.options
 
     def get_project_name_from_ahref(self, url):
-        prefix = '/{0}/'.format(self.project)
+        # Sample URL https://www.transifex.com/django/public/
+        # where Subpath[1]= 'django'
+        path = urlparse(self.base_url).path
+        subpaths = path.split('/')
+        prefix = '/{0}/'.format(subpaths[1])
 
         if not url.startswith(prefix):
             return None
