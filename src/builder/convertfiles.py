@@ -146,43 +146,50 @@ class ConvertFiles():
         To be refactor when patterns for Android dir structure is clear, 
         including Xiaomi
     '''
-    def _process_ows_projects(self):
-        ca_file = os.path.join(self.convert_dir, 
-                               "translations/signal-android.master/ca.xml")
+    def _process_non_standard_android_res_locations(self):
 
-        en_file = os.path.join(self.convert_dir, 
-                               "translations/signal-android.master/en.xml")
+        ''' OWS signal '''
+        self._copy_res_files("translations/signal-android.master/en.xml",
+                             "translations/signal-android.master/ca.xml")
+
+        self._copy_res_files("translations/redphone.master/en.xml",
+                             "translations/redphone.master/ca.xml")
+
+        '''Briar'''
+        self._copy_res_files("translations/briar.stringsxml-5/en.xml",
+                             "translations/briar.stringsxml-5/ca.xml")
+
+        '''Telegram Android'''
+        self._copy_res_files("translations/telegram-for-android-1.android-main-official-app/en.xml",
+                             "translations/telegram-for-android-1.android-main-official-app/ca.xml")
+
+    def _copy_res_files(self, source_file, target_file):
+        en_file = os.path.join(self.convert_dir, source_file)
+        ca_file = os.path.join(self.convert_dir, target_file)
 
         if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
-            ca_file = os.path.join(self.convert_dir, 
-                                   "translations/redphone.master/ca.xml")
+            return
 
-            en_file = os.path.join(self.convert_dir, 
-                                   "translations/redphone.master/en.xml")
-
-            if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
-                return
-
-        directory = os.path.join(self.convert_dir, 'signal')
+        directory = os.path.join(self.convert_dir, 'android')
         if not os.path.exists(directory):
             os.makedirs(directory)
 
-        directory = os.path.join(self.convert_dir,'signal/res')
+        directory = os.path.join(self.convert_dir,'android/res')
         if not os.path.exists(directory):
             os.makedirs(directory)
         
-        directory = os.path.join(self.convert_dir,'signal/res/values-ca')
+        directory = os.path.join(self.convert_dir,'android/res/values-ca')
         if not os.path.exists(directory):
             os.makedirs(directory)
                 
         shutil.copy2(ca_file, os.path.join(directory, "strings.xml"))
 
-        directory = os.path.join(self.convert_dir,'signal/res/values')
+        directory = os.path.join(self.convert_dir,'android/res/values')
         if not os.path.exists(directory):
             os.makedirs(directory)
                 
         shutil.copy2(en_file, os.path.join(directory, "strings.xml"))
-        self.android_dir = 'signal/res'
+        self.android_dir = 'android/res'
 
     def _process_briar_project(self):
         ca_file = os.path.join(self.convert_dir,
@@ -225,8 +232,7 @@ class ConvertFiles():
         # outside the tmp directory in our case
         cmd = 'cd {0} && a2po init ca --gettext .'.format(self.convert_dir)
 
-        self._process_ows_projects()
-        self._process_briar_project()
+        self._process_non_standard_android_res_locations()
 
         if self.android_dir is not None:
             cmd += " --android {0}".format(self.android_dir)
