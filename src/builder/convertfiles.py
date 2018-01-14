@@ -69,7 +69,8 @@ class ConvertFiles():
 
     def _convert_tmx_files_to_po(self):
         for tmxfile in self.findFiles.find(self.convert_dir, '*.tmx'):
-            tmx = ConvertTmx(tmxfile, self.convert_dir + "/ca.po")
+            fileName, fileExtension = os.path.splitext(tmxfile)
+            tmx = ConvertTmx(tmxfile, fileName + ".po")
             tmx.convert()
             logging.info('convert tmx file: {0}'.format(tmxfile))
 
