@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tmx version="1.4">
+	<header adminlang="en-US" creationtoolversion="0.1" creationtool="pontoon" datatype="plaintext" segtype="sentence" o-tmf="plain text" srclang="en-US" creationdate="2018-01-14T20:15:29.923807">
+	</header>
+	<body>
+		<tu tuid="appstores:fx_androidwhatsnewandroid_57lang:a-clean-modern-visual-refresh" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Modern visual refresh</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Una renovació visual moderna</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextensionproperties:tourheaderfour" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As You Like It</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com vulgueu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextensionproperties:tourheaderfour" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As You Like It</seg>
+			</tuv>
+			<tuv xml:lang="es">
+				<seg>Como quieras</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>
