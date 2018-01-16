@@ -1,11 +1,10 @@
 {
     "project": "OpenStack",
-    "disabled": true,
     "projectweb": "https://wiki.openstack.org/wiki/Translations", 
     "fileset": {
         "main": {
-            "url": "https://www.transifex.com/openstack/public/", 
-            "type": "transifexhub"
+            "url": "https://translate.openstack.org/", 
+            "type": "zanata"
         }
     }
 }

@@ -38,6 +38,7 @@ from .gitwebfileset import GitWebFileSet
 from .transvisionfileset import TransvisionFileSet
 from .xiaomifileset import XiaomiFileSet
 from .cgitfileset import CGitFileSet
+from .zanatafileset import ZanataFileSet
 
 class Project(object):
 
@@ -162,6 +163,11 @@ class Project(object):
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
                 fs.set_project(self)
+            elif fileset.type == 'zanata':
+                fs = ZanataFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
