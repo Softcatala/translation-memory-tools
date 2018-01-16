@@ -43,7 +43,7 @@ class ZanataFileSet(FileSet):
                     self.auth = value[self.project_name]['auth-token']
 
             if self.username is None or self.auth is None:
-                msg = 'zenata.set_auth_api_token: No user or auth token'
+                msg = 'ZanataFileSet._set_auth_api_token: No user or auth token'
                 logging.error(msg)
 
         except Exception as detail:
