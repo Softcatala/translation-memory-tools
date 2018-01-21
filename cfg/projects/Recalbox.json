@@ -3,7 +3,7 @@
     "projectweb": "https://www.recalbox.com/",
     "fileset": {
         "emulationstation": {
-            "url": "https://raw.githubusercontent.com/recalbox/recalbox-emulationstation/master/locale/lang/ca/LC_MESSAGES/emulationstation2.po",
+            "url": "https://gitlab.com/recalbox/recalbox-emulationstation/raw/master/locale/lang/ca/LC_MESSAGES/emulationstation2.po",
             "type": "file",
             "target": "emulationstation2.po"
         }
