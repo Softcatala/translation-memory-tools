@@ -3,8 +3,8 @@
     "projectweb": "http://wiki.lxde.org/en/Category:Translations:ca",
     "fileset": {
         "Lxde": {
-            "url": "http://git.lxde.org/gitweb/", 
-            "type": "gitweb", 
+            "url": "https://github.com/lxde/lxqt-l10n",
+            "type": "git",
             "pattern": ".*?ca.po"
         }
     }
