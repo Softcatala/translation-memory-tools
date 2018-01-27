@@ -1,7 +1,6 @@
 {
     "project": "phpMyAdmin", 
     "projectweb": "https://hosted.weblate.org/projects/phpmyadmin/", 
-    "softcatala": false, 
     "fileset": {
         "phpmyadmin-master": {
             "url": "https://hosted.weblate.org/download/phpmyadmin/master/ca/", 
