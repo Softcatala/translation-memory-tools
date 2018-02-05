@@ -1,6 +1,7 @@
 {
     "project": "Briar",
-    "projectweb": "https://www.briarproject.org/",
+    "projectweb": "https://www.softcatala.org/projectes/briar/",
+    "softcatala": true,
     "fileset": {
         "briar": {
             "url": "https://www.transifex.com/projects/p/briar",
