@@ -4,7 +4,7 @@
     "softcatala": true,
     "fileset": {
         "Liberapay": {
-            "url": "https://raw.githubusercontent.com/liberapay/liberapay.com/master/i18n/core/ca.po",
+            "url": "https://hosted.weblate.org/download/liberapay/core/ca/po/",
             "type": "file",
             "target": "liberapay-ca.po"
         }
