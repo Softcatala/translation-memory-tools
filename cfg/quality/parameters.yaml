@@ -14,6 +14,7 @@ pology:
         - /catalan-pology-rules/acronyms.rules
         - /catalan-pology-rules/iso_4217.rules
         - /catalan-pology-rules/tags.rules
+        - /catalan-pology-rules/abbreviations.rules
 
 lt:
     - lt_output: output/quality
