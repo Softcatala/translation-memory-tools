@@ -2,8 +2,108 @@
     "project": "Lxde",
     "projectweb": "http://wiki.lxde.org/en/Category:Translations:ca",
     "fileset": {
-        "Lxde": {
-            "url": "https://github.com/lxde/lxqt-l10n",
+        "lxadmin": {
+            "url": "http://git.lxde.org/git/lxde/lxadmin.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxappearance-obconf": {
+            "url": "http://git.lxde.org/git/lxde/lxappearance-obconf.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxappearance": {
+            "url": "http://git.lxde.org/git/lxde/lxappearance.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxde-common": {
+            "url": "http://git.lxde.org/git/lxde/lxde-common.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxdm": {
+            "url": "http://git.lxde.org/git/lxde/lxdm.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxhotkey": {
+            "url": "http://git.lxde.org/git/lxde/lxhotkey.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxinput": {
+            "url": "http://git.lxde.org/git/lxde/lxinput.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxkb_config": {
+            "url": "http://git.lxde.org/git/lxde/lxkb_config.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxlauncher": {
+            "url": "http://git.lxde.org/git/lxde/lxlauncher.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxpanel": {
+            "url": "http://git.lxde.org/git/lxde/lxpanel.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxpanel-plugins": {
+            "url": "http://git.lxde.org/git/lxde/lxpanel-plugins.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxrandr": {
+            "url": "http://git.lxde.org/git/lxde/lxrandr.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxscreenshot": {
+            "url": "http://git.lxde.org/git/lxde/lxscreenshot.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxsession": {
+            "url": "http://git.lxde.org/git/lxde/lxsession.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxtask": {
+            "url": "http://git.lxde.org/git/lxde/lxtask.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxterminal": {
+            "url": "http://git.lxde.org/git/lxde/lxterminal.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "pcmanfm": {
+            "url": "http://git.lxde.org/git/lxde/pcmanfm.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "gpicview": {
+            "url": "http://git.lxde.org/git/lxde/gpicview.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxmusic": {
+            "url": "http://git.lxde.org/git/lxde/lxmusic.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxmenu-data": {
+            "url": "http://git.lxde.org/git/lxde/lxmenu-data.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "libfm": {
+            "url": "http://git.lxde.org/git/lxde/libfm.git",
             "type": "git",
             "pattern": ".*?ca.po"
         }
