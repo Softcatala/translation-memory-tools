@@ -128,39 +128,43 @@ class Corpus(object):
         f = open('corpus.txt', 'w')
 
         for filename in findFiles.find(self.directory, '*.po'):
-            print("Reading: " + filename)
 
-            pofile = polib.pofile(filename)
+            try:
+                print("Reading: " + filename)
 
-            terms = {}
-            for entry in pofile.translated_entries():
-                self.strings += 1
+                pofile = polib.pofile(filename)
 
-                msgid = self._clean_string(entry.msgid)
-                msgstr = self._clean_string(entry.msgstr)
+                terms = {}
+                for entry in pofile.translated_entries():
+                    self.strings += 1
 
-                if not self._should_select_string(msgid, msgstr):
-                    continue
+                    msgid = self._clean_string(entry.msgid)
+                    msgstr = self._clean_string(entry.msgstr)
 
-                self.strings_selected += 1
+                    if not self._should_select_string(msgid, msgstr):
+                        continue
 
-                log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'
-                log = log.format(msgid, entry.msgid, msgstr, entry.msgstr,
-                                 filename)
+                    self.strings_selected += 1
 
-                f.write(log)
+                    log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'
+                    log = log.format(msgid, entry.msgid, msgstr, entry.msgstr,
+                                     filename)
 
-                if not msgid in terms.keys():
-                    translations = []
-                else:
-                    translations = terms[msgid]
+                    f.write(log)
 
-                self.source_words.add(msgid)
-                translations.append(msgstr)
-                terms[msgid] = translations
+                    if not msgid in terms.keys():
+                        translations = []
+                    else:
+                        translations = terms[msgid]
 
-            self.documents[filename] = terms
-            self.files += 1
+                    self.source_words.add(msgid)
+                    translations.append(msgstr)
+                    terms[msgid] = translations
+
+                self.documents[filename] = terms
+                self.files += 1
+            except Exception as detail:
+                logging.error("Cannot read {0}:{1}".format(filename, str(detail)))
 
         f.close()
 
