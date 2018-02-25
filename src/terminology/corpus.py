@@ -152,7 +152,7 @@ class Corpus(object):
 
                     f.write(log)
 
-                    if not msgid in terms.keys():
+                    if msgid not in terms.keys():
                         translations = []
                     else:
                         translations = terms[msgid]
