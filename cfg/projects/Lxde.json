@@ -2,11 +2,6 @@
     "project": "Lxde",
     "projectweb": "http://wiki.lxde.org/en/Category:Translations:ca",
     "fileset": {
-        "lxadmin": {
-            "url": "http://git.lxde.org/git/lxde/lxadmin.git",
-            "type": "git",
-            "pattern": ".*?ca.po"
-        },
         "lxappearance-obconf": {
             "url": "http://git.lxde.org/git/lxde/lxappearance-obconf.git",
             "type": "git",
@@ -14,11 +9,6 @@
         },
         "lxappearance": {
             "url": "http://git.lxde.org/git/lxde/lxappearance.git",
-            "type": "git",
-            "pattern": ".*?ca.po"
-        },
-        "lxde-common": {
-            "url": "http://git.lxde.org/git/lxde/lxde-common.git",
             "type": "git",
             "pattern": ".*?ca.po"
         },
@@ -59,11 +49,6 @@
         },
         "lxrandr": {
             "url": "http://git.lxde.org/git/lxde/lxrandr.git",
-            "type": "git",
-            "pattern": ".*?ca.po"
-        },
-        "lxscreenshot": {
-            "url": "http://git.lxde.org/git/lxde/lxscreenshot.git",
             "type": "git",
             "pattern": ".*?ca.po"
         },
