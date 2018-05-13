@@ -1,6 +1,6 @@
 {
     "project": "WordPress Themes", 
-    "projectweb": "http://ca.wordpress.org/", 
+    "projectweb": "https://ca.wordpress.org/",
     "softcatala": true,
     "fileset": {
         "wordpress-themes-twenty-sixteen": {
