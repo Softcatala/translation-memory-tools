@@ -113,7 +113,7 @@ class DevGlossarySerializer():
             options = ''
             translations = glossary_entries[term]
             for translation in translations:
-                opt = u'<p>- {0} (usada {1}%, coincidències {2})</p>'
+                opt = u'<p>- {0} (usada {1:1.2f}%, coincidències {2})</p>'
                 options += opt.format(cgi.escape(translation.translation),
                                       translation.percentage,
                                       translation.frequency)
