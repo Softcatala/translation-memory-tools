@@ -103,6 +103,12 @@
             "type": "file", 
             "target": "ca.sumo.tmx"
 
+        },
+        "common-voice": {
+            "url": "https://pontoon.mozilla.org/ca/common-voice/common-voice.sumo.tmx",
+            "type": "file",
+            "target": "ca.common-voice.tmx"
+
         }
     }
 }
