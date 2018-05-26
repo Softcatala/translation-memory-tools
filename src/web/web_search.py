@@ -24,6 +24,7 @@ import cgi
 import time
 import sys
 import urllib.parse
+import datetime
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -32,6 +33,7 @@ from pagination import Pagination
 from glossary import Glossary
 from stats import Stats
 from search import Search
+from usage import Usage
 
 class WebView(object):
 
@@ -147,8 +149,10 @@ def memory_search_api():
 
 @app.route('/api/stats', methods=['GET'])
 def stats_api():
+    requested = request.args.get('date')
+    date_requested = datetime.datetime.strptime(requested, '%Y-%m-%d')
     stats = Stats()
-    return Response(stats.get_json(), mimetype='application/json')
+    return Response(stats.get_json(date_requested), mimetype='application/json')
 
 
 @app.route('/')
@@ -160,6 +164,9 @@ def search_request():
     search = Search(source, target, project)
     View = WebView()
     result = View.do(search)
+
+    usage = Usage()
+    usage.log()
     return result
 
 if __name__ == '__main__':

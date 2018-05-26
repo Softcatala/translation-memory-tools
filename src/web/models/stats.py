@@ -23,12 +23,12 @@ import json
 
 sys.path.append('../')
 sys.path.append('../builder')
-
+from usage import Usage
 from builder.projectmetadatadao import ProjectMetaDataDao
 
 class Stats(object):
 
-    def get_json(self):
+    def get_json(self, date_requested):
         dao = ProjectMetaDataDao()
         dao.open('statistics.db3')
         total_words = 0
@@ -36,7 +36,11 @@ class Stats(object):
         for project in projects:
             total_words += project.words
 
+        usage = Usage()
+        calls = usage.get_stats(date_requested)
+
         results = {}
         results['total_words'] = total_words
         results['projects'] = len(projects)
+        results['searches'] = calls
         return json.dumps(results, indent=4, separators=(',', ': '))
