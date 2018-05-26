@@ -28,7 +28,7 @@ class CheckStats(object):
         self.url = url
 
     def _check_stats(self):
-        url = '{0}/tm/api/stats'
+        url = '{0}/tm/api/stats?date=2010-01-01'
         url = url.format(self.url)
         urllib.request.urlretrieve(url, 'file.txt')
         with open('file.txt') as json_data:
