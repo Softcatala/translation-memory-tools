@@ -3,12 +3,12 @@
     "projectweb": "https://www.debian.org/international/l10n/po/ca", 
     "fileset": {
        "apt": {
-            "url": "https://anonscm.debian.org/cgit/apt/apt.git/plain/po/ca.po", 
+            "url": "https://salsa.debian.org/apt-team/apt/raw/master/po/ca.po", 
             "type": "file", 
             "target": "apt-ca.po"  
         },
         "dpkg": {
-            "url": "https://anonscm.debian.org/cgit/dpkg/dpkg.git/plain/po/ca.po", 
+            "url": "https://salsa.debian.org/dpkg-team/dpkg/raw/master/po/ca.po", 
             "type": "file", 
             "target": "dpkg-ca.po"       
         },
@@ -18,12 +18,12 @@
             "target": "shadow-ca.po"       
         }, 
         "aptitude": {
-            "url": "https://raw.githubusercontent.com/Debian/apt/master/po/ca.po", 
+            "url": "https://salsa.debian.org/apt-team/aptitude/raw/master/po/ca.po", 
             "type": "file", 
             "target": "aptitude-ca.po" 
         }, 
         "po4a": {
-            "url": "https://anonscm.debian.org/cgit/po4a/po4a.git/plain/po/pod/ca.po", 
+            "url": "https://salsa.debian.org/debian/po4a/raw/master/po/pod/ca.po", 
             "type": "file", 
             "target": "po4a-ca.po"       
         }
