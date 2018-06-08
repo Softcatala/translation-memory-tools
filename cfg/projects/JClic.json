@@ -1,0 +1,11 @@
+{
+    "project": "JClic",
+    "projectweb": "https://clic.xtec.cat/ca/",
+    "fileset": {
+        "JClic": {
+            "url": "https://github.com/projectestac/jclic.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        }
+    }
+}
