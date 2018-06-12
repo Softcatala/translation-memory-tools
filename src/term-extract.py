@@ -78,7 +78,7 @@ def process_projects(src_directory, glossary_description, glossary_file):
     metrics.create(corpus)
 
     # Select terms
-    MAX_TERMS = 5000
+    MAX_TERMS = 8000
     sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get,
                                    reverse=True)
 
