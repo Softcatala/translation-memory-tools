@@ -91,13 +91,16 @@ class POFile(object):
 
     def _remove_untranslated_strings(self):
         try:
+            to_remove = list()
             input_po = polib.pofile(self.filename)
 
             for entry in input_po:
                 if entry.msgid == entry.msgstr:
-                    input_po.remove(entry)
+                    to_remove.append(entry)
+
+            for entry in to_remove:
+                input_po.remove(entry)
 
             input_po.save(self.filename)
         except Exception:
             logging.error("POFile._remove_untranslated_strings " + self.filename)
-
