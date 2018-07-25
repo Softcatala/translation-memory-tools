@@ -151,7 +151,7 @@ class CheckDownloads(object):
                 if invalid > 0:
                     percentage = 100.0 * invalid / len(poFile)
                     if percentage > THRESHOLD_PERCENTAGE_INVALID_CHARS:
-                        print("Unsual number of invalid chars at {0} ({1}%)".
+                        print("Unsual number of invalid chars at {0} ({1:.2f}%)".
                               format(filename, str(percentage)))
 
                 if not_localized > 0:
