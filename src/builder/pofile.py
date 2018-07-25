@@ -99,5 +99,5 @@ class POFile(object):
 
             input_po.save(self.filename)
         except Exception:
-            logging.error("POFile._remove_untranslated_string " + self.filename)
+            logging.error("POFile._remove_untranslated_strings " + self.filename)
 
