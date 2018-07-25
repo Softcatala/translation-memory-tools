@@ -3,32 +3,32 @@
     "projectweb": "https://hosted.weblate.org/languages/ca/asteroidos/", 
     "fileset": {
        "Alarm Clock": {
-            "url": "https://hosted.weblate.org/download/asteroidos/alarmclock/ca/po/",
+            "url": "https://hosted.weblate.org/download/asteroidos/alarmclock/ca/custom/?format=po",
             "type": "file", 
             "target": "ca.po"
         },
        "Launcher": {
-            "url": "https://hosted.weblate.org/download/asteroidos/launcher/ca/po/",
+            "url": "https://hosted.weblate.org/download/asteroidos/launcher/ca/custom/?format=po",
             "type": "file", 
             "target": "ca.po"
         },
        "Music": {
-            "url": "https://hosted.weblate.org/download/asteroidos/music/ca/po/",
+            "url": "https://hosted.weblate.org/download/asteroidos/music/ca/custom/?format=po",
             "type": "file", 
             "target": "ca.po"
         },
        "Settings": {
-            "url": "https://hosted.weblate.org/download/asteroidos/music/ca/po/",
+            "url": "https://hosted.weblate.org/download/asteroidos/music/ca/custom/?format=po",
             "type": "file", 
             "target": "ca.po"
         },
        "Sync": {
-            "url": "https://hosted.weblate.org/download/asteroidos/sync/ca/po/",
+            "url": "https://hosted.weblate.org/download/asteroidos/sync/ca/custom/?format=po",
             "type": "file", 
             "target": "ca.po"
         },
        "Weather": {
-            "url": "https://hosted.weblate.org/download/asteroidos/weather/ca/po/",
+            "url": "https://hosted.weblate.org/download/asteroidos/weather/ca/custom/?format=po",
             "type": "file", 
             "target": "ca.po"
         }
