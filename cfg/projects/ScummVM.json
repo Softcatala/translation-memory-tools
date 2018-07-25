@@ -1,6 +1,6 @@
 {
     "project": "ScummVM",
-    "projectweb": "http://scummvm.org",
+    "projectweb": "https://www.scummvm.org/",
     "fileset": {
         "scummvm": {
             "url": "https://raw.githubusercontent.com/scummvm/scummvm/master/po/ca_ES.po",
