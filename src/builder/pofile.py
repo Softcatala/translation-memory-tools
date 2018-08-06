@@ -20,7 +20,7 @@
 
 import logging
 import polib
-
+import html
 
 class POFile(object):
 
@@ -89,6 +89,36 @@ class POFile(object):
         finally:
             return words
 
+    def po_preprocessing(self, parameters):
+
+        actions = parameters.split(',')
+        for action in actions:
+            action = action.strip()
+            if 'remove_untranslated' == action:
+                self._remove_untranslated_strings()
+
+            if 'unescape_html' == action:
+                self._unescape_html()
+
+    def _unescape_html(self):
+        try:
+
+            input_po = polib.pofile(self.filename)
+
+            for entry in input_po:
+
+                msgid = html.unescape(entry.msgid)
+                msgstr = html.unescape(entry.msgstr)
+                if msgid != entry.msgid:
+                    entry.msgid = msgid
+                if msgstr != entry.msgstr:
+                    entry.msgstr = msgstr
+
+            input_po.save(self.filename)
+
+        except Exception:
+            logging.error("POFile._unescape_html:" + self.filename)
+
     def _remove_untranslated_strings(self):
         try:
             to_remove = list()
@@ -103,4 +133,4 @@ class POFile(object):
 
             input_po.save(self.filename)
         except Exception:
-            logging.error("POFile._remove_untranslated_strings " + self.filename)
+            logging.error("POFile._remove_untranslated_strings:" + self.filename)

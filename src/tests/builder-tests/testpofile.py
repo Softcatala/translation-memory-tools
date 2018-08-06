@@ -107,6 +107,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         self._create_po_with_duplicated_strings(filename)
 
         poFile = POFile(filename)
+        pofile = polib.POFile()
         poFile.add_msgctxt_to_duplicates()
 
         rslt = self._does_pofile_contains_duplicated_strings(filename)
@@ -122,6 +123,30 @@ msgstr 'Apaga les màquines virtuals seleccionades'
 
         po = polib.pofile(filename)
         self.assertEquals(1, len(po))
+
+    def _create_po_with_html(self, filename):
+        pofile = polib.POFile()
+        entry = polib.POEntry()
+        entry = polib.POEntry(msgid='use the &lt;li&gt; to begin each list item')
+        pofile.append(entry)
+        entry = polib.POEntry(msgstr='&quot;Hi&quot;')
+        pofile.append(entry)
+        pofile.save(filename)
+
+    def test_unescape_html(self):
+        tmpfile = tempfile.NamedTemporaryFile()
+        filename = tmpfile.name + ".po"
+
+        self._create_po_with_html(filename)
+        poFile = POFile(filename)
+        poFile._unescape_html()
+
+        po = polib.pofile(filename)
+        self.assertEquals("use the <li> to begin each list item",
+                          po[0].msgid)
+
+        self.assertEquals("\"Hi\"",
+                          po[1].msgstr)
 
 if __name__ == '__main__':
     unittest.main()

@@ -6,7 +6,7 @@
             "url": "https://www.transifex.com/projects/p/civicrm/", 
             "type": "transifex",
             "excluded": "en_",
-            "remove_untranslated" : true
+            "po_preprocessing" : "remove_untranslated"
         }
     }
 }

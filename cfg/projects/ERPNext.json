@@ -6,7 +6,7 @@
             "url": "https://raw.githubusercontent.com/frappe/erpnext/develop/erpnext/translations/ca.csv",
             "type": "file",
             "target": "ca.csv",
-            "remove_untranslated" : true
+            "po_preprocessing" : "remove_untranslated, unescape_html"
         }
     }
 }

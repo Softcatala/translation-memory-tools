@@ -5,7 +5,7 @@
         "Matomo": {
             "url": "https://www.transifex.com/projects/p/matomo/",
             "type": "transifex",
-            "remove_untranslated" : true
+            "po_preprocessing" : "remove_untranslated"
         }
     }
 }

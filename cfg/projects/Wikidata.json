@@ -6,7 +6,7 @@
             "url": "../source-pos/wikidata/wikidata.po", 
             "type": "local-file", 
             "target": "wikidata.po",
-            "remove_untranslated" : true
+			"po_preprocessing" : "remove_untranslated"
         }
     }
 }

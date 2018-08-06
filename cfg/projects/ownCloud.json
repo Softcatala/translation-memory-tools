@@ -5,7 +5,7 @@
             "ownCloud" : {
                     "url" : "https://www.transifex.com/projects/p/owncloud/",
                     "type": "transifex",
-                    "remove_untranslated" : true
+                    "po_preprocessing" : "remove_untranslated"
             }
     }
 }

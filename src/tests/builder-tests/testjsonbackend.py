@@ -42,7 +42,7 @@ class TestJsonBackend(unittest.TestCase):
         return
 
     def _validate_firefox_fileset(self, fileset):
-        self.assertTrue(fileset.remove_untranslated)
+        self.assertTrue(fileset.po_preprocessing)
         return
 
     def _validate_mozilla_project(self, project):
