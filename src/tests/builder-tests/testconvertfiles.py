@@ -66,7 +66,6 @@ class ConvertFilesTest(unittest.TestCase):
 
         csv_dir = path.dirname(path.realpath(__file__))
         csv_dir += '/data/conversions/csv/'
-        print(csv_dir)
         convert = ConvertFiles(csv_dir, None)
         convert.convert()
 

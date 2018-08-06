@@ -80,6 +80,7 @@ class ConvertFiles():
             dirName = os.path.dirname(csvfile)
             pofile = dirName + '/ca.po'
             cmd = 'csv2po -i {0} -o {1}'.format(csvfile, pofile)
+            os.system(cmd)
             logging.info('convert csv file: {0}'.format(csvfile))
 
     def _convert_properties_files_to_po(self):
