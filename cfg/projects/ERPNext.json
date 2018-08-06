@@ -1,0 +1,12 @@
+{
+    "project": "ERPNext",
+    "projectweb": "https://erpnext.com/",
+    "fileset": {
+        "ERPNext": {
+            "url": "https://raw.githubusercontent.com/frappe/erpnext/develop/erpnext/translations/ca.csv",
+            "type": "file",
+            "target": "ca.csv",
+            "remove_untranslated" : true
+        }
+    }
+}

@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2015 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2015, 2018 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -61,6 +61,18 @@ class ConvertFilesTest(unittest.TestCase):
         entries = self._get_po_entries(yml_dir)
         self._clean_pos(yml_dir)
         self.assertEquals(entries, 3)
+
+    def test_convert_csv_files_to_po(self):
+
+        csv_dir = path.dirname(path.realpath(__file__))
+        csv_dir += '/data/conversions/csv/'
+        print(csv_dir)
+        convert = ConvertFiles(csv_dir, None)
+        convert.convert()
+
+        entries = self._get_po_entries(csv_dir)
+        self._clean_pos(csv_dir)
+        self.assertEquals(entries, 4)
 
 if __name__ == '__main__':
     unittest.main()

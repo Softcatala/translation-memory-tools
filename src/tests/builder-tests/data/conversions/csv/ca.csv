@@ -1,0 +1,5 @@
+DocType: Accounting Period,Period Name,Nom del període
+DocType: Employee,Salary Mode,Salary Mode
+DocType: Patient,Divorced,Divorciat
+DocType: Support Settings,Post Route Key,Clau de la ruta de publicació
+

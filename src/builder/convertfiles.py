@@ -45,6 +45,7 @@ class ConvertFiles():
         self._convert_properties_files_to_po()
         self._convert_json_files_to_po()
         self._convert_yml_files_to_po()
+        self._convert_csv_files_to_po()
 
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find(self.convert_dir, '*.ts'):
@@ -74,6 +75,12 @@ class ConvertFiles():
             tmx.convert()
             logging.info('convert tmx file: {0}'.format(tmxfile))
 
+    def _convert_csv_files_to_po(self):
+        for csvfile in self.findFiles.find(self.convert_dir, 'ca.csv'):
+            dirName = os.path.dirname(csvfile)
+            pofile = dirName + '/ca.po'
+            cmd = 'csv2po -i {0} -o {1}'.format(csvfile, pofile)
+            logging.info('convert csv file: {0}'.format(csvfile))
 
     def _convert_properties_files_to_po(self):
         for tsfile in self.findFiles.find(self.convert_dir, 'ca.properties'):
