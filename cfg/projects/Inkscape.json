@@ -4,8 +4,8 @@
     "softcatala": true, 
     "fileset": {
         "inkscape": {
-            "url": "lp:inkscape/po/ca.po", 
-            "type": "bazaar", 
+            "url": "https://gitlab.com/inkscape/inkscape/raw/master/po/ca.po",
+            "type": "file",
             "target": "ca.po"
         }, 
         "documentation": {
