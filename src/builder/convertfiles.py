@@ -169,8 +169,9 @@ class ConvertFiles():
                              "translations/briar.stringsxml-5/ca.xml")
 
         '''Telegram Android'''
-        self._copy_res_files("translations/telegram-for-android-1.android-main-official-app/en.xml",
-                             "translations/telegram-for-android-1.android-main-official-app/ca.xml")
+        self._copy_res_files("translations/telegram-unofficial-translations.telegram-for-android/en.xml",
+                             "translations/telegram-unofficial-translations.telegram-for-android/ca.xml")
+
 
     def _copy_res_files(self, source_file, target_file):
         en_file = os.path.join(self.convert_dir, source_file)
