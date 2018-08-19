@@ -2,8 +2,8 @@
     "project": "Mastodon",
     "projectweb": "https://weblate.joinmastodon.org/",
     "fileset": {
-        "Waze": {
-            "url": "git@github.com:tootsuite/mastodon.git",
+        "Mastodon": {
+            "url": "https://github.com/tootsuite/mastodon.git",
             "type": "git"
         }
     }
