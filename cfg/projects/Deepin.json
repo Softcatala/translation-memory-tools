@@ -1,0 +1,10 @@
+{
+    "project": "Deepin",
+    "projectweb": "https://www.deepin.org/",
+    "fileset": {
+        "Deepin": {
+            "url": "https://www.transifex.com/linuxdeepin/public/",
+            "type": "transifexhub"
+        }
+    }
+}
