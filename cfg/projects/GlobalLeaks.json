@@ -1,0 +1,10 @@
+{
+    "project": "GlobalLeaks",
+    "projectweb": "https://www.globaleaks.org/",
+    "fileset": {
+        "GlobalLeaks": {
+            "url": "https://www.transifex.com/otf/globaleaks/",
+            "type": "transifex"
+        }
+    }
+}
