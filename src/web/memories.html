@@ -71,35 +71,35 @@
             Anglès <input type="text" name="source" size="60" value="" />
             <br />
             Català <input type="text" name="target" size="60" value="" />
-            <br />
+            <div>
             <!--#include virtual="select-projects.html" -->
-            <input type="submit" value="Cerca">
-          </form>
+            <input type="submit" value="Cerca"></div>
+            </form>
         </div>
         <div class="search-samples">
           <p>Exemples de cerques</p>
           <ul>
             <li>
-              "<a href="./web_search.py?source='Audio+file'">Audio file</a>"
+              "<a href="./web_search.py?source='Audio+file'&project=tots">Audio file</a>"
               - Cerca el terme complet com una cadena (exemple de cerca en
               anglès)
             </li>
             <li>
-              <a href="./web_search.py?source=Audio+OR+music">Audio OR music</a>
+              <a href="./web_search.py?source=Audio+OR+music&project=tots">Audio OR music</a>
               - Cerca cadenes amb el terme 'audio' o bé 'music' (exemple de
               cerca en anglès)
             </li>
             <li>
-              <a href="./web_search.py?source=Audio+NOT+music">Audio NOT music</a>
+              <a href="./web_search.py?source=Audio+NOT+music&project=tots">Audio NOT music</a>
               - Cerca cadenes amb el terme 'audio' però sense 'music' (exemple
               de cerca en anglès)</li>
             <li>
-              <a href="./web_search.py?target=entrella%C3%A7a*">entrellaça*</a>
+              <a href="./web_search.py?target=entrella%C3%A7a*&project=tots">entrellaça*</a>
               - Cerca cadenes amb els caràcters 'entrellaça' i després
               qualsevol altres caràcters (exemple de cerca en català)
             </li>
             <li>
-              <a href="./web_search.py?source=File&target=arxiu">file arxiu</a>
+              <a href="./web_search.py?source=File&target=arxiu&project=tots">file arxiu</a>
               - Cerca cadenes que en anglès conten 'file' i en català han estat
               traduïdes per 'arxiu' (exemple de cerca en anglès i català)
             </li>
