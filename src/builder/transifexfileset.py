@@ -32,7 +32,8 @@ class TransifexFileSet(FileSet):
 
         for filename in findFiles.find(self.temp_dir, '*'):
             if filename.endswith('en.po') or filename.endswith('en.ts') or\
-               filename.endswith('en_GB.po') or filename.endswith('en_GB.ts'):
+               filename.endswith('en_GB.po') or filename.endswith('en_GB.ts') or \
+               filename.endswith('en_US.po') or filename.endswith('en_US.ts'):
                    os.remove(filename)
 
     def do(self):
