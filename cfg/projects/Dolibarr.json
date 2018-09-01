@@ -1,0 +1,15 @@
+{
+    "project": "Dolibarr",
+    "projectweb": "https://www.dolibarr.org/",
+    "fileset": {
+        "Dolibarr": {
+            "url": "https://www.transifex.com/projects/p/dolibarr/",
+            "type": "transifex",
+            "conversor_setup": {
+                "type"       : "string",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
+        }
+    }
+}
