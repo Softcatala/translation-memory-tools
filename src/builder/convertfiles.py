@@ -84,12 +84,14 @@ class ConvertFiles():
             logging.info('convert csv file: {0}'.format(csvfile))
 
     def _convert_properties_files_to_po(self):
-        for tsfile in self.findFiles.find(self.convert_dir, 'ca.properties'):
-            dirName = os.path.dirname(tsfile)
+        # This looks for ca.properties, ca_ES.properties
+        for propfile in self.findFiles.find(self.convert_dir, 'ca???.properties'):
+            dirName = os.path.dirname(propfile)
+            prop_filename = os.path.basename(propfile)
             logging.info('convert properties file: {0}'.format(dirName))
-            filename = '{0}/properties-ca.po'.format(dirName)
+            po_filename = '{0}/properties-ca.po'.format(dirName)
             # Allow process files with duplicated entries
-            cmd = 'prop2po -t {0}/en.properties {0}/ca.properties ' \
+            cmd = 'prop2po -t {0}/en.properties {0}/{2} ' \
                 '--personality java --duplicates merge -o {1}'
 
             if self.conversor_setup is not None and \
@@ -99,7 +101,7 @@ class ConvertFiles():
                 logging.info('Adding parameter to conversor: {0}'.
                              format(self.conversor_setup.command))
 
-            os.system(cmd.format(dirName, filename))
+            os.system(cmd.format(dirName, po_filename, prop_filename))
 
     def _execute_convert_ini_files_to_po(self, src, trg, dirName):
         os.rename(src, '{0}/en.strings'.format(dirName))
