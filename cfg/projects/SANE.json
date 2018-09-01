@@ -1,0 +1,11 @@
+{
+    "project": "SANE", 
+    "projectweb": "http://www.sane-project.org/", 
+    "fileset": {
+        "backends": {
+            "url": "https://gitlab.com/bellaperez/backends/raw/master/po/ca.po",
+            "type": "file", 
+            "target": "sane-backends.po"
+        }
+    }
+}
