@@ -16,11 +16,6 @@
             "url": "https://github.com/linuxmint/cinnamon-spices-desklets.git",
             "type": "git",
             "pattern": ".*?ca.po"
-        },
-        "doc-installation-guide": {
-            "url": "https://github.com/linuxmint/doc-installation-guide.git",
-            "type": "git",
-            "pattern": ".*?ca.po"
         }
     }
 }
