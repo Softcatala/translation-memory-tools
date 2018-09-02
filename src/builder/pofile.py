@@ -27,6 +27,11 @@ class POFile(object):
     def __init__(self, filename):
         self.filename = filename
 
+    def _log_exception(self, location, exception):
+        msg = "POFile.{0} exception '{1}' at {2}"
+        msg = msg.format(location, str(exception), self.filename)
+        logging.error(msg)
+
     def add_comment_to_all_entries_and_remove_fuzzys(self, comment):
         try:
             input_po = polib.pofile(self.filename)
@@ -43,9 +48,8 @@ class POFile(object):
                     continue
 
             input_po.save(self.filename)
-        except Exception:
-            logging.error("POFile.add_comment_to_all_entries_and_remove_fuzzys exception:" + self.filename)
-
+        except Exception as e:
+            self._log_exception("add_comment_to_all_entries_and_remove_fuzzys", e)
 
     def add_msgctxt_to_duplicates(self):
         logging.debug("POFile.add_msgctxt_to_duplicates for " + self.filename)
@@ -64,8 +68,8 @@ class POFile(object):
                 cnt = cnt +1
             input_po.save(self.filename)
         except Exception as e:
-            print(e)
-            logging.error("POFile.add_msgctxt_to_duplicates " + self.filename)
+            self._log_exception("add_msgctxt_to_duplicates", e)
+
     def calculate_localized_string_checksum(self, checksum):
         try:
             poFile = polib.pofile(self.filename)
@@ -73,8 +77,8 @@ class POFile(object):
                 # hashlib.sha1 isn't expecting a unicode object, but rather a
                 # sequence of bytes in a str object
                 checksum.update(entry.msgstr.encode('utf-8'))
-        except Exception:
-            logging.error("POFile.get_checksum exception " + self.filename)
+        except Exception as e:
+            self._log_exception("calculate_localized_string_checksum", e)
 
     def get_statistics(self):
         words = 0
@@ -84,8 +88,8 @@ class POFile(object):
             for entry in poFile:
                 string_words = entry.msgstr.split(' ')
                 words += len(string_words)
-        except Exception:
-            logging.error("POFile.get_statistics exception " + self.filename)
+        except Exception as e:
+            self._log_exception("get_statistics", e)
         finally:
             return words
 
@@ -116,8 +120,8 @@ class POFile(object):
 
             input_po.save(self.filename)
 
-        except Exception:
-            logging.error("POFile._unescape_html:" + self.filename)
+        except Exception as e:
+            self._log_exception("_unescape_html", e)
 
     def _remove_untranslated_strings(self):
         try:
@@ -132,5 +136,5 @@ class POFile(object):
                 input_po.remove(entry)
 
             input_po.save(self.filename)
-        except Exception:
-            logging.error("POFile._remove_untranslated_strings:" + self.filename)
+        except Exception as e:
+            self._log_exception("_remove_untranslated_strings", e)
