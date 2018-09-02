@@ -2,12 +2,11 @@
     "project": "LanguageTool", 
     "projectweb": "https://www.softcatala.org/projectes/languagetool/", 
     "softcatala": true,
-    "comment": "Chrome extension excluded because description field in Catalan file is in English as is imported as a Catalan translation",
     "fileset": {
         "LanguageTool": {
             "url": "https://www.transifex.com/projects/p/languagetool/", 
             "type": "transifex",
-            "excluded": "json-ca",
+            "po_preprocessing" : "remove_untranslated",
             "conversor_setup": {
                 "type"       : "string",
                 "verb"       : "add",
