@@ -84,8 +84,11 @@ class ConvertFiles():
             logging.info('convert csv file: {0}'.format(csvfile))
 
     def _convert_properties_files_to_po(self):
-        # This looks for ca.properties, ca_ES.properties
-        for propfile in self.findFiles.find(self.convert_dir, 'ca???.properties'):
+        files = self.findFiles.find(self.convert_dir, 'ca.properties')
+        if len(files) == 0:
+            files = self.findFiles.find(self.convert_dir, 'ca_ES.properties')
+
+        for propfile in files:
             dirName = os.path.dirname(propfile)
             prop_filename = os.path.basename(propfile)
             logging.info('convert properties file: {0}'.format(dirName))
