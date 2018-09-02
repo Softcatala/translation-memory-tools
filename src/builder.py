@@ -93,7 +93,7 @@ def read_parameters():
         type='string',
         dest='projects_dir',
         default='../cfg/projects/',
-        help="Define the diretory that contains the json files with the "
+        help="Define the directory that contains the json files with the "
         "project's definitions"
     )
 
@@ -141,7 +141,7 @@ def load_projects_from_json(add_source, projects_names, projects_dir,
     json = JsonBackend(projects_dir)
     json.load()
 
-    msg = 'Projects defined in the json directory {0}'.format(len(json.projects))
+    msg = 'Projects defined in the projects configuration directory {0}'.format(len(json.projects))
     logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
