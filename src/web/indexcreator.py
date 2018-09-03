@@ -21,7 +21,7 @@ import os
 import polib
 
 from whoosh.analysis import StandardAnalyzer
-from whoosh.fields import BOOLEAN, TEXT, Schema
+from whoosh.fields import BOOLEAN, TEXT, Schema, STORED, ID
 from whoosh.index import create_in
 from whoosh.filedb.filestore import RamStorage
 
@@ -169,10 +169,10 @@ class IndexCreator(object):
         analyzer = StandardAnalyzer(minsize=1, stoplist=None) | CleanUpFilter()
         schema = Schema(source=TEXT(stored=True, analyzer=analyzer),
                         target=TEXT(stored=True, analyzer=analyzer),
-                        comment=TEXT(stored=True),
-                        context=TEXT(stored=True),
-                        softcatala=BOOLEAN(stored=True),
-                        project=TEXT(stored=True))
+                        comment=STORED,
+                        context=STORED,
+                        softcatala=BOOLEAN,
+                        project=ID(stored=True))
 
         if in_memory:
             st = RamStorage()
