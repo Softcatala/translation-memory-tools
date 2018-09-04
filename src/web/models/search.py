@@ -67,7 +67,6 @@ class Search(object):
 
         if ix is None:
             ix = open_dir(self.dir_name)
-            self.search(ix)
 
         self.searcher = ix.searcher()
         fields = []
