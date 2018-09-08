@@ -221,7 +221,8 @@ def main():
 
         start_time = time.time()
         run_lt(lt, txt_file, json_file)
-        print("LT runned PO {0} {1}".format(po_file, str(time.time() - start_time)))
+        po_file_logname = po_file[len(source_dir) + 1:]
+        print("LT runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
 
         start_time = time.time()
         generate_lt_report(lt['lt-html-dir'], json_file, file_report)
@@ -234,7 +235,7 @@ def main():
 
         start_time = time.time()
         run_pology(pology, po_transonly, pology_report)
-        print("Pology runned PO {0} {1}".format(po_file, str(time.time() - start_time)))
+        print("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, str(time.time() - start_time)))
 
         if os.path.isfile(pology_report):
             add_file_to_project_report(project_file, pology_report)
