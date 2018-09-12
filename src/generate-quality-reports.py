@@ -235,7 +235,7 @@ def main():
 
         start_time = time.time()
         run_pology(pology, po_transonly, pology_report)
-        print("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, str(time.time() - start_time)))
+        print("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
 
         if os.path.isfile(pology_report):
             add_file_to_project_report(project_file, pology_report)
