@@ -128,12 +128,15 @@ class POFile(object):
             to_remove = list()
             input_po = polib.pofile(self.filename)
 
-            for entry in input_po:
+            for i in range(len(input_po)):
+                entry = input_po[i]
                 if entry.msgid == entry.msgstr:
-                    to_remove.append(entry)
+                    to_remove.append(i)
 
-            for entry in to_remove:
-                input_po.remove(entry)
+            for i in range(len(to_remove), 0, -1):
+                i = i - 1
+                idx = to_remove[i]
+                del input_po[idx]
 
             input_po.save(self.filename)
         except Exception as e:
