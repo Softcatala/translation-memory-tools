@@ -49,7 +49,8 @@ class Project(object):
         self.name = name
         self.checksum = None
         self.report_errors = True
-        self.out_directory = ""
+        self.out_directory = ''
+        self.license = ''
 
     def get_filename(self):
         return self.filename

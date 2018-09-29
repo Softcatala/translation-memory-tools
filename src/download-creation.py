@@ -46,7 +46,7 @@ class TranslationMemory(object):
 
     def __init__(self, words=None, name=None, last_fetch=None,
                  last_translation_update=None, projectweb=None, filename=None,
-                 quality_reports=True):
+                 quality_reports=True, license=None):
         self.name = name
         self.projectweb = projectweb
         self.po_file_text = get_zip_file(filename)
@@ -59,6 +59,7 @@ class TranslationMemory(object):
         self.last_fetch = last_fetch
         self.last_translation_update = last_translation_update
         self.quality_reports = quality_reports
+        self.license = license
 
 
 def get_subdir():
@@ -163,6 +164,7 @@ def build_invidual_projects_memory(projects, memories, po_directory,
             last_translation_update=last_translation_update,
             projectweb=project_dto.projectweb,
             filename=project_dto.filename,
+            license=project_dto.license
         )
         memories.append(translation_memory)
 

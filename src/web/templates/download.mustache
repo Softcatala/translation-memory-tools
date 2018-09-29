@@ -42,6 +42,9 @@
       {{^projectweb}}
       {{name}}
       {{/projectweb}}
+      {{#license}}
+        <div>(llicència: {{license}})</div>
+      {{/license}}
     </td>
     <td><a href="{{po_file_link}}">{{po_file_text}}</a></td>
     <td><a href="{{tmx_file_link}}">{{tmx_file_text}}</a></td>

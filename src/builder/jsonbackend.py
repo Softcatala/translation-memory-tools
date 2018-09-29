@@ -33,6 +33,7 @@ class ProjectDTO(object):
         self.disabled = False
         self.downloadable = True
         self.selectable = True
+        self.license = ''
         self.filesets = []
 
     def __str__(self):
@@ -143,7 +144,7 @@ class JsonBackend(object):
                 for attribute, value in data.items():
 
                     if attribute in ('filename', 'projectweb', 'softcatala', 'disabled',
-                                 'downloadable', 'selectable'):
+                                 'downloadable', 'selectable', 'license'):
                         setattr(project, attribute, data[attribute])
 
                     if 'fileset' in attribute:
