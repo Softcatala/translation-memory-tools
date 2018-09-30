@@ -1,6 +1,6 @@
 {
     "project": "Deluge",
-    "projectweb": "http://deluge-torrent.org/",
+    "projectweb": "https://deluge-torrent.org/",
     "fileset": {
         "Deluge-1-3": {
             "url": "-b 1.3-stable https://git.launchpad.net/deluge",

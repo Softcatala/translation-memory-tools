@@ -14,17 +14,17 @@
             "target": "gnome-doc.tar.gz"
         },
         "gnome-extras": {
-            "url": "http://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz", 
+            "url": "https://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz",
             "type": "compressed", 
             "target": "gnome-extras.tar.gz"
         },
         "gnome-infrastructure": {
-            "url": "http://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz", 
+            "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz",
             "type": "compressed", 
             "target": "gnome-infrastructure.tar.gz"
         }, 
         "gnome-infrastructure-doc": {
-            "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz", 
+            "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
             "type": "compressed", 
             "target": "gnome-infrastructure-doc.tar.gz"
         }, 

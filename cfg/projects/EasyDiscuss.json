@@ -1,6 +1,6 @@
 {
     "project": "EasyDiscuss",
-    "projectweb": "http://stackideas.com/easydiscuss",
+    "projectweb": "https://stackideas.com/easydiscuss",
     "fileset": {
         "EasyDiscuss": {
             "url": "https://www.transifex.com/projects/p/ed4",

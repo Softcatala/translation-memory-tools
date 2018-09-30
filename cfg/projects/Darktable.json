@@ -1,6 +1,6 @@
 {
     "project": "Darktable", 
-    "projectweb": "http://www.darktable.org/", 
+    "projectweb": "https://www.darktable.org/",
     "fileset": {
         "Darktable": {
             "url": "https://raw.githubusercontent.com/darktable-org/darktable/master/po/ca.po", 

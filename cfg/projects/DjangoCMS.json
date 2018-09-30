@@ -1,6 +1,6 @@
 {
     "project": "DjangoCMS", 
-    "projectweb": "http://www.django-cms.org/", 
+    "projectweb": "https://www.django-cms.org/",
     "fileset": {
         "DjangoCMS": {
             "url": "https://www.transifex.com/projects/p/django-cms", 

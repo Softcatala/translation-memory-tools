@@ -1,10 +1,10 @@
 {
     "project": "Abiword", 
-    "projectweb": "https://www.softcatala.org/projectes/abiword/", 
+    "projectweb": "https://www.softcatala.org/projectes/abiword/",
     "softcatala": true, 
     "fileset": {
         "abiword": {
-            "url": "http://www.abisource.com/dev/strings/dev/ca-ES.po", 
+            "url": "https://www.abisource.com/dev/strings/dev/ca-ES.po",
             "type": "file", 
             "target": "abiword-ca.po"
         }

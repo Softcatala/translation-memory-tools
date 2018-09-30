@@ -1,6 +1,6 @@
 {
     "project": "Audacity", 
-    "projectweb": "http://www.audacityteam.org/", 
+    "projectweb": "https://www.audacityteam.org/",
     "fileset": {
         "Audacity": {
             "url": "https://raw.githubusercontent.com/audacity/audacity/master/locale/ca.po", 
