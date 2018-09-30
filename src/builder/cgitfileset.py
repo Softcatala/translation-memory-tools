@@ -58,16 +58,16 @@ class CGitFileSet(FileSet):
         return url[idx + 1:]
 
     def do(self):
-        crawler = Crawler(self.url)
-        crawler.run()
-        links = crawler.get_all_links()
-        unique_links = self._get_download_links(links, self.temp_dir)
-
-        # This project has a single fileset assigned (this)
-        # We empty the fileset and add dynamically the ones got by the crawler
-        self.project.filesets = []
-
         try:
+
+            crawler = Crawler(self.url)
+            crawler.run()
+            links = crawler.get_all_links()
+            unique_links = self._get_download_links(links, self.temp_dir)
+
+            # This project has a single fileset assigned (this)
+            # We empty the fileset and add dynamically the ones got by the crawler
+            self.project.filesets = []
 
             for link in unique_links:
                 name = self._get_fileset_from_url(link)
