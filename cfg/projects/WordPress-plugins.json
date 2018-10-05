@@ -13,6 +13,11 @@
             "type": "file", 
             "target": "google-analytics-for-wordpress-ca.po"
         },
+        "gutenberg": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/gutenberg/dev/ca/default/export-translations", 
+            "type": "file", 
+            "target": "gutenberg-ca.po"
+        },
         "woocommerce": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/woocommerce/dev/ca/default/export-translations", 
             "type": "file", 
