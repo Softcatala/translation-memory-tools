@@ -1,0 +1,11 @@
+{
+    "project": "Mycroft",
+    "projectweb": "https://mycroft.ai/",
+    "fileset": {
+        "Mycroft": {
+            "url": "https://translate.mycroft.ai/export/?path=/ca/mycroft-skills/",
+            "type": "compressed",
+            "target": "mycroft.zip"
+        }
+    }
+}
