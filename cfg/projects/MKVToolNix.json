@@ -1,15 +1,15 @@
 {
     "project": "MKVToolNix", 
-    "projectweb": "https://www.bunkus.org/videotools/mkvtoolnix/", 
+    "projectweb": "https://mkvtoolnix.download/",
     "fileset": {
         "mkvtoolnix": {
-            "url": "https://raw.githubusercontent.com/mbunkus/mkvtoolnix/master/po/ca.po",
-            "type": "file", 
+            "url": "https://gitlab.com/mbunkus/mkvtoolnix/raw/master/po/ca.po",
+            "type": "file",
             "target": "mkvtoolnix-ca.po"
         },
         "mkvtoolnix-mp": {
-            "url": "https://raw.githubusercontent.com/mbunkus/mkvtoolnix/master/doc/man/po4a/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.com/mbunkus/mkvtoolnix/raw/master/doc/man/po4a/po/ca.po",
+            "type": "file",
             "target": "mkvtoolnix-mp-ca.po"
         }
     }
