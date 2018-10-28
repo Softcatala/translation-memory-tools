@@ -2,6 +2,7 @@
     "project": "iOS",
     "projectweb": "https://developer.apple.com/internationalization/",
     "license" : "propietària",
+    "quality_report": false,
     "fileset": {
         "Apple": {
             "url": "../source-pos/apple/ios.po",

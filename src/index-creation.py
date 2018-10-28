@@ -82,7 +82,7 @@ def main():
     print("Create Whoosh index from a PO file")
     print("Use --help for assistance")
 
-    start_time = time.time()
+    start_time = datetime.datetime.now()
 
     try:
         locale.setlocale(locale.LC_ALL, '')
@@ -108,8 +108,7 @@ def main():
     process_template("web/templates/select-projects.mustache",
                      "select-projects.html", ctx)
 
-    end_time = time.time() - start_time
-    print("time used to create the index: " + str(end_time))
+    print("Time used to create the index: {0} ".format(datetime.datetime.now() - start_time))
 
 
 if __name__ == "__main__":

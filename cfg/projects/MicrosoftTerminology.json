@@ -2,6 +2,7 @@
     "project": "Microsoft Terminology",
     "projectweb": "https://www.microsoft.com/language/",
     "license" : "propietària",
+    "quality_report": false,
     "fileset": {
         "Microsoft Terminology": {
             "url": "../source-pos/microsoft/microsoft-terms.po", 

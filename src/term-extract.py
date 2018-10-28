@@ -159,7 +159,7 @@ def main():
     process_projects(src_directory, glossary_description, glossary_file)
     end_time = time.time() - start_time
 
-    print("time used to create the glossaries: " + str(end_time))
+    print("Time used to create the glossaries: " + str(end_time))
     usage = resource.getrusage(resource.RUSAGE_SELF)
     print("usertime=%s systime=%s mem=%s mb" %
           (usage[0], usage[1], (usage[2]*resource.getpagesize())/1000000.0))

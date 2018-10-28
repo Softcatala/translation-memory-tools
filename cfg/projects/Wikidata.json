@@ -1,6 +1,7 @@
 {
     "project": "Wikidata", 
-    "projectweb": "https://www.wikidata.org", 
+    "projectweb": "https://www.wikidata.org",
+    "quality_report": false,
     "fileset": {
         "Wikidata": {
             "url": "../source-pos/wikidata/wikidata.po", 

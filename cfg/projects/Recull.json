@@ -1,6 +1,7 @@
 {
     "project": "Recull", 
-    "projectweb": "https://www.softcatala.org/wiki/Projectes/Recull_de_termes", 
+    "projectweb": "https://www.softcatala.org/wiki/Projectes/Recull_de_termes",
+    "quality_report": false,
     "softcatala": true, 
     "fileset": {
         "recull": {

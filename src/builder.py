@@ -191,5 +191,5 @@ if __name__ == '__main__':
     projects.to_tmx()
     projects.statistics()
 
-    s = 'Execution time: {0}'.format(datetime.datetime.now() - start_time)
+    s = 'Time used to build memories: {0}'.format(datetime.datetime.now() - start_time)
     logging.info(s)

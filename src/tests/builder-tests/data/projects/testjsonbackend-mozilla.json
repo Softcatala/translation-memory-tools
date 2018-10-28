@@ -1,8 +1,9 @@
 {
     "project": "Mozilla",
     "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
-    "softcatala" : "true",
+    "softcatala" : true,
     "license" : "Propietària",
+    "quality_report": false,
 	"fileset": {
 		"mozilla": {
 			"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",

@@ -27,11 +27,12 @@ import json
 import pystache
 import tempfile
 import shutil
+import yaml
+from concurrent.futures import ThreadPoolExecutor
 from collections import OrderedDict
 from optparse import OptionParser
 from builder.findfiles import FindFiles
-import yaml
-
+from builder.jsonbackend import JsonBackend
 
 def read_parameters():
     parser = OptionParser()
@@ -192,11 +193,8 @@ def add_file_to_project_report(text_file, filename):
     text_file.write(pology_file.read())
     pology_file.close()
 
-def main():
+def generate_report(source_dir):
 
-    print("Quality report generator")
-
-    source_dir = read_parameters()
     lt, pology = read_config()
     print("Source directory: " + source_dir)
 
@@ -251,6 +249,36 @@ def main():
     footer_filename = os.path.join(lt['lt-html-dir'], "footer.html")
     add_file_to_project_report(project_file, footer_filename)
     project_file.close()
+
+def load_projects_from_json():
+    projects = []
+    projects_dir = '../cfg/projects/'
+    json = JsonBackend(projects_dir)
+    json.load()
+
+    for project_dto in json.projects:
+        if project_dto.quality_report is False:
+            print("Skipping quality generation for: " + project_dto.name)
+            continue
+
+        project_dto_lower = project_dto.name.lower().strip()
+        projects.append(project_dto_lower)
+
+    return projects
+
+
+def main():
+    print("Quality report generator")
+    total_start_time = datetime.datetime.now()
+    projects = load_projects_from_json()
+
+    source_dir = read_parameters()
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        for project in projects:
+            executor.submit(generate_report, os.path.join(source_dir, project))
+
+    s = 'Time used to generate quality reports: {0}'.format(datetime.datetime.now() - total_start_time)
+    print(s)
 
 if __name__ == "__main__":
     main()

@@ -46,7 +46,7 @@ class TranslationMemory(object):
 
     def __init__(self, words=None, name=None, last_fetch=None,
                  last_translation_update=None, projectweb=None, filename=None,
-                 quality_reports=True, license=None):
+                 quality_report=True, license=None):
         self.name = name
         self.projectweb = projectweb
         self.po_file_text = get_zip_file(filename)
@@ -58,7 +58,7 @@ class TranslationMemory(object):
         self.words = words
         self.last_fetch = last_fetch
         self.last_translation_update = last_translation_update
-        self.quality_reports = quality_reports
+        self.quality_report = quality_report
         self.license = license
 
 
@@ -131,7 +131,7 @@ def build_combined_memory(projects, memories, filename, name, po_directory,
         last_fetch=date,
         last_translation_update=date,
         filename=filename,
-        quality_reports=False,
+        quality_report=False,
     )
     memories.append(translation_memory)
 
@@ -164,7 +164,8 @@ def build_invidual_projects_memory(projects, memories, po_directory,
             last_translation_update=last_translation_update,
             projectweb=project_dto.projectweb,
             filename=project_dto.filename,
-            license=project_dto.license
+            license=project_dto.license,
+            quality_report=project_dto.quality_report
         )
         memories.append(translation_memory)
 
