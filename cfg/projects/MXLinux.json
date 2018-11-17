@@ -1,0 +1,10 @@
+{
+    "project": "MXLinux",
+    "projectweb": "https://mxlinux.org/",
+    "fileset": {
+        "MXLinux": {
+            "url": "https://www.transifex.com/projects/p/antix-development/",
+            "type": "transifex"
+        }
+    }
+}
