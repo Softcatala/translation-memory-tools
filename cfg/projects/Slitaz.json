@@ -1,0 +1,11 @@
+{
+    "project": "Slitaz",
+    "projectweb": "http://www.slitaz.org/i18n.php",
+    "fileset": {
+        "Slitaz": {
+            "url": "http://www.slitaz.org/i18n.php",
+            "type": "crawl",
+            "pattern": "http://.*?/ca\\.po"
+        }
+    }
+}
