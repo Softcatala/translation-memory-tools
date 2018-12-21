@@ -51,6 +51,17 @@ Dependencies
 * Other requirements listed in requirements.txt
 
 
+Installation
+============
+
+On Debian::
+
+    sudo apt install python3 python3-pip gettext subversion git ruby bzr hunspell libhunspell-dev
+    sudo gem install i18n-translators-tools
+    cd translation-memory-tools/
+    sudo pip3 install -r requirements.txt
+
+
 Setting up before execution
 ===========================
 
@@ -87,7 +98,7 @@ repositories only).
 Applications
 ============
 
-Located at ``src`` subdirectory:
+Located at ``src`` subdirectory (scripts need to be run from that directory):
 
 builder.py (main program)
    Builds the translation memory: downloads files, merge them and builds the
