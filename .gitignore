@@ -18,3 +18,13 @@
 
 # Coverage
 .coverage.*
+
+# Logs
+builder-error.log
+builder.log
+
+# Temporary files
+src/gerrit-projects.json
+src/output/
+src/tmp/
+statistics.db3
