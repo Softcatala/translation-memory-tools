@@ -1,0 +1,12 @@
+{
+    "project": "Winscp",
+    "projectweb": "https://winscp.net/eng/translations.php",
+    "fileset": {
+        "Winscp": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates" : "msgctxt"
+        }
+    }
+}
+
