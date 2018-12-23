@@ -73,5 +73,16 @@ class ConvertFilesTest(unittest.TestCase):
         self._clean_pos(csv_dir)
         self.assertEquals(entries, 4)
 
+    def test_convert_ini_files_to_po(self):
+
+        ini_dir = path.dirname(path.realpath(__file__))
+        ini_dir += '/data/conversions/ini/'
+        convert = ConvertFiles(ini_dir, None)
+        convert.convert()
+
+        entries = self._get_po_entries(ini_dir)
+        self._clean_pos(ini_dir)
+        self.assertEquals(entries, 15)
+
 if __name__ == '__main__':
     unittest.main()

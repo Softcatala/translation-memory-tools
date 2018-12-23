@@ -107,8 +107,8 @@ class ConvertFiles():
             os.system(cmd.format(dirName, po_filename, prop_filename))
 
     def _execute_convert_ini_files_to_po(self, src, trg, dirName):
-        os.rename(src, '{0}/en.strings'.format(dirName))
-        os.rename(trg, '{0}/ca.strings'.format(dirName))
+        shutil.copyfile(src, '{0}/en.strings'.format(dirName))
+        shutil.copyfile(trg, '{0}/ca.strings'.format(dirName))
 
         filename = '{0}/strings-ca.po'.format(dirName)
         cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 '\
@@ -121,7 +121,7 @@ class ConvertFiles():
             logging.info('convert ini file: {0}'.format(inifile))
 
             # http://bugs.locamotion.org/show_bug.cgi?id=3148
-            # The rename operations can be removed when the issue is fixed
+            # The copy operations can be removed when the issue is fixed
 
             src = None
             filename = '{0}/en.ini'.format(dirName)
