@@ -1,0 +1,12 @@
+{
+    "project": "Scilab",
+    "projectweb": "https://www.scilab.org/",
+    "fileset": {
+        "Winscp": {
+            "url": "git://git.scilab.org/scilab",
+            "type": "git",
+            "pattern": ".*?ca_ES.po"
+        }
+    }
+}
+
