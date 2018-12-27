@@ -1,12 +1,17 @@
 {
-    "project": "VirtualBox", 
-    "projectweb": "https://www.softcatala.org/projectes/virtualbox/", 
-    "softcatala": true, 
+    "project": "VirtualBox",
+    "projectweb": "https://www.softcatala.org/projectes/virtualbox/",
+    "softcatala": true,
     "fileset": {
         "virtualbox": {
-            "url": "http://www.virtualbox.org/download/testcase/nls/4.2/VirtualBox_ca.ts", 
-            "type": "file", 
+            "url": "https://www.virtualbox.org/export/HEAD/vbox/trunk/src/VBox/Frontends/VirtualBox/nls/VirtualBox_ca.ts",
+            "type": "file",
             "target": "virtualbox-ca.ts"
+        },
+        "qt_ca": {
+            "url": "https://www.virtualbox.org/export/HEAD/vbox/trunk/src/VBox/Frontends/VirtualBox/nls/qt_ca.ts",
+            "type": "file",
+            "target": "qt_ca.ts"
         }
     }
 }
