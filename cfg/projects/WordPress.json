@@ -17,6 +17,16 @@
             "url": "https://translate.wordpress.org/projects/wp/dev/admin/network/ca/default/export-translations", 
             "type": "file", 
             "target": "wp-dev-admin-network-ca.po"
+        },
+        "wordpress-themes-twenty-sixteen": {
+            "url": "https://translate.wordpress.org/projects/wp-themes/twentysixteen/ca/default/export-translations",
+            "type": "file",
+            "target": "wp-themes-twenty-sixteen-ca.po"
+        },
+        "wordpress-themes-twenty-seventeen": {
+            "url": "https://translate.wordpress.org/projects/wp-themes/twentyseventeen/ca/default/export-translations",
+            "type": "file",
+            "target": "wp-themes-twenty-seventeen-ca.po"
         }
     }
 }
