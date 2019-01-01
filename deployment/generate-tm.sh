@@ -5,8 +5,15 @@ PROGRAMS=$ROOT/tm-git/src
 BUILDER=$PROGRAMS
 PROJECTS=$ROOT/tm-git/cfg/projects
 NEW_POS=$PROGRAMS/output
+# PUBLISHED directories are used to allow to publish the previous version if
+# we have been unable to fecth it.
+# This only works after the first sucesfully fetch when you have a previous
+# copy of the successful executions
+PUBLISHED_PO=$ROOT/translation-memories/po
+PUBLISHED_TMX=$ROOT/translation-memories/tmx
+BACKUP_DIR=$ROOT/previous
 
-copy_tm_files() {
+copy_successfully_downloaded_files() {
 
     cd $NEW_POS
     # Copy only new PO files
@@ -28,20 +35,19 @@ if [ "$#" -ne 1 ] ; then
     echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
     echo "Invalid number of parameters"
     exit
-fi 
-
-INTERMEDIATE_PO=$ROOT/translation-memories/po
-INTERMEDIATE_TMX=$ROOT/translation-memories/tmx
-BACKUP_DIR=$ROOT/previous
+fi
 
 # Catalan locale does not support thousand separator
 export LC_ALL=ast_ES.utf-8
+
+mkdir -p $PUBLISHED_PO
+mkdir -p $PUBLISHED_TMX
 
 # Copy existing PO files
 rm -r -f $BACKUP_DIR
 mkdir $BACKUP_DIR
 cd $BACKUP_DIR
-cp $INTERMEDIATE_PO/* $BACKUP_DIR
+cp $PUBLISHED_PO/* $BACKUP_DIR
 
 # Build new translation files
 cd $BUILDER
@@ -53,13 +59,13 @@ python builder.py -d
 python builder.py --all
 python builder.py --softcatala
 
-copy_tm_files "*.po" 200 $INTERMEDIATE_PO
+copy_successfully_downloaded_files "*.po" 200 $PUBLISHED_PO
 
 # Empty TMX files are 275 bytes (just the header)
 # Files with one short translation 450 bytes       
-copy_tm_files "*.tmx" 350 $INTERMEDIATE_TMX
+copy_successfully_downloaded_files "*.tmx" 350 $PUBLISHED_TMX
 
 # Update download file & index
 cd $PROGRAMS
-python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
+python download-creation.py -d $PUBLISHED_PO -t $PUBLISHED_TMX
 python index-creation.py -d $NEW_POS
