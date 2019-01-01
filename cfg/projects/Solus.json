@@ -3,12 +3,14 @@
     "projectweb": "https://solus-project.com/",
     "fileset": {
         "SC": {
-            "url": "https://www.transifex.com/solus-project/solus-sc/", 
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/solus-project/solus-sc/master/po/ca.po",
+            "type": "file",
+            "target": "sc-ca.po"
         },
         "BriskMenu": {
-            "url": "https://www.transifex.com/solus-project/brisk-menu/", 
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/solus-project/brisk-menu/master/po/ca.po",
+            "type": "file",
+            "target": "brisk-menu-ca.po"
         }
     }
 }
