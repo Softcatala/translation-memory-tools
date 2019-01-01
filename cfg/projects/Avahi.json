@@ -2,10 +2,10 @@
     "project": "Avahi", 
     "projectweb": "https://www.avahi.org/",
     "fileset": {
-        "appstream": {
-            "url": "https://www.transifex.com/projects/p/avahi",
-            "type": "transifex",
-            "pattern": ".*?ca.po"
+        "Avahi": {
+            "url": "https://raw.githubusercontent.com/lathiat/avahi/master/po/ca.po",
+            "type": "file",
+            "target": "avahi-ca.po"
         }
     }
 }
