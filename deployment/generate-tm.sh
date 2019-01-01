@@ -46,7 +46,7 @@ cp $INTERMEDIATE_PO/* $BACKUP_DIR
 # Build new translation files
 cd $BUILDER
 rm -f *.log
-rm -f -r output/
+rm -f -r $NEW_POS
 
 # Download new translation files
 python builder.py -d
@@ -62,4 +62,4 @@ copy_tm_files "*.tmx" 350 $INTERMEDIATE_TMX
 # Update download file & index
 cd $PROGRAMS
 python download-creation.py -d $INTERMEDIATE_PO -t $INTERMEDIATE_TMX
-python index-creation.py -d output/
+python index-creation.py -d $NEW_POS
