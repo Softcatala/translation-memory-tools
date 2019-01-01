@@ -5,7 +5,7 @@
         "friendica": {
             "url": "https://raw.githubusercontent.com/friendica/friendica/develop/view/lang/ca/messages.po",
             "type": "file",
-            "target": "fiendica-ca.po"
+            "target": "friendica-ca.po"
         }
     }
 }
