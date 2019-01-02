@@ -4,7 +4,7 @@ transifex-client
 pystache
 peewee
 hunspell
-translate-toolkit
+translate-toolkit==2.3.0
 lxml
 pyyaml
 #Version 1.5.0 android2po is need to be installed but executed in Python2
