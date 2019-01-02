@@ -107,13 +107,17 @@ class ConvertFiles():
             os.system(cmd.format(dirName, po_filename, prop_filename))
 
     def _execute_convert_ini_files_to_po(self, src, trg, dirName):
-        shutil.copyfile(src, '{0}/en.strings'.format(dirName))
-        shutil.copyfile(trg, '{0}/ca.strings'.format(dirName))
+        newsrc = '{0}/en.strings'.format(dirName)
+        newtrg = '{0}/ca.strings'.format(dirName)
+        shutil.copyfile(src, newsrc)
+        shutil.copyfile(trg, newtrg)
 
         filename = '{0}/strings-ca.po'.format(dirName)
         cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 '\
             '--personality=strings -o {1}'
         os.system(cmd.format(dirName, filename))
+        os.remove(newsrc)
+        os.remove(newtrg)
 
     def _convert_ini_files_to_po(self):
 
@@ -124,7 +128,7 @@ class ConvertFiles():
             trg = None
             for filename in ['ca.ini', 'CA.ini', 'ca_ES.ini']:
                 fullName = '{0}/{1}'.format(dirName, filename)
-                if os.path.isfile(fullName):
+                if filename in inifile:
                     trg = fullName
                     break
 
