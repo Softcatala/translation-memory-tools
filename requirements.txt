@@ -7,11 +7,8 @@ hunspell
 translate-toolkit==2.3.0
 lxml
 pyyaml
-#Version 1.5.0 android2po is need to be installed but executed in Python2
-#android2po
-
-# Fix android2po requirements.
-babel >= 1.0
+# Official version 1.5.0 has bugs for Python 3 fixed in github but not released yet
+git+https://github.com/miracle2k/android2po.git@5c1954b35f409a6977265467e97f0baf60ed4718
 
 # For server.
 Whoosh
