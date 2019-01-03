@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--Setup-->
+  <string name="setup_title">Benvingut a Briar</string>
+  <string name="setup_name_explanation">El vostre sobrenom etiquetarà tot el que publiqueu. Després de crear el compte ja no podreu canviar el sobrenom.</string>
+  <string name="setup_next">Següent</string>
+  <string name="setup_password_intro">Establiu una contrasenya</string>
+  <string name="setup_password_explanation">El compte de Briar s\'emmagatzema xifrat en el vostre dispositiu, no en el núvol. Si oblideu la contrasenya o desinstal·leu Briar no podreu recuperar el vostre compte ni les dades associades.\n\nTrieu una contrasenya llarga que sigui difícil d\'endevinar, com ara quatre paraules aleatòries o deu lletres, números i símbols aleatoris.</string>
+  <string name="setup_doze_title">Connexions en segon pla</string>
+  <string name="setup_doze_intro">Per rebre missatges Briar necessita estar connectat en segon pla.</string>
+  <string name="setup_doze_explanation">Per rebre missatges Briar necessita estar connectat en segon pla. Desactiveu les optimitzacions de la bateria per permetre que Briar resti sempre connectat.</string>
+  <string name="setup_doze_button">Permet connexions</string>
+  <string name="choose_nickname">Trieu el sobrenom</string>
+  <string name="choose_password">Trieu la contrasenya</string>
+  <string name="confirm_password">Confirmeu la contrasenya</string>
+  <string name="name_too_long">El nom és massa llarg</string>
+  <string name="password_too_weak">La contrasenya és massa feble</string>
+  <string name="passwords_do_not_match">Les contrasenyes no coincideixen</string>
+  <string name="create_account_button">Crea el compte</string>
+  <string name="more_info">Més informació</string>
+  <string name="don_t_ask_again">No tornis a preguntar-ho</string>
+  <string name="setup_huawei_text">Feu un toc sobre el botó següent i assegureu-vos de que Briar consta com a protegit a la pantalla «Aplicacions protegides».</string>
+  <string name="setup_huawei_button">Protegeix Briar</string>
+  <string name="setup_huawei_help">Si no afegiu Briar a la llista d\'aplicacions protegides, s\'evitarà que Briar s\'executi en segon pla.</string>
+  <string name="warning_dozed">%s no s\'ha pogut executar en segon pla</string>
+  <!--Login-->
+  <string name="enter_password">Contrasenya</string>
+  <string name="try_again">La contrasenya és incorrecta, torneu a escriure-la</string>
+  <string name="sign_in_button">Inicia la sessió</string>
+  <string name="forgotten_password">No recordo la contrasenya</string>
+  <string name="dialog_title_lost_password">Contrasenya perduda</string>
+  <string name="dialog_message_lost_password">El vostre compte de Briar s\'emmagatzema només en el vostre dispositiu i xifrat. La contrasenya, doncs, no es pot restablir. Voleu esborrar el compte i crear-ne un de nou?\n\nAtenció! Si esborreu el compte la vostra identitat, els contactes i els missatges antics es perdran per sempre.</string>
+  <string name="startup_failed_notification_title">Briar no s\'ha pogut iniciar</string>
+  <string name="startup_failed_notification_text">Feu un toc per obtenir més informació.</string>
+  <string name="startup_failed_activity_title">Error iniciant Briar</string>
+  <string name="startup_failed_db_error">Per alguna raó, la base de dades de Briar s\'ha corromput i no es pot adobar. El vostre compte, les dades i els contactes s\'han perdut. Malauradament, heu de reinstal·lar Briar o bé crear un nou compte triant l\'opció «No recordo la contrasenya» quan se us demani la contrasenya.</string>
+  <string name="startup_failed_data_too_old_error">El vostre compte fou creat amb una versió antiga de Briar i no es pot obrir amb la versió actual. O bé reinstal·leu la versió antiga o bé creeu un nou compte triant l\'opció «No recordo la contrasenya» quan se us demani la contrasenya.</string>
+  <string name="startup_failed_data_too_new_error">Aquesta versió de Briar és massa antiga. Actualitzeu Briar a la darrera versió i torneu a provar-ho.</string>
+  <string name="startup_failed_service_error">Briar no ha pogut engegar un connector imprescindible. La reinstal·lació de Briar acostuma a resoldre aquest problema. Tingueu en compte que si reinstal·leu, perdreu el vostre compte i les dades associades doncs Briar no usa servidors centrals per desar-les.</string>
+  <plurals name="expiry_warning">
+    <item quantity="one">Aquesta és una versió de prova de Briar. El vostre compte expira en %d dia i no es pot renovar.</item>
+    <item quantity="other">Aquesta és una versió de prova de Briar. El vostre compte caducarà en %d dies i no es podrà renovar.</item>
+  </plurals>
+  <string name="expiry_update">S\'ha allargat la data de caducitat d\'aquesta versió de test de Briar. Ara el vostre compte caducarà d\'aquí a %d dies.</string>
+  <string name="expiry_date_reached">Aquesta versió de Briar ha caducat.\nGràcies per haver-lo provat!</string>
+  <string name="download_briar">Per continuar fent servir Briar, descarregueu-vos la versió 1.0.</string>
+  <string name="create_new_account">Haureu de crear un compte nou, però podeu utilitzar el mateix sobrenom.</string>
+  <string name="download_briar_button">Descarrega Briar 1.0</string>
+  <string name="startup_open_database">S\'està desxifrant la base de dades...</string>
+  <string name="startup_migrate_database">S\'està actualitzant la base de dades...</string>
+  <string name="startup_compact_database">Compactant la base de dades...</string>
+  <!--Navigation Drawer-->
+  <string name="nav_drawer_open_description">Obre el calaix de navegació</string>
+  <string name="nav_drawer_close_description">Tanca el calaix de navegació</string>
+  <string name="contact_list_button">Contactes</string>
+  <string name="groups_button">Grups privats</string>
+  <string name="forums_button">Fòrums</string>
+  <string name="blogs_button">Blogs</string>
+  <!--This is part of the main menu. The app will be locked when this is tapped.-->
+  <string name="lock_button">Bloqueja l\'aplicació</string>
+  <string name="settings_button">Configuració</string>
+  <string name="sign_out_button">Tanca la sessió </string>
+  <!--Transports-->
+  <string name="transport_tor">Internet</string>
+  <string name="transport_bt">Bluetooth</string>
+  <string name="transport_lan">Wi-Fi</string>
+  <!--Notifications-->
+  <string name="reminder_notification_title">Heu sortit de Briar</string>
+  <string name="reminder_notification_text">Toqueu per a reiniciar la sessió.</string>
+  <string name="reminder_notification_channel_title">Recordatori d\'inici de sessió de Briar</string>
+  <string name="reminder_notification_dismiss">Descarta</string>
+  <string name="ongoing_notification_title">Sessió iniciada</string>
+  <string name="ongoing_notification_text">Toca per a obrir Briar.</string>
+  <plurals name="private_message_notification_text">
+    <item quantity="one">Missatge privat nou.</item>
+    <item quantity="other">%d missatges privats nous.</item>
+  </plurals>
+  <plurals name="group_message_notification_text">
+    <item quantity="one">Missatge de grup nou.</item>
+    <item quantity="other">%d missatges de grup nous</item>
+  </plurals>
+  <plurals name="forum_post_notification_text">
+    <item quantity="one"> Un nou missatge del fòrum.</item>
+    <item quantity="other">%d apunts nous al fòrum.</item>
+  </plurals>
+  <plurals name="blog_post_notification_text">
+    <item quantity="one">Una nova publicacions al bloc.</item>
+    <item quantity="other">%d apunts nous al blog.</item>
+  </plurals>
+  <!--Misc-->
+  <string name="now">Ara</string>
+  <string name="show">Mostra</string>
+  <string name="hide">Oculta</string>
+  <string name="ok">D\'acord</string>
+  <string name="cancel">Cancel·la</string>
+  <string name="got_it">D\'acord</string>
+  <string name="delete">Suprimeix</string>
+  <string name="accept">Accepta</string>
+  <string name="decline">Refusa</string>
+  <string name="options">Opcions</string>
+  <string name="online">En línia</string>
+  <string name="offline">Fora de línia</string>
+  <string name="send">Envia</string>
+  <string name="allow">Permet</string>
+  <string name="open">Obre</string>
+  <string name="no_data">Sense dades</string>
+  <string name="ellipsis">...</string>
+  <string name="text_too_long">El text és massa llarg</string>
+  <string name="show_onboarding">Mostra el diàleg d\'ajuda.</string>
+  <string name="fix">Corregeix</string>
+  <string name="help">Ajuda</string>
+  <string name="sorry">Ens sap greu</string>
+  <!--Contacts and Private Conversations-->
+  <string name="no_contacts">No hi ha cap contacte per mostrar</string>
+  <string name="no_contacts_action">Toqueu la icona + per afegir un contacte</string>
+  <string name="date_no_private_messages">Sense missatges.</string>
+  <string name="no_private_messages">No hi ha cap missatge</string>
+  <string name="message_hint">Escriviu un missatge</string>
+  <string name="set_contact_alias">Canvia el nom del contacte</string>
+  <string name="set_contact_alias_hint">Nom del contacte</string>
+  <string name="set_alias_button">Canvia</string>
+  <string name="delete_contact">Suprimeix aquest contacte</string>
+  <string name="dialog_title_delete_contact">Confirmeu la supressió del contacte</string>
+  <string name="dialog_message_delete_contact">Segur que voleu suprimir aquest contacte i tots els missatges que us heu intercanviat?</string>
+  <string name="contact_deleted_toast">S\'ha suprimit el contacte</string>
+  <!--This is shown in the action bar when opening an image in fullscreen that the user sent-->
+  <!--Adding Contacts-->
+  <string name="add_contact_title">Afegiu un contacte</string>
+  <string name="face_to_face">Heu de coincidir en el mateix lloc amb la persona que voleu afegir com a contacte.\n\nD\'aquesta manera evitareu que algú suplanti les vostres identitats o pugui llegir els vostres missatges en el futur.</string>
+  <string name="continue_button">Continua</string>
+  <string name="try_again_button">Torna-ho a provar</string>
+  <string name="waiting_for_contact_to_scan">Esperant que el vostre contacte escanegi i es connecti\u2026</string>
+  <string name="exchanging_contact_details">Intercanviant els detalls del contacte\u2026</string>
+  <string name="contact_added_toast">S\'ha afegit el contacte %s</string>
+  <string name="contact_already_exists">El contacte %s ja existia</string>
+  <string name="qr_code_invalid">El codi QR és invàlid</string>
+  <string name="qr_code_too_old">El codi QR que heu escanejat prové d\'una versió antiga de %s.\n\nDemaneu al vostre contacte que actualitzi a l\'última versió i torneu a provar-ho.</string>
+  <string name="qr_code_too_new">El codi QR que heu escanejat prové d\'una versió nova de %s.\n\nActualitzeu a l\'última versió i torneu a provar-ho.</string>
+  <string name="camera_error">Error de la càmera</string>
+  <string name="connecting_to_device">Connectant-se al dispositiu\u2026</string>
+  <string name="authenticating_with_device">Autenticant-se amb el dispositiu\u2026</string>
+  <string name="connection_error_title">No ha pogut connectar-se al vostre contacte</string>
+  <string name="connection_error_explanation">Comproveu que esteu connectats a la mateixa xarxa Wi-Fi.</string>
+  <string name="connection_error_feedback">Si aquest problema persisteix, <a href="feedback">envieu-nos un comentari</a> per ajudar-nos a millorar l\'aplicació.</string>
+  <!--Introductions-->
+  <string name="introduction_onboarding_title">Presenteu als vostres contactes</string>
+  <string name="introduction_onboarding_text">Podeu presentar als vostres contactes entre si, de manera que no necessitin trobar-se en persona per a relacionar-se a través de Briar.</string>
+  <string name="introduction_menu_item">Presenta-li un altre contacte</string>
+  <string name="introduction_activity_title">Trieu un contacte</string>
+  <string name="introduction_not_possible">Ja teniu una presentació en marxa entre aquests contactes. Si us plau, primer deixeu que aquesta presentació acabi. Si vós o els contactes presentats sovint esteu desconnectats, la presentació pot trigar temps.</string>
+  <string name="introduction_message_title">Presentació de contactes</string>
+  <string name="introduction_message_hint">Afegiu una nota (opcional)</string>
+  <string name="introduction_button">Presenta\'ls</string>
+  <string name="introduction_sent">S\'ha enviat la vostra presentació.</string>
+  <string name="introduction_error">Hi ha hagut un error en presentar els contactes.</string>
+  <string name="introduction_response_error">Error en respondre a la presentació</string>
+  <string name="introduction_request_sent">Heu demanat fer les presentacions per a que %1$s i %2$s es coneguin.</string>
+  <string name="introduction_request_received">%1$s us vol presentar a %2$s. Voleu afegir a%2$s a la vostra llista de contactes?</string>
+  <string name="introduction_request_exists_received">%1$s us vol presentar a %2$s, però ja teniu a %2$s a la llista de contactes. Atès que segurament %1$s no ho sabia, encara el podeu contestar:</string>
+  <string name="introduction_request_answered_received">%1$s us vol presentar a %2$s.</string>
+  <string name="introduction_response_accepted_sent">Heu acceptat conèixer a %1$s.</string>
+  <string name="introduction_response_accepted_sent_info">Quan %1$s també hagi acceptat la presentació, s\'afegirà als vostres contactes. Això pot trigar un temps.</string>
+  <string name="introduction_response_declined_sent">Heu refusat conèixer a %1$s.</string>
+  <string name="introduction_response_accepted_received">%1$s ha acceptat conèixer a %2$s.</string>
+  <string name="introduction_response_declined_received">%1$s ha refusat conèixer a %2$s.</string>
+  <string name="introduction_response_declined_received_by_introducee">%1$s diu que %2$s ha refusat conèixer-lo.</string>
+  <plurals name="introduction_notification_text">
+    <item quantity="one">S\'ha afegit un nou contacte.</item>
+    <item quantity="other">S\'han afegit %d nous contactes.</item>
+  </plurals>
+  <!--Private Groups-->
+  <string name="groups_list_empty">No hi ha cap grup per mostrar</string>
+  <string name="groups_list_empty_action">Toqueu la icona + per crear un grup o demaneu als vostres contactes que us afegeixin als seus grups</string>
+  <string name="groups_created_by">Creat per %s</string>
+  <plurals name="messages">
+    <item quantity="one">1%d missatge</item>
+    <item quantity="other">%d missatges</item>
+  </plurals>
+  <string name="groups_group_is_empty">Aquest grup està buit.</string>
+  <string name="groups_group_is_dissolved">Aquest grup s\'ha dissolt.</string>
+  <string name="groups_remove">Suprimeix</string>
+  <string name="groups_create_group_title">Creeu un grup privat</string>
+  <string name="groups_create_group_button">Crea el grup</string>
+  <string name="groups_create_group_invitation_button">Envia una invitació</string>
+  <string name="groups_create_group_hint">Trieu un nom per al vostre grup privat</string>
+  <string name="groups_invitation_sent">S\'ha enviat la invitació del grup</string>
+  <string name="groups_message_sent">Missatge enviat</string>
+  <string name="groups_member_list">Llista de membres</string>
+  <string name="groups_invite_members">Convida a nous membres</string>
+  <string name="groups_member_created_you">Heu creat el grup</string>
+  <string name="groups_member_created">%s ha creat el grup</string>
+  <string name="groups_member_joined_you">Us heu afegit al grup</string>
+  <string name="groups_member_joined">%s s\'ha afegit al grup</string>
+  <string name="groups_leave">Abandona el grup</string>
+  <string name="groups_leave_dialog_title">Confirmeu que abandoneu el grup</string>
+  <string name="groups_leave_dialog_message">Segur que voleu abandonar aquest grup?</string>
+  <string name="groups_dissolve">Dissol el grup</string>
+  <string name="groups_dissolve_dialog_title">Confirmeu la dissolució del grup</string>
+  <string name="groups_dissolve_dialog_message">Esteu segur que voleu dissoldre aquest grup?\n\nSi el dissoleu cap altre membre podrà continuar la conversa i alguns membres pot ser que no rebin els darrers missatges.</string>
+  <string name="groups_dissolve_button">Dissol</string>
+  <string name="groups_dissolved_dialog_title">S\'ha dissolt el grup</string>
+  <string name="groups_dissolved_dialog_message">El creador del grup l\'ha dissolt.\n\nJa no hi podeu escriure més. És possible que no hàgeu rebut algun dels darrers missatges que s\'hi havien escrit.</string>
+  <!--Private Group Invitations-->
+  <string name="groups_invitations_title">Convideu a formar part del grup</string>
+  <string name="groups_invitations_invitation_sent">Heu convidat a %1$s a afegir-se al grup «%2$s».</string>
+  <string name="groups_invitations_invitation_received">%1$s us ha convidat a afegir-vos al grup «%2$s».</string>
+  <string name="groups_invitations_joined">Us heu afegit al grup</string>
+  <string name="groups_invitations_declined">Ha refusat afegir-se al grup</string>
+  <plurals name="groups_invitations_open">
+    <item quantity="one">%d invitació a un grup obert</item>
+    <item quantity="other">%d invitacions a grups oberts</item>
+  </plurals>
+  <string name="groups_invitations_response_accepted_sent">Heu acceptat afegir-vos al grup per invitació de %s.</string>
+  <string name="groups_invitations_response_declined_sent">Heu refusat afegir-vos al grup per invitació de %s.</string>
+  <string name="groups_invitations_response_accepted_received">%s ha decidit afegir-se al grup.</string>
+  <string name="groups_invitations_response_declined_received">%s ha refusat afegir-se al grup.</string>
+  <string name="sharing_status_groups">Només el creador del grup pot convidar a nous membres. Tot seguit hi ha la llista dels membres del grup.</string>
+  <!--Private Groups Revealing Contacts-->
+  <string name="groups_reveal_contacts">Revela els contactes</string>
+  <string name="groups_reveal_dialog_message">Podeu triar si voleu que es mostrin els contactes a tots els membres actuals i futurs d\'aquest grup.\n\nLa revelació dels contactes fa que la vostra connexió al grup sigui més ràpida i més fiable, ja que podeu comunicar-vos amb els contactes revelats, fins i tot quan el creador del grup està fora de línia.</string>
+  <string name="groups_reveal_visible">La relació de contactes és visible pel grup</string>
+  <string name="groups_reveal_visible_revealed_by_us">La relació de contactes és visible pel grup (revelada per vós)</string>
+  <string name="groups_reveal_visible_revealed_by_contact">La relació de contactes és visible pel grup (revelada per %s)</string>
+  <string name="groups_reveal_invisible">La relació de contactes no és visible pel grup</string>
+  <!--Forums-->
+  <string name="no_forums">No hi ha cap fòrum per mostrar</string>
+  <string name="no_forums_action">Toqueu la icona + per crear un fòrum o demaneu als vostres contactes que us afegeixin als seus fòrums</string>
+  <string name="create_forum_title">Creeu un fòrum</string>
+  <string name="choose_forum_hint">Trieu un nom per al fòrum</string>
+  <string name="create_forum_button">Crea el fòrum</string>
+  <string name="forum_created_toast">S\'ha creat el fòrum</string>
+  <string name="no_forum_posts">No hi ha cap apunt per mostrar</string>
+  <string name="no_posts">No hi ha cap apunt</string>
+  <plurals name="posts">
+    <item quantity="one">%d publicacio</item>
+    <item quantity="other">%d apunts</item>
+  </plurals>
+  <string name="forum_new_entry_posted">S\'ha publicat l\'apunt al fòrum</string>
+  <string name="forum_new_message_hint">Apunt nou</string>
+  <string name="forum_message_reply_hint">Resposta nova</string>
+  <string name="btn_reply">Respon</string>
+  <string name="forum_leave">Abandona el fòrum</string>
+  <string name="dialog_title_leave_forum">Confirmeu l\'abandonament del Fòrum</string>
+  <string name="dialog_message_leave_forum">Segur que voleu abandonar aquest fòrum?\n\nEls contactes amb els que heu compartit aquest fòrum poden deixar de rebre les actualitzacions.</string>
+  <string name="dialog_button_leave">Abandona</string>
+  <string name="forum_left_toast">Heu abandonat el fòrum</string>
+  <!--Forum Sharing-->
+  <string name="forum_share_button">Comparteix el fòrum</string>
+  <string name="contacts_selected">Contactes seleccionats</string>
+  <string name="activity_share_toolbar_header">Trieu els contactes</string>
+  <string name="no_contacts_selector">No hi ha cap contacte per mostrar</string>
+  <string name="no_contacts_selector_action">Torneu aquí després d\'afegir un contacte</string>
+  <string name="forum_shared_snackbar">Fòrum compartit amb els contactes seleccionats</string>
+  <string name="forum_share_message">Afegiu una nota (opcional)</string>
+  <string name="forum_share_error">S\'ha produït un error en compartir aquest fòrum.</string>
+  <string name="forum_invitation_received">%1$s vol compartir el fòrum «%2$s» amb vós.</string>
+  <string name="forum_invitation_sent">Heu convidat a%2$s a compartit el fòrum «%1$s».</string>
+  <string name="forum_invitations_title">Convideu a participar al fòrum</string>
+  <string name="forum_invitation_exists">Ja heu acceptat una invitació a aquest fòrum.\n\nAcceptar més invitacions farà que la vostra connexió amb el fòrum sigui més ràpida i fiable.</string>
+  <string name="forum_joined_toast">Us heu afegit al fòrum</string>
+  <string name="forum_declined_toast">Heu refusat la invitació</string>
+  <string name="shared_by_format">Compartit per %s</string>
+  <string name="forum_invitation_already_sharing">Ja l\'esteu compartint</string>
+  <string name="forum_invitation_response_accepted_sent">Heu acceptat la invitació al fòrum enviada per %s.</string>
+  <string name="forum_invitation_response_declined_sent">Heu refusat la invitació al fòrum enviada per %s.</string>
+  <string name="forum_invitation_response_accepted_received">%s ha acceptat la invitació al fòrum.</string>
+  <string name="forum_invitation_response_declined_received">%s ha rebutjat la invitació al fòrum.</string>
+  <string name="sharing_status">Estat de la compartició</string>
+  <string name="sharing_status_forum">Qualsevol membre d\'un fòrum pot compartir-lo amb els seus contactes. Esteu compartint aquest fòrum amb els següents contactes. Poden haver-hi membres del fòrum que no pugueu veure.</string>
+  <string name="shared_with">Compartit amb %1$d (%2$d en línia)</string>
+  <plurals name="forums_shared">
+    <item quantity="one">%d fòrum compartit per contactes</item>
+    <item quantity="other">%d fòrums compartits per contactes</item>
+  </plurals>
+  <string name="nobody">Ningú</string>
+  <!--Blogs-->
+  <string name="blogs_other_blog_empty_state">No hi ha cap apunt per mostrar</string>
+  <string name="read_more">llegeix-ne més</string>
+  <string name="blogs_write_blog_post">Escriviu un apunt al blog</string>
+  <string name="blogs_write_blog_post_body_hint">Escriviu el vostre apunt al blog</string>
+  <string name="blogs_publish_blog_post">Publica</string>
+  <string name="blogs_blog_post_created">S\'ha publicat l\'apunt al blog</string>
+  <string name="blogs_blog_post_received">S\'ha rebut un nou apunt al blog</string>
+  <string name="blogs_blog_post_scroll_to">Desplaça</string>
+  <string name="blogs_feed_empty_state">No hi ha cap apunt per mostrar</string>
+  <string name="blogs_feed_empty_state_action">Aquí hi trobareu els apunts dels vostres contactes i dels blocs subscrits. \n\nToqueu la icona de la ploma per escriure un apunt</string>
+  <string name="blogs_remove_blog">Suprimeix el blog</string>
+  <string name="blogs_remove_blog_dialog_message">Segur que voleu suprimir aquest blog?\n\nEls apunts publicats s\'esborraran del vostre dispositiu però no del d\'altres persones.\n\nEls contactes amb els que hàgeu compartit aquest blog poden deixar de rebre les actualitzacions.</string>
+  <string name="blogs_remove_blog_ok">Suprimeix</string>
+  <string name="blogs_blog_removed">S\'ha suprimit el blog</string>
+  <string name="blogs_reblog_comment_hint">Afegiu una nota (opcional)</string>
+  <string name="blogs_reblog_button">Rebloga</string>
+  <!--Blog Sharing-->
+  <string name="blogs_sharing_share">Compartiu el blog</string>
+  <string name="blogs_sharing_error">S\'ha produït un error en compartir aquest blog.</string>
+  <string name="blogs_sharing_button">Compartiu el blog</string>
+  <string name="blogs_sharing_snackbar">S\'ha compartit el blog amb els contactes seleccionats</string>
+  <string name="blogs_sharing_response_accepted_sent">Heu acceptat la invitació al blog de %s.</string>
+  <string name="blogs_sharing_response_declined_sent">Heu refusat la invitació al blog de %s.</string>
+  <string name="blogs_sharing_response_accepted_received">%s ha acceptat la invitació al blog.</string>
+  <string name="blogs_sharing_response_declined_received">%s ha refusat la invitació al blog.</string>
+  <string name="blogs_sharing_invitation_received">%1$s ha compartit el blog «%2$s» amb vós.</string>
+  <string name="blogs_sharing_invitation_sent">Heu compartit el blog «%1$s» amb %2$s.</string>
+  <string name="blogs_sharing_invitations_title">Convideu veure el blog</string>
+  <string name="blogs_sharing_joined_toast">Us heu subscrit al blog</string>
+  <string name="blogs_sharing_declined_toast">Heu refusat la invitació</string>
+  <string name="sharing_status_blog">Qualsevol membre subscrit a un blog el pot compartir amb els seus contactes. Esteu compartint aquest blog amb els següents contactes. Poden haver-hi altres membres subscrits que no veieu.</string>
+  <!--RSS Feeds-->
+  <string name="blogs_rss_feeds_import">Subscriure\'s al canal de notícies RSS</string>
+  <string name="blogs_rss_feeds_import_button">Subscriu-me</string>
+  <string name="blogs_rss_feeds_import_hint">Escriviu l\'URL del canal de notícies RSS</string>
+  <string name="blogs_rss_feeds_import_error">Ens sap greu! S\'ha produït un error en subscriure-us al vostre canal de notícies.</string>
+  <string name="blogs_rss_feeds_manage">Gestiona els canals de notícies RSS</string>
+  <string name="blogs_rss_feeds_manage_imported">Importat:</string>
+  <string name="blogs_rss_feeds_manage_author">Autor:</string>
+  <string name="blogs_rss_feeds_manage_updated">Darrera actualització:</string>
+  <string name="blogs_rss_remove_feed">Suprimeix la subscripció al canal de notícies</string>
+  <string name="blogs_rss_remove_feed_dialog_message">Segur que voleu suprimir la subscripció a aquest canal de notícies?\n\nLes notícies d\'aquest canal s\'eliminaran del vostre dispositiu però no del d\'altres persones.\n\nEls contactes amb els que hàgeu compartit aquest canal poden deixar de rebre les actualitzacions.</string>
+  <string name="blogs_rss_remove_feed_ok">Suprimeix la subscripció</string>
+  <string name="blogs_rss_feeds_manage_delete_error">La subscripció al canal de notícies no s\'ha pogut suprimir.</string>
+  <string name="blogs_rss_feeds_manage_empty_state">No hi ha cap notícia per mostrar\n\nFeu un toc sobre la icona + per subscriure-us a un canal de notícies</string>
+  <string name="blogs_rss_feeds_manage_error">S\'ha produït un problema en actualitzar els vostres canals de notícies. Torneu-ho a provar més endavant.</string>
+  <!--Settings Display-->
+  <string name="pref_language_title">Llengua i regió</string>
+  <string name="pref_language_changed">L\'efecte d\'aquest canvi només l\'apreciareu després de reiniciar Briar. Si us plau, tanqueu la sessió i reinicieu Briar.</string>
+  <string name="pref_language_default">Valor per defecte del sistema</string>
+  <string name="display_settings_title">Visualització</string>
+  <string name="pref_theme_title">Tema</string>
+  <string name="pref_theme_light">Clar</string>
+  <string name="pref_theme_dark">Fosc</string>
+  <string name="pref_theme_auto">Automàtic (segons l\'hora)</string>
+  <string name="pref_theme_system">Valor per defecte del sistema</string>
+  <!--Settings Network-->
+  <string name="network_settings_title">Xarxes</string>
+  <string name="bluetooth_setting">Connecta via bluetooth</string>
+  <string name="bluetooth_setting_enabled">Sempre que hi hagi contactes propers</string>
+  <string name="bluetooth_setting_disabled">Només quan s\'afegeixen contactes</string>
+  <string name="tor_network_setting">Connecta a través d\'Internet (Tor)</string>
+  <string name="tor_network_setting_automatic">Automàtic basat en la ubicació</string>
+  <string name="tor_network_setting_without_bridges">Usa Tor sense ponts</string>
+  <string name="tor_network_setting_with_bridges">Usa Tor amb ponts</string>
+  <string name="tor_network_setting_never">No et connectis</string>
+  <!--How and when Tor will connect after Automatic: E.g. Don't connect (in China) or Use Tor with bridges (in Belarus)-->
+  <string name="tor_network_setting_summary">Automàtic: %1$s (en %2$s)</string>
+  <string name="tor_mobile_data_title">Usa dades mòbils</string>
+  <!--Settings Security and Panic-->
+  <string name="security_settings_title">Seguretat</string>
+  <string name="pref_lock_title">Bloqueig de l\'aplicació</string>
+  <string name="pref_lock_summary">Usa el bloqueig de pantalla del dispositiu per protegir Briar mentre inicieu la sessió</string>
+  <string name="pref_lock_disabled_summary">Per utilitzar aquesta funció, configureu el bloqueig de pantalla en el vostre dispositiu</string>
+  <string name="pref_lock_timeout_title">Temps d\'inactivitat per al bloqueig</string>
+  <!--The %s placeholder is replaced with the following time spans, e.g. 5 Minutes, 1 Hour-->
+  <string name="pref_lock_timeout_summary">Briar es bloquejarà automàticament després de %s de no usar-se.</string>
+  <!--Will be shown in a list of lock times. Should fit into the %s of "automatically lock it after %s"-->
+  <string name="pref_lock_timeout_1">1 minut</string>
+  <!--Will be shown in a list of lock times. Should fit into the %s of "automatically lock it after %s"-->
+  <string name="pref_lock_timeout_5">5 minuts</string>
+  <!--Will be shown in a list of lock times. Should fit into the %s of "automatically lock it after %s"-->
+  <string name="pref_lock_timeout_15">15 minuts</string>
+  <!--Will be shown in a list of lock times. Should fit into the %s of "automatically lock it after %s"-->
+  <string name="pref_lock_timeout_30">30 minuts</string>
+  <!--Will be shown in a list of lock times. Should fit into the %s of "automatically lock it after %s"-->
+  <string name="pref_lock_timeout_60">1 hora</string>
+  <string name="pref_lock_timeout_never">Mai</string>
+  <string name="pref_lock_timeout_never_summary">No bloquegis mai Briar automàticament</string>
+  <string name="change_password">Canvia la contrasenya</string>
+  <string name="current_password">Contrasenya actual</string>
+  <string name="choose_new_password">Contrassenya nova</string>
+  <string name="confirm_new_password">Confirmació de la contrasenya nova</string>
+  <string name="password_changed">Heu canviat la contrasenya.</string>
+  <string name="panic_setting">Configuració del botó del pànic</string>
+  <string name="panic_setting_title">Botó de pànic</string>
+  <string name="panic_setting_hint">Configureu com reaccionarà Briar quan feu servir el botó de pànic</string>
+  <string name="panic_app_setting_title">Aplicació de botó de pànic</string>
+  <string name="unknown_app">una aplicació desconeguda</string>
+  <string name="panic_app_setting_summary">No s\'ha definit cap aplicació</string>
+  <string name="panic_app_setting_none">Cap</string>
+  <string name="dialog_title_connect_panic_app">Confirmeu l\'aplicació de pànic</string>
+  <string name="dialog_message_connect_panic_app">Segur que voleu permetre que %1$s desencadeni accions destructives a conseqüència del botó de pànic?</string>
+  <string name="panic_setting_destructive_action">Accions destructives</string>
+  <string name="panic_setting_signout_title">Tanca la sessió</string>
+  <string name="panic_setting_signout_summary">Tanca la sessió de Briar si es prem un botó de pànic</string>
+  <string name="purge_setting_title">Esborreu el compte</string>
+  <string name="purge_setting_summary">Suprimeix el compte de Briar si es prem el botó de pànic. Atenció: En aquest cas, s\'eliminarien permanentment les vostres identitats, contactes i missatges</string>
+  <string name="uninstall_setting_title">Desinstal·leu Briar</string>
+  <string name="uninstall_setting_summary">Això requeria la confirmació manual malgrat ser en una situació de pànic</string>
+  <!--Settings Notifications-->
+  <string name="notification_settings_title">Notificacions</string>
+  <string name="notify_sign_in_title">Recorda\'m que iniciï la sessió</string>
+  <string name="notify_sign_in_summary">Mostra\'m un recordatori quan s\'inicii el telèfon o s\'actualitzi l\'aplicació</string>
+  <string name="notify_private_messages_setting_title">Missatges privats</string>
+  <string name="notify_private_messages_setting_summary">Mostra avisos pels missatges privats</string>
+  <string name="notify_private_messages_setting_summary_26">Configura els avisos pels missatges privats</string>
+  <string name="notify_group_messages_setting_title">Missatges dels grups</string>
+  <string name="notify_group_messages_setting_summary">Mostra avisos pels missatges dels grups</string>
+  <string name="notify_group_messages_setting_summary_26">Configura els avisos pels missatges dels grups</string>
+  <string name="notify_forum_posts_setting_title">Apunts del fòrum</string>
+  <string name="notify_forum_posts_setting_summary">Mostra avisos pels apunts del fòrum</string>
+  <string name="notify_forum_posts_setting_summary_26">Configura els avisos pels apunts dels fòrums</string>
+  <string name="notify_blog_posts_setting_title">Apunts als blogs</string>
+  <string name="notify_blog_posts_setting_summary">Mostra avisos pels apunts als blogs</string>
+  <string name="notify_blog_posts_setting_summary_26">Configura els avisos pels apunts als blogs</string>
+  <string name="notify_vibration_setting">Vibra</string>
+  <string name="notify_sound_setting">So</string>
+  <string name="notify_sound_setting_default">So d\'avís predeterminat</string>
+  <string name="notify_sound_setting_disabled">Cap</string>
+  <string name="choose_ringtone_title">Trieu el so d\'avís</string>
+  <string name="cannot_load_ringtone">No s\'ha pogut carregar el so d\'avís</string>
+  <!--Settings Feedback-->
+  <string name="feedback_settings_title">Comentaris</string>
+  <string name="send_feedback">Envieu comentaris</string>
+  <!--Link Warning-->
+  <string name="link_warning_title">Avís d\'enllaç</string>
+  <string name="link_warning_intro">L\'enllaç s\'obrirà amb una aplicació externa.</string>
+  <string name="link_warning_text">Això podria usar-se per a identificar-vos. Penseu si us en refieu prou de la persona que us ha enviat l\'enllaç. Avalueu si us convindria obrir-lo amb un navegador que faciliti l\'anonimat com Orfox.</string>
+  <string name="link_warning_open_link">Obre l\'enllaç</string>
+  <!--Crash Reporter-->
+  <string name="crash_report_title">Informe de fallida de Briar</string>
+  <string name="briar_crashed">Ens sap greu, Briar s\'ha tancat inesperadament.</string>
+  <string name="not_your_fault">Això no és culpa vostra.</string>
+  <string name="please_send_report">Ajudi\'ns a construir un Briar millor enviant-nos un informe de fallida.</string>
+  <string name="report_is_encrypted">Us garantim que l\'informe es xifra i s\'envia de manera segura.</string>
+  <string name="feedback_title">Comentaris</string>
+  <string name="describe_crash">Descriviu el que hi ha succeït (opcional)</string>
+  <string name="enter_feedback">Escriviu els vostres comentaris</string>
+  <string name="optional_contact_email">La vostra adreça de correu (opcional)</string>
+  <string name="include_debug_report_crash">Inclou dades anònimes sobre la fallida</string>
+  <string name="include_debug_report_feedback">Inclou dades anònimes sobre el dispositiu</string>
+  <string name="could_not_load_report_data">No s\'han pogut carregar les dades de l\'informe.</string>
+  <string name="send_report">Envia l\'informe</string>
+  <string name="close">Tanca</string>
+  <string name="dev_report_saved">S\'ha desat l\'informe. Se us enviarà la propera vegada que inicieu sessió a Briar.</string>
+  <!--Sign Out-->
+  <string name="progress_title_logout">S\'està tancant la sessió de Briar...</string>
+  <!--Screen Filters & Tapjacking-->
+  <string name="screen_filter_title">S\'ha detectat superposició de la pantalla</string>
+  <string name="screen_filter_body">Una altra aplicació es troba damunt de Briar. Per protegir la vostra seguretat, Briar no respondrà a les pulsacions quan una altra aplicació s\'hi hagi sobreposat.\n\nLes següents aplicacions poden estar sobreposades a Briar:\n\n%1$s</string>
+  <string name="screen_filter_allow">Permet que aquestes aplicacions se sobreposin a Briar</string>
+  <!--Permission Requests-->
+  <string name="permission_camera_title">Permís de la càmera</string>
+  <string name="permission_camera_request_body">Per escanejar el codi QR, Briar necessita accedir a la càmera.</string>
+  <string name="permission_location_title">Permís d\'accés a l\'ubicació</string>
+  <string name="permission_location_request_body">Per trobar dispositius Bluetooth, Briar necessita la vostra ubicació.\n\nBriar no guarda la vostra ubicació ni la comparteix amb ningú.</string>
+  <string name="permission_camera_location_title">Permís d\'accés a la càmera i l\'ubicació</string>
+  <string name="permission_camera_location_request_body">Per escanejar el codi QR, Briar necessita accedir a la càmera.\n\nPer trobar dispositius Bluetooth, Briar necessita la vostra ubicació.\n\nBriar no guarda la vostra ubicació ni la comparteix amb ningú.</string>
+  <string name="permission_camera_denied_body">Heu denegat l\'accés a la càmera però per afegir contactes cal utilitzar la càmera.\n\nRecomanem que permeteu l\'accés a la càmera.</string>
+  <string name="qr_code">Codi QR</string>
+  <string name="show_qr_code_fullscreen">Mostra el codi QR a pantalla completa</string>
+  <!--App Locking-->
+  <string name="lock_unlock">Desbloqueja Briar</string>
+  <string name="lock_unlock_verbose">Introduïu el PIN, el patró o la contrasenya del vostre dispositiu per desbloquejar Briar</string>
+  <string name="lock_unlock_fingerprint_description">Toqueu el sensor d\'empremtes amb el dit enregistrat per continuar</string>
+  <string name="lock_unlock_password">Usa la contrasenya</string>
+  <string name="lock_is_locked">Briar està bloquejat</string>
+  <string name="lock_tap_to_unlock">Toqueu per desbloquejar-lo</string>
+  <!--Screenshots-->
+  <!--This is a name to be used in screenshots. Feel free to change it to a local name.-->
+  <string name="screenshot_alice">Alice</string>
+  <!--This is a name to be used in screenshots. Feel free to change it to a local name.-->
+  <string name="screenshot_bob">Bob</string>
+  <!--This is a name to be used in screenshots. Feel free to change it to a local name.-->
+  <string name="screenshot_carol">Carol</string>
+  <!--This is a message to be used in screenshots. Please use the same translation for Bob!-->
+  <string name="screenshot_message_1">Hola Bob!</string>
+  <!--This is a message to be used in screenshots. Please use the same translation for Alice!-->
+  <string name="screenshot_message_2">Hola Alice! Gràcies per recomanar-me Briar!</string>
+  <!--This is a message to be used in screenshots.-->
+  <string name="screenshot_message_3">De res, espero que t\'agradi 😀</string>
+</resources>

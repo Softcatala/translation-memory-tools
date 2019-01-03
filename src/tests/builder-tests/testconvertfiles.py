@@ -84,5 +84,17 @@ class ConvertFilesTest(unittest.TestCase):
         self._clean_pos(ini_dir)
         self.assertEquals(entries, 15)
 
+
+    def test_convert_android_files_to_po(self):
+
+        android_dir = path.dirname(path.realpath(__file__))
+        android_dir += '/data/conversions/android/'
+        convert = ConvertFiles(android_dir, None)
+        convert.convert()
+
+        entries = self._get_po_entries(android_dir)
+        self._clean_pos(android_dir)
+        self.assertEquals(entries, 392)
+
 if __name__ == '__main__':
     unittest.main()
