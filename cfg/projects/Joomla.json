@@ -4,7 +4,9 @@
     "fileset": {
         "Joomla": {
             "url": "https://www.transifex.com/projects/p/ct_joomla/", 
-            "type": "transifex"
+            "type": "transifex",
+            "pattern": "^(?!.*?ca_ES.ini).*$"
         }
-    }
+    },
+    "comment": "Excluded ca_ES.ini since has empty translations overwriting ca.ini ones"
 }

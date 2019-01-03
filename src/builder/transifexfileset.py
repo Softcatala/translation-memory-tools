@@ -20,12 +20,16 @@
 import os
 import urllib
 import urllib.parse
+import re
 
 from .fileset import FileSet
 from .findfiles import FindFiles
 
 
 class TransifexFileSet(FileSet):
+
+    def set_pattern(self, pattern):
+        self.pattern = pattern
 
     def _remove_non_translation_only_files(self):
         findFiles = FindFiles()
@@ -35,6 +39,10 @@ class TransifexFileSet(FileSet):
                filename.endswith('en_GB.po') or filename.endswith('en_GB.ts') or \
                filename.endswith('en_US.po') or filename.endswith('en_US.ts'):
                    os.remove(filename)
+
+            if re.match(self.pattern, filename) is None and \
+                    os.path.exists(filename):
+                os.remove(filename)
 
     def do(self):
         prevdir = os.getcwd()

@@ -100,6 +100,7 @@ class Project(object):
                                       fileset.name,
                                       fileset.url,
                                       fileset.target)
+                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'transifexhub':
                 fs = TransifexHubFileSet(self.name,
                                       fileset.name,
