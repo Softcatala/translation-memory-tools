@@ -1,6 +1,6 @@
 # For importing translations/creating TM files.
 polib >= 1.0.4
-transifex-client
+transifex-client==0.12.4
 pystache
 peewee
 hunspell
