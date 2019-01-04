@@ -28,6 +28,8 @@ from .findfiles import FindFiles
 
 class TransifexFileSet(FileSet):
 
+    pattern = None
+
     def set_pattern(self, pattern):
         self.pattern = pattern
 
@@ -40,7 +42,8 @@ class TransifexFileSet(FileSet):
                filename.endswith('en_US.po') or filename.endswith('en_US.ts'):
                    os.remove(filename)
 
-            if re.match(self.pattern, filename) is None and \
+            if self.pattern is not None and \
+               re.match(self.pattern, filename) is None and \
                     os.path.exists(filename):
                 os.remove(filename)
 
