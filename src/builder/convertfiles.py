@@ -65,7 +65,9 @@ class ConvertFiles():
 
     def _uncompress_files(self):
         for zipfile in self.findFiles.find(self.convert_dir, '*.zip'):
-            cmd = 'unzip -t {0} > /dev/null '.format(zipfile)
+            # Some projects have files with passwords that we do not know,
+            # we pass an 'unknown' password to prevent been prompted for it
+            cmd = 'unzip -p unknown -t {0} > /dev/null '.format(zipfile)
             os.system(cmd)
 
     def _convert_tmx_files_to_po(self):
