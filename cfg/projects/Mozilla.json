@@ -113,7 +113,15 @@
             "url": "https://pontoon.mozilla.org/ca/common-voice/common-voice.sumo.tmx",
             "type": "file",
             "target": "ca.common-voice.tmx"
-
+        },
+        "thunderbird-wetransfer-extension": {
+            "url": "https://pontoon.mozilla.org/ca/thunderbird-wetransfer-extension/ca.thunderbird-wetransfer-extension.tmx",
+            "type": "file",
+            "target": "ca.thunderbird-wetransfer-extension.tmx"
         }
     }
 }
+
+
+
+
