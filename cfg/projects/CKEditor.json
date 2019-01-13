@@ -1,6 +1,6 @@
 {
     "project": "CKEditor",
-    "projectweb": "http://ckeditor.com/",
+    "projectweb": "https://ckeditor.com/",
     "fileset": {
         "ckeditor": {
             "url": "https://www.transifex.com/projects/p/ckeditor",
