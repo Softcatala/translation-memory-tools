@@ -77,12 +77,7 @@
             "url": "https://pontoon.mozilla.org/ca/mozillians/ca.mozillians.tmx",
             "type": "file", 
             "target": "ca.mozillians.tmx"
-        }, 
-        "pocket": {
-            "url": "https://pontoon.mozilla.org/ca/pocket/ca.pocket.tmx",
-            "type": "file", 
-            "target": "ca.pocket.tmx"
-        }, 
+        },
         "focus-for-android": {
             "url": "https://pontoon.mozilla.org/ca/focus-for-android/ca.focus-for-android.tmx",
             "type": "file", 
