@@ -1,6 +1,8 @@
 {
     "project": "CKEditor",
     "projectweb": "https://ckeditor.com/",
+    "disabled": true,
+    "comment": "msgid field contains ids like 'common.confirmCancel' instead of the source string",
     "fileset": {
         "ckeditor": {
             "url": "https://www.transifex.com/projects/p/ckeditor",
