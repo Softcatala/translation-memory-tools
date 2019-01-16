@@ -3,8 +3,9 @@
     "projectweb": "https://wl.widelands.org/",
     "fileset": {
         "Widelands": {
-            "url": "https://www.transifex.com/projects/p/widelands/", 
-            "type": "transifex"
+            "url": "git@github.com:widelands/widelands.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
         }
     }
 }
