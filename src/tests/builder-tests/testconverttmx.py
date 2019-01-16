@@ -45,9 +45,11 @@ class TestConvertTmx(unittest.TestCase):
         self.assertEquals(len(entries), 2)
         self.assertEquals(entries[0].msgid, "Modern visual refresh")
         self.assertEquals(entries[0].msgstr, "Una renovació visual moderna")
+        self.assertEquals(entries[0].tcomment, "id: appstores:fx_androidwhatsnewandroid_57lang:a-clean-modern-visual-refresh");
 
         self.assertEquals(entries[1].msgid, "As You Like It")
         self.assertEquals(entries[1].msgstr, "Com vulgueu")
+        self.assertEquals(entries[1].tcomment, '')
 
 
 if __name__ == '__main__':

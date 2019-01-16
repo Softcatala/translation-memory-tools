@@ -49,6 +49,12 @@ class ConvertTmx():
 
         entries = 0
         for tu_entry in root.iter('tu'):
+
+            entry_id = None
+            if 'tuid' in tu_entry.attrib:
+                if len(tu_entry.attrib['tuid']):
+                    entry_id = 'id: {0}'.format(tu_entry.attrib['tuid'])
+
             source = ''
             translation = ''
             for tuv_entry in tu_entry:
@@ -76,7 +82,7 @@ class ConvertTmx():
                 sources.add(source)
 
             entry = polib.POEntry(msgid=source, msgstr=translation,
-                                  msgctxt=msgctxt)
+                                  msgctxt=msgctxt, tcomment=entry_id)
             pofile.append(entry)
             entries = entries + 1
 
