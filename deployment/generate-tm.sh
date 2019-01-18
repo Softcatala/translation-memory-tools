@@ -38,8 +38,7 @@ if [ "$#" -ne 2 ] ; then
     exit
 fi
 
-# Catalan locale does not support thousand separator
-export LC_ALL=ast_ES.utf-8
+export LC_ALL=ca_ES.utf-8
 
 mkdir -p $PUBLISHED_PO
 mkdir -p $PUBLISHED_TMX
