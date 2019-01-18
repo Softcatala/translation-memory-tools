@@ -18,7 +18,7 @@ cd $ROOT/tm-git
 git pull && git submodule update --remote
 cd $ROOT
 
-bash $ROOT/tm-git/deployment/generate-tm.sh $ROOT
+bash $ROOT/tm-git/deployment/generate-tm.sh $ROOT $ROOT
 bash $ROOT/tm-git/deployment/generate-terminology.sh $ROOT
 bash $ROOT/tm-git/deployment/generate-isolists.sh $ROOT
 bash $ROOT/tm-git/deployment/generate-quality.sh $ROOT

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ROOT="$1"
+PUBLIC="$2"
 PROGRAMS=$ROOT/tm-git/src
 BUILDER=$PROGRAMS
 PROJECTS=$ROOT/tm-git/cfg/projects
@@ -9,9 +10,9 @@ NEW_POS=$PROGRAMS/output
 # we have been unable to fecth it.
 # This only works after the first sucesfully fetch when you have a previous
 # copy of the successful executions
-PUBLISHED_PO=$ROOT/translation-memories/po
-PUBLISHED_TMX=$ROOT/translation-memories/tmx
-BACKUP_DIR=$ROOT/previous
+PUBLISHED_PO=$PUBLIC/translation-memories/po
+PUBLISHED_TMX=$PUBLIC/translation-memories/tmx
+BACKUP_DIR=$PUBLIC/previous
 
 copy_successfully_downloaded_files() {
 
@@ -31,8 +32,8 @@ copy_successfully_downloaded_files() {
     done
 }
 
-if [ "$#" -ne 1 ] ; then
-    echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
+if [ "$#" -ne 2 ] ; then
+    echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION PUBLIC_DATA"
     echo "Invalid number of parameters"
     exit
 fi
