@@ -1,0 +1,12 @@
+{
+    "project": "isocodes",
+    "projectweb": "https://salsa.debian.org/iso-codes-team/iso-codes",
+    "fileset": {
+        "isocodes": {
+            "url": "https://salsa.debian.org/iso-codes-team/iso-codes.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        }
+    }
+}
+
