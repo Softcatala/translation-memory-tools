@@ -22,7 +22,7 @@ bash $ROOT/tm-git/deployment/generate-tm.sh $ROOT $ROOT
 bash $ROOT/tm-git/deployment/generate-terminology.sh $ROOT
 bash $ROOT/tm-git/deployment/generate-isolists.sh $ROOT
 bash $ROOT/tm-git/deployment/generate-quality.sh $ROOT
-bash $ROOT/tm-git/deployment/deploy.sh $ROOT $DEPLOY_DIR $PREPROD_DEPLOY_DIR
+bash $ROOT/tm-git/deployment/deploy.sh $ROOT $DEPLOY_DIR $PREPROD_DEPLOY_DIR $ROOT
 
 secs=$SECONDS
 printf 'TIME. Total execution time %dh:%dm:%ds\n' $(($secs/3600)) $(($secs%3600/60)) $(($secs%60))

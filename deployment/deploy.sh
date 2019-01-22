@@ -4,12 +4,12 @@ copy_files() {
 
     #Softcatalà headers and footers
     rm -r -f $2/ssi
-    mkdir $2/ssi
+    mkdir -p $2/ssi
     cp -r $1/web-2015/ssi/* $2/ssi
 
     # Index
     rm -r -f $2/indexdir
-    mkdir $2/indexdir
+    mkdir -p $2/indexdir
     cp -r $1/tm-git/src/web/indexdir/* $2/indexdir
 
     # Search TM app
@@ -71,6 +71,11 @@ copy_files() {
 }
 
 restart_appserver() {
+    exists='which supervisorctl&>/dev/null'
+    if ! $exists ; then
+        return
+    fi
+
     sudo supervisorctl stop recursos_preprod
     sudo supervisorctl stop recursos_dev
     sudo supervisorctl stop recursos
@@ -80,8 +85,8 @@ restart_appserver() {
 }
 
 
-if [ "$#" -ne 3 ] ; then
-    echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION TARGET_PREPROD"
+if [ "$#" -ne 4 ] ; then
+    echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION TARGET_PREPROD PUBLIC_DATA"
     echo "Invalid number of parameters"
     exit
 fi  
@@ -89,6 +94,7 @@ fi
 ROOT="$1"
 TARGET_DIR="$2"
 TARGET_PREPROD="$3"
+PUBLIC="$4"
 
 # Run unit tests
 cd $ROOT/tm-git/
@@ -99,19 +105,21 @@ if [ $RETVAL -ne 0 ]; then
     exit
 fi
 
-# Deploy to a pre-production environment where we can run integration tests
-copy_files $ROOT $TARGET_PREPROD
-restart_appserver
+if [ -n "${TARGET_PREPROD}" ]; then
+    # Deploy to a pre-production environment where we can run integration tests
+    copy_files $ROOT $TARGET_PREPROD
+    restart_appserver
 
-# Run integration tests
-cd $ROOT/tm-git/integration-tests/
-python run.py -e preprod
+    # Run integration tests
+    cd $ROOT/tm-git/integration-tests/
+    python run.py -e preprod
 
-RETVAL=$?
-if [ $RETVAL -ne 0 ]; then 
-    echo "Aborting deployment. Integration tests did not pass"
-    cat $ROOT/tm-git/src/builder-error.log
-    exit
+    RETVAL=$?
+    if [ $RETVAL -ne 0 ]; then
+        echo "Aborting deployment. Integration tests did not pass"
+        cat $ROOT/tm-git/src/builder-error.log
+        exit
+    fi
 fi
 
 # Deployment to production environment
@@ -119,8 +127,8 @@ copy_files $ROOT $TARGET_DIR
 restart_appserver
 
 # Notify completion
-INTERMEDIATE_PO=$ROOT/translation-memories/po
-BACKUP_DIR=$ROOT/previous
+INTERMEDIATE_PO=$PUBLIC/translation-memories/po
+BACKUP_DIR=$PUBLIC/previous
 cd $ROOT/tm-git/src
 python compare-sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO
 cat builder-error.log

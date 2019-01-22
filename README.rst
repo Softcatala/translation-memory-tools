@@ -62,6 +62,11 @@ On Debian::
     sudo pip3 install -r requirements.txt
 
 
+Docker
+======
+
+There is initial support to run part of `this solution as container`_
+
 Setting up before execution
 ===========================
 
@@ -144,4 +149,5 @@ Jordi Mas: jmas@softcatala.org
 
 .. _`Web page of the project`: http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà
 .. _`Flask configuration`: https://realpython.com/blog/python/kickstarting-flask-on-ubuntu-setup-and-deployment/
+.. _`this solution as container`: docker/README.rst
 
