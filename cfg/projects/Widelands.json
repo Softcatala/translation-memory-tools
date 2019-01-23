@@ -3,7 +3,7 @@
     "projectweb": "https://wl.widelands.org/",
     "fileset": {
         "Widelands": {
-            "url": "git@github.com:widelands/widelands.git",
+            "url": "https://github.com/widelands/widelands.git",
             "type": "git",
             "pattern": ".*?ca.po"
         }
