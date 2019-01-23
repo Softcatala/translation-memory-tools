@@ -1,0 +1,10 @@
+{
+    "project": "Openedx",
+    "projectweb": "https://open.edx.org/",
+    "fileset": {
+        "Opendex": {
+            "url": "https://www.transifex.com/projects/p/edx-platform/",
+            "type": "transifex"
+        }
+    }
+}
