@@ -4,6 +4,7 @@ transifex-client==0.12.4
 pystache
 peewee
 hunspell
+phply # required by translate-toolkit to process php files
 translate-toolkit==2.3.0
 lxml
 pyyaml
