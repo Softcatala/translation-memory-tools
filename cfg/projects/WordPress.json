@@ -27,6 +27,11 @@
             "url": "https://translate.wordpress.org/projects/wp-themes/twentyseventeen/ca/default/export-translations",
             "type": "file",
             "target": "wp-themes-twenty-seventeen-ca.po"
+        },
+        "wordpress-themes-twenty-nineteen": {
+            "url": "https://translate.wordpress.org/projects/wp-themes/twentynineteen/ca/default/export-translations",
+            "type": "file",
+            "target": "wp-themes-twenty-nineteen-ca.po"
         }
     }
 }
