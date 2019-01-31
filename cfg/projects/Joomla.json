@@ -1,6 +1,6 @@
 {
     "project": "Joomla", 
-    "projectweb": "http://community.joomla.org/translations/joomla-16-translations.html#ca-es", 
+    "projectweb": "https://community.joomla.org/translations.html",
     "fileset": {
         "Joomla": {
             "url": "https://www.transifex.com/projects/p/ct_joomla/", 

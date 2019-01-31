@@ -1,6 +1,6 @@
 {
     "project": "LXQt", 
-    "projectweb": "http://lxqt.org/", 
+    "projectweb": "https://lxqt.org/",
     "fileset": {
         "LXQt": {
             "url": "https://github.com/lxde/lxqt-l10n.git",

@@ -1,6 +1,6 @@
 {
     "project": "Stellarium", 
-    "projectweb": "http://www.stellarium.org/", 
+    "projectweb": "https://stellarium.org/",
     "fileset": {
         "stellarium": {
             "url": "lp:~stellarium/stellarium/trunk/po/stellarium/ca.po", 

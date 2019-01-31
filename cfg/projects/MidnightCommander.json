@@ -1,6 +1,6 @@
 {
     "project": "Midnight Commander", 
-    "projectweb": "http://www.midnight-commander.org", 
+    "projectweb": "https://midnight-commander.org/",
     "fileset": {
         "mc": {
             "url": "https://raw.githubusercontent.com/MidnightCommander/mc/master/po/ca.po", 

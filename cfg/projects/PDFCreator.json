@@ -1,6 +1,6 @@
 {
     "project": "PDFCreator", 
-    "projectweb": "http://translate.pdfforge.org/", 
+    "projectweb": "https://translate.pdfforge.org/",
     "fileset": {
         "setup": {
             "url": "https://raw.githubusercontent.com/pdfforge/PDFCreator/master/Source/Languages/ca/LC_MESSAGES/innosetup.po",

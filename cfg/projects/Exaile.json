@@ -1,6 +1,6 @@
 {
     "project": "Exaile", 
-    "projectweb": "http://www.exaile.org", 
+    "projectweb": "https://www.exaile.org/",
     "fileset": {
         "Exaile": {
             "url": "https://raw.githubusercontent.com/exaile/exaile/master/po/ca.po", 

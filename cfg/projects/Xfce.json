@@ -1,6 +1,6 @@
 {
     "project": "Xfce", 
-    "projectweb": "http://wiki.xfce.org/translations/team_ca",
+    "projectweb": "https://wiki.xfce.org/translations/team_ca",
     "fileset": {
         "xfce": {
             "url": "https://git.xfce.org", 
