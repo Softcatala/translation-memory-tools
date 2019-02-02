@@ -29,13 +29,16 @@ class TestSearch(unittest.TestCase):
 
     PROJECT_GNOME = u'gnome'
     PROJECT_ABI = u'abiword'
+    PROJECT_MICROSOFT = u'Microsoft Terminology'
     SC = True
+    NO_SC = False
 
     data_set = [
                 u"Nox Documents Found", u"No s'han trobat", PROJECT_GNOME, SC,
                 u"No Documents Found Today", u"No s'han trobat documents avui", PROJECT_GNOME, SC,
                 u"No Documents Found late Yesterday", u"No s'han trobat documents ahir", PROJECT_GNOME, SC,
-                u"Many documents found Yesterday", u"S'han trobat molts errors ahir", PROJECT_ABI, SC
+                u"Many documents found Yesterday", u"S'han trobat molts errors ahir", PROJECT_ABI, SC,
+                u"Many documents found Yesterday Microsoft", u"S'han trobat molts errors ahir Microsoft", PROJECT_MICROSOFT, NO_SC
                 ]
 
     FIELDS = 4
@@ -74,6 +77,38 @@ class TestSearch(unittest.TestCase):
         self.assertEquals(len(results), 2)
         self.assertEquals(results[0]["source"], u"Many documents found Yesterday")
         self.assertEquals(results[1]["source"], u"No Documents Found late Yesterday")
+
+    def test_query_simple_query_source_with_three_projects_with_spaces(self):
+        ix = self._create_index()
+        search = Search(u'Yesterday', None, u'gnome,abiword,Microsoft Terminology')
+        search.search(ix)
+        results = search.get_results()
+
+        self.assertEquals(len(results), 3)
+        self.assertEquals(results[0]["source"], u"Many documents found Yesterday")
+        self.assertEquals(results[1]["source"], u"No Documents Found late Yesterday")
+        self.assertEquals(results[2]["source"], u"Many documents found Yesterday Microsoft")
+
+    def test_query_simple_query_source_with_single_project_with_spaces(self):
+        ix = self._create_index()
+        search = Search(u'Yesterday', None, u'Microsoft Terminology')
+        search.search(ix)
+        results = search.get_results()
+
+        self.assertEquals(len(results), 1)
+        self.assertEquals(results[0]["source"], u"Many documents found Yesterday Microsoft")
+
+    def test_query_simple_query_source_with_no_project(self):
+        ix = self._create_index()
+        search = Search(u'Yesterday', None, u'')
+        search.search(ix)
+        results = search.get_results()
+
+        self.assertEquals(len(results), 3)
+        self.assertEquals(results[0]["source"], u"Many documents found Yesterday")
+        self.assertEquals(results[1]["source"], u"No Documents Found late Yesterday")
+        self.assertEquals(results[2]["source"], u"Many documents found Yesterday Microsoft")
+
 
     def test_query_simple_with_or_query_source(self):
         ix = self._create_index()

@@ -82,16 +82,18 @@ class Search(object):
             qs += u' target:({0})'.format(self.target)
             fields.append("target")
 
-        if self.project is not None and self.project != 'tots':
+        if self.project is not None and self.project != 'tots' and len(self.project) > 0:
             if self.project == 'softcatala':
                 qs += u' softcatala:true'
                 fields.append("softcatala")
             else:
                 if ',' in self.project:
-                    val = self.project.replace(',' , ' OR ')
+                    projects = self.project.split(',')
+                    val = ''.join(["'{0}',".format(project) for project in projects])
+                    val = val[:-1].replace(',' , ' OR ')
                     qs += u' project:({0})'.format(val)   
                 else:
-                    qs += u' project:({0})'.format(self.project)
+                    qs += u' project:(\'{0}\')'.format(self.project)
 
                 fields.append("project")
 
