@@ -3,17 +3,50 @@
 # some ideas taken from spanish filter.include (by Javier Viñal)
 # License: GPLv3
 
-# Remove some types of paragraph tags.
+# Remove literal substrings, those which are to be understood by the machine
+# and therefore not translated, as designated by markup.
+# (-> before markup removal)
 addFilterHook name="remove/remove-marlits-msg" on="msg"
+
+# Remove text markup.
+# For this to work, POs need to specify markup types using
+# the X-Text-Markup header field; its value is a markup keyword.
+# For markups known to Pology at any given moment, see documentation on
+# remove_markup_text() function in pology.remove module.
+# The value of the header field may be a comma-separated list of keywords,
+# if there are several markup types present in the PO.
+# (-> before accelerator removal)
+# (-> before literals removal)
 addFilterHook name="remove/remove-markup-msg" on="msg"
+
+# Remove accelerator markers.
+# For this to work, POs need to specify the marker character through
+# the X-Accelerator-Marker header field.
+# (-> after markup removal)
 addFilterHook name="remove/remove-accel-msg" on="msg"
+
+# Remove local entities which are to be left as-is in the message.
 addFilterHook name="remove/remove-ignored-entities-msg" on="msg"
+
+# Removes all XML-like entities (&foo;) from the original text, 
+# and all XML-like entities from the translation that were encountered in the original.
 addFilterHook name="remove/remove-paired-ents-tick~'~'" on="msg"
+
+# Replace format directives with tildes (~), based on *-format flags.
 addFilterHook name="remove/remove-fmtdirs-msg-tick~'~'" on="msg"
-addFilterHook name="remove/remove_literals_msg_tick~'~'" on="msg" 
+
+# Remove other literal substrings by heuristics.
+# Heuristics can be augmented by explicit instructions per message,
+# see documentation on remove_literals_text() function
+# in pology.remove module.
+# (-> after markup removal)
+addFilterHook name="remove/remove-literals-msg-tick~'~'" on="msg"
+
+# Convert action-loaded characters to their ordinary counterparts.
+addFilterRegex match=" " repl=" " on="pmsgid,pmsgstr" # no-break space
 
 # Remove XML-like tags.
-addFilterRegex match="\<\s*(bcode|command|envar|filename|icode|shortcut|placeholder|style|code|tt|literal|screen|option|keycap|userinput|systemitem|prompt|function|foreignphrase|varname|programlisting|token|markup|parameter|keysym|methodname|sgmltag|arg|classname|type)\b.*?\b\1\>" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\<\s*(arg|classname|bcode|code|command|envar|filename|foreignphrase|function|keycap|keysym|icode|literal|markup|methodname|option|parameter|placeholder|programlisting|prompt|screen|sgmltag|shortcut|span|style|systemitem|token|tt|type|userinput|varname)\b.*?\b\1\>" repl="~" on="pmsgid,pmsgstr"
 addFilterRegex match="\<\s*(email|link)\s*>\b.*?\b\1\>" repl="~" on="pmsgid,pmsgstr"     
 addFilterRegex match="\<.*?\>" repl="~" on="pmsgid,pmsgstr"
 
@@ -27,18 +60,10 @@ addFilterRegex match="((http|https|ftp|sftp)\:\/\/)?([\w\_\-]+\.)+((gov|edu|com|
 addFilterRegex match="(file\:|\#\!)?\/(bin|etc|lib|media|proc|srv|var|boot|home|lib32|mnt|root|sys|cdrom|lib64|sbin|tmp|dev|lost\+found|opt|selinux|usr)(\/(\w|\.|\-|\_)+)*\/?" repl="~" on="pmsgid,pmsgstr"
 
 # Remove more important (as I guess) hidden files.
-addFilterRegex match="\.\/?(kateconfig|bash|directory|fonts|ICEauthority|mailcap|kderc|profile|Xauthority|Xclients|Xmodmap|Xsession|Xdefaults|Xresources)" repl="~" on="pmsgid,pmsgstr"
+addFilterRegex match="\.\/?(bash|directory|fonts|ICEauthority|kateconfig|kderc|mailcap|profile|Xauthority|Xclients|Xdefaults|Xmodmap|Xresources|Xsession)" repl="~" on="pmsgid,pmsgstr"
 
 # Remove single characters in quotes.
 addFilterRegex match="«.»" repl="~" on="pmsgid,pmsgstr"
-
-# Remove some abreviations.
-addFilterRegex match="\s?(etc\.|Ex\.|ex\.|P\.\sex\.|p\.\sex\.|EUA|a\.m\.|p\.m\.|n\.t\.\expr\.)" repl="~" on="pmsgid,pmsgstr"
-addFilterRegex match="\s?(Sr\.|Sra\.|Dr\.|Dra\.)" repl="~" on="pmsgid,pmsgstr"
-addFilterRegex match="\s?(apt\.|art\.|avda\.|av\.|cent\.|dept\.)" repl="~" on="pmsgid,pmsgstr"
-addFilterRegex match="\s?(màx.|mín\.|pàg\.)" repl="~" on="pmsgid,pmsgstr"
-addFilterRegex match="\s?(pl\.|pral\.|Prof\.|P\.\s\S\.|Rep\.|R\.\sI\.\P\.)" repl="~" on="pmsgid,pmsgstr"
-addFilterRegex match="\s?(tel\.|trad\.|Univ\.)" repl="~" on="pmsgid,pmsgstr"
 
 # Remove special puntuactions.
 addFilterRegex match="\s*(\?{2,3}|\%{2,3}|\:{2,3}|\_{2,3})" repl="~" on="pmsgid,pmsgstr"

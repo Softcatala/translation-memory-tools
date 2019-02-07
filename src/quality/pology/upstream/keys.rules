@@ -205,10 +205,12 @@ valid msgstr="Inser"
 valid msgstr="(T|t)ecla d'inserció"
 valid msgstr="complement" after="Add-"     # Fals positiu
 valid msgstr="(C|c)onnector" after="Plug-" # Fals positiu
+valid msgstr="Ins;" # documentation
 hint="La tecla «Ins» es tradueix per «Inser»/«tecla d'inserció» (keys)"
 
-{<key(cap|sym)?>.?Ins(ert)?.?</key(cap|sym)?>}
+{(\bIns;|<key(cap|sym)?>.?Ins(ert)?.?</key(cap|sym)?>)}
 id="k-Ins-2"
+valid msgstr="\bIns;" # <keycap>Insert</keycap>
 valid msgstr="<key(cap)?>Inser</key(cap)?>"
 hint="Es tradueix per «&Ins;», «<key>Inser</key>(Gnome)/<keycap>Inser</keycap>(KDE)» (keys)"
 
@@ -236,6 +238,8 @@ valid msgstr="Av Pàg"
 valid msgstr="(T|t)ecla d'avançar pàgina"
 valid msgstr="(A|a)vançar pàgina"
 valid msgstr="fi de la pàgina"         # Fals positiu
+valid msgstr="pàgina avall"            # Fals positiu
+valid msgstr="PgDn;" # documentation
 hint="La tecla «Page Down/Pg Dn» es tradueix per «Av Pàg»/«tecla d'avançar pàgina» (keys)"
 
 # Page Down -> Av Pàg
@@ -253,6 +257,8 @@ valid msgstr="Re Pàg"
 valid msgstr="(T|t)ecla de retrocedir pàgina"
 valid msgstr="(R|r)etrocedir pàgina"
 valid msgstr="principi de la pàgina"         # Fals positiu
+valid msgstr="pàgina amunt"                  # Fals positiu
+valid msgstr="PgUp;" # documentation
 hint="La tecla «Page Up/Pg Up» es tradueix per «Re Pàg»/«tecla de retrocedir pàgina» (keys)"
 
 # Page Up -> Re Pàg
@@ -392,11 +398,11 @@ valid msgstr="<key(cap|sym)?>Fletxa dreta</key(cap|sym)?>"
 hint="Es tradueix per «&Right;», «<key>Fletxa dreta</key>(Gnome)/<keysym>Fletxa dreta</keysym>(KDE)» (keys)"
 
 # Mouse buttons
-# left -> clic esquerra
+# left -> clic esquerre (masculí)
 {(\b<mousebutton>.?left.?</mousebutton>)}
 id="k-LeftBMouse"
-valid msgstr="<mousebutton>clic esquerra</mousebutton>"
-hint="Es tradueix per «<mousebutton>clic esquerra</mousebutton> (KDE)» (keys)"
+valid msgstr="<mousebutton>clic esquerre</mousebutton>"
+hint="Es tradueix per «<mousebutton>clic esquerre</mousebutton> (KDE)» (keys)"
 
 # right -> clic dret
 {(\b<mousebutton>.?right.?</mousebutton>)}

@@ -158,7 +158,6 @@ valid ctx="unit synonyms for matching user input"
 valid ctx="Query"
 valid ctx="Keywords"
 valid cat="calligrasheets,kcells,krossmodulesheets,kspread,sheets,tables"
-valid cat="desktop_kdeplasma-addons" ctx="Keywords"
 valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
 valid comment="Tag\:\sprogramlisting" cat="kopete_emoticonspec" # docmessages
 valid span=";$"
@@ -401,6 +400,7 @@ valid comment="Tag\:\sscreen" cat="kturtle_programming-reference" # docmessages
 valid msgstr="\s\.\.\.\)$" cat="kalgebra_commands" # docmessages
 valid msgstr="\s\.\.\." cat="katepart_development" # docmessages
 valid msgstr="\s\.\s\*\s\?\s\/" cat="digikam" # docmessages
+valid msgstr=",\s\.\.\."
 hint="No s'ha de posar cap espai abans del signe de punt (tipografia)"
 
 [\.\S]
@@ -433,7 +433,7 @@ valid span="\.\." after="\."
 valid span="\.$"
 valid span="KDE\se.V."
 valid span="\.~"
-valid span="\.(h|c)" cat="desktop_applications_kate,desktop_kdesdk,kateopenheader,kate_plugins,kdevformatters,kate,pate"
+valid span="\.(h|c)" cat="kateopenheader,kate_plugins,kdevformatters,kate,pate"
 valid span="\.\*" cat="kdiff3,kdeprint4,amarok"
 valid comment="Tag\:\sscreen" cat="kmail_faq" # docmessages
 valid cat="baloo_queryparser,baloo_naturalqueryparser,baloowidgets5"
@@ -687,7 +687,7 @@ valid comment="Tag\:\sprogramlisting" cat="kdm,kile_scripting,kipi-plugins_geolo
 valid ctx="hour in the messages below"
 # valid msgid="'''" # KDE User_Base
 # valid msgid="''"  # KDE User_Base
-hint="Un apòstrof al final de missatge és un error, excepte a ordres de terminal (tipografia)"
+hint="Un apòstrof final és un error, excepte a ordres de terminal (tipografia)"
 
 # «'$» un apóstrof al final de missatge és un error (ull amb les ordres!).  Substituir per »
 ['$]
@@ -754,8 +754,6 @@ valid cat="cocoon"
 valid cat="kcontrol_mouse" # docmessages
 valid cat="kopete_pipes" # docmessages
 valid cat="kfilereplace" # docmessages
-valid ctx="Name" cat="desktop_extragear-graphics_kipi-plugins"
-valid ctx="Query" cat="desktop_kdebase_kde-runtime"
 valid ctx="Numbers and characters"
 valid ctx="Qoute character option" cat="kaddressbook"
 valid ctx="angle unit symbol"
