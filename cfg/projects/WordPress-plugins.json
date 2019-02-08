@@ -37,6 +37,11 @@
             "url": "https://translate.wordpress.org/projects/wp-plugins/nelio-content/dev/ca/default/export-translations",
             "type": "file",
             "target": "nelio-content-ca.po"
+        },
+        "bbpress": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/bbpress/dev/ca/default/export-translations",
+            "type": "file",
+            "target": "bbpress-ca.po"
         }
     }
 }
