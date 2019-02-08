@@ -1,0 +1,11 @@
+{
+    "project": "Bluefish",
+    "projectweb": "http://bluefish.openoffice.nl",
+    "fileset": {
+        "bluefish": {
+            "url": "https://sourceforge.net/p/bluefish/code/HEAD/tree/trunk/bluefish/po/ca.po?format=raw",
+            "type": "file",
+            "target": "bluefish-ca.po"
+        }
+    }
+}
