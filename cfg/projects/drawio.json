@@ -1,0 +1,11 @@
+{
+    "project": "draw.io",
+    "projectweb": "https://www.draw.io/",
+    "fileset": {
+        "drawio": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/draw.io/ca.po",
+            "type": "file",
+            "target": "drawio-ca.po"
+        }
+    }
+}
