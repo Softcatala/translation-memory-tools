@@ -32,6 +32,11 @@
             "url": "https://translate.wordpress.org/projects/wp-themes/twentynineteen/ca/default/export-translations",
             "type": "file",
             "target": "wp-themes-twenty-nineteen-ca.po"
+        },
+        "wordpress-themes-sage": {
+            "url": "https://raw.githubusercontent.com/roots/sage-translations/master/ca.po",
+            "type": "file",
+            "target": "wp-themes-sage-ca.po"
         }
     }
 }
