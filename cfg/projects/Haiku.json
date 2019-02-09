@@ -1,12 +1,12 @@
 {
-    "project": "Winscp",
-    "projectweb": "https://winscp.net/eng/translations.php",
+    "project": "Haiku",
+    "projectweb": "https://www.haiku-os.org/",
     "fileset": {
-        "Winscp": {
+        "Haiku": {
             "url": "https://github.com/pereorga/software-translations.git",
             "type": "git",
             "duplicates" : "msgctxt",
-            "pattern": ".*?/winscp/.*?"
+            "pattern": ".*?/haiku/.*?"
         }
     }
 }
