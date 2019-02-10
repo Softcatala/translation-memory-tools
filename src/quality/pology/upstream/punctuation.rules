@@ -1,15 +1,17 @@
 # Catalan punctuation rules
-# Copyrigth 2015, Josep Ma. Ferrer
+# Copyright 2015, Josep Ma. Ferrer
+# Copyright 2019, Jordi Mas <jmas@softcatala.org>
+#
 # by the KDE Catalan Team (kde-i18n-ca@kde.org)
 # License: GPLv3
 
-# If the souce message ends with a colon, the target message must end with a colon.   
+# If the source message ends with a colon, the target message must end with a colon.
 {\:\s*$}i
 id="punctuation-colon"
 valid msgstr="\:\s*$"
 hint="Si el missatge origen acaba amb dos punts, el missatge destí també hauria (punctuation)"
 
-# If the souce message ends with a period, the target message must end with a period.   
+# If the source message ends with a period, the target message must end with a period.
 {\.\s*$}i
 id="punctuation-period"
 valid msgstr="\.\s*$"
@@ -19,9 +21,35 @@ valid msgid="(id|no|org|U\.S).$"
 valid msgid="\.\.\.</guimenuitem></menuchoice>( menu)?\.$"
 hint="Si el missatge origen acaba amb punt final, el missatge destí també hauria (punctuation)"
 
-# If the souce message ends with 3 periods, the target message must end with 3 periods.   
-{\.\.\.\s*$}i
+# If the source message ends with 3 periods, the target message must end with 3 periods.
+{(\.\.\.\s*$|…s*$)}i
 id="punctuation-3period"
 valid msgstr="\.\.\.\s*$"
 valid msgstr="\.\.\.»$"
+valid msgstr="…s*$"
+valid msgstr="…»$"
 hint="Si el missatge origen acaba amb punts suspensius, el missatge destí també hauria (punctuation)"
+
+{.*?('(%[a-z]|{[0-9]})').*?}
+id="punctuation-simple-quotes"
+valid msgstr=".*?(='.*?').*?" #Used to skip when it's assigned in xml/html
+valid msgstr=".*?(«.*?»).*?"
+hint="En català usem cometes baixes («») en comptes de cometes simples ('') per encloure expressions (punctuation)"
+
+{.*?("(%[a-z]|{[0-9]})").*?}
+id="punctuation-double-quotes"
+valid msgstr='.*?(=".*?").*?' #Used to skip when it's assigned in xml/html
+valid msgstr=".*?(«.*?»).*?"
+hint='En català usem cometes baixes («») en comptes de cometes dobles ("") per encloure expressions (punctuation)'
+
+{.*?(“(%[a-z]|{[0-9]})”).*?}
+id="punctuation-high-quotes"
+valid msgstr='.*?(=“.*?”).*?' #Used to skip when it's assigned in xml/html
+valid msgstr=".*?(«.*?»).*?"
+hint='En català usem cometes baixes («») en comptes de cometes altes (“”) per encloure expressions (punctuation)'
+
+{.*?(`(%[a-z]|{[0-9]})`).*?}
+id="punctuation-accent-quotes"
+valid msgstr='.*?(=`.*?`).*?' #Used to skip when it's assigned in xml/html
+valid msgstr=".*?(«.*?»).*?"
+hint='En català usem cometes baixes («») en comptes de cometes (``) per encloure expressions (punctuation)'
