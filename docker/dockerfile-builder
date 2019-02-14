@@ -29,7 +29,6 @@ RUN git clone https://github.com/Softcatala/web-2015.git
 
 WORKDIR $DIR_TMT_GIT
 RUN git submodule update --remote
-RUN git checkout docker
 
 RUN pip install -r requirements.txt
 
