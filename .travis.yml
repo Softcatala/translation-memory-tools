@@ -12,6 +12,6 @@ script:
   - nosetests --with-coverage --cover-package=src
   - cd src
   - python builder.py -pFileZilla
-  - python index-creation.py -pFileZilla
+  - python index_creation.py -pFileZilla
 after_success:
   coveralls

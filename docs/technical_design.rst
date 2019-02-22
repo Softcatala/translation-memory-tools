@@ -32,7 +32,7 @@ The process of building a transtlation memories works as follows:
 Searchable index
 ================
 
-The file index-creation.py reads a set of PO files (translation memories) and builds a full text Whoosh index.
+The file index_creation.py reads a set of PO files (translation memories) and builds a full text Whoosh index.
 
 This index is used by the Web application.
 
@@ -41,7 +41,7 @@ The searchable index can be queried using JSON, using a this URL format '{0}/web
 Terminology extraction
 ======================
 
-The term-extract.py application run the terminology extraction module. It takes a set of PO files as source files, selects terminology and then generates a report in serveral formats (like HTML).
+The term_extract.py application run the terminology extraction module. It takes a set of PO files as source files, selects terminology and then generates a report in serveral formats (like HTML).
 
 It uses term frequency to select the most common used terms. It uses serveral PO files to as quality measures of the output provided. 
 

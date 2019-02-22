@@ -67,5 +67,5 @@ copy_successfully_downloaded_files "*.tmx" 350 $PUBLISHED_TMX
 
 # Update download file & index
 cd $PROGRAMS
-python download-creation.py -d $PUBLISHED_PO -t $PUBLISHED_TMX
-python index-creation.py -d $NEW_POS
+python download_creation.py -d $PUBLISHED_PO -t $PUBLISHED_TMX
+python index_creation.py -d $NEW_POS

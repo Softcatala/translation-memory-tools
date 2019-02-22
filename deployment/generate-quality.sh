@@ -8,5 +8,5 @@ mkdir -p $lt_output
 echo Created quality directory: $lt_output
 
 cd $root/tm-git/src/
-python generate-quality-reports.py -s "$location"
+python generate_quality_reports.py -s "$location"
 

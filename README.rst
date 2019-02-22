@@ -109,7 +109,7 @@ builder.py (main program)
    Builds the translation memory: downloads files, merge them and builds the
    final translation memory
 
-compare-sets.py (for reporting proposes)
+compare_sets.py (for reporting proposes)
    Compares two sets of the PO files and counts the words
     
 Located at ``web`` subdirectory:
