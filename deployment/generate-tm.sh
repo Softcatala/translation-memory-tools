@@ -4,11 +4,10 @@ ROOT="$1"
 PUBLIC="$2"
 PROGRAMS=$ROOT/tm-git/src
 BUILDER=$PROGRAMS
-PROJECTS=$ROOT/tm-git/cfg/projects
 NEW_POS=$PROGRAMS/output
 # PUBLISHED directories are used to allow to publish the previous version if
-# we have been unable to fecth it.
-# This only works after the first sucesfully fetch when you have a previous
+# we have been unable to fetch it.
+# This only works after the first successfully fetch when you have a previous
 # copy of the successful executions
 PUBLISHED_PO=$PUBLIC/translation-memories/po
 PUBLISHED_TMX=$PUBLIC/translation-memories/tmx
