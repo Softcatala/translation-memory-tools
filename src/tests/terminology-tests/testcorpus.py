@@ -64,7 +64,7 @@ class TestPage(unittest.TestCase):
         corpus._read_stop_words(stopwords_file)
         assert not corpus._should_select_string(u'translator-credits', 'user@test.com')
 
-    def test_should_select_string_empty_target(self):
+    def test_should_not_select_parentesis_only(self):
         corpus = Corpus('')
         assert not corpus._should_select_string(u'()', '()')
 
