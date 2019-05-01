@@ -83,11 +83,8 @@ class IndexCreator(object):
             We import only translator's comments and extracted that we concatenate
             to make it transparent to the search
         '''
-        if entry.tcomment is None:
-            comment = entry.tcomment
-        else:
-            comment = entry.tcomment
 
+        comment = entry.tcomment
         if entry.comment is not None:
             if entry.tcomment is None:
                 comment = entry.comment
