@@ -37,7 +37,7 @@ class TestProjectMetaDataDto(unittest.TestCase):
         metadata_dto = ProjectMetaDataDto('')
         date = 1
         with self.assertRaises(TypeError):
-            metadata_dto.last_translation_update(date)
+            metadata_dto.last_translation_update = date
 
     def test_set_get_last_fetch(self):
         DATE = datetime.datetime(2010, 8, 3, 23, 33, 9, 890000)
@@ -53,7 +53,7 @@ class TestProjectMetaDataDto(unittest.TestCase):
         metadata_dto = ProjectMetaDataDto('')
         date = 1
         with self.assertRaises(TypeError):
-            metadata_dto.last_fetch(date)
+            metadata_dto.last_fetch = date
 
 
 if __name__ == '__main__':
