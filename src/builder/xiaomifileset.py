@@ -48,7 +48,7 @@ class XiaomiFileSet(FileSet):
         english.download()
 
         cd = 'cd {0}/Catalan'.format(self.temp_dir)
-        cmd = cd + ' && cp -r ../English/* .'.format(self.temp_dir)
+        cmd = cd + ' && cp -r ../English/* .'
         os.system(cmd)
 
         # Rename directories value-en to value
