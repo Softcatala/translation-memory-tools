@@ -113,6 +113,7 @@ class IndexCreator(object):
                 t = entry.msgstr
                 p = name
                 x = entry.msgctxt
+                c = self._get_comment(entry)
 
                 if t is None or len(t) == 0:
                     # msgstr_plural is a dictionary where the key is the index and
@@ -134,8 +135,6 @@ class IndexCreator(object):
                     continue
 
                 entries.add(entry_text)
-
-                c = self._get_comment(entry)
 
                 self.sentences_indexed += 1
                 string_words = entry.msgstr.split(' ')
