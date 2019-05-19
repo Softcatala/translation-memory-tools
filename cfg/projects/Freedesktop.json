@@ -3,12 +3,14 @@
     "projectweb": "https://freedesktop.org/wiki/Software/", 
     "fileset": {
         "accounts-service": {
-            "url": "https://www.transifex.com/projects/p/accountsservice", 
-            "type": "transifex"
+            "url": "https://cgit.freedesktop.org/accountsservice/plain/po/ca.po",
+            "type": "file",
+            "target": "accounts-service.po"
         },
         "appstream-glib": {
-            "url": "https://www.transifex.com/projects/p/appstream-glib",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/ximion/appstream/master/po/ca.po",
+            "type": "file",
+            "target": "appstream-glib.po"
         },
         "cups-pk-helper": {
             "url": "https://www.transifex.com/projects/p/cups-pk-helper",
@@ -35,8 +37,9 @@
             "type": "transifex"
         },
         "udisks": {
-            "url": "https://www.transifex.com/projects/p/udisks",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/storaged-project/udisks/master/po/ca.po",
+            "type": "file",
+            "target": "udisks.po"
         },
         "appstream": {
             "url": "https://raw.githubusercontent.com/ximion/appstream/master/po/ca.po",
