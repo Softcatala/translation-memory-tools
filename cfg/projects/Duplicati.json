@@ -11,6 +11,6 @@
             "url": "https://raw.githubusercontent.com/duplicati/duplicati/master/Localizations/webroot/localization_webroot-ca.po", 
             "type": "file", 
             "target": "duplicati-webroot-ca.po"
-        }, 
+        }
     }
 }
