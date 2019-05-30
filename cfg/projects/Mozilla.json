@@ -77,16 +77,6 @@
             "url": "https://pontoon.mozilla.org/ca/mozillians/ca.mozillians.tmx",
             "type": "file", 
             "target": "ca.mozillians.tmx"
-        },
-        "focus-for-android": {
-            "url": "https://pontoon.mozilla.org/ca/focus-for-android/ca.focus-for-android.tmx",
-            "type": "file", 
-            "target": "ca.focus-for-android.tmx"
-        }, 
-        "focus-for-ios": {
-            "url": "https://pontoon.mozilla.org/ca/focus-for-ios/ca.focus-for-ios.tmx",
-            "type": "file", 
-            "target": "ca.focus-for-ios.tmx"
         }, 
         "pontoon-intro": {
             "url": "https://pontoon.mozilla.org/ca/pontoon-intro/ca.pontoon-intro.tmx",
