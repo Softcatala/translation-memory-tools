@@ -1,6 +1,6 @@
 {
     "project": "Lumina",
-    "projectweb": "https://weblate.trueos.org/projects/lumina/",
+    "projectweb": "https://lumina-desktop.org/",
     "fileset": {
         "Lumina": {
             "url": "https://github.com/trueos/lumina-i18n.git",
