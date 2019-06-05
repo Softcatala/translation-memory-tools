@@ -37,11 +37,6 @@
             "type": "bazaar",
             "target": "ca.po"
         },
-        "app-center": {
-            "url": "lp:~elementary-pantheon/appcenter/master/po/ca.po",
-            "type": "bazaar",
-            "target": "ca.po"
-        },
         "audience": {
             "url": "lp:~elementary-apps/audience/master/po/ca.po",
             "type": "bazaar",
