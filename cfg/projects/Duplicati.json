@@ -5,12 +5,14 @@
         "duplicati": {
             "url": "https://raw.githubusercontent.com/duplicati/duplicati/master/Localizations/duplicati/localization-ca.po", 
             "type": "file", 
-            "target": "duplicati-ca.po"
+            "target": "duplicati-ca.po",
+            "po_preprocessing" : "remove_untranslated"
         }, 
         "duplicati-webroot": {
             "url": "https://raw.githubusercontent.com/duplicati/duplicati/master/Localizations/webroot/localization_webroot-ca.po", 
             "type": "file", 
-            "target": "duplicati-webroot-ca.po"
+            "target": "duplicati-webroot-ca.po",
+            "po_preprocessing" : "remove_untranslated"
         }
     }
 }
