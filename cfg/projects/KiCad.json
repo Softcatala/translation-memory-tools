@@ -1,6 +1,6 @@
 {
     "project": "KiCad",
-    "projectweb": "http://docs.kicad-pcb.org/stable/en/gui_translation_howto.html",
+    "projectweb": "http://www.kicad-pcb.org/",
     "fileset": {
         "KiCad": {
             "url": "https://raw.githubusercontent.com/KiCad/kicad-i18n/master/ca/kicad.po",
