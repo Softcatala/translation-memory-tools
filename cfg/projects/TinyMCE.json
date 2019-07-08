@@ -4,7 +4,8 @@
     "fileset": {
         "TinyMCE": {
             "url": "https://www.transifex.com/projects/p/tinymce/", 
-            "type": "transifex"
+            "type": "transifex",
+            "duplicates" : "msgctxt"
         }
     }
 }
