@@ -105,7 +105,7 @@
             "target": "ca.thunderbird-wetransfer-extension.tmx"
         },
         "facebook-container": {
-            "url": "https://pontoon.mozilla.org/ca/facebook-container/ca.facebook-containers.tmx",
+            "url": "https://pontoon.mozilla.org/ca/facebook-container/ca.facebook-container.tmx",
             "type": "file",
             "target": "ca.facebook-container.tmx"
         }
