@@ -1,0 +1,11 @@
+{
+    "project": "GitLab",
+    "projectweb": "https://gitlab.com/",
+    "fileset": {
+        "GitLab": {
+            "url": "https://gitlab.com/gitlab-org/gitlab-ce/raw/master/locale/ca_ES/gitlab.po",
+            "type": "file",
+            "target": "gitlab-ca.po"
+        }
+    }
+}
