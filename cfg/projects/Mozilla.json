@@ -103,6 +103,11 @@
             "url": "https://pontoon.mozilla.org/ca/thunderbird-wetransfer-extension/ca.thunderbird-wetransfer-extension.tmx",
             "type": "file",
             "target": "ca.thunderbird-wetransfer-extension.tmx"
+        },
+        "facebook-container": {
+            "url": "https://pontoon.mozilla.org/ca/facebook-container/ca.facebook-containers.tmx",
+            "type": "file",
+            "target": "ca.facebook-container.tmx"
         }
     }
 }
