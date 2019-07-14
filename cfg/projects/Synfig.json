@@ -1,0 +1,16 @@
+{
+    "project": "Synfig",
+    "projectweb": "https://www.synfig.org/",
+    "fileset": {
+        "core": {
+            "url": "https://raw.githubusercontent.com/synfig/synfig/master/synfig-core/po/ca%40valencia.po",
+            "type": "file",
+            "target": "core.po"
+        },
+        "studio": {
+            "url": "https://raw.githubusercontent.com/synfig/synfig/master/synfig-studio/po/ca%40valencia.po",
+            "type": "file",
+            "target": "studio.po"
+        }
+    }
+}
