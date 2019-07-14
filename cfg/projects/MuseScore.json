@@ -1,0 +1,21 @@
+{
+    "project": "MuseScore",
+    "projectweb": "https://musescore.org/ca",
+    "fileset": {
+        "core": {
+            "url": "https://raw.githubusercontent.com/musescore/MuseScore/master/share/locale/mscore_ca.ts",
+            "type": "file",
+            "target": "core.ts"
+        },
+        "tours": {
+            "url": "https://raw.githubusercontent.com/musescore/MuseScore/master/share/locale/tours_ca.ts",
+            "type": "file",
+            "target": "tours.ts"
+        },
+        "instruments": {
+            "url": "https://raw.githubusercontent.com/musescore/MuseScore/master/share/locale/instruments_ca.ts",
+            "type": "file",
+            "target": "instruments.ts"
+        }
+    }
+}
