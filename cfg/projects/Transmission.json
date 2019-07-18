@@ -5,7 +5,8 @@
         "Transmission": {
             "url": "https://www.transifex.com/projects/p/transmissionbt/",
             "type": "transifex",
-            "excluded" : "/en"
+            "excluded" : "/en",
+            "po_preprocessing" : "remove_untranslated"
         }
     }
 }
