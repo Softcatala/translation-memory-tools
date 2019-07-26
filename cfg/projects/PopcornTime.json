@@ -1,8 +1,9 @@
 {
-    "project": "PopcornTime", 
+    "project": "PopcornTime",
+    "projectweb": "https://getpopcorntime.is/",
     "fileset": {
         "PopcornTime": {
-            "url": "https://www.transifex.com/projects/p/popcorn-time-app/", 
+            "url": "https://www.transifex.com/projects/p/popcorn-time-app/",
             "type": "transifex"
         }
     }
