@@ -1,0 +1,10 @@
+{
+    "project": "SuperTuxKart",
+    "projectweb": "https://supertuxkart.net/",
+    "fileset": {
+        "SuperTuxKart": {
+            "url": "https://www.transifex.com/supertuxkart/supertuxkart/",
+            "type": "transifex"
+        }
+    }
+}
