@@ -1,0 +1,11 @@
+{
+    "project": "xfe",
+    "projectweb": "http://roland65.free.fr/xfe/",
+    "fileset": {
+        "xfe": {
+            "url": "https://salsa.debian.org/joowie-guest/maintain_xfe/blob/master/po/ca.po", 
+            "type": "file",
+            "target": "xfe-ca.po"
+        }
+    }
+}
