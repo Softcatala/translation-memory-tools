@@ -1,0 +1,2715 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tmx version="1.4">
+	<header adminlang="en-US" creationtoolversion="0.1" creationtool="pontoon" datatype="plaintext" segtype="sentence" o-tmf="plain text" srclang="en-US" creationdate="2019-05-04T12:57:33.751370">
+	</header>
+	<body>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_handle_content_description-" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>-</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>-</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_blocking_disabled-" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>-</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>-</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:find_in_page_result1d2d" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$d/%2$d</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>%1$d/%2$d</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_find_in_page_result1d-out-of-2d" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$d out of %2$d</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>%1$d de %2$d</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step11-go-to-the-search-engine-homepage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1. Go to the search engine homepage.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1. Aneu a la pàgina d'inici del motor de cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:your_rights_content51s-also-uses-blocklists-provided-by-disconnect-inc-as-separate-and-independent-works-under-the-a-href2sgnu-general-public-license-v3a-and-available-a-href3sherea" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$s also uses blocklists provided by Disconnect, Inc. as separate and independent works under the &lt;a href="%2$s"&gt;GNU General Public License v3&lt;/a&gt;, and available &lt;a href="%3$s"&gt;here&lt;/a&gt;.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$s també utilitza llistes de bloquejos proporcionades per Disconnect, Inc. que es mantenen de forma independentment i separada sota la &lt;a href="%2$s"&gt;Llicència Pública General de GNU v3&lt;/a&gt; i que estan disponibles &lt;a href="%3$s"&gt;aquí&lt;/a&gt;.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_snackbar_finished1s-finished" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$s finished</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>%1$s ha acabat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:your_rights_content11s-is-free-and-open-source-software-made-by-mozilla-and-other-contributors" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$s is free and open source software made by Mozilla and other contributors.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$s és programari lliure i de codi obert creat per Mozilla i altres col·laboradors.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:your_rights_content21s-is-made-available-to-you-under-the-terms-of-the-a-href2smozilla-public-licensea-and-other-open-source-licenses" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$s is made available to you under the terms of the &lt;a href="%2$s"&gt;Mozilla Public License&lt;/a&gt; and other open source licenses.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$s és a la vostra disposició sota els termes de la &lt;a href="%2$s"&gt;Mozilla Public License (Llicència Pública de Mozilla)&lt;/a&gt; i altres llicències lliures.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:block_ads_card_title1s-is-ready-to-block-ads" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$s is ready to block ads</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$s està llest per blocar la publicitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_show_search_suggestions_summary1s-will-send-what-you-type-in-the-address-bar-to-your-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$s will send what you type in the address bar to your search engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$s enviarà al motor de cerca tot allò que escriviu a la barra d'adreces</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step2_alternative2-long-press-the-search-engines-search-field" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>2. Long press the search engine’s search field.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>2. Manteniu premut el camp de cerca del motor de cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step22-tap-into-the-search-engines-search-field" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>2. Tap into the search engine’s search field.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>2. Toqueu el camp de cerca del motor de cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step3_alternative3-tap-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>3. Tap %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>3. Toqueu «%1$s»</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step33-tap-the-magnifying-glass-icon-above-the-keyboard-to-add-the-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>3. Tap the magnifying glass icon above the keyboard to add the search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>3. Toqueu la icona de lupa sobre el teclat per afegir el motor de cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step4_alternative4-if-you-dont-see-1s-try-manually-adding-a-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>4. If you don’t see %1$s, try manually adding a search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>4. Si no veieu «%1$s», proveu d'afegir un motor de cerca manualment.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_step44-if-you-dont-see-the-magnifying-glass-try-manually-adding-a-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>4. If you don’t see the magnifying glass, try manually adding a search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>4. Si no veieu la lupa, proveu d'afegir un motor de cerca manualment.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_aboutabout" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>About</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant a</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_aboutabout-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>About %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant al %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_mozilla_summaryabout-1s-help" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>About %1$s, help</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant al %1$s, ajuda</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:block_ads_titlead-blocking" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Ad blocking</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloqueig de publicitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_ad_blockingad-blocking" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Ad Blocking</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloqueig de publicitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dialog_addtohomescreen_action_addadd" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_custom_summaryadd-and-manage-custom-autocomplete-urls" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add and manage custom autocomplete URLs.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegiu i gestioneu els URL d'emplenament automàtic personalitzats.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_add2-add-another-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>+ Add another search engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>+ Afegeix un altre motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_action_add-add-custom-url" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>+ Add custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>+ Afegeix un URL personalitzat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:custom_autocomplete_quick_addadd-custom-url" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix URL personalitzat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_title_addadd-custom-url" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL personalitzat nou</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:your_rights_content4additional-source-code-for-1s-is-available-under-various-other-free-and-open-source-a-href2slicensesa" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Additional source code for %1$s is available under various other free and open source &lt;a href="%2$s"&gt;licenses&lt;/a&gt;.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Hi ha codi font addicional del %1$s que està disponible sota diverses altres  &lt;a href="%2$s"&gt;llicències&lt;/a&gt; lliures i de codi obert.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:add_custom_autocomplete_labeladd-link-to-autocomplete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add link to autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix l'enllaç a l'emplenament automàtic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_announcement_searchadd-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add search engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix un motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_titleadd-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add search engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Motor de cerca nou</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:action_option_add_search_engineadd-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add search engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix un motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_shortcut_titleadd-shortcuts-to-your-home-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add shortcuts to your home screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegiu dreceres a la pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_add_to_home_screenadd-to-home-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add to Home screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix a pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dialog_addtohomescreen_titleadd-to-home-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add to Home screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix a la pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_advancedadvanced" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Advanced</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Avançat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_error_duplicate_namean-installed-search-engine-is-already-using-that-name" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>An installed search engine is already using that name.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ja hi ha un motor de cerca instal·lat amb aquest nom.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_breaking_titlea-quick-fix-when-blocking-breaking" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>A quick fix when
+blocking = breaking</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Una solució ràpida si el
+bloqueig causa problemes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tab_crash_report_descriptionas-a-private-browser-we-never-save-and-cannot-restore-this-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As a private browser, we never save and cannot restore this tab.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com a navegador privat, aquesta pestanya no s'ha desat i, per tant, no es pot restaurar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:fatal_crash_report_descriptionas-a-private-browser-we-never-save-and-cannot-restore-your-last-browsing-session" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As a private browser, we never save and cannot restore your last browsing session.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com a navegador privat, la vostra sessió de navegació no s'ha desat i, per tant, no es pot restaurar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:http_auth_dialog_titleauthentication-required" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Authentication required</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cal autenticació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_switch_autocompleteautocomplete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Emplenament automàtic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_autocomplete_urlautocomplete-urls-for-sites-you-use-most-long-press-any-url-in-the-address-bar" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Autocomplete URLs for sites you use most
+ Long-press any URL in the address bar</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Emplenament automàtic dels URL dels llocs que més utilitzeu
+ Manteniu premut qualsevol URL de la barra d'adreces</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_tracking_textautomatically-block-online-tracking-while-you-browse-then-remove-visited-pages-and-cookies-with-a-touch-to-the-trash-icon-in-the-app-or-in-your-notifications" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Automatically block online tracking while you browse. Then remove visited pages and cookies with a touch to the trash icon in the app or in your notifications.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloqueu automàticament els elements que us fan el seguiment mentre navegueu. Elimineu les pàgines visitades i les galetes tocant la icona de paperera a l'aplicació o a les notificacions.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:teaserautomatic-private-browsing-browse-erase-repeat" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Automatic private browsing.
+Browse. Erase. Repeat.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegació privada automàtica.
+Navegueu. Esborreu. Torneu-hi.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_should_block_cookies_third_party_only_optionblock-3rd-party-cookies-only" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block 3rd-party cookies only</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca només les galetes de tercers</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_should_block_cookies_third_party_tracker_cookies_optionblock-3rd-party-tracker-cookies-only" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block 3rd-party tracker cookies only</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca només les galetes de seguiment de tercers</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_ads_block_adsblock-ads-and-other-annoyances" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block ads and other annoyances</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els anuncis i altres molèsties</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_adsblock-ad-trackers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block ad trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment de publicitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_cookies_yesblock-all-cookies-will-cause-websites-to-break" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block all cookies (will cause websites to break)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca totes les galetes (farà que alguns llocs web no funcionin)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_cookies_third_party_onlyblock-all-third-party-cookies-may-cause-websites-to-break" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block all third-party cookies 
+(may cause websites to break)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca totes les galetes de tercers 
+(pot fer que alguns llocs web no funcionin)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_analyticsblock-analytic-trackers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block analytic trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment d'anàlisi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_defaultbrowser_text_newblock-content-like-ads-and-code-that-follow-you-around-the-web-and-slow-you-down-turn-on-ad-blocking-to-browse-faster-without-annoying-ads" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block content like ads and code that follow you around the web and slow you down. Turn on ad blocking to browse faster without annoying ads.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca contingut com la publicitat i el codi que us fan el seguiment de la vostra navegació i l'alenteixen. Activeu el bloqueig de publicitat per navegar més ràpid i sense anuncis molestos.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_category_cookiesblock-cookies" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block cookies</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca les galetes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_performance_block_imagesblock-images" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block images</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca les imatges</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_performance_block_javascriptblock-javascript" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block JavaScript</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca el JavaScript</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_contentblock-other-content-trackers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block other content trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca altres elements de seguiment de contingut</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_safe_browsing_titleblock-potentially-dangerous-and-deceptive-sites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block potentially dangerous and deceptive sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els llocs potencialment perillosos i maliciosos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_safe_browsing_summaryblock-reported-deceptive-and-attack-sites-malware-sites-and-unwanted-software-sites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block reported deceptive and attack sites, malware sites, and unwanted software sites.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els llocs atacants i els llocs amb programari maliciós i indesitjable.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_socialblock-social-trackers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block social trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment social</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_analytics_new_summaryblocks-trackers-that-analyze-and-measure-interactions-like-tapping-and-scrolling" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Blocks trackers that analyze and measure interactions like tapping and scrolling</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment que analitzen i mesuren interaccions com ara els tocs i el desplaçament</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_content_new_summaryblocks-tracking-activity-but-may-cause-some-sites-and-pages-to-behave-unexpectedly" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Blocks tracking activity, but may cause some sites and pages to behave unexpectedly</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca l'activitat de seguiment, però pot fer que alguns llocs no funcionin correctament i que es comportin de forma inesperada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_cookies_third_party_trackerblock-third-party-trackers-cookies-recommended" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block third-party trackers cookies (recommended)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca les galetes de seguiment de tercers (recomanat)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_blocking_switchblock-trackers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_performance_block_webfontsblock-web-fonts" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block Web fonts</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca tipus de lletra web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_block_adsbrowse-faster-by-stopping-ads-and-code-that-follows-you-around-the-web" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Browse faster by stopping ads and code that follows you around the web.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegueu més ràpid blocant la publicitat i el codi que us fan el seguiment mentre navegueu.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_tracking_titlebrowse-like-no-ones-watching" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Browse like no one’s watching</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegueu sense sentir-vos observat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_dialog_action_cancelcancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:action_cancelcancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dialog_addtohomescreen_action_cancelcancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_error_formatcheck-that-search-string-matches-example-format" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Check that search string matches Example format</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comproveu que la cadena de cerca coincideixi amb el format d'exemple</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:gv_prompt_clearclear" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Clear</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_clear_inputclear-input" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Clear input</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra l'entrada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:fatal_crash_report_close_button_labelclose" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_close_tabclose-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Close tab</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca la pestanya</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tab_crash_report_close_tab_button_labelclose-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Close Tab</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca la pestanya</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_content_blockingcontent-blocking" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Content Blocking</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloqueig de contingut</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_blocking_disabled_snackbar_messagecontent-blocking-is-disabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Content Blocking is disabled</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El bloqueig de contingut està desactivat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_blocking_enabled_snackbar_messagecontent-blocking-is-enabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Content Blocking is enabled</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El bloqueig de contingut està activat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_cookiescookies-and-site-data" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cookies and Site Data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Galetes i dades dels llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_image_copycopy-image-address" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy image address</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia l'adreça de la imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_link_copycopy-link-address" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy link address</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia l'adreça de l'enllaç</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_autocomplete_customcustom-url" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL personalitzat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_subitem_customlistcustom-urls" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Custom URLs</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL personalitzats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_autocomplete_custom_urlscustom-urls" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Custom URLs</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL personalitzats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_data_choicesdata-choices" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Data Choices</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elecció de dades</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_data_collection_usedata-collection-use" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Data Collection &amp; Use</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ús i recollida de dades</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_engine_defaultdefault" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Default</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_general_summarydefault-browser-tabs-language" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Default browser, tabs, language</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegador per defecte, pestanyes, llengua</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_dialog_title_search_enginedefault-search" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Default search</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cercador per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_autocomplete_preinstalleddefault-url-list" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Default URL List</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Llista d'URL per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_advanced_summarydeveloper-tools" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Developer tools</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Eines per a desenvolupadors</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_blocking_snackbar_disable_actiondisable" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Disable</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactiva</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_dismiss_inputdismiss" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Dismiss</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Descarta</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dismiss_no_suggestions_prompt_buttondismiss" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Dismiss</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_dismiss_find_in_pagedismiss-find-in-page" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Dismiss find in page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca la cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_add_errordouble-check-the-url-you-entered" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Double-check the URL you entered.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Reviseu l'URL que heu introduït.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_dialog_action_downloaddownload" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_dialog_warningdownloaded-files-bwill-not-be-deletedb-when-you-erase-1s-history" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Downloaded files &lt;b&gt;will not be deleted&lt;/b&gt; when you erase %1$s history.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els fitxers que baixeu &lt;b&gt;no s'eliminaran&lt;/b&gt; quan esborreu l'historial del %1$s.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_dialog_titledownload-file" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download File</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa el fitxer</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_firefoxdownload-firefox" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download Firefox</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa el Firefox</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_social_summaryembedded-on-sites-to-track-your-visits-and-to-display-functionality-like-share-buttons" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Embedded on sites to track your visits and to display functionality like share buttons</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Està incrustat en els llocs per fer el seguiment de les vostres visites i per mostrar alguns elements com els botons de compartició</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_blocking_snackbar_enable_actionenable" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_topsite_summaryenable-to-autocomplete-more-than-450-popular-urls-in-the-address-bar" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable to autocomplete more than 450 popular URLs in the address bar.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-ho per permetre l'emplenament automàtic més de 450 URL populars a la barra d'adreces.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_user_list_summaryenable-to-autocomplete-more-than-450-popular-urls-in-the-address-bar" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable to autocomplete more than 450 popular URLs in the address bar.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-ho per permetre l'emplenament automàtic més de 450 URL populars a la barra d'adreces.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_user_list_descriptionenable-to-autocomplete-sites-you-add-here" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable to autocomplete sites you add here.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-ho per emplenar automàticament els llocs que afegiu aquí.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_preinstalled_summaryenable-to-have-1s-autocomplete-over-450-popular-urls-in-the-address-bar" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable to have %1$s autocomplete over 450 popular URLs in the address bar.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-lo per fer permetre que el %1$s empleni automàticament més de 450 URL populars a la barra d'adreces.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_content_summary2enabling-may-cause-some-pages-to-behave-unexpectedly" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enabling may cause some pages to behave unexpectedly</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si s'activa, algunes pàgines podrien comportar-se de forma inesperada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_error_empty_nameenter-search-engine-name" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enter search engine name</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Escriviu el nom del motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_error_empty_searchenter-search-string" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enter search string</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Escriviu una cadena de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:shortcut_erase_short_labelerase" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:notification_action_erase_and_openerase-and-open" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase and Open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra i obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:shortcut_erase_and_open_long_labelerase-and-open-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase and open %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra i obre el %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:notification_erase_texterase-browsing-history" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase browsing history</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra l'historial de navegació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tabs_tray_action_eraseerase-browsing-history" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase browsing history</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra l'historial de navegació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:shortcut_erase_long_labelerase-browsing-history" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase browsing history</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra l'historial de navegació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_eraseerase-browsing-history" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase browsing history</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra l'historial de navegació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:shortcut_erase_and_open_short_labelerase-open" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase &amp; open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra i obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_add_exampleexample-examplecom" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Example: example.com</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Exemple: example.com</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_manually_exampleexample-examplecomsearchqs" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Example: example.com/search/?q=%s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Exemple: example.com/search/?q=%s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_add_example2example-mozillaorg" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Example: mozilla.org</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Exemple: mozilla.org</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_exceptionsexceptions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Exceptions</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Excepcions</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:external_multiple_apps_matched_exitexit-private-browsing" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Exit Private Browsing?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Voleu sortir de la navegació privada?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_fab_expandexpand" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Expand</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Amplia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:external_app_prompt_no_app_titlefind-an-app-that-can-open-link" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find an app that can open link</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca una aplicació que pugui obrir aquest enllaç</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:find_in_page_inputfind-in-page" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find in page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca a la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:find_in_pagefind-in-page" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find in Page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca a la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_next_resultfind-next-result" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find next result</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca el següent resultat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_previous_resultfind-previous-result" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find previous result</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca el resultat anterior</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_moved_too_quicklyfinger-moved-too-fast-try-again" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Finger moved too fast. Try again.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El dit s'ha mogut massa ràpid. Torneu-ho a provar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_image_descriptionfingerprint-icon" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Fingerprint icon</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Icona d'empremta digital</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_not_recognized_errorfingerprint-not-recognized-try-again" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Fingerprint not recognized. Try again.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha reconegut l'empremta digital. Torneu-ho a provar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_switch_autocomplete_user_listfor-sites-you-add" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>For Sites You Add</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per als llocs que afegiu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_switch_autocomplete_topsitesfor-top-sites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>For Top sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per als llocs principals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_generalgeneral" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>General</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>General</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_add_to_homescreenget-one-tap-access-to-sites-you-use-most1s-menu-add-to-home-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get one-tap access to sites you use most%1$s Menu &gt; Add to Home screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Accediu amb un sol toc als llocs que més utilitzeu%1$s Menú &gt; Afegeix a pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_add_to_homescreenget-one-tap-access-to-sites-you-use-most-menu-add-to-home-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get one-tap access to sites you use most
+        Menu &gt; Add to Home screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Accediu amb un sol toc als llocs que més utilitzeu
+        Menú &gt; Afegeix a pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_show_search_suggestionsget-search-suggestions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get search suggestions</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra suggeriments de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_finishget-started" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>GET STARTED</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>PRIMERS PASSOS</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_helphelp" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Help</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ajuda</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_stealth_summaryhide-webpages-when-switching-apps" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Hide webpages when switching apps</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Amaga les pàgines web en canviar d'aplicacions</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_stealth_summaryhide-webpages-when-switching-apps-and-block-taking-screenshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Hide webpages when switching apps and block taking screenshots.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Amaga les pàgines web en canviar d'aplicacions i bloca les captures de pantalles.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:security_popup_insecure_connectioninsecure-connection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Insecure Connection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Connexió insegura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_installed_search_enginesinstalled-search-engines" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Installed search engines</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Motors de cerca instal·lats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_languagelanguage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Language</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Llengua</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_mozilla_telemetry_summarylearn-more" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:enable_search_suggestion_subtitle_learnmorelearn-more" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_learn_morelearn-more" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_announcement_loadingloading" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Loading</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'està carregant…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_default_browser2make-1s-default-browser" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Make %1$s default browser</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Fes que el %1$s sigui el navegador per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_default_browsermake-default-browser" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Make default browser</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Fes que sigui el navegador per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_privacy_titlemake-privacy-a-habit" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Make privacy a habit</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu de la privadesa un hàbit</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_subitem_manage_sitesmanage-sites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Manage sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Gestiona els llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_autocomplete_manage_sitesmanage-sites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Manage sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Gestiona els llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tutorial_search_manually_addmanually-add" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Manually add</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix manualment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_content_summarymay-break-some-videos-and-web-pages" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>May break some videos and Web pages</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pot causar problemes amb alguns vídeos i pàgines web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_performance_block_webfonts_summarymay-result-in-missing-icons-or-images" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>May result in missing icons or images</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pot fer que no es vegin algunes icones o imatges</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_menumore-options" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>More options</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més opcions</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:indicator_content_description_menumore-options-button" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>More options button</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Botó de més opcions</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_mozillamozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_mozilla_telemetry_summary2mozilla-strives-to-collect-only-what-we-need-to-provide-and-improve-1s-for-everyone" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla strives to collect only what we need to provide and improve %1$s for everyone.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozilla s'esforça per recollir només les dades necessàries per oferir i millorar el %1$s per a tothom.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_manually_namename-to-display" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Name to display</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom per mostrar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_backnavigate-back" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Navigate back</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Vés enrere</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_forwardnavigate-forward" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Navigate forward</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navega cap endavant</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_add_confirmationnew-custom-url-added" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New custom URL added.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha afegit un URL personalitzat nou.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:block_ads_card_descriptionnew-feature-browse-faster-by-stopping-ads-and-code-that-follow-you-around-the-web" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New feature! Browse faster by stopping ads and code that follow you around the web.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Novetat: Navegueu més ràpid blocant la publicitat i el codi que us fan el seguiment mentre navegueu.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_confirmationnew-search-engine-added" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New search engine added.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha afegit un motor de cerca nou.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_new_sessionnew-session" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New Session</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sessió nova</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:new_tab_opened_snackbarnew-tab-opened" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New tab opened</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha obert una pestanya nova</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_next_buttonnext" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Next</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Següent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_should_block_cookies_no_optionno" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:enable_search_suggestions_nono" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_cookies_nono-allow-all-cookies" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No (allow all cookies)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No (permet totes les galetes)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:external_app_prompt_no_appnone-of-the-apps-on-your-device-are-able-to-open-this-link-you-can-leave-1s-to-search-2s-for-an-app-that-can" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>None of the apps on your device are able to open this link. You can leave %1$s to search %2$s for an app that can.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No hi ha cap aplicació en el dispositiu que pugui obrir aquest enllaç. Podeu sortir del %1$s per cercar al %2$s una aplicació que pugui obrir-lo.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:notification_browsing_session_channel_descriptionnotifications-let-you-erase-your-1s-session-with-a-tap-you-dont-need-to-open-the-app-or-see-whats-running-in-your-browser" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Notifications let you erase your %1$s session with a tap. You don’t need to open the app or see what’s running in your browser.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les notificacions permeten esborrar la sessió del %1$s amb un sol toc. No cal ni obrir l'aplicació ni mostrar el contingut del navegador.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_trackers_blockednumber-of-trackers-blocked" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of trackers blocked</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'elements blocats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_state_offoff" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Off</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactivat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:action_okok" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>OK</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>D'acord</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_close_buttonok-got-it" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>OK, got it!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Entesos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_state_onon" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>On</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_generic_titleoops" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Oops</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ups.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:notification_action_openopen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:download_snackbar_openopen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dialog_opentab_action_openopen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_open_in_new_tabopen-a-link-in-a-new-tab-long-press-any-link-on-a-page" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open a link in a new tab
+ Long-press any link on a page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obriu un enllaç en una pestanya nova
+ Manteniu premut qualsevol enllaç de la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_set_default_browseropen-every-link-in-1s-set-1s-as-default-browser" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open every link in %1$s
+ Set %1$s as default browser</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obriu tots els enllaços amb el %1$s
+ Definiu el %1$s com a navegador per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_open_with_a_browser2open-in" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in…</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_open_with_default_browser2open-in-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb el %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:external_app_prompt_titleopen-link-in-another-app" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open link in another app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre l'enllaç en una altra aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_open_link_new_sessionopen-link-in-new-session" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open Link in New Session</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre l'enllaç en una sessió nova</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_open_in_new_tabopen-link-in-new-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open link in new tab</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre l'enllaç en una pestanya nova</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dialog_opentab_titleopen-link-in-selected-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open link in selected tab</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre l'enllaç en la pestanya seleccionada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_open_tabopen-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open tab</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre la pestanya</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_open_with_a_browseropen-with" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open with…</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_open_with_default_browseropen-with-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open with %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb el %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_open_in_appopen-with-app" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open with app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb una aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:about_contentp1s-puts-you-in-controlp-puse-it-as-a-private-browser-ul-lisearch-and-browse-right-in-the-appli-liblock-trackers-or-update-settings-to-allow-trackersli-lierase-to-delete-cookies-as-well-as-search-and-browsing-historyli-ul-p-p1s-is-produced-by-mozilla-our-mission-is-to-foster-a-healthy-open-internetbr-a-href2slearn-moreap" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;p&gt;%1$s puts you in control.&lt;/p&gt;
+&lt;p&gt;Use it as a private browser:
+  &lt;ul&gt;
+    &lt;li&gt;Search and browse right in the app&lt;/li&gt;
+    &lt;li&gt;Block trackers (or update settings to allow trackers)&lt;/li&gt;
+    &lt;li&gt;Erase to delete cookies as well as search and browsing history&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;%1$s is produced by Mozilla. Our mission is to foster a healthy, open Internet.&lt;br/&gt;
+&lt;a href="%2$s"&gt;Learn more&lt;/a&gt;&lt;/p&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;p&gt;El %1$s us dóna el control.&lt;/p&gt;
+&lt;p&gt;Com a navegador privat, us permet:
+  &lt;ul&gt;
+    &lt;li&gt;Cercar i navegar directament des de l'aplicació&lt;/li&gt;
+    &lt;li&gt;Blocar els elements de seguiment (o canviar els paràmetres per permetre'ls)&lt;/li&gt;
+    &lt;li&gt;Esborrar les galetes i l'historial de cerques i de navegació&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;El %1$s està creat per Mozilla. La nostra missió és fomentar un Internet obert i saludable.&lt;br/&gt;
+&lt;a href="%2$s"&gt;Més informació&lt;/a&gt;&lt;/p&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_performance_block_javascript_summarypages-may-load-faster-but-may-also-behave-unexpectedly" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pages may load faster, but may also behave unexpectedly</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les pàgines es poden carregar més ràpid, però també poden comportar-se de forma inesperada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:gv_prompt_password_hintpassword" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Password</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Contrasenya</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:http_auth_dialog_passwordpassword" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Password</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Contrasenya</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:context_menu_paste_gopaste-go" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste &amp; Go</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxa i vés-hi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_manually_string_hintpaste-or-enter-search-string-if-necessary-replace-search-term-with-s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste or enter search string. If necessary, replace search term with: %s.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxeu o escriviu una cadena de cerca. Si és necessari, substituïu el terme de cerca per «%s».</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_add_hintpaste-or-enter-url" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste or enter URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxeu o escriviu un URL</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_performanceperformance" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Performance</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Rendiment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_custom_tab_brandingpowered-by-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Powered by %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Funciona amb el %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_defaultbrowser_titlepower-up-your-privacy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Power up your privacy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Potencieu la privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_privacyprivacy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_noticeprivacy-notice" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy Notice</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Avís de privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_and_security_headerprivacy-security" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy &amp; Security</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Privadesa i seguretat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:notification_browsing_session_channel_nameprivate-browsing-session" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Private browsing session</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sessió de navegació privada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:errorpage_titleproblem-loading-page" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Problem loading page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un problema en carregar la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_request_desktoprather-see-the-full-desktop-site1s-menu-request-desktop-site" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Rather see the full desktop site?%1$s Menu &gt; Request desktop site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Preferiu veure el lloc com es mostra en l'escriptori?%1$s Menú &gt; Mostra el lloc d'escriptori</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_request_desktoprather-see-the-full-desktop-site-menu-request-desktop-site" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Rather see the full desktop site?
+    Menu &gt; Request desktop site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Preferiu veure el lloc com es mostra en l'escriptori?
+    Menú &gt; Mostra el lloc d'escriptori</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_reloadreload-website" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Reload website</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Actualitza el lloc web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_remote_debuggingremote-debugging-via-usbwi-fi" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remote debugging via USB/Wi-Fi</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Depuració remota per USB/Wi-Fi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_action_remove_content_descriptionremove" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_removeremove" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_menu_removeremove" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_exceptions_menu_removeremove" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_exceptions_remove_all_button_labelremove-all-websites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove all websites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina tots els llocs web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_title_removeremove-custom-urls" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove custom URLs</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina URL personalitzats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_ads_new_summaryremoves-ads-designed-to-track-site-visits-even-if-you-dont-tap-them" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Removes ads designed to track site visits even if you don’t tap them</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina els anuncis dissenyats per fer el seguiment de les visites del lloc encara que no els toqueu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_remove_titleremove-search-engines" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove search engines</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina motors de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_report_site_issuereport-site-issue" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Report Site Issue</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Informa d'un problema amb el lloc</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_performance_request_desktop_siterequest-desktop-site" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Request desktop site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra el lloc d'escriptori</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:fatal_crash_report_restart_firefox_labelrestart-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Restart %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Reinicia el %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_restorerestore-default-search-engines" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Restore default search engines</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Restaura els motors de cerca per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_customtab_exitreturn-to-previous-app" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Return to previous app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Torna a l'aplicació anterior</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_shortcut_textreturn-to-your-favorite-sites-in-1s-quickly-just-select-add-to-home-screen-from-the-1s-menu" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Return to your favorite sites in %1$s quickly. Just select "Add to Home screen" from the %1$s menu.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Retorneu ràpidament als vostres llocs preferits amb el %1$s. Trieu «Afegeix a pantalla d'inici» en el menú del %1$s.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_safe_browsingsafe-browsing" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Safe Browsing</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegació segura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:action_savesave" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_manually_savesave" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_image_warningsaved-and-shared-images-bwill-not-be-deletedb-when-you-erase-1s-history" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Saved and shared images &lt;b&gt;will not be deleted&lt;/b&gt; when you erase %1$s history.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les imatges que deseu i compartiu &lt;b&gt;no s'eliminaran&lt;/b&gt; quan esborreu l'historial del %1$s.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_image_savesave-image" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save image</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa la imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_searchsearch" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_engine_labelsearch-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_manually_name_hintsearch-engine-name" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search engine name</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom del motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_hintsearch-for-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search for %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_search_textsearching-for-something-different-choose-another-default-search-engine-in-settings" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Searching for something different? Choose another default search engine in Settings.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Busqueu una altra cosa? Trieu un altre motor de cerca per defecte als Paràmetres.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:urlbar_hintsearch-or-enter-address" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search or enter address</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Escriviu una cerca o adreça</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:text_selection_search_actionsearch-privately" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search Privately</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca privada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_manually_stringsearch-string-to-use" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search string to use</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cadena de cerca que s'utilitzarà</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_locksecure-connection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Secure connection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Connexió segura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:security_popup_secure_connectionsecure-connection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Secure Connection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Connexió segura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_sslhandshake_titlesecure-connection-failed" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Secure connection failed</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ha fallat la connexió segura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_securitysecurity" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Security</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seguretat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_mozilla_telemetrysend-anonymous-usage-data" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Send anonymous usage data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envia dades d'ús anònimes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:crash_report_send_crash_labelsend-crash-report-to-mozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Send crash report to Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envia un informe de fallada a Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_mozilla_telemetry2send-usage-data" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Send usage data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envia dades d'ús</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_hostlookup_titleserver-not-found" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Server not found</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha trobat el servidor</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_defaultbrowser_textset-1s-as-your-default-browser-and-get-the-benefits-of-private-browsing-when-you-link-to-the-web-from-other-android-apps" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Set %1$s as your default browser and get the benefits of private browsing when you link to the Web from other Android apps.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Definiu el %1$s com a navegador per defecte i gaudiu d'una navegació privada quan obriu enllaços web des d'altres aplicacions de l'Android.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_privacy_textset-1s-as-your-default-browser-and-get-the-benefits-of-private-browsing-when-you-open-webpages-from-other-apps" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Set %1$s as your default browser and get the benefits of private browsing when you open webpages from other apps.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Definiu el %1$s com a navegador per defecte i gaudiu de navegació privada en obrir pàgines web des d'altres aplicacions.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_search_summaryset-default-autocomplete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Set default, autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Valor per defecte, emplenament automàtic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_settingssettings" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_shareshare" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share…</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_image_shareshare-image" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share image</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix la imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:contextmenu_link_shareshare-link" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share link</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix l'enllaç</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:share_dialog_titleshare-via" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share via</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix mitjançant</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:dialog_addtohomescreen_tracking_protectionshortcut-will-open-with-tracking-protection-disabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Shortcut will open with Tracking Protection disabled</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La drecera s'obrirà amb la protecció contra el seguiment desactivada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_homescreen_tipsshow-home-screen-tips" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Show home screen tips</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra consells a la pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_disable_tracking_protectionsite-behaving-unexpectedly-try-turning-off-tracking-protection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Site behaving unexpectedly?
+ Try turning off Tracking Protection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El lloc té un comportament inesperat?
+ Proveu de desactivar la protecció contra el seguiment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:site_security_icon_content_descriptionsite-security" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Site Security</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seguretat del lloc</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_skip_buttonskip" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skip</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Omet</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_ads_summarysome-ads-track-site-visits-even-if-you-dont-click-the-ads" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Some ads track site visits, even if you don’t click the ads</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Alguns anuncis fan el seguiment de les visites als llocs, fins i tot si no feu clic als anuncis</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:no_suggestions_messagesome-search-engines-cannot-show-suggestions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Some search engines cannot show suggestions.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No tots els motors de cerca poden mostrar suggeriments.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:fatal_crash_report_titlesorry-1s-had-a-problem-and-crashed" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sorry. %1$s had a problem and crashed.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$s ha tingut un problema i ha fallat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tab_crash_report_headlinesorry-were-having-a-problem-with-this-tab" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sorry. We’re having a problem with this tab.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un problema amb aquesta pestanya.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_secure_modestealth" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Stealth</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Invisible</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_stopstop-loading-website" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Stop loading website</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Atura la càrrega del lloc web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_ads_block_ads_summarystops-ads-and-other-annoyances-using-block-lists-from-easylist-easyprivacy-fanboys-annoyance-and-777guard-mobile-ad-filter" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Stops ads and other annoyances using block lists from Easylist, EasyPrivacy, Fanboy’s Annoyance, and 777Guard Mobile Ad Filter</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca la publicitat i altres elements molestos detectats per les llistes de bloquejos Easylist, EasyPrivacy, Fanboy’s Annoyance i 777Guard Mobile Ad Filter</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_social_new_summarystops-social-media-related-trackers-embedded-on-websites-including-social-share-buttons" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Stops social-media related trackers embedded on websites, including social share buttons</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Atura els elements de seguiments relacionats amb les xarxes socials incrustats en llocs web, inclosos els botons per compartir en xarxes socials</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:open_new_tab_snackbarswitch" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Switch</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Vés-hi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_switching_appsswitching-apps" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Switching Apps</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Canvi d'aplicacions</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_open_new_tabswitch-to-link-in-new-tab-immediately" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Switch to link in new tab immediately</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>En obrir un enllaç en una pestanya nova, vés-hi immediatament</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_language_systemdefaultsystem-default" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>System default</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Valor per defecte del sistema</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tab_crash_report_titletab-crashed" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tab Crashed</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La pestanya ha fallat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:feedback_erase_custom_tabtabs-browsing-history-has-been-erased" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tab’s browsing history has been erased.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha esborrat l'historial de navegació de la pestanya.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:content_description_tab_countertabs-open-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tabs open: %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pestanyes obertes: %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_defaultbrowser_text2take-private-browsing-to-the-next-level-block-ads-and-other-content-that-can-track-you-across-sites-and-bog-down-page-load-times" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take private browsing to the next level. Block ads and other content that can track you across sites and bog down page load times.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Porteu la navegació privada a un altre nivell. Bloqueu anuncis i altre contingut que us fan el seguiment i alenteixen la càrrega de les pàgines.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:search_add_hinttap-the-magnifying-glass-icon-above-the-keyboard-to-add-this-search-engine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tap the magnifying glass icon above the keyboard to add this search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Toqueu la icona de lupa sobre el teclat per afegir aquest motor de cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_malformeduri_titlethe-address-isnt-valid" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The address isn’t valid</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'adreça no és vàlida</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_unsupportedprotocol_titlethe-address-wasnt-understood" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The address wasn’t understood</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha entès l'adreça</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_timeout_titlethe-connection-timed-out" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The connection timed out</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha esgotat el temps d'espera de la connexió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_redirectloop_titlethe-page-isnt-redirecting-properly" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The page isn’t redirecting properly</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La pàgina no està redirigint correctament</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:enable_search_suggestion_subtitleto-get-search-suggestions-1s-needs-to-send-what-you-type-in-the-address-bar-to-the-search-engine-youve-chosen-2s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>To get search suggestions, %1$s needs to send what you type in the address bar to the search engine you’ve chosen. %2$s.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per veure els suggeriments de cerca, el %1$s ha d'enviar al motor de cerca que heu triat tot allò que escriviu a la barra d'adreces. %2$s.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_descriptiontouch-the-fingerprint-sensor-to-continue" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Touch the fingerprint sensor to continue.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Toqueu el sensor d'empremta digital per continuar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_trackers_blocked_titletrackers-blocked" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Trackers blocked</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elements blocats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_and_security_summarytracking-cookies-data-choices" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tracking, cookies, data choices</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seguiment, galetes, elecció de dades</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_tracking_protectiontracking-protection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tracking Protection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Protecció contra el seguiment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_explain_allowlisttrusted-site-allowlist-disables-tracking-protection-for-sites-you-know-and-trust" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Trusted site?
+ Allowlist disables Tracking Protection for sites you know and trust.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquest lloc és de confiança?
+ La llista de llocs permesos desactiva la protecció contra el seguiment dels llocs que coneixeu i en què confieu.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:errorpage_refreshtry-again" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Try Again</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Torna-ho a provar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_trackers_blocked_subtitleturning-this-off-may-fix-some-site-problems" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Turning this off may fix some site problems</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si es desactiva, pot ser que s'arreglin problemes amb alguns llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_disable_tipsturn-off-tips-on-the-1s-start-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Turn off tips on the %1$s start screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactiva els consells de la pantalla d'inici del %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:tip_disable_tips2turn-off-tips-on-the-start-screen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Turn off tips on the start screen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactiva els consells de la pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_content_blocking_subtitleturn-off-to-fix-some-sites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Turn off to fix some sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactiveu-ho per arreglar problemes amb alguns llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_hostlookup_messageul-licheck-the-address-for-typing-errors-such-as-strongwwstrongexamplecom-instead-of-strongwwwstrongexamplecomli-liif-you-are-unable-to-load-any-pages-check-your-devices-data-or-wi-fi-connectionli-ul" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;ul&gt;
+        &lt;li&gt;Check the address for typing errors such as
+          &lt;strong&gt;ww&lt;/strong&gt;.example.com instead of
+          &lt;strong&gt;www&lt;/strong&gt;.example.com&lt;/li&gt;
+        &lt;li&gt;If you are unable to load any pages, check your device’s data or Wi-Fi connection.&lt;/li&gt;
+      &lt;/ul&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;ul&gt;
+        &lt;li&gt;Comproveu que no s'hagin introduït errors en teclejar l'adreça, p. ex.
+          &lt;strong&gt;ww&lt;/strong&gt;.example.com en comptes de
+          &lt;strong&gt;www&lt;/strong&gt;.example.com&lt;/li&gt;
+        &lt;li&gt;Si no podeu carregar cap pàgina, comproveu la connexió de dades o Wi-Fi del vostre dispositiu.&lt;/li&gt;
+      &lt;/ul&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_connectionfailure_messageul-lithe-site-could-be-temporarily-unavailable-or-too-busy-try-again-in-a-few-momentsli-liif-you-are-unable-to-load-any-pages-check-your-mobile-devices-data-or-wi-fi-connectionli-ul" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;ul&gt;
+        &lt;li&gt;The site could be temporarily unavailable or too busy. Try again in a few moments.&lt;/li&gt;
+        &lt;li&gt;If you are unable to load any pages, check your mobile device’s data or Wi-Fi connection.&lt;/li&gt;
+      &lt;/ul&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;ul&gt;
+        &lt;li&gt;El lloc web podria estar temporalment no disponible o massa ocupat. Torneu-ho a provar d'aquí uns moments.&lt;/li&gt;
+        &lt;li&gt;Si no podeu carregar cap pàgina, comproveu la connexió de dades o Wi-Fi del vostre dispositiu mòbil.&lt;/li&gt;
+      &lt;/ul&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_sslhandshake_messageul-lithis-could-be-a-problem-with-the-servers-configuration-or-it-could-be-someone-trying-to-impersonate-the-serverli-liif-you-have-connected-to-this-server-successfully-in-the-past-the-error-may-be-temporary-and-you-can-try-again-laterli-ul" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;This could be a problem with the server’s configuration, or it could be
+someone trying to impersonate the server.&lt;/li&gt;
+  &lt;li&gt;If you have connected to this server successfully in the past, the error may
+be temporary, and you can try again later.&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;Això podria ser un problema amb la configuració del servidor, o bé podria ser que algú estigués intentant fer-se passar pel servidor.&lt;/li&gt;
+  &lt;li&gt;Si us hi heu connectat sense cap problema alguna altra vegada, l'error podria ser temporal i podeu tornar-ho a provar més tard.&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_redirectloop_messageul-lithis-problem-can-sometimes-be-caused-by-disabling-or-refusing-to-accept-cookiesli-ul" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;This problem can sometimes be caused by disabling or refusing to accept cookies.&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;ul&gt;
+&lt;li&gt;Això podria passar per haver inhabilitat o rebutjat l'acceptació de galetes.&lt;/li&gt; 
+&lt;/ul&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_malformeduri_messageul-liweb-addresses-are-usually-written-like-stronghttpwwwexamplecomstrongli-limake-sure-that-youre-using-forward-slashes-ie-strongstrongli-ul" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;Web addresses are usually written like &lt;strong&gt;http://www.example.com/&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Make sure that you’re using forward slashes (i.e. &lt;strong&gt;/&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;Les adreces web normalment s'escriuen així: &lt;strong&gt;http://www.example.com/&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Assegureu-vos que utilitzeu les barres inclinades (&lt;strong&gt;/&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_unsupportedprotocol_messageul-liyou-might-need-to-install-other-software-to-open-this-addressli-ul" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;You might need to install other software to open this address.&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;ul&gt;
+  &lt;li&gt;Pot ser que calgui que instal·leu altre programari per obrir l'adreça.&lt;/li&gt;
+&lt;/ul&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_connectionfailure_titleunable-to-connect" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Unable to connect</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha pogut connectar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:biometric_auth_titleunlock-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Unlock %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desbloca el %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_duplicate_url_errorurl-already-exists" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL already exists</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'URL ja existeix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_subitem_autocompleteurl-autocomplete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL Autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Emplenament automàtic d'URL</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:custom_tab_copy_url_actionurl-copied" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL copied</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha copiat l'URL</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_autocomplete_add_titleurl-to-add" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL to add</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL per afegir</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_block_analytics_summaryused-to-collect-analyze-and-measure-activities-like-tapping-and-scrolling" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Used to collect, analyze and measure activities like tapping and scrolling</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'utilitzen per recollir, analitzar i mesurar activitats com ara els tocs i el desplaçament</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_security_biometricuse-fingerprint-to-unlock-app" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use fingerprint to unlock app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Utilitza l'empremta digital per desblocar l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:http_auth_dialog_usernameusername" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Username</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom d'usuari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:gv_prompt_username_hintusername" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Username</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom d'usuari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:security_popup_security_verifiedverified-by-1s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Verified by: %1$s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Verificat per: %1$s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_category_web_contentweb-content" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Web Content</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Contingut web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:accessibility_announcement_loading_finishedwebsite-loaded" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Website loaded</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha carregat el lloc web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:error_generic_messagewe-cant-load-this-page-for-some-reason" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We can’t load this page for some reason.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha pogut carregar aquesta pàgina per algun motiu.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_whats_newwhats-new" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What's New</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Novetats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_breaking_textwhen-the-downside-of-blocking-online-trackers-is-a-site-that-seems-broken-turn-off-blocking-with-a-tap-to-the-tool-menu" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>When the downside of blocking online trackers is a site that seems broken, turn off blocking with a tap to the tool menu.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si us sembla que un lloc no funciona bé per haver blocat els elements de seguiment, desactiveu el bloqueig amb un sol toc al menú d'eines.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:enable_search_suggestion_titlewould-you-like-to-turn-on-search-suggestions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Would you like to turn on search suggestions?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Voleu activar els suggeriments de cerca?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:enable_search_suggestions_yesyes" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Yes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sí</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_privacy_should_block_cookies_yes_optionyes" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Yes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sí</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:your_rights_content3you-are-not-granted-any-rights-or-licenses-to-the-trademarks-of-the-mozilla-foundation-or-any-party-including-the-mozilla-firefox-or-1s-names-or-logos-additional-information-may-be-found-a-href2sherea" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You are not granted any rights or licenses to the trademarks of the Mozilla Foundation or any party, including the Mozilla, Firefox or %1$s names or logos. Additional information may be found &lt;a href="%2$s"&gt;here&lt;/a&gt;.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No se us atorga cap dret ni llicència sobre les marques registrades de la Fundació Mozilla, o de cap altra part, inclosos els noms o els logotips de Mozilla, Firefox o %1$s. Podeu trobar més informació &lt;a href="%2$s"&gt;aquí&lt;/a&gt;.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:external_app_promptyou-can-leave-1s-to-open-this-link-in-2s" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You can leave %1$s to open this link in %2$s.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Podeu sortir del %1$s per obrir aquest enllaç amb el %2$s.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_exceptions_descriptionyou-have-disabled-content-blocking-for-these-websites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You have disabled Content Blocking for these websites.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Heu desactivat el bloqueig de contingut en aquests llocs web.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:feedback_eraseyour-browsing-history-has-been-erased" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your browsing history has been erased.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha esborrat l'historial de navegació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:preference_security_biometric_summaryyour-fingerprint-can-unlock-1s-if-a-url-is-already-opened-in-the-app-stealth-will-be-turned-on" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your fingerprint can unlock %1$s if a URL is already opened in the app. Stealth will be turned on.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'empremta digital pot desblocar el %1$s si ja hi ha un URL obert en l'aplicació. S'activarà el mode invisible.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:menu_rightsyour-rights" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your Rights</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els vostres drets</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:your_rightsyour-rights" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your Rights</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els vostres drets</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-android:apppo:firstrun_search_titleyour-search-your-way" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your search, your way</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerqueu com vulgueu</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>
