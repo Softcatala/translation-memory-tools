@@ -3,8 +3,9 @@
     "projectweb": "https://supertuxkart.net/",
     "fileset": {
         "SuperTuxKart": {
-            "url": "https://www.transifex.com/supertuxkart/supertuxkart/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/master/data/po/ca.po",
+            "type": "file",
+            "target": "SuperTuxKart_ca.po"
         }
     }
 }
