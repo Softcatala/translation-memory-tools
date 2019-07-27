@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tmx version="1.4">
+	<header adminlang="en-US" creationtoolversion="0.1" creationtool="pontoon" datatype="plaintext" segtype="sentence" o-tmf="plain text" srclang="en-US" creationdate="2019-05-04T12:57:35.004827">
+	</header>
+	<body>
+		<tu tuid="focus-for-ios:focus-iosxliff:xcuitestinfoplistcfbundleshortversionstring" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1.0</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1.0</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:screenshottestsinfoplistcfbundleshortversionstring" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1.0</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1.0</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternalapplinkwithappnamemessagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%1$@ wants to open %2$@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %1$@ vol obrir %2$@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:openinfocusinfoplistcfbundleshortversionstring" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>3.10</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>3.10</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistcfbundleshortversionstring" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>3.10</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>3.10</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:contentblockerinfoplistcfbundleshortversionstring" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>4.0</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>4.0</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutscreentitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>About</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant a</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsabouttitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>About %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant al %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssiriadd" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletecustomdescriptoin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add and manage custom autocomplete URLs.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegiu i gestioneu els URL d'emplenament automàtic personalitzats.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchaddsearchenginebuttonwithplus" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>+ Add Another Search Engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>+ Afegeix un altre motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchaddsearchenginebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add Another Search Engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix un altre motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteaddcustomurlwithplus" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>+ Add Custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>+ Afegeix URL personalitzat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteaddcustomurl" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add Custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix URL personalitzat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsercustomurlmenulabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add Custom URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix URL personalitzat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurladdtoautocompletelabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add link to autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix l'enllaç a l'emplenament automàtic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchaddsearchenginetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add Search Engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix un motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssiriaddto" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add to Siri</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix al Siri</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectionadtrackerslabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Ad trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elements de seguiment de publicitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectionanalytictrackerlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Analytic trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elements de seguiment d'anàlisi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfocushandoffsyncing" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Apple Handoff is syncing</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'Apple Handoff està sincronitzant</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsauthenticationreason" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Authenticate to return to %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Autentiqueu-vos per tornar a %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletedefaultlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Emplenament automàtic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfirstrunmessagelabeldescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Automatically block online trackers while you browse. Then tap to erase visited pages, searches, cookies and passwords from your device.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloqueu automàticament els elements que us fan el seguiment mentre navegueu. Esborreu amb un sol toc les pàgines visitades, cerques, galetes i contrasenyes del dispositiu.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringshomedescriptionlabel1" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Automatic private browsing.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegació privada automàtica.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowserbacklabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Back</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enrere</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockads" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block ad trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment de publicitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockanalytics" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block analytics trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment d'anàlisi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsblockothermessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Blocking other content trackers may break some videos and Web pages.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si bloqueu altres elements de seguiment de contingut, és possible que alguns vídeos i pàgines web no funcionin correctament.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockother" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block other content trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca altres elements de seguiment de contingut</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblocksocial" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block social trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca els elements de seguiment social</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutsafaribullet1" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block trackers for improved privacy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Blocar els elements de seguiment per millorar la privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutprivatebullet2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block trackers (or update settings to allow trackers)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Blocar els elements de seguiment (o canviar els paràmetres per permetre'ls)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockfonts" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block Web fonts</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bloca tipus de lletra web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutsafaribullet2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Block Web fonts to reduce page size</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Blocar els tipus de lletra web per reduir la mida de la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringshomedescriptionlabel2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Browse. Erase. Repeat.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegueu. Esborreu. Torneu-hi.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfirstrunmessagelabeltagline" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Browse like no one’s watching.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Navegueu sense sentir-vos observat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkcallbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Call</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Truca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlcancellabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkcancelbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsopencancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternalapplinkcanceltitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectiontrackerdescriptionlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Choose whether %@ blocks ad, analytic, social, and other trackers.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Trieu si el %@ ha de blocar, entre d'altres, els elements de seguiment de publicitat, d'anàlisi i social.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslideshistorydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Clear your entire browsing session history, passwords, cookies anytime with a single tap.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborreu l'historial de navegació, les contrasenyes i les galetes quan vulgueu amb un sol toc.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsmenuclose" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectioncontenttrackerlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Content trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elements de seguiment de contingut</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsercopymenulabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsercopyaddresslabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy Address</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia l'adreça</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenucopyaddress" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy Address</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia l'adreça</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscontextmenucopyimagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy Image</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia la imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscontextmenucopylink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy Link</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia l'enllaç</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletecustomtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>CUSTOM URL LIST</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>LLISTA D'URL PERSONALITZATS</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletecustomlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Custom URLs</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL personalitzats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletedefaulttitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>DEFAULT URL LIST</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>LLISTA D'URL PER DEFECTE</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletedisabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Disabled</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactivat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectiontoggledescription1" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Disable until you close %@ or tap ERASE.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desactiva fins que tanqui el %@ o toqui ESBORRA.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:openinfocusinfoplistcfbundledisplayname" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(DISPLAY_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(DISPLAY_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsdone" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Done</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Fet</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteaddcustomurlerror" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Double-check the URL you entered.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Reviseu l'URL que heu introduït.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsedit" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Edit</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Edita</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkemailbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Email</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Correu electrònic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblocksocialdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Embedded on sites to track your visits and to display functionality like share buttons</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Està incrustat en els llocs per fer el seguiment de les vostres visites i per mostrar alguns elements com els botons de compartició</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssafariinstructionsenable" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu el %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteenabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enabled</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletedefaultdescriptoin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable to have %@ autocomplete over 450 popular URLs in the address bar.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-lo per fer que el %@ empleni automàticament més de 450 URL populars a la barra d'adreces.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletemysitesdesc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable to have %@ autocomplete your favorite URLs.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-ho per fer que el %@ empleni automàticament els vostres URL preferits.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockotherdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enabling may cause some pages to behave unexpectedly</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si s'activa, algunes pàgines podrien comportar-se de forma inesperada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssirierase" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlerasebuttonlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>ERASE</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>ESBORRA</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssirieraseandopen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase &amp; Open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra i obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutprivatebullet3" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Erase to delete cookies as well as search and browsing history</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborrar les galetes i l'historial de cerques i de navegació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteaddcustomurlexample" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Example: example.com</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Exemple: example.com</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchsearchtemplateexample" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Example: searchengineexample.com/search/?q=%s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Exemple: exemplemotorcerca.com/search/?q=%s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglefaceiddescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Face ID can unlock %@ if a URL is already open in the app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Face ID pot desblocar el %@ si ja hi ha un URL obert en l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlfindonpagelabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find in page: %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca a la pàgina: %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenufindinpage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find in Page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca a la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfindinpagedone" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find in page done</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca a la pàgina acabada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfindinpagenextresult" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find next in page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca el següent a la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfindinpagepreviousresult" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find previous in page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca l'anterior a la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsopenfirefox" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Firefox (Private Browsing)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Firefox (navegació privada)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:focusintentextensioninfoplistcfbundledisplayname" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>FocusIntentExtension</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>FocusIntentExtension</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowserforwardlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Forward</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Endavant</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchsuggestions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get Search Suggestions</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra suggeriments de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenugetfirefox" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get the Firefox App</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Instal·leu el Firefox</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutrowhelp" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Help</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ajuda</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchinstalledsearchengines" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>INSTALLED SEARCH ENGINES</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>MOTORS DE CERCA INSTAL·LATS</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssectionintegration" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>INTEGRATION</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>INTEGRACIÓ</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssafariinstructionsnotenabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%@ is not enabled.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %@ no està activat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutmissionlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%@ is produced by Mozilla. Our mission is to foster a healthy, open Internet.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %@ està creat per Mozilla. La nostra missió és fomentar un Internet obert i saludable.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsblockotheryes" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>I Understand</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Entesos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutlearnmorebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglesendanonymoususagedatasubtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingslearnmore" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectionlearnmore" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn More</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscontextmenulinkcopied" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Link you copied:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enllaç que heu copiat:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscontextmenuclipboardlink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Link you copied: %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enllaç que heu copiat: %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletemanagesites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Manage Sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Gestiona els llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleothersubtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>May break some videos and Web pages</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pot causar problemes amb alguns vídeos i pàgines web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsopenmore" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>More</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssectionmozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>MOZILLA</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>MOZILLA</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsdetailtextsendusagedata" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla strives to collect only what we need to provide and improve %@ for everyone.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozilla s'esforça per recollir només les dades necessàries per oferir i millorar el %@ per a tothom.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletemysites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>My Sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els meus llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchnametodisplay" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Name to display</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom per mostrar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletecustomurladded" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New Custom URL added.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha afegit un URL personalitzat nou.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchnewsearchengineadded" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New Search Engine Added.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha afegit un motor de cerca nou.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbiometricpromptnewsession" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>New Session</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sessió nova</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslidesnextbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Next</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Següent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssearchsuggestionspromptdisable" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteemptystate" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No Custom URLs to display</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No hi ha cap URL personalitzat per mostrar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsblockotherno" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No, Thanks</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No, gràcies</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfirstrunlastslidebuttonlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>OK, Got It!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Entesos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsfirstrunbuttonlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>OK, GOT IT!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>ENTESOS</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternalapplinkopentitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkopenappstorebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open App Store</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre l'App Store</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssiriopenurl" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open Favorite Site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre un lloc preferit</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssirifavoriteurl" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open Favorite Site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre un lloc preferit</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenuopeninfocus" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb el %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsactionsheetopenin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre amb el %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenushareopenchrome" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in Chrome</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre al Chrome</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenushareopenfirefox" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in Firefox</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre al Firefox</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenushareopensafari" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open in Safari</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre al Safari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkopenmapsbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open Maps</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre els Mapes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsphotospermissionopensettings" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obre els paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssafariinstructionsopen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Open Settings App</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obriu l'aplicació «Configuració»</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenupageactions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Page Actions</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Accions de la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlpaste" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlcontextmenu" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste &amp; Go</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxa i vés-hi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchsearchtemplateplaceholder" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste or enter search string. If necessary, replace search term with: %s.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxeu o escriviu una cadena de cerca. Si és necessari, substituïu el terme de cerca per «%s».</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteaddcustomurlplaceholder" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Paste or enter URL</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enganxeu o escriviu un URL</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssectionperformance" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>PERFORMANCE</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>RENDIMENT</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslideswelcometitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Power up your privacy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Potencieu la privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssectionprivacy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>PRIVACY</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>PRIVADESA</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutrowprivacy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy Notice</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Avís de privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:screenshottestsinfoplistcfbundlename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:openinfocusinfoplistcfbundlename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:focusintentextensioninfoplistcfbundlename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:contentblockerinfoplistcfbundlename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:contentblockerinfoplistcfbundledisplayname" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistcfbundlename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:xcuitestinfoplistcfbundlename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>$(PRODUCT_NAME)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsabouttoplabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%@ puts you in control.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %@ us dóna el control.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsrate" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Rate %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Valora el %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowserreloadlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Reload</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Torna a carregar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenurequestdesktop" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Request Desktop Site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra el lloc d'escriptori</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsrequest-desktop-site" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Request Desktop Site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra el lloc d'escriptori</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenurequestmobile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Request Mobile Site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra la versió mòbil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssirieditopenurl" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Re-Record or Delete Shortcut</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Torna a enregistrar o suprimeix la drecera</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchrestoreengine" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Restore Default Search Engines</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Restaura els motors de cerca per defecte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglesafari" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Safari</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Safari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsopensafari" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Safari</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Safari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssafarititle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>SAFARI INTEGRATION</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>INTEGRACIÓ AMB EL SAFARI</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssave" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscontextmenusaveimagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save Image</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa la imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchtitle2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>SEARCH</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>CERCA</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutprivatebullet1" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search and browse right in the app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cercar i navegar directament des de l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search Engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search Engine</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchsection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>SEARCH ENGINE</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>MOTOR DE CERCA</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchsearchenginename" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search engine name</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom del motor de cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlsearchlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search for %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslidessearchdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Searching for something different? Choose a different search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Busqueu una altra cosa? Trieu un altre motor de cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlplaceholdertext" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search or enter address</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Escriviu una cerca o adreça</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssearchsearchtemplate" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search string to use</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cadena de cerca que s'utilitzarà</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingssectionsecurity" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>SECURITY</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>SEGURETAT</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsershortcutdescriptionselectlocationbar" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Select Location Bar</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Selecciona la barra d'ubicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglesendanonymoususagedata" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Send anonymous usage data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envia dades d'ús anònimes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglesendusagedata" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Send usage data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envia dades d'ús</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsscreentitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsersettingslabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsshare" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsersharelabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringscontextmenusharelinktitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share Link</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix l'enllaç</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssharemenusharepage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share Page With...</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix la pàgina amb...</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglehomescreentips" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Show home screen tips</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mostra consells a la pantalla d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssearchsuggestionsprompttitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Show Search Suggestions?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Voleu veure suggeriments de cerca?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettinsgsirishortcutstitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>SIRI SHORTCUTS</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>DRECERES DE SIRI</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslidesskipbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skip</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Omet</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectionsocialtrackerlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Social trackers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elements de seguiment social</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockadsdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Some ads track site visits, even if you don’t click the ads</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Alguns anuncis fan el seguiment de les visites als llocs, fins i tot si no feu clic als anuncis</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowserstoplabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Stop</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Atura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslideswelcomedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take private browsing to the next level. Block ads and other content that can track you across sites and bog down page load times.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Porteu la navegació privada a un altre nivell. Bloqueu anuncis i altre contingut que us fan el seguiment i alenteixen la càrrega de les pàgines.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssafariinstructionscontentblockers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tap Safari, then select Content Blockers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Toqueu «Safari» i trieu «Bloquejadors de contingut»</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssearchengineaddengineerror" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>That didn't work. Try replacing the search term with this: %s.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No ha funcionat. Proveu-ho substituint els termes de cerca per això: %s.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistnsphotolibraryaddusagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This lets you save and upload photos.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això permet desar fotos i pujar-les.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistnsphotolibraryusagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This lets you save and upload photos.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això permet desar fotos i pujar-les.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsphotospermissiondescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This lets you save images to your Camera Roll</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això permet desar imatges al vostre Rodet</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistnscamerausagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This lets you take and upload photos.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això permet fer fotos i pujar-les.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistnsmicrophoneusagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This lets you take and upload videos.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això permet fer vídeos i pujar-los.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistnsfaceidusagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This lets you unlock the app.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això us permet desblocar l'aplicació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssearchsuggestionspromptmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>To get suggestions, %@ needs to send what you type in the address bar to the search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per veure els suggeriments, el %@ ha d'enviar al motor de cerca tot allò que escriviu a la barra d'adreces.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompletetopsites" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Top Sites</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Llocs principals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggletouchiddescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Touch ID can unlock %@ if a URL is already open in the app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Touch ID pot desblocar el %@ si ja hi ha un URL obert en l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurltrackersblockedlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Trackers blocked</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elements blocats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectionlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tracking Protection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Protecció contra el seguiment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectiontogglelabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tracking Protection</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Protecció contra el seguiment</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectiondisabledlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tracking Protection off</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Protecció contra el seguiment desactivada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringserrortryagainbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Try again</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Torna-ho a provar</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstrackingprotectionlabeldescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Turning this off may fix some site problems</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si es desactiva, pot ser que s'arreglin problemes amb alguns llocs</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbiometricpromptreason" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Unlock %@ when re-opening in order to prevent unauthorized access.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desbloca el %@ en reobrir per tal d'impedir l'accés no autoritzat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteduplicateurl" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL already exists</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'URL ja existeix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsautocompletesection" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL Autocomplete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Emplenament automàtic d'URL</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsbrowsercopyaddresstoast" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL Copied To Clipboard</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha copiat l'URL al porta-retalls</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsautocompleteaddcustomurllabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL to add</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL per afegir</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssiriurltoopen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>URL to open</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>URL que s'obrirà</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsusagedata" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>usage-data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>usage-data</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggleblockanalyticsdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Used to collect, analyze and measure activities like tapping and scrolling</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'utilitzen per recollir, analitzar i mesurar activitats com ara els tocs i el desplaçament</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstogglefaceid" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use Face ID to unlock app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Utilitza el Face ID per desblocar l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutprivatebulletheader" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use it as a private browser:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com a navegador privat, us permet:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutsafaribulletheader" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use it as a Safari extension:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com a extensió del Safari, us permet:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringstouchidreason" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use Touch ID to return to %@</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Utilitzeu el Touch ID per tornar al %@</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingstoggletouchid" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use Touch ID to unlock app</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Utilitza el Touch ID per desblocar l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternalapplinkmessagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%@ wants to open another App</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %@ vol obrir una altra aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkopenappstoretitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%@ wants to open the App Store.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %@ vol obrir l'App Store.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillainfoplistnslocationwheninuseusagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Websites you visit may request your location.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els llocs web que visiteu poden sol·licitar la vostra ubicació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingswhatsnewtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What’s New</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Novetats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssettingsdetailtextsearchsuggestion" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%@ will send what you type in the address bar to your search engine.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El %@ enviarà al motor de cerca tot allò que escriviu a la barra d'adreces.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsphotospermissiontitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>“%@” Would Like to Access Your Photos</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El «%@» vol accedir a les vostres fotos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringssearchsuggestionspromptenable" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Yes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sí</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsexternallinkmessagetitlewithplaceholder" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You are now leaving %@.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esteu sortint del %@.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsurlerasemessagelabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your browsing history has been erased.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha esborrat l'historial de navegació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslideshistorytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your history is history</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El vostre historial és història</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaenlprojlocalizablestringsaboutrowrights" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your Rights</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els vostres drets</seg>
+			</tuv>
+		</tu>
+		<tu tuid="focus-for-ios:focus-iosxliff:blockzillaintrostringsintroslidessearchtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your search, your way</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerqueu com vulgueu</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>
