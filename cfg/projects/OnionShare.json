@@ -1,0 +1,12 @@
+{
+    "project": "OnionShare",
+    "projectweb": "https://hosted.weblate.org/projects/onionshare/translations/ca/",
+    "softcatala": false,
+    "fileset": {
+        "OnionShare": {
+            "url": "https://hosted.weblate.org/download/onionshare/translations/ca/?format=po",
+            "type": "file",
+            "target": "onionshare-translations-ca.po"
+        }
+    }
+}
