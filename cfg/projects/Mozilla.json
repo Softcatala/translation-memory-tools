@@ -3,6 +3,16 @@
     "projectweb": "https://www.softcatala.org/projectes/mozilla/", 
     "softcatala": true, 
     "fileset": {
+        "focus-for-android": {
+            "url": "../source-pos/mozilla/ca.focus-for-android.tmx", 
+            "type": "local-file", 
+            "target": "ca.focus-for-android.tmx"
+		},
+        "focus-for-ios": {
+            "url": "../source-pos/mozilla/ca.focus-for-ios.tmx", 
+            "type": "local-file", 
+            "target": "ca.focus-for-ios.tmx"
+		},
         "firefox": {
             "url": "https://pontoon.mozilla.org/ca/firefox/ca.firefox.tmx",
             "type": "file", 
