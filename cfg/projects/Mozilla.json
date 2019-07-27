@@ -118,7 +118,12 @@
             "url": "https://pontoon.mozilla.org/ca/facebook-container/ca.facebook-container.tmx",
             "type": "file",
             "target": "ca.facebook-container.tmx"
-        }
+        },
+	"ca.firefox-monitor-website": {
+            "url": "https://pontoon.mozilla.org/ca/firefox-monitor-website/ca.firefox-monitor-website.tmx", 
+            "type": "file", 
+            "target": "ca.firefox-monitor-website.tmx"
+	}
     }
 }
 
