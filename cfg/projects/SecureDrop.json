@@ -3,7 +3,7 @@
     "projectweb": "https://www.softcatala.org/projectes/securedrop/",
     "softcatala": true,
     "fileset": {
-        "Liberapay": {
+        "SecureDrop": {
             "url": "https://weblate.securedrop.org/download/securedrop/securedrop/ca/?format=po",
             "type": "file",
             "target": "securedrop-ca.po"
