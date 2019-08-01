@@ -19,7 +19,7 @@
 
 import logging
 import os
-import urllib.request
+from urllib.request import Request, urlopen
 
 
 class DownloadFile(object):
@@ -29,7 +29,8 @@ class DownloadFile(object):
 
         for _ in range(NTRIES):
             try:
-                return urllib.request.urlopen(url)
+                req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                return urlopen(req)
             except Exception as e:
                 print("Error on urlopen_with_retry: " + str(e))
 
