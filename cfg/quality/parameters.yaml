@@ -5,9 +5,9 @@ pology:
     - header-fix: '{0} set-header -sfield:"Language:ca" -screate "{1}"'
     - command: '{0} --skip-obsolete --coloring-type=html check-rules {1} "{2}" > "{3}"'
     - rules:
-        - /upstream/punctuation.rules
         - /upstream/false-friends.rules
         - /upstream/keys.rules
+        - /catalan-pology-rules/punctuation.rules
         - /catalan-pology-rules/date-format.rules
         - /catalan-pology-rules/terminology-sc.rules
         - /catalan-pology-rules/iso_639.rules
