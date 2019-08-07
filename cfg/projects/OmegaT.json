@@ -1,0 +1,11 @@
+{
+    "project": "OmegaT", 
+    "projectweb": "https://omegat.org/", 
+    "fileset": {
+        "omegat": {
+            "url": "https://raw.githubusercontent.com/OmegaT-L10N/ca/master/omegat/project_save.tmx", 
+            "type": "file", 
+            "target": "omegat-ca.tmx"
+        }
+    }
+}
