@@ -61,10 +61,13 @@ class ConvertTmx():
                 if tuv_entry.tag != 'tuv':
                     continue
 
-                llengua = tuv_entry.attrib['{http://www.w3.org/XML/1998/namespace}lang']
+                if '{http://www.w3.org/XML/1998/namespace}lang' in tuv_entry.attrib:
+                    llengua = tuv_entry.attrib['{http://www.w3.org/XML/1998/namespace}lang'].lower()
+                else:
+                    llengua = tuv_entry.attrib['lang'].lower()
 
                 for seg_entry in tuv_entry.iter('seg'):
-                    if llengua == 'en' or llengua == 'en-US':
+                    if llengua == 'en' or llengua == 'en-us':
                         source = seg_entry.text
                     elif llengua == 'ca':
                         translation = seg_entry.text

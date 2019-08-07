@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-4.2.0" segtype="sentence" srclang="EN"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN">
+        <seg>"Aligner" aligner utility</seg>
+      </tuv>
+      <tuv lang="CA" changeid="Alexandra" changedate="20150604T184246Z" creationid="Alexandra" creationdate="20150526T140656Z">
+        <seg>Alineador de textos "Aligner"</seg>
+      </tuv>
+    </tu>
+    <tu>
+    </tu>
+  </body>
+</tmx>
