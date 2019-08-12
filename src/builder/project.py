@@ -39,6 +39,7 @@ from .transvisionfileset import TransvisionFileSet
 from .xiaomifileset import XiaomiFileSet
 from .cgitfileset import CGitFileSet
 from .zanatafileset import ZanataFileSet
+from .pontoonfileset import PontoonFileSet
 
 class Project(object):
 
@@ -170,6 +171,12 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
+            elif fileset.type == 'pontoon':
+                fs = PontoonFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+                fs.set_project(self)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
