@@ -164,6 +164,17 @@ class GenerateQualityReports():
 
         return lt, pology
 
+    def _write_str_to_text_file(self, text_file, text):
+        if '@@image' in text:   # GNOME documentation images
+            return
+
+        text = re.sub('[\t]', ' ', text)
+        text = re.sub('<br>|<br\/>', ' ', text)
+        text = re.sub('[_&~]', '', text)
+        text = re.sub('<[^>]*>', '', text) # Remove HTML tags
+        #text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
+        text += "\n\n"
+        text_file.write(text)
 
     def transonly_po_and_extract_text(self, po_file, po_transonly, text_file):
         try:
@@ -176,16 +187,16 @@ class GenerateQualityReports():
         for entry in input_po.translated_entries():
             text = entry.msgstr
 
-            if '@@image' in text:   # GNOME documentation images
-                continue
+            if text is None or len(text) == 0:
+                if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
+                    text = entry.msgstr_plural[0]
 
-            text = re.sub('[\t]', ' ', entry.msgstr)
-            text = re.sub('<br>|<br\/>', ' ', text)
-            text = re.sub('[_&~]', '', text)
-            text = re.sub('<[^>]*>', '', text) # Remove HTML tags
-            #text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
-            text += "\n\n"
-            text_file.write(text)
+            self._write_str_to_text_file(text_file, text)
+
+            if entry.msgstr is None or len(entry.msgstr) == 0:
+                if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 1:
+                    text = entry.msgstr_plural[1]
+                    self._write_str_to_text_file(text_file, text)
 
         input_po.save(po_transonly)
         text_file.close()

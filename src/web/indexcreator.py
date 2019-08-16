@@ -101,6 +101,32 @@ class IndexCreator(object):
             self._process_file(name, filename, softcatala, entries)
 
 
+    def _write_entry(self, entries, s, t, x, c, p, softcatala):
+        if self.debug_keyword is not None and self.debug_keyword.strip() == s:
+            print("Source: " + s)
+            print("Translation: " + t)
+            print("Context: " + str(x))
+            print("Comment: " + str(c))
+
+        if s is None or len(s) == 0 or t is None or len(t) == 0:
+            return
+
+        entry_text = s + t + str(x)
+        if entry_text in entries:
+            return
+
+        entries.add(entry_text)
+
+        self.sentences_indexed += 1
+        string_words = t.split(' ')
+        self.words += len(string_words)
+        self.write_entry(source=s,
+                         target=t,
+                         comment=c,
+                         context=x,
+                         project=p,
+                         softcatala=softcatala)
+
     def _process_file(self, name, filename, softcatala, entries):
         print("Processing: " + filename)
 
@@ -121,30 +147,14 @@ class IndexCreator(object):
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
                         t = entry.msgstr_plural[0]
 
-                if self.debug_keyword is not None and self.debug_keyword.strip() == s:
-                    print("Source: " + s)
-                    print("Translation: " + t)
-                    print("Context: " + str(x))
-                    print("Comment: " + str(c))
+                self._write_entry(entries, s, t, x, c, p, softcatala)
 
-                if s is None or len(s) == 0 or t is None or len(t) == 0:
-                    continue
-
-                entry_text = s + t + str(x)
-                if entry_text in entries:
-                    continue
-
-                entries.add(entry_text)
-
-                self.sentences_indexed += 1
-                string_words = entry.msgstr.split(' ')
-                self.words += len(string_words)
-                self.write_entry(source=s,
-                                 target=t,
-                                 comment=c,
-                                 context=x,
-                                 project=p,
-                                 softcatala=softcatala)
+                if entry.msgstr is None or len(entry.msgstr) == 0:
+                    if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 1:
+                        self.sentences += 1
+                        s = entry.msgid_plural
+                        t = entry.msgstr_plural[1]
+                        self._write_entry(entries, s, t, x, c, p, softcatala)
 
         except Exception as detail:
             print("Exception: " + str(detail))

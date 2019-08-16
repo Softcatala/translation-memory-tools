@@ -97,7 +97,7 @@ def main():
     ctx = {
         'date': datetime.date.today().strftime("%d/%m/%Y"),
         'projects': str(indexCreator.projects),
-        'words': locale.format("%d", indexCreator.words, grouping=True),
+        'words': locale.format_string("%d", indexCreator.words, grouping=True),
     }
     process_template("web/templates/statistics.mustache", "statistics.html", ctx)
 

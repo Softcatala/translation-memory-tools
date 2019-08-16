@@ -34,8 +34,8 @@ class TestPOFile(unittest.TestCase):
         pofile.save(filename)
 
     def _read_text_file(self, text_file):
-        with open(text_file) as fp:  
-           return fp.readlines()
+        with open(text_file) as fp:
+            return fp.readlines()
 
     def test_transonly_po_and_extract_text_spaces(self):
         entries = list()
@@ -44,7 +44,7 @@ class TestPOFile(unittest.TestCase):
 
         entries.append(polib.POEntry(msgid='Hello\tThis is a test with brs',
                        msgstr='Això<br>és una<br/>prova'))
-     
+
         filename = tempfile.NamedTemporaryFile().name
         text_file = tempfile.NamedTemporaryFile().name
         self._create_po_file(filename, entries)
@@ -60,7 +60,7 @@ class TestPOFile(unittest.TestCase):
         entries = list()
         entries.append(polib.POEntry(msgid='This is a test',
                        msgstr='_Això &és una prova~'))
-     
+
         filename = tempfile.NamedTemporaryFile().name
         text_file = tempfile.NamedTemporaryFile().name
         self._create_po_file(filename, entries)
@@ -75,7 +75,7 @@ class TestPOFile(unittest.TestCase):
         entries = list()
         entries.append(polib.POEntry(msgid='This is a test',
                        msgstr='Això és una <b>prova<b>'))
-     
+
         filename = tempfile.NamedTemporaryFile().name
         text_file = tempfile.NamedTemporaryFile().name
         self._create_po_file(filename, entries)
@@ -85,6 +85,27 @@ class TestPOFile(unittest.TestCase):
 
         lines = self._read_text_file(text_file)
         self.assertEquals("Això és una prova\n", lines[0])
+
+    def test_transonly_po_and_extract_text_plural(self):
+        entries = list()
+        msgstr_plural = {}
+        msgstr_plural[0] = 'Voleu suprimir aquesta fotografia de la càmera?'
+        msgstr_plural[1] = 'Voleu suprimir aquestes %d fotografies de la càmera?'
+
+        entries.append(polib.POEntry(msgid='Delete this photo from camera?',
+                       msgid_plural='Delete these %d photos from camera?',
+                       msgstr_plural=msgstr_plural))
+
+        filename = tempfile.NamedTemporaryFile().name
+        text_file = tempfile.NamedTemporaryFile().name
+        self._create_po_file(filename, entries)
+
+        g = GenerateQualityReports()
+        g.transonly_po_and_extract_text(filename, tempfile.NamedTemporaryFile().name, text_file)
+
+        lines = self._read_text_file(text_file)
+        self.assertEquals("Voleu suprimir aquesta fotografia de la càmera?\n", lines[0])
+        self.assertEquals("Voleu suprimir aquestes %d fotografies de la càmera?\n", lines[2])
 
 if __name__ == '__main__':
     unittest.main()

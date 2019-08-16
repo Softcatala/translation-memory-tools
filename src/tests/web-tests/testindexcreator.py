@@ -30,10 +30,12 @@ from web.indexcreator import IndexCreator
 class IndexWriterMock (IndexWriter):
 
     def __init__(self):
-        self.store = {}
+        self.store = []
 
     def add_document(self, **fields):
-        self.store.update(fields)
+        d = dict()
+        d.update(fields)
+        self.store.append(d)
 
 
 class TestIndexCreator(unittest.TestCase):
@@ -56,31 +58,68 @@ msgid "Power off the selected virtual machines"
 msgstr "Apaga les màquines virtuals seleccionades"
 """
 
-    def _dump_po_to_file(self):
+    minipo_plural = r"""#
+msgid ""
+msgstr ""
+"Project-Id-Version: program 2.1-branch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-01-09 07:15+0100\n"
+"PO-Revision-Date: 2004-03-30 17:02+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Please remember to do something
+#: ../dir/file.xml.in.h:1 ../dir/file2.xml.in.h:4
+msgctxt "Context"
+msgid "Delete this photo from camera?"
+msgid_plural "Delete these %d photos from camera?"
+msgstr[0] "Voleu suprimir aquesta fotografia de la càmera?"
+msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
+"""
+
+    def _dump_po_to_file(self, filename):
         tmpfile = tempfile.NamedTemporaryFile()
         f = open(tmpfile.name, 'w')
-        f.write(self.minipo)
-        # When tmpfile object goes out of scope the file is deleted
+        f.write(filename)
         return tmpfile
 
     def test_process_project(self):
 
-        tmpfile = self._dump_po_to_file()
+        tmpfile = self._dump_po_to_file(self.minipo)
 
         index = IndexCreator('.')
         index.writer = IndexWriterMock()
         index._process_file('test_project', tmpfile.name, False, set())
         stored = index.writer.store
 
-        self.assertEquals(stored['source'], u'Power off the selected virtual machines')
-        self.assertEquals(stored['target'], u'Apaga les màquines virtuals seleccionades')
-        self.assertEquals(stored['context'], 'Context')
-        self.assertEquals(stored['comment'], 'Please remember to do something\r\n')
-        self.assertEquals(stored['softcatala'], False)
-        self.assertEquals(stored['project'], 'test_project')
+        self.assertEquals(stored[0]['source'], u'Power off the selected virtual machines')
+        self.assertEquals(stored[0]['target'], u'Apaga les màquines virtuals seleccionades')
+        self.assertEquals(stored[0]['context'], 'Context')
+        self.assertEquals(stored[0]['comment'], 'Please remember to do something\r\n')
+        self.assertEquals(stored[0]['softcatala'], False)
+        self.assertEquals(stored[0]['project'], 'test_project')
         self.assertEquals(index.words, 5)
         self.assertEquals(index.sentences, 1)
         self.assertEquals(index.sentences_indexed, 1)
+
+    def test_process_project_plural(self):
+
+        tmpfile = self._dump_po_to_file(self.minipo_plural)
+
+        index = IndexCreator('.')
+        index.writer = IndexWriterMock()
+        index._process_file('test_project', tmpfile.name, False, set())
+        stored = index.writer.store
+        self.assertEquals(stored[0]['source'], u'Delete this photo from camera?')
+        self.assertEquals(stored[0]['target'], u'Voleu suprimir aquesta fotografia de la càmera?')
+
+        self.assertEquals(stored[1]['source'], u'Delete these %d photos from camera?')
+        self.assertEquals(stored[1]['target'], u'Voleu suprimir aquestes %d fotografies de la càmera?')
+
+        self.assertEquals(index.sentences, 2)
+        self.assertEquals(index.sentences_indexed, 2)
+
 
     def test_get_comment_both(self):
         index = IndexCreator('.')
