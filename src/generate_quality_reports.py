@@ -89,7 +89,7 @@ class LanguageTool():
         elif subdir == json_file[:len(subdir)]:
             json_file = json_file[len(subdir):]
 
-        cmd = 'cd {0} && python {1}/lt-json-to-html.py -i "{2}" -o "{3}"'.format(
+        cmd = 'cd {0} && python3 {1}/lt-json-to-html.py -i "{2}" -o "{3}"'.format(
                subdir, os.path.join(curdir, lt_html_dir), json_file, file_report)
 
         os.system(cmd)
