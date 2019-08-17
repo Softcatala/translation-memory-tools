@@ -52,13 +52,17 @@ class Report():
         self._project_file = open(report_filename, "a")
 
     def _process_template(self, template, filename, ctx):
-        template = open(template, 'r').read()
-        parsed = pystache.Renderer()
-        s = parsed.render(template, ctx)
+        try:
+            template = open(template, 'r').read()
+            parsed = pystache.Renderer()
+            s = parsed.render(template, ctx)
 
-        f = open(filename, 'w')
-        f.write(s)
-        f.close()
+            f = open(filename, 'w')
+            f.write(s)
+            f.close()
+
+        except Exception as e:
+            print("_process_template. Error: {0}".format(e))
 
     def add_string_to_project_report(self, text):
         self._project_file.write(text + "\n")
