@@ -1,6 +1,6 @@
 {
     "project": "Mastodon",
-    "projectweb": "https://weblate.joinmastodon.org/",
+    "projectweb": "https://www.joinmastodon.org/",
     "fileset": {
         "Mastodon": {
             "url": "https://github.com/tootsuite/mastodon.git",
