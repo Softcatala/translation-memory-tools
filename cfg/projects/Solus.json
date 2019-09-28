@@ -1,16 +1,21 @@
 {
     "project": "Solus",
-    "projectweb": "https://solus-project.com/",
+    "projectweb": "https://getsol.us/",
     "fileset": {
         "SC": {
             "url": "https://raw.githubusercontent.com/solus-project/solus-sc/master/po/ca.po",
             "type": "file",
             "target": "sc-ca.po"
         },
-        "BriskMenu": {
+        "brisk-menu": {
             "url": "https://raw.githubusercontent.com/solus-project/brisk-menu/master/po/ca.po",
             "type": "file",
             "target": "brisk-menu-ca.po"
+        },
+        "budgie-desktop": {
+            "url": "https://translate.getsol.us/download/budgie-desktop/translations/ca/?format=po",
+            "type": "file",
+            "target": "budgie-desktop-ca.po"
         }
     }
 }
