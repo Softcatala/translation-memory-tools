@@ -131,6 +131,7 @@ INTERMEDIATE_PO=$PUBLIC/translation-memories/po
 BACKUP_DIR=$PUBLIC/previous
 cd $ROOT/tm-git/src
 python compare_sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO
+ls -h -s -S  $TARGET_DIR/quality/*.html
 cat builder-error.log
 
 echo "Deployment completed $ROOT $TARGET_DIR"
