@@ -168,14 +168,30 @@ class GenerateQualityReports():
 
         return lt, pology
 
+    def _remove_sphinx(self, text):
+        x = re.search(r"(:[^:]*:`([^`]*)`)", text)
+        if x is None:
+            return text
+
+        out = text.replace(x.group(0), x.group(2))
+        return self._remove_sphinx(out)
+
     def _write_str_to_text_file(self, text_file, text):
         if '@@image' in text:   # GNOME documentation images
+            return
+
+        if 'external ref' in text:   # Gnome external images
+            return
+
+        if 'image::' in text:   # Shpinx images
             return
 
         text = re.sub('[\t]', ' ', text)
         text = re.sub('<br>|<br\/>', ' ', text)
         text = re.sub('[_&~]', '', text)
         text = re.sub('<[^>]*>', '', text) # Remove HTML tags
+
+        text = self._remove_sphinx(text)
         #text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
         text += "\n\n"
         text_file.write(text)
