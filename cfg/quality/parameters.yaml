@@ -16,6 +16,7 @@ pology:
         - /catalan-pology-rules/tags.rules
         - /catalan-pology-rules/abbreviations.rules
         - /catalan-pology-rules/gender-neutralization.rules
+        - /catalan-pology-rules/gnome-documentation.rules
 
 lt:
     - lt_output: output/quality
