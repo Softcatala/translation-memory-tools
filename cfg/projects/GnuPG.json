@@ -1,0 +1,11 @@
+{
+    "project": "GnuPG",
+    "projectweb": "https://www.gnupg.org/",
+    "fileset": {
+        "gnupg": {
+            "url": "https://raw.githubusercontent.com/gpg/gnupg/master/po/ca.po",
+            "type": "file",
+            "target": "gnupg-ca.po"
+        }
+    }
+}
