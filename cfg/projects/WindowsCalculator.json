@@ -1,0 +1,12 @@
+{
+    "project": "WindowsCalculator",
+    "projectweb": "https://github.com/microsoft/calculator",
+    "fileset": {
+        "WindowsCalculator": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates" : "msgctxt",
+            "pattern": ".*?/calc/.*?"
+        }
+    }
+}
