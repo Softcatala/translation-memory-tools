@@ -1,0 +1,11 @@
+{
+    "project": "GameHub", 
+    "projectweb": "https://tkashkin.tk/projects/gamehub/", 
+    "fileset": {
+        "GameHub": {
+            "url": "https://raw.githubusercontent.com/tkashkin/GameHub/master/po/ca.po", 
+            "type": "file", 
+            "target": "gamehub-ca.po"
+        }
+    }
+}
