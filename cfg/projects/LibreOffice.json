@@ -3,35 +3,10 @@
     "projectweb": "https://www.softcatala.org/projectes/libreoffice/", 
     "softcatala": true, 
     "fileset": {
-        "UI": {
-            "url": "https://translations.documentfoundation.org/++offline_tm/ca/libo_ui/",
-            "type": "compressed", 
-            "target": "libreoffice-ui.zip"
-        }, 
-        "Ajuda": {
-            "url": "https://translations.documentfoundation.org/++offline_tm/ca/libo_help/",
-            "type": "compressed", 
-            "target": "libreoffice-help.zip"
-        }, 
-        "Lloc web": {
-            "url": "https://translations.documentfoundation.org/++offline_tm/ca/website/",
-            "type": "compressed", 
-            "target": "website.zip"
-        }, 
-        "Android": {
-            "url": "https://translations.documentfoundation.org/++offline_tm/ca/android/",
-            "type": "compressed",
-            "target": "android.zip"
-        }, 
-        "iOS": {
-            "url": "https://translations.documentfoundation.org/++offline_tm/ca/iosremote/",
-            "type": "compressed", 
-            "target": "ios.zip"
-        }, 
-        "libo_online": {
-            "url": "https://translations.documentfoundation.org/++offline_tm/ca/libo_online/",
-            "type": "compressed",
-            "target": "libo_online.zip"
+        "LibreOffice": {
+            "url": "https://github.com/LibreOffice/translations.git",
+            "type": "git",
+            "pattern": ".*?/ca/.*?"
         }
     }
 }
