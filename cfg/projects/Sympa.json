@@ -1,0 +1,16 @@
+{
+    "project": "Sympa", 
+    "projectweb": "https://translate.sympa.org/ca/", 
+    "fileset": {
+        "sympa-ui": {
+            "url": "https://raw.githubusercontent.com/sympa-community/sympa/sympa-6.2/po/sympa/ca.po", 
+            "type": "file", 
+            "target": "sympa-ui_ca.po"
+        },
+        "sympa-webhelp": {
+            "url": "https://raw.githubusercontent.com/sympa-community/sympa/sympa-6.2/po/web_help/ca.po", 
+            "type": "file", 
+            "target": "sympa-webhelp_ca.po"
+        }
+    }
+}
