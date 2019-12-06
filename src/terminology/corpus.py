@@ -64,6 +64,19 @@ class Corpus(object):
         # Remove all the leading and trailing whitespace characters.
         return result.strip().lower()
 
+    def _clean_localized(self, result):
+        mapping = {
+                    '’' : '\'',
+                    'à' : 'à',
+                    'í' : 'í',
+                    'ó' : 'ó',
+                  }
+
+        for char in mapping.keys():
+            result = result.replace(char, mapping[char])
+
+        return result
+
     def _should_select_string(self, source, target):
         words = len(source.split())
 
@@ -143,6 +156,13 @@ class Corpus(object):
 
                     if not self._should_select_string(msgid, msgstr):
                         continue
+
+                    clean = self._clean_localized(msgstr)
+                    if clean != msgstr:
+                        log = 'Localized clean [{0}] -> [{1}]\n'
+                        log = log.format(msgstr, clean)
+                        f.write(log)
+                        msgstr = clean
 
                     self.strings_selected += 1
 
