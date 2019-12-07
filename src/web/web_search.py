@@ -73,17 +73,18 @@ class WebView(object):
         total_time = 0
         PER_PAGE = 100
 
-        g = Glossary(search.source)
-        g.search()
-        glossary = g.get_results()
+        start_time = time.time()
 
         if search.has_invalid_search_term:
             aborted_search = True
             pagination = None
+            glossary = None
         else:
-            start_time = time.time()
+            g = Glossary(search.source)
+            g.search()
+            glossary = g.get_results()
+
             raw_results = search.get_results()
-            total_time = time.time() - start_time
             num_results = raw_results.scored_length()
 
             if len(raw_results) > 0:
@@ -107,6 +108,7 @@ class WebView(object):
             else:
                 pagination = None
 
+        total_time = time.time() - start_time
         ctx = {
             'source': search.source,
             'target': search.target,
