@@ -20,7 +20,7 @@
 # Boston, MA 02111-1307, USA.
 
 from flask import Flask, request, Response
-import cgi
+import html
 import time
 import sys
 import urllib.parse
@@ -42,7 +42,7 @@ class WebView(object):
         if highlighted is not None and len(highlighted) > 0:
             return highlighted
 
-        return cgi.escape(result[key])
+        return html.escape(result[key])
 
     def get_result(self, result):
         result_dict = {
@@ -57,11 +57,11 @@ class WebView(object):
             # Comments can be multi-line because they contain multiple lines or
             # because we concatenated tcomments with comments from the PO. So
             # it is necessary to adapt it to properly integrate into HTML.
-            comment = cgi.escape(result["comment"]).replace('\n', '<br />').replace('\r', '')
+            comment = html.escape(result["comment"]).replace('\n', '<br />').replace('\r', '')
             result_dict['comment'] = comment
 
         if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            result_dict['context'] = cgi.escape(result["context"])
+            result_dict['context'] = html.escape(result["context"])
 
         return result_dict
 
