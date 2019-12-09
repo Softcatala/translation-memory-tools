@@ -68,6 +68,10 @@ class TestPage(unittest.TestCase):
         corpus = Corpus('')
         assert not corpus._should_select_string(u'()', '()')
 
+    def test_clean_localized(self):
+        corpus = Corpus('')
+        assert corpus._clean_localized(u'accès') == u'accès'
+        assert corpus._clean_localized(u'àíóè’') == u'àíóè\''
 
 if __name__ == '__main__':
     unittest.main()
