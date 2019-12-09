@@ -65,6 +65,7 @@ class Corpus(object):
         return result.strip().lower()
 
     def _clean_localized(self, result):
+        original = result
         mapping = {
                     '’' : '\'',
                     'à' : 'à',
@@ -75,6 +76,11 @@ class Corpus(object):
 
         for char in mapping.keys():
             result = result.replace(char, mapping[char])
+
+        if original != result:
+            log = 'Localized clean [{0}] -> [{1}]\n'
+            log = log.format(original, result)
+            logging.info(log)
 
         return result
 
@@ -158,12 +164,7 @@ class Corpus(object):
                     if not self._should_select_string(msgid, msgstr):
                         continue
 
-                    clean = self._clean_localized(msgstr)
-                    if clean != msgstr:
-                        log = 'Localized clean [{0}] -> [{1}]\n'
-                        log = log.format(msgstr, clean)
-                        f.write(log)
-                        msgstr = clean
+                    msgstr = self._clean_localized(msgstr)
 
                     self.strings_selected += 1
 
