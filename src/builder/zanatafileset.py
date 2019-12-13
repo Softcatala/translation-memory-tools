@@ -34,7 +34,7 @@ class ZanataFileSet(FileSet):
     def _set_auth_api_token(self):
         try:
             with open("../cfg/credentials/zanata.yaml", "r") as stream:
-                values = yaml.load(stream)
+                values = yaml.load(stream, Loader=yaml.FullLoader)
                 for value in values:
                     if self.project_name not in value:
                         continue

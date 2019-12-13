@@ -157,7 +157,7 @@ class GenerateQualityReports():
         pology = OrderedDict()
 
         with open('../cfg/quality/parameters.yaml', 'r') as f:
-            doc = yaml.load(f)
+            doc = yaml.load(f, Loader=yaml.FullLoader)
             for dictionaries in doc[SECTION_LT]:
                 for k in dictionaries.keys():
                     lt[k] = dictionaries[k]
