@@ -64,8 +64,17 @@ class ZanataFileSet(FileSet):
 
         return ids
 
+    # Try to get first only the master (latest) version. It prevents downloading old translations
+    # If this does not work, download the full memory
     def _get_tmx_file(self, project_id):
-        req = "/rest/tm/projects/{0}/?locale=ca".format(project_id)
+        if self._get_single_tmx_file(project_id, "/rest/tm/projects/{0}/iterations/master?locale=ca", False):
+            return
+
+        self._get_single_tmx_file(project_id, "/rest/tm/projects/{0}?locale=ca", True)
+
+
+    def _get_single_tmx_file(self, project_id, base_url, report_error):
+        req = base_url.format(project_id)
         url = urllib.parse.urljoin(self.url, req)
         headers = {'X-Auth-User': self.username, 'X-Auth-Token': self.auth}
 
@@ -81,9 +90,13 @@ class ZanataFileSet(FileSet):
             output = open(filename, 'wb')
             output.write(infile.read())
             output.close()
+            return True
 
         except Exception as detail:
-            logging.error("ZanataFileSet._get_tmx_file {0} - error: {1}".format(url, detail))
+            if report_error:
+                logging.error("ZanataFileSet._get_single_tmx_file {0} - error: {1}".format(url, detail))
+
+            return False
 
     def do(self):
         self._set_auth_api_token()
