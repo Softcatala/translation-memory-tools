@@ -7,7 +7,7 @@ hunspell
 phply # required by translate-toolkit to process php files
 translate-toolkit==2.3.0
 lxml
-pyyaml
+pyyaml >= 5.1
 # Official version 1.5.0 has bugs for Python 3 fixed in github but not released yet
 git+https://github.com/miracle2k/android2po.git@5c1954b35f409a6977265467e97f0baf60ed4718
 

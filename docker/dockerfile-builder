@@ -1,11 +1,11 @@
 FROM python:3.6.1
 
 ENV LT_ROOT /opt/lt
-ENV LT /opt/lt/LanguageTool-4.4
+ENV LT /opt/lt/LanguageTool-4.7
 ENV DIR /opt/dev
 ENV DIR_TMT_GIT /opt/dev/tm-git
 
-RUN apt-get update && apt-get install python3-dev libhunspell-dev gettext zip vim -y
+RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev  gettext zip vim  -y
 RUN mkdir -p $DIR
 
 # LanguageTool
@@ -14,7 +14,7 @@ RUN apt-get update
 RUN apt-get install -t jessie-backports openjdk-8-jdk -y
 RUN mkdir -p $LT_ROOT
 WORKDIR $LT_ROOT
-RUN wget -q https://languagetool.org/download/LanguageTool-4.4.zip && unzip LanguageTool-4.4.zip
+RUN wget -q https://languagetool.org/download/LanguageTool-4.7.zip && unzip LanguageTool-4.7.zip
 
 #Pology
 RUN apt-get install cmake -y
