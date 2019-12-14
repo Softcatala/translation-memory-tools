@@ -1,4 +1,4 @@
-FROM python:3.6.1
+FROM python:3.6.9-stretch
 
 ENV LT_ROOT /opt/lt
 ENV LT /opt/lt/LanguageTool-4.7
@@ -9,9 +9,7 @@ RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev  g
 RUN mkdir -p $DIR
 
 # LanguageTool
-RUN echo "deb http://http.debian.net/debian jessie-backports main" | tee --append /etc/apt/sources.list.d/jessie-backports.list > /dev/null
-RUN apt-get update
-RUN apt-get install -t jessie-backports openjdk-8-jdk -y
+RUN apt-get install openjdk-8-jdk -y 
 RUN mkdir -p $LT_ROOT
 WORKDIR $LT_ROOT
 RUN wget -q https://languagetool.org/download/LanguageTool-4.7.zip && unzip LanguageTool-4.7.zip
@@ -37,8 +35,8 @@ RUN git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-buil
 ENV PATH /root/.rbenv/bin:/root/.rbenv/shims:$PATH
 
 RUN rbenv init -
-RUN rbenv install 2.3.4
-RUN rbenv global 2.3.4
+RUN rbenv install 2.6.0
+RUN rbenv global 2.6.0
 RUN gem install i18n-translators-tools
 
 # Locale ca-ES
