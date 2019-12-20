@@ -4,12 +4,12 @@
     "softcatala": true, 
     "fileset": {
         "inkscape": {
-            "url": "https://gitlab.com/inkscape/inkscape/raw/master/po/ca.po",
+            "url": "https://gitlab.com/inkscape/inkscape/raw/1.0.x/po/ca.po",
             "type": "file",
             "target": "ca.po"
         }, 
         "documentation": {
-            "url": "-b 0.92.x https://gitlab.com/inkscape/inkscape-docs/documentation.git",
+            "url": "-b 1.0.x https://gitlab.com/inkscape/inkscape-docs/documentation.git",
             "type": "git",
             "pattern": ".*?ca.po"
         }
