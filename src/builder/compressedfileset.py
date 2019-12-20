@@ -31,7 +31,10 @@ class CompressedFileSet(FileSet):
 
     def uncompress(self, filename, report_error):
         if filename.endswith('.zip'):
-            os.system('unzip {0} -d {1}'.format(filename, self.temp_dir))
+            if len(self.pattern) > 0:
+                os.system('unzip {0} {1} -d {2}'.format(filename, self.pattern, self.temp_dir))
+            else:
+                os.system('unzip {0} -d {1}'.format(filename, self.temp_dir))
         elif filename.endswith('tar.gz'):
             if len(self.pattern) > 0:
                 cmd = 'tar --wildcards -xvf {0} -C {1} {2}'.format(
