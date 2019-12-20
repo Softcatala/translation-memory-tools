@@ -1,0 +1,11 @@
+{
+    "project": "ProtonMail", 
+    "projectweb": "https://protonmail.com/",
+    "fileset": {
+        "protonMail": {
+            "url": "https://crowdin.com/backend/download/project/protonmail/ca.zip",
+            "type": "compressed",
+            "target": "ca.zip"
+        }
+    }
+}
