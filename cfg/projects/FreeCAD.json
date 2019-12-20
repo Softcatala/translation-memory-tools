@@ -1,0 +1,11 @@
+{
+    "project": "FreeCAD",
+    "projectweb": "https://www.freecadweb.org/",
+    "fileset": {
+        "freecad": {
+            "url": "https://github.com/FreeCAD/FreeCAD.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        }
+    }
+}
