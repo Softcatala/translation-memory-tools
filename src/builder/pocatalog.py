@@ -36,7 +36,7 @@ class POCatalog(object):
         if os.path.isfile(self.filename):
             backup = 'tm-project-previous.po'
             shutil.copy(self.filename, backup)
-            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} {2} 2> /dev/null'
+            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} \'{2}\' 2> /dev/null'
             os.system(cmd.format(self.filename, backup, pofile))
             os.remove(backup)
         else:
