@@ -1,0 +1,12 @@
+{
+    "project": "Tilix",
+    "projectweb": "https://gnunn1.github.io/tilix-web/",
+    "fileset": {
+        "Tilix": {
+            "url": "https://raw.githubusercontent.com/gnunn1/tilix/master/po/ca.po",
+            "type": "file",
+            "duplicates" : "msgctxt",
+            "target": "tilix-ca.po"
+        }
+    }
+}
