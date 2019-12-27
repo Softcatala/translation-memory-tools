@@ -1,0 +1,11 @@
+{
+    "project": "KOReader",
+    "projectweb": "https://github.com/koreader/koreader",
+    "fileset": {
+        "KOReader": {
+            "url": "https://raw.githubusercontent.com/koreader/koreader-translations/master/ca/koreader.po",
+            "type": "file",
+            "target": "koreader-ca.po"
+        }
+    }
+}
