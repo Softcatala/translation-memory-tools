@@ -16,6 +16,11 @@
             "url": "lp:~stellarium/stellarium/trunk/po/stellarium-skycultures/ca.po", 
             "type": "bazaar", 
             "target": "ca.po"
+        },
+        "stellarium-android": {
+            "url": "https://raw.githubusercontent.com/chengxinlun/Stellarium-android/master/po/stellarium/ca.po", 
+            "type": "file", 
+            "target": "stellarium-android-ca.po"
         }
     }
 }
