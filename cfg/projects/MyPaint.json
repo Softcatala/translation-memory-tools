@@ -1,0 +1,12 @@
+{
+    "project": "MyPaint",
+    "projectweb": "http://mypaint.org/",
+    "fileset": {
+        "MyPaint": {
+            "url": "https://raw.githubusercontent.com/mypaint/mypaint/master/po/ca.po",
+            "type": "file",
+            "duplicates" : "msgctxt",
+            "target": "mypaint-ca.po"
+        }
+    }
+}
