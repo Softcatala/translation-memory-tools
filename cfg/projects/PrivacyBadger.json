@@ -1,0 +1,11 @@
+{
+    "project": "PrivacyBadger",
+    "projectweb": "https://www.eff.org/privacybadger",
+    "fileset": {
+        "PrivacyBadger": {
+            "url": "https://github.com/EFForg/privacybadger/",
+            "type": "git",
+            "po_preprocessing" : "remove_untranslated"
+        }
+    }
+}
