@@ -1,0 +1,11 @@
+{
+    "project": "PrivacyBadger",
+    "projectweb": "https://www.eff.org/privacybadger",
+    "fileset": {
+        "PrivacyBadger": {
+            "url": "https://github.com/EFForg/privacybadger/blob/master/src/_locales/ca/messages.json",
+            "type": "file",
+            "target": "messages.json"
+        }
+    }
+}
