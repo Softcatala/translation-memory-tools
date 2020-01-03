@@ -259,14 +259,25 @@ class ConvertFiles():
 
         os.system(cmd)
 
+    def _convert_json_file_to_po(self, jsonfile, source, target):
+        dirName = os.path.dirname(jsonfile)
+        logging.info('convert json file: {0}'.format(dirName))
+        filename = '{0}/json-ca.po'.format(dirName)
+        cmd = 'json2po -t {0}/{2} -i {0}/{3} ' \
+              '-o {1}'.format(dirName, filename, source, target)
+        os.system(cmd)
+        print(cmd)
+
     def _convert_json_files_to_po(self):
+        # Used for Privacy Badger
+        for jsonfile in self.findFiles.find(self.convert_dir, 'messages.json'):
+            if '/ca/' not in jsonfile:
+                continue
+
+            self._convert_json_file_to_po(jsonfile, '../en_US/messages.json', '../ca/messages.json')
+
         for jsonfile in self.findFiles.find(self.convert_dir, 'ca.json'):
-            dirName = os.path.dirname(jsonfile)
-            logging.info('convert json file: {0}'.format(dirName))
-            filename = '{0}/json-ca.po'.format(dirName)
-            cmd = 'json2po -t {0}/en.json -i {0}/ca.json ' \
-                  '-o {1}'.format(dirName, filename)
-            os.system(cmd)
+            self._convert_json_file_to_po(jsonfile, 'en.json', 'ca.json')
 
     def _convert_yml_files_to_po(self):
         for ymlfile in self.findFiles.find(self.convert_dir, 'ca.yml'):

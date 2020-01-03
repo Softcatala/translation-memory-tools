@@ -49,7 +49,7 @@ class ConvertFilesTest(unittest.TestCase):
 
         entries = self._get_po_entries(json_dir)
         self._clean_pos(json_dir)
-        self.assertEquals(entries, 517)
+        self.assertEquals(entries, 781)
 
     def test_convert_yml_files_to_po(self):
 
