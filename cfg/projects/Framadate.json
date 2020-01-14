@@ -1,0 +1,11 @@
+{
+    "project": "Framadate",
+    "projectweb": "https://weblate.framasoft.org/projects/framadate/framadate/",
+    "fileset": {
+        "Framadate": {
+            "url": "https://weblate.framasoft.org/download/framadate/framadate/ca/?format=po",
+            "type": "file",
+            "target": "framadate-ca.po"
+        }
+    }
+}
