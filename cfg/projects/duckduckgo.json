@@ -1,0 +1,12 @@
+
+{
+    "project": "DuckDuckGo", 
+    "projectweb": "https://github.com/duckduckgo/duckduckgo-locales",
+    "fileset": {
+        "DuckDuckGo": {
+            "url": "https://raw.githubusercontent.com/duckduckgo/duckduckgo-locales/master/locales/ca_ES/LC_MESSAGES/duckduckgo.po",
+            "type": "file",
+            "target": "duckduckgo-ca.po"
+        }
+    }
+}
