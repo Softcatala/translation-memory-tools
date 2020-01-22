@@ -1,0 +1,15 @@
+{
+    "project": "Zotero",
+    "projectweb": "https://www.zotero.org/",
+    "fileset": {
+        "yumex": {
+            "url": "https://www.transifex.com/projects/p/zotero",
+            "type": "transifex",
+            "conversor_setup": {
+                "type"       : "string",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
+        }
+    }
+}
