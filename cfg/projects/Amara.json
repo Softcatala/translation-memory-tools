@@ -1,6 +1,7 @@
 {
     "project": "Amara",
     "projectweb": "https://amara.org/ca/",
+    "disabled": true,
     "fileset": {
         "Amara": {
             "url": "https://raw.githubusercontent.com/pculture/unisubs/dev/locale/ca/LC_MESSAGES/django.po",
