@@ -21,7 +21,7 @@ pology:
 lt:
     - lt_output: output/quality
     - disabled-rules: WHITESPACE_RULE,UPPERCASE_SENTENCE_START,CAMI_DE,ESPAIS_QUE_FALTEN_PUNTUACIO,PUNT_FINAL,ESPAI_DARRERE_PUNTICOMA,VERBS_NOMSPROPIS,COMMA_PARENTHESIS_WHITESPACE,PUNTUACIO_INCORRECTA,Y_CONJUNCIO,ESPAI_DARRERE_DOSPUNTS,USA_COMA_DECIMALS,ESPAI_DESPRES_DE_PUNT
-    - enabled-rules: EXIGEIX_PLURALS
+    - enabled-rules: EXIGEIX_PLURALS_S,PER_INFINITIU
     - server: http://localhost:7001/v2/check
     - command: 'curl --data "language=ca-ES" --data "enabledRules={0}" --data "disabledRules={1}" --data-urlencode "text@{2}" {3} > "{4}" 2>/dev/null'
     - lt-html-dir: quality/lt
