@@ -1,0 +1,10 @@
+{
+    "project": "JitsiMeet",
+    "projectweb": "https://jitsi.org/jitsi-meet/",
+    "fileset": {
+        "JitsiMeet": {
+            "url": "https://www.transifex.com/softcatala/jitsi-meet-en-catala/",
+            "type": "transifex"
+        }
+    }
+}
