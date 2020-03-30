@@ -4,9 +4,9 @@
     "softcatala": true, 
     "fileset": {
         "mailman": {
-            "url": "lp:~mailman-l10n-ca/mailman/stable-sc/messages/ca/LC_MESSAGES/mailman.po", 
-            "type": "bazaar", 
-            "target": "ca.po"
+            "url": "https://hosted.weblate.org/download-language/ca/gnu-mailman/?format=zip",
+            "type": "compressed",
+            "target": "ca.zip"
         }
     }
 }
