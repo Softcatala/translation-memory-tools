@@ -3,8 +3,8 @@
     "projectweb": "https://telegram.org/",
     "fileset": {
         "telegram": {
-            "url": "https://www.transifex.com/projects/p/telegram-unofficial-translations/",
-            "type": "transifex"
+            "url": "https://github.com/Ecron/telegram-strings.git",
+            "type": "git"
         }
     } 
 }
