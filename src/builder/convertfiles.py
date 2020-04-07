@@ -24,7 +24,6 @@ import shutil
 from .converttmx import ConvertTmx
 from .findfiles import FindFiles
 
-
 class ConvertFiles():
 
     def __init__(self, convert_dir, conversor_setup):
@@ -179,8 +178,11 @@ class ConvertFiles():
                              "translations/briar.stringsxml-5/ca.xml")
 
         '''Telegram Android'''
-        self._copy_res_files("translations/telegram-unofficial-translations.telegram-for-android/en.xml",
-                             "translations/telegram-unofficial-translations.telegram-for-android/ca.xml")
+        self._copy_res_files("translations/android/res/values/strings.xml",
+                             "translations/android/res/values-ca/strings.xml")
+
+        self._copy_res_files("translations/androidx/res/values/strings.xml",
+                             "translations/androidx/res/values-ca/strings.xml")
 
 
     def _copy_res_files(self, source_file, target_file):
@@ -190,26 +192,27 @@ class ConvertFiles():
         if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
             return
 
-        directory = os.path.join(self.convert_dir, 'android')
+        app_dir = 'android'
+        directory = os.path.join(self.convert_dir, app_dir)
         if not os.path.exists(directory):
             os.makedirs(directory)
 
-        directory = os.path.join(self.convert_dir,'android/res')
+        directory = os.path.join(self.convert_dir, app_dir, 'res')
         if not os.path.exists(directory):
             os.makedirs(directory)
         
-        directory = os.path.join(self.convert_dir,'android/res/values-ca')
+        directory = os.path.join(self.convert_dir, app_dir, 'res/values-ca')
         if not os.path.exists(directory):
             os.makedirs(directory)
                 
         shutil.copy2(ca_file, os.path.join(directory, "strings.xml"))
 
-        directory = os.path.join(self.convert_dir,'android/res/values')
+        directory = os.path.join(self.convert_dir, app_dir, 'res/values')
         if not os.path.exists(directory):
             os.makedirs(directory)
                 
         shutil.copy2(en_file, os.path.join(directory, "strings.xml"))
-        self.android_dir = 'android/res'
+        self.android_dir = os.path.join(app_dir, 'res')
 
     def _process_briar_project(self):
         ca_file = os.path.join(self.convert_dir,
