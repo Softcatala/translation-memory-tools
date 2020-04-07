@@ -35,6 +35,24 @@ class TestFileSet(unittest.TestCase):
         self.assertTrue(fileset._should_exclude_file('Includesexcluded.po'))
         self.assertFalse(fileset._should_exclude_file('eXcluded.po'))
 
+    def test_has_filename_filename(self):
+
+
+        fileset_parent = FileSet('project none',
+            'filsetname',
+            'lp:~mailman-l10n-ca/mailman.po',
+            'none.po')
+        fileset_parent.po_preprocessing = 'po_processing'
+        fileset_parent.conversor_setup = 'conversor_setup'
+
+        fileset = FileSet('project none',
+            'filsetname',
+            'lp:~mailman-l10n-ca/mailman.po',
+            'none.po', fileset_parent)
+
+        self.assertEquals(fileset.po_preprocessing, 'po_processing')
+        self.assertEquals(fileset.conversor_setup, 'conversor_setup')
+
 
 if __name__ == '__main__':
     unittest.main()

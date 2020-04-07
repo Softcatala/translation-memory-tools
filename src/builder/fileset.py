@@ -32,7 +32,7 @@ class FileSet():
     temp_dir = './tmp'
     invidual_pos_dir = ''
 
-    def __init__(self, project_name, name, url, filename):
+    def __init__(self, project_name, name, url, filename, parent_fileset = None):
         self.project_name = project_name
         self.name = name
         self.url = url
@@ -43,8 +43,13 @@ class FileSet():
         self.words = -1
         self.duplicates = ''
         self.set_out_directory("")
-        self.conversor_setup = None
-        self.po_preprocessing = ''
+
+        if parent_fileset:
+            self.conversor_setup = parent_fileset.conversor_setup
+            self.po_preprocessing = parent_fileset.po_preprocessing
+        else:
+            self.conversor_setup = None
+            self.po_preprocessing = ''
 
     def set_checksum(self, checksum):
         self.checksum = checksum

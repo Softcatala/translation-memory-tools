@@ -4,7 +4,8 @@
     "fileset": {
         "main": {
             "url": "https://www.transifex.com/llk/public/",
-            "type": "transifexhub"
+            "type": "transifexhub",
+            "po_preprocessing" : "remove_untranslated"
         }
     }
 }
