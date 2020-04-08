@@ -6,7 +6,9 @@
         "filesets": {
             "url": "https://pontoon.mozilla.org/",
             "target": "pontoon-projects.json",
-            "type": "pontoon"
+            "type": "pontoon",
+            "po_preprocessing" : "remove_untranslated"
+
 		},
         "focus-for-android": {
             "url": "../source-pos/mozilla/ca.focus-for-android.tmx", 
