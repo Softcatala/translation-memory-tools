@@ -57,7 +57,7 @@ class CGitFileSet(FileSet):
 
         return url[idx + 1:]
 
-    def do(self):
+    def expand_dynamic(self):
         try:
 
             crawler = Crawler(self.url)
@@ -79,7 +79,5 @@ class CGitFileSet(FileSet):
 
             # All the new filesets have been added re-process project now
             self.project.report_errors = False
-            self.project.do()
-            self.build()
         except Exception as detail:
             logging.error("CGitFileSet.do exception " + str(detail))

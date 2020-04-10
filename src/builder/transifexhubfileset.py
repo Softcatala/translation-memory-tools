@@ -146,7 +146,7 @@ class TransifexHubFileSet(FileSet):
         result = result.lower()
         return result
 
-    def do(self):
+    def expand_dynamic(self):
         transifex_url = "https://www.transifex.com/projects/p/"
         try:
             # This project has a single fileset assigned (this)
@@ -174,6 +174,5 @@ class TransifexHubFileSet(FileSet):
 
             # All the new filesets have been added re-process project now
             self.project.report_errors = False
-            self.project.do()
         except Exception as detail:
             print(detail)

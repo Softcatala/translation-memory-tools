@@ -63,7 +63,7 @@ class GerritDirectoryFileSet(FileSet):
         file.close()
         os.remove(working_file)
 
-    def do(self):
+    def expand_dynamic(self):
         # Download JSON file
         download = DownloadFile()
         download.get_file(self.url, self.filename)
@@ -106,4 +106,3 @@ class GerritDirectoryFileSet(FileSet):
                       format(len(self.project.filesets)))
 
         self.project.report_errors = False
-        self.project.do()

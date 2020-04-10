@@ -187,6 +187,9 @@ class Project(object):
         checksum = hashlib.new('sha1')
 
         for fileset in self.filesets:
+            fileset.expand_dynamic()
+
+        for fileset in self.filesets:
             try:
 
                 fileset.set_checksum(checksum)

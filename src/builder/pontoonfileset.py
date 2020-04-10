@@ -33,7 +33,7 @@ class PontoonFileSet(FileSet):
     def set_project(self, project):
         self.project = project
 
-    def do(self):
+    def expand_dynamic(self):
         # Download JSON file
         url = self.url + 'graphql?query={locale(code:"ca"){name,localizations{project{name,slug}}}}'
         download = DownloadFile()
@@ -70,4 +70,3 @@ class PontoonFileSet(FileSet):
                       format(len(self.project.filesets)))
 
         self.project.report_errors = False
-        self.project.do()

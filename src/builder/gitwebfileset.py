@@ -37,7 +37,7 @@ class GitWebFileSet(FileSet):
     def set_project(self, project):
         self.project = project
 
-    def do(self):
+    def expand_dynamic(self):
         crawler = Crawler(self.url)
         crawler.run()
         links = crawler.get_all_links()
@@ -68,4 +68,3 @@ class GitWebFileSet(FileSet):
             self.project.add_fileset(fileset)
 
         self.project.report_errors = False
-        self.project.do()

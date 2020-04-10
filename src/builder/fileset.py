@@ -156,6 +156,9 @@ class FileSet():
         self.do()
         self._remove_tmp_directory()
 
+    def expand_dynamic(self):
+        pass
+
     def build(self):
         convert = ConvertFiles(self.temp_dir, self.conversor_setup)
         convert.convert()
