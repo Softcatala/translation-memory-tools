@@ -34,6 +34,10 @@ class TransifexFileSet(FileSet):
         self.pattern = pattern
 
     def _remove_non_translation_only_files(self):
+
+        if self.pattern is None or len(self.pattern) == 0:
+            return
+
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):

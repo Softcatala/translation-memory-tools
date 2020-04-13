@@ -41,6 +41,10 @@ class GitFileSet(FileSet):
             We clean up other PO files like fr.po, es.po, to prevent to be
             added to the translation memory
         '''
+
+        if self.pattern is None or len(self.pattern) == 0:
+            return
+
         findFiles = FindFiles()
 
         for filename in findFiles.find(self.temp_dir, '*'):
