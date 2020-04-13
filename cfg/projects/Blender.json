@@ -1,11 +1,10 @@
 {
     "project": "Blender", 
-    "projectweb": "http://www.blenderpro.cat",
+    "projectweb": "https://www.blender.org/",
     "fileset": {
         "blender": {
-            "url": "https://svn.blender.org/svnroot/bf-translations/branches/ca/", 
-            "type": "subversion"
+            "url": "https://www.transifex.com/softcatala/blender-en-catala/",
+            "type": "transifex"
         }
-    }, 
-    "disabled": true
+    }
 }
