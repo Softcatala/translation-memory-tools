@@ -1,0 +1,12 @@
+{
+    "project": "OpenBoard",
+    "projectweb": "https://openboard.ch/",
+    "fileset": {
+        "OpenBoard": {
+            "url": "https://github.com/OpenBoard-org/OpenBoard.git",
+            "type": "git",
+            "pattern": ".*ca.po"
+        }
+    }
+}
+
