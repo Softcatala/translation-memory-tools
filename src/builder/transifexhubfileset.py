@@ -21,7 +21,6 @@ import logging
 import urllib
 import urllib.parse
 import urllib.request
-import os.path
 from urllib.parse import urlparse
 from html.parser import HTMLParser
 
