@@ -12,5 +12,6 @@
             "type": "file",
             "target": "jitsimeet-main-ca.po"
         }
-    }
+    },
+    "disabled": true
 }
