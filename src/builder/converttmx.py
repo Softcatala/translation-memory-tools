@@ -72,10 +72,10 @@ class ConvertTmx():
                     elif llengua == 'ca':
                         translation = seg_entry.text
 
-            if source is None or source is '':
+            if source is None or source == '':
                 continue
 
-            if translation is None or translation is '':
+            if translation is None or translation == '':
                 continue
 
             if source in sources:
