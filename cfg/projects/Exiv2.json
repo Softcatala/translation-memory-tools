@@ -1,6 +1,6 @@
 {
     "project": "Exiv2",
-    "projectweb": "http://www.exiv2.org/",
+    "projectweb": "https://www.exiv2.org/",
     "fileset": {
         "exiv2": {
             "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-support/ca/external-l10n/exiv2_ca.po",

@@ -1,6 +1,6 @@
 {
     "project": "KiCad",
-    "projectweb": "http://www.kicad-pcb.org/",
+    "projectweb": "https://www.kicad-pcb.org/",
     "fileset": {
         "KiCad": {
             "url": "https://raw.githubusercontent.com/KiCad/kicad-i18n/master/ca/kicad.po",

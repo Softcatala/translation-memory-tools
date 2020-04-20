@@ -1,6 +1,6 @@
 {
     "project": "WinMerge", 
-    "projectweb": "http://winmerge.org/translations/",
+    "projectweb": "https://winmerge.org/translations/",
     "fileset": {
         "WinMerge": {
             "url": "https://raw.githubusercontent.com/WinMerge/winmerge-v2/master/Translations/WinMerge/Catalan.po",

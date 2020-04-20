@@ -1,6 +1,6 @@
 {
     "project": "RPM", 
-    "projectweb": "http://rpm.org/", 
+    "projectweb": "https://rpm.org/",
     "fileset": {
         "RPM": {
             "url": "https://translate.zanata.org/rest/file/translation/rpm.org/master/ca/po?docId=rpm",
