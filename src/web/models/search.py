@@ -72,7 +72,7 @@ class Search(object):
         fields = []
         qs = ''
 
-        # We use parenthesis to prevent operators like OR used in source
+        # We use parentheses to prevent operators like OR used in source
         # to affect target
         if self.source is not None and len(self.source) > 0:
             qs += u' source:({0})'.format(self.source)
