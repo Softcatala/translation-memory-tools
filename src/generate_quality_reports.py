@@ -321,7 +321,7 @@ class GenerateQualityReports():
         projects = self.load_projects_from_json()
 
         source_dir = self.read_parameters()
-        with ThreadPoolExecutor(max_workers=4) as executor:
+        with ThreadPoolExecutor(max_workers=2) as executor:
             for project in projects:
                 executor.submit(self.generate_report, os.path.join(source_dir, project))
 
