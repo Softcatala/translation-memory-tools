@@ -2,30 +2,10 @@
     "project": "Qt", 
     "projectweb": "https://github.com/qtproject/qttranslations/blob/dev/translations/README", 
     "fileset": {
-        "qtbase": {
-            "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qtbase_ca.ts", 
-            "type": "file", 
-            "target": "qtbase_ca.ts"
-        },
-        "qtmultimedia": {
-            "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qtmultimedia_ca.ts", 
-            "type": "file", 
-            "target": "qtmultimedia_ca.ts"
-        },
-        "qtquick1": {
-            "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qtquick1_ca.ts", 
-            "type": "file", 
-            "target": "qtquick1_ca.ts"
-        },
-        "qtscript": {
-            "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qtscript_ca.ts", 
-            "type": "file", 
-            "target": "qtscript_ca.ts"
-        },
-        "qtxmlpatterns": {
-            "url": "https://raw.githubusercontent.com/qtproject/qttranslations/dev/translations/qtxmlpatterns_ca.ts", 
-            "type": "file", 
-            "target": "qtxmlpatterns_ca.ts"
+         "Qt": {
+            "url": "https://github.com/qt/qttranslations.git",
+            "type": "git",
+            "pattern": ".*?_ca.po"
         }
     }
 }
