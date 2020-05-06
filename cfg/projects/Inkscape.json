@@ -4,7 +4,7 @@
     "softcatala": true, 
     "fileset": {
         "inkscape": {
-            "url": "https://gitlab.com/inkscape/inkscape/raw/1.0.x/po/ca.po",
+            "url": "https://gitlab.com/inkscape/inkscape/raw/master/po/ca.po",
             "type": "file",
             "target": "ca.po"
         }, 
