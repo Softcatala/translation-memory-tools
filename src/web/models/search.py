@@ -82,7 +82,7 @@ class Search(object):
             qs += u' target:({0})'.format(self.target)
             fields.append("target")
 
-        if self.project is not None and self.project != 'tots' and len(self.project) > 0:
+        if self.project is not None and len(self.project) > 0 and self.project != 'tots':
             if self.project == 'softcatala':
                 qs += u' softcatala:true'
                 fields.append("softcatala")
