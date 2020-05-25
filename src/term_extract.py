@@ -22,7 +22,6 @@
 import logging
 import os
 import resource
-import sys
 import time
 from collections import OrderedDict
 from optparse import OptionParser
@@ -50,9 +49,20 @@ def process_template(template, filename, ctx):
     f.write(s)
     f.close()
 
+
+ENV_NAME = 'DB3_PATH'
+
+def _get_db_name(name):
+    if ENV_NAME not in os.environ:
+        return name
+
+    path = os.environ[ENV_NAME]
+    return os.path.join(path, name)
+
 def generate_database(glossary, glossary_file):
 
-    database.create(glossary_file + ".db3")
+    name = _get_db_name(glossary_file + ".db3")
+    database.create(name)
     database.create_schema()
     for entry in glossary.entries:
         for translation in entry.translations:

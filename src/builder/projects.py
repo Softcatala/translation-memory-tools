@@ -29,12 +29,23 @@ from .pocatalog import POCatalog
 
 class Projects(object):
 
+    ENV_NAME = 'DB3_PATH'
+
     def __init__(self):
         self.projects = list()
         self.out_directory = ""
         self.set_tm_file('tots-tm.po')
         self.metadata_dao = ProjectMetaDataDao()
-        self.metadata_dao.open('statistics.db3')
+        self.metadata_dao.open(self._get_db_name())
+
+    def _get_db_name(self):
+        name = 'statistics.db3'
+
+        if self.ENV_NAME not in os.environ:
+            return name
+
+        path = os.environ[self.ENV_NAME]
+        return os.path.join(path, name)
 
     def set_tm_file(self, filename):
         self.tm_file = filename
