@@ -26,7 +26,7 @@ import polib
 
 from .corpus import Corpus
 from .referencesources import ReferenceSources
-
+from html import escape as html_escape
 
 class ReferenceMatches(object):
 
@@ -114,7 +114,7 @@ class DevGlossarySerializer():
             translations = glossary_entries[term]
             for translation in translations:
                 opt = u'<p>- {0} (usada {1:1.2f}%, coincidències {2})</p>'
-                options += opt.format(cgi.escape(translation.translation),
+                options += opt.format(html_escape(translation.translation),
                                       translation.percentage,
                                       translation.frequency)
 
@@ -123,8 +123,8 @@ class DevGlossarySerializer():
                     u'<td>{1}{2}</td>'
                     u'<td>{3}</td>'
                     u'<td>{4}</td>'
-                    u'</tr>').format(item, cgi.escape(term), sources,
-                                     cgi.escape(translations[0].translation),
+                    u'</tr>').format(item, html_escape(term), sources,
+                                     html_escape(translations[0].translation),
                                      options)
             f.write(html)
 
@@ -141,7 +141,7 @@ class DevGlossarySerializer():
             for term in sorted(reference.terms.keys()):
                 html += (u'<tr>'
                          u'<td>{0}</td>'
-                         u'</tr>').format(cgi.escape(term))
+                         u'</tr>').format(html_escape(term))
 
             html += u'</table>'
 
