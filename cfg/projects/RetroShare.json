@@ -1,0 +1,11 @@
+{
+    "project": "Retroshare",
+    "projectweb": "https://retroshare.cc/",
+    "fileset": {
+        "Retroshare": {
+            "url": "https://github.com/RetroShare/RetroShare.git",
+            "type": "git",
+            "pattern": ".*?ca(_ES)?.po"
+        }
+    }
+}
