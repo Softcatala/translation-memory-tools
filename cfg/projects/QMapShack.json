@@ -1,0 +1,11 @@
+{
+    "project": "QMapShack",
+    "projectweb": "https://wiki.openstreetmap.org/wiki/QMapShack",
+    "fileset": {
+        "QMapShack": {
+            "url": "https://raw.githubusercontent.com/Maproom/qmapshack/master/src/qmapshack/locale/qmapshack_ca.ts",
+            "type": "file",
+            "target": "qmapshack_ca.ts"
+        }
+    }
+}
