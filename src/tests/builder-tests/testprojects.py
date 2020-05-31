@@ -24,7 +24,9 @@ class TestProjects(TestCase):
 
     def test_get_db_name(self):
         projects = Projects()
-        self.assertEquals('statistics.db3', projects._get_db_name())
+
+        with mock.patch.dict('os.environ', {'DB3_PATH': ''}):
+            self.assertEquals('statistics.db3', projects._get_db_name())
 
     def test_get_db_name_env(self):
         projects = Projects()
