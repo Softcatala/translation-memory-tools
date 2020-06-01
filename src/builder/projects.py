@@ -31,12 +31,14 @@ class Projects(object):
 
     ENV_NAME = 'DB3_PATH'
 
-    def __init__(self):
+    def __init__(self, opendb = True):
         self.projects = list()
         self.out_directory = ""
         self.set_tm_file('tots-tm.po')
         self.metadata_dao = ProjectMetaDataDao()
-        self.metadata_dao.open(self._get_db_name())
+
+        if opendb:
+            self.metadata_dao.open(self._get_db_name())
 
     def _get_db_name(self):
         name = 'statistics.db3'
