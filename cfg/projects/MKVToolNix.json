@@ -3,12 +3,12 @@
     "projectweb": "https://mkvtoolnix.download/",
     "fileset": {
         "mkvtoolnix": {
-            "url": "https://gitlab.com/mbunkus/mkvtoolnix/raw/master/po/ca.po",
+            "url": "https://gitlab.com/mbunkus/mkvtoolnix/raw/main/po/ca.po",
             "type": "file",
             "target": "mkvtoolnix-ca.po"
         },
         "mkvtoolnix-mp": {
-            "url": "https://gitlab.com/mbunkus/mkvtoolnix/raw/master/doc/man/po4a/po/ca.po",
+            "url": "https://gitlab.com/mbunkus/mkvtoolnix/raw/main/doc/man/po4a/po/ca.po",
             "type": "file",
             "target": "mkvtoolnix-mp-ca.po"
         }
