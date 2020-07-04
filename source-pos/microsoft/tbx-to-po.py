@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -63,20 +63,20 @@ def main():
         for term_subitems in term_entry:
             for i in term_subitems.iter():
                 if i.tag == 'descrip':
-                    description = unicode(i.text)
+                    description = i.text
                 elif i.tag == 'langSet':
                     lang = i.get('{http://www.w3.org/XML/1998/namespace}lang')
                     is_source = lang == 'en-US'
                 elif i.tag == 'term':
                     if is_source:
-                        source = unicode(i.text)
+                        source = i.text
                     else:
-                        targets.append(unicode(i.text))
-                        term_ids.append(unicode(i.get('id')))
+                        targets.append(i.text)
+                        term_ids.append(i.get('id'))
 
         terms += len(targets)
 
-        for i in xrange(len(targets)):
+        for i in range(len(targets)):
             entry = polib.POEntry(msgid=source, msgstr=targets[i], tcomment=description, msgctxt=term_ids[i])
             pofile.append(entry)
 
