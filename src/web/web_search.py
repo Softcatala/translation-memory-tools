@@ -127,11 +127,114 @@ class WebView(object):
         r = template.render(ctx).encode('utf-8')
         return r
 
+class SearchAPIResults(object):
+
+    def _get_result_text(self, result, key):
+        highlighted = result.highlights(key)
+        if highlighted is not None and len(highlighted) > 0:
+            return highlighted
+
+        return html.escape(result[key])
+
+    def get_result(self, result):
+        result_dict = {
+            'source': self._get_result_text(result, "source"),
+            'target': self._get_result_text(result, "target"),
+            'project': result["project"],
+            'comment': None,
+            'context': None,
+        }
+
+        if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
+            # Comments can be multi-line because they contain multiple lines or
+            # because we concatenated tcomments with comments from the PO. So
+            # it is necessary to adapt it to properly integrate into HTML.
+            comment = html.escape(result["comment"]).replace('\n', '<br />').replace('\r', '')
+            result_dict['comment'] = comment
+
+        if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
+            result_dict['context'] = html.escape(result["context"])
+
+        return result_dict
+
+    def do(self, search, page):
+        """Search a term in the Whoosh index."""
+        aborted_search = False
+        results = []
+        num_results = 0
+        total_time = 0
+        PER_PAGE = 100
+
+        start_time = time.time()
+
+        if search.has_invalid_search_term:
+            aborted_search = True
+            pagination = None
+            glossary = None
+        else:
+            g = Glossary(search.source)
+            g.search()
+            glossary = g.get_results()
+
+            raw_results = search.get_results()
+            num_results = raw_results.scored_length()
+
+            if len(raw_results) > 0:
+
+                url = request.url
+                o = urllib.parse.urlparse(url)
+                url = '?' + o.query
+
+                pagination = Pagination(PER_PAGE, len(raw_results), url, page)
+                start = (pagination.page - 1) * PER_PAGE
+                end = start
+
+                max_end = start + PER_PAGE
+                if num_results - start < max_end:
+                    end += num_results - start
+                else:
+                    end += PER_PAGE
+
+                for i in range(start, end):
+                    results.append(self.get_result(raw_results[i]))
+
+                pages = pagination.pages
+            else:
+                pagination = None
+                pages = 0
+
+        total_time = time.time() - start_time
+        ctx = {
+            'source': search.source,
+            'target': search.target,
+            'project': search.project,
+            'num_results': num_results,
+            'time': "{:.2f}".format(total_time),
+            'aborted_search': aborted_search,
+            'glossary': glossary,
+            'pages': pages,
+            'results': results,
+        }
+
+        return ctx
+
 
 app = Flask(__name__)
 
+@app.route('/search', methods=['GET'])
+def search_api():
+    source = request.args.get('source')
+    target = request.args.get('target')
+    page = request.args.get('page')
+    project = ','.join(request.args.getlist('project'))
 
-@app.route('/api/glossary/search', methods=['GET'])
+    search = Search(source, target, project)
+    results = SearchAPIResults()
+    json = results.do(search, page)
+    return json
+
+
+@app.route('/glossary/search', methods=['GET'])
 def glossary_search_api():
     source = request.args.get('source')
 
@@ -140,7 +243,7 @@ def glossary_search_api():
     return Response(glossary.get_json(), mimetype='application/json')
 
 
-@app.route('/api/memory/search', methods=['GET'])
+@app.route('/memory/search', methods=['GET'])
 def memory_search_api():
     source = request.args.get('source')
     target = request.args.get('target')
@@ -149,12 +252,19 @@ def memory_search_api():
     search = Search(source, target, project)
     return Response(search.get_json(), mimetype='application/json')
 
-@app.route('/api/stats', methods=['GET'])
+@app.route('/stats', methods=['GET'])
 def stats_api():
     requested = request.args.get('date')
     date_requested = datetime.datetime.strptime(requested, '%Y-%m-%d')
     stats = Stats()
     return Response(stats.get_json(date_requested), mimetype='application/json')
+
+@app.route('/projects', methods=['GET'])
+def projects_api():
+    with open("projects.json" ,"r") as file:
+        projects = file.read()
+
+    return Response(projects, mimetype='text/plain')
 
 
 @app.route('/')

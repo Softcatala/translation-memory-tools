@@ -24,7 +24,6 @@ copy_files() {
     cp $1/tm-git/src/web/web_search.py $2
     cp $1/tm-git/src/web/footer.html $2
     cp $1/tm-git/src/statistics.html $2
-    cp $1/tm-git/src/download.html $2
     cp $1/tm-git/src/select-projects.html $2
     cp $1/tm-git/src/web/robots.txt $2
     cp $1/tm-git/src/web/memories.html $2
@@ -44,6 +43,7 @@ copy_files() {
     cp $1/tm-git/src/builder/projectmetadatadto.py $2/builder
 
     # Download memories
+    cp $1/tm-git/src/projects.json $2
     cp $1/tm-git/src/download.html $2
     rm -r -f $2/memories
     mkdir $2/memories

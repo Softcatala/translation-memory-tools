@@ -23,11 +23,15 @@ import urllib.parse
 class Pagination(object):
     ''' Model object that manages the pagination of results'''
 
-    def __init__(self, per_page, total_count, url):
+    def __init__(self, per_page, total_count, url, page = None):
         self.per_page = per_page
         self.total_count = total_count
         self.page = self._get_current_page(url)
         self.url = self._remove_page_query_string(url)
+
+        if page is not None:
+            self.page = int(page)
+
 
     @property
     def pages(self):

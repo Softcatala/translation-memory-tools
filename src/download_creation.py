@@ -23,6 +23,7 @@ import datetime
 import locale
 import os
 import pystache
+import json
 
 from optparse import OptionParser
 from builder.jsonbackend import JsonBackend
@@ -41,25 +42,29 @@ def process_template(template, filename, ctx):
     f.write(s)
     f.close()
 
+def write_download_json(ctx):
+    content = json.dumps(ctx, indent=4, separators=(',', ': '))
+    with open("projects.json" ,"w") as file:
+        file.write(content)
 
-class TranslationMemory(object):
+class TranslationMemory(dict):
 
     def __init__(self, words=None, name=None, last_fetch=None,
                  last_translation_update=None, projectweb=None, filename=None,
-                 quality_report=True, license=None):
-        self.name = name
-        self.projectweb = projectweb
-        self.po_file_text = get_zip_file(filename)
-        self.po_file_link = get_zip_file(get_path_to_po(filename))
-        self.tmx_file_text = get_zip_file(get_tmx_file(filename))
-        self.tmx_file_link = get_zip_file(get_path_to_tmx(filename))
-        self.quality_file_link = u'quality/' + name.lower() + u'.html'
-        self.quality_file_text = 'Informe de qualitat'
-        self.words = words
-        self.last_fetch = last_fetch
-        self.last_translation_update = last_translation_update
-        self.quality_report = quality_report
-        self.license = license
+                 quality_report=True, license=''):
+
+        self.__setitem__('name', name)
+        self.__setitem__('projectweb', projectweb)
+        self.__setitem__('po_file_text', get_zip_file(filename))
+        self.__setitem__('po_file_link', get_zip_file(get_path_to_po(filename)))
+        self.__setitem__('tmx_file_text', get_zip_file(get_tmx_file(filename)))
+        self.__setitem__('tmx_file_link', get_zip_file(get_path_to_tmx(filename)))
+        self.__setitem__('quality_file_link', u'quality/' + name.lower() + u'.html')
+        self.__setitem__('words', words)
+        self.__setitem__('last_fetch', last_fetch)
+        self.__setitem__('last_translation_update', last_translation_update)
+        self.__setitem__('quality_report', quality_report)
+        self.__setitem__('license', license)
 
 
 def get_subdir():
@@ -200,6 +205,7 @@ def process_projects(po_directory, tmx_directory, out_directory):
         'memories': memories,
     }
     process_template("web/templates/download.mustache", "download.html", ctx)
+    write_download_json(ctx)
 
 
 def update_zipfile(src_directory, filename, file_to_add, out_directory):
