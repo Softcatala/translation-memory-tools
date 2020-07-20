@@ -42,7 +42,18 @@ def process_template(template, filename, ctx):
     f.write(s)
     f.close()
 
+
+def json_remove_unncessary_fields(ctx):
+    memories = ctx['memories']
+    for memory in memories:
+        if memory['quality_report'] == False:
+            memory['quality_file_link'] = ""
+
+        del memory['quality_report']
+
+
 def write_download_json(ctx):
+    json_remove_unncessary_fields(ctx)
     content = json.dumps(ctx, indent=4, separators=(',', ': '))
     with open("projects.json" ,"w") as file:
         file.write(content)
@@ -265,12 +276,11 @@ def create_output_dir(subdirectory, out_directory):
 
 
 def main():
-    """Generate an HTML listing all the translation memories.
-
-    Read the projects and generate an HTML to enable downloading all the
+    """
+    Read the projects and generate an HTML/JSON to enable downloading all the
     translation memories.
     """
-    print("Creates download.html file")
+    print("Creates download.html & projects.json files")
     print("Use --help for assistance")
 
     try:
