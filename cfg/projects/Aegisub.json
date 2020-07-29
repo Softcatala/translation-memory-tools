@@ -1,0 +1,11 @@
+{
+    "project": "Aegisub",
+    "projectweb": "http://www.aegisub.org/",
+    "fileset": {
+        "Aegisub": {
+            "url": "https://weblate.ereza.cat/download/aegisub/aegisub/ca/?format=po",
+            "type": "file",
+            "target": "aegisub-ca.po"
+        }
+    }
+}
