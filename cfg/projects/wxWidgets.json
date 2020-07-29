@@ -1,0 +1,11 @@
+{
+    "project": "wxWidgets",
+    "projectweb": "https://www.wxwidgets.org/",
+    "fileset": {
+        "wxWidgets": {
+            "url": "https://weblate.ereza.cat/download/wxwidgets/wxwidgets/ca/?format=po",
+            "type": "file",
+            "target": "wxwidgets-ca.po"
+        }
+    }
+}
