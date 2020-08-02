@@ -1,0 +1,11 @@
+{
+    "project": "GrubCustomizer",
+    "projectweb": "https://translations.launchpad.net/grub-customizer",
+    "fileset": {
+        "GrubCustomizer": {
+            "url": "https://git.launchpad.net/grub-customizer",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        }
+    }
+}
