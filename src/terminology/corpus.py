@@ -72,6 +72,8 @@ class Corpus(object):
                     'í' : 'í',
                     'ó' : 'ó',
                     'è' : 'è',
+                    'ò' : 'ò',
+                    'ú' : 'ú',
                   }
 
         for char in mapping.keys():
