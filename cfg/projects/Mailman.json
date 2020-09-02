@@ -6,6 +6,7 @@
         "mailman": {
             "url": "https://hosted.weblate.org/download-language/ca/gnu-mailman/?format=zip",
             "type": "compressed",
+            "pattern": "*/ca/*",
             "target": "ca.zip"
         }
     }
