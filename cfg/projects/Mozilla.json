@@ -8,12 +8,16 @@
             "target": "pontoon-projects.json",
             "type": "pontoon",
             "po_preprocessing" : "remove_untranslated"
-
-		},
+	},
         "focus-for-android": {
             "url": "../source-pos/mozilla/ca.focus-for-android.tmx", 
             "type": "local-file", 
             "target": "ca.focus-for-android.tmx"
+        },
+	"focus-for-ios": {
+            "url": "../source-pos/mozilla/ca.focus-for-ios.tmx", 
+            "type": "local-file", 
+            "target": "ca.focus-for-ios.tmx"
         }
     }
 }
