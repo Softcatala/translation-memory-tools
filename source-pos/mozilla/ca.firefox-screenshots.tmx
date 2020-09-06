@@ -1,0 +1,2511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tmx version="1.4">
+	<header adminlang="en-US" creationtoolversion="0.1" creationtool="pontoon" datatype="plaintext" segtype="sentence" o-tmf="plain text" srclang="en-US" creationdate="2019-11-17T23:13:14.231649">
+	</header>
+	<body>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexnoexpirationsymbol" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>∞</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>∞</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeeptenminutes" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>10 Minutes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>10 minuts</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeeponeday" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1 Day</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1 dia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeeponehour" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1 Hour</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1 hora</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeeponemonth" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1 Month</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1 mes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeeponeweek" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>1 Week</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>1 setmana</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeeptwoweeks" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>2 Weeks</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>2 setmanes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:onboardingpromomessagelistitem1" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Access your library on all of your devices</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Accedir a la vostra biblioteca des de tots els vostres dispositius</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalsqueryactiveshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Active shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures actives</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageversionqueryversion" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add-on version</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Versió del complement</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageversionquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add-on Version</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Versió del complement</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationtextbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add text</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix text</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepagedeleted" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>All of your screenshots have been erased!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'han esborrat totes les captures de pantalla vostres.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageallshotsbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>All Shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Totes les captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepageerrorgeneric" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>An error occurred</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderpageaction" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>A new way to save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Una forma nova de desar les captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalsquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>An overview of Screenshots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Resum del Firefox Screenshots</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageprivacymessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Anyone with the link can view this shot.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Qualsevol persona amb l'enllaç pot veure aquesta captura.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusershotsqueryshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Approximate number of active (unexpired) shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre aproximat de captures actives (no caducades)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotdeleteconfirmationmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Are you sure you want to delete this shot?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Segur que voleu suprimir aquesta captura?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageconfirmdeletion" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Are you sure you want to delete this shot permanently?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Segur que voleu suprimir aquesta captura permanentment?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageconfirmdelete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Are you sure you want to delete this shot permanently?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Segur que voleu suprimir aquesta captura permanentment?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsfxadisconnectalertmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Are you sure you want to disconnect this device from your Firefox Account?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esteu segur que voleu desconnectar aquest dispositiu del vostre compte del Firefox?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:bannersignin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;a&gt;Sign in or sign up&lt;/a&gt; to access your shots across devices and save your favorites forever.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;a&gt;Registreu-vos o inicieu la sessió&lt;/a&gt; per accedir a les vostres captures en tots els dispositius i conservar les vostres preferides per sempre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderdownloadupload" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As You Like It</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com vulgueu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderfour" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As You Like It</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com vulgueu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorblack" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Black</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Negre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorblue" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Blue</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Blau</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shutdownwarning" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;b&gt;Saved screenshots are expiring soon.&lt;/b&gt; Starting in June, Screenshots will no longer offer online storage. Want to keep shots from your library? &lt;a&gt;Download them to your computer.&lt;/a&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;b&gt;Les captures de pantalla desades caducaran aviat.&lt;/b&gt; A partir de juny, el Firefox Screenshots deixarà d'oferir emmagatzematge en línia. Voleu conservar les captures de la vostra biblioteca? &lt;a&gt;Baixeu-les al vostre ordinador&lt;/a&gt;.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:termsandprivacynotice2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>By using Firefox Screenshots, you agree to our {termsAndPrivacyNoticeTermsLink} and {termsAndPrivacyNoticePrivacyLink}.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si utilitzeu el Firefox Screenshots, esteu acceptant les nostres {termsAndPrivacyNoticeTermsLink} i l'{termsAndPrivacyNoticePrivacyLink}.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagecancelexpiration" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationtextcancelbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:cancelscreenshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcancelbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:texttoolcancelbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotdeletecancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepagebuttoncancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcanceleditbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcropcancelbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagecapturepage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Capture a Page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captureu una pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagecaptureregion" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Capture a Region</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captureu una àrea</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderclickanddrag" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Capture Just What You Want</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captureu tot allò que vulgueu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheadertwo" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Capture Just What You Want</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captureu tot allò que vulgueu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderthree" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Capture Windows or Entire Pages</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captureu la finestra o la pàgina sencera</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderfullpage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Capture Windows or Entire Pages</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captureu la finestra o la pàgina sencera</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationclearbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Clear</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpageclearsearchbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Clear search</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esborra la cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodytwo" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Click and drag to capture just a portion of a page. You can also hover to highlight your selection.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu clic i arrossegueu per capturar només una part de la pàgina. També podeu moure el ratolí per sobre per ressaltar la vostra selecció.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyclickanddrag" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Click and drag to capture just a portion of a page. You can also hover to highlight your selection.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu clic i arrossegueu per capturar només una part de la pàgina. També podeu moure el ratolí per sobre per ressaltar la vostra selecció.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagecaptureregiondescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Click and drag to select the area you want to capture. Or just hover and click — Screenshots will select the area for you. Like what you see? Select Save to access your screenshot online or the down arrow button to download it to your computer.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu clic i arrossegueu per seleccionar l'àrea que voleu capturar. O bé, passeu-hi el ratolí per sobre i feu clic: el Firefox Screenshots seleccionarà l'àrea automàticament. Us agrada? Trieu «Desa» per accedir a la captura de pantalla en línia o premeu el botó de fletxa cap avall per baixar-la a l'ordinador.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:promoclosebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Close notification</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca la notificació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsclosepreferences" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Close preferences</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca les preferències</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepageteaser" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Coming Soon…</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Properament…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcropconfirmbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Confirm</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Confirma</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationtextconfirmbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Confirm</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Confirma</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:texttoolconfirmbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Confirm</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Confirma</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepageconfirmdelete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Confirm account deletion</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Confirmeu la supressió del compte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagecookieslink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cookies</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Galetes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagecopied" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copied</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha copiat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagecopy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagecopyactionlabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:copyscreenshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagecopyimagetext" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy image text</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia el text de la imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagecopybutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy image to clipboard</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia la imatge al porta-retalls</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:copyscreenshottitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Copy screenshot to clipboard</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Copia la captura de pantalla al porta-retalls</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:creatingpagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Creating { $title }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'està creant { $title }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcropbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Crop</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Retalla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagedatabasequerytime" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>(database time: { $time }ms)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>(temps de base de dades: { $time } ms)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageversionquerylastseen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Day</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Dia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageshotsqueryday" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Day</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Dia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusersqueryday" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Day</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Dia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageretentionquerydays" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Days from the userʼs first to most recent shot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Dies transcorreguts entre la primera i la darrera captura de l'usuari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalretentionquerydays" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Days the user has been creating shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Dies que l'usuari ha estat fent captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotdeleteconfirm" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Delete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Suprimeix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedeletebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Delete this shot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Suprimeix aquesta captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpageconfirmshotdelete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Delete this shot?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Voleu suprimir aquesta captura?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsdisconnectbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Disconnect</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desconnecta</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:onboardingpromodismissbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Dismiss</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Tanca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedoesnotexpire" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>does not expire</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>no caduca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourdone" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Done</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Fet</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedownloadshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedownload" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadscreenshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagedownloadcopy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download or Copy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa o copia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadscreenshottitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Download screenshot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixa la captura de pantalla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:screenshotinstructions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Drag or click on the page to select a region. Press ESC to cancel.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Arrossegueu o feu clic a la pàgina per seleccionar una regió. Premeu ESC per cancel·lar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageeditbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Edit this image</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Edita aquesta imatge</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagealerterrordeletingshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Error deleting shot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error en suprimir la captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpageerrordeletingshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Error deleting shot: { $status } { $statusText }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error en suprimir la captura: { $status } { $statusText }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpageerrorrendering" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Error rendering page: { $error }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error en generar la pàgina: { $error }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagealerterrorupdatingexpirationtime" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Error saving expiration</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error en desar la caducitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagealerterrorupdatingtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Error saving title</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error en desar el títol</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexalerterrorfavoriteshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Error updating favorite shot status</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error en actualitzar l'estat de la captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodypageaction" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Expand the page actions menu in the address bar any time you want to take a screenshot.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Amplieu el menú d'accions de la pàgina de la barra d'adreces quan vulgueu fer una captura de pantalla.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalsqueryexpireddeletedshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Expired (and deleted)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Caducades (i suprimides)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalsqueryexpiredshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Expired (but recoverable)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Caducades (però recuperables)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageexpired" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>expired { $timediff }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>ha caducat { $timediff }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagetimeexpired" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>expired &lt;timediff&gt;&lt;/timediff&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>ha caducat &lt;timediff&gt;&lt;/timediff&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageexpiresin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>expires { $timediff }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>caduca { $timediff }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagetimeexpiresin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>expires &lt;timediff&gt;&lt;/timediff&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>caduca &lt;timediff&gt;&lt;/timediff&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkfaqs" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>FAQs</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>PMF</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagefavoritebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Favorite this shot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Marca la captura com a favorita</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagegetstarteddescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Find the new Screenshots icon on your toolbar. Select it, and the Screenshots menu will appear on top of your browser window.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerqueu la icona «Screenshots» a la barra d'eines. Seleccioneu-la i el menú del Firefox Screenshots apareixerà a la part superior de la finestra del navegador.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagedownloadfirefoxtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Firefox</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Firefox</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsfirefoxaccountsubheader" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Firefox Account</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Compte del Firefox</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlydetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Firefox Screenshots automatically changes to Download-Only mode in these situations:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Firefox Screenshots canvia automàticament al mode de només baixada en aquestes situacions:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Firefox Screenshots Metrics</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mètriques del Firefox Screenshots</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingspageheader" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Firefox Screenshots Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres del Firefox Screenshots</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagedownloadfirefoxsubtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Free Download</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixada gratuïta</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagegenerateddatetime" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Generated at: { $created }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Data de generació: { $created }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagesharelink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get a shareable link to this shot:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Obteniu un enllaç a aquesta captura:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageupsellfirefox" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get Firefox now</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Baixeu el Firefox ara</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagegetstarted" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get Started</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Primers passos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagegetstartedtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get Started</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Primers passos</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkdiscourse" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Give Feedback</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Doneu la vostra opinió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:promolink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Give them a try</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Proveu-ho</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagenoshotsinvitation" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Go on, create some.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Endavant, feu-ne algunes.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagebuttonmyshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Go To My Shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Vés a les meves captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorgreen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Green</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Verd</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorgrey" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Grey</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Gris</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:bannerupsell" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>{ gScreenshotsDescription } &lt;a&gt;Get Firefox now&lt;/a&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>{ gScreenshotsDescription } &lt;a&gt;Baixeu el Firefox ara&lt;/a&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsguestaccountmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Guest Account</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Compte de convidat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:texttoolinputplaceholder" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Hello</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Hola</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageexpiredmessagedetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Here is the page it was originally created from:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta és la pàgina des d'on es va fer originalment la captura:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationhighlighterbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Highlighter</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Marcador</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagenosearchresultsintro" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Hmm</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mmm</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:ghomelink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Home</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagebacktohomebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Homepage</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pàgina d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagehowscreenshotsworks" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>How Firefox Screenshots Works</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com funciona el Firefox Screenshots</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeepfor" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>How long should this shot be retained?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant temps voleu conservar aquesta captura?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageexpirationmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>If you do nothing, this shot will be permanently deleted { $timediff }.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si no feu res, aquesta captura se suprimirà permanentment { $timediff }.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagetimeexpirationmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>If you do nothing, this shot will be permanently deleted &lt;timediff&gt;&lt;/timediff&gt;.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si no feu res, aquesta captura se suprimirà permanentment &lt;timediff&gt;&lt;/timediff&gt;.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedmcawarning" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>If your Shots are subject to multiple claims, we may revoke your access to Firefox Screenshots.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si rebem diverses reclamacions per les vostres captures, se us podria denegar l'accés al Firefox Screenshots.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsfxadisconnectdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>If you sign out, you will need to sign in again to regain access to your screenshots.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si tanqueu la sessió, haureu de tornar a iniciar-la per accedir a les vostres captures de pantalla.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:errorthirdpartycookiesenabled" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>If you took this shot and cannot delete it, you may need to temporarily enable third party cookies from your browser’s preferences.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Si heu fet aquesta captura i no la podeu suprimir, és possible que hàgiu d'activar temporalment les galetes de tercers a les preferències del navegador.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timedifffutureseconds" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>in a few seconds</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>d'aquí pocs segons</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlydetailsprivate" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>In a Private Browsing window.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>En una finestra de navegació privada.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeepindefinitely" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Indefinitely</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Indefinidament</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagekeepindefinitelywithsymbol" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Indefinitely ∞</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Indefinidament ∞</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timedifffuturedays" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>in { $number } days</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>d'aquí { $number } dies</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timedifffuturehours" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>in { $number } hours</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>d'aquí { $number } hores</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timedifffutureminutes" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>in { $number } minutes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>d'aquí { $number } minuts</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Intuitive screenshots baked right into the browser. Capture, save and share screenshots as you browse the Web using Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures de pantalla intuïtives des del navegador mateix. Captureu, deseu i compartiu imatges mentre navegueu amb el Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timediffjustnow" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>just now</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>ara mateix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:textsizelarge" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Large</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Grossa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagelegallink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Legal</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Avís legal</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalretentionquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Length of time users have been creating shots, grouped by week</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Període de temps durant el qual els usuaris han estat fent captures, agrupat per setmana</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:notificationlinkcopiedtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Link Copied</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha copiat l'enllaç</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagelookingforshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Looking for your shots…</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'estan cercant les vostres captures…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:textsizemedium" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Medium</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mitjana</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageheader" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Metrics</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mètriques</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkmozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:addonauthorslist" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla &lt;screenshots-feedback@mozilla.com&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozilla &lt;screenshots-feedback@mozilla.com&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagemyshotsbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>My Shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les meves captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:myshotslink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>My Shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les meves captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:gmyshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>My Shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les meves captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagesearchresultstitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>My Shots: search for { $searchTerm }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les meves captures: s'està cercant { $searchTerm }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlydetailsneverremember" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>“Never remember history” is enabled.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha activat l'opció «No recordarà mai l'historial».</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagenextpage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Next page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pàgina següent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tournext" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Next Slide</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Diapositiva següent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagenoshotsmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No saved shots.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No hi ha cap captura desada.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:gnoshots" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No shots found</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha trobat cap captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:onboardingpromomessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Now, sign in to Screenshots with a Firefox Account and do more:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ara, si inicieu la sessió al Firefox Screenshots amb un compte del Firefox, podreu:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timediffdaysago" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>{ $number } days ago</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>fa { $number } dies</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timediffhoursago" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>{ $number } hours ago</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>fa { $number } hores</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:timediffminutesago" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>{ $number } minutes ago</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>fa { $number } minuts</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageretentionquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of days from a userʼs first shot to most recent shot, grouped by starting week</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre de dies des de la primera captura d'un usuari fins a la captura més recent, agrupats per setmana d'inici</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageshotsquerycount" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre de captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageshotsquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of shots created each day (for the last 30 days)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre de captures creades cada dia (en els darrers 30 dies)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusershotsquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of Shots per User</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre de captures per usuari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageretentionqueryusers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of users</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'usuaris</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusershotsquerycount" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of users</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'usuaris</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalretentionqueryusers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of users</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'usuaris</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusersquerycount" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of users</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'usuaris</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageversionqueryusers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of users logging in</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'usuaris que inicien la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusersquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Number of users who created at least one shot, by day (last 30 days)</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nombre d'usuaris que han creat com a mínim una captura, per dia (darrers 30 dies)</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:notfoundpageintro" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Oops.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ups.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:requesterrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Out of order.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No funciona.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:creatingpagetitledefault" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:notfoundpagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Page not found.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha trobat la pàgina.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:notfoundpagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Page Not Found</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha trobat la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationpenbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pen</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Llapis</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:connectionerrordetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Please check your Internet connection. If you are able to connect to the Internet, there may be a temporary problem with the Firefox Screenshots service.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comproveu la connexió a Internet. Si podeu connectar-vos a Internet, podria ser un problema temporal del servei del Firefox Screenshots.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedmcacontact" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Please email { $dmca } to request further information.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envieu un correu electrònic a { $dmca } per sol·licitar més informació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedmcaincludelink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Please include the URL of this shot in your email: { $url }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Incloeu l'URL d'aquesta captura en el missatge de correu electrònic: { $url }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagepreviouspage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Previous page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pàgina anterior</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourprevious" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Previous Slide</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Diapositiva anterior</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepageprivacylink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:termsandprivacynoticyprivacylink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy Notice</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>avís de privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkprivacy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy Notice</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Avís de privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepagebuttonproceed" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Proceed</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Continua</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorpurple" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Purple</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Porpra</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorred" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Red</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Vermell</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationredobutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Redo</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Refés</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkremovealldata" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove All Data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina totes les dades</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepageremovealldata" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove All Data</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina totes les dades</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkdmca" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Report IP Infringement</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Denuncieu una infracció de propietat intel·lectual</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerreportshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Report Shot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Denuncia la captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageabusebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Report this shot for abuse, spam, or other problems</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Denuncieu aquesta captura per abús, brossa o altres problemes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagerestorebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>restore until { $date }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>restaura fins al { $date }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageretentionquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Retention by Week</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Retenció per setmana</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagesaveexpiration" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:savescreenshotselectedarea" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationsaveeditbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationsavebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagesaveshare" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save and Share</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Deseu i compartiu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:imagecroppopupwarning" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Saved image will be cropped to {pixels}px in height.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La imatge desada es retallarà a {pixels} px d'alçada.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:savescreenshotfullpage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save full page</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captura tota la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:savescreenshotvisiblearea" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save visible</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captura la part visible</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodydownloadupload" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save your cropped shots to the web for easier sharing, or download them to your computer. You also can click on the My Shots button to find all the shots you’ve taken.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Deseu les vostres captures al web per compartir-les fàcilment o baixeu-les a l'ordinador. També podeu fer clic al botó «Les meves captures» per veure totes les captures que heu fet.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyfour" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save your cropped shots to the web for easier sharing, or download them to your computer. You also can click on the My Shots button to find all the shots you’ve taken.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Deseu les vostres captures al web per compartir-les fàcilment o baixeu-les a l'ordinador. També podeu fer clic al botó «Les meves captures» per veure totes les captures que heu fet.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:creatingpagewaitmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Saving your shot…</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'està desant la captura…</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshot: { $originalTitle }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captura de pantalla: { $originalTitle }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:librarylabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures de pantalla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:screenshotslogo" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots Home</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pàgina d'inici del Firefox Screenshots</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shutdownpagetitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots is changing</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Firefox Screenshots està canviant</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:privatewindowerrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots is disabled in Private Browsing Mode</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les captures de pantalla estan desactivades en el mode de navegació privada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagescreenshotsdescriptionserverless" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots made simple. Capture and download screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures de pantalla sense complicacions. Feu captures de pantalla i baixeu-les sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:gscreenshotsdescriptionserverless" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots made simple. Capture and download screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures de pantalla sense complicacions. Feu captures de pantalla i baixeu-les sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagescreenshotsdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots made simple. Take, save, and share screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures de pantalla sense complicacions. Feu captures de pantalla, deseu-les i compartiu-les sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:gscreenshotsdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots made simple. Take, save, and share screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures de pantalla sense complicacions. Feu captures de pantalla, deseu-les i compartiu-les sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourheaderaccounts" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Screenshots to Go</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les vostres captures, a tot arreu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorseagreen" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sea Green</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Verd oceà</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagesearchbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagesearchplaceholder" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search my shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca en les meves captures</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodythree" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Select the buttons in the upper right to capture the visible area in the window or to capture an entire page.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seleccioneu amb els botons de la part superior dreta si voleu capturar l'àrea visible de la finestra o la pàgina sencera.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyfullpage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Select the buttons in the upper right to capture the visible area in the window or to capture an entire page.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seleccioneu amb els botons de la part superior dreta si voleu capturar l'àrea visible de la finestra o la pàgina sencera.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagegetstarteddescriptionpageaction" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Select the Screenshots icon from the page actions menu in the address bar, and the Screenshots menu will appear on top of your browser window.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seleccioneu la icona de l'Screenshots del menú d'accions de la pàgina a la barra d'adreces i apareixerà el menú de l'Screenshots al capdamunt de la finestra del navegador.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageselecttime" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Select time</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seleccioneu el temps</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:buttonsettings" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:gsettings" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Paràmetres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagesharebutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageshareemail" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share link via email</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix l'enllaç per correu electrònic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagesharefacebook" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share on Facebook</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix al Facebook</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagesharepinterest" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share on Pinterest</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix al Pinterest</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagesharetwitter" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Share on Twitter</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Comparteix al Twitter</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:notificationimagecopiedtitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Shot Copied</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha copiat la captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageshotsquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Shots by Day</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captures per dia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexsyncedshot" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Shot taken on another device</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Captura feta en un altre dispositiu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:onboardingpromosigninbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign In</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicia la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:buttonsignin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign In</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicia la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:signinbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign In</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicia la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:gsignin" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign In</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicia la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingssigninbutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign In</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicia la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:bannermessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign in or sign up to access your shots across devices and save your favorites forever.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Registreu-vos o inicieu la sessió per accedir a les vostres captures en tots els dispositius i conservar les vostres preferides per sempre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagesignindescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign in to Screenshots with your Firefox Account to access your shots everywhere you use Firefox. An added bonus: you can also save your favorite shots forever.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicieu la sessió al Firefox Screenshots amb el compte del Firefox per accedir a les vostres captures arreu on utilitzeu el Firefox. I encara més: podeu desar les vostres captures preferides per sempre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingssignininvite" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign in to sync across devices</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicieu la sessió per sincronitzar entre dispositius</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyaccounts" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sign in with your Firefox Account to access your shots on all of your devices and save your favorite shots forever.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inicieu la sessió amb el compte del Firefox per accedir a les vostres captures en tots els dispositius i conservar les vostres preferides per sempre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourskip" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>SKIP</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>OMET</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:textsizesmall" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Small</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Petita</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:copyimageerrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Something went wrong</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Hi ha hagut un problema</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:privatewindowerrordetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sorry for the inconvenience. We are working on this feature for future releases.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Perdoneu les molèsties. Estem treballant en aquesta característica per a versions futures.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:requesterrordetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sorry! We couldn’t save your shot. Please try again later.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Malauradament, s'ha pogut desar la vostra captura. Torneu a provar més tard.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shutdownpagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Starting in June, Screenshots will no longer offer online storage. Want to keep shots from your library? Download shots individually or &lt;a&gt;in batch&lt;/a&gt;. Thank you for using this feature, and we’re sorry for any inconvenience.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>A partir del juny, el Firefox Screenshots deixarà d'oferir emmagatzematge en línia. Voleu desar les captures de la vostra biblioteca? Baixeu-les individualment o &lt;a&gt;totes alhora&lt;/a&gt;. Gràcies per utilitzar aquesta funció i perdoneu les molèsties.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:onboardingpromomessagelistitem2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Store your favorite shots forever</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desar per sempre les vostres captures preferides</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingspagesubheader" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sync &amp; Accounts</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sincronització i comptes</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:contextmenulabel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take a Screenshot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Fes una captura de pantalla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:addondescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take clips and screenshots from the Web and save them temporarily or permanently.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu captures de pantalla de pàgines web i deseu-les temporalment o per sempre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyintroserverless" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take, copy, and download screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu captures de pantalla, copieu-les i baixeu-les sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:promotitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take Note!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Preneu nota!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyintro" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take, save, and share screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu captures de pantalla, deseu-les i compartiu-les sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:tourbodyone" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take, save, and share screenshots without leaving Firefox.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu, deseu i compartiu captures de pantalla sense sortir del Firefox.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagedownloadcopydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take your best shot. Screenshots lets you download your selection or copy it right to your clipboard.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu una captura de pantalla. El Firefox Screenshots us permet baixar la selecció o copiar-la al porta-retalls.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepageshavesharefavoritedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Take your best shot. Then save it to the online Screenshots library, and Firefox copies the link to your clipboard for easy sharing. Shots in the library automatically expire after two weeks, but you can delete them at any time or choose to keep them longer.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu una captura de pantalla. A continuació, deseu-la a la biblioteca de captures de pantalla en línia i el Firefox copiarà l'enllaç al porta-retalls per poder-la compartir fàcilment. Les captures de la biblioteca caduquen automàticament després de dues setmanes, però podeu suprimir-les en qualsevol moment o bé conservar-les durant més temps.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:footerlinkterms" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Terms</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Condicions d'ús</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagetermslink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Terms</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Condicions d'ús</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:termsandprivacynoticetermslink" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Terms</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>condicions d'ús</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationtextsize" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Text size</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mida del text</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:notificationlinkcopieddetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The link to your shot has been copied to the clipboard. Press {meta_key}-V to paste.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'enllaç de la captura s'ha copiat al porta-retalls. Premeu {meta_key}-V per enganxar-lo.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusershotsquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The number of users who have about N total shots</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El nombre d'usuaris que tenen aproximadament N captures en total</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageversionquerydescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The version of the add-on used during login, in the last 14 days</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La versió del complement que s'ha utilitzat en iniciar la sessió, en els darrers 14 dies</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlydetailsthirdparty" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Third-party cookies are disabled.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'han desactivat les galetes de tercers.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:imagecroppedwarning" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This image has been cropped to {pixels}px.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta imatge s'ha retallat a {pixels} px.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexfavoriteicon" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This is a favorite shot and it does not expire</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta és una captura favorita i no caduca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexnonfavoriteicon" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This is not a favorite shot and it will expire</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta no és una captura preferida i caducarà</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:unshootablepageerrordetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This isn’t a standard Web page, so you can’t take a screenshot of it.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No podeu fer una captura de pantalla perquè aquesta no és una pàgina web estàndard.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpageexpiredmessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This shot has expired.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta captura ha caducat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotpagedmcamessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This shot is no longer available due to a third party intellectual property claim.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta captura ja no està disponible a causa d'una reclamació de propietat intel·lectual d'un tercer.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepagewarning" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This will permanently erase all of your Firefox Screenshots data.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquesta operació esborrarà totes les vostres dades del Firefox Screenshots.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:exportinstructions" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>To export: use File &gt; Save Page As… and you will find your screenshots in the folder { $folder }</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per exportar: seleccioneu Fitxer &gt; Anomena i desa la pàgina... i trobareu les vostres captures de pantalla en la carpeta { $folder }</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalsquerydevices" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Total devices registered</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Dispositius registrats totals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalretentionquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Total Retention</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Retenció total</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspagetotalsquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Totals</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Totals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:copyimageerrormessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Unable to copy your shot to the clipboard.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha pogut copiar la captura al porta-retalls.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationundobutton" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Undo</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desfés</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:promomessage" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Updated editing tools let you crop, highlight, and even add text to your shot.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les eines d'edició actualitzades us permeten retallar la captura, ressaltar-la i afegir-hi text.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:uploadscreenshotselectedarea" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Upload</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Puja</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlydetailsnouploadpref" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Uploads have been disabled.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les pujades estan inhabilitades.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageusersquerytitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Users by Day</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Usuaris per dia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagecapturepagedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Use the buttons in the upper right to capture full pages. The Save Visible button will capture the area you can view without scrolling, and Save Full Page will capture everything on the page.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Utilitzeu els botons de la part superior dreta per capturar pàgines senceres. El botó «Captura la part visible» capturarà l'àrea que es visualitza sense desplaçar-se, i el botó «Captura tota la pàgina» capturarà tot el contingut de la pàgina.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:connectionerrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We can’t connect to your screenshots.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha pogut accedir a les vostres captures de pantalla.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shotindexpagenosearchresults" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We canʼt find any shots that match your search.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha trobat cap captura que coincideixi amb la cerca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:unshootablepageerrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We can’t screenshot this page.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No es pot fer una captura de pantalla d'aquesta pàgina.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:loginerrordetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We couldn’t save your shot because there is a problem with the Firefox Screenshots service. Please try again later.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha pogut desar la vostra captura perquè hi ha un problema amb el servei del Firefox Screenshots. Torneu-ho a provar més tard.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:metricspageretentionqueryfirstweek" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Week the user first created a shot</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Setmana en què l'usuari va crear la primera captura</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:shutdownpagecontinue" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We hope you’ll continue to use Screenshots to capture, copy, and download shots.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esperem que continueu utilitzant el Firefox Screenshots per capturar, copiar i baixar captures de pantalla.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:genericerrordetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We’re not sure what just happened. Care to try again or take a shot of a different page?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha produït un error inesperat. Torneu-ho a provar o captureu una altra pàgina.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:onboardingpromotitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What’s new with Firefox Screenshots?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Novetats del Firefox Screenshots</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagesavesharedescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>When you take a shot, Firefox posts your screenshot to your online Screenshots library and copies the link to your clipboard. We automatically store your screenshot for two weeks, but you can delete shots at any time or change the expiration date to keep them in your library for longer.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quan feu una captura de pantalla, el Firefox l'envia a la vostra biblioteca de captures i copia l'enllaç al porta-retalls. Per defecte, la captura de pantalla s'emmagatzema durant dues setmanes, però també podeu suprimir-la en qualsevol moment o canviar-ne la data de caducitat per tal de conservar-les més temps a la vostra biblioteca.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcolorwhite" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>White</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Blanc</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:genericerrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Whoa! Firefox Screenshots went haywire.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Firefox Screenshots ha tingut un problema.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:annotationcoloryellow" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Yellow</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Groc</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlynotice" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You are currently in Download-Only mode.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Actualment esteu en mode de només baixada.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:downloadonlydetailsesr" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You are using Firefox ESR.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Feu servir el Firefox ESR.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsfxaconnectdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You can sign in to access your screenshots across devices.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Podeu iniciar la sessió per accedir a les vostres captures de pantalla en tots els dispositius.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:settingsdescription" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You can sign in with Firefox Accounts to sync all your screenshots across devices and access them privately.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Podeu iniciar la sessió amb un compte del Firefox per sincronitzar les vostres captures de pantalla en tots els dispositius i accedir-hi de forma privada.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:selfscreenshoterrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You can’t take a shot of a Firefox Screenshots page!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No podeu fer una captura de pantalla de la pàgina del Firefox Screenshots!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepageerrorauthrequired" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You must have Firefox Screenshots installed or signed in to Firefox Account to delete your account</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Heu de tenir el Firefox Screenshots instal·lat o haver iniciat la sessió al compte del Firefox per suprimir el vostre compte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:leavepageerroraddonrequired" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You must have Firefox Screenshots installed to delete your account</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Heu de tenir el Firefox Screenshots instal·lat per suprimir el vostre compte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:emptyselectionerrortitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your selection is too small</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La selecció és massa petita</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:webextension.properties:notificationimagecopieddetails" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your shot has been copied to the clipboard. Press {meta_key}-V to paste.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La captura s'ha copiat al porta-retalls. Premeu {meta_key}-V per enganxar-la.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firefox-screenshots:server.ftl:homepagesignintitle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your Shots Everywhere</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les vostres captures a tot arreu</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

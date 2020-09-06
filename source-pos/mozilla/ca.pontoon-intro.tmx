@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tmx version="1.4">
+	<header adminlang="en-US" creationtoolversion="0.1" creationtool="pontoon" datatype="plaintext" segtype="sentence" o-tmf="plain text" srclang="en-US" creationdate="2020-06-07T17:53:11.904706">
+	</header>
+	<body>
+		<tu tuid="pontoon-intro:messages.properties:implement-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add a script and you are halfway through</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegiu un script i ja sereu a mig camí</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:developers-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Are you a developer, interested in Pontoon? There are plenty of ways to get your hands dirty.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sou un desenvolupador interessat en el Pontoon? Hi ha un munt de maneres de posar fil a l'agulla.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:save-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>As soon as you are happy with your translation, you can save it by pressing Enter or clicking the save icon in the toolbar. To quit translation mode without saving changes, press Esc or click the cancel icon in the toolbar.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quan estigueu satisfet de la traducció, deseu-la prement «Retorn» o fent clic en la icona de desar a la barra d'eines. Per sortir del mode de traducció sense desar els canvis, premeu «Esc» o feu clic a la icona de cancel·lar a la barra d'eines.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:select-sub" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>a text block</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>un bloc de text</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:select-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>A toolbar appears above the dashed rectangle, allowing you to select the corresponding text block for editing. To do so, either click on the Edit button in the toolbar, or double-click anywhere inside the dashed border.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Veureu una barra d'eines sobre el rectangle discontinu, que us permet seleccionar el corresponent bloc de text per editar-lo. Per fer-ho, feu clic al botó «Edita» de la barra d'eines o feu doble clic dins el rectangle.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:space-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Avoid breaking user interface by seeing how much space is available for your translations, which is especially useful with apps.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com que veieu l'espai disponible per a la traducció, no introduireu errades en la interfície d'usuari, cosa que és especialment útil en les aplicacions.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:context-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>By localizing web page on the page itself, you no longer need to worry if the word you are translating is a verb or noun.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com que traduïu la pàgina web directament dins la mateixa pàgina web, ja no cal patir per saber si la paraula que esteu traduint és un verb o un nom.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:by-mozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>By someone you trust</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Fet per algú de confiança</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:author" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Crafted by Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Creat per Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:by-mozilla-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Developed by the non-profit behind Firefox</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Creat per l'organització sense ànim de lucre darrere del Firefox</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:navigation-developers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Developers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Desenvolupadors</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:implement" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Enable it on your site</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Activeu-lo en el vostre lloc web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:helpers-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get help from translation memory, machine translation and the likes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Rebeu ajuda gràcies a la memòria de traducció i a la traducció automàtica, entre d'altres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:preview" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get instant preview</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Previsualització instantània</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:developers-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get involved</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Participeu-hi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:github" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Hack it on GitHub</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Modifiqueu-lo en el Github</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:hover" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Hover</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Passeu el ratolí</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:navigation-how" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>How</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:how-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>How does it work?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Com funciona?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:headline-0" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>In-context localization</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Localització en context</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:title-tag" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>In-context localization in Pontoon</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Localització en context al Pontoon</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:how-desc-in-context" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>In-context localization is a very simple and intuitive tool that requires little to no technical skill for localizers to use.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La localització en context és una eina molt senzilla i intuïtiva que no requereix cap habilitat tècnica per començar a traduir.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:headline-2" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>In place.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>«In situ».</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:what-desc-in-context" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>It allows you to localize web content in place, with context and spatial limitations right in front of you.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Us permet traduir el contingut web «in situ», de forma que podeu veure directament el context i les limitacions d'espai.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:github-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>It's completely free and open source</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>És totalment lliure, gratuït i de codi obert</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:join-us" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Join us</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Uniu-vos-hi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:profit" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Learn more</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:headline-1" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Localize the web.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Traduïu el web.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:navigation-more" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>More</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:hover-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Move your mouse over headings, links, paragraphs or other text blocks on this page. A dashed rectangle will appear around each of these blocks, marking strings that are available for localization on the page itself.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Moveu el ratolí sobre els títols, enllaços, paràgrafs o altres blocs de text d'aquesta pàgina. Apareixerà un rectangle discontinu al voltant de cadascun d'aquests blocs, que indica les cadenes disponibles per traduir dins la mateixa pàgina.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:hover-sub" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>over web content</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>per sobre del contingut web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:plurals" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Plurals support</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Compatible amb els plurals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:what-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon allows you to localize web content in place, with context and spatial limitations right in front of you.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Pontoon us permet traduir el contingut web «in situ», de forma que podeu veure directament el context i les limitacions d'espai.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:upper-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon by Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pontoon, de Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:main-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon by Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pontoon, de Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:navigation-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon Intro</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Introducció al Pontoon</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon Intro</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Introducció al Pontoon</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:how-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon is a very simple and intuitive tool that requires little to no technical skill for localizers to use.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El Pontoon és una eina molt senzilla i intuïtiva que no requereix cap habilitat tècnica per començar a traduir.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:more-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pontoon's in place translation mode is what puts it above others, but it also has many other benefits.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El mode de traducció «in situ» del Pontoon és allò que el diferencia de la resta, però també té molts altres beneficis.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:qa" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Quality checks</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Controls de qualitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:save" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Save</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Deseu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:space" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>See spatial limitations</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Vegeu les limitacions d'espai</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:select" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Select</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Seleccioneu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:translate-sub" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>selected text</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>el text seleccionat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:plurals-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Strings with plurals can be translated to all plural forms available in your languge</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les cadenes amb plurals es poden traduir a totes les formes de plurals disponibles en la vostra llengua</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:call-to-action" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Tell Me More</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més informació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:that-is-it" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>That's it!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Això és tot!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:preview-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>The moment you submit translation, it replaces the original text in the web page, making you the first proofreader and tester.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Immediatament després d'enviar-se, la traducció substitueix el text original en la pàgina web, o sigui que sereu el primer de revisar-la i comprovar-la.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:navigation-toggle" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Toggle navigation</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Commuta la navegació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:translate" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Translate</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Traduïu</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:helpers" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Translation helpers</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ajudes a la traducció</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:qa-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Translations are automatically reviewed for quality before saving</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Les traduccions passen per una revisió de qualitat automàtica abans de desar-se</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:context" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Understand context</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Enteneu el context</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:navigation-what" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Què</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:more-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What else can it do?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Què més pot fer?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:what-title-in-context" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What is in-context localization?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Què és la localització en context?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:what-title" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>What is Pontoon?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Què és el Pontoon?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:translate-desc" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>When you enter editing mode, the entire text block will be selected. You can start typing your translation immediately while seeing the exact context of your source string and how much space is available for your translation.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quan entreu en el mode d'edició, se seleccionarà el bloc de text sencer. Podeu començar a teclejar la traducció immediatament, tot veient el context exacte de la cadena original i quant espai hi ha disponible per a la traducció.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="pontoon-intro:messages.properties:save-sub" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>your translation</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>la traducció</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>
