@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tmx version="1.4">
+	<header adminlang="en-US" creationtoolversion="0.1" creationtool="pontoon" datatype="plaintext" segtype="sentence" o-tmf="plain text" srclang="en-US" creationdate="2019-10-27T16:00:20.094914">
+	</header>
+	<body>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:about-mozillians" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>About Mozillians</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quant a Mozillians</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:add-account" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add account</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Crea un compte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:add-skill" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Add Skill</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Afegeix una competència</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:a-fellow-mozillian" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>A fellow Mozillian</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Un company mozil·lià</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:an-irc-channel-where-this-group-is-discussed-optional" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>An IRC channel where this group is discussed (optional).</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Un canal IRC on parlar sobre aquest grup (opcional).</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:application-error" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Application Error</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Error de l'aplicació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:are-you-sure-you-want-to-leave-mozillians" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Are You Sure You Want to Leave Mozillians?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Esteu segur que voleu abandonar Mozillians?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:a-url-of-a-web-site-with-more-information-about-this-group-optional" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>A URL of a web site with more information about this group (optional).</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'URL d'una pàgina web amb més informació sobre aquest grup (opcional).</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:a-url-of-a-wiki-with-more-information-about-this-group-optional" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>A URL of a wiki with more information about this group (optional).</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'URL d'un wiki amb més informació sobre aquest grup (opcional).</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:authentication-failed" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Authentication failed.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'autenticació ha fallat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:bio" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Bio</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Biografia</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:by-request" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>By request</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Per sol·licitud</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:cancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:cancel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Cancel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cancel·la</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:city" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>City</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ciutat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:community-steward" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Community Steward</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Assistent de la comunitat</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:confirm-profile-deletion" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Confirm Profile Deletion</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Confirma l'eliminació del perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:country" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Country</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>País</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:create-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Create Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Crea un perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:create-your-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Create Your Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Creeu el vostre perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:delete" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Delete</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Crea un compte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:delete-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Delete Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina el perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:deleting-your-profile-is-immediate-and-irreversible-any-information-in-your-profile-will-be-permanently-lost-if-you-want-to-join-mozillians-again-you-will-need-to-get-vouched-again" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Deleting your profile is immediate and irreversible. Any information in your profile will be permanently lost. If you want to join Mozillians again, you will need to get vouched again.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Eliminar el vostre perfil és immediat i irreversible. Tota la informació del person es perdrà permanentment. Si voleu tornar a unir-vos a Mozillians, caldrà que demaneu que us recomanin de nou.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:description" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Description</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Descripció</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:edit-your-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Edit Your Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Edita el perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:email" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Email</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Adreça electrònica</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:email-is-currently-associated-with-another-user" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Email is currently associated with another user.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'adreça electrònica ja està associada amb un altre usuari.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:external-accounts" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>External Accounts</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Crea un compte</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:fewest-members" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Fewest Members</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Menys membres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:fitted" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Fitted</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ajustada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:functional-areas" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Functional Areas</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Àrees funcionals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:get-involved" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Get Involved</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Involucreu-vos-hi</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Group</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Grup</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:group-listing" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Group Listing</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Llista de grups</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:group-members" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Group Members</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Membres del grup</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:group-name" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Group: {name}</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Grup: {name}</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:groups" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Groups</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Grups</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:group-with-this-name-already-exists" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Group with this Name already exists.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ja existeix un grup amb aquest nom.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:h2search-for-a-mozillianh2-p-you-can-search-for-another-mozillian-using-their-name-email-or-nickname-p" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;h2&gt;Search For a Mozillian&lt;/h2&gt; &lt;p&gt; You can search for another Mozillian using their name, email, or nickname. &lt;/p&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;h2&gt;Cerca un Mozillian&lt;/h2&gt;&lt;p&gt; Podeu cercar altres Mozillians pel nom, l'adreça electrònica o el sobrenom.&lt;/p&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:im-sure-delete-my-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>I'm sure: delete my profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>N'estic segur: esborra el perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:include-non-vouched" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Include non-vouched</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Inclou no recomanats</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:invitation-sent" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Invitation Sent</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha enviat la invitació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:invitation-sent" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Invitation Sent!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha enviat la invitació!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:invite" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Invite</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Convida</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:invite-a-mozillian" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Invite a Mozillian</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Convida a un Mozillian</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:irc-channel" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>IRC Channel</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Canal IRC</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:irc-nickname" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>IRC Nickname</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sobrenom en l'IRC</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:join-group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Join Group</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Uniu-vos al grup</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:languages" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Languages</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Altres llengües:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:leave-group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Leave Group</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Deixa el grup</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:legal-notices" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Legal Notices</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Avisos legals</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:log-out" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Log Out</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Finalitza la sessió</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:maybe-theyre-not-a-mozillian-yet-a-hrefinvitesinvite-this-persona-to-create-a-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Maybe they're not a Mozillian yet? &lt;a href="%(invite)s"&gt;Invite this person&lt;/a&gt; to create a profile.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El o la Mozillian que cerqueu no és al directori. Comproveu-ne l'ortografia o&lt;a href="%(invite)s"&gt;convideu aquesta persona&lt;/a&gt; a fer-se un perfil.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:member" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Member</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Membre</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:members" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Members</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Membres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:most-members" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Most Members</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Més membres</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozillian</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozilla-community-directory" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla Community Directory</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Directori de la comunitat Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozillas-contributor-phonebook" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozilla's contributor phonebook</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Directori de col·laboradors de Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozillian" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozillian</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozillian</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozillian-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozillian Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Perfil Mozillian</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozillians" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozillians</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Mozillians</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:mozillians-work-on-all-sorts-of-different-things-from-add-on-developers-to-localizers-find-mozillians-who-work-on-similar-things-using-user-created-groups" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Mozillians work on all sorts of different things! From Add-on developers to localizers, find Mozillians who work on similar things using user-created groups.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Els mozil·lians treballen en tota mena de coses! Des de desenvolupadors de complements fins a localitzadors, trobeu mozil·lians amb interessos similars mitjançant els grups creats pels usuaris.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:name-a-z" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Name A-Z</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom A-Z</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:next" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Next</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Següent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:no" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:no-dont-delete-my-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>No: don't delete my profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No: no esborris el perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:oh-no-that-page-doesnt-exist" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Oh No! That Page Doesn't Exist!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ai las! La pàgina no existeix!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:page-not-found" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Page Not Found</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No s'ha trobat la pàgina</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:pending" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pending</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Pendent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:pending-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Pending Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Perfil pendent</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:photo-collage-of-mozillians" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Photo collage of Mozillians</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Collage de fotografies de mozil·lians</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:please-complete-registration-before-proceeding" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Please complete registration before proceeding.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Completeu el registre abans de procedir.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:please-correct-the-errors-below" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Please correct the errors below.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Corregiu els errors a continuació.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:please-use-only-alphanumeric-characters" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Please use only alphanumeric characters</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Utilitzeu només caràcters alfanumèrics</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:privacy-first" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy First</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Primer la privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:privacy-policy" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Privacy Policy</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Política de privadesa</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:profile-photo" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Profile photo</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Foto de perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:profile-photo" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Profile Photo</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Foto de perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:p-the-page-you-requested-couldnt-be-found-you-can-head-to-the-a-hrefhome_urlsmozillians-home-pagea-to-learn-more-about-our-community-phonebook-or-you-can-try-searching-for-the-person-you-were-looking-for-using-the-search-box-at-the-top-of-this-page-p" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>&lt;p&gt; The page you requested couldn't be found. You can head to the &lt;a href="%(home_url)s"&gt;Mozillians home page&lt;/a&gt; to learn more about our community phonebook, or you can try searching for the person you were looking for using the search box at the top of this page. &lt;/p&gt;</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>&lt;p&gt; No s'ha trobat la pàgina demanada. Podeu tornar a la &lt;a href="%(home_url)s"&gt;pàgina d'inici dels Mozillians&lt;/a&gt; per a més informació quant al directori de la comunitat, o podeu intentar trobar la persona que cercàveu mitjançant el quadre de cerca de la part superior d'aquesta pàgina. &lt;/p&gt;</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:public" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Public</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Públic</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:remove-profile-photo" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove Profile Photo</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Elimina la foto del perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:remove-skill" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Remove Skill</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Suprimeix la competència</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:report-trademark-abuse" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Report Trademark Abuse</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Informeu d'un abús de la marca registrada</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:s-created-a-mozillians-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>%s created a Mozillians profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>%s ha creat un perfil mozil·lià</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:search" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:search-results" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Search Results</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Resultats de la cerca</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:send-invite" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Send invite</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Envia una invitació</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:skill" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skill</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Competència</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:skill-name" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skill: {name}</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Competència: {name}</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:skills" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skills</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Competències</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:skills-members-have-in-common" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skills members have in common</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Competències que els membres tenen en comú</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:skip-to-main-content" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Skip to main content</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Salta al contingut</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:sorry-we-cannot-find-any-mozillians-with-skill-names" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sorry, we cannot find any mozillians with skill %(name)s</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No podem trobar cap mozil·lià amb la competència %(name)s</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:sort" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Sort</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ordena</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:straight-cut" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Straight-cut</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Estàndard</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:thanks-for-vouching-for-a-fellow-mozillian-this-user-is-now-vouched" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Thanks for vouching for a fellow Mozillian! This user is now vouched!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Gràcies per recomanar un company mozil·lià! Aquest usuari ara està recomanat!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-field-is-required" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This field is required.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Camp obligatori.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-is-your-gravatar-change-it-at-gravatarcom" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This is your Gravatar, change it at gravatar.com</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquest és el vostre Gravatar. Podeu canviar-lo a gravatar.com</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-name-already-exists" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This name already exists.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El nom ja existeix.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-user-has-been-added-as-a-member-of-this-group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This user has been added as a member of this group.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha afegit l'usuari com a membre del grup.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-user-has-not-requested-membership-in-this-group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This user has not requested membership in this group.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'usuari no ha demanat ser membre del grup.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-user-is-already-a-member-of-this-group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This user is already a member of this group.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>L'usuari ja és membre del grup.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-username-is-in-use-please-try-another" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This username is in use. Please try another.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquest nom ja s'utilitza. Proveu-ne un altre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:this-username-is-not-allowed-please-choose-another" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>This username is not allowed, please choose another.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Aquest nom d'usuari no està permès. Trieu-ne un altre.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:t-shirt-size" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>T-Shirt Size</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Talla de samarreta</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:update-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Update Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Crea un perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:username" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Username</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Nom d'usuari</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:view-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>View Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:visible-to" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Visible to:</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Visible per a:</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:vouched-by" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Vouched By</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Recomanat per</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:vouchees" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Vouchees</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Recomanat per</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:website" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Website</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Lloc web</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:welcome" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Welcome</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Us donem la benvinguda</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:welcome-to-the-mozilla-community-directory" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Welcome to the Mozilla community directory</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Us donem la benvinguda al directori de la comunitat Mozilla</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:were-sorry-but-something-went-wrong" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>We're Sorry, but Something Went Wrong!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Bé, és lamentable però alguna cosa no ha anat bé!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:when-did-you-get-involved-with-mozilla" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>When did you get involved with Mozilla?</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Quan vàreu començar a contribuir amb Mozilla?</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:wiki" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Wiki</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Wiki</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:yes" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Yes</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Sí</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:you-are-already-in-this-group" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You are already in this group.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Ja sou membre del grup.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:you-cannot-invite-someone-who-has-already-been-vouched" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You cannot invite someone who has already been vouched.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>No podeu convidar a una persona que ja ha estat recomanada.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:you-changed-your-username-please-note-your-profile-url-has-also-changed" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You changed your username; please note your profile URL has also changed.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Heu canviat el nom d'usuari. Tingueu en compte que l'URL del perfil també ha canviat.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:you-must-be-logged-in-to-continue" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You must be logged in to continue.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Heu d'iniciar una sessió per continuar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:you-must-be-vouched-to-continue" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>You must be vouched to continue.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>Cal que algú us recomani per continuar.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:your-account-has-been-created" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your account has been created.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha creat el vostre compte.</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:your-account-has-been-deleted-thanks-for-being-a-mozillian" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your account has been deleted. Thanks for being a Mozillian!</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>S'ha  suprimit el vostre compte. Gràcies per ser un mozil·lià!</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:your-profile" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your Profile</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>El vostre perfil</seg>
+			</tuv>
+		</tu>
+		<tu tuid="mozillians:LC_MESSAGES/django.po:your-request-to-join-this-group-is-still-pending" srclang="en-US">
+			<tuv xml:lang="en-US">
+				<seg>Your request to join this group is still pending.</seg>
+			</tuv>
+			<tuv xml:lang="ca">
+				<seg>La vostra sol·licitud per unir-se a aquest grup encara està pendent.</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>
