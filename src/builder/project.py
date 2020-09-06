@@ -39,6 +39,8 @@ from .transvisionfileset import TransvisionFileSet
 from .cgitfileset import CGitFileSet
 from .zanatafileset import ZanataFileSet
 from .pontoonfileset import PontoonFileSet
+from .mercurialfileset import MercurialFileSet
+
 
 class Project(object):
 
@@ -171,6 +173,12 @@ class Project(object):
                                   fileset.url,
                                   fileset.target)
                 fs.set_project(self)
+            elif fileset.type == 'mercurial':
+                fs = MercurialFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+                fs.set_pattern(fileset.pattern)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))

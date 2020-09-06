@@ -1,12 +1,12 @@
 {
     "project": "Pidgin", 
-    "projectweb": "https://www.softcatala.org/projectes/pidgin/", 
+    "projectweb": "https://www.softcatala.org/projectes/pidgin/",
     "softcatala": true,
     "fileset": {
         "Pidgin": {
-            "url": "https://bitbucket.org/pidgin/main/raw/1cf07b94c6ca44814ad456de985947be66a391c8/po/ca.po", 
-            "type": "file", 
-            "target": "pidgin-ca.po"
+            "url": "https://keep.imfreedom.org/pidgin/pidgin/",
+            "type": "mercurial",
+             "pattern": ".*/ca\\.po.*"
         }
     }
 }
