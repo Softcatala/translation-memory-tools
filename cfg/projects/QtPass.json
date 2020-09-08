@@ -3,7 +3,7 @@
     "projectweb": "https://qtpass.org/",
     "fileset": {
         "qtpass": {
-            "url": "https://raw.githubusercontent.com/IJHack/QtPass/master/localization/localization_ca.ts",
+            "url": "https://raw.githubusercontent.com/IJHack/QtPass/master/localization/localization_ca_ES.ts",
             "type": "file",
             "target": "qtpass-ca.ts"
         }
