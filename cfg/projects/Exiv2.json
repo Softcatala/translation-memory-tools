@@ -3,9 +3,9 @@
     "projectweb": "https://www.exiv2.org/",
     "fileset": {
         "exiv2": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-support/ca/external-l10n/exiv2_ca.po",
-            "type": "subversion",
-            "target": "exiv2_ca.po"
+            "url": "https://raw.githubusercontent.com/Exiv2/exiv2/master/po/ca.po",
+            "type": "file",
+            "target": "ca.po"
         }
     }
 }
