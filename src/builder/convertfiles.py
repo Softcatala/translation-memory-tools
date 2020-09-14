@@ -184,6 +184,11 @@ class ConvertFiles():
         self._copy_res_files("translations/androidx/res/values/strings.xml",
                              "translations/androidx/res/values-ca/strings.xml")
 
+        '''Runner Up'''
+        self._copy_res_files("translations/runner-up-android.stringsxml/en.xml",
+                             "translations/runner-up-android.stringsxml/ca.xml")
+
+
 
     def _copy_res_files(self, source_file, target_file):
         en_file = os.path.join(self.convert_dir, source_file)
