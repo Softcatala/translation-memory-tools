@@ -1,0 +1,10 @@
+{
+    "project": "RunnerUp", 
+    "projectweb": "https://github.com/jonasoreland/runnerup",
+    "fileset": {
+        "runnerup": {
+            "url": "https://www.transifex.com/runner-up/runner-up-android",
+            "type": "transifex"
+        }
+    }
+}
