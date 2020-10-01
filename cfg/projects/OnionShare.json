@@ -1,5 +1,6 @@
 {
     "project": "OnionShare",
+    "disabled": true,
     "projectweb": "https://hosted.weblate.org/projects/onionshare/translations/ca/",
     "fileset": {
         "OnionShare": {
