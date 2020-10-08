@@ -226,8 +226,8 @@ class ConvertFiles():
         en_file = os.path.join(self.convert_dir,
                                "translations/briar.stringsxml-5/en.xml")
 
-        if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
-                return
+        if os.path.isfile(ca_file) is False or os.path.isfile(en_file) is False:
+            return
 
         directory = os.path.join(self.convert_dir, 'briar')
         if not os.path.exists(directory):
@@ -288,8 +288,26 @@ class ConvertFiles():
             self._convert_json_file_to_po(jsonfile, 'en.json', 'ca.json')
 
     def _convert_yml_files_to_po(self):
-        for ymlfile in self.findFiles.find(self.convert_dir, 'ca.yml'):
-            dirName = os.path.dirname(ymlfile)
+        EXPECTED_SRC = 'en.yml'
+        EXPECTED_TRG = 'ca.yml'
+
+        for trgfile in self.findFiles.find(self.convert_dir, '*ca.yml'):
+            srcfile = trgfile.replace("ca.yml", "en.yml")
+
+            if os.path.isfile(srcfile) is False:
+                continue
+
+            dirName = os.path.dirname(srcfile)
+            src_base = os.path.basename(srcfile)
+            if src_base != EXPECTED_SRC:
+                new = os.path.join(dirName, EXPECTED_SRC)
+                shutil.copyfile(srcfile, new)
+
+            trg_base = os.path.basename(trgfile)
+            if trg_base != EXPECTED_TRG:
+                new = os.path.join(dirName, EXPECTED_TRG)
+                shutil.copyfile(trgfile, new)
+
             logging.info('convert yml file: {0}'.format(dirName))
             cmd = 'i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en'.format(dirName)
             os.system(cmd)
