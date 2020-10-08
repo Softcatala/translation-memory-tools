@@ -4,7 +4,7 @@
     "softcatala": true, 
     "fileset": {
         "abiword": {
-            "url": "https://www.abisource.com/dev/strings/dev/ca-ES.po",
+            "url": "https://raw.githubusercontent.com/AbiWord/abiword/master/po/ca-ES.po",
             "type": "file", 
             "target": "abiword-ca.po"
         }
