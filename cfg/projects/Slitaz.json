@@ -1,6 +1,7 @@
 {
     "project": "Slitaz",
     "projectweb": "http://www.slitaz.org/i18n.php",
+    "disabled": true,
     "fileset": {
         "Slitaz": {
             "url": "http://www.slitaz.org/i18n.php",
