@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import sys, getopt, operator, pystache, os.path, uuid, cgi, re, hunspell, json
+import sys, getopt, operator, pystache, os.path, uuid, html, re, hunspell, json
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -46,7 +46,7 @@ class rule_match(object):
          spanclass = "hiddenGreenError"
       self.context_before = ctx[0:a]
       self.context_spanclass = spanclass
-      self.context_error = cgi.escape(ctx[a:b]).replace(" ","&nbsp;")
+      self.context_error = html.escape(ctx[a:b]).replace(" ","&nbsp;")
       self.context_after = ctx[b:ctxlen]
       try:
          self.url = error['rule']['urls'][0]['value']
