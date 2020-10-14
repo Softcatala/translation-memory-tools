@@ -59,7 +59,7 @@ class PontoonFileSet(FileSet):
                     elif prj_attribute == 'slug':
                         slug = prj_value
 
-                url = self.url + 'ca/{0}/ca.tmx'.format(slug)
+                url = self.url + 'translation-memory/ca.{0}.tmx'.format(slug)
                 fileset = FileFileSet(self.project_name, name, url, slug + '.tmx', self)
 
                 logging.debug("PontoonFileSet. Adding {0}-{1}".format(self.project_name, name))
