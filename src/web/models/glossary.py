@@ -43,6 +43,7 @@ class Glossary(object):
                 self.glossary = None
 
         except:
+            print("Cannot find glossary.db3")
             self.glossary = None
 
     def get_json(self):
