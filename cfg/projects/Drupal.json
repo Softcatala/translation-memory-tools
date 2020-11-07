@@ -3,7 +3,7 @@
     "projectweb": "https://drupal.org/project/ca",
     "fileset": {
         "drupal": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/drupal/drupal-8.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/8.x/drupal/drupal-9.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "drupal-ca.po"
@@ -27,7 +27,7 @@
             "target": "biblio-drupal-ca.po"
         },
         "webform": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/webform/webform-8.x-5.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/8.x/webform/webform-6.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "webform-drupal-ca.po"
@@ -57,7 +57,7 @@
             "target": "date-drupal-ca.po"
         },
         "simplenews": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/simplenews/simplenews-8.x-1.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/8.x/simplenews/simplenews-3.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "simplenews-drupal-ca.po"
@@ -81,13 +81,13 @@
             "target": "moneysuite-drupal-ca.po"
         },
         "feeds": {
-            "url": "https://ftp-origin.drupal.org/files/translations/7.x/feeds/feeds-7.x-2.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/8.x/feeds/feeds-8.x-3.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "feeds-drupal-ca.po"
         },
         "backup_migrate": {
-            "url": "https://ftp-origin.drupal.org/files/translations/7.x/backup_migrate/backup_migrate-7.x-3.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/8.x/backup_migrate/backup_migrate-5.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "backup_migrate-drupal-ca.po"
