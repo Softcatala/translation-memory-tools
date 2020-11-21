@@ -37,7 +37,7 @@ class Glossary(object):
     def search(self):
         try:
             database.open('glossary.db3')
-            self.glossary = Entry.select().where(Entry.term == self.search_term)
+            self.glossary = Entry.select().where(Entry.term == self.search_term.lower())
 
             if self.glossary.count() == 0:
                 self.glossary = None
