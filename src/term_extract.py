@@ -149,7 +149,7 @@ def read_parameters():
 
 
 def init_logging():
-    logfile = 'term-extract.log'
+    logfile = 'term_extract.log'
 
     if os.path.isfile(logfile):
         os.remove(logfile)
