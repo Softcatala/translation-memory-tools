@@ -1,0 +1,16 @@
+{
+    "project": "OpenUDS",
+    "projectweb": "https://www.transifex.com/openuds/openuds/",
+    "fileset": {
+        "openuds": {
+            "url": "https://raw.githubusercontent.com/dkmstr/openuds/master/server/src/uds/locale/ca/LC_MESSAGES/django.po",
+            "type": "file",
+            "target": "openuds-ca.po"
+        },
+        "openuds-js": {
+            "url": "https://raw.githubusercontent.com/dkmstr/openuds/master/server/src/uds/locale/ca/LC_MESSAGES/djangojs.po",
+            "type": "file",
+            "target": "openudsjs-ca.po"
+        }
+    }
+}
