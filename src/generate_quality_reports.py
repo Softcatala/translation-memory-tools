@@ -95,7 +95,7 @@ class LanguageTool():
         os.system(cmd)
 
     def run_lt(self, lt, txt_file, json_file):
-        cmd = lt['command'].format(lt['enabled-rules'], lt['disabled-rules'],
+        cmd = lt['command'].format(lt['enabled-rules'], lt['disabled-rules'], lt['disabled-categories'],
               txt_file, lt['server'], json_file)
         os.system(cmd)
 
