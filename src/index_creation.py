@@ -21,24 +21,9 @@
 
 import datetime
 import locale
-import time
+import json
 from optparse import OptionParser
-
-import pystache
-
 from web.indexcreator import IndexCreator
-
-
-def process_template(template, filename, ctx):
-    # Load template and process it.
-    template = open(template, 'r').read()
-    parsed = pystache.Renderer()
-    s = parsed.render(template, ctx)
-
-    # Write output.
-    f = open(filename, 'w')
-    f.write(s)
-    f.close()
 
 
 def read_parameters():
@@ -72,6 +57,11 @@ def read_parameters():
 
     return options.po_directory, options.debug_keyword, projects_names
 
+def write_index_json(ctx):
+
+    content = json.dumps(ctx, indent=4, separators=(',', ': '))
+    with open("index.json" ,"w") as file:
+        file.write(content)
 
 def main():
     """Create a Whoosh index for a PO file.
@@ -99,14 +89,7 @@ def main():
         'projects': str(indexCreator.projects),
         'words': locale.format_string("%d", indexCreator.words, grouping=True),
     }
-    process_template("web/templates/statistics.mustache", "statistics.html", ctx)
-
-    ctx = {
-        # This is the list of projects to display for the user to select.
-        'options': sorted(indexCreator.options, key=lambda x: x.lower()),
-    }
-    process_template("web/templates/select-projects.mustache",
-                     "select-projects.html", ctx)
+    write_index_json(ctx)
 
     print("Time used to create the index: {0} ".format(datetime.datetime.now() - start_time))
 

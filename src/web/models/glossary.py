@@ -32,7 +32,14 @@ class Glossary(object):
         self.glossary = None
 
     def get_results(self):
-        return self.glossary
+        results = []
+
+        if self.glossary is not None:
+            for result in self.glossary:
+                results.append(result.dict)
+
+        return results
+
 
     def search(self):
         try:
@@ -47,10 +54,5 @@ class Glossary(object):
             self.glossary = None
 
     def get_json(self):
-        all_results = []
-
-        if self.glossary is not None:
-            for result in self.glossary:
-                all_results.append(result.dict)
-
-        return json.dumps(all_results, indent=4, separators=(',', ': '))
+        results = self.get_results()
+        return json.dumps(results, indent=4, separators=(',', ': '))

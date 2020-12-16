@@ -22,7 +22,6 @@
 import datetime
 import locale
 import os
-import pystache
 import json
 
 from optparse import OptionParser
@@ -30,23 +29,13 @@ from builder.jsonbackend import JsonBackend
 from builder.pofile import POFile
 from builder.projectmetadatadao import ProjectMetaDataDao
 
-
-def process_template(template, filename, ctx):
-    # Load template and process it.
-    template = open(template, 'r').read()
-    parsed = pystache.Renderer()
-    s = parsed.render(template, ctx)
-
-    # Write output.
-    f = open(filename, 'w')
-    f.write(s)
-    f.close()
+static_host = "https://static.softcatala.org/"
 
 
 def json_remove_unncessary_fields(ctx):
     memories = ctx['memories']
     for memory in memories:
-        if memory['quality_report'] == False:
+        if memory['quality_report'] is False:
             memory['quality_file_link'] = ""
 
         del memory['quality_report']
@@ -58,19 +47,24 @@ def write_download_json(ctx):
     with open("projects.json" ,"w") as file:
         file.write(content)
 
+
 class TranslationMemory(dict):
 
     def __init__(self, words=None, name=None, last_fetch=None,
                  last_translation_update=None, projectweb=None, filename=None,
-                 quality_report=True, license=''):
+                 quality_report=True, license='', project_id=''):
+
+        if len(project_id) == 0:
+            project_id = name
 
         self.__setitem__('name', name)
+        self.__setitem__('project_id', project_id)
         self.__setitem__('projectweb', projectweb)
         self.__setitem__('po_file_text', get_zip_file(filename))
-        self.__setitem__('po_file_link', get_zip_file(get_path_to_po(filename)))
+        self.__setitem__('po_file_link', get_zip_file(get_link_to_po(filename)))
         self.__setitem__('tmx_file_text', get_zip_file(get_tmx_file(filename)))
-        self.__setitem__('tmx_file_link', get_zip_file(get_path_to_tmx(filename)))
-        self.__setitem__('quality_file_link', u'quality/' + name.lower() + u'.html')
+        self.__setitem__('tmx_file_link', get_zip_file(get_link_to_tmx(filename)))
+        self.__setitem__('quality_file_link', get_link_to_quality_report(name))
         self.__setitem__('words', words)
         self.__setitem__('last_fetch', last_fetch)
         self.__setitem__('last_translation_update', last_translation_update)
@@ -78,18 +72,21 @@ class TranslationMemory(dict):
         self.__setitem__('license', license)
 
 
+def get_link_to_quality_report(name):
+    name = name.lower()
+    return '{0}quality/{1}.html'.format(static_host, name)
+
 def get_subdir():
     return "memories/"
 
+def get_link_to_po(po_file):
+    return static_host + os.path.join(get_subdir(), po_file)
 
-def get_path_to_po(po_file):
-    return os.path.join(get_subdir(), po_file)
 
-
-def get_path_to_tmx(po_file):
+def get_link_to_tmx(po_file):
     filename, file_extension = os.path.splitext(po_file)
     tmxfile = filename + ".tmx"
-    return os.path.join(get_subdir(), tmxfile)
+    return static_host + os.path.join(get_subdir(), tmxfile)
 
 
 def get_tmx_file(po_file):
@@ -131,7 +128,7 @@ def get_words(potext, po_directory):
     return words
 
 
-def build_combined_memory(projects, memories, filename, name, po_directory,
+def build_combined_memory(projects, memories, filename, name, project_id, po_directory,
                           tmx_directory, out_directory):
     """Build zip file containing all memories for the specified projects."""
     words = get_words(filename, po_directory)
@@ -144,6 +141,7 @@ def build_combined_memory(projects, memories, filename, name, po_directory,
     translation_memory = TranslationMemory(
         words=locale.format("%d", words, grouping=True),
         name=name,
+        project_id=project_id,
         last_fetch=date,
         last_translation_update=date,
         filename=filename,
@@ -202,11 +200,11 @@ def process_projects(po_directory, tmx_directory, out_directory):
 
     build_combined_memory(all_projects, memories, 'tots-tm.po',
                           u'Totes les memòries de tots els projectes',
-                          po_directory, tmx_directory, out_directory)
+                          'tots', po_directory, tmx_directory, out_directory)
 
     build_combined_memory(softcatala_projects, memories, 'softcatala-tm.po',
                           u'Totes les memòries de projectes de Softcatalà',
-                          po_directory, tmx_directory, out_directory)
+                          'softcatala', po_directory, tmx_directory, out_directory)
 
     build_invidual_projects_memory(all_projects, memories, po_directory,
                                    tmx_directory, out_directory)
@@ -215,7 +213,6 @@ def process_projects(po_directory, tmx_directory, out_directory):
         'generation_date': datetime.date.today().strftime("%d/%m/%Y"),
         'memories': memories,
     }
-    process_template("web/templates/download.mustache", "download.html", ctx)
     write_download_json(ctx)
 
 
@@ -276,11 +273,7 @@ def create_output_dir(subdirectory, out_directory):
 
 
 def main():
-    """
-    Read the projects and generate an HTML/JSON to enable downloading all the
-    translation memories.
-    """
-    print("Creates download.html & projects.json files")
+    print("Creates files to be download and projects.json file with all information about projects")
     print("Use --help for assistance")
 
     try:

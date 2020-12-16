@@ -1,0 +1,4 @@
+FROM softcatala/sc-static-file-server
+
+COPY /web-docker/ /static/
+ENTRYPOINT [ "/scStaticFileServer" ]

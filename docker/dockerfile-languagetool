@@ -1,0 +1,20 @@
+FROM python:3.8.6-buster
+
+RUN apt-get update && apt-get install libhunspell-dev zip vim -y
+RUN apt-get install openjdk-11-jdk -y
+
+EXPOSE 7001
+
+ENV LT_VERSION 5.1
+ENV ROOT /srv
+ENV LT $ROOT/LanguageTool-$LT_VERSION
+
+RUN mkdir -p $ROOT
+WORKDIR $ROOT
+
+COPY entry-point-lt.sh /srv/entrypoint.sh
+
+# LanguageTool
+RUN wget -q https://languagetool.org/download/LanguageTool-$LT_VERSION.zip && unzip LanguageTool-$LT_VERSION.zip && rm -f LanguageTool-$LT_VERSION.zip
+
+ENTRYPOINT /srv/entrypoint.sh $LT

@@ -1,0 +1,7 @@
+# For server.
+Whoosh
+Jinja2
+flask
+flask_cors
+gunicorn
+peewee==2.9.1
