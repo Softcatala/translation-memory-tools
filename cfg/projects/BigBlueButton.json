@@ -1,0 +1,14 @@
+{
+    "project": "BigBlueButton", 
+    "projectweb": "https://bigbluebutton.org/", 
+    "fileset": {
+        "BigBlueButtonHtml5Client": {
+            "url": "https://www.transifex.com/bigbluebutton/bigbluebutton-v23-html5-client/", 
+            "type": "transifex"
+        },
+        "BigBlueButtonGreenlight": {
+            "url": "https://www.transifex.com/bigbluebutton/greenlight/", 
+            "type": "transifex"
+        }  
+    }
+}
