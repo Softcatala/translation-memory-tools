@@ -53,7 +53,7 @@ echo Generate Quality
 cp $DIR_TMT_GIT/src/statistics.db3 $PRESERVE_CROSSEXECS/statistics.db3
 ls -l $PRESERVE_CROSSEXECS/translation-memories/
 ls -l $DIR/translation-memories/
-python $DIR_TMT_GIT/src/compare_sets.py -s $PRESERVE_CROSSEXECS/translation-memories/ -t $DIR/translation-memories/
+python $DIR_TMT_GIT/src/compare_sets.py -s $PRESERVE_CROSSEXECS/translation-memories/po/ -t $DIR/translation-memories/po/
 mkdir -p $PRESERVE_CROSSEXECS/translation-memories
 cp -r $DIR/translation-memories/* $PRESERVE_CROSSEXECS/translation-memories
 
