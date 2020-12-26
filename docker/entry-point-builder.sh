@@ -5,13 +5,13 @@ PUBLISH_WEBDOCKER=/srv/web-docker
 PRESERVE_CROSSEXECS=/srv/tmt-files
 
 # Run unit tests
-#cd $DIR_TMT_GIT
-#nosetests
-#RETVAL=$?
-#if [ $RETVAL -ne 0 ]; then
-#    echo "Aborting deployment. Unit tests did not pass"
-#    exit
-#fi
+cd $DIR_TMT_GIT
+nosetests
+RETVAL=$?
+if [ $RETVAL -ne 0 ]; then
+    echo "Aborting deployment. Unit tests did not pass"
+    exit
+fi
 
 ls $PRESERVE_CROSSEXECS
 
