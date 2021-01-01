@@ -258,7 +258,7 @@ class ConvertFiles():
         # See: https://pypi.python.org/pypi/android2po/1.2.0
         # If you do not specify --gettext ., the file is writen in ../locale
         # outside the tmp directory in our case
-        cmd = 'cd {0} && a2po init ca --gettext .'.format(self.convert_dir)
+        cmd = 'cd {0} && a2po init ca --gettext . > /dev/null'.format(self.convert_dir)
 
         self._process_non_standard_android_res_locations()
 
