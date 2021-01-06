@@ -1,9 +1,9 @@
-FROM python:3.8.6-buster
+FROM python:3.8.6-slim-buster
 
 ENV DIR /srv/dev
 ENV DIR_TMT_GIT /srv/dev/tm-git
 
-RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip vim mercurial bzr ruby -y
+RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git wget  g++ -y
 RUN mkdir -p $DIR
 
 #Pology
