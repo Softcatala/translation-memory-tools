@@ -1,6 +1,6 @@
 FROM registry.softcatala.org/github/translation-memory-tools-build-data:master as docker_web
 
-FROM python:3.8.6-buster as generate_data
+FROM python:3.8.6-slim-buster as generate_data
 
 # Software
 COPY src/web /srv/web/
