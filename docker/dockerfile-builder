@@ -3,7 +3,7 @@ FROM python:3.8.6-buster
 ENV DIR /srv/dev
 ENV DIR_TMT_GIT /srv/dev/tm-git
 
-RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip vim mercurial bzr -y
+RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip vim mercurial bzr ruby -y
 RUN mkdir -p $DIR
 
 #Pology
@@ -12,15 +12,6 @@ RUN wget -q http://pology.nedohodnik.net/release/pology-0.12.tar.bz2
 RUN tar xvjf pology-0.12.tar.bz2
 WORKDIR pology-0.12
 RUN mkdir build && cd build && cmake .. && make && make install
-
-# i18n-translators-tools
-RUN git clone --depth=1 https://github.com/rbenv/rbenv.git ~/.rbenv
-RUN git clone --depth=1 https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-ENV PATH /root/.rbenv/bin:/root/.rbenv/shims:$PATH
-
-RUN rbenv init -
-RUN rbenv install 2.7.2
-RUN rbenv global 2.7.2
 RUN gem install i18n-translators-tools
 
 # Locale ca-ES
@@ -44,4 +35,3 @@ COPY docker/ $DIR_TMT_GIT/docker/
 
 # What get's executed on Run
 ENTRYPOINT bash $DIR_TMT_GIT/docker/entry-point-builder.sh $DIR $DIR_TMT_GIT
-
