@@ -13,6 +13,8 @@ WORKDIR /srv/web
 COPY --from=docker_web /static/indexdir /srv/web/indexdir
 COPY --from=docker_web /static/projects.json /srv/web/
 COPY --from=docker_web /static/index.json /srv/web/
+COPY --from=docker_web /static/statistics.db3 /srv/web/
+COPY --from=docker_web /static/glossary.db3 /srv/web/
 
 FROM python:3.8.6-slim-buster
 
