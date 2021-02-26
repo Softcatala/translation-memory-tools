@@ -4,8 +4,8 @@
     "softcatala": true, 
     "fileset": {
           "main": {
-            "url": "https://fedora.zanata.org/",
-            "type": "zanata"
+            "url": "https://translate.fedoraproject.org",
+            "type": "weblate"
         }
     }
 }

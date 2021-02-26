@@ -22,6 +22,7 @@ if [[ -e  $PRESERVE_CROSSEXECS/translation-memories/ ]]; then
     cp -r $PRESERVE_CROSSEXECS/translation-memories/* $DIR/translation-memories/
 fi
 
+
 if [[ -n "${TRANSIFEX_USER}" && -n "${TRANSIFEX_PASSWORD}" ]]; then
     python $DIR_TMT_GIT/docker/credentials/transifex.py
 else
@@ -34,6 +35,13 @@ if [[ -n "${ZANATA_PROJECT_1}" && -n "${ZANATA_USER_1}"  && -n "${ZANATA_TOKEN_1
 else
     echo "Removing Zenata projects"
     grep -l "type.*zanata" cfg/projects/*.json  | xargs rm -f
+fi
+
+if [[ -n "${WEBLATE_PROJECT_1}" && -n "${WEBLATE_TOKEN_1}" ]]; then
+    python $DIR_TMT_GIT/docker/credentials/weblate.py $DIR_TMT_GIT/cfg/credentials/
+else
+    echo "Removing Weblate projects"
+    grep -l "type.*weblate" cfg/projects/*.json  | xargs rm -f
 fi
 
 #cd $DIR_TMT_GIT/

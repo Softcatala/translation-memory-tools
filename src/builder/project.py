@@ -40,6 +40,7 @@ from .cgitfileset import CGitFileSet
 from .zanatafileset import ZanataFileSet
 from .pontoonfileset import PontoonFileSet
 from .mercurialfileset import MercurialFileSet
+from .weblatefileset import WeblateFileSet
 
 
 class Project(object):
@@ -179,6 +180,11 @@ class Project(object):
                                   fileset.url,
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
+            elif fileset.type == 'weblate':
+                fs = WeblateFileSet(self.name,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
