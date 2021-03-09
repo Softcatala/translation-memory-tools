@@ -2,14 +2,6 @@
     "project": "KDE", 
     "projectweb": "https://cat.kde.org/", 
     "fileset": {
-        "gui-kde4": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/ca/messages/", 
-            "type": "subversion"
-        }, 
-        "documentation-kde4": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/ca/docmessages/", 
-            "type": "subversion"
-        },
         "gui-kf5": {
             "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/messages/",
             "type": "subversion"
