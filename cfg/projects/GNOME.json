@@ -32,6 +32,11 @@
             "url": "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz", 
             "type": "compressed", 
             "target": "gnome-extras-doc.tar.gz"
+        },
+        "desktop-icons-ng": {
+            "url": "https://gitlab.com/rastersoft/desktop-icons-ng/-/raw/master/po/ca.po",
+            "type": "file",
+            "target": "desktop-icons-ng-ca.po"
         }
     }
 }
