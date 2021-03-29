@@ -37,6 +37,11 @@
             "url": "https://gitlab.com/rastersoft/desktop-icons-ng/-/raw/master/po/ca.po",
             "type": "file",
             "target": "desktop-icons-ng-ca.po"
+        },
+        "ArcMenu": {
+            "url": "https://gitlab.com/arcmenu/ArcMenu/-/raw/master/po/ca.po",
+            "type": "file",
+            "target": "arcmenu-ca.po"
         }
     }
 }
