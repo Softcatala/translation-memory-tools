@@ -22,6 +22,7 @@
 import logging
 import os
 import datetime
+import sys
 from optparse import OptionParser
 
 from builder.jsonbackend import JsonBackend
@@ -41,15 +42,27 @@ def init_logging(del_logs):
     if del_logs and os.path.isfile(logfile_error):
         os.remove(logfile_error)
 
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+    LOGLEVEL = os.environ.get('LOGLEVEL', 'INFO').upper()
+    LOGSTDOUT = os.environ.get('LOGSTDOUT', '0')
+
+    if LOGSTDOUT == '0':
+        console = logging.StreamHandler() # By default uses stderr
+    else:
+        console = logging.StreamHandler(stream=sys.stdout)
+
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     logger = logging.getLogger('')
-    console = logging.StreamHandler()
-    console.setLevel(logging.INFO)
+    console.setLevel(LOGLEVEL)
+
+    if LOGLEVEL != "INFO":
+        console.setFormatter(formatter)
+
     logger.addHandler(console)
 
     fh = logging.FileHandler(logfile_error)
     fh.setLevel(logging.ERROR)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     fh.setFormatter(formatter)
     logger.addHandler(fh)
 
