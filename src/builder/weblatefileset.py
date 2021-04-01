@@ -28,6 +28,7 @@ from .fileset import FileSet
 
 class WeblateFileSet(FileSet):
 
+    TIMEOUT = 15
     token = None
 
     def _get_auth_api_token(self):
@@ -56,7 +57,7 @@ class WeblateFileSet(FileSet):
 
     def _api_json_call(self, url):
         req = urllib.request.Request(url, headers=self._get_headers())
-        response = urllib.request.urlopen(req)
+        response = urllib.request.urlopen(req, timeout=self.TIMEOUT)
         response_text = response.read().decode(response.info().get_param('charset') or 'utf-8')
         return json.loads(response_text)
 
@@ -124,7 +125,7 @@ class WeblateFileSet(FileSet):
             msg = 'Download file \'{0}\' to {1}'.format(url, filename)
             logging.info(msg)
 
-            infile = urllib.request.urlopen(req)
+            infile = urllib.request.urlopen(req, timeout=self.TIMEOUT)
             output = open(filename, 'wb')
             output.write(infile.read())
             output.close()
