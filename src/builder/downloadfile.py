@@ -20,19 +20,26 @@
 import logging
 import os
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 
 
 class DownloadFile(object):
 
     def urlopen_with_retry(self, url):
         NTRIES = 3
+        NOT_FOUND = 404
 
         for _ in range(NTRIES):
             try:
                 req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
                 return urlopen(req)
+            except HTTPError as e:
+                logging.error("Error on urlopen_with_retry: " + str(e))
+                if e.code == NOT_FOUND:
+                    return
+
             except Exception as e:
-                print("Error on urlopen_with_retry: " + str(e))
+                logging.error("Error on urlopen_with_retry: " + str(e))
 
     def _remove_incomplete_file(self, filename):
         if os.path.exists(filename):
