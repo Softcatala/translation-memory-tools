@@ -8,6 +8,6 @@ before_script:
 build:
   script:
     - apk add --no-cache git
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG . -f src/docker/dockerfile-builder
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG . -f docker/dockerfile-builder
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
 
