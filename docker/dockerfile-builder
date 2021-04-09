@@ -30,8 +30,5 @@ COPY source-pos/ $DIR_TMT_GIT/source-pos/
 COPY cfg/ $DIR_TMT_GIT/cfg/
 COPY docker/ $DIR_TMT_GIT/docker/
 
-#WORKDIR $DIR_TMT_GIT/cfg/projects/
-#RUN mkdir -p old && cp Integra* old/ && cp Recull* old/ && rm *.json && cp old/* . && rm -r -f old/*
-
 # What get's executed on Run
 ENTRYPOINT bash $DIR_TMT_GIT/docker/entry-point-builder.sh $DIR $DIR_TMT_GIT
