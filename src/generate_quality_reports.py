@@ -167,13 +167,14 @@ class GenerateQualityReports():
     def read_parameters(self):
         parser = OptionParser()
 
+        defaut_dir = os.path.join(os.getcwd(), "output/individual_pos/")
         parser.add_option(
             "-s",
             "--source",
             action="store",
             type="string",
             dest="source_dir",
-            default="",
+            default=defaut_dir,
             help="Source directory of po files")
 
         (options, args) = parser.parse_args()
