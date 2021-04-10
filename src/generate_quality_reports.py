@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Copyright (c) 2017-2019 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2017-2021 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -28,6 +28,8 @@ import pystache
 import tempfile
 import shutil
 import yaml
+import logging
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from collections import OrderedDict
 from optparse import OptionParser
@@ -123,10 +125,44 @@ class LanguageTool():
             shutil.rmtree(dirpath)
             return version
         except Exception as e:
-            print("_get_lt_version.Error {0}".format(str(e)))
+            logging.error("_get_lt_version.Error {0}".format(str(e)))
             return "LanguageTool (versió desconeguda)"
 
 class GenerateQualityReports():
+
+    def init_logging(self, del_logs):
+        logfile = 'generate_quality_reports.log'
+        logfile_error = 'generate_quality_reports-error.log'
+
+        if del_logs and os.path.isfile(logfile):
+            os.remove(logfile)
+
+        if del_logs and os.path.isfile(logfile_error):
+            os.remove(logfile_error)
+
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+        LOGLEVEL = os.environ.get('LOGLEVEL', 'INFO').upper()
+        LOGSTDOUT = os.environ.get('LOGSTDOUT', '0')
+
+        if LOGSTDOUT == '0':
+            console = logging.StreamHandler() # By default uses stderr
+        else:
+            console = logging.StreamHandler(stream=sys.stdout)
+
+        logging.basicConfig(filename=logfile, level=logging.DEBUG)
+        logger = logging.getLogger('')
+        console.setLevel(LOGLEVEL)
+
+        if LOGLEVEL != "INFO":
+            console.setFormatter(formatter)
+
+        logger.addHandler(console)
+
+        fh = logging.FileHandler(logfile_error)
+        fh.setLevel(logging.ERROR)
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
 
     def read_parameters(self):
         parser = OptionParser()
@@ -255,7 +291,7 @@ class GenerateQualityReports():
     def generate_report(self, source_dir):
 
         lt, pology = self.read_config()
-        print("Source directory: " + source_dir)
+        logging.info("Source directory: " + source_dir)
 
         report_filename = os.path.basename(os.path.normpath(source_dir)) + ".html"
 
@@ -279,13 +315,13 @@ class GenerateQualityReports():
                 continue
 
             if os.stat(txt_file).st_size == 0:
-                print("No translations in file:" + txt_file)
+                logging.info("No translations in file:" + txt_file)
                 continue
 
             start_time = time.time()
             languagetool.run_lt(lt, txt_file, json_file)
             po_file_logname = po_file[len(source_dir) + 1:]
-            print("LT runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
+            logging.info("LT runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
 
             start_time = time.time()
             languagetool.generate_lt_report(lt['lt-html-dir'], json_file, file_report)
@@ -293,12 +329,12 @@ class GenerateQualityReports():
             if os.path.isfile(file_report):
                 report.add_file_to_project_report(file_report)
             else:
-                print("Unable to add:" + file_report)
+                logging.error("Unable to add:" + file_report)
                 continue
 
             start_time = time.time()
             self.run_pology(pology, po_transonly, pology_report)
-            print("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
+            logging.info("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
 
             if os.path.isfile(pology_report):
                 report.add_file_to_project_report(pology_report)
@@ -317,16 +353,18 @@ class GenerateQualityReports():
 
     def main(self):
         print("Quality report generator")
+        self.init_logging(True)
+
         total_start_time = datetime.datetime.now()
         projects = self.load_projects_from_json()
-
         source_dir = self.read_parameters()
+        logging.debug(f"Root source_dir {source_dir}")
         with ThreadPoolExecutor(max_workers=4) as executor:
             for project in projects:
                 executor.submit(self.generate_report, os.path.join(source_dir, project))
 
         s = 'Time used to generate quality reports: {0}'.format(datetime.datetime.now() - total_start_time)
-        print(s)
+        logging.info(s)
 
 if __name__ == "__main__":
     generate = GenerateQualityReports()
