@@ -75,7 +75,8 @@ class Report():
         pology_file.close()
 
     def close(self):
-        self.project_file.close()
+        if self._project_file:
+            self._project_file.close()
 
 class LanguageTool():
 
