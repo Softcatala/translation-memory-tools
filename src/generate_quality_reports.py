@@ -324,7 +324,7 @@ class GenerateQualityReports():
             start_time = time.time()
             languagetool.run_lt(lt, txt_file, json_file)
             po_file_logname = po_file[len(source_dir) + 1:]
-            logging.info("LT runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
+            logging.debug("LT runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
 
             start_time = time.time()
             languagetool.generate_lt_report(lt['lt-html-dir'], json_file, file_report)
@@ -337,7 +337,7 @@ class GenerateQualityReports():
 
             start_time = time.time()
             self.run_pology(pology, po_transonly, pology_report)
-            logging.info("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
+            logging.debug("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
 
             if os.path.isfile(pology_report):
                 report.add_file_to_project_report(pology_report)
