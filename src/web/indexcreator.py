@@ -128,8 +128,6 @@ class IndexCreator(object):
                          softcatala=softcatala)
 
     def _process_file(self, name, filename, softcatala, entries):
-        print("Processing: " + filename)
-
         try:
             input_po = polib.pofile(filename)
 
