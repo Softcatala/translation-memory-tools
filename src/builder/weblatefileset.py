@@ -95,7 +95,7 @@ class WeblateFileSet(FileSet):
     def _get_projects_slugs(self):
 
         ids = {}
-        url = urllib.parse.urljoin(self.url, "/api/projects")
+        url = urllib.parse.urljoin(self.url, "/api/projects/")
         while url is not None:
 
             projects = self._api_json_call(url)            
