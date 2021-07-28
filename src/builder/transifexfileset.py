@@ -54,8 +54,8 @@ class TransifexFileSet(FileSet):
 
         url = urllib.parse.urlparse(self.url)
         uri = '{0}://{1}'.format(url.scheme, url.netloc)
-        os.system('tx init --host {0}'.format(uri))
-        os.system('tx set --auto-remote {0}'.format(self.url))
+        os.system('tx init --host {0} --no-interactive'.format(uri))
+        os.system('tx config mapping-remote {0}'.format(self.url))
 
         # To be able to process files with no English source (.strings, .xml,
         # etc) we pull the English files too and then we delete the ones that

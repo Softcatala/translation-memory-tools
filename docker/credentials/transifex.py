@@ -30,9 +30,8 @@ if __name__ == '__main__':
 
     f.write("[https://www.transifex.com]\n")
     f.write("hostname = https://www.transifex.com\n")
-    f.write("username = {0}\n".format(os.environ['TRANSIFEX_USER']))
-    f.write("password = {0}\n".format(os.environ['TRANSIFEX_PASSWORD']))
-    f.write("token = {0}\n".format(os.environ['TRANSIFEX_TOKEN']))
+    f.write("username = api\n")
+    f.write("password = {0}\n".format(os.environ['TRANSIFEX_TOKEN']))
     f.close()
     print("Wrote file: " + filename)
 
