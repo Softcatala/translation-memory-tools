@@ -52,7 +52,7 @@ class WeblateFileSet(FileSet):
             return self.token
 
         except Exception as detail:
-            msg = 'ZanataFileSet._set_auth_api_token: {0}'.format(str(detail))
+            msg = 'WeblateFileSet._get_auth_api_token: {0}'.format(str(detail))
             logging.error(msg)
 
     def _api_json_call(self, url):
@@ -98,7 +98,7 @@ class WeblateFileSet(FileSet):
         url = urllib.parse.urljoin(self.url, "/api/projects/")
         while url is not None:
 
-            projects = self._api_json_call(url)            
+            projects = self._api_json_call(url)
             for project_dict in projects['results']:
                 slug = project_dict['slug']
                 if not self._has_catalan_language(project_dict["languages_url"]):
