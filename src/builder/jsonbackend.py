@@ -78,8 +78,9 @@ class ConversorSetupDTO(object):
 
 class JsonBackend(object):
 
-    def __init__(self, directory):
+    def __init__(self, directory, validation = False):
         self.directory = directory
+        self.validation = validation
         self.projects = []
 
     def _process_conversor(self, fileset, conversor_values):
@@ -127,6 +128,9 @@ class JsonBackend(object):
             else:
                 msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))
+                if self.validation:
+                    raise Exception(msg)
+
 
     def load(self):
 
@@ -158,3 +162,5 @@ class JsonBackend(object):
             msg = 'JsonBackend._load_file. Cannot load {0}. Error: {1}'. \
                   format(filename, detail)
             logging.error(msg)
+            if self.validation:
+                raise

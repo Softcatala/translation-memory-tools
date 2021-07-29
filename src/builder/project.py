@@ -188,6 +188,7 @@ class Project(object):
             else:
                 msg = 'Unsupported filetype: {0}'
                 logging.error(msg.format(fileset.type))
+                raise Exception(msg)
 
             fs.add_excluded(fileset.excluded)
             fs.set_duplicates(fileset.duplicates)
