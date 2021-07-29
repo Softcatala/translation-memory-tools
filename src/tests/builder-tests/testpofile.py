@@ -129,7 +129,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         entry = polib.POEntry()
         entry = polib.POEntry(msgid='use the &lt;li&gt; to begin each list item')
         pofile.append(entry)
-        entry = polib.POEntry(msgstr='&quot;Hi&quot;')
+        entry = polib.POEntry(msgid='Hi', msgstr='&quot;Hi&quot;')
         pofile.append(entry)
         pofile.save(filename)
 
