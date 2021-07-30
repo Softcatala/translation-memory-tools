@@ -44,13 +44,7 @@ project](http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà)
 
 # Dependencies
 
--   Python 3.4 or higher
--   gettext
--   Bazaar
--   Subversion 1.7 or higher
--   Git
--   Ruby + (gem install i18n-translators-tools)
--   Other requirements listed in requirements.txt
+Requires Python with all these dependencies [requirements.txt](requirements.txt)
 
 # Installation
 
@@ -58,7 +52,7 @@ On Debian:
 
     sudo apt install python3 python3-pip gettext subversion git ruby bzr hunspell libhunspell-dev
     sudo gem install i18n-translators-tools
-    cd translation-memory-tools/
+    cd translation-memory-tools
     sudo pip3 install -r requirements.txt
 
 # Docker
@@ -75,26 +69,10 @@ be readed from the `.transifexrc` file. In order to download the
 translations from a Transifex project, you need to be member of the
 project.
 
-[Flask
-configuration](https://realpython.com/blog/python/kickstarting-flask-on-ubuntu-setup-and-deployment/)
-
 # Logging
 
 After the execution a `builder.log` file is created with details for
 execution.
-
-# Projects included in the translation memory
-
-The `cfg/projects` directory contains the description of the projects
-that are included in the translation memory.
-
-If context is not provided (msgctxt), duplicated translations are not
-stored. As result, the first occurrence of a string is added to the
-memory, ignoring the rest. For this reason the projects with better
-translations are first in the json file.
-
-The supported file types are: `PO`, `TS` and `.strings` files (transifex
-repositories only).
 
 # Applications
 
@@ -117,13 +95,9 @@ Located at `root` directory:
 * unittests: the unittest to check the functionality of different classes
 * integration-tests: tests that check if what has been generated contains errors
 
-# Commands
+# Contributing
 
-Merging the translation memory with a new file:
-
-    msgmerge -N tm.po new-pofile.po > final-pofile.po
-
-You can also use translate-toolkit's pretranslate tool
+If you are looking at how to contribute to the project see [HOW-TO.md](HOW-TO.md)
 
 # Contact Information
 
