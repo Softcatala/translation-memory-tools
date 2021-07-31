@@ -30,10 +30,10 @@ class ConvertFilesTest(unittest.TestCase):
         entries = 0
         findFiles = FindFiles()
         for filename in findFiles.find(directory, '*.po'):
-            poFile = pofile(filename)
-            entries += len(poFile.translated_entries())
+            po_file = pofile(filename)
+            entries += len(po_file.translated_entries())
 
-        return entries
+        return po_file, entries
 
     def _clean_pos(self, directory):
         findFiles = FindFiles()
@@ -47,9 +47,12 @@ class ConvertFilesTest(unittest.TestCase):
         convert = ConvertFiles(json_dir, None)
         convert.convert()
 
-        entries = self._get_po_entries(json_dir)
+        po_file, entries = self._get_po_entries(json_dir)
         self._clean_pos(json_dir)
+
         self.assertEquals(entries, 781)
+        self.assertEquals("Watch Movies and TV Shows instantly", po_file[3].msgid)
+        self.assertEquals("Mireu pel·lícules i sèries instantàniament", po_file[3].msgstr)
 
     def test_convert_yml_files_to_po(self):
 
@@ -58,9 +61,12 @@ class ConvertFilesTest(unittest.TestCase):
         convert = ConvertFiles(yml_dir, None)
         convert.convert()
 
-        entries = self._get_po_entries(yml_dir)
+        po_file, entries = self._get_po_entries(yml_dir)
         self._clean_pos(yml_dir)
+
         self.assertEquals(entries, 3)
+        self.assertEquals("Enable imgur api for uploading, don't host files locally", po_file[0].msgid)
+        self.assertEquals("Habilita l'API d'imgur per pujades, no allotgis els arxius localment", po_file[0].msgstr)
 
     def test_convert_csv_files_to_po(self):
 
@@ -69,9 +75,13 @@ class ConvertFilesTest(unittest.TestCase):
         convert = ConvertFiles(csv_dir, None)
         convert.convert()
 
-        entries = self._get_po_entries(csv_dir)
+        po_file, entries = self._get_po_entries(csv_dir)
         self._clean_pos(csv_dir)
+
         self.assertEquals(entries, 4)
+        self.assertEquals("Period Name", po_file[0].msgid)
+        self.assertEquals("Nom del període", po_file[0].msgstr)
+        
 
     def test_convert_ini_files_to_po(self):
 
@@ -80,10 +90,12 @@ class ConvertFilesTest(unittest.TestCase):
         convert = ConvertFiles(ini_dir, None)
         convert.convert()
 
-        entries = self._get_po_entries(ini_dir)
+        po_file, entries = self._get_po_entries(ini_dir)
         self._clean_pos(ini_dir)
-        self.assertEquals(entries, 15)
 
+        self.assertEquals(entries, 15)
+        self.assertEquals("Load More", po_file[10].msgid)
+        self.assertEquals("Carregar més", po_file[10].msgstr)
 
     def test_convert_android_files_to_po(self):
 
@@ -92,9 +104,12 @@ class ConvertFilesTest(unittest.TestCase):
         convert = ConvertFiles(android_dir, None)
         convert.convert()
 
-        entries = self._get_po_entries(android_dir)
+        po_file, entries = self._get_po_entries(android_dir)
         self._clean_pos(android_dir)
+
         self.assertEquals(entries, 392)
+        self.assertEquals("Name is too long", po_file[12].msgid)
+        self.assertEquals("El nom és massa llarg", po_file[12].msgstr)
 
 if __name__ == '__main__':
     unittest.main()
