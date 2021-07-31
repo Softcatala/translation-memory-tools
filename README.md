@@ -1,5 +1,4 @@
-[![image](https://travis-ci.org/Softcatala/translation-memory-tools.svg)](https://travis-ci.org/Softcatala/translation-memory-tools)
-[![image](https://coveralls.io/repos/Softcatala/translation-memory-tools/badge.png?branch=master)](https://coveralls.io/r/Softcatala/translation-memory-tools?branch=master)
+[![Python application](https://github.com/Softcatala/translation-memory-tools/actions/workflows/run-tests.yml/badge.svg)](https://github.com/Softcatala/translation-memory-tools/actions/workflows/run-tests.yml)
 
 # Introduction
 
