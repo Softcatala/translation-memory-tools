@@ -5,7 +5,7 @@ pystache
 peewee==2.9.1
 hunspell
 phply # required by translate-toolkit to process php files
-translate-toolkit==2.3.0
+translate-toolkit==3.3.4
 lxml
 pyyaml >= 5.1
 # Official version 1.5.0 has bugs for Python 3 fixed in github but not released yet

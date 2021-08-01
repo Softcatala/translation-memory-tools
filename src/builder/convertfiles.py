@@ -23,6 +23,7 @@ import shutil
 
 from .converttmx import ConvertTmx
 from .findfiles import FindFiles
+from .convertini import ConvertIni
 
 class ConvertFiles():
 
@@ -107,19 +108,6 @@ class ConvertFiles():
 
             os.system(cmd.format(dirName, po_filename, prop_filename))
 
-    def _execute_convert_ini_files_to_po(self, src, trg, dirName):
-        newsrc = '{0}/en.strings'.format(dirName)
-        newtrg = '{0}/ca.strings'.format(dirName)
-        shutil.copyfile(src, newsrc)
-        shutil.copyfile(trg, newtrg)
-
-        filename = '{0}/strings-ca.po'.format(dirName)
-        cmd = 'prop2po -t {0}/en.strings {0}/ca.strings --encoding=utf-8 '\
-            '--personality=strings -o {1}'
-        os.system(cmd.format(dirName, filename))
-        os.remove(newsrc)
-        os.remove(newtrg)
-
     def _convert_ini_files_to_po(self):
 
         for inifile in self.findFiles.find(self.convert_dir, '*.ini'):
@@ -146,7 +134,9 @@ class ConvertFiles():
             # http://bugs.locamotion.org/show_bug.cgi?id=3148
             # The copy operations can be removed when the issue is fixed
             logging.info('convert ini file: {0}'.format(inifile))
-            self._execute_convert_ini_files_to_po(src, trg, dirName)
+
+            filename = '{0}/strings-ca.po'.format(dirName)
+            convert_ini = ConvertIni(src, trg, filename).convert()
 
     def _convert_php_resources_files_to_po(self):
         if len(self.findFiles.find(self.convert_dir, '*.php')) == 0:
