@@ -1,0 +1,9 @@
+FROM tmt-webapp
+ 
+# Software
+COPY integration-tests /srv/integration-tests
+COPY docker/entry-point-web-test.sh /srv/
+
+WORKDIR /srv
+ENTRYPOINT bash /srv/entry-point-web-test.sh
+

@@ -26,10 +26,7 @@ from optparse import OptionParser
 
 sys.path.append('../src/')
 
-from builder.crawler import Crawler
-from checkdownloads import CheckDownloads
 from checksearch import CheckSearch
-from checkqualityreports import CheckQualityReports
 from checkstats import CheckStats
 
 
@@ -67,22 +64,6 @@ if __name__ == '__main__':
     stats = CheckStats(site_url)
     if not stats.check():
         sys.exit(1)
-    
-#    crawler = Crawler(site_url + "memories.html")
-#    crawler.run()
 
-#    downloads = CheckDownloads(crawler.get_all_links())
-#    downloads.check()
-
-#    if downloads.errors > 0:
-#        print('Total download errors {0}'.format(downloads.errors))
-#        sys.exit(1)
-
-#    quality_reports = CheckQualityReports(site_url)
-#    quality_reports.check()
-
-#    if quality_reports.errors > 0:
-#        print('Errors in quality reports {0}'.format(quality_reports.errors))
-#        sys.exit(1)
-
+    print("All test pass")
     sys.exit(0)
