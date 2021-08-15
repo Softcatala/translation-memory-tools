@@ -28,6 +28,7 @@ sys.path.append('../src/')
 
 from checksearch import CheckSearch
 from checkstats import CheckStats
+from checkprojects import CheckProjects
 
 
 def read_parameters():
@@ -63,6 +64,10 @@ if __name__ == '__main__':
 
     stats = CheckStats(site_url)
     if not stats.check():
+        sys.exit(1)
+
+    projects = CheckProjects(site_url)
+    if not projects.check():
         sys.exit(1)
 
     print("All test pass")
