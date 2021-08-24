@@ -17,13 +17,14 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from generate_quality_reports import GenerateQualityReports
+
 import unittest
 import polib
 import tempfile
+from quality.pototext import PoToText
 
 
-class TestPOFile(unittest.TestCase):
+class TestPOText(unittest.TestCase):
 
     def _create_po_file(self, filename, entries):
         pofile = polib.POFile()
@@ -42,13 +43,13 @@ class TestPOFile(unittest.TestCase):
         text_file = tempfile.NamedTemporaryFile().name
         self._create_po_file(filename, entries)
 
-        g = GenerateQualityReports()
-        g.transonly_po_and_extract_text(filename, tempfile.NamedTemporaryFile().name, text_file)
+        g = PoToText()
+        g.write_text_file(filename, tempfile.NamedTemporaryFile().name, text_file)
 
         return self._read_text_file(text_file)
 
 
-    def test_transonly_po_and_extract_text_spaces(self):
+    def test_write_text_file_spaces(self):
         entries = list()
         entries.append(polib.POEntry(msgid='Hello\tThis is a test with tab',
                        msgstr='Hola\tAixò és una prova amb tab'))
@@ -60,7 +61,7 @@ class TestPOFile(unittest.TestCase):
         self.assertEquals("Hola Això és una prova amb tab\n", lines[0])
         self.assertEquals("Això és una prova\n", lines[2])
 
-    def test_transonly_po_and_extract_text_accelerator(self):
+    def test_write_text_file_accelerator(self):
         entries = list()
         entries.append(polib.POEntry(msgid='This is a test',
                        msgstr='_Això &és una prova~'))
@@ -68,7 +69,7 @@ class TestPOFile(unittest.TestCase):
         lines = self._generate_po_and_extract(entries)
         self.assertEquals("Això és una prova\n", lines[0])
 
-    def test_transonly_po_and_extract_text_tags(self):
+    def test_write_text_file_tags(self):
         entries = list()
         entries.append(polib.POEntry(msgid='This is a test',
                        msgstr='Això és una <b>prova<b>'))
@@ -76,7 +77,7 @@ class TestPOFile(unittest.TestCase):
         lines = self._generate_po_and_extract(entries)
         self.assertEquals("Això és una prova\n", lines[0])
 
-    def test_transonly_po_and_extract_text_plural(self):
+    def test_write_text_file_plural(self):
         entries = list()
         msgstr_plural = {}
         msgstr_plural[0] = 'Voleu suprimir aquesta fotografia de la càmera?'
@@ -90,7 +91,7 @@ class TestPOFile(unittest.TestCase):
         self.assertEquals("Voleu suprimir aquesta fotografia de la càmera?\n", lines[0])
         self.assertEquals("Voleu suprimir aquestes %d fotografies de la càmera?\n", lines[2])
 
-    def test_transonly_po_and_extract_text_sphinx(self):
+    def test_write_text_file_sphinx(self):
         entries = list()
         entries.append(polib.POEntry(msgid=":kbd:`R` sets the selection to 'replace' in the tool options, "
                                            ":menuselection:`Select --> Show Global Selection Mask`",
@@ -101,7 +102,7 @@ class TestPOFile(unittest.TestCase):
         self.assertEquals("R estableix la selecció a «Substitueix» a les Opcions de l'eina. "
                           "Selecciona --> Mostra la màscara de selecció global\n", lines[0])
 
-    def test_transonly_po_and_extract_text_gnome_image(self):
+    def test_write_text_file_gnome_image(self):
         entries = list()
         entries.append(polib.POEntry(msgid="@@image: 'figures/a-z.gif'; md5=0df765cb06d1873c4b77ccfa2aec273a",
                                      msgstr="@@image: 'figures/a-z.gif'; md5=0df765cb06d1873c4b77ccfa2aec273a"))
@@ -109,7 +110,7 @@ class TestPOFile(unittest.TestCase):
         lines = self._generate_po_and_extract(entries)
         self.assertEquals(0, len(lines))
 
-    def test_transonly_po_and_extract_text_gnome_external_image(self):
+    def test_write_text_file_gnome_external_image(self):
         entries = list()
         entries.append(polib.POEntry(msgid="external ref='figures/brasero-main-window.png' "
                                            "md5='11e5cc148d7c8c8dc0c63e68b2f611f3'",
@@ -119,13 +120,21 @@ class TestPOFile(unittest.TestCase):
         lines = self._generate_po_and_extract(entries)
         self.assertEquals(0, len(lines))
 
-    def test_transonly_po_and_extract_text_shpinx_image(self):
+    def test_write_text_file_shpinx_image(self):
         entries = list()
         entries.append(polib.POEntry(msgid=".. image:: images/icons/Krita_mouse_right.png",
                                      msgstr=".. image:: images/icons/Krita_mouse_right.png"))
 
         lines = self._generate_po_and_extract(entries)
         self.assertEquals(0, len(lines))
+
+    def test_write_text_file_accutes(self):
+        entries = list()
+        entries.append(polib.POEntry(msgid="Add User will set up a new user account ",
+                                     msgstr="&laquo;Afegeix un usuari&raquo; configurarà el compte d'un usuari nou"))
+
+        lines = self._generate_po_and_extract(entries)
+        self.assertEquals("«Afegeix un usuari» configurarà el compte d'un usuari nou\n", lines[0])
 
 
 if __name__ == '__main__':

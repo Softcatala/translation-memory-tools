@@ -35,100 +35,9 @@ from collections import OrderedDict
 from optparse import OptionParser
 from builder.findfiles import FindFiles
 from builder.jsonbackend import JsonBackend
-
-class Report():
-
-    def __init__(self):
-        self._project_file = None
-
-    def create_project_report(self, header_dir, lt_output, project_html, version):
-        header_filename = os.path.join(header_dir, "header.mustache")
-        report_filename = os.path.join(lt_output, project_html)
-
-        ctx = {
-            'date': datetime.date.today().strftime("%d/%m/%Y"),
-            'languagetool': version,
-        }
-
-        self._process_template(header_filename, report_filename, ctx)
-        self._project_file = open(report_filename, "a")
-
-    def _process_template(self, template, filename, ctx):
-        try:
-            template = open(template, 'r').read()
-            parsed = pystache.Renderer()
-            s = parsed.render(template, ctx)
-
-            f = open(filename, 'w')
-            f.write(s)
-            f.close()
-
-        except Exception as e:
-            print("_process_template. Error: {0}".format(e))
-
-    def add_string_to_project_report(self, text):
-        self._project_file.write(text + "\n")
-
-    def add_file_to_project_report(self, filename):
-        pology_file = open(filename, "r")
-        self._project_file.write(pology_file.read())
-        pology_file.close()
-
-    def close(self):
-        if self._project_file:
-            self._project_file.close()
-
-class LanguageTool():
-
-    def __init__(self, config):
-        self._config = config
-
-    def generate_lt_report(self, lt_html_dir, json_file, file_report):
-        subdir = "output/individual_pos/"
-        curdir = os.getcwd()
-        cwd = os.path.join(curdir, subdir)
-        if cwd == json_file[:len(cwd)]:
-            json_file = json_file[len(cwd):]
-        elif subdir == json_file[:len(subdir)]:
-            json_file = json_file[len(subdir):]
-
-        cmd = 'cd {0} && python3 {1}/lt-json-to-html.py -i "{2}" -o "{3}"'.format(
-               subdir, os.path.join(curdir, lt_html_dir), json_file, file_report)
-
-        os.system(cmd)
-
-    def run_lt(self, lt, txt_file, json_file):
-        lt_server = os.environ.get('LT_SERVER', 'http://localhost:7001/v2/check')
-        cmd = lt['command'].format(lt['enabled-rules'], lt['disabled-rules'],
-              txt_file, lt_server, json_file)
-        os.system(cmd)
-
-    def _get_lt_version(self):
-        data_file = None
-        TEXT_FILE = 'version.txt'
-        JSON_FILE = 'version.json'
-
-        try:
-            dirpath = tempfile.mkdtemp()
-            lt = self._config
-
-            text_filename = os.path.join(dirpath, TEXT_FILE)
-            with open(text_filename, "w") as outfile:
-                outfile.write('Hola')
-
-            json_filename = os.path.join(dirpath, JSON_FILE)
-            self.run_lt(lt, text_filename, json_filename)
-
-            with open(json_filename, "r") as data_file:
-                data = json.load(data_file)
-
-            software = data['software']
-            version = '{0} {1}'.format(software['name'], software['version'])
-            shutil.rmtree(dirpath)
-            return version
-        except Exception as e:
-            logging.error("_get_lt_version.Error {0}".format(str(e)))
-            return "LanguageTool (versió desconeguda)"
+from quality.report import Report
+from quality.languagetool import LanguageTool
+from quality.pototext import PoToText
 
 class GenerateQualityReports():
 
@@ -207,61 +116,6 @@ class GenerateQualityReports():
 
         return lt, pology
 
-    def _remove_sphinx(self, text):
-        x = re.search(r"(:[^:]*:`([^`]*)`)", text)
-        if x is None:
-            return text
-
-        out = text.replace(x.group(0), x.group(2))
-        return self._remove_sphinx(out)
-
-    def _write_str_to_text_file(self, text_file, text):
-        if '@@image' in text:   # GNOME documentation images
-            return
-
-        if 'external ref' in text:   # Gnome external images
-            return
-
-        if 'image::' in text:   # Shpinx images
-            return
-
-        text = re.sub('[\t]', ' ', text)
-        text = re.sub('<br>|<br\/>', ' ', text)
-        text = re.sub('[_&~]', '', text)
-        text = re.sub('<[^>]*>', '', text) # Remove HTML tags
-
-        text = self._remove_sphinx(text)
-        #text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
-        text += "\n\n"
-        text_file.write(text)
-
-    def transonly_po_and_extract_text(self, po_file, po_transonly, text_file):
-        try:
-            input_po = polib.pofile(po_file)
-        except Exception as e:
-            print("Unable to open PO file {0}: {1}".format(po_file, str(e)))
-            return False
-
-        text_file = open(text_file, "w")
-        for entry in input_po.translated_entries():
-            text = entry.msgstr
-
-            if text is None or len(text) == 0:
-                if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
-                    text = entry.msgstr_plural[0]
-
-            self._write_str_to_text_file(text_file, text)
-
-            if entry.msgstr is None or len(entry.msgstr) == 0:
-                if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 1:
-                    text = entry.msgstr_plural[1]
-                    self._write_str_to_text_file(text_file, text)
-
-        input_po.save(po_transonly)
-        text_file.close()
-        return True
-
-
     def run_pology(self, pology, po_transonly, html):
         posieve = pology['python2'] + " " + pology['posieve']
 
@@ -313,7 +167,8 @@ class GenerateQualityReports():
             file_report = po_file + "-report.html"
 
             start_time = time.time()
-            rslt = self.transonly_po_and_extract_text(po_file, po_transonly, txt_file)
+            poTotext = PoToText()
+            rslt = poTotext.write_text_file(po_file, po_transonly, txt_file)
             if not rslt:
                 continue
 
