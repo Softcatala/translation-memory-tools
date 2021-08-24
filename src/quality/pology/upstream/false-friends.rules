@@ -25,8 +25,6 @@ hint="«Absolutelly» es tradueix per «Completament», no per «Absolutament» 
 #{\babstracts?\b}i
 #id="ff-abstract"
 #valid msgstr="resums?"
-#valid msgstr="abstract(e|a)" #cat="kdevphp,kdevplatform,kdeqt,desktop_kdegames_kmahjongg,desktop_kdegames_ksudoku,krita,umbrello,umbrello_kdevphp,kdevfiletemplates,rocscore"
-#valid msgstr="abstract(e|a|es)" cat="umbrello_uml_basics,digikam_editor-filters" # docmessages
 #valid !msgstr="abstract(e|a|es)"
 #hint="«Abstract» es tradueix per «Resum», no per «Abstracte» (fals amic)"
 
@@ -75,12 +73,6 @@ hint="«Advice» es tradueix per «Consell», no per «Avís» (fals amic)"
 #{\bagenda\b}i
 #id="ff-agenda"
 #valid msgstr="ordre\sdel\sdia"
-#valid msgstr="agenda" cat="desktop_kdepim,desktop_playground-base_kdepim-addons" before="\sview"
-#valid msgstr="agenda" cat="korganizer,korganizer-mobile,korganizer_plugins-chapter"
-#valid msgstr="agenda" cat="plasma_applet_org.kde.plasma.calendar"
-#valid msgstr="agenda" cat="libeventviews"
-#valid msgstr="agenda" cat="calendarsupport"
-#valid msgstr="agenda" cat="plasma_applet_akonadi_calendars"
 #valid !msgstr="agenda"
 #hint="«Agenda» es tradueix per «Ordre del dia», no per «Agenda» (fals amic)"
 
@@ -173,9 +165,7 @@ hint="«Carbon» es tradueix per «Carboni», no per «Carbó» (fals amic)"
 id="ff-card"
 valid !msgstr="tarj(a|es)"
 valid msgstr="target(a|es)"
-valid msgstr="cart(a|es)" cat="desktop_kdegames_kmahjongg,desktop_kdegames_kpat,desktop_kdegames_lskat,desktop_kdegames_libkdegames,kpoker,lskat,kpat,pairs.appdata"
-valid msgstr="cartes" cat="desktop_kde-runtime,desktop_workspace_plasma-workspace,desktop_extragear-base_kappfinder,libmuon,muon-installer" before="\sgames?"
-valid msgstr="baralla de cartes" cat="digikam_editor-transform" # docmessages
+valid msgstr="cart(a|es)" cat=",kpoker,lskat,kpat,pairs.appdata"
 valid !msgstr="cart(a|es)"
 hint="«Card» es tradueix per «Targeta», no per «Carta» (fals amic)"
 
@@ -258,8 +248,7 @@ hint="«Conductor» es tradueix per «Revisor o director d'orquestra», no per �
 #{\bconference\b}i
 #id="ff-conference"
 #valid msgstr="congrés"
-#valid msgstr="conferència" cat="kopete"
-#valid msgstr="conferència" cat="ksirk"
+
 #valid !msgstr="conferència"
 #hint="«Conference» es tradueix per «Congrés», no per «Conferència» (fals amic)"
 
@@ -286,15 +275,29 @@ valid msgstr="consentiment"
 valid !msgstr="consens"
 hint="«Consent» es tradueix per «Consentiment», no per «Consens» (fals amic)"
 
-### Regla desactivada: «Consistent» pot ser una traducció adequada per "Consistent", 
-### en funció del context. No apareix a la llista de falsos amics de la viquipèdia (25/10/2015)
-## «Consistent» es tradueix per «Compatible».
-#{\bconsistents?\b}i
-#id="ff-consistent"
-#valid msgstr="compatibles?"
-#valid msgstr="coherents?"
-#valid !msgstr="consistents?"
-#hint="«Consistent» es tradueix per «Compatible», no per «Consistent» (fals amic)"
+## Segons la Viquipèdia (23/06/2020), «Consistent» s'ha de traduir per:
+##   persistent, constant, coherent, conseqüent, regular, uniforme, 
+##   que no varia sinó allò em què consisteix quelcom
+# «Consistent» es tradueix generalment per «Coherent/constant».
+{\bconsistents?\b}i
+id="ff-consistent"
+valid msgstr="coherents?"
+valid msgstr="conseqüents?"
+valid msgstr="constants?"
+valid msgstr="persistents?"
+valid msgstr="regulars?"
+valid msgstr="uniformes?"
+valid !msgstr="consistents?"
+hint="«Consistent» es tradueix generalment per «Coherent/constant» (excepte densitat de materials), no per «Consistent» (fals amic)"
+
+# «Consistency» es tradueix generalment per «Coherència/constància».
+{\bconsistency\b}i
+id="ff-consistency"
+valid msgstr="coherència"
+valid msgstr="constància"
+valid msgstr="persistència"
+valid !msgstr="consistència"
+hint="«Consistency» es tradueix generalment per «Coherència/constància» (excepte densitat de materials), no per «Consistència» (fals amic)"
 
 # «Constipated» es tradueix per «Restret».
 {\bconstipated\b}i
@@ -321,6 +324,17 @@ valid msgstr="avantatge"
 valid !msgstr="conveniència"
 hint="«Convenience» es tradueix per «Comoditat»/«Avantatge» o «Utilitat» (fals amic)"
 
+# «Convenient» es tradueix per «Adaptat/Còmode/Oportú/Pràctic/Útil», no per «convenient».
+{\bconvenients?\b}i
+id="ff-convenient"
+valid msgstr="adaptats?"
+valid msgstr="còmodes?"
+valid msgstr="oport(ú|uns)"
+valid msgstr="pràctics?"
+valid msgstr="útils?"
+valid !msgstr="convenients?"
+hint="«Convenient» es tradueix per «Adaptat/Còmode/Oportú/Pràctic/Útil» (fals amic)"
+
 # «Coroner» es tradueix per «Jutge».
 {\bcoroner\b}i
 id="ff-coroner"
@@ -346,8 +360,6 @@ hint="«Crime» es tradueix per «Delicte», no per «Crim» (fals amic)"
 {\bcurrents?\b}i
 id="ff-current"
 valid msgstr="actuals?"
-valid msgstr="corrent" cat="skrooge" # Compte corrent
-valid msgstr="al corrent" cat="www_www" # estar al corrent
 valid !msgstr="corrents?"
 hint="«Current» es tradueix per «Actual», no per «Corrent» (fals amic)"
 
@@ -364,7 +376,6 @@ hint="«Curse» es tradueix per «Malefici», no per «Curs» (fals amic)"
 id="ff-date"
 valid msgstr="dat(a|es)"
 valid msgstr="cit(a|es)"
-valid msgstr="dates" before="\sor time" cat="tables_basics,kspread_basics" # docmessages
 valid !msgstr="dada"
 valid !msgstr="dades"
 hint="«Date» es tradueix per «Data», no per «Dada» (fals amic)"
@@ -396,7 +407,6 @@ hint="«Devil» es tradueix per «Dimoni», no per «Dèbil» (fals amic)"
 {\bdiary\b}i
 id="ff-diary"
 valid msgstr="agenda"
-valid msgstr="diari" cat="desktop_kdepim"
 valid !msgstr="diari"
 hint="«Diary» es tradueix per «Agenda», no per «Diari» (fals amic)"
 
@@ -536,7 +546,6 @@ hint="«Fabric» es tradueix per «Teixit o tela», no per «Fàbrica» (fals am
 {\bfacilities\b}i
 id="ff-facilities"
 valid msgstr="instal·lacions"
-valid msgstr="facilitats" cat="desktop_kdelibs,desktop_applications_kate"
 valid !msgstr="facilitats"
 hint="«Facilities» es tradueix per «Instal·lacions», no per «Facilitats» (fals amic)"
 
@@ -565,12 +574,10 @@ hint="«Firm» es tradueix per «Empresa», no per «Firma» (fals amic)"
 # «Font» es tradueix per «Tipus (de lletra)».
 {\bfonts?\b}i
 id="ff-font"
+valid msgstr="^body \{"
 valid msgstr="tipus"
 valid msgstr="origens?"
 valid msgstr="<font\s"
-valid msgstr="\bfont\b" cat="kleopatra"
-valid msgstr="font" cat="quanta" after="replace\s"
-valid msgstr="font" cat="kdm_theme-ref"
 valid msgstr="font" before="-(style|weight)"
 valid !msgstr="fonts?"
 hint="«Font» es tradueix per «Tipus (de lletra)», no per «Font» (fals amic)"
@@ -578,9 +585,10 @@ hint="«Font» es tradueix per «Tipus (de lletra)», no per «Font» (fals amic
 # «Gradient» es tradueix per «Degradat».
 {\bgradients?\b}i
 id="ff-gradient"
+valid msgstr="/gradients/"
 valid msgstr="degradats?"
-valid msgstr="gradient" cat="desktop_extragear-graphics_kst-plot,digikam,kalzium,kmplot,kst_common"
-#valid !msgstr="gradient"
+valid msgstr="gradient" cat="digikam,kalzium,kmplot,kst_common"
+valid !msgstr="gradient"
 hint="«Gradient» es tradueix per «Degradat», no per «Gradient» -excepte la funció matemàtica- (fals amic)"
 
 # «Gripe» es tradueix per «Mal de ventre».
@@ -614,12 +622,26 @@ hint="«Idiom» es tradueix per «Frase feta», no per «Idioma» (fals amic)"
 #valid !msgstr="il·lusió"
 #hint="«Illusion» es tradueix per «Miratge», no per «Il·lusió» (fals amic)"
 
-# «Inconsistence» es tradueix per «Incoherència».
-{\binconsistence\b}i
-id="ff-inconsistence"
+## Segons la Viquipèdia (23/06/2020), «Consistent» s'ha de traduir per:
+##   persistent, constant, coherent, conseqüent, regular, uniforme, 
+##   que no varia sinó allò em què consisteix quelcom
+# «Inonsistent» es tradueix generalment per «Incoherent/inconstant».
+{\binconsistents?\b}i
+id="ff-inconsistent"
+valid msgstr="incoherents?"
+valid msgstr="inconseqüents?"
+valid msgstr="inconstants?"
+valid msgstr="irregulars?"
+valid !msgstr="inconsistents?"
+hint="«Inconsistent» es tradueix generalment per «Incoherent/inconstant» (excepte densitat de materials), no per «Inconsistent» (fals amic)"
+
+# «Inconsistency» es tradueix generalment per «Incoherència/inconstància».
+{\binconsistency\b}i
+id="ff-inconsistency"
 valid msgstr="incoherència"
+valid msgstr="inconstància"
 valid !msgstr="inconsistència"
-hint="«Inconsistence» es tradueix per «Incoherència», no per «Inconsistència» (fals amic)"
+hint="«Inconsistency» es tradueix generalment per «Incoherència/inconstància» (excepte densitat de materials), no per «Inconsistència» (fals amic)"
 
 # «Ingenuity» es tradueix per «Enginy».
 {\bingenuity\b}i
@@ -641,7 +663,6 @@ hint="«Institut» es tradueix per «Fundació o organització», no per «Insti
 id="ff-introduce"
 valid msgstr="present(ar|a|em|i)"
 valid msgstr="provo(car|ca|qui)"
-valid msgstr="introduir" cat="bluedevil"
 valid !msgstr="introdu(ir|eixi|eixin)"
 hint="«Introduce» es tradueix per «Presentar», no per «Introduir» (fals amic)"
 
@@ -678,14 +699,6 @@ hint="«Lyrics» es tradueix per «Lletra», no per «Lírica» (fals amic)"
 {\bnet\b}i
 id="ff-net"
 valid msgstr="xarxa"
-valid msgstr=".net" cat="desktop_extragear-sdk_kdevelop,desktop_extragear-sdk_kdevelop-plugins,desktop_extragear-sdk_php-docs,kdevphpdocs"
-valid msgstr="net" cat="smb4k,smb4k-core"
-valid msgstr="net" cat="kmymoney,sheets_functions" # Valor net
-valid msgstr="net" cat="ksirk" after="@kdetalk\."
-valid msgstr="net" cat="tables,kcells,kspread,calligrasheets,sheets" before="\spresent value"# Valor actual net
-valid msgstr="net" cat="kuser" before="\sgetlocalsid"
-valid msgstr="net" cat="marble" after="rotate\.aprs\."
-valid msgstr="net" cat="plasma_applet_pastebin" after="hosting\."
 valid msgstr="net" after="@(att|cberger|comcast|earthlink|example|frogmouth|gmx|ibm|kdab|kdemail|mediaone|meyerhome|nerim|netscape|openprojects|pacbell|planete|telecorp|tuxerver|usa|users\.sf|verticaladdiction)\."
 valid msgstr="net" after="(darkorb|eigentlich|gmx|@gmx\sDOT|kdemail|linux\sru|mis|shani|tantalo)\s"
 valid msgstr="net" after="irc\.freenode\."
@@ -694,8 +707,8 @@ valid msgstr="net" after="perldoc:/"
 valid msgstr="net" after="print\.sf\."
 valid msgstr="net" after="sourceforge(\.|\s)"
 valid msgstr="net" before="\seffect"
-valid !msgstr="net"
 valid msgstr=" dot net" # Fals positiu amb les adreces de correu
+valid !msgstr="net"
 hint="«Net» es tradueix per «Xarxa», no per «Net» (fals amic)"
 
 # «Notice» es tradueix per «Anunci».
@@ -733,18 +746,16 @@ valid msgstr="dos"
 valid !msgstr="parella"
 hint="«Pair» es tradueix per «Parell/Dos», no per «Parella» (fals amic)"
 
-# «Pan» es tradueix per «Panorama/Cassola».
+# «Pan» es tradueix per «Desplaçar/Panorama/Cassola».
 {\bpan\b}i
 id="ff-pan"
 valid msgid="Agfa Pan" # docmessages
 valid msgstr="cassola"
+valid msgstr="desplaça."
 valid msgstr="paella"
 valid msgstr="panorama"
 valid msgstr="panoràmic"
 valid msgstr="panoràmica"
-valid msgstr="d'una\sa\sl'altre" cat="kxsconfig"
-valid msgstr="pan" cat="digikam" after="agfa\s"
-valid msgstr="pan" cat="kdelibs4,kdelibs4support,kdecalendarsystems,kdecalendarsystems5,desktop_extragear-base_kappfinder,libplasmanetworkmanagement-editor,plasmanetworkmanagement-libs"
 valid msgstr="pan" before="\sflute"
 valid !msgstr="pa"
 hint="«Pan» es tradueix per «Panorama/Cassola», no per «Pa» (fals amic)"
@@ -779,7 +790,6 @@ hint="«Parent» es tradueix per «Pare/mare», no per «Parent» (fals amic)"
 {\bpet\b}i
 id="ff-pet"
 valid msgstr="animal"
-valid msgstr="pet" cat="kxsconfig" after="commodore\s"
 valid !msgstr="pet"
 hint="«Pet» es tradueix per «Animal», no per «Pet» (fals amic)"
 
@@ -815,7 +825,6 @@ hint="«Physician» es tradueix per «Metge», no per «Físic» (fals amic)"
 id="ff-plain"
 valid msgstr="normals?"
 valid msgstr="senzill(a|s|es)"
-valid msgstr="plana" cat="kgeography"
 valid !msgstr="pla(na|nes)"
 hint="«Plain» es tradueix per «Senzill», no per «Pla» (fals amic)"
 
@@ -825,6 +834,28 @@ id="ff-preservative"
 valid msgstr="preservatiu"
 valid !msgstr="conservant"
 hint="«Preservative» es tradueix per «Preservatiu», no per «Conservant» (fals amic)"
+
+# «Preserve» es tradueix en general per «Conservar»/«Mantenir».
+# DIEC: preservar
+# v. tr. [LC] Protegir (algú o alguna cosa) d’un dany possible o probable, o de qualsevol fet 
+# no desitjat. Preservar una planta del fred. Preservar la roba de les arnes. Preservar el fons 
+# històric d’un arxiu.  
+{\bpreserve(d|s)?\b}i
+id="ff-preserve"
+valid msgstr="conserv(a|at|ada|arà|eu)"
+valid msgstr="mant(én|ingut|inguda|indrà)"
+valid !msgstr="preserv(a|at|ada|arà|eu)"
+hint="«Preserve» es tradueix per «Conservar/Mantenir», no per «Preservar» (fals amic)"
+
+# «Preservation» es tradueix en general per «Conservació»/«Manteniment».
+# DIEC: preservació
+# f. [LC] Acció de preservar; l’efecte.
+{\bpreservations?\b}i
+id="ff-preservation"
+valid msgstr="conservaci(ó|ons)"
+valid msgstr="manteniments?"
+valid !msgstr="preservaci(ó|ons)"
+hint="«Preservation» es tradueix per «Conservació/Manteniment», no per «Preservació» (fals amic)"
 
 # «Presume» es tradueix per «Suposar»
 {\bpresume\b}i
@@ -872,8 +903,9 @@ hint="«Professor» es tradueix per «Catedràtic», no per «Professor» (fals 
 {\bprove\b}i
 id="ff-prove"
 valid msgstr="demostració"
+valid msgstr="demostrar"
 valid !msgstr="prova"
-hint="«Prove» es tradueix per «Demostració», no per «Prova» (fals amic)"
+hint="«Prove» es tradueix per «Demostració (demostrar)», no per «Prova» (fals amic)"
 
 # «Quartely» es tradueix per «Trimestral».
 {\bquartel(y|ies)\b}i
@@ -934,7 +966,6 @@ hint="«Receipt» es tradueix per «Rebut», no per «Recepta» (fals amic)"
 {\brecipients?\b}i
 id="ff-recipient"
 valid msgstr="destinataris?"
-valid msgstr="recipient" cat="kleopatra"
 valid !msgstr="recipients?"
 hint="«recipient» es tradueix per «Destinatari», no per «Recipient» (fals amic)"
 
@@ -976,9 +1007,6 @@ hint="«Rest» es tradueix per «Descansar», no per «Restar» (fals amic)"
 {\bresume\b}i
 id="ff-resume"
 valid msgstr="repren(dre|c|s)"
-valid msgstr="resumint" cat="libkdcraw"
-valid msgstr="resume" cat="konversation" after="dcc\s"
-valid msgstr="resume" cat="kdm" # docmessages
 valid !msgstr="resum"
 hint="«Resume» es tradueix per «Reprendre», no per «Resum» (fals amic)"
 
@@ -1021,6 +1049,13 @@ valid msgstr="sensats?"
 valid !msgstr="sensibles?"
 hint="«Sensible» es tradueix per «Sensat», no per «Sensible» (fals amic)"
 
+# «Sensitivity» es tradueix per «Sensibilitat».
+{\bsensitivit(y|ies)\b}i
+id="ff-sensitivity"
+valid msgstr="sensibilitats?"
+valid !msgstr="sensitivitats?"
+hint="«Sensitivity» es tradueix per «Sensibilitat», no per «Sensitivitat» (fals amic)"
+
 # «Signature» es tradueix per «Signatura».
 {\bsignatures?\b}i
 id="ff-signature"
@@ -1046,10 +1081,7 @@ hint="«Silicon» es tradueix per «Silici», no per «Silicona» (fals amic)"
 {\bsimple\b}i
 id="ff-simple"
 valid msgstr="senzill(a|s|es)"
-valid msgstr="senzilles" cat="umbrello_other_features"
-valid msgstr="mer"
-valid msgstr="simple" cat="kuser" after="LDAP\s"
-valid msgstr="simple" cat="kdeqt"
+valid msgstr="única?"
 valid !msgstr="simples?"
 valid !msgstr="simplement"
 hint="«Simple» es tradueix per «Senzill», no per «Simple» (fals amic)"
