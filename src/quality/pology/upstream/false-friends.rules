@@ -235,13 +235,14 @@ valid msgstr="globals?"
 valid !msgstr="comprensi(u|va|us|ves)"
 hint="«Comprehensive» es tradueix per «Exhaustiu o global», no per «Comprensiu» (fals amic)"
 
-# «Conductor» es tradueix per «Revisor, director d'orquestra».
-{\bconductor\b}i
-id="ff-conductor"
-valid msgstr="revisora?"
-valid msgstr="directora?"
-valid !msgstr="conductora?"
-hint="«Conductor» es tradueix per «Revisor o director d'orquestra», no per «Conductor» (fals amic)"
+# Regla desactivada: molts falsos positius 
+## «Conductor» es tradueix per «Revisor, director d'orquestra».
+#{\bconductor\b}i
+#id="ff-conductor"
+#valid msgstr="revisora?"
+#valid msgstr="directora?"
+#valid !msgstr="conductora?"
+#hint="«Conductor» es tradueix per «Revisor o director d'orquestra», no per «Conductor» (fals amic)"
 
 #Regla desactivada: molts falsos positius 
 ## «Conference» es tradueix per «Congrés».
@@ -491,13 +492,14 @@ valid !msgstr="allarg(ar|o|a)"
 valid !msgstr="allargui"
 hint="«Enlarge» es tradueix per «Ampliar», no per «Allargar» (fals amic)"
 
-# «Enter, to» es tradueix per «Introduir».
-{\benter\b}i
-id="ff-enter"
-valid msgstr="introdu(ir|eixo|eixi|ïu)"
-valid msgstr="entreu" before=" the roundabout"
-valid !msgstr="entr(ar|eu|o)"
-hint="«Enter, to» es tradueix per «Introduir», no per «Entrar» (fals amic)"
+# Regla desactivada: molts falsos positius 
+## «Enter, to» es tradueix per «Introduir».
+#{\benter\b}i
+#id="ff-enter"
+#valid msgstr="introdu(ir|eixo|eixi|ïu)"
+#valid msgstr="entreu" before=" the roundabout"
+#valid !msgstr="entr(ar|eu|o)"
+#hint="«Enter, to» es tradueix per «Introduir», no per «Entrar» (fals amic)"
 
 # «Escalator» es tradueix per «Escales mecàniques».
 {\bescalator\b}i
@@ -800,18 +802,19 @@ valid msgstr="gasolina"
 valid !msgstr="petroli"
 hint="«Petrol» es tradueix per «Gasolina», no per «Petroli» (fals amic)"
 
-# «Place» es tradueix per «Lloc».
-{\bplace\b}i
-id="ff-place"
-valid msgstr="emplaçament"
-valid msgstr="lloc"
-valid msgstr="ubicació"
-valid msgstr="col·loc(ar|o)"
-valid msgstr="emplaç(a|ar|o)"
-valid msgstr="situ(a|ar|o)"
-valid msgstr="pos(a|ar|o)"
-valid !msgstr="plaça"
-hint="«Place» es tradueix per «Lloc», no per «Plaça» (fals amic)"
+# Regla desactivada: molts falsos positius 
+## «Place» es tradueix per «Lloc».
+#{\bplace\b}i
+#id="ff-place"
+#valid msgstr="emplaçament"
+#valid msgstr="lloc"
+#valid msgstr="ubicació"
+#valid msgstr="col·loc(ar|o)"
+#valid msgstr="emplaç(a|ar|o)"
+#valid msgstr="situ(a|ar|o)"
+#valid msgstr="pos(a|ar|o)"
+#valid !msgstr="plaça"
+#hint="«Place» es tradueix per «Lloc», no per «Plaça» (fals amic)"
 
 # «Physician» es tradueix per «Metge».
 {\bphysicians?\b}i

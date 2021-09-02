@@ -12,7 +12,7 @@ valid msgstr="\:\s*$"
 hint="Si el missatge origen acaba amb dos punts, el missatge destí també hauria (punctuation)"
 
 # If the source message ends with a period, the target message must end with a period.
-{\.\s*$}i
+{[^\.]\.\s*$}i
 id="punctuation-period"
 valid msgstr="\.\s*$"
 valid msgstr="\&(BDR|etc|kde|kimagemapeditor);$"
@@ -30,26 +30,46 @@ valid msgstr="…s*$"
 valid msgstr="…»$"
 hint="Si el missatge origen acaba amb punts suspensius, el missatge destí també hauria (punctuation)"
 
-{.*?('(%[a-z]|{[0-9]})').*?}
+{.*?('(%[a-z]|{[0-9]}|([\w]*))').*?}
 id="punctuation-simple-quotes"
 valid msgstr=".*?(='.*?').*?" #Used to skip when it's assigned in xml/html
 valid msgstr=".*?(«.*?»).*?"
 hint="En català usem cometes baixes («») en comptes de cometes simples ('') per encloure expressions (punctuation)"
 
-{.*?("(%[a-z]|{[0-9]})").*?}
+{.*?("(%[a-z]|{[0-9]}|([\w]*))").*?}
 id="punctuation-double-quotes"
 valid msgstr='.*?(=".*?").*?' #Used to skip when it's assigned in xml/html
 valid msgstr=".*?(«.*?»).*?"
 hint='En català usem cometes baixes («») en comptes de cometes dobles ("") per encloure expressions (punctuation)'
 
-{.*?(“(%[a-z]|{[0-9]})”).*?}
+{.*?(“(%[a-z]|{[0-9]}|([\w]*))”).*?}
 id="punctuation-high-quotes"
-valid msgstr='.*?(=“.*?”).*?' #Used to skip when it's assigned in xml/html
 valid msgstr=".*?(«.*?»).*?"
 hint='En català usem cometes baixes («») en comptes de cometes altes (“”) per encloure expressions (punctuation)'
 
-{.*?(`(%[a-z]|{[0-9]})`).*?}
+{.*?(`(%[a-z]|{[0-9]}|([\w]*))`).*?}
 id="punctuation-accent-quotes"
-valid msgstr='.*?(=`.*?`).*?' #Used to skip when it's assigned in xml/html
 valid msgstr=".*?(«.*?»).*?"
+valid msgstr="(:[^:]*:`([^`]*)`)" #Used to skip documentation Sphinx
 hint='En català usem cometes baixes («») en comptes de cometes (``) per encloure expressions (punctuation)'
+
+# Negative reg exp /^((?!REGULAR_EXPRESSION_HERE).)*$/
+{^((?!(([:])( )*$)).)*$}
+id="punctuation-colon-no"
+valid msgstr="[^:]$"
+hint="Si el missatge original no acaba en dos punts, la traducció tampoc hauria de fer-ho (punctuation)"
+
+{^((?!(([\.…!])( )*$)).)*$}
+id="punctuation-period-no"
+valid msgstr="[^\.]$"
+hint="Si el missatge original no acaba en punt, la traducció tampoc hauria de fer-ho (punctuation)"
+
+{[^ ]$}
+id="punctuation-space-end-no"
+valid msgstr="[^ ]$"
+hint="Si el missatge original no acaba en espai, la traducció tampoc hauria de fer-ho (punctuation)"
+
+{^ .*}
+id="punctuation-space-start-no"
+valid msgstr="^ .*"
+hint="Si el missatge original comença en espai però la traducció no (punctuation)"
