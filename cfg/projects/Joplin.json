@@ -1,0 +1,12 @@
+{
+    "project": "Joplin", 
+    "projectweb": "https://www.softcatala.org/projectes/joplin/",
+    "softcatala": true,
+    "fileset": {
+        "Joplin": {
+            "url": "https://raw.githubusercontent.com/laurent22/joplin/dev/packages/tools/locales/ca.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
