@@ -35,7 +35,7 @@ class TestConvertTmx(unittest.TestCase):
 
         return tmx_file, po_filename
 
-    def test_convertion(self):
+    def test_conversion(self):
         tmx_file, po_filename = self._get_files('test.tmx')
         convertTmx = ConvertTmx(tmx_file, po_filename)
         convertTmx.convert()
@@ -51,7 +51,7 @@ class TestConvertTmx(unittest.TestCase):
         self.assertEquals(entries[1].msgstr, "Com vulgueu")
         self.assertEquals(entries[1].tcomment, '')
 
-    def test_convertion_omegat(self):
+    def test_conversion_omegat(self):
         tmx_file, po_filename = self._get_files('omegat.tmx')
         convertTmx = ConvertTmx(tmx_file, po_filename)
         convertTmx.convert()
