@@ -1,0 +1,11 @@
+{
+    "project": "OSMpresets", 
+    "projectweb" : "https://vespucci.io/tutorials/presets/",
+    "fileset": {
+            "OSMpresets" : {
+                    "url" : "https://www.transifex.com/projects/p/presets/",
+                    "type": "transifex",
+                    "po_preprocessing" : "remove_untranslated"
+            }
+    }
+}

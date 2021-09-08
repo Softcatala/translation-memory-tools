@@ -1,0 +1,11 @@
+{
+    "project": "Vespucci", 
+    "projectweb" : "http://vespucci.io",
+    "fileset": {
+            "vespucci" : {
+                    "url" : "https://www.transifex.com/projects/p/vespucci/",
+                    "type": "transifex",
+                    "po_preprocessing" : "remove_untranslated"
+            }
+    }
+}

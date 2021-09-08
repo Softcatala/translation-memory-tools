@@ -1,0 +1,11 @@
+{
+    "project": "BRouter-web", 
+    "projectweb" : "https://brouter.de",
+    "fileset": {
+            "brouter-web" : {
+                    "url" : "https://www.transifex.com/projects/p/brouter-web/",
+                    "type": "transifex",
+                    "po_preprocessing" : "remove_untranslated"
+            }
+    }
+}
