@@ -8,7 +8,7 @@
             "target": "apt-ca.po"  
         },
         "dpkg": {
-            "url": "https://salsa.debian.org/dpkg-team/dpkg/raw/master/po/ca.po", 
+            "url": "https://salsa.debian.org/dpkg-team/dpkg/-/raw/main/po/ca.po", 
             "type": "file", 
             "target": "dpkg-ca.po"       
         },
