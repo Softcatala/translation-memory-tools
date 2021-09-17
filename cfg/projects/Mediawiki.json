@@ -8,7 +8,7 @@
             "target": "main-ca.po"
         }, 
         "mobile-app": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-mobileapp&language=ca&format=export-to-file",
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-mobileapp&language=ca&format=export-as-po",
             "type": "file",
             "target": "mobile-app.po"
         },
@@ -28,7 +28,7 @@
             "target": "wikipedia-android.po"
         },
         "extensions": {
-            "url": "https://translatewiki.net/w/i.php?title=Special:Translate&taction=export&group=ext-0-all&language=ca&task=export-as-po",
+            "url": "https://translatewiki.net/w/i.php?title=Special:Translate&action=export&group=ext-0-all&language=ca&task=export-as-po",
             "type": "file", 
             "target": "extensions-ca.po"
         }
