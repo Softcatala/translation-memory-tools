@@ -42,6 +42,11 @@
             "url": "https://gitlab.com/arcmenu/ArcMenu/-/raw/master/po/ca.po",
             "type": "file",
             "target": "arcmenu-ca.po"
+        },
+        "Drawing": {
+            "url": "https://raw.githubusercontent.com/maoschanz/drawing/master/po/ca.po",
+            "type": "file",
+            "target": "drawing-ca.po"
         }
     }
 }
