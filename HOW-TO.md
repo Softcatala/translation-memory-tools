@@ -32,14 +32,19 @@ Some concepts here:
 * A project can contain multiple _filesets_.
 * The _filesets_ can be of various types: transifex, git, svn, etc. In the _add_filesets_ method at [src/builder/project.py](src/builder/project.py) you can see the code that handles them
 
-## Accessing non-public files
+## Accessing non-public files & credentials
 
-We always try to access public files, but sometimes some _filesets_ need credentials to access the remote files. 
-There are some cases filesets that need properly configured credentials at [cfg/credentials/](cfg/credentials/)
+We always try to access public files, which require no user or password to download them. However, sometimes some _filesets_ require credentials to download the translation files. 
+The credentials for these systems (e.g. Transifex, Weblate, etc) need to be properly configured credentials at [cfg/credentials/](cfg/credentials/)
 
-However, Transifex is the most common one with over 100 projects using it. My advice:
+In order to configure the credentials for these projects:
+* You need to create an account on these projects (we cannot share our account)
+* At [cfg/credentials/](cfg/credentials/) you need to copy the credentials configuration sample file (ends with *-sample*) to the final file (e.g. *cp zanata-sample.yaml zanata.yaml*)
+* Store your credentials in the file
 
-* Avoid to use Transifex when possible, these are files that are not easily publically downloadable. Prefer direct downloads when available
+My advice:
+
+* When possible, avoid to use Transifex or any system that requires credentials to access file , these are files that are not easily publically downloadable. Prefer direct downloads when available
 * To be able to download the translations for a Transifex you need to be:
   * Member of the translation team
   * The translations memory user name will need to be also accepted
