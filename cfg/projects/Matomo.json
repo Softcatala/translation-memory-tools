@@ -3,9 +3,9 @@
     "projectweb": "https://matomo.org/",
     "fileset": {
         "Matomo": {
-            "url": "https://www.transifex.com/projects/p/matomo/",
-            "type": "transifex",
-            "po_preprocessing" : "remove_untranslated"
+            "url": "https://hosted.weblate.org/download-language/ca/matomo/?format=zip",
+            "type": "compressed",
+            "target": "ca.zip"
         }
     }
 }
