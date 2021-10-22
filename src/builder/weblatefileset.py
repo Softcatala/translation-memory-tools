@@ -133,7 +133,10 @@ class WeblateFileSet(FileSet):
             return True
 
         except Exception as detail:
-            logging.error("WeblateFileSet._get_file {0} - error: {1}".format(url, detail))
+            if detail.code == 404:
+                logging.info("WeblateFileSet._get_file {0} - info: {1}".format(url, detail))
+            else:
+                logging.error("WeblateFileSet._get_file {0} - error: {1}".format(url, detail))
             return False
 
     def do(self):
