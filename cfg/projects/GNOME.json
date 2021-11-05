@@ -22,7 +22,12 @@
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz",
             "type": "compressed", 
             "target": "gnome-infrastructure.tar.gz"
-        }, 
+        },
+        "gnome-cicle": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-circle/ui.tar.gz",
+            "type": "compressed",
+            "target": "gnome-circle.ui.tar.gz"
+        },
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
             "type": "compressed", 
@@ -32,6 +37,11 @@
             "url": "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz", 
             "type": "compressed", 
             "target": "gnome-extras-doc.tar.gz"
+        },
+        "gnome-circle-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/gnome-circle/doc.tar.gz",
+            "type": "compressed",
+            "target": "gnome-circle-doc.tar.gz"
         },
         "desktop-icons-ng": {
             "url": "https://gitlab.com/rastersoft/desktop-icons-ng/-/raw/master/po/ca.po",
