@@ -186,8 +186,8 @@ class Project(object):
                                   fileset.url,
                                   fileset.target)
             else:
-                msg = 'Unsupported filetype: {0}'
-                logging.error(msg.format(fileset.type))
+                msg = 'Unsupported filetype: {0}'.format(fileset.type)
+                logging.error(msg)
                 raise Exception(msg)
 
             fs.add_excluded(fileset.excluded)
