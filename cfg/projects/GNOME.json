@@ -23,7 +23,7 @@
             "type": "compressed", 
             "target": "gnome-infrastructure.tar.gz"
         },
-        "gnome-cicle": {
+        "gnome-circle": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-circle/ui.tar.gz",
             "type": "compressed",
             "target": "gnome-circle.ui.tar.gz"
