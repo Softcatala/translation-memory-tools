@@ -2,9 +2,14 @@
     "project": "Penpot", 
     "projectweb": "https://penpot.app/",
     "fileset": {
-        "Penpot": {
-            "url": "https://raw.githubusercontent.com/penpot/penpot/develop/frontend/translations/ca.po", 
+        "Frontend": {
+            "url": "https://hosted.weblate.org/download/penpot/frontend/ca/?format=po", 
             "type": "file", 
+            "target": "ca.po"
+         },
+        "Glossary": {
+            "url": "https://hosted.weblate.org/download/penpot/glossary/ca/?format=po",
+            "type": "file",
             "target": "ca.po"
         }
     }
