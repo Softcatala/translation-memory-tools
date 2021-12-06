@@ -1,0 +1,11 @@
+{
+    "project": "F-Droid", 
+    "projectweb": "https://f-droid.org/",
+    "fileset": {
+        "F-Droid": {
+            "url": "https://hosted.weblate.org/projects/f-droid/f-droid/ca/?format=po", 
+            "type": "file", 
+            "target": "ca.po"
+         }
+    }
+}
