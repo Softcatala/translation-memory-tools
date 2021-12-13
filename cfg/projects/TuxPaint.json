@@ -13,7 +13,12 @@
             "target": "ca.po"
         },
         "website": {
-            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/ca_ES.po?format=raw",
+            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/priority-high/ca_ES.po?format=raw",
+            "type": "file", 
+            "target": "ca.po"
+        },
+        "website": {
+            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/priority-low/ca_ES.po?format=raw",
             "type": "file", 
             "target": "ca.po"
         },
