@@ -1,0 +1,11 @@
+{
+    "project": "qlcplus",
+    "projectweb": "https://www.qlcplus.org/",
+    "fileset": {
+        "qlcplus": {
+            "url": "https://github.com/mcallegari/qlcplus/",
+            "type": "git",
+            "pattern": ".*ca_ES.po"
+        }
+    }
+}
