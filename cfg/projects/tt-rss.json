@@ -3,7 +3,7 @@
     "projectweb": "https://weblate.tt-rss.org/",
     "fileset": {
         "tt-rss": {
-            "url": "https://weblate.tt-rss.org/download/tt-rss/messages/ca_CA/?format=po",
+            "url": "https://git.tt-rss.org/fox/tt-rss/raw/branch/master/locale/ca_CA/LC_MESSAGES/messages.po",
             "type": "file",
             "target": "tt-rss-ca.po"
         }

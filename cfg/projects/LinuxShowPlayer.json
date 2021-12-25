@@ -1,0 +1,11 @@
+{
+    "project": "LinuxShowPlayer",
+    "projectweb": "https://github.com/FrancescoCeruti/linux-show-player",
+    "fileset": {
+        "qlcplus": {
+            "url": "https://github.com/FrancescoCeruti/linux-show-player",
+            "type": "git",
+            "pattern": ".*ca.po"
+        }
+    }
+}
