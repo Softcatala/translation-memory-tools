@@ -15,12 +15,12 @@
         "website": {
             "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/priority-high/ca_ES.po?format=raw",
             "type": "file", 
-            "target": "ca.po"
+            "target": "priority-high-ca.po"
         },
         "website": {
             "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/priority-low/ca_ES.po?format=raw",
             "type": "file", 
-            "target": "ca.po"
+            "target": "priority-low-ca.po"
         },
         "config": {
             "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-config/ci/master/tree/src/po/ca.po?format=raw",
