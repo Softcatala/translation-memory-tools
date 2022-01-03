@@ -1,6 +1,5 @@
 # For server.
 Whoosh
-Jinja2
 flask
 flask_cors
 gunicorn
