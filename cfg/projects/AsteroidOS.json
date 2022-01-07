@@ -18,7 +18,7 @@
             "target": "ca.po"
         },
        "Settings": {
-            "url": "https://hosted.weblate.org/download/asteroidos/music/ca/?format=po",
+            "url": "https://hosted.weblate.org/download/asteroidos/settings/ca/?format=po",
             "type": "file", 
             "target": "ca.po"
         },
