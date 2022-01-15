@@ -193,6 +193,10 @@ if __name__ == '__main__':
     load_projects_from_json(add_source, projects_names, projects_dir,
                             softcatala_only)
 
+    if projects_names and len(projects.projects) == 0:
+        logging.error(f"Unable to find any of the specified projects: {projects_names}")
+        exit(1)
+
     if only_all_projects_tm:
         projects.create_tm_for_all_projects()
     elif softcatala_only:
