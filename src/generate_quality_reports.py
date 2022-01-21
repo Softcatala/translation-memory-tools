@@ -19,14 +19,8 @@
 # Boston, MA 02111-1307, USA.
 
 import datetime
-import polib
 import os
-import re
 import time
-import json
-import pystache
-import tempfile
-import shutil
 import yaml
 import logging
 import sys
@@ -128,7 +122,7 @@ class GenerateQualityReports():
 
         cmd = pology['command'].format(posieve, rules, po_transonly, html)
         os.system(cmd)
-    
+
     def load_projects_from_json(self):
         projects = []
         projects_dir = '../cfg/projects/'
