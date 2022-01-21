@@ -45,7 +45,7 @@ class LanguageTool():
 
     def run_lt(self, lt, txt_file, json_file):
         lt_server = os.environ.get('LT_SERVER', 'http://localhost:7001/v2/check')
-        cmd = lt['command'].format(lt['enabled-rules'], lt['disabled-rules'],
+        cmd = lt['command'].format(lt['enabled-rules'], lt['disabled-rules'], lt['disabled-categories'],
               txt_file, lt_server, json_file)
         os.system(cmd)
 
