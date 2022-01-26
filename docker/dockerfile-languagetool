@@ -1,7 +1,7 @@
-FROM python:3.8.6-buster
+FROM python:3.10.1-slim-bullseye
 
 RUN apt-get update && apt-get install libhunspell-dev zip -y
-RUN apt-get install openjdk-11-jdk -y
+RUN apt-get install openjdk-11-jdk wget -y
 
 EXPOSE 7001
 
