@@ -177,7 +177,7 @@ def projects_api():
     with open("projects.json" ,"r") as file:
         projects = file.read()
 
-    return Response(projects, mimetype='text/plain')
+    return Response(projects, mimetype='application/json')
 
 @cross_origin(origin='*',headers=['Content-Type','Authorization'])
 @app.route('/index', methods=['GET'])
@@ -185,7 +185,7 @@ def index_api():
     with open("index.json" ,"r") as file:
         projects = file.read()
 
-    return Response(projects, mimetype='text/plain')
+    return Response(projects, mimetype='application/json')
 
 
 if __name__ == '__main__':
