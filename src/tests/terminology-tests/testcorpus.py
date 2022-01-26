@@ -22,7 +22,7 @@ from io import StringIO
 import unittest
 
 
-class TestPage(unittest.TestCase):
+class TestCorpus(unittest.TestCase):
 
     def test_clean_strings(self):
         corpus = Corpus('')
