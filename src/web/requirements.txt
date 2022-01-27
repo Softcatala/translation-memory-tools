@@ -3,4 +3,4 @@ Whoosh
 flask
 flask_cors
 gunicorn
-peewee==2.9.1
+peewee==3.14.8

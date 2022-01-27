@@ -2,7 +2,7 @@
 polib==1.1.1
 transifex-client==0.14.3
 pystache
-peewee==2.9.1
+peewee==3.14.8
 hunspell
 phply # required by translate-toolkit to process php files
 translate-toolkit==3.3.4

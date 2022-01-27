@@ -17,7 +17,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-
+from playhouse.shortcuts import model_to_dict
 from peewee import SqliteDatabase, Model, TextField, IntegerField, FloatField
 import os
 
@@ -45,23 +45,7 @@ class SqliteDatabaseGlossary(SqliteDatabase):
 database = SqliteDatabaseGlossary(None, autocommit=False)
 
 
-class BaseModel(Model):
-
-    @property
-    def dict(self):
-        '''Returns model fields' as an array of properties'''
-        properties = {}
-        for k in self._data.keys():
-            r = str(getattr(self, k))
-            properties[k] = r
-       
-        return properties
-
-    class Meta:
-        database = database
-
-
-class Entry(BaseModel):
+class Entry(Model):
     '''Simple denormalized model to represent a glossary entry'''
 
     term = TextField(unique=False)
@@ -70,5 +54,17 @@ class Entry(BaseModel):
     percentage = FloatField()
     termcat = IntegerField()
 
+    def _value_to_str(self, d):
+        for key in d.keys():
+            d[key] = str(d[key])
+
+        return d
+
+    @property
+    def dict(self):
+        d = model_to_dict(self)
+        return self._value_to_str(d)
+
     class Meta:
         db_table = 'entries'
+        database = database
