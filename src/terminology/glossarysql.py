@@ -21,7 +21,8 @@ from playhouse.shortcuts import model_to_dict
 from peewee import SqliteDatabase, Model, TextField, IntegerField, FloatField
 import os
 
-# http://peewee.readthedocs.org/en/unstable-2.0/peewee/cookbook.html
+# TODO: we use peewee and raw SQL projectmetadatadao. At some point may make
+# sense to consolidate this
 
 class SqliteDatabaseGlossary(SqliteDatabase):
 
