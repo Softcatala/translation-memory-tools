@@ -29,12 +29,13 @@ class TesGlossarySql(unittest.TestCase):
     PERCENTATGE = 5
     TERMCAT = True
 
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
         name = ":memory:"
         database.create(name)
         database.create_schema()
 
-        db_entry = self._get_entry()
+        db_entry = cls._get_entry(cls)
         db_entry.save()
     
 
@@ -48,13 +49,12 @@ class TesGlossarySql(unittest.TestCase):
         return db_entry 
 
 
-    def _test_save_glossary(self):
-
+    def test_save_glossary(self):
         glossary = Entry.select().where(Entry.term == self.SOURCE_TERM)
         cnt = glossary.count()
 
         item  = list(glossary)[0]
-        self.assertEquals(11, cnt)
+        self.assertEquals(1, cnt)
         self.assertEquals(self.SOURCE_TERM, item.term)
         self.assertEquals(self.TRANSLATION, item.translation)
         self.assertEquals(self.FREQUENCY, item.frequency)
@@ -62,16 +62,17 @@ class TesGlossarySql(unittest.TestCase):
         self.assertEquals(self.TERMCAT, item.termcat)
 
     def test_fields(self):
+        POS_ONLY_ITEM = 0
         glossary = Entry.select().where(Entry.term == self.SOURCE_TERM)
-        item  = list(glossary)[0]
-        fields = list(iter(item.dict.keys()))
- 
-        self.assertTrue("id" in fields)
-        self.assertTrue("term" in fields)
-        self.assertTrue("translation" in fields)
-        self.assertTrue("frequency" in fields)
-        self.assertTrue("percentage" in fields)
-        self.assertTrue("termcat" in fields)
+        result = list(glossary)[POS_ONLY_ITEM]
+
+        values = result.dict.items()
+        self.assertTrue(("id", "1") in values)
+        self.assertTrue(("term", self.SOURCE_TERM) in values)
+        self.assertTrue(("translation", self.TRANSLATION) in values)
+        self.assertTrue(("frequency", str(self.FREQUENCY)) in values)
+        self.assertTrue(("percentage", "5.0") in values)
+        self.assertTrue(("termcat", "1") in values)
 
 if __name__ == '__main__':
     unittest.main()
