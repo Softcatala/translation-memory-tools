@@ -1,4 +1,4 @@
-FROM python:3.8.6-slim-buster
+FROM python:3.10.1-slim-bullseye
 
 ENV DIR /srv/dev
 ENV DIR_TMT_GIT /srv/dev/tm-git

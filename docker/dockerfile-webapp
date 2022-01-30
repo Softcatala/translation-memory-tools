@@ -1,6 +1,6 @@
 FROM registry.softcatala.org/github/translation-memory-tools-build-data:master as docker_web
 
-FROM python:3.8.6-slim-buster as generate_data
+FROM python:3.10.1-slim-bullseye as generate_data
 
 # Software
 COPY src/web /srv/web/
@@ -16,7 +16,7 @@ COPY --from=docker_web /static/index.json /srv/web/
 COPY --from=docker_web /static/statistics.db3 /srv/web/
 COPY --from=docker_web /static/glossary.db3 /srv/web/
 
-FROM python:3.8.6-slim-buster
+FROM python:3.10.1-slim-bullseye
 
 RUN apt-get update && apt-get install python3-dev gettext -y
 
