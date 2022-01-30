@@ -1,6 +1,7 @@
 FROM tmt-webapp
  
 # Software
+RUN apt-get install httping -y
 COPY integration-tests /srv/integration-tests
 COPY docker/entry-point-web-test.sh /srv/
 
