@@ -1,8 +1,8 @@
 {
-    "project": "TimeShift",
+    "project": "Timeshift",
     "projectweb": "https://github.com/teejee2008/timeshift",
     "fileset": {
-        "TimeShift": {
+        "Timeshift": {
             "url": "https://github.com/teejee2008/timeshift.git",
             "type": "git",
             "pattern": ".*?ca.po"

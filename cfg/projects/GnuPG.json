@@ -1,5 +1,5 @@
 {
-    "project": "GnuPG",
+    "project": "GNU Privacy Guard",
     "projectweb": "https://www.gnupg.org/",
     "fileset": {
         "gnupg": {

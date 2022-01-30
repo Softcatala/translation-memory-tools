@@ -1,5 +1,5 @@
 {
-    "project": "WindowsCalculator",
+    "project": "Windows Calculator",
     "projectweb": "https://github.com/microsoft/calculator",
     "fileset": {
         "calc": {

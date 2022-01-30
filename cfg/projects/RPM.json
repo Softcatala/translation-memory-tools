@@ -1,5 +1,5 @@
 {
-    "project": "RPM", 
+    "project": "RPM Package Manager", 
     "projectweb": "https://rpm.org/",
     "fileset": {
         "RPM": {
