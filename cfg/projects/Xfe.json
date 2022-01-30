@@ -3,7 +3,7 @@
     "projectweb": "http://roland65.free.fr/xfe/",
     "fileset": {
         "xfe": {
-            "url": "https://salsa.debian.org/joowie-guest/maintain_xfe/raw/master/po/ca.po",
+            "url": "https://fossies.org/linux/xfe/po/ca.po?m=b",
             "type": "file",
             "target": "xfe-ca.po"
         }
