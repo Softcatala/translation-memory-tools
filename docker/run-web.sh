@@ -1,1 +1,1 @@
-docker run -i -t tmt-webapp -p 8080:8080
+docker run -p 8080:8080 -i -t tmt-webapp
