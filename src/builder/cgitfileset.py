@@ -73,7 +73,7 @@ class CGitFileSet(FileSet):
                 name = self._get_fileset_from_url(link)
                 if link[:len(self.HTTPS_PROTOCOL)] == self.HTTPS_PROTOCOL:
                     link = self.GIT_PROTOCOL + link[len(self.HTTPS_PROTOCOL):]
-                fileset = GitFileSet(self.project_name, name, link, '')
+                fileset = GitFileSet(self.project_name, self.project_id, name, link, '')
                 fileset.set_pattern(self.FILESET_PATTERN)
                 self.project.add_fileset(fileset)
 

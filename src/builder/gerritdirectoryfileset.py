@@ -91,7 +91,7 @@ class GerritDirectoryFileSet(FileSet):
                     logging.debug('GerritDirectoryFileSet. Discarding:' + name)
                     continue
 
-                fileset = GitFileSet(self.project_name, name, url, '')
+                fileset = GitFileSet(self.project_name, self.project_id, name, url, '')
 
                 # Some Android projects contain there own po files like
                 # https://android.googlesource.com/platform/ndk and they have

@@ -168,7 +168,7 @@ class TransifexHubFileSet(FileSet):
             for option in options:
                 url = transifex_url
                 url = url + self._clean_string(option)
-                fileset = TransifexFileSet(self.project_name, option, url, '', self)
+                fileset = TransifexFileSet(self.project_name, self.project_id, option, url, '', self)
                 self.project.add_fileset(fileset)
 
             # All the new filesets have been added re-process project now

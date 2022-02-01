@@ -62,7 +62,7 @@ class GitWebFileSet(FileSet):
             fileset_name = project
             url = git_urls[project]
 
-            fileset = GitFileSet(self.project_name, fileset_name, url, '')
+            fileset = GitFileSet(self.project_name, self.project_id, fileset_name, url, '')
             fileset.set_pattern('.*?ca.po')
             logging.debug("Gitweb adding {0}-{1}".format(self.project_name, name))
             self.project.add_fileset(fileset)
