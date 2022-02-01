@@ -45,11 +45,12 @@ from .weblatefileset import WeblateFileSet
 
 class Project(object):
 
-    def __init__(self, name, filename):
+    def __init__(self, name, project_id, filename):
         self.add_source = True
         self.filename = filename
         self.filesets = []
         self.name = name
+        self.project_id = project_id
         self.checksum = None
         self.report_errors = True
         self.out_directory = ''
@@ -83,62 +84,73 @@ class Project(object):
 
             if fileset.type == 'local-file':
                 fs = LocalFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
             elif fileset.type == 'compressed':
                 fs = CompressedFileSet(self.name,
+                                       self.project_id,
                                        fileset.name,
                                        fileset.url,
                                        fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'bazaar':
                 fs = BazaarFileSet(self.name,
+                                   self.project_id,
                                    fileset.name,
                                    fileset.url,
                                    fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'transifex':
                 fs = TransifexFileSet(self.name,
+                                      self.project_id,
                                       fileset.name,
                                       fileset.url,
                                       fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'transifexhub':
                 fs = TransifexHubFileSet(self.name,
+                                      self.project_id,
                                       fileset.name,
                                       fileset.url,
                                       fileset.target)
                 fs.set_project(self)
             elif fileset.type == 'local-dir':
                 fs = LocalDirFileSet(self.name,
+                                     self.project_id,
                                      fileset.name,
                                      fileset.url,
                                      fileset.target)
             elif fileset.type == 'file':
                 fs = FileFileSet(self.name,
+                                 self.project_id,
                                  fileset.name,
                                  fileset.url,
                                  fileset.target)
             elif fileset.type == 'subversion':
                 fs = SubversionFileSet(self.name,
+                                       self.project_id,
                                        fileset.name,
                                        fileset.url,
                                        fileset.target)
             elif fileset.type == 'crawl':
                 fs = CrawlFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'git':
                 fs = GitFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'gerrit-directory':
                 fs = GerritDirectoryFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
@@ -146,6 +158,7 @@ class Project(object):
                 fs.set_project(self)
             elif fileset.type == 'gitweb':
                 fs = GitWebFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
@@ -153,11 +166,13 @@ class Project(object):
                 fs.set_project(self)
             elif fileset.type == 'transvision':
                 fs = TransvisionFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
             elif fileset.type == 'cgit':
                 fs = CGitFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
@@ -165,23 +180,27 @@ class Project(object):
                 fs.set_project(self)
             elif fileset.type == 'zanata':
                 fs = ZanataFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
             elif fileset.type == 'pontoon':
                 fs = PontoonFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
                 fs.set_project(self)
             elif fileset.type == 'mercurial':
                 fs = MercurialFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'weblate':
                 fs = WeblateFileSet(self.name,
+                                  self.project_id,
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)

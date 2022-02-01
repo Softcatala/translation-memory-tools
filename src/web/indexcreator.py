@@ -63,7 +63,7 @@ class IndexCreator(object):
             if project_dto.selectable:
                 self.options.append(project_dto.name)
 
-            self._process_project(project_dto.name,
+            self._process_project(project_dto.project_id,
                                   project_dto.filename,
                                   project_dto.softcatala)
             self.projects += 1
@@ -93,12 +93,12 @@ class IndexCreator(object):
 
         return comment
 
-    def _process_project(self, name, filename, softcatala):
+    def _process_project(self, project_id, filename, softcatala):
         entries = set()
-        directory = os.path.join(self.po_directory,"individual_pos/", name.lower())
+        directory = os.path.join(self.po_directory,"individual_pos/", project_id)
         findFiles = FindFiles()
         for filename in findFiles.find_recursive(directory, '*.po'):
-            self._process_file(name, filename, softcatala, entries)
+            self._process_file(project_id, filename, softcatala, entries)
 
 
     def _write_entry(self, entries, s, t, x, c, p, softcatala):
@@ -127,7 +127,7 @@ class IndexCreator(object):
                          project=p,
                          softcatala=softcatala)
 
-    def _process_file(self, name, filename, softcatala, entries):
+    def _process_file(self, project_id, filename, softcatala, entries):
         try:
             input_po = polib.pofile(filename)
 
@@ -135,7 +135,7 @@ class IndexCreator(object):
                 self.sentences += 1
                 s = entry.msgid
                 t = entry.msgstr
-                p = name
+                p = project_id
                 x = entry.msgctxt
                 c = self._get_comment(entry)
 

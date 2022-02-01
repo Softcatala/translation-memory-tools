@@ -123,7 +123,7 @@ class GenerateQualityReports():
         cmd = pology['command'].format(posieve, rules, po_transonly, html)
         os.system(cmd)
 
-    def load_projects_from_json(self):
+    def load_projects_ids_from_json(self):
         projects = []
         projects_dir = '../cfg/projects/'
         json = JsonBackend(projects_dir)
@@ -134,8 +134,7 @@ class GenerateQualityReports():
                 print("Skipping quality generation for: " + project_dto.name)
                 continue
 
-            project_dto_lower = project_dto.name.lower().strip()
-            projects.append(project_dto_lower)
+            projects.append(project_dto.project_id)
 
         return projects
 
@@ -208,7 +207,7 @@ class GenerateQualityReports():
         self.init_logging(True)
 
         total_start_time = datetime.datetime.now()
-        projects = self.load_projects_from_json()
+        projects = self.load_projects_ids_from_json()
         source_dir = self.read_parameters()
         logging.debug(f"Root source_dir {source_dir}")
         with ThreadPoolExecutor(max_workers=4) as executor:

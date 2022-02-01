@@ -54,9 +54,6 @@ class TranslationMemory(dict):
                  last_translation_update=None, projectweb=None, filename=None,
                  quality_report=True, license='', project_id=''):
 
-        if len(project_id) == 0:
-            project_id = name
-
         self.__setitem__('name', name)
         self.__setitem__('project_id', project_id)
         self.__setitem__('projectweb', projectweb)
@@ -64,7 +61,7 @@ class TranslationMemory(dict):
         self.__setitem__('po_file_link', get_zip_file(get_link_to_po(filename)))
         self.__setitem__('tmx_file_text', get_zip_file(get_tmx_file(filename)))
         self.__setitem__('tmx_file_link', get_zip_file(get_link_to_tmx(filename)))
-        self.__setitem__('quality_file_link', get_link_to_quality_report(name))
+        self.__setitem__('quality_file_link', get_link_to_quality_report(project_id))
         self.__setitem__('words', words)
         self.__setitem__('last_fetch', last_fetch)
         self.__setitem__('last_translation_update', last_translation_update)
@@ -179,7 +176,8 @@ def build_invidual_projects_memory(projects, memories, po_directory,
             projectweb=project_dto.projectweb,
             filename=project_dto.filename,
             license=project_dto.license,
-            quality_report=project_dto.quality_report
+            quality_report=project_dto.quality_report,
+            project_id=project_dto.project_id
         )
         memories.append(translation_memory)
 

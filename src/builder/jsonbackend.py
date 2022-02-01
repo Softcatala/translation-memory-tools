@@ -27,6 +27,7 @@ class ProjectDTO(object):
 
     def __init__(self, name):
         self.name = name
+        self.project_id = self._from_name_to_project_id(name)
         self.filename = ''
         self.projectweb = ''
         self.softcatala = False
@@ -36,6 +37,10 @@ class ProjectDTO(object):
         self.license = ''
         self.quality_report = True
         self.filesets = []
+
+    def _from_name_to_project_id(self, name):
+        name = name.replace(" ", "_")
+        return name.lower()
 
     def __str__(self):
         text = ('ProjectDTO. Name: {0}, filename: {1}, project web: {2}, '
@@ -156,7 +161,7 @@ class JsonBackend(object):
                         self._process_fileset(project, data['fileset'])
 
                 if project.disabled is False:
-                    project.filename = '{0}-tm.po'.format(project.name.lower())
+                    project.filename = '{0}-tm.po'.format(project.project_id)
                     self.projects.append(project)
         except Exception as detail:
             msg = 'JsonBackend._load_file. Cannot load {0}. Error: {1}'. \

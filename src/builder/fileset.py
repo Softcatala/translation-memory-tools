@@ -32,9 +32,10 @@ class FileSet():
     temp_dir = './tmp'
     invidual_pos_dir = ''
 
-    def __init__(self, project_name, name, url, filename, parent_fileset = None):
+    def __init__(self, project_name, project_id, name, url, filename, parent_fileset = None):
         self.project_name = project_name
         self.name = name
+        self.project_id = project_id
         self.url = url
         self.filename = filename
         self.add_source = True
@@ -59,7 +60,7 @@ class FileSet():
         self.out_directory = out_directory
         self.invidual_pos_dir = os.path.join(out_directory,
                                              POS_DIR,
-                                             self.project_name.lower(),
+                                             self.project_id,
                                              self.name.lower())
 
     def set_add_source(self, add_source):

@@ -16,7 +16,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from builder.jsonbackend import JsonBackend
+from builder.jsonbackend import JsonBackend, ProjectDTO
 from os import path
 import unittest
 
@@ -48,6 +48,7 @@ class TestJsonBackend(unittest.TestCase):
     def _validate_mozilla_project(self, project):
         url = 'http://www.softcatala.org/wiki/Projectes/Mozilla'
         self.assertEquals(project.name, 'Mozilla')
+        self.assertEquals(project.project_id, 'mozilla')
         self.assertEquals(project.license, 'Propietària')
         self.assertEquals(project.quality_report, False)
         self.assertEquals(project.filename, 'mozilla-tm.po')
@@ -70,6 +71,10 @@ class TestJsonBackend(unittest.TestCase):
                 mozilla = project
 
         self._validate_mozilla_project(mozilla)
+
+    def test__from_name_to_project_id(self):
+        project = ProjectDTO("One Name")
+        self.assertEquals(project.project_id, 'one_name')
 
 
 if __name__ == '__main__':

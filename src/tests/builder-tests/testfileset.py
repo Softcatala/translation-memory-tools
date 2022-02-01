@@ -25,6 +25,7 @@ class TestFileSet(unittest.TestCase):
     def test_has_filename_filename(self):
 
         fileset = FileSet('project none',
+            'project id',
             'filsetname',
             'lp:~mailman-l10n-ca/mailman.po',
             'none.po')
@@ -39,6 +40,7 @@ class TestFileSet(unittest.TestCase):
 
 
         fileset_parent = FileSet('project none',
+            'project id',
             'filsetname',
             'lp:~mailman-l10n-ca/mailman.po',
             'none.po')
@@ -46,6 +48,7 @@ class TestFileSet(unittest.TestCase):
         fileset_parent.conversor_setup = 'conversor_setup'
 
         fileset = FileSet('project none',
+            'project id',
             'filsetname',
             'lp:~mailman-l10n-ca/mailman.po',
             'none.po', fileset_parent)
