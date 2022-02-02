@@ -26,6 +26,9 @@ class CheckProjects(object):
     def __init__(self, url):
         self.url = url
 
+    def _clean_num_formatting(self, num):
+        return num.replace(".", "")
+
     def _check_projects(self):
         PROJECT_ID = "tots"
 
@@ -41,7 +44,7 @@ class CheckProjects(object):
                 continue
 
             self._assert_greater(len(memory['name']), 0)
-            self._assert_greater(int(memory['words']), 0)
+            self._assert_greater(int(self._clean_num_formatting(memory['words'])), 0)
             self._assert_greater(len(memory['po_file_text']), 0)
             self._assert_greater(len(memory['po_file_link']), 0)
             self._assert_greater(len(memory['tmx_file_text']), 0)
