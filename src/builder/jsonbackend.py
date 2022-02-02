@@ -141,7 +141,7 @@ class JsonBackend(object):
 
         findFiles = FindFiles()
 
-        for filename in findFiles.find(self.directory, '*.json'):
+        for filename in findFiles.find_recursive(self.directory, '*.json'):
             self._load_file(filename)
 
     def _load_file(self, filename):

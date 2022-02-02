@@ -48,13 +48,13 @@ class ConvertFiles():
         self._convert_csv_files_to_po()
 
     def _convert_ts_files_to_po(self):
-        for tsfile in self.findFiles.find(self.convert_dir, '*.ts'):
+        for tsfile in self.findFiles.find_recursive(self.convert_dir, '*.ts'):
             fileName, fileExtension = os.path.splitext(tsfile)
             logging.info('convert ts file: {0}'.format(tsfile))
             os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
 
     def _convert_string_files_to_po(self):
-        for tsfile in self.findFiles.find(self.convert_dir, 'ca.strings'):
+        for tsfile in self.findFiles.find_recursive(self.convert_dir, 'ca.strings'):
             dirName = os.path.dirname(tsfile)
             logging.info('convert strings file: {0}'.format(dirName))
             filename = '{0}/strings-ca.po'.format(dirName)
@@ -64,21 +64,21 @@ class ConvertFiles():
             os.system(cmd.format(dirName, filename))
 
     def _uncompress_files(self):
-        for zipfile in self.findFiles.find(self.convert_dir, '*.zip'):
+        for zipfile in self.findFiles.find_recursive(self.convert_dir, '*.zip'):
             # Some projects have files with passwords that we do not know,
             # we pass an 'unknown' password to prevent been prompted for it
             cmd = 'unzip -p unknown -t {0} > /dev/null '.format(zipfile)
             os.system(cmd)
 
     def _convert_tmx_files_to_po(self):
-        for tmxfile in self.findFiles.find(self.convert_dir, '*.tmx'):
+        for tmxfile in self.findFiles.find_recursive(self.convert_dir, '*.tmx'):
             fileName, fileExtension = os.path.splitext(tmxfile)
             tmx = ConvertTmx(tmxfile, fileName + ".po")
             tmx.convert()
             logging.info('convert tmx file: {0}'.format(tmxfile))
 
     def _convert_csv_files_to_po(self):
-        for csvfile in self.findFiles.find(self.convert_dir, 'ca.csv'):
+        for csvfile in self.findFiles.find_recursive(self.convert_dir, 'ca.csv'):
             dirName = os.path.dirname(csvfile)
             pofile = dirName + '/ca.po'
             cmd = 'csv2po -i {0} -o {1}'.format(csvfile, pofile)
@@ -86,9 +86,9 @@ class ConvertFiles():
             logging.info('convert csv file: {0}'.format(csvfile))
 
     def _convert_properties_files_to_po(self):
-        files = self.findFiles.find(self.convert_dir, 'ca.properties')
+        files = self.findFiles.find_recursive(self.convert_dir, 'ca.properties')
         if len(files) == 0:
-            files = self.findFiles.find(self.convert_dir, 'ca_ES.properties')
+            files = self.findFiles.find_recursive(self.convert_dir, 'ca_ES.properties')
 
         for propfile in files:
             dirName = os.path.dirname(propfile)
@@ -110,7 +110,7 @@ class ConvertFiles():
 
     def _convert_ini_files_to_po(self):
 
-        for inifile in self.findFiles.find(self.convert_dir, '*.ini'):
+        for inifile in self.findFiles.find_recursive(self.convert_dir, '*.ini'):
             dirName = os.path.dirname(inifile)
             filename = os.path.basename(inifile)
 
@@ -139,7 +139,7 @@ class ConvertFiles():
             convert_ini = ConvertIni(src, trg, filename).convert()
 
     def _convert_php_resources_files_to_po(self):
-        if len(self.findFiles.find(self.convert_dir, '*.php')) == 0:
+        if len(self.findFiles.find_recursive(self.convert_dir, '*.php')) == 0:
             return
 
         logging.info('convert php directory: {0}'.format(self.convert_dir))
@@ -241,7 +241,7 @@ class ConvertFiles():
         self.android_dir = 'briar/res'
 
     def _convert_android_resources_files_to_po(self):
-        if len(self.findFiles.find(self.convert_dir, '*.xml')) == 0:
+        if len(self.findFiles.find_recursive(self.convert_dir, '*.xml')) == 0:
             return
 
         logging.info('convert Android directory: {0}'.format(self.convert_dir))
@@ -268,20 +268,20 @@ class ConvertFiles():
 
     def _convert_json_files_to_po(self):
         # Used for Privacy Badger
-        for jsonfile in self.findFiles.find(self.convert_dir, 'messages.json'):
+        for jsonfile in self.findFiles.find_recursive(self.convert_dir, 'messages.json'):
             if '/ca/' not in jsonfile:
                 continue
 
             self._convert_json_file_to_po(jsonfile, '../en_US/messages.json', '../ca/messages.json')
 
-        for jsonfile in self.findFiles.find(self.convert_dir, 'ca.json'):
+        for jsonfile in self.findFiles.find_recursive(self.convert_dir, 'ca.json'):
             self._convert_json_file_to_po(jsonfile, 'en.json', 'ca.json')
 
     def _convert_yml_files_to_po(self):
         EXPECTED_SRC = 'en.yml'
         EXPECTED_TRG = 'ca.yml'
 
-        for trgfile in self.findFiles.find(self.convert_dir, '*ca.yml'):
+        for trgfile in self.findFiles.find_recursive(self.convert_dir, '*ca.yml'):
             srcfile = trgfile.replace("ca.yml", "en.yml")
 
             if os.path.isfile(srcfile) is False:

@@ -43,7 +43,7 @@ class BazaarFileSet(FileSet):
     def _remove_non_translation_files(self):
         findFiles = FindFiles()
 
-        for filename in findFiles.find(self.temp_dir, '*'):
+        for filename in findFiles.find_recursive(self.temp_dir, '*'):
 
             if (re.match(self.pattern, filename) is None and
                 os.path.exists(filename)):

@@ -29,7 +29,7 @@ class ConvertFilesTest(unittest.TestCase):
     def _get_po_entries(self, directory):
         entries = 0
         findFiles = FindFiles()
-        for filename in findFiles.find(directory, '*.po'):
+        for filename in findFiles.find_recursive(directory, '*.po'):
             po_file = pofile(filename)
             entries += len(po_file.translated_entries())
 
@@ -37,7 +37,7 @@ class ConvertFilesTest(unittest.TestCase):
 
     def _clean_pos(self, directory):
         findFiles = FindFiles()
-        for filename in findFiles.find(directory, '*.po'):
+        for filename in findFiles.find_recursive(directory, '*.po'):
             remove(filename)
 
     def test_convert_json_files_to_po(self):

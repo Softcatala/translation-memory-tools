@@ -47,7 +47,7 @@ class MercurialFileSet(FileSet):
 
         findFiles = FindFiles()
 
-        for filename in findFiles.find(self.temp_dir, '*'):
+        for filename in findFiles.find_recursive(self.temp_dir, '*'):
 
             if re.match(self.pattern, filename) is None and \
                     os.path.exists(filename):

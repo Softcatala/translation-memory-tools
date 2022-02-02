@@ -87,7 +87,7 @@ class FileSet():
             return
 
         findFiles = FindFiles()
-        for filename in findFiles.find(self.temp_dir, '*.po'):
+        for filename in findFiles.find_recursive(self.temp_dir, '*.po'):
             relative = filename.replace(self.temp_dir, '')
             pofile = POFile(filename)
 
@@ -108,14 +108,14 @@ class FileSet():
             return
 
         findFiles = FindFiles()
-        for filename in findFiles.find(self.temp_dir, '*.po'):
+        for filename in findFiles.find_recursive(self.temp_dir, '*.po'):
             pofile = POFile(filename)
             pofile.po_preprocessing(self.po_preprocessing)
 
     def _should_exclude_file(self, filename):
         exclude = False
         for exfilename in self.excluded:
-            if filename.find(exfilename) != -1:
+            if filenameg(exfilename) != -1:
                 exclude = True
 
         if exclude:
@@ -169,7 +169,7 @@ class FileSet():
         self.add_comments()
 
         findFiles = FindFiles()
-        files = findFiles.find(self.temp_dir, '*.po')
+        files = findFiles.find_recursive(self.temp_dir, '*.po')
 
         if len(files) == 0:
             logging.info('No files to add in fileset: {0}'. format(self.name))
@@ -187,7 +187,7 @@ class FileSet():
             os.makedirs(self.invidual_pos_dir)
 
         findFiles = FindFiles()
-        files = findFiles.find(self.temp_dir, '*.po')
+        files = findFiles.find_recursive(self.temp_dir, '*.po')
         for source in files:
             dirname = os.path.dirname(source)
             if dirname != self.temp_dir:
