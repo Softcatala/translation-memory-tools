@@ -1,5 +1,5 @@
 {
-    "project": "SANE", 
+    "project": "Scanner Access Now Easy", 
     "projectweb": "http://www.sane-project.org/", 
     "fileset": {
         "backends": {
