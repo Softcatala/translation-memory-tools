@@ -52,7 +52,8 @@ class TestSearch(unittest.TestCase):
                                    target=self.data_set[idx + 1],
                                    comment=u'',
                                    context=u'',
-                                   project=self.data_set[idx + 2],
+                                   project_name=self.data_set[idx + 2],
+                                   project_id=self.data_set[idx + 2] + "_id",
                                    softcatala=self.data_set[idx + 3])
 
         self.index.writer.commit()
@@ -60,7 +61,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_query_source(self):
         ix = self._create_index()
-        search = Search(u'Today', None, u'gnome')
+        search = Search(u'Today', None, u'gnome_id')
         search.search(ix)
         results = search.get_results()
 
@@ -69,7 +70,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_query_source_with_two_projects(self):
         ix = self._create_index()
-        search = Search(u'Yesterday', None, u'gnome,abiword')
+        search = Search(u'Yesterday', None, u'gnome_id,abiword_id')
         search.search(ix)
         results = search.get_results()
 
@@ -79,7 +80,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_query_source_with_three_projects_with_spaces(self):
         ix = self._create_index()
-        search = Search(u'Yesterday', None, u'gnome,abiword,Microsoft Terminology')
+        search = Search(u'Yesterday', None, u'gnome_id,abiword_id,Microsoft Terminology_id')
         search.search(ix)
         results = search.get_results()
 
@@ -90,7 +91,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_query_source_with_single_project_with_spaces(self):
         ix = self._create_index()
-        search = Search(u'Yesterday', None, u'Microsoft Terminology')
+        search = Search(u'Yesterday', None, u'Microsoft Terminology_id')
         search.search(ix)
         results = search.get_results()
 
@@ -111,7 +112,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_with_or_query_source(self):
         ix = self._create_index()
-        search = Search(u'Today OR Yesterday', None, u'gnome')
+        search = Search(u'Today OR Yesterday', None, u'gnome_id')
         search.search(ix)
         results = search.get_results()
 
@@ -121,7 +122,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_with_not_query_source(self):
         ix = self._create_index()
-        search = Search(u'Documents NOT Yesterday', None, u'gnome')
+        search = Search(u'Documents NOT Yesterday', None, u'gnome_id')
         search.search(ix)
         results = search.get_results()
 
@@ -131,7 +132,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_simple_with_and_query_source(self):
         ix = self._create_index()
-        search = Search(u'Documents AND late', None, u'gnome')
+        search = Search(u'Documents AND late', None, u'gnome_id')
         search.search(ix)
         results = search.get_results()
 
@@ -140,7 +141,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_source_target(self):
         ix = self._create_index()
-        search = Search(u'Documents', u'Ahir', u'gnome')
+        search = Search(u'Documents', u'Ahir', u'gnome_id')
         search.search(ix)
         results = search.get_results()
 
@@ -149,7 +150,7 @@ class TestSearch(unittest.TestCase):
 
     def test_query_source_OR_target(self):
         ix = self._create_index()
-        search = Search(u'Today OR No', u'trobat', u'gnome')
+        search = Search(u'Today OR No', u'trobat', u'gnome_id')
         search.search(ix)
         results = search.get_results()
 
@@ -159,7 +160,7 @@ class TestSearch(unittest.TestCase):
 
     def test_get_json(self):
         ix = self._create_index()
-        search = Search(u'Today OR No', u'trobat', u'gnome')
+        search = Search(u'Today OR No', u'trobat', u'gnome_id')
         search.search(ix)
         results = search.get_json()
 

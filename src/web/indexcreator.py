@@ -64,6 +64,7 @@ class IndexCreator(object):
                 self.options.append(project_dto.name)
 
             self._process_project(project_dto.project_id,
+                                  project_dto.name,
                                   project_dto.filename,
                                   project_dto.softcatala)
             self.projects += 1
@@ -93,15 +94,15 @@ class IndexCreator(object):
 
         return comment
 
-    def _process_project(self, project_id, filename, softcatala):
+    def _process_project(self, project_id, project_name, filename, softcatala):
         entries = set()
         directory = os.path.join(self.po_directory,"individual_pos/", project_id)
         findFiles = FindFiles()
         for filename in findFiles.find_recursive(directory, '*.po'):
-            self._process_file(project_id, filename, softcatala, entries)
+            self._process_file(project_id, project_name, filename, softcatala, entries)
 
 
-    def _write_entry(self, entries, s, t, x, c, p, softcatala):
+    def _write_entry(self, entries, s, t, x, c, project_id, project_name, softcatala):
         if self.debug_keyword is not None and self.debug_keyword.strip() == s:
             print("Source: " + s)
             print("Translation: " + t)
@@ -124,10 +125,11 @@ class IndexCreator(object):
                          target=t,
                          comment=c,
                          context=x,
-                         project=p,
+                         project_name=project_name,
+                         project_id=project_id,
                          softcatala=softcatala)
 
-    def _process_file(self, project_id, filename, softcatala, entries):
+    def _process_file(self, project_id, project_name, filename, softcatala, entries):
         try:
             input_po = polib.pofile(filename)
 
@@ -135,7 +137,6 @@ class IndexCreator(object):
                 self.sentences += 1
                 s = entry.msgid
                 t = entry.msgstr
-                p = project_id
                 x = entry.msgctxt
                 c = self._get_comment(entry)
 
@@ -145,25 +146,25 @@ class IndexCreator(object):
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
                         t = entry.msgstr_plural[0]
 
-                self._write_entry(entries, s, t, x, c, p, softcatala)
+                self._write_entry(entries, s, t, x, c, project_id, project_name, softcatala)
 
                 if entry.msgstr is None or len(entry.msgstr) == 0:
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 1:
                         self.sentences += 1
                         s = entry.msgid_plural
                         t = entry.msgstr_plural[1]
-                        self._write_entry(entries, s, t, x, c, p, softcatala)
+                        self._write_entry(entries, s, t, x, c, project_id, project_name, softcatala)
 
         except Exception as detail:
             print("Exception: " + str(detail))
 
-    def write_entry(self, source, target, comment, context, project, softcatala):
-
+    def write_entry(self, source, target, comment, context, project_id, project_name, softcatala):
         self.writer.add_document(source=source,
                                  target=target,
                                  comment=comment,
                                  context=context,
-                                 project=project,
+                                 project_id=project_id,
+                                 project=project_name,
                                  softcatala=softcatala)
 
     def save_index(self):
@@ -176,7 +177,8 @@ class IndexCreator(object):
                         comment=STORED,
                         context=STORED,
                         softcatala=BOOLEAN,
-                        project=ID(stored=True))
+                        project_id=ID(stored=True),
+                        project=STORED)
 
         if in_memory:
             st = RamStorage()

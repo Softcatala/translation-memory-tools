@@ -89,7 +89,7 @@ msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
 
         index = IndexCreator('.')
         index.writer = IndexWriterMock()
-        index._process_file('test_project', tmpfile.name, False, set())
+        index._process_file('test_project_id', 'test_project', tmpfile.name, False, set())
         stored = index.writer.store
 
         self.assertEquals(stored[0]['source'], u'Power off the selected virtual machines')
@@ -108,7 +108,7 @@ msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
 
         index = IndexCreator('.')
         index.writer = IndexWriterMock()
-        index._process_file('test_project', tmpfile.name, False, set())
+        index._process_file('test_project_id', 'test_project', tmpfile.name, False, set())
         stored = index.writer.store
         self.assertEquals(stored[0]['source'], u'Delete this photo from camera?')
         self.assertEquals(stored[0]['target'], u'Voleu suprimir aquesta fotografia de la càmera?')

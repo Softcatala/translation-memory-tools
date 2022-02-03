@@ -91,11 +91,11 @@ class Search(object):
                     projects = self.project.split(',')
                     val = ''.join(["'{0}',".format(project) for project in projects])
                     val = val[:-1].replace(',' , ' OR ')
-                    qs += u' project:({0})'.format(val)   
+                    qs += u' project_id:({0})'.format(val)
                 else:
-                    qs += u' project:(\'{0}\')'.format(self.project)
+                    qs += u' project_id:(\'{0}\')'.format(self.project)
 
-                fields.append("project")
+                fields.append("project_id")
 
         self.query = MultifieldParser(fields, ix.schema).parse(qs)
 
