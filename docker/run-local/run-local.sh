@@ -10,9 +10,7 @@ docker-compose -f local.yml run -d --use-aliases --name translation-memory-tools
 docker-compose -f local.yml run -v $PWD$/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder
 docker cp translation-memory-tools:/srv/web-docker .
 
-pushd ..
-docker build -t translation-memory-tools-build-data:master . -f dockerfile-data
-popd
+docker build -t translation-memory-tools-build-data:master . -f ../dockerfile-data
 bash ./stop-docker.sh
 
 # Build web
