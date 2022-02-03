@@ -150,7 +150,7 @@ class Corpus(object):
 
         f = open('corpus.txt', 'w')
 
-        for filename in findFiles.find(self.directory, '*.po'):
+        for filename in findFiles.find_recursive(self.directory, '*.po'):
 
             try:
                 print("Reading: " + filename)
