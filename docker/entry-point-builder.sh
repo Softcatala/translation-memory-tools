@@ -44,8 +44,19 @@ else
     grep -l "type.*weblate" cfg/projects/*.json  | xargs rm -f
 fi
 
-#cd $DIR_TMT_GIT/
-#mkdir cfg/projects/old && cp cfg/projects/In* cfg/projects/old/ && rm cfg/projects/*.json && mv cfg/projects/old/* cfg/projects/
+if [ "$DEV_SMALL_SET" == "1" ]; then
+    echo "Configuring a small set for development"
+    cd $DIR_TMT_GIT/
+    mkdir cfg/projects/old
+    cp cfg/projects/Deb* cfg/projects/old/
+    cp cfg/projects/Inkscape* cfg/projects/old/
+    cp cfg/projects/Integration* cfg/projects/old/
+    cp cfg/projects/Abi* cfg/projects/old/
+    cp cfg/projects/LibreCAD* cfg/projects/old/
+    cp cfg/projects/LXDE* cfg/projects/old/
+    cp cfg/projects/LXQt* cfg/projects/old/
+    rm cfg/projects/*.json && mv cfg/projects/old/* cfg/projects/
+fi
 
 # Build
 cd $DIR_TMT_GIT/deployment 

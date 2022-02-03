@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  tmt-languagetool:
+    image: tmt-languagetool
+    restart: always
+
+  tmt-builder:
+    image: tmt-builder
+
+    environment:
+      DEV_SMALL_SET: 1
+      LT_SERVER: http://tmt-languagetool:7001/v2/check
+
+    env_file:
+        - .env
+
+    restart: always
+
