@@ -115,7 +115,7 @@ class FileSet():
     def _should_exclude_file(self, filename):
         exclude = False
         for exfilename in self.excluded:
-            if filenameg(exfilename) != -1:
+            if filename(exfilename) != -1:
                 exclude = True
 
         if exclude:
