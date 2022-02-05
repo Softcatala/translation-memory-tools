@@ -1,0 +1,70 @@
+{
+  "licenseListVersion": "4a53770",
+  "licenses": [
+    {
+      "reference": "https://spdx.org/licenses/PSF-2.0.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/PSF-2.0.json",
+      "referenceNumber": 0,
+      "name": "Python Software Foundation License 2.0",
+      "licenseId": "PSF-2.0",
+      "seeAlso": [
+        "https://opensource.org/licenses/Python-2.0"
+      ],
+      "isOsiApproved": false
+    },
+    {
+      "reference": "https://spdx.org/licenses/Barr.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/Barr.json",
+      "referenceNumber": 1,
+      "name": "Barr License",
+      "licenseId": "Barr",
+      "seeAlso": [
+        "https://fedoraproject.org/wiki/Licensing/Barr"
+      ],
+      "isOsiApproved": false
+    },
+    {
+      "reference": "https://spdx.org/licenses/ClArtistic.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/ClArtistic.json",
+      "referenceNumber": 2,
+      "name": "Clarified Artistic License",
+      "licenseId": "ClArtistic",
+      "seeAlso": [
+        "http://gianluca.dellavedova.org/2011/01/03/clarified-artistic-license/",
+        "http://www.ncftp.com/ncftp/doc/LICENSE.txt"
+      ],
+      "isOsiApproved": false,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/Borceux.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/Borceux.json",
+      "referenceNumber": 3,
+      "name": "Borceux license",
+      "licenseId": "Borceux",
+      "seeAlso": [
+        "https://fedoraproject.org/wiki/Licensing/Borceux"
+      ],
+      "isOsiApproved": false
+    },
+    {
+      "reference": "https://spdx.org/licenses/BSD-2-Clause-Views.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/BSD-2-Clause-Views.json",
+      "referenceNumber": 481,
+      "name": "BSD 2-Clause with views sentence",
+      "licenseId": "BSD-2-Clause-Views",
+      "seeAlso": [
+        "http://www.freebsd.org/copyright/freebsd-license.html",
+        "https://people.freebsd.org/~ivoras/wine/patch-wine-nvidia.sh",
+        "https://github.com/protegeproject/protege/blob/master/license.txt"
+      ],
+      "isOsiApproved": false
+    }
+  ],
+  "releaseDate": "2022-01-10"
+}

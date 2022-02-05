@@ -21,28 +21,20 @@ from builder.projects import Projects
 import unittest
 from os import path
 import json
+from builder.licenses import Licenses
 
 
 class TestCfgValidation(unittest.TestCase):
 
-    def _load_valid_licenses_ids(self):
-        projects_dir = path.dirname(path.realpath(__file__))
-        filename = path.join(projects_dir, "licenses.json")
-        licenses_ids = set()
-        with open(filename) as json_file:
-            data = json.load(json_file)
-            licenses = data['licenses']
-            for license in licenses:
-                licenses_ids.add(license['licenseId'])
-
-        licenses_ids.add("propietària")
-        return licenses_ids
-
-    def test_cfg_validation(self):
+    def get_projects_cfg(self):
         projects_dir = path.dirname(path.realpath(__file__))
         projects_dir += '/../../../cfg/projects/'
         json = JsonBackend(projects_dir, validation = True)
         json.load()
+        return json
+
+    def test_cfg_validation(self):
+        json = self.get_projects_cfg()
 
         self.assertGreater(len(json.projects), 1)
 
@@ -52,19 +44,15 @@ class TestCfgValidation(unittest.TestCase):
             projects.add_project(project_dto, add_source = True)
 
     def test_check_license(self):
-        projects_dir = path.dirname(path.realpath(__file__))
-        projects_dir += '/../../../cfg/projects/'
-        json = JsonBackend(projects_dir)
-        json.load()
+        json = self.get_projects_cfg()
 
-        valid_licenses_ids = self._load_valid_licenses_ids()
+        valid_licenses_ids = Licenses().get_licenses_ids()
         for project in json.projects:
-            licenses_ids = [x.strip() for x in project.license.split(',')]
-            for license_id in licenses_ids:
-                if len(license_id) == 0:
-                    continue
+            license_id = project.license
+            if len(license_id) == 0:
+                continue
 
-                self.assertIn(license_id, valid_licenses_ids)
+            self.assertIn(license_id, valid_licenses_ids)
 
 if __name__ == '__main__':
     unittest.main()

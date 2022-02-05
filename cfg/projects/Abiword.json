@@ -1,5 +1,6 @@
 {
     "project": "Abiword", 
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/abiword/",
     "softcatala": true, 
     "fileset": {

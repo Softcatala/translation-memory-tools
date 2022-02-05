@@ -28,6 +28,7 @@ from optparse import OptionParser
 from builder.jsonbackend import JsonBackend
 from builder.pofile import POFile
 from builder.projectmetadatadao import ProjectMetaDataDao
+from builder.licenses import Licenses
 
 static_host = "https://static.softcatala.org/"
 
@@ -50,6 +51,14 @@ def write_download_json(ctx):
 
 class TranslationMemory(dict):
 
+    def _get_license_link(self, license):
+        links = Licenses().get_licenses_name_and_link()
+        values = links.get(license)
+        if values is None:
+            return ""
+        else:
+            return values['link']
+
     def __init__(self, words=None, name=None, last_fetch=None,
                  last_translation_update=None, projectweb=None, filename=None,
                  quality_report=True, license='', project_id=''):
@@ -67,6 +76,7 @@ class TranslationMemory(dict):
         self.__setitem__('last_translation_update', last_translation_update)
         self.__setitem__('quality_report', quality_report)
         self.__setitem__('license', license)
+        self.__setitem__('license_link', self._get_license_link(license))
 
 
 def get_link_to_quality_report(name):
