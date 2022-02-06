@@ -26,6 +26,11 @@
             "url": "https://salsa.debian.org/debian/po4a/raw/master/po/pod/ca.po", 
             "type": "file", 
             "target": "po4a-ca.po"       
+        },
+       "documentation": {
+            "url": "https://hosted.weblate.org/",
+            "pattern": "debian",
+            "type": "weblate"
         }
     }
 }
