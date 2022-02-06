@@ -64,6 +64,7 @@ class Projects(object):
 
     def add_project(self, project_dto, add_source):
         project = Project(project_dto.name, project_dto.project_id, project_dto.filename)
+        project.license = project_dto.license
         project.set_add_source(add_source)
         project.set_out_directory(self.out_directory)
         project.add_filesets(project_dto)
@@ -109,6 +110,11 @@ class Projects(object):
         projects_catalog = POCatalog(tm_file)
 
         for project in self.projects:
+            license = project.license.lower()
+            if project.license.lower() == 'propietària':
+                logging.debug(f"Projects. Skipping {project.name} into {self.tm_file} memory")
+                continue
+
             project_catalog = POCatalog(project.get_filename_fullpath())
             projects_catalog.add_pofile(project_catalog.filename)
 
