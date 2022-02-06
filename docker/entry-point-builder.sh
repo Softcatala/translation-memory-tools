@@ -37,7 +37,7 @@ else
     grep -l "type.*zanata" cfg/projects/*.json  | xargs rm -f
 fi
 
-if [[ -n "${WEBLATE_PROJECT_1}" && -n "${WEBLATE_TOKEN_1}" ]]; then
+if [[ -n "${WEBLATE_HOST_1}" && -n "${WEBLATE_TOKEN_1}" ]]; then
     python $DIR_TMT_GIT/docker/credentials/weblate.py $DIR_TMT_GIT/cfg/credentials/
 else
     echo "Removing Weblate projects"
