@@ -204,6 +204,7 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
+                fs.set_pattern(fileset.pattern)
             else:
                 msg = 'Unsupported filetype: {0}'.format(fileset.type)
                 logging.error(msg)

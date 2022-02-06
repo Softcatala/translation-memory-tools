@@ -1,0 +1,10 @@
+{
+    "project": "GNUCash",
+    "projectweb": "https://www.gnucash.org/",
+    "fileset": {
+         "GNUCash": {
+            "url": "https://hosted.weblate.org/",
+            "type": "weblate"
+        }
+    }
+}

@@ -23,13 +23,21 @@ import json
 import logging
 import os
 import yaml
+import re
 
 from .fileset import FileSet
+from .cache import Cache
 
 class WeblateFileSet(FileSet):
 
     TIMEOUT = 15
     token = None
+    cache = None
+    cached = 0
+    requests = 0
+
+    def set_pattern(self, pattern):
+        self.pattern = pattern
 
     def _get_auth_api_token(self):
         try:
@@ -39,10 +47,10 @@ class WeblateFileSet(FileSet):
             with open("../cfg/credentials/weblate.yaml", "r") as stream:
                 values = yaml.load(stream, Loader=yaml.FullLoader)
                 for value in values:
-                    if self.project_name not in value:
+                    if self.url not in value.keys():
                         continue
 
-                    self.token = value[self.project_name]['auth-token']
+                    self.token = value[self.url]['auth-token']
                     break
 
             if self.token is None:
@@ -56,9 +64,20 @@ class WeblateFileSet(FileSet):
             logging.error(msg)
 
     def _api_json_call(self, url):
-        req = urllib.request.Request(url, headers=self._get_headers())
-        response = urllib.request.urlopen(req, timeout=self.TIMEOUT)
-        response_text = response.read().decode(response.info().get_param('charset') or 'utf-8')
+        if self.cache == None:
+            self.cache = Cache()
+
+        cached = self.cache.get(url)
+        if cached:
+            response_text = cached
+            self.cached += 1
+        else:
+            req = urllib.request.Request(url, headers=self._get_headers())
+            response = urllib.request.urlopen(req, timeout=self.TIMEOUT)
+            response_text = response.read().decode(response.info().get_param('charset') or 'utf-8')
+            self.cache.set(url, response_text)
+            self.requests += 1
+
         return json.loads(response_text)
 
 
@@ -105,6 +124,11 @@ class WeblateFileSet(FileSet):
                 if not self._has_catalan_language(project_dict["languages_url"]):
                     continue
 
+                name_to_match = project_dict['name'].lower()
+                r = re.match(self.pattern, name_to_match)
+                if r is None:
+                    continue
+
                 components = self._get_components(project_dict["components_list_url"])
                 ids[slug] = components
 
@@ -146,3 +170,4 @@ class WeblateFileSet(FileSet):
                 self._get_file(slug, component)
 
         self.build()
+        logging.info(f"WeblateFileSet {self.cached} cached API requets, done {self.requests}")

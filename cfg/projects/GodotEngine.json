@@ -1,0 +1,11 @@
+{
+    "project": "Godot Engine",
+    "projectweb": "https://godotengine.org/",
+    "fileset": {
+         "Godot Engine": {
+            "url": "https://hosted.weblate.org/",
+            "pattern": "godot engine",
+            "type": "weblate"
+        }
+    }
+}

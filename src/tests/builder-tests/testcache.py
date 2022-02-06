@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Copyright (c) 2018-2021 Jordi Mas i Hernandez <jmas@softcatala.org>
+# Copyright (c) 2022 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -18,28 +17,30 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import os
-import sys
+from builder.cache import Cache
+import unittest
+import tempfile
+
+
+class TestCache(unittest.TestCase):
+
+    def test_get_non_existant(self):
+
+        tmpfile = tempfile.TemporaryDirectory().name
+        cache = Cache(tmpfile)
+
+        self.assertEquals(None, cache.get("1"))
+
+    def test_get_existant(self):
+        CONTENT = "contingut"
+        URL = "https://www.softcatala.org"
+
+        tmpfile = tempfile.TemporaryDirectory().name
+        cache = Cache(tmpfile)
+        cache.set(URL, CONTENT)
+
+        self.assertEquals(Content, cache.get(URL))
+
 
 if __name__ == '__main__':
-    print('Create Weblate credentials')
-
-    filename = os.path.join(sys.argv[1], 'weblate.yaml')
-    f = open(filename, "w+")
-
-    credentials = 0
-    for i in range(1, 10):
-        host = 'WEBLATE_HOST_{0}'.format(i)
-        token = 'WEBLATE_TOKEN_{0}'.format(i)
-
-        if token not in os.environ or host not in os.environ:
-            break
-
-        f.write("- {0}: \n".format(os.environ[host]))
-        f.write("    auth-token: {0}\n".format(os.environ[token]))
-        f.write("\n")
-        credentials = credentials + 1
-
-    f.close()
-    print("Wrote file {0} with {1} credentials ".format(filename, credentials))
-
+    unittest.main()
