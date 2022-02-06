@@ -1,21 +1,11 @@
 {
-    "project": "Weblate", 
-    "projectweb": "https://hosted.weblate.org/projects/weblate/", 
+    "project": "Weblate",
+    "projectweb": "https://hosted.weblate.org/projects/weblate/",
     "fileset": {
-        "weblate-master": {
-            "url": "https://hosted.weblate.org/download/weblate/master/ca/", 
-            "type": "file", 
-            "target": "weblate-master-ca.po"
-        },
-        "weblate-javascript": {
-            "url": "https://hosted.weblate.org/download/weblate/javascript/ca/", 
-            "type": "file", 
-            "target": "weblate-javascript-ca.po"
-        },
-        "weblate-website": {
-            "url": "https://hosted.weblate.org/download/weblate/website/ca/", 
-            "type": "file", 
-            "target": "weblate-website-ca.po"
+        "Weblate": {
+            "url": "https://hosted.weblate.org/",
+            "pattern": "weblate",
+            "type": "weblate"
         }
     }
 }
