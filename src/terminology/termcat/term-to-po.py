@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 #
 # Copyright (c) 2013 Jordi Mas i Hernandez <jmas@softcatala.org>
@@ -39,7 +38,7 @@ def main():
         'Plural-Forms': 'nplurals=2; plural=n != 1;',
     }
 
-    tree = ET.parse('4sources_termes.xml')
+    tree = ET.parse('termcat.xml')
     root = tree.getroot()
     terms = 0
     stored_terms = {}
@@ -59,7 +58,7 @@ def main():
             if not term_subentry.tag == 'denominacio':
                 continue
 
-            llengua = unicode(term_subentry.attrib['llengua'])
+            llengua = term_subentry.attrib['llengua']
             if llengua == 'en':
                 # Remove the indication that is a verb to facilitate matching
                 term = term_subentry.text.replace(", to", '')
@@ -75,8 +74,7 @@ def main():
         # For every English term available write an entry with the first Catalan
         # translation available
         for source in sources:
-            source = unicode(source)
-            translation = unicode(translations[0])
+            translation = translations[0]
 
             if source in stored_terms and stored_terms[source] == translation:
                 print(u'Skipping duplicated term: {0}'.format(source))
