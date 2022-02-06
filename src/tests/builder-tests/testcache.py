@@ -39,7 +39,7 @@ class TestCache(unittest.TestCase):
         cache = Cache(tmpfile)
         cache.set(URL, CONTENT)
 
-        self.assertEquals(Content, cache.get(URL))
+        self.assertEquals(CONTENT, cache.get(URL))
 
 
 if __name__ == '__main__':
