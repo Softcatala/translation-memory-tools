@@ -4,6 +4,7 @@
     "fileset": {
          "GNUCash": {
             "url": "https://hosted.weblate.org/",
+            "pattern": "gnucash",
             "type": "weblate"
         }
     }
