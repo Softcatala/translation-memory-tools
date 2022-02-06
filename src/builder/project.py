@@ -262,7 +262,7 @@ class Project(object):
 
             entries = len(poFile.translated_entries())
 
-        except Exception as detail:
+        except Exception:
             msg = 'Project.get_words_entries exception {0}'
             logging.error(msg.format(filename))
 
