@@ -35,7 +35,6 @@ from .subversionfileset import SubversionFileSet
 from .transifexfileset import TransifexFileSet
 from .transifexhubfileset import TransifexHubFileSet
 from .gitwebfileset import GitWebFileSet
-from .transvisionfileset import TransvisionFileSet
 from .cgitfileset import CGitFileSet
 from .zanatafileset import ZanataFileSet
 from .pontoonfileset import PontoonFileSet
@@ -164,12 +163,6 @@ class Project(object):
                                   fileset.target)
                 fs.set_pattern(fileset.pattern)
                 fs.set_project(self)
-            elif fileset.type == 'transvision':
-                fs = TransvisionFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
             elif fileset.type == 'cgit':
                 fs = CGitFileSet(self.name,
                                   self.project_id,
