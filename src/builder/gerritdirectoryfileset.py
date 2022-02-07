@@ -50,17 +50,17 @@ class GerritDirectoryFileSet(FileSet):
         working_file = filename + ".old"
         shutil.copy(filename, working_file)
 
-        lines = open(working_file, 'r').readlines()
-        file = open(filename, 'w')
-        cnt = 0
-        for line in lines:
-            cnt += 1
-            if cnt == 1:
-                continue
+        with open(working_file, 'r') as reader, open(filename, 'w') as writter:
+            lines = reader.readlines()
 
-            file.write(line)
+            cnt = 0
+            for line in lines:
+                cnt += 1
+                if cnt == 1:
+                    continue
 
-        file.close()
+                writter.write(line)
+
         os.remove(working_file)
 
     def expand_dynamic(self):
@@ -106,3 +106,4 @@ class GerritDirectoryFileSet(FileSet):
                       format(len(self.project.filesets)))
 
         self.project.report_errors = False
+        os.remove(self.filename)
