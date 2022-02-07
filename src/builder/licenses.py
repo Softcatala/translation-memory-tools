@@ -23,6 +23,8 @@ import json
 
 class Licenses():
 
+    PROPIETARY = 'propietària'
+
     def __init__(self, filename = "../licenses/licenses.json"):
         self.filename = filename
 
@@ -38,7 +40,7 @@ class Licenses():
             for license in licenses:
                 licenses_ids.add(license['licenseId'])
 
-        licenses_ids.add("propietària")
+        licenses_ids.add(self.PROPIETARY)
         return licenses_ids
 
 

@@ -66,10 +66,18 @@ class TranslationMemory(dict):
         self.__setitem__('name', name)
         self.__setitem__('project_id', project_id)
         self.__setitem__('projectweb', projectweb)
-        self.__setitem__('po_file_text', get_zip_file(filename))
-        self.__setitem__('po_file_link', get_zip_file(get_link_to_po(filename)))
-        self.__setitem__('tmx_file_text', get_zip_file(get_tmx_file(filename)))
-        self.__setitem__('tmx_file_link', get_zip_file(get_link_to_tmx(filename)))
+
+        if license == Licenses().PROPIETARY:
+            self.__setitem__('po_file_text', "")
+            self.__setitem__('po_file_link', "")
+            self.__setitem__('tmx_file_text', "")
+            self.__setitem__('tmx_file_link', "")
+        else:
+            self.__setitem__('po_file_text', get_zip_file(filename))
+            self.__setitem__('po_file_link', get_zip_file(get_link_to_po(filename)))
+            self.__setitem__('tmx_file_text', get_zip_file(get_tmx_file(filename)))
+            self.__setitem__('tmx_file_link', get_zip_file(get_link_to_tmx(filename)))
+
         self.__setitem__('quality_file_link', get_link_to_quality_report(project_id))
         self.__setitem__('words', words)
         self.__setitem__('last_fetch', last_fetch)

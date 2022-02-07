@@ -25,6 +25,7 @@ from .project import Project
 from .projectmetadatadao import ProjectMetaDataDao
 from .projectmetadatadto import ProjectMetaDataDto
 from .pocatalog import POCatalog
+from .licenses import Licenses
 
 
 class Projects(object):
@@ -111,7 +112,7 @@ class Projects(object):
 
         for project in self.projects:
             license = project.license.lower()
-            if project.license.lower() == 'propietària':
+            if project.license.lower() == Licenses().PROPIETARY:
                 logging.debug(f"Projects. Skipping {project.name} into {self.tm_file} memory")
                 continue
 
