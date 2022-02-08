@@ -170,4 +170,4 @@ class WeblateFileSet(FileSet):
                 self._get_file(slug, component)
 
         self.build()
-        logging.info(f"WeblateFileSet {self.cached} cached API requets, done {self.requests}")
+        logging.info(f"WeblateFileSet {self.cached} cached API requests, done {self.requests}")
