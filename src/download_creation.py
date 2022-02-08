@@ -168,6 +168,10 @@ def build_combined_memory(projects, memories, filename, name, project_id, po_dir
     create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
     for project_dto in projects:
+
+        if project_dto.license == Licenses().PROPIETARY:
+            continue
+
         update_zipfile(po_directory, filename, project_dto.filename,
                        out_directory)
         update_zipfile(tmx_directory, get_tmx_file(filename),
