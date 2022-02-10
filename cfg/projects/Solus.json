@@ -13,7 +13,7 @@
             "target": "brisk-menu-ca.po"
         },
         "budgie-desktop": {
-            "url": "https://translate.getsol.us/download/budgie-desktop/translations/ca/?format=po",
+            "url": "https://raw.githubusercontent.com/BuddiesOfBudgie/budgie-desktop/master/po/ca.po",
             "type": "file",
             "target": "budgie-desktop-ca.po"
         }
