@@ -25,11 +25,11 @@ from .convertfiles import ConvertFiles
 from .findfiles import FindFiles
 from .pocatalog import POCatalog
 from .pofile import POFile
+import tempfile
 
 
 class FileSet():
 
-    temp_dir = './tmp'
     invidual_pos_dir = ''
 
     def __init__(self, project_name, project_id, name, url, filename, parent_fileset = None):
@@ -44,6 +44,7 @@ class FileSet():
         self.words = -1
         self.duplicates = ''
         self.set_out_directory("")
+        self.temp_dir = tempfile.TemporaryDirectory().name
 
         if parent_fileset:
             self.conversor_setup = parent_fileset.conversor_setup
@@ -175,7 +176,7 @@ class FileSet():
             logging.info('No files to add in fileset: {0}'. format(self.name))
             return
 
-        fileset_tm = 'fileset-tm.po'
+        fileset_tm = next(tempfile._get_candidate_names())
         self.po_catalog = POCatalog(fileset_tm)
         self._build_tm_for_fileset(fileset_tm, files)
         self._add_tm_for_fileset_to_project_tm(fileset_tm)

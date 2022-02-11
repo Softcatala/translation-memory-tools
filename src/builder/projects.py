@@ -20,6 +20,8 @@
 import datetime
 import logging
 import os
+import threading
+from concurrent.futures import ProcessPoolExecutor
 
 from .project import Project
 from .projectmetadatadao import ProjectMetaDataDao
@@ -74,8 +76,15 @@ class Projects(object):
 
     def __call__(self):
         """Process all projects"""
+
+        # Use use Processess instead of Theads because some filesets (e.g. transifex) need to
+        # to change the proccess directory to work.
+        # The number of processess to use is calculated by Python taking into account number of cpus
+        with ProcessPoolExecutor() as executor:
+            for project in self.projects:
+                executor.submit(project.do)
+
         for project in self.projects:
-            project.do()
 
             words, entries = project.get_words_entries()
 

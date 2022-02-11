@@ -55,8 +55,9 @@ rm -f -r $NEW_POS
 
 # Download new translation files
 python builder.py -d
-python builder.py --all
-python builder.py --softcatala
+python builder.py --all &
+python builder.py --softcatala &
+wait
 
 copy_successfully_downloaded_files "*.po" 200 $PUBLISHED_PO
 

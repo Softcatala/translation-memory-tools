@@ -19,7 +19,7 @@
 
 import os
 import shutil
-
+import tempfile
 
 class POCatalog(object):
     """Encapsulates the access to PO catalogs using msgattrib and
@@ -34,7 +34,7 @@ class POCatalog(object):
 
     def add_pofile(self, pofile):
         if os.path.isfile(self.filename):
-            backup = 'tm-project-previous.po'
+            backup = next(tempfile._get_candidate_names())
             shutil.copy(self.filename, backup)
             cmd = 'msgcat -tutf-8 --use-first -o {0} {1} \'{2}\' 2> /dev/null'
             os.system(cmd.format(self.filename, backup, pofile))
@@ -44,7 +44,7 @@ class POCatalog(object):
                 shutil.copy(pofile, self.filename)
 
     def cleanup(self):
-        backup = 'tm-project-previous.po'
+        backup = next(tempfile._get_candidate_names())
         shutil.copy(self.filename, backup)
         cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}' \
               ' 2> /dev/null'
