@@ -210,7 +210,8 @@ class GenerateQualityReports():
         projects = self.load_projects_ids_from_json()
         source_dir = self.read_parameters()
         logging.debug(f"Root source_dir {source_dir}")
-        with ThreadPoolExecutor(max_workers=4) as executor:
+        # The number of processess to use is calculated by Python taking into account number of cpus
+        with ThreadPoolExecutor() as executor:
             for project in projects:
                 executor.submit(self.generate_report, os.path.join(source_dir, project))
 
