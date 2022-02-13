@@ -1,6 +1,7 @@
 
 {
-    "project": "DuckDuckGo", 
+    "project": "DuckDuckGo",
+    "license" : "Apache-2.0",
     "projectweb": "https://github.com/duckduckgo/duckduckgo-locales",
     "fileset": {
         "DuckDuckGo": {

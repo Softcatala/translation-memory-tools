@@ -1,5 +1,6 @@
 {
-    "project": "PoEdit", 
+    "project": "PoEdit",
+    "license" : "MIT",
     "projectweb": "https://www.softcatala.org/projectes/eines-informatiques-per-a-traductors/", 
     "softcatala": true, 
     "fileset": {

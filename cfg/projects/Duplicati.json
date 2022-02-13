@@ -1,5 +1,6 @@
 {
-    "project": "Duplicati", 
+    "project": "Duplicati",
+    "license" : "LGPL-2.1-only",
     "projectweb": "https://www.duplicati.com/", 
     "fileset": {
         "duplicati": {

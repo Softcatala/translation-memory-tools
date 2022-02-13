@@ -1,5 +1,6 @@
 {
-    "project": "Scanner Access Now Easy", 
+    "project": "Scanner Access Now Easy",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "http://www.sane-project.org/", 
     "fileset": {
         "backends": {

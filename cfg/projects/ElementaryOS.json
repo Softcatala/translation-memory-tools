@@ -1,5 +1,6 @@
 {
     "project": "Elementary OS",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://elementary.io/ca/", 
     "fileset": {
          "main": {

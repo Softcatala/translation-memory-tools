@@ -1,5 +1,6 @@
 {
     "project": "Deepin",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.deepin.org/",
     "fileset": {
         "Deepin": {

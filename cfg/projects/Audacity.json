@@ -1,5 +1,6 @@
 {
-    "project": "Audacity", 
+    "project": "Audacity",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.audacityteam.org/",
     "fileset": {
         "Audacity": {

@@ -1,5 +1,6 @@
 {
-    "project": "WordPress", 
+    "project": "WordPress",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://ca.wordpress.org/", 
     "softcatala": true,
     "fileset": {

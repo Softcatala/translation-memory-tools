@@ -1,5 +1,6 @@
 {
     "project": "Briar",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/briar/",
     "softcatala": true,
     "fileset": {

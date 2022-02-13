@@ -1,5 +1,6 @@
 {
     "project": "GNUCash",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.gnucash.org/",
     "fileset": {
          "GNUCash": {

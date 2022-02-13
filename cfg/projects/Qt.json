@@ -1,5 +1,6 @@
 {
-    "project": "Qt", 
+    "project": "Qt",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://github.com/qtproject/qttranslations/blob/dev/translations/README", 
     "fileset": {
          "Qt": {

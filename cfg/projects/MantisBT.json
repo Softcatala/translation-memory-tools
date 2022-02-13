@@ -1,5 +1,6 @@
 {
     "project": "Mantis Bug Tracker",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.mantisbt.org/",
     "fileset": {
         "main": {

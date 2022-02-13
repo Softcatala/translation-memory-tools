@@ -1,5 +1,6 @@
 {
-    "project": "Fedora", 
+    "project": "Fedora",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/fedora/", 
     "softcatala": true, 
     "fileset": {

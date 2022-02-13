@@ -1,5 +1,6 @@
 {
-    "project": "Git", 
+    "project": "Git",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.softcatala.org/projectes/git/",
     "softcatala": true,
     "fileset": {

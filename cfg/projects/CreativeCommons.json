@@ -1,5 +1,6 @@
 {
-    "project": "CreativeCommons", 
+    "project": "CreativeCommons",
+    "license" : "CC-BY-4.0",
     "projectweb": "https://creativecommons.org/", 
     "fileset": {
         "CreativeCommons": {

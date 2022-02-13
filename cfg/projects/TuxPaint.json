@@ -1,5 +1,6 @@
 {
-    "project": "TuxPaint", 
+    "project": "TuxPaint",
+    "license" : "GPL-2.0-only",
     "projectweb": "http://www.tuxpaint.org/",
     "fileset": {
         "tuxpaint": {

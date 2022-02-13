@@ -1,5 +1,6 @@
 {
-    "project": "SugarLabs", 
+    "project": "SugarLabs",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/sugarlabs/", 
     "softcatala": true,
     "fileset": {

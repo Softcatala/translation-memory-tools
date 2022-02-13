@@ -1,5 +1,6 @@
 {
-    "project": "Android", 
+    "project": "Android",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.android.com/",
     "quality_report": false,
     "fileset": {

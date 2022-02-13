@@ -1,5 +1,6 @@
 {
-    "project": "Wine", 
+    "project": "Wine",
+    "license" : "LGPL-2.1-only",
     "projectweb": "https://www.winehq.org/",
     "fileset": {
         "Wine": {

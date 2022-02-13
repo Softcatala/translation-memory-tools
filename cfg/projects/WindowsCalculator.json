@@ -1,5 +1,6 @@
 {
     "project": "Windows Calculator",
+    "license" : "MIT",
     "projectweb": "https://github.com/microsoft/calculator",
     "fileset": {
         "calc": {

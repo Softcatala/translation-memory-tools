@@ -1,5 +1,6 @@
 {
-    "project": "Qgis", 
+    "project": "Qgis",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.qgis.org/ca/site/", 
     "fileset": {
         "Qgis": {

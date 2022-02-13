@@ -1,5 +1,6 @@
 {
-    "project": "vokoscreen", 
+    "project": "vokoscreen",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://linuxecke.volkoh.de/vokoscreen/vokoscreen.html",
     "fileset": {
         "vokoscreen": {

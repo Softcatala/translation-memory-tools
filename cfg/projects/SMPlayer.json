@@ -1,5 +1,6 @@
 {
-    "project": "SMPlayer", 
+    "project": "SMPlayer",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.smplayer.info/",
     "fileset": {
         "SMPlayer": {

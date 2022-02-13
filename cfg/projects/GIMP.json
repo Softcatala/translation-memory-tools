@@ -1,5 +1,6 @@
 {
-    "project": "GIMP", 
+    "project": "GIMP",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://www.softcatala.org/projectes/gimp/", 
     "softcatala": true,
     "comment": "The 2-10 excluded in order to exclude the latest stable version",

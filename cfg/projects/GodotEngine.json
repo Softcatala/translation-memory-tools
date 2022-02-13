@@ -1,5 +1,6 @@
 {
     "project": "Godot Engine",
+    "license" : "MIT",
     "projectweb": "https://godotengine.org/",
     "fileset": {
          "Godot Engine": {

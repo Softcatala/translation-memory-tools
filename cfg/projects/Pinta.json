@@ -1,5 +1,6 @@
 {
-    "project": "Pinta", 
+    "project": "Pinta",
+    "license" : "X11",
     "projectweb": "https://translations.launchpad.net/pinta", 
     "fileset": {
         "Pinta": {

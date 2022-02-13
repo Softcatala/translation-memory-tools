@@ -1,5 +1,6 @@
 {
-    "project": "KDE", 
+    "project": "KDE",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://cat.kde.org/", 
     "fileset": {
         "gui-kf5": {

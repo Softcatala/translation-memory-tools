@@ -1,5 +1,6 @@
 {
-    "project": "OpenShot Video Editor", 
+    "project": "OpenShot Video Editor",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.openshot.org/",
     "fileset": {
         "Openshot": {

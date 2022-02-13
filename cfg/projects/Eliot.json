@@ -1,5 +1,6 @@
 {
-    "project": "Eliot", 
+    "project": "Eliot",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.nongnu.org/eliot/en/index.html",
     "fileset": {
         "Eliot": {

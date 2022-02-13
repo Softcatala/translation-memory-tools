@@ -1,5 +1,6 @@
 {
-    "project": "CoreBird", 
+    "project": "CoreBird",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://corebird.baedert.org/", 
     "fileset": {
         "CoreBird": {

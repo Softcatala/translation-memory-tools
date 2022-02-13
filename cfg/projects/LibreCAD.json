@@ -1,5 +1,6 @@
 {
-    "project": "LibreCAD", 
+    "project": "LibreCAD",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://translate.librecad.org/projects/librecad/",
     "fileset": {
         "LibreCAD": {

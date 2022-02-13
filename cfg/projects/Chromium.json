@@ -1,5 +1,6 @@
 {
-    "project": "Chromium", 
+    "project": "Chromium",
+    "license" : "BSD-3-Clause",
     "projectweb": "https://translations.launchpad.net/chromium-browser/translations/+lang/ca", 
     "fileset": {
         "chromium": {

@@ -1,5 +1,6 @@
 {
-    "project": "iD Editor", 
+    "project": "iD Editor",
+    "license" : "ISC",
     "projectweb": "http://ideditor.com", 
     "fileset": {
         "ideditor": {

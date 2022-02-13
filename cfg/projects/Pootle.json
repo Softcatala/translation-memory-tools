@@ -1,5 +1,6 @@
 {
-    "project": "Pootle", 
+    "project": "Pootle",
+    "license" : "GPL-3.0-only",
     "softcatala": true, 
     "fileset": {
         "pootle": {

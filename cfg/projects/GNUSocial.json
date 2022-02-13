@@ -1,5 +1,6 @@
 {
-    "project": "GNUSocial", 
+    "project": "GNUSocial",
+    "license" : "AGPL-3.0-or-later",
     "projectweb": "https://gnu.io/social/", 
     "fileset": {
         "GNUSocial": {

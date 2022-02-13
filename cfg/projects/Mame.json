@@ -1,5 +1,6 @@
 {
-    "project": "Mame", 
+    "project": "Mame",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.mamedev.org/",
     "fileset": {
         "mame": {

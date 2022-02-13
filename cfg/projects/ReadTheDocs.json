@@ -1,5 +1,6 @@
 {
-    "project": "Read the Docs", 
+    "project": "Read the Docs",
+    "license" : "MIT",
     "projectweb": "https://readthedocs.org/", 
     "fileset": {
         "ReadTheDocs": {

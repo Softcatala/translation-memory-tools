@@ -1,5 +1,6 @@
 {
     "project": "Exiv2",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.exiv2.org/",
     "fileset": {
         "exiv2": {

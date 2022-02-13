@@ -1,5 +1,6 @@
 {
-    "project": "aMule", 
+    "project": "aMule",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "http://wiki.amule.org/wiki/Translations", 
     "fileset": {
         "aMule": {

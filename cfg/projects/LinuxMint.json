@@ -1,5 +1,6 @@
 {
-    "project": "Linux Mint", 
+    "project": "Linux Mint",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://launchpad.net/~linuxmint-translation-team-catalan", 
     "fileset": {
         "Mint": {

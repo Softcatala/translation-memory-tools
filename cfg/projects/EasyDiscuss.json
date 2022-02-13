@@ -1,5 +1,6 @@
 {
     "project": "EasyDiscuss",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://stackideas.com/easydiscuss",
     "fileset": {
         "EasyDiscuss": {

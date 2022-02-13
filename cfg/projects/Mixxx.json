@@ -1,5 +1,6 @@
 {
     "project": "Mixxx",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.mixxx.org/",
     "fileset": {
         "Mixxx": {

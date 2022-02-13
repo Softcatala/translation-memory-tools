@@ -1,5 +1,6 @@
 {
-    "project": "Askbot", 
+    "project": "Askbot",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://askbot.com/", 
     "fileset": {
         "Askbot": {

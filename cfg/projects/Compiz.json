@@ -1,5 +1,6 @@
 {
-    "project": "Compiz", 
+    "project": "Compiz",
+    "license" : "MIT",
     "projectweb": "http://www.compiz.org", 
     "fileset": {
         "simple-ccsm": {

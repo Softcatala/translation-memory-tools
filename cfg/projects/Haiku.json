@@ -1,5 +1,6 @@
 {
     "project": "Haiku",
+    "license" : "MIT",
     "projectweb": "https://www.haiku-os.org/",
     "fileset": {
         "Haiku": {

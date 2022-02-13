@@ -1,5 +1,6 @@
 {
     "project": "Qlipper",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://github.com/pvanek/qlipper",
     "fileset": {
         "qlipper": {

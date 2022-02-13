@@ -1,5 +1,6 @@
 {
-    "project": "The Battle For Wesnoth", 
+    "project": "The Battle For Wesnoth",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.wesnoth.org/gettext/",
     "fileset": {
         "Wesnoth": {

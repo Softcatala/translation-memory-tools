@@ -1,5 +1,6 @@
 {
-    "project": "LXQt", 
+    "project": "LXQt",
+    "license" : "LGPL-2.1-or-later",
     "projectweb": "https://lxqt.org/",
     "fileset": {
         "LXQt": {

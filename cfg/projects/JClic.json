@@ -1,5 +1,6 @@
 {
     "project": "JClic",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://clic.xtec.cat/ca/",
     "fileset": {
         "JClic": {

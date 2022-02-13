@@ -1,5 +1,6 @@
 {
-    "project": "MediaWiki", 
+    "project": "MediaWiki",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.mediawiki.org/wiki/MediaWiki/ca", 
     "fileset": {
         "main": {

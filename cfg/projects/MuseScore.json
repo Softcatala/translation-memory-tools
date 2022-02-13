@@ -1,5 +1,6 @@
 {
     "project": "MuseScore",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://musescore.org/ca",
     "fileset": {
         "core": {

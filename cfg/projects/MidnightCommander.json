@@ -1,5 +1,6 @@
 {
-    "project": "Midnight Commander", 
+    "project": "Midnight Commander",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://midnight-commander.org/",
     "fileset": {
         "mc": {

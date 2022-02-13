@@ -1,5 +1,6 @@
 {
     "project": "Transmission",
+    "license" : "MIT",
     "projectweb": "https://transmissionbt.com/",
     "fileset": {
         "Transmission": {

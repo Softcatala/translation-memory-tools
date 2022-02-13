@@ -1,5 +1,6 @@
 {
     "project": "Linux Show Player",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://github.com/FrancescoCeruti/linux-show-player",
     "fileset": {
         "qlcplus": {

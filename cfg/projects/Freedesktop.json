@@ -1,5 +1,6 @@
 {
-    "project": "Freedesktop", 
+    "project": "Freedesktop",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://freedesktop.org/wiki/Software/", 
     "fileset": {
         "accounts-service": {

@@ -1,5 +1,6 @@
 {
     "project": "Solus",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://getsol.us/",
     "fileset": {
         "SC": {

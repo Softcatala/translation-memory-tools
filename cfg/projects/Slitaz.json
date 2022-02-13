@@ -1,5 +1,6 @@
 {
     "project": "Slitaz",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "http://www.slitaz.org/i18n.php",
     "disabled": true,
     "fileset": {

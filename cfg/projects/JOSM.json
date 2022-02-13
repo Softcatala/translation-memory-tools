@@ -1,5 +1,6 @@
 {
     "project": "JOSM",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://translations.launchpad.net/josm/trunk/+pots/josm/ca/+translate",
     "fileset": {
         "JOSM": {

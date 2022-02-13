@@ -1,5 +1,6 @@
 {
-    "project": "Django", 
+    "project": "Django",
+    "license" : "BSD-3-Clause",
     "projectweb": "https://code.djangoproject.com/wiki/Localization", 
     "fileset": {
         "main": {

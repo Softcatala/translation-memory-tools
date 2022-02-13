@@ -1,5 +1,6 @@
 {
-    "project": "Pidgin", 
+    "project": "Pidgin",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/pidgin/",
     "softcatala": true,
     "fileset": {

@@ -1,5 +1,6 @@
 {
-    "project": "GameHub", 
+    "project": "GameHub",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://tkashkin.tk/projects/gamehub/", 
     "fileset": {
         "GameHub": {
