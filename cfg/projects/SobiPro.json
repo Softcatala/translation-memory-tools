@@ -1,5 +1,6 @@
 {
     "project": "SobiPro",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://www.sigsiu.net",
     "fileset": {
         "SobiPro": {

@@ -1,5 +1,6 @@
 {
-    "project": "Cyberduck", 
+    "project": "Cyberduck",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://cyberduck.io/", 
     "fileset": {
         "Cyberduck": {

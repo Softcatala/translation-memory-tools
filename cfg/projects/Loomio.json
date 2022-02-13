@@ -1,5 +1,6 @@
 {
     "project": "Loomio",
+    "license" : "AGPL-3.0-only",
     "projectweb": "https://www.loomio.org/",
     "comment" : "Disabled because error in source when converting to PO file",
     "disabled" : "true",

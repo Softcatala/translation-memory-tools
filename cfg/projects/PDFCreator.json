@@ -1,5 +1,6 @@
 {
-    "project": "PDFCreator", 
+    "project": "PDFCreator",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://translate.pdfforge.org/",
     "fileset": {
         "messages": {

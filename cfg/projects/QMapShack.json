@@ -1,5 +1,6 @@
 {
     "project": "QMapShack",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://wiki.openstreetmap.org/wiki/QMapShack",
     "fileset": {
         "QMapShack": {

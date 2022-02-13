@@ -1,5 +1,6 @@
 {
-    "project": "LanguageTool", 
+    "project": "LanguageTool",
+    "license" : "LGPL-2.1-or-later",
     "projectweb": "https://www.softcatala.org/projectes/languagetool/", 
     "softcatala": true,
     "fileset": {

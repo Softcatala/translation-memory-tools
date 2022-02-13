@@ -1,5 +1,6 @@
 {
     "project": "GPGTools",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://www.softcatala.org/projectes/gpgtools/", 
     "softcatala": true, 
     "fileset": {

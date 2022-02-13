@@ -1,5 +1,6 @@
 {
-    "project": "openSUSE", 
+    "project": "openSUSE",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://l10n.opensuse.org/languages/ca/",
     "fileset": {
         "yast": {

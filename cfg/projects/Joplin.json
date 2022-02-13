@@ -1,5 +1,6 @@
 {
-    "project": "Joplin", 
+    "project": "Joplin",
+    "license" : "MIT",
     "projectweb": "https://www.softcatala.org/projectes/joplin/",
     "softcatala": true,
     "fileset": {

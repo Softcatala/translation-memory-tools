@@ -1,5 +1,6 @@
 {
-    "project": "SimpleMobileTools", 
+    "project": "SimpleMobileTools",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://simplemobiletools.com/", 
     "fileset": {
        "App Launcher": {

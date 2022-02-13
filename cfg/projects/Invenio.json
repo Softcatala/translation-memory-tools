@@ -1,5 +1,6 @@
 {
-    "project": "Invenio", 
+    "project": "Invenio",
+    "license" : "MIT",
     "projectweb": "https://invenio-software.org/",
     "fileset": {
         "invenio": {

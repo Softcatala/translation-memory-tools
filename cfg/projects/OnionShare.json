@@ -1,5 +1,6 @@
 {
     "project": "OnionShare",
+    "license" : "GPL-3.0-only",
     "disabled": true,
     "projectweb": "https://hosted.weblate.org/projects/onionshare/translations/ca/",
     "fileset": {

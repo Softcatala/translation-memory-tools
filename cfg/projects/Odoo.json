@@ -1,5 +1,6 @@
 {
-    "project": "Odoo", 
+    "project": "Odoo",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.odoo.com/", 
     "fileset": {
         "Odoo": {

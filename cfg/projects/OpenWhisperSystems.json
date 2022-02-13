@@ -1,5 +1,6 @@
 {
-    "project": "Open Whisper Systems", 
+    "project": "Open Whisper Systems",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://whispersystems.org/", 
     "fileset": {
         "signal-android": {

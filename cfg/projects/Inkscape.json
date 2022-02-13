@@ -1,5 +1,6 @@
 {
-    "project": "Inkscape", 
+    "project": "Inkscape",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/inkscape/", 
     "softcatala": true, 
     "fileset": {

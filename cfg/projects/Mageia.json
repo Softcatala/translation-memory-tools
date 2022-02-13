@@ -1,5 +1,6 @@
 {
-    "project": "Mageia", 
+    "project": "Mageia",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.mageia.org/ca/", 
     "fileset": {
         "Mageia": {

@@ -1,5 +1,6 @@
 {
-    "project": "LibreOffice", 
+    "project": "LibreOffice",
+    "license" : "MPL-2.0",
     "projectweb": "https://www.softcatala.org/projectes/libreoffice/", 
     "softcatala": true, 
     "fileset": {

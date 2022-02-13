@@ -1,5 +1,6 @@
 {
-    "project": "Sympa", 
+    "project": "Sympa",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://translate.sympa.org/ca/", 
     "fileset": {
         "sympa-ui": {

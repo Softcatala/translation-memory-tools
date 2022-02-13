@@ -1,5 +1,6 @@
 {
     "project": "Open edX Platform",
+    "license" : "AGPL-3.0-only",
     "projectweb": "https://open.edx.org/",
     "fileset": {
         "Opendex": {

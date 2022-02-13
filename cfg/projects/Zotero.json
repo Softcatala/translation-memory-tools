@@ -1,5 +1,6 @@
 {
     "project": "Zotero",
+    "license" : "AGPL-3.0-only",
     "projectweb": "https://www.zotero.org/",
     "fileset": {
         "yumex": {

@@ -1,5 +1,6 @@
 {
     "project": "OpenBoard",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://openboard.ch/",
     "fileset": {
         "OpenBoard": {

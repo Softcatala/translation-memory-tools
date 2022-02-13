@@ -1,5 +1,6 @@
 {
-    "project": "Exaile", 
+    "project": "Exaile",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.exaile.org/",
     "fileset": {
         "Exaile": {

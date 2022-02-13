@@ -1,5 +1,6 @@
 {
-    "project": "Joomla", 
+    "project": "Joomla",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://community.joomla.org/translations.html",
     "fileset": {
         "Joomla": {

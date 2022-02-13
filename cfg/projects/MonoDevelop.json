@@ -1,5 +1,6 @@
 {
     "project": "MonoDevelop",
+    "license" : "LGPL-2.1-only",
     "projectweb": "https://www.monodevelop.com/",
     "softcatala": true, 
     "fileset": {

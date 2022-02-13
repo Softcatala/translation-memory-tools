@@ -1,5 +1,6 @@
 {
-    "project": "OpenStreetMap", 
+    "project": "OpenStreetMap",
+    "license" : "ODbL-1.0",
     "projectweb": "https://wiki.openstreetmap.org/wiki/Ca:Main_Page",
     "fileset": {
         "main": {

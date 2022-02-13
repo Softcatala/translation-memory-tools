@@ -1,5 +1,6 @@
 {
     "project": "isocodes",
+    "license" : "LGPL-2.1-or-later",
     "projectweb": "https://salsa.debian.org/iso-codes-team/iso-codes",
     "fileset": {
         "isocodes": {

@@ -1,5 +1,6 @@
 {
-    "project": "Scribus", 
+    "project": "Scribus",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://wiki.scribus.net/canvas/Official:Translation_Howto", 
     "fileset": {
         "scribus": {

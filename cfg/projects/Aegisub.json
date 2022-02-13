@@ -1,5 +1,6 @@
 {
     "project": "Aegisub",
+    "license" : "BSD-3-Clause",
     "projectweb": "http://www.aegisub.org/",
     "fileset": {
         "Aegisub": {

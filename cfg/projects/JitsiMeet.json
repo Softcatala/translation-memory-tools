@@ -1,5 +1,6 @@
 {
     "project": "Jitsi Meet",
+    "license" : "Apache-2.0",
     "projectweb": "https://jitsi.org/jitsi-meet/",
     "fileset": {
         "JitsiMeet-languages": {

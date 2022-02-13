@@ -1,5 +1,6 @@
 {
-    "project": "MKVToolNix", 
+    "project": "MKVToolNix",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://mkvtoolnix.download/",
     "fileset": {
         "mkvtoolnix": {

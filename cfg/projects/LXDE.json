@@ -1,5 +1,6 @@
 {
     "project": "LXDE",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://wiki.lxde.org/en/Category:Translations:ca",
     "fileset": {
         "lxappearance-obconf": {

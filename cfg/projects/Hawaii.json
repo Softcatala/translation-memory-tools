@@ -1,5 +1,6 @@
 {
-    "project": "Hawaii", 
+    "project": "Hawaii",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "http://hawaiios.org/",
     "fileset": {
         "hawaii": {

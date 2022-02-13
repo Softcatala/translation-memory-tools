@@ -1,5 +1,6 @@
 {
     "project": "wxWidgets",
+    "license" : "wxWindows",
     "projectweb": "https://www.wxwidgets.org/",
     "fileset": {
         "wxWidgets": {

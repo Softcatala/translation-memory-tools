@@ -1,5 +1,6 @@
 {
     "project": "Bluefish",
+    "license" : "GPL-3.0-only",
     "projectweb": "http://bluefish.openoffice.nl",
     "fileset": {
         "bluefish": {

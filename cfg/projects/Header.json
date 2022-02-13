@@ -1,5 +1,6 @@
 {
-    "project": "Header", 
+    "project": "Header",
+    "license" : "GPL-2.0-or-later",
     "comment": "This is the first file used when buidling the Softcatal\u00e0 TM. It contains the header with the credits", 
     "softcatala": true, 
     "downloadable": false, 

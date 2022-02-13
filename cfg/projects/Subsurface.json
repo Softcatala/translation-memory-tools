@@ -1,5 +1,6 @@
 {
-    "project": "Subsurface", 
+    "project": "Subsurface",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://subsurface-divelog.org/", 
     "fileset": {
         "Subsurface": {

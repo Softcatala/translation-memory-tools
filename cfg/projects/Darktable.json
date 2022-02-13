@@ -1,5 +1,6 @@
 {
-    "project": "Darktable", 
+    "project": "Darktable",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.darktable.org/",
     "fileset": {
         "Darktable": {

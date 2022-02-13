@@ -1,5 +1,6 @@
 {
-    "project": "Debian", 
+    "project": "Debian",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.debian.org/international/l10n/po/ca", 
     "fileset": {
        "apt": {

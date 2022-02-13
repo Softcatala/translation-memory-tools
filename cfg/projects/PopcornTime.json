@@ -1,5 +1,6 @@
 {
     "project": "Popcorn Time",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://getpopcorntime.is/",
     "fileset": {
         "PopcornTime": {

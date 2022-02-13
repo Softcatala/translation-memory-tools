@@ -1,5 +1,6 @@
 {
-    "project": "Recull", 
+    "project": "Recull",
+    "license" : "CC-BY-SA-3.0",
     "projectweb": "https://www.softcatala.org/wiki/Projectes/Recull_de_termes",
     "quality_report": false,
     "softcatala": true, 

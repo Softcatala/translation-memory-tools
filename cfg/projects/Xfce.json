@@ -1,5 +1,6 @@
 {
-    "project": "Xfce", 
+    "project": "Xfce",
+    "license" : "BSD-2-Clause-FreeBSD",
     "projectweb": "https://wiki.xfce.org/translations/team_ca",
     "fileset": {
         "exo": {

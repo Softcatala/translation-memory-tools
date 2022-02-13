@@ -1,5 +1,6 @@
 {
-    "project": "YunoHost", 
+    "project": "YunoHost",
+    "license" : "AGPL-3.0-only",
     "projectweb": "https://translate.yunohost.org/projects/yunohost/", 
     "fileset": {
         "yunohost-admin": {

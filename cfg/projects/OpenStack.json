@@ -1,5 +1,6 @@
 {
     "project": "OpenStack",
+    "license" : "Apache-2.0",
     "projectweb": "https://wiki.openstack.org/wiki/Translations", 
     "fileset": {
         "main": {

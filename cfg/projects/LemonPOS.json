@@ -1,5 +1,6 @@
 {
-    "project": "LemonPOS", 
+    "project": "LemonPOS",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://sourceforge.net/projects/lemonpos/",
     "fileset": {
         "Lemonpos": {

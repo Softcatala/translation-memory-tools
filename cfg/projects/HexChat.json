@@ -1,5 +1,6 @@
 {
     "project": "HexChat",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://hexchat.github.io/",
     "fileset": {
         "HexChat": {

@@ -1,5 +1,6 @@
 {
     "project": "IntegralCES",
+    "license" : "GPL-2.0-only",
     "projectweb": "IntegralCES",
     "fileset": {
         "IntegralCES": {

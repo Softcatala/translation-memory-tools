@@ -1,5 +1,6 @@
 {
-    "project": "AsteroidOS", 
+    "project": "AsteroidOS",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://hosted.weblate.org/languages/ca/asteroidos/", 
     "fileset": {
        "Alarm Clock": {

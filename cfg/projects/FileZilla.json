@@ -1,5 +1,6 @@
 {
-    "project": "FileZilla", 
+    "project": "FileZilla",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://filezilla-project.org/", 
     "softcatala": true, 
     "fileset": {

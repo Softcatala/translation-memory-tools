@@ -1,5 +1,6 @@
 {
-    "project": "IntegrationTests", 
+    "project": "IntegrationTests",
+    "license" : "GPL-2.0-or-later",
     "softcatala": true, 
     "downloadable": false, 
     "selectable": false, 

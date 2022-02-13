@@ -1,5 +1,6 @@
 {
-    "project": "Nextcloud", 
+    "project": "Nextcloud",
+    "license" : "AGPL-3.0-or-later",
     "projectweb" : "https://nextcloud.com/",
     "fileset": {
             "Nextcloud" : {

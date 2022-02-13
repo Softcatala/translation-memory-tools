@@ -1,5 +1,6 @@
 {
-    "project": "Geany", 
+    "project": "Geany",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.geany.org/Contribute/Translators", 
     "fileset": {
         "geany": {

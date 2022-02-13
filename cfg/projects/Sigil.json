@@ -1,5 +1,6 @@
 {
-    "project": "Sigil", 
+    "project": "Sigil",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://www.transifex.com/projects/p/sigil", 
     "fileset": {
         "sigil": {

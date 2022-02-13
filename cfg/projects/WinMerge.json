@@ -1,5 +1,6 @@
 {
-    "project": "WinMerge", 
+    "project": "WinMerge",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://winmerge.org/translations/",
     "fileset": {
         "WinMerge": {

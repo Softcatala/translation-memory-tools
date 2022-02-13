@@ -1,5 +1,6 @@
 {
-    "project": "Discourse", 
+    "project": "Discourse",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.discourse.org/",
     "fileset": {
         "main": {

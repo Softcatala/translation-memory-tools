@@ -1,5 +1,6 @@
 {
     "project": "KiCad",
+    "license" : "GPL-3.0-or-later",
     "projectweb": "https://www.kicad-pcb.org/",
     "fileset": {
         "KiCad": {

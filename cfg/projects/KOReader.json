@@ -1,5 +1,6 @@
 {
     "project": "KOReader",
+    "license" : "AGPL-3.0-only",
     "projectweb": "https://github.com/koreader/koreader",
     "fileset": {
         "KOReader": {

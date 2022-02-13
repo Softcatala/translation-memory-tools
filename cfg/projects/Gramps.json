@@ -1,5 +1,6 @@
 {
-    "project": "Gramps", 
+    "project": "Gramps",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://gramps-project.org/", 
     "fileset": {
         "Gramps": {

@@ -1,5 +1,6 @@
 {
-    "project": "Trac", 
+    "project": "Trac",
+    "license" : "BSD-3-Clause",
     "projectweb": "http://trac.edgewall.org/ticket/7353", 
     "fileset": {
         "main": {

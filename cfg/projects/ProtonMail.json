@@ -1,5 +1,6 @@
 {
-    "project": "ProtonMail", 
+    "project": "ProtonMail",
+    "license" : "MIT",
     "projectweb": "https://protonmail.com/",
     "fileset": {
         "protonMail": {

@@ -1,5 +1,6 @@
 {
     "project": "ERPNext",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://erpnext.com/",
     "disabled": true,
     "fileset": {

@@ -1,5 +1,6 @@
 {
-    "project": "phpMyAdmin", 
+    "project": "phpMyAdmin",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://hosted.weblate.org/projects/phpmyadmin/", 
     "fileset": {
         "phpmyadmin-master": {

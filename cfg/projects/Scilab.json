@@ -1,5 +1,6 @@
 {
     "project": "Scilab",
+    "license" : "GPL-2.0-only",
     "projectweb": "https://www.scilab.org/",
     "fileset": {
         "Winscp": {

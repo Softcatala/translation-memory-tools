@@ -1,5 +1,6 @@
 {
-    "project": "VLC media player", 
+    "project": "VLC media player",
+    "license" : "LGPL-2.1-or-later",
     "projectweb": "https://www.softcatala.org/projectes/vlc/", 
     "softcatala": true, 
     "fileset": {

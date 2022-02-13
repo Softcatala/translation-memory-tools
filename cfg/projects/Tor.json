@@ -1,5 +1,6 @@
 {
-    "project": "Tor", 
+    "project": "Tor",
+    "license" : "BSD-3-Clause",
     "projectweb": "https://www.torproject.org/", 
     "fileset": {
         "Tor": {

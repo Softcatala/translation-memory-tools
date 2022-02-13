@@ -1,5 +1,6 @@
 {
-    "project": "Mozilla", 
+    "project": "Mozilla",
+    "license" : "MPL-2.0",
     "projectweb": "https://www.softcatala.org/projectes/mozilla/",
     "softcatala": true,
     "fileset": {

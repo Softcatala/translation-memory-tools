@@ -1,5 +1,6 @@
 {
     "project": "CKEditor",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://ckeditor.com/",
     "disabled": true,
     "comment": "msgid field contains ids like 'common.confirmCancel' instead of the source string",

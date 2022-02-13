@@ -1,5 +1,6 @@
 {
-    "project": "Monero", 
+    "project": "Monero",
+    "license" : "BSD-3-Clause",
     "projectweb": "https://translate.getmonero.org/projects/monero/", 
     "fileset": {
         "monero-gui": {

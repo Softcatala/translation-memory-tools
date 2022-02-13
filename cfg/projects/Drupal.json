@@ -1,5 +1,6 @@
 {
     "project": "Drupal",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://drupal.org/project/ca",
     "fileset": {
         "drupal": {

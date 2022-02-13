@@ -1,5 +1,6 @@
 {
-    "project": "Moodle", 
+    "project": "Moodle",
+    "license" : "GPL-3.0-only",
     "projectweb": "https://moodle.org/mod/forum/view.php?id=2938", 
     "fileset": {
         "Moodle": {

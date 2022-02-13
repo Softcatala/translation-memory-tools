@@ -1,5 +1,6 @@
 {
     "project": "GlobaLeaks",
+    "license" : "AGPL-3.0-or-later",
     "projectweb": "https://www.globaleaks.org/",
     "fileset": {
         "GlobaLeaks": {

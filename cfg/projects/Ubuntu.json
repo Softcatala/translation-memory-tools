@@ -1,5 +1,6 @@
 {
-    "project": "Ubuntu", 
+    "project": "Ubuntu",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://wiki.ubuntu.com/UbuntuCatalanTranslators", 
     "softcatala": true,
     "comment" : "See: http://www.canonical.com/projects/directory and https://translations.launchpad.net/ubuntu",

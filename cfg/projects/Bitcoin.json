@@ -1,5 +1,6 @@
 {
-    "project": "Bitcoin", 
+    "project": "Bitcoin",
+    "license" : "MIT",
     "projectweb": "https://bitcoin.org", 
     "softcatala": true, 
     "fileset": {
