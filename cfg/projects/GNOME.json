@@ -1,6 +1,6 @@
 {
     "project": "GNOME",
-    "license" : "GPL-2.0-only",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/gnome/", 
     "softcatala": true, 
     "fileset": {
