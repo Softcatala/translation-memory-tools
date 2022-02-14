@@ -1,7 +1,7 @@
 {
     "project": "YumEx",
     "license" : "GPL-2.0-only",
-    "projectweb": "http://www.yumex.dk/",
+    "projectweb": "https://www.yumex.dk/",
     "fileset": {
         "yumex": {
             "url": "https://www.transifex.com/projects/p/yumex",
