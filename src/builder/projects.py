@@ -112,7 +112,7 @@ class Projects(object):
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
-        COMBINED_LICENSE = 'GPL-3.0-or-later'
+        COMBINED_LICENSE = 'GPL-3.0-only'
 
         tm_file = os.path.join(self.out_directory, self.tm_file)
         if os.path.isfile(tm_file):

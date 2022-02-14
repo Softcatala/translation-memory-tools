@@ -66,7 +66,7 @@ class Licenses():
 
 
     def are_compatible_licenses(self, source, target):
-        if source != 'GPL-3.0-or-later':
+        if source != 'GPL-3.0-only':
             raise Exception("Unable to determine license compatibility on this source license")
 
         if target == 'GPL-2.0-only':

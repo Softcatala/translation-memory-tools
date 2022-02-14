@@ -42,11 +42,11 @@ class TestLicenses(unittest.TestCase):
 
     def test_are_compatible_licenses_ok(self):
         licences = Licenses()
-        self.assertFalse(licences.are_compatible_licenses('GPL-3.0-or-later', 'GPL-2.0-only'))
+        self.assertFalse(licences.are_compatible_licenses('GPL-3.0-only', 'GPL-2.0-only'))
 
     def test_are_compatible_licenses_false(self):
         licences = Licenses()
-        self.assertTrue(licences.are_compatible_licenses('GPL-3.0-or-later', '"Apache-2.0"'))
+        self.assertTrue(licences.are_compatible_licenses('GPL-3.0-only', '"Apache-2.0"'))
 
 
 if __name__ == '__main__':
