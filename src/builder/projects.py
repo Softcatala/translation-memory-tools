@@ -20,7 +20,6 @@
 import datetime
 import logging
 import os
-import threading
 from concurrent.futures import ProcessPoolExecutor
 
 from .project import Project
@@ -113,22 +112,39 @@ class Projects(object):
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
+        COMBINED_LICENSE = 'GPL-3.0-or-later'
+
         tm_file = os.path.join(self.out_directory, self.tm_file)
         if os.path.isfile(tm_file):
             os.remove(tm_file)
 
         projects_catalog = POCatalog(tm_file)
 
+        total_words = 0
+        included_prjs = 0
+        skipped_prjs = 0
+        skipped_words = 0
         for project in self.projects:
             license = project.license.lower()
             if project.license.lower() == Licenses().PROPIETARY:
                 logging.debug(f"Projects. Skipping {project.name} into {self.tm_file} memory")
                 continue
 
+            words, _ = project.get_words_entries()
+
+            if Licenses().are_compatible_licenses(COMBINED_LICENSE, project.license) is False:
+                skipped_words += words
+                skipped_prjs += 1
+                continue
+
+            total_words += words
+            included_prjs += 1
             project_catalog = POCatalog(project.get_filename_fullpath())
             projects_catalog.add_pofile(project_catalog.filename)
 
         projects_catalog.cleanup()
+        logging.info(f"Projects. Added into {self.tm_file} a total of {words} words from {included_prjs} "\
+                    f"projects. Skipped {skipped_prjs} with {skipped_words} words")
 
     def statistics(self):
         for project in self.projects:

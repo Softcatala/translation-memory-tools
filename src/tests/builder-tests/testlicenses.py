@@ -40,6 +40,14 @@ class TestLicenses(unittest.TestCase):
         self.assertIn("Python Software Foundation License 2.0", license['name'])
         self.assertIn("https://opensource.org/licenses/Python-2.0", license['link'])
 
+    def test_are_compatible_licenses_ok(self):
+        licences = Licenses()
+        self.assertFalse(licences.are_compatible_licenses('GPL-3.0-or-later', 'GPL-2.0-only'))
+
+    def test_are_compatible_licenses_false(self):
+        licences = Licenses()
+        self.assertTrue(licences.are_compatible_licenses('GPL-3.0-or-later', '"Apache-2.0"'))
+
 
 if __name__ == '__main__':
     unittest.main()

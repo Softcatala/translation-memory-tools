@@ -160,6 +160,7 @@ def build_combined_memory(projects, memories, filename, name, project_id, po_dir
         last_fetch=date,
         last_translation_update=date,
         filename=filename,
+        license='GPL-3.0-or-later',
         quality_report=False,
     )
     memories.append(translation_memory)
