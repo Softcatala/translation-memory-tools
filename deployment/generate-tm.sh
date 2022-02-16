@@ -11,7 +11,6 @@ NEW_POS=$PROGRAMS/output
 # copy of the successful executions
 PUBLISHED_PO=$PUBLIC/translation-memories/po
 PUBLISHED_TMX=$PUBLIC/translation-memories/tmx
-#BACKUP_DIR=$PUBLIC/previous
 
 copy_successfully_downloaded_files() {
 
@@ -41,12 +40,6 @@ export LC_ALL=ca_ES.utf-8
 
 mkdir -p $PUBLISHED_PO
 mkdir -p $PUBLISHED_TMX
-
-# Copy existing PO files
-#rm -r -f $BACKUP_DIR
-#mkdir $BACKUP_DIR
-#cd $BACKUP_DIR
-#cp $PUBLISHED_PO/* $BACKUP_DIR
 
 # Build new translation files
 cd $BUILDER
