@@ -143,7 +143,7 @@ class Projects(object):
             projects_catalog.add_pofile(project_catalog.filename)
 
         projects_catalog.cleanup()
-        logging.info(f"Projects. Added into {self.tm_file} a total of {words} words from {included_prjs} "\
+        logging.info(f"Projects. Added into {self.tm_file} a total of {total_words} words from {included_prjs} "\
                     f"projects. Skipped {skipped_prjs} with {skipped_words} words")
 
     def statistics(self):
