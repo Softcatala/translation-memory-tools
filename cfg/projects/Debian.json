@@ -4,7 +4,7 @@
     "projectweb": "https://www.debian.org/international/l10n/po/ca", 
     "fileset": {
        "apt": {
-            "url": "https://salsa.debian.org/apt-team/apt/raw/master/po/ca.po", 
+            "url": "https://salsa.debian.org/apt-team/apt/-/raw/main/po/ca.po", 
             "type": "file", 
             "target": "apt-ca.po"  
         },
