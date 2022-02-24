@@ -25,6 +25,7 @@ import os
 import yaml
 import re
 
+from urllib.error import HTTPError
 from .fileset import FileSet
 from .cache import Cache
 
@@ -156,12 +157,17 @@ class WeblateFileSet(FileSet):
             output.close()
             return True
 
-        except Exception as detail:
+        except HTTPError as detail:
             if detail.code == 404:
                 logging.info("WeblateFileSet._get_file {0} - info: {1}".format(url, detail))
             else:
                 logging.error("WeblateFileSet._get_file {0} - error: {1}".format(url, detail))
             return False
+
+        except Exception as detail:
+            logging.error("WeblateFileSet._get_file {0} - error: {1}".format(url, detail))
+            return False
+
 
     def do(self):
         slugs = self._get_projects_slugs()
