@@ -1,7 +1,7 @@
 {
     "project": "XFLR5",
     "license" : "GPL-3.0",
-    "projectweb": "",
+    "projectweb": "http://www.xflr5.tech/xflr5.htm",
     "softcatala": true,
     "fileset": {
         "XFLR5": {
