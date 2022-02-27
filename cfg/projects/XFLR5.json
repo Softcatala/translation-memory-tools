@@ -1,0 +1,13 @@
+{
+    "project": "XFLR5",
+    "license" : "GPL-3.0",
+    "projectweb": "http://www.xflr5.tech/xflr5.htm",
+    "softcatala": true,
+    "fileset": {
+        "XFLR5": {
+            "url": "https://sourceforge.net/p/xflr5/code/HEAD/tree/trunk/xflr5/translations/xflr5v6_ca.ts?format=raw",
+            "type": "file",
+            "target": "xflr5v6_ca.ts"
+        }
+    }
+}
