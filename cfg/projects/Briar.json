@@ -6,7 +6,8 @@
     "fileset": {
         "briar": {
             "url": "https://www.transifex.com/projects/p/briar",
-            "type": "transifex"
+            "type": "transifex",
+            "po_preprocessing" : "remove_untranslated"
         }
     }
 }
