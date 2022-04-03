@@ -8,13 +8,11 @@
         "gimp": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-gimp/ui.tar.gz",
             "type": "compressed",
-            "excluded": "2-10",
             "target": "gimp.tar.gz"
         }, 
         "gnome-gimp-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz", 
             "type": "compressed",
-            "excluded": "2-10",
             "target": "gnome-gimp-doc.tar.gz"
         }
     }
