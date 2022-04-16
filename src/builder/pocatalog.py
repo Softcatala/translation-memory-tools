@@ -44,6 +44,9 @@ class POCatalog(object):
                 shutil.copy(pofile, self.filename)
 
     def cleanup(self):
+        if os.path.isfile(self.filename) is False:
+          return
+
         backup = next(tempfile._get_candidate_names())
         shutil.copy(self.filename, backup)
         cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}' \
