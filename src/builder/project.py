@@ -270,11 +270,12 @@ class Project(object):
         return os.path.join(self.out_directory, filename)
 
     def to_tmx(self):
-        if os.path.isfile(self.filename) is False:
+        fullpath_filename = self._get_filename_at_output(self.filename)
+        if os.path.isfile(fullpath_filename) is False:
           return
 
         fileName, fileExtension = os.path.splitext(self.filename)
         cmd = 'po2tmx "{0}" -l ca -o "{1}.tmx"'
-        cmd = cmd.format(self._get_filename_at_output(self.filename), 
+        cmd = cmd.format(fullpath_filename,
                          self._get_filename_at_output(fileName))
         os.system(cmd)
