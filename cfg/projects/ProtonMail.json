@@ -1,7 +1,7 @@
 {
     "project": "ProtonMail",
     "license" : "MIT",
-    "projectweb": "https://protonmail.com/",
+    "projectweb": "https://proton.me",
     "fileset": {
         "protonMail": {
             "url": "https://crowdin.com/backend/download/project/protonmail/ca.zip",
