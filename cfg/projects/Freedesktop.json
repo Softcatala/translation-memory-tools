@@ -47,6 +47,11 @@
             "url": "https://raw.githubusercontent.com/ximion/appstream/master/po/ca.po",
             "type": "file",
             "target": "appstream_ca.po"
+        },
+        "fwupd": {
+            "url": "https://raw.githubusercontent.com/fwupd/fwupd/main/po/ca.po",
+            "type": "file",
+            "target": "fwupd_ca.po"
         }
     }
 }
