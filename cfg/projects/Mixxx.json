@@ -4,8 +4,9 @@
     "projectweb": "https://www.mixxx.org/",
     "fileset": {
         "Mixxx": {
-            "url": "https://www.transifex.com/mixxx-dj-software/public/",
-            "type": "transifexhub"
+            "url": "https://github.com/mixxxdj/mixxx/raw/main/res/translations/mixxx_ca.ts",
+            "type": "file",
+            "target": "mixxx_ca.ts"
         }
     }
 }
