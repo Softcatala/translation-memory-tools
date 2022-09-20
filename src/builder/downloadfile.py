@@ -31,7 +31,7 @@ class DownloadFile(object):
 
         for _ in range(NTRIES):
             try:
-                req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox'})
                 return urlopen(req)
             except HTTPError as e:
                 logging.error("Error on urlopen_with_retry: " + str(e))
