@@ -29,6 +29,7 @@ COPY deployment/ $DIR_TMT_GIT/deployment/
 COPY source-pos/ $DIR_TMT_GIT/source-pos/
 COPY cfg/ $DIR_TMT_GIT/cfg/
 COPY docker/ $DIR_TMT_GIT/docker/
+COPY integration-tests/ $DIR_TMT_GIT/integration-tests/
 
 # What get's executed on Run
 ENTRYPOINT bash $DIR_TMT_GIT/docker/entry-point-builder.sh $DIR $DIR_TMT_GIT

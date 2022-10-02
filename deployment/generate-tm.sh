@@ -4,6 +4,7 @@ ROOT="$1"
 PUBLIC="$2"
 PROGRAMS=$ROOT/tm-git/src
 BUILDER=$PROGRAMS
+CHECK_LINKS=$ROOT/tm-git/integration-tests
 NEW_POS=$PROGRAMS/output
 # PUBLISHED directories are used to allow to publish the previous version if
 # we have been unable to fetch it.
@@ -41,6 +42,10 @@ export LC_ALL=ca_ES.utf-8
 mkdir -p $PUBLISHED_PO
 mkdir -p $PUBLISHED_TMX
 
+# Check project links
+cd $CHECK_LINKS
+python run-check-links.py
+
 # Build new translation files
 cd $BUILDER
 rm -f *.log
@@ -49,6 +54,7 @@ rm -f -r $NEW_POS
 # Download new translation files
 python builder.py -d
 python builder.py --softcatala
+cat $CHECK_LINKS/run-check-links-error.log >> builder-error.log
 
 copy_successfully_downloaded_files "*.po" 200 $PUBLISHED_PO
 
