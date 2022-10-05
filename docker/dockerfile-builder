@@ -4,6 +4,7 @@ ENV DIR /srv/dev
 ENV DIR_TMT_GIT /srv/dev/tm-git
 
 RUN apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git curl wget g++ subversion bzip2 python2-dev -y
+RUN curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
 RUN mkdir -p $DIR
 
 #Pology

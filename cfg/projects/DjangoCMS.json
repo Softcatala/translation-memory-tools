@@ -4,7 +4,7 @@
     "projectweb": "https://www.django-cms.org/",
     "fileset": {
         "DjangoCMS": {
-            "url": "https://www.transifex.com/projects/p/django-cms", 
+            "url": "https://www.transifex.com/divio/django-cms/",
             "type": "transifex"
         }
     }

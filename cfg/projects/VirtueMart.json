@@ -4,7 +4,7 @@
     "projectweb": "https://virtuemart.net/",
     "fileset": {
         "VirtueMart": {
-            "url": "https://www.transifex.com/projects/p/virtuemart",
+            "url": "https://www.transifex.com/virtuemart/virtuemart",
             "type": "transifex",
             "excluded" : "virtuemart.vm-admin-com_virtuemart"
         }

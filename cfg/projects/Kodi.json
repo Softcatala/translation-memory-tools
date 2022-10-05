@@ -4,17 +4,17 @@
     "projectweb": "https://kodi.tv/",
     "fileset": {
         "kodi-main": {
-            "url": "https://www.transifex.com/projects/p/kodi-main/",
+            "url": "https://www.transifex.com/teamxbmc/kodi-main/",
             "type": "transifex",
             "pattern": ".*?ca(_ES)?.po"
         },
         "kodi-addons": {
-            "url": "https://www.transifex.com/projects/p/kodi-addons/",
+            "url": "https://www.transifex.com/teamxbmc/kodi-addons/",
             "type": "transifex",
             "pattern": ".*?ca(_ES)?.po"
         },
         "kodi-skins": {
-            "url": "https://www.transifex.com/projects/p/kodi-skins/",
+            "url": "https://www.transifex.com/teamxbmc/kodi-skins/",
             "type": "transifex",
             "pattern": ".*?ca(_ES)?.po"
         }

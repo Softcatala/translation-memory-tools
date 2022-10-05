@@ -146,7 +146,6 @@ class TransifexHubFileSet(FileSet):
         return result
 
     def expand_dynamic(self):
-        transifex_url = "https://www.transifex.com/projects/p/"
         try:
             # This project has a single fileset assigned (this)
             # We empty the fileset and add dynamically the ones referenced by Transifex
@@ -166,7 +165,7 @@ class TransifexHubFileSet(FileSet):
                 logging.info('TransifexHubFileSet.Do. Unable not find any project to add')
 
             for option in options:
-                url = transifex_url
+                url = self.url
                 url = url + self._clean_string(option)
                 fileset = TransifexFileSet(self.project_name, self.project_id, option, url, '', self)
                 self.project.add_fileset(fileset)

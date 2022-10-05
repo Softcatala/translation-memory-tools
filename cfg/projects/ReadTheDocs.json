@@ -4,7 +4,7 @@
     "projectweb": "https://readthedocs.org/", 
     "fileset": {
         "ReadTheDocs": {
-            "url": "https://www.transifex.com/projects/p/readthedocs/", 
+            "url": "https://www.transifex.com/readthedocs/readthedocs/",
             "type": "transifex"
         }
     }

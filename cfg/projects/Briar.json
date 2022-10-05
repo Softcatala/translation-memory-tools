@@ -5,7 +5,7 @@
     "softcatala": true,
     "fileset": {
         "briar": {
-            "url": "https://www.transifex.com/projects/p/briar",
+            "url": "https://www.transifex.com/otf/briar/",
             "type": "transifex",
             "po_preprocessing" : "remove_untranslated"
         }

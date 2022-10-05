@@ -4,7 +4,7 @@
     "projectweb": "https://audacious-media-player.org/",
     "fileset": {
         "audacious": {
-            "url": "https://www.transifex.com/projects/p/audacious/",
+            "url": "https://www.transifex.com/audacious/audacious/",
             "type": "transifex",
             "pattern": ".*?ca.po"
         }

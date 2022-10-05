@@ -1,11 +1,11 @@
 {
     "project": "GPGTools",
     "license" : "GPL-3.0-only",
-    "projectweb": "https://www.softcatala.org/projectes/gpgtools/", 
+    "projectweb": "https://www.softcatala.org/projectes/gpgtools/",
     "softcatala": true, 
     "fileset": {
         "GPGMail": {
-            "url": "https://www.transifex.com/projects/p/GPGMail/", 
+            "url": "https://www.transifex.com/gpgtools/GPGMail/dashboard/",
             "type": "transifex"
         }
     }

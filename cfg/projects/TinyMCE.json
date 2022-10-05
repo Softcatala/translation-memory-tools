@@ -1,10 +1,10 @@
 {
     "project": "TinyMCE",
     "license" : "LGPL-2.1-only",
-    "projectweb": "https://www.transifex.com/projects/p/tinymce", 
+    "projectweb": "https://www.transifex.com/tiny/tinymce/",
     "fileset": {
         "TinyMCE": {
-            "url": "https://www.transifex.com/projects/p/tinymce/", 
+            "url": "https://www.transifex.com/tiny/tinymce/",
             "type": "transifex",
             "duplicates" : "msgctxt"
         }

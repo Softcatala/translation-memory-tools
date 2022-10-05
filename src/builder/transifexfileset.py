@@ -54,13 +54,13 @@ class TransifexFileSet(FileSet):
 
         url = urllib.parse.urlparse(self.url)
         uri = '{0}://{1}'.format(url.scheme, url.netloc)
-        os.system('tx init --host {0} --no-interactive'.format(uri))
-        os.system('tx config mapping-remote {0}'.format(self.url))
+        os.system("tx init")
+        os.system("tx add remote --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' {0}".format(self.url))
 
         # To be able to process files with no English source (.strings, .xml,
         # etc) we pull the English files too and then we delete the ones that
         # include source and target
-        cmd = 'tx --traceback pull -f -s -lca,ca_ES,en,en_GB'
+        cmd = 'tx pull -f -s -t -l ca,ca_ES,en,en_GB'
         if self.project_name.lower() == 'blender':
             cmd += ' --mode onlyreviewed'
 

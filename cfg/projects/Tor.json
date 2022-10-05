@@ -4,7 +4,7 @@
     "projectweb": "https://www.torproject.org/", 
     "fileset": {
         "Tor": {
-            "url": "https://www.transifex.com/projects/p/torproject", 
+            "url": "https://www.transifex.com/otf/torproject",
             "type": "transifex",
             "conversor_setup": {
                 "type"       : "string",

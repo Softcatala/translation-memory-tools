@@ -4,7 +4,7 @@
     "projectweb": "https://wiki.scratch.mit.edu/wiki/Language_Forums",
     "fileset": {
         "main": {
-            "url": "https://www.transifex.com/llk/public/",
+            "url": "https://explore.transifex.com/llk/",
             "type": "transifexhub",
             "po_preprocessing" : "remove_untranslated"
         }

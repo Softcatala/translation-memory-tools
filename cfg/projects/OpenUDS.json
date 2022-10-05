@@ -1,7 +1,7 @@
 {
     "project": "OpenUDS",
     "license" : "GPL-2.0-only",
-    "projectweb": "https://www.transifex.com/openuds/openuds/",
+    "projectweb": "https://explore.transifex.com/openuds/openuds/",
     "fileset": {
         "openuds": {
             "url": "https://raw.githubusercontent.com/dkmstr/openuds/master/server/src/uds/locale/ca/LC_MESSAGES/django.po",

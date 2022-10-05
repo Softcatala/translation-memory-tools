@@ -4,19 +4,19 @@
     "projectweb": "http://hawaiios.org/",
     "fileset": {
         "hawaii": {
-            "url": "https://www.transifex.com/projects/p/hawaii", 
+            "url": "https://www.transifex.com/hawaii/hawaii",
             "type": "transifex"
         },
         "system-preferences": {
-            "url": "https://www.transifex.com/projects/p/system-preferences", 
+            "url": "https://www.transifex.com/hawaii/system-preferences",
             "type": "transifex"
         },
 	    "terminal": {
-            "url": "https://www.transifex.com/projects/p/terminal", 
+            "url": "https://www.transifex.com/hawaii/terminal",
             "type": "transifex"
         },
 	    "hawaii-workspace": {
-            "url": "https://www.transifex.com/projects/p/hawaii-workspace", 
+            "url": "https://www.transifex.com/hawaii/hawaii-workspace",
             "type": "transifex"
         }
     } 

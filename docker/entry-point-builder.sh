@@ -23,7 +23,7 @@ if [[ -e  $PRESERVE_CROSSEXECS/translation-memories/ ]]; then
 fi
 
 
-if [[ -n "${TRANSIFEX_USER}" && -n "${TRANSIFEX_PASSWORD}" ]]; then
+if [[ -n "${TRANSIFEX_TOKEN}" ]]; then
     python $DIR_TMT_GIT/docker/credentials/transifex.py
 else
     echo "Removing Transifex projects"

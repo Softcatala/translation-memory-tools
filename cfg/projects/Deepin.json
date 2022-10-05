@@ -4,7 +4,7 @@
     "projectweb": "https://www.deepin.org/",
     "fileset": {
         "Deepin": {
-            "url": "https://www.transifex.com/linuxdeepin/public/",
+            "url": "https://explore.transifex.com/linuxdeepin/",
             "type": "transifexhub"
         }
     }

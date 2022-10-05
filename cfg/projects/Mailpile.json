@@ -4,7 +4,7 @@
     "projectweb": "https://www.mailpile.is", 
     "fileset": {
         "Mailpile": {
-            "url": "https://www.transifex.com/projects/p/mailpile", 
+            "url": "https://www.transifex.com/otfO/mailpile",
             "type": "transifex",
             "excluded": "en_"
         }
