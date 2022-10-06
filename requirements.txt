@@ -15,5 +15,5 @@ Whoosh
 # For testing.
 pytest
 flake8
-nose
+nose2
 coveralls

@@ -6,7 +6,7 @@ PRESERVE_CROSSEXECS=/srv/tmt-files
 
 # Run unit tests
 cd $DIR_TMT_GIT
-nosetests
+nose2
 RETVAL=$?
 if [ $RETVAL -ne 0 ]; then
     echo "Aborting deployment. Unit tests did not pass"
