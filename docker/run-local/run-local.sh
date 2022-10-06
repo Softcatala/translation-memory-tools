@@ -1,4 +1,5 @@
 # Build builder
+bash ./stop-docker.sh
 pushd ..
 bash ./build-docker-builder.sh  
 bash ./build-docker-lt.sh  
