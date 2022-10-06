@@ -1,7 +1,7 @@
 {
     "project": "IntegralCES",
     "license" : "GPL-2.0-only",
-    "projectweb": "IntegralCES",
+    "projectweb": "https://www.integralces.net/?lang=ca",
     "fileset": {
         "IntegralCES": {
             "url": "https://www.transifex.com/integralces/integralces/",

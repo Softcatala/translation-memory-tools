@@ -1,7 +1,7 @@
 {
     "project": "Tortoise",
     "license" : "GPL-2.0-or-later",
-    "projectweb": "http://tortoisesvn.tigris.org/", 
+    "projectweb": "https://tortoisegit.org/",
     "fileset": {
         "Tortoisesvn": {
             "url": "https://www.transifex.com/luebbe/tortoisesvn/",
