@@ -1,7 +1,7 @@
 {
     "project": "KiCad",
     "license" : "GPL-3.0-or-later",
-    "projectweb": "https://www.kicad-pcb.org/",
+    "projectweb": "https://www.kicad.org/",
     "fileset": {
         "KiCad": {
             "url": "https://raw.githubusercontent.com/KiCad/kicad-i18n/master/ca/kicad.po",

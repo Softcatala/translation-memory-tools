@@ -1,7 +1,7 @@
 {
     "project": "CoreBird",
     "license" : "GPL-3.0-only",
-    "projectweb": "https://corebird.baedert.org/", 
+    "projectweb": "https://github.com/baedert/corebird", 
     "fileset": {
         "CoreBird": {
             "url": "https://www.transifex.com/corebird/corebird/",

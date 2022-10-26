@@ -1,7 +1,7 @@
 {
     "project": "LibreCAD",
     "license" : "GPL-2.0-only",
-    "projectweb": "https://translate.librecad.org/projects/librecad/",
+    "projectweb": "https://librecad.org/",
     "fileset": {
         "LibreCAD": {
             "url": "https://raw.githubusercontent.com/LibreCAD/LibreCAD/master/librecad/ts/librecad_ca.ts",

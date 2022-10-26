@@ -1,7 +1,7 @@
 {
     "project": "Exiv2",
     "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.exiv2.org/",
+    "projectweb": "https://exiv2.org/",
     "fileset": {
         "exiv2": {
             "url": "https://raw.githubusercontent.com/Exiv2/exiv2/master/po/ca.po",
