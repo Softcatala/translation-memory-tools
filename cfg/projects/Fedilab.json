@@ -1,0 +1,12 @@
+{
+    "project": "Fedilab",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://hosted.weblate.org/projects/fedilab/",
+    "fileset": {
+        "Framadate": {
+            "url": "https://hosted.weblate.org/download/fedilab/strings/ca/?format=po",
+            "type": "file",
+            "target": "fedilab-ca.po"
+        }
+    }
+}
