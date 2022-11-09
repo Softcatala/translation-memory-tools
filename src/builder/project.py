@@ -40,7 +40,7 @@ from .zanatafileset import ZanataFileSet
 from .pontoonfileset import PontoonFileSet
 from .mercurialfileset import MercurialFileSet
 from .weblatefileset import WeblateFileSet
-
+from .crowdinfileset import CrowdinFileSet
 
 class Project(object):
 
@@ -193,6 +193,13 @@ class Project(object):
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'weblate':
                 fs = WeblateFileSet(self.name,
+                                  self.project_id,
+                                  fileset.name,
+                                  fileset.url,
+                                  fileset.target)
+                fs.set_pattern(fileset.pattern)
+            elif fileset.type == 'crowdin':
+                fs = CrowdinFileSet(self.name,
                                   self.project_id,
                                   fileset.name,
                                   fileset.url,

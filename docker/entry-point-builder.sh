@@ -44,6 +44,13 @@ else
     grep -l "type.*weblate" cfg/projects/*.json  | xargs rm -f
 fi
 
+if [[ -n "${CROWDIN_TOKEN}" ]]; then
+    python $DIR_TMT_GIT/docker/credentials/crowdin.py $DIR_TMT_GIT/cfg/credentials/
+else
+    echo "Removing Crowdin projects"
+    grep -l "type.*crowdin" cfg/projects/*.json  | xargs rm -f
+fi
+
 if [ "$DEV_SMALL_SET" == "1" ]; then
     echo "Configuring a small set for development"
     cd $DIR_TMT_GIT/

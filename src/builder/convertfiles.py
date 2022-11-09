@@ -46,6 +46,7 @@ class ConvertFiles():
         self._convert_json_files_to_po()
         self._convert_yml_files_to_po()
         self._convert_csv_files_to_po()
+        self._convert_xliff_file_to_po()
 
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find_recursive(self.convert_dir, '*.ts'):
@@ -301,3 +302,11 @@ class ConvertFiles():
             logging.info('convert yml file: {0}'.format(dirName))
             cmd = 'i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en'.format(dirName)
             os.system(cmd)
+
+    def _convert_xliff_file_to_po(self):
+        for xlfile in self.findFiles.find_recursive(self.convert_dir, '*.xliff'):
+            fileName, fileExtension = os.path.splitext(xlfile)
+            pofile = xlfile.replace(".xliff", ".po")
+            cmd = f'xliff2po -i {xlfile} -o {pofile}'
+            os.system(cmd)
+

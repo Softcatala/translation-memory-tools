@@ -4,8 +4,8 @@
     "projectweb": "https://community.joomla.org/translations.html",
     "fileset": {
         "Joomla": {
-            "url": "https://www.transifex.com/el_libre/ct_joomla/",
-            "type": "transifex",
+            "url": "https://api.crowdin.com/api/v2/projects/120642",
+            "type": "crowdin",
             "pattern": "^(?!.*?ca_ES.ini).*$"
         }
     },
