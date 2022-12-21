@@ -4,13 +4,13 @@
     "projectweb": "https://drupal.org/project/ca",
     "fileset": {
         "drupal": {
-            "url": "https://ftp.drupal.org/files/translations/all/drupal/drupal-9.1.5.ca.po",
+            "url": "https://ftp.drupal.org/files/translations/all/drupal/drupal-10.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "drupal-ca.po"
         },
         "ubercart": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/ubercart/ubercart-8.x-4.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/ubercart/ubercart-8.x-4.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "ubercart-drupal-ca.po"
@@ -28,7 +28,7 @@
             "target": "biblio-drupal-ca.po"
         },
         "webform": {
-            "url": "https://ftp-origin.drupal.org/files/translations/all/webform/webform-8.x-5.9.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/webform/webform-6.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "webform-drupal-ca.po"
@@ -58,7 +58,7 @@
             "target": "date-drupal-ca.po"
         },
         "simplenews": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/simplenews/simplenews-3.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/simplenews/simplenews-3.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "simplenews-drupal-ca.po"
@@ -82,37 +82,37 @@
             "target": "moneysuite-drupal-ca.po"
         },
         "feeds": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/feeds/feeds-8.x-3.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/feeds/feeds-8.x-3.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "feeds-drupal-ca.po"
         },
         "backup_migrate": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/backup_migrate/backup_migrate-5.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/backup_migrate/backup_migrate-5.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "backup_migrate-drupal-ca.po"
         },
         "token": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/token/token-8.x-1.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/token/token-8.x-1.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "token-drupal-ca.po"
         },
         "pathauto": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/pathauto/pathauto-8.x-1.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/pathauto/pathauto-8.x-1.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "pathauto-drupal-ca.po"
         },
         "commerce": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/commerce/commerce-8.x-2.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/commerce/commerce-8.x-2.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "commerce-drupal-ca.po"
         },
         "captcha": {
-            "url": "https://ftp-origin.drupal.org/files/translations/8.x/captcha/captcha-8.x-1.x.ca.po",
+            "url": "https://ftp-origin.drupal.org/files/translations/all/captcha/captcha-8.x-1.x.ca.po",
             "type": "file",
             "duplicates" : "msgctxt",
             "target": "captcha-drupal-ca.po"
