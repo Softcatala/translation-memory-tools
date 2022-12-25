@@ -4,11 +4,9 @@
     "projectweb": "https://winmerge.org/translations/",
     "fileset": {
         "WinMerge": {
-            "url": "https://raw.githubusercontent.com/WinMerge/winmerge-v2/master/Translations/WinMerge/Catalan.po",
+            "url": "https://raw.githubusercontent.com/WinMerge/winmerge/master/Translations/WinMerge/Catalan.po",
             "type": "file", 
             "target": "winmerge-ca.po"
         }
-    },
-    "disabled": true,
-    "comment": "Invalid PO file at the moment"
+    }
 }
