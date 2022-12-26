@@ -1,0 +1,12 @@
+{
+    "project": "BleachBit",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://www.bleachbit.org/contribute/translate",
+    "fileset": {
+        "BleachBit": {
+            "url": "https://hosted.weblate.org/download/bleachbit/main/ca/",
+            "type": "file",
+            "target": "bleachbit-ca.po"
+        }
+    }
+}
