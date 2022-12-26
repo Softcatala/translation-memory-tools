@@ -1,5 +1,6 @@
 {
     "project": "Localized EmulationStation",
+    "license" : "MIT",
     "projectweb": "https://github.com/flyinghead/EmulationStation",
     "fileset": {
         "emulationstation-retropie": {
