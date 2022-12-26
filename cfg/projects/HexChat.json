@@ -1,0 +1,12 @@
+{
+    "project": "HexChat",
+    "license" : "GPL-2.0-only",
+    "projectweb": "https://hexchat.github.io/",
+    "fileset": {
+        "HexChat": {
+            "url": "https://raw.githubusercontent.com/hexchat/hexchat/master/po/ca.po",
+            "type": "file",
+            "target": "hexchat-ca.po"
+        }
+    }
+}
