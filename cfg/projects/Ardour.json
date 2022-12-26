@@ -1,0 +1,12 @@
+{
+    "project": "Ardour",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://github.com/Ardour/ardour/blob/master/TRANSLATORS",
+    "fileset": {
+        "Ardour": {
+            "url": "https://raw.githubusercontent.com/Ardour/ardour/master/gtk2_ardour/po/ca.po",
+            "type": "file",
+            "target": "ardour-ca.po"
+        }
+    }
+}
