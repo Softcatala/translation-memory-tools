@@ -1,0 +1,12 @@
+{
+    "project": "LilyPond",
+    "license" : "GPL-3.0-or-later",
+    "projectweb": "https://github.com/Aegisub/Aegisub/",
+    "fileset": {
+        "LilyPond": {
+            "url": "https://raw.githubusercontent.com/lilypond/lilypond/master/po/ca.po",
+            "type": "file",
+            "target": "lilypond-ca.po"
+        }
+    }
+}
