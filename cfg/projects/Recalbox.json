@@ -1,5 +1,6 @@
 {
     "project": "Recalbox",
+    "license" : "MIT",
     "projectweb": "https://www.recalbox.com/",
     "fileset": {
         "emulationstation": {
