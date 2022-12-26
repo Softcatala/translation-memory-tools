@@ -1,0 +1,12 @@
+{
+    "project": "Hugin",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://hugin.sourceforge.io/",
+    "fileset": {
+        "Hugin": {
+            "url": "https://sourceforge.net/p/hugin/hugin/ci/default/tree/src/translations/ca_ES.po?format=raw",
+            "type": "file",
+            "target": "hugin-ca.po"
+        }
+    }
+}
