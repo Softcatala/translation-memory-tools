@@ -1,0 +1,12 @@
+{
+    "project": "SpeedCrunch",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://heldercorreia.bitbucket.io/speedcrunch/",
+    "fileset": {
+        "speedcrunch": {
+            "url": "https://bitbucket.org/heldercorreia/speedcrunch/raw/master/src/resources/locale/ca_ES.ts",
+            "type": "file",
+            "target": "speedcrunch-ca.ts"
+        }
+    }
+}
