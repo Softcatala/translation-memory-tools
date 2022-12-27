@@ -1,7 +1,7 @@
 {
     "project": "LilyPond",
     "license" : "GPL-3.0-or-later",
-    "projectweb": "http://lilypond.org/",
+    "projectweb": "https://lilypond.org/",
     "fileset": {
         "LilyPond": {
             "url": "https://raw.githubusercontent.com/lilypond/lilypond/master/po/ca.po",
