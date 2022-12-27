@@ -1,0 +1,13 @@
+{
+    "project": "HandBrake",
+    "license" : "GPL-2.0-only",
+    "projectweb": "https://handbrake.fr/",
+    "softcatala": true,
+    "fileset": {
+        "HandBrake-gtk": {
+            "url": "https://raw.githubusercontent.com/HandBrake/HandBrake/master/gtk/po/ca.po",
+            "type": "file",
+            "target": "handbrake-gtk-ca.po"
+        }
+    }
+}
