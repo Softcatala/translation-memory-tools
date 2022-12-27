@@ -1,0 +1,12 @@
+{
+    "project": "Localized EmulationStation",
+    "license" : "MIT",
+    "projectweb": "https://github.com/flyinghead/EmulationStation",
+    "fileset": {
+        "emulationstation-retropie": {
+            "url": "https://raw.githubusercontent.com/flyinghead/EmulationStation/master/locale/lang/ca_ES/LC_MESSAGES/emulationstation2.po",
+            "type": "file",
+            "target": "emulationstation-retropie-ca.po"
+        }
+    }
+}
