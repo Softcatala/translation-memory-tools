@@ -72,25 +72,10 @@
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-calendar&language=ca&format=export-as-po",
             "type": "file",
             "target": "phabricator-phabricator-calendar-ca.po"
+        },
+        "phabricator-phabricator-maniphest": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-maniphest&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-maniphest-ca.po"
         }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-phabricator-phabricator-maniphest
