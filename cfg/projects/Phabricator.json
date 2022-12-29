@@ -1,0 +1,96 @@
+{
+    "project": "Phabricator",
+    "license" : "Apache-2.0",
+    "projectweb": "https://www.phacility.com/phabricator/",
+    "fileset": {
+        "phabricator": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-ca.po"
+        },
+        "phabricator-core": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-core&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-core-ca.po"
+        },
+        "phabricator-arcanist-core": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-arcanist-core&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-arcanist-core-ca.po"
+        },
+        "phabricator-phabricator-config": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-config&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-config-ca.po"
+        },
+        "phabricator-phabricator-diffusion": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-diffusion&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-diffusion-ca.po"
+        },
+        "phabricator-phabricator-auth": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-auth&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-auth-ca.po"
+        },
+        "phabricator-phabricator-differential": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-differential&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-differential-ca.po"
+        },
+        "phabricator-phabricator-harbormaster": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-harbormaster&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-harbormaster-ca.po"
+        },
+        "phabricator-phabricator-project": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-project&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-project-ca.po"
+        },
+        "phabricator-phabricator-repository": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-repository&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-repository-ca.po"
+        },
+        "phabricator-phabricator-phortune": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-phortune&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-phortune-ca.po"
+        },
+        "phabricator-phabricator-transactions": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-transactions&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-transactions-ca.po"
+        },
+        "pphabricator-phabricator-files": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-files&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-files-ca.po"
+        },
+        "phabricator-phabricator-calendar": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-calendar&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "phabricator-phabricator-calendar-ca.po"
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+phabricator-phabricator-maniphest
