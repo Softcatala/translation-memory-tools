@@ -1,0 +1,12 @@
+{
+    "project": "muCommander",
+    "license" : "GPL-3.0-or-later",
+    "projectweb": "https://github.com/mucommander/mucommander/wiki/Translate",
+    "fileset": {
+        "muCommander": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/mucommander/dictionary_ca.po",
+            "type": "file",
+            "target": "mucommander-ca.po"
+        }
+    }
+}
