@@ -3,11 +3,6 @@
     "license" : "Apache-2.0",
     "projectweb": "https://www.phacility.com/phabricator/",
     "fileset": {
-        "phabricator": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator&language=ca&format=export-as-po",
-            "type": "file",
-            "target": "phabricator-ca.po"
-        },
         "phabricator-core": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=phabricator-phabricator-core&language=ca&format=export-as-po",
             "type": "file",
