@@ -1,0 +1,12 @@
+{
+    "project": "RawTherapee",
+    "license" : "GPL-3.0-or-later",
+    "projectweb": "https://rawpedia.rawtherapee.com/Translating_RawTherapee",
+    "fileset": {
+        "RawTherapee": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/rawtherapee/ca.po",
+            "type": "file",
+            "target": "rawtherapee-ca.po"
+        }
+    }
+}
