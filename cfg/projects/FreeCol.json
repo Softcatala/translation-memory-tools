@@ -1,0 +1,12 @@
+{
+    "project": "FreeCol",
+    "license" : "GPL-2.0-only",
+    "projectweb": "https://www.freecol.org/",
+    "fileset": {
+        "FreeCol": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-freecol&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "freecol-ca.po"
+        }
+    }
+}
