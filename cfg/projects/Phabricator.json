@@ -78,4 +78,5 @@
             "type": "file",
             "target": "phabricator-phabricator-maniphest-ca.po"
         }
+    }
 }
