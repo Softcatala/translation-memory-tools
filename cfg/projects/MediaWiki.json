@@ -28,10 +28,90 @@
             "type": "file",
             "target": "wikipedia-android.po"
         },
-        "extensions": {
-            "url": "https://translatewiki.net/w/i.php?title=Special:Translate&action=export&group=ext-0-all&language=ca&task=export-as-po",
-            "type": "file", 
-            "target": "extensions-ca.po"
+        "wikimedia-advanced": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikimedia-advanced&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikimedia-advanced.po"
+        },
+        "wikimedia-technical": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikimedia-technical&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikimedia-technical.po"
+        },
+        "wikipedia-mobile": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-wikimedia-mobile-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikimedia-mobile.po"
+        },
+        "mediawiki-api": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki-api&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "mediawiki-api.po"
+        },
+        "mwgithub-semanticmediawiki": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mwgithub-semanticmediawiki&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "mwgithub-semanticmediawiki.po"
+        },
+        "wikimedia-media": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikimedia-media&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikimedia-media.po"
+        },
+        "ext-0-wikimedia": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-0-wikimedia&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-0-wikimedia.po"
+        },
+        "mediawiki": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "mediawiki.po"
+        },
+        "wikipedia-library-website": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikipedia-library-website&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikipedia-library-website.po"
+        },
+        "ext-wikibase-repo": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikibase-repo&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-wikibase-repo.po"
+        },
+        "wikiedudashboard": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikiedudashboard&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikiedudashboard.po"
+        },
+        "ext-wikimediaprojectnames": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikimediaprojectnames&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-wikimediaprojectnames.po"
+        },
+        "wikimedia-upcoming": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikimedia-upcoming&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikimedia-upcoming.po"
+        },
+        "wikipedia-library": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikipedia-library&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikipedia-library.po"
+        },
+        "wikimedia-legacy": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikimedia-legacy&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wikimedia-legacy.po"
+        },
+        "ext-wikibase-repo-interface": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikibase-repo-interface&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-wikibase-repo-interface.po"
+        },
+        "mediawiki-skin-0-all": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki-skin-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "mediawiki-skin-0-all.po"
         }
     }
 }
