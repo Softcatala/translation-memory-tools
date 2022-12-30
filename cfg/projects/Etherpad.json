@@ -1,0 +1,17 @@
+{
+    "project": "Etherpad",
+    "license" : "Apache-2.0",
+    "projectweb": "https://translatewiki.net/wiki/Translating:Etherpad_lite",
+    "fileset": {
+        "Etherpad": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=etherpad-lite&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "etherpad-ca.po"
+        },
+        "Etherpad-core": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=etherpad-lite-core&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "etherpad-core-ca.po"
+        }
+    }
+}
