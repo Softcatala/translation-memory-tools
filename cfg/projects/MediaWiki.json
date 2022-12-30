@@ -58,11 +58,6 @@
             "type": "file",
             "target": "wikimedia-media.po"
         },
-        "ext-0-wikimedia": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-0-wikimedia&language=ca&format=export-as-po",
-            "type": "file",
-            "target": "ext-0-wikimedia.po"
-        },
         "mediawiki": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki&language=ca&format=export-as-po",
             "type": "file",
@@ -73,20 +68,10 @@
             "type": "file",
             "target": "wikipedia-library-website.po"
         },
-        "ext-wikibase-repo": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikibase-repo&language=ca&format=export-as-po",
-            "type": "file",
-            "target": "ext-wikibase-repo.po"
-        },
         "wikiedudashboard": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikiedudashboard&language=ca&format=export-as-po",
             "type": "file",
             "target": "wikiedudashboard.po"
-        },
-        "ext-wikimediaprojectnames": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikimediaprojectnames&language=ca&format=export-as-po",
-            "type": "file",
-            "target": "ext-wikimediaprojectnames.po"
         },
         "wikimedia-upcoming": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikimedia-upcoming&language=ca&format=export-as-po",
@@ -107,6 +92,106 @@
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikibase-repo-interface&language=ca&format=export-as-po",
             "type": "file",
             "target": "ext-wikibase-repo-interface.po"
+        },
+        "ext-wikibase-repo": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikibase-repo&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-wikibase-repo.po"
+        },
+        "ext-wikimediaprojectnames": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-wikimediaprojectnames&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-wikimediaprojectnames.po"
+        },
+        "ext-bs-0-all": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-bs-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-bs-0-all.po"
+        },
+        "ext-semantic": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-semantic&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-semantic.po"
+        },
+        "ext-growthexperiments": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-growthexperiments&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-growthexperiments.po"
+        },
+        "ext-growthexperiments-homepage": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-growthexperiments-homepage&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-growthexperiments-homepage.po"
+        },
+        "ext-articlefeedbackv5": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-articlefeedbackv5&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-articlefeedbackv5.po"
+        },
+        "ext-abusefilter": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-abusefilter&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-abusefilter.po"
+        },
+        "ext-abusefilter-user": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-abusefilter-user&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-abusefilter-user.po"
+        },
+        "ext-translate": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-translate&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-translate.po"
+        },
+        "ext-flow": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-flow&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-flow.po"
+        },
+        "ext-visualeditor": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-visualeditor&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-visualeditor.po"
+        },
+        "ext-flow-user": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-flow-user&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-flow-user.po"
+        },
+        "ext-socialprofile-0-all": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-socialprofile-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-socialprofile-0-all.po"
+        },
+        "ext-centralauth": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-centralauth&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-centralauth.po"
+        },
+        "ext-centralauth-user": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-centralauth-user&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-centralauth-user.po"
+        },
+        "ext-contenttranslation": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-contenttranslation&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ext-contenttranslation.po"
+        },
+        "wpcleaner": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wpcleaner&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "wpcleaner.po"
+        },
+        "core-0-mostused": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=core-0-mostused&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "core-0-mostused.po"
+        },
+        "page-0-all": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=page-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "page-0-all.po"
         },
         "mediawiki-skin-0-all": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki-skin-0-all&language=ca&format=export-as-po",
