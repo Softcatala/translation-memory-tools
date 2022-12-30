@@ -197,6 +197,11 @@
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki-skin-0-all&language=ca&format=export-as-po",
             "type": "file",
             "target": "mediawiki-skin-0-all.po"
+        },
+        "internetarchivebot": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=internetarchivebot&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "internetarchivebot.po"
         }
     }
 }
