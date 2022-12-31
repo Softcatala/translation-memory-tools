@@ -1,0 +1,12 @@
+{
+    "project": "FUDforum",
+    "license" : "GPL-2.0-only",
+    "projectweb": "http://fudforum.org/forum/",
+    "fileset": {
+        "fudforum": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-fudforum&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "fudforum-ca.po"
+        }
+    }
+}
