@@ -1,0 +1,11 @@
+{
+    "project": "mucommander",
+    "license" : "GPL-2.0-only",
+    "projectweb": "",
+    "fileset": {
+        "Odoo": {
+            "url": "https://github.com/mucommander/mucommander",
+            "type": "git"
+        }
+    }
+}
