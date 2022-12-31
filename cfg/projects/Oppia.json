@@ -1,0 +1,12 @@
+{
+    "project": "Oppia",
+    "license" : "Apache-2.0",
+    "projectweb": "https://www.oppia.org/",
+    "fileset": {
+        "oppia": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=oppia&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "oppia-ca.po"
+        }
+    }
+}
