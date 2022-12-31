@@ -246,6 +246,7 @@ class Project(object):
 
         logging.info('Time used to build project {0}: {1}'.format(self.name,
                      datetime.datetime.now() - start_time))
+        return self.checksum
 
     def get_words_entries(self):
 
