@@ -1,0 +1,12 @@
+{
+    "project": "OpenHistoricalMap",
+    "license" : "GPL-2.0-only",
+    "projectweb": "https://openhistoricalmap.org/",
+    "fileset": {
+        "OpenHistoricalMap": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ohm-website&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "ohm-ca.po"
+        }
+    }
+}
