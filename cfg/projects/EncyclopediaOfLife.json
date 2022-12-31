@@ -1,0 +1,12 @@
+{
+    "project": "Encyclopedia of Life",
+    "license" : "MIT",
+    "projectweb": "https://eol.org/",
+    "fileset": {
+        "eol-website": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=eol-website&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "eol-website-ca.po"
+        }
+    }
+}
