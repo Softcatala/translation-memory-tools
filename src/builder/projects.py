@@ -28,7 +28,6 @@ from .projectmetadatadto import ProjectMetaDataDto
 from .pocatalog import POCatalog
 from .licenses import Licenses
 
-
 class Projects(object):
 
     ENV_NAME = 'DB3_PATH'
@@ -79,9 +78,21 @@ class Projects(object):
         # Use use Processess instead of Theads because some filesets (e.g. transifex) need to
         # to change the proccess directory to work.
         # The number of processess to use is calculated by Python taking into account number of cpus
+        project_futures = {}
         with ProcessPoolExecutor() as executor:
             for project in self.projects:
-                executor.submit(project.do)
+                future = executor.submit(project.do)
+                project_futures[project] = future
+
+        # executor.submit copies the object and runs it in another process.
+        # The project object in this thread does not get updated then we need
+        # to update our object here.
+        for project, feature in project_futures.items():
+            try:
+                project.checksum = feature.result()
+            except:
+                logging.error(f"Projects.__call__. Future error: {project.name}")
+                pass
 
         for project in self.projects:
 
