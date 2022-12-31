@@ -157,18 +157,10 @@ class ConvertFiles():
         os.system(cmd)
 
     '''
-        OpenWhisperSystems conditional conversion code for Android
-        To be refactor when patterns for Android dir structure is clear, 
-        including Xiaomi
+        Conditional conversion code for Android
+        To be refactor when patterns for Android dir structure is clear
     '''
     def _process_non_standard_android_res_locations(self):
-
-        ''' OWS signal '''
-        self._copy_res_files("translations/signal-android.master/en.xml",
-                             "translations/signal-android.master/ca.xml")
-
-        self._copy_res_files("translations/redphone.master/en.xml",
-                             "translations/redphone.master/ca.xml")
 
         '''Briar'''
         self._copy_res_files("translations/briar.stringsxml-5/en.xml",
