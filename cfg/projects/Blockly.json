@@ -1,0 +1,12 @@
+{
+    "project": "Blockly",
+    "license" : "Apache-2.0",
+    "projectweb": "https://github.com/google/blockly",
+    "fileset": {
+        "blockly": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=out-blockly-0-all&language=ca&format=export-as-po",
+            "type": "file",
+            "target": "blockly-ca.po"
+        }
+    }
+}
