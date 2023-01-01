@@ -75,9 +75,9 @@ Once you have a new working project, you can summit it by doing a pull request t
 # Fixing an already existing project
 
 Go to [https://www.softcatala.org/recursos/memories/](https://www.softcatala.org/recursos/memories/) and check the date in the field 
-`Última baixada de la memòria`. If the date is older than a week, the system is unable to download your memory. 
+`Última baixada de la memòria`. If the date is older than a week, the system is unable to download the translations.
 
-Most common reason is that has changed the URL where it publishes the translations.
+The most common reason is that the URL where the translations are published has changed.
 
 At [https://static.softcatala.org/memories/builder-error.log](https://static.softcatala.org/memories/builder-error.log) you can see the logs of the last execution.
 
