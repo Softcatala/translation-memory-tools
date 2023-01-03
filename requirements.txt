@@ -16,4 +16,3 @@ Whoosh
 pytest
 flake8
 nose2
-coveralls
