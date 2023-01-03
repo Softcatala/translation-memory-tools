@@ -10,7 +10,7 @@ docker-build-webapp:
 	docker build --no-cache -t tmt-webapp . -f docker/dockerfile-webapp-local;
 
 docker-build-webapp-test:
-	docker build -t tmt-webapp-test . -f docker/dockerfile-webapp-test
+	docker build -t tmt-webapp-test . -f docker/dockerfile-webapp-test;
 
 docker/.env:
 	@echo "Created default docker/.env file. Setup the necessary environment variables for the docker containers"
