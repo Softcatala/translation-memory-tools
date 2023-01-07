@@ -45,7 +45,7 @@ Debian:
 
 ```shell
 sudo apt-get update -y && sudo apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git curl wget g++ subversion bzip2 python2-dev -y
-curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
+curl https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
 sudo gem install i18n-translators-tools
 pip install -r requirements.txt
 ```
@@ -54,7 +54,7 @@ macOS:
 
 ```shell
 brew install python3 breezy hunspell libyaml gettext zip mercurial ruby git curl wget gcc subversion bzip2
-curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
+curl https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 sudo gem install i18n-translators-tools
 pip install -r requirements.txt
 ```
