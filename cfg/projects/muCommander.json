@@ -1,7 +1,7 @@
 {
     "project": "muCommander",
     "license" : "GPL-2.0-only",
-    "projectweb": "",
+    "projectweb": "https://github.com/mucommander/mucommander/wiki/Translate",
     "fileset": {
         "mucommander": {
             "url": "https://github.com/mucommander/mucommander",
