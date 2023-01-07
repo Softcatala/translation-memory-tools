@@ -41,12 +41,21 @@ If you use docker locally or in production, these credetials are configured in a
 
 This part focuses on helping run to the *builder* component locally if you want to quickly new projects configurations. For any other use case, we recommend using the Docker.
 
+Debian:
+
 ```shell
 sudo apt-get update -y && sudo apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git curl wget g++ subversion bzip2 python2-dev -y
 curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
 sudo gem install i18n-translators-tools
+pip install -r requirements.txt
+```
 
-cd translation-memory-tools
+macOS:
+
+```shell
+brew install python3 breezy hunspell libyaml gettext zip mercurial ruby git curl wget gcc subversion bzip2
+curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
+sudo gem install i18n-translators-tools
 pip install -r requirements.txt
 ```
 
