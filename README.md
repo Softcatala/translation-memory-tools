@@ -39,7 +39,7 @@ If you use docker locally or in production, these credetials are configured in a
 
 ## Runing the builder code locally
 
-This part focuses on helping run to the *builder* component locally if you want to quickly new projects configurations. For any other use case, we recommend using the Docker.
+This part focuses on helping you to run the *builder* component locally in case that you want to test quickly new projects configurations. For any other use case, we recommend using the Docker.
 
 Debian:
 
