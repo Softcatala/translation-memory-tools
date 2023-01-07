@@ -58,10 +58,10 @@
             "type": "file",
             "target": "wikimedia-media.po"
         },
-        "mediawiki": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki&language=ca&format=export-as-po",
+        "mediawiki-exif": {
+            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki-exif&language=ca&format=export-as-po",
             "type": "file",
-            "target": "mediawiki.po"
+            "target": "mediawiki-exif.po"
         },
         "wikipedia-library-website": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=wikipedia-library-website&language=ca&format=export-as-po",
