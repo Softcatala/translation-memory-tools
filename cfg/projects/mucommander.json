@@ -3,9 +3,14 @@
     "license" : "GPL-2.0-only",
     "projectweb": "",
     "fileset": {
-        "Odoo": {
+        "mucommander": {
             "url": "https://github.com/mucommander/mucommander",
-            "type": "git"
+            "type": "git",
+            "conversor_setup": {
+                "type"       : "string",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
         }
     }
 }
