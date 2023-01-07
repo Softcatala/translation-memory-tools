@@ -69,6 +69,7 @@ class Page(object):
             'utf-8',
             errors='replace'
         )
+        handle.close()
 
     def _process_links(self):
         parser = LinkExtractor(self.url)

@@ -11,6 +11,7 @@ services:
     environment:
       DEV_SMALL_SET: 1
       LT_SERVER: http://tmt-languagetool:7001/v2/check
+      LOGSTDOUT: 1
 
     env_file:
         - .env

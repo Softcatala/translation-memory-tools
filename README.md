@@ -2,97 +2,84 @@
 
 # Introduction
 
-This is the toolset used at Softcatalà to build the translation memories
-for all the projects that we know exist in Catalan language and have
-their translations available openly. You can see it on-line:
-<https://www.softcatala.org/recursos/memories/>
+This is the toolset used at Softcatalà to build the translation memories for all the projects that we know exist in Catalan language and have their translations available openly. You can see it on-line at <https://www.softcatala.org/recursos/memories/>
 
-The toolset contains the following components with their own
-responsibility:
+The toolset contains the following components with their own responsibility:
 
-Builder (fetch and build memories)
+**Builder** (fetch and build memories)
 
--   Download and unpack the files from source repositories
--   Convert from the different translation formats (ts, strings, etc) to
-    PO
--   Create a translation memory for project in PO and TMX formats
--   Produce a single translation memory file that contains all the
-    projects
+- Download and unpack the files from source repositories
+- Convert from the different translation formats (ts, strings, etc) to PO
+- Create a translation memory for project in PO and TMX formats
+- Produce a single translation memory file that contains all the projects
 
-Web
+**Web**
 
--   Provides a web application and an API that allow users download
-    memories and search translation
--   Provides an index-creator that creates a Whoosh index with all the
-    strings than then the user can search using the web app
--   Provides an download-creation that creates a zip file with all
-    memories that the user can download
+- Provides an API that allow users download memories and search translations
+- Provides an index-creator that creates a Whoosh index with all the strings than then the user can search using the web app
+- Provides an download-creation that creates a zip file with all memories that the user can download
 
-Terminology (terminology extraction)
+**Terminology** (terminology extraction)
 
--   Analyzes the PO files and creates a report with the most common
-    terminology across the projects
+- Analyzes the PO files and creates a report with the most common terminology across the projects
 
-Quality (feedback on how to improve translations)
+**Quality** (feedback on how to improve translations)
 
--   Runs Pology and LanguageTool and generates HTML reports on
-    translation quality
-
-[Web page of the
-project](http://www.softcatala.org/wiki/Memòria_traducció_de_Softcatalà)
-
-# Dependencies
-
-Requires Python with all these dependencies [requirements.txt](requirements.txt)
+- Runs Pology and LanguageTool and generates HTML reports on translation quality
 
 # Installation
 
-On Debian:
+## Setting up before execution
 
-    sudo apt install python3 python3-pip gettext subversion git ruby bzr hunspell libhunspell-dev
-    sudo gem install i18n-translators-tools
-    cd translation-memory-tools
-    sudo pip3 install -r requirements.txt
+In order to download the translations of some of the projects you need to use the credentials for these systems, for example API keys.
 
-# Docker
+*builder.py* expects the credentials to be defined at [cfg/credentials](./cfg/credentials) in the diferent YML files for each one of the sites that require crendentials.
 
-There is initial support to run part of [this solution as
-container](docker/README.rst)
+If you use docker locally or in production, these credetials are configured in a enviorment variables than then are used to created the configuration YML files.
 
-# Setting up before execution
+## Runing the builder code locally
 
-For Transifex's projects (all projects with type `transifex` at
-`cfg/projects`), during the first execution you will need to setup your
-Transifex credentials. After the first execution, the credentials will
-be readed from the `.transifexrc` file. In order to download the
-translations from a Transifex project, you need to be member of the
-project.
+This part focuses on helping run to the *builder* component locally if you want to quickly new projects configurations. For any other use case, we recommend using the Docker.
 
-# Logging
+```shell
+sudo apt-get update -y && sudo apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git curl wget g++ subversion bzip2 python2-dev -y
+curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash && mv ./tx /usr/bin/
+sudo gem install i18n-translators-tools
 
-After the execution a `builder.log` file is created with details for
-execution.
+cd translation-memory-tools
+pip install -r requirements.txt
+```
 
-# Applications
+For example, to download only the Abiword project:
 
-Located at `src` subdirectory (scripts need to be run from that
-directory):
+```shell
+cd src
+./builder.py -p Abiword
+```
 
-* builder.py (main program): Builds the translation memory: downloads files, merge them and
-builds the final translation memory
+## Running the system locally using Docker
 
-* compare_sets.py (for reporting proposes): compares two sets of the PO files and counts the words
+This requires that you have *docker*, *docker-compose* and *make* installed in your system.
 
-Located at `web` subdirectory:
+First download the data for the projects and generate the data quality reports:
 
-* search: scripts to create the Whossh index and enable the web application
-* download-memories: generates the web page to download the memories
-* scripts: all the automation scripts to build the system automatically nightly
+```shell
+make docker-builder-run
+```
 
-Located at `root` directory:
+Downloading all the projects can take up to a day, which is not acceptable for a development cycle. In the [docker/local.yml](./docker/local.yml) the variable *DEV_SMALL_SET* forces to only download some projects. This small subset does not requiere any specific credentials to be defined to download them.
 
-* unittests: the unittest to check the functionality of different classes
-* integration-tests: tests that check if what has been generated contains errors
+The output files are copied to *web-docker* local directory to make easy to for you explore the results.
+
+To run the web app which provides the microservices for the web site:
+
+```shell
+make docker-webapp-run
+```
+
+To test it from the browser:
+* List projects: http://localhost:8080/projects
+
 
 # Contributing
 

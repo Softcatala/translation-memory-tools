@@ -5,11 +5,28 @@ services:
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+stages:
+  - build
+  - build-languagetool
+
 before_script:
   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
 
 build:
+  stage: build
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG . -f docker/dockerfile-builder
-    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+    - export DOCKER_PATH=docker/dockerfile-builder
+    - export REPO_NAME=$CI_REGISTRY_IMAGE/tmt-builder
+    - export IMAGE_NAME=$REPO_NAME:$CI_COMMIT_REF_NAME
+    - docker build --tag tmt-builder --tag $IMAGE_NAME . -f $DOCKER_PATH
+    - docker push $IMAGE_NAME
+
+build-languagetool:
+  stage: build-languagetool
+  script:
+    - export DOCKER_PATH=docker/dockerfile-languagetool
+    - export REPO_NAME=$CI_REGISTRY_IMAGE/tmt-languagetool
+    - export IMAGE_NAME=$REPO_NAME:$CI_COMMIT_REF_NAME
+    - docker build --tag tmt-languagetool --tag $IMAGE_NAME docker/ -f $DOCKER_PATH
+    - docker push $IMAGE_NAME
 
