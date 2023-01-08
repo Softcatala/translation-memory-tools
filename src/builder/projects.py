@@ -91,7 +91,7 @@ class Projects(object):
             try:
                 project.checksum = feature.result()
             except:
-                logging.error(f"Projects.__call__. Future error: {project.name}")
+                logging.error(f"Projects.__call__. Feature.result() error on '{project.name}' project")
                 pass
 
         for project in self.projects:
