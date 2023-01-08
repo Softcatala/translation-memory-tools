@@ -1,0 +1,12 @@
+{
+    "project": "CKEditor",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://ckeditor.com/docs/ckeditor5/latest/framework/guides/deep-dive/ui/localization.html",
+    "fileset": {
+        "ckeditor": {
+            "url": "https://github.com/ckeditor/ckeditor5.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        }
+    }
+}
