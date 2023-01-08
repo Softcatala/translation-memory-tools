@@ -1,7 +1,6 @@
 pology:
     - rules-dir: quality/pology
-    - python2: /usr/bin/python2
-    - posieve: /usr/local/bin/posieve
+    - posieve: python /usr/local/bin/posieve
     - header-fix: '{0} set-header -sfield:"Language:ca" -screate "{1}"'
     - command: '{0} --skip-obsolete --coloring-type=html check-rules {1} "{2}" > "{3}"'
     - rules:

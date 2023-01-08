@@ -111,7 +111,7 @@ class GenerateQualityReports():
         return lt, pology
 
     def run_pology(self, pology, po_transonly, html):
-        posieve = pology['python2'] + " " + pology['posieve']
+        posieve = pology['posieve']
 
         cmd = pology['header-fix'].format(posieve, po_transonly)
         os.system(cmd)
