@@ -34,7 +34,6 @@ from .localfileset import LocalFileSet
 from .subversionfileset import SubversionFileSet
 from .transifexfileset import TransifexFileSet
 from .transifexhubfileset import TransifexHubFileSet
-from .gitwebfileset import GitWebFileSet
 from .cgitfileset import CGitFileSet
 from .zanatafileset import ZanataFileSet
 from .pontoonfileset import PontoonFileSet
@@ -149,14 +148,6 @@ class Project(object):
                 fs.set_pattern(fileset.pattern)
             elif fileset.type == 'gerrit-directory':
                 fs = GerritDirectoryFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
-                fs.set_pattern(fileset.pattern)
-                fs.set_project(self)
-            elif fileset.type == 'gitweb':
-                fs = GitWebFileSet(self.name,
                                   self.project_id,
                                   fileset.name,
                                   fileset.url,
