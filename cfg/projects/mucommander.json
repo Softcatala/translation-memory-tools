@@ -1,0 +1,16 @@
+{
+    "project": "muCommander",
+    "license" : "GPL-2.0-only",
+    "projectweb": "https://github.com/mucommander/mucommander/wiki/Translate",
+    "fileset": {
+        "muCommander": {
+            "url": "https://github.com/mucommander/mucommander",
+            "type": "git",
+            "conversor_setup": {
+                "type"       : "string",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
+        }
+    }
+}
