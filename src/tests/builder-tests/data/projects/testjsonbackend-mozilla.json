@@ -10,8 +10,9 @@
 			"type": "compressed",
 			"target": "mozilla.zip",
 			"excluded" : "region.properties.po",
-            "pattern" : "http://.*?/ca/.*?",
+            "pattern" : "ca.po",
             "duplicates" : "msgctxt",
+            "retrieval_pattern": "https://.*?/ca/.*?",
             "conversor_setup": {
                 "type"       : "string",
                 "verb"       : "add",

@@ -30,7 +30,7 @@
         },
        "documentation": {
             "url": "https://hosted.weblate.org/",
-            "pattern": "debian",
+            "retrieval_pattern": "debian",
             "type": "weblate"
         }
     }

@@ -27,12 +27,9 @@ from .compressedfileset import CompressedFileSet
 
 class CrawlFileSet(CompressedFileSet):
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
     def _download_links(self, links, directory):
         for link in links:
-            if re.match(self.pattern, link):
+            if self.is_retrieval_pattern(link):
                 filename = os.path.join(directory, link.split('/')[-1])
 
                 download = DownloadFile()

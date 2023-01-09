@@ -30,7 +30,8 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(fileset.type, 'compressed')
         self.assertEquals(fileset.excluded, 'region.properties.po')
         self.assertEquals(fileset.excluded, 'region.properties.po')
-        self.assertEquals(fileset.pattern, 'http://.*?/ca/.*?')
+        self.assertEquals(fileset.pattern, 'ca.po')
+        self.assertEquals(fileset.retrieval_pattern, 'https://.*?/ca/.*?')
         self.assertEquals(fileset.duplicates, 'msgctxt')
         self._validate_mozilla_project_conversor(fileset.conversor_setup)
         return

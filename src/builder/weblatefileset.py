@@ -23,7 +23,6 @@ import json
 import logging
 import os
 import yaml
-import re
 
 from urllib.error import HTTPError
 from .fileset import FileSet
@@ -36,9 +35,6 @@ class WeblateFileSet(FileSet):
     cache = None
     cached = 0
     requests = 0
-
-    def set_pattern(self, pattern):
-        self.pattern = pattern
 
     def _get_auth_api_token(self):
         try:
@@ -126,8 +122,7 @@ class WeblateFileSet(FileSet):
                     continue
 
                 name_to_match = project_dict['name'].lower()
-                r = re.match(self.pattern, name_to_match)
-                if r is None:
+                if not self.is_retrieval_pattern(name_to_match):
                     continue
 
                 components = self._get_components(project_dict["components_list_url"])

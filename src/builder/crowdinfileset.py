@@ -33,9 +33,6 @@ class CrowdinFileSet(FileSet):
     token = None
     requests = 0
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
     def _get_auth_api_token(self):
         try:
             if self.token is not None:

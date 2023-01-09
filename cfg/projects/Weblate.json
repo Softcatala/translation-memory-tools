@@ -5,7 +5,7 @@
     "fileset": {
         "Weblate": {
             "url": "https://hosted.weblate.org/",
-            "pattern": "weblate",
+            "retrieval_pattern": "weblate",
             "type": "weblate"
         }
     }

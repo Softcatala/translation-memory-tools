@@ -20,6 +20,7 @@
 import logging
 import os
 import shutil
+import re
 
 from .convertfiles import ConvertFiles
 from .findfiles import FindFiles
@@ -45,6 +46,7 @@ class FileSet():
         self.duplicates = ''
         self.set_out_directory("")
         self.temp_dir = tempfile.TemporaryDirectory().name
+        self.retrieval_pattern = ''
 
         if parent_fileset:
             self.conversor_setup = parent_fileset.conversor_setup
@@ -55,6 +57,9 @@ class FileSet():
 
     def set_checksum(self, checksum):
         self.checksum = checksum
+
+    def set_retrieval_pattern(self, retrieval_pattern):
+        self.retrieval_pattern = retrieval_pattern
 
     def set_out_directory(self, out_directory):
         POS_DIR = 'individual_pos/'
@@ -208,3 +213,6 @@ class FileSet():
     def _remove_tmp_directory(self):
         if os.path.exists(self.temp_dir):
             shutil.rmtree(self.temp_dir)
+
+    def is_retrieval_pattern(self, item):
+        return re.match(self.retrieval_pattern, item)

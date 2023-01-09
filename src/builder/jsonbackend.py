@@ -61,13 +61,15 @@ class FileSetDTO(object):
         self.duplicates = ''
         self.conversor_setup = None
         self.po_preprocessing = ''
+        self.retrieval_pattern = ''
 
     def __str__(self):
         text = ('FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, '
-                'target: {4}, pattern: {5}, duplicates: {6}, po_preprocessing {7}')
+                'target: {4}, pattern: {5}, duplicates: {6}, po_preprocessing {7}, '
+                'retrieval_pattern {8}')
         return text.format(self.name, self.url, self.type, self.excluded,
                            self.target, self.pattern, self.duplicates,
-                           self.po_preprocessing)
+                           self.po_preprocessing, self.retrieval_pattern)
 
 class ConversorSetupDTO(object):
 
@@ -130,6 +132,8 @@ class JsonBackend(object):
                 self._process_conversor(fileset, fileset_value['conversor_setup'])
             elif fileset_properties_attr == 'po_preprocessing':
                 fileset.po_preprocessing = fileset_properties_value
+            elif fileset_properties_attr == 'retrieval_pattern':
+                fileset.retrieval_pattern = fileset_properties_value
             else:
                 msg = "Field '{0}' not recognized"
                 logging.error(msg.format(fileset_properties_attr))

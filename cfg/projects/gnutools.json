@@ -6,7 +6,7 @@
         "gnutools": {
             "url": "https://translationproject.org/team/ca.html",
             "type": "crawl",
-            "pattern": "https://.*?/ca/.*?"
+            "retrieval_pattern": "https://.*?/ca/.*?"
         }, 
         "freedesktop": {
             "url": "https://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz",

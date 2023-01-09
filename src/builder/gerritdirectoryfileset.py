@@ -35,9 +35,6 @@ class GerritDirectoryFileSet(FileSet):
         their API and then downloads the projects.
     """
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
     def set_project(self, project):
         self.project = project
 
@@ -87,7 +84,7 @@ class GerritDirectoryFileSet(FileSet):
                     elif prj_attribute == 'clone_url':
                         url = prj_value
 
-                if not re.match(self.pattern, name):
+                if not self.is_retrieval_pattern(name):
                     logging.debug('GerritDirectoryFileSet. Discarding:' + name)
                     continue
 
@@ -104,6 +101,5 @@ class GerritDirectoryFileSet(FileSet):
         # All the new filesets have been added re-process project now
         logging.info('GerritDirectoryFileSet. Added {0} filesets dynamically'.
                       format(len(self.project.filesets)))
-
         self.project.report_errors = False
         os.remove(self.filename)
