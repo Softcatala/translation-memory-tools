@@ -222,7 +222,6 @@ class Project(object):
                       format(self.name, fileset.name)
                 logging.exception(msg.format(self.filename))
                 logging.error(detail)
-                pass
 
         self.checksum = checksum.hexdigest()
 
