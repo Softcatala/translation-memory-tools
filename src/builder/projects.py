@@ -75,7 +75,7 @@ class Projects(object):
     def __call__(self):
         """Process all projects"""
 
-        # Use use Processess instead of Theads because some filesets (e.g. transifex) need to
+        # We use Processess instead of Theads because some filesets (e.g. transifex) need to
         # to change the proccess directory to work.
         # The number of processess to use is calculated by Python taking into account number of cpus
         project_futures = {}
