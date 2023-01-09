@@ -30,6 +30,7 @@ class ZanataFileSet(FileSet):
 
     username = None
     auth = None
+    TIMEOUT=15
 
     def _set_auth_api_token(self):
         try:
@@ -55,7 +56,7 @@ class ZanataFileSet(FileSet):
         headers = {'accept': 'application/json'}
 
         req = urllib.request.Request(url, headers=headers)
-        response = urllib.request.urlopen(req)
+        response = urllib.request.urlopen(req, timeout=self.TIMEOUT)
         response_text = response.read().decode(response.info().get_param('charset') or 'utf-8')
         projects = json.loads(response_text)
         ids = []
@@ -86,7 +87,7 @@ class ZanataFileSet(FileSet):
             msg = 'Download file \'{0}\' to {1}'.format(url, filename)
             logging.info(msg)
 
-            infile = urllib.request.urlopen(req)
+            infile = urllib.request.urlopen(req, timeout=self.TIMEOUT)
             output = open(filename, 'wb')
             output.write(infile.read())
             output.close()

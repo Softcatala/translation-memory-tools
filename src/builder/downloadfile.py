@@ -28,11 +28,12 @@ class DownloadFile(object):
     def urlopen_with_retry(self, url):
         NTRIES = 3
         NOT_FOUND = 404
+        TIMEOUT = 15
 
         for _ in range(NTRIES):
             try:
                 req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox'})
-                return urlopen(req)
+                return urlopen(req, timeout=TIMEOUT)
             except HTTPError as e:
                 logging.error("Error on urlopen_with_retry: " + str(e))
                 if e.code == NOT_FOUND:
