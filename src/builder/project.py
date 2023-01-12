@@ -250,8 +250,10 @@ class Project(object):
 
     def statistics(self):
         words, entries = self.get_words_entries()
-        msg = '{0} project. {1} translated strings, words {2}'
-        logging.info(msg.format(self.name, entries, words))
+        if words <=0:
+            logging.error(f"{self.name} project has {words} words")
+
+        logging.info(f'{self.name} project. {entries} translated strings, words {words}')
 
     def _get_filename_at_output(self, filename):
         return os.path.join(self.out_directory, filename)
