@@ -26,38 +26,38 @@ from .fileset import FileSet
 
 class CompressedFileSet(FileSet):
 
-    def _uncompress(self):
-        self.uncompress(self.filename, True)
+    def _uncompress(self, filename, report_error):
+        CompressedFileSet.uncompress(filename, report_error, self.pattern, self.temp_dir)
 
-    def uncompress(self, filename, report_error):
+    def uncompress(filename, report_error, pattern, temp_dir):
         if filename.endswith('.zip'):
-            if len(self.pattern) > 0:
-                os.system('unzip {0} {1} -d {2}'.format(filename, self.pattern, self.temp_dir))
+            if len(pattern) > 0:
+                os.system('unzip {0} {1} -d {2}'.format(filename, pattern, temp_dir))
             else:
-                os.system('unzip {0} -d {1}'.format(filename, self.temp_dir))
+                os.system('unzip {0} -d {1}'.format(filename, temp_dir))
         elif filename.endswith('tar.gz'):
-            if len(self.pattern) > 0:
+            if len(pattern) > 0:
                 cmd = 'tar --wildcards -xvf {0} -C {1} {2}'.format(
                     filename,
-                    self.temp_dir,
-                    self.pattern
+                    temp_dir,
+                    pattern
                 )
                 os.system(cmd)
             else:
                 cmd = 'tar -xvf {0} -C {1}'.format(
                     filename,
-                    self.temp_dir
+                    temp_dir
                 )
                 os.system(cmd)
         elif filename.endswith('.gz'):
             # We are assuming that the .gz file will contain a single PO
             cmd = 'gunzip {0} -c > {1}/ca.po'.format(
                 filename,
-                self.temp_dir
+                temp_dir
             )
             os.system(cmd)
         elif filename.endswith('tar.xz'):
-            cmd = 'tar -Jxf {0} -C {1}'.format(filename, self.temp_dir)
+            cmd = 'tar -Jxf {0} -C {1}'.format(filename, temp_dir)
             os.system(cmd)
         else:
             if report_error is True:
@@ -72,7 +72,7 @@ class CompressedFileSet(FileSet):
         download = DownloadFile()
         download.get_file(self.url, self.filename)
 
-        self._uncompress()
+        self._uncompress(self.filename, True)
         self.build()
 
         if os.path.exists(self.filename):
