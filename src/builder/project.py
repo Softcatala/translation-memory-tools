@@ -250,7 +250,7 @@ class Project(object):
 
     def statistics(self):
         words, entries = self.get_words_entries()
-        if words <=0:
+        if words == 0:
             logging.error(f"{self.name} project has {words} words")
 
         logging.info(f'{self.name} project. {entries} translated strings, words {words}')
