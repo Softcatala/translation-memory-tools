@@ -229,8 +229,8 @@ class Project(object):
 
     def get_words_entries(self):
 
-        words = -1
-        entries = -1
+        words = 0
+        entries = 0
 
         try:
             filename = self._get_filename_at_output(self.filename)
@@ -245,6 +245,7 @@ class Project(object):
         except Exception:
             msg = 'Project.get_words_entries exception {0}'
             logging.error(msg.format(filename))
+            words = entries = -1
 
         return words, entries
 
