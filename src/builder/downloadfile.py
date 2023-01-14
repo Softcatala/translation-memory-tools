@@ -35,12 +35,12 @@ class DownloadFile(object):
                 req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox'})
                 return urlopen(req, timeout=TIMEOUT)
             except HTTPError as e:
-                logging.error("Error on urlopen_with_retry: " + str(e))
+                logging.error(f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' ")
                 if e.code == NOT_FOUND:
                     return
 
             except Exception as e:
-                logging.error("Error on urlopen_with_retry: " + str(e))
+                logging.error(f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' ")
 
     def _remove_incomplete_file(self, filename):
         if os.path.exists(filename):
