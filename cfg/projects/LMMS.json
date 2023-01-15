@@ -6,7 +6,8 @@
         "lmms": {
             "url": "https://raw.githubusercontent.com/LMMS/lmms/master/data/locale/ca.ts",
             "type": "file",
-            "target": "lmms.ts"
+            "target": "lmms.ts",
+            "duplicates" : "msgctxt"
         }
     }
 }
