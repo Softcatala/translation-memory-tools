@@ -1,0 +1,11 @@
+{
+     "project": "Penpot", 
+     "projectweb": "https://penpot.app/",
+     "fileset": {
+         "Frontend": {
+             "url": "https://raw.githubusercontent.com/penpot/penpot/develop/frontend/translations/ca.po", 
+             "type": "file", 
+             "target": "frontend-ca.po"
+         }
+     }
+ }
