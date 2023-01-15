@@ -1,7 +1,7 @@
 {
     "project": "aMule",
     "license" : "GPL-2.0-or-later",
-    "projectweb": "https://wiki.amule.org/wiki/Translations",
+    "projectweb": "https://github.com/amule-project/amule",
     "fileset": {
         "aMule": {
             "url": "http://amule.sourceforge.net/translations/trunk/ca.po", 
