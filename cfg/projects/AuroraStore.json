@@ -1,11 +1,12 @@
 {
-      "project": "AuroraStore", 
-      "projectweb": "https://auroraoss.com",
-      "fileset": {
-          "AuroraStore": {
-              "url": "https://hosted.weblate.org/download/aurora-store/aurorastore-translations/ca/?format=po", 
-              "type": "file", 
-              "target": "ca.po"
-          }
-     }
- }
+    "project": "AuroraStore",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://auroraoss.com",
+    "fileset": {
+        "AuroraStore": {
+            "url": "https://hosted.weblate.org/download/aurora-store/aurorastore-translations/ca/?format=po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
