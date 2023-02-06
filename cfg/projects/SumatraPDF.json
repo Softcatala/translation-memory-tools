@@ -1,0 +1,17 @@
+{
+    "project": "SumatraPDF",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://www.sumatrapdfreader.org/docs/Contribute-translation",
+    "softcatala": true,
+    "fileset": {
+        "SumatraPDF": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/sumatra/sumatra.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
+
+
+
+
