@@ -1,11 +1,12 @@
 {
-     "project": "Penpot", 
-     "projectweb": "https://penpot.app/",
-     "fileset": {
-         "frontend": {
-             "url": "https://raw.githubusercontent.com/penpot/penpot/develop/frontend/translations/ca.po", 
-             "type": "file", 
-             "target": "frontend-ca.po"
-         }
-     }
- }
+    "project": "Penpot",
+    "license" : "MPL-2.0",
+    "projectweb": "https://penpot.app/",
+    "fileset": {
+        "frontend": {
+            "url": "https://raw.githubusercontent.com/penpot/penpot/develop/frontend/translations/ca.po",
+            "type": "file",
+            "target": "frontend-ca.po"
+        }
+    }
+}
