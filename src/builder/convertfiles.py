@@ -305,6 +305,6 @@ class ConvertFiles():
         for xlfile in self.findFiles.find_recursive(self.convert_dir, '*.xliff'):
             fileName, fileExtension = os.path.splitext(xlfile)
             pofile = xlfile.replace(".xliff", ".po")
-            cmd = f'xliff2po -i {xlfile} -o {pofile}'
+            cmd = f'xliff2po -i "{xlfile}" -o "{pofile}"'
             os.system(cmd)
 
