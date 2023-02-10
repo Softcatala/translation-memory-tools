@@ -1,7 +1,7 @@
 {
     "project": "Mastodon",
-    "license" : "AGPL-3.0-only",
-    "projectweb": "https://www.joinmastodon.org/",
+    "license" : "AGPL-3.0-or-later",
+    "projectweb": "https://joinmastodon.org/",
     "fileset": {
         "Mastodon": {
             "url": "https://github.com/tootsuite/mastodon.git",

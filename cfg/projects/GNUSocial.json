@@ -1,7 +1,7 @@
 {
     "project": "GNUSocial",
     "license" : "AGPL-3.0-or-later",
-    "projectweb": "https://gnu.io/social/", 
+    "projectweb": "https://www.gnusocial.rocks/", 
     "fileset": {
         "GNUSocial": {
             "url": "https://www.transifex.com/gnu-social/gnu-social/",

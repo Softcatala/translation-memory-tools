@@ -1,7 +1,7 @@
 {
     "project": "Solus",
     "license" : "GPL-2.0-only",
-    "projectweb": "https://getsol.us/",
+    "projectweb": "https://solus-project.com/",
     "fileset": {
         "SC": {
             "url": "https://raw.githubusercontent.com/solus-project/solus-sc/master/po/ca.po",
