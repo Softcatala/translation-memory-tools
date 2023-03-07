@@ -4,8 +4,9 @@
     "projectweb": "https://www.blender.org/",
     "fileset": {
         "blender": {
-            "url": "https://www.transifex.com/softcatala/blender-en-catala/",
-            "type": "transifex"
+            "url": "https://svn.blender.org/svnroot/bf-translations/branches/ca/ca.po/",
+            "type": "file",
+            "target": "blender-ca.po"
         }
     }
 }
