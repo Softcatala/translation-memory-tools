@@ -51,9 +51,9 @@
             "target": "ca.po"
         },
         "ubiquity-slideshow": {
-            "url": "lp:ubiquity-slideshow-ubuntu",
-            "type": "bazaar",
-            "pattern": ".*?ca.po"
+            "url": "https://git.launchpad.net/ubiquity-slideshow-ubuntu/plain/po/ubuntu/ca.po",
+            "type": "file",
+            "target": "ubiquity-slideshow-ca.po"
         },
         "ubuntu-mate-welcome": {
             "url": "https://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/",
