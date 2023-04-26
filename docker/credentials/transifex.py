@@ -28,7 +28,7 @@ if __name__ == '__main__':
     filename = os.path.join(home, '.transifexrc')
     f = open(filename, "w+")
 
-    f.write("[https://www.transifex.com]\n")
+    f.write("[https://app.transifex.com]\n")
     f.write("rest_hostname = https://rest.api.transifex.com\n")
     f.write("token = {0}\n".format(os.environ['TRANSIFEX_TOKEN']))
     f.close()
