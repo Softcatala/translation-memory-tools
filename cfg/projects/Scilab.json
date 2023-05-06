@@ -3,8 +3,8 @@
     "license" : "GPL-2.0-only",
     "projectweb": "https://www.scilab.org/",
     "fileset": {
-        "Winscp": {
-            "url": "git://git.scilab.org/scilab",
+        "scilab": {
+            "url": "https://gitlab.com/scilab/scilab.git",
             "type": "git",
             "pattern": ".*?ca_ES.po"
         }
