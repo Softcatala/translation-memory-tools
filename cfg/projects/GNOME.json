@@ -29,6 +29,16 @@
             "type": "compressed",
             "target": "gnome-circle.ui.tar.gz"
         },
+        "evolution": {
+            "url": "https://l10n.gnome.org/languages/ca/evolution/ui.tar.gz",
+            "type": "compressed",
+            "target": "evolution.ui.tar.gz"
+        },
+        "incubator": {
+            "url": "https://l10n.gnome.org/languages/ca/incubator/ui.tar.gz",
+            "type": "compressed",
+            "target": "incubator.ui.tar.gz"
+        },
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
             "type": "compressed", 
@@ -43,6 +53,11 @@
             "url": "https://l10n.gnome.org/languages/ca/gnome-circle/doc.tar.gz",
             "type": "compressed",
             "target": "gnome-circle-doc.tar.gz"
+        },
+       "gnome-evolution-doc": {
+            "url": "https://l10n.gnome.org/languages/ca/evolution/doc.tar.gz",
+            "type": "compressed",
+            "target": "evolution-doc.tar.gz"
         },
         "desktop-icons-ng": {
             "url": "https://gitlab.com/rastersoft/desktop-icons-ng/-/raw/master/po/ca.po",
