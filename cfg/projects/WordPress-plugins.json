@@ -43,6 +43,11 @@
             "url": "https://translate.wordpress.org/projects/wp-plugins/bbpress/dev/ca/default/export-translations",
             "type": "file",
             "target": "bbpress-ca.po"
+        },        
+        "yet-another-related-posts-plugin": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/yet-another-related-posts-plugin/dev/ca/default/export-translations",
+            "type": "file",
+            "target": "yet-another-related-posts-plugin-ca.po"
         }
     }
 }
