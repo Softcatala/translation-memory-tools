@@ -9,6 +9,11 @@
             "type": "file", 
             "target": "wp-plugins-akismet-dev-ca.po"
         },
+        "bbpress": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/bbpress/dev/ca/default/export-translations",
+            "type": "file",
+            "target": "bbpress-ca.po"
+        },
         "google-analytics-for-wordpress": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/google-analytics-for-wordpress/dev/ca/default/export-translations", 
             "type": "file", 
@@ -18,6 +23,11 @@
             "url": "https://translate.wordpress.org/projects/wp-plugins/gutenberg/dev/ca/default/export-translations", 
             "type": "file", 
             "target": "gutenberg-ca.po"
+        },
+        "nelio-content": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/nelio-content/dev/ca/default/export-translations",
+            "type": "file",
+            "target": "nelio-content-ca.po"
         },
         "woocommerce": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/woocommerce/dev/ca/default/export-translations", 
@@ -34,16 +44,6 @@
             "type": "file", 
             "target": "wordpress-seo-premium-ca.po"
         },
-        "nelio-content": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/nelio-content/dev/ca/default/export-translations",
-            "type": "file",
-            "target": "nelio-content-ca.po"
-        },
-        "bbpress": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/bbpress/dev/ca/default/export-translations",
-            "type": "file",
-            "target": "bbpress-ca.po"
-        },        
         "yet-another-related-posts-plugin": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/yet-another-related-posts-plugin/dev/ca/default/export-translations",
             "type": "file",
