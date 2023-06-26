@@ -188,11 +188,6 @@
             "type": "file",
             "target": "core-0-mostused.po"
         },
-        "page-0-all": {
-            "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=page-0-all&language=ca&format=export-as-po",
-            "type": "file",
-            "target": "page-0-all.po"
-        },
         "mediawiki-skin-0-all": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=mediawiki-skin-0-all&language=ca&format=export-as-po",
             "type": "file",
