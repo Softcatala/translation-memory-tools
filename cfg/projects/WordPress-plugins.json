@@ -44,6 +44,11 @@
             "type": "file", 
             "target": "wordpress-seo-premium-ca.po"
         },
+        "wpforms-lite": {
+            "url": "https://translate.wordpress.org/projects/wp-plugins/wpforms-lite/dev/ca/default/export-translations",
+            "type": "file",
+            "target": "wpforms-lite.po"
+        },
         "yet-another-related-posts-plugin": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/yet-another-related-posts-plugin/dev/ca/default/export-translations",
             "type": "file",
