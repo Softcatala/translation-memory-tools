@@ -4,9 +4,9 @@
     "projectweb": "https://godotengine.org/",
     "fileset": {
          "Godot Engine": {
-            "url": "https://hosted.weblate.org/",
-            "retrieval_pattern": "godot engine",
-            "type": "weblate"
+            "url": "https://raw.githubusercontent.com/godotengine/godot/master/editor/translations/editor/ca.po",
+            "target": "godot.po",
+            "type": "file"
         }
     }
 }
