@@ -1,0 +1,12 @@
+{
+    "project": "yuzu",
+    "license" : "GPL-3.0-or-later",
+    "projectweb": "https://yuzu-emu.org/",
+    "fileset": {
+        "yuzu": {
+            "url": "https://raw.githubusercontent.com/yuzu-emu/yuzu/master/dist/languages/ca.ts",
+            "type": "file",
+            "target": "yuzu-ca.ts"
+        }
+    }
+}
