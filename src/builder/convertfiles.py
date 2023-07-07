@@ -47,6 +47,7 @@ class ConvertFiles():
         self._convert_yml_files_to_po()
         self._convert_csv_files_to_po()
         self._convert_xliff_file_to_po()
+        self._convert_mo_files_to_po()
 
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find_recursive(self.convert_dir, '*.ts'):
@@ -308,3 +309,8 @@ class ConvertFiles():
             cmd = f'xliff2po -i "{xlfile}" -o "{pofile}"'
             os.system(cmd)
 
+    def _convert_mo_files_to_po(self):
+        for mofile in self.findFiles.find_recursive(self.convert_dir, '*.mo'):
+            fileName, fileExtension = os.path.splitext(mofile)
+            logging.info('convert mo file: {0}'.format(mofile))
+            os.system('msgunfmt {0} > {1}.po'.format(mofile, fileName))

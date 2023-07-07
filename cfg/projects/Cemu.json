@@ -1,0 +1,12 @@
+{
+    "project": "Cemu",
+    "license" : "MPL-2.0",
+    "projectweb": "http://wiki.cemu.info/wiki/Tutorial:How_to_translate_Cemu_UI",
+    "fileset": {
+        "cemu": {
+            "url": "https://github.com/cemu-project/Cemu/raw/main/bin/resources/ca/cemu.mo",
+            "type": "file",
+            "target": "cemu.mo"
+        }
+    }
+}
