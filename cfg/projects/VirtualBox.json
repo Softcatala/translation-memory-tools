@@ -4,15 +4,19 @@
     "projectweb": "https://www.softcatala.org/projectes/virtualbox/",
     "softcatala": true,
     "fileset": {
-        "virtualbox": {
+        "virtualbox_stable": {
             "url": "https://www.virtualbox.org/export/HEAD/vbox/trunk/src/VBox/Frontends/VirtualBox/nls/VirtualBox_ca.ts",
             "type": "file",
             "target": "virtualbox-ca.ts"
         },
-        "qt_ca": {
+        "qt_ca_stable": {
             "url": "https://www.virtualbox.org/export/HEAD/vbox/trunk/src/VBox/Frontends/VirtualBox/nls/qt_ca.ts",
             "type": "file",
             "target": "qt_ca.ts"
+        },
+        "virtualbox_dev": {
+            "url": "https://explore.transifex.com/softcatala/virtualbox_cat/",
+            "type": "transifex"
         }
     }
 }
