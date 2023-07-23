@@ -4,7 +4,7 @@
     "projectweb": "https://www.yumex.dk/",
     "fileset": {
         "yumex": {
-            "url": "https://www.transifex.com/timlau/yumex",
+            "url": "https://app.transifex.com/timlau/yumex",
             "type": "transifex"
         }
     }

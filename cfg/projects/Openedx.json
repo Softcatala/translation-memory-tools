@@ -4,7 +4,7 @@
     "projectweb": "https://open.edx.org/",
     "fileset": {
         "Opendex": {
-            "url": "https://www.transifex.com/open-edx/edx-platform/",
+            "url": "https://app.transifex.com/open-edx/edx-platform/",
             "type": "transifex",
             "po_preprocessing" : "remove_untranslated"
         }

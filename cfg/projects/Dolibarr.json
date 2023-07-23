@@ -4,7 +4,7 @@
     "projectweb": "https://www.dolibarr.org/",
     "fileset": {
         "Dolibarr": {
-            "url": "https://www.transifex.com/dolibarr-association/dolibarr/",
+            "url": "https://app.transifex.com/dolibarr-association/dolibarr/",
             "type": "transifex",
             "po_preprocessing" : "remove_untranslated",
             "conversor_setup": {

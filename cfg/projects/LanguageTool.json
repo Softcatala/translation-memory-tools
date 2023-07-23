@@ -5,7 +5,7 @@
     "softcatala": true,
     "fileset": {
         "LanguageTool": {
-            "url": "https://www.transifex.com/dnaber/languagetool/",
+            "url": "https://app.transifex.com/dnaber/languagetool/",
             "type": "transifex",
             "po_preprocessing" : "remove_untranslated",
             "conversor_setup": {

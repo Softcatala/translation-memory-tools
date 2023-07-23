@@ -4,7 +4,7 @@
     "projectweb": "https://www.sakaiproject.org/", 
     "fileset": {
         "Sakai": {
-            "url": "https://www.transifex.com/apereo/sakai-trunk/",
+            "url": "https://app.transifex.com/apereo/sakai-trunk/",
             "type": "transifex"
         }
     }

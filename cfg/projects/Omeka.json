@@ -4,7 +4,7 @@
     "projectweb": "https://omeka.org/",
     "fileset": {
         "Omeka": {
-            "url": "https://www.transifex.com/omeka/omeka/",
+            "url": "https://app.transifex.com/omeka/omeka/",
             "type": "transifex"
         }
     }

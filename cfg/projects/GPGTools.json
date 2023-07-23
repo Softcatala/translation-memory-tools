@@ -5,7 +5,7 @@
     "softcatala": true, 
     "fileset": {
         "GPGMail": {
-            "url": "https://www.transifex.com/gpgtools/GPGMail/dashboard/",
+            "url": "https://app.transifex.com/gpgtools/GPGMail/dashboard/",
             "type": "transifex"
         }
     }

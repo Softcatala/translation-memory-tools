@@ -4,7 +4,7 @@
     "projectweb": "https://www.gnusocial.rocks/", 
     "fileset": {
         "GNUSocial": {
-            "url": "https://www.transifex.com/gnu-social/gnu-social/",
+            "url": "https://app.transifex.com/gnu-social/gnu-social/",
             "type": "transifex"
         }
     }

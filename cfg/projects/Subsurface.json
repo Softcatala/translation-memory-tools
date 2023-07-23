@@ -4,7 +4,7 @@
     "projectweb": "https://subsurface-divelog.org/", 
     "fileset": {
         "Subsurface": {
-            "url": "https://www.transifex.com/subsurface/subsurface/",
+            "url": "https://app.transifex.com/subsurface/subsurface/",
             "type": "transifex"
         }
     }

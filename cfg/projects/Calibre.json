@@ -4,12 +4,12 @@
     "projectweb": "https://calibre-ebook.com/",
     "fileset": {
         "calibre": {
-            "url": "https://www.transifex.com/calibre/calibre/",
+            "url": "https://app.transifex.com/calibre/calibre/",
             "type": "transifex",
             "excluded" : "/en"
         },
         "calibre-plugins": {
-            "url": "https://www.transifex.com/calibre/calibre-plugins/",
+            "url": "https://app.transifex.com/calibre/calibre-plugins/",
             "type": "transifex",
             "excluded" : "/en"
         }

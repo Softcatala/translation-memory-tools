@@ -4,7 +4,7 @@
     "projectweb": "https://github.com/baedert/corebird", 
     "fileset": {
         "CoreBird": {
-            "url": "https://www.transifex.com/corebird/corebird/",
+            "url": "https://app.transifex.com/corebird/corebird/",
             "type": "transifex"
         }
     }
