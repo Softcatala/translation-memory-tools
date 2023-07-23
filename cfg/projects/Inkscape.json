@@ -13,6 +13,11 @@
             "url": "-b 1.0.x https://gitlab.com/inkscape/inkscape-docs/documentation.git",
             "type": "git",
             "pattern": ".*?ca.po"
+        },
+        "inkscape-dev": {
+            "url": "https://raw.githubusercontent.com/Softcatala/inkscape-ca/main/translated/ca.po",
+            "type": "file",
+            "target": "ca-dev.po"
         }
     }
 }
