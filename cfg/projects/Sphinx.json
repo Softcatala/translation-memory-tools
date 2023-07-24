@@ -4,8 +4,9 @@
     "projectweb": "https://www.sphinx-doc.org",
     "fileset": {
         "sphinx-doc": {
-            "url": "https://app.transifex.com/sphinx-doc/sphinx-1/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/sphinx-doc/sphinx/master/sphinx/locale/ca/LC_MESSAGES/sphinx.po",
+            "type": "file",
+            "target": "sphinx-ca.po"
         }
     }
 }

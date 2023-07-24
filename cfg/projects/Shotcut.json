@@ -4,8 +4,9 @@
     "projectweb": "https://www.shotcut.org/", 
     "fileset": {
         "shotcut": {
-            "url": "https://app.transifex.com/ddennedy/shotcut",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/translations/shotcut_ca.ts",
+            "type": "file",
+            "target": "shotcut_ca.ts"
         }
     }
 }

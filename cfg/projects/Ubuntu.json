@@ -56,13 +56,16 @@
             "target": "ubiquity-slideshow-ca.po"
         },
         "ubuntu-mate-welcome": {
-            "url": "https://app.transifex.com/ubuntu-mate/ubuntu-mate-welcome/",
-            "type": "transifex"
-        },"ubuntu-terminal": {
+            "url": "https://raw.githubusercontent.com/ubuntu-mate/ubuntu-mate-welcome-legacy/master/po/ca_ES.po",
+            "type": "file",
+            "target": "ubuntu-mate-welcome-ca.po"
+        },
+        "ubuntu-terminal": {
             "url": "lp:~ubuntu-terminal-dev/ubuntu-terminal-app/reboot/po/ca.po",
             "type": "bazaar",
             "target": "ca.po"
-        },"libqtelegram": {
+        },
+        "libqtelegram": {
             "url": "lp:~libqtelegram-team/telegram-app/telegram/telegram/po/ca.po",
             "type": "bazaar",
             "target": "ca.po"

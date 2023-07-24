@@ -4,12 +4,14 @@
     "projectweb": "https://tortoisegit.org/",
     "fileset": {
         "Tortoisesvn": {
-            "url": "https://app.transifex.com/luebbe/tortoisesvn/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/stefankueng/TortoiseSVN/main/Languages/ca/TortoiseUI.po",
+            "type": "file",
+            "target": "tortoisesvn-ca.po"
         },
         "Tortoisegit": {
-            "url": "https://app.transifex.com/lznuaa/tortoisegit/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/TortoiseGit/TortoiseGit/master/Languages/Tortoise_ca.po",
+            "type": "file",
+            "target": "tortoisesgit-ca.po"
         }  
     }
 }

@@ -4,8 +4,9 @@
     "projectweb": "https://www.supertux.org/",
     "fileset": {
         "SuperTux": {
-            "url": "https://app.transifex.com/arctic-games/supertux/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/locale/ca.po",
+            "type": "file",
+            "target": "supertux-ca.po"
         }
     }
 }
