@@ -1,7 +1,7 @@
 {
     "project": "Sigil",
     "license" : "GPL-3.0-only",
-    "projectweb": "https://app.transifex.com/projects/p/sigil", 
+    "projectweb": "https://app.transifex.com/zdpo/sigil/",
     "fileset": {
         "sigil": {
             "url": "https://app.transifex.com/zdpo/sigil/",
