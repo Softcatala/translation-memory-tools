@@ -4,7 +4,7 @@
     "projectweb": "https://github.com/jonasoreland/runnerup",
     "fileset": {
         "runnerup": {
-            "url": "https://www.transifex.com/runner-up/runner-up-android",
+            "url": "https://app.transifex.com/runner-up/runner-up-android",
             "type": "transifex"
         }
     }

@@ -4,7 +4,7 @@
     "projectweb": "https://theforeman.org/",
     "fileset": {
         "theforeman": {
-            "url": "https://www.transifex.com/foreman/foreman",
+            "url": "https://app.transifex.com/foreman/foreman",
             "type": "transifex"
         }
     }

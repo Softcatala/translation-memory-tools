@@ -4,7 +4,7 @@
     "projectweb": "https://www.tiny.cloud/tinymce/",
     "fileset": {
         "TinyMCE": {
-            "url": "https://www.transifex.com/tiny/tinymce/",
+            "url": "https://app.transifex.com/tiny/tinymce/",
             "type": "transifex",
             "duplicates" : "msgctxt"
         }

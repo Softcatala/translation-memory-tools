@@ -4,7 +4,7 @@
     "projectweb": "https://cyberduck.io/", 
     "fileset": {
         "Cyberduck": {
-            "url": "https://www.transifex.com/cyberduck/cyberduck/",
+            "url": "https://app.transifex.com/cyberduck/cyberduck/",
             "type": "transifex",
             "po_preprocessing" : "remove_untranslated"
         }

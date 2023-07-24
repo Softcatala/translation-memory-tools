@@ -1,7 +1,7 @@
 {
     "project": "eduroam CAT",
     "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.transifex.com/eduroam_devel/cat/dashboard/", 
+    "projectweb": "https://app.transifex.com/eduroam_devel/cat/dashboard/", 
     "fileset": {
         "eduroamCAT": {
             "url": "https://github.com/GEANT/CAT.git",

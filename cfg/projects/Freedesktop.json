@@ -14,7 +14,7 @@
             "target": "appstream-glib.po"
         },
         "cups-pk-helper": {
-            "url": "https://www.transifex.com/freedesktop/cups-pk-helper",
+            "url": "https://app.transifex.com/freedesktop/cups-pk-helper",
             "type": "transifex"
         },
         "fprintd": {
@@ -23,19 +23,19 @@
             "target": "fprintd.po"
         },
         "p11-kit": {
-            "url": "https://www.transifex.com/freedesktop/p11-kit",
+            "url": "https://app.transifex.com/freedesktop/p11-kit",
             "type": "transifex"
         },
         "packagekit": {
-            "url": "https://www.transifex.com/freedesktop/packagekit",
+            "url": "https://app.transifex.com/freedesktop/packagekit",
             "type": "transifex"
         },
         "realmd": {
-            "url": "https://www.transifex.com/freedesktop/realmd",
+            "url": "https://app.transifex.com/freedesktop/realmd",
             "type": "transifex"
         },
         "shared-mime-info": {
-            "url": "https://www.transifex.com/freedesktop/shared-mime-info",
+            "url": "https://app.transifex.com/freedesktop/shared-mime-info",
             "type": "transifex"
         },
         "udisks": {

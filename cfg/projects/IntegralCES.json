@@ -4,7 +4,7 @@
     "projectweb": "https://www.integralces.net/?lang=ca",
     "fileset": {
         "IntegralCES": {
-            "url": "https://www.transifex.com/integralces/integralces/",
+            "url": "https://app.transifex.com/integralces/integralces/",
             "type": "transifex"
         }
     }

@@ -4,11 +4,11 @@
     "projectweb": "https://tortoisegit.org/",
     "fileset": {
         "Tortoisesvn": {
-            "url": "https://www.transifex.com/luebbe/tortoisesvn/",
+            "url": "https://app.transifex.com/luebbe/tortoisesvn/",
             "type": "transifex"
         },
         "Tortoisegit": {
-            "url": "https://www.transifex.com/lznuaa/tortoisegit/",
+            "url": "https://app.transifex.com/lznuaa/tortoisegit/",
             "type": "transifex"
         }  
     }

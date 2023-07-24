@@ -5,7 +5,7 @@
     "softcatala": true, 
     "fileset": {
         "VLC": {
-            "url": "https://www.transifex.com/yaron/vlc-trans/",
+            "url": "https://app.transifex.com/yaron/vlc-trans/",
             "type": "transifex"
         }
     }

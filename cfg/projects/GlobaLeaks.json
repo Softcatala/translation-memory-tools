@@ -4,7 +4,7 @@
     "projectweb": "https://www.globaleaks.org/",
     "fileset": {
         "GlobaLeaks": {
-            "url": "https://www.transifex.com/otf/globaleaks/",
+            "url": "https://app.transifex.com/otf/globaleaks/",
             "type": "transifex"
         }
     }

@@ -4,7 +4,7 @@
     "projectweb": "https://www.sigsiu.net",
     "fileset": {
         "SobiPro": {
-            "url": "https://www.transifex.com/radeksu/SobiPro/",
+            "url": "https://app.transifex.com/radeksu/SobiPro/",
             "type": "transifex"
         }
     }

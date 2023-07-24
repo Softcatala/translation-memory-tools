@@ -4,11 +4,11 @@
     "projectweb": "https://www.qgis.org/ca/site/", 
     "fileset": {
         "Qgis": {
-            "url": "https://www.transifex.com/qgis/QGIS",
+            "url": "https://app.transifex.com/qgis/QGIS",
             "type": "transifex"
         },
         "Qgis-website": {
-            "url": "https://www.transifex.com/qgis/qgis-website",
+            "url": "https://app.transifex.com/qgis/qgis-website",
             "type": "transifex"
         }
     }

@@ -5,7 +5,7 @@
     "projectweb": "https://www.mageia.org/ca/", 
     "fileset": {
         "Mageia": {
-            "url": "https://www.transifex.com/MageiaLinux/mageia",
+            "url": "https://app.transifex.com/MageiaLinux/mageia",
             "type": "transifex"
         }
     }

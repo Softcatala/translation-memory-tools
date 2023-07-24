@@ -4,7 +4,7 @@
     "projectweb": "https://mxlinux.org/",
     "fileset": {
         "MXLinux": {
-            "url": "https://www.transifex.com/anticapitalista/antix-development/",
+            "url": "https://app.transifex.com/anticapitalista/antix-development/",
             "type": "transifex"
         }
     }

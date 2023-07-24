@@ -4,7 +4,7 @@
     "projectweb": "https://creativecommons.org/", 
     "fileset": {
         "CreativeCommons": {
-            "url": "https://www.transifex.com/creativecommons/CC/",
+            "url": "https://app.transifex.com/creativecommons/CC/",
             "type": "transifex"
         }
     }
