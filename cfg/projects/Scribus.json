@@ -4,8 +4,9 @@
     "projectweb": "https://wiki.scribus.net/canvas/Official:Translation_Howto", 
     "fileset": {
         "scribus": {
-            "url": "https://app.transifex.com/scribus/scribus/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/scribusproject/scribus/master/resources/translations/scribus.ca.ts",
+            "type": "file",
+            "target": "scribus-ca.ts"
         }
     }
 }

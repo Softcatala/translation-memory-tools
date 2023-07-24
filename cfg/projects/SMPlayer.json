@@ -4,9 +4,9 @@
     "projectweb": "https://www.smplayer.info/",
     "fileset": {
         "SMPlayer": {
-            "url": "https://app.transifex.com/rvm/smplayer",
-            "type": "transifex",
-            "pattern": ".*?ca.po"
+            "url": "https://raw.githubusercontent.com/smplayer-dev/smplayer/master/src/translations/smplayer_ca.ts",
+            "type": "file",
+            "target": "smplayer_ca.ts"
         }
     }
 }

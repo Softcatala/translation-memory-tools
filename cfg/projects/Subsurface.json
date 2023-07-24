@@ -4,8 +4,9 @@
     "projectweb": "https://subsurface-divelog.org/", 
     "fileset": {
         "Subsurface": {
-            "url": "https://app.transifex.com/subsurface/subsurface/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/subsurface/subsurface/master/translations/subsurface_ca.ts",
+            "type": "file",
+            "target": "subsurface_ca.ts"
         }
     }
 }
