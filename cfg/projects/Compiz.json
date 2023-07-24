@@ -1,7 +1,7 @@
 {
     "project": "Compiz",
     "license" : "MIT",
-    "projectweb": "http://www.compiz.org", 
+    "projectweb": "https://gitlab.com/compiz",
     "fileset": {
         "simple-ccsm": {
             "url": "https://raw.githubusercontent.com/compiz-reloaded/simple-ccsm/master/po/ca.po", 
