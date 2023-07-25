@@ -4,10 +4,9 @@
     "projectweb": "https://transmissionbt.com/",
     "fileset": {
         "Transmission": {
-            "url": "https://app.transifex.com/transmissionbt/transmissionbt/",
-            "type": "transifex",
-            "excluded" : "/en",
-            "po_preprocessing" : "remove_untranslated"
+            "url": "https://raw.githubusercontent.com/transmission/transmission/main/po/ca.po",
+            "type": "file",
+            "target": "transmission-ca.po"
         }
     }
 }

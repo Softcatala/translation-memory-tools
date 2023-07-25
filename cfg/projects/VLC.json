@@ -5,8 +5,9 @@
     "softcatala": true, 
     "fileset": {
         "VLC": {
-            "url": "https://app.transifex.com/yaron/vlc-trans/",
-            "type": "transifex"
+            "url": "https://code.videolan.org/videolan/vlc/-/raw/master/po/ca.po",
+            "type": "file",
+            "target": "vlc-ca.po"
         }
     }
 }

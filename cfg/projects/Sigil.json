@@ -4,9 +4,9 @@
     "projectweb": "https://app.transifex.com/zdpo/sigil/",
     "fileset": {
         "sigil": {
-            "url": "https://app.transifex.com/zdpo/sigil/",
-            "type": "transifex", 
-            "target": "sigil-ca.po"
+            "url": "https://raw.githubusercontent.com/Sigil-Ebook/Sigil/master/src/Resource_Files/ts/sigil_ca.ts",
+            "type": "file",
+            "target": "sigil-ca.ts"
         }
     }
 }
