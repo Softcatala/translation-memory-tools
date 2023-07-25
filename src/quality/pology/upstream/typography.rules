@@ -79,7 +79,7 @@ valid span="\:q"
 valid span="\:\'"
 valid span="\:\="
 valid span="\:e"
-valid msgstr=":(alt|kbd|file|guilabel|menuselection|program|ref|sub|sup|term):" # Krita doc_www
+valid msgstr="\:(alt|dfn|file|guilabel|kbd|menuselection|program|ref|sub|sup|term)\:" # Krita doc_www
 valid msgstr="HH:MM\[\:SS\]" # docmessages
 hint="S'ha de posar un espai després del signe dels dos punts (tipografia)"
 
@@ -419,7 +419,9 @@ valid comment="Tag\:\sliterallayout" # docmessages
 valid before="\/share\/apps\/" # docmessages
 valid before="kde4-config" # docmessages
 valid before="\/ssc\/texts\/" # docmessages
-valid msgstr=":(alt|kbd|file|guilabel|menuselection|program|ref|term):" # Krita doc_www
+valid msgstr="\:(alt|dfn|file|guilabel|kbd|menuselection|program|ref|term)\:" # Krita doc_www
+valid msgstr="\:\`" # Krita doc_www (aquesta s'ha afegit perquè per algun motiu 'dfn' no funciona)
+valid msgstr="\`_" # Kdenlive doc_www
 hint="Un accent obert sol «`» és un error, excepte a ordres de terminal (tipografia)"
 
 # «’» un accent tancat sol és un error (ull amb les ordres!).
