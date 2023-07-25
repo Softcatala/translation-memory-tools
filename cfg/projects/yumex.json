@@ -4,8 +4,9 @@
     "projectweb": "https://www.yumex.dk/",
     "fileset": {
         "yumex": {
-            "url": "https://app.transifex.com/timlau/yumex",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/timlau/yumex-dnf/develop/po/ca.po",
+            "type": "file",
+            "target": "yumex-ca.po"
         }
     }
 }
