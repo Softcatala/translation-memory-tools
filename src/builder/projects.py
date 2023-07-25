@@ -160,7 +160,12 @@ class Projects(object):
         for project in self.projects:
             project.statistics()
 
-        self.tm_project.statistics()
+        words, entries = self.tm_project.get_words_entries()
+        if words > 0:
+            logging.info(f'Translation memory for all projects: {entries} translated strings, words {words}')
+        else:
+            logging.info(f'Translation memory for all projects is empty. No projects were added.')
+
         self.metadata_dao.close()
 
     def to_tmx(self):
