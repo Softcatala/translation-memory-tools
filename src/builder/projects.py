@@ -154,7 +154,7 @@ class Projects(object):
 
         projects_catalog.cleanup()
         logging.info(f"Projects. Added into {self.tm_file} a total of {total_words} words from {included_prjs} "\
-                    f"projects. Skipped {skipped_prjs} with {skipped_words} words")
+                    f"projects. Skipped {skipped_prjs} project(s) with {skipped_words} words due to license incompatibility")
 
     def statistics(self):
         for project in self.projects:
