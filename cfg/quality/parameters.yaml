@@ -8,14 +8,14 @@ pology:
         - iso_639.rules
         - iso_4217.rules
         - keys.rules
-        - punctuation.rules
         - acronyms.rules
         - abbreviations.rules
         - gender-neutralization.rules
         - date-format.rules
-        - terminology-sc.rules
-        - tags.rules
-        - gnome-documentation.rules
+        - quality/pology/catalan-pology-rules/contributed/punctuation.rules
+        - quality/pology/catalan-pology-rules/terminology-sc.rules
+        - quality/pology/catalan-pology-rules/tags.rules
+        - quality/pology/catalan-pology-rules/gnome-documentation.rules
 
 lt:
     # Server is defined in LT_SERVER environment variable

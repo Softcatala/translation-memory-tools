@@ -13,6 +13,7 @@ RUN git clone https://invent.kde.org/sdk/pology.git
 WORKDIR pology
 RUN git checkout -q 91ebf8fb5db88481c60f8751a5bab942869d94da  # Fix to specific commit since Pology does not do releases
 RUN mkdir build && cd build && cmake .. && make && make install
+RUN cp lang/ca/rules/*.rules /usr/local/share/pology/lang/ca/rules/  # Pending of https://invent.kde.org/sdk/pology/-/merge_requests/22
 RUN gem install i18n-translators-tools
 
 # Locale ca-ES
@@ -31,6 +32,5 @@ COPY source-pos/ $DIR_TMT_GIT/source-pos/
 COPY cfg/ $DIR_TMT_GIT/cfg/
 COPY docker/ $DIR_TMT_GIT/docker/
 COPY integration-tests/ $DIR_TMT_GIT/integration-tests/
-COPY src/quality/pology/catalan-pology-rules/*.rules /usr/local/share/pology/lang/ca/rules/
 # What get's executed on Run
 ENTRYPOINT bash $DIR_TMT_GIT/docker/entry-point-builder.sh $DIR $DIR_TMT_GIT

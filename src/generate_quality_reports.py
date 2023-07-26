@@ -118,7 +118,10 @@ class GenerateQualityReports():
 
         rules = ''
         for rule in pology['rules']:
-            rules = rules + ' -s rfile:{0}{1}'.format(pology['rules-dir'], rule)
+            if '/' not in rule:
+                rules = rules + ' -s rfile:{0}{1}'.format(pology['rules-dir'], rule)
+            else:
+                rules = rules + ' -s rfile:{0}'.format(rule)
 
         cmd = pology['command'].format(posieve, rules, po_transonly, html)
         os.system(cmd)
