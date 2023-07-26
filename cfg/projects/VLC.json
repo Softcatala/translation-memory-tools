@@ -8,6 +8,11 @@
             "url": "https://code.videolan.org/videolan/vlc/-/raw/master/po/ca.po",
             "type": "file",
             "target": "vlc-ca.po"
+        },
+        "VLMC": {
+            "url": "https://code.videolan.org/videolan/vlmc/-/raw/master/ts/vlmc_ca_ES.ts",
+            "type": "file",
+            "target": "vlmc-ca.ts"
         }
     }
 }
