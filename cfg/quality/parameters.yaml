@@ -1,21 +1,21 @@
 pology:
-    - rules-dir: quality/pology
+    - rules-dir: /usr/local/share/pology/lang/ca/rules/
     - posieve: python /usr/local/bin/posieve
     - header-fix: '{0} set-header -sfield:"Language:ca" -screate "{1}"'
     - command: '{0} --skip-obsolete --coloring-type=html check-rules {1} "{2}" > "{3}"'
     - rules:
-        - /upstream/false-friends.rules
-        - /upstream/keys.rules
-        - /catalan-pology-rules/punctuation.rules
-        - /catalan-pology-rules/date-format.rules
-        - /catalan-pology-rules/terminology-sc.rules
-        - /catalan-pology-rules/iso_639.rules
-        - /catalan-pology-rules/acronyms.rules
-        - /catalan-pology-rules/iso_4217.rules
-        - /catalan-pology-rules/tags.rules
-        - /catalan-pology-rules/abbreviations.rules
-        - /catalan-pology-rules/gender-neutralization.rules
-        - /catalan-pology-rules/gnome-documentation.rules
+        - false-friends.rules
+        - iso_639.rules
+        - iso_4217.rules
+        - keys.rules
+        - punctuation.rules
+        - acronyms.rules
+        - abbreviations.rules
+        - gender-neutralization.rules
+        - date-format.rules
+        - terminology-sc.rules
+        - tags.rules
+        - gnome-documentation.rules
 
 lt:
     # Server is defined in LT_SERVER environment variable

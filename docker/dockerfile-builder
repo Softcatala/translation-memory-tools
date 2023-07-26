@@ -31,6 +31,6 @@ COPY source-pos/ $DIR_TMT_GIT/source-pos/
 COPY cfg/ $DIR_TMT_GIT/cfg/
 COPY docker/ $DIR_TMT_GIT/docker/
 COPY integration-tests/ $DIR_TMT_GIT/integration-tests/
-
+COPY src/quality/pology/catalan-pology-rules/*.rules /usr/local/share/pology/lang/ca/rules/
 # What get's executed on Run
 ENTRYPOINT bash $DIR_TMT_GIT/docker/entry-point-builder.sh $DIR $DIR_TMT_GIT
