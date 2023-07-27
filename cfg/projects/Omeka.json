@@ -4,8 +4,14 @@
     "projectweb": "https://omeka.org/",
     "fileset": {
         "Omeka": {
-            "url": "https://app.transifex.com/omeka/omeka/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/omeka/Omeka/master/application/languages/ca_ES.po",
+            "type": "file",
+            "target": "omeka_ca.po"
+        },
+        "Omeka-s": {
+            "url": "https://raw.githubusercontent.com/omeka/omeka-s/develop/application/language/ca_ES.po",
+            "type": "file",
+            "target": "omeka-s_ca.po"
         }
     }
 }
