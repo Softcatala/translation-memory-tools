@@ -4,8 +4,9 @@
     "projectweb": "https://readthedocs.org/", 
     "fileset": {
         "ReadTheDocs": {
-            "url": "https://app.transifex.com/readthedocs/readthedocs/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/readthedocs/readthedocs.org/main/readthedocs/locale/ca/LC_MESSAGES/django.po",
+            "type": "file",
+            "target": "django_ca.po"
         }
     }
 }
