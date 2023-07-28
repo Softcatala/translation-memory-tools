@@ -4,12 +4,14 @@
     "projectweb": "https://www.qgis.org/ca/site/", 
     "fileset": {
         "Qgis": {
-            "url": "https://app.transifex.com/qgis/QGIS",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/qgis/QGIS/master/i18n/qgis_ca.ts",
+            "type": "file",
+            "target": "qgis_ca.ts"
         },
         "Qgis-website": {
-            "url": "https://app.transifex.com/qgis/qgis-website",
-            "type": "transifex"
+            "url": "https://github.com/qgis/QGIS-Website.git",
+            "type": "git",
+            "pattern": ".*?/ca/.*?"
         }
     }
 }
