@@ -4,8 +4,9 @@
     "projectweb": "https://github.com/baedert/corebird", 
     "fileset": {
         "CoreBird": {
-            "url": "https://app.transifex.com/corebird/corebird/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/baedert/corebird/master/po/ca.po",
+            "type": "file",
+            "target": "corebird_ca.po"
         }
     }
 }
