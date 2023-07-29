@@ -4,9 +4,14 @@
     "projectweb": "https://audacious-media-player.org/",
     "fileset": {
         "audacious": {
-            "url": "https://app.transifex.com/audacious/audacious/",
-            "type": "transifex",
-            "pattern": ".*?ca.po"
+            "url": "https://raw.githubusercontent.com/audacious-media-player/audacious/master/po/ca.po",
+            "type": "file",
+            "target": "audacious-ca.po"
+        },
+        "audacious-plugins": {
+            "url": "https://raw.githubusercontent.com/audacious-media-player/audacious-plugins/master/po/ca.po",
+            "type": "file",
+            "target": "audacious-plugins-ca.po"
         }
     }
 }

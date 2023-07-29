@@ -4,9 +4,9 @@
     "projectweb": "https://calibre-ebook.com/",
     "fileset": {
         "calibre": {
-            "url": "https://app.transifex.com/calibre/calibre/",
-            "type": "transifex",
-            "excluded" : "/en"
+            "url": "https://github.com/kovidgoyal/calibre-translations.git",
+            "type": "git",
+            "pattern" : ".*?ca.po"
         },
         "calibre-plugins": {
             "url": "https://app.transifex.com/calibre/calibre-plugins/",

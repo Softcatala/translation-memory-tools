@@ -4,8 +4,9 @@
     "projectweb": "https://creativecommons.org/", 
     "fileset": {
         "CreativeCommons": {
-            "url": "https://app.transifex.com/creativecommons/CC/",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/creativecommons/cc.i18n/main/cc/i18n/po/ca/cc_org.po",
+            "type": "file",
+            "target": "cc_org_ca.po"
         }
     }
 }
