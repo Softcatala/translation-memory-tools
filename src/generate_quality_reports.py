@@ -124,7 +124,9 @@ class GenerateQualityReports():
                 rules = rules + ' -s rfile:{0}'.format(rule)
 
         cmd = pology['command'].format(posieve, rules, po_transonly, html)
-        os.system(cmd)
+        exit_code = os.system(cmd)
+        if exit_code != 0:
+            logging.info(f"run_pology. Exit error: {exit_code}. Cmd: '{cmd}'")
 
     def load_projects_ids_from_json(self):
         projects = []
