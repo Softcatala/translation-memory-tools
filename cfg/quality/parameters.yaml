@@ -12,8 +12,8 @@ pology:
         - abbreviations.rules
         - gender-neutralization.rules
         - date-format.rules
-        - quality/pology/catalan-pology-rules/contributed/punctuation.rules
-        - quality/pology/catalan-pology-rules/terminology-sc.rules
+        - punctuation.rules
+        - terminology-sc.rules
         - quality/pology/catalan-pology-rules/tags.rules
         - quality/pology/catalan-pology-rules/gnome-documentation.rules
 
