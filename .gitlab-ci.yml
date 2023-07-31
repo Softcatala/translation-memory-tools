@@ -18,6 +18,11 @@ build:
     - export DOCKER_PATH=docker/dockerfile-builder
     - export REPO_NAME=$CI_REGISTRY_IMAGE/tmt-builder
     - export IMAGE_NAME=$REPO_NAME:$CI_COMMIT_REF_NAME
+    # Copy GitLab environment variables files with credentials
+    - cp ${TRANSIFEX_CFG} cfg/credentials/transifexrc
+    - cp ${ZANATA_CFG} cfg/credentials/zanata.yaml
+    - cp ${WEBLATE_CFG} cfg/credentials/weblate.yaml
+    - cp ${CROWDIN_CFG} cfg/credentials/crowdin.yaml
     - docker build --tag tmt-builder --tag $IMAGE_NAME . -f $DOCKER_PATH
     - docker push $IMAGE_NAME
 

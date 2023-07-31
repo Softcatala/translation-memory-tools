@@ -33,11 +33,16 @@ The toolset contains the following components with their own responsibility:
 
 In order to download the translations of some of the projects you need to use the credentials for these systems, for example API keys.
 
-*builder.py* expects the credentials to be defined at [cfg/credentials](./cfg/credentials) in the diferent YML files for each one of the sites that require crendentials.
+*builder.py* expects the credentials to be defined in the following locations:
 
-If you use docker locally or in production, these credetials are configured in a enviorment variables than then are used to created the configuration YML files.
+* At [cfg/credentials](./cfg/credentials) in the diferent YAML files: for Zenata (zanata.yaml), for Weblate (weblate.yaml) and for Crowdin (crowdin.yaml). The files *-sample* provide examples of how these files should be structured.
+* For Transifex, the credentials should be at *~/.transifexrc* since this where Transifex cli tool expects the credentials.
 
-## Runing the builder code locally
+All these projects require you to have the right credentials and often be "member of the Catalan project" to be able to download credentials.
+
+If you are building a local Docker image, place your Transifex credentials file in the *cfg/credentials/transifexrc* directory, and this will be copied in the right location in the docker image. Remember that docker context cannot access your ~ directory.
+
+## Running the builder code locally
 
 This part focuses on helping you to run the *builder* component locally in case that you want to test quickly new projects configurations. For any other use case, we recommend using the Docker.
 

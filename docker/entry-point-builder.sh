@@ -22,32 +22,23 @@ if [[ -e  $PRESERVE_CROSSEXECS/translation-memories/ ]]; then
     cp -r $PRESERVE_CROSSEXECS/translation-memories/* $DIR/translation-memories/
 fi
 
-
-if [[ -n "${TRANSIFEX_TOKEN}" ]]; then
-    python $DIR_TMT_GIT/docker/credentials/transifex.py
-else
-    echo "Removing Transifex projects"
+if [ ! -f ~/.transifexrc ]; then
+    echo "Removing Transifex projects since there is no credentials file."
     grep -l "type.*transifex" cfg/projects/*.json  | xargs rm -f
 fi
 
-if [[ -n "${ZANATA_PROJECT_1}" && -n "${ZANATA_USER_1}"  && -n "${ZANATA_TOKEN_1}" ]]; then
-    python $DIR_TMT_GIT/docker/credentials/zanata.py $DIR_TMT_GIT/cfg/credentials/
-else
-    echo "Removing Zenata projects"
+if [ ! -f ./cfg/credentials/zanata.yaml ]; then
+    echo "Removing Zanata projects since there is no credentials file."
     grep -l "type.*zanata" cfg/projects/*.json  | xargs rm -f
 fi
 
-if [[ -n "${WEBLATE_HOST_1}" && -n "${WEBLATE_TOKEN_1}" ]]; then
-    python $DIR_TMT_GIT/docker/credentials/weblate.py $DIR_TMT_GIT/cfg/credentials/
-else
-    echo "Removing Weblate projects"
+if [ ! -f cfg/credentials/weblate.yaml ]; then
+    echo "Removing Weblate projects since there is no credentials file."
     grep -l "type.*weblate" cfg/projects/*.json  | xargs rm -f
 fi
 
-if [[ -n "${CROWDIN_TOKEN}" ]]; then
-    python $DIR_TMT_GIT/docker/credentials/crowdin.py $DIR_TMT_GIT/cfg/credentials/
-else
-    echo "Removing Crowdin projects"
+if [ ! -f cfg/credentials/crowdin.yaml ]; then
+    echo "Removing Crowdin projects since there is no credentials file."
     grep -l "type.*crowdin" cfg/projects/*.json  | xargs rm -f
 fi
 
