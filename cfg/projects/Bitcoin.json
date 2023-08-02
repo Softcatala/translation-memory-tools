@@ -5,8 +5,9 @@
     "softcatala": true, 
     "fileset": {
         "bitcoin": {
-            "url": "https://app.transifex.com/bitcoin/bitcoin",
-            "type": "transifex"
+            "url": "https://raw.githubusercontent.com/bitcoin/bitcoin/master/src/qt/locale/bitcoin_ca.ts",
+            "type": "file",
+            "target": "bitcoin_ca.ts"
         }
     }
 }
