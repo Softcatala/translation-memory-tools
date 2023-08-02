@@ -4,8 +4,9 @@
     "projectweb": "https://www.django-cms.org/",
     "fileset": {
         "DjangoCMS": {
-            "url": "https://app.transifex.com/divio/django-cms/",
-            "type": "transifex"
+            "url": "https://github.com/django-cms/django-cms.git",
+            "type": "git",
+            "pattern": ".*?/ca/.*?"
         }
     }
 }
