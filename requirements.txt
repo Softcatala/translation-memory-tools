@@ -1,10 +1,10 @@
 # For importing translations/creating TM files.
-polib==1.1.1
+polib==1.2.0
 pystache
 peewee==3.14.8
 hunspell
 phply # required by translate-toolkit to process php files
-translate-toolkit==3.3.4
+translate-toolkit==3.10.0
 lxml
 pyyaml >= 5.1
 babel >= 2.12
