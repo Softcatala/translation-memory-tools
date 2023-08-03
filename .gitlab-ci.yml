@@ -23,7 +23,7 @@ build:
     - cp ${ZANATA_CFG} cfg/credentials/zanata.yaml
     - cp ${WEBLATE_CFG} cfg/credentials/weblate.yaml
     - cp ${CROWDIN_CFG} cfg/credentials/crowdin.yaml
-    - docker build --tag tmt-builder --tag $IMAGE_NAME . -f $DOCKER_PATH
+    - docker build --no-cache --tag tmt-builder --tag $IMAGE_NAME . -f $DOCKER_PATH
     - docker push $IMAGE_NAME
 
 build-languagetool:

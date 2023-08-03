@@ -4,11 +4,10 @@ pystache
 peewee==3.14.8
 hunspell
 phply # required by translate-toolkit to process php files
-translate-toolkit==3.10.0
+git+https://github.com/translate/translate/ # Pending of a release with the changes to use the pypi package
 lxml
 pyyaml >= 5.1
 babel >= 2.12
-android2po==1.6.0
 
 # For server.
 Whoosh

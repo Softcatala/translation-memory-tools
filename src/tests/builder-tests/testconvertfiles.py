@@ -107,9 +107,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(android_dir)
         self._clean_pos(android_dir)
 
-        self.assertEquals(entries, 382)
-        self.assertEquals("Name is too long", po_file[12].msgid)
-        self.assertEquals("El nom és massa llarg", po_file[12].msgstr)
+        self.assertEquals(entries, 392)
+        self.assertEquals("Name is too long", po_file[14].msgid)
+        self.assertEquals("El nom és massa llarg", po_file[14].msgstr)
 
 if __name__ == '__main__':
     unittest.main()

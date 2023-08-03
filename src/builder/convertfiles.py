@@ -241,16 +241,15 @@ class ConvertFiles():
             return
 
         logging.info('convert Android directory: {0}'.format(self.convert_dir))
-        # See: https://pypi.python.org/pypi/android2po/1.2.0
-        # If you do not specify --gettext ., the file is writen in ../locale
-        # outside the tmp directory in our case
-        cmd = 'cd {0} && a2po init ca --gettext . > /dev/null'.format(self.convert_dir)
 
         self._process_non_standard_android_res_locations()
 
-        if self.android_dir is not None:
-            cmd += " --android {0}".format(self.android_dir)
+        subdir = os.path.join(self.convert_dir, self.android_dir) if self.android_dir and len(self.android_dir) > 0 else os.path.join(self.convert_dir, "res")
 
+        src_file = os.path.join(subdir, "values/strings.xml")
+        tgt_file = os.path.join(subdir, "values-ca/strings.xml")
+        output_file = os.path.join(self.convert_dir, "ca.po")
+        cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
         os.system(cmd)
 
     def _convert_json_file_to_po(self, jsonfile, source, target):
@@ -260,7 +259,6 @@ class ConvertFiles():
         cmd = 'json2po -t {0}/{2} -i {0}/{3} ' \
               '-o {1}'.format(dirName, filename, source, target)
         os.system(cmd)
-        print(cmd)
 
     def _convert_json_files_to_po(self):
         # Used for Privacy Badger
