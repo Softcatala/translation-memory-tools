@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file id="1152" original="/3.10-dev/administrator/language/en-GB/en-GB.com_actionlogs.ini" source-language="en-GB" target-language="ca" datatype="plaintext" project-id="120642" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="39424" resname="COM_ACTIONLOGS" approved="yes">
+        <source>User Actions Log</source>
+        <target state="final">Registre d'accions d'usuari</target>
+        <context-group purpose="information">
+          <context context-type="source">COM_ACTIONLOGS</context>
+        </context-group>
+        <note from="Мирослава Кусь (moor4eet)" priority="4">The current approved translation is not correct, please review my translation:
+&quot;Лог действий пользователя&quot;</note>
+        <note from="Lailin-lil" priority="4">The current approved translation is not correct, please review my translation:
+&quot;会员行为日志&quot;</note>
+        <note from="Manuela Silva (manuelarodsilva)" priority="4">The currently approved translation is not correct, please review my translation:
+&quot;RegistThe currently approved translation is not correct, please review my translation:
+&quot;Registo de Ações do Utilizador&quot;o de Ações do Utilizador&quot;
+
+Translation is pt-BR not pt-PT</note>
+      </trans-unit>
+      <trans-unit id="39450" resname="COM_ACTIONLOGS_ACTION" approved="yes">
+        <source>Action</source>
+        <target state="final">Acció</target>
+        <context-group purpose="information">
+          <context context-type="source">COM_ACTIONLOGS_ACTION</context>
+        </context-group>
+        <note from="Ardavan Hariri (ardavanhariri)" priority="4">The current approved translation is not correct, please review my translation:
+&quot;فعالیت&quot;</note>
+      </trans-unit>
+     <trans-unit id="39449" resname="COM_ACTIONLOGS_MANAGER_USERLOGS" approved="yes">
+        <source>User Actions Log</source>
+        <target state="final">Registre d'accions de l'usuari</target>
+        <context-group purpose="information">
+          <context context-type="source">COM_ACTIONLOGS_MANAGER_USERLOGS</context>
+        </context-group>
+      </trans-unit>      
+    </body>
+  </file>
+</xliff>

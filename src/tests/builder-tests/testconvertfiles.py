@@ -111,5 +111,19 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals("Name is too long", po_file[14].msgid)
         self.assertEquals("El nom és massa llarg", po_file[14].msgstr)
 
+    def test_convert_xliff_file_to_po(self):
+
+        xliff_dir = path.dirname(path.realpath(__file__))
+        xliff_dir += '/data/conversions/xliff'
+        convert = ConvertFiles(xliff_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(xliff_dir)
+        self._clean_pos(xliff_dir)
+
+        self.assertEquals(entries, 1)
+        self.assertEquals("User Actions Log", po_file[0].msgid)
+        self.assertEquals("Acció", po_file[1].msgstr)
+
 if __name__ == '__main__':
     unittest.main()
