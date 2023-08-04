@@ -4,9 +4,9 @@
     "projectweb": "https://www.gnusocial.rocks/", 
     "fileset": {
         "GNUSocial": {
-            "url": "https://notabug.org/diogo/gnu-social/raw/master/locale/ca/LC_MESSAGES/statusnet.po",
-            "type": "file",
-            "target": "GNUSocial-ca.po"
+            "url": "https://notabug.org/diogo/gnu-social.git",
+            "type": "git",
+            "pattern": ".*\/ca\/.*po"
         }
     }
 }
