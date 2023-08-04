@@ -6,7 +6,7 @@
         "DjangoCMS": {
             "url": "https://github.com/django-cms/django-cms.git",
             "type": "git",
-            "pattern": ".*\/ca\/.*\\.po"
+            "pattern": ".*/ca/.*\\.po"
         }
     }
 }
