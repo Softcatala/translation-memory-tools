@@ -6,7 +6,17 @@
         "kodi-main": {
             "url": "https://github.com/xbmc/xbmc.git",
             "type": "git",
-            "pattern": ".*?/resource.language.ca_es/strings.po"
+            "pattern": ".*\/resource\\.language\\.ca_es\/strings.po"
+        },
+        "kodi-main2": {
+            "url": "https://github.com/xbmc/xbmc.git",
+            "type": "git",
+            "pattern": ".*\/language\/Catalan\/strings.po"
+        },
+        "kodi-confluence": {
+            "url": "https://raw.githubusercontent.com/xbmc/skin.confluence/master/language/resource.language.ca_es/strings.po",
+            "type": "file",
+            "target": "kodi-confluence-ca.po"
         }
     }
 }
