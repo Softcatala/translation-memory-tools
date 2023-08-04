@@ -6,7 +6,7 @@
         "CiviCRM": {
             "url": "https://github.com/civicrm/civicrm-l10n-extensions.git",
             "type": "git",
-            "pattern": ".*?/ca_ES/.*?.po"
+            "pattern": ".*/ca_ES/.*\\.po"
         }
     }
 }
