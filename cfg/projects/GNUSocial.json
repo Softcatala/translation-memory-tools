@@ -6,7 +6,7 @@
         "GNUSocial": {
             "url": "https://notabug.org/diogo/gnu-social.git",
             "type": "git",
-            "pattern": ".*\/ca\/.*po"
+            "pattern": ".*\/ca\/.*\\.po"
         }
     }
 }
