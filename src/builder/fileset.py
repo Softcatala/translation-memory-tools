@@ -143,13 +143,13 @@ class FileSet():
                 os.remove(filename)
                 continue
 
-            msg = 'Adding file: {0} to translation memory'
-
+            pofile = POFile(filename)
             if self.duplicates == 'msgctxt':
-                pofile = POFile(filename)
                 pofile.add_msgctxt_to_duplicates()
 
-            logging.info(msg.format(filename))
+            words = pofile.get_statistics()
+            msg = f'Adding file: {filename} to translation memory with {words} words'
+            logging.info(msg)
             self.po_catalog.add_pofile(filename)
 
     def _add_tm_for_fileset_to_project_tm(self, fileset_tm):
