@@ -137,7 +137,7 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
-                fs.set_pattern(fileset.pattern)
+                fs.set_retrieval_pattern(fileset.retrieval_pattern)
             elif fileset.type == 'git':
                 fs = GitFileSet(self.name,
                                   self.project_id,
@@ -152,6 +152,7 @@ class Project(object):
                                   fileset.url,
                                   fileset.target)
                 fs.set_project(self)
+                fs.set_retrieval_pattern(fileset.retrieval_pattern)
             elif fileset.type == 'zanata':
                 fs = ZanataFileSet(self.name,
                                   self.project_id,
@@ -178,6 +179,7 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
+                fs.set_retrieval_pattern(fileset.retrieval_pattern)
             elif fileset.type == 'crowdin':
                 fs = CrowdinFileSet(self.name,
                                   self.project_id,
@@ -193,7 +195,6 @@ class Project(object):
             fs.set_duplicates(fileset.duplicates)
             fs.set_conversor_setup(fileset.conversor_setup)
             fs.set_po_preprocessing(fileset.po_preprocessing)
-            fs.set_retrieval_pattern(fileset.retrieval_pattern)
             self.add_fileset(fs)
 
     def do(self):

@@ -19,36 +19,25 @@
 
 import logging
 import os
-
+import re
 from .downloadfile import DownloadFile
 from .fileset import FileSet
-
+from .findfiles import FindFiles
 
 class CompressedFileSet(FileSet):
 
     def _uncompress(self, filename, report_error):
-        CompressedFileSet.uncompress(filename, report_error, self.pattern, self.temp_dir)
+        CompressedFileSet.uncompress(filename, report_error, self.temp_dir)
 
-    def uncompress(filename, report_error, pattern, temp_dir):
+    def uncompress(filename, report_error, temp_dir):
         if filename.endswith('.zip'):
-            if len(pattern) > 0:
-                os.system('unzip {0} {1} -d {2}'.format(filename, pattern, temp_dir))
-            else:
-                os.system('unzip {0} -d {1}'.format(filename, temp_dir))
+            os.system('unzip {0} -d {1}'.format(filename, temp_dir))
         elif filename.endswith('tar.gz'):
-            if len(pattern) > 0:
-                cmd = 'tar --wildcards -xvf {0} -C {1} {2}'.format(
-                    filename,
-                    temp_dir,
-                    pattern
-                )
-                os.system(cmd)
-            else:
-                cmd = 'tar -xvf {0} -C {1}'.format(
-                    filename,
-                    temp_dir
-                )
-                os.system(cmd)
+            cmd = 'tar -xvf {0} -C {1}'.format(
+                filename,
+                temp_dir
+            )
+            os.system(cmd)
         elif filename.endswith('.gz'):
             # We are assuming that the .gz file will contain a single PO
             cmd = 'gunzip {0} -c > {1}/ca.po'.format(
@@ -66,6 +55,22 @@ class CompressedFileSet(FileSet):
 
     def set_pattern(self, pattern):
         self.pattern = pattern
+
+    def clean_up_after_convert(self):
+        self._remove_non_translation_files()
+
+    def _remove_non_translation_files(self):
+        if self.pattern is None or len(self.pattern) == 0:
+            return
+
+        findFiles = FindFiles()
+
+        for filename in findFiles.find_recursive(self.temp_dir, '*'):
+
+            if re.match(self.pattern, filename) is None and \
+                    os.path.exists(filename):
+                os.remove(filename)
+                print(filename)
 
     def do(self):
         # Download po files

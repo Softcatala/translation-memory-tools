@@ -27,9 +27,6 @@ from .fileset import FileSet
 
 class CrawlFileSet(FileSet):
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
     def _download_links(self, links, directory):
         for link in links:
             if self.is_retrieval_pattern(link):
@@ -37,7 +34,7 @@ class CrawlFileSet(FileSet):
 
                 download = DownloadFile()
                 download.get_file(link, filename)
-                CompressedFileSet.uncompress(filename, False, None, self.temp_dir)
+                CompressedFileSet.uncompress(filename, False, self.temp_dir)
 
     def do(self):
         crawler = Crawler(self.url)
