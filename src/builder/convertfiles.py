@@ -31,7 +31,6 @@ class ConvertFiles():
         self.convert_dir = convert_dir
         self.findFiles = None
         self.conversor_setup = conversor_setup
-        self.android_dir = None
 
     def convert(self):
         self.findFiles = FindFiles()
@@ -156,101 +155,54 @@ class ConvertFiles():
               '-o {1}'.format(self.convert_dir, OUT_DIRNAME)
         os.system(cmd)
 
-    '''
-        Conditional conversion code for Android
-        To be refactor when patterns for Android dir structure is clear
-    '''
-    def _process_non_standard_android_res_locations(self):
+    def _convert_android_file(self, src_file, tgt_file, id):
+        output_file = os.path.join(self.convert_dir, f"ca.po")
+        cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
+        os.system(cmd)
 
-        '''Briar'''
-        self._copy_res_files("translations/briar.stringsxml-5/en.xml",
-                             "translations/briar.stringsxml-5/ca.xml")
-
-        '''Telegram Android'''
-        self._copy_res_files("translations/android/res/values/strings.xml",
-                             "translations/android/res/values-ca/strings.xml")
-
-        '''Runner Up'''
-        self._copy_res_files("translations/runner-up-android.stringsxml/en.xml",
-                             "translations/runner-up-android.stringsxml/ca.xml")
-
-
-
-    def _copy_res_files(self, source_file, target_file):
-        en_file = os.path.join(self.convert_dir, source_file)
-        ca_file = os.path.join(self.convert_dir, target_file)
-
-        if os.path.isfile(ca_file) == False or os.path.isfile(en_file) == False:
-            return
-
-        app_dir = 'android'
-        directory = os.path.join(self.convert_dir, app_dir)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-
-        directory = os.path.join(self.convert_dir, app_dir, 'res')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        
-        directory = os.path.join(self.convert_dir, app_dir, 'res/values-ca')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-                
-        shutil.copy2(ca_file, os.path.join(directory, "strings.xml"))
-
-        directory = os.path.join(self.convert_dir, app_dir, 'res/values')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-                
-        shutil.copy2(en_file, os.path.join(directory, "strings.xml"))
-        self.android_dir = os.path.join(app_dir, 'res')
-
-    def _process_briar_project(self):
-        ca_file = os.path.join(self.convert_dir,
-                               "translations/briar.stringsxml-5/ca.xml")
-
-        en_file = os.path.join(self.convert_dir,
-                               "translations/briar.stringsxml-5/en.xml")
-
-        if os.path.isfile(ca_file) is False or os.path.isfile(en_file) is False:
-            return
-
-        directory = os.path.join(self.convert_dir, 'briar')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-
-        directory = os.path.join(self.convert_dir,'briar/res')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        
-        directory = os.path.join(self.convert_dir,'briar/res/values-ca')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-                
-        shutil.copy2(ca_file, os.path.join(directory, "strings.xml"))
-
-        directory = os.path.join(self.convert_dir,'briar/res/values')
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-                
-        shutil.copy2(en_file, os.path.join(directory, "strings.xml"))
-        self.android_dir = 'briar/res'
-
+    # Some times Android resources are found in values/ and values-ca/ subdirectories
+    # Other times, just in the same subdirectory (en.xml and ca.xml)
     def _convert_android_resources_files_to_po(self):
-        if len(self.findFiles.find_recursive(self.convert_dir, '*.xml')) == 0:
+        filenames = self.findFiles.find_recursive(self.convert_dir, '*.xml')
+        if len(filenames) == 0:
             return
+
+        id = 0
+        dirs = set()
+        subdirs = set()
+        for filename in filenames:
+            dir = os.path.dirname(filename)
+            if dir in dirs:
+                continue
+
+            dirs.add(dir)
+            src = os.path.join(dir, "en.xml")
+            tgt = os.path.join(dir, "ca.xml")
+
+            if os.path.exists(src) and os.path.exists(tgt):
+                self._convert_android_file(src, tgt, id)
+                id += 1
+
+            if dir == self.convert_dir:
+                continue
+
+            # Remove subdir where file was found a/b/c/strings.xml becomes a/b/values/strings.xml
+            dir = os.path.dirname(dir)
+            if len(dir) > 0:
+                if dir in subdirs:
+                    continue
+
+                logging.debug(f"Analyze subdir '{dir}'")
+                subdirs.add(dir)
+                src = os.path.join(dir, "values/strings.xml")
+                tgt = os.path.join(dir, "values-ca/strings.xml")
+
+                if os.path.exists(src) and os.path.exists(tgt):
+                    self._convert_android_file(src, tgt, id)
+                    id += 1
 
         logging.info('convert Android directory: {0}'.format(self.convert_dir))
 
-        self._process_non_standard_android_res_locations()
-
-        subdir = os.path.join(self.convert_dir, self.android_dir) if self.android_dir and len(self.android_dir) > 0 else os.path.join(self.convert_dir, "res")
-
-        src_file = os.path.join(subdir, "values/strings.xml")
-        tgt_file = os.path.join(subdir, "values-ca/strings.xml")
-        output_file = os.path.join(self.convert_dir, "ca.po")
-        cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
-        os.system(cmd)
 
     def _convert_json_file_to_po(self, jsonfile, source, target):
         dirName = os.path.dirname(jsonfile)
