@@ -20,7 +20,6 @@ from builder.jsonbackend import JsonBackend
 from builder.projects import Projects
 import unittest
 from os import path
-import json
 from builder.licenses import Licenses
 
 

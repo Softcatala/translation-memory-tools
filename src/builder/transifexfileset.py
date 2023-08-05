@@ -53,7 +53,6 @@ class TransifexFileSet(FileSet):
         os.chdir(self.temp_dir)
 
         url = urllib.parse.urlparse(self.url)
-        uri = '{0}://{1}'.format(url.scheme, url.netloc)
         os.system("tx init")
         os.system("tx add remote --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' {0}".format(self.url))
 

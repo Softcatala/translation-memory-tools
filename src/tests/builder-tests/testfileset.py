@@ -36,8 +36,7 @@ class TestFileSet(unittest.TestCase):
         self.assertTrue(fileset._should_exclude_file('Includesexcluded.po'))
         self.assertFalse(fileset._should_exclude_file('eXcluded.po'))
 
-    def test_has_filename_filename(self):
-
+    def test_has_filename_filename_project(self):
 
         fileset_parent = FileSet('project none',
             'project id',

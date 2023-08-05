@@ -164,7 +164,7 @@ class Projects(object):
         if words > 0:
             logging.info(f'Translation memory for all projects: {entries} translated strings, words {words}')
         else:
-            logging.info(f'Translation memory for all projects is empty. No projects were added.')
+            logging.info('Translation memory for all projects is empty. No projects were added.')
 
         self.metadata_dao.close()
 

@@ -107,7 +107,6 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         self._create_po_with_duplicated_strings(filename)
 
         poFile = POFile(filename)
-        pofile = polib.POFile()
         poFile.add_msgctxt_to_duplicates()
 
         rslt = self._does_pofile_contains_duplicated_strings(filename)

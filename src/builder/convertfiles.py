@@ -142,7 +142,7 @@ class ConvertFiles():
             logging.info('convert ini file: {0}'.format(inifile))
 
             filename = '{0}/strings-ca.po'.format(dirName)
-            convert_ini = ConvertIni(src, trg, filename).convert()
+            ConvertIni(src, trg, filename).convert()
 
     def _convert_php_resources_files_to_po(self):
         if len(self.findFiles.find_recursive(self.convert_dir, '*.php')) == 0:
