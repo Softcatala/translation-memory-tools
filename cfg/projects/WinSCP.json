@@ -1,0 +1,13 @@
+{
+    "project": "WinSCP",
+    "license" : "GPL-3.0-or-later",
+    "projectweb": "https://winscp.net/eng/translations.php",
+    "fileset": {
+        "WinSCP": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates" : "msgctxt",
+            "pattern": ".*?/winscp/.*?"
+        }
+    }
+}
