@@ -19,10 +19,8 @@
 
 import logging
 import os
-import re
 from .downloadfile import DownloadFile
 from .fileset import FileSet
-from .findfiles import FindFiles
 
 class CompressedFileSet(FileSet):
 

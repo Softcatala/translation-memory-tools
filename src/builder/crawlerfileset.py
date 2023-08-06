@@ -18,7 +18,6 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-import re
 
 from .crawler import Crawler
 from .downloadfile import DownloadFile

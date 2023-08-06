@@ -18,11 +18,9 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-import re
 import shutil
 
 from .fileset import FileSet
-from .findfiles import FindFiles
 
 
 class GitFileSet(FileSet):
