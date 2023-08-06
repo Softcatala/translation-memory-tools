@@ -156,7 +156,7 @@ class ConvertFiles():
         os.system(cmd)
 
     def _convert_android_file(self, src_file, tgt_file, id):
-        output_file = os.path.join(self.convert_dir, f"ca.po")
+        output_file = os.path.join(self.convert_dir, f"ca-{id}.po")
         cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
         os.system(cmd)
 
