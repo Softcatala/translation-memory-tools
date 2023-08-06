@@ -47,6 +47,7 @@ class FileSet():
         self.set_out_directory("")
         self.temp_dir = tempfile.TemporaryDirectory().name
         self.retrieval_pattern = ''
+        self.pattern = ''
 
         if parent_fileset:
             self.conversor_setup = parent_fileset.conversor_setup
@@ -77,6 +78,9 @@ class FileSet():
 
     def set_conversor_setup(self, conversor):
         self.conversor_setup = conversor
+
+    def set_pattern(self, pattern):
+        self.pattern = pattern
 
     def set_tm_file(self, tm_file):
         self.tm_file = tm_file
@@ -130,7 +134,7 @@ class FileSet():
         return exclude
 
     def clean_up_after_convert(self):
-        pass
+        self._remove_non_translation_files()
 
     def _delete_tm_fileset(self, fileset_tm):
         if os.path.isfile(fileset_tm):
@@ -216,3 +220,20 @@ class FileSet():
 
     def is_retrieval_pattern(self, item):
         return re.match(self.retrieval_pattern, item)
+
+    def _remove_non_translation_files(self):
+        '''
+            We clean up other PO files like fr.po, es.po, to prevent to be
+            added to the translation memory
+        '''
+
+        if self.pattern is None or len(self.pattern) == 0:
+            return
+
+        findFiles = FindFiles()
+
+        for filename in findFiles.find_recursive(self.temp_dir, '*'):
+
+            if re.match(self.pattern, filename) is None and \
+                    os.path.exists(filename):
+                os.remove(filename)

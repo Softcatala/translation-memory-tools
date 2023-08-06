@@ -26,9 +26,6 @@ from .findfiles import FindFiles
 
 class BazaarFileSet(FileSet):
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
     def _has_filename(self):
         """Used to identify if the file contains a path (/ and then .)"""
         filename = self.url.split('/')[-1]
@@ -40,15 +37,6 @@ class BazaarFileSet(FileSet):
 
         return False
 
-    def _remove_non_translation_files(self):
-        findFiles = FindFiles()
-
-        for filename in findFiles.find_recursive(self.temp_dir, '*'):
-
-            if (re.match(self.pattern, filename) is None and
-                os.path.exists(filename)):
-                os.remove(filename)
-
     def do(self):
         if self._has_filename():
             outfile = os.path.join(self.temp_dir, 'ca.po')
@@ -58,6 +46,5 @@ class BazaarFileSet(FileSet):
                 self.temp_dir,
                 self.url
             ))
-            self._remove_non_translation_files()
 
         self.build()

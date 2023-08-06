@@ -29,32 +29,9 @@ class GitFileSet(FileSet):
 
     git_dir = '_git'
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
     def _get_filename(self):
         filename = self.url.split('/')[-1]
         return filename
-
-    def _remove_non_translation_files(self):
-        '''
-            We clean up other PO files like fr.po, es.po, to prevent to be
-            added to the translation memory
-        '''
-
-        if self.pattern is None or len(self.pattern) == 0:
-            return
-
-        findFiles = FindFiles()
-
-        for filename in findFiles.find_recursive(self.temp_dir, '*'):
-
-            if re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
-                os.remove(filename)
-
-    def clean_up_after_convert(self):
-        self._remove_non_translation_files()
 
     def _remove_git_directory(self):
         if os.path.exists(self.git_dir):

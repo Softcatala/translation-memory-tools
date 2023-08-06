@@ -91,21 +91,18 @@ class Project(object):
                                        fileset.name,
                                        fileset.url,
                                        fileset.target)
-                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'bazaar':
                 fs = BazaarFileSet(self.name,
                                    self.project_id,
                                    fileset.name,
                                    fileset.url,
                                    fileset.target)
-                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'transifex':
                 fs = TransifexFileSet(self.name,
                                       self.project_id,
                                       fileset.name,
                                       fileset.url,
                                       fileset.target)
-                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'transifexhub':
                 fs = TransifexHubFileSet(self.name,
                                       self.project_id,
@@ -144,7 +141,6 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
-                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'gerrit-directory':
                 fs = GerritDirectoryFileSet(self.name,
                                   self.project_id,
@@ -172,7 +168,6 @@ class Project(object):
                                   fileset.name,
                                   fileset.url,
                                   fileset.target)
-                fs.set_pattern(fileset.pattern)
             elif fileset.type == 'weblate':
                 fs = WeblateFileSet(self.name,
                                   self.project_id,
@@ -191,6 +186,7 @@ class Project(object):
                 logging.error(msg)
                 raise Exception(msg)
 
+            fs.set_pattern(fileset.pattern)
             fs.add_excluded(fileset.excluded)
             fs.set_duplicates(fileset.duplicates)
             fs.set_conversor_setup(fileset.conversor_setup)

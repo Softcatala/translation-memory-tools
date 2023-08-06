@@ -28,13 +28,12 @@ from .findfiles import FindFiles
 
 class TransifexFileSet(FileSet):
 
-    pattern = None
+    def clean_up_after_convert(self):
+        self._remove_english_files()
+        self._remove_non_translation_files()
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
-    def _remove_non_translation_only_files(self):
-
+    # Transifex keeps source files and we need to filter them out
+    def _remove_english_files(self):
         findFiles = FindFiles()
 
         for filename in findFiles.find_recursive(self.temp_dir, '*'):
@@ -42,11 +41,6 @@ class TransifexFileSet(FileSet):
                filename.endswith('en_GB.po') or filename.endswith('en_GB.ts') or \
                filename.endswith('en_US.po') or filename.endswith('en_US.ts'):
                    os.remove(filename)
-
-            if self.pattern is not None and \
-               re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
-                os.remove(filename)
 
     def do(self):
         prevdir = os.getcwd()
@@ -65,6 +59,4 @@ class TransifexFileSet(FileSet):
 
         os.system(cmd)
         os.chdir(prevdir)
-        self._remove_non_translation_only_files()
-
         self.build()

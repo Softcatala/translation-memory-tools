@@ -53,25 +53,6 @@ class CompressedFileSet(FileSet):
                 msg = 'Unsupported file extension for filename: {0}'
                 logging.error(msg.format(filename))
 
-    def set_pattern(self, pattern):
-        self.pattern = pattern
-
-    def clean_up_after_convert(self):
-        self._remove_non_translation_files()
-
-    def _remove_non_translation_files(self):
-        if self.pattern is None or len(self.pattern) == 0:
-            return
-
-        findFiles = FindFiles()
-
-        for filename in findFiles.find_recursive(self.temp_dir, '*'):
-
-            if re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
-                os.remove(filename)
-                print(filename)
-
     def do(self):
         # Download po files
         download = DownloadFile()
