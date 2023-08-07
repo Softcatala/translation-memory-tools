@@ -25,7 +25,7 @@ import time
 import sys
 import urllib.parse
 import datetime
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
 sys.path.append('models/')
 from pagination import Pagination
@@ -129,7 +129,6 @@ class SearchAPIResults(object):
         return ctx
 
 
-@cross_origin(origin='*',headers=['Content-Type','Authorization'])
 @app.route('/search', methods=['GET'])
 def search_api():
     source = request.args.get('source')
@@ -171,7 +170,6 @@ def stats_api():
     stats = Stats()
     return Response(stats.get_json(date_requested), mimetype='application/json')
 
-@cross_origin(origin='*',headers=['Content-Type','Authorization'])
 @app.route('/projects', methods=['GET'])
 def projects_api():
     with open("projects.json" ,"r") as file:
@@ -179,7 +177,6 @@ def projects_api():
 
     return Response(projects, mimetype='application/json')
 
-@cross_origin(origin='*',headers=['Content-Type','Authorization'])
 @app.route('/index', methods=['GET'])
 def index_api():
     with open("index.json" ,"r") as file:
