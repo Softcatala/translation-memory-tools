@@ -192,7 +192,6 @@ class ConvertFiles():
                 if dir in subdirs:
                     continue
 
-                logging.debug(f"Analyze subdir '{dir}'")
                 subdirs.add(dir)
                 src = os.path.join(dir, "values/strings.xml")
                 tgt = os.path.join(dir, "values-ca/strings.xml")
