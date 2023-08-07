@@ -20,6 +20,7 @@ from builder.jsonbackend import JsonBackend
 from builder.projects import Projects
 import unittest
 from os import path
+import re
 from builder.licenses import Licenses
 
 
@@ -52,6 +53,28 @@ class TestCfgValidation(unittest.TestCase):
                 continue
 
             self.assertIn(license_id, valid_licenses_ids)
+
+    def test_check_pattern(self):
+        json = self.get_projects_cfg()
+
+        projects = Projects()
+        for project_dto in json.projects:
+            for fileset in project_dto.filesets:
+                try:
+                    re.compile(fileset.pattern)
+                except re.error:
+                    self.fail(f"incorrect pattern regular expression in project '{project_dto.name}'")
+
+    def test_check_retrieval_pattern(self):
+        json = self.get_projects_cfg()
+
+        projects = Projects()
+        for project_dto in json.projects:
+            for fileset in project_dto.filesets:
+                try:
+                    re.compile(fileset.retrieval_pattern)
+                except re.error:
+                    self.fail(f"incorrect retrieval_pattern regular expression in project '{project_dto.name}'")
 
 if __name__ == '__main__':
     unittest.main()
