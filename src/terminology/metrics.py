@@ -22,7 +22,6 @@ import math
 
 
 class Metrics(object):
-
     def __init__(self):
         # All the dictionaries are word -> metric
         # TODO: Consider a word pointing to a class with all the metrics for the word
@@ -49,7 +48,9 @@ class Metrics(object):
             frequency = 0
             documents_appear = 0
             for document_key_filename in corpus.documents.keys():
-                if source_word in corpus.documents[document_key_filename]:  # Word is the file
+                if (
+                    source_word in corpus.documents[document_key_filename]
+                ):  # Word is the file
                     documents_appear += 1
                     terms = corpus.documents[document_key_filename][source_word]
                     frequency += len(terms)

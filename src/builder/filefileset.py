@@ -24,7 +24,6 @@ from .fileset import FileSet
 
 
 class FileFileSet(FileSet):
-
     def do(self):
         # Download local file
         download = DownloadFile()

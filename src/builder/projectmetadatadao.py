@@ -23,7 +23,6 @@ from .projectmetadatadto import ProjectMetaDataDto
 
 
 class ProjectMetaDataDao(object):
-
     NAME = 0
     LAST_FETCH = 1
     TRANSLATION_UPDATE = 2
@@ -35,37 +34,46 @@ class ProjectMetaDataDao(object):
 
     def create_model(self):
         c = self.connection.cursor()
-        command = ('CREATE TABLE IF NOT EXISTS projects ('
-                   'name TEXT PRIMARY KEY,'
-                   'last_fetch TIMESTAMP,'
-                   'last_translation_update TIMESTAMP,'
-                   'words INTEGER,'
-                   'checksum TEXT'
-                   ');')
+        command = (
+            "CREATE TABLE IF NOT EXISTS projects ("
+            "name TEXT PRIMARY KEY,"
+            "last_fetch TIMESTAMP,"
+            "last_translation_update TIMESTAMP,"
+            "words INTEGER,"
+            "checksum TEXT"
+            ");"
+        )
         c.execute(command)
 
-        command = 'CREATE INDEX IF NOT EXISTS [ix_name] ON [projects] ([name]);'
+        command = "CREATE INDEX IF NOT EXISTS [ix_name] ON [projects] ([name]);"
         c.execute(command)
         self.connection.commit()
 
     def open(self, database_name):
-        self.connection = sqlite3.connect(database_name,
-                                          detect_types=sqlite3.PARSE_DECLTYPES)
+        self.connection = sqlite3.connect(
+            database_name, detect_types=sqlite3.PARSE_DECLTYPES
+        )
         self.create_model()
 
     def put(self, dto):
         c = self.connection.cursor()
-        command = (u"INSERT OR REPLACE INTO 'projects' VALUES ('{0}', '{1}', "
-                   u"'{2}', {3}, '{4}');")
-        command = command.format(dto.name, dto.last_fetch,
-                                 dto.last_translation_update, dto.words,
-                                 dto.checksum)
+        command = (
+            "INSERT OR REPLACE INTO 'projects' VALUES ('{0}', '{1}', "
+            "'{2}', {3}, '{4}');"
+        )
+        command = command.format(
+            dto.name,
+            dto.last_fetch,
+            dto.last_translation_update,
+            dto.words,
+            dto.checksum,
+        )
         c.execute(command)
         self.connection.commit()
 
     def get(self, name):
         c = self.connection.cursor()
-        command = u"SELECT * FROM projects WHERE name='{0}'".format(name)
+        command = "SELECT * FROM projects WHERE name='{0}'".format(name)
         result = c.execute(command)
         row = result.fetchone()
 
@@ -81,7 +89,7 @@ class ProjectMetaDataDao(object):
 
     def get_all(self):
         c = self.connection.cursor()
-        command = u"SELECT * FROM projects"
+        command = "SELECT * FROM projects"
         result = c.execute(command)
         rows = result.fetchall()
         return self._fetch_all(rows)
@@ -103,16 +111,20 @@ class ProjectMetaDataDao(object):
 
     def delete_last_fetch(self, days):
         c = self.connection.cursor()
-        command = u"DELETE FROM projects WHERE last_fetch <= date('now','-{0} day')".format(days)
+        command = (
+            "DELETE FROM projects WHERE last_fetch <= date('now','-{0} day')".format(
+                days
+            )
+        )
         result = c.execute(command)
         self.connection.commit()
         return result.rowcount
 
     def dump(self):
         c = self.connection.cursor()
-        command = u'SELECT * FROM projects'
+        command = "SELECT * FROM projects"
         result = c.execute(command)
-        print('Database rows')
+        print("Database rows")
         for row in result:
             print(row)
 

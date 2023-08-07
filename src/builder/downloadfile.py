@@ -24,7 +24,6 @@ from urllib.error import HTTPError
 
 
 class DownloadFile(object):
-
     def urlopen_with_retry(self, url):
         NTRIES = 3
         NOT_FOUND = 404
@@ -32,15 +31,24 @@ class DownloadFile(object):
 
         for _ in range(NTRIES):
             try:
-                req = Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox'})
+                req = Request(
+                    url,
+                    headers={
+                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox"
+                    },
+                )
                 return urlopen(req, timeout=TIMEOUT)
             except HTTPError as e:
-                logging.error(f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' ")
+                logging.error(
+                    f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' "
+                )
                 if e.code == NOT_FOUND:
                     return
 
             except Exception as e:
-                logging.error(f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' ")
+                logging.error(
+                    f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' "
+                )
 
     def _remove_incomplete_file(self, filename):
         if os.path.exists(filename):
@@ -48,14 +56,14 @@ class DownloadFile(object):
 
     def get_file(self, url, filename):
         try:
-            msg = 'Downloading file \'{0}\' to {1}'.format(url, filename)
+            msg = "Downloading file '{0}' to {1}".format(url, filename)
             logging.info(msg)
 
             infile = self.urlopen_with_retry(url)
-            output = open(filename, 'wb')
+            output = open(filename, "wb")
             output.write(infile.read())
             output.close()
         except Exception:
-            msg = 'Error downloading file \'{0}\' to {1}'.format(url, filename)
+            msg = "Error downloading file '{0}' to {1}".format(url, filename)
             logging.error(msg)
             self._remove_incomplete_file(filename)

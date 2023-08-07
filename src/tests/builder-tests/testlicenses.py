@@ -21,11 +21,11 @@ from builder.licenses import Licenses
 import unittest
 from os import path
 
-class TestLicenses(unittest.TestCase):
 
+class TestLicenses(unittest.TestCase):
     def _get_licenses_file(self):
         current_dir = path.dirname(path.realpath(__file__))
-        return path.join(current_dir, 'data/licenses/licenses.json')
+        return path.join(current_dir, "data/licenses/licenses.json")
 
     def test_get_licenses_ids(self):
         ids = Licenses(self._get_licenses_file()).get_licenses_ids()
@@ -35,19 +35,23 @@ class TestLicenses(unittest.TestCase):
     def test_get_licenses_name_and_link(self):
         links = Licenses(self._get_licenses_file()).get_licenses_name_and_link()
         self.assertEquals(5, len(links))
-        license = links['PSF-2.0']
+        license = links["PSF-2.0"]
 
-        self.assertIn("Python Software Foundation License 2.0", license['name'])
-        self.assertIn("https://opensource.org/licenses/Python-2.0", license['link'])
+        self.assertIn("Python Software Foundation License 2.0", license["name"])
+        self.assertIn("https://opensource.org/licenses/Python-2.0", license["link"])
 
     def test_are_compatible_licenses_ok(self):
         licences = Licenses()
-        self.assertFalse(licences.are_compatible_licenses('GPL-3.0-only', 'GPL-2.0-only'))
+        self.assertFalse(
+            licences.are_compatible_licenses("GPL-3.0-only", "GPL-2.0-only")
+        )
 
     def test_are_compatible_licenses_false(self):
         licences = Licenses()
-        self.assertTrue(licences.are_compatible_licenses('GPL-3.0-only', '"Apache-2.0"'))
+        self.assertTrue(
+            licences.are_compatible_licenses("GPL-3.0-only", '"Apache-2.0"')
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

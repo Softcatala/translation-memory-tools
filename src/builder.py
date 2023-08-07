@@ -33,8 +33,8 @@ projects = Projects()
 
 
 def init_logging(del_logs):
-    logfile = 'builder.log'
-    logfile_error = 'builder-error.log'
+    logfile = "builder.log"
+    logfile_error = "builder-error.log"
 
     if del_logs and os.path.isfile(logfile):
         os.remove(logfile)
@@ -42,18 +42,18 @@ def init_logging(del_logs):
     if del_logs and os.path.isfile(logfile_error):
         os.remove(logfile_error)
 
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 
-    LOGLEVEL = os.environ.get('LOGLEVEL', 'INFO').upper()
-    LOGSTDOUT = os.environ.get('LOGSTDOUT', '0')
+    LOGLEVEL = os.environ.get("LOGLEVEL", "INFO").upper()
+    LOGSTDOUT = os.environ.get("LOGSTDOUT", "0")
 
-    if LOGSTDOUT == '0':
-        console = logging.StreamHandler() # By default uses stderr
+    if LOGSTDOUT == "0":
+        console = logging.StreamHandler()  # By default uses stderr
     else:
         console = logging.StreamHandler(stream=sys.stdout)
 
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
-    logger = logging.getLogger('')
+    logger = logging.getLogger("")
     console.setLevel(LOGLEVEL)
 
     if LOGLEVEL != "INFO":
@@ -71,62 +71,62 @@ def read_parameters():
     parser = OptionParser()
 
     parser.add_option(
-        '-d',
-        '--del-logs',
-        action='store_true',
-        dest='del_logs',
+        "-d",
+        "--del-logs",
+        action="store_true",
+        dest="del_logs",
         default=False,
-        help='Delete previous existing logs'
+        help="Delete previous existing logs",
     )
 
     parser.add_option(
-        '-n',
-        '--no-source',
-        action='store_false',
-        dest='add_source',
+        "-n",
+        "--no-source",
+        action="store_false",
+        dest="add_source",
         default=True,
-        help='Do not include the source for the translation segment'
+        help="Do not include the source for the translation segment",
     )
 
     parser.add_option(
-        '-p',
-        '--projects',
-        action='store',
-        type='string',
-        dest='projects_names',
-        default='',
-        help='To restrict the processing of projects to comma separated '
-        'given list e.g.: (fedora, ubuntu)'
+        "-p",
+        "--projects",
+        action="store",
+        type="string",
+        dest="projects_names",
+        default="",
+        help="To restrict the processing of projects to comma separated "
+        "given list e.g.: (fedora, ubuntu)",
     )
 
     parser.add_option(
-        '-s',
-        '--json',
-        action='store',
-        type='string',
-        dest='projects_dir',
-        default='../cfg/projects/',
+        "-s",
+        "--json",
+        action="store",
+        type="string",
+        dest="projects_dir",
+        default="../cfg/projects/",
         help="Define the directory that contains the json files with the "
-        "project's definitions"
+        "project's definitions",
     )
 
     parser.add_option(
-        '-a',
-        '--all',
-        action='store_true',
-        dest='only_all_projects_tm',
+        "-a",
+        "--all",
+        action="store_true",
+        dest="only_all_projects_tm",
         default=False,
-        help='Looks for already existing PO files in the current directory '
-        'and creates a new tm.po with all memories'
+        help="Looks for already existing PO files in the current directory "
+        "and creates a new tm.po with all memories",
     )
 
     parser.add_option(
-        '-c',
-        '--softcatala',
-        action='store_true',
-        dest='softcatala_only',
+        "-c",
+        "--softcatala",
+        action="store_true",
+        dest="softcatala_only",
         default=False,
-        help=u'Process only Softcatalà memories'
+        help="Process only Softcatalà memories",
     )
 
     parser.add_option(
@@ -136,25 +136,33 @@ def read_parameters():
         type="string",
         dest="out_directory",
         default="output/",
-        help="Directory to output the files")
+        help="Directory to output the files",
+    )
 
     (options, args) = parser.parse_args()
 
-    projects_names = ''
+    projects_names = ""
     if options.projects_names:
-        projects_names = options.projects_names.split(',')
+        projects_names = options.projects_names.split(",")
 
-    return (options.add_source, projects_names, options.projects_dir,
-            options.only_all_projects_tm, options.softcatala_only,
-            options.out_directory, options.del_logs)
+    return (
+        options.add_source,
+        projects_names,
+        options.projects_dir,
+        options.only_all_projects_tm,
+        options.softcatala_only,
+        options.out_directory,
+        options.del_logs,
+    )
 
 
-def load_projects_from_json(add_source, projects_names, projects_dir,
-                            softcatala_only):
+def load_projects_from_json(add_source, projects_names, projects_dir, softcatala_only):
     json = JsonBackend(projects_dir)
     json.load()
 
-    msg = 'Projects defined in the projects configuration directory {0}'.format(len(json.projects))
+    msg = "Projects defined in the projects configuration directory {0}".format(
+        len(json.projects)
+    )
     logging.info(msg)
     for project_dto in json.projects:
         project_dto_lower = project_dto.name.lower().strip()
@@ -178,20 +186,27 @@ def create_output_dir(directory):
     if not os.path.exists(directory):
         os.mkdir(directory)
 
-if __name__ == '__main__':
-    print('Translation memory builder version 0.1')
-    print('Use --help for assistance')
+
+if __name__ == "__main__":
+    print("Translation memory builder version 0.1")
+    print("Use --help for assistance")
 
     start_time = datetime.datetime.now()
-    (add_source, projects_names, projects_dir, only_all_projects_tm,
-     softcatala_only, out_directory, del_logs) = read_parameters()
+    (
+        add_source,
+        projects_names,
+        projects_dir,
+        only_all_projects_tm,
+        softcatala_only,
+        out_directory,
+        del_logs,
+    ) = read_parameters()
 
     init_logging(del_logs)
     projects.set_out_directory(out_directory)
     create_output_dir(out_directory)
 
-    load_projects_from_json(add_source, projects_names, projects_dir,
-                            softcatala_only)
+    load_projects_from_json(add_source, projects_names, projects_dir, softcatala_only)
 
     if projects_names and len(projects.projects) == 0:
         logging.error(f"Unable to find any of the specified projects: {projects_names}")
@@ -200,7 +215,7 @@ if __name__ == '__main__':
     if only_all_projects_tm:
         projects.create_tm_for_all_projects()
     elif softcatala_only:
-        projects.set_tm_file('softcatala-tm.po')
+        projects.set_tm_file("softcatala-tm.po")
         projects.create_tm_for_all_projects()
     else:
         projects()
@@ -208,5 +223,5 @@ if __name__ == '__main__':
     projects.to_tmx()
     projects.statistics()
 
-    s = 'Time used to build memories: {0}'.format(datetime.datetime.now() - start_time)
+    s = "Time used to build memories: {0}".format(datetime.datetime.now() - start_time)
     logging.info(s)

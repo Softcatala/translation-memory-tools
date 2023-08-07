@@ -22,13 +22,14 @@ import os
 import datetime
 from shutil import copyfile
 
-'''
+"""
     This class keeps a log of the usage of a service
         - For usage write a line on the file with the date
         - At the number of days specified cleans old entries
-'''
-class Usage(object):
+"""
 
+
+class Usage(object):
     FILE = "usage.txt"
     DAYS_TO_KEEP = 7
 
@@ -41,8 +42,8 @@ class Usage(object):
     def log(self):
         try:
             with open(self.FILE, "a+") as file_out:
-                current_time = self._get_time_now().strftime('%Y-%m-%d %H:%M:%S')
-                file_out.write('{0}\n'.format(current_time))
+                current_time = self._get_time_now().strftime("%Y-%m-%d %H:%M:%S")
+                file_out.write("{0}\n".format(current_time))
 
             if self.rotate and self._is_old_line(self._read_first_line()):
                 self._rotate_file()
@@ -55,8 +56,10 @@ class Usage(object):
         try:
             with open(self.FILE, "r") as file_in:
                 for line in file_in:
-                    datetime_no_newline = line[:len(line)-1]
-                    line_datetime = datetime.datetime.strptime(datetime_no_newline, '%Y-%m-%d %H:%M:%S')
+                    datetime_no_newline = line[: len(line) - 1]
+                    line_datetime = datetime.datetime.strptime(
+                        datetime_no_newline, "%Y-%m-%d %H:%M:%S"
+                    )
                     if line_datetime.date() == date_requested.date():
                         count = count + 1
         except:
@@ -76,9 +79,11 @@ class Usage(object):
         if line is None:
             return False
 
-        line = line[:len(line)-1]
-        line_datetime = datetime.datetime.strptime(line, '%Y-%m-%d %H:%M:%S')
-        return line_datetime < self._get_time_now() - datetime.timedelta(days = self.DAYS_TO_KEEP)
+        line = line[: len(line) - 1]
+        line_datetime = datetime.datetime.strptime(line, "%Y-%m-%d %H:%M:%S")
+        return line_datetime < self._get_time_now() - datetime.timedelta(
+            days=self.DAYS_TO_KEEP
+        )
 
     def _rotate_file(self):
         TEMP = "usage.bak"

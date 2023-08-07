@@ -29,39 +29,51 @@ from web.indexcreator import IndexCreator
 def read_parameters():
     parser = OptionParser()
 
-    parser.add_option('-d', '--directory',
-                      action='store', type='string', dest='po_directory',
-                      default='.',
-                      help='Directory to find the PO files')
+    parser.add_option(
+        "-d",
+        "--directory",
+        action="store",
+        type="string",
+        dest="po_directory",
+        default=".",
+        help="Directory to find the PO files",
+    )
 
-    parser.add_option('-k', '--keyword',
-                      action='store', type='string', dest='debug_keyword',
-                      default=None,
-                      help='Output debug information for a source keyword (for '
-                      'debugging)')
+    parser.add_option(
+        "-k",
+        "--keyword",
+        action="store",
+        type="string",
+        dest="debug_keyword",
+        default=None,
+        help="Output debug information for a source keyword (for " "debugging)",
+    )
 
-    parser.add_option('-p',
-                      '--projects',
-                      action='store',
-                      type='string',
-                      dest='projects_names',
-                      help='To restrict the processing of projects to comma'
-                      ' separated given list (for debugging)')
+    parser.add_option(
+        "-p",
+        "--projects",
+        action="store",
+        type="string",
+        dest="projects_names",
+        help="To restrict the processing of projects to comma"
+        " separated given list (for debugging)",
+    )
 
     (options, args) = parser.parse_args()
 
     projects_names = None
 
     if options.projects_names is not None:
-        projects_names = options.projects_names.split(',')
+        projects_names = options.projects_names.split(",")
 
     return options.po_directory, options.debug_keyword, projects_names
 
-def write_index_json(ctx):
 
-    content = json.dumps(ctx, indent=4, separators=(',', ': '))
-    with open("index.json" ,"w") as file:
+def write_index_json(ctx):
+    content = json.dumps(ctx, indent=4, separators=(",", ": "))
+    with open("index.json", "w") as file:
         file.write(content)
+
 
 def main():
     """Create a Whoosh index for a PO file.
@@ -75,7 +87,7 @@ def main():
     start_time = datetime.datetime.now()
 
     try:
-        locale.setlocale(locale.LC_ALL, '')
+        locale.setlocale(locale.LC_ALL, "")
     except Exception as detail:
         print("Exception: " + str(detail))
 
@@ -85,13 +97,17 @@ def main():
     indexCreator.process_projects()
 
     ctx = {
-        'date': datetime.date.today().strftime("%d/%m/%Y"),
-        'projects': str(indexCreator.projects),
-        'words': locale.format_string("%d", indexCreator.words, grouping=True),
+        "date": datetime.date.today().strftime("%d/%m/%Y"),
+        "projects": str(indexCreator.projects),
+        "words": locale.format_string("%d", indexCreator.words, grouping=True),
     }
     write_index_json(ctx)
 
-    print("Time used to create the index: {0} ".format(datetime.datetime.now() - start_time))
+    print(
+        "Time used to create the index: {0} ".format(
+            datetime.datetime.now() - start_time
+        )
+    )
 
 
 if __name__ == "__main__":

@@ -22,8 +22,8 @@ import logging
 import polib
 import html
 
-class POFile(object):
 
+class POFile(object):
     def __init__(self, filename):
         self.filename = filename
 
@@ -37,13 +37,12 @@ class POFile(object):
             input_po = polib.pofile(self.filename)
 
             for entry in input_po:
-
                 if len(entry.tcomment) > 0:
-                    entry.tcomment = u'{0}\n{1}'.format(comment, entry.tcomment)
+                    entry.tcomment = "{0}\n{1}".format(comment, entry.tcomment)
                 else:
                     entry.tcomment = comment
 
-                if 'fuzzy' in entry.flags:
+                if "fuzzy" in entry.flags:
                     entry.obsolete = True
                     continue
 
@@ -65,7 +64,7 @@ class POFile(object):
                 else:
                     msgids[entry.msgid] = True
 
-                cnt = cnt +1
+                cnt = cnt + 1
             input_po.save(self.filename)
         except Exception as e:
             self._log_exception("add_msgctxt_to_duplicates", e)
@@ -76,7 +75,7 @@ class POFile(object):
             for entry in poFile:
                 # hashlib.sha1 isn't expecting a unicode object, but rather a
                 # sequence of bytes in a str object
-                checksum.update(entry.msgstr.encode('utf-8'))
+                checksum.update(entry.msgstr.encode("utf-8"))
         except Exception as e:
             self._log_exception("calculate_localized_string_checksum", e)
 
@@ -86,7 +85,7 @@ class POFile(object):
         try:
             poFile = polib.pofile(self.filename)
             for entry in poFile:
-                string_words = entry.msgstr.split(' ')
+                string_words = entry.msgstr.split(" ")
                 words += len(string_words)
         except Exception as e:
             self._log_exception("get_statistics", e)
@@ -94,23 +93,20 @@ class POFile(object):
             return words
 
     def po_preprocessing(self, parameters):
-
-        actions = parameters.split(',')
+        actions = parameters.split(",")
         for action in actions:
             action = action.strip()
-            if 'remove_untranslated' == action:
+            if "remove_untranslated" == action:
                 self._remove_untranslated_strings()
 
-            if 'unescape_html' == action:
+            if "unescape_html" == action:
                 self._unescape_html()
 
     def _unescape_html(self):
         try:
-
             input_po = polib.pofile(self.filename)
 
             for entry in input_po:
-
                 msgid = html.unescape(entry.msgid)
                 msgstr = html.unescape(entry.msgstr)
                 if msgid != entry.msgid:

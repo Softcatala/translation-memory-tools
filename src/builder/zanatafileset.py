@@ -26,11 +26,11 @@ import yaml
 
 from .fileset import FileSet
 
-class ZanataFileSet(FileSet):
 
+class ZanataFileSet(FileSet):
     username = None
     auth = None
-    TIMEOUT=15
+    TIMEOUT = 15
 
     def _set_auth_api_token(self):
         try:
@@ -40,62 +40,69 @@ class ZanataFileSet(FileSet):
                     if self.project_name not in value:
                         continue
 
-                    self.username = value[self.project_name]['username']
-                    self.auth = value[self.project_name]['auth-token']
+                    self.username = value[self.project_name]["username"]
+                    self.auth = value[self.project_name]["auth-token"]
 
             if self.username is None or self.auth is None:
-                msg = 'ZanataFileSet._set_auth_api_token: No user or auth token'
+                msg = "ZanataFileSet._set_auth_api_token: No user or auth token"
                 logging.error(msg)
 
         except Exception as detail:
-            msg = 'ZanataFileSet._set_auth_api_token: {0}'.format(str(detail))
+            msg = "ZanataFileSet._set_auth_api_token: {0}".format(str(detail))
             logging.error(msg)
 
     def _get_projects_ids(self):
         url = urllib.parse.urljoin(self.url, "/rest/projects")
-        headers = {'accept': 'application/json'}
+        headers = {"accept": "application/json"}
 
         req = urllib.request.Request(url, headers=headers)
         response = urllib.request.urlopen(req, timeout=self.TIMEOUT)
-        response_text = response.read().decode(response.info().get_param('charset') or 'utf-8')
+        response_text = response.read().decode(
+            response.info().get_param("charset") or "utf-8"
+        )
         projects = json.loads(response_text)
         ids = []
         for project_dict in projects:
-            ids.append(project_dict['id'])
+            ids.append(project_dict["id"])
 
         return ids
 
     # Try to get first only the master (latest) version. It prevents downloading old translations
     # If this does not work, download the full memory
     def _get_tmx_file(self, project_id):
-        if self._get_single_tmx_file(project_id, "/rest/tm/projects/{0}/iterations/master?locale=ca", False):
+        if self._get_single_tmx_file(
+            project_id, "/rest/tm/projects/{0}/iterations/master?locale=ca", False
+        ):
             return
 
         self._get_single_tmx_file(project_id, "/rest/tm/projects/{0}?locale=ca", True)
 
-
     def _get_single_tmx_file(self, project_id, base_url, report_error):
         req = base_url.format(project_id)
         url = urllib.parse.urljoin(self.url, req)
-        headers = {'X-Auth-User': self.username, 'X-Auth-Token': self.auth}
+        headers = {"X-Auth-User": self.username, "X-Auth-Token": self.auth}
 
         try:
-            filename = '{0}-ca.tmx'.format(project_id)
+            filename = "{0}-ca.tmx".format(project_id)
             filename = os.path.join(self.temp_dir, filename)
             req = urllib.request.Request(url, headers=headers)
 
-            msg = 'Download file \'{0}\' to {1}'.format(url, filename)
+            msg = "Download file '{0}' to {1}".format(url, filename)
             logging.info(msg)
 
             infile = urllib.request.urlopen(req, timeout=self.TIMEOUT)
-            output = open(filename, 'wb')
+            output = open(filename, "wb")
             output.write(infile.read())
             output.close()
             return True
 
         except Exception as detail:
             if report_error:
-                logging.error("ZanataFileSet._get_single_tmx_file {0} - error: {1}".format(url, detail))
+                logging.error(
+                    "ZanataFileSet._get_single_tmx_file {0} - error: {1}".format(
+                        url, detail
+                    )
+                )
 
             return False
 

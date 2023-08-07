@@ -27,7 +27,6 @@ from .findfiles import FindFiles
 
 
 class TransifexFileSet(FileSet):
-
     def clean_up_after_convert(self):
         self._remove_english_files()
         self._remove_non_translation_files()
@@ -36,11 +35,16 @@ class TransifexFileSet(FileSet):
     def _remove_english_files(self):
         findFiles = FindFiles()
 
-        for filename in findFiles.find_recursive(self.temp_dir, '*'):
-            if filename.endswith('en.po') or filename.endswith('en.ts') or\
-               filename.endswith('en_GB.po') or filename.endswith('en_GB.ts') or \
-               filename.endswith('en_US.po') or filename.endswith('en_US.ts'):
-                   os.remove(filename)
+        for filename in findFiles.find_recursive(self.temp_dir, "*"):
+            if (
+                filename.endswith("en.po")
+                or filename.endswith("en.ts")
+                or filename.endswith("en_GB.po")
+                or filename.endswith("en_GB.ts")
+                or filename.endswith("en_US.po")
+                or filename.endswith("en_US.ts")
+            ):
+                os.remove(filename)
 
     def do(self):
         prevdir = os.getcwd()
@@ -48,14 +52,18 @@ class TransifexFileSet(FileSet):
 
         url = urllib.parse.urlparse(self.url)
         os.system("tx init")
-        os.system("tx add remote --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' {0}".format(self.url))
+        os.system(
+            "tx add remote --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' {0}".format(
+                self.url
+            )
+        )
 
         # To be able to process files with no English source (.strings, .xml,
         # etc) we pull the English files too and then we delete the ones that
         # include source and target
-        cmd = 'tx pull -f -s -t -l ca,ca_ES,en,en_GB'
-        if self.project_name.lower() == 'blender':
-            cmd += ' --mode onlyreviewed'
+        cmd = "tx pull -f -s -t -l ca,ca_ES,en,en_GB"
+        if self.project_name.lower() == "blender":
+            cmd += " --mode onlyreviewed"
 
         os.system(cmd)
         os.chdir(prevdir)

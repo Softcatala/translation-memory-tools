@@ -24,9 +24,8 @@ from .fileset import FileSet
 
 
 class LocalDirFileSet(FileSet):
-
     def do(self):
-        out = '{0}/{1}'.format(self.temp_dir, self.filename)
+        out = "{0}/{1}".format(self.temp_dir, self.filename)
 
         for filename in glob.glob(self.url):
             shutil.copy(filename, out)

@@ -22,7 +22,7 @@
 class GlossaryEntry(object):
     """Represents an entry to be written in a glossary."""
 
-    def __init__(self, source_term=u'', translations=None):
+    def __init__(self, source_term="", translations=None):
         self.source_term = source_term
         self.translations = translations is None and [] or translations
         self.percentage = 0  # Percentage of frequency across all options.
@@ -34,7 +34,7 @@ class GlossaryEntry(object):
             translations.append(translation.get_dict())
 
         return {
-            u'source': self.source_term,
-            u'translation': self.translations[0].translation,
-            u'translations': translations,
+            "source": self.source_term,
+            "translation": self.translations[0].translation,
+            "translations": translations,
         }

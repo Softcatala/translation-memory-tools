@@ -23,38 +23,46 @@ from web.models.pagination import Pagination
 
 
 class TestPagination(unittest.TestCase):
-
     def test_page(self):
-        pagination = Pagination(50, 100, 'http://www.softcatala.org/web_search.py?page=2')
+        pagination = Pagination(
+            50, 100, "http://www.softcatala.org/web_search.py?page=2"
+        )
         self.assertEquals(pagination.page, 2)
 
     def test_url(self):
-        pagination = Pagination(50, 100, 'http://www.softcatala.org/web_search.py?page=2&project=gnome')
-        self.assertEquals(pagination.url, 'http://www.softcatala.org/web_search.py?project=gnome')
+        pagination = Pagination(
+            50, 100, "http://www.softcatala.org/web_search.py?page=2&project=gnome"
+        )
+        self.assertEquals(
+            pagination.url, "http://www.softcatala.org/web_search.py?project=gnome"
+        )
 
     def test_pages_one(self):
-        pagination = Pagination(50, 10, '')
+        pagination = Pagination(50, 10, "")
         self.assertEquals(pagination.pages, 1)
 
     def test_pages_three(self):
-        pagination = Pagination(50, 101, '')
+        pagination = Pagination(50, 101, "")
         self.assertEquals(pagination.pages, 3)
 
     def test_has_prev_true(self):
-        pagination = Pagination(50, 100, 'http://www.softcatala.org/web_search.py?page=2')
+        pagination = Pagination(
+            50, 100, "http://www.softcatala.org/web_search.py?page=2"
+        )
         self.assertTrue(pagination.has_prev)
 
     def test_has_prev_false(self):
-        pagination = Pagination(50, 1, '')
+        pagination = Pagination(50, 1, "")
         self.assertFalse(pagination.has_prev)
 
     def test_has_next_true(self):
-        pagination = Pagination(50, 100, '')
+        pagination = Pagination(50, 100, "")
         self.assertTrue(pagination.has_next)
 
     def test_has_next_false(self):
-        pagination = Pagination(50, 1, '')
+        pagination = Pagination(50, 1, "")
         self.assertFalse(pagination.has_next)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

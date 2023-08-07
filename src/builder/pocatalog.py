@@ -21,9 +21,10 @@ import os
 import shutil
 import tempfile
 
+
 class POCatalog(object):
     """Encapsulates the access to PO catalogs using msgattrib and
-        and msgcat commands"""
+    and msgcat commands"""
 
     def __init__(self, filename):
         self._filename = filename
@@ -36,7 +37,7 @@ class POCatalog(object):
         if os.path.isfile(self.filename):
             backup = next(tempfile._get_candidate_names())
             shutil.copy(self.filename, backup)
-            cmd = 'msgcat -tutf-8 --use-first -o {0} {1} \'{2}\' 2> /dev/null'
+            cmd = "msgcat -tutf-8 --use-first -o {0} {1} '{2}' 2> /dev/null"
             os.system(cmd.format(self.filename, backup, pofile))
             os.remove(backup)
         else:
@@ -45,11 +46,12 @@ class POCatalog(object):
 
     def cleanup(self):
         if os.path.isfile(self.filename) is False:
-          return
+            return
 
         backup = next(tempfile._get_candidate_names())
         shutil.copy(self.filename, backup)
-        cmd = 'msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}' \
-              ' 2> /dev/null'
+        cmd = (
+            "msgattrib {0} --no-fuzzy --no-obsolete --translated > {1}" " 2> /dev/null"
+        )
         os.system(cmd.format(backup, self.filename))
         os.remove(backup)

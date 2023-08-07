@@ -22,66 +22,67 @@ import unittest
 import shutil
 import os
 
-class TestFileSet(unittest.TestCase):
 
+class TestFileSet(unittest.TestCase):
     def _get_fileset(self):
-        return FileSet('project none',
-            'project id',
-            'filsetname',
-            'lp:~mailman-l10n-ca/mailman.po',
-            'none.po')
+        return FileSet(
+            "project none",
+            "project id",
+            "filsetname",
+            "lp:~mailman-l10n-ca/mailman.po",
+            "none.po",
+        )
 
     def test_has_filename_filename(self):
-
         fileset = self._get_fileset()
-        fileset.add_excluded('excluded.po')
+        fileset.add_excluded("excluded.po")
 
-        self.assertTrue(fileset._should_exclude_file('excluded.po'))
-        self.assertTrue(fileset._should_exclude_file('Includesexcluded.po'))
-        self.assertFalse(fileset._should_exclude_file('eXcluded.po'))
+        self.assertTrue(fileset._should_exclude_file("excluded.po"))
+        self.assertTrue(fileset._should_exclude_file("Includesexcluded.po"))
+        self.assertFalse(fileset._should_exclude_file("eXcluded.po"))
 
     def test_has_filename_filename_project(self):
-
         fileset_parent = self._get_fileset()
-        fileset_parent.po_preprocessing = 'po_processing'
-        fileset_parent.conversor_setup = 'conversor_setup'
+        fileset_parent.po_preprocessing = "po_processing"
+        fileset_parent.conversor_setup = "conversor_setup"
 
-        fileset = FileSet('project none',
-            'project id',
-            'filsetname',
-            'lp:~mailman-l10n-ca/mailman.po',
-            'none.po', fileset_parent)
+        fileset = FileSet(
+            "project none",
+            "project id",
+            "filsetname",
+            "lp:~mailman-l10n-ca/mailman.po",
+            "none.po",
+            fileset_parent,
+        )
 
-        self.assertEquals(fileset.po_preprocessing, 'po_processing')
-        self.assertEquals(fileset.conversor_setup, 'conversor_setup')
+        self.assertEquals(fileset.po_preprocessing, "po_processing")
+        self.assertEquals(fileset.conversor_setup, "conversor_setup")
 
     def test_remove_non_translation_files_no_pattern(self):
-
         fileset = self._get_fileset()
         directory = os.path.dirname(os.path.realpath(__file__))
-        directory += '/data/fileset/'
+        directory += "/data/fileset/"
         shutil.copytree(directory, fileset.temp_dir)
 
         fileset._remove_non_translation_files()
 
         findFiles = FindFiles()
-        files = findFiles.find_recursive(fileset.temp_dir, '*.po')
+        files = findFiles.find_recursive(fileset.temp_dir, "*.po")
         self.assertEquals(2, len(files))
 
     def test_remove_non_translation_files_pattern(self):
-
         fileset = self._get_fileset()
         directory = os.path.dirname(os.path.realpath(__file__))
-        directory += '/data/fileset/'
+        directory += "/data/fileset/"
         shutil.copytree(directory, fileset.temp_dir)
 
         fileset.set_pattern(r".*?ca\.po")
         fileset._remove_non_translation_files()
 
         findFiles = FindFiles()
-        files = findFiles.find_recursive(fileset.temp_dir, '*.po')
+        files = findFiles.find_recursive(fileset.temp_dir, "*.po")
         self.assertEquals(1, len(files))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

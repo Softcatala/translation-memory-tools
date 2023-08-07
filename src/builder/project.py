@@ -40,8 +40,8 @@ from .mercurialfileset import MercurialFileSet
 from .weblatefileset import WeblateFileSet
 from .crowdinfileset import CrowdinFileSet
 
-class Project(object):
 
+class Project(object):
     def __init__(self, name, project_id, filename):
         self.add_source = True
         self.filename = filename
@@ -50,8 +50,8 @@ class Project(object):
         self.project_id = project_id
         self.checksum = None
         self.report_errors = True
-        self.out_directory = ''
-        self.license = ''
+        self.out_directory = ""
+        self.license = ""
 
     def get_filename(self):
         return self.filename
@@ -79,110 +79,142 @@ class Project(object):
         for fileset in project_dto.filesets:
             logging.debug(fileset)
 
-            if fileset.type == 'local-file':
-                fs = LocalFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
-            elif fileset.type == 'compressed':
-                fs = CompressedFileSet(self.name,
-                                       self.project_id,
-                                       fileset.name,
-                                       fileset.url,
-                                       fileset.target)
-            elif fileset.type == 'bazaar':
-                fs = BazaarFileSet(self.name,
-                                   self.project_id,
-                                   fileset.name,
-                                   fileset.url,
-                                   fileset.target)
-            elif fileset.type == 'transifex':
-                fs = TransifexFileSet(self.name,
-                                      self.project_id,
-                                      fileset.name,
-                                      fileset.url,
-                                      fileset.target)
-            elif fileset.type == 'transifexhub':
-                fs = TransifexHubFileSet(self.name,
-                                      self.project_id,
-                                      fileset.name,
-                                      fileset.url,
-                                      fileset.target)
+            if fileset.type == "local-file":
+                fs = LocalFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "compressed":
+                fs = CompressedFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "bazaar":
+                fs = BazaarFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "transifex":
+                fs = TransifexFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "transifexhub":
+                fs = TransifexHubFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
                 fs.set_project(self)
-            elif fileset.type == 'local-dir':
-                fs = LocalDirFileSet(self.name,
-                                     self.project_id,
-                                     fileset.name,
-                                     fileset.url,
-                                     fileset.target)
-            elif fileset.type == 'file':
-                fs = FileFileSet(self.name,
-                                 self.project_id,
-                                 fileset.name,
-                                 fileset.url,
-                                 fileset.target)
-            elif fileset.type == 'subversion':
-                fs = SubversionFileSet(self.name,
-                                       self.project_id,
-                                       fileset.name,
-                                       fileset.url,
-                                       fileset.target)
-            elif fileset.type == 'crawl':
-                fs = CrawlFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
+            elif fileset.type == "local-dir":
+                fs = LocalDirFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "file":
+                fs = FileFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "subversion":
+                fs = SubversionFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "crawl":
+                fs = CrawlFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
                 fs.set_retrieval_pattern(fileset.retrieval_pattern)
-            elif fileset.type == 'git':
-                fs = GitFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
-            elif fileset.type == 'gerrit-directory':
-                fs = GerritDirectoryFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
+            elif fileset.type == "git":
+                fs = GitFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "gerrit-directory":
+                fs = GerritDirectoryFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
                 fs.set_project(self)
                 fs.set_retrieval_pattern(fileset.retrieval_pattern)
-            elif fileset.type == 'zanata':
-                fs = ZanataFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
-            elif fileset.type == 'pontoon':
-                fs = PontoonFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
+            elif fileset.type == "zanata":
+                fs = ZanataFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "pontoon":
+                fs = PontoonFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
                 fs.set_project(self)
-            elif fileset.type == 'mercurial':
-                fs = MercurialFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
-            elif fileset.type == 'weblate':
-                fs = WeblateFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
+            elif fileset.type == "mercurial":
+                fs = MercurialFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
+            elif fileset.type == "weblate":
+                fs = WeblateFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
                 fs.set_retrieval_pattern(fileset.retrieval_pattern)
-            elif fileset.type == 'crowdin':
-                fs = CrowdinFileSet(self.name,
-                                  self.project_id,
-                                  fileset.name,
-                                  fileset.url,
-                                  fileset.target)
+            elif fileset.type == "crowdin":
+                fs = CrowdinFileSet(
+                    self.name,
+                    self.project_id,
+                    fileset.name,
+                    fileset.url,
+                    fileset.target,
+                )
             else:
-                msg = 'Unsupported filetype: {0}'.format(fileset.type)
+                msg = "Unsupported filetype: {0}".format(fileset.type)
                 logging.error(msg)
                 raise Exception(msg)
 
@@ -196,36 +228,41 @@ class Project(object):
     def do(self):
         start_time = datetime.datetime.now()
         self._delete_po_file()
-        checksum = hashlib.new('sha1')
+        checksum = hashlib.new("sha1")
 
         for fileset in self.filesets:
             fileset.expand_dynamic()
 
         for fileset in self.filesets:
             try:
-
                 fileset.set_checksum(checksum)
                 fileset.set_add_source(self.add_source)
                 fileset.do_withtemp()
 
                 if self.report_errors is True and fileset.words < 0:
-                    logging.error('Project {0}, fileset {1}, words {2}'.format(
-                                self.name, fileset.name, fileset.words))
+                    logging.error(
+                        "Project {0}, fileset {1}, words {2}".format(
+                            self.name, fileset.name, fileset.words
+                        )
+                    )
 
             except Exception as detail:
-                msg = 'Project.do. Cannot complete project {0}, fileset {1}'. \
-                      format(self.name, fileset.name)
+                msg = "Project.do. Cannot complete project {0}, fileset {1}".format(
+                    self.name, fileset.name
+                )
                 logging.exception(msg.format(self.filename))
                 logging.error(detail)
 
         self.checksum = checksum.hexdigest()
 
-        logging.info('Time used to build project {0}: {1}'.format(self.name,
-                     datetime.datetime.now() - start_time))
+        logging.info(
+            "Time used to build project {0}: {1}".format(
+                self.name, datetime.datetime.now() - start_time
+            )
+        )
         return self.checksum
 
     def get_words_entries(self):
-
         words = 0
         entries = 0
 
@@ -234,13 +271,13 @@ class Project(object):
             poFile = pofile(filename)
 
             for entry in poFile:
-                string_words = entry.msgstr.split(' ')
+                string_words = entry.msgstr.split(" ")
                 words += len(string_words)
 
             entries = len(poFile.translated_entries())
 
         except Exception:
-            msg = 'Project.get_words_entries exception {0}'
+            msg = "Project.get_words_entries exception {0}"
             logging.error(msg.format(filename))
             words = entries = -1
 
@@ -251,7 +288,9 @@ class Project(object):
         if words == 0:
             logging.error(f"{self.name} project has {words} words")
 
-        logging.info(f'{self.name} project. {entries} translated strings, words {words}')
+        logging.info(
+            f"{self.name} project. {entries} translated strings, words {words}"
+        )
 
     def _get_filename_at_output(self, filename):
         return os.path.join(self.out_directory, filename)
@@ -259,10 +298,9 @@ class Project(object):
     def to_tmx(self):
         fullpath_filename = self._get_filename_at_output(self.filename)
         if os.path.isfile(fullpath_filename) is False:
-          return
+            return
 
         fileName, fileExtension = os.path.splitext(self.filename)
         cmd = 'po2tmx "{0}" -l ca -o "{1}.tmx"'
-        cmd = cmd.format(fullpath_filename,
-                         self._get_filename_at_output(fileName))
+        cmd = cmd.format(fullpath_filename, self._get_filename_at_output(fileName))
         os.system(cmd)

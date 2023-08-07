@@ -24,13 +24,11 @@ from collections import OrderedDict
 
 
 class DumpEntry(object):
-
     def _init__(self):
         self.target = None
 
 
 class Dump(object):
-
     def __init__(self):
         # key text ->
         self.entries = OrderedDict()
@@ -44,7 +42,7 @@ class Dump(object):
             if not line:
                 break
 
-            columns = line.split(';')
+            columns = line.split(";")
 
             if len(columns) != 2:
                 continue
@@ -70,7 +68,7 @@ class Dump(object):
         items = 0
         for entry in self.entries:
             if entry not in reduced:
-                print(u" " + unicode(entry, "utf-8"))
+                print(" " + unicode(entry, "utf-8"))
 
             items += 1
             if items > MAX:
@@ -81,9 +79,9 @@ def main():
     print("Compare terminology dumps")
     print("Use --help for assistance")
     new = Dump()
-    new.read('glossary.txt')
+    new.read("glossary.txt")
     old = Dump()
-    old.read('glossary-old.txt')
+    old.read("glossary-old.txt")
     print("New items")
     new.compare(old)
     print("Old items")

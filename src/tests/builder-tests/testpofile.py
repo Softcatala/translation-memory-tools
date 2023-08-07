@@ -25,7 +25,6 @@ import hashlib
 
 
 class TestPOFile(unittest.TestCase):
-
     minipo = r"""# Afrikaans translation of program ABC
 #
 msgid ""
@@ -51,37 +50,38 @@ msgstr 'Apaga les màquines virtuals seleccionades'
 
     def test_add_comment_to_all_entries(self):
         tmpfile = tempfile.NamedTemporaryFile()
-        f = open(tmpfile.name, 'w')
+        f = open(tmpfile.name, "w")
         f.write(self.minipo)
         f.close()
 
         pofile = POFile(tmpfile.name)
-        pofile.add_comment_to_all_entries_and_remove_fuzzys(u'Comment test')
+        pofile.add_comment_to_all_entries_and_remove_fuzzys("Comment test")
 
         input_po = polib.pofile(tmpfile.name)
 
         for entry in input_po:
-            assert entry.tcomment == u'Comment test\nPlease remember to do something'
+            assert entry.tcomment == "Comment test\nPlease remember to do something"
 
     def test_calculate_localized_string_checksum(self):
         pofile = POFile(self.minipo)
-        checksum = hashlib.new('sha1')
+        checksum = hashlib.new("sha1")
         pofile.calculate_localized_string_checksum(checksum)
-        self.assertEquals(u'edf879d0199103cc09cc464deebdfd3e98613e4b',
-                          checksum.hexdigest())
+        self.assertEquals(
+            "edf879d0199103cc09cc464deebdfd3e98613e4b", checksum.hexdigest()
+        )
 
     def _create_po_with_duplicated_strings(self, filename):
         pofile = polib.POFile()
-        entry = polib.POEntry(msgid='File', msgstr='Fitxer')
+        entry = polib.POEntry(msgid="File", msgstr="Fitxer")
         pofile.append(entry)
         pofile.append(entry)
         pofile.save(filename)
 
     def _create_po_with_untranslated_strings(self, filename):
         pofile = polib.POFile()
-        entry = polib.POEntry(msgid='File', msgstr='File')
+        entry = polib.POEntry(msgid="File", msgstr="File")
         pofile.append(entry)
-        entry = polib.POEntry(msgid='Exit', msgstr='Surt')
+        entry = polib.POEntry(msgid="Exit", msgstr="Surt")
         pofile.append(entry)
         pofile.save(filename)
 
@@ -126,9 +126,9 @@ msgstr 'Apaga les màquines virtuals seleccionades'
     def _create_po_with_html(self, filename):
         pofile = polib.POFile()
         entry = polib.POEntry()
-        entry = polib.POEntry(msgid='use the &lt;li&gt; to begin each list item')
+        entry = polib.POEntry(msgid="use the &lt;li&gt; to begin each list item")
         pofile.append(entry)
-        entry = polib.POEntry(msgid='Hi', msgstr='&quot;Hi&quot;')
+        entry = polib.POEntry(msgid="Hi", msgstr="&quot;Hi&quot;")
         pofile.append(entry)
         pofile.save(filename)
 
@@ -141,11 +141,10 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         poFile._unescape_html()
 
         po = polib.pofile(filename)
-        self.assertEquals("use the <li> to begin each list item",
-                          po[0].msgid)
+        self.assertEquals("use the <li> to begin each list item", po[0].msgid)
 
-        self.assertEquals("\"Hi\"",
-                          po[1].msgstr)
+        self.assertEquals('"Hi"', po[1].msgstr)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

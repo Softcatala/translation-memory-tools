@@ -21,7 +21,7 @@
 
 class Translation(object):
     def __init__(self):
-        self.translation = u''
+        self.translation = ""
         self.frequency = 0
         self.percentage = 0  # Percentage of frequency across all options
         self.references_short_name = []  # A list of references
@@ -32,27 +32,28 @@ class Translation(object):
 
     def get_dict(self):
         d = {
-            u'translation': self.translation,
-            u'frequency': self.frequency,
-            u'percentage': '{:0.2f}'.format(self.percentage),
+            "translation": self.translation,
+            "frequency": self.frequency,
+            "percentage": "{:0.2f}".format(self.percentage),
         }
 
         if self.termcat:
-            d[u'termcat'] = True
+            d["termcat"] = True
 
         return d
 
 
 class Translations(object):
-    '''From a list of unsorted translations creates the final translations'''
-    '''for the glossary, grouping same translation units and sorting them by'''
-    '''frequency'''
+    """From a list of unsorted translations creates the final translations"""
 
-    def _add_reference_translations(self, term, reference_sources,
-                                    translations):
+    """for the glossary, grouping same translation units and sorting them by"""
+    """frequency"""
 
+    def _add_reference_translations(self, term, reference_sources, translations):
         # Translations from references (TERMCAT only for now)
-        reference_translations = reference_sources.get_translations_for_term_in_reference(term, 't')
+        reference_translations = (
+            reference_sources.get_translations_for_term_in_reference(term, "t")
+        )
 
         if len(reference_translations) == 0:
             return translations
@@ -64,7 +65,7 @@ class Translations(object):
             for idx in range(0, len(translations)):
                 if translations[idx].translation == reference_translation:
                     translation_obj_item = translations[idx]
-                    translation_obj_item.references_short_name.append('t')
+                    translation_obj_item.references_short_name.append("t")
                     translations_with_references[idx] = translation_obj_item
                     found = True
                     break
@@ -73,20 +74,19 @@ class Translations(object):
                 translation_obj_item = Translation()
                 translation_obj_item.translation = reference_translation
                 translation_obj_item.frequency = 0
-                translation_obj_item.references_short_name.append('t')
+                translation_obj_item.references_short_name.append("t")
                 translations_with_references.append(translation_obj_item)
 
         return translations_with_references
 
-    def create_for_word_sorted_by_frequency(self, documents, term,
-                                            reference_sources):
-        translations = {} # key: english keyword -> value: list of translation objects
+    def create_for_word_sorted_by_frequency(self, documents, term, reference_sources):
+        translations = {}  # key: english keyword -> value: list of translation objects
         for document_key_filename in documents.keys():
             if term not in documents[document_key_filename]:
                 continue
 
             for translated in documents[document_key_filename][term]:
-                #print "     t:" +m translated.encode('utf-8')
+                # print "     t:" +m translated.encode('utf-8')
                 if term in translations:
                     translation_list = translations[term]
                 else:
@@ -111,12 +111,15 @@ class Translations(object):
 
                 translations[term] = translation_list
 
-        translations[term] = self._add_reference_translations(term, reference_sources, translations[term])
+        translations[term] = self._add_reference_translations(
+            term, reference_sources, translations[term]
+        )
 
         # Calculate frequencies and percentages
         for translation_obj_list in translations.values():
-
-            translation_obj_list_sorted = sorted(translation_obj_list, key=lambda x: x.frequency, reverse=True)
+            translation_obj_list_sorted = sorted(
+                translation_obj_list, key=lambda x: x.frequency, reverse=True
+            )
 
             all_frequencies = 0
 

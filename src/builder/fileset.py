@@ -29,11 +29,12 @@ from .pofile import POFile
 import tempfile
 
 
-class FileSet():
+class FileSet:
+    invidual_pos_dir = ""
 
-    invidual_pos_dir = ''
-
-    def __init__(self, project_name, project_id, name, url, filename, parent_fileset = None):
+    def __init__(
+        self, project_name, project_id, name, url, filename, parent_fileset=None
+    ):
         self.project_name = project_name
         self.name = name
         self.project_id = project_id
@@ -43,18 +44,18 @@ class FileSet():
         self.excluded = []
         self.po_catalog = None
         self.words = -1
-        self.duplicates = ''
+        self.duplicates = ""
         self.set_out_directory("")
         self.temp_dir = tempfile.TemporaryDirectory().name
-        self.retrieval_pattern = ''
-        self.pattern = ''
+        self.retrieval_pattern = ""
+        self.pattern = ""
 
         if parent_fileset:
             self.conversor_setup = parent_fileset.conversor_setup
             self.po_preprocessing = parent_fileset.po_preprocessing
         else:
             self.conversor_setup = None
-            self.po_preprocessing = ''
+            self.po_preprocessing = ""
 
     def set_checksum(self, checksum):
         self.checksum = checksum
@@ -63,12 +64,11 @@ class FileSet():
         self.retrieval_pattern = retrieval_pattern
 
     def set_out_directory(self, out_directory):
-        POS_DIR = 'individual_pos/'
+        POS_DIR = "individual_pos/"
         self.out_directory = out_directory
-        self.invidual_pos_dir = os.path.join(out_directory,
-                                             POS_DIR,
-                                             self.project_id,
-                                             self.name.lower())
+        self.invidual_pos_dir = os.path.join(
+            out_directory, POS_DIR, self.project_id, self.name.lower()
+        )
 
     def set_add_source(self, add_source):
         self.add_source = add_source
@@ -97,16 +97,18 @@ class FileSet():
             return
 
         findFiles = FindFiles()
-        for filename in findFiles.find_recursive(self.temp_dir, '*.po'):
-            relative = filename.replace(self.temp_dir, '')
+        for filename in findFiles.find_recursive(self.temp_dir, "*.po"):
+            relative = filename.replace(self.temp_dir, "")
             pofile = POFile(filename)
 
             if self.project_name.lower().strip() == self.name.lower().strip():
-                msg = 'Source: {0} from project \'{1}\'' \
-                    .format(relative, self.project_name)
+                msg = "Source: {0} from project '{1}'".format(
+                    relative, self.project_name
+                )
             else:
-                msg = 'Source: {0} from project \'{1} - {2}\'' \
-                    .format(relative, self.project_name, self.name)
+                msg = "Source: {0} from project '{1} - {2}'".format(
+                    relative, self.project_name, self.name
+                )
 
             self.words += pofile.get_statistics()
 
@@ -118,7 +120,7 @@ class FileSet():
             return
 
         findFiles = FindFiles()
-        for filename in findFiles.find_recursive(self.temp_dir, '*.po'):
+        for filename in findFiles.find_recursive(self.temp_dir, "*.po"):
             pofile = POFile(filename)
             pofile.po_preprocessing(self.po_preprocessing)
 
@@ -129,7 +131,7 @@ class FileSet():
                 exclude = True
 
         if exclude:
-            logging.info('Excluding file: {0}'.format(filename))
+            logging.info("Excluding file: {0}".format(filename))
 
         return exclude
 
@@ -142,17 +144,16 @@ class FileSet():
 
     def _build_tm_for_fileset(self, fileset_tm, files):
         for filename in files:
-
             if self._should_exclude_file(filename):
                 os.remove(filename)
                 continue
 
             pofile = POFile(filename)
-            if self.duplicates == 'msgctxt':
+            if self.duplicates == "msgctxt":
                 pofile.add_msgctxt_to_duplicates()
 
             words = pofile.get_statistics()
-            msg = f'Adding file: {filename} to translation memory with {words} words'
+            msg = f"Adding file: {filename} to translation memory with {words} words"
             logging.info(msg)
             self.po_catalog.add_pofile(filename)
 
@@ -179,10 +180,10 @@ class FileSet():
         self.add_comments()
 
         findFiles = FindFiles()
-        files = findFiles.find_recursive(self.temp_dir, '*.po')
+        files = findFiles.find_recursive(self.temp_dir, "*.po")
 
         if len(files) == 0:
-            logging.info('No files to add in fileset: {0}'. format(self.name))
+            logging.info("No files to add in fileset: {0}".format(self.name))
             return
 
         fileset_tm = next(tempfile._get_candidate_names())
@@ -197,17 +198,19 @@ class FileSet():
             os.makedirs(self.invidual_pos_dir)
 
         findFiles = FindFiles()
-        files = findFiles.find_recursive(self.temp_dir, '*.po')
+        files = findFiles.find_recursive(self.temp_dir, "*.po")
         for source in files:
             dirname = os.path.dirname(source)
             if dirname != self.temp_dir:
-                d = os.path.join(self.invidual_pos_dir,
-                                dirname[len(self.temp_dir) + 1:])
+                d = os.path.join(
+                    self.invidual_pos_dir, dirname[len(self.temp_dir) + 1 :]
+                )
                 if not os.path.exists(d):
                     os.makedirs(d)
 
-            target = os.path.join(self.invidual_pos_dir,
-                                 source[len(self.temp_dir) + 1:])
+            target = os.path.join(
+                self.invidual_pos_dir, source[len(self.temp_dir) + 1 :]
+            )
             shutil.copy(source, target)
 
     def _create_tmp_directory(self):
@@ -222,18 +225,16 @@ class FileSet():
         return re.match(self.retrieval_pattern, item)
 
     def _remove_non_translation_files(self):
-        '''
-            We clean up other PO files like fr.po, es.po, to prevent to be
-            added to the translation memory
-        '''
+        """
+        We clean up other PO files like fr.po, es.po, to prevent to be
+        added to the translation memory
+        """
 
         if self.pattern is None or len(self.pattern) == 0:
             return
 
         findFiles = FindFiles()
 
-        for filename in findFiles.find_recursive(self.temp_dir, '*'):
-
-            if re.match(self.pattern, filename) is None and \
-                    os.path.exists(filename):
+        for filename in findFiles.find_recursive(self.temp_dir, "*"):
+            if re.match(self.pattern, filename) is None and os.path.exists(filename):
                 os.remove(filename)

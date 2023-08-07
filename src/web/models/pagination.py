@@ -20,10 +20,11 @@
 from math import ceil
 import urllib.parse
 
-class Pagination(object):
-    ''' Model object that manages the pagination of results'''
 
-    def __init__(self, per_page, total_count, url, page = None):
+class Pagination(object):
+    """Model object that manages the pagination of results"""
+
+    def __init__(self, per_page, total_count, url, page=None):
         self.per_page = per_page
         self.total_count = total_count
         self.page = self._get_current_page(url)
@@ -31,7 +32,6 @@ class Pagination(object):
 
         if page is not None:
             self.page = int(page)
-
 
     @property
     def pages(self):
@@ -48,27 +48,30 @@ class Pagination(object):
     def _remove_page_query_string(self, url):
         u = urllib.parse.urlparse(url)
         query = urllib.parse.parse_qs(u.query)
-        query.pop('page', None)
+        query.pop("page", None)
         u = u._replace(query=urllib.parse.urlencode(query, True))
         return urllib.parse.urlunparse(u)
 
     def _get_current_page(self, url):
         parsed = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
-        if 'page' in parsed:
-            page = int(parsed['page'][0])
+        if "page" in parsed:
+            page = int(parsed["page"][0])
         else:
             page = 1
 
         return page
 
-    def iter_pages(self, left_edge=2, left_current=2,
-                   right_current=5, right_edge=2):
+    def iter_pages(self, left_edge=2, left_current=2, right_current=5, right_edge=2):
         last = 0
         for num in range(1, self.pages + 1):
-            if num <= left_edge or \
-               (num > self.page - left_current - 1 and \
-                num < self.page + right_current) or \
-               num > self.pages - right_edge:
+            if (
+                num <= left_edge
+                or (
+                    num > self.page - left_current - 1
+                    and num < self.page + right_current
+                )
+                or num > self.pages - right_edge
+            ):
                 if last + 1 != num:
                     yield None
                 yield num

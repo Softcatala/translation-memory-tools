@@ -33,7 +33,6 @@ def process_projects(src_directory, trg_directory):
     projects = sorted(json.projects, key=lambda x: x.name.lower())
     for project_dto in projects:
         if project_dto.downloadable:
-
             src_file = os.path.join(src_directory, project_dto.filename)
             trg_file = os.path.join(trg_directory, project_dto.filename)
 
@@ -41,32 +40,48 @@ def process_projects(src_directory, trg_directory):
                 print("{0} is missing in the new version".format(project_dto.filename))
 
             if not os.path.isfile(src_file) and os.path.isfile(trg_file):
-                print("{0} has been added in the new version".format(project_dto.filename))
+                print(
+                    "{0} has been added in the new version".format(project_dto.filename)
+                )
 
             src_stats = POFile(src_file).get_statistics()
             trg_stats = POFile(trg_file).get_statistics()
 
-            print("{0} project: {1} words (before), {2} words (now), delta {3}".format(project_dto.filename, src_stats, trg_stats, trg_stats - src_stats))
+            print(
+                "{0} project: {1} words (before), {2} words (now), delta {3}".format(
+                    project_dto.filename, src_stats, trg_stats, trg_stats - src_stats
+                )
+            )
 
 
 def read_parameters():
     parser = OptionParser()
 
-    parser.add_option("-s", "--srcdir",
-                      action="store", type="string", dest="src_directory",
-                      help="Directory to find the PO files")
+    parser.add_option(
+        "-s",
+        "--srcdir",
+        action="store",
+        type="string",
+        dest="src_directory",
+        help="Directory to find the PO files",
+    )
 
-    parser.add_option("-t", "--trgdir",
-                      action="store", type="string", dest="trg_directory",
-                      help="Directory to find the TMX files")
+    parser.add_option(
+        "-t",
+        "--trgdir",
+        action="store",
+        type="string",
+        dest="trg_directory",
+        help="Directory to find the TMX files",
+    )
 
     (options, args) = parser.parse_args()
 
     if options.src_directory is None:
-        parser.error('source directory not given')
+        parser.error("source directory not given")
 
     if options.trg_directory is None:
-        parser.error('target directory not given')
+        parser.error("target directory not given")
 
     return (options.src_directory, options.trg_directory)
 

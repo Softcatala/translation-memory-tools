@@ -36,9 +36,9 @@ class LinkExtractor(HTMLParser):
         return self.links
 
     def handle_starttag(self, tag, attrs):
-        if tag == 'a':
+        if tag == "a":
             attrs = dict(attrs)
-            link = attrs.get('href')
+            link = attrs.get("href")
 
             if link is not None:
                 absolute = urllib.parse.urljoin(self.base_url, link)
@@ -64,11 +64,7 @@ class Page(object):
         request = urllib.request.Request(self.url)
         handle = urllib.request.build_opener()
 
-        self.content = str(
-            handle.open(request).read(),
-            'utf-8',
-            errors='replace'
-        )
+        self.content = str(handle.open(request).read(), "utf-8", errors="replace")
         handle.close()
 
     def _process_links(self):
@@ -105,4 +101,3 @@ class Crawler(object):
 
         page = Page(url)
         self.links = page.get_all_links()
-

@@ -25,11 +25,10 @@ from os import path, remove
 
 
 class ConvertFilesTest(unittest.TestCase):
-
     def _get_po_entries(self, directory):
         entries = 0
         findFiles = FindFiles()
-        for filename in findFiles.find_recursive(directory, '*.po'):
+        for filename in findFiles.find_recursive(directory, "*.po"):
             po_file = pofile(filename)
             entries += len(po_file.translated_entries())
 
@@ -37,13 +36,12 @@ class ConvertFilesTest(unittest.TestCase):
 
     def _clean_pos(self, directory):
         findFiles = FindFiles()
-        for filename in findFiles.find_recursive(directory, '*.po'):
+        for filename in findFiles.find_recursive(directory, "*.po"):
             remove(filename)
 
     def test_convert_json_files_to_po(self):
-
         json_dir = path.dirname(path.realpath(__file__))
-        json_dir += '/data/conversions/json/'
+        json_dir += "/data/conversions/json/"
         convert = ConvertFiles(json_dir, None)
         convert.convert()
 
@@ -52,12 +50,13 @@ class ConvertFilesTest(unittest.TestCase):
 
         self.assertEquals(entries, 781)
         self.assertEquals("Watch Movies and TV Shows instantly", po_file[3].msgid)
-        self.assertEquals("Mireu pel·lícules i sèries instantàniament", po_file[3].msgstr)
+        self.assertEquals(
+            "Mireu pel·lícules i sèries instantàniament", po_file[3].msgstr
+        )
 
     def test_convert_yml_files_to_po(self):
-
         yml_dir = path.dirname(path.realpath(__file__))
-        yml_dir += '/data/conversions/yml/'
+        yml_dir += "/data/conversions/yml/"
         convert = ConvertFiles(yml_dir, None)
         convert.convert()
 
@@ -65,13 +64,17 @@ class ConvertFilesTest(unittest.TestCase):
         self._clean_pos(yml_dir)
 
         self.assertEquals(entries, 3)
-        self.assertEquals("Enable imgur api for uploading, don't host files locally", po_file[0].msgid)
-        self.assertEquals("Habilita l'API d'imgur per pujades, no allotgis els arxius localment", po_file[0].msgstr)
+        self.assertEquals(
+            "Enable imgur api for uploading, don't host files locally", po_file[0].msgid
+        )
+        self.assertEquals(
+            "Habilita l'API d'imgur per pujades, no allotgis els arxius localment",
+            po_file[0].msgstr,
+        )
 
     def test_convert_csv_files_to_po(self):
-
         csv_dir = path.dirname(path.realpath(__file__))
-        csv_dir += '/data/conversions/csv/'
+        csv_dir += "/data/conversions/csv/"
         convert = ConvertFiles(csv_dir, None)
         convert.convert()
 
@@ -81,12 +84,10 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals(entries, 4)
         self.assertEquals("Period Name", po_file[0].msgid)
         self.assertEquals("Nom del període", po_file[0].msgstr)
-        
 
     def test_convert_ini_files_to_po(self):
-
         ini_dir = path.dirname(path.realpath(__file__))
-        ini_dir += '/data/conversions/ini/'
+        ini_dir += "/data/conversions/ini/"
         convert = ConvertFiles(ini_dir, None)
         convert.convert()
 
@@ -98,9 +99,8 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals("Carregar més", po_file[10].msgstr)
 
     def test_convert_android_files_to_po(self):
-
         android_dir = path.dirname(path.realpath(__file__))
-        android_dir += '/data/conversions/android/'
+        android_dir += "/data/conversions/android/"
         convert = ConvertFiles(android_dir, None)
         convert.convert()
 
@@ -112,9 +112,8 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals("El nom és massa llarg", po_file[14].msgstr)
 
     def test_convert_xliff_file_to_po(self):
-
         xliff_dir = path.dirname(path.realpath(__file__))
-        xliff_dir += '/data/conversions/xliff'
+        xliff_dir += "/data/conversions/xliff"
         convert = ConvertFiles(xliff_dir, None)
         convert.convert()
 
@@ -125,5 +124,6 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals("User Actions Log", po_file[0].msgid)
         self.assertEquals("Acció", po_file[1].msgstr)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

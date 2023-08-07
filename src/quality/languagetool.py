@@ -24,8 +24,8 @@ import tempfile
 import shutil
 import logging
 
-class LanguageTool():
 
+class LanguageTool:
     def __init__(self, config):
         self._config = config
 
@@ -33,26 +33,33 @@ class LanguageTool():
         subdir = "output/individual_pos/"
         curdir = os.getcwd()
         cwd = os.path.join(curdir, subdir)
-        if cwd == json_file[:len(cwd)]:
-            json_file = json_file[len(cwd):]
-        elif subdir == json_file[:len(subdir)]:
-            json_file = json_file[len(subdir):]
+        if cwd == json_file[: len(cwd)]:
+            json_file = json_file[len(cwd) :]
+        elif subdir == json_file[: len(subdir)]:
+            json_file = json_file[len(subdir) :]
 
         cmd = 'cd {0} && python3 {1}/lt-json-to-html.py -i "{2}" -o "{3}"'.format(
-               subdir, os.path.join(curdir, lt_html_dir), json_file, file_report)
+            subdir, os.path.join(curdir, lt_html_dir), json_file, file_report
+        )
 
         os.system(cmd)
 
     def run_lt(self, lt, txt_file, json_file):
-        lt_server = os.environ.get('LT_SERVER', 'http://localhost:7001/v2/check')
-        cmd = lt['command'].format(lt['enabled-rules'], lt['disabled-rules'], lt['disabled-categories'],
-              txt_file, lt_server, json_file)
+        lt_server = os.environ.get("LT_SERVER", "http://localhost:7001/v2/check")
+        cmd = lt["command"].format(
+            lt["enabled-rules"],
+            lt["disabled-rules"],
+            lt["disabled-categories"],
+            txt_file,
+            lt_server,
+            json_file,
+        )
         os.system(cmd)
 
     def _get_lt_version(self):
         data_file = None
-        TEXT_FILE = 'version.txt'
-        JSON_FILE = 'version.json'
+        TEXT_FILE = "version.txt"
+        JSON_FILE = "version.json"
 
         try:
             dirpath = tempfile.mkdtemp()
@@ -60,7 +67,7 @@ class LanguageTool():
 
             text_filename = os.path.join(dirpath, TEXT_FILE)
             with open(text_filename, "w") as outfile:
-                outfile.write('Hola')
+                outfile.write("Hola")
 
             json_filename = os.path.join(dirpath, JSON_FILE)
             self.run_lt(lt, text_filename, json_filename)
@@ -68,11 +75,10 @@ class LanguageTool():
             with open(json_filename, "r") as data_file:
                 data = json.load(data_file)
 
-            software = data['software']
-            version = '{0} {1}'.format(software['name'], software['version'])
+            software = data["software"]
+            version = "{0} {1}".format(software["name"], software["version"])
             shutil.rmtree(dirpath)
             return version
         except Exception as e:
             logging.error("_get_lt_version.Error {0}".format(str(e)))
             return "LanguageTool (versió desconeguda)"
-

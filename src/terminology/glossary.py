@@ -24,7 +24,7 @@ import datetime
 class Glossary(object):
     """Represents all the data need to generate a glossary."""
 
-    def __init__(self, description=u''):
+    def __init__(self, description=""):
         self.date = datetime.date.today().strftime("%d/%m/%Y")
         self.entries = []
         self.description = description
@@ -36,8 +36,8 @@ class Glossary(object):
             entries.append(entry.get_dict())
 
         return {
-            'entries': entries,
-            'num_of_entries': len(entries),
-            'date': self.date,
-            'description': self.description,
+            "entries": entries,
+            "num_of_entries": len(entries),
+            "date": self.date,
+            "description": self.description,
         }

@@ -21,11 +21,10 @@ from os import path
 import json
 
 
-class Licenses():
+class Licenses:
+    PROPIETARY = "propietària"
 
-    PROPIETARY = 'propietària'
-
-    def __init__(self, filename = "../licenses/licenses.json"):
+    def __init__(self, filename="../licenses/licenses.json"):
         self.filename = filename
 
     def _get_filename(self):
@@ -36,40 +35,40 @@ class Licenses():
         licenses_ids = set()
         with open(self._get_filename()) as json_file:
             data = json.load(json_file)
-            licenses = data['licenses']
+            licenses = data["licenses"]
             for license in licenses:
-                licenses_ids.add(license['licenseId'])
+                licenses_ids.add(license["licenseId"])
 
         licenses_ids.add(self.PROPIETARY)
         return licenses_ids
-
 
     def get_licenses_name_and_link(self):
         results = {}
         with open(self._get_filename()) as json_file:
             data = json.load(json_file)
-            licenses = data['licenses']
+            licenses = data["licenses"]
             for license in licenses:
                 values = {}
-                links = license.get('seeAlso')
+                links = license.get("seeAlso")
                 if links:
                     link = links[0]
                 else:
                     link = None
 
-                values['name'] = license.get('name')
-                values['link'] = link
-                licenseId = license['licenseId']
+                values["name"] = license.get("name")
+                values["link"] = link
+                licenseId = license["licenseId"]
                 results[licenseId] = values
 
         return results
 
-
     def are_compatible_licenses(self, source, target):
-        if source != 'GPL-3.0-only':
-            raise Exception("Unable to determine license compatibility on this source license")
+        if source != "GPL-3.0-only":
+            raise Exception(
+                "Unable to determine license compatibility on this source license"
+            )
 
-        if target == 'GPL-2.0-only':
+        if target == "GPL-2.0-only":
             return False
 
         return True

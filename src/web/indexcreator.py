@@ -31,7 +31,6 @@ from builder.cleanupfilter import CleanUpFilter
 
 
 class IndexCreator(object):
-
     def __init__(self, po_directory, debug_keyword=None, projects_names=None):
         self.dir_name = "web/indexdir"
         self.writer = None
@@ -63,44 +62,48 @@ class IndexCreator(object):
             if project_dto.selectable:
                 self.options.append(project_dto.name)
 
-            self._process_project(project_dto.project_id,
-                                  project_dto.name,
-                                  project_dto.filename,
-                                  project_dto.softcatala)
+            self._process_project(
+                project_dto.project_id,
+                project_dto.name,
+                project_dto.filename,
+                project_dto.softcatala,
+            )
             self.projects += 1
 
-        print('Total sentences {0}, indexed {1}'.format(self.sentences,
-                                                        self.sentences_indexed))
+        print(
+            "Total sentences {0}, indexed {1}".format(
+                self.sentences, self.sentences_indexed
+            )
+        )
         self.save_index()
 
     def _get_comment(self, entry):
-        '''
-            PO files can contain 3 types of comments:
+        """
+        PO files can contain 3 types of comments:
 
-                # translators comments
-                #. extracted
-                #: location
+            # translators comments
+            #. extracted
+            #: location
 
-            We import only translator's comments and extracted that we concatenate
-            to make it transparent to the search
-        '''
+        We import only translator's comments and extracted that we concatenate
+        to make it transparent to the search
+        """
 
         comment = entry.tcomment
         if entry.comment is not None:
             if entry.tcomment is None:
                 comment = entry.comment
             else:
-                comment += u'\r\n' + entry.comment
+                comment += "\r\n" + entry.comment
 
         return comment
 
     def _process_project(self, project_id, project_name, filename, softcatala):
         entries = set()
-        directory = os.path.join(self.po_directory,"individual_pos/", project_id)
+        directory = os.path.join(self.po_directory, "individual_pos/", project_id)
         findFiles = FindFiles()
-        for filename in findFiles.find_recursive(directory, '*.po'):
+        for filename in findFiles.find_recursive(directory, "*.po"):
             self._process_file(project_id, project_name, filename, softcatala, entries)
-
 
     def _write_entry(self, entries, s, t, x, c, project_id, project_name, softcatala):
         if self.debug_keyword is not None and self.debug_keyword.strip() == s:
@@ -119,15 +122,17 @@ class IndexCreator(object):
         entries.add(entry_text)
 
         self.sentences_indexed += 1
-        string_words = t.split(' ')
+        string_words = t.split(" ")
         self.words += len(string_words)
-        self.write_entry(source=s,
-                         target=t,
-                         comment=c,
-                         context=x,
-                         project_name=project_name,
-                         project_id=project_id,
-                         softcatala=softcatala)
+        self.write_entry(
+            source=s,
+            target=t,
+            comment=c,
+            context=x,
+            project_name=project_name,
+            project_id=project_id,
+            softcatala=softcatala,
+        )
 
     def _process_file(self, project_id, project_name, filename, softcatala, entries):
         try:
@@ -146,39 +151,49 @@ class IndexCreator(object):
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 0:
                         t = entry.msgstr_plural[0]
 
-                self._write_entry(entries, s, t, x, c, project_id, project_name, softcatala)
+                self._write_entry(
+                    entries, s, t, x, c, project_id, project_name, softcatala
+                )
 
                 if entry.msgstr is None or len(entry.msgstr) == 0:
                     if entry.msgstr_plural is not None and len(entry.msgstr_plural) > 1:
                         self.sentences += 1
                         s = entry.msgid_plural
                         t = entry.msgstr_plural[1]
-                        self._write_entry(entries, s, t, x, c, project_id, project_name, softcatala)
+                        self._write_entry(
+                            entries, s, t, x, c, project_id, project_name, softcatala
+                        )
 
         except Exception as detail:
             print("Exception: " + str(detail))
 
-    def write_entry(self, source, target, comment, context, project_id, project_name, softcatala):
-        self.writer.add_document(source=source,
-                                 target=target,
-                                 comment=comment,
-                                 context=context,
-                                 project_id=project_id,
-                                 project=project_name,
-                                 softcatala=softcatala)
+    def write_entry(
+        self, source, target, comment, context, project_id, project_name, softcatala
+    ):
+        self.writer.add_document(
+            source=source,
+            target=target,
+            comment=comment,
+            context=context,
+            project_id=project_id,
+            project=project_name,
+            softcatala=softcatala,
+        )
 
     def save_index(self):
         self.writer.commit()
 
     def create(self, in_memory=False):
         analyzer = StandardAnalyzer(minsize=1, stoplist=None) | CleanUpFilter()
-        schema = Schema(source=TEXT(stored=True, analyzer=analyzer),
-                        target=TEXT(stored=True, analyzer=analyzer),
-                        comment=STORED,
-                        context=STORED,
-                        softcatala=BOOLEAN,
-                        project_id=ID(stored=True),
-                        project=STORED)
+        schema = Schema(
+            source=TEXT(stored=True, analyzer=analyzer),
+            target=TEXT(stored=True, analyzer=analyzer),
+            comment=STORED,
+            context=STORED,
+            softcatala=BOOLEAN,
+            project_id=ID(stored=True),
+            project=STORED,
+        )
 
         if in_memory:
             st = RamStorage()

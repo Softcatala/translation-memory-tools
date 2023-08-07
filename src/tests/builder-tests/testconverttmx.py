@@ -25,10 +25,9 @@ from os import path
 
 
 class TestConvertTmx(unittest.TestCase):
-
     def _get_files(self, filename):
         tmx_file = path.dirname(path.realpath(__file__))
-        tmx_file += '/data/conversions/tmx/{0}'.format(filename)
+        tmx_file += "/data/conversions/tmx/{0}".format(filename)
 
         tmpfile = tempfile.NamedTemporaryFile()
         po_filename = tmpfile.name + ".po"
@@ -36,7 +35,7 @@ class TestConvertTmx(unittest.TestCase):
         return tmx_file, po_filename
 
     def test_conversion(self):
-        tmx_file, po_filename = self._get_files('test.tmx')
+        tmx_file, po_filename = self._get_files("test.tmx")
         convertTmx = ConvertTmx(tmx_file, po_filename)
         convertTmx.convert()
 
@@ -45,14 +44,17 @@ class TestConvertTmx(unittest.TestCase):
         self.assertEquals(len(entries), 2)
         self.assertEquals(entries[0].msgid, "Modern visual refresh")
         self.assertEquals(entries[0].msgstr, "Una renovació visual moderna")
-        self.assertEquals(entries[0].tcomment, "id: appstores:fx_androidwhatsnewandroid_57lang:a-clean-modern-visual-refresh");
+        self.assertEquals(
+            entries[0].tcomment,
+            "id: appstores:fx_androidwhatsnewandroid_57lang:a-clean-modern-visual-refresh",
+        )
 
         self.assertEquals(entries[1].msgid, "As You Like It")
         self.assertEquals(entries[1].msgstr, "Com vulgueu")
-        self.assertEquals(entries[1].tcomment, '')
+        self.assertEquals(entries[1].tcomment, "")
 
     def test_conversion_omegat(self):
-        tmx_file, po_filename = self._get_files('omegat.tmx')
+        tmx_file, po_filename = self._get_files("omegat.tmx")
         convertTmx = ConvertTmx(tmx_file, po_filename)
         convertTmx.convert()
 
@@ -61,7 +63,8 @@ class TestConvertTmx(unittest.TestCase):
         self.assertEquals(len(entries), 1)
         self.assertEquals(entries[0].msgid, '"Aligner" aligner utility')
         self.assertEquals(entries[0].msgstr, 'Alineador de textos "Aligner"')
-        self.assertEquals(entries[0].tcomment, '');
+        self.assertEquals(entries[0].tcomment, "")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

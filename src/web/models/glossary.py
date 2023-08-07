@@ -20,13 +20,12 @@
 
 import sys
 
-sys.path.append('../terminology')
+sys.path.append("../terminology")
 from glossarysql import Entry, database
 import json
 
 
 class Glossary(object):
-
     def __init__(self, search_term):
         self.search_term = search_term
         self.glossary = None
@@ -40,10 +39,9 @@ class Glossary(object):
 
         return results
 
-
     def search(self):
         try:
-            database.open('glossary.db3')
+            database.open("glossary.db3")
             self.glossary = Entry.select().where(Entry.term == self.search_term.lower())
 
             if self.glossary.count() == 0:
@@ -55,4 +53,4 @@ class Glossary(object):
 
     def get_json(self):
         results = self.get_results()
-        return json.dumps(results, indent=4, separators=(',', ': '))
+        return json.dumps(results, indent=4, separators=(",", ": "))

@@ -22,7 +22,6 @@ import unittest
 
 
 class TesGlossarySql(unittest.TestCase):
-
     SOURCE_TERM = "Hello"
     TRANSLATION = "Hola"
     FREQUENCY = 10
@@ -37,7 +36,6 @@ class TesGlossarySql(unittest.TestCase):
 
         db_entry = cls._get_entry(cls)
         db_entry.save()
-    
 
     def _get_entry(self):
         db_entry = Entry()
@@ -46,14 +44,13 @@ class TesGlossarySql(unittest.TestCase):
         db_entry.frequency = self.FREQUENCY
         db_entry.percentage = self.PERCENTATGE
         db_entry.termcat = self.TERMCAT
-        return db_entry 
-
+        return db_entry
 
     def test_save_glossary(self):
         glossary = Entry.select().where(Entry.term == self.SOURCE_TERM)
         cnt = glossary.count()
 
-        item  = list(glossary)[0]
+        item = list(glossary)[0]
         self.assertEquals(1, cnt)
         self.assertEquals(self.SOURCE_TERM, item.term)
         self.assertEquals(self.TRANSLATION, item.translation)
@@ -74,5 +71,6 @@ class TesGlossarySql(unittest.TestCase):
         self.assertTrue(("percentage", "5.0") in values)
         self.assertTrue(("termcat", "1") in values)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

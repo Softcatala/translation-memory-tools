@@ -23,16 +23,15 @@ from os import path
 
 
 class TestFindFiles(unittest.TestCase):
-
     def test_find_recursive(self):
         directory = path.dirname(path.realpath(__file__))
-        directory += '/data/findfiles/'
+        directory += "/data/findfiles/"
 
         filenames = FindFiles().find_recursive(directory, "*")
 
         results = []
         for filename in filenames:
-            results.append(filename[len(directory):])
+            results.append(filename[len(directory) :])
 
         self.assertEqual(6, len(results))
         self.assertEqual("dir1/dir1-dir2/dir1-dir2-file1.txt", results[0])
@@ -44,11 +43,12 @@ class TestFindFiles(unittest.TestCase):
 
     def test_find_recursive_filter(self):
         directory = path.dirname(path.realpath(__file__))
-        directory += '/data/findfiles/'
+        directory += "/data/findfiles/"
 
         filenames = FindFiles().find_recursive(directory, "root*")
 
         self.assertEqual(2, len(filenames))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -24,11 +24,10 @@ from .fileset import FileSet
 
 
 class GitFileSet(FileSet):
-
-    git_dir = '_git'
+    git_dir = "_git"
 
     def _get_filename(self):
-        filename = self.url.split('/')[-1]
+        filename = self.url.split("/")[-1]
         return filename
 
     def _remove_git_directory(self):
@@ -37,13 +36,14 @@ class GitFileSet(FileSet):
 
     def download(self):
         self._remove_git_directory()
-        cmd = 'cd {0} && git clone --depth=1 {1} {2}'.format(
-            self.temp_dir, self.url, self.git_dir)
+        cmd = "cd {0} && git clone --depth=1 {1} {2}".format(
+            self.temp_dir, self.url, self.git_dir
+        )
         os.system(cmd)
 
         # Move it to the root to avoid git default behavior to clone
         # into a subdirectory
-        cmd = 'cd {0} && mv {1}/* . && rm -r -f {1}'.format(self.temp_dir, self.git_dir)
+        cmd = "cd {0} && mv {1}/* . && rm -r -f {1}".format(self.temp_dir, self.git_dir)
         os.system(cmd)
 
     def do(self):

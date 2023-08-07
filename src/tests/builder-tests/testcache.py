@@ -23,9 +23,7 @@ import tempfile
 
 
 class TestCache(unittest.TestCase):
-
     def test_get_non_existant(self):
-
         tmpfile = tempfile.TemporaryDirectory().name
         cache = Cache(tmpfile)
 
@@ -42,5 +40,5 @@ class TestCache(unittest.TestCase):
         self.assertEquals(CONTENT, cache.get(URL))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

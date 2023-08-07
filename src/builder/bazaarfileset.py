@@ -23,13 +23,12 @@ from .fileset import FileSet
 
 
 class BazaarFileSet(FileSet):
-
     def _has_filename(self):
         """Used to identify if the file contains a path (/ and then .)"""
-        filename = self.url.split('/')[-1]
+        filename = self.url.split("/")[-1]
 
         if len(filename) > 0:
-            rslt = self.filename.find('.')
+            rslt = self.filename.find(".")
             if rslt != -1:
                 return True
 
@@ -37,12 +36,13 @@ class BazaarFileSet(FileSet):
 
     def do(self):
         if self._has_filename():
-            outfile = os.path.join(self.temp_dir, 'ca.po')
-            os.system('bzr cat {0} > {1}'.format(self.url, outfile))
+            outfile = os.path.join(self.temp_dir, "ca.po")
+            os.system("bzr cat {0} > {1}".format(self.url, outfile))
         else:
-            os.system('cd {0} && bzr checkout --lightweight {1}'.format(
-                self.temp_dir,
-                self.url
-            ))
+            os.system(
+                "cd {0} && bzr checkout --lightweight {1}".format(
+                    self.temp_dir, self.url
+                )
+            )
 
         self.build()

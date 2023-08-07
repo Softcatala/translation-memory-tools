@@ -30,8 +30,8 @@ from .gitfileset import GitFileSet
 
 class GerritDirectoryFileSet(FileSet):
     """
-        Reads a list of projects from a Gerrit (Git web) server by calling
-        their API and then downloads the projects.
+    Reads a list of projects from a Gerrit (Git web) server by calling
+    their API and then downloads the projects.
     """
 
     def set_project(self, project):
@@ -46,7 +46,7 @@ class GerritDirectoryFileSet(FileSet):
         working_file = filename + ".old"
         shutil.copy(filename, working_file)
 
-        with open(working_file, 'r') as reader, open(filename, 'w') as writter:
+        with open(working_file, "r") as reader, open(filename, "w") as writter:
             lines = reader.readlines()
 
             cnt = 0
@@ -78,27 +78,30 @@ class GerritDirectoryFileSet(FileSet):
                 name = None
                 url = None
                 for prj_attribute, prj_value in value.items():
-                    if prj_attribute == 'name':
+                    if prj_attribute == "name":
                         name = prj_value
-                    elif prj_attribute == 'clone_url':
+                    elif prj_attribute == "clone_url":
                         url = prj_value
 
                 if not self.is_retrieval_pattern(name):
-                    logging.debug('GerritDirectoryFileSet. Discarding:' + name)
+                    logging.debug("GerritDirectoryFileSet. Discarding:" + name)
                     continue
 
-                fileset = GitFileSet(self.project_name, self.project_id, name, url, '')
+                fileset = GitFileSet(self.project_name, self.project_id, name, url, "")
 
                 # Some Android projects contain there own po files like
                 # https://android.googlesource.com/platform/ndk and they have
                 # the name standard "ca.po"
                 # The rest are produced by android2po then they have the pattern '-ca.po'
-                fileset.set_pattern('.*?ca\.po|.*?ca-[0-9]\.po')
+                fileset.set_pattern(".*?ca\.po|.*?ca-[0-9]\.po")
                 logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))
                 self.project.add_fileset(fileset)
 
         # All the new filesets have been added re-process project now
-        logging.info('GerritDirectoryFileSet. Added {0} filesets dynamically'.
-                      format(len(self.project.filesets)))
+        logging.info(
+            "GerritDirectoryFileSet. Added {0} filesets dynamically".format(
+                len(self.project.filesets)
+            )
+        )
         self.project.report_errors = False
         os.remove(self.filename)

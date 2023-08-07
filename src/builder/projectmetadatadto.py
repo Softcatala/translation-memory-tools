@@ -21,13 +21,12 @@ import datetime
 
 
 class ProjectMetaDataDto(object):
-
     def __init__(self, name):
         self.name = name
         self._last_translation_update = None
         self._last_fetch = None
         self.words = 0
-        self.checksum = ''
+        self.checksum = ""
 
     @property
     def last_translation_update(self):
@@ -36,8 +35,9 @@ class ProjectMetaDataDto(object):
     @last_translation_update.setter
     def last_translation_update(self, value):
         if not isinstance(value, datetime.datetime):
-            raise TypeError("Property must be set to a datetime. Type:"
-                            + str(type(value)))
+            raise TypeError(
+                "Property must be set to a datetime. Type:" + str(type(value))
+            )
         self._last_translation_update = value
 
     @property
@@ -47,12 +47,20 @@ class ProjectMetaDataDto(object):
     @last_fetch.setter
     def last_fetch(self, value):
         if not isinstance(value, datetime.datetime):
-            raise TypeError("Property must be set to a datetime. Type:"
-                            + str(type(value)))
+            raise TypeError(
+                "Property must be set to a datetime. Type:" + str(type(value))
+            )
         self._last_fetch = value
 
     def __str__(self):
-        text = ('ProjectMetaDataDto. Name: {0}, last_translation_update: {1}, '
-                'last_fetch: {2}, words {3}, checksum {4}')
-        return text.format(self.name, self._last_translation_update,
-                           self._last_fetch, self.words, self.checksum)
+        text = (
+            "ProjectMetaDataDto. Name: {0}, last_translation_update: {1}, "
+            "last_fetch: {2}, words {3}, checksum {4}"
+        )
+        return text.format(
+            self.name,
+            self._last_translation_update,
+            self._last_fetch,
+            self.words,
+            self.checksum,
+        )

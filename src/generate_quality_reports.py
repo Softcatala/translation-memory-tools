@@ -33,11 +33,11 @@ from quality.report import Report
 from quality.languagetool import LanguageTool
 from quality.pototext import PoToText
 
-class GenerateQualityReports():
 
+class GenerateQualityReports:
     def init_logging(self, del_logs):
-        logfile = 'generate_quality_reports.log'
-        logfile_error = 'generate_quality_reports-error.log'
+        logfile = "generate_quality_reports.log"
+        logfile_error = "generate_quality_reports-error.log"
 
         if del_logs and os.path.isfile(logfile):
             os.remove(logfile)
@@ -45,18 +45,18 @@ class GenerateQualityReports():
         if del_logs and os.path.isfile(logfile_error):
             os.remove(logfile_error)
 
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 
-        LOGLEVEL = os.environ.get('LOGLEVEL', 'INFO').upper()
-        LOGSTDOUT = os.environ.get('LOGSTDOUT', '0')
+        LOGLEVEL = os.environ.get("LOGLEVEL", "INFO").upper()
+        LOGSTDOUT = os.environ.get("LOGSTDOUT", "0")
 
-        if LOGSTDOUT == '0':
-            console = logging.StreamHandler() # By default uses stderr
+        if LOGSTDOUT == "0":
+            console = logging.StreamHandler()  # By default uses stderr
         else:
             console = logging.StreamHandler(stream=sys.stdout)
 
         logging.basicConfig(filename=logfile, level=logging.DEBUG)
-        logger = logging.getLogger('')
+        logger = logging.getLogger("")
         console.setLevel(LOGLEVEL)
 
         if LOGLEVEL != "INFO":
@@ -80,7 +80,8 @@ class GenerateQualityReports():
             type="string",
             dest="source_dir",
             default=defaut_dir,
-            help="Source directory of po files")
+            help="Source directory of po files",
+        )
 
         (options, args) = parser.parse_args()
 
@@ -90,7 +91,6 @@ class GenerateQualityReports():
 
         return options.source_dir
 
-
     def read_config(self):
         SECTION_LT = "lt"
         SECTION_POLOGY = "pology"
@@ -98,7 +98,7 @@ class GenerateQualityReports():
         lt = OrderedDict()
         pology = OrderedDict()
 
-        with open('../cfg/quality/parameters.yaml', 'r') as f:
+        with open("../cfg/quality/parameters.yaml", "r") as f:
             doc = yaml.load(f, Loader=yaml.FullLoader)
             for dictionaries in doc[SECTION_LT]:
                 for k in dictionaries.keys():
@@ -111,26 +111,26 @@ class GenerateQualityReports():
         return lt, pology
 
     def run_pology(self, pology, po_transonly, html):
-        posieve = pology['posieve']
+        posieve = pology["posieve"]
 
-        cmd = pology['header-fix'].format(posieve, po_transonly)
+        cmd = pology["header-fix"].format(posieve, po_transonly)
         os.system(cmd)
 
-        rules = ''
-        for rule in pology['rules']:
-            if '/' not in rule:
-                rules = rules + ' -s rfile:{0}{1}'.format(pology['rules-dir'], rule)
+        rules = ""
+        for rule in pology["rules"]:
+            if "/" not in rule:
+                rules = rules + " -s rfile:{0}{1}".format(pology["rules-dir"], rule)
             else:
-                rules = rules + ' -s rfile:{0}'.format(rule)
+                rules = rules + " -s rfile:{0}".format(rule)
 
-        cmd = pology['command'].format(posieve, rules, po_transonly, html)
+        cmd = pology["command"].format(posieve, rules, po_transonly, html)
         exit_code = os.system(cmd)
         if exit_code != 0:
             logging.info(f"run_pology. Exit error: {exit_code}. Cmd: '{cmd}'")
 
     def load_projects_ids_from_json(self):
         projects = []
-        projects_dir = '../cfg/projects/'
+        projects_dir = "../cfg/projects/"
         json = JsonBackend(projects_dir)
         json.load()
 
@@ -144,7 +144,6 @@ class GenerateQualityReports():
         return projects
 
     def generate_report(self, source_dir):
-
         lt, pology = self.read_config()
         logging.info("Source directory: " + source_dir)
 
@@ -152,10 +151,12 @@ class GenerateQualityReports():
 
         report = Report()
         languagetool = LanguageTool(lt)
-        report.create_project_report(lt['lt-html-dir'],
-                                     lt['lt_output'],
-                                     report_filename,
-                                     languagetool._get_lt_version())
+        report.create_project_report(
+            lt["lt-html-dir"],
+            lt["lt_output"],
+            report_filename,
+            languagetool._get_lt_version(),
+        )
 
         for po_file in FindFiles().find_recursive(source_dir, "*.po"):
             txt_file = po_file + ".txt"
@@ -176,11 +177,15 @@ class GenerateQualityReports():
 
             start_time = time.time()
             languagetool.run_lt(lt, txt_file, json_file)
-            po_file_logname = po_file[len(source_dir) + 1:]
-            logging.debug("LT runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
+            po_file_logname = po_file[len(source_dir) + 1 :]
+            logging.debug(
+                "LT runned PO {0} - {1:.2f}s".format(
+                    po_file_logname, time.time() - start_time
+                )
+            )
 
             start_time = time.time()
-            languagetool.generate_lt_report(lt['lt-html-dir'], json_file, file_report)
+            languagetool.generate_lt_report(lt["lt-html-dir"], json_file, file_report)
 
             if os.path.isfile(file_report):
                 report.add_file_to_project_report(file_report)
@@ -190,20 +195,26 @@ class GenerateQualityReports():
 
             start_time = time.time()
             self.run_pology(pology, po_transonly, pology_report)
-            logging.debug("Pology runned PO {0} - {1:.2f}s".format(po_file_logname, time.time() - start_time))
+            logging.debug(
+                "Pology runned PO {0} - {1:.2f}s".format(
+                    po_file_logname, time.time() - start_time
+                )
+            )
 
             if os.path.isfile(pology_report):
                 report.add_file_to_project_report(pology_report)
                 os.remove(pology_report)
             else:
-                report.add_string_to_project_report('El Pology no ha detectat cap error.')
+                report.add_string_to_project_report(
+                    "El Pology no ha detectat cap error."
+                )
 
             os.remove(txt_file)
             os.remove(json_file)
             os.remove(po_transonly)
             os.remove(file_report)
 
-        footer_filename = os.path.join(lt['lt-html-dir'], "footer.html")
+        footer_filename = os.path.join(lt["lt-html-dir"], "footer.html")
         report.add_file_to_project_report(footer_filename)
         report.close()
 
@@ -220,8 +231,11 @@ class GenerateQualityReports():
             for project in projects:
                 executor.submit(self.generate_report, os.path.join(source_dir, project))
 
-        s = 'Time used to generate quality reports: {0}'.format(datetime.datetime.now() - total_start_time)
+        s = "Time used to generate quality reports: {0}".format(
+            datetime.datetime.now() - total_start_time
+        )
         logging.info(s)
+
 
 if __name__ == "__main__":
     generate = GenerateQualityReports()

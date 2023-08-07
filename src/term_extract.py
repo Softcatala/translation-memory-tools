@@ -40,17 +40,18 @@ from terminology.translations import Translations
 
 def process_template(template, filename, ctx):
     # Load template and process it.
-    template = open(template, 'r').read()
+    template = open(template, "r").read()
     parsed = pystache.Renderer()
     s = parsed.render(template, ctx)
 
     # Write output.
-    f = open(filename, 'w')
+    f = open(filename, "w")
     f.write(s)
     f.close()
 
 
-ENV_NAME = 'DB3_PATH'
+ENV_NAME = "DB3_PATH"
+
 
 def _get_db_name(name):
     if ENV_NAME not in os.environ:
@@ -59,8 +60,8 @@ def _get_db_name(name):
     path = os.environ[ENV_NAME]
     return os.path.join(path, name)
 
-def generate_database(glossary, glossary_file):
 
+def generate_database(glossary, glossary_file):
     name = _get_db_name(glossary_file + ".db3")
     database.create(name)
     database.create_schema()
@@ -73,7 +74,7 @@ def generate_database(glossary, glossary_file):
             db_entry.percentage = translation.percentage
             db_entry.termcat = translation.termcat
             db_entry.save()
-    
+
     database.close()
 
 
@@ -89,21 +90,26 @@ def process_projects(src_directory, glossary_description, glossary_file):
 
     # Select terms
     MAX_TERMS = 8000
-    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get,
-                                   reverse=True)
+    sorted_terms_by_tfxdf = sorted(metrics.tfxdf, key=metrics.tfxdf.get, reverse=True)
 
     # Developer report
     glossary_entries = OrderedDict()
     translations = Translations()
-    selected_terms = sorted_terms_by_tfxdf[:MAX_TERMS] # Sorted by frequency
+    selected_terms = sorted_terms_by_tfxdf[:MAX_TERMS]  # Sorted by frequency
 
     for term in selected_terms:
-        glossary_entries[term] = translations.create_for_word_sorted_by_frequency(corpus.documents, term, reference_sources)
+        glossary_entries[term] = translations.create_for_word_sorted_by_frequency(
+            corpus.documents, term, reference_sources
+        )
 
     dev_glossary_serializer = DevGlossarySerializer()
-    dev_glossary_serializer.create(u"dev-" + glossary_file + ".html",
-                                   glossary_description, corpus,
-                                   glossary_entries, reference_sources)
+    dev_glossary_serializer.create(
+        "dev-" + glossary_file + ".html",
+        glossary_description,
+        corpus,
+        glossary_entries,
+        reference_sources,
+    )
 
     # User report
     glossary_entries = []
@@ -113,54 +119,77 @@ def process_projects(src_directory, glossary_description, glossary_file):
     for term in selected_terms:
         glossary_entry = GlossaryEntry(
             term,
-            translations.create_for_word_sorted_by_frequency(corpus.documents,
-                                                             term,
-                                                             reference_sources)
+            translations.create_for_word_sorted_by_frequency(
+                corpus.documents, term, reference_sources
+            ),
         )
         glossary.entries.append(glossary_entry)
 
     glossary_entries = glossary.get_dict()
-    process_template('terminology/templates/userglossary-html.mustache',
-                     glossary_file + ".html", glossary_entries)
-    process_template('terminology/templates/userglossary-csv.mustache',
-                     glossary_file + ".csv", glossary_entries)
+    process_template(
+        "terminology/templates/userglossary-html.mustache",
+        glossary_file + ".html",
+        glossary_entries,
+    )
+    process_template(
+        "terminology/templates/userglossary-csv.mustache",
+        glossary_file + ".csv",
+        glossary_entries,
+    )
 
     generate_database(glossary, glossary_file)
 
+
 def read_parameters():
     parser = OptionParser()
-    parser.add_option("-s", "--srcdir",
-                      action="store", type="string", dest="src_directory",
-                      default="terminology/sc-tm-pos/",
-                      help="Directory to find the PO files")
-    parser.add_option("-c", "--comment",
-                      action="store", type="string", dest="glossary_description",
-                      default="",
-                      help="HTML comment to add")
-    parser.add_option("-t", "--html-file",
-                      action="store", type="string", dest="glossary_file",
-                      default="glossary",
-                      help="Glossary file name to export")
+    parser.add_option(
+        "-s",
+        "--srcdir",
+        action="store",
+        type="string",
+        dest="src_directory",
+        default="terminology/sc-tm-pos/",
+        help="Directory to find the PO files",
+    )
+    parser.add_option(
+        "-c",
+        "--comment",
+        action="store",
+        type="string",
+        dest="glossary_description",
+        default="",
+        help="HTML comment to add",
+    )
+    parser.add_option(
+        "-t",
+        "--html-file",
+        action="store",
+        type="string",
+        dest="glossary_file",
+        default="glossary",
+        help="Glossary file name to export",
+    )
 
     (options, args) = parser.parse_args()
 
-    return (options.src_directory, options.glossary_description,
-            options.glossary_file)
+    return (options.src_directory, options.glossary_description, options.glossary_file)
 
 
 def init_logging():
-    logfile = 'term_extract.log'
+    logfile = "term_extract.log"
 
     if os.path.isfile(logfile):
         os.remove(logfile)
 
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
-    logger = logging.getLogger('')
+    logger = logging.getLogger("")
 
 
 def main():
     print("Extracts terminology")
-    print("Extraction rule: appears in more than 1 document and has more than 4 occurrences")
+    print(
+        "Extraction rule: appears in more than 1 document and has more than 4 occurrences"
+    )
     print("Use --help for assistance")
 
     start_time = time.time()
@@ -171,8 +200,10 @@ def main():
 
     print("Time used to create the glossaries: " + str(end_time))
     usage = resource.getrusage(resource.RUSAGE_SELF)
-    print("usertime=%s systime=%s mem=%s mb" %
-          (usage[0], usage[1], (usage[2]*resource.getpagesize())/1000000.0))
+    print(
+        "usertime=%s systime=%s mem=%s mb"
+        % (usage[0], usage[1], (usage[2] * resource.getpagesize()) / 1000000.0)
+    )
 
 
 if __name__ == "__main__":

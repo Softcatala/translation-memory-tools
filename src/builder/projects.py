@@ -28,21 +28,21 @@ from .projectmetadatadto import ProjectMetaDataDto
 from .pocatalog import POCatalog
 from .licenses import Licenses
 
+
 class Projects(object):
+    ENV_NAME = "DB3_PATH"
 
-    ENV_NAME = 'DB3_PATH'
-
-    def __init__(self, opendb = True):
+    def __init__(self, opendb=True):
         self.projects = list()
         self.out_directory = ""
-        self.set_tm_file('tots-tm.po')
+        self.set_tm_file("tots-tm.po")
         self.metadata_dao = ProjectMetaDataDao()
 
         if opendb:
             self.metadata_dao.open(self._get_db_name())
 
     def _get_db_name(self):
-        name = 'statistics.db3'
+        name = "statistics.db3"
 
         if self.ENV_NAME not in os.environ:
             return name
@@ -52,7 +52,7 @@ class Projects(object):
 
     def set_tm_file(self, filename):
         self.tm_file = filename
-        name = 'Translation memory'
+        name = "Translation memory"
         self.tm_project = Project(name, name, self.tm_file)
         self.tm_project.set_out_directory(self.out_directory)
 
@@ -64,7 +64,9 @@ class Projects(object):
         self.projects.append(project)
 
     def add_project(self, project_dto, add_source):
-        project = Project(project_dto.name, project_dto.project_id, project_dto.filename)
+        project = Project(
+            project_dto.name, project_dto.project_id, project_dto.filename
+        )
         project.license = project_dto.license
         project.set_add_source(add_source)
         project.set_out_directory(self.out_directory)
@@ -91,10 +93,11 @@ class Projects(object):
             try:
                 project.checksum = feature.result()
             except:
-                logging.error(f"Projects.__call__. Feature.result() error on '{project.name}' project")
+                logging.error(
+                    f"Projects.__call__. Feature.result() error on '{project.name}' project"
+                )
 
         for project in self.projects:
-
             words, entries = project.get_words_entries()
 
             if words == -1:
@@ -104,8 +107,10 @@ class Projects(object):
             if metadata_dto is None:
                 metadata_dto = ProjectMetaDataDto(project.name)
 
-            if (metadata_dto.checksum is None or
-                metadata_dto.checksum != project.checksum):
+            if (
+                metadata_dto.checksum is None
+                or metadata_dto.checksum != project.checksum
+            ):
                 metadata_dto.last_translation_update = datetime.datetime.now()
                 metadata_dto.checksum = project.checksum
 
@@ -122,7 +127,7 @@ class Projects(object):
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
-        COMBINED_LICENSE = 'GPL-3.0-only'
+        COMBINED_LICENSE = "GPL-3.0-only"
 
         tm_file = os.path.join(self.out_directory, self.tm_file)
         if os.path.isfile(tm_file):
@@ -137,12 +142,17 @@ class Projects(object):
         for project in self.projects:
             license = project.license.lower()
             if project.license.lower() == Licenses().PROPIETARY:
-                logging.debug(f"Projects. Skipping {project.name} into {self.tm_file} memory")
+                logging.debug(
+                    f"Projects. Skipping {project.name} into {self.tm_file} memory"
+                )
                 continue
 
             words, _ = project.get_words_entries()
 
-            if Licenses().are_compatible_licenses(COMBINED_LICENSE, project.license) is False:
+            if (
+                Licenses().are_compatible_licenses(COMBINED_LICENSE, project.license)
+                is False
+            ):
                 skipped_words += words
                 skipped_prjs += 1
                 continue
@@ -153,8 +163,10 @@ class Projects(object):
             projects_catalog.add_pofile(project_catalog.filename)
 
         projects_catalog.cleanup()
-        logging.info(f"Projects. Added into {self.tm_file} a total of {total_words} words from {included_prjs} "\
-                    f"projects. Skipped {skipped_prjs} project(s) with {skipped_words} words due to license incompatibility")
+        logging.info(
+            f"Projects. Added into {self.tm_file} a total of {total_words} words from {included_prjs} "
+            f"projects. Skipped {skipped_prjs} project(s) with {skipped_words} words due to license incompatibility"
+        )
 
     def statistics(self):
         for project in self.projects:
@@ -162,9 +174,13 @@ class Projects(object):
 
         words, entries = self.tm_project.get_words_entries()
         if words > 0:
-            logging.info(f'Translation memory for all projects: {entries} translated strings, words {words}')
+            logging.info(
+                f"Translation memory for all projects: {entries} translated strings, words {words}"
+            )
         else:
-            logging.info('Translation memory for all projects is empty. No projects were added.')
+            logging.info(
+                "Translation memory for all projects is empty. No projects were added."
+            )
 
         self.metadata_dao.close()
 

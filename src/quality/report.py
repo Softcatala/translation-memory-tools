@@ -22,8 +22,8 @@ import datetime
 import os
 import pystache
 
-class Report():
 
+class Report:
     def __init__(self):
         self._project_file = None
 
@@ -32,8 +32,8 @@ class Report():
         report_filename = os.path.join(lt_output, project_html)
 
         ctx = {
-            'date': datetime.date.today().strftime("%d/%m/%Y"),
-            'languagetool': version,
+            "date": datetime.date.today().strftime("%d/%m/%Y"),
+            "languagetool": version,
         }
 
         self._process_template(header_filename, report_filename, ctx)
@@ -41,11 +41,11 @@ class Report():
 
     def _process_template(self, template, filename, ctx):
         try:
-            template = open(template, 'r').read()
+            template = open(template, "r").read()
             parsed = pystache.Renderer()
             s = parsed.render(template, ctx)
 
-            f = open(filename, 'w')
+            f = open(filename, "w")
             f.write(s)
             f.close()
 

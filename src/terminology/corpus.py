@@ -23,7 +23,7 @@ import logging
 import polib
 import sys
 
-sys.path.append('../')
+sys.path.append("../")
 
 
 from builder.findfiles import FindFiles
@@ -35,6 +35,7 @@ class Corpus(object):
     Strings that are not suitable candidates are discarded. We do a minimum
     clean up of strings.
     """
+
     def __init__(self, directory):
         self.directory = directory
         self.source_words = set()
@@ -54,12 +55,9 @@ class Corpus(object):
             self.stop_words.add(word)
 
     def _clean_string(self, result):
-        CHARS = (
-            '_', '&', '~',  # Accelerators.
-            ':', ',', '...', u'…'  # Punctuations.
-        )
+        CHARS = ("_", "&", "~", ":", ",", "...", "…")  # Accelerators.  # Punctuations.
         for c in CHARS:
-            result = result.replace(c, '')
+            result = result.replace(c, "")
 
         # Remove all the leading and trailing whitespace characters.
         return result.strip().lower()
@@ -67,21 +65,21 @@ class Corpus(object):
     def _clean_localized(self, result):
         original = result
         mapping = {
-                    '’' : '\'',
-                    'à' : 'à',
-                    'í' : 'í',
-                    'ó' : 'ó',
-                    'è' : 'è',
-                    'é' : 'é',
-                    'ò' : 'ò',
-                    'ú' : 'ú',
-                  }
+            "’": "'",
+            "à": "à",
+            "í": "í",
+            "ó": "ó",
+            "è": "è",
+            "é": "é",
+            "ò": "ò",
+            "ú": "ú",
+        }
 
         for char in mapping.keys():
             result = result.replace(char, mapping[char])
 
         if original != result:
-            log = 'Localized clean [{0}] -> [{1}]\n'
+            log = "Localized clean [{0}] -> [{1}]\n"
             log = log.format(original, result)
             logging.info(log)
 
@@ -96,33 +94,33 @@ class Corpus(object):
 
         # Single words without spaces that are very long.
         if words == 1 and len(source) > 30:
-            msg = "Discard: long word '{0}'".format(source.encode('utf-8'))
+            msg = "Discard: long word '{0}'".format(source.encode("utf-8"))
             logging.info(msg)
             return False
 
         # Single chars provide no value.
         if len(source) < 2:
-            msg = "Discard: single chart '{0}'".format(source.encode('utf-8'))
+            msg = "Discard: single chart '{0}'".format(source.encode("utf-8"))
             logging.info(msg)
             return False
 
         # Numeric only strings should not be considered.
         if source.isdigit():
-            msg = "Discard: is digit '{0}'".format(source.encode('utf-8'))
+            msg = "Discard: is digit '{0}'".format(source.encode("utf-8"))
             logging.info(msg)
             return False
 
         if source in self.stop_words:
-            msg = "Discard: stop word '{0}'".format(source.encode('utf-8'))
+            msg = "Discard: stop word '{0}'".format(source.encode("utf-8"))
             logging.info(msg)
             return False
 
         # We are ignoring strings with html tags or string formatters.
         # This also affects strings like <shift>f10
-        CHARS = ('<', '>', '%', '{', '}')
+        CHARS = ("<", ">", "%", "{", "}")
         for c in CHARS:
             if c in source:
-                msg = "Discard: invalid chars '{0}'".format(source.encode('utf-8'))
+                msg = "Discard: invalid chars '{0}'".format(source.encode("utf-8"))
                 logging.info(msg)
                 return False
 
@@ -148,10 +146,9 @@ class Corpus(object):
 
         findFiles = FindFiles()
 
-        f = open('corpus.txt', 'w')
+        f = open("corpus.txt", "w")
 
-        for filename in findFiles.find_recursive(self.directory, '*.po'):
-
+        for filename in findFiles.find_recursive(self.directory, "*.po"):
             try:
                 print("Reading: " + filename)
 
@@ -171,9 +168,8 @@ class Corpus(object):
 
                     self.strings_selected += 1
 
-                    log = u'source:{0} ({1}) - target:{2} ({3}) - {4}\n'
-                    log = log.format(msgid, entry.msgid, msgstr, entry.msgstr,
-                                     filename)
+                    log = "source:{0} ({1}) - target:{2} ({3}) - {4}\n"
+                    log = log.format(msgid, entry.msgid, msgstr, entry.msgstr, filename)
 
                     f.write(log)
 
@@ -198,7 +194,11 @@ class Corpus(object):
         for document_key_filename in self.documents.keys():
             print(document_key_filename)
             for terms in self.documents[document_key_filename].keys():
-                print("  s({0}):{1}".format(len(self.documents[document_key_filename][terms]),
-                                            terms.encode('utf-8')))
+                print(
+                    "  s({0}):{1}".format(
+                        len(self.documents[document_key_filename][terms]),
+                        terms.encode("utf-8"),
+                    )
+                )
                 for translation in self.documents[document_key_filename][terms]:
-                    print("     t:" + translation.encode('utf-8'))
+                    print("     t:" + translation.encode("utf-8"))

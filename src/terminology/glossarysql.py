@@ -24,8 +24,8 @@ import os
 # TODO: we use peewee and raw SQL projectmetadatadao. At some point may make
 # sense to consolidate this
 
-class SqliteDatabaseGlossary(SqliteDatabase):
 
+class SqliteDatabaseGlossary(SqliteDatabase):
     def create(self, database_name):
         if os.path.exists(database_name):
             os.remove(database_name)
@@ -43,11 +43,12 @@ class SqliteDatabaseGlossary(SqliteDatabase):
     def close(self):
         self.commit()
 
+
 database = SqliteDatabaseGlossary(None, autocommit=False)
 
 
 class Entry(Model):
-    '''Simple denormalized model to represent a glossary entry'''
+    """Simple denormalized model to represent a glossary entry"""
 
     term = TextField(unique=False)
     translation = TextField(unique=False)
@@ -67,5 +68,5 @@ class Entry(Model):
         return self._value_to_str(d)
 
     class Meta:
-        db_table = 'entries'
+        db_table = "entries"
         database = database

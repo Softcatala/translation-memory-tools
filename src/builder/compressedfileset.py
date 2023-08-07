@@ -22,33 +22,27 @@ import os
 from .downloadfile import DownloadFile
 from .fileset import FileSet
 
-class CompressedFileSet(FileSet):
 
+class CompressedFileSet(FileSet):
     def _uncompress(self, filename, report_error):
         CompressedFileSet.uncompress(filename, report_error, self.temp_dir)
 
     def uncompress(filename, report_error, temp_dir):
-        if filename.endswith('.zip'):
-            os.system('unzip {0} -d {1}'.format(filename, temp_dir))
-        elif filename.endswith('tar.gz'):
-            cmd = 'tar -xvf {0} -C {1}'.format(
-                filename,
-                temp_dir
-            )
+        if filename.endswith(".zip"):
+            os.system("unzip {0} -d {1}".format(filename, temp_dir))
+        elif filename.endswith("tar.gz"):
+            cmd = "tar -xvf {0} -C {1}".format(filename, temp_dir)
             os.system(cmd)
-        elif filename.endswith('.gz'):
+        elif filename.endswith(".gz"):
             # We are assuming that the .gz file will contain a single PO
-            cmd = 'gunzip {0} -c > {1}/ca.po'.format(
-                filename,
-                temp_dir
-            )
+            cmd = "gunzip {0} -c > {1}/ca.po".format(filename, temp_dir)
             os.system(cmd)
-        elif filename.endswith('tar.xz'):
-            cmd = 'tar -Jxf {0} -C {1}'.format(filename, temp_dir)
+        elif filename.endswith("tar.xz"):
+            cmd = "tar -Jxf {0} -C {1}".format(filename, temp_dir)
             os.system(cmd)
         else:
             if report_error is True:
-                msg = 'Unsupported file extension for filename: {0}'
+                msg = "Unsupported file extension for filename: {0}"
                 logging.error(msg.format(filename))
 
     def do(self):

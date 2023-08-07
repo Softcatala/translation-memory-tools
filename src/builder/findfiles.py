@@ -22,7 +22,6 @@ import os
 
 
 class FindFiles(object):
-
     def find_recursive(self, directory, pattern):
         filelist = []
 

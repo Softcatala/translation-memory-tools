@@ -20,9 +20,9 @@
 import os
 import time
 
-class Cache():
 
-    def __init__(self, directory = 'output/cache'):
+class Cache:
+    def __init__(self, directory="output/cache"):
         self.directory = directory
         self._create_dir_if_needed()
 
@@ -31,15 +31,15 @@ class Cache():
             os.makedirs(self.directory)
 
     def _get_cache_filename(self, url):
-        del_chars = ''.join(c for c in map(chr, range(256)) if not c.isalnum())
-        del_map = str.maketrans('', '', del_chars)
+        del_chars = "".join(c for c in map(chr, range(256)) if not c.isalnum())
+        del_map = str.maketrans("", "", del_chars)
         filename = url.translate(del_map)
         return filename
 
     def _get_file_age_in_hours(self, filename):
         current_time = time.time()
         file_time = os.path.getctime(filename)
-        hours_old = (current_time-file_time) / 3600
+        hours_old = (current_time - file_time) / 3600
         return hours_old
 
     def get(self, url):
@@ -61,4 +61,3 @@ class Cache():
 
         with open(filename, "w") as stream:
             content = stream.write(content)
-

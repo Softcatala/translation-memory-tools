@@ -21,20 +21,26 @@ import unittest
 
 
 class TestBazaarFileSet(unittest.TestCase):
-
     def test_has_filename_filename(self):
-        bazaar = BazaarFileSet('project none',
-            'project id',
-            'filsetname',
-            'lp:~mailman-l10n-ca/mailman.po',
-            'none.po')
+        bazaar = BazaarFileSet(
+            "project none",
+            "project id",
+            "filsetname",
+            "lp:~mailman-l10n-ca/mailman.po",
+            "none.po",
+        )
         self.assertTrue(bazaar._has_filename())
 
     def test_has_filename_path(self):
-        bazaar = BazaarFileSet('project none', 'project id', 'filesetname',
-                               'lp:~mailman-l10n-ca/', 'none.po')
+        bazaar = BazaarFileSet(
+            "project none",
+            "project id",
+            "filesetname",
+            "lp:~mailman-l10n-ca/",
+            "none.po",
+        )
         self.assertFalse(bazaar._has_filename())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

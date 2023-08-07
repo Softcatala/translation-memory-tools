@@ -24,11 +24,10 @@ from .fileset import FileSet
 
 
 class MercurialFileSet(FileSet):
-
-    hg_dir = '_hg'
+    hg_dir = "_hg"
 
     def _get_filename(self):
-        filename = self.url.split('/')[-1]
+        filename = self.url.split("/")[-1]
         return filename
 
     def _remove_hg_directory(self):
@@ -37,13 +36,12 @@ class MercurialFileSet(FileSet):
 
     def download(self):
         self._remove_hg_directory()
-        cmd = 'cd {0} && hg clone {1} {2}'.format(
-            self.temp_dir, self.url, self.hg_dir)
+        cmd = "cd {0} && hg clone {1} {2}".format(self.temp_dir, self.url, self.hg_dir)
         os.system(cmd)
 
         # Move it to the root to avoid git default behavior to clone
         # into a subdirectory
-        cmd = 'cd {0} && mv {1}/* . && rm -r -f {1}'.format(self.temp_dir, self.hg_dir)
+        cmd = "cd {0} && mv {1}/* . && rm -r -f {1}".format(self.temp_dir, self.hg_dir)
         os.system(cmd)
 
     def do(self):

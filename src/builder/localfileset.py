@@ -24,9 +24,8 @@ from .fileset import FileSet
 
 
 class LocalFileSet(FileSet):
-
     def do(self):
-        shutil.copy(self.url, '{0}/{1}'.format(self.temp_dir, self.filename))
+        shutil.copy(self.url, "{0}/{1}".format(self.temp_dir, self.filename))
         self.build()
 
         if os.path.exists(self.filename):

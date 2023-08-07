@@ -34,6 +34,7 @@ class ReferenceSources(object):
 
     Like TERMCAT or Microsoft glossaries.
     """
+
     def __init__(self):
         self.stop_words = set()
         self.references = []
@@ -93,8 +94,12 @@ class ReferenceSources(object):
         self.references.append(reference)
 
     def read_sources(self):
-        self._read_source('Recull de Softcatalà', 'r',
-                          'terminology/recull/recull-glossary.po')
-        self._read_source('Terminologia de Microsoft', 'm',
-                          '../source-pos/microsoft/microsoft-terms.po')
-        self._read_source('TERMCAT', 't', 'terminology/termcat/termcat.po')
+        self._read_source(
+            "Recull de Softcatalà", "r", "terminology/recull/recull-glossary.po"
+        )
+        self._read_source(
+            "Terminologia de Microsoft",
+            "m",
+            "../source-pos/microsoft/microsoft-terms.po",
+        )
+        self._read_source("TERMCAT", "t", "terminology/termcat/termcat.po")

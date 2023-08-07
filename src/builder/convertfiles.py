@@ -25,8 +25,8 @@ from .converttmx import ConvertTmx
 from .findfiles import FindFiles
 from .convertini import ConvertIni
 
-class ConvertFiles():
 
+class ConvertFiles:
     def __init__(self, convert_dir, conversor_setup):
         self.convert_dir = convert_dir
         self.findFiles = None
@@ -48,88 +48,98 @@ class ConvertFiles():
         self._convert_xliff_file_to_po()
 
     def _convert_ts_files_to_po(self):
-        for tsfile in self.findFiles.find_recursive(self.convert_dir, '*.ts'):
+        for tsfile in self.findFiles.find_recursive(self.convert_dir, "*.ts"):
             fileName, fileExtension = os.path.splitext(tsfile)
-            logging.info('convert ts file: {0}'.format(tsfile))
-            os.system('ts2po {0} -o {1}.po'.format(tsfile, fileName))
+            logging.info("convert ts file: {0}".format(tsfile))
+            os.system("ts2po {0} -o {1}.po".format(tsfile, fileName))
 
     def _convert_string_files_to_po(self):
-        for tsfile in self.findFiles.find_recursive(self.convert_dir, 'ca.strings'):
+        for tsfile in self.findFiles.find_recursive(self.convert_dir, "ca.strings"):
             dirName = os.path.dirname(tsfile)
-            logging.info('convert strings file: {0}'.format(dirName))
-            filename = '{0}/strings-ca.po'.format(dirName)
+            logging.info("convert strings file: {0}".format(dirName))
+            filename = "{0}/strings-ca.po".format(dirName)
             # Allow process files with duplicated entries
-            cmd = 'prop2po -t {0}/en.strings {0}/ca.strings ' \
-                '--personality strings --duplicates merge -o {1}'
+            cmd = (
+                "prop2po -t {0}/en.strings {0}/ca.strings "
+                "--personality strings --duplicates merge -o {1}"
+            )
             os.system(cmd.format(dirName, filename))
 
     def _uncompress_files(self):
-        for zipfile in self.findFiles.find_recursive(self.convert_dir, '*.zip'):
+        for zipfile in self.findFiles.find_recursive(self.convert_dir, "*.zip"):
             # Some projects have files with passwords that we do not know,
             # we pass an 'unknown' password to prevent been prompted for it
-            cmd = 'unzip -p unknown -t {0} > /dev/null '.format(zipfile)
+            cmd = "unzip -p unknown -t {0} > /dev/null ".format(zipfile)
             os.system(cmd)
 
     def _convert_tmx_files_to_po(self):
-        for tmxfile in self.findFiles.find_recursive(self.convert_dir, '*.tmx'):
+        for tmxfile in self.findFiles.find_recursive(self.convert_dir, "*.tmx"):
             fileName, fileExtension = os.path.splitext(tmxfile)
             tmx = ConvertTmx(tmxfile, fileName + ".po")
             tmx.convert()
-            logging.info('convert tmx file: {0}'.format(tmxfile))
+            logging.info("convert tmx file: {0}".format(tmxfile))
 
     def _convert_csv_files_to_po(self):
-        for csvfile in self.findFiles.find_recursive(self.convert_dir, 'ca.csv'):
+        for csvfile in self.findFiles.find_recursive(self.convert_dir, "ca.csv"):
             dirName = os.path.dirname(csvfile)
-            pofile = dirName + '/ca.po'
-            cmd = 'csv2po -i {0} -o {1}'.format(csvfile, pofile)
+            pofile = dirName + "/ca.po"
+            cmd = "csv2po -i {0} -o {1}".format(csvfile, pofile)
             os.system(cmd)
-            logging.info('convert csv file: {0}'.format(csvfile))
+            logging.info("convert csv file: {0}".format(csvfile))
 
     def _convert_properties_files_to_po(self):
         en_file = "en.properties"
-        files = self.findFiles.find_recursive(self.convert_dir, 'ca.properties')
+        files = self.findFiles.find_recursive(self.convert_dir, "ca.properties")
         if len(files) == 0:
-            files = self.findFiles.find_recursive(self.convert_dir, 'ca_ES.properties')
+            files = self.findFiles.find_recursive(self.convert_dir, "ca_ES.properties")
 
         if len(files) == 0:
-            files = self.findFiles.find_recursive(self.convert_dir, 'dictionary_ca.properties')
+            files = self.findFiles.find_recursive(
+                self.convert_dir, "dictionary_ca.properties"
+            )
             if len(files) > 0:
                 en_file = "dictionary.properties"
 
         for propfile in files:
             dirName = os.path.dirname(propfile)
             prop_filename = os.path.basename(propfile)
-            logging.info('convert properties file: {0}'.format(dirName))
-            po_filename = '{0}/properties-ca.po'.format(dirName)
+            logging.info("convert properties file: {0}".format(dirName))
+            po_filename = "{0}/properties-ca.po".format(dirName)
             # Allow process files with duplicated entries
-            cmd = f'prop2po -t {dirName}/{en_file} {dirName}/{prop_filename} ' \
-                f'--personality java --duplicates merge -o {po_filename}'
+            cmd = (
+                f"prop2po -t {dirName}/{en_file} {dirName}/{prop_filename} "
+                f"--personality java --duplicates merge -o {po_filename}"
+            )
 
-            if self.conversor_setup is not None and \
-               self.conversor_setup.type == 'string' and \
-               self.conversor_setup.verb == 'add':
+            if (
+                self.conversor_setup is not None
+                and self.conversor_setup.type == "string"
+                and self.conversor_setup.verb == "add"
+            ):
                 cmd += self.conversor_setup.command
-                logging.info('Adding parameter to conversor: {0}'.
-                             format(self.conversor_setup.command))
+                logging.info(
+                    "Adding parameter to conversor: {0}".format(
+                        self.conversor_setup.command
+                    )
+                )
 
             os.system(cmd)
 
     def _convert_ini_files_to_po(self):
-
-        for inifile in self.findFiles.find_recursive(self.convert_dir, '*.ini'):
+        for inifile in self.findFiles.find_recursive(self.convert_dir, "*.ini"):
             dirName = os.path.dirname(inifile)
             filename = os.path.basename(inifile)
 
             trg = None
-            for filename in ['ca.ini', 'CA.ini', 'ca_ES.ini']:
-                fullName = '{0}/{1}'.format(dirName, filename)
+            for filename in ["ca.ini", "CA.ini", "ca_ES.ini"]:
+                fullName = "{0}/{1}".format(dirName, filename)
                 if filename in inifile:
                     trg = fullName
                     break
 
             src = None
-            for filename in ['en.ini', 'EN.ini', 'en_GB.ini']:
-                fullName = '{0}/{1}'.format(dirName, filename)
+            for filename in ["en.ini", "EN.ini", "en_GB.ini"]:
+                fullName = "{0}/{1}".format(dirName, filename)
                 if os.path.isfile(fullName):
                     src = fullName
                     break
@@ -139,20 +149,21 @@ class ConvertFiles():
 
             # http://bugs.locamotion.org/show_bug.cgi?id=3148
             # The copy operations can be removed when the issue is fixed
-            logging.info('convert ini file: {0}'.format(inifile))
+            logging.info("convert ini file: {0}".format(inifile))
 
-            filename = '{0}/strings-ca.po'.format(dirName)
+            filename = "{0}/strings-ca.po".format(dirName)
             ConvertIni(src, trg, filename).convert()
 
     def _convert_php_resources_files_to_po(self):
-        if len(self.findFiles.find_recursive(self.convert_dir, '*.php')) == 0:
+        if len(self.findFiles.find_recursive(self.convert_dir, "*.php")) == 0:
             return
 
-        logging.info('convert php directory: {0}'.format(self.convert_dir))
+        logging.info("convert php directory: {0}".format(self.convert_dir))
         # Name arbitrary choosen (not sepecific to an expected dir structure)
-        OUT_DIRNAME = 'po-files'
-        cmd = 'cd {0} && php2po -t en -i ca ' \
-              '-o {1}'.format(self.convert_dir, OUT_DIRNAME)
+        OUT_DIRNAME = "po-files"
+        cmd = "cd {0} && php2po -t en -i ca " "-o {1}".format(
+            self.convert_dir, OUT_DIRNAME
+        )
         os.system(cmd)
 
     def _convert_android_file(self, src_file, tgt_file, id):
@@ -163,7 +174,7 @@ class ConvertFiles():
     # Some times Android resources are found in values/ and values-ca/ subdirectories
     # Other times, just in the same subdirectory (en.xml and ca.xml)
     def _convert_android_resources_files_to_po(self):
-        filenames = self.findFiles.find_recursive(self.convert_dir, '*.xml')
+        filenames = self.findFiles.find_recursive(self.convert_dir, "*.xml")
         if len(filenames) == 0:
             return
 
@@ -200,33 +211,37 @@ class ConvertFiles():
                     self._convert_android_file(src, tgt, id)
                     id += 1
 
-        logging.info('convert Android directory: {0}'.format(self.convert_dir))
-
+        logging.info("convert Android directory: {0}".format(self.convert_dir))
 
     def _convert_json_file_to_po(self, jsonfile, source, target):
         dirName = os.path.dirname(jsonfile)
-        logging.info('convert json file: {0}'.format(dirName))
-        filename = '{0}/json-ca.po'.format(dirName)
-        cmd = 'json2po -t {0}/{2} -i {0}/{3} ' \
-              '-o {1}'.format(dirName, filename, source, target)
+        logging.info("convert json file: {0}".format(dirName))
+        filename = "{0}/json-ca.po".format(dirName)
+        cmd = "json2po -t {0}/{2} -i {0}/{3} " "-o {1}".format(
+            dirName, filename, source, target
+        )
         os.system(cmd)
 
     def _convert_json_files_to_po(self):
         # Used for Privacy Badger
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, 'messages.json'):
-            if '/ca/' not in jsonfile:
+        for jsonfile in self.findFiles.find_recursive(
+            self.convert_dir, "messages.json"
+        ):
+            if "/ca/" not in jsonfile:
                 continue
 
-            self._convert_json_file_to_po(jsonfile, '../en_US/messages.json', '../ca/messages.json')
+            self._convert_json_file_to_po(
+                jsonfile, "../en_US/messages.json", "../ca/messages.json"
+            )
 
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, 'ca.json'):
-            self._convert_json_file_to_po(jsonfile, 'en.json', 'ca.json')
+        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.json"):
+            self._convert_json_file_to_po(jsonfile, "en.json", "ca.json")
 
     def _convert_yml_files_to_po(self):
-        EXPECTED_SRC = 'en.yml'
-        EXPECTED_TRG = 'ca.yml'
+        EXPECTED_SRC = "en.yml"
+        EXPECTED_TRG = "ca.yml"
 
-        for trgfile in self.findFiles.find_recursive(self.convert_dir, '*ca.yml'):
+        for trgfile in self.findFiles.find_recursive(self.convert_dir, "*ca.yml"):
             srcfile = trgfile.replace("ca.yml", "en.yml")
 
             if os.path.isfile(srcfile) is False:
@@ -243,14 +258,15 @@ class ConvertFiles():
                 new = os.path.join(dirName, EXPECTED_TRG)
                 shutil.copyfile(trgfile, new)
 
-            logging.info('convert yml file: {0}'.format(dirName))
-            cmd = 'i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en'.format(dirName)
+            logging.info("convert yml file: {0}".format(dirName))
+            cmd = "i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en".format(
+                dirName
+            )
             os.system(cmd)
 
     def _convert_xliff_file_to_po(self):
-        for xlfile in self.findFiles.find_recursive(self.convert_dir, '*.xliff'):
+        for xlfile in self.findFiles.find_recursive(self.convert_dir, "*.xliff"):
             fileName, fileExtension = os.path.splitext(xlfile)
             pofile = xlfile.replace(".xliff", ".po")
             cmd = f'xliff2po -i "{xlfile}" -o "{pofile}" --duplicates=merge'
             os.system(cmd)
-

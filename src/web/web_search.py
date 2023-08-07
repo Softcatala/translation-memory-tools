@@ -27,7 +27,7 @@ import urllib.parse
 import datetime
 from flask_cors import CORS
 
-sys.path.append('models/')
+sys.path.append("models/")
 from pagination import Pagination
 from glossary import Glossary
 from stats import Stats
@@ -37,8 +37,8 @@ from usage import Usage
 app = Flask(__name__)
 CORS(app)
 
-class SearchAPIResults(object):
 
+class SearchAPIResults(object):
     def _get_result_text(self, result, key):
         highlighted = result.highlights(key)
         if highlighted is not None and len(highlighted) > 0:
@@ -48,22 +48,32 @@ class SearchAPIResults(object):
 
     def get_result(self, result):
         result_dict = {
-            'source': self._get_result_text(result, "source"),
-            'target': self._get_result_text(result, "target"),
-            'project': result["project"],
-            'comment': None,
-            'context': None,
+            "source": self._get_result_text(result, "source"),
+            "target": self._get_result_text(result, "target"),
+            "project": result["project"],
+            "comment": None,
+            "context": None,
         }
 
-        if 'comment' in result.fields() and result["comment"] is not None and len(result["comment"]) > 0:
+        if (
+            "comment" in result.fields()
+            and result["comment"] is not None
+            and len(result["comment"]) > 0
+        ):
             # Comments can be multi-line because they contain multiple lines or
             # because we concatenated tcomments with comments from the PO. So
             # it is necessary to adapt it to properly integrate into HTML.
-            comment = html.escape(result["comment"]).replace('\n', '<br />').replace('\r', '')
-            result_dict['comment'] = comment
+            comment = (
+                html.escape(result["comment"]).replace("\n", "<br />").replace("\r", "")
+            )
+            result_dict["comment"] = comment
 
-        if 'context' in result.fields() and result["context"] is not None and len(result["context"]) > 0:
-            result_dict['context'] = html.escape(result["context"])
+        if (
+            "context" in result.fields()
+            and result["context"] is not None
+            and len(result["context"]) > 0
+        ):
+            result_dict["context"] = html.escape(result["context"])
 
         return result_dict
 
@@ -90,10 +100,9 @@ class SearchAPIResults(object):
             num_results = raw_results.scored_length()
 
             if len(raw_results) > 0:
-
                 url = request.url
                 o = urllib.parse.urlparse(url)
-                url = '?' + o.query
+                url = "?" + o.query
 
                 pagination = Pagination(PER_PAGE, len(raw_results), url, page)
                 start = (pagination.page - 1) * PER_PAGE
@@ -115,26 +124,26 @@ class SearchAPIResults(object):
 
         total_time = time.time() - start_time
         ctx = {
-            'source': search.source,
-            'target': search.target,
-            'project': search.project,
-            'num_results': num_results,
-            'time': "{:.2f}".format(total_time),
-            'aborted_search': aborted_search,
-            'glossary': glossary,
-            'pages': pages,
-            'results': results,
+            "source": search.source,
+            "target": search.target,
+            "project": search.project,
+            "num_results": num_results,
+            "time": "{:.2f}".format(total_time),
+            "aborted_search": aborted_search,
+            "glossary": glossary,
+            "pages": pages,
+            "results": results,
         }
 
         return ctx
 
 
-@app.route('/search', methods=['GET'])
+@app.route("/search", methods=["GET"])
 def search_api():
-    source = request.args.get('source')
-    target = request.args.get('target')
-    page = request.args.get('page')
-    project = ','.join(request.args.getlist('project'))
+    source = request.args.get("source")
+    target = request.args.get("target")
+    page = request.args.get("page")
+    project = ",".join(request.args.getlist("project"))
 
     search = Search(source, target, project)
     results = SearchAPIResults()
@@ -145,46 +154,49 @@ def search_api():
     return json
 
 
-@app.route('/glossary/search', methods=['GET'])
+@app.route("/glossary/search", methods=["GET"])
 def glossary_search_api():
-    source = request.args.get('source')
+    source = request.args.get("source")
 
     glossary = Glossary(source)
     glossary.search()
-    return Response(glossary.get_json(), mimetype='application/json')
+    return Response(glossary.get_json(), mimetype="application/json")
 
 
-@app.route('/memory/search', methods=['GET'])
+@app.route("/memory/search", methods=["GET"])
 def memory_search_api():
-    source = request.args.get('source')
-    target = request.args.get('target')
-    project = request.args.get('project')
+    source = request.args.get("source")
+    target = request.args.get("target")
+    project = request.args.get("project")
 
     search = Search(source, target, project)
-    return Response(search.get_json(), mimetype='application/json')
+    return Response(search.get_json(), mimetype="application/json")
 
-@app.route('/stats', methods=['GET'])
+
+@app.route("/stats", methods=["GET"])
 def stats_api():
-    requested = request.args.get('date')
-    date_requested = datetime.datetime.strptime(requested, '%Y-%m-%d')
+    requested = request.args.get("date")
+    date_requested = datetime.datetime.strptime(requested, "%Y-%m-%d")
     stats = Stats()
-    return Response(stats.get_json(date_requested), mimetype='application/json')
+    return Response(stats.get_json(date_requested), mimetype="application/json")
 
-@app.route('/projects', methods=['GET'])
+
+@app.route("/projects", methods=["GET"])
 def projects_api():
-    with open("projects.json" ,"r") as file:
+    with open("projects.json", "r") as file:
         projects = file.read()
 
-    return Response(projects, mimetype='application/json')
+    return Response(projects, mimetype="application/json")
 
-@app.route('/index', methods=['GET'])
+
+@app.route("/index", methods=["GET"])
 def index_api():
-    with open("index.json" ,"r") as file:
+    with open("index.json", "r") as file:
         projects = file.read()
 
-    return Response(projects, mimetype='application/json')
+    return Response(projects, mimetype="application/json")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.debug = True
     app.run()

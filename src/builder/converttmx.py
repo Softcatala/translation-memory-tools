@@ -21,8 +21,7 @@ import xml.etree.ElementTree as ET
 import polib
 
 
-class ConvertTmx():
-
+class ConvertTmx:
     def __init__(self, input_file, output_file):
         self.input_file = input_file
         self.output_file = output_file
@@ -31,16 +30,16 @@ class ConvertTmx():
         pofile = polib.POFile()
 
         pofile.metadata = {
-            'Project-Id-Version': '1.0',
-            'Report-Msgid-Bugs-To': 'none',
-            'POT-Creation-Date': '2007-10-18 14:00+0100',
-            'PO-Revision-Date': '2007-10-18 14:00+0100',
-            'Last-Translator': 'none@none.org',
-            'Language-Team': 'Catalan <info@none.org>',
-            'MIME-Version': '1.0',
-            'Content-Type': 'text/plain; charset=utf-8',
-            'Content-Transfer-Encoding': '8bit',
-            'Plural-Forms': 'nplurals=2; plural=n != 1;',
+            "Project-Id-Version": "1.0",
+            "Report-Msgid-Bugs-To": "none",
+            "POT-Creation-Date": "2007-10-18 14:00+0100",
+            "PO-Revision-Date": "2007-10-18 14:00+0100",
+            "Last-Translator": "none@none.org",
+            "Language-Team": "Catalan <info@none.org>",
+            "MIME-Version": "1.0",
+            "Content-Type": "text/plain; charset=utf-8",
+            "Content-Transfer-Encoding": "8bit",
+            "Plural-Forms": "nplurals=2; plural=n != 1;",
         }
 
         tree = ET.parse(self.input_file)
@@ -48,34 +47,35 @@ class ConvertTmx():
         sources = set()
 
         entries = 0
-        for tu_entry in root.iter('tu'):
-
+        for tu_entry in root.iter("tu"):
             entry_id = None
-            if 'tuid' in tu_entry.attrib:
-                if len(tu_entry.attrib['tuid']):
-                    entry_id = 'id: {0}'.format(tu_entry.attrib['tuid'])
+            if "tuid" in tu_entry.attrib:
+                if len(tu_entry.attrib["tuid"]):
+                    entry_id = "id: {0}".format(tu_entry.attrib["tuid"])
 
-            source = ''
-            translation = ''
+            source = ""
+            translation = ""
             for tuv_entry in tu_entry:
-                if tuv_entry.tag != 'tuv':
+                if tuv_entry.tag != "tuv":
                     continue
 
-                if '{http://www.w3.org/XML/1998/namespace}lang' in tuv_entry.attrib:
-                    llengua = tuv_entry.attrib['{http://www.w3.org/XML/1998/namespace}lang'].lower()
+                if "{http://www.w3.org/XML/1998/namespace}lang" in tuv_entry.attrib:
+                    llengua = tuv_entry.attrib[
+                        "{http://www.w3.org/XML/1998/namespace}lang"
+                    ].lower()
                 else:
-                    llengua = tuv_entry.attrib['lang'].lower()
+                    llengua = tuv_entry.attrib["lang"].lower()
 
-                for seg_entry in tuv_entry.iter('seg'):
-                    if llengua == 'en' or llengua == 'en-us':
+                for seg_entry in tuv_entry.iter("seg"):
+                    if llengua == "en" or llengua == "en-us":
                         source = seg_entry.text
-                    elif llengua == 'ca':
+                    elif llengua == "ca":
                         translation = seg_entry.text
 
-            if source is None or source == '':
+            if source is None or source == "":
                 continue
 
-            if translation is None or translation == '':
+            if translation is None or translation == "":
                 continue
 
             if source in sources:
@@ -84,8 +84,9 @@ class ConvertTmx():
                 msgctxt = None
                 sources.add(source)
 
-            entry = polib.POEntry(msgid=source, msgstr=translation,
-                                  msgctxt=msgctxt, tcomment=entry_id)
+            entry = polib.POEntry(
+                msgid=source, msgstr=translation, msgctxt=msgctxt, tcomment=entry_id
+            )
             pofile.append(entry)
             entries = entries + 1
 

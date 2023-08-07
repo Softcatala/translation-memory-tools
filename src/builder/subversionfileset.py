@@ -23,14 +23,17 @@ from .fileset import FileSet
 
 
 class SubversionFileSet(FileSet):
-
     def do(self):
         if len(self.filename) == 0:
-            CMD = 'cd {0} && svn co --trust-server-cert --non-interactive {1} > /dev/null'
+            CMD = (
+                "cd {0} && svn co --trust-server-cert --non-interactive {1} > /dev/null"
+            )
         else:
             # Single file checkout
-            CMD = ('cd {0} && svn export --trust-server-cert '
-                   '--non-interactive {1} > /dev/null')
+            CMD = (
+                "cd {0} && svn export --trust-server-cert "
+                "--non-interactive {1} > /dev/null"
+            )
 
         cmd = CMD.format(self.temp_dir, self.url)
         os.system(cmd)

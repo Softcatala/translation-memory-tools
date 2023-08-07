@@ -19,8 +19,8 @@
 
 import polib
 
-class ConvertIni():
 
+class ConvertIni:
     def __init__(self, source_file, target_file, output_file):
         self.source_file = source_file
         self.target_file = target_file
@@ -30,16 +30,16 @@ class ConvertIni():
         key = None
         value = None
 
-        if '=' not in line:
+        if "=" not in line:
             return key, value
 
         values = line.split("=", 1)
         if len(values) != 2:
-           return key, value
+            return key, value
 
         key = values[0]
         value = values[1]
-        value = value.replace("\"", '')
+        value = value.replace('"', "")
         return key.strip(), value.strip()
 
     def _read_source(self):
@@ -49,7 +49,6 @@ class ConvertIni():
             lines = f.readlines()
 
         for line in lines:
-
             key, value = self._parse_line(line)
             if key is None:
                 continue
@@ -74,21 +73,20 @@ class ConvertIni():
 
         return strings
 
-
     def convert(self):
         pofile = polib.POFile()
 
         pofile.metadata = {
-            'Project-Id-Version': '1.0',
-            'Report-Msgid-Bugs-To': 'none',
-            'POT-Creation-Date': '2007-10-18 14:00+0100',
-            'PO-Revision-Date': '2007-10-18 14:00+0100',
-            'Last-Translator': 'none@none.org',
-            'Language-Team': 'Catalan <info@none.org>',
-            'MIME-Version': '1.0',
-            'Content-Type': 'text/plain; charset=utf-8',
-            'Content-Transfer-Encoding': '8bit',
-            'Plural-Forms': 'nplurals=2; plural=n != 1;',
+            "Project-Id-Version": "1.0",
+            "Report-Msgid-Bugs-To": "none",
+            "POT-Creation-Date": "2007-10-18 14:00+0100",
+            "PO-Revision-Date": "2007-10-18 14:00+0100",
+            "Last-Translator": "none@none.org",
+            "Language-Team": "Catalan <info@none.org>",
+            "MIME-Version": "1.0",
+            "Content-Type": "text/plain; charset=utf-8",
+            "Content-Transfer-Encoding": "8bit",
+            "Plural-Forms": "nplurals=2; plural=n != 1;",
         }
 
         entries = 0
@@ -113,4 +111,3 @@ class ConvertIni():
             saved.add(source)
 
         pofile.save(self.output_file)
-

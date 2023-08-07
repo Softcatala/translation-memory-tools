@@ -22,17 +22,18 @@ from whoosh.analysis import Filter
 
 
 def get_clean_string(result):
-    CHARS = ('_', '&', '~')  # Accelerators.
+    CHARS = ("_", "&", "~")  # Accelerators.
     for char in CHARS:
-        result = result.replace(char, '')
+        result = result.replace(char, "")
 
     return result.lower()
 
 
 class CleanUpFilter(Filter):
     """Clean up accelerators when generating the tokens for the index
-        allowing to ignore them.
+    allowing to ignore them.
     """
+
     def __call__(self, tokens):
         for t in tokens:
             t.text = get_clean_string(t.text)

@@ -20,20 +20,20 @@
 from unittest import TestCase, mock
 from builder.projects import Projects
 
-class TestProjects(TestCase):
 
+class TestProjects(TestCase):
     def test_get_db_name(self):
         projects = Projects(False)
 
-        with mock.patch.dict('os.environ', {'DB3_PATH': ''}):
-            self.assertEquals('statistics.db3', projects._get_db_name())
+        with mock.patch.dict("os.environ", {"DB3_PATH": ""}):
+            self.assertEquals("statistics.db3", projects._get_db_name())
 
     def test_get_db_name_env(self):
         projects = Projects(False)
 
-        with mock.patch.dict('os.environ', {'DB3_PATH': '/path/'}):
-            self.assertEquals('/path/statistics.db3', projects._get_db_name())
+        with mock.patch.dict("os.environ", {"DB3_PATH": "/path/"}):
+            self.assertEquals("/path/statistics.db3", projects._get_db_name())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

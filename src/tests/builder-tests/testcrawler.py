@@ -22,25 +22,23 @@ import unittest
 
 
 class FilePage(Page):
-
     def _download_page(self):
         """Reads a file from disk instead from http connection"""
         folder = path.dirname(path.realpath(__file__))
-        f = open(path.join(folder, 'testcrawler.html'))
+        f = open(path.join(folder, "testcrawler.html"))
         self.content = f.read()
         f.close()
 
 
 class TestPage(unittest.TestCase):
-
     def test_get_links(self):
-        page = FilePage('http://translationproject.org/team/ca.html')
+        page = FilePage("http://translationproject.org/team/ca.html")
         links = page.get_all_links()
 
         self.assertEquals(len(links), 432)
-        url = 'http://translationproject.org/PO-files/ca/cpplib-4.8.0.ca.po'
+        url = "http://translationproject.org/PO-files/ca/cpplib-4.8.0.ca.po"
         self.assertTrue(url in links)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -30,12 +30,13 @@ from .transifexfileset import TransifexFileSet
 
 class OptionsExtractor(HTMLParser):
     """
-        Customized HTMLParser that extracts options values from a Fedora page
-        There are two kinds of pages:
-            * Hub pages: https://www.transifex.com/django/django/language/ca/
-            * Organization pages: https://www.transifex.com/organization/xfce
-                * These are paginated and have the concept of 'next page'
+    Customized HTMLParser that extracts options values from a Fedora page
+    There are two kinds of pages:
+        * Hub pages: https://www.transifex.com/django/django/language/ca/
+        * Organization pages: https://www.transifex.com/organization/xfce
+            * These are paginated and have the concept of 'next page'
     """
+
     def __init__(self, base_url, project):
         HTMLParser.__init__(self)
         self.base_url = base_url
@@ -53,40 +54,40 @@ class OptionsExtractor(HTMLParser):
         # Sample URL https://www.transifex.com/django/public/
         # where Subpath[1]= 'django'
         path = urlparse(self.base_url).path
-        subpaths = path.split('/')
-        prefix = '/{0}/'.format(subpaths[1])
+        subpaths = path.split("/")
+        prefix = "/{0}/".format(subpaths[1])
 
         if not url.startswith(prefix):
             return None
 
-        url = url[len(prefix):]
-        idx = url.find('/')
+        url = url[len(prefix) :]
+        idx = url.find("/")
         if idx == -1:
             return None
 
         return url[:idx]
 
     def handle_starttag(self, tag, attrs):
-        if tag == 'tr':
+        if tag == "tr":
             attrs = dict(attrs)
-            if 'data-actions-url' in attrs:
-                url = attrs['data-actions-url']
+            if "data-actions-url" in attrs:
+                url = attrs["data-actions-url"]
                 if url is not None:
                     name = self.get_project_name_tr(url)
                     if name is not None and name not in self.options:
                         self.options.append(name)
-        elif tag == 'a':
+        elif tag == "a":
             attrs = dict(attrs)
 
-            if 'href' in attrs:
-                url = attrs['href']
+            if "href" in attrs:
+                url = attrs["href"]
                 if url is not None:
-                    if 'class' in attrs:
-                        klass = attrs['class']
+                    if "class" in attrs:
+                        klass = attrs["class"]
                     else:
                         klass = None
 
-                    if klass == 'next':
+                    if klass == "next":
                         self.next_page = url
                     else:
                         name = self.get_project_name_from_ahref(url)
@@ -114,11 +115,7 @@ class Page(object):
     def _download_page(self):
         request = urllib.request.Request(self.url)
         handle = urllib.request.build_opener()
-        self.content = str(
-            handle.open(request).read(),
-            'utf-8',
-            errors='replace'
-        )
+        self.content = str(handle.open(request).read(), "utf-8", errors="replace")
 
     def _process_options(self):
         parser = OptionsExtractor(self.url, self.project)
@@ -135,12 +132,11 @@ class Page(object):
 
 
 class TransifexHubFileSet(FileSet):
-
     def set_project(self, project):
         self.project = project
 
     def _clean_string(self, result):
-        result = result.replace(' ', '-')
+        result = result.replace(" ", "-")
         result = result.strip()
         result = result.lower()
         return result
@@ -162,12 +158,16 @@ class TransifexHubFileSet(FileSet):
                     url = self.url + url
 
             if len(options) == 0:
-                logging.info('TransifexHubFileSet.Do. Unable not find any project to add')
+                logging.info(
+                    "TransifexHubFileSet.Do. Unable not find any project to add"
+                )
 
             for option in options:
                 url = self.url
                 url = url + self._clean_string(option)
-                fileset = TransifexFileSet(self.project_name, self.project_id, option, url, '', self)
+                fileset = TransifexFileSet(
+                    self.project_name, self.project_id, option, url, "", self
+                )
                 self.project.add_fileset(fileset)
 
             # All the new filesets have been added re-process project now

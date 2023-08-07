@@ -25,11 +25,10 @@ from builder.licenses import Licenses
 
 
 class TestCfgValidation(unittest.TestCase):
-
     def get_projects_cfg(self):
         projects_dir = path.dirname(path.realpath(__file__))
-        projects_dir += '/../../../cfg/projects/'
-        json = JsonBackend(projects_dir, validation = True)
+        projects_dir += "/../../../cfg/projects/"
+        json = JsonBackend(projects_dir, validation=True)
         json.load()
         return json
 
@@ -41,7 +40,7 @@ class TestCfgValidation(unittest.TestCase):
         # Check filesets
         projects = Projects()
         for project_dto in json.projects:
-            projects.add_project(project_dto, add_source = True)
+            projects.add_project(project_dto, add_source=True)
 
     def test_check_license(self):
         json = self.get_projects_cfg()
@@ -63,7 +62,9 @@ class TestCfgValidation(unittest.TestCase):
                 try:
                     re.compile(fileset.pattern)
                 except re.error:
-                    self.fail(f"incorrect pattern regular expression in project '{project_dto.name}'")
+                    self.fail(
+                        f"incorrect pattern regular expression in project '{project_dto.name}'"
+                    )
 
     def test_check_retrieval_pattern(self):
         json = self.get_projects_cfg()
@@ -74,7 +75,10 @@ class TestCfgValidation(unittest.TestCase):
                 try:
                     re.compile(fileset.retrieval_pattern)
                 except re.error:
-                    self.fail(f"incorrect retrieval_pattern regular expression in project '{project_dto.name}'")
+                    self.fail(
+                        f"incorrect retrieval_pattern regular expression in project '{project_dto.name}'"
+                    )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
