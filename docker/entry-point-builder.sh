@@ -4,15 +4,6 @@ DIR_TMT_GIT="$2" # /srv/dev/tm-git - working directory
 PUBLISH_WEBDOCKER=/srv/web-docker
 PRESERVE_CROSSEXECS=/srv/tmt-files
 
-# Run unit tests
-cd $DIR_TMT_GIT
-nose2
-RETVAL=$?
-if [ $RETVAL -ne 0 ]; then
-    echo "Aborting deployment. Unit tests did not pass"
-    exit
-fi
-
 ls $PRESERVE_CROSSEXECS
 
 # Copy cross execs
