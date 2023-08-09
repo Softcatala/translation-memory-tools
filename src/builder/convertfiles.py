@@ -148,10 +148,7 @@ class ConvertFiles:
             if src is None or trg is None:
                 continue
 
-            # http://bugs.locamotion.org/show_bug.cgi?id=3148
-            # The copy operations can be removed when the issue is fixed
             logging.info("convert ini file: {0}".format(inifile))
-
             filename = "{0}/strings-ca.po".format(dirName)
             ConvertIni(src, trg, filename).convert()
 
