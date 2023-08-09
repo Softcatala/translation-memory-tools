@@ -4,7 +4,15 @@
     "projectweb": "https://joinmastodon.org/",
     "fileset": {
         "Mastodon": {
-            "url": "https://github.com/tootsuite/mastodon.git",
+            "url": "https://github.com/mastodon/mastodon.git",
+            "type": "git"
+        },
+        "Mastodon-android": {
+            "url": "https://github.com/mastodon/mastodon-android.git",
+            "type": "git"
+        },
+        "Mastodon-ios": {
+            "url": "https://github.com/mastodon/mastodon-ios.git",
             "type": "git"
         }
     }
