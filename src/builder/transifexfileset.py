@@ -18,9 +18,6 @@
 # Boston, MA 02111-1307, USA.
 
 import os
-import urllib
-import urllib.parse
-import re
 
 from .fileset import FileSet
 from .findfiles import FindFiles
@@ -50,7 +47,6 @@ class TransifexFileSet(FileSet):
         prevdir = os.getcwd()
         os.chdir(self.temp_dir)
 
-        url = urllib.parse.urlparse(self.url)
         os.system("tx init")
         os.system(
             "tx add remote --file-filter 'translations/<project_slug>.<resource_slug>/<lang>.<ext>' {0}".format(

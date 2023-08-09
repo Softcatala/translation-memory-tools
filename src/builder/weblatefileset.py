@@ -61,7 +61,7 @@ class WeblateFileSet(FileSet):
             logging.error(msg)
 
     def _api_json_call(self, url):
-        if self.cache == None:
+        if self.cache is None:
             self.cache = Cache()
 
         cached = self.cache.get(url)

@@ -140,7 +140,6 @@ class Projects(object):
         skipped_prjs = 0
         skipped_words = 0
         for project in self.projects:
-            license = project.license.lower()
             if project.license.lower() == Licenses().PROPIETARY:
                 logging.debug(
                     f"Projects. Skipping {project.name} into {self.tm_file} memory"
