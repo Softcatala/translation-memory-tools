@@ -4,8 +4,9 @@
     "projectweb": "https://www.gnusocial.rocks/", 
     "fileset": {
         "GNUSocial": {
-            "url": "https://app.transifex.com/gnu-social/gnu-social/",
-            "type": "transifex"
+            "url": "https://notabug.org/diogo/gnu-social.git",
+            "type": "git",
+            "pattern": ".*/ca/.*\\.po"
         }
     }
 }
