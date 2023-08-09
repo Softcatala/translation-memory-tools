@@ -41,6 +41,7 @@ class ConvertFiles:
         self._convert_ini_files_to_po()
         self._convert_php_resources_files_to_po()
         self._convert_android_resources_files_to_po()
+        self._convert_apple_resources_files_to_po()
         self._convert_properties_files_to_po()
         self._convert_json_files_to_po()
         self._convert_yml_files_to_po()
@@ -270,3 +271,40 @@ class ConvertFiles:
             pofile = xlfile.replace(".xliff", ".po")
             cmd = f'xliff2po -i "{xlfile}" -o "{pofile}" --duplicates=merge'
             os.system(cmd)
+
+    def _convert_apple_file(self, src_file, tgt_file, id):
+        output_file = os.path.join(self.convert_dir, f"ca-apple-{id}.po")
+        cmd = f"prop2po -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge --encoding utf-8"
+        os.system(cmd)
+
+    def _convert_apple_resources_files_to_po(self):
+        filenames = self.findFiles.find_recursive(
+            self.convert_dir, "Localizable.strings"
+        )
+        if len(filenames) == 0:
+            return
+
+        id = 0
+        dirs = set()
+        subdirs = set()
+        for filename in filenames:
+            dir = os.path.dirname(filename)
+            if dir in dirs:
+                continue
+
+            dirs.add(dir)
+            if dir == self.convert_dir:
+                continue
+
+            # Remove subdir where file was found a/b/c/Localizable.strings becomes en.lproj/Localizable.strings
+            dir = os.path.dirname(dir)
+            if len(dir) > 0 and dir not in subdirs:
+                subdirs.add(dir)
+                src = os.path.join(dir, "en.lproj/Localizable.strings")
+                tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
+
+                if os.path.exists(src) and os.path.exists(tgt):
+                    self._convert_apple_file(src, tgt, id)
+                    id += 1
+
+        logging.info("convert Apple directory: {0}".format(self.convert_dir))

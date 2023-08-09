@@ -1,0 +1,4 @@
+// Notifications
+"PUSH_MESSAGE_TEXT" = "%1$@|%2$@";
+"PUSH_MESSAGE_NOTEXT" = "%1$@|New message";
+"PUSH_MESSAGE_PHOTO" = "%1$@|📷 Photo";

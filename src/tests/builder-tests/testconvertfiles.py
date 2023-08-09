@@ -124,6 +124,19 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals("User Actions Log", po_file[0].msgid)
         self.assertEquals("Acció", po_file[1].msgstr)
 
+    def test_convert_apple_files_to_po(self):
+        apple_dir = path.dirname(path.realpath(__file__))
+        apple_dir += "/data/conversions/apple/"
+        convert = ConvertFiles(apple_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(apple_dir)
+        self._clean_pos(apple_dir)
+
+        self.assertEquals(entries, 3)
+        self.assertEquals("%1$@|New message", po_file[1].msgid)
+        self.assertEquals("%1$@|Missatge nou", po_file[1].msgstr)
+
 
 if __name__ == "__main__":
     unittest.main()
