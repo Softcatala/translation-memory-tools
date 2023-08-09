@@ -9,6 +9,10 @@
             "type": "file",
             "target": "vlc-ca.po"
         },
+        "VLC-android": {
+            "url": "https://code.videolan.org/videolan/vlc-android.git",
+            "type": "git"
+        },
         "VLMC": {
             "url": "https://code.videolan.org/videolan/vlmc/-/raw/master/ts/vlmc_ca_ES.ts",
             "type": "file",
