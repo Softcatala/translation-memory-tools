@@ -1,0 +1,23 @@
+{
+    "project": "Element",
+    "license" : "Apache-2.0",
+    "projectweb": "https://translate.element.io/",
+    "fileset": {
+        "Element-android": {
+            "url": "https://github.com/vector-im/element-android.git",
+            "type": "git"
+        },
+        "Element-x-android": {
+            "url": "https://github.com/vector-im/element-x-android.git",
+            "type": "git"
+        },
+        "Element-ios": {
+            "url": "https://github.com/vector-im/element-ios.git",
+            "type": "git"
+        },
+        "Element-x-ios": {
+            "url": "https://github.com/vector-im/element-x-ios.git",
+            "type": "git"
+        }
+    }
+}
