@@ -33,14 +33,6 @@ class TestFileSet(unittest.TestCase):
             "none.po",
         )
 
-    def test_has_filename_filename(self):
-        fileset = self._get_fileset()
-        fileset.add_excluded("excluded.po")
-
-        self.assertTrue(fileset._should_exclude_file("excluded.po"))
-        self.assertTrue(fileset._should_exclude_file("Includesexcluded.po"))
-        self.assertFalse(fileset._should_exclude_file("eXcluded.po"))
-
     def test_has_filename_filename_project(self):
         fileset_parent = self._get_fileset()
         fileset_parent.po_preprocessing = "po_processing"

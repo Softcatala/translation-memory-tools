@@ -27,8 +27,6 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEquals(fileset.name, "mozilla")
         self.assertEquals(fileset.url, url)
         self.assertEquals(fileset.type, "compressed")
-        self.assertEquals(fileset.excluded, "region.properties.po")
-        self.assertEquals(fileset.excluded, "region.properties.po")
         self.assertEquals(fileset.pattern, "ca.po")
         self.assertEquals(fileset.retrieval_pattern, "https://.*?/ca/.*?")
         self.assertEquals(fileset.duplicates, "msgctxt")

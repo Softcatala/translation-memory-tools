@@ -9,7 +9,6 @@
 			"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
 			"type": "compressed",
 			"target": "mozilla.zip",
-			"excluded" : "region.properties.po",
             "pattern" : "ca.po",
             "duplicates" : "msgctxt",
             "retrieval_pattern": "https://.*?/ca/.*?",

@@ -62,7 +62,6 @@ class FileSetDTO(object):
         self.name = ""
         self.url = ""
         self.type = ""
-        self.excluded = ""
         self.target = ""
         self.pattern = ""
         self.duplicates = ""
@@ -72,15 +71,14 @@ class FileSetDTO(object):
 
     def __str__(self):
         text = (
-            "FileSetDTO. Name: {0}, url: {1}, type: {2}, excluded: {3}, "
-            "target: {4}, pattern: {5}, duplicates: {6}, po_preprocessing {7}, "
-            "retrieval_pattern {8}"
+            "FileSetDTO. Name: {0}, url: {1}, type: {2}, target: {3},"
+            "pattern: {4}, duplicates: {5}, po_preprocessing {6}, "
+            "retrieval_pattern {7}"
         )
         return text.format(
             self.name,
             self.url,
             self.type,
-            self.excluded,
             self.target,
             self.pattern,
             self.duplicates,
@@ -137,8 +135,6 @@ class JsonBackend(object):
                 fileset.type = fileset_properties_value
             elif fileset_properties_attr == "target":
                 fileset.target = fileset_properties_value
-            elif fileset_properties_attr == "excluded":
-                fileset.excluded = fileset_properties_value
             elif fileset_properties_attr == "pattern":
                 fileset.pattern = fileset_properties_value
             elif fileset_properties_attr == "duplicates":

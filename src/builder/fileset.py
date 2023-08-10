@@ -41,7 +41,6 @@ class FileSet:
         self.url = url
         self.filename = filename
         self.add_source = True
-        self.excluded = []
         self.po_catalog = None
         self.words = -1
         self.duplicates = ""
@@ -85,10 +84,6 @@ class FileSet:
     def set_tm_file(self, tm_file):
         self.tm_file = tm_file
 
-    def add_excluded(self, filename):
-        if len(filename) > 0:
-            self.excluded.append(filename)
-
     def set_po_preprocessing(self, po_preprocessing):
         self.po_preprocessing = po_preprocessing
 
@@ -124,17 +119,6 @@ class FileSet:
             pofile = POFile(filename)
             pofile.po_preprocessing(self.po_preprocessing)
 
-    def _should_exclude_file(self, filename):
-        exclude = False
-        for exfilename in self.excluded:
-            if filename.find(exfilename) != -1:
-                exclude = True
-
-        if exclude:
-            logging.info("Excluding file: {0}".format(filename))
-
-        return exclude
-
     def clean_up_after_convert(self):
         self._remove_non_translation_files()
 
@@ -144,10 +128,6 @@ class FileSet:
 
     def _build_tm_for_fileset(self, fileset_tm, files):
         for filename in files:
-            if self._should_exclude_file(filename):
-                os.remove(filename)
-                continue
-
             pofile = POFile(filename)
             if self.duplicates == "msgctxt":
                 pofile.add_msgctxt_to_duplicates()

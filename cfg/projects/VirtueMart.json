@@ -6,7 +6,7 @@
         "VirtueMart": {
             "url": "https://app.transifex.com/virtuemart/virtuemart",
             "type": "transifex",
-            "excluded" : "virtuemart.vm-admin-com_virtuemart"
+            "pattern": "^(?!.*?virtuemart.vm-admin-com_virtuemart).*$"
         }
     }
 }

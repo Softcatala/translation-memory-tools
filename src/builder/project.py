@@ -219,7 +219,6 @@ class Project(object):
                 raise Exception(msg)
 
             fs.set_pattern(fileset.pattern)
-            fs.add_excluded(fileset.excluded)
             fs.set_duplicates(fileset.duplicates)
             fs.set_conversor_setup(fileset.conversor_setup)
             fs.set_po_preprocessing(fileset.po_preprocessing)

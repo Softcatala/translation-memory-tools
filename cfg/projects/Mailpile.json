@@ -5,8 +5,7 @@
     "fileset": {
         "Mailpile": {
             "url": "https://app.transifex.com/otf/mailpile",
-            "type": "transifex",
-            "excluded": "en_"
+            "type": "transifex"
         }
     }
 }

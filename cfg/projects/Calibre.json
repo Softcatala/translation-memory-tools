@@ -10,8 +10,7 @@
         },
         "calibre-plugins": {
             "url": "https://app.transifex.com/calibre/calibre-plugins/",
-            "type": "transifex",
-            "excluded" : "/en"
+            "type": "transifex"
         }
     }
 }
