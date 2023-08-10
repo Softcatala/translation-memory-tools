@@ -1,0 +1,17 @@
+{
+    "project": "Organic Maps",
+    "license" : "Apache-2.0",
+    "projectweb": "https://organicmaps.app/ca/", 
+    "fileset": {
+        "organicmaps": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/organicmaps/ca.po",
+            "type": "file",
+            "target": "organicmaps-ca.po"
+        },
+        "organicmaps-website": {
+            "url": "https://raw.githubusercontent.com/organicmaps/organicmaps.github.io/master/po/content.ca.po",
+            "type": "file",
+            "target": "organicmaps-website-ca.po"
+        }
+    }
+}
