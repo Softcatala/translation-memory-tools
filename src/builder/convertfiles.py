@@ -202,12 +202,17 @@ class ConvertFiles:
                     continue
 
                 subdirs.add(dir)
-                src = os.path.join(dir, "values/strings.xml")
-                tgt = os.path.join(dir, "values-ca/strings.xml")
 
-                if os.path.exists(src) and os.path.exists(tgt):
-                    self._convert_android_file(src, tgt, id)
-                    id += 1
+                for src, tgt in zip(
+                    ["values/strings.xml", "values/strings.xml"],
+                    ["values-ca/strings.xml", "values-ca-rES/strings.xml"],
+                ):
+                    src = os.path.join(dir, src)
+                    tgt = os.path.join(dir, tgt)
+
+                    if os.path.exists(src) and os.path.exists(tgt):
+                        self._convert_android_file(src, tgt, id)
+                        id += 1
 
         logging.info("convert Android directory: {0}".format(self.convert_dir))
 
