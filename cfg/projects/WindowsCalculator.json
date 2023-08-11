@@ -3,11 +3,11 @@
     "license" : "MIT",
     "projectweb": "https://github.com/microsoft/calculator",
     "fileset": {
-        "calc": {
-            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/calc/ca.po",
-            "type": "file",
+        "mscalc": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
             "duplicates" : "msgctxt",
-            "target": "calc-ca.po"
+            "pattern": ".*/mscalc/.*\\.po"
         }
     }
 }
