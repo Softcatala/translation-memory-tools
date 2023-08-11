@@ -205,7 +205,7 @@ class ConvertFiles:
 
                 for src, tgt in zip(
                     ["values/strings.xml", "values/strings.xml"],
-                    ["values-ca/strings.xml", "values-ca-rES/strings.xml"],
+                    ["values-ca/strings.xml", "values-ca-ES/strings.xml"],
                 ):
                     src = os.path.join(dir, src)
                     tgt = os.path.join(dir, tgt)
