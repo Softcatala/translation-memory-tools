@@ -1,0 +1,12 @@
+{
+    "project": "Tachiyomi",
+    "license" : "Apache-2.0",
+    "projectweb": "https://tachiyomi.org/help/contribution/#code", 
+    "softcatala": true, 
+    "fileset": {
+        "Tachiyomi": {
+            "url": "https://github.com/tachiyomiorg/tachiyomi.git",
+            "type": "git"
+        }
+    }
+}
