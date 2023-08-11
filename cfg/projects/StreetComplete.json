@@ -1,0 +1,11 @@
+{
+    "project": "StreetComplete",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://poeditor.com/join/project/IE4GC127Ki", 
+    "fileset": {
+        "StreetComplete": {
+            "url": "https://github.com/streetcomplete/StreetComplete.git",
+            "type": "git"
+        }
+    }
+}
