@@ -4,7 +4,7 @@
     "projectweb": "https://matomo.org/",
     "fileset": {
         "Matomo": {
-            "url": "https://hosted.weblate.org/download-language/ca/matomo/?format=zip",
+            "url": "https://hosted.weblate.org/download/matomo/?format=zip",
             "type": "compressed",
             "target": "ca.zip"
         }
