@@ -29,6 +29,7 @@ class DownloadFile(object):
         NOT_FOUND = 404
         TIMEOUT = 15
 
+        timeout = TIMEOUT
         for _ in range(NTRIES):
             try:
                 req = Request(
@@ -37,17 +38,23 @@ class DownloadFile(object):
                         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox"
                     },
                 )
-                return urlopen(req, timeout=TIMEOUT)
+                return urlopen(req, timeout=timeout)
             except HTTPError as e:
                 logging.error(
-                    f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' "
+                    f"HTTPError on urlopen_with_retry. URL: '{url}', error: '{e}'"
                 )
                 if e.code == NOT_FOUND:
                     return
-
-            except Exception as e:
+            # May be server load that needs more time to compute the request
+            except TimeoutError as e:
                 logging.error(
-                    f"Error on urlopen_with_retry. URL: '{url}', error: '{e}' "
+                    f"Time out error on urlopen_with_retry. URL: '{url}', error: '{e}'"
+                )
+                timeout = timeout * 4
+            except Exception as e:
+                print(type(e))
+                logging.error(
+                    f"Error on urlopen_with_retry. URL: '{url}', error: '{e}'"
                 )
 
     def _remove_incomplete_file(self, filename):
