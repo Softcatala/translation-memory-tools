@@ -30,7 +30,7 @@ class DownloadFile(object):
         TIMEOUT = 15
 
         timeout = TIMEOUT
-        for _ in range(NTRIES):
+        for ntry in range(NTRIES):
             try:
                 req = Request(
                     url,
@@ -47,9 +47,10 @@ class DownloadFile(object):
                     return
             # May be server load that needs more time to compute the request
             except TimeoutError as e:
-                logging.error(
-                    f"Time out error on urlopen_with_retry. URL: '{url}', error: '{e}'"
-                )
+                if ntry + 1 == NTRIES:
+                    logging.error(
+                        f"Time out error on urlopen_with_retry. URL: '{url}', error: '{e}'"
+                    )
                 timeout = timeout * 4
             except Exception as e:
                 print(type(e))
