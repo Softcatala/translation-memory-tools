@@ -49,7 +49,6 @@ copy_files $ROOT $TARGET_DIR
 INTERMEDIATE_PO=$TARGET_DIR/translation-memories/po
 BACKUP_DIR=$TARGET_DIR/previous
 cd $ROOT/tm-git/src
-#python compare_sets.py -s  $BACKUP_DIR -t $INTERMEDIATE_PO
 ls -h -s -S  $TARGET_DIR/quality/*.html
 cat builder-error.log
 
