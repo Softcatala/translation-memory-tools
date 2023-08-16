@@ -13,6 +13,7 @@ if [[ -e  $PRESERVE_CROSSEXECS/translation-memories/ ]]; then
     cp -r $PRESERVE_CROSSEXECS/translation-memories/* $DIR/translation-memories/
 fi
 
+cd $DIR_TMT_GIT
 if [ ! -f ~/.transifexrc ]; then
     echo "Removing Transifex projects since there is no credentials file."
     grep -l "type.*transifex" cfg/projects/*.json  | xargs rm -f
