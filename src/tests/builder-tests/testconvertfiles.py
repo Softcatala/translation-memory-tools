@@ -165,6 +165,19 @@ class ConvertFilesTest(unittest.TestCase):
         r = convert._add_conversor_setup_to_cmd(cmd=CMD, conversor_id="ts")
         self.assertEquals("prop2po -t template.txt -i in.txt -o out.txt", r)
 
+    def test_convert_strings_files_to_po(self):
+        strings_dir = path.dirname(path.realpath(__file__))
+        strings_dir += "/data/conversions/strings/"
+        convert = ConvertFiles(strings_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(strings_dir)
+        self._clean_pos(strings_dir)
+
+        self.assertEquals(entries, 6)
+        self.assertEquals("Failed to verify the signature.", po_file[0].msgid)
+        self.assertEquals("No s'ha pogut verificar la signatura.", po_file[0].msgstr)
+
 
 if __name__ == "__main__":
     unittest.main()
