@@ -7,7 +7,7 @@
             "url": "https://app.transifex.com/otf/torproject",
             "type": "transifex",
             "conversor_setup": {
-                "type"       : "string",
+                "type"       : "properties",
                 "verb"       : "add",
                 "command"    : " --encoding=utf-8"
             }

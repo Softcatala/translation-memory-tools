@@ -24,6 +24,18 @@ import shutil
 from .converttmx import ConvertTmx
 from .findfiles import FindFiles
 from .convertini import ConvertIni
+from enum import Enum
+
+
+class ConversorID(str, Enum):
+    Ts = "ts"
+    Strings = "strings"
+    Php = "php"
+    Android = "android"
+    Properties = "properties"
+    Json = "json"
+    Csv = "cvs"
+    Apple = "apple"
 
 
 class ConvertFiles:
@@ -37,7 +49,7 @@ class ConvertFiles:
         self._uncompress_files()
         self._convert_tmx_files_to_po()
         self._convert_ts_files_to_po()
-        self._convert_string_files_to_po()
+        self._convert_strings_files_to_po()
         self._convert_ini_files_to_po()
         self._convert_php_resources_files_to_po()
         self._convert_android_resources_files_to_po()
@@ -48,13 +60,33 @@ class ConvertFiles:
         self._convert_csv_files_to_po()
         self._convert_xliff_file_to_po()
 
+    def _add_conversor_setup_to_cmd(self, cmd, conversor_id=None):
+        if (
+            self.conversor_setup
+            and conversor_id
+            and conversor_id.lower() == self.conversor_setup.type
+        ):
+            if (
+                self.conversor_setup.type == conversor_id
+                and self.conversor_setup.verb == "add"
+            ):
+                cmd += self.conversor_setup.command
+                logging.info(
+                    f"Adding to conversor '{conversor_id}' parameter '{self.conversor_setup.command}'"
+                )
+
+        return cmd
+
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find_recursive(self.convert_dir, "*.ts"):
             fileName, fileExtension = os.path.splitext(tsfile)
             logging.info("convert ts file: {0}".format(tsfile))
-            os.system("ts2po {0} -o {1}.po".format(tsfile, fileName))
+            cmd = self._add_conversor_setup_to_cmd(
+                "ts2po {0} -o {1}.po".format(tsfile, fileName), ConversorID.Ts
+            )
+            os.system(cmd)
 
-    def _convert_string_files_to_po(self):
+    def _convert_strings_files_to_po(self):
         for tsfile in self.findFiles.find_recursive(self.convert_dir, "ca.strings"):
             dirName = os.path.dirname(tsfile)
             logging.info("convert strings file: {0}".format(dirName))
@@ -64,7 +96,10 @@ class ConvertFiles:
                 "prop2po -t {0}/en.strings {0}/ca.strings "
                 "--personality strings --duplicates merge -o {1}"
             )
-            os.system(cmd.format(dirName, filename))
+            cmd = self._add_conversor_setup_to_cmd(
+                cmd.format(dirName, filename), ConversorID.Strings
+            )
+            os.system(cmd)
 
     def _uncompress_files(self):
         for zipfile in self.findFiles.find_recursive(self.convert_dir, "*.zip"):
@@ -85,6 +120,7 @@ class ConvertFiles:
             dirName = os.path.dirname(csvfile)
             pofile = dirName + "/ca.po"
             cmd = "csv2po -i {0} -o {1}".format(csvfile, pofile)
+            cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Csv)
             os.system(cmd)
             logging.info("convert csv file: {0}".format(csvfile))
 
@@ -112,18 +148,7 @@ class ConvertFiles:
                 f"--personality java --duplicates merge -o {po_filename}"
             )
 
-            if (
-                self.conversor_setup is not None
-                and self.conversor_setup.type == "string"
-                and self.conversor_setup.verb == "add"
-            ):
-                cmd += self.conversor_setup.command
-                logging.info(
-                    "Adding parameter to conversor: {0}".format(
-                        self.conversor_setup.command
-                    )
-                )
-
+            cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Properties)
             os.system(cmd)
 
     def _convert_ini_files_to_po(self):
@@ -162,11 +187,13 @@ class ConvertFiles:
         cmd = "cd {0} && php2po -t en -i ca " "-o {1}".format(
             self.convert_dir, OUT_DIRNAME
         )
+        cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Php)
         os.system(cmd)
 
     def _convert_android_file(self, src_file, tgt_file, id):
         output_file = os.path.join(self.convert_dir, f"ca-{id}.po")
         cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
+        cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Android)
         os.system(cmd)
 
     # Some times Android resources are found in values/ and values-ca/ subdirectories
@@ -223,6 +250,7 @@ class ConvertFiles:
         cmd = "json2po -t {0}/{2} -i {0}/{3} " "-o {1}".format(
             dirName, filename, source, target
         )
+        cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Json)
         os.system(cmd)
 
     def _convert_json_files_to_po(self):
@@ -265,6 +293,7 @@ class ConvertFiles:
             cmd = "i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en".format(
                 dirName
             )
+            cmd = self._add_conversor_setup_to_cmd(cmd)
             os.system(cmd)
 
     def _convert_xliff_file_to_po(self):
@@ -272,11 +301,16 @@ class ConvertFiles:
             fileName, fileExtension = os.path.splitext(xlfile)
             pofile = xlfile.replace(".xliff", ".po")
             cmd = f'xliff2po -i "{xlfile}" -o "{pofile}" --duplicates=merge'
+            cmd = self._add_conversor_setup_to_cmd(cmd)
             os.system(cmd)
 
     def _convert_apple_file(self, src_file, tgt_file, id):
         output_file = os.path.join(self.convert_dir, f"ca-apple-{id}.po")
-        cmd = f"prop2po -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge --encoding utf-8"
+        cmd = f"prop2po -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge"
+        cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Apple)
+        if "--encoding" not in cmd:
+            cmd += " --encoding utf-8"
+
         os.system(cmd)
 
     def _convert_apple_resources_files_to_po(self):

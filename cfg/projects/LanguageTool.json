@@ -9,7 +9,7 @@
             "type": "transifex",
             "po_preprocessing" : "remove_untranslated",
             "conversor_setup": {
-                "type"       : "string",
+                "type"       : "properties",
                 "verb"       : "add",
                 "command"    : " --encoding=utf-8"
             }

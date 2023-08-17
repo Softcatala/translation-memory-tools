@@ -7,7 +7,7 @@
             "url": "https://github.com/mucommander/mucommander",
             "type": "git",
             "conversor_setup": {
-                "type"       : "string",
+                "type"       : "properties",
                 "verb"       : "add",
                 "command"    : " --encoding=utf-8"
             }

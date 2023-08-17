@@ -22,6 +22,7 @@ import unittest
 from os import path
 import re
 from builder.licenses import Licenses
+from builder.convertfiles import ConversorID
 
 
 class TestCfgValidation(unittest.TestCase):
@@ -78,6 +79,22 @@ class TestCfgValidation(unittest.TestCase):
                     self.fail(
                         f"incorrect retrieval_pattern regular expression in project '{project_dto.name}'"
                     )
+
+    def test_check_conversor_setup(self):
+        json = self.get_projects_cfg()
+        valid_conversors = [e.value for e in ConversorID]
+        projects = Projects()
+        for project_dto in json.projects:
+            for fileset in project_dto.filesets:
+                conversor = fileset.conversor_setup
+                if not conversor:
+                    continue
+
+                self.assertIn(
+                    conversor.type.lower(),
+                    valid_conversors,
+                    f"project '{project_dto.name}'",
+                )
 
 
 if __name__ == "__main__":

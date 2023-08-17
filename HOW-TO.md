@@ -73,6 +73,24 @@ The system works internally using PO files, then all the files that downloads it
 
 Before starting building the translation memory for a project (e.g. gnome-tm.po) the system tries to convert all the files that it found suitable for translation. At [src/builder/convertfiles.py](src/builder/convertfiles.py) you can see all the files and formats that are converted and which tools are used.
 
+Some time some conversors need specific parameters for specific cases. For example, you may need to specify specific charset encoding for a file type. You can do so by adding a _conversor_setup_:
+
+```
+"fileset": {
+    "LanguageTool": {
+        "url": "https://app.transifex.com/dnaber/languagetool/",
+        "type": "transifex",
+        "po_preprocessing" : "remove_untranslated",
+        "conversor_setup": {
+            "type"       : "properties",
+            "verb"       : "add",
+            "command"    : " --encoding=utf-8"
+        }
+    }
+```
+
+The type parameter indicates to which conversor you want to add the additional parameters and command which parameters you want to add.
+
 # Adding a new project to the system
 
 The easiest approach to add a new project to the system is look for a similar one and use that configuration file as starting point.

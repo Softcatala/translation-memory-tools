@@ -18,8 +18,8 @@
 
 from builder.findfiles import FindFiles
 from builder.convertfiles import ConvertFiles
+from builder.jsonbackend import ConversorSetupDTO
 from polib import pofile
-
 import unittest
 from os import path, remove
 
@@ -136,6 +136,34 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals(entries, 3)
         self.assertEquals("%1$@|New message", po_file[1].msgid)
         self.assertEquals("%1$@|Missatge nou", po_file[1].msgstr)
+
+    def test_add_conversor_setup_to_cmd(self):
+        CMD = "prop2po -t template.txt -i in.txt -o out.txt"
+        COMMAND = " --encoding utf-16"
+
+        conversor_setup = ConversorSetupDTO()
+        conversor_setup.type = "properties"
+        conversor_setup.verb = "add"
+        conversor_setup.command = COMMAND
+
+        convert = ConvertFiles(None, conversor_setup)
+        r = convert._add_conversor_setup_to_cmd(cmd=CMD, conversor_id="properties")
+        self.assertEquals(
+            "prop2po -t template.txt -i in.txt -o out.txt --encoding utf-16", r
+        )
+
+    def test_add_conversor_setup_to_cmd_negative(self):
+        CMD = "prop2po -t template.txt -i in.txt -o out.txt"
+        COMMAND = " --encoding utf-16"
+
+        conversor_setup = ConversorSetupDTO()
+        conversor_setup.type = "properties"
+        conversor_setup.verb = "add"
+        conversor_setup.command = COMMAND
+
+        convert = ConvertFiles(None, conversor_setup)
+        r = convert._add_conversor_setup_to_cmd(cmd=CMD, conversor_id="ts")
+        self.assertEquals("prop2po -t template.txt -i in.txt -o out.txt", r)
 
 
 if __name__ == "__main__":

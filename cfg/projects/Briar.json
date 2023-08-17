@@ -7,7 +7,12 @@
         "briar": {
             "url": "https://app.transifex.com/otf/briar/",
             "type": "transifex",
-            "po_preprocessing" : "remove_untranslated"
+            "po_preprocessing" : "remove_untranslated",
+            "conversor_setup": {
+                "type"       : "properties",
+                "verb"       : "add",
+                "command"    : " --encoding=utf-8"
+            }
         }
     }
 }
