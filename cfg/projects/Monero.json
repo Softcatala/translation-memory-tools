@@ -4,14 +4,9 @@
     "projectweb": "https://translate.getmonero.org/projects/monero/", 
     "fileset": {
         "monero-gui": {
-            "url": "https://translate.getmonero.org/download/monero/gui-wallet/ca/?format=po", 
-            "type": "file", 
-            "target": "monero-gui-ca.po"
-        },
-        "monero-cli": {
-            "url": "https://translate.getmonero.org/download/monero/cli-wallet/ca/?format=po", 
-            "type": "file", 
-            "target": "monero-cli-ca.po"
+            "url": "https://raw.githubusercontent.com/monero-project/monero-gui/master/translations/monero-core_cat.ts",
+            "type": "file",
+            "target": "monero-gui-ca.ts"
         }
     }
 }
