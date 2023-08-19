@@ -1,0 +1,13 @@
+{
+    "project": "PrestaShop",
+    "license" : "OSL-3.0",
+    "projectweb": "https://crowdin.com/project/prestashop-official",
+    "fileset": {
+        "PrestaShop": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates" : "msgctxt",
+            "pattern": ".*?/prestashop/.*?"
+        }
+    }
+}
