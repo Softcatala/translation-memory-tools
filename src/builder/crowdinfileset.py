@@ -29,7 +29,7 @@ from .fileset import FileSet
 
 
 class CrowdinFileSet(FileSet):
-    TIMEOUT = 15
+    TIMEOUT = 60 # The export time in the server may take some time
     token = None
     requests = 0
 
