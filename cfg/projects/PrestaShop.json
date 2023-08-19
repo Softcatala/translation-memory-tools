@@ -1,0 +1,11 @@
+{
+    "project": "PrestaShop",
+    "license" : "OSL-3.0",
+    "projectweb": "https://crowdin.com/project/prestashop-official",
+    "fileset": {
+        "PrestaShop": {
+            "url": "https://api.crowdin.com/api/v2/projects/30744",
+            "type": "crowdin"
+        }
+    }
+}
