@@ -158,8 +158,7 @@ class Projects(object):
 
             total_words += words
             included_prjs += 1
-            project_catalog = POCatalog(project.get_filename_fullpath())
-            projects_catalog.add_pofile(project_catalog.filename)
+            projects_catalog.add_pofile(project.get_filename_fullpath())
 
         projects_catalog.cleanup()
         logging.info(
