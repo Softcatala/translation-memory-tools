@@ -171,7 +171,7 @@ def build_combined_memory(
     date = get_file_date(filename, po_directory)
 
     translation_memory = TranslationMemory(
-        words=locale.format("%d", words, grouping=True),
+        words=locale.format_string("%d", words, grouping=True),
         name=name,
         project_id=project_id,
         last_fetch=date,
@@ -212,7 +212,7 @@ def build_invidual_projects_memory(
         last_fetch, last_translation_update = get_project_dates(name)
 
         translation_memory = TranslationMemory(
-            words=locale.format("%d", words, grouping=True),
+            words=locale.format_string("%d", words, grouping=True),
             name=name,
             last_fetch=last_fetch,
             last_translation_update=last_translation_update,
