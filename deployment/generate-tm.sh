@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ROOT="$1"
 PUBLIC="$2"
 PROGRAMS=$ROOT/tm-git/src
@@ -31,6 +30,7 @@ copy_successfully_downloaded_files() {
     done
 }
 
+echo Generate memories
 if [ "$#" -ne 2 ] ; then
     echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION PUBLIC_DATA"
     echo "Invalid number of parameters"

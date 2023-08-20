@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo Generate terminology
 if [ "$#" -ne 1 ] ; then
     echo "Usage: generate-terminology.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
     echo "Invalid number of parameters"
@@ -13,19 +13,13 @@ cd $ROOT/tm-git/src/
 # Get files
 rm -r -f sc-tm
 mkdir sc-tm
-cd sc-tm
-cp $ROOT/tm-git/src/memories/softcatala-tm.po.zip .
-unzip softcatala-tm.po.zip
-rm -f softcatala-tm.po
-cd ..
+unzip $ROOT/tm-git/src/memories/softcatala-tm.po.zip -d sc-tm/
+rm -f sc-tm/softcatala-tm.po
 
 rm -r -f tots-tm
 mkdir tots-tm
-cd tots-tm
-cp $ROOT/tm-git/src/memories/tots-tm.po.zip .
-unzip tots-tm.po.zip
-rm -f tots-tm.po
-cd ..
+unzip $ROOT/tm-git/src/memories/tots-tm.po.zip -d tots-tm/
+rm -f tots-tm/tots-tm.po
 
 # Build
 python term_extract.py -s sc-tm -t sc-glossary -c "Glossari generat a partir de les memòries de traducció dels projectes traduïts per Softcatalà" 

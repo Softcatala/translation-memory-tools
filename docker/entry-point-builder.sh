@@ -50,12 +50,9 @@ fi
 
 # Build
 cd $DIR_TMT_GIT/deployment 
-echo Generate memories
-/bin/bash generate-tm.sh $DIR $DIR 2> $DIR_TMT_GIT/generate-errors.log
-echo Generate terminology
-/bin/bash generate-terminology.sh $DIR 2> $DIR_TMT_GIT/terminology-errors.log
-echo Generate Quality
-/bin/bash generate-quality.sh $DIR 2> $DIR_TMT_GIT/quality-errors.log
+/bin/bash generate-tm.sh $DIR $DIR
+/bin/bash generate-terminology.sh $DIR
+/bin/bash generate-quality.sh $DIR
 /bin/bash deploy.sh $DIR $PUBLISH_WEBDOCKER
 
 # Copy cross execs
