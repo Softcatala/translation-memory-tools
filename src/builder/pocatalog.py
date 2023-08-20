@@ -20,6 +20,7 @@
 import os
 import shutil
 import tempfile
+import logging
 
 
 class POCatalog(object):
@@ -33,12 +34,22 @@ class POCatalog(object):
     def filename(self):
         return self._filename
 
+    def _run_command(self, cmd):
+        file_time = os.stat(self.filename).st_mtime
+        # msgcat and msgattrib do not return a specific error code when they are unable
+        # to run. If they run successfully the date of the output file is always updated
+        os.system(cmd)
+        return file_time == os.stat(self.filename).st_mtime
+
     def add_pofile(self, pofile):
         if os.path.isfile(self.filename):
             backup = next(tempfile._get_candidate_names())
             shutil.copy(self.filename, backup)
             cmd = f"msgcat -tutf-8 --use-first -o {self.filename} {backup} '{pofile}' 2> /dev/null"
-            os.system(cmd)
+            if self._run_command(cmd):
+                logging.debug(
+                    f"POCatalog.add_pofile. Unable to add file '{pofile}' with msgcat"
+                )
             os.remove(backup)
         else:
             if os.path.isfile(pofile):
@@ -51,5 +62,8 @@ class POCatalog(object):
         backup = next(tempfile._get_candidate_names())
         shutil.copy(self.filename, backup)
         cmd = f"msgattrib {backup} --no-fuzzy --no-obsolete --translated > {self.filename} 2> /dev/null"
-        os.system(cmd)
+        if self._run_command(cmd):
+            logging.debug(
+                f"POCatalog.cleanup. Unable to processs file '{self.filename}' with msgattrib"
+            )
         os.remove(backup)
