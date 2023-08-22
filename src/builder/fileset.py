@@ -45,9 +45,11 @@ class FileSet:
         self.words = -1
         self.duplicates = ""
         self.set_out_directory("")
-        self.temp_dir = tempfile.TemporaryDirectory().name
         self.retrieval_pattern = ""
         self.pattern = ""
+
+        prefix = project_name[0 : min(6, len(project_name))]
+        self.temp_dir = tempfile.TemporaryDirectory(prefix=f"{prefix}_").name
 
         if parent_fileset:
             self.conversor_setup = parent_fileset.conversor_setup
@@ -122,10 +124,6 @@ class FileSet:
     def clean_up_after_convert(self):
         self._remove_non_translation_files()
 
-    def _delete_tm_fileset(self, fileset_tm):
-        if os.path.isfile(fileset_tm):
-            os.remove(fileset_tm)
-
     def _build_tm_for_fileset(self, fileset_tm, files):
         for filename in files:
             pofile = POFile(filename)
@@ -166,12 +164,13 @@ class FileSet:
             logging.info("No files to add in fileset: {0}".format(self.name))
             return
 
-        fileset_tm = next(tempfile._get_candidate_names())
-        self.po_catalog = POCatalog(fileset_tm)
-        self._build_tm_for_fileset(fileset_tm, files)
-        self._add_tm_for_fileset_to_project_tm(fileset_tm)
-        self._delete_tm_fileset(fileset_tm)
-        self._copy_to_output()
+        prefix = self.name[0 : min(6, len(self.name))]
+        with tempfile.NamedTemporaryFile(prefix=f"{prefix}_") as tmp:
+            fileset_tm = tmp.name
+            self.po_catalog = POCatalog(fileset_tm)
+            self._build_tm_for_fileset(fileset_tm, files)
+            self._add_tm_for_fileset_to_project_tm(fileset_tm)
+            self._copy_to_output()
 
     def _copy_to_output(self):
         if not os.path.exists(self.invidual_pos_dir):

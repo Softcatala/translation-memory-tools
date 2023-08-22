@@ -43,14 +43,14 @@ class POCatalog(object):
 
     def add_pofile(self, pofile):
         if os.path.isfile(self.filename):
-            backup = next(tempfile._get_candidate_names())
-            shutil.copy(self.filename, backup)
-            cmd = f"msgcat -tutf-8 --use-first -o {self.filename} {backup} '{pofile}' 2> /dev/null"
-            if self._run_command(cmd):
-                logging.debug(
-                    f"POCatalog.add_pofile. Unable to add file '{pofile}' with msgcat"
-                )
-            os.remove(backup)
+            with tempfile.NamedTemporaryFile() as tmp:
+                backup = tmp.name
+                shutil.copy(self.filename, backup)
+                cmd = f"msgcat -tutf-8 --use-first -o {self.filename} {backup} '{pofile}' 2> /dev/null"
+                if self._run_command(cmd):
+                    logging.debug(
+                        f"POCatalog.add_pofile. Unable to add file '{pofile}' with msgcat"
+                    )
         else:
             if os.path.isfile(pofile):
                 shutil.copy(pofile, self.filename)
@@ -59,11 +59,11 @@ class POCatalog(object):
         if os.path.isfile(self.filename) is False:
             return
 
-        backup = next(tempfile._get_candidate_names())
-        shutil.copy(self.filename, backup)
-        cmd = f"msgattrib {backup} --no-fuzzy --no-obsolete --translated > {self.filename} 2> /dev/null"
-        if self._run_command(cmd):
-            logging.debug(
-                f"POCatalog.cleanup. Unable to processs file '{self.filename}' with msgattrib"
-            )
-        os.remove(backup)
+        with tempfile.NamedTemporaryFile() as tmp:
+            backup = tmp.name
+            shutil.copy(self.filename, backup)
+            cmd = f"msgattrib {backup} --no-fuzzy --no-obsolete --translated > {self.filename} 2> /dev/null"
+            if self._run_command(cmd):
+                logging.debug(
+                    f"POCatalog.cleanup. Unable to processs file '{self.filename}' with msgattrib"
+                )
