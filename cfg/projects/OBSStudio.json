@@ -1,0 +1,11 @@
+{
+    "project": "OBSStudio",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://crowdin.com/project/obs-studio",
+    "fileset": {
+        "OBSStudio": {
+            "url": "https://github.com/obsproject/obs-studio.git",
+            "type": "git"
+        }
+    }
+}
