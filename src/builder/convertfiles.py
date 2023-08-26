@@ -157,14 +157,14 @@ class ConvertFiles:
             filename = os.path.basename(inifile)
 
             trg = None
-            for filename in ["ca.ini", "CA.ini", "ca_ES.ini"]:
+            for filename in ["ca.ini", "CA.ini", "ca_ES.ini", "ca-ES.ini"]:
                 fullName = "{0}/{1}".format(dirName, filename)
                 if filename in inifile:
                     trg = fullName
                     break
 
             src = None
-            for filename in ["en.ini", "EN.ini", "en_GB.ini"]:
+            for filename in ["en.ini", "EN.ini", "en_GB.ini", "en-US.ini"]:
                 fullName = "{0}/{1}".format(dirName, filename)
                 if os.path.isfile(fullName):
                     src = fullName
