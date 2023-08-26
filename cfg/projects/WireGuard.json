@@ -1,0 +1,15 @@
+{
+    "project": "WireGuard",
+    "license" : "MIT",
+    "projectweb": "https://crowdin.com/project/wireguard",
+    "fileset": {
+        "WireGuard-android": {
+            "url": "https://github.com/WireGuard/wireguard-android.git",
+            "type": "git"
+        },
+        "WireGuard-apple": {
+            "url": "https://github.com/WireGuard/wireguard-apple.git",
+            "type": "git"
+        }
+    }
+}

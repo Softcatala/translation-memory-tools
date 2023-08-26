@@ -342,5 +342,11 @@ class ConvertFiles:
                 if os.path.exists(src) and os.path.exists(tgt):
                     self._convert_apple_file(src, tgt, id)
                     id += 1
+                else:
+                    src = os.path.join(dir, "Base.lproj/Localizable.strings")
+                    tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
+                    if os.path.exists(src) and os.path.exists(tgt):
+                        self._convert_apple_file(src, tgt, id)
+                        id += 1
 
         logging.info("convert Apple directory: {0}".format(self.convert_dir))
