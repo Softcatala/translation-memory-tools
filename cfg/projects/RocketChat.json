@@ -1,0 +1,11 @@
+{
+    "project": "RocketChat",
+    "license" : "MIT",
+    "projectweb": "https://developer.rocket.chat/contribute-to-rocket.chat/modes-of-contribution/translating",
+    "fileset": {
+        "RocketChat": {
+            "url": "https://github.com/RocketChat/Rocket.Chat.git",
+            "type": "git"
+        }
+    }
+}
