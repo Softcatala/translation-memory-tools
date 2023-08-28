@@ -80,9 +80,9 @@ class CrowdinFileSet(FileSet):
             msg = "Download file {0}".format(filename)
             logging.info(msg)
 
-            with urllib.request.urlopen(req, timeout=self.TIMEOUT) as infile, \
-                 open(filename, "wb") as output:
-
+            with urllib.request.urlopen(req, timeout=self.TIMEOUT) as infile, open(
+                filename, "wb"
+            ) as output:
                 output.write(infile.read())
                 output.close()
                 return True
