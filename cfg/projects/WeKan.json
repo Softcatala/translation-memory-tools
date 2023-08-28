@@ -1,0 +1,11 @@
+{
+    "project": "WeKan",
+    "license" : "MIT",
+    "projectweb": "https://github.com/wekan/wekan/wiki/Translations",
+    "fileset": {
+        "WeKan": {
+            "url": "https://github.com/wekan/wekan.git",
+            "type": "git"
+        }
+    }
+}
