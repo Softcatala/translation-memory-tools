@@ -1,0 +1,11 @@
+{
+    "project": "BigBlueButton",
+    "license" : "LGPL-3.0-or-later",
+    "projectweb": "https://docs.bigbluebutton.org/development/localization",
+    "fileset": {
+        "BigBlueButton": {
+            "url": "https://github.com/bigbluebutton/bigbluebutton.git",
+            "type": "git"
+        }
+    }
+}
