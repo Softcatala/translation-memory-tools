@@ -80,11 +80,12 @@ class CrowdinFileSet(FileSet):
             msg = "Download file {0}".format(filename)
             logging.info(msg)
 
-            infile = urllib.request.urlopen(req, timeout=self.TIMEOUT)
-            output = open(filename, "wb")
-            output.write(infile.read())
-            output.close()
-            return True
+            with urllib.request.urlopen(req, timeout=self.TIMEOUT) as infile, \
+                 open(filename, "wb") as output:
+
+                output.write(infile.read())
+                output.close()
+                return True
 
         except HTTPError as detail:
             if detail.code == 404:
