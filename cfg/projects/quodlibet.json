@@ -1,0 +1,12 @@
+{
+    "project": "Quod Libet",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://quodlibet.readthedocs.io",
+    "fileset": {
+        "quodlibet": {
+            "url": "https://raw.githubusercontent.com/quodlibet/quodlibet/main/po/ca.po",
+            "type": "file",
+            "target": "quodlibet-ca.po"
+        }
+    }
+}
