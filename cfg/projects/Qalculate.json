@@ -1,0 +1,17 @@
+{
+    "project": "Qalculate",
+    "license" : "GPL-2.0-or-later",
+    "projectweb": "https://qalculate.github.io/",
+    "fileset": {
+        "libqalculate": {
+            "url": "https://raw.githubusercontent.com/Qalculate/libqalculate/master/po/ca.po",
+            "type": "file",
+            "target": "libqalculate-ca.po"
+        },
+        "qalculate-gtk": {
+            "url": "https://raw.githubusercontent.com/Qalculate/qalculate-gtk/master/po/ca.po",
+            "type": "file",
+            "target": "qalculate-gtk-ca.po"
+        }
+    }
+}
