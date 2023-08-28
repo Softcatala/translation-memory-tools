@@ -1,0 +1,44 @@
+#
+# Conjunt de regles que aprofita els comentaris i etiquetes del sistema de documentació del GNOME
+# per detectar sistemàticament l'ús incorrecte de formes verbals.
+#
+# License: GPLv3
+#
+# Author: Jordi Mas <jmas@softcatala.org>, 2019
+#
+
+
+{^Select <}i
+id="gnome-select"
+valid msgstr="^Seleccioneu|^Trieu"
+hint="Sembla referir-se a una acció que ha de fer l'usuari, llavors cal usar l'imperatiu en segona persona del plural («Seleccioneu» o «Trieu»)."
+
+{^Press <}i
+id="gnome-press"
+valid msgstr="Premeu"
+hint="Sembla referir-se a una acció que ha de fer l'usuari, llavors cal usar l'imperatiu en segona persona del plural («Premeu»)."
+
+{.*}i
+id="gnome-page-title-imperative"
+valid !comment="(page/title|section/title)"
+valid !msgstr="^(\w*eu|\w*iu|^Edita|^Canvia|^Envia|^Tanca|^Navega|^Visualitza|^Desactiva|^Previsualitza)\b"
+valid msgstr="^Correu\b"
+hint="En títols de pàgines de documentació cal utilitzar preferentment construccions nominals o, si això no és possible, infinitius però no l'imperatiu."
+
+{.*}i
+id="gnome-page-title-gerund"
+valid !comment="(page/title|section/title)"
+valid !msgstr="^(\w*nt)\b|^(S'està\b)|^(S'estan\b)"
+valid msgstr="^Quant|^Diferent|^Esborrament|^Enregistrament|^Comportament|^Desplaçament|^Lliurament|^Enviament|^Reenviament|^Realçament|^Funcionament"
+hint="En títols de pàgines de documentació cal utilitzar preferentment construccions nominals o, si això no és possible, infinitius però no el gerundi."
+
+{<gui.*>.*</gui.*>}i
+id="gnome-infinitive-ar"
+valid !msgstr="<gui.*>(\w*ar)\b.*</gui.*>"
+valid msgstr="<gui.*>(Llindar|Calendar)\b.*</gui.*>"
+hint="En elements d'interfície d'usuari habitualment cal usar l'imperatiu (p. ex. «Desa») en comptes de l'infinitiu (p. ex. «Desar»). Reviseu que la traducció dels noms dels elements d'interfície."
+
+{<gui.*>.*</gui.*>}i
+id="gnome-infinitive-ir"
+valid !msgstr="<gui.*>(\w*ir)\b.*</gui.*>"
+hint="En elements d'interfície d'usuari habitualment cal usar l'imperatiu (p. ex. «Afegeix») en comptes de l'infinitiu (p. ex. «Afegir»). Reviseu que la traducció dels noms dels elements d'interfície."

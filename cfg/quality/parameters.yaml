@@ -14,8 +14,8 @@ pology:
         - date-format.rules
         - punctuation.rules
         - terminology-sc.rules
-        - quality/pology/catalan-pology-rules/tags.rules
-        - quality/pology/catalan-pology-rules/gnome-documentation.rules
+        - tags.rules
+        - quality/pology/custom-rules/gnome-documentation.rules
 
 lt:
     # Server is defined in LT_SERVER environment variable
