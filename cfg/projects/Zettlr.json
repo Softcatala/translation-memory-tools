@@ -1,0 +1,12 @@
+{
+    "project": "Zettlr",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://github.com/Zettlr/Zettlr#translating",
+    "fileset": {
+        "Zettlr": {
+            "url": "https://raw.githubusercontent.com/Zettlr/Zettlr/develop/static/lang/ca-CA.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
