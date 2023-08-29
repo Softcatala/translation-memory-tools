@@ -1,0 +1,12 @@
+{
+    "project": "Andors Trail",
+    "license" : "GPL-2.0-only",
+    "projectweb": "https://hosted.weblate.org/projects/andors-trail/-/ca/",
+    "fileset": {
+        "Andors Trail": {
+            "url": "https://hosted.weblate.org/download/andors-trail/-/ca/?format=zip",
+            "type": "compressed",
+            "target": "ca.zip"
+        }
+    }
+}
