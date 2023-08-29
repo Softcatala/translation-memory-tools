@@ -1,18 +1,22 @@
 {
     "project": "FreeCiv",
-    "license" : "GPL-2.0-only",
+    "license" : "GPL-2.0-or-later",
     "projectweb": "https://freeciv.fandom.com/ca/wiki/Freeciv_en_catal%C3%A0",
     "fileset": {
         "core": {
-            "url": "http://svn.gna.org/svn/freeciv/trunk/translations/core/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/freeciv/freeciv/main/translations/core/ca.po",
+            "type": "file",
             "target": "ca.po"
         },
         "nations": {
-            "url": "http://svn.gna.org/svn/freeciv/trunk/translations/nations/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/freeciv/freeciv/main/translations/nations/ca.po",
+            "type": "file",
+            "target": "ca.po"
+        },
+        "ruledit": {
+            "url": "https://raw.githubusercontent.com/freeciv/freeciv/main/translations/ruledit/ca.po",
+            "type": "file",
             "target": "ca.po"
         }
-    },
-    "disabled": true
+    }
 }
