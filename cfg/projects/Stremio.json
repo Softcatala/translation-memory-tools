@@ -1,0 +1,11 @@
+{
+    "project": "Stremio",
+    "license" : "GPL-3.0-only",
+    "projectweb": "https://github.com/Stremio/stremio-translations",
+    "fileset": {
+        "Stremio": {
+            "url": "https://github.com/Stremio/stremio-translations.git",
+            "type": "git"
+        }
+    }
+}
