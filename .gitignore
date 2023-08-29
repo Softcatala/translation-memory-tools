@@ -28,3 +28,7 @@ src/gerrit-projects.json
 src/output/
 src/tmp/
 statistics.db3
+
+# Credentials
+/cfg/credentials/*.yaml
+!/cfg/credentials/*-sample.yaml
