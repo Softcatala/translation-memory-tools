@@ -5,14 +5,18 @@
     "softcatala": true,
     "fileset": {
         "briar": {
-            "url": "https://app.transifex.com/otf/briar/",
-            "type": "transifex",
+            "url": "https://code.briarproject.org/briar/briar",
+            "type": "git",
             "po_preprocessing" : "remove_untranslated",
             "conversor_setup": {
                 "type"       : "properties",
                 "verb"       : "add",
                 "command"    : " --encoding=utf-8"
             }
+        },
+        "briar-gtk": {
+            "url": "https://code.briarproject.org/briar/briar-gtk",
+            "type": "git"
         }
     }
 }
