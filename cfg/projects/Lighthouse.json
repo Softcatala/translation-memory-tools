@@ -1,0 +1,11 @@
+{
+    "project": "Lighthouse",
+    "license" : "Apache-2.0",
+    "projectweb": "https://github.com/GoogleChrome/lighthouse",
+    "fileset": {
+        "Lighthouse": {
+            "url": "https://github.com/GoogleChrome/lighthouse",
+            "type": "git"
+        }
+    }
+}
