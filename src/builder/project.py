@@ -39,7 +39,6 @@ from .pontoonfileset import PontoonFileSet
 from .mercurialfileset import MercurialFileSet
 from .weblatefileset import WeblateFileSet
 from .crowdinfileset import CrowdinFileSet
-import re
 
 
 class Project(object):
