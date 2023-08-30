@@ -4,9 +4,9 @@
     "projectweb": "https://hosted.weblate.org/projects/andors-trail/-/ca/",
     "fileset": {
         "Andors Trail": {
-            "url": "https://hosted.weblate.org/download/andors-trail/-/ca/?format=zip",
-            "type": "compressed",
-            "target": "ca.zip"
+            "url": "https://raw.githubusercontent.com/AbiWord/abiword/master/po/ca-ES.po",
+            "type": "file", 
+            "target": "abiword-ca.po"
         }
     }
 }
