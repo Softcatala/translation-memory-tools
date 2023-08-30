@@ -88,6 +88,22 @@ class TestProjectMetaDataDao(unittest.TestCase):
         project_dao.close()
         self.assertEquals(2, len(project_dtos))
 
+    def test_get_all_special_charts(self):
+        PROJECT_NAME = "test project's get_all"
+
+        project_dto = ProjectMetaDataDto(PROJECT_NAME)
+        project_dto.last_fetch = datetime.datetime.now()
+        project_dto.last_translation_update = datetime.datetime.now()
+
+        project_dao = ProjectMetaDataDao()
+        project_dao.open(":memory:")
+        project_dao.put(project_dto)
+
+        project_dtos = project_dao.get_all()
+        project_dao.close()
+        self.assertEquals(1, len(project_dtos))
+        self.assertEquals(PROJECT_NAME, project_dtos[0].name)
+
     def test_delete_last_fetch(self):
         PROJECT_NAME = "test project delete"
         DAYS = 90
