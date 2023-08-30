@@ -27,7 +27,6 @@ from .findfiles import FindFiles
 from .pocatalog import POCatalog
 from .pofile import POFile
 import tempfile
-import re
 
 
 class FileSet:
