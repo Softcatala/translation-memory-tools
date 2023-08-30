@@ -58,9 +58,6 @@ class TransifexFileSet(FileSet):
         # etc) we pull the English files too and then we delete the ones that
         # include source and target
         cmd = "tx pull -f -s -t -l ca,ca_ES,en,en_GB"
-        if self.project_name.lower() == "blender":
-            cmd += " --mode onlyreviewed"
-
         os.system(cmd)
         os.chdir(prevdir)
         self.build()
