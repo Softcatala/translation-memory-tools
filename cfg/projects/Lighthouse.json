@@ -5,7 +5,9 @@
     "fileset": {
         "Lighthouse": {
             "url": "https://github.com/GoogleChrome/lighthouse",
-            "type": "git"
+            "type": "git",
+            "duplicates" : "msgctxt",
+            "pattern": ".*?/shared/localization/locales/.*?"
         }
     }
 }
