@@ -28,7 +28,7 @@ class ProjectDTO(object):
     def __init__(self, name):
         self.name = name
         self.project_id = self._from_name_to_project_id(name)
-        self.filename = self._sanatize_filename("project.project_id-tm.po")
+        self.filename = self._sanatize_filename(f"{self.project_id}-tm.po")
         self.projectweb = ""
         self.softcatala = False
         self.disabled = False
