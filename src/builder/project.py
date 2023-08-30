@@ -54,10 +54,6 @@ class Project(object):
         self.out_directory = ""
         self.license = ""
 
-        satanized = re.sub(r"[^\.a-zA-Z0-9_-]+", "", self.filename)
-        # print(f"*********** PROJECT org: {self.filename}, satanized: {satanized}")
-        self.filename = satanized
-
     def get_filename(self):
         return self.filename
 

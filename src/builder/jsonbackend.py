@@ -19,7 +19,7 @@
 
 import json
 import logging
-
+import re
 from collections import OrderedDict
 from .findfiles import FindFiles
 
@@ -181,7 +181,8 @@ class JsonBackend(object):
                         self._process_fileset(project, data["fileset"])
 
                 if project.disabled is False:
-                    project.filename = "{0}-tm.po".format(project.project_id)
+                    filename = "{0}-tm.po".format(project.project_id)
+                    project.filename = re.sub(r"[^\.a-zA-Z0-9_-]+", "", filename)
                     self.projects.append(project)
         except Exception as detail:
             msg = "JsonBackend._load_file. Cannot load {0}. Error: {1}".format(
