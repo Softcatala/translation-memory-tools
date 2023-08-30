@@ -1,0 +1,15 @@
+{
+    "project": "PopcornTime",
+    "license" : "GPL-3.0-or-later",
+    "projectweb": "https://github.com/popcorn-official",
+    "fileset": {
+        "popcorn-desktop": {
+            "url": "https://github.com/popcorn-official/popcorn-desktop",
+            "type": "git"
+        },
+        "popcorn-android": {
+            "url": "https://github.com/popcorn-official/popcorn-android",
+            "type": "git"
+        }
+    }
+}

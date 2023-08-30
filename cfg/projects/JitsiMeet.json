@@ -1,18 +1,11 @@
 {
-    "project": "Jitsi Meet",
+    "project": "JitsiMeet",
     "license" : "Apache-2.0",
-    "projectweb": "https://jitsi.org/jitsi-meet/",
+    "projectweb": "https://github.com/jitsi/jitsi-meet",
     "fileset": {
-        "JitsiMeet-languages": {
-            "url": "https://hosted.weblate.org/download/jitsi/languages/ca/?format=po",
-            "type": "file",
-            "target": "jitsimeet-languages-ca.po"
-        },
-        "JitsiMeet-main": {
-            "url": "https://hosted.weblate.org/download/jitsi/main/ca/?format=po",
-            "type": "file",
-            "target": "jitsimeet-main-ca.po"
+        "JitsiMeet": {
+            "url": "https://github.com/jitsi/jitsi-meet.git",
+            "type": "git"
         }
-    },
-    "disabled": true
+    }
 }
