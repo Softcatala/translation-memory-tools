@@ -28,7 +28,7 @@ class ProjectDTO(object):
     def __init__(self, name):
         self.name = name
         self.project_id = self._from_name_to_project_id(name)
-        self.filename = ""
+        self.filename = self._sanatize_filename("project.project_id-tm.po")
         self.projectweb = ""
         self.softcatala = False
         self.disabled = False
@@ -41,6 +41,9 @@ class ProjectDTO(object):
     def _from_name_to_project_id(self, name):
         name = name.replace(" ", "_")
         return name.lower()
+
+    def _sanatize_filename(self, filename):
+        return re.sub(r"[^\.a-zA-Z0-9_-]+", "", filename)
 
     def __str__(self):
         text = (
@@ -181,8 +184,6 @@ class JsonBackend(object):
                         self._process_fileset(project, data["fileset"])
 
                 if project.disabled is False:
-                    filename = "{0}-tm.po".format(project.project_id)
-                    project.filename = re.sub(r"[^\.a-zA-Z0-9_-]+", "", filename)
                     self.projects.append(project)
         except Exception as detail:
             msg = "JsonBackend._load_file. Cannot load {0}. Error: {1}".format(
