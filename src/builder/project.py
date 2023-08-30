@@ -39,6 +39,7 @@ from .pontoonfileset import PontoonFileSet
 from .mercurialfileset import MercurialFileSet
 from .weblatefileset import WeblateFileSet
 from .crowdinfileset import CrowdinFileSet
+import re
 
 
 class Project(object):
@@ -52,6 +53,10 @@ class Project(object):
         self.report_errors = True
         self.out_directory = ""
         self.license = ""
+
+        satanized = re.sub(r"[^\.a-zA-Z0-9_-]+", "", self.filename)
+        # print(f"*********** PROJECT org: {self.filename}, satanized: {satanized}")
+        self.filename = satanized
 
     def get_filename(self):
         return self.filename
