@@ -1,6 +1,6 @@
 {
     "project": "Traccar",
-    "license" : "Apache-2.0",
+    "license": "Apache-2.0",
     "projectweb": "https://explore.transifex.com/traccar/traccar/",
     "fileset": {
         "traccar-web": {
