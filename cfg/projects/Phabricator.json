@@ -1,6 +1,6 @@
 {
     "project": "Phabricator",
-    "license" : "Apache-2.0",
+    "license": "Apache-2.0",
     "projectweb": "https://www.phacility.com/phabricator/",
     "fileset": {
         "phabricator-core": {

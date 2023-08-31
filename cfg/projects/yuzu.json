@@ -1,6 +1,6 @@
 {
     "project": "yuzu",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://yuzu-emu.org/",
     "fileset": {
         "yuzu": {

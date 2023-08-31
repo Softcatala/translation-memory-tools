@@ -1,0 +1,16 @@
+{
+    "project": "OnlyOffice",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://helpcenter.onlyoffice.com/guides/become-translator.aspx",
+    "fileset": {
+        "oo-web-apps": {
+            "url": "git@github.com:ONLYOFFICE/web-apps.git",
+            "type": "git"
+        },
+        "oo-winlinux": {
+            "url": "https://raw.githubusercontent.com/ONLYOFFICE/desktop-apps/master/win-linux/langs/ca.ts",
+            "type": "file",
+            "target": "ca.ts"
+        }
+    }
+}

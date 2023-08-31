@@ -1,7 +1,7 @@
 {
     "project": "GIMP",
-    "license" : "GPL-3.0-only",
-    "projectweb": "https://www.softcatala.org/projectes/gimp/", 
+    "license": "GPL-3.0-only",
+    "projectweb": "https://www.softcatala.org/projectes/gimp/",
     "softcatala": true,
     "fileset": {
         "gimp": {
@@ -9,9 +9,9 @@
             "type": "compressed",
             "pattern": "^(?!.*?2-10).*$",
             "target": "gimp.tar.gz"
-        }, 
+        },
         "gimp-doc": {
-            "url": "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz", 
+            "url": "https://l10n.gnome.org/languages/ca/gnome-gimp/doc.tar.gz",
             "type": "compressed",
             "pattern": "^(?!.*?2-10).*$",
             "target": "gimp-doc.tar.gz"

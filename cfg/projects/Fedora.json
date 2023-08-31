@@ -1,10 +1,10 @@
 {
     "project": "Fedora",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.softcatala.org/projectes/fedora/", 
-    "softcatala": true, 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.softcatala.org/projectes/fedora/",
+    "softcatala": true,
     "fileset": {
-          "main": {
+        "main": {
             "url": "https://translate.fedoraproject.org",
             "type": "weblate"
         }

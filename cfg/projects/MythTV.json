@@ -1,0 +1,12 @@
+{
+    "project": "MythTV",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.mythtv.org/",
+    "fileset": {
+        "MythTV": {
+            "url": "https://raw.githubusercontent.com/MythTV/mythtv/master/mythtv/i18n/mythfrontend_ca.ts",
+            "type": "file",
+            "target": "mythfrontend_ca.ts"
+        }
+    }
+}

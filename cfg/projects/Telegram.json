@@ -2,12 +2,12 @@
     "project": "Telegram",
     "comment": "The github project is a set of manual scripts that need to be run manually to update the translations from Telegram closed platform.",
     "softcatala": true,
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://telegram.org/",
     "fileset": {
         "telegram": {
             "url": "https://github.com/Ecron/telegram-strings.git",
             "type": "git"
         }
-    } 
+    }
 }

@@ -1,11 +1,11 @@
 {
     "project": "PDFCreator",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://translate.pdfforge.org/",
     "fileset": {
         "messages": {
             "url": "https://raw.githubusercontent.com/pdfforge/PDFCreator/master/Source/Languages/ca/LC_MESSAGES/messages.po",
-            "type": "file", 
+            "type": "file",
             "target": "pdfcreator-messages-ca.po"
         }
     }

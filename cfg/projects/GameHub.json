@@ -1,11 +1,11 @@
 {
     "project": "GameHub",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://tkashkin.tk/projects/gamehub/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://tkashkin.tk/projects/gamehub/",
     "fileset": {
         "GameHub": {
-            "url": "https://raw.githubusercontent.com/tkashkin/GameHub/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/tkashkin/GameHub/master/po/ca.po",
+            "type": "file",
             "target": "gamehub-ca.po"
         }
     }

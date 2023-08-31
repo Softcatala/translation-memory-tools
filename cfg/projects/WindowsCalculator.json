@@ -1,12 +1,12 @@
 {
     "project": "Windows Calculator",
-    "license" : "MIT",
+    "license": "MIT",
     "projectweb": "https://github.com/microsoft/calculator",
     "fileset": {
         "mscalc": {
             "url": "https://github.com/pereorga/software-translations.git",
             "type": "git",
-            "duplicates" : "msgctxt",
+            "duplicates": "msgctxt",
             "pattern": ".*/mscalc/.*\\.po"
         }
     }

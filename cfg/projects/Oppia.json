@@ -1,6 +1,6 @@
 {
     "project": "Oppia",
-    "license" : "Apache-2.0",
+    "license": "Apache-2.0",
     "projectweb": "https://www.oppia.org/",
     "fileset": {
         "oppia": {

@@ -1,11 +1,11 @@
 {
     "project": "Exaile",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.exaile.org/",
     "fileset": {
         "Exaile": {
-            "url": "https://raw.githubusercontent.com/exaile/exaile/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/exaile/exaile/master/po/ca.po",
+            "type": "file",
             "target": "ca-exaile.po"
         }
     }

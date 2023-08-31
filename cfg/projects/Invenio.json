@@ -1,11 +1,11 @@
 {
     "project": "Invenio",
-    "license" : "MIT",
+    "license": "MIT",
     "projectweb": "https://invenio-software.org/",
     "fileset": {
         "invenio": {
-            "url": "https://raw.github.com/jrbl/invenio/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.github.com/jrbl/invenio/master/po/ca.po",
+            "type": "file",
             "target": "invenio-ca.po"
         }
     }

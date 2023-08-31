@@ -1,6 +1,6 @@
 {
     "project": "GitLab",
-    "license" : "MIT",
+    "license": "MIT",
     "projectweb": "https://gitlab.com/",
     "fileset": {
         "GitLab": {

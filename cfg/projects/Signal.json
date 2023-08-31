@@ -1,6 +1,6 @@
 {
     "project": "Signal",
-    "license" : "AGPL-3.0-or-later",
+    "license": "AGPL-3.0-or-later",
     "projectweb": "https://signal.org/",
     "fileset": {
         "iOS": {

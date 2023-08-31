@@ -1,11 +1,11 @@
 {
     "project": "aMule",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://github.com/amule-project/amule",
     "fileset": {
         "aMule": {
-            "url": "http://amule.sourceforge.net/translations/trunk/ca.po", 
-            "type": "file", 
+            "url": "http://amule.sourceforge.net/translations/trunk/ca.po",
+            "type": "file",
             "target": "amule-ca.po"
         }
     }

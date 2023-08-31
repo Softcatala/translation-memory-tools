@@ -1,6 +1,6 @@
 {
     "project": "RunnerUp",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://github.com/jonasoreland/runnerup",
     "fileset": {
         "runnerup": {

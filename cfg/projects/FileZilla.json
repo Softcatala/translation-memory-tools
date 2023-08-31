@@ -1,12 +1,12 @@
 {
     "project": "FileZilla",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://filezilla-project.org/", 
-    "softcatala": true, 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://filezilla-project.org/",
+    "softcatala": true,
     "fileset": {
         "filezilla": {
-            "url": "https://filezilla-project.org/locales/ca.po", 
-            "type": "file", 
+            "url": "https://filezilla-project.org/locales/ca.po",
+            "type": "file",
             "target": "filezilla-ca.po"
         }
     }

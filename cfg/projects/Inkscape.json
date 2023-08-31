@@ -1,14 +1,14 @@
 {
     "project": "Inkscape",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://www.softcatala.org/projectes/inkscape/", 
-    "softcatala": true, 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://www.softcatala.org/projectes/inkscape/",
+    "softcatala": true,
     "fileset": {
         "inkscape": {
             "url": "https://gitlab.com/inkscape/inkscape/raw/master/po/ca.po",
             "type": "file",
             "target": "ca.po"
-        }, 
+        },
         "documentation": {
             "url": "-b 1.0.x https://gitlab.com/inkscape/inkscape-docs/documentation.git",
             "type": "git",

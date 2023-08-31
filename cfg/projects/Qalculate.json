@@ -1,6 +1,6 @@
 {
     "project": "Qalculate",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://qalculate.github.io/",
     "fileset": {
         "libqalculate": {

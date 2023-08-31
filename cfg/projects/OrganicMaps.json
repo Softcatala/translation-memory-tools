@@ -1,7 +1,7 @@
 {
     "project": "Organic Maps",
-    "license" : "Apache-2.0",
-    "projectweb": "https://organicmaps.app/ca/", 
+    "license": "Apache-2.0",
+    "projectweb": "https://organicmaps.app/ca/",
     "fileset": {
         "organicmaps": {
             "url": "https://github.com/organicmaps/organicmaps.git",

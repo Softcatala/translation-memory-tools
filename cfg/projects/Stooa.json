@@ -1,14 +1,13 @@
 {
     "project": "Stooa",
-    "license" : "MPL-2.0",
+    "license": "MPL-2.0",
     "projectweb": "https://hosted.weblate.org/projects/stooa",
     "fileset": {
         "Stooa": {
             "url": "https://github.com/pereorga/software-translations.git",
             "type": "git",
-            "duplicates" : "msgctxt",
+            "duplicates": "msgctxt",
             "pattern": ".*?/stooa/.*?"
         }
     }
 }
-

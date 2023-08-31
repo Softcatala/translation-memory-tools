@@ -1,12 +1,12 @@
 {
     "project": "CiviCRM",
-    "license" : "AGPL-3.0-only",
+    "license": "AGPL-3.0-only",
     "projectweb": "https://app.transifex.com/civicrm/civicrm/",
     "fileset": {
         "CiviCRM": {
             "url": "https://app.transifex.com/civicrm/civicrm/",
             "type": "transifex",
-            "po_preprocessing" : "remove_untranslated"
+            "po_preprocessing": "remove_untranslated"
         }
     }
 }

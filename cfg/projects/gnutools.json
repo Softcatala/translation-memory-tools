@@ -1,13 +1,13 @@
 {
     "project": "gnutools",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://translationproject.org/team/ca.html",
     "fileset": {
         "gnutools": {
             "url": "https://translationproject.org/team/ca.html",
             "type": "crawl",
             "retrieval_pattern": "https://.*?/ca/.*?"
-        }, 
+        },
         "freedesktop": {
             "url": "https://l10n.gnome.org/languages/ca/freedesktop-org/ui.tar.gz",
             "type": "compressed",
