@@ -3,7 +3,7 @@
     "license": "MIT",
     "projectweb": "https://godotengine.org/",
     "fileset": {
-        "Godot Engine": {
+        "GodotEngine": {
             "url": "https://raw.githubusercontent.com/godotengine/godot/master/editor/translations/editor/ca.po",
             "target": "godot.po",
             "type": "file"
