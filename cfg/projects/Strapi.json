@@ -1,0 +1,12 @@
+{
+    "project": "Strapi",
+    "license": "MIT",
+    "projectweb": "https://strapi.io/",
+    "fileset": {
+        "Strapi": {
+            "url": "https://github.com/strapi/strapi.git",
+            "type": "git",
+            "duplicates": "msgctxt"
+        }
+    }
+}

@@ -1,34 +1,34 @@
 {
     "project": "Debian",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.debian.org/international/l10n/po/ca", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.debian.org/international/l10n/po/ca",
     "fileset": {
-       "apt": {
-            "url": "https://salsa.debian.org/apt-team/apt/-/raw/main/po/ca.po", 
-            "type": "file", 
-            "target": "apt-ca.po"  
+        "apt": {
+            "url": "https://salsa.debian.org/apt-team/apt/-/raw/main/po/ca.po",
+            "type": "file",
+            "target": "apt-ca.po"
         },
         "dpkg": {
-            "url": "https://salsa.debian.org/dpkg-team/dpkg/-/raw/main/po/ca.po", 
-            "type": "file", 
-            "target": "dpkg-ca.po"       
+            "url": "https://salsa.debian.org/dpkg-team/dpkg/-/raw/main/po/ca.po",
+            "type": "file",
+            "target": "dpkg-ca.po"
         },
         "shadow": {
-            "url": "https://raw.githubusercontent.com/shadow-maint/shadow/master/po/ca.po", 
-            "type": "file", 
-            "target": "shadow-ca.po"       
-        }, 
-        "aptitude": {
-            "url": "https://salsa.debian.org/apt-team/aptitude/raw/master/po/ca.po", 
-            "type": "file", 
-            "target": "aptitude-ca.po" 
-        }, 
-        "po4a": {
-            "url": "https://salsa.debian.org/debian/po4a/raw/master/po/pod/ca.po", 
-            "type": "file", 
-            "target": "po4a-ca.po"       
+            "url": "https://raw.githubusercontent.com/shadow-maint/shadow/master/po/ca.po",
+            "type": "file",
+            "target": "shadow-ca.po"
         },
-       "documentation": {
+        "aptitude": {
+            "url": "https://salsa.debian.org/apt-team/aptitude/raw/master/po/ca.po",
+            "type": "file",
+            "target": "aptitude-ca.po"
+        },
+        "po4a": {
+            "url": "https://salsa.debian.org/debian/po4a/raw/master/po/pod/ca.po",
+            "type": "file",
+            "target": "po4a-ca.po"
+        },
+        "documentation": {
             "url": "https://hosted.weblate.org/",
             "retrieval_pattern": "debian",
             "type": "weblate"

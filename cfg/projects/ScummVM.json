@@ -1,6 +1,6 @@
 {
     "project": "ScummVM",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://www.scummvm.org/",
     "fileset": {
         "scummvm": {

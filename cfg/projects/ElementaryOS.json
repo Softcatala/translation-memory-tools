@@ -1,9 +1,9 @@
 {
     "project": "Elementary OS",
-    "license" : "GPL-3.0-only",
-    "projectweb": "https://elementary.io/ca/", 
+    "license": "GPL-3.0-only",
+    "projectweb": "https://elementary.io/ca/",
     "fileset": {
-         "main": {
+        "main": {
             "url": "https://l10n.elementary.io/",
             "type": "weblate"
         }

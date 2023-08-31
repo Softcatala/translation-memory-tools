@@ -1,6 +1,6 @@
 {
     "project": "Secure Drop",
-    "license" : "AGPL-3.0-only",
+    "license": "AGPL-3.0-only",
     "projectweb": "https://www.softcatala.org/projectes/securedrop/",
     "softcatala": true,
     "fileset": {

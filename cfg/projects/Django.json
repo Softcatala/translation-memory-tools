@@ -1,11 +1,11 @@
 {
     "project": "Django",
-    "license" : "BSD-3-Clause",
-    "projectweb": "https://code.djangoproject.com/wiki/Localization", 
+    "license": "BSD-3-Clause",
+    "projectweb": "https://code.djangoproject.com/wiki/Localization",
     "fileset": {
         "django": {
-            "url": "https://github.com/django/django/raw/main/django/conf/locale/ca/LC_MESSAGES/django.po", 
-            "type": "file", 
+            "url": "https://github.com/django/django/raw/main/django/conf/locale/ca/LC_MESSAGES/django.po",
+            "type": "file",
             "target": "django.po"
         }
     }

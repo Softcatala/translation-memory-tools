@@ -1,7 +1,7 @@
 {
     "project": "LimeSurvey",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://manual.limesurvey.org/Translating_LimeSurvey", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://manual.limesurvey.org/Translating_LimeSurvey",
     "fileset": {
         "limesurvey": {
             "url": "https://translate.limesurvey.org/projects/limesurvey-3/ca/default/export-translations/?format=po",

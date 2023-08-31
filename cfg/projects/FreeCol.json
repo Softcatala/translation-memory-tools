@@ -1,6 +1,6 @@
 {
     "project": "FreeCol",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.freecol.org/",
     "fileset": {
         "FreeCol": {

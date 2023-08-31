@@ -1,13 +1,13 @@
 {
     "project": "LMMS",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://lmms.io/",
     "fileset": {
         "lmms": {
             "url": "https://raw.githubusercontent.com/LMMS/lmms/master/data/locale/ca.ts",
             "type": "file",
             "target": "lmms.ts",
-            "duplicates" : "msgctxt"
+            "duplicates": "msgctxt"
         }
     }
 }

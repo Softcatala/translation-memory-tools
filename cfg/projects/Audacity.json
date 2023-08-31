@@ -1,11 +1,11 @@
 {
     "project": "Audacity",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://www.audacityteam.org/",
     "fileset": {
         "Audacity": {
-            "url": "https://raw.githubusercontent.com/audacity/audacity/master/locale/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/audacity/audacity/master/locale/ca.po",
+            "type": "file",
             "target": "ca-audacity.po"
         }
     }

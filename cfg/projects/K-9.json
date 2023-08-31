@@ -1,7 +1,7 @@
 {
     "project": "K-9",
-    "license" : "Apache-2.0",
-    "projectweb": "https://k9mail.app/contribute.html", 
+    "license": "Apache-2.0",
+    "projectweb": "https://k9mail.app/contribute.html",
     "fileset": {
         "K-9": {
             "url": "https://github.com/thundernest/k-9.git",

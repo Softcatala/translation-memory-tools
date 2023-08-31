@@ -21,6 +21,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install black flake8
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: Install NPM dependencies
+      run: |
+        npm ci
+    - name: Check JSON formatting with Prettier
+      run: |
+        npm run prettier:check
     - name: Test
       run: |
         nose2

@@ -1,7 +1,7 @@
 {
     "project": "Shotcut",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://www.shotcut.org/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://www.shotcut.org/",
     "fileset": {
         "shotcut": {
             "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/translations/shotcut_ca.ts",

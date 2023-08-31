@@ -1,11 +1,11 @@
 {
     "project": "OmegaT",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://omegat.org/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://omegat.org/",
     "fileset": {
         "omegat": {
-            "url": "https://raw.githubusercontent.com/OmegaT-L10N/ca/master/omegat/project_save.tmx", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/OmegaT-L10N/ca/master/omegat/project_save.tmx",
+            "type": "file",
             "target": "omegat-ca.tmx"
         }
     }

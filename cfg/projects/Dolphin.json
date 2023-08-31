@@ -1,11 +1,11 @@
 {
     "project": "Dolphin",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://ca.dolphin-emu.org/?cr=ca",
     "fileset": {
         "dolphin": {
             "url": "https://raw.githubusercontent.com/dolphin-emu/dolphin/master/Languages/po/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         }
     }

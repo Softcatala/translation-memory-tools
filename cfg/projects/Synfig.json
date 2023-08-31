@@ -1,6 +1,6 @@
 {
     "project": "Synfig",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.synfig.org/",
     "fileset": {
         "core": {

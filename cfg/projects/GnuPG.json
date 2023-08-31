@@ -1,6 +1,6 @@
 {
     "project": "GNU Privacy Guard",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://www.gnupg.org/",
     "fileset": {
         "gnupg": {

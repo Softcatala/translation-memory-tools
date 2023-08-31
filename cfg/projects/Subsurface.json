@@ -1,7 +1,7 @@
 {
     "project": "Subsurface",
-    "license" : "GPL-2.0-only",
-    "projectweb": "https://subsurface-divelog.org/", 
+    "license": "GPL-2.0-only",
+    "projectweb": "https://subsurface-divelog.org/",
     "fileset": {
         "Subsurface": {
             "url": "https://raw.githubusercontent.com/subsurface/subsurface/master/translations/subsurface_ca.ts",

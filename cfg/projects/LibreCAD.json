@@ -1,11 +1,11 @@
 {
     "project": "LibreCAD",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://librecad.org/",
     "fileset": {
         "LibreCAD": {
             "url": "https://raw.githubusercontent.com/LibreCAD/LibreCAD/master/librecad/ts/librecad_ca.ts",
-            "type": "file", 
+            "type": "file",
             "target": "librecad-ca.ts"
         },
         "plugins": {

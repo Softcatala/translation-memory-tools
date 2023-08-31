@@ -274,6 +274,9 @@ class ConvertFiles:
         for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.i18n.json"):
             self._convert_json_file_to_po(jsonfile, "en.i18n.json", "ca.i18n.json")
 
+        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "main-ca.json"):
+            self._convert_json_file_to_po(jsonfile, "main.json", "main-ca.json")
+
     def _convert_yml_files_to_po(self):
         EXPECTED_SRC = "en.yml"
         EXPECTED_TRG = "ca.yml"

@@ -1,11 +1,11 @@
 {
     "project": "Mame",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.mamedev.org/",
     "fileset": {
         "mame": {
             "url": "https://raw.githubusercontent.com/mamedev/mame/master/language/Catalan/strings.po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         }
     }

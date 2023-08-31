@@ -1,0 +1,12 @@
+{
+    "project": "Overseerr",
+    "license": "MIT",
+    "projectweb": "https://overseerr.dev/",
+    "fileset": {
+        "Overseerr": {
+            "url": "git@github.com:sct/overseerr.git",
+            "type": "git",
+            "duplicates": "msgctxt"
+        }
+    }
+}

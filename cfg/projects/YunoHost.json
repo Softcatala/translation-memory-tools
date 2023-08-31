@@ -1,26 +1,26 @@
 {
     "project": "YunoHost",
-    "license" : "AGPL-3.0-only",
-    "projectweb": "https://translate.yunohost.org/projects/yunohost/", 
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://translate.yunohost.org/projects/yunohost/",
     "fileset": {
         "yunohost-admin": {
-            "url": "https://translate.yunohost.org/download/yunohost/admin/ca/?format=po", 
-            "type": "file", 
+            "url": "https://translate.yunohost.org/download/yunohost/admin/ca/?format=po",
+            "type": "file",
             "target": "yunohost-admin-ca.po"
         },
         "yunohost-core": {
-            "url": "https://translate.yunohost.org/download/yunohost/core/ca/?format=po", 
-            "type": "file", 
+            "url": "https://translate.yunohost.org/download/yunohost/core/ca/?format=po",
+            "type": "file",
             "target": "yunohost-core-ca.po"
         },
         "yunohost-moulinette": {
-            "url": "https://translate.yunohost.org/download/yunohost/moulinette/ca/?format=po", 
-            "type": "file", 
+            "url": "https://translate.yunohost.org/download/yunohost/moulinette/ca/?format=po",
+            "type": "file",
             "target": "yunohost-moulinette-ca.po"
         },
         "yunohost-SSOwat": {
-            "url": "https://translate.yunohost.org/download/yunohost/SSOwat/ca/?format=po", 
-            "type": "file", 
+            "url": "https://translate.yunohost.org/download/yunohost/SSOwat/ca/?format=po",
+            "type": "file",
             "target": "yunohost-ssowat-ca.po"
         }
     }

@@ -1,6 +1,6 @@
 {
     "project": "Mozilla",
-    "license" : "MPL-2.0",
+    "license": "MPL-2.0",
     "projectweb": "https://www.softcatala.org/projectes/mozilla/",
     "softcatala": true,
     "fileset": {
@@ -8,36 +8,32 @@
             "url": "https://pontoon.mozilla.org/",
             "target": "pontoon-projects.json",
             "type": "pontoon",
-            "po_preprocessing" : "remove_untranslated"
-	},
+            "po_preprocessing": "remove_untranslated"
+        },
         "focus-for-android": {
-            "url": "../source-pos/mozilla/ca.focus-for-android.tmx", 
-            "type": "local-file", 
+            "url": "../source-pos/mozilla/ca.focus-for-android.tmx",
+            "type": "local-file",
             "target": "ca.focus-for-android.tmx"
         },
-	"focus-for-ios": {
-            "url": "../source-pos/mozilla/ca.focus-for-ios.tmx", 
-            "type": "local-file", 
+        "focus-for-ios": {
+            "url": "../source-pos/mozilla/ca.focus-for-ios.tmx",
+            "type": "local-file",
             "target": "ca.focus-for-ios.tmx"
         },
-	"mozillians": {
-            "url": "../source-pos/mozilla/ca.mozillians.tmx", 
-            "type": "local-file", 
+        "mozillians": {
+            "url": "../source-pos/mozilla/ca.mozillians.tmx",
+            "type": "local-file",
             "target": "ca.mozillians.tmx"
         },
-	"firefox-screenshots": {
-            "url": "../source-pos/mozilla/ca.firefox-screenshots.tmx", 
-            "type": "local-file", 
+        "firefox-screenshots": {
+            "url": "../source-pos/mozilla/ca.firefox-screenshots.tmx",
+            "type": "local-file",
             "target": "ca.firefox-screenshots.tmx"
         },
-	"pontoon-intro": {
-            "url": "../source-pos/mozilla/ca.pontoon-intro.tmx", 
-            "type": "local-file", 
+        "pontoon-intro": {
+            "url": "../source-pos/mozilla/ca.pontoon-intro.tmx",
+            "type": "local-file",
             "target": "ca.pontoon-intro.tmx"
         }
     }
 }
-
-
-
-

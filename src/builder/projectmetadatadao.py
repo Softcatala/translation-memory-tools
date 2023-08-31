@@ -57,24 +57,22 @@ class ProjectMetaDataDao(object):
 
     def put(self, dto):
         c = self.connection.cursor()
-        command = (
-            "INSERT OR REPLACE INTO 'projects' VALUES ('{0}', '{1}', "
-            "'{2}', {3}, '{4}');"
+        command = "INSERT OR REPLACE INTO 'projects' VALUES (?, ?, ?, ?, ?);"
+        c.execute(
+            command,
+            (
+                dto.name,
+                dto.last_fetch,
+                dto.last_translation_update,
+                dto.words,
+                dto.checksum,
+            ),
         )
-        command = command.format(
-            dto.name,
-            dto.last_fetch,
-            dto.last_translation_update,
-            dto.words,
-            dto.checksum,
-        )
-        c.execute(command)
         self.connection.commit()
 
     def get(self, name):
         c = self.connection.cursor()
-        command = "SELECT * FROM projects WHERE name='{0}'".format(name)
-        result = c.execute(command)
+        result = c.execute("SELECT * FROM projects WHERE name=?", (name,))
         row = result.fetchone()
 
         if row is None:

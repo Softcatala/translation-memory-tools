@@ -1,11 +1,11 @@
 {
     "project": "Darktable",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://www.darktable.org/",
     "fileset": {
         "Darktable": {
-            "url": "https://raw.githubusercontent.com/darktable-org/darktable/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/darktable-org/darktable/master/po/ca.po",
+            "type": "file",
             "target": "ca.po"
         }
     }

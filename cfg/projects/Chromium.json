@@ -1,11 +1,11 @@
 {
     "project": "Chromium",
-    "license" : "BSD-3-Clause",
-    "projectweb": "https://translations.launchpad.net/chromium-browser/translations/+lang/ca", 
+    "license": "BSD-3-Clause",
+    "projectweb": "https://translations.launchpad.net/chromium-browser/translations/+lang/ca",
     "fileset": {
         "chromium": {
-            "url": "lp:chromium-browser/translations", 
-            "type": "bazaar", 
+            "url": "lp:chromium-browser/translations",
+            "type": "bazaar",
             "pattern": ".*?ca.po"
         }
     }

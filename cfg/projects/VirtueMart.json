@@ -1,6 +1,6 @@
 {
     "project": "VirtueMart",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://virtuemart.net/",
     "fileset": {
         "VirtueMart": {

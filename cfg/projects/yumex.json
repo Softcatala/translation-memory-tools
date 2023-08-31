@@ -1,6 +1,6 @@
 {
     "project": "YumEx",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.yumex.dk/",
     "fileset": {
         "yumex": {

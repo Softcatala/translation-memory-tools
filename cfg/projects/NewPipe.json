@@ -1,6 +1,6 @@
 {
     "project": "NewPipe",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://hosted.weblate.org/projects/newpipe/",
     "fileset": {
         "NewPipe": {

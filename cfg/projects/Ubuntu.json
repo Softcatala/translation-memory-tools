@@ -1,43 +1,43 @@
 {
     "project": "Ubuntu",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://wiki.ubuntu.com/UbuntuCatalanTranslators", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://wiki.ubuntu.com/UbuntuCatalanTranslators",
     "softcatala": true,
-    "comment" : "See: http://www.canonical.com/projects/directory and https://translations.launchpad.net/ubuntu",
+    "comment": "See: http://www.canonical.com/projects/directory and https://translations.launchpad.net/ubuntu",
     "fileset": {
         "ubuntu-software-center": {
-            "url": "lp:~ubuntuone-control-tower/software-center/trunk/po/ca.po", 
-            "type": "bazaar", 
+            "url": "lp:~ubuntuone-control-tower/software-center/trunk/po/ca.po",
+            "type": "bazaar",
             "target": "ca.po"
-        }, 
+        },
         "ubuntu-update-manager": {
-            "url": "lp:~ubuntu-core-dev/update-manager/main/po/ca.po", 
-            "type": "bazaar", 
+            "url": "lp:~ubuntu-core-dev/update-manager/main/po/ca.po",
+            "type": "bazaar",
             "target": "ca.po"
-        }, 
+        },
         "ubuntu-release-upgrader": {
-            "url": "lp:~ubuntu-core-dev/ubuntu-release-upgrader/trunk/po/ca.po", 
-            "type": "bazaar", 
+            "url": "lp:~ubuntu-core-dev/ubuntu-release-upgrader/trunk/po/ca.po",
+            "type": "bazaar",
             "target": "ca.po"
-        }, 
+        },
         "ubuntuone-control-panel": {
-            "url": "lp:~ubuntuone-control-tower/ubuntuone-control-panel/trunk/po/ca.po", 
-            "type": "bazaar", 
+            "url": "lp:~ubuntuone-control-tower/ubuntuone-control-panel/trunk/po/ca.po",
+            "type": "bazaar",
             "target": "ca.po"
-        }, 
+        },
         "indicator": {
-            "url": "lp:~rye/indicator-ubuntuone/trunk/po/ca.po", 
-            "type": "bazaar", 
+            "url": "lp:~rye/indicator-ubuntuone/trunk/po/ca.po",
+            "type": "bazaar",
             "target": "ca.po"
-        }, 
+        },
         "unity-control-center": {
             "url": "lp:~unity-control-center-team/unity-control-center/trunk/po/ca.po",
-            "type": "bazaar", 
+            "type": "bazaar",
             "target": "ca.po"
-        }, 
+        },
         "unity": {
             "url": "lp:~unity-team/unity/8.0/po/ca.po",
-            "type": "bazaar", 
+            "type": "bazaar",
             "target": "ca.po"
         },
         "simple-scan": {

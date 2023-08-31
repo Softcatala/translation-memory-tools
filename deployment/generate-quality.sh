@@ -9,4 +9,4 @@ echo Created quality directory: $lt_output
 
 cd $root/tm-git/src/
 python generate_quality_reports.py -s "$location"
-
+cat generate_quality_reports-error.log >> builder-error.log

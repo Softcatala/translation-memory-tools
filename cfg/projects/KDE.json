@@ -1,7 +1,7 @@
 {
     "project": "KDE",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://cat.kde.org/", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://cat.kde.org/",
     "fileset": {
         "gui-kf5": {
             "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/messages/",
