@@ -75,6 +75,17 @@ class TestFileSet(unittest.TestCase):
         files = findFiles.find_recursive(fileset.temp_dir, "*.po")
         self.assertEquals(1, len(files))
 
+    def test_constructor(self):
+        fileset = FileSet(
+            "Proj's name!",
+            "project id",
+            "File's name!",
+            "lp:~mailman-l10n-ca/mailman.po",
+            "none.po",
+        )
+
+        self.assertEquals("Projsn", os.path.basename(fileset.temp_dir)[0:6])
+
 
 if __name__ == "__main__":
     unittest.main()
