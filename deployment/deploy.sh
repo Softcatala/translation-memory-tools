@@ -37,7 +37,7 @@ if [ "$#" -ne 2 ] ; then
     echo "Usage: deploy.sh ROOT_DIRECTORY_OF_BUILD_LOCATION TARGET_DESTINATION"
     echo "Invalid number of parameters"
     exit
-fi  
+fi
 
 ROOT="$1"
 TARGET_DIR="$2"

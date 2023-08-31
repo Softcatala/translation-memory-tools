@@ -4,7 +4,7 @@ if [ "$#" -ne 1 ] ; then
     echo "Usage: generate-terminology.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
     echo "Invalid number of parameters"
     exit
-fi 
+fi
 
 ROOT="$1"
 
@@ -22,5 +22,5 @@ unzip $ROOT/tm-git/src/memories/tots-tm.po.zip -d tots-tm/
 rm -f tots-tm/tots-tm.po
 
 # Build
-python term_extract.py -s sc-tm -t sc-glossary -c "Glossari generat a partir de les memòries de traducció dels projectes traduïts per Softcatalà" 
+python term_extract.py -s sc-tm -t sc-glossary -c "Glossari generat a partir de les memòries de traducció dels projectes traduïts per Softcatalà"
 python term_extract.py -s tots-tm -t tots-glossary -c "Glossari generat a partir de les memòries de de traducció de tots els projectes que podeu trobar a https://www.softcatala.org/recursos/memories/"
