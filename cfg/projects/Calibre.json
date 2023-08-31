@@ -1,12 +1,12 @@
 {
     "project": "Calibre",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://calibre-ebook.com/",
     "fileset": {
         "calibre": {
             "url": "https://github.com/kovidgoyal/calibre-translations.git",
             "type": "git",
-            "pattern" : ".*?ca.po"
+            "pattern": ".*?ca.po"
         },
         "calibre-plugins": {
             "url": "https://app.transifex.com/calibre/calibre-plugins/",

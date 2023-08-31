@@ -1,12 +1,12 @@
 {
-    "project": "WordPress-plugins", 
-    "license" : "GPL-2.0-or-later",
+    "project": "WordPress-plugins",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://wordpress.org/plugins/",
     "softcatala": true,
     "fileset": {
         "akismet": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/akismet/dev/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp-plugins/akismet/dev/ca/default/export-translations",
+            "type": "file",
             "target": "wp-plugins-akismet-dev-ca.po"
         },
         "bbpress": {
@@ -15,13 +15,13 @@
             "target": "bbpress-ca.po"
         },
         "google-analytics-for-wordpress": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/google-analytics-for-wordpress/dev/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp-plugins/google-analytics-for-wordpress/dev/ca/default/export-translations",
+            "type": "file",
             "target": "google-analytics-for-wordpress-ca.po"
         },
         "gutenberg": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/gutenberg/dev/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp-plugins/gutenberg/dev/ca/default/export-translations",
+            "type": "file",
             "target": "gutenberg-ca.po"
         },
         "nelio-content": {
@@ -30,18 +30,18 @@
             "target": "nelio-content-ca.po"
         },
         "woocommerce": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/woocommerce/dev/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp-plugins/woocommerce/dev/ca/default/export-translations",
+            "type": "file",
             "target": "woocommerce-seo-ca.po"
         },
         "wordpress-seo": {
-            "url": "https://translate.wordpress.org/projects/wp-plugins/wordpress-seo/dev/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp-plugins/wordpress-seo/dev/ca/default/export-translations",
+            "type": "file",
             "target": "wordpress-seo-ca.po"
         },
         "wordpress-seo-premium": {
-            "url": "https://translate.yoast.com/projects/wordpress-seo-premium/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.yoast.com/projects/wordpress-seo-premium/ca/default/export-translations",
+            "type": "file",
             "target": "wordpress-seo-premium-ca.po"
         },
         "wpforms-lite": {

@@ -1,15 +1,15 @@
 {
     "project": "Linux Mint",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://launchpad.net/~linuxmint-translation-team-catalan", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://launchpad.net/~linuxmint-translation-team-catalan",
     "fileset": {
         "Mint": {
-            "url": "https://github.com/linuxmint/mint-translations.git", 
+            "url": "https://github.com/linuxmint/mint-translations.git",
             "type": "git",
             "pattern": ".*?ca.po"
         },
         "Cinnamon": {
-            "url": "https://github.com/linuxmint/cinnamon-translations.git", 
+            "url": "https://github.com/linuxmint/cinnamon-translations.git",
             "type": "git",
             "pattern": ".*?ca.po"
         },

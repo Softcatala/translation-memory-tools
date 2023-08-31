@@ -1,16 +1,16 @@
 {
     "project": "Askbot",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://askbot.com/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://askbot.com/",
     "fileset": {
         "django": {
-            "url": "https://github.com/ASKBOT/askbot-devel/raw/master/askbot/locale/ca/LC_MESSAGES/django.po", 
-            "type": "file", 
+            "url": "https://github.com/ASKBOT/askbot-devel/raw/master/askbot/locale/ca/LC_MESSAGES/django.po",
+            "type": "file",
             "target": "django.po"
         },
         "djangojs": {
-            "url": "https://github.com/ASKBOT/askbot-devel/raw/master/askbot/locale/ca/LC_MESSAGES/djangojs.po", 
-            "type": "file", 
+            "url": "https://github.com/ASKBOT/askbot-devel/raw/master/askbot/locale/ca/LC_MESSAGES/djangojs.po",
+            "type": "file",
             "target": "djangojs.po"
         }
     }

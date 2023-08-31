@@ -1,17 +1,17 @@
 {
     "project": "Briar",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/briar/",
     "softcatala": true,
     "fileset": {
         "briar": {
             "url": "https://code.briarproject.org/briar/briar",
             "type": "git",
-            "po_preprocessing" : "remove_untranslated",
+            "po_preprocessing": "remove_untranslated",
             "conversor_setup": {
-                "type"       : "properties",
-                "verb"       : "add",
-                "command"    : " --encoding=utf-8"
+                "type": "properties",
+                "verb": "add",
+                "command": " --encoding=utf-8"
             }
         },
         "briar-gtk": {

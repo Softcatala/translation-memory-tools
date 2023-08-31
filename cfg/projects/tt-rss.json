@@ -1,6 +1,6 @@
 {
     "project": "Tiny Tiny RSS",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://weblate.tt-rss.org/",
     "fileset": {
         "tt-rss": {

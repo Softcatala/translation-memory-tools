@@ -1,8 +1,8 @@
 {
     "project": "Mailman",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.softcatala.org/projectes/mailman/", 
-    "softcatala": true, 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.softcatala.org/projectes/mailman/",
+    "softcatala": true,
     "fileset": {
         "mailman": {
             "url": "https://hosted.weblate.org/download/gnu-mailman/?format=zip",

@@ -1,11 +1,11 @@
 {
     "project": "Zim",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://zim-wiki.org/translations.html",
     "fileset": {
         "zim": {
             "url": "https://raw.githubusercontent.com/zim-desktop-wiki/zim-desktop-wiki/develop/translations/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         }
     }

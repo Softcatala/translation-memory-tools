@@ -1,12 +1,12 @@
 {
-    "project": "Abiword", 
-    "license" : "GPL-2.0-or-later",
+    "project": "Abiword",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/abiword/",
-    "softcatala": true, 
+    "softcatala": true,
     "fileset": {
         "abiword": {
             "url": "https://raw.githubusercontent.com/AbiWord/abiword/master/po/ca-ES.po",
-            "type": "file", 
+            "type": "file",
             "target": "abiword-ca.po"
         }
     }

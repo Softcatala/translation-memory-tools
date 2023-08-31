@@ -1,343 +1,342 @@
 {
     "project": "Xfce",
-    "license" : "BSD-2-Clause-FreeBSD",
+    "license": "BSD-2-Clause-FreeBSD",
     "projectweb": "https://wiki.xfce.org/translations/team_ca",
     "fileset": {
         "exo": {
-            "url": "https://gitlab.xfce.org/xfce/exo/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/exo/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "exo-ca.po"
         },
         "garcon": {
-            "url": "https://gitlab.xfce.org/xfce/garcon/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/garcon/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "garcon-ca.po"
         },
         "libxfce4ui": {
-            "url": "https://gitlab.xfce.org/xfce/libxfce4ui/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/libxfce4ui/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "libxfce4ui-ca.po"
         },
         "thunar": {
-            "url": "https://gitlab.xfce.org/xfce/thunar/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/thunar/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "thunar-ca.po"
         },
         "thunar-volman": {
-            "url": "https://gitlab.xfce.org/xfce/thunar-volman/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/thunar-volman/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "thunar-volman-ca.po"
         },
         "tumbler": {
-            "url": "https://gitlab.xfce.org/xfce/tumbler/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/tumbler/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "tumbler-ca.po"
         },
         "xfce4-appfinder": {
-            "url": "https://gitlab.xfce.org/xfce/xfce4-appfinder/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfce4-appfinder/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfce4-appfinder-ca.po"
         },
         "xfce4-panel": {
-            "url": "https://gitlab.xfce.org/xfce/xfce4-panel/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfce4-panel/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfce4-panel-ca.po"
         },
         "xfce4-power-manager": {
-            "url": "https://gitlab.xfce.org/xfce/xfce4-power-manager/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfce4-power-manager/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfce4-power-manager-ca.po"
         },
         "xfce4-session": {
-            "url": "https://gitlab.xfce.org/xfce/xfce4-session/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfce4-session/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfce4-session-ca.po"
         },
         "xfce4-settings": {
-            "url": "https://gitlab.xfce.org/xfce/xfce4-settings/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfce4-settings/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfce4-settings-ca.po"
         },
         "xfconf": {
-            "url": "https://gitlab.xfce.org/xfce/xfconf/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfconf/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfconf-ca.po"
         },
         "xfdesktop": {
-            "url": "https://gitlab.xfce.org/xfce/xfdesktop/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfdesktop/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfdesktop-ca.po"
         },
         "xfwm4": {
-            "url": "https://gitlab.xfce.org/xfce/xfwm4/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/xfce/xfwm4/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "xfwm4-ca.po"
         },
         "apps-catfish": {
-            "url": "https://gitlab.xfce.org/apps/catfish/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/catfish/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-catfish-ca.po"
         },
         "apps-gigolo": {
-            "url": "https://gitlab.xfce.org/apps/gigolo/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/gigolo/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-gigolo-ca.po"
         },
         "apps-mousepad": {
-            "url": "https://gitlab.xfce.org/apps/mousepad/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/mousepad/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-mousepad-ca.po"
         },
         "apps-parole": {
-            "url": "https://gitlab.xfce.org/apps/parole/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/parole/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-parole-ca.po"
         },
         "apps-ristretto": {
-            "url": "https://gitlab.xfce.org/apps/ristretto/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/ristretto/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-ristretto-ca.po"
         },
         "apps-xfburn": {
-            "url": "https://gitlab.xfce.org/apps/xfburn/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfburn/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfburn-ca.po"
         },
         "apps-xfce4-dict": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-dict/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-dict/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-dict-ca.po"
         },
         "apps-xfce4-mixer": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-mixer/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-mixer/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-mixer-ca.po"
         },
         "apps-xfce4-notifyd": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-notifyd/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-notifyd/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-notifyd-ca.po"
         },
         "apps-xfce4-panel-profiles": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-panel-profiles/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-panel-profiles/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-panel-profiles-ca.po"
         },
         "apps-xfce4-screensaver": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-screensaver/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-screensaver/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-screensaver-ca.po"
         },
         "apps-xfce4-screenshooter": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-screenshooter/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-screenshooter/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-screenshooter-ca.po"
         },
         "apps-xfce4-taskmanager": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-taskmanager/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-taskmanager/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-taskmanager-ca.po"
         },
         "apps-xfce4-terminal": {
-            "url": "https://gitlab.xfce.org/apps/xfce4-terminal/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfce4-terminal/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfce4-terminal-ca.po"
         },
         "apps-xfdashboard": {
-            "url": "https://gitlab.xfce.org/apps/xfdashboard/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfdashboard/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfdashboard-ca.po"
         },
         "apps-xfmpc": {
-            "url": "https://gitlab.xfce.org/apps/xfmpc/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/apps/xfmpc/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "apps-xfmpc-ca.po"
         },
         "panel-plugins-xfce4-battery-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-battery-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-battery-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-battery-plugin-ca.po"
         },
         "panel-plugins-xfce4-calculator-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-calculator-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-calculator-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-calculator-plugin-ca.po"
         },
         "panel-plugins-xfce4-clipman-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-clipman-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-clipman-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-clipman-plugin-ca.po"
         },
         "panel-plugins-xfce4-cpufreq-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-cpufreq-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-cpufreq-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-cpufreq-plugin-ca.po"
         },
         "panel-plugins-xfce4-cpugraph-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-cpugraph-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-cpugraph-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-cpugraph-plugin-ca.po"
         },
         "panel-plugins-xfce4-datetime-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-datetime-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-datetime-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-datetime-plugin-ca.po"
         },
         "panel-plugins-xfce4-diskperf-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-diskperf-plugin-ca.po"
         },
         "panel-plugins-xfce4-docklike-plugin": {
             "url": "https://gitlab.xfce.org/panel-plugins/xfce4-docklike-plugin/-/raw/main/po/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "panel-plugins-xfce4-docklike-plugin-ca.po"
         },
         "panel-plugins-xfce4-embed-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-embed-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-embed-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-embed-plugin-ca.po"
         },
         "panel-plugins-xfce4-eyes-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-eyes-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-eyes-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-eyes-plugin-ca.po"
         },
         "panel-plugins-xfce4-fsguard-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-fsguard-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-fsguard-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-fsguard-plugin-ca.po"
         },
         "panel-plugins-xfce4-genmon-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-genmon-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-genmon-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-genmon-plugin-ca.po"
         },
         "panel-plugins-xfce4-indicator-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-indicator-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-indicator-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-indicator-plugin-ca.po"
         },
         "panel-plugins-xfce4-mailwatch-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-mailwatch-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-mailwatch-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-mailwatch-plugin-ca.po"
         },
         "panel-plugins-xfce4-mount-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-mount-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-mount-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-mount-plugin-ca.po"
         },
         "panel-plugins-xfce4-mpc-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-mpc-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-mpc-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-mpc-plugin-ca.po"
         },
         "panel-plugins-xfce4-netload-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-netload-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-netload-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-netload-plugin-ca.po"
         },
         "panel-plugins-xfce4-notes-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-notes-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-notes-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-notes-plugin-ca.po"
         },
         "panel-plugins-xfce4-places-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-places-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-places-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-places-plugin-ca.po"
         },
         "panel-plugins-xfce4-pulseaudio-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-pulseaudio-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-pulseaudio-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-pulseaudio-plugin-ca.po"
         },
         "panel-plugins-xfce4-sample-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-sample-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-sample-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-sample-plugin-ca.po"
         },
         "panel-plugins-xfce4-sensors-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-sensors-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-sensors-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-sensors-plugin-ca.po"
         },
         "panel-plugins-xfce4-smartbookmark-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-smartbookmark-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-smartbookmark-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-smartbookmark-plugin-ca.po"
         },
         "panel-plugins-xfce4-statusnotifier-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-statusnotifier-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-statusnotifier-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-statusnotifier-plugin-ca.po"
         },
         "panel-plugins-xfce4-stopwatch-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-stopwatch-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-stopwatch-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-stopwatch-plugin-ca.po"
         },
         "panel-plugins-xfce4-systemload-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-systemload-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-systemload-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-systemload-plugin-ca.po"
         },
         "panel-plugins-xfce4-time-out-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-time-out-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-time-out-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-time-out-plugin-ca.po"
         },
         "panel-plugins-xfce4-timer-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-timer-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-timer-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-timer-plugin-ca.po"
         },
         "panel-plugins-xfce4-verve-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-verve-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-verve-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-verve-plugin-ca.po"
         },
         "panel-plugins-xfce4-wavelan-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-wavelan-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-wavelan-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-wavelan-plugin-ca.po"
         },
         "panel-plugins-xfce4-weather-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-weather-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-weather-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-weather-plugin-ca.po"
         },
         "panel-plugins-xfce4-whiskermenu-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/-/raw/main/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/-/raw/main/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-whiskermenu-plugin-ca.po"
         },
         "panel-plugins-xfce4-xkb-plugin": {
-            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-xkb-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/panel-plugins/xfce4-xkb-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "panel-plugins-xfce4-xkb-plugin-ca.po"
         },
         "thunar-plugins-thunar-archive-plugin": {
-            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-archive-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-archive-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "thunar-plugins-thunar-archive-plugin-ca.po"
         },
         "thunar-plugins-thunar-media-tags-plugin": {
-            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-media-tags-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-media-tags-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "thunar-plugins-thunar-media-tags-plugin-ca.po"
         },
         "thunar-plugins-thunar-shares-plugin": {
-            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "thunar-plugins-thunar-shares-plugin-ca.po"
         },
         "thunar-plugins-thunar-vcs-plugin": {
-            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-vcs-plugin/-/raw/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://gitlab.xfce.org/thunar-plugins/thunar-vcs-plugin/-/raw/master/po/ca.po",
+            "type": "file",
             "target": "thunar-plugins-thunar-vcs-plugin-ca.po"
         }
     }
 }
-

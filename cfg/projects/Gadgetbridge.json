@@ -1,7 +1,7 @@
 {
     "project": "Gadgetbridge",
-    "license" : "GPL-3.0-only",
-    "projectweb": "https://gadgetbridge.org/", 
+    "license": "GPL-3.0-only",
+    "projectweb": "https://gadgetbridge.org/",
     "fileset": {
         "Gadgetbridge": {
             "url": "https://codeberg.org/Freeyourgadget/Gadgetbridge.git",

@@ -1,6 +1,6 @@
 {
     "project": "PCSX2",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://crowdin.com/project/pcsx2-emulator/ca",
     "fileset": {
         "PCSX2": {

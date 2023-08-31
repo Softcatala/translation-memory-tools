@@ -1,34 +1,33 @@
 {
     "project": "Mozilla",
-    "projectweb" : "http://www.softcatala.org/wiki/Projectes/Mozilla",
-    "softcatala" : true,
-    "license" : "Propietària",
+    "projectweb": "http://www.softcatala.org/wiki/Projectes/Mozilla",
+    "softcatala": true,
+    "license": "Propietària",
     "quality_report": false,
-	"fileset": {
-		"mozilla": {
-			"url" : "http://pootle.softcatala.org/ca/mozilla/export/zip",
-			"type": "compressed",
-			"target": "mozilla.zip",
-            "pattern" : "ca.po",
-            "duplicates" : "msgctxt",
+    "fileset": {
+        "mozilla": {
+            "url": "http://pootle.softcatala.org/ca/mozilla/export/zip",
+            "type": "compressed",
+            "target": "mozilla.zip",
+            "pattern": "ca.po",
+            "duplicates": "msgctxt",
             "retrieval_pattern": "https://.*?/ca/.*?",
             "conversor_setup": {
-                "type"       : "string",
-                "verb"       : "add",
-                "command"    : " --encoding=utf-8"
+                "type": "string",
+                "verb": "add",
+                "command": " --encoding=utf-8"
             }
-		},
-		"firefox-hackasaurus": {
-			"url" : "http://localize.mozilla.org/ca/hackasaurus/export/zip",
-			"type": "compressed",
-			"target": "hackasaurus.zip",
-            "po_preprocessing" : "remove_untranslated"
-		},
-		"firefox-sumo": {
-			"url" : "http://localize.mozilla.org/ca/sumo/export/zip",
-			"type": "compressed",
-			"target": "sumo.zip"
-		}
-	}
+        },
+        "firefox-hackasaurus": {
+            "url": "http://localize.mozilla.org/ca/hackasaurus/export/zip",
+            "type": "compressed",
+            "target": "hackasaurus.zip",
+            "po_preprocessing": "remove_untranslated"
+        },
+        "firefox-sumo": {
+            "url": "http://localize.mozilla.org/ca/sumo/export/zip",
+            "type": "compressed",
+            "target": "sumo.zip"
+        }
+    }
 }
-

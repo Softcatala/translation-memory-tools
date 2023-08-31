@@ -1,7 +1,7 @@
 {
     "project": "Read the Docs",
-    "license" : "MIT",
-    "projectweb": "https://readthedocs.org/", 
+    "license": "MIT",
+    "projectweb": "https://readthedocs.org/",
     "fileset": {
         "ReadTheDocs": {
             "url": "https://raw.githubusercontent.com/readthedocs/readthedocs.org/main/readthedocs/locale/ca/LC_MESSAGES/django.po",

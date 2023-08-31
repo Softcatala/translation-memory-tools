@@ -1,7 +1,7 @@
 {
     "project": "Qgis",
-    "license" : "GPL-2.0-only",
-    "projectweb": "https://www.qgis.org/ca/site/", 
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.qgis.org/ca/site/",
     "fileset": {
         "Qgis": {
             "url": "https://raw.githubusercontent.com/qgis/QGIS/master/i18n/qgis_ca.ts",

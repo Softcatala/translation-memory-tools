@@ -1,11 +1,11 @@
 {
     "project": "Geany",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.geany.org/Contribute/Translators", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.geany.org/Contribute/Translators",
     "fileset": {
         "geany": {
-            "url": "https://raw.githubusercontent.com/geany/geany/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/geany/geany/master/po/ca.po",
+            "type": "file",
             "target": "geany_ca.po"
         }
     }

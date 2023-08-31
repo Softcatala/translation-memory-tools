@@ -1,6 +1,6 @@
 {
     "project": "Timeshift",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://github.com/teejee2008/timeshift",
     "fileset": {
         "Timeshift": {

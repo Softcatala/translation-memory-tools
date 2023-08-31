@@ -1,12 +1,12 @@
 {
     "project": "MyPaint",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://github.com/mypaint/mypaint",
     "fileset": {
         "MyPaint": {
             "url": "https://raw.githubusercontent.com/mypaint/mypaint/master/po/ca.po",
             "type": "file",
-            "duplicates" : "msgctxt",
+            "duplicates": "msgctxt",
             "target": "mypaint-ca.po"
         }
     }

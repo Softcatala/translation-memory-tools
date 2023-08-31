@@ -1,22 +1,22 @@
 {
     "project": "WordPress",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://ca.wordpress.org/", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://ca.wordpress.org/",
     "softcatala": true,
     "fileset": {
         "wordpress": {
-            "url": "https://translate.wordpress.org/projects/wp/dev/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp/dev/ca/default/export-translations",
+            "type": "file",
             "target": "wp-dev-ca.po"
-        }, 
+        },
         "wordpress-admin": {
-            "url": "https://translate.wordpress.org/projects/wp/dev/admin/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp/dev/admin/ca/default/export-translations",
+            "type": "file",
             "target": "wp-dev-admin-ca.po"
-        }, 
+        },
         "wordpress-admin-network": {
-            "url": "https://translate.wordpress.org/projects/wp/dev/admin/network/ca/default/export-translations", 
-            "type": "file", 
+            "url": "https://translate.wordpress.org/projects/wp/dev/admin/network/ca/default/export-translations",
+            "type": "file",
             "target": "wp-dev-admin-network-ca.po"
         },
         "wordpress-themes-twenty-sixteen": {

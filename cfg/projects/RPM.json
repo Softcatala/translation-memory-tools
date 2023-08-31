@@ -1,6 +1,6 @@
 {
     "project": "RPM Package Manager",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://rpm.org/",
     "fileset": {
         "RPM": {

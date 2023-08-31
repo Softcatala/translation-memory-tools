@@ -1,27 +1,27 @@
 {
     "project": "GNOME",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.softcatala.org/projectes/gnome/", 
-    "softcatala": true, 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.softcatala.org/projectes/gnome/",
+    "softcatala": true,
     "fileset": {
         "gnome-ui": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-45/ui.tar.gz",
-            "type": "compressed", 
+            "type": "compressed",
             "target": "gnome-ui.tar.gz"
-        }, 
+        },
         "gnome-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-45/doc.tar.gz",
-            "type": "compressed", 
+            "type": "compressed",
             "target": "gnome-doc.tar.gz"
         },
         "gnome-extras": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-extras/ui.tar.gz",
-            "type": "compressed", 
+            "type": "compressed",
             "target": "gnome-extras.tar.gz"
         },
         "gnome-infrastructure": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/ui.tar.gz",
-            "type": "compressed", 
+            "type": "compressed",
             "target": "gnome-infrastructure.tar.gz"
         },
         "gnome-circle": {
@@ -36,12 +36,12 @@
         },
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
-            "type": "compressed", 
+            "type": "compressed",
             "target": "gnome-infrastructure-doc.tar.gz"
-        }, 
+        },
         "gnome-extras-doc": {
-            "url": "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz", 
-            "type": "compressed", 
+            "url": "https://l10n.gnome.org/languages/ca/gnome-extras/doc.tar.gz",
+            "type": "compressed",
             "target": "gnome-extras-doc.tar.gz"
         },
         "gnome-circle-doc": {
@@ -49,7 +49,7 @@
             "type": "compressed",
             "target": "gnome-circle-doc.tar.gz"
         },
-       "gnome-evolution-doc": {
+        "gnome-evolution-doc": {
             "url": "https://l10n.gnome.org/languages/ca/evolution/doc.tar.gz",
             "type": "compressed",
             "target": "evolution-doc.tar.gz"

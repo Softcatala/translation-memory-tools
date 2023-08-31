@@ -1,7 +1,7 @@
 {
     "project": "Monero",
-    "license" : "BSD-3-Clause",
-    "projectweb": "https://translate.getmonero.org/projects/monero/", 
+    "license": "BSD-3-Clause",
+    "projectweb": "https://translate.getmonero.org/projects/monero/",
     "fileset": {
         "monero-gui": {
             "url": "https://raw.githubusercontent.com/monero-project/monero-gui/master/translations/monero-core_cat.ts",

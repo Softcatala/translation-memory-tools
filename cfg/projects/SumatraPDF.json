@@ -1,6 +1,6 @@
 {
     "project": "SumatraPDF",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://www.sumatrapdfreader.org/docs/Contribute-translation",
     "softcatala": true,
     "fileset": {

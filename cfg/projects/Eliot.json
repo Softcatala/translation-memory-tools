@@ -1,11 +1,11 @@
 {
     "project": "Eliot",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://www.nongnu.org/eliot/en/index.html",
     "fileset": {
         "Eliot": {
             "url": "https://git.savannah.gnu.org/cgit/eliot.git/plain/po/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "eliot-ca.po"
         }
     }

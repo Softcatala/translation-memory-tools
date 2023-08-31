@@ -1,15 +1,15 @@
 {
     "project": "Zotero",
-    "license" : "AGPL-3.0-only",
+    "license": "AGPL-3.0-only",
     "projectweb": "https://www.zotero.org/",
     "fileset": {
         "yumex": {
             "url": "https://app.transifex.com/zotero/zotero",
             "type": "transifex",
             "conversor_setup": {
-                "type"       : "properties",
-                "verb"       : "add",
-                "command"    : " --encoding=utf-8"
+                "type": "properties",
+                "verb": "add",
+                "command": " --encoding=utf-8"
             }
         }
     }

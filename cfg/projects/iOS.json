@@ -1,14 +1,14 @@
 {
     "project": "iOS",
     "projectweb": "https://developer.apple.com/internationalization/",
-    "license" : "propietària",
+    "license": "propietària",
     "quality_report": false,
     "fileset": {
         "Apple": {
             "url": "../source-pos/apple/ios.po",
             "type": "local-file",
             "target": "ios.po",
-            "po_preprocessing" : "remove_untranslated"
+            "po_preprocessing": "remove_untranslated"
         }
     }
 }

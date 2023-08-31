@@ -1,6 +1,6 @@
 {
     "project": "OnionShare",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://github.com/onionshare/onionshare",
     "fileset": {
         "OnionShare": {

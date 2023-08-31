@@ -1,6 +1,6 @@
 {
     "project": "Lumina Desktop",
-    "license" : "BSD-3-Clause",
+    "license": "BSD-3-Clause",
     "projectweb": "https://lumina-desktop.org/",
     "fileset": {
         "Lumina": {

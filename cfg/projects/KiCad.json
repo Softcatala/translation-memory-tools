@@ -1,6 +1,6 @@
 {
     "project": "KiCad",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://www.kicad.org/",
     "fileset": {
         "KiCad": {
@@ -13,7 +13,7 @@
             "type": "file",
             "target": "kicad-doc-ca.po"
         },
-	    "getting-started-doc": {
+        "getting-started-doc": {
             "url": "https://raw.githubusercontent.com/KiCad/kicad-doc/master/src/getting_started_in_kicad/po/ca.po",
             "type": "file",
             "target": "getting-started-doc-ca.po"

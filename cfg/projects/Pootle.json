@@ -1,7 +1,7 @@
 {
     "project": "Pootle",
-    "license" : "GPL-3.0-only",
-    "softcatala": true, 
+    "license": "GPL-3.0-only",
+    "softcatala": true,
     "fileset": {
         "pootle": {
             "url": "https://raw.githubusercontent.com/translate/pootle/master/pootle/locale/ca/pootle.po",

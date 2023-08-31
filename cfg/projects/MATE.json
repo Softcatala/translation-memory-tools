@@ -1,6 +1,6 @@
 {
     "project": "MATE",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://app.transifex.com/mate/MATE/",
     "fileset": {
         "mate": {

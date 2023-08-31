@@ -1,6 +1,6 @@
 {
     "project": "Hawaii",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "http://hawaiios.org/",
     "fileset": {
         "hawaii": {
@@ -11,13 +11,13 @@
             "url": "https://app.transifex.com/hawaii/system-preferences",
             "type": "transifex"
         },
-	    "terminal": {
+        "terminal": {
             "url": "https://app.transifex.com/hawaii/terminal",
             "type": "transifex"
         },
-	    "hawaii-workspace": {
+        "hawaii-workspace": {
             "url": "https://app.transifex.com/hawaii/hawaii-workspace",
             "type": "transifex"
         }
-    } 
+    }
 }
