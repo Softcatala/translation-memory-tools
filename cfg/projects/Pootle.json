@@ -1,6 +1,7 @@
 {
     "project": "Pootle",
     "license": "GPL-3.0-only",
+    "projectweb": "https://pootle.translatehouse.org/",
     "softcatala": true,
     "fileset": {
         "pootle": {
