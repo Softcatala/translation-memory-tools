@@ -1,0 +1,11 @@
+{
+    "project": "Homebridge",
+    "license": "MIT",
+    "projectweb": "https://homebridge.io/",
+    "fileset": {
+        "Homebridge": {
+            "url": "https://github.com/homebridge/homebridge-config-ui-x/",
+            "type": "git"
+        }
+    }
+}
