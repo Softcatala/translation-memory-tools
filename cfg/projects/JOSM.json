@@ -1,11 +1,11 @@
 {
     "project": "JOSM",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://translations.launchpad.net/josm/trunk/+pots/josm/ca/+translate",
     "fileset": {
         "JOSM": {
-            "url": "lp:~openstreetmap/josm/josm_trans/josm/ca.po", 
-            "type": "bazaar", 
+            "url": "lp:~openstreetmap/josm/josm_trans/josm/ca.po",
+            "type": "bazaar",
             "target": "ca.po"
         }
     }

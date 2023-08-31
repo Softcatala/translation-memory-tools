@@ -1,8 +1,8 @@
 {
     "project": "Bitcoin",
-    "license" : "MIT",
-    "projectweb": "https://bitcoin.org", 
-    "softcatala": true, 
+    "license": "MIT",
+    "projectweb": "https://bitcoin.org",
+    "softcatala": true,
     "fileset": {
         "bitcoin": {
             "url": "https://app.transifex.com/bitcoin/bitcoin",

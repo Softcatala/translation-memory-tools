@@ -1,6 +1,6 @@
 {
     "project": "Sphinx",
-    "license" : "LGPL-2.1-or-later",
+    "license": "LGPL-2.1-or-later",
     "projectweb": "https://www.sphinx-doc.org",
     "fileset": {
         "sphinx-doc": {

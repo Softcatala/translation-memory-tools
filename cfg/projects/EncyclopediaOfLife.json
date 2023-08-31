@@ -1,6 +1,6 @@
 {
     "project": "Encyclopedia of Life",
-    "license" : "MIT",
+    "license": "MIT",
     "projectweb": "https://eol.org/",
     "fileset": {
         "eol-website": {

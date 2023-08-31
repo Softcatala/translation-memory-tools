@@ -1,17 +1,17 @@
 {
     "project": "Open edX Platform",
-    "license" : "AGPL-3.0-only",
+    "license": "AGPL-3.0-only",
     "projectweb": "https://open.edx.org/",
     "fileset": {
         "Opendex": {
             "url": "https://raw.githubusercontent.com/openedx/edx-platform/master/conf/locale/ca/LC_MESSAGES/django.po",
             "type": "file",
-            "target" : "openedx_ca.po"
+            "target": "openedx_ca.po"
         },
         "Opendex-js": {
             "url": "https://raw.githubusercontent.com/openedx/edx-platform/master/conf/locale/ca/LC_MESSAGES/djangojs.po",
             "type": "file",
-            "target" : "openedx_js_ca.po"
+            "target": "openedx_js_ca.po"
         }
     }
 }

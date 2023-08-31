@@ -1,12 +1,12 @@
 {
     "project": "OpenEmu",
-    "license" : "BSD-3-Clause",
+    "license": "BSD-3-Clause",
     "projectweb": "https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)",
     "fileset": {
         "OpenEmu": {
             "url": "https://github.com/pereorga/software-translations.git",
             "type": "git",
-            "duplicates" : "msgctxt",
+            "duplicates": "msgctxt",
             "pattern": ".*?/openemu/.*?"
         }
     }

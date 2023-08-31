@@ -1,13 +1,13 @@
 {
     "project": "IntegrationTests",
-    "license" : "GPL-2.0-or-later",
-    "softcatala": true, 
-    "downloadable": false, 
-    "selectable": false, 
+    "license": "GPL-2.0-or-later",
+    "softcatala": true,
+    "downloadable": false,
+    "selectable": false,
     "fileset": {
         "IntegrationTests": {
-            "url": "../source-pos/integration-tests/integration-tests.po", 
-            "type": "local-file", 
+            "url": "../source-pos/integration-tests/integration-tests.po",
+            "type": "local-file",
             "target": "integration-tests.po"
         }
     }

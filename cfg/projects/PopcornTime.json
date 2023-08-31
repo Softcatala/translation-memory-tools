@@ -1,6 +1,6 @@
 {
     "project": "PopcornTime",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://github.com/popcorn-official",
     "fileset": {
         "popcorn-desktop": {

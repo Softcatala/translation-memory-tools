@@ -1,6 +1,6 @@
 {
     "project": "openSUSE",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://l10n.opensuse.org/languages/ca/",
     "fileset": {
         "yast": {
@@ -9,7 +9,7 @@
             "pattern": ".*?ca.po"
         },
         "desktop-file-translationsdesktop-file-translations": {
-            "url": "https://github.com/openSUSE/desktop-file-translations", 
+            "url": "https://github.com/openSUSE/desktop-file-translations",
             "type": "git",
             "pattern": ".*/ca/.*"
         }

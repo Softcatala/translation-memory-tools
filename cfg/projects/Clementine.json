@@ -1,16 +1,16 @@
 {
     "project": "Clementine",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://www.clementine-player.org/",
     "fileset": {
         "clementine": {
             "url": "https://raw.githubusercontent.com/clementine-player/Clementine/master/src/translations/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "clementine-ca.po"
         },
         "strawberry": {
             "url": "https://raw.githubusercontent.com/strawberrymusicplayer/strawberry/master/src/translations/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "strawberry-ca.po"
         }
     }

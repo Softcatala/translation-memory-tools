@@ -1,11 +1,11 @@
 {
     "project": "WinMerge",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://winmerge.org/translations/",
     "fileset": {
         "WinMerge": {
             "url": "https://raw.githubusercontent.com/WinMerge/winmerge/master/Translations/WinMerge/Catalan.po",
-            "type": "file", 
+            "type": "file",
             "target": "winmerge-ca.po"
         }
     }

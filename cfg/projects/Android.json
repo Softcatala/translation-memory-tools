@@ -1,13 +1,13 @@
 {
     "project": "Android",
-    "license" : "Apache-2.0",
+    "license": "Apache-2.0",
     "projectweb": "https://www.android.com/",
     "quality_report": false,
     "fileset": {
         "Android": {
-            "url": "https://android.googlesource.com/?format=JSON", 
-            "type": "gerrit-directory", 
-            "target": "gerrit-projects.json", 
+            "url": "https://android.googlesource.com/?format=JSON",
+            "type": "gerrit-directory",
+            "target": "gerrit-projects.json",
             "retrieval_pattern": "^(?!.*(device|prebuilts|hardware|chromium_org|system|tools|python|Android-trusty)).*"
         }
     }

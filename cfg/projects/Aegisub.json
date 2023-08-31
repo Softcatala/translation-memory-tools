@@ -1,6 +1,6 @@
 {
     "project": "Aegisub",
-    "license" : "BSD-3-Clause",
+    "license": "BSD-3-Clause",
     "projectweb": "https://github.com/Aegisub/Aegisub/",
     "fileset": {
         "Aegisub": {

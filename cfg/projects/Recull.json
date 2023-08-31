@@ -1,13 +1,13 @@
 {
     "project": "Recull",
-    "license" : "CC-BY-SA-3.0",
+    "license": "CC-BY-SA-3.0",
     "projectweb": "https://www.softcatala.org/wiki/Projectes/Recull_de_termes",
     "quality_report": false,
-    "softcatala": true, 
+    "softcatala": true,
     "fileset": {
         "recull": {
-            "url": "../source-pos/recull/recull.po", 
-            "type": "local-file", 
+            "url": "../source-pos/recull/recull.po",
+            "type": "local-file",
             "target": "recull.po"
         }
     }

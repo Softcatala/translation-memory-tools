@@ -1,6 +1,6 @@
 {
     "project": "FreeCAD",
-    "license" : "LGPL-2.1-or-later",
+    "license": "LGPL-2.1-or-later",
     "projectweb": "https://www.freecadweb.org/",
     "fileset": {
         "freecad": {

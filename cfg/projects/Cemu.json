@@ -1,6 +1,6 @@
 {
     "project": "Cemu",
-    "license" : "MPL-2.0",
+    "license": "MPL-2.0",
     "projectweb": "http://wiki.cemu.info/wiki/Tutorial:How_to_translate_Cemu_UI",
     "fileset": {
         "cemu": {

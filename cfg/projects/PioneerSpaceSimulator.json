@@ -1,6 +1,6 @@
 {
     "project": "PioneerSpaceSimulator",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://explore.transifex.com/pioneer/pioneer/",
     "fileset": {
         "PioneerSpaceSimulator": {

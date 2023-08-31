@@ -1,6 +1,6 @@
 {
     "project": "Tortoise",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://tortoisegit.org/",
     "fileset": {
         "Tortoisesvn": {
@@ -12,6 +12,6 @@
             "url": "https://raw.githubusercontent.com/TortoiseGit/TortoiseGit/master/Languages/Tortoise_ca.po",
             "type": "file",
             "target": "tortoisesgit-ca.po"
-        }  
+        }
     }
 }

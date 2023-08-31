@@ -1,13 +1,13 @@
 {
     "project": "Pidgin",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://www.softcatala.org/projectes/pidgin/",
     "softcatala": true,
     "fileset": {
         "Pidgin": {
             "url": "https://keep.imfreedom.org/pidgin/pidgin/",
             "type": "mercurial",
-             "pattern": ".*/ca\\.po.*"
+            "pattern": ".*/ca\\.po.*"
         }
     }
 }

@@ -1,6 +1,6 @@
 {
     "project": "Blender",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://www.blender.org/",
     "fileset": {
         "blender": {

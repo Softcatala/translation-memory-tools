@@ -1,36 +1,36 @@
 {
     "project": "Compiz",
-    "license" : "MIT",
+    "license": "MIT",
     "projectweb": "https://gitlab.com/compiz",
     "fileset": {
         "simple-ccsm": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/simple-ccsm/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/simple-ccsm/master/po/ca.po",
+            "type": "file",
             "target": "ca-simple-ccsm.po"
         },
         "ccsm": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/ccsm/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/ccsm/master/po/ca.po",
+            "type": "file",
             "target": "ca-ccsm.po"
         },
         "compiz": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz/master/po/ca.po",
+            "type": "file",
             "target": "ca-compiz.po"
         },
         "compiz-plugins-main": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-main/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-main/master/po/ca.po",
+            "type": "file",
             "target": "ca-compiz-plugins-main.po"
         },
         "compiz-plugins-extra": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-extra/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-extra/master/po/ca.po",
+            "type": "file",
             "target": "ca-compiz-plugins-extra.po"
         },
         "compiz-plugins-experimental": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-experimental/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/compiz-plugins-experimental/master/po/ca.po",
+            "type": "file",
             "target": "ca-compiz-plugins-experimental.po"
         },
         "fusion-icon": {
@@ -38,9 +38,9 @@
             "type": "file",
             "target": "ca-fusion-icon.po"
         },
-	"emerald": {
-            "url": "https://raw.githubusercontent.com/compiz-reloaded/emerald/master/po/ca.po", 
-            "type": "file", 
+        "emerald": {
+            "url": "https://raw.githubusercontent.com/compiz-reloaded/emerald/master/po/ca.po",
+            "type": "file",
             "target": "ca-emerald.po"
         }
     }
