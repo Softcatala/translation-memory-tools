@@ -4,7 +4,7 @@
     "projectweb": "https://helpcenter.onlyoffice.com/guides/become-translator.aspx",
     "fileset": {
         "oo-web-apps": {
-            "url": "git@github.com:ONLYOFFICE/web-apps.git",
+            "url": "https://github.com/ONLYOFFICE/web-apps",
             "type": "git"
         },
         "oo-winlinux": {
