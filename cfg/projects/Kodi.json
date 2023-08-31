@@ -1,6 +1,6 @@
 {
     "project": "Kodi",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://kodi.tv/",
     "fileset": {
         "kodi-main": {

@@ -1,21 +1,21 @@
 {
     "project": "phpMyAdmin",
-    "license" : "GPL-2.0-only",
-    "projectweb": "https://hosted.weblate.org/projects/phpmyadmin/", 
+    "license": "GPL-2.0-only",
+    "projectweb": "https://hosted.weblate.org/projects/phpmyadmin/",
     "fileset": {
         "phpmyadmin-master": {
-            "url": "https://hosted.weblate.org/download/phpmyadmin/master/ca/", 
-            "type": "file", 
+            "url": "https://hosted.weblate.org/download/phpmyadmin/master/ca/",
+            "type": "file",
             "target": "phpmyadmin-master-ca.po"
         },
         "phpmyadmin-debian": {
-            "url": "https://hosted.weblate.org/download/phpmyadmin/debian/ca/", 
-            "type": "file", 
+            "url": "https://hosted.weblate.org/download/phpmyadmin/debian/ca/",
+            "type": "file",
             "target": "phpmyadmin-debian-ca.po"
         },
         "phpmyadmin-documentation": {
-            "url": "https://hosted.weblate.org/download/phpmyadmin/documentation/ca/", 
-            "type": "file", 
+            "url": "https://hosted.weblate.org/download/phpmyadmin/documentation/ca/",
+            "type": "file",
             "target": "phpmyadmin-documentation-ca.po"
         }
     }

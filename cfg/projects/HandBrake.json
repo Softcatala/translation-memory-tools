@@ -1,6 +1,6 @@
 {
     "project": "HandBrake",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://handbrake.fr/",
     "softcatala": true,
     "fileset": {

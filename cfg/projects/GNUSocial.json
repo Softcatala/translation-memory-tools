@@ -1,7 +1,7 @@
 {
     "project": "GNUSocial",
-    "license" : "AGPL-3.0-or-later",
-    "projectweb": "https://www.gnusocial.rocks/", 
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://www.gnusocial.rocks/",
     "fileset": {
         "GNUSocial": {
             "url": "https://notabug.org/diogo/gnu-social.git",

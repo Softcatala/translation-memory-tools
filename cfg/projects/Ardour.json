@@ -1,6 +1,6 @@
 {
     "project": "Ardour",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://github.com/Ardour/ardour/blob/master/TRANSLATORS",
     "fileset": {
         "Ardour": {

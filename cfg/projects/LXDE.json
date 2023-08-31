@@ -1,6 +1,6 @@
 {
     "project": "LXDE",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://www.lxde.org/",
     "fileset": {
         "lxappearance-obconf": {

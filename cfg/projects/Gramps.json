@@ -1,11 +1,11 @@
 {
     "project": "Gramps",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://gramps-project.org/", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://gramps-project.org/",
     "fileset": {
         "Gramps": {
-            "url": "https://raw.githubusercontent.com/gramps-project/gramps/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/gramps-project/gramps/master/po/ca.po",
+            "type": "file",
             "target": "ca.po"
         }
     }

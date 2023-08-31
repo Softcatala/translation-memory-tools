@@ -1,6 +1,6 @@
 {
     "project": "Quod Libet",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://quodlibet.readthedocs.io",
     "fileset": {
         "quodlibet": {

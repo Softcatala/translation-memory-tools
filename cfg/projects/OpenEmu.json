@@ -1,32 +1,13 @@
 {
     "project": "OpenEmu",
-    "license" : "BSD-3-Clause",
+    "license": "BSD-3-Clause",
     "projectweb": "https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)",
     "fileset": {
-        "OpenEmu-Debug": {
-            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openemu/po/Debug.po",
-            "type": "file",
-            "target": "OpenEmu-Debug-ca.po"
-        },
-        "OpenEmu-ControlLabels": {
-            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openemu/po/ControlLabels.po",
-            "type": "file",
-            "target": "OpenEmu-ControlLabels-ca.po"
-        },
-        "OpenEmu-Localizable": {
-            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openemu/po/Localizable.po",
-            "type": "file",
-            "target": "OpenEmu-Localizable-ca.po"
-        },
-        "OpenEmu-MainMenu": {
-            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openemu/po/MainMenu.po",
-            "type": "file",
-            "target": "OpenEmu-MainMenu-ca.po"
-        },
-        "OpenEmu-OEControls": {
-            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openemu/po/OEControls.po",
-            "type": "file",
-            "target": "OpenEmu-OEControls-ca.po"
+        "OpenEmu": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/openemu/.*?"
         }
     }
 }

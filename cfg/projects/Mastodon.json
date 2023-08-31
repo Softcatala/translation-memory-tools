@@ -1,6 +1,6 @@
 {
     "project": "Mastodon",
-    "license" : "AGPL-3.0-or-later",
+    "license": "AGPL-3.0-or-later",
     "projectweb": "https://joinmastodon.org/",
     "fileset": {
         "Mastodon": {

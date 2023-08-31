@@ -1,37 +1,12 @@
 {
     "project": "AsteroidOS",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://hosted.weblate.org/languages/ca/asteroidos/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://hosted.weblate.org/languages/ca/asteroidos/",
     "fileset": {
-       "Alarm Clock": {
-            "url": "https://hosted.weblate.org/download/asteroidos/alarmclock/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
-        },
-       "Launcher": {
-            "url": "https://hosted.weblate.org/download/asteroidos/launcher/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
-        },
-       "Music": {
-            "url": "https://hosted.weblate.org/download/asteroidos/music/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
-        },
-       "Settings": {
-            "url": "https://hosted.weblate.org/download/asteroidos/settings/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
-        },
-       "Sync": {
-            "url": "https://hosted.weblate.org/download/asteroidos/sync/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
-        },
-       "Weather": {
-            "url": "https://hosted.weblate.org/download/asteroidos/weather/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
+        "AsteroidOS": {
+            "url": "https://hosted.weblate.org/download/asteroidos/?format=zip",
+            "type": "compressed",
+            "target": "ca.zip"
         }
     }
 }

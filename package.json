@@ -1,0 +1,10 @@
+{
+    "name": "translation-memory-tools",
+    "scripts": {
+        "prettier:check": "prettier --check '**/*.json'",
+        "prettier:write": "prettier --write '**/*.json'"
+    },
+    "devDependencies": {
+        "prettier": "^3.0.3"
+    }
+}

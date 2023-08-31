@@ -1,6 +1,6 @@
 {
     "project": "SpeedCrunch",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://heldercorreia.bitbucket.io/speedcrunch/",
     "fileset": {
         "speedcrunch": {

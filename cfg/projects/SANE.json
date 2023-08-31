@@ -1,11 +1,11 @@
 {
     "project": "Scanner Access Now Easy",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "http://www.sane-project.org/", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "http://www.sane-project.org/",
     "fileset": {
         "backends": {
             "url": "https://gitlab.com/sane-project/backends/raw/master/po/ca.po",
-            "type": "file", 
+            "type": "file",
             "target": "sane-backends.po"
         }
     }

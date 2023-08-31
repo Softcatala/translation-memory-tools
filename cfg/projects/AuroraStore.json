@@ -1,6 +1,6 @@
 {
     "project": "AuroraStore",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://auroraoss.com",
     "fileset": {
         "AuroraStore": {

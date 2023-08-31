@@ -1,11 +1,11 @@
 {
     "project": "Plone",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://plone.org/",
     "fileset": {
         "Plone": {
-            "url": "https://raw.githubusercontent.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plone.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/collective/plone.app.locales/master/plone/app/locales/locales/ca/LC_MESSAGES/plone.po",
+            "type": "file",
             "target": "ca.po"
         }
     }

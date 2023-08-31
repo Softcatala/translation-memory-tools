@@ -1,0 +1,11 @@
+{
+    "project": "BlueWallet",
+    "license": "MIT",
+    "projectweb": "https://explore.transifex.com/bluewallet/bluewallet/",
+    "fileset": {
+        "BlueWallet": {
+            "url": "https://github.com/BlueWallet/BlueWallet",
+            "type": "git"
+        }
+    }
+}

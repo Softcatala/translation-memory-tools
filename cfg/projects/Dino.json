@@ -1,11 +1,11 @@
 {
     "project": "Dino",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://dino.im/",
     "fileset": {
         "Dino": {
-            "url": "https://raw.githubusercontent.com/dino/dino/master/main/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/dino/dino/master/main/po/ca.po",
+            "type": "file",
             "target": "dino-ca.po"
         }
     }

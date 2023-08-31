@@ -1,11 +1,11 @@
 {
     "project": "KeePassXC",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://keepassxc.org/",
     "fileset": {
         "keepassxc": {
             "url": "https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/translations/keepassxc_ca.ts",
-            "type": "file", 
+            "type": "file",
             "target": "keepassxc_ca.ts"
         }
     }

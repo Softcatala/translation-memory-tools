@@ -1,11 +1,11 @@
 {
     "project": "Midnight Commander",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://midnight-commander.org/",
     "fileset": {
         "mc": {
-            "url": "https://raw.githubusercontent.com/MidnightCommander/mc/master/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/MidnightCommander/mc/master/po/ca.po",
+            "type": "file",
             "target": "ca.po"
         }
     }

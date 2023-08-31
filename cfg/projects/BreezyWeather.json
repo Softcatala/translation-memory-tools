@@ -1,0 +1,11 @@
+{
+    "project": "BreezyWeather",
+    "license": "LGPL-3.0-only",
+    "projectweb": "https://github.com/breezy-weather/breezy-weather",
+    "fileset": {
+        "BreezyWeather": {
+            "url": "https://github.com/breezy-weather/breezy-weather.git",
+            "type": "git"
+        }
+    }
+}

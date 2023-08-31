@@ -1,13 +1,13 @@
 {
     "project": "MediaWiki",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://www.mediawiki.org/wiki/MediaWiki/ca", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.mediawiki.org/wiki/MediaWiki/ca",
     "fileset": {
         "main": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=core&language=ca&format=export-as-po",
             "type": "file",
             "target": "main-ca.po"
-        }, 
+        },
         "mobile-app": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-mobileapp&language=ca&format=export-as-po",
             "type": "file",
@@ -15,7 +15,7 @@
         },
         "mobile-fe": {
             "url": "https://translatewiki.net/wiki/Special:ExportTranslations?group=ext-mobilefrontend&language=ca&format=export-as-po",
-            "type": "file", 
+            "type": "file",
             "target": "mobile-fe.po"
         },
         "wikipedia-ios": {

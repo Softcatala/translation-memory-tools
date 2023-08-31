@@ -1,7 +1,7 @@
 {
     "project": "OsmAnd",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://osmand.net/docs/technical/contributions/translating-osmand/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://osmand.net/docs/technical/contributions/translating-osmand/",
     "fileset": {
         "OsmAnd": {
             "url": "https://github.com/osmandapp/OsmAnd.git",

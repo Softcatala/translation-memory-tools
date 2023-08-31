@@ -1,6 +1,6 @@
 {
     "project": "Deluge",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://deluge-torrent.org/",
     "fileset": {
         "Deluge": {

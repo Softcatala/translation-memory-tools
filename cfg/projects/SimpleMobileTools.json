@@ -1,81 +1,81 @@
 {
     "project": "SimpleMobileTools",
-    "license" : "GPL-3.0-or-later",
-    "projectweb": "https://simplemobiletools.com/", 
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://simplemobiletools.com/",
     "fileset": {
-       "App Launcher": {
+        "App Launcher": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-app-launcher/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         },
-       "Calculator": {
+        "Calculator": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-calculator/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         },
-       "Calendar": {
+        "Calendar": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-calendar/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "Commons": {
+        },
+        "Commons": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-commons/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "Contacts": {
+        },
+        "Contacts": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-contacts/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "Dialer": {
+        },
+        "Dialer": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-dialer/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "Draw": {
+        },
+        "Draw": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-draw/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         },
-       "FileManager": {
+        "FileManager": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-file-manager/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         },
-       "Flashlight": {
+        "Flashlight": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-flashlight/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "Gallery": {
+        },
+        "Gallery": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-gallery/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "MusicPlayer": {
+        },
+        "MusicPlayer": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-music-player/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         },
-       "Notes": {
+        "Notes": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-notes/ca/?format=po",
-            "type": "file", 
-            "target": "ca.po"
-        }, 
-       "SMSMessenger": {
-            "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-sms-messenger/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         },
-       "ThankYou": {
-            "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-thank-you/ca/?format=po",
-            "type": "file", 
+        "SMSMessenger": {
+            "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-sms-messenger/ca/?format=po",
+            "type": "file",
             "target": "ca.po"
-        }, 
-       "VoiceRecorder": {
+        },
+        "ThankYou": {
+            "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-thank-you/ca/?format=po",
+            "type": "file",
+            "target": "ca.po"
+        },
+        "VoiceRecorder": {
             "url": "https://hosted.weblate.org/download/simple-mobile-tools/simple-voice-recorder/ca/?format=po",
-            "type": "file", 
+            "type": "file",
             "target": "ca.po"
         }
     }

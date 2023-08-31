@@ -48,7 +48,8 @@ class FileSet:
         self.retrieval_pattern = ""
         self.pattern = ""
 
-        prefix = project_name[0 : min(6, len(project_name))]
+        prefix = re.sub(r"[^\.a-zA-Z0-9_-]+", "", project_name)
+        prefix = prefix[0 : min(6, len(prefix))]
         self.temp_dir = tempfile.TemporaryDirectory(prefix=f"{prefix}_").name
 
         if parent_fileset:

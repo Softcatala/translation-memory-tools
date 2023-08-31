@@ -1,12 +1,12 @@
 {
     "project": "Cyberduck",
-    "license" : "GPL-2.0-or-later",
-    "projectweb": "https://cyberduck.io/", 
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://cyberduck.io/",
     "fileset": {
         "Cyberduck": {
             "url": "https://app.transifex.com/cyberduck/cyberduck/",
             "type": "transifex",
-            "po_preprocessing" : "remove_untranslated"
+            "po_preprocessing": "remove_untranslated"
         }
     }
 }

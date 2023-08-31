@@ -1,6 +1,6 @@
 {
     "project": "Etherpad",
-    "license" : "Apache-2.0",
+    "license": "Apache-2.0",
     "projectweb": "https://translatewiki.net/wiki/Translating:Etherpad_lite",
     "fileset": {
         "Etherpad": {

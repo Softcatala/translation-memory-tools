@@ -1,8 +1,7 @@
-
 {
     "project": "Mageia",
-    "license" : "GPL-2.0-only",
-    "projectweb": "https://www.mageia.org/ca/", 
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.mageia.org/ca/",
     "fileset": {
         "Mageia": {
             "url": "https://app.transifex.com/MageiaLinux/mageia",

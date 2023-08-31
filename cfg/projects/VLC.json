@@ -1,8 +1,8 @@
 {
-    "project": "VLC media player",
-    "license" : "LGPL-2.1-or-later",
-    "projectweb": "https://www.softcatala.org/projectes/vlc/", 
-    "softcatala": true, 
+    "project": "VLC",
+    "license": "LGPL-2.1-or-later",
+    "projectweb": "https://www.softcatala.org/projectes/vlc/",
+    "softcatala": true,
     "fileset": {
         "VLC": {
             "url": "https://code.videolan.org/videolan/vlc/-/raw/master/po/ca.po",
@@ -12,6 +12,12 @@
         "VLC-android": {
             "url": "https://code.videolan.org/videolan/vlc-android.git",
             "type": "git"
+        },
+        "VLC-ios": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/vlc-ios/.*?"
         },
         "VLMC": {
             "url": "https://code.videolan.org/videolan/vlmc/-/raw/master/ts/vlmc_ca_ES.ts",
