@@ -1,0 +1,15 @@
+{
+    "project": "Traccar",
+    "license": "Apache-2.0",
+    "projectweb": "https://explore.transifex.com/traccar/traccar/",
+    "fileset": {
+        "traccar-web": {
+            "url": "https://github.com/traccar/traccar-web",
+            "type": "git"
+        },
+        "traccar-android": {
+            "url": "https://github.com/traccar/traccar-client-android",
+            "type": "git"
+        }
+    }
+}

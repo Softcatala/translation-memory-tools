@@ -1,11 +1,11 @@
 {
     "project": "Trac",
-    "license" : "BSD-3-Clause",
-    "projectweb": "http://trac.edgewall.org/ticket/7353", 
+    "license": "BSD-3-Clause",
+    "projectweb": "http://trac.edgewall.org/ticket/7353",
     "fileset": {
         "main": {
-            "url": "http://trac.edgewall.org/export/HEAD/trunk/trac/locale/ca/LC_MESSAGES/messages.po", 
-            "type": "file", 
+            "url": "http://trac.edgewall.org/export/HEAD/trunk/trac/locale/ca/LC_MESSAGES/messages.po",
+            "type": "file",
             "target": "main-ca.po"
         }
     }

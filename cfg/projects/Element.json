@@ -1,6 +1,6 @@
 {
     "project": "Element",
-    "license" : "Apache-2.0",
+    "license": "Apache-2.0",
     "projectweb": "https://translate.element.io/",
     "fileset": {
         "Element-android": {

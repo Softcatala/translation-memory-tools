@@ -1,16 +1,16 @@
 {
     "project": "Dolibarr",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://www.dolibarr.org/",
     "fileset": {
         "Dolibarr": {
             "url": "https://app.transifex.com/dolibarr-association/dolibarr/",
             "type": "transifex",
-            "po_preprocessing" : "remove_untranslated",
+            "po_preprocessing": "remove_untranslated",
             "conversor_setup": {
-                "type"       : "properties",
-                "verb"       : "add",
-                "command"    : " --encoding=utf-8"
+                "type": "properties",
+                "verb": "add",
+                "command": " --encoding=utf-8"
             }
         }
     }

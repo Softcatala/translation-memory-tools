@@ -1,6 +1,6 @@
 {
     "project": "OnlyOffice",
-    "license" : "AGPL-3.0-only",
+    "license": "AGPL-3.0-only",
     "projectweb": "https://helpcenter.onlyoffice.com/guides/become-translator.aspx",
     "fileset": {
         "oo-web-apps": {

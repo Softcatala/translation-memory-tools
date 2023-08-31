@@ -1,12 +1,12 @@
 {
     "project": "Nextcloud",
-    "license" : "AGPL-3.0-or-later",
-    "projectweb" : "https://nextcloud.com/",
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://nextcloud.com/",
     "fileset": {
-            "Nextcloud" : {
-                    "url" : "https://app.transifex.com/nextcloud/nextcloud/",
-                    "type": "transifex",
-                    "po_preprocessing" : "remove_untranslated"
-            }
+        "Nextcloud": {
+            "url": "https://app.transifex.com/nextcloud/nextcloud/",
+            "type": "transifex",
+            "po_preprocessing": "remove_untranslated"
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
     "project": "Avahi",
-    "license" : "LGPL-2.1-only",
+    "license": "LGPL-2.1-only",
     "projectweb": "https://www.avahi.org/",
     "fileset": {
         "Avahi": {

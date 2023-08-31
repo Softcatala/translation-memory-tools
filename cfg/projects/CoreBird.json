@@ -1,7 +1,7 @@
 {
     "project": "CoreBird",
-    "license" : "GPL-3.0-only",
-    "projectweb": "https://github.com/baedert/corebird", 
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/baedert/corebird",
     "fileset": {
         "CoreBird": {
             "url": "https://raw.githubusercontent.com/baedert/corebird/master/po/ca.po",

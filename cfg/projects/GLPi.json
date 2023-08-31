@@ -1,6 +1,6 @@
 {
     "project": "GLPi",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://glpi-project.org/",
     "fileset": {
         "GLPi": {

@@ -1,6 +1,6 @@
 {
     "project": "F-Droid",
-    "license" : "GPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "projectweb": "https://f-droid.org/",
     "fileset": {
         "F-Droid": {

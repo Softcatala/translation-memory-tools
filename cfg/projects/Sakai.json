@@ -1,7 +1,7 @@
 {
     "project": "Sakai",
-    "license" : "ECL-2.0",
-    "projectweb": "https://www.sakaiproject.org/", 
+    "license": "ECL-2.0",
+    "projectweb": "https://www.sakaiproject.org/",
     "fileset": {
         "Sakai": {
             "url": "https://app.transifex.com/apereo/sakai-trunk/",

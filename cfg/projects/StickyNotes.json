@@ -1,11 +1,11 @@
 {
     "project": "Sticky Notes",
-    "license" : "MIT",
+    "license": "MIT",
     "projectweb": "https://github.com/vixalien/sticky",
     "fileset": {
         "Sticky Notes": {
-            "url": "https://raw.githubusercontent.com/vixalien/sticky/main/po/ca.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/vixalien/sticky/main/po/ca.po",
+            "type": "file",
             "target": "stickynotes-ca.po"
         }
     }

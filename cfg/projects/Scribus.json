@@ -1,7 +1,7 @@
 {
     "project": "Scribus",
-    "license" : "GPL-2.0-only",
-    "projectweb": "https://wiki.scribus.net/canvas/Official:Translation_Howto", 
+    "license": "GPL-2.0-only",
+    "projectweb": "https://wiki.scribus.net/canvas/Official:Translation_Howto",
     "fileset": {
         "scribus": {
             "url": "https://raw.githubusercontent.com/scribusproject/scribus/master/resources/translations/scribus.ca.ts",

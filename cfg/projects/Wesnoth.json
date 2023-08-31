@@ -1,11 +1,11 @@
 {
     "project": "The Battle For Wesnoth",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.wesnoth.org/gettext/",
     "fileset": {
         "Wesnoth": {
-            "url": "https://github.com/wesnoth/wesnoth-old.git", 
-            "type": "git", 
+            "url": "https://github.com/wesnoth/wesnoth-old.git",
+            "type": "git",
             "pattern": ".*?ca.po"
         }
     }

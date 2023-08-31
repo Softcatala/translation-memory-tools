@@ -1,6 +1,6 @@
 {
     "project": "Weblate",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://hosted.weblate.org/projects/weblate/",
     "fileset": {
         "Weblate": {

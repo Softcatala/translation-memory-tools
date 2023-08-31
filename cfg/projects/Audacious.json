@@ -1,6 +1,6 @@
 {
     "project": "Audacious",
-    "license" : "BSD-2-Clause",
+    "license": "BSD-2-Clause",
     "projectweb": "https://audacious-media-player.org/",
     "fileset": {
         "audacious": {

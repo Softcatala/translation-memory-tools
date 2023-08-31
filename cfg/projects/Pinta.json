@@ -1,12 +1,12 @@
 {
     "project": "Pinta",
-    "license" : "X11",
-    "projectweb": "https://translations.launchpad.net/pinta", 
+    "license": "X11",
+    "projectweb": "https://translations.launchpad.net/pinta",
     "fileset": {
         "Pinta": {
-            "url": "https://raw.githubusercontent.com/PintaProject/Pinta/master/po/ca.po", 
+            "url": "https://raw.githubusercontent.com/PintaProject/Pinta/master/po/ca.po",
             "type": "file",
-            "target" : "ca.po"
+            "target": "ca.po"
         }
     }
 }

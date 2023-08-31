@@ -1,11 +1,11 @@
 {
     "project": "Searx",
-    "license" : "AGPL-3.0-only",
-    "projectweb": "https://asciimoo.github.io/searx/", 
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://asciimoo.github.io/searx/",
     "fileset": {
         "Searx": {
-            "url": "https://raw.githubusercontent.com/asciimoo/searx/master/searx/translations/ca/LC_MESSAGES/messages.po", 
-            "type": "file", 
+            "url": "https://raw.githubusercontent.com/asciimoo/searx/master/searx/translations/ca/LC_MESSAGES/messages.po",
+            "type": "file",
             "target": "searx-ca.po",
             "po_preprocessing": "remove_untranslated"
         }

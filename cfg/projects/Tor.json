@@ -1,15 +1,15 @@
 {
     "project": "Tor",
-    "license" : "BSD-3-Clause",
-    "projectweb": "https://www.torproject.org/", 
+    "license": "BSD-3-Clause",
+    "projectweb": "https://www.torproject.org/",
     "fileset": {
         "Tor": {
             "url": "https://app.transifex.com/otf/torproject",
             "type": "transifex",
             "conversor_setup": {
-                "type"       : "properties",
-                "verb"       : "add",
-                "command"    : " --encoding=utf-8"
+                "type": "properties",
+                "verb": "add",
+                "command": " --encoding=utf-8"
             }
         }
     }

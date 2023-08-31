@@ -1,6 +1,6 @@
 {
     "project": "BigBlueButton",
-    "license" : "LGPL-3.0-or-later",
+    "license": "LGPL-3.0-or-later",
     "projectweb": "https://docs.bigbluebutton.org/development/localization",
     "fileset": {
         "BigBlueButton": {

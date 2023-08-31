@@ -1,6 +1,6 @@
 {
     "project": "Hugin",
-    "license" : "GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later",
     "projectweb": "https://hugin.sourceforge.io/",
     "fileset": {
         "Hugin": {

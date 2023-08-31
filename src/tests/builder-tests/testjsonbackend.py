@@ -69,9 +69,13 @@ class TestJsonBackend(unittest.TestCase):
 
         self._validate_mozilla_project(mozilla)
 
-    def test__from_name_to_project_id(self):
+    def test_from_name_to_project_id(self):
         project = ProjectDTO("One Name")
         self.assertEquals(project.project_id, "one_name")
+
+    def test_from_name_to_project_id(self):
+        project = ProjectDTO("One's Name")
+        self.assertEquals("ones_name-tm.po", project.filename)
 
 
 if __name__ == "__main__":

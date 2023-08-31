@@ -1,6 +1,6 @@
 {
     "project": "MythTV",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "https://www.mythtv.org/",
     "fileset": {
         "MythTV": {

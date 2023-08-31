@@ -1,6 +1,6 @@
 {
     "project": "Xfe",
-    "license" : "GPL-2.0-only",
+    "license": "GPL-2.0-only",
     "projectweb": "http://roland65.free.fr/xfe/",
     "fileset": {
         "xfe": {

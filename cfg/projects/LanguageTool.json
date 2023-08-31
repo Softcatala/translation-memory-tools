@@ -1,17 +1,17 @@
 {
     "project": "LanguageTool",
-    "license" : "LGPL-2.1-or-later",
-    "projectweb": "https://www.softcatala.org/projectes/languagetool/", 
+    "license": "LGPL-2.1-or-later",
+    "projectweb": "https://www.softcatala.org/projectes/languagetool/",
     "softcatala": true,
     "fileset": {
         "LanguageTool": {
             "url": "https://app.transifex.com/dnaber/languagetool/",
             "type": "transifex",
-            "po_preprocessing" : "remove_untranslated",
+            "po_preprocessing": "remove_untranslated",
             "conversor_setup": {
-                "type"       : "properties",
-                "verb"       : "add",
-                "command"    : " --encoding=utf-8"
+                "type": "properties",
+                "verb": "add",
+                "command": " --encoding=utf-8"
             }
         }
     }

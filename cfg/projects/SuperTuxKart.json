@@ -1,6 +1,6 @@
 {
     "project": "SuperTuxKart",
-    "license" : "GPL-3.0-only",
+    "license": "GPL-3.0-only",
     "projectweb": "https://supertuxkart.net/",
     "fileset": {
         "SuperTuxKart": {
