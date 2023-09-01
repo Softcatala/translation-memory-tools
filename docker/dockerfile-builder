@@ -23,7 +23,7 @@ RUN sed -i -e 's/# ca_ES.UTF-8 UTF-8/ca_ES.UTF-8 UTF-8/' /etc/locale.gen && \
 
 COPY requirements.txt/ $DIR_TMT_GIT/
 RUN pip install -r $DIR_TMT_GIT/requirements.txt
- 
+
 WORKDIR $DIR
 COPY src/ $DIR_TMT_GIT/src/
 COPY deployment/ $DIR_TMT_GIT/deployment/
