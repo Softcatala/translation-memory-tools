@@ -10,6 +10,14 @@
         "documentation-kf5": {
             "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/docmessages/",
             "type": "subversion"
+        },
+        "gui-kf6": {
+            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf6/ca/messages/",
+            "type": "subversion"
+        },
+        "documentation-kf6": {
+            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf6/ca/docmessages/",
+            "type": "subversion"
         }
     }
 }
