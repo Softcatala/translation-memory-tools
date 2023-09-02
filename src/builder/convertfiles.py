@@ -245,11 +245,15 @@ class ConvertFiles:
 
     def _convert_json_file_to_po(self, jsonfile, source, target):
         dirName = os.path.dirname(jsonfile)
+        source = os.path.join(dirName, source)
+        target = os.path.join(dirName, target)
+
+        if not os.path.exists(source) or not os.path.exists(target):
+            return
+
         logging.info("convert json file: {0}".format(dirName))
-        filename = "{0}/json-ca.po".format(dirName)
-        cmd = "json2po -t {0}/{2} -i {0}/{3} " "-o {1}".format(
-            dirName, filename, source, target
-        )
+        filename = os.path.join(dirName, "json-ca.po")
+        cmd = f"json2po -t {source} -i {target} -o {filename}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Json)
         os.system(cmd)
 
@@ -265,14 +269,16 @@ class ConvertFiles:
                 jsonfile, "../en_US/messages.json", "../ca/messages.json"
             )
 
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.json"):
-            self._convert_json_file_to_po(jsonfile, "en.json", "ca.json")
+        files = [
+            ("ca.json", "en.json", "ca.json"),
+            ("ca.json", "en-US.json", "ca.json"),
+            ("ca.i18n.json", "en.i18n.json", "ca.i18n.json"),
+            ("main-ca.json", "main.json", "main-ca.json"),
+        ]
 
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.i18n.json"):
-            self._convert_json_file_to_po(jsonfile, "en.i18n.json", "ca.i18n.json")
-
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "main-ca.json"):
-            self._convert_json_file_to_po(jsonfile, "main.json", "main-ca.json")
+        for spec, src, tgt in files:
+            for jsonfile in self.findFiles.find_recursive(self.convert_dir, spec):
+                self._convert_json_file_to_po(jsonfile, src, tgt)
 
     def _convert_yml_files_to_po(self):
         EXPECTED_SRC = "en.yml"
