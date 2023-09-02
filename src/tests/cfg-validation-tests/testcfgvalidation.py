@@ -96,6 +96,17 @@ class TestCfgValidation(unittest.TestCase):
                     f"project '{project_dto.name}'",
                 )
 
+    def test_check_git_url(self):
+        json = self.get_projects_cfg()
+
+        projects = Projects()
+        for project_dto in json.projects:
+            for fileset in project_dto.filesets:
+                if fileset.type == "git" and "git@" in fileset.url:
+                    self.fail(
+                        f"We cannot download '{fileset.url}' in '{project_dto.name}' project because it will require to hardcode known hosts in the docker image."
+                    )
+
 
 if __name__ == "__main__":
     unittest.main()
