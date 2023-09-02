@@ -49,9 +49,6 @@ class TestCfgValidation(unittest.TestCase):
         valid_licenses_ids = Licenses().get_licenses_ids()
         for project in json.projects:
             license_id = project.license
-            if len(license_id) == 0:
-                continue
-
             self.assertIn(license_id, valid_licenses_ids)
 
     def test_check_pattern(self):
