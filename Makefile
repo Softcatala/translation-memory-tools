@@ -12,7 +12,10 @@ docker-build-webapp:
 	docker build --no-cache -t tmt-webapp . -f docker/dockerfile-webapp-local;
 
 docker-build-webapp-test: docker-build-webapp
-	docker build -t tmt-webapp-test . -f docker/dockerfile-webapp-test;
+	cp docker/dockerfile-webapp-test docker/dockerfile-webapp-test-local;
+	sed -i "s+registry.softcatala.org/github/++g" docker/dockerfile-webapp-test-local;
+	docker build --no-cache -t tmt-webapp-test . -f docker/dockerfile-webapp-test-local;
+
 
 docker-run-builder: docker-build-builder docker-build-lt
 	./docker/stop-docker.sh
