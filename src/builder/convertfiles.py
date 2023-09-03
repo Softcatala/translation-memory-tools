@@ -190,8 +190,8 @@ class ConvertFiles:
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Php)
         os.system(cmd)
 
-    def _convert_android_file(self, src_file, tgt_file, id):
-        output_file = os.path.join(self.convert_dir, f"ca-{id}.po")
+    def _convert_android_file(self, src_file, tgt_file, dir):
+        output_file = os.path.join(dir, "ca.po")
         cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Android)
         os.system(cmd)
@@ -203,7 +203,6 @@ class ConvertFiles:
         if len(filenames) == 0:
             return
 
-        id = 0
         dirs = set()
         subdirs = set()
         for filename in filenames:
@@ -216,8 +215,7 @@ class ConvertFiles:
             tgt = os.path.join(dir, "ca.xml")
 
             if os.path.exists(src) and os.path.exists(tgt):
-                self._convert_android_file(src, tgt, id)
-                id += 1
+                self._convert_android_file(src, tgt, dir)
 
             if dir == self.convert_dir:
                 continue
@@ -238,8 +236,7 @@ class ConvertFiles:
                     tgt = os.path.join(dir, tgt)
 
                     if os.path.exists(src) and os.path.exists(tgt):
-                        self._convert_android_file(src, tgt, id)
-                        id += 1
+                        self._convert_android_file(src, tgt, dir)
 
         logging.info("convert Android directory: {0}".format(self.convert_dir))
 
@@ -316,8 +313,8 @@ class ConvertFiles:
             cmd = self._add_conversor_setup_to_cmd(cmd)
             os.system(cmd)
 
-    def _convert_apple_file(self, src_file, tgt_file, id):
-        output_file = os.path.join(self.convert_dir, f"ca-apple-{id}.po")
+    def _convert_apple_file(self, src_file, tgt_file, directory):
+        output_file = os.path.join(directory, "ca-apple.po")
         cmd = f"prop2po -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Apple)
         if "--encoding" not in cmd:
@@ -332,7 +329,6 @@ class ConvertFiles:
         if len(filenames) == 0:
             return
 
-        id = 0
         dirs = set()
         subdirs = set()
         for filename in filenames:
@@ -352,13 +348,11 @@ class ConvertFiles:
                 tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
 
                 if os.path.exists(src) and os.path.exists(tgt):
-                    self._convert_apple_file(src, tgt, id)
-                    id += 1
+                    self._convert_apple_file(src, tgt, dir)
                 else:
                     src = os.path.join(dir, "Base.lproj/Localizable.strings")
                     tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
                     if os.path.exists(src) and os.path.exists(tgt):
-                        self._convert_apple_file(src, tgt, id)
-                        id += 1
+                        self._convert_apple_file(src, tgt, dir)
 
         logging.info("convert Apple directory: {0}".format(self.convert_dir))
