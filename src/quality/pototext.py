@@ -49,7 +49,6 @@ class PoToText:
         text = re.sub("<[^>]*>", "", text)  # Remove HTML tags
 
         text = self._remove_sphinx(text)
-        # text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
         text += "\n\n"
 
         text_file.write(text)

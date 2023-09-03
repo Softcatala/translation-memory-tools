@@ -190,8 +190,8 @@ class ConvertFiles:
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Php)
         os.system(cmd)
 
-    def _convert_android_file(self, src_file, tgt_file, id):
-        output_file = os.path.join(self.convert_dir, f"ca-{id}.po")
+    def _convert_android_file(self, src_file, tgt_file, dir):
+        output_file = os.path.join(dir, "ca.po")
         cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Android)
         os.system(cmd)
@@ -203,7 +203,6 @@ class ConvertFiles:
         if len(filenames) == 0:
             return
 
-        id = 0
         dirs = set()
         subdirs = set()
         for filename in filenames:
@@ -216,8 +215,7 @@ class ConvertFiles:
             tgt = os.path.join(dir, "ca.xml")
 
             if os.path.exists(src) and os.path.exists(tgt):
-                self._convert_android_file(src, tgt, id)
-                id += 1
+                self._convert_android_file(src, tgt, dir)
 
             if dir == self.convert_dir:
                 continue
@@ -238,18 +236,21 @@ class ConvertFiles:
                     tgt = os.path.join(dir, tgt)
 
                     if os.path.exists(src) and os.path.exists(tgt):
-                        self._convert_android_file(src, tgt, id)
-                        id += 1
+                        self._convert_android_file(src, tgt, dir)
 
         logging.info("convert Android directory: {0}".format(self.convert_dir))
 
     def _convert_json_file_to_po(self, jsonfile, source, target):
         dirName = os.path.dirname(jsonfile)
+        source = os.path.join(dirName, source)
+        target = os.path.join(dirName, target)
+
+        if not os.path.exists(source) or not os.path.exists(target):
+            return
+
         logging.info("convert json file: {0}".format(dirName))
-        filename = "{0}/json-ca.po".format(dirName)
-        cmd = "json2po -t {0}/{2} -i {0}/{3} " "-o {1}".format(
-            dirName, filename, source, target
-        )
+        filename = os.path.join(dirName, "json-ca.po")
+        cmd = f"json2po -t {source} -i {target} -o {filename}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Json)
         os.system(cmd)
 
@@ -265,17 +266,16 @@ class ConvertFiles:
                 jsonfile, "../en_US/messages.json", "../ca/messages.json"
             )
 
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.json"):
-            self._convert_json_file_to_po(jsonfile, "en.json", "ca.json")
+        files = [
+            ("ca.json", "en.json", "ca.json"),
+            ("ca.json", "en-US.json", "ca.json"),
+            ("ca.i18n.json", "en.i18n.json", "ca.i18n.json"),
+            ("main-ca.json", "main.json", "main-ca.json"),
+        ]
 
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.json"):
-            self._convert_json_file_to_po(jsonfile, "en-US.json", "ca.json")
-
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "ca.i18n.json"):
-            self._convert_json_file_to_po(jsonfile, "en.i18n.json", "ca.i18n.json")
-
-        for jsonfile in self.findFiles.find_recursive(self.convert_dir, "main-ca.json"):
-            self._convert_json_file_to_po(jsonfile, "main.json", "main-ca.json")
+        for spec, src, tgt in files:
+            for jsonfile in self.findFiles.find_recursive(self.convert_dir, spec):
+                self._convert_json_file_to_po(jsonfile, src, tgt)
 
     def _convert_yml_files_to_po(self):
         EXPECTED_SRC = "en.yml"
@@ -313,8 +313,8 @@ class ConvertFiles:
             cmd = self._add_conversor_setup_to_cmd(cmd)
             os.system(cmd)
 
-    def _convert_apple_file(self, src_file, tgt_file, id):
-        output_file = os.path.join(self.convert_dir, f"ca-apple-{id}.po")
+    def _convert_apple_file(self, src_file, tgt_file, directory):
+        output_file = os.path.join(directory, "ca-apple.po")
         cmd = f"prop2po -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Apple)
         if "--encoding" not in cmd:
@@ -329,7 +329,6 @@ class ConvertFiles:
         if len(filenames) == 0:
             return
 
-        id = 0
         dirs = set()
         subdirs = set()
         for filename in filenames:
@@ -349,13 +348,11 @@ class ConvertFiles:
                 tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
 
                 if os.path.exists(src) and os.path.exists(tgt):
-                    self._convert_apple_file(src, tgt, id)
-                    id += 1
+                    self._convert_apple_file(src, tgt, dir)
                 else:
                     src = os.path.join(dir, "Base.lproj/Localizable.strings")
                     tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
                     if os.path.exists(src) and os.path.exists(tgt):
-                        self._convert_apple_file(src, tgt, id)
-                        id += 1
+                        self._convert_apple_file(src, tgt, dir)
 
         logging.info("convert Apple directory: {0}".format(self.convert_dir))

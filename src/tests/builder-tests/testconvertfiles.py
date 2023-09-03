@@ -178,6 +178,19 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEquals("Failed to verify the signature.", po_file[0].msgid)
         self.assertEquals("No s'ha pogut verificar la signatura.", po_file[0].msgstr)
 
+    def test_convert_php_files_to_po(self):
+        strings_dir = path.dirname(path.realpath(__file__))
+        strings_dir += "/data/conversions/php/"
+        convert = ConvertFiles(strings_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(strings_dir)
+        self._clean_pos(strings_dir)
+
+        self.assertEquals(entries, 7)
+        self.assertEquals("Add condition", po_file[0].msgid)
+        self.assertEquals("Afegeix una condició", po_file[0].msgstr)
+
 
 if __name__ == "__main__":
     unittest.main()
