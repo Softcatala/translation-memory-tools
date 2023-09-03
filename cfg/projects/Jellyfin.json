@@ -1,0 +1,24 @@
+{
+    "project": "Jellyfin",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://jellyfin.org/",
+    "fileset": {
+        "Jellyfin": {
+            "url": "https://github.com/jellyfin/jellyfin.git",
+            "type": "git"
+        },
+        "Jellyfin-android": {
+            "url": "https://github.com/jellyfin/jellyfin-android.git",
+            "type": "git"
+        },
+        "Jellyfin-androidtv": {
+            "url": "https://github.com/jellyfin/jellyfin-androidtv.git",
+            "type": "git"
+        },
+        "Jellyfin-mpv-shim": {
+            "url": "https://raw.githubusercontent.com/jellyfin/jellyfin-mpv-shim/master/jellyfin_mpv_shim/messages/ca/LC_MESSAGES/base.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
