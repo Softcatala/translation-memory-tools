@@ -1,4 +1,4 @@
-.PHONY: docker-build-builder docker-build-lt docker-build-webapp docker-builder-run docker-webapp-run docker-webapp-test-run
+.PHONY: docker-build-builder docker-build-lt docker-build-webapp docker-run-builder docker-run-webapp docker-run-webapp-test
 
 docker-build-builder:
 	docker build -t tmt-builder . -f docker/dockerfile-builder;
@@ -14,7 +14,7 @@ docker-build-webapp:
 docker-build-webapp-test: docker-build-webapp
 	docker build -t tmt-webapp-test . -f docker/dockerfile-webapp-test;
 
-docker-builder-run: docker-build-builder docker-build-lt
+docker-run-builder: docker-build-builder docker-build-lt
 	./docker/stop-docker.sh
 	docker-compose -f docker/local.yml run -d --use-aliases --name translation-memory-tools-lt tmt-languagetool;
 	docker-compose -f docker/local.yml run -v $PWD$/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder;
@@ -22,8 +22,8 @@ docker-builder-run: docker-build-builder docker-build-lt
 	docker build -t translation-memory-tools-build-data:master . -f docker/dockerfile-data;
 	./docker/stop-docker.sh;
 
-docker-webapp-run: docker-build-webapp
+docker-run-webapp: docker-build-webapp
 	docker run -p 8080:8080 -i -t tmt-webapp;
 
-docker-webapp-test-run: docker-build-webapp-test
+docker-run-webapp-test: docker-build-webapp-test
 	docker run -p 8080:8080 -i -t tmt-webapp-test;
