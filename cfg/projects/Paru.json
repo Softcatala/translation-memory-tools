@@ -1,0 +1,12 @@
+{
+    "project": "Paru",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/Morganamilo/paru",
+    "fileset": {
+        "paru": {
+            "url": "https://raw.githubusercontent.com/Morganamilo/paru/master/po/ca.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
