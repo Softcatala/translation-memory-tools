@@ -344,15 +344,20 @@ class ConvertFiles:
             dir = os.path.dirname(dir)
             if len(dir) > 0 and dir not in subdirs:
                 subdirs.add(dir)
-                src = os.path.join(dir, "en.lproj/Localizable.strings")
-                tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
 
-                if os.path.exists(src) and os.path.exists(tgt):
-                    self._convert_apple_file(src, tgt, dir)
-                else:
-                    src = os.path.join(dir, "Base.lproj/Localizable.strings")
-                    tgt = os.path.join(dir, "ca.lproj/Localizable.strings")
-                    if os.path.exists(src) and os.path.exists(tgt):
-                        self._convert_apple_file(src, tgt, dir)
+                files = [
+                    ("en.lproj/Localizable.strings", "ca.lproj/Localizable.strings"),
+                    ("Base.lproj/Localizable.strings", "ca.lproj/Localizable.strings"),
+                    (
+                        "English.lproj/Localizable.strings",
+                        "Catalan.lproj/Localizable.strings",
+                    ),
+                ]
+
+                for source_file, target_file in files:
+                    source_path = os.path.join(dir, source_file)
+                    target_path = os.path.join(dir, target_file)
+                    if os.path.exists(source_path) and os.path.exists(target_path):
+                        self._convert_apple_file(source_path, target_path, dir)
 
         logging.info("convert Apple directory: {0}".format(self.convert_dir))

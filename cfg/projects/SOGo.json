@@ -1,0 +1,11 @@
+{
+    "project": "SOGo",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.sogo.nu/",
+    "fileset": {
+        "SOGo": {
+            "url": "https://github.com/Alinto/sogo.git",
+            "type": "git"
+        }
+    }
+}
