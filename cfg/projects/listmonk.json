@@ -1,0 +1,11 @@
+{
+    "project": "listmonk",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://github.com/knadh/listmonk",
+    "fileset": {
+        "listmonk": {
+            "url": "https://github.com/knadh/listmonk",
+            "type": "git"
+        }
+    }
+}
