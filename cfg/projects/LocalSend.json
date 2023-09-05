@@ -1,0 +1,11 @@
+{
+    "project": "LocalSend",
+    "license": "MIT",
+    "projectweb": "https://github.com/localsend/localsend",
+    "fileset": {
+        "LocalSend": {
+            "url": "https://github.com/localsend/localsend",
+            "type": "git"
+        }
+    }
+}
