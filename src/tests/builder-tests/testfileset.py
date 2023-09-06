@@ -47,8 +47,8 @@ class TestFileSet(unittest.TestCase):
             fileset_parent,
         )
 
-        self.assertEquals(fileset.po_preprocessing, "po_processing")
-        self.assertEquals(fileset.conversor_setup, "conversor_setup")
+        self.assertEqual(fileset.po_preprocessing, "po_processing")
+        self.assertEqual(fileset.conversor_setup, "conversor_setup")
 
     def test_remove_non_translation_files_no_pattern(self):
         fileset = self._get_fileset()
@@ -60,7 +60,7 @@ class TestFileSet(unittest.TestCase):
 
         findFiles = FindFiles()
         files = findFiles.find_recursive(fileset.temp_dir, "*.po")
-        self.assertEquals(2, len(files))
+        self.assertEqual(2, len(files))
 
     def test_remove_non_translation_files_pattern(self):
         fileset = self._get_fileset()
@@ -73,7 +73,7 @@ class TestFileSet(unittest.TestCase):
 
         findFiles = FindFiles()
         files = findFiles.find_recursive(fileset.temp_dir, "*.po")
-        self.assertEquals(1, len(files))
+        self.assertEqual(1, len(files))
 
     def test_constructor(self):
         fileset = FileSet(
@@ -84,7 +84,7 @@ class TestFileSet(unittest.TestCase):
             "none.po",
         )
 
-        self.assertEquals("Projsn", os.path.basename(fileset.temp_dir)[0:6])
+        self.assertEqual("Projsn", os.path.basename(fileset.temp_dir)[0:6])
 
 
 if __name__ == "__main__":

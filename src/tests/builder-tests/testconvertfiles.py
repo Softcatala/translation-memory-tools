@@ -48,9 +48,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(json_dir)
         self._clean_pos(json_dir)
 
-        self.assertEquals(entries, 781)
-        self.assertEquals("Watch Movies and TV Shows instantly", po_file[3].msgid)
-        self.assertEquals(
+        self.assertEqual(entries, 781)
+        self.assertEqual("Watch Movies and TV Shows instantly", po_file[3].msgid)
+        self.assertEqual(
             "Mireu pel·lícules i sèries instantàniament", po_file[3].msgstr
         )
 
@@ -63,11 +63,11 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(yml_dir)
         self._clean_pos(yml_dir)
 
-        self.assertEquals(entries, 3)
-        self.assertEquals(
+        self.assertEqual(entries, 3)
+        self.assertEqual(
             "Enable imgur api for uploading, don't host files locally", po_file[0].msgid
         )
-        self.assertEquals(
+        self.assertEqual(
             "Habilita l'API d'imgur per pujades, no allotgis els arxius localment",
             po_file[0].msgstr,
         )
@@ -81,9 +81,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(csv_dir)
         self._clean_pos(csv_dir)
 
-        self.assertEquals(entries, 4)
-        self.assertEquals("Period Name", po_file[0].msgid)
-        self.assertEquals("Nom del període", po_file[0].msgstr)
+        self.assertEqual(entries, 4)
+        self.assertEqual("Period Name", po_file[0].msgid)
+        self.assertEqual("Nom del període", po_file[0].msgstr)
 
     def test_convert_ini_files_to_po(self):
         ini_dir = path.dirname(path.realpath(__file__))
@@ -94,9 +94,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(ini_dir)
         self._clean_pos(ini_dir)
 
-        self.assertEquals(entries, 15)
-        self.assertEquals("Load More", po_file[10].msgid)
-        self.assertEquals("Carregar més", po_file[10].msgstr)
+        self.assertEqual(entries, 15)
+        self.assertEqual("Load More", po_file[10].msgid)
+        self.assertEqual("Carregar més", po_file[10].msgstr)
 
     def test_convert_android_files_to_po(self):
         android_dir = path.dirname(path.realpath(__file__))
@@ -107,9 +107,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(android_dir)
         self._clean_pos(android_dir)
 
-        self.assertEquals(entries, 392)
-        self.assertEquals("Name is too long", po_file[14].msgid)
-        self.assertEquals("El nom és massa llarg", po_file[14].msgstr)
+        self.assertEqual(entries, 392)
+        self.assertEqual("Name is too long", po_file[14].msgid)
+        self.assertEqual("El nom és massa llarg", po_file[14].msgstr)
 
     def test_convert_xliff_file_to_po(self):
         xliff_dir = path.dirname(path.realpath(__file__))
@@ -120,9 +120,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(xliff_dir)
         self._clean_pos(xliff_dir)
 
-        self.assertEquals(entries, 1)
-        self.assertEquals("User Actions Log", po_file[0].msgid)
-        self.assertEquals("Acció", po_file[1].msgstr)
+        self.assertEqual(entries, 1)
+        self.assertEqual("User Actions Log", po_file[0].msgid)
+        self.assertEqual("Acció", po_file[1].msgstr)
 
     def test_convert_apple_files_to_po(self):
         apple_dir = path.dirname(path.realpath(__file__))
@@ -133,9 +133,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(apple_dir)
         self._clean_pos(apple_dir)
 
-        self.assertEquals(entries, 3)
-        self.assertEquals("%1$@|New message", po_file[1].msgid)
-        self.assertEquals("%1$@|Missatge nou", po_file[1].msgstr)
+        self.assertEqual(entries, 3)
+        self.assertEqual("%1$@|New message", po_file[1].msgid)
+        self.assertEqual("%1$@|Missatge nou", po_file[1].msgstr)
 
     def test_add_conversor_setup_to_cmd(self):
         CMD = "prop2po -t template.txt -i in.txt -o out.txt"
@@ -148,7 +148,7 @@ class ConvertFilesTest(unittest.TestCase):
 
         convert = ConvertFiles(None, conversor_setup)
         r = convert._add_conversor_setup_to_cmd(cmd=CMD, conversor_id="properties")
-        self.assertEquals(
+        self.assertEqual(
             "prop2po -t template.txt -i in.txt -o out.txt --encoding utf-16", r
         )
 
@@ -163,7 +163,7 @@ class ConvertFilesTest(unittest.TestCase):
 
         convert = ConvertFiles(None, conversor_setup)
         r = convert._add_conversor_setup_to_cmd(cmd=CMD, conversor_id="ts")
-        self.assertEquals("prop2po -t template.txt -i in.txt -o out.txt", r)
+        self.assertEqual("prop2po -t template.txt -i in.txt -o out.txt", r)
 
     def test_convert_strings_files_to_po(self):
         strings_dir = path.dirname(path.realpath(__file__))
@@ -174,9 +174,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(strings_dir)
         self._clean_pos(strings_dir)
 
-        self.assertEquals(entries, 6)
-        self.assertEquals("Failed to verify the signature.", po_file[0].msgid)
-        self.assertEquals("No s'ha pogut verificar la signatura.", po_file[0].msgstr)
+        self.assertEqual(entries, 6)
+        self.assertEqual("Failed to verify the signature.", po_file[0].msgid)
+        self.assertEqual("No s'ha pogut verificar la signatura.", po_file[0].msgstr)
 
     def test_convert_php_files_to_po(self):
         strings_dir = path.dirname(path.realpath(__file__))
@@ -187,9 +187,9 @@ class ConvertFilesTest(unittest.TestCase):
         po_file, entries = self._get_po_entries(strings_dir)
         self._clean_pos(strings_dir)
 
-        self.assertEquals(entries, 7)
-        self.assertEquals("Add condition", po_file[0].msgid)
-        self.assertEquals("Afegeix una condició", po_file[0].msgstr)
+        self.assertEqual(entries, 7)
+        self.assertEqual("Add condition", po_file[0].msgid)
+        self.assertEqual("Afegeix una condició", po_file[0].msgstr)
 
 
 if __name__ == "__main__":

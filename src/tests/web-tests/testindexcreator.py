@@ -91,19 +91,19 @@ msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
         )
         stored = index.writer.store
 
-        self.assertEquals(
+        self.assertEqual(
             stored[0]["source"], "Power off the selected virtual machines"
         )
-        self.assertEquals(
+        self.assertEqual(
             stored[0]["target"], "Apaga les màquines virtuals seleccionades"
         )
-        self.assertEquals(stored[0]["context"], "Context")
-        self.assertEquals(stored[0]["comment"], "Please remember to do something\r\n")
-        self.assertEquals(stored[0]["softcatala"], False)
-        self.assertEquals(stored[0]["project"], "test_project")
-        self.assertEquals(index.words, 5)
-        self.assertEquals(index.sentences, 1)
-        self.assertEquals(index.sentences_indexed, 1)
+        self.assertEqual(stored[0]["context"], "Context")
+        self.assertEqual(stored[0]["comment"], "Please remember to do something\r\n")
+        self.assertEqual(stored[0]["softcatala"], False)
+        self.assertEqual(stored[0]["project"], "test_project")
+        self.assertEqual(index.words, 5)
+        self.assertEqual(index.sentences, 1)
+        self.assertEqual(index.sentences_indexed, 1)
 
     def test_process_project_plural(self):
         tmpfile = self._dump_po_to_file(self.minipo_plural)
@@ -114,18 +114,18 @@ msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
             "test_project_id", "test_project", tmpfile.name, False, set()
         )
         stored = index.writer.store
-        self.assertEquals(stored[0]["source"], "Delete this photo from camera?")
-        self.assertEquals(
+        self.assertEqual(stored[0]["source"], "Delete this photo from camera?")
+        self.assertEqual(
             stored[0]["target"], "Voleu suprimir aquesta fotografia de la càmera?"
         )
 
-        self.assertEquals(stored[1]["source"], "Delete these %d photos from camera?")
-        self.assertEquals(
+        self.assertEqual(stored[1]["source"], "Delete these %d photos from camera?")
+        self.assertEqual(
             stored[1]["target"], "Voleu suprimir aquestes %d fotografies de la càmera?"
         )
 
-        self.assertEquals(index.sentences, 2)
-        self.assertEquals(index.sentences_indexed, 2)
+        self.assertEqual(index.sentences, 2)
+        self.assertEqual(index.sentences_indexed, 2)
 
     def test_get_comment_both(self):
         index = IndexCreator(".")
@@ -133,7 +133,7 @@ msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
         entry.comment = "comment"
         entry.tcomment = "tcomment"
         comment = index._get_comment(entry)
-        self.assertEquals(comment, "tcomment\r\ncomment")
+        self.assertEqual(comment, "tcomment\r\ncomment")
 
 
 if __name__ == "__main__":

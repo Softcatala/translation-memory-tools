@@ -27,7 +27,7 @@ class TestCache(unittest.TestCase):
         tmpfile = tempfile.TemporaryDirectory().name
         cache = Cache(tmpfile)
 
-        self.assertEquals(None, cache.get("1"))
+        self.assertEqual(None, cache.get("1"))
 
     def test_get_existant(self):
         CONTENT = "contingut"
@@ -37,7 +37,7 @@ class TestCache(unittest.TestCase):
         cache = Cache(tmpfile)
         cache.set(URL, CONTENT)
 
-        self.assertEquals(CONTENT, cache.get(URL))
+        self.assertEqual(CONTENT, cache.get(URL))
 
 
 if __name__ == "__main__":

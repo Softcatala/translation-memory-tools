@@ -38,9 +38,9 @@ class POCatalogTest(unittest.TestCase):
             po_file = pofile(catalog_po)
             entries = po_file.translated_entries()
 
-        self.assertEquals(1, len(entries))
-        self.assertEquals("Clock rotation", po_file[0].msgid)
-        self.assertEquals("Rotació del rellotge", po_file[0].msgstr)
+        self.assertEqual(1, len(entries))
+        self.assertEqual("Clock rotation", po_file[0].msgid)
+        self.assertEqual("Rotació del rellotge", po_file[0].msgstr)
 
     def test_pocatalog_twofiles(self):
         catalog_dir = os.path.dirname(os.path.realpath(__file__))
@@ -55,9 +55,9 @@ class POCatalogTest(unittest.TestCase):
             po_file = pofile(catalog_po)
             entries = po_file.translated_entries()
 
-        self.assertEquals(3, len(entries))
-        self.assertEquals("Clock rotation", po_file[0].msgid)
-        self.assertEquals("Rotació del rellotge", po_file[0].msgstr)
+        self.assertEqual(3, len(entries))
+        self.assertEqual("Clock rotation", po_file[0].msgid)
+        self.assertEqual("Rotació del rellotge", po_file[0].msgstr)
 
     def test_pocatalog_cleanup(self):
         catalog_dir = os.path.dirname(os.path.realpath(__file__))
@@ -73,10 +73,10 @@ class POCatalogTest(unittest.TestCase):
             entries = po_file.translated_entries()
             fuzzy = po_file.fuzzy_entries()
 
-        self.assertEquals(1, len(entries))
-        self.assertEquals(0, len(fuzzy))
-        self.assertEquals("Clock rotation", po_file[0].msgid)
-        self.assertEquals("Rotació del rellotge", po_file[0].msgstr)
+        self.assertEqual(1, len(entries))
+        self.assertEqual(0, len(fuzzy))
+        self.assertEqual("Clock rotation", po_file[0].msgid)
+        self.assertEqual("Rotació del rellotge", po_file[0].msgstr)
 
 
 if __name__ == "__main__":

@@ -41,17 +41,17 @@ class TestConvertTmx(unittest.TestCase):
 
         entries = polib.pofile(po_filename)
 
-        self.assertEquals(len(entries), 2)
-        self.assertEquals(entries[0].msgid, "Modern visual refresh")
-        self.assertEquals(entries[0].msgstr, "Una renovació visual moderna")
-        self.assertEquals(
+        self.assertEqual(len(entries), 2)
+        self.assertEqual(entries[0].msgid, "Modern visual refresh")
+        self.assertEqual(entries[0].msgstr, "Una renovació visual moderna")
+        self.assertEqual(
             entries[0].tcomment,
             "id: appstores:fx_androidwhatsnewandroid_57lang:a-clean-modern-visual-refresh",
         )
 
-        self.assertEquals(entries[1].msgid, "As You Like It")
-        self.assertEquals(entries[1].msgstr, "Com vulgueu")
-        self.assertEquals(entries[1].tcomment, "")
+        self.assertEqual(entries[1].msgid, "As You Like It")
+        self.assertEqual(entries[1].msgstr, "Com vulgueu")
+        self.assertEqual(entries[1].tcomment, "")
 
     def test_conversion_omegat(self):
         tmx_file, po_filename = self._get_files("omegat.tmx")
@@ -60,10 +60,10 @@ class TestConvertTmx(unittest.TestCase):
 
         entries = polib.pofile(po_filename)
 
-        self.assertEquals(len(entries), 1)
-        self.assertEquals(entries[0].msgid, '"Aligner" aligner utility')
-        self.assertEquals(entries[0].msgstr, 'Alineador de textos "Aligner"')
-        self.assertEquals(entries[0].tcomment, "")
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0].msgid, '"Aligner" aligner utility')
+        self.assertEqual(entries[0].msgstr, 'Alineador de textos "Aligner"')
+        self.assertEqual(entries[0].tcomment, "")
 
 
 if __name__ == "__main__":

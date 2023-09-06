@@ -64,8 +64,8 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals("Hola Això és una prova amb tab\n", lines[0])
-        self.assertEquals("Això és una prova\n", lines[2])
+        self.assertEqual("Hola Això és una prova amb tab\n", lines[0])
+        self.assertEqual("Això és una prova\n", lines[2])
 
     def test_write_text_file_accelerator(self):
         entries = list()
@@ -74,7 +74,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals("Això és una prova\n", lines[0])
+        self.assertEqual("Això és una prova\n", lines[0])
 
     def test_write_text_file_tags(self):
         entries = list()
@@ -83,7 +83,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals("Això és una prova\n", lines[0])
+        self.assertEqual("Això és una prova\n", lines[0])
 
     def test_write_text_file_plural(self):
         entries = list()
@@ -100,8 +100,8 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals("Voleu suprimir aquesta fotografia de la càmera?\n", lines[0])
-        self.assertEquals(
+        self.assertEqual("Voleu suprimir aquesta fotografia de la càmera?\n", lines[0])
+        self.assertEqual(
             "Voleu suprimir aquestes %d fotografies de la càmera?\n", lines[2]
         )
 
@@ -117,7 +117,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals(
+        self.assertEqual(
             "R estableix la selecció a «Substitueix» a les Opcions de l'eina. "
             "Selecciona --> Mostra la màscara de selecció global\n",
             lines[0],
@@ -133,7 +133,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals(0, len(lines))
+        self.assertEqual(0, len(lines))
 
     def test_write_text_file_gnome_external_image(self):
         entries = list()
@@ -147,7 +147,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals(0, len(lines))
+        self.assertEqual(0, len(lines))
 
     def test_write_text_file_shpinx_image(self):
         entries = list()
@@ -159,7 +159,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals(0, len(lines))
+        self.assertEqual(0, len(lines))
 
     def test_write_text_file_accutes(self):
         entries = list()
@@ -171,7 +171,7 @@ class TestPOText(unittest.TestCase):
         )
 
         lines = self._generate_po_and_extract(entries)
-        self.assertEquals(
+        self.assertEqual(
             "«Afegeix un usuari» configurarà el compte d'un usuari nou\n", lines[0]
         )
 

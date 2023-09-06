@@ -26,13 +26,13 @@ class TestProjects(TestCase):
         projects = Projects(False)
 
         with mock.patch.dict("os.environ", {"DB3_PATH": ""}):
-            self.assertEquals("statistics.db3", projects._get_db_name())
+            self.assertEqual("statistics.db3", projects._get_db_name())
 
     def test_get_db_name_env(self):
         projects = Projects(False)
 
         with mock.patch.dict("os.environ", {"DB3_PATH": "/path/"}):
-            self.assertEquals("/path/statistics.db3", projects._get_db_name())
+            self.assertEqual("/path/statistics.db3", projects._get_db_name())
 
 
 if __name__ == "__main__":
