@@ -28,18 +28,18 @@ class CheckStats(object):
         self.url = url
 
     def _check_stats(self):
-        url = '{0}stats?date=2010-01-01'
+        url = "{0}stats?date=2010-01-01"
         url = url.format(self.url)
-        urllib.request.urlretrieve(url, 'file.txt')
-        with open('file.txt') as json_data:
+        urllib.request.urlretrieve(url, "file.txt")
+        with open("file.txt") as json_data:
             data = json.load(json_data)
 
-        self._assert_greater(data['total_words'], 0)
-        self._assert_greater(data['projects'], 0)
+        self._assert_greater(data["total_words"], 0)
+        self._assert_greater(data["projects"], 0)
 
     def _assert_greater(self, actual, minimum):
         if minimum > actual:
-            text = u'Expected {0} to be greater than minimum {1}'
+            text = "Expected {0} to be greater than minimum {1}"
             raise Exception(text.format(minimum, actual))
 
     def check(self):
@@ -47,5 +47,5 @@ class CheckStats(object):
             self._check_stats()
             return True
         except Exception as detail:
-            print('Error checking stats: ' + str(detail))
+            print("Error checking stats: " + str(detail))
             return False

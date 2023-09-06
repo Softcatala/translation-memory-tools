@@ -22,7 +22,6 @@ import urllib.request
 
 
 class CheckProjects(object):
-
     def __init__(self, url):
         self.url = url
 
@@ -32,30 +31,30 @@ class CheckProjects(object):
     def _check_projects(self):
         PROJECT_ID = "tots"
 
-        url = '{0}projects'
+        url = "{0}projects"
         url = url.format(self.url)
-        urllib.request.urlretrieve(url, 'file.txt')
-        with open('file.txt') as json_data:
+        urllib.request.urlretrieve(url, "file.txt")
+        with open("file.txt") as json_data:
             data = json.load(json_data)
 
         memories = data["memories"]
         for memory in memories:
-            if memory['project_id'] != PROJECT_ID:
+            if memory["project_id"] != PROJECT_ID:
                 continue
 
-            self._assert_greater(len(memory['name']), 0)
-            self._assert_greater(int(self._clean_num_formatting(memory['words'])), 0)
-            self._assert_greater(len(memory['po_file_text']), 0)
-            self._assert_greater(len(memory['po_file_link']), 0)
-            self._assert_greater(len(memory['tmx_file_text']), 0)
-            self._assert_greater(len(memory['tmx_file_link']), 0)
+            self._assert_greater(len(memory["name"]), 0)
+            self._assert_greater(int(self._clean_num_formatting(memory["words"])), 0)
+            self._assert_greater(len(memory["po_file_text"]), 0)
+            self._assert_greater(len(memory["po_file_link"]), 0)
+            self._assert_greater(len(memory["tmx_file_text"]), 0)
+            self._assert_greater(len(memory["tmx_file_link"]), 0)
             return
 
         raise Exception(f"'{PROJECT_ID}' project not found")
-            
+
     def _assert_greater(self, actual, minimum):
         if minimum > actual:
-            text = u'Expected {0} to be greater than minimum {1}'
+            text = "Expected {0} to be greater than minimum {1}"
             raise Exception(text.format(minimum, actual))
 
     def check(self):
@@ -63,5 +62,5 @@ class CheckProjects(object):
             self._check_projects()
             return True
         except Exception as detail:
-            print('Error checking projects: ' + str(detail))
+            print("Error checking projects: " + str(detail))
             return False

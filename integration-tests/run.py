@@ -24,7 +24,7 @@ import sys
 from collections import OrderedDict
 from optparse import OptionParser
 
-sys.path.append('../src/')
+sys.path.append("../src/")
 
 from checksearch import CheckSearch
 from checkstats import CheckStats
@@ -42,19 +42,25 @@ def read_parameters():
 
     for option in config.options(SECTION):
         environments[option] = config.get(SECTION, option)
-   
-    opt_environments = ', '.join(environments.keys())
+
+    opt_environments = ", ".join(environments.keys())
     default = next(reversed(environments))
-    parser.add_option("-e", "--environment", dest="environment",
-                      default=default, type="choice", choices=list(environments.keys()),
-                      help="set default environment to: " + opt_environments)
+    parser.add_option(
+        "-e",
+        "--environment",
+        dest="environment",
+        default=default,
+        type="choice",
+        choices=list(environments.keys()),
+        help="set default environment to: " + opt_environments,
+    )
 
     (options, args) = parser.parse_args()
 
     return environments.get(options.environment, None)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     site_url = read_parameters()
     print("Integration tests for: " + site_url)
     print("Use --help for assistance")
