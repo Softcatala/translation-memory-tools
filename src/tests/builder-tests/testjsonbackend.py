@@ -73,7 +73,7 @@ class TestJsonBackend(unittest.TestCase):
         project = ProjectDTO("One Name")
         self.assertEqual(project.project_id, "one_name")
 
-    def test_from_name_to_project_id(self):
+    def test_from_name_to_project_filename(self):
         project = ProjectDTO("One's Name")
         self.assertEqual("ones_name-tm.po", project.filename)
 
