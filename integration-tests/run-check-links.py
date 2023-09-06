@@ -106,4 +106,4 @@ if __name__ == '__main__':
     print("Check all projects links to external project webs")
 
     init_logging(True)
-    search = check_project_links()
+    check_project_links()
