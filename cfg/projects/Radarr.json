@@ -1,0 +1,11 @@
+{
+    "project": "Radarr",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://github.com/Radarr/Radarr",
+    "fileset": {
+        "Radarr": {
+            "url": "https://github.com/Radarr/Radarr",
+            "type": "git"
+        }
+    }
+}
