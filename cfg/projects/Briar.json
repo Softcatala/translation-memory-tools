@@ -5,7 +5,7 @@
     "softcatala": true,
     "fileset": {
         "briar": {
-            "url": " https://code.briarproject.org/briar/briar.git/",
+            "url": "https://code.briarproject.org/briar/briar.git/",
             "type": "git",
             "po_preprocessing": "remove_untranslated",
             "conversor_setup": {
