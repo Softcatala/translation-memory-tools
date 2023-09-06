@@ -31,17 +31,14 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEqual(fileset.retrieval_pattern, "https://.*?/ca/.*?")
         self.assertEqual(fileset.duplicates, "msgctxt")
         self._validate_mozilla_project_conversor(fileset.conversor_setup)
-        return
 
     def _validate_mozilla_project_conversor(self, conversor):
         self.assertEqual(conversor.type, "string")
         self.assertEqual(conversor.verb, "add")
         self.assertEqual(conversor.command, " --encoding=utf-8")
-        return
 
     def _validate_firefox_fileset(self, fileset):
         self.assertTrue(fileset.po_preprocessing)
-        return
 
     def _validate_mozilla_project(self, project):
         url = "http://www.softcatala.org/wiki/Projectes/Mozilla"
@@ -54,7 +51,6 @@ class TestJsonBackend(unittest.TestCase):
         self.assertEqual(len(project.filesets), 3)
         self._validate_mozilla_project_mozilla_fileset(project.filesets[0])
         self._validate_firefox_fileset(project.filesets[1])
-        return
 
     def test_processFileSet(self):
         projects_dir = path.dirname(path.realpath(__file__))
