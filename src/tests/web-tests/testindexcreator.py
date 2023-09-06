@@ -91,9 +91,7 @@ msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
         )
         stored = index.writer.store
 
-        self.assertEqual(
-            stored[0]["source"], "Power off the selected virtual machines"
-        )
+        self.assertEqual(stored[0]["source"], "Power off the selected virtual machines")
         self.assertEqual(
             stored[0]["target"], "Apaga les màquines virtuals seleccionades"
         )
