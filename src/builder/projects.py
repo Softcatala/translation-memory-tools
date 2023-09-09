@@ -74,9 +74,7 @@ class Projects(object):
         self.add(project)
         logging.debug(project_dto)
 
-    def __call__(self):
-        """Process all projects"""
-
+    def _download_all_projects(self):
         # We use Processes instead of Threads because some filesets (e.g. transifex) need to
         # to change the process directory to work.
         # The number of processes to use is calculated by Python taking into account number of cpus
@@ -97,6 +95,7 @@ class Projects(object):
                     f"Projects.__call__. Feature.result() error on '{project.name}' project"
                 )
 
+    def _update_db_download_stats(self):
         for project in self.projects:
             words, entries = project.get_words_entries()
 
@@ -118,13 +117,16 @@ class Projects(object):
             metadata_dto.words = words
             self.metadata_dao.put(metadata_dto)
 
-        self.create_tm_for_all_projects()
+    def __call__(self):
+        """Process all projects"""
+        self._download_all_projects()
+        self._update_db_download_stats()
+        self._create_tm_for_all_projects()
 
         DAYS_TO_KEEP = 90
-        result = self.metadata_dao.delete_last_fetch(DAYS_TO_KEEP)
-        logging.info("Projects clean up:" + str(result))
+        self.metadata_dao.delete_last_fetch(DAYS_TO_KEEP)
 
-    def create_tm_for_all_projects(self):
+    def _create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
         COMBINED_LICENSE = "GPL-3.0-only"

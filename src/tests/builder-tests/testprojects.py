@@ -18,7 +18,9 @@
 # Boston, MA 02111-1307, USA.
 
 from unittest import TestCase, mock
+from unittest.mock import Mock, MagicMock
 from builder.projects import Projects
+from builder.projectmetadatadao import ProjectMetaDataDao
 
 
 class TestProjects(TestCase):
@@ -33,6 +35,26 @@ class TestProjects(TestCase):
 
         with mock.patch.dict("os.environ", {"DB3_PATH": "/path/"}):
             self.assertEqual("/path/statistics.db3", projects._get_db_name())
+
+    def test_update_db_download_stats(self):
+        PROJECT_NAME = "NAME"
+        WORDS = 102
+
+        projects = Projects(False)
+
+        project_dao = ProjectMetaDataDao()
+        project_dao.open(":memory:")
+        projects.metadata_dao = project_dao
+
+        project = MagicMock()
+        project.get_words_entries = Mock(return_value=(WORDS, 20))
+        project.name = PROJECT_NAME
+        project.checksum = 0
+        projects.add(project)
+        projects._update_db_download_stats()
+
+        project_dto = project_dao.get(PROJECT_NAME)
+        self.assertEqual(WORDS, project_dto.words)
 
 
 if __name__ == "__main__":
