@@ -22,6 +22,8 @@ from builder.jsonbackend import ConversorSetupDTO
 from polib import pofile
 import unittest
 from os import path, remove
+import tempfile
+import shutil
 
 
 class ConvertFilesTest(unittest.TestCase):
@@ -39,7 +41,7 @@ class ConvertFilesTest(unittest.TestCase):
         for filename in findFiles.find_recursive(directory, "*.po"):
             remove(filename)
 
-    def test_convert_json_files_to_po(self):
+    def _test_convert_json_files_to_po(self):
         json_dir = path.dirname(path.realpath(__file__))
         json_dir += "/data/conversions/json/"
         convert = ConvertFiles(json_dir, None)
@@ -53,6 +55,48 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEqual(
             "Mireu pel·lícules i sèries instantàniament", po_file[3].msgstr
         )
+
+    def test_convert_json_files_to_po_locations(self):
+        json_dir = path.dirname(path.realpath(__file__))
+        json_dir += "/data/conversions/json/"
+
+        src_en = path.join(json_dir, "translations/popcorn-time-app.en-json/en.json")
+        tgt_ca = path.join(json_dir, "translations/popcorn-time-app.en-json/ca.json")
+
+        srcs = [
+            "en.json",
+            "en-US.json",
+            "en.i18n.json",
+            "main.json",
+            "strings.i18n.json",
+        ]
+        tgts = [
+            "ca.json",
+            "ca.json",
+            "ca.i18n.json",
+            "main-ca.json",
+            "strings_ca.i18n.json",
+        ]
+
+        for idx in range(len(srcs)):
+            with tempfile.TemporaryDirectory() as temp_dir:
+                src = path.join(temp_dir, srcs[idx])
+                shutil.copyfile(src_en, src)
+
+                tgt = path.join(temp_dir, tgts[idx])
+                shutil.copyfile(tgt_ca, tgt)
+
+                convert = ConvertFiles(temp_dir, None)
+                convert.convert()
+
+                po_file, entries = self._get_po_entries(temp_dir)
+                self.assertEqual(entries, 477)
+                self.assertEqual(
+                    "Initializing PopcornTime. Please Wait...", po_file[3].msgid
+                )
+                self.assertEqual(
+                    "S'està inicialitzant PopcornTime, espereu...", po_file[3].msgstr
+                )
 
     def test_convert_yml_files_to_po(self):
         yml_dir = path.dirname(path.realpath(__file__))
