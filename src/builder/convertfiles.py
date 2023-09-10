@@ -244,12 +244,16 @@ class ConvertFiles:
         dirName = os.path.dirname(jsonfile)
         source = os.path.join(dirName, source)
         target = os.path.join(dirName, target)
+        filename = os.path.join(dirName, "json-ca.po")
 
-        if not os.path.exists(source) or not os.path.exists(target):
+        if (
+            not os.path.exists(source)
+            or not os.path.exists(target)
+            or os.path.exists(filename)
+        ):
             return
 
         logging.info("convert json file: {0}".format(dirName))
-        filename = os.path.join(dirName, "json-ca.po")
         cmd = f"json2po -t {source} -i {target} -o {filename}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Json)
         os.system(cmd)
