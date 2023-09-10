@@ -56,6 +56,16 @@ class TestProjects(TestCase):
         project_dto = project_dao.get(PROJECT_NAME)
         self.assertEqual(WORDS, project_dto.words)
 
+    def test_finished_test_download_all_projects_single_thread(self):
+        with mock.patch.dict("os.environ", {"SINGLE_THREAD_DOWNLOAD": "1"}):
+            projects = Projects(False)
+            project = MagicMock()
+
+            project.do = Mock()
+            projects.add(project)
+            projects._download_all_projects()
+            project.do.assert_called()
+
 
 if __name__ == "__main__":
     unittest.main()

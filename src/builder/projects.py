@@ -75,25 +75,30 @@ class Projects(object):
         logging.debug(project_dto)
 
     def _download_all_projects(self):
-        # We use Processes instead of Threads because some filesets (e.g. transifex) need to
-        # to change the process directory to work.
-        # The number of processes to use is calculated by Python taking into account number of cpus
-        project_futures = {}
-        with ProcessPoolExecutor() as executor:
-            for project in self.projects:
-                future = executor.submit(project.do)
-                project_futures[project] = future
+        if os.environ.get("SINGLE_THREAD_DOWNLOAD") == "1":
+            with ProcessPoolExecutor() as executor:
+                for project in self.projects:
+                    project.do()
+        else:
+            # We use Processes instead of Threads because some filesets (e.g. transifex) need to
+            # to change the process directory to work.
+            # The number of processes to use is calculated by Python taking into account number of cpus
+            project_futures = {}
+            with ProcessPoolExecutor() as executor:
+                for project in self.projects:
+                    future = executor.submit(project.do)
+                    project_futures[project] = future
 
-        # executor.submit copies the object and runs it in another process.
-        # The project object in this thread does not get updated then we need
-        # to update our object here.
-        for project, feature in project_futures.items():
-            try:
-                project.checksum = feature.result()
-            except:
-                logging.error(
-                    f"Projects.__call__. Feature.result() error on '{project.name}' project"
-                )
+            # executor.submit copies the object and runs it in another process.
+            # The project object in this thread does not get updated then we need
+            # to update our object here.
+            for project, feature in project_futures.items():
+                try:
+                    project.checksum = feature.result()
+                except:
+                    logging.error(
+                        f"Projects.__call__. Feature.result() error on '{project.name}' project"
+                    )
 
     def _update_db_download_stats(self):
         for project in self.projects:
