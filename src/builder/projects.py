@@ -126,12 +126,12 @@ class Projects(object):
         """Process all projects"""
         self._download_all_projects()
         self._update_db_download_stats()
-        self._create_tm_for_all_projects()
+        self.create_tm_for_all_projects()
 
         DAYS_TO_KEEP = 90
         self.metadata_dao.delete_last_fetch(DAYS_TO_KEEP)
 
-    def _create_tm_for_all_projects(self):
+    def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""
 
         COMBINED_LICENSE = "GPL-3.0-only"
