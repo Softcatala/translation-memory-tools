@@ -95,9 +95,9 @@ class Projects(object):
             for project, feature in project_futures.items():
                 try:
                     project.checksum = feature.result()
-                except:
+                except Exception as e:
                     logging.error(
-                        f"Projects.__call__. Feature.result() error on '{project.name}' project"
+                        f"Projects._download_all_projects. Feature.result() for project '{project.name}' throws exception '{e}'"
                     )
 
     def _update_db_download_stats(self):
