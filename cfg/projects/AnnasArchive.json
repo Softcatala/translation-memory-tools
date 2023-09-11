@@ -1,0 +1,12 @@
+{
+    "project": " Anna's Archive",
+    "license": "CC0-1.0",
+    "projectweb": "https://annas-archive.org/",
+    "fileset": {
+        "annasarchive": {
+            "url": "https://translate.annas-software.org/download/annas-archive/main-website/ca/?format=po",
+            "type": "file",
+            "target": "annasarchive-ca.po"
+        }
+    }
+}
