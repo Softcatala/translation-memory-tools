@@ -15,7 +15,7 @@
             "target": "qt_ca.ts"
         },
         "virtualbox_dev": {
-            "url": "https://explore.transifex.com/softcatala/virtualbox_cat/",
+            "url": "https://app.transifex.com/softcatala/virtualbox_cat/",
             "type": "transifex"
         }
     }
