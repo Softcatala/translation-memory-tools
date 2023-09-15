@@ -1,0 +1,11 @@
+{
+    "project": "R-project",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.r-project.org",
+    "fileset": {
+        "main": {
+            "url": "https://translate.rx.studio",
+            "type": "weblate"
+        }
+    }
+}
