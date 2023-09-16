@@ -83,8 +83,9 @@ def check_project_link(project_web):
     except HTTPError as e:
         code = e.code
 
-    except Exception:
-        code = 0
+    except Exception as e:
+        logging.error(f"Project link {project_web} returns exception '{e}'")
+        return False
 
     if code != HTTP_STATUS_CODE_OK:
         logging.error(f"Project link {project_web} returns {code}")
