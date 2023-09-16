@@ -77,7 +77,8 @@ def check_project_link(project_web):
             project_web,
             headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox"},
         )
-        urlopen(req)
+        response = urlopen(req)
+        response.close()
 
     except HTTPError as e:
         code = e.code
