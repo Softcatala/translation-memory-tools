@@ -49,7 +49,7 @@ if [ "$DEV_SMALL_SET" == "1" ]; then
 fi
 
 # Build
-cd $DIR_TMT_GIT/deployment 
+cd $DIR_TMT_GIT/deployment
 /bin/bash generate-tm.sh $DIR $DIR
 /bin/bash generate-terminology.sh $DIR
 /bin/bash generate-quality.sh $DIR

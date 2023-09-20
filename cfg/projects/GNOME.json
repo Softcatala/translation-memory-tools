@@ -68,6 +68,136 @@
             "url": "https://raw.githubusercontent.com/maoschanz/drawing/master/po/ca.po",
             "type": "file",
             "target": "drawing-ca.po"
+        },
+        "Celluloid": {
+            "url": "https://raw.githubusercontent.com/celluloid-player/celluloid/master/po/ca.po",
+            "type": "file",
+            "target": "celluloid-ca.po"
+        },
+        "Blanket": {
+            "url": "https://raw.githubusercontent.com/rafaelmardojai/blanket/master/po/ca.po",
+            "type": "file",
+            "target": "blanket-ca.po"
+        },
+        "Collision": {
+            "url": "https://raw.githubusercontent.com/GeopJr/Collision/main/po/ca.po",
+            "type": "file",
+            "target": "collision-ca.po"
+        },
+        "Dialect": {
+            "url": "https://raw.githubusercontent.com/dialect-app/po/master/ui/ca.po",
+            "type": "file",
+            "target": "dialect-ca.po"
+        },
+        "Drawing": {
+            "url": "https://raw.githubusercontent.com/maoschanz/drawing/master/po/ca.po",
+            "type": "file",
+            "target": "drawing-ca.po"
+        },
+        "FontDownloader": {
+            "url": "https://raw.githubusercontent.com/GustavoPeredo/Font-Downloader/master/po/ca.po",
+            "type": "file",
+            "target": "font-downloader-ca.po"
+        },
+        "Gaphor": {
+            "url": "https://raw.githubusercontent.com/gaphor/gaphor/main/po/ca.po",
+            "type": "file",
+            "target": "gaphor-ca.po"
+        },
+        "Komikku": {
+            "url": "https://gitlab.com/valos/Komikku/-/raw/main/po/ca.po",
+            "type": "file",
+            "target": "komikku-ca.po"
+        },
+        "Kooha": {
+            "url": "https://raw.githubusercontent.com/SeaDve/Kooha/main/po/ca.po",
+            "type": "file",
+            "target": "kooha-ca.po"
+        },
+        "MetadataCleaner": {
+            "url": "https://gitlab.com/rmnvgr/metadata-cleaner/-/raw/main/application/po/ca.po",
+            "type": "file",
+            "target": "metadata-cleaner-ca.po"
+        },
+        "Mousai": {
+            "url": "https://raw.githubusercontent.com/SeaDve/Mousai/main/po/ca.po",
+            "type": "file",
+            "target": "mousai-ca.po"
+        },
+        "Wike": {
+            "url": "https://raw.githubusercontent.com/hugolabe/Wike/master/po/ca.po",
+            "type": "file",
+            "target": "wike-ca.po"
+        },
+        "ExtensionManager": {
+            "url": "https://raw.githubusercontent.com/mjakeman/extension-manager/master/po/ca.po",
+            "type": "file",
+            "target": "extension-manager-ca.po"
+        },
+        "Flatseal": {
+            "url": "https://raw.githubusercontent.com/tchx84/Flatseal/master/po/ca.po",
+            "type": "file",
+            "target": "flatseal-ca.po"
+        },
+        "VideoDownloader": {
+            "url": "https://raw.githubusercontent.com/Unrud/video-downloader/master/po/ca.po",
+            "type": "file",
+            "target": "video-downloader-ca.po"
+        },
+        "Caffeine": {
+            "url": "https://raw.githubusercontent.com/eonpatapon/gnome-shell-extension-caffeine/master/caffeine%40patapon.info/locale/ca.po",
+            "type": "file",
+            "target": "caffeine-ca.po"
+        },
+        "DesktopCube": {
+            "url": "https://raw.githubusercontent.com/Schneegans/Desktop-Cube/main/po/ca.po",
+            "type": "file",
+            "target": "desktop-cube-ca.po"
+        },
+        "GSConnect": {
+            "url": "https://raw.githubusercontent.com/GSConnect/gnome-shell-extension-gsconnect/main/po/ca.po",
+            "type": "file",
+            "target": "gsconnect-ca.po"
+        },
+        "FontManager": {
+            "url": "https://raw.githubusercontent.com/FontManager/font-manager/master/po/ca.po",
+            "type": "file",
+            "target": "font-manager-ca.po"
+        },
+        "Bottles": {
+            "url": "https://raw.githubusercontent.com/bottlesdevs/Bottles/main/po/ca.po",
+            "type": "file",
+            "target": "bottles-ca.po"
+        },
+        "EasyEffects": {
+            "url": "https://raw.githubusercontent.com/wwmm/easyeffects/master/po/ca.po",
+            "type": "file",
+            "target": "easyeffects-ca.po"
+        },
+        "Tilix": {
+            "url": "https://raw.githubusercontent.com/gnunn1/tilix/master/po/ca.po",
+            "type": "file",
+            "target": "tilix-ca.po"
+        },
+        "Pods": {
+            "url": "https://raw.githubusercontent.com/marhkb/pods/main/po/ca.po",
+            "type": "file",
+            "target": "pods-ca.po"
+        },
+        "PaperPlane": {
+            "url": "https://raw.githubusercontent.com/paper-plane-developers/paper-plane/main/po/ca.po",
+            "type": "file",
+            "target": "paper-plane-ca.po"
+        },
+        "Todo.txt": {
+            "url": "https://gitlab.com/todo.txt-gnome-shell-extension/todo-txt-gnome-shell-extension/-/raw/master/locale/po/ca.po",
+            "type": "file",
+            "target": "todo-txt-gnome-shell-extension-ca.po"
+        },
+        "VanillaOS": {
+            "url": "https://hosted.weblate.org/download/vanilla-os/-/ca/?format=zip",
+            "type": "compressed",
+            "target": "vanilla-os-ca.zip"
         }
     }
 }

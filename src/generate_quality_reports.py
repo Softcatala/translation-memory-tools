@@ -128,7 +128,7 @@ class GenerateQualityReports:
         if exit_code != 0:
             logging.error(f"run_pology. Exit error: {exit_code}. Cmd: '{cmd}'")
 
-    def load_projects_filenames_from_json(self):
+    def load_projects_ids_from_json(self):
         projects = []
         projects_dir = "../cfg/projects/"
         json = JsonBackend(projects_dir)
@@ -139,9 +139,63 @@ class GenerateQualityReports:
                 print("Skipping quality generation for: " + project_dto.name)
                 continue
 
-            projects.append(project_dto.filename)
+            projects.append(project_dto.project_id)
 
         return projects
+
+    def _processfile(self, report, languagetool, pology, lt, po_file, source_dir):
+        txt_file = po_file + ".txt"
+        json_file = po_file + ".json"
+        po_transonly = po_file + "-translated-only.po"
+        pology_report = po_file + "-pology.html"
+        file_report = po_file + "-report.html"
+
+        start_time = time.time()
+        poTotext = PoToText()
+        rslt = poTotext.write_text_file(po_file, po_transonly, txt_file)
+        if not rslt:
+            return
+
+        if os.stat(txt_file).st_size == 0:
+            logging.info("No translations in file:" + txt_file)
+            return
+
+        start_time = time.time()
+        languagetool.run_lt(lt, txt_file, json_file)
+        po_file_logname = po_file[len(source_dir) + 1 :]
+        logging.debug(
+            "LT runned PO {0} - {1:.2f}s".format(
+                po_file_logname, time.time() - start_time
+            )
+        )
+
+        start_time = time.time()
+        languagetool.generate_lt_report(lt["lt-html-dir"], json_file, file_report)
+
+        if os.path.isfile(file_report):
+            report.add_file_to_project_report(file_report)
+        else:
+            logging.error("Unable to add:" + file_report)
+            return
+
+        start_time = time.time()
+        self.run_pology(pology, po_transonly, pology_report)
+        logging.debug(
+            "Pology runned PO {0} - {1:.2f}s".format(
+                po_file_logname, time.time() - start_time
+            )
+        )
+
+        if os.path.isfile(pology_report):
+            report.add_file_to_project_report(pology_report)
+            os.remove(pology_report)
+        else:
+            report.add_string_to_project_report("El Pology no ha detectat cap error.")
+
+        os.remove(txt_file)
+        os.remove(json_file)
+        os.remove(po_transonly)
+        os.remove(file_report)
 
     def generate_report(self, source_dir):
         lt, pology = self.read_config()
@@ -159,60 +213,7 @@ class GenerateQualityReports:
         )
 
         for po_file in FindFiles().find_recursive(source_dir, "*.po"):
-            txt_file = po_file + ".txt"
-            json_file = po_file + ".json"
-            po_transonly = po_file + "-translated-only.po"
-            pology_report = po_file + "-pology.html"
-            file_report = po_file + "-report.html"
-
-            start_time = time.time()
-            poTotext = PoToText()
-            rslt = poTotext.write_text_file(po_file, po_transonly, txt_file)
-            if not rslt:
-                continue
-
-            if os.stat(txt_file).st_size == 0:
-                logging.info("No translations in file:" + txt_file)
-                continue
-
-            start_time = time.time()
-            languagetool.run_lt(lt, txt_file, json_file)
-            po_file_logname = po_file[len(source_dir) + 1 :]
-            logging.debug(
-                "LT runned PO {0} - {1:.2f}s".format(
-                    po_file_logname, time.time() - start_time
-                )
-            )
-
-            start_time = time.time()
-            languagetool.generate_lt_report(lt["lt-html-dir"], json_file, file_report)
-
-            if os.path.isfile(file_report):
-                report.add_file_to_project_report(file_report)
-            else:
-                logging.error("Unable to add:" + file_report)
-                continue
-
-            start_time = time.time()
-            self.run_pology(pology, po_transonly, pology_report)
-            logging.debug(
-                "Pology runned PO {0} - {1:.2f}s".format(
-                    po_file_logname, time.time() - start_time
-                )
-            )
-
-            if os.path.isfile(pology_report):
-                report.add_file_to_project_report(pology_report)
-                os.remove(pology_report)
-            else:
-                report.add_string_to_project_report(
-                    "El Pology no ha detectat cap error."
-                )
-
-            os.remove(txt_file)
-            os.remove(json_file)
-            os.remove(po_transonly)
-            os.remove(file_report)
+            self._processfile(report, languagetool, pology, lt, po_file, source_dir)
 
         footer_filename = os.path.join(lt["lt-html-dir"], "footer.html")
         report.add_file_to_project_report(footer_filename)
@@ -223,7 +224,7 @@ class GenerateQualityReports:
         self.init_logging(True)
 
         total_start_time = datetime.datetime.now()
-        projects = self.load_projects_filenames_from_json()
+        projects = self.load_projects_ids_from_json()
         source_dir = self.read_parameters()
         logging.debug(f"Root source_dir {source_dir}")
         # The number of processess to use is calculated by Python taking into account number of cpus

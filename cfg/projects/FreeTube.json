@@ -1,0 +1,12 @@
+{
+    "project": "FreeTube",
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://docs.freetubeapp.io/community/translations/",
+    "fileset": {
+        "FreeTube": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/freetube/ca.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}

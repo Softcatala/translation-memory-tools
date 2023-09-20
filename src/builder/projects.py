@@ -74,29 +74,33 @@ class Projects(object):
         self.add(project)
         logging.debug(project_dto)
 
-    def __call__(self):
-        """Process all projects"""
+    def _download_all_projects(self):
+        if os.environ.get("SINGLE_THREAD_DOWNLOAD") == "1":
+            with ProcessPoolExecutor() as executor:
+                for project in self.projects:
+                    project.do()
+        else:
+            # We use Processes instead of Threads because some filesets (e.g. transifex) need to
+            # to change the process directory to work.
+            # The number of processes to use is calculated by Python taking into account number of cpus
+            project_futures = {}
+            with ProcessPoolExecutor() as executor:
+                for project in self.projects:
+                    future = executor.submit(project.do)
+                    project_futures[project] = future
 
-        # We use Processes instead of Threads because some filesets (e.g. transifex) need to
-        # to change the process directory to work.
-        # The number of processes to use is calculated by Python taking into account number of cpus
-        project_futures = {}
-        with ProcessPoolExecutor() as executor:
-            for project in self.projects:
-                future = executor.submit(project.do)
-                project_futures[project] = future
+            # executor.submit copies the object and runs it in another process.
+            # The project object in this thread does not get updated then we need
+            # to update our object here.
+            for project, feature in project_futures.items():
+                try:
+                    project.checksum = feature.result()
+                except Exception as e:
+                    logging.error(
+                        f"Projects._download_all_projects. Feature.result() for project '{project.name}' throws exception '{e}'"
+                    )
 
-        # executor.submit copies the object and runs it in another process.
-        # The project object in this thread does not get updated then we need
-        # to update our object here.
-        for project, feature in project_futures.items():
-            try:
-                project.checksum = feature.result()
-            except:
-                logging.error(
-                    f"Projects.__call__. Feature.result() error on '{project.name}' project"
-                )
-
+    def _update_db_download_stats(self):
         for project in self.projects:
             words, entries = project.get_words_entries()
 
@@ -118,11 +122,14 @@ class Projects(object):
             metadata_dto.words = words
             self.metadata_dao.put(metadata_dto)
 
+    def __call__(self):
+        """Process all projects"""
+        self._download_all_projects()
+        self._update_db_download_stats()
         self.create_tm_for_all_projects()
 
         DAYS_TO_KEEP = 90
-        result = self.metadata_dao.delete_last_fetch(DAYS_TO_KEEP)
-        logging.info("Projects clean up:" + str(result))
+        self.metadata_dao.delete_last_fetch(DAYS_TO_KEEP)
 
     def create_tm_for_all_projects(self):
         """Creates the TM memory for all projects"""

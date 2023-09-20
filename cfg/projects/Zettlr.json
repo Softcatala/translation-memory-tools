@@ -4,9 +4,9 @@
     "projectweb": "https://github.com/Zettlr/Zettlr#translating",
     "fileset": {
         "Zettlr": {
-            "url": "https://raw.githubusercontent.com/Zettlr/Zettlr/develop/static/lang/ca-CA.po",
+            "url": "https://raw.githubusercontent.com/Zettlr/Zettlr/develop/static/lang/ca-ES.po",
             "type": "file",
-            "target": "ca.po"
+            "target": "ca_ES.po"
         }
     }
 }

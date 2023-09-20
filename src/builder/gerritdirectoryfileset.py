@@ -93,7 +93,7 @@ class GerritDirectoryFileSet(FileSet):
                 # https://android.googlesource.com/platform/ndk and they have
                 # the name standard "ca.po"
                 # The rest are produced by android2po then they have the pattern '-ca.po'
-                fileset.set_pattern(r".*?ca\.po|.*?ca-[0-9]\.po")
+                fileset.set_pattern(r".*?ca\.po")
                 logging.debug("Gerrit adding {0}-{1}".format(self.project_name, name))
                 self.project.add_fileset(fileset)
 

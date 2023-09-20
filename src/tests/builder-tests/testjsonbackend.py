@@ -24,37 +24,33 @@ import unittest
 class TestJsonBackend(unittest.TestCase):
     def _validate_mozilla_project_mozilla_fileset(self, fileset):
         url = "http://pootle.softcatala.org/ca/mozilla/export/zip"
-        self.assertEquals(fileset.name, "mozilla")
-        self.assertEquals(fileset.url, url)
-        self.assertEquals(fileset.type, "compressed")
-        self.assertEquals(fileset.pattern, "ca.po")
-        self.assertEquals(fileset.retrieval_pattern, "https://.*?/ca/.*?")
-        self.assertEquals(fileset.duplicates, "msgctxt")
+        self.assertEqual(fileset.name, "mozilla")
+        self.assertEqual(fileset.url, url)
+        self.assertEqual(fileset.type, "compressed")
+        self.assertEqual(fileset.pattern, "ca.po")
+        self.assertEqual(fileset.retrieval_pattern, "https://.*?/ca/.*?")
+        self.assertEqual(fileset.duplicates, "msgctxt")
         self._validate_mozilla_project_conversor(fileset.conversor_setup)
-        return
 
     def _validate_mozilla_project_conversor(self, conversor):
-        self.assertEquals(conversor.type, "string")
-        self.assertEquals(conversor.verb, "add")
-        self.assertEquals(conversor.command, " --encoding=utf-8")
-        return
+        self.assertEqual(conversor.type, "string")
+        self.assertEqual(conversor.verb, "add")
+        self.assertEqual(conversor.command, " --encoding=utf-8")
 
     def _validate_firefox_fileset(self, fileset):
         self.assertTrue(fileset.po_preprocessing)
-        return
 
     def _validate_mozilla_project(self, project):
         url = "http://www.softcatala.org/wiki/Projectes/Mozilla"
-        self.assertEquals(project.name, "Mozilla")
-        self.assertEquals(project.project_id, "mozilla")
-        self.assertEquals(project.license, "Propietària")
-        self.assertEquals(project.quality_report, False)
-        self.assertEquals(project.filename, "mozilla-tm.po")
-        self.assertEquals(project.projectweb, url)
-        self.assertEquals(len(project.filesets), 3)
+        self.assertEqual(project.name, "Mozilla")
+        self.assertEqual(project.project_id, "mozilla")
+        self.assertEqual(project.license, "Propietària")
+        self.assertEqual(project.quality_report, False)
+        self.assertEqual(project.filename, "mozilla-tm.po")
+        self.assertEqual(project.projectweb, url)
+        self.assertEqual(len(project.filesets), 3)
         self._validate_mozilla_project_mozilla_fileset(project.filesets[0])
         self._validate_firefox_fileset(project.filesets[1])
-        return
 
     def test_processFileSet(self):
         projects_dir = path.dirname(path.realpath(__file__))
@@ -62,7 +58,7 @@ class TestJsonBackend(unittest.TestCase):
         json = JsonBackend(projects_dir)
         json.load()
 
-        self.assertEquals(len(json.projects), 2)
+        self.assertEqual(len(json.projects), 2)
         for project in json.projects:
             if project.name == "Mozilla":
                 mozilla = project
@@ -71,11 +67,11 @@ class TestJsonBackend(unittest.TestCase):
 
     def test_from_name_to_project_id(self):
         project = ProjectDTO("One Name")
-        self.assertEquals(project.project_id, "one_name")
+        self.assertEqual(project.project_id, "one_name")
 
-    def test_from_name_to_project_id(self):
+    def test_from_name_to_project_filename(self):
         project = ProjectDTO("One's Name")
-        self.assertEquals("ones_name-tm.po", project.filename)
+        self.assertEqual("ones_name-tm.po", project.filename)
 
 
 if __name__ == "__main__":

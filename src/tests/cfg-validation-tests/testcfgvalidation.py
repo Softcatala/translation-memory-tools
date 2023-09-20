@@ -49,9 +49,6 @@ class TestCfgValidation(unittest.TestCase):
         valid_licenses_ids = Licenses().get_licenses_ids()
         for project in json.projects:
             license_id = project.license
-            if len(license_id) == 0:
-                continue
-
             self.assertIn(license_id, valid_licenses_ids)
 
     def test_check_pattern(self):
@@ -95,6 +92,17 @@ class TestCfgValidation(unittest.TestCase):
                     valid_conversors,
                     f"project '{project_dto.name}'",
                 )
+
+    def test_check_git_url(self):
+        json = self.get_projects_cfg()
+
+        projects = Projects()
+        for project_dto in json.projects:
+            for fileset in project_dto.filesets:
+                if fileset.type == "git" and "git@" in fileset.url:
+                    self.fail(
+                        f"We cannot download '{fileset.url}' in '{project_dto.name}' project because it will require to hardcode known hosts in the docker image."
+                    )
 
 
 if __name__ == "__main__":

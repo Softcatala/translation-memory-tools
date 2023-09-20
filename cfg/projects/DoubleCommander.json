@@ -1,0 +1,12 @@
+{
+    "project": "Double Commander",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://github.com/doublecmd/doublecmd/wiki/Translation#user-content-How_to_translate",
+    "fileset": {
+        "doublecmd": {
+            "url": "https://raw.githubusercontent.com/doublecmd/doublecmd/master/language/doublecmd.ca.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}

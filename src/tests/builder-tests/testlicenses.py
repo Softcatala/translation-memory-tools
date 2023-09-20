@@ -29,12 +29,12 @@ class TestLicenses(unittest.TestCase):
 
     def test_get_licenses_ids(self):
         ids = Licenses(self._get_licenses_file()).get_licenses_ids()
-        self.assertEquals(6, len(ids))
+        self.assertEqual(6, len(ids))
         self.assertIn("PSF-2.0", ids)
 
     def test_get_licenses_name_and_link(self):
         links = Licenses(self._get_licenses_file()).get_licenses_name_and_link()
-        self.assertEquals(5, len(links))
+        self.assertEqual(5, len(links))
         license = links["PSF-2.0"]
 
         self.assertIn("Python Software Foundation License 2.0", license["name"])

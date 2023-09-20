@@ -117,3 +117,17 @@ The most common reason is that the URL where the translations are published has 
 
 At [https://static.softcatala.org/memories/builder-error.log](https://static.softcatala.org/memories/builder-error.log) you can see the logs of the last execution.
 
+# Debugging issues
+
+Setting the environment variable `LOGLEVEL` to `DEBUG` enables debug messages:
+
+```
+export LOGLEVEL="DEBUG"
+```
+
+If you are using macOS or Windows you will not see all debug messages because when starting new processes to download files in Linux Python uses `fork` which inherits
+the logging handlers but in other platforms uses `spawn` that does not and prevents seeing all log messages. To prevent this in non-Linux systems define:
+
+```
+export SINGLE_THREAD_DOWNLOAD=1
+```

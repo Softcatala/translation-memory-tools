@@ -18,7 +18,7 @@
 # Boston, MA 02111-1307, USA.
 
 import sqlite3
-
+import logging
 from .projectmetadatadto import ProjectMetaDataDto
 
 
@@ -116,7 +116,8 @@ class ProjectMetaDataDao(object):
         )
         result = c.execute(command)
         self.connection.commit()
-        return result.rowcount
+        logging.info(f"Projects clean up {result.rowcount}")
+        return
 
     def dump(self):
         c = self.connection.cursor()

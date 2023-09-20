@@ -32,7 +32,7 @@ class TestProjectMetaDataDao(unittest.TestCase):
         read_project_dto = project_dao.get(PROJECT_NAME)
 
         project_dao.close()
-        self.assertEquals(None, read_project_dto)
+        self.assertEqual(None, read_project_dto)
 
     def test_put_newvalue(self):
         PROJECT_NAME = "test project"
@@ -47,7 +47,7 @@ class TestProjectMetaDataDao(unittest.TestCase):
         read_project_dto = project_dao.get(PROJECT_NAME)
 
         project_dao.close()
-        self.assertEquals(PROJECT_NAME, read_project_dto.name)
+        self.assertEqual(PROJECT_NAME, read_project_dto.name)
 
     def test_put_updatevalue(self):
         PROJECT_NAME = "test project update"
@@ -66,7 +66,7 @@ class TestProjectMetaDataDao(unittest.TestCase):
         read_project_dto = project_dao.get(PROJECT_NAME)
 
         project_dao.close()
-        self.assertEquals(WORDS, read_project_dto.words)
+        self.assertEqual(WORDS, read_project_dto.words)
 
     def test_get_all(self):
         PROJECT_NAME = "test project get_all"
@@ -86,7 +86,7 @@ class TestProjectMetaDataDao(unittest.TestCase):
 
         project_dtos = project_dao.get_all()
         project_dao.close()
-        self.assertEquals(2, len(project_dtos))
+        self.assertEqual(2, len(project_dtos))
 
     def test_get_all_special_charts(self):
         PROJECT_NAME = "test project's get_all"
@@ -101,8 +101,8 @@ class TestProjectMetaDataDao(unittest.TestCase):
 
         project_dtos = project_dao.get_all()
         project_dao.close()
-        self.assertEquals(1, len(project_dtos))
-        self.assertEquals(PROJECT_NAME, project_dtos[0].name)
+        self.assertEqual(1, len(project_dtos))
+        self.assertEqual(PROJECT_NAME, project_dtos[0].name)
 
     def test_delete_last_fetch(self):
         PROJECT_NAME = "test project delete"
@@ -124,7 +124,7 @@ class TestProjectMetaDataDao(unittest.TestCase):
         project_dao.delete_last_fetch(DAYS)
         project_dtos = project_dao.get_all()
         project_dao.close()
-        self.assertEquals(1, len(project_dtos))
+        self.assertEqual(1, len(project_dtos))
 
 
 if __name__ == "__main__":

@@ -28,20 +28,20 @@ class CheckSearch(object):
         self.url = url
 
     def search_source(self, term):
-        url = '{0}memory/search?source={1}&project=tots'
+        url = "{0}memory/search?source={1}&project=tots"
         url = url.format(self.url, urllib.parse.quote(term))
 
-        urllib.request.urlretrieve(url, 'file.txt')
-        with open('file.txt') as json_data:
+        urllib.request.urlretrieve(url, "file.txt")
+        with open("file.txt") as json_data:
             data = json.load(json_data)
             return data
 
     def search_glossary(self, term):
-        url = '{0}/glossary/search?source={1}&project=tots'
+        url = "{0}/glossary/search?source={1}&project=tots"
         url = url.format(self.url, urllib.parse.quote(term))
 
-        urllib.request.urlretrieve(url, 'file.txt')
-        with open('file.txt') as json_data:
+        urllib.request.urlretrieve(url, "file.txt")
+        with open("file.txt") as json_data:
             data = json.load(json_data)
             return data
 
@@ -49,50 +49,50 @@ class CheckSearch(object):
         actual = actual.lower()
         expected = expected.lower()
         if expected not in actual:
-            text = u"Expected '{0}' contains '{1}"
+            text = "Expected '{0}' contains '{1}"
             raise Exception(text.format(expected, actual))
 
     def _assert_that(self, actual, expected):
         actual = actual.lower()
         expected = expected.lower()
         if not expected == actual:
-            text = u"Expected '{0}' equals '{1}'"
+            text = "Expected '{0}' equals '{1}'"
             raise Exception(text.format(expected, actual))
 
     def _assert_greater(self, actual, minimum):
         if minimum > actual:
-            text = u'Expected {0} to be greater than minimum {1}'
+            text = "Expected {0} to be greater than minimum {1}"
             raise Exception(text.format(minimum, actual))
 
     def _check_integration_data(self):
-        string = (u'Palindromics numbers remain the same when its digits are '
-                  u'reversed')
+        string = "Palindromics numbers remain the same when its digits are " "reversed"
         data = self.search_source(string)
 
         self._assert_greater(len(data), 1)
-        self._assert_that(data[0]['source'], string)
-        self._assert_that(data[0]['target'],
-                          u'Els nombres capicua no varien quan les '
-                          u'seves xifres s\'inverteixen')
-        self._assert_that(data[0]['context'], u'Palindromics.context')
-        self._assert_contains(data[0]['comment'],
-                              u'n.t.: títol de preferències')
-        self._assert_contains(data[0]['comment'],
-                              u'translators: comment for translators')
+        self._assert_that(data[0]["source"], string)
+        self._assert_that(
+            data[0]["target"],
+            "Els nombres capicua no varien quan les " "seves xifres s'inverteixen",
+        )
+        self._assert_that(data[0]["context"], "Palindromics.context")
+        self._assert_contains(data[0]["comment"], "n.t.: títol de preferències")
+        self._assert_contains(
+            data[0]["comment"], "translators: comment for translators"
+        )
 
     def _check_common_searches(self):
-        string = u'File'
+        string = "File"
         data = self.search_source(string)
 
         self._assert_greater(len(data), 1)
-        self._assert_contains(data[0]['source'], string)
+        self._assert_contains(data[0]["source"], string)
 
     def _check_glossary_source_search(self):
-        string = u'file'
+        string = "file"
         data = self.search_glossary(string)
 
         self._assert_greater(len(data), 1)
-        self._assert_contains(data[0]['term'], string)
+        self._assert_contains(data[0]["term"], string)
 
     def check(self):
         try:
@@ -101,5 +101,5 @@ class CheckSearch(object):
             self._check_glossary_source_search()
             return True
         except Exception as detail:
-            print('Error checking search results: ' + str(detail))
+            print("Error checking search results: " + str(detail))
             return False

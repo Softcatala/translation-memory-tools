@@ -4,7 +4,7 @@
     "projectweb": "https://overseerr.dev/",
     "fileset": {
         "Overseerr": {
-            "url": "git@github.com:sct/overseerr.git",
+            "url": "https://github.com/sct/overseerr",
             "type": "git",
             "duplicates": "msgctxt"
         }

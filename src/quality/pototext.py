@@ -42,14 +42,13 @@ class PoToText:
         if "image::" in text:  # Shpinx images
             return
 
-        text = re.sub("[\t]", " ", text)
-        text = re.sub("<br>|<br\/>", " ", text)
+        text = re.sub(r"[\t]", " ", text)
+        text = re.sub(r"<br>|<br\/>", " ", text)
         text = html.unescape(text)
-        text = re.sub("[_&~]", "", text)
-        text = re.sub("<[^>]*>", "", text)  # Remove HTML tags
+        text = re.sub(r"[_&~]", "", text)
+        text = re.sub(r"<[^>]*>", "", text)  # Remove HTML tags
 
         text = self._remove_sphinx(text)
-        # text = re.sub('^([^.]*,[^.]*){8,}$', '', text)  #comma-separated word list
         text += "\n\n"
 
         text_file.write(text)

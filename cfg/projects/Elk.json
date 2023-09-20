@@ -1,0 +1,11 @@
+{
+    "project": "Elk",
+    "license": "MIT",
+    "projectweb": "https://github.com/elk-zone/elk",
+    "fileset": {
+        "Elk": {
+            "url": "https://github.com/elk-zone/elk",
+            "type": "git"
+        }
+    }
+}

@@ -66,7 +66,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         pofile = POFile(self.minipo)
         checksum = hashlib.new("sha1")
         pofile.calculate_localized_string_checksum(checksum)
-        self.assertEquals(
+        self.assertEqual(
             "edf879d0199103cc09cc464deebdfd3e98613e4b", checksum.hexdigest()
         )
 
@@ -110,7 +110,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         poFile.add_msgctxt_to_duplicates()
 
         rslt = self._does_pofile_contains_duplicated_strings(filename)
-        self.assertEquals(False, rslt)
+        self.assertEqual(False, rslt)
 
     def test_remove_untranslated_strings(self):
         tmpfile = tempfile.NamedTemporaryFile()
@@ -121,7 +121,7 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         poFile._remove_untranslated_strings()
 
         po = polib.pofile(filename)
-        self.assertEquals(1, len(po))
+        self.assertEqual(1, len(po))
 
     def _create_po_with_html(self, filename):
         pofile = polib.POFile()
@@ -141,9 +141,9 @@ msgstr 'Apaga les màquines virtuals seleccionades'
         poFile._unescape_html()
 
         po = polib.pofile(filename)
-        self.assertEquals("use the <li> to begin each list item", po[0].msgid)
+        self.assertEqual("use the <li> to begin each list item", po[0].msgid)
 
-        self.assertEquals('"Hi"', po[1].msgstr)
+        self.assertEqual('"Hi"', po[1].msgstr)
 
 
 if __name__ == "__main__":

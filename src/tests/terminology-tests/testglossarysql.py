@@ -51,12 +51,12 @@ class TesGlossarySql(unittest.TestCase):
         cnt = glossary.count()
 
         item = list(glossary)[0]
-        self.assertEquals(1, cnt)
-        self.assertEquals(self.SOURCE_TERM, item.term)
-        self.assertEquals(self.TRANSLATION, item.translation)
-        self.assertEquals(self.FREQUENCY, item.frequency)
-        self.assertEquals(self.PERCENTATGE, item.percentage)
-        self.assertEquals(self.TERMCAT, item.termcat)
+        self.assertEqual(1, cnt)
+        self.assertEqual(self.SOURCE_TERM, item.term)
+        self.assertEqual(self.TRANSLATION, item.translation)
+        self.assertEqual(self.FREQUENCY, item.frequency)
+        self.assertEqual(self.PERCENTATGE, item.percentage)
+        self.assertEqual(self.TERMCAT, item.termcat)
 
     def test_fields(self):
         POS_ONLY_ITEM = 0

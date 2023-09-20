@@ -1,0 +1,12 @@
+{
+    "project": "PDF Arranger",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/pdfarranger/pdfarranger",
+    "fileset": {
+        "pdfarranger": {
+            "url": "https://raw.githubusercontent.com/pdfarranger/pdfarranger/main/po/ca.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}

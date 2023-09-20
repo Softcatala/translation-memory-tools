@@ -1,0 +1,12 @@
+{
+    "project": "Clapper",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/Rafostar/clapper",
+    "fileset": {
+        "clapper": {
+            "url": "https://raw.githubusercontent.com/Rafostar/clapper/master/po/ca.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}

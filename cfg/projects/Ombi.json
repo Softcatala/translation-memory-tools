@@ -1,0 +1,11 @@
+{
+    "project": "Ombi",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://github.com/Ombi-app/Ombi",
+    "fileset": {
+        "Ombi": {
+            "url": "https://github.com/Ombi-app/Ombi",
+            "type": "git"
+        }
+    }
+}

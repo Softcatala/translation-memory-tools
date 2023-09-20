@@ -5,7 +5,8 @@
     "fileset": {
         "OnionShare": {
             "url": "https://github.com/onionshare/onionshare",
-            "type": "git"
+            "type": "git",
+            "pattern": ".*/locale/ca/.*\\.po|.*/resources/locale/.*"
         }
     }
 }

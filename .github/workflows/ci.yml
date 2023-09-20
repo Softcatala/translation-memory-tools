@@ -36,7 +36,7 @@ jobs:
         nose2
     - name: black
       run: |
-        black --check src/
+        black --check src/ integration-tests/
     - name: flake8
       run: |
-        flake8 src/builder/ src/web/ --ignore E501,W503,E203,E722,E402
+        flake8 src/builder/ src/web/ integration-tests/ --ignore E501,W503,E203,E722,E402

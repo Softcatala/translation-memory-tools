@@ -27,23 +27,23 @@ class TestPagination(unittest.TestCase):
         pagination = Pagination(
             50, 100, "http://www.softcatala.org/web_search.py?page=2"
         )
-        self.assertEquals(pagination.page, 2)
+        self.assertEqual(pagination.page, 2)
 
     def test_url(self):
         pagination = Pagination(
             50, 100, "http://www.softcatala.org/web_search.py?page=2&project=gnome"
         )
-        self.assertEquals(
+        self.assertEqual(
             pagination.url, "http://www.softcatala.org/web_search.py?project=gnome"
         )
 
     def test_pages_one(self):
         pagination = Pagination(50, 10, "")
-        self.assertEquals(pagination.pages, 1)
+        self.assertEqual(pagination.pages, 1)
 
     def test_pages_three(self):
         pagination = Pagination(50, 101, "")
-        self.assertEquals(pagination.pages, 3)
+        self.assertEqual(pagination.pages, 3)
 
     def test_has_prev_true(self):
         pagination = Pagination(

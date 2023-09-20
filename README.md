@@ -78,7 +78,7 @@ This requires that you have *docker*, *docker-compose* and *make* installed in y
 First download the data for the projects and generate the data quality reports:
 
 ```shell
-make docker-builder-run
+make docker-run-builder
 ```
 
 Downloading all the projects can take up to a day, which is not acceptable for a development cycle. In the [docker/local.yml](./docker/local.yml) the variable *DEV_SMALL_SET* forces to only download some projects. This small subset does not requiere any specific credentials to be defined to download them.
@@ -88,7 +88,7 @@ The output files are copied to *web-docker* local directory to make easy to for 
 To run the web app which provides the microservices for the web site:
 
 ```shell
-make docker-webapp-run
+make docker-run-webapp
 ```
 
 To test it from the browser:

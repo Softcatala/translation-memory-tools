@@ -4,7 +4,7 @@
     "projectweb": "https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-languages-does-Canvas-support/ta-p/19",
     "fileset": {
         "CanvasLMS": {
-            "url": "git@github.com:instructure/canvas-lms.git",
+            "url": "https://github.com/instructure/canvas-lms",
             "type": "git",
             "duplicates": "msgctxt"
         }

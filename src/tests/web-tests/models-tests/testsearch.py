@@ -81,8 +81,8 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 1)
-        self.assertEquals(results[0]["source"], "No Documents Found Today")
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["source"], "No Documents Found Today")
 
     def test_query_simple_query_source_with_two_projects(self):
         ix = self._create_index()
@@ -90,9 +90,9 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 2)
-        self.assertEquals(results[0]["source"], "Many documents found Yesterday")
-        self.assertEquals(results[1]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(len(results), 2)
+        self.assertEqual(results[0]["source"], "Many documents found Yesterday")
+        self.assertEqual(results[1]["source"], "No Documents Found late Yesterday")
 
     def test_query_simple_query_source_with_three_projects_with_spaces(self):
         ix = self._create_index()
@@ -102,10 +102,10 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 3)
-        self.assertEquals(results[0]["source"], "Many documents found Yesterday")
-        self.assertEquals(results[1]["source"], "No Documents Found late Yesterday")
-        self.assertEquals(
+        self.assertEqual(len(results), 3)
+        self.assertEqual(results[0]["source"], "Many documents found Yesterday")
+        self.assertEqual(results[1]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(
             results[2]["source"], "Many documents found Yesterday Microsoft"
         )
 
@@ -115,8 +115,8 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 1)
-        self.assertEquals(
+        self.assertEqual(len(results), 1)
+        self.assertEqual(
             results[0]["source"], "Many documents found Yesterday Microsoft"
         )
 
@@ -126,10 +126,10 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 3)
-        self.assertEquals(results[0]["source"], "Many documents found Yesterday")
-        self.assertEquals(results[1]["source"], "No Documents Found late Yesterday")
-        self.assertEquals(
+        self.assertEqual(len(results), 3)
+        self.assertEqual(results[0]["source"], "Many documents found Yesterday")
+        self.assertEqual(results[1]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(
             results[2]["source"], "Many documents found Yesterday Microsoft"
         )
 
@@ -139,9 +139,9 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 2)
-        self.assertEquals(results[0]["source"], "No Documents Found Today")
-        self.assertEquals(results[1]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(len(results), 2)
+        self.assertEqual(results[0]["source"], "No Documents Found Today")
+        self.assertEqual(results[1]["source"], "No Documents Found late Yesterday")
 
     def test_query_simple_with_not_query_source(self):
         ix = self._create_index()
@@ -149,7 +149,7 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 2)
+        self.assertEqual(len(results), 2)
         for i in range(0, len(results)):
             self.assertFalse("Yesterday" in results[i]["source"])
 
@@ -159,8 +159,8 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 1)
-        self.assertEquals(results[0]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["source"], "No Documents Found late Yesterday")
 
     def test_query_source_target(self):
         ix = self._create_index()
@@ -168,8 +168,8 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 1)
-        self.assertEquals(results[0]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["source"], "No Documents Found late Yesterday")
 
     def test_query_source_OR_target(self):
         ix = self._create_index()
@@ -177,9 +177,9 @@ class TestSearch(unittest.TestCase):
         search.search(ix)
         results = search.get_results()
 
-        self.assertEquals(len(results), 2)
-        self.assertEquals(results[0]["source"], "No Documents Found Today")
-        self.assertEquals(results[1]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(len(results), 2)
+        self.assertEqual(results[0]["source"], "No Documents Found Today")
+        self.assertEqual(results[1]["source"], "No Documents Found late Yesterday")
 
     def test_get_json(self):
         ix = self._create_index()
@@ -188,9 +188,9 @@ class TestSearch(unittest.TestCase):
         results = search.get_json()
 
         json_array = json.loads(results)
-        self.assertEquals(len(json_array), 2)
-        self.assertEquals(json_array[0]["source"], "No Documents Found Today")
-        self.assertEquals(json_array[1]["source"], "No Documents Found late Yesterday")
+        self.assertEqual(len(json_array), 2)
+        self.assertEqual(json_array[0]["source"], "No Documents Found Today")
+        self.assertEqual(json_array[1]["source"], "No Documents Found late Yesterday")
 
 
 if __name__ == "__main__":

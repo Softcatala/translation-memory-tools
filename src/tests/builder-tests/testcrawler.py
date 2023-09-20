@@ -35,7 +35,7 @@ class TestPage(unittest.TestCase):
         page = FilePage("http://translationproject.org/team/ca.html")
         links = page.get_all_links()
 
-        self.assertEquals(len(links), 432)
+        self.assertEqual(len(links), 432)
         url = "http://translationproject.org/PO-files/ca/cpplib-4.8.0.ca.po"
         self.assertTrue(url in links)
 

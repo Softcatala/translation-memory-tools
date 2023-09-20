@@ -59,7 +59,7 @@ cat $CHECK_LINKS/run-check-links-error.log >> builder-error.log
 copy_successfully_downloaded_files "*.po" 200 $PUBLISHED_PO
 
 # Empty TMX files are 275 bytes (just the header)
-# Files with one short translation 450 bytes       
+# Files with one short translation 450 bytes
 copy_successfully_downloaded_files "*.tmx" 350 $PUBLISHED_TMX
 
 # Update download file & index
