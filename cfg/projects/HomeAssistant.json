@@ -8,6 +8,18 @@
             "type": "git",
             "duplicates": "msgctxt",
             "pattern": ".*?/home-assistant-ios/.*?"
+        },
+        "HomeAssistant-backend": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/home-assistant-backend/.*?"
+        },
+        "HomeAssistant-frontend": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/home-assistant-frontend/.*?"
         }
     }
 }
