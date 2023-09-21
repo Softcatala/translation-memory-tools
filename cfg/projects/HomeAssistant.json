@@ -1,0 +1,25 @@
+{
+    "project": "Home Assistant",
+    "license": "Apache-2.0",
+    "projectweb": "https://developers.home-assistant.io/docs/translations/",
+    "fileset": {
+        "HomeAssistant-apple": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/home-assistant-ios/.*?"
+        },
+        "HomeAssistant-backend": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/home-assistant-backend/.*?"
+        },
+        "HomeAssistant-frontend": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/home-assistant-frontend/.*?"
+        }
+    }
+}
