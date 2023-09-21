@@ -1,0 +1,14 @@
+{
+    "project": "Keycloak",
+    "license": "Apache-2.0",
+    "projectweb": "https://github.com/keycloak/keycloak",
+    "softcatala": true,
+    "fileset": {
+        "Keycloak": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/keycloak/.*?"
+        }
+    }
+}
