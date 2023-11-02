@@ -23,6 +23,8 @@ import datetime
 import locale
 import os
 import json
+import logging
+import sys
 
 from optparse import OptionParser
 from builder.jsonbackend import JsonBackend
@@ -31,6 +33,41 @@ from builder.projectmetadatadao import ProjectMetaDataDao
 from builder.licenses import Licenses
 
 static_host = "https://static.softcatala.org/"
+
+
+def init_logging(del_logs):
+    logfile = "download_creation.log"
+    logfile_error = "download_creation-error.log"
+
+    if del_logs and os.path.isfile(logfile):
+        os.remove(logfile)
+
+    if del_logs and os.path.isfile(logfile_error):
+        os.remove(logfile_error)
+
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+
+    LOGLEVEL = os.environ.get("LOGLEVEL", "INFO").upper()
+    LOGSTDOUT = os.environ.get("LOGSTDOUT", "0")
+
+    if LOGSTDOUT == "0":
+        console = logging.StreamHandler()  # By default uses stderr
+    else:
+        console = logging.StreamHandler(stream=sys.stdout)
+
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
+    logger = logging.getLogger("")
+    console.setLevel(LOGLEVEL)
+
+    if LOGLEVEL != "INFO":
+        console.setFormatter(formatter)
+
+    logger.addHandler(console)
+
+    fh = logging.FileHandler(logfile_error)
+    fh.setLevel(logging.ERROR)
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
 
 
 def json_remove_unncessary_fields(ctx):
@@ -146,7 +183,7 @@ def get_words(potext, po_directory):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
     if words == 0:
-        print("Skipping empty translation memory: " + potext)
+        logging.error("Skipping empty translation memory: " + potext)
         return None
 
     return words
@@ -347,11 +384,12 @@ def main():
         "Creates files to be download and projects.json file with all information about projects"
     )
     print("Use --help for assistance")
+    init_logging(True)
 
     try:
         locale.setlocale(locale.LC_ALL, "")
     except Exception as detail:
-        print("Exception: " + str(detail))
+        logging.error("Exception: " + str(detail))
 
     po_directory, tmx_directory, out_directory = read_parameters()
     create_output_dir("memories", out_directory)

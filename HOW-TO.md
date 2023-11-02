@@ -115,7 +115,7 @@ Go to [https://www.softcatala.org/recursos/memories/](https://www.softcatala.org
 
 The most common reason is that the URL where the translations are published has changed.
 
-At [https://static.softcatala.org/memories/builder-error.log](https://static.softcatala.org/memories/builder-error.log) you can see the logs of the last execution.
+At [https://static.softcatala.org/memories/applications-error.log](https://static.softcatala.org/memories/applications-error.log) you can see the logs of the last execution.
 
 # Debugging issues
 

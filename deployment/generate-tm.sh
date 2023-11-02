@@ -54,7 +54,8 @@ rm -f -r $NEW_POS
 # Download new translation files
 python builder.py -d
 python builder.py --softcatala
-cat $CHECK_LINKS/run-check-links-error.log >> builder-error.log
+cp builder-error.log applications-error.log
+cat $CHECK_LINKS/run-check-links-error.log >> applications-error.log
 
 copy_successfully_downloaded_files "*.po" 200 $PUBLISHED_PO
 
@@ -66,3 +67,4 @@ copy_successfully_downloaded_files "*.tmx" 350 $PUBLISHED_TMX
 cd $PROGRAMS
 python download_creation.py -d $PUBLISHED_PO -t $PUBLISHED_TMX
 python index_creation.py -d $NEW_POS
+cat download_creation-error.log >> applications-error.log

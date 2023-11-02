@@ -50,6 +50,6 @@ INTERMEDIATE_PO=$TARGET_DIR/translation-memories/po
 BACKUP_DIR=$TARGET_DIR/previous
 cd $ROOT/tm-git/src
 ls -h -s -S  $TARGET_DIR/quality/*.html
-cat builder-error.log
+cat applications-error.log
 
 echo "Deployment completed $ROOT $TARGET_DIR"
