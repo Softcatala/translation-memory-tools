@@ -179,12 +179,17 @@ def get_project_dates(name):
     return last_fetch, last_translation
 
 
+def does_memory_file_exists(potext, po_directory):
+    full_filename = os.path.join(po_directory, potext)
+    exists = os.path.exists(full_filename)
+    return exists
+
+
 def get_words(potext, po_directory):
     full_filename = os.path.join(po_directory, potext)
     words = POFile(full_filename).get_statistics()
     if words == 0:
-        logging.error("Skipping empty translation memory: " + potext)
-        return None
+        logging.error(f"Cannot get word statistics for translation memory '{potext}'")
 
     return words
 
@@ -200,11 +205,14 @@ def build_combined_memory(
     out_directory,
 ):
     """Build zip file containing all memories for the specified projects."""
-    words = get_words(filename, po_directory)
 
-    if words is None:
+    if not does_memory_file_exists(filename, po_directory):
+        logging.error(
+            f"Skipping empty translation memory, file '{filename}' does not exists"
+        )
         return
 
+    words = get_words(filename, po_directory)
     date = get_file_date(filename, po_directory)
 
     translation_memory = TranslationMemory(
@@ -240,11 +248,13 @@ def build_invidual_projects_memory(
 ):
     """Build zip file that contains a memory for every project."""
     for project_dto in projects:
-        words = get_words(project_dto.filename, po_directory)
-
-        if words is None:
+        if not does_memory_file_exists(project_dto.filename, po_directory):
+            logging.error(
+                f"Skipping empty translation memory, file '{project_dto.filename}' does not exists"
+            )
             continue
 
+        words = get_words(project_dto.filename, po_directory)
         name = project_dto.name
         last_fetch, last_translation_update = get_project_dates(name)
 
