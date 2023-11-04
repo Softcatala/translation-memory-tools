@@ -39,11 +39,6 @@
             "type": "file",
             "target": "wordpress-seo-ca.po"
         },
-        "wordpress-seo-premium": {
-            "url": "https://translate.yoast.com/projects/wordpress-seo-premium/ca/default/export-translations",
-            "type": "file",
-            "target": "wordpress-seo-premium-ca.po"
-        },
         "wpforms-lite": {
             "url": "https://translate.wordpress.org/projects/wp-plugins/wpforms-lite/dev/ca/default/export-translations",
             "type": "file",
