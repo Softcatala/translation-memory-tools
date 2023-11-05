@@ -4,10 +4,12 @@ services:
 
 stages:
   - build
-  - build-languagetool
+  - run
+  - deploy
 
 before_script:
   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  - apk add bash
 
 build:
   stage: build
@@ -24,11 +26,39 @@ build:
     - docker push $IMAGE_NAME
 
 build-languagetool:
-  stage: build-languagetool
+  stage: build
   script:
     - export DOCKER_PATH=docker/dockerfile-languagetool
     - export REPO_NAME=$CI_REGISTRY_IMAGE/tmt-languagetool
     - export IMAGE_NAME=$REPO_NAME:$CI_COMMIT_REF_NAME
     - docker build --tag tmt-languagetool --tag $IMAGE_NAME docker/ -f $DOCKER_PATH
     - docker push $IMAGE_NAME
+  variables:
+    TRIGGER_DEPLOY: 'true'
 
+run:
+  stage: run
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+      when: always 
+  script:
+    - bash docker/stop-docker.sh
+    - set
+    - docker-compose -f docker/docker-compose-run-job.yml pull
+    - docker-compose -f docker/docker-compose-run-job.yml run -d --use-aliases --name translation-memory-tools-lt tmt-languagetool
+    - docker-compose -f docker/docker-compose-run-job.yml run -v /srv/volumes/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder
+    - docker cp translation-memory-tools:/srv/web-docker web-docker
+    - docker container rm translation-memory-tools
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG . -f docker/dockerfile-data
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+    - bash docker/stop-docker.sh
+
+  
+deploy:
+  stage: deploy
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+      when: always
+  trigger: github/translation-memory-tools-webapp

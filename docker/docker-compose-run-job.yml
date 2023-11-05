@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  tmt-languagetool:
+    image: registry.softcatala.org/github/translation-memory-tools/tmt-languagetool:${CI_COMMIT_REF_SLUG}
+    restart: always
+
+  tmt-builder:
+    image: registry.softcatala.org/github/translation-memory-tools/tmt-builder:${CI_COMMIT_REF_SLUG}
+
+    environment:
+      LT_SERVER: http://tmt-languagetool:7001/v2/check
+      # Uncomment to activate debugging
+      #LOGLEVEL: 'DEBUG'
+      # Gitlab does not print stdout in logs, only StdErr
+      LOGSTDOUT: 1
+
+    restart: always
+
