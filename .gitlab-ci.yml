@@ -45,13 +45,15 @@ run:
   script:
     - bash docker/stop-docker.sh
     - set
+    - export REPO_NAME=$CI_REGISTRY_IMAGE/tmt-data
+    - export IMAGE_NAME=$REPO_NAME:$CI_COMMIT_REF_NAME
     - docker-compose -f docker/docker-compose-run-job.yml pull
     - docker-compose -f docker/docker-compose-run-job.yml run -d --use-aliases --name translation-memory-tools-lt tmt-languagetool
     - docker-compose -f docker/docker-compose-run-job.yml run -v /srv/volumes/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder
     - docker cp translation-memory-tools:/srv/web-docker web-docker
     - docker container rm translation-memory-tools
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG . -f docker/dockerfile-data
-    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+    - docker build -t $IMAGE_NAME . -f docker/dockerfile-data
+    - docker push "IMAGE_NAME"
     - bash docker/stop-docker.sh
 
   

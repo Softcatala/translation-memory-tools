@@ -5,7 +5,7 @@ RUN apt-get install httping -y
 COPY integration-tests /srv/integration-tests
 COPY docker/entry-point-web-test.sh /srv/
 
-COPY --from=registry.softcatala.org/github/translation-memory-tools-build-data:master  /static/quality /srv/integration-tests/quality
+COPY --from=registry.softcatala.org/github/translation-memory-tools/tmt-data:master  /static/quality /srv/integration-tests/quality
 
 WORKDIR /srv
 ENTRYPOINT bash /srv/entry-point-web-test.sh

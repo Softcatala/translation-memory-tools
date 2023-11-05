@@ -8,12 +8,12 @@ docker-build-lt:
 
 docker-build-webapp:
 	cp docker/dockerfile-webapp docker/dockerfile-webapp-local;
-	sed -i "s+registry.softcatala.org/github/++g" docker/dockerfile-webapp-local;
+	sed -i "s+registry.softcatala.org/github/translation-memory-tools/++g" docker/dockerfile-webapp-local;
 	docker build --no-cache -t tmt-webapp . -f docker/dockerfile-webapp-local;
 
 docker-build-webapp-test: docker-build-webapp
 	cp docker/dockerfile-webapp-test docker/dockerfile-webapp-test-local;
-	sed -i "s+registry.softcatala.org/github/++g" docker/dockerfile-webapp-test-local;
+	sed -i "s+registry.softcatala.org/github/translation-memory-tools/++g" docker/dockerfile-webapp-test-local;
 	docker build --no-cache -t tmt-webapp-test . -f docker/dockerfile-webapp-test-local;
 
 
@@ -22,7 +22,7 @@ docker-run-builder: docker-build-builder docker-build-lt
 	docker-compose -f docker/local.yml run -d --use-aliases --name translation-memory-tools-lt tmt-languagetool;
 	docker-compose -f docker/local.yml run -v $PWD$/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder;
 	docker cp translation-memory-tools:/srv/web-docker .;
-	docker build -t translation-memory-tools-build-data:master . -f docker/dockerfile-data;
+	docker build -t tmt-data:master . -f docker/dockerfile-data;
 	./docker/stop-docker.sh;
 
 docker-run-webapp: docker-build-webapp
