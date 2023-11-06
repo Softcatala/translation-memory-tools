@@ -53,7 +53,7 @@ run:
     - docker cp translation-memory-tools:/srv/web-docker web-docker
     - docker container rm translation-memory-tools
     - docker build -t $IMAGE_NAME . -f docker/dockerfile-data
-    - docker push "IMAGE_NAME"
+    - docker push $IMAGE_NAME
     - bash docker/stop-docker.sh
 
   
