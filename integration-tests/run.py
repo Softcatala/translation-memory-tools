@@ -30,6 +30,7 @@ from checksearch import CheckSearch
 from checkstats import CheckStats
 from checkprojects import CheckProjects
 from checkqualityreports import CheckQualityReports
+from checkindex import CheckIndex
 
 
 def read_parameters():
@@ -64,6 +65,10 @@ if __name__ == "__main__":
     site_url = read_parameters()
     print("Integration tests for: " + site_url)
     print("Use --help for assistance")
+
+    index = CheckIndex(site_url)
+    if not index.check():
+        sys.exit(1)
 
     search = CheckSearch(site_url)
     if not search.check():
