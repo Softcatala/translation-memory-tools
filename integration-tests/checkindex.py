@@ -34,7 +34,6 @@ class CheckIndex(object):
         urllib.request.urlretrieve(url, "file.txt")
         with open("file.txt") as json_data:
             data = json.load(json_data)
-            print(data)
 
         words = self.str_to_int(data["words"])
         projects = self.str_to_int(data["projects"])
