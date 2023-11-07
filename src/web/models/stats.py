@@ -18,29 +18,26 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import sys
 import json
-
-sys.path.append("../")
-sys.path.append("../builder")
 from usage import Usage
-from builder.projectmetadatadao import ProjectMetaDataDao
 
 
 class Stats(object):
-    def get_json(self, date_requested):
-        dao = ProjectMetaDataDao()
-        dao.open("statistics.db3")
-        total_words = 0
-        projects = dao.get_all()
-        for project in projects:
-            total_words += project.words
+    def _read_index_json(self):
+        with open("index.json", "r") as fh_json:
+            d = json.load(fh_json)
+        return d
 
+    def str_to_int(self, string):
+        return int(string.replace(".", ""))
+
+    def get_json(self, date_requested):
         usage = Usage()
         calls = usage.get_stats(date_requested)
+        index_json = self._read_index_json()
 
         results = {}
-        results["total_words"] = total_words
-        results["projects"] = len(projects)
+        results["total_words"] = self.str_to_int(index_json["words"])
+        results["projects"] = self.str_to_int(index_json["projects"])
         results["searches"] = calls
         return json.dumps(results, indent=4, separators=(",", ": "))
