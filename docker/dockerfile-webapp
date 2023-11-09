@@ -1,4 +1,4 @@
-FROM registry.softcatala.org/github/translation-memory-tools/tmt-data:master as docker_web
+FROM tmt-data as docker_web
 
 FROM python:3.11.1-slim-bullseye as generate_data
 
