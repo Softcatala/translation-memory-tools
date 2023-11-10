@@ -2,11 +2,11 @@ version: '3.2'
 
 services:
   tmt-languagetool:
-    image: registry.softcatala.org/github/translation-memory-tools/tmt-languagetool:${CI_COMMIT_REF_SLUG}
+    image: registry.softcatala.org/github/translation-memory-tools/tmt-languagetool:${CI_COMMIT_REF_NAME}
     restart: always
 
   tmt-builder:
-    image: registry.softcatala.org/github/translation-memory-tools/tmt-builder:${CI_COMMIT_REF_SLUG}
+    image: registry.softcatala.org/github/translation-memory-tools/tmt-builder:${CI_COMMIT_REF_NAME}
 
     environment:
       LT_SERVER: http://tmt-languagetool:7001/v2/check
