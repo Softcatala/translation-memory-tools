@@ -1,4 +1,4 @@
-.PHONY: docker-build-builder docker-build-lt docker-build-webapp docker-run-builder docker-run-webapp docker-run-webapp-test
+.PHONY: docker-build-builder docker-build-lt docker-build-webapp docker-run-builder docker-run-webapp docker-run-webapp-test docker-build-gitlab-data-debug docker-run-gitlab-data-debug
 
 docker-build-builder:
 	docker build -t tmt-builder . -f docker/dockerfile-builder;
@@ -11,6 +11,12 @@ docker-build-webapp:
 
 docker-build-webapp-test: docker-build-webapp
 	docker build --no-cache -t tmt-webapp-test . -f docker/dockerfile-webapp-test;
+
+docker-build-gitlab-data-debug:
+	docker build --no-cache -t tmt-dockerfile-gitlab-data-debug . -f docker/dockerfile-gitlab-data-debug;
+
+docker-run-gitlab-data-debug: docker-build-gitlab-data-debug
+	docker run -i -t tmt-dockerfile-gitlab-data-debug;
 
 docker-run-builder: docker-build-builder docker-build-lt
 	./docker/stop-docker.sh
