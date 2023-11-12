@@ -91,6 +91,7 @@ class SearchAPIResults(object):
             aborted_search = True
             pagination = None
             glossary = None
+            pages = 0
         else:
             g = Glossary(search.source)
             g.search()
