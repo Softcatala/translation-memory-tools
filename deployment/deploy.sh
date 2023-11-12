@@ -21,7 +21,6 @@ copy_files() {
     cp *glossary*.html $2/terminology
     cp *glossary*.csv $2/terminology
     cp sc-glossary.db3 $2/glossary.db3
-    cp statistics.db3 $2/statistics.db3
 
     # Deploy quality reports
     cd $1/tm-git/src/output/quality
