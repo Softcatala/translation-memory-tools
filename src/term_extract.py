@@ -25,7 +25,7 @@ import resource
 import time
 from collections import OrderedDict
 from optparse import OptionParser
-from terminology.glossarysql import *
+from terminology.glossarysql import database, Entry
 
 import pystache
 
@@ -38,16 +38,17 @@ from terminology.referencesources import ReferenceSources
 from terminology.translations import Translations
 
 
-def process_template(template, filename, ctx):
+def process_template(template_file, filename, ctx):
     # Load template and process it.
-    template = open(template, "r").read()
+    with open(template_file, "r") as template_fh:
+        template = template_fh.read()
+
     parsed = pystache.Renderer()
     s = parsed.render(template, ctx)
 
     # Write output.
-    f = open(filename, "w")
-    f.write(s)
-    f.close()
+    with open(filename, "w") as output_fh:
+        output_fh.write(s)
 
 
 ENV_NAME = "DB3_PATH"
