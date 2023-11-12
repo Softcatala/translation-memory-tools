@@ -1,0 +1,3 @@
+# For server.
+Whoosh
+ijson

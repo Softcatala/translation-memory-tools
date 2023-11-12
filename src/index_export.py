@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
 #
-# Copyright (c) 2013-2014 Jordi Mas i Hernandez <jmas@softcatala.org>
-# Copyright (c) 2014 Leandro Regueiro Iglesias <leandro.regueiro@gmail.com>
+# Copyright (c) 2013-2023 Jordi Mas i Hernandez <jmas@softcatala.org>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -23,7 +22,7 @@ import datetime
 import locale
 import json
 from optparse import OptionParser
-from web.indexcreator import IndexCreator
+from builder.postojson import POsToJson
 
 
 def read_parameters():
@@ -76,12 +75,9 @@ def write_index_json(ctx):
 
 
 def main():
-    """Create a Whoosh index for a PO file.
-
-    Given a PO file, enumerates all the strings, and creates a Whoosh index to
-    be able to search later.
-    """
-    print("Create Whoosh index from a PO file")
+    print(
+        "Exports a JSON based on collections of PO to later index the export into a db storage"
+    )
     print("Use --help for assistance")
 
     start_time = datetime.datetime.now()
@@ -92,19 +88,18 @@ def main():
         print("Exception: " + str(detail))
 
     po_directory, debug_keyword, projects_names = read_parameters()
-    indexCreator = IndexCreator(po_directory, debug_keyword, projects_names)
-    indexCreator.create()
-    indexCreator.process_projects()
+    toJson = POsToJson(po_directory, debug_keyword, projects_names)
+    toJson.process_projects()
 
     ctx = {
         "date": datetime.date.today().strftime("%d/%m/%Y"),
-        "projects": str(indexCreator.projects),
-        "words": locale.format_string("%d", indexCreator.words, grouping=True),
+        "projects": str(toJson.projects),
+        "words": locale.format_string("%d", toJson.words, grouping=True),
     }
     write_index_json(ctx)
 
     print(
-        "Time used to create the index: {0} ".format(
+        "Time used to export the JSON: {0} ".format(
             datetime.datetime.now() - start_time
         )
     )

@@ -17,12 +17,12 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import tempfile
 import unittest
-
-import polib
 from whoosh.writing import *
+import os
+import sys
 
+sys.path.append("web/")
 from web.indexcreator import IndexCreator
 
 
@@ -37,101 +37,31 @@ class IndexWriterMock(IndexWriter):
 
 
 class TestIndexCreator(unittest.TestCase):
-    minipo = r"""#
-msgid ""
-msgstr ""
-"Project-Id-Version: program 2.1-branch\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 07:15+0100\n"
-"PO-Revision-Date: 2004-03-30 17:02+0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
-# Please remember to do something
-#: ../dir/file.xml.in.h:1 ../dir/file2.xml.in.h:4
-msgctxt "Context"
-msgid "Power off the selected virtual machines"
-msgstr "Apaga les màquines virtuals seleccionades"
-"""
-
-    minipo_plural = r"""#
-msgid ""
-msgstr ""
-"Project-Id-Version: program 2.1-branch\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 07:15+0100\n"
-"PO-Revision-Date: 2004-03-30 17:02+0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
-# Please remember to do something
-#: ../dir/file.xml.in.h:1 ../dir/file2.xml.in.h:4
-msgctxt "Context"
-msgid "Delete this photo from camera?"
-msgid_plural "Delete these %d photos from camera?"
-msgstr[0] "Voleu suprimir aquesta fotografia de la càmera?"
-msgstr[1] "Voleu suprimir aquestes %d fotografies de la càmera?"
-"""
-
-    def _dump_po_to_file(self, filename):
-        tmpfile = tempfile.NamedTemporaryFile()
-        f = open(tmpfile.name, "w")
-        f.write(filename)
-        return tmpfile
-
     def test_process_project(self):
-        tmpfile = self._dump_po_to_file(self.minipo)
+        json_dir = os.path.dirname(os.path.realpath(__file__))
+        json_file = os.path.join(json_dir, "data/index_data.json")
 
-        index = IndexCreator(".")
+        index = IndexCreator(json_file)
         index.writer = IndexWriterMock()
-        index._process_file(
-            "test_project_id", "test_project", tmpfile.name, False, set()
-        )
+        index.process_entries()
         stored = index.writer.store
 
-        self.assertEqual(stored[0]["source"], "Power off the selected virtual machines")
         self.assertEqual(
-            stored[0]["target"], "Apaga les màquines virtuals seleccionades"
+            stored[0]["source"],
+            " - Reserved. \n You cannot use this name. Choose Another \n",
         )
-        self.assertEqual(stored[0]["context"], "Context")
-        self.assertEqual(stored[0]["comment"], "Please remember to do something\r\n")
-        self.assertEqual(stored[0]["softcatala"], False)
-        self.assertEqual(stored[0]["project"], "test_project")
-        self.assertEqual(index.words, 5)
-        self.assertEqual(index.sentences, 1)
-        self.assertEqual(index.sentences_indexed, 1)
-
-    def test_process_project_plural(self):
-        tmpfile = self._dump_po_to_file(self.minipo_plural)
-
-        index = IndexCreator(".")
-        index.writer = IndexWriterMock()
-        index._process_file(
-            "test_project_id", "test_project", tmpfile.name, False, set()
-        )
-        stored = index.writer.store
-        self.assertEqual(stored[0]["source"], "Delete this photo from camera?")
         self.assertEqual(
-            stored[0]["target"], "Voleu suprimir aquesta fotografia de la càmera?"
+            stored[0]["target"],
+            " - est\u00e0 reservat. \n No podeu utilitzar aquest nom. Escolliu-ne un altre \n",
         )
-
-        self.assertEqual(stored[1]["source"], "Delete these %d photos from camera?")
+        self.assertEqual(stored[0]["context"], "context")
         self.assertEqual(
-            stored[1]["target"], "Voleu suprimir aquestes %d fotografies de la càmera?"
+            stored[0]["comment"],
+            "Source: /abiword-ca.po from project 'Abiword'\r\nDLG_Styles_ErrNotTitle2",
         )
-
-        self.assertEqual(index.sentences, 2)
-        self.assertEqual(index.sentences_indexed, 2)
-
-    def test_get_comment_both(self):
-        index = IndexCreator(".")
-        entry = polib.POEntry()
-        entry.comment = "comment"
-        entry.tcomment = "tcomment"
-        comment = index._get_comment(entry)
-        self.assertEqual(comment, "tcomment\r\ncomment")
+        self.assertEqual(stored[0]["softcatala"], True)
+        self.assertEqual(stored[0]["project"], "Abiword")
+        self.assertEqual(2, len(stored), 5)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,20 @@
+[
+    {
+        "s": " - Reserved. \n You cannot use this name. Choose Another \n",
+        "t": " - est\u00e0 reservat. \n No podeu utilitzar aquest nom. Escolliu-ne un altre \n",
+        "c": "Source: /abiword-ca.po from project 'Abiword'\r\nDLG_Styles_ErrNotTitle2",
+        "x": "context",
+        "pi": "abiword",
+        "pn": "Abiword",
+        "sc": true
+    },
+    {
+        "s": "% of normal size",
+        "t": "% de la mida normal",
+        "c": "Source: /abiword-ca.po from project 'Abiword'\r\nDLG_PageSetup_Percent",
+        "x": null,
+        "pi": "abiword",
+        "pn": "Abiword",
+        "sc": true
+    }
+]

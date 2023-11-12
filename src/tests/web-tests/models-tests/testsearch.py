@@ -19,6 +19,9 @@
 
 import unittest
 import json
+import sys
+
+sys.path.append("web/")
 
 from web.indexcreator import IndexCreator
 from web.models.search import Search

@@ -20,6 +20,7 @@ jobs:
         python --version
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install -r src/web/requirements_indexer.txt
         pip install black flake8
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -33,7 +34,7 @@ jobs:
         npm run prettier:check
     - name: Test
       run: |
-        nose2
+        cd src && nose2
     - name: black
       run: |
         black --check src/ integration-tests/
