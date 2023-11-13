@@ -78,10 +78,10 @@ def main():
     toJson.process_projects()
 
     print(
-        "Time used to export the JSON: {0} ".format(
-            datetime.datetime.now() - start_time
-        )
+        f"Total sentences considered {toJson.sentences}, sentences written {toJson.sentences_indexed}"
     )
+
+    print(f"Time used to export the JSON: {datetime.datetime.now() - start_time} ")
 
 
 if __name__ == "__main__":

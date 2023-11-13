@@ -56,12 +56,6 @@ class IndexCreator(object):
 
         self.save_index()
 
-        print(
-            "Total sentences read {0}, indexed {1}".format(
-                self.sentences, self.sentences_indexed
-            )
-        )
-
     def write_entry(
         self, source, target, comment, context, project_id, project_name, softcatala
     ):

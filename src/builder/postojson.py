@@ -63,12 +63,6 @@ class POsToJson(object):
                 project_dto.softcatala,
             )
             self.projects += 1
-
-        print(
-            "Total sentences considered {0}, sentences written {1}".format(
-                self.sentences, self.sentences_indexed
-            )
-        )
         self.save_index()
 
     def _get_comment(self, entry):

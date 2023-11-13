@@ -75,10 +75,10 @@ def main():
     write_index_json(ctx)
 
     print(
-        "Time used to create the index: {0} ".format(
-            datetime.datetime.now() - start_time
-        )
+        f"Total sentences read {indexCreator.sentences}, indexed {indexCreator.sentences_indexed}"
     )
+
+    print(f"Time used to create the index: {datetime.datetime.now() - start_time}")
 
 
 if __name__ == "__main__":
