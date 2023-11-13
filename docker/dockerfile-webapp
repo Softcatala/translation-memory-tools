@@ -8,6 +8,14 @@ COPY src/terminology/ /srv/terminology/
 COPY src/builder/ /srv/builder/
 COPY docker/entry-point-web.sh /srv/entry-point.sh
 
+# Locale ca-ES
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales
+
+RUN sed -i -e 's/# ca_ES.UTF-8 UTF-8/ca_ES.UTF-8 UTF-8/' /etc/locale.gen && \
+    dpkg-reconfigure --frontend=noninteractive locales
+
+ENV LC_ALL=ca_ES.utf-8
+
 # Data
 COPY --from=docker_web /static/index_data.json /srv/web/
 COPY --from=docker_web /static/projects.json /srv/web/

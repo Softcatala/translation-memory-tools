@@ -6,7 +6,6 @@ copy_files() {
     rm -r -f $2/indexdir
     mkdir -p $2/indexdir
     cp $1/tm-git/src/index_data.json $2
-    cp $1/tm-git/src/index.json $2
 
     # Download memories
     cp $1/tm-git/src/projects.json $2

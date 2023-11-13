@@ -26,7 +26,6 @@ from builder.jsonbackend import JsonBackend
 
 class POsToJson(object):
     def __init__(self, po_directory, debug_keyword=None, projects_names=None):
-        self.words = 0
         self.projects = 0
         self.options = []
         self.sentences_indexed = 0
@@ -117,8 +116,6 @@ class POsToJson(object):
         entries.add(entry_text)
 
         self.sentences_indexed += 1
-        string_words = t.split(" ")
-        self.words += len(string_words)
         self.write_entry(
             source=s,
             target=t,

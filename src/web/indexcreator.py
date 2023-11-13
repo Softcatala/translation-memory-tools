@@ -36,6 +36,14 @@ class IndexCreator(object):
         self.sentences_indexed = 0
         self.sentences = 0
         self.json_file = json_file
+        self.project_ids = set()
+        self.words_count = 0
+
+    def get_projects_count(self):
+        return len(self.project_ids)
+
+    def get_words_count(self):
+        return self.words_count
 
     def process_entries(self):
         with open(self.json_file) as json_fh:
@@ -66,6 +74,11 @@ class IndexCreator(object):
             project=project_name,
             softcatala=softcatala,
         )
+        if project_id not in self.project_ids:
+            self.project_ids.add(project_id)
+
+        string_words = target.split(" ")
+        self.words_count += len(string_words)
         self.sentences_indexed += 1
 
     def save_index(self):

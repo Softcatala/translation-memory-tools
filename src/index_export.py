@@ -19,7 +19,6 @@
 # Boston, MA 02111-1307, USA.
 
 import datetime
-import locale
 import json
 from optparse import OptionParser
 from builder.postojson import POsToJson
@@ -68,12 +67,6 @@ def read_parameters():
     return options.po_directory, options.debug_keyword, projects_names
 
 
-def write_index_json(ctx):
-    content = json.dumps(ctx, indent=4, separators=(",", ": "))
-    with open("index.json", "w") as file:
-        file.write(content)
-
-
 def main():
     print(
         "Exports a JSON based on collections of PO to later index the export into a db storage"
@@ -81,22 +74,9 @@ def main():
     print("Use --help for assistance")
 
     start_time = datetime.datetime.now()
-
-    try:
-        locale.setlocale(locale.LC_ALL, "")
-    except Exception as detail:
-        print("Exception: " + str(detail))
-
     po_directory, debug_keyword, projects_names = read_parameters()
     toJson = POsToJson(po_directory, debug_keyword, projects_names)
     toJson.process_projects()
-
-    ctx = {
-        "date": datetime.date.today().strftime("%d/%m/%Y"),
-        "projects": str(toJson.projects),
-        "words": locale.format_string("%d", toJson.words, grouping=True),
-    }
-    write_index_json(ctx)
 
     print(
         "Time used to export the JSON: {0} ".format(

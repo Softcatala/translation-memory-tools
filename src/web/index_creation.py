@@ -20,6 +20,8 @@
 # Boston, MA 02111-1307, USA.
 
 import datetime
+import locale
+import json
 from optparse import OptionParser
 from indexcreator import IndexCreator
 
@@ -41,9 +43,20 @@ def read_parameters():
     return options.filename
 
 
+def write_index_json(ctx):
+    content = json.dumps(ctx, indent=4)
+    with open("index.json", "w") as file:
+        file.write(content)
+
+
 def main():
     print("Create Whoosh index from a JSON file")
     print("Use --help for assistance")
+
+    try:
+        locale.setlocale(locale.LC_ALL, "")
+    except Exception as detail:
+        print("Exception: " + str(detail))
 
     start_time = datetime.datetime.now()
 
@@ -51,6 +64,15 @@ def main():
     indexCreator = IndexCreator(json_filename)
     indexCreator.create()
     indexCreator.process_entries()
+
+    ctx = {
+        "date": datetime.date.today().strftime("%d/%m/%Y"),
+        "projects": str(indexCreator.get_projects_count()),
+        "words": locale.format_string(
+            "%d", indexCreator.get_words_count(), grouping=True
+        ),
+    }
+    write_index_json(ctx)
 
     print(
         "Time used to create the index: {0} ".format(
