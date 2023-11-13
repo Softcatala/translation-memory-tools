@@ -17,15 +17,7 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-import cgi
 import datetime
-import sys
-import time
-
-import polib
-
-from .corpus import Corpus
-from .referencesources import ReferenceSources
 from html import escape as html_escape
 
 

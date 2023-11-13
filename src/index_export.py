@@ -19,7 +19,6 @@
 # Boston, MA 02111-1307, USA.
 
 import datetime
-import json
 from optparse import OptionParser
 from builder.postojson import POsToJson
 
