@@ -19,7 +19,6 @@ ENV LC_ALL=ca_ES.utf-8
 # Data
 COPY --from=docker_web /static/index_data.json /srv/web/
 COPY --from=docker_web /static/projects.json /srv/web/
-COPY --from=docker_web /static/index.json /srv/web/
 COPY --from=docker_web /static/glossary.db3 /srv/web/
 
 WORKDIR /srv/web
