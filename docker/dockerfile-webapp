@@ -4,7 +4,6 @@ FROM python:3.11.1-slim-bullseye as generate_data
 
 # Software
 COPY src/web /srv/web/
-COPY src/terminology/ /srv/terminology/
 COPY docker/entry-point-web.sh /srv/entry-point.sh
 
 # Locale ca-ES
