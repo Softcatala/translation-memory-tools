@@ -30,7 +30,6 @@ COPY deployment/ $DIR_TMT_GIT/deployment/
 COPY source-pos/ $DIR_TMT_GIT/source-pos/
 COPY cfg/ $DIR_TMT_GIT/cfg/
 COPY docker/ $DIR_TMT_GIT/docker/
-COPY integration-tests/ $DIR_TMT_GIT/integration-tests/
 
 # Get the credentials file for Transifex and COPY it to user directory (where the cli reads it)
 COPY cfg/credentials/transifexrc* /root/.transifexrc
