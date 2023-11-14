@@ -16,13 +16,16 @@ ENV LC_ALL=ca_ES.utf-8
 
 # Data
 COPY --from=docker_web /static/index_data.json /srv/web/
+COPY --from=docker_web /static/glossary.json /srv/web/
 COPY --from=docker_web /static/projects.json /srv/web/
-COPY --from=docker_web /static/glossary.db3 /srv/web/
 
 WORKDIR /srv/web
 RUN pip install -r /srv/web/requirements_indexer.txt
 RUN python index_creation.py
 RUN rm index_data.json
+
+RUN python term_creator.py
+RUN rm glossary.json
 
 FROM python:3.11.1-slim-bullseye
 
