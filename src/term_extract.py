@@ -23,12 +23,10 @@ import logging
 import os
 import resource
 import time
+import json
+import pystache
 from collections import OrderedDict
 from optparse import OptionParser
-from terminology.glossarysql import database, Entry
-
-import pystache
-
 from terminology.corpus import Corpus
 from terminology.devglossaryserializer import DevGlossarySerializer
 from terminology.glossary import Glossary
@@ -51,32 +49,22 @@ def process_template(template_file, filename, ctx):
         output_fh.write(s)
 
 
-ENV_NAME = "DB3_PATH"
-
-
-def _get_db_name(name):
-    if ENV_NAME not in os.environ:
-        return name
-
-    path = os.environ[ENV_NAME]
-    return os.path.join(path, name)
-
-
-def generate_database(glossary, glossary_file):
-    name = _get_db_name(glossary_file + ".db3")
-    database.create(name)
-    database.create_schema()
+def generate_json(glossary, glossary_file):
+    filename = glossary_file + ".json"
+    all_entries = []
     for entry in glossary.entries:
         for translation in entry.translations:
-            db_entry = Entry()
-            db_entry.term = entry.source_term
-            db_entry.translation = translation.translation
-            db_entry.frequency = translation.frequency
-            db_entry.percentage = translation.percentage
-            db_entry.termcat = translation.termcat
-            db_entry.save()
+            json_entry = {}
+            json_entry["term"] = entry.source_term
+            json_entry["translation"] = translation.translation
+            json_entry["frequency"] = translation.frequency
+            json_entry["percentage"] = translation.percentage
+            json_entry["termcat"] = translation.termcat
+            all_entries.append(json_entry)
 
-    database.close()
+    content = json.dumps(all_entries, indent=4)
+    with open(filename, "w") as json_fh:
+        json_fh.write(content)
 
 
 def process_projects(src_directory, glossary_description, glossary_file):
@@ -138,7 +126,7 @@ def process_projects(src_directory, glossary_description, glossary_file):
         glossary_entries,
     )
 
-    generate_database(glossary, glossary_file)
+    generate_json(glossary, glossary_file)
 
 
 def read_parameters():

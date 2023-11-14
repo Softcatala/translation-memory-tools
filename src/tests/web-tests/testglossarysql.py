@@ -17,11 +17,11 @@
 # Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 # Boston, MA 02111-1307, USA.
 
-from terminology.glossarysql import *
+from web.glossarysql import Entry, database
 import unittest
 
 
-class TesGlossarySql(unittest.TestCase):
+class TestGlossarySql(unittest.TestCase):
     SOURCE_TERM = "Hello"
     TRANSLATION = "Hola"
     FREQUENCY = 10

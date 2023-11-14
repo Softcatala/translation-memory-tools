@@ -19,7 +19,7 @@ copy_files() {
     mkdir -p $2/terminology
     cp *glossary*.html $2/terminology
     cp *glossary*.csv $2/terminology
-    cp sc-glossary.db3 $2/glossary.db3
+    cp sc-glossary.json $2/glossary.json
 
     # Deploy quality reports
     cd $1/tm-git/src/output/quality
