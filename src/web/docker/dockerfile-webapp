@@ -3,7 +3,7 @@ FROM tmt-data as docker_web
 FROM python:3.11.1-slim-bullseye as generate_data
 
 # Software
-COPY src/web /srv/web/
+COPY . /srv/web/
 COPY docker/entry-point-web.sh /srv/entry-point.sh
 
 # Locale ca-ES
