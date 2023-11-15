@@ -2,7 +2,10 @@
 
 # Introduction
 
-This is the toolset used at Softcatalà to build the translation memories for all the projects that we know exist in Catalan language and have their translations available openly. You can see it on-line at <https://www.softcatala.org/recursos/memories/>
+This is the toolset used at Softcatalà to build the translation memories for all the projects that we know exist in Catalan language and have their translations available openly.
+This project acts as data pipeline and then project https://github.com/Softcatala/translation-memory-tools-webservice provides an API on top of the data.
+
+You can see it on-line at <https://www.softcatala.org/recursos/memories/>
 
 The toolset contains the following components with their own responsibility:
 
@@ -12,12 +15,6 @@ The toolset contains the following components with their own responsibility:
 - Convert from the different translation formats (ts, strings, etc) to PO
 - Create a translation memory for project in PO and TMX formats
 - Produce a single translation memory file that contains all the projects
-
-**Web**
-
-- Provides an API that allow users download memories and search translations
-- Provides an index-creator that creates a Whoosh index with all the strings than then the user can search using the web app
-- Provides an download-creation that creates a zip file with all memories that the user can download
 
 **Terminology** (terminology extraction)
 
@@ -84,16 +81,6 @@ make docker-run-builder
 Downloading all the projects can take up to a day, which is not acceptable for a development cycle. In the [docker/local.yml](./docker/local.yml) the variable *DEV_SMALL_SET* forces to only download some projects. This small subset does not requiere any specific credentials to be defined to download them.
 
 The output files are copied to *web-docker* local directory to make easy to for you explore the results.
-
-To run the web app which provides the microservices for the web site:
-
-```shell
-make docker-run-webapp
-```
-
-To test it from the browser:
-* List projects: http://localhost:8080/projects
-
 
 # Contributing
 

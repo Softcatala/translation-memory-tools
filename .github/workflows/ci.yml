@@ -20,7 +20,6 @@ jobs:
         python --version
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install -r src/web/requirements_indexer.txt
         pip install black flake8
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -40,4 +39,4 @@ jobs:
         black --check src/
     - name: flake8
       run: |
-        flake8 src/builder/ src/web/ --ignore E501,W503,E203,E722,E402
+        flake8 src/builder/ --ignore E501,W503,E203,E722,E402
