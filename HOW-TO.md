@@ -131,3 +131,7 @@ the logging handlers but in other platforms uses `spawn` that does not and preve
 ```
 export SINGLE_THREAD_DOWNLOAD=1
 ```
+# CI/CD at Softcatalà
+
+This [document](CI-CD.md) explains how the CD/CI is setup for this project, including a description of the different pipelines.
+
