@@ -1,4 +1,4 @@
-FROM registry.softcatala.org/github/translation-memory-tools/tmt-data:master as build-data
+FROM registry.softcatala.org/github/translation-memory-tools/tmt-data:main as build-data
 
 FROM python:3.11.1-slim-bullseye
 
