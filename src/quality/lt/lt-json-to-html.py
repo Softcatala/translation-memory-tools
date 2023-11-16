@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import sys, getopt, operator, pystache, os.path, uuid, html, re, hunspell, json
+import sys, getopt, pystache, os.path, uuid, html, re, hunspell, json
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -75,7 +75,7 @@ def getRuleById(rulelist, ruleId):
             break
 
 
-_digits = re.compile("\d")
+_digits = re.compile(r"\d")
 
 
 def contains_digits(d):
@@ -134,7 +134,7 @@ def process_file(ifile, ofile):
         if ruleId != "MORFOLOGIK_RULE_CA_ES":
             totalmatches += 1
             r = getRuleById(rulelist, ruleId)
-            if r != None:
+            if r is not None:
                 r.increment()
             else:
                 r = rule(ruleId)
