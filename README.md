@@ -32,7 +32,7 @@ In order to download the translations of some of the projects you need to use th
 
 *builder.py* expects the credentials to be defined in the following locations:
 
-* At [cfg/credentials](./cfg/credentials) in the diferent YAML files: for Zenata (zanata.yaml), for Weblate (weblate.yaml) and for Crowdin (crowdin.yaml). The files *-sample* provide examples of how these files should be structured.
+* At [cfg/credentials](./cfg/credentials) in the different YAML files: for Zenata (zanata.yaml), for Weblate (weblate.yaml) and for Crowdin (crowdin.yaml). The files *-sample* provide examples of how these files should be structured.
 * For Transifex, the credentials should be at *~/.transifexrc* since this where Transifex cli tool expects the credentials.
 
 All these projects require you to have the right credentials and often be "member of the Catalan project" to be able to download credentials.
@@ -78,7 +78,7 @@ First download the data for the projects and generate the data quality reports:
 make docker-run-builder
 ```
 
-Downloading all the projects can take up to a day, which is not acceptable for a development cycle. In the [docker/local.yml](./docker/local.yml) the variable *DEV_SMALL_SET* forces to only download some projects. This small subset does not requiere any specific credentials to be defined to download them.
+Downloading all the projects can take up to a day, which is not acceptable for a development cycle. In the [docker/local.yml](./docker/local.yml) the variable *DEV_SMALL_SET* forces to only download some projects. This small subset does not require any specific credentials to be defined to download them.
 
 The output files are copied to *web-docker* local directory to make easy to for you explore the results.
 
