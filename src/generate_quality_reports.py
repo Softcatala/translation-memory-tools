@@ -186,12 +186,12 @@ class GenerateQualityReports:
             )
         )
 
-        if os.path.isfile(pology_report):
+        if os.path.isfile(pology_report) and os.stat(pology_report).st_size > 0:
             report.add_file_to_project_report(pology_report)
-            os.remove(pology_report)
         else:
             report.add_string_to_project_report("El Pology no ha detectat cap error.")
 
+        os.remove(pology_report)
         os.remove(txt_file)
         os.remove(json_file)
         os.remove(po_transonly)
