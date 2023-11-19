@@ -26,7 +26,7 @@ copy_files() {
     mkdir -p $2/quality
     cp *.html $2/quality
     mkdir -p $2/quality/img
-    cd $1/tm-git/src/web/img
+    cd $1/tm-git/src/quality/img
     cp squ* $2/quality/img
 }
 
