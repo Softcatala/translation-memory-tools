@@ -6,6 +6,7 @@
         "AsteroidOS": {
             "url": "https://hosted.weblate.org/download/asteroidos/?format=zip",
             "type": "compressed",
+            "pattern": ".*?ca.po",
             "target": "ca.zip"
         }
     }
