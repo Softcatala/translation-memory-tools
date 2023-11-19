@@ -202,7 +202,6 @@ class GenerateQualityReports:
         logging.info("Source directory: " + source_dir)
 
         report_filename = os.path.basename(os.path.normpath(source_dir)) + ".html"
-
         report = Report()
         languagetool = LanguageTool(lt)
         report.create_project_report(
@@ -227,10 +226,25 @@ class GenerateQualityReports:
         projects = self.load_projects_ids_from_json()
         source_dir = self.read_parameters()
         logging.debug(f"Root source_dir {source_dir}")
+        project_futures = {}
         # The number of processess to use is calculated by Python taking into account number of cpus
         with ThreadPoolExecutor() as executor:
             for project in projects:
-                executor.submit(self.generate_report, os.path.join(source_dir, project))
+                future = executor.submit(
+                    self.generate_report, os.path.join(source_dir, project)
+                )
+                project_futures[project] = future
+
+        # executor.submit copies the object and runs it in another process.
+        # The project object in this thread does not get updated then we need
+        # to update our object here.
+        for project, feature in project_futures.items():
+            try:
+                x = feature.result()
+            except Exception as e:
+                logging.error(
+                    f"generate_quality_reports.main. Feature.result() for project '{project}' throws exception '{e}'"
+                )
 
         s = "Time used to generate quality reports: {0}".format(
             datetime.datetime.now() - total_start_time
