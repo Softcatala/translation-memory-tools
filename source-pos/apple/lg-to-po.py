@@ -61,6 +61,9 @@ def _process_entries_from_file(lg_filename, pofile):
                 elif i.tag == 'tran':
                     target = i.text
 
+        if source is None or target is None:
+            continue
+
         if source in sources:
             continue
 
@@ -73,12 +76,9 @@ def _process_entries_from_file(lg_filename, pofile):
 
     return terms
 
-    #print("Terms : " + str(terms))
-#    line_prepender(filename, "# See Microsoft license terms for this file: https://www.microsoft.com/Language/en-US/LicenseAgreement.aspx")
 
-def main():
-    print("Convert Apple Glot(lg) files to PO files")
 
+def convert_lg_to_po(directory, po_file):
     terms = 0
     files = 0
     pofile = polib.POFile()
@@ -96,14 +96,20 @@ def main():
         'Plural-Forms': 'nplurals=2; plural=n != 1;'
     }
 
-    for filename in _find('glossaries/', '*.lg'):
+    for filename in _find(directory, '*.lg'):
         terms += _process_entries_from_file(filename, pofile)
         files = files + 1
 
     filename = "ios.po"
-    pofile.save(filename)
-    print('Processed {0} files, {1} terms'.format(files, terms))
+    pofile.save(po_file)
+    print(f'Processed {directory} directory with {files} files, wrote {po_file} file with {terms} terms')
 
+def main():
+    print("Convert Apple Glot(lg) files to PO files")
+    convert_lg_to_po(f"macos/", "macos.po")
+    convert_lg_to_po(f"ios/", "ios.po")
+    convert_lg_to_po(f"tv/", "tvos.po")
+    convert_lg_to_po(f"watchos/", "watchos.po")
 
 if __name__ == "__main__":
     main()

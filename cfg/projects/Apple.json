@@ -1,0 +1,32 @@
+{
+    "project": "Apple",
+    "projectweb": "https://developer.apple.com/internationalization/",
+    "license" : "propietària",
+    "quality_report": false,
+    "fileset": {
+        "macos": {
+            "url": "../source-pos/apple/macos.po",
+            "type": "local-file",
+            "target": "macos.po",
+            "po_preprocessing" : "remove_untranslated"
+        },
+        "ios": {
+            "url": "../source-pos/apple/ios.po",
+            "type": "local-file",
+            "target": "ios.po",
+            "po_preprocessing" : "remove_untranslated"
+        },
+        "tvos": {
+            "url": "../source-pos/apple/tvos.po",
+            "type": "local-file",
+            "target": "tvos.po",
+            "po_preprocessing" : "remove_untranslated"
+        },
+        "watchos": {
+            "url": "../source-pos/apple/watchos.po",
+            "type": "local-file",
+            "target": "watchos.po",
+            "po_preprocessing" : "remove_untranslated"
+        }
+    }
+}
