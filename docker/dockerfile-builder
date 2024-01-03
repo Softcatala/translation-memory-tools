@@ -9,7 +9,7 @@ RUN mkdir -p $DIR
 
 #Pology
 RUN apt-get install cmake -y
-RUN git clone https://invent.kde.org/sdk/pology.git
+RUN git clone --depth 1 https://invent.kde.org/sdk/pology.git
 WORKDIR pology
 # Pology does not do releases. We do not fix a version and rollout automatically the latest rules fixes
 RUN mkdir build && cd build && cmake .. && make && make install
@@ -22,7 +22,7 @@ RUN sed -i -e 's/# ca_ES.UTF-8 UTF-8/ca_ES.UTF-8 UTF-8/' /etc/locale.gen && \
     dpkg-reconfigure --frontend=noninteractive locales
 
 COPY requirements.txt/ $DIR_TMT_GIT/
-RUN pip install -r $DIR_TMT_GIT/requirements.txt
+RUN pip install --no-cache-dir -r $DIR_TMT_GIT/requirements.txt
 
 WORKDIR $DIR
 COPY src/ $DIR_TMT_GIT/src/
