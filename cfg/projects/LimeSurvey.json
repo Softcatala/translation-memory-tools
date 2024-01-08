@@ -4,7 +4,7 @@
     "projectweb": "https://manual.limesurvey.org/Translating_LimeSurvey",
     "fileset": {
         "limesurvey": {
-            "url": "https://translate.limesurvey.org/projects/limesurvey-3/ca/default/export-translations/?format=po",
+            "url": "https://translate.limesurvey.org/projects/limesurvey-6/ca/default/export-translations/?format=po",
             "type": "file",
             "target": "limesurvey-ca.po"
         }
