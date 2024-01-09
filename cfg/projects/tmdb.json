@@ -1,0 +1,22 @@
+{
+    "project": "TMDB",
+    "license": "propietària",
+    "projectweb": "https://app.localeapp.com/projects/8267",
+    "fileset": {
+        "tmdb-web": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/tmdb/translations/tmdb-web.po",
+            "type": "file",
+            "target": "tmdb-web-ca.po"
+        },
+        "tmdb-countries": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/tmdb/translations/tmdb-countries.po",
+            "type": "file",
+            "target": "tmdb-countries-ca.po"
+        },
+        "tmdb-languages": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/tmdb/translations/tmdb-languages.po",
+            "type": "file",
+            "target": "tmdb-languages-ca.po"
+        }
+    }
+}
