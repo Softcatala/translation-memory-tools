@@ -1,0 +1,13 @@
+{
+    "project": "GoldenDict",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "http://goldendict.org/",
+    "softcatala": true,
+    "fileset": {
+        "goldendict": {
+            "url": "https://raw.githubusercontent.com/goldendict/goldendict/master/locale/ca_CT.ts",
+            "type": "file",
+            "target": "goldendict-ca.ts"
+        }
+    }
+}
