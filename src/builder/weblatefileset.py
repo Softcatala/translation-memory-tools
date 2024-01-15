@@ -123,10 +123,7 @@ class WeblateFileSet(FileSet):
                     continue
 
                 components = self._get_components(project_dict["components_list_url"])
-                ids[slug] = {
-                    "components" : components,
-                    "language": language
-                    }
+                ids[slug] = {"components": components, "language": language}
 
             url = projects["next"]
 
