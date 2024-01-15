@@ -79,14 +79,14 @@ class WeblateFileSet(FileSet):
 
         return json.loads(response_text)
 
-    def _has_catalan_language(self, url):
+    def _get_catalan_language(self, url):
         languages = self._api_json_call(url)
 
         for language in languages:
             if language["code"] in ["ca", "ca_es"] and language["translated"] > 0:
-                return True
+                return language["code"]
 
-        return False
+        return None
 
     def _get_components(self, url):
         while url is not None:
@@ -113,7 +113,9 @@ class WeblateFileSet(FileSet):
             projects = self._api_json_call(url)
             for project_dict in projects["results"]:
                 slug = project_dict["slug"]
-                if not self._has_catalan_language(project_dict["languages_url"]):
+
+                language = self._get_catalan_language(project_dict["languages_url"])
+                if not language:
                     continue
 
                 name_to_match = project_dict["name"].lower()
@@ -121,15 +123,18 @@ class WeblateFileSet(FileSet):
                     continue
 
                 components = self._get_components(project_dict["components_list_url"])
-                ids[slug] = components
+                ids[slug] = {
+                    "components" : components,
+                    "language": language
+                    }
 
             url = projects["next"]
 
         return ids
 
-    def _get_file(self, slug, component):
+    def _get_file(self, slug, component, language):
         # https://translate.fedoraproject.org/download/libvirt/libvirt/ca/?format=po
-        fragment = f"/download/{slug}/{component}/ca/?format=po"
+        fragment = f"/download/{slug}/{component}/{language}/?format=po"
         url = urllib.parse.urljoin(self.url, fragment)
 
         try:
@@ -166,8 +171,11 @@ class WeblateFileSet(FileSet):
     def do(self):
         slugs = self._get_projects_slugs()
         for slug in slugs:
-            for component in slugs[slug]:
-                self._get_file(slug, component)
+            _d = slugs[slug]
+            components = _d["components"]
+            language = _d["language"]
+            for component in components:
+                self._get_file(slug, component, language)
 
         self.build()
         logging.info(
