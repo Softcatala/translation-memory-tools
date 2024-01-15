@@ -83,7 +83,7 @@ class WeblateFileSet(FileSet):
         languages = self._api_json_call(url)
 
         for language in languages:
-            if language["code"] in ["ca", "ca-es"] and language["translated"] > 0:
+            if language["code"] in ["ca", "ca_es"] and language["translated"] > 0:
                 return True
 
         return False
