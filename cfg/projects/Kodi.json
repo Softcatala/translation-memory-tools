@@ -3,20 +3,9 @@
     "license": "GPL-2.0-only",
     "projectweb": "https://kodi.tv/",
     "fileset": {
-        "kodi-main": {
-            "url": "https://app.transifex.com/teamxbmc/kodi-main/",
-            "type": "transifex",
-            "pattern": ".*?ca(_ES)?.po"
-        },
-        "kodi-addons": {
-            "url": "https://app.transifex.com/teamxbmc/kodi-addons/",
-            "type": "transifex",
-            "pattern": ".*?ca(_ES)?.po"
-        },
-        "kodi-skins": {
-            "url": "https://app.transifex.com/teamxbmc/kodi-skins/",
-            "type": "transifex",
-            "pattern": ".*?ca(_ES)?.po"
+        "Kodi": {
+            "url": "https://kodi.weblate.cloud/",
+            "type": "weblate"
         }
     }
 }
