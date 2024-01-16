@@ -51,6 +51,17 @@ class TestWeblateFileSet(unittest.TestCase):
         result = weblate._get_catalan_language("your_mocked_url")
         self.assertEqual("ca", result)
 
+    @patch("builder.weblatefileset.WeblateFileSet._api_json_call")
+    def test_get_catalan_language_ca_no_translated(self, mock_api_json_call):
+        mock_api_json_call.return_value = [
+            {"code": "en", "translated": 10},
+            {"code": "ca", "translated": 0},
+        ]
+        weblate = WeblateFileSet(
+            "project_test", "test_id", "name", "no_url", "filename.po"
+        )
+        result = weblate._get_catalan_language("your_mocked_url")
+        self.assertEqual("ca", result)
 
 if __name__ == "__main__":
     unittest.main()
