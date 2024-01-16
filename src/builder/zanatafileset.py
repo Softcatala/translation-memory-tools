@@ -65,6 +65,7 @@ class ZanataFileSet(FileSet):
         for project_dict in projects:
             ids.append(project_dict["id"])
 
+        logging.debug(f"ZanataFileSet._get_projects_ids returns {len(ids)} ids")
         return ids
 
     # Try to get first only the master (latest) version. It prevents downloading old translations

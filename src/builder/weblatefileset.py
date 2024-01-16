@@ -111,6 +111,9 @@ class WeblateFileSet(FileSet):
         url = urllib.parse.urljoin(self.url, "/api/projects/")
         while url is not None:
             projects = self._api_json_call(url)
+            logging.debug(
+                f"WeblateFileSet._get_projects_slugs got {len(projects)} projects"
+            )
             for project_dict in projects["results"]:
                 slug = project_dict["slug"]
 
@@ -127,6 +130,7 @@ class WeblateFileSet(FileSet):
 
             url = projects["next"]
 
+        logging.debug(f"WeblateFileSet._get_projects_slugs returned {len(ids)} ids")
         return ids
 
     def _get_file(self, slug, component, language):
@@ -176,5 +180,5 @@ class WeblateFileSet(FileSet):
 
         self.build()
         logging.info(
-            f"WeblateFileSet {self.cached} cached API requests, done {self.requests}"
+            f"WeblateFileSet. do {self.cached} cached API requests, done {self.requests}"
         )
