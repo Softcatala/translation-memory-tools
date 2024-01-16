@@ -36,7 +36,7 @@ class TestWeblateFileSet(unittest.TestCase):
         weblate = WeblateFileSet(
             "project_test", "test_id", "name", "no_url", "filename.po"
         )
-        result = weblate._get_catalan_language("your_mocked_url")
+        result = weblate._get_catalan_language("test_url")
         self.assertEqual("ca_es", result)
 
     @patch("builder.weblatefileset.WeblateFileSet._api_json_call")
@@ -48,7 +48,7 @@ class TestWeblateFileSet(unittest.TestCase):
         weblate = WeblateFileSet(
             "project_test", "test_id", "name", "no_url", "filename.po"
         )
-        result = weblate._get_catalan_language("your_mocked_url")
+        result = weblate._get_catalan_language("test_url")
         self.assertEqual("ca", result)
 
     @patch("builder.weblatefileset.WeblateFileSet._api_json_call")
@@ -60,7 +60,7 @@ class TestWeblateFileSet(unittest.TestCase):
         weblate = WeblateFileSet(
             "project_test", "test_id", "name", "no_url", "filename.po"
         )
-        result = weblate._get_catalan_language("your_mocked_url")
+        result = weblate._get_catalan_language("test_url")
         self.assertEqual(None, result)
 
     @patch("builder.weblatefileset.WeblateFileSet._api_json_call")
@@ -71,7 +71,7 @@ class TestWeblateFileSet(unittest.TestCase):
         weblate = WeblateFileSet(
             "project_test", "test_id", "name", "no_url", "filename.po"
         )
-        result = weblate._get_catalan_language("your_mocked_url")
+        result = weblate._get_catalan_language("test_url")
         self.assertEqual(None, result)
 
 
