@@ -67,7 +67,6 @@ class TestCfgValidation(unittest.TestCase):
     def test_check_retrieval_pattern(self):
         json = self.get_projects_cfg()
 
-        projects = Projects()
         for project_dto in json.projects:
             for fileset in project_dto.filesets:
                 try:
@@ -80,7 +79,6 @@ class TestCfgValidation(unittest.TestCase):
     def test_check_conversor_setup(self):
         json = self.get_projects_cfg()
         valid_conversors = [e.value for e in ConversorID]
-        projects = Projects()
         for project_dto in json.projects:
             for fileset in project_dto.filesets:
                 conversor = fileset.conversor_setup
@@ -96,7 +94,6 @@ class TestCfgValidation(unittest.TestCase):
     def test_check_git_url(self):
         json = self.get_projects_cfg()
 
-        projects = Projects()
         for project_dto in json.projects:
             for fileset in project_dto.filesets:
                 if fileset.type == "git" and "git@" in fileset.url:

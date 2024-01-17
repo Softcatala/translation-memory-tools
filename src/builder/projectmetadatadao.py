@@ -117,7 +117,6 @@ class ProjectMetaDataDao(object):
         result = c.execute(command)
         self.connection.commit()
         logging.info(f"Projects clean up {result.rowcount}")
-        return
 
     def dump(self):
         c = self.connection.cursor()

@@ -59,7 +59,6 @@ class POsToJson(object):
             self._process_project(
                 project_dto.project_id,
                 project_dto.name,
-                project_dto.filename,
                 project_dto.softcatala,
             )
             self.projects += 1
@@ -86,7 +85,7 @@ class POsToJson(object):
 
         return comment
 
-    def _process_project(self, project_id, project_name, filename, softcatala):
+    def _process_project(self, project_id, project_name, softcatala):
         entries = set()
         directory = os.path.join(self.po_directory, "individual_pos/", project_id)
         findFiles = FindFiles()
