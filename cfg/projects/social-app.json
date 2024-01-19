@@ -1,0 +1,12 @@
+{
+    "project": "social-app",
+    "license": "MIT",
+    "projectweb": "https://blue.social/",
+    "fileset": {
+        "social-app": {
+            "url": "https://raw.githubusercontent.com/bluesky-social/social-app/main/src/locale/locales/ca/messages.po",
+            "type": "file",
+            "target": "ca.po"
+        }
+    }
+}
