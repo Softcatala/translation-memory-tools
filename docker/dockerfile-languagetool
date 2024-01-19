@@ -1,7 +1,7 @@
 FROM python:3.11.1-slim-bullseye
 
 RUN apt-get update && apt-get install libhunspell-dev zip -y
-RUN apt-get install openjdk-11-jdk wget -y
+RUN apt-get install openjdk-17-jdk wget -y
 
 EXPOSE 7001
 
