@@ -34,12 +34,27 @@ class POCatalog(object):
     def filename(self):
         return self._filename
 
+    def _log_error_file(self, filename):
+        MAX_LINES = 10
+        with open(filename, "r") as _file:
+            for cnt, line in enumerate(_file, 1):
+                logging.debug(f"error: {line.strip()}")
+                if cnt >= MAX_LINES:
+                    break
+
     def _run_command(self, cmd):
-        file_time = os.stat(self.filename).st_mtime
-        # msgcat and msgattrib do not return a specific error code when they are unable
-        # to run. If they run successfully the date of the output file is always updated
-        os.system(cmd)
-        return file_time == os.stat(self.filename).st_mtime
+        with tempfile.NamedTemporaryFile() as tmp:
+            error_fn = tmp.name
+
+            file_time = os.stat(self.filename).st_mtime
+            # msgcat and msgattrib do not return a specific error code when they are unable
+            # to run. If they run successfully the date of the output file is always updated
+            os.system(cmd + f" 2> {error_fn}")
+            is_error = file_time == os.stat(self.filename).st_mtime
+            if is_error:
+                self._log_error_file(error_fn)
+
+            return is_error
 
     def add_pofile(self, pofile):
         if os.path.isfile(self.filename):
