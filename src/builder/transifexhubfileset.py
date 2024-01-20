@@ -68,31 +68,24 @@ class OptionsExtractor(HTMLParser):
         return url[:idx]
 
     def handle_starttag(self, tag, attrs):
-        if tag == "tr":
-            attrs = dict(attrs)
-            if "data-actions-url" in attrs:
-                url = attrs["data-actions-url"]
-                if url is not None:
-                    name = self.get_project_name_tr(url)
+        if tag != "a":
+            return
+        attrs = dict(attrs)
+
+        if "href" in attrs:
+            url = attrs["href"]
+            if url is not None:
+                if "class" in attrs:
+                    klass = attrs["class"]
+                else:
+                    klass = None
+
+                if klass == "next":
+                    self.next_page = url
+                else:
+                    name = self.get_project_name_from_ahref(url)
                     if name is not None and name not in self.options:
                         self.options.append(name)
-        elif tag == "a":
-            attrs = dict(attrs)
-
-            if "href" in attrs:
-                url = attrs["href"]
-                if url is not None:
-                    if "class" in attrs:
-                        klass = attrs["class"]
-                    else:
-                        klass = None
-
-                    if klass == "next":
-                        self.next_page = url
-                    else:
-                        name = self.get_project_name_from_ahref(url)
-                        if name is not None and name not in self.options:
-                            self.options.append(name)
 
 
 class Page(object):
