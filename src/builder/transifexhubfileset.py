@@ -152,7 +152,7 @@ class TransifexHubFileSet(FileSet):
 
             if len(options) == 0:
                 logging.info(
-                    "TransifexHubFileSet.Do. Unable not find any project to add"
+                    "TransifexHubFileSet.expand_dynamic. Unable not find any project to add"
                 )
 
             for option in options:
