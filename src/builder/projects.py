@@ -20,6 +20,7 @@
 import datetime
 import logging
 import os
+import platform
 from concurrent.futures import ProcessPoolExecutor
 
 from .project import Project
@@ -75,7 +76,14 @@ class Projects(object):
         logging.debug(project_dto)
 
     def _download_all_projects(self):
-        if os.environ.get("SINGLE_THREAD_DOWNLOAD") == "1":
+        single_thread = os.environ.get("SINGLE_THREAD_DOWNLOAD") == "1"
+        if (
+            platform.system() == "Darwin"
+            and os.environ.get("LOGLEVEL", "INFO").upper() == "DEBUG"
+        ):
+            single_thread = True
+
+        if single_thread:
             with ProcessPoolExecutor() as executor:
                 for project in self.projects:
                     project.do()
