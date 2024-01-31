@@ -1,0 +1,87 @@
+{
+    "project": "Fossify",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/FossifyOrg/General-Discussion?tab=readme-ov-file#how-can-i-suggest-an-edit-to-a-file",
+    "fileset": {
+        "Fossify-Flashlight": {
+            "url": "https://github.com/FossifyOrg/Flashlight.git",
+            "type": "git"
+        },
+        "Fossify-Messages": {
+            "url": "https://github.com/FossifyOrg/Messages.git",
+            "type": "git"
+        },
+        "Fossify-Contacts": {
+            "url": "https://github.com/FossifyOrg/Contacts.git",
+            "type": "git"
+        },
+        "Fossify-Gallery": {
+            "url": "https://github.com/FossifyOrg/Gallery.git",
+            "type": "git"
+        },
+        "Fossify-Notes": {
+            "url": "https://github.com/FossifyOrg/Notes.git",
+            "type": "git"
+        },
+        "Fossify-Draw": {
+            "url": "https://github.com/FossifyOrg/Draw.git",
+            "type": "git"
+        },
+        "Fossify-Calendar": {
+            "url": "https://github.com/FossifyOrg/Calendar.git",
+            "type": "git"
+        },
+        "Fossify-Camera": {
+            "url": "https://github.com/FossifyOrg/Camera.git",
+            "type": "git"
+        },
+        "Fossify-File-Manager": {
+            "url": "https://github.com/FossifyOrg/File-Manager.git",
+            "type": "git"
+        },
+        "Fossify-Clock": {
+            "url": "https://github.com/FossifyOrg/Clock.git",
+            "type": "git"
+        },
+        "Fossify-Phone": {
+            "url": "https://github.com/FossifyOrg/Phone.git",
+            "type": "git"
+        },
+        "Fossify-Thank-You": {
+            "url": "https://github.com/FossifyOrg/Thank-You.git",
+            "type": "git"
+        },
+        "Fossify-Commons": {
+            "url": "https://github.com/FossifyOrg/Commons.git",
+            "type": "git"
+        },
+        "Fossify-Keyboard": {
+            "url": "https://github.com/FossifyOrg/Keyboard.git",
+            "type": "git"
+        },
+        "Fossify-Music-Player": {
+            "url": "https://github.com/FossifyOrg/Music-Player.git",
+            "type": "git"
+        },
+        "Fossify-Launcher": {
+            "url": "https://github.com/FossifyOrg/Launcher.git",
+            "type": "git"
+        },
+        "Fossify-Voice-Recorder": {
+            "url": "https://github.com/FossifyOrg/Voice-Recorder.git",
+            "type": "git"
+        },
+        "Fossify-Calculator": {
+            "url": "https://github.com/FossifyOrg/Calculator.git",
+            "type": "git"
+        },
+        "Fossify-App-Launcher": {
+            "url": "https://github.com/FossifyOrg/App-Launcher.git",
+            "type": "git"
+        },
+        "Fossify-reprint": {
+            "url": "https://github.com/FossifyOrg/reprint.git",
+            "type": "git"
+        }
+    }
+}
