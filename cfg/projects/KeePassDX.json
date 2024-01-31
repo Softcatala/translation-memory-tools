@@ -1,0 +1,11 @@
+{
+    "project": "KeePassDX",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://www.keepassdx.com/",
+    "fileset": {
+        "KeePassDX": {
+            "url": "https://github.com/Kunzisoft/KeePassDX.git",
+            "type": "git"
+        }
+    }
+}
