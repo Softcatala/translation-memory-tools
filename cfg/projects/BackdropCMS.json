@@ -1,0 +1,13 @@
+{
+    "project": "Backdrop CMS",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://localize.backdropcms.org/translate/languages/ca",
+    "fileset": {
+        "BackdropCMS": {
+            "url": "https://localize.backdropcms.org/files/l10n_packager/all/backdropcms/backdropcms-1.x.ca.po",
+            "type": "file",
+            "duplicates": "msgctxt",
+            "target": "backdrop-ca.po"
+        }
+    }
+}
