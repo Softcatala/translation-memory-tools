@@ -62,6 +62,16 @@
             "url": "https://github.com/lxde/libfm.git",
             "type": "git",
             "pattern": ".*?ca.po"
+        },
+        "lxinput": {
+            "url": "https://github.com/lxde/lxinput.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "lxpanel": {
+            "url": "https://github.com/lxde/lxpanel.git",
+            "type": "git",
+            "pattern": ".*?ca.po"
         }
     }
 }
