@@ -3,10 +3,75 @@
     "license": "BSD-3-Clause",
     "projectweb": "https://lumina-desktop.org/",
     "fileset": {
-        "Lumina": {
-            "url": "https://github.com/trueos/lumina-i18n.git",
-            "type": "git",
-            "pattern": ".*?/ca/.*?.po"
+        "lumina-terminal": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/experimental/lumina-terminal/i18n/l-terminal_ca.ts",
+            "type": "file",
+            "target": "l-terminal_ca.ts"
+        },
+        "lumina-desktop": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/core/lumina-desktop/i18n/lumina-desktop_ca.ts",
+            "type": "file",
+            "target": "lumina-desktop_ca.ts"
+        },
+        "lumina-open": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/core/lumina-open/i18n/lumina-open_ca.ts",
+            "type": "file",
+            "target": "lumina-open_ca.ts"
+        },
+        "lumina-info": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/core/lumina-info/i18n/lumina-info_ca.ts",
+            "type": "file",
+            "target": "lumina-info_ca.ts"
+        },
+        "lumina-search": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/core-utils/lumina-search/i18n/lumina-search_ca.ts",
+            "type": "file",
+            "target": "lumina-search_ca.ts"
+        },
+        "lumina-xconfig": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/core-utils/lumina-xconfig/i18n/lumina-xconfig_ca.ts",
+            "type": "file",
+            "target": "lumina-xconfig_ca.ts"
+        },
+        "lumina-fileinfo": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-fileinfo/i18n/l-fileinfo_ca.ts",
+            "type": "file",
+            "target": "l-fileinfo_ca.ts"
+        },
+        "lumina-mediap": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-mediaplayer/i18n/l-mediap_ca.ts",
+            "type": "file",
+            "target": "l-mediap_ca.ts"
+        },
+        "lumina-te": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-textedit/i18n/l-te_ca.ts",
+            "type": "file",
+            "target": "l-te_ca.ts"
+        },
+        "lumina-screenshot": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-screenshot/i18n/l-screenshot_ca.ts",
+            "type": "file",
+            "target": "l-screenshot_ca.ts"
+        },
+        "lumina-sudo": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-sudo/i18n/lum_sudo_ca.ts",
+            "type": "file",
+            "target": "lum_sudo_ca.ts"
+        },
+        "lumina-archiver": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-archiver/i18n/l-archiver_ca.ts",
+            "type": "file",
+            "target": "l-archiver_ca.ts"
+        },
+        "lumina-fm": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-fm/i18n/lumina-fm_ca.ts",
+            "type": "file",
+            "target": "lumina-fm_ca.ts"
+        },
+        "lumina-photo": {
+            "url": "https://raw.githubusercontent.com/lumina-desktop/lumina/master/src-qt5/desktop-utils/lumina-photo/i18n/l-photo_ca.ts",
+            "type": "file",
+            "target": "l-photo_ca.ts"
         }
     }
 }
