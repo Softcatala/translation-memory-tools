@@ -1,0 +1,11 @@
+{
+    "project": "Escapepod",
+    "license": "MIT",
+    "projectweb": "https://codeberg.org/y20k/escapepod",
+    "fileset": {
+        "Escapepod": {
+            "url": "https://codeberg.org/y20k/escapepod.git",
+            "type": "git"
+        }
+    }
+}
