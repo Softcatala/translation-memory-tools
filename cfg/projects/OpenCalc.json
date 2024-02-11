@@ -1,0 +1,11 @@
+{
+    "project": "OpenCalc",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://hosted.weblate.org/engage/opencalc",
+    "fileset": {
+        "OpenCalc": {
+            "url": "https://github.com/Darkempire78/OpenCalc",
+            "type": "git"
+        }
+    }
+}
