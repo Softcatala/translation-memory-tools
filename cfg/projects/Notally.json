@@ -1,0 +1,11 @@
+{
+    "project": "Notally",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/OmGodse/Notally",
+    "fileset": {
+        "Notally": {
+            "url": "https://github.com/OmGodse/Notally",
+            "type": "git"
+        }
+    }
+}
