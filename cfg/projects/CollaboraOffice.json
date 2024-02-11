@@ -1,6 +1,6 @@
 {
     "project": "Collabora Office",
-    "license": "MPL-2",
+    "license": "MPL-2.0",
     "projectweb": "https://github.com/CollaboraOnline/online",
     "fileset": {
         "CollaboraOffice": {
