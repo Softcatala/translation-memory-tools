@@ -1,0 +1,11 @@
+{
+    "project": "Imagepipe",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://codeberg.org/Starfish/Imagepipe",
+    "fileset": {
+        "Imagepipe": {
+            "url": "https://codeberg.org/Starfish/Imagepipe.git",
+            "type": "git"
+        }
+    }
+}
