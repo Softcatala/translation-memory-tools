@@ -1,0 +1,11 @@
+{
+    "project": "Collabora Office",
+    "license": "MPL-2",
+    "projectweb": "https://github.com/CollaboraOnline/online",
+    "fileset": {
+        "CollaboraOffice": {
+            "url": "https://github.com/CollaboraOnline/online",
+            "type": "git"
+        }
+    }
+}
