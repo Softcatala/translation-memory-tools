@@ -1,0 +1,11 @@
+{
+    "project": "Aegis",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/beemdevelopment/Aegis",
+    "fileset": {
+        "Aegis": {
+            "url": "https://github.com/beemdevelopment/Aegis",
+            "type": "git"
+        }
+    }
+}
