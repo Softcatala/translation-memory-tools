@@ -1,0 +1,11 @@
+{
+    "project": "FlorisBoard",
+    "license": "Apache-2.0",
+    "projectweb": "https://github.com/florisboard/florisboard/blob/master/CONTRIBUTING.md#translations",
+    "fileset": {
+        "FlorisBoard": {
+            "url": "https://github.com/florisboard/florisboard",
+            "type": "git"
+        }
+    }
+}
