@@ -8,6 +8,12 @@
             "type": "file",
             "target": "searx-ca.po",
             "po_preprocessing": "remove_untranslated"
+        },
+        "SearXNG": {
+            "url": "https://raw.githubusercontent.com/searxng/searxng/master/searx/translations/ca/LC_MESSAGES/messages.po",
+            "type": "file",
+            "target": "searxng-ca.po",
+            "duplicates": "msgctxt"
         }
     }
 }
