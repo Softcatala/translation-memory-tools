@@ -2,7 +2,6 @@
 ROOT="$1"
 PUBLIC="$2"
 PROGRAMS=$ROOT/tm-git/src
-BUILDER=$PROGRAMS
 NEW_POS=$PROGRAMS/output
 # PUBLISHED directories are used to allow to publish the previous version if
 # we have been unable to fetch it.
@@ -41,14 +40,14 @@ export LC_ALL=ca_ES.utf-8
 mkdir -p $PUBLISHED_PO
 mkdir -p $PUBLISHED_TMX
 
-# Check project links
-cd $PROGRAMS
-python run-check-links.py
 
 # Build new translation files
-cd $BUILDER
+cd $PROGRAMS
 rm -f *.log
 rm -f -r $NEW_POS
+
+# Check project links
+python run-check-links.py
 
 # Download new translation files
 python builder.py -d
