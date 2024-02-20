@@ -1,0 +1,11 @@
+{
+    "project": "LibreTube",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://github.com/libre-tube/LibreTube",
+    "fileset": {
+        "LibreTube": {
+            "url": "https://github.com/libre-tube/LibreTube",
+            "type": "git"
+        }
+    }
+}
