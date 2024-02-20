@@ -35,7 +35,7 @@ class ProjectMetaDataDao(object):
     def create_model(self):
         c = self.connection.cursor()
         command = (
-            "CREATE TABLE IF NOT EXISTS projects ("
+            "XREATE TABLE IF NOT EXISTS projects ("
             "name TEXT PRIMARY KEY,"
             "last_fetch TIMESTAMP,"
             "last_translation_update TIMESTAMP,"
