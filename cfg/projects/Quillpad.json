@@ -1,0 +1,11 @@
+{
+    "project": "Quillpad",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://quillpad.github.io/",
+    "fileset": {
+        "Quillpad": {
+            "url": "https://github.com/quillpad/quillpad",
+            "type": "git"
+        }
+    }
+}
