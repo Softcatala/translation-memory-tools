@@ -1,0 +1,11 @@
+{
+    "project": "LibreraReader",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://github.com/foobnix/LibreraReader",
+    "fileset": {
+        "LibreraReader": {
+            "url": "https://github.com/foobnix/LibreraReader",
+            "type": "git"
+        }
+    }
+}
