@@ -1,0 +1,11 @@
+{
+    "project": "MemeTastic",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/gsantner/memetastic",
+    "fileset": {
+        "MemeTastic": {
+            "url": "https://github.com/gsantner/memetastic",
+            "type": "git"
+        }
+    }
+}
