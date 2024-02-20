@@ -1,0 +1,11 @@
+{
+    "project": "Trail Sense",
+    "license": "MIT",
+    "projectweb": "https://github.com/kylecorry31/Trail-Sense",
+    "fileset": {
+        "TrailSense": {
+            "url": "https://github.com/kylecorry31/Trail-Sense",
+            "type": "git"
+        }
+    }
+}
