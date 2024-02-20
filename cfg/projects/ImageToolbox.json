@@ -1,0 +1,11 @@
+{
+    "project": "Image Toolbox",
+    "license": "Apache-2.0",
+    "projectweb": "https://github.com/T8RIN/ImageToolbox",
+    "fileset": {
+        "ImageToolbox": {
+            "url": "https://github.com/T8RIN/ImageToolbox",
+            "type": "git"
+        }
+    }
+}
