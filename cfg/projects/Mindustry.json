@@ -1,0 +1,12 @@
+{
+    "project": "Mindustry",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://github.com/Anuken/Mindustry/blob/master/TRANSLATING.md",
+    "fileset": {
+        "Mindustry": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/mindustry/ca.po",
+            "type": "file",
+            "target": "mindustry-ca.po"
+        }
+    }
+}
