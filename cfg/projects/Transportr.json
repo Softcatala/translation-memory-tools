@@ -1,0 +1,11 @@
+{
+    "project": "Transportr",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://github.com/grote/Transportr",
+    "fileset": {
+        "Transportr": {
+            "url": "https://github.com/grote/Transportr",
+            "type": "git"
+        }
+    }
+}
