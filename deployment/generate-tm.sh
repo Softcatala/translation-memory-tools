@@ -29,6 +29,8 @@ copy_successfully_downloaded_files() {
     done
 }
 
+set -e # Exit immediately if a command exits with a non-zero status
+
 echo Generate memories
 if [ "$#" -ne 2 ] ; then
     echo "Usage: generate-tm.sh ROOT_DIRECTORY_OF_BUILD_LOCATION PUBLIC_DATA"

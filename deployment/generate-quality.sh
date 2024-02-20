@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e # Exit immediately if a command exits with a non-zero status
+
 echo Generate Quality
 root="$1"
 lt_output=$root/tm-git/src/output/quality

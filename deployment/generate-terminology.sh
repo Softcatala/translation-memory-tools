@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e # Exit immediately if a command exits with a non-zero status
+
 echo Generate terminology
 if [ "$#" -ne 1 ] ; then
     echo "Usage: generate-terminology.sh ROOT_DIRECTORY_OF_BUILD_LOCATION"
