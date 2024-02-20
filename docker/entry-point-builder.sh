@@ -1,3 +1,5 @@
+set -e # Exit immediately if a command exits with a non-zero status
+
 #!/bin/bash
 DIR="$1" # root /srv/dev
 DIR_TMT_GIT="$2" # /srv/dev/tm-git - working directory
