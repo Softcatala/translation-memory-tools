@@ -1,0 +1,11 @@
+{
+    "project": "Orbot",
+    "license": "BSD-3-Clause",
+    "projectweb": "https://github.com/guardianproject/orbot",
+    "fileset": {
+        "Orbot": {
+            "url": "https://github.com/guardianproject/orbot",
+            "type": "git"
+        }
+    }
+}
