@@ -1,0 +1,11 @@
+{
+    "project": "Feeder",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/spacecowboy/Feeder",
+    "fileset": {
+        "Feeder": {
+            "url": "https://github.com/spacecowboy/Feeder",
+            "type": "git"
+        }
+    }
+}
