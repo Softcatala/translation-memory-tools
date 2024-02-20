@@ -1,0 +1,11 @@
+{
+    "project": "Voice",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/PaulWoitaschek/Voice",
+    "fileset": {
+        "Voice": {
+            "url": "https://github.com/PaulWoitaschek/Voice",
+            "type": "git"
+        }
+    }
+}
