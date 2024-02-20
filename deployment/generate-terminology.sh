@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e # Exit immediately if a command exits with a non-zero status
+set -e
 
 echo Generate terminology
 if [ "$#" -ne 1 ] ; then

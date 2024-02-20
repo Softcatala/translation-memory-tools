@@ -29,7 +29,7 @@ copy_successfully_downloaded_files() {
     done
 }
 
-set -e # Exit immediately if a command exits with a non-zero status
+set -e
 
 echo Generate memories
 if [ "$#" -ne 2 ] ; then
