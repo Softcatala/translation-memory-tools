@@ -5,7 +5,8 @@
     "fileset": {
         "CollaboraOffice": {
             "url": "https://github.com/CollaboraOnline/online",
-            "type": "git"
+            "type": "git",
+            "pattern": ".*?/android/.*?|.*?/ios/.*?|.*?ca\\.po"
         }
     }
 }
