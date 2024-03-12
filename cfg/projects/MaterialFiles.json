@@ -5,8 +5,7 @@
     "fileset": {
         "MaterialFiles": {
             "url": "https://github.com/zhanghai/MaterialFiles",
-            "type": "git",
-            "target": "MaterialFiles-ca.po"
+            "type": "git"
         }
     }
 }
