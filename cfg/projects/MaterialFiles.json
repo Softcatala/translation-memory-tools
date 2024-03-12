@@ -1,0 +1,12 @@
+{
+    "project": "Material Files",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://github.com/zhanghai/MaterialFiles",
+    "fileset": {
+        "MaterialFiles": {
+            "url": "https://github.com/zhanghai/MaterialFiles",
+            "type": "git",
+            "target": "MaterialFiles-ca.po"
+        }
+    }
+}
