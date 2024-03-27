@@ -1,0 +1,11 @@
+{
+    "project": "Privacy Friendly QR Scanner",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/SecUSo/privacy-friendly-qr-scanner",
+    "fileset": {
+        "PrivacyFriendlyQRScanner": {
+            "url": "https://github.com/SecUSo/privacy-friendly-qr-scanner",
+            "type": "git"
+        }
+    }
+}
