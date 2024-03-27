@@ -1,0 +1,11 @@
+{
+    "project": "Seal",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://github.com/JunkFood02/Seal",
+    "fileset": {
+        "Seal": {
+            "url": "https://github.com/JunkFood02/Seal",
+            "type": "git"
+        }
+    }
+}
