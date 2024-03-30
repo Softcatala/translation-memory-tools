@@ -1,0 +1,31 @@
+{
+    "project": "You Apps",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://you-apps.net/",
+    "fileset": {
+        "RecordYou": {
+            "url": "https://github.com/you-apps/RecordYou",
+            "type": "git"
+        },
+        "ClockYou": {
+            "url": "https://github.com/you-apps/ClockYou",
+            "type": "git"
+        },
+        "ConnectYou": {
+            "url": "https://github.com/you-apps/ConnectYou",
+            "type": "git"
+        },
+        "WallYou": {
+            "url": "https://github.com/you-apps/WallYou",
+            "type": "git"
+        },
+        "CalcYou": {
+            "url": "https://github.com/you-apps/CalcYou",
+            "type": "git"
+        },
+        "VibeYou": {
+            "url": "https://github.com/you-apps/VibeYou",
+            "type": "git"
+        }
+    }
+}
