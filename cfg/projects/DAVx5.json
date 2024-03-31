@@ -4,8 +4,8 @@
     "projectweb": "https://www.davx5.com/",
     "fileset": {
         "DAVx5": {
-            "url": "https://app.transifex.com/bitfireAT/davx5/dashboard/",
-            "type": "transifex"
+            "url": "https://github.com/bitfireAT/davx5-ose",
+            "type": "git"
         }
     }
 }
