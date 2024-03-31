@@ -1,0 +1,11 @@
+{
+    "project": "DAVx5",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://www.davx5.com/",
+    "fileset": {
+        "DAVx5": {
+            "url": "https://github.com/bitfireAT/davx5-ose",
+            "type": "git"
+        }
+    }
+}
