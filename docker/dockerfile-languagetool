@@ -1,4 +1,4 @@
-FROM python:3.11.1-slim-bullseye
+FROM python:3.12.2-slim-bullseye
 
 RUN apt-get update && apt-get install libhunspell-dev zip -y
 RUN apt-get install openjdk-17-jdk wget -y
