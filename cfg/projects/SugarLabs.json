@@ -5,412 +5,397 @@
     "softcatala": true,
     "fileset": {
         "sugar": {
-            "url": "https://translate.sugarlabs.org/download/ca/sugar/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/sugar/master/po/ca.po",
             "type": "file",
             "target": "sugar_ca.po"
         },
         "sugar-toolkit-gtk3": {
-            "url": "https://translate.sugarlabs.org/download/ca/sugar-toolkit-gtk3/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/sugar-toolkit-gtk3/master/po/ca.po",
             "type": "file",
             "target": "sugar-toolkit-gtk3_ca.po"
         },
         "AEIOU": {
-            "url": "https://translate.sugarlabs.org/download/ca/AEIOU/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/AEIOU/master/po/ca.po",
             "type": "file",
             "target": "AEIOU_ca.po"
         },
         "Abacus": {
-            "url": "https://translate.sugarlabs.org/download/ca/Abacus/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/activity-abacus/master/po/ca.po",
             "type": "file",
             "target": "Abacus_ca.po"
         },
         "Analyze": {
-            "url": "https://translate.sugarlabs.org/download/ca/Analyze/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/analyze/master/po/ca.po",
             "type": "file",
             "target": "Analyze_ca.po"
         },
         "AnalyzeJournal": {
-            "url": "https://translate.sugarlabs.org/download/ca/AnalyzeJournal/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/AnalyzeJournal/master/po/ca.po",
             "type": "file",
             "target": "AnalyzeJournal_ca.po"
         },
-        "Annotate": {
-            "url": "https://translate.sugarlabs.org/download/ca/Annotate/ca.po",
-            "type": "file",
-            "target": "Annotate_ca.po"
-        },
         "Arithmetic": {
-            "url": "https://translate.sugarlabs.org/download/ca/Arithmetic/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/arithmetic/master/po/ca.po",
             "type": "file",
             "target": "Arithmetic_ca.po"
         },
+        "Biorhythm": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/biorhythm/master/po/ca.po",
+            "type": "file",
+            "target": "Biorhythm_ca.po"
+        },
         "Bridge": {
-            "url": "https://translate.sugarlabs.org/download/ca/Bridge/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/Bridge/master/po/ca.po",
             "type": "file",
             "target": "Bridge_ca.po"
         },
         "Calculate": {
-            "url": "https://translate.sugarlabs.org/download/ca/Calculate/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/calculate-activity/master/po/ca.po",
             "type": "file",
             "target": "Calculate_ca.po"
         },
         "Calendario": {
-            "url": "https://translate.sugarlabs.org/download/ca/Calendario/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/calendario/master/po/ca.po",
             "type": "file",
             "target": "Calendario_ca.po"
         },
         "CardSort": {
-            "url": "https://translate.sugarlabs.org/download/ca/CardSort/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/cardsort/master/po/ca.po",
             "type": "file",
             "target": "CardSort_ca.po"
         },
+        "CartoonBuilder": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/cartoon-builder/master/po/ca.po",
+            "type": "file",
+            "target": "CartoonBuilder_ca.po"
+        },
         "Chat": {
-            "url": "https://translate.sugarlabs.org/download/ca/Chat/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/chat/master/po/ca.po",
             "type": "file",
             "target": "Chat_ca.po"
         },
         "ClassroomBroadcast": {
-            "url": "https://translate.sugarlabs.org/download/ca/ClassroomBroadcast/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/classroombroadcast/master/po/ca.po",
             "type": "file",
             "target": "ClassroomBroadcast_ca.po"
         },
         "ClipArt": {
-            "url": "https://translate.sugarlabs.org/download/ca/ClipArt/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/clipart/master/po/ca.po",
             "type": "file",
-            "target": "ClipArt_ca.po"
+            "target": "Clipart_ca.po"
         },
         "Clock": {
-            "url": "https://translate.sugarlabs.org/download/ca/Clock/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/clock-activity/master/po/ca.po",
             "type": "file",
             "target": "Clock_ca.po"
         },
+        "ColorDeducto": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/colordeducto/master/po/ca.po",
+            "type": "file",
+            "target": "ColorDeducto_ca.po"
+        },
         "Colors": {
-            "url": "https://translate.sugarlabs.org/download/ca/Colors/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/colors/master/po/ca.po",
             "type": "file",
             "target": "Colors_ca.po"
         },
-        "ConnecttheDots": {
-            "url": "https://translate.sugarlabs.org/download/ca/ConnecttheDots/ca.po",
+        "ConnectTheDots": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/connect-the-dots-activity/master/po/ca.po",
             "type": "file",
-            "target": "ConnecttheDots_ca.po"
+            "target": "ConnectTheDots_ca.po"
         },
         "Convert": {
-            "url": "https://translate.sugarlabs.org/download/ca/Convert/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/convert/master/po/ca.po",
             "type": "file",
             "target": "Convert_ca.po"
         },
+        "CookieSearch": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/cookie-search-activity/master/po/ca.po",
+            "type": "file",
+            "target": "CookieSearch_ca.po"
+        },
         "Deducto": {
-            "url": "https://translate.sugarlabs.org/download/ca/Deducto/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/deducto/master/po/ca.po",
             "type": "file",
             "target": "Deducto_ca.po"
         },
         "Dimensions": {
-            "url": "https://translate.sugarlabs.org/download/ca/Dimensions/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/dimensions/master/po/ca.po",
             "type": "file",
             "target": "Dimensions_ca.po"
         },
+        "Distance": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/distance-activity/master/po/ca.po",
+            "type": "file",
+            "target": "Distance_ca.po"
+        },
         "DotsAndBoxes": {
-            "url": "https://translate.sugarlabs.org/download/ca/DotsAndBoxes/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/dotsAndBoxes/master/po/ca.po",
             "type": "file",
             "target": "DotsAndBoxes_ca.po"
         },
         "Erikos": {
-            "url": "https://translate.sugarlabs.org/download/ca/Erikos/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/activity-erikos/master/po/ca.po",
             "type": "file",
             "target": "Erikos_ca.po"
         },
         "Finance": {
-            "url": "https://translate.sugarlabs.org/download/ca/Finance/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/finance-activity/master/po/ca.po",
             "type": "file",
             "target": "Finance_ca.po"
         },
         "Flip": {
-            "url": "https://translate.sugarlabs.org/download/ca/Flip/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/flip/master/po/ca.po",
             "type": "file",
             "target": "Flip_ca.po"
         },
         "Flipsticks": {
-            "url": "https://translate.sugarlabs.org/download/ca/Flipsticks/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/flipsticks/master/po/ca.po",
             "type": "file",
             "target": "Flipsticks_ca.po"
         },
         "FollowMeButia": {
-            "url": "https://translate.sugarlabs.org/download/ca/FollowMeButia/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/followmeButia/master/po/ca.po",
             "type": "file",
             "target": "FollowMeButia_ca.po"
         },
         "FotoToon": {
-            "url": "https://translate.sugarlabs.org/download/ca/FotoToon/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/fototoon-activity/master/po/ca.po",
             "type": "file",
             "target": "FotoToon_ca.po"
         },
         "FractionBounce": {
-            "url": "https://translate.sugarlabs.org/download/ca/FractionBounce/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/fractionbounce/master/po/ca.po",
             "type": "file",
             "target": "FractionBounce_ca.po"
         },
         "GetBooks": {
-            "url": "https://translate.sugarlabs.org/download/ca/GetBooks/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/get-books-activity/master/po/ca.po",
             "type": "file",
             "target": "GetBooks_ca.po"
         },
         "GetIABooks": {
-            "url": "https://translate.sugarlabs.org/download/ca/GetIABooks/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/getiabooks/master/po/ca.po",
             "type": "file",
             "target": "GetIABooks_ca.po"
         },
-        "hMouse": {
-            "url": "https://translate.sugarlabs.org/download/ca/hMouse/ca.po",
-            "type": "file",
-            "target": "hMouse_ca.po"
-        },
         "IKnowMyABCs": {
-            "url": "https://translate.sugarlabs.org/download/ca/IKnowMyABCs/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/iknowmyabcs/master/po/ca.po",
             "type": "file",
             "target": "IKnowMyABCs_ca.po"
         },
-        "Implode": {
-            "url": "https://translate.sugarlabs.org/download/ca/Implode/ca.po",
-            "type": "file",
-            "target": "Implode_ca.po"
-        },
         "ImageViewer": {
-            "url": "https://translate.sugarlabs.org/download/ca/ImageViewer/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/imageviewer-activity/master/po/ca.po",
             "type": "file",
             "target": "ImageViewer_ca.po"
         },
+        "Implode": {
+            "url": "https://raw.githubusercontent.com/sugarlabs/implode-activity/master/po/ca.po",
+            "type": "file",
+            "target": "Implode_ca.po"
+        },
         "InfoSlicer": {
-            "url": "https://translate.sugarlabs.org/download/ca/InfoSlicer/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/infoslicer/master/po/ca.po",
             "type": "file",
             "target": "InfoSlicer_ca.po"
         },
         "JigsawPuzzle": {
-            "url": "https://translate.sugarlabs.org/download/ca/Jigsaw-Puzzle/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/jigsaw-puzzle-branch/master/po/ca.po",
             "type": "file",
             "target": "JigsawPuzzle_ca.po"
         },
         "Jukebox": {
-            "url": "https://translate.sugarlabs.org/download/ca/Jukebox/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/jukebox-activity/master/po/ca.po",
             "type": "file",
             "target": "Jukebox_ca.po"
         },
         "Jump": {
-            "url": "https://translate.sugarlabs.org/download/ca/Jump/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/jump/master/po/ca.po",
             "type": "file",
             "target": "Jump_ca.po"
         },
         "Level": {
-            "url": "https://translate.sugarlabs.org/download/ca/Level/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/level-activity/master/po/ca.po",
             "type": "file",
             "target": "Level_ca.po"
         },
         "Log": {
-            "url": "https://translate.sugarlabs.org/download/ca/Log/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/log-activity/master/po/ca.po",
             "type": "file",
             "target": "Log_ca.po"
         },
         "MakeyMakey": {
-            "url": "https://translate.sugarlabs.org/download/ca/MakeyMakey/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/makeymakey/master/po/ca.po",
             "type": "file",
             "target": "MakeyMakey_ca.po"
         },
         "Mateton": {
-            "url": "https://translate.sugarlabs.org/download/ca/Mateton/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/mateton-activity/master/po/ca.po",
             "type": "file",
             "target": "Mateton_ca.po"
         },
         "Maze": {
-            "url": "https://translate.sugarlabs.org/download/ca/Maze/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/maze-activity/master/po/ca.po",
             "type": "file",
             "target": "Maze_ca.po"
         },
         "Measure": {
-            "url": "https://translate.sugarlabs.org/download/ca/Measure/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/Measure/master/po/ca.po",
             "type": "file",
             "target": "Measure_ca.po"
         },
         "Memorize": {
-            "url": "https://translate.sugarlabs.org/download/ca/Memorize/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/memorize-activity/master/po/ca.po",
             "type": "file",
             "target": "Memorize_ca.po"
         },
-        "Moon": {
-            "url": "https://translate.sugarlabs.org/download/ca/Moon/ca.po",
-            "type": "file",
-            "target": "Moon_ca.po"
-        },
         "Napier": {
-            "url": "https://translate.sugarlabs.org/download/ca/Napier/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/napier/master/po/ca.po",
             "type": "file",
             "target": "Napier_ca.po"
         },
         "Nutrition": {
-            "url": "https://translate.sugarlabs.org/download/ca/Nutrition/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/nutrition/master/po/ca.po",
             "type": "file",
             "target": "Nutrition_ca.po"
         },
         "Paint": {
-            "url": "https://translate.sugarlabs.org/download/ca/Paint/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/paint-activity/master/po/ca.po",
             "type": "file",
             "target": "Paint_ca.po"
         },
         "Paths": {
-            "url": "https://translate.sugarlabs.org/download/ca/Paths/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/paths/master/po/ca.po",
             "type": "file",
             "target": "Paths_ca.po"
         },
         "Physics": {
-            "url": "https://translate.sugarlabs.org/download/ca/Physics/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/physics/master/po/ca.po",
             "type": "file",
             "target": "Physics_ca.po"
         },
         "Pippy": {
-            "url": "https://translate.sugarlabs.org/download/ca/Pippy/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/Pippy/master/po/ca.po",
             "type": "file",
             "target": "Pippy_ca.po"
         },
         "Pointillism": {
-            "url": "https://translate.sugarlabs.org/download/ca/Pointillism/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/pointillism/master/po/ca.po",
             "type": "file",
             "target": "Pointillism_ca.po"
         },
         "Portfolio": {
-            "url": "https://translate.sugarlabs.org/download/ca/Portfolio/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/portfolio-activity/master/po/ca.po",
             "type": "file",
             "target": "Portfolio_ca.po"
         },
         "Pukllanapac": {
-            "url": "https://translate.sugarlabs.org/download/ca/Pukllanapac/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/pukllanapac/master/po/ca.po",
             "type": "file",
             "target": "Pukllanapac_ca.po"
         },
         "Read": {
-            "url": "https://translate.sugarlabs.org/download/ca/Read/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/read-activity/master/po/ca.po",
             "type": "file",
             "target": "Read_ca.po"
         },
         "ReadETexts": {
-            "url": "https://translate.sugarlabs.org/download/ca/ReadETexts/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/readetexts/master/po/ca.po",
             "type": "file",
             "target": "ReadETexts_ca.po"
         },
         "ReadSDComics": {
-            "url": "https://translate.sugarlabs.org/download/ca/ReadSDComics/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/read-sd-comics/master/po/ca.po",
             "type": "file",
             "target": "ReadSDComics_ca.po"
         },
         "Recall": {
-            "url": "https://translate.sugarlabs.org/download/ca/Recall/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/recall/master/po/ca.po",
             "type": "file",
             "target": "Recall_ca.po"
         },
         "Record": {
-            "url": "https://translate.sugarlabs.org/download/ca/Record/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/record-activity/master/po/ca.po",
             "type": "file",
             "target": "Record_ca.po"
         },
         "Reflection": {
-            "url": "https://translate.sugarlabs.org/download/ca/Reflection/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/reflection/master/po/ca.po",
             "type": "file",
             "target": "Reflection_ca.po"
         },
         "Ruler": {
-            "url": "https://translate.sugarlabs.org/download/ca/Ruler/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/ruler/master/po/ca.po",
             "type": "file",
             "target": "Ruler_ca.po"
         },
-        "SimpleGraph": {
-            "url": "https://translate.sugarlabs.org/download/ca/SimpleGraph/ca.po",
-            "type": "file",
-            "target": "SimpleGraph_ca.po"
-        },
-        "SimpleGNUChess": {
-            "url": "https://translate.sugarlabs.org/download/ca/SimpleGNUChess/ca.po",
-            "type": "file",
-            "target": "SimpleGNUChess_ca.po"
-        },
         "Speak": {
-            "url": "https://translate.sugarlabs.org/download/ca/Speak/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/speak/master/po/ca.po",
             "type": "file",
             "target": "Speak_ca.po"
         },
         "StarChart": {
-            "url": "https://translate.sugarlabs.org/download/ca/StarChart/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/starchart/master/po/ca.po",
             "type": "file",
             "target": "StarChart_ca.po"
         },
         "StopWatch": {
-            "url": "https://translate.sugarlabs.org/download/ca/StopWatch/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/stopwatch/master/po/ca.po",
             "type": "file",
             "target": "StopWatch_ca.po"
         },
         "Story": {
-            "url": "https://translate.sugarlabs.org/download/ca/Story/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/story/master/po/ca.po",
             "type": "file",
             "target": "Story_ca.po"
         },
         "SugarCommander": {
-            "url": "https://translate.sugarlabs.org/download/ca/SugarCommander/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/sugar-commander/master/po/ca.po",
             "type": "file",
             "target": "SugarCommander_ca.po"
         },
         "Terminal": {
-            "url": "https://translate.sugarlabs.org/download/ca/Terminal/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/terminal-activity/master/po/ca.po",
             "type": "file",
             "target": "Terminal_ca.po"
         },
         "TurtleArt": {
-            "url": "https://translate.sugarlabs.org/download/ca/TurtleArt/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/turtleart-activity/master/po/ca.po",
             "type": "file",
             "target": "TurtleArt_ca.po"
         },
-        "TurtleArtExtras": {
-            "url": "https://translate.sugarlabs.org/download/ca/TurtleArtExtras/ca.po",
-            "type": "file",
-            "target": "TurtleArtExtras_ca.po"
-        },
         "TurtlePond": {
-            "url": "https://translate.sugarlabs.org/download/ca/TurtlePond/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/turtlepond/master/po/ca.po",
             "type": "file",
             "target": "TurtlePond_ca.po"
         },
         "TypingTurtle": {
-            "url": "https://translate.sugarlabs.org/download/ca/TypingTurtle/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/typing-turtle-activity/master/po/ca.po",
             "type": "file",
             "target": "TypingTurtle_ca.po"
         },
         "ViewSlides": {
-            "url": "https://translate.sugarlabs.org/download/ca/ViewSlides/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/viewslides/master/po/ca.po",
             "type": "file",
             "target": "ViewSlides_ca.po"
         },
-        "Web": {
-            "url": "https://translate.sugarlabs.org/download/ca/Web/ca.po",
-            "type": "file",
-            "target": "Web_ca.po"
-        },
         "Words": {
-            "url": "https://translate.sugarlabs.org/download/ca/Words/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/words-activity/master/po/ca.po",
             "type": "file",
             "target": "Words_ca.po"
         },
         "Write": {
-            "url": "https://translate.sugarlabs.org/download/ca/Write/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/write-activity/master/po/ca.po",
             "type": "file",
             "target": "Write_ca.po"
         },
-        "WriteBooks": {
-            "url": "https://translate.sugarlabs.org/download/ca/WriteBooks/ca.po",
-            "type": "file",
-            "target": "WriteBooks_ca.po"
-        },
         "XoEditor": {
-            "url": "https://translate.sugarlabs.org/download/ca/XoEditor/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/xoeditor-activity/master/po/ca.po",
             "type": "file",
             "target": "XoEditor_ca.po"
         },
         "Yupana": {
-            "url": "https://translate.sugarlabs.org/download/ca/Yupana/ca.po",
+            "url": "https://raw.githubusercontent.com/sugarlabs/yupana/master/po/ca.po",
             "type": "file",
             "target": "Yupana_ca.po"
         }
