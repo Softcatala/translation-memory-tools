@@ -1,0 +1,13 @@
+{
+    "project": "SENAITE",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.senaite.com/",
+    "fileset": {
+        "core": {
+            "url": "https://raw.githubusercontent.com/senaite/senaite.core/2.x/src/senaite/core/locales/ca/LC_MESSAGES/senaite.core.po",
+            "type": "file",
+            "target": "ca.po",
+            "po_preprocessing": "remove_untranslated"
+        }
+    }
+}
