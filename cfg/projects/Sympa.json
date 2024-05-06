@@ -1,7 +1,7 @@
 {
     "project": "Sympa",
     "license": "GPL-2.0-or-later",
-    "projectweb": "https://translate.sympa.org/ca/",
+    "projectweb": "https://translate.sympa.community/ca/",
     "fileset": {
         "sympa-ui": {
             "url": "https://raw.githubusercontent.com/sympa-community/sympa/sympa-6.2/po/sympa/ca.po",
