@@ -1,7 +1,7 @@
 {
     "project": "Drupal",
     "license": "GPL-2.0-or-later",
-    "projectweb": "https://drupal.org/project/ca",
+    "projectweb": "https://www.drupal.org/project/ca",
     "fileset": {
         "drupal": {
             "url": "https://ftp.drupal.org/files/translations/all/drupal/drupal-10.x.ca.po",
