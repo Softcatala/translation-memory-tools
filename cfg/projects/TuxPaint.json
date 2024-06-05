@@ -4,27 +4,17 @@
     "projectweb": "http://www.tuxpaint.org/",
     "fileset": {
         "tuxpaint": {
-            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/src/po/ca.po?format=raw",
+            "url": "https://raw.githubusercontent.com/lliurex/tuxpaint/master/src/po/ca.po",
             "type": "file",
             "target": "ca.po"
         },
         "stamps": {
-            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-stamps/ci/master/tree/po/tuxpaint-stamps-ca.po?format=raw",
+            "url": "https://raw.githubusercontent.com/lliurex/tuxpaint-config/master/src/po/ca.po",
             "type": "file",
             "target": "ca.po"
         },
-        "website-priority-high": {
-            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/priority-high/ca_ES.po?format=raw",
-            "type": "file",
-            "target": "priority-high-ca.po"
-        },
-        "website-priority-low": {
-            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-website/ci/master/tree/po/priority-low/ca_ES.po?format=raw",
-            "type": "file",
-            "target": "priority-low-ca.po"
-        },
         "config": {
-            "url": "https://sourceforge.net/p/tuxpaint/tuxpaint-config/ci/master/tree/src/po/ca.po?format=raw",
+            "url": "https://raw.githubusercontent.com/lliurex/tuxpaint-config/master/src/po/ca.po",
             "type": "file",
             "target": "ca.po"
         }
