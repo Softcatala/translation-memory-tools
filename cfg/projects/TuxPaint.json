@@ -1,7 +1,7 @@
 {
     "project": "TuxPaint",
     "license": "GPL-2.0-only",
-    "projectweb": "http://www.tuxpaint.org/",
+    "projectweb": "https://tuxpaint.org/",
     "fileset": {
         "tuxpaint": {
             "url": "https://raw.githubusercontent.com/lliurex/tuxpaint/master/src/po/ca.po",
