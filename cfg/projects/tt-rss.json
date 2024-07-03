@@ -1,7 +1,7 @@
 {
     "project": "Tiny Tiny RSS",
     "license": "GPL-3.0-or-later",
-    "projectweb": "https://weblate.tt-rss.org/",
+    "projectweb": "https://hosted.weblate.org/engage/tt-rss/",
     "fileset": {
         "tt-rss": {
             "url": "https://git.tt-rss.org/fox/tt-rss.git/plain/locale/ca_CA/LC_MESSAGES/messages.po",
