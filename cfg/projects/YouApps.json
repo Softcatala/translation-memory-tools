@@ -26,6 +26,10 @@
         "VibeYou": {
             "url": "https://github.com/you-apps/VibeYou",
             "type": "git"
+        },
+        "TranslateYou": {
+            "url": "https://github.com/you-apps/TranslateYou",
+            "type": "git"
         }
     }
 }
