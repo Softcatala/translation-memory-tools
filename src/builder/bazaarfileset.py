@@ -27,12 +27,7 @@ class BazaarFileSet(FileSet):
         """Used to identify if the file contains a path (/ and then .)"""
         filename = self.url.split("/")[-1]
 
-        if len(filename) > 0:
-            rslt = self.filename.find(".")
-            if rslt != -1:
-                return True
-
-        return False
+        return "." in filename
 
     def do(self):
         if self._has_filename():

@@ -41,7 +41,7 @@ class CompressedFileSet(FileSet):
             cmd = "tar -Jxf {0} -C {1}".format(filename, temp_dir)
             os.system(cmd)
         else:
-            if report_error is True:
+            if report_error:
                 msg = "Unsupported file extension for filename: {0}"
                 logging.error(msg.format(filename))
 
