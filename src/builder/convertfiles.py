@@ -276,6 +276,7 @@ class ConvertFiles:
             ("ca.i18n.json", "en.i18n.json", "ca.i18n.json"),
             ("main-ca.json", "main.json", "main-ca.json"),
             ("strings_ca.i18n.json", "strings.i18n.json", "strings_ca.i18n.json"),
+            ("strings_ca.json", "strings.json", "strings_ca.json"),
         ]
 
         for spec, src, tgt in files:
