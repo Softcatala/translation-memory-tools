@@ -9,7 +9,7 @@
             "target": "clementine-ca.po"
         },
         "strawberry": {
-            "url": "https://raw.githubusercontent.com/strawberrymusicplayer/strawberry/master/src/translations/ca.po",
+            "url": "https://raw.githubusercontent.com/strawberrymusicplayer/strawberry/master/src/translations/ca_ES.po",
             "type": "file",
             "target": "strawberry-ca.po"
         }
