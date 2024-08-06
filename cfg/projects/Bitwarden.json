@@ -1,0 +1,16 @@
+{
+    "project": "Bitwarden",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://contributing.bitwarden.com/contributing/#localization-l10n",
+    "fileset": {
+        "Bitwarden-clients": {
+            "url": "https://github.com/bitwarden/clients",
+            "type": "git"
+        },
+        "Bitwarden-mobile": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/bitwarden-mobile/AppResources.po",
+            "target": "bitwarden-mobile-ca.po",
+            "type": "file"
+        }
+    }
+}

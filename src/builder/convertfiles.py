@@ -259,15 +259,19 @@ class ConvertFiles:
         os.system(cmd)
 
     def _convert_json_files_to_po(self):
-        # Used for Privacy Badger
         for jsonfile in self.findFiles.find_recursive(
             self.convert_dir, "messages.json"
         ):
             if "/ca/" not in jsonfile:
                 continue
 
+            # Used for Privacy Badger
             self._convert_json_file_to_po(
                 jsonfile, "../en_US/messages.json", "../ca/messages.json"
+            )
+
+            self._convert_json_file_to_po(
+                jsonfile, "../en/messages.json", "../ca/messages.json"
             )
 
         files = [
