@@ -4,7 +4,7 @@
     "projectweb": "https://www.winehq.org/",
     "fileset": {
         "Wine": {
-            "url": "https://source.winehq.org/git/wine.git/blob_plain/HEAD:/po/ca.po",
+            "url": "https://raw.githubusercontent.com/wine-mirror/wine/master/po/ca.po",
             "type": "file",
             "target": "ca.po"
         }
