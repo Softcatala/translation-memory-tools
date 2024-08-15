@@ -9,5 +9,6 @@
             "duplicates": "msgctxt",
             "target": "annasarchive-ca.po"
         }
-    }
+    },
+    "disabled": true
 }
