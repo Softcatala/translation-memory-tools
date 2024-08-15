@@ -1,0 +1,13 @@
+{
+    "project": "Remmina",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://hosted.weblate.org/projects/remmina/",
+    "softcatala": true,
+    "fileset": {
+        "remmina": {
+            "url": "https://raw.githubusercontent.com/FreeRDP/Remmina/master/po/ca.po",
+            "type": "file",
+            "target": "remmina-ca.po"
+        }
+    }
+}
