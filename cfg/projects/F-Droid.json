@@ -3,10 +3,75 @@
     "license": "GPL-3.0-or-later",
     "projectweb": "https://f-droid.org/",
     "fileset": {
-        "F-Droid": {
+        "f-droid": {
             "url": "https://hosted.weblate.org/download/f-droid/f-droid/ca/?format=po",
             "type": "file",
-            "target": "ca.po"
+            "target": "f-droid.po"
+        },
+        "website-tutorials": {
+            "url": "https://hosted.weblate.org/download/f-droid/website-tutorials/ca/?format=po",
+            "type": "file",
+            "target": "website-tutorials.po"
+        },
+        "anti-features": {
+            "url": "https://hosted.weblate.org/download/f-droid/anti-features/ca/?format=po",
+            "type": "file",
+            "target": "anti-features.po"
+        },
+        "categories": {
+            "url": "https://hosted.weblate.org/download/f-droid/categories/ca/?format=po",
+            "type": "file",
+            "target": "categories.po"
+        },
+        "glossary-f-droid": {
+            "url": "https://hosted.weblate.org/download/f-droid/glossary-f-droid/ca/?format=po",
+            "type": "file",
+            "target": "glossary-f-droid.po"
+        },
+        "f-droid-metadata": {
+            "url": "https://hosted.weblate.org/download/f-droid/f-droid-metadata/ca/?format=po",
+            "type": "file",
+            "target": "f-droid-metadata.po"
+        },
+        "fdroidserver": {
+            "url": "https://hosted.weblate.org/download/f-droid/fdroidserver/ca/?format=po",
+            "type": "file",
+            "target": "fdroidserver.po"
+        },
+        "fdroiddata-config": {
+            "url": "https://hosted.weblate.org/download/f-droid/fdroiddata-config/ca/?format=po",
+            "type": "file",
+            "target": "fdroiddata-config.po"
+        },
+        "badge": {
+            "url": "https://hosted.weblate.org/download/f-droid/badge/ca/?format=po",
+            "type": "file",
+            "target": "badge.po"
+        },
+        "privileged-extension": {
+            "url": "https://hosted.weblate.org/download/f-droid/privileged-extension/ca/?format=po",
+            "type": "file",
+            "target": "privileged-extension.po"
+        },
+        "privileged-extension-metadata": {
+            "url": "https://hosted.weblate.org/download/f-droid/privileged-extension-metadata/ca/?format=po",
+            "type": "file",
+            "target": "privileged-extension-metadata.po"
+        },
+        "repomaker": {
+            "url": "https://hosted.weblate.org/download/f-droid/repomaker/ca/?format=po",
+            "type": "file",
+            "target": "repomaker.po"
+        },
+        "repomaker-javascript": {
+            "url": "https://hosted.weblate.org/download/f-droid/repomaker-javascript/ca/?format=po",
+            "type": "file",
+            "target": "repomaker-javascript.po"
+        },
+        "website": {
+            "url": "https://hosted.weblate.org/download/f-droid/website/ca/?format=po",
+            "type": "file",
+            "target": "website.po"
         }
     }
 }
