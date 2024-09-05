@@ -1,0 +1,11 @@
+{
+    "project": "Arduino IDE",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://explore.transifex.com/arduino-1/ide2/",
+    "fileset": {
+        "arduino-ide": {
+            "url": "https://github.com/arduino/arduino-ide.git",
+            "type": "git"
+        }
+    }
+}

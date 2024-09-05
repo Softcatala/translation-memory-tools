@@ -272,6 +272,7 @@ class ConvertFiles:
 
         files = [
             ("ca.json", "en.json", "ca.json"),
+            ("ca_ES.json", "en.json", "ca_ES.json"),
             ("ca.json", "en-US.json", "ca.json"),
             ("ca.i18n.json", "en.i18n.json", "ca.i18n.json"),
             ("main-ca.json", "main.json", "main-ca.json"),
