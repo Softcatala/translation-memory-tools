@@ -270,7 +270,7 @@ class ConvertFiles:
                 jsonfile, "../en_US/messages.json", "../ca/messages.json"
             )
 
-            # Used for Privacy Badger
+            # Used for Bitwarden
             self._convert_json_file_to_po(
                 jsonfile, "../en/messages.json", "../ca/messages.json"
             )
