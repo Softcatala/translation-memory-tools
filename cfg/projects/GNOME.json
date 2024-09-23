@@ -34,6 +34,11 @@
             "type": "compressed",
             "target": "evolution.ui.tar.gz"
         },
+        "incubator": {
+            "url": "https://l10n.gnome.org/languages/ca/incubator/ui.tar.gz",
+            "type": "compressed",
+            "target": "incubator.ui.tar.gz"
+        },
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
             "type": "compressed",
