@@ -1,0 +1,27 @@
+{
+    "project": "PocketCasts",
+    "license": "MPL-2.0",
+    "projectweb": "https://github.com/orgs/Automattic/",
+    "fileset": {
+        "PocketCasts-ios": {
+            "url": "https://translate.wordpress.com/projects/pocket-casts/ios/ca/default/export-translations",
+            "type": "file",
+            "target": "pocket-casts-ios-ca.po"
+        },
+        "PocketCasts-android": {
+            "url": "https://translate.wordpress.com/projects/pocket-casts/android/ca/default/export-translations",
+            "type": "file",
+            "target": "pocket-casts-android-ca.po"
+        },
+        "PocketCasts-webplayer": {
+            "url": "https://translate.wordpress.com/projects/pocket-casts/webplayer/ca/default/export-translations",
+            "type": "file",
+            "target": "pocket-casts-webplayer-ca.po"
+        },
+        "PocketCasts-desktop": {
+            "url": "https://translate.wordpress.com/projects/pocket-casts/desktop/ca/default/export-translations",
+            "type": "file",
+            "target": "pocket-casts-desktop-ca.po"
+        }
+    }
+}
