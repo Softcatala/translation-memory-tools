@@ -3,10 +3,20 @@
     "license": "GPL-3.0-only",
     "projectweb": "https://hosted.weblate.org/projects/weblate/",
     "fileset": {
-        "Weblate": {
-            "url": "https://hosted.weblate.org/",
-            "retrieval_pattern": "weblate",
-            "type": "weblate"
+        "Weblate-django": {
+            "url": "https://raw.githubusercontent.com/WeblateOrg/weblate/refs/heads/main/weblate/locale/ca/LC_MESSAGES/django.po",
+            "type": "file",
+            "target": "weblate-django.po"
+        },
+        "Weblate-djangojs": {
+            "url": "https://raw.githubusercontent.com/WeblateOrg/weblate/refs/heads/main/weblate/locale/ca/LC_MESSAGES/djangojs.po",
+            "type": "file",
+            "target": "weblate-djangojs.po"
+        },
+        "Weblate-docs": {
+            "url": "https://raw.githubusercontent.com/WeblateOrg/weblate/refs/heads/main/docs/locales/ca/LC_MESSAGES/docs.po",
+            "type": "file",
+            "target": "weblate-docs.po"
         }
     }
 }
