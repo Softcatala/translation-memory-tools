@@ -18,10 +18,20 @@
             "type": "file",
             "target": "yunohost-moulinette-ca.po"
         },
-        "yunohost-SSOwat": {
-            "url": "https://translate.yunohost.org/download/yunohost/SSOwat/ca/?format=po",
+        "yunohost-portal": {
+            "url": "https://translate.yunohost.org/download/yunohost/portal/ca/?format=po",
             "type": "file",
-            "target": "yunohost-ssowat-ca.po"
+            "target": "yunohost-portal-ca.po"
+        },
+        "yunohost-readme-generator": {
+            "url": "https://translate.yunohost.org/download/yunohost/readme-generator/ca/?format=po",
+            "type": "file",
+            "target": "yunohost-readme-generator-ca.po"
+        },
+        "yunohost-store": {
+            "url": "https://translate.yunohost.org/download/yunohost/store/ca/?format=po",
+            "type": "file",
+            "target": "yunohost-store-ca.po"
         }
     }
 }
