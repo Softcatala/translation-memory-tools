@@ -53,7 +53,6 @@ class DownloadFile(object):
                     )
                 timeout = timeout * 4
             except Exception as e:
-                print(type(e))
                 logging.error(
                     f"Error on urlopen_with_retry. URL: '{url}', error: '{e}'"
                 )

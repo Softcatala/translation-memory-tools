@@ -30,7 +30,7 @@ import tempfile
 
 
 class FileSet:
-    invidual_pos_dir = ""
+    individual_pos_dir = ""
 
     def __init__(
         self, project_name, project_id, name, url, filename, parent_fileset=None
@@ -68,7 +68,7 @@ class FileSet:
     def set_out_directory(self, out_directory):
         POS_DIR = "individual_pos/"
         self.out_directory = out_directory
-        self.invidual_pos_dir = os.path.join(
+        self.individual_pos_dir = os.path.join(
             out_directory, POS_DIR, self.project_id, self.name.lower()
         )
 
@@ -174,8 +174,8 @@ class FileSet:
             self._copy_to_output()
 
     def _copy_to_output(self):
-        if not os.path.exists(self.invidual_pos_dir):
-            os.makedirs(self.invidual_pos_dir)
+        if not os.path.exists(self.individual_pos_dir):
+            os.makedirs(self.individual_pos_dir)
 
         findFiles = FindFiles()
         files = findFiles.find_recursive(self.temp_dir, "*.po")
@@ -183,13 +183,13 @@ class FileSet:
             dirname = os.path.dirname(source)
             if dirname != self.temp_dir:
                 d = os.path.join(
-                    self.invidual_pos_dir, dirname[len(self.temp_dir) + 1 :]
+                    self.individual_pos_dir, dirname[len(self.temp_dir) + 1 :]
                 )
                 if not os.path.exists(d):
                     os.makedirs(d)
 
             target = os.path.join(
-                self.invidual_pos_dir, source[len(self.temp_dir) + 1 :]
+                self.individual_pos_dir, source[len(self.temp_dir) + 1 :]
             )
             shutil.copy(source, target)
 
