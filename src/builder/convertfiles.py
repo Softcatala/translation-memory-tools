@@ -34,7 +34,7 @@ class ConversorID(str, Enum):
     Android = "android"
     Properties = "properties"
     Json = "json"
-    Csv = "cvs"
+    Csv = "csv"
     Apple = "apple"
 
 
