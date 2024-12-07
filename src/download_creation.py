@@ -111,7 +111,7 @@ class TranslationMemory(dict):
         self.__setitem__("project_id", project_id)
         self.__setitem__("projectweb", projectweb)
 
-        if license == Licenses().PROPIETARY:
+        if license == Licenses().PROPRIETARY:
             self.__setitem__("po_file_text", "")
             self.__setitem__("po_file_link", "")
             self.__setitem__("tmx_file_text", "")
@@ -231,7 +231,7 @@ def build_combined_memory(
     create_zipfile(tmx_directory, get_tmx_file(filename), out_directory)
 
     for project_dto in projects:
-        if project_dto.license == Licenses().PROPIETARY:
+        if project_dto.license == Licenses().PROPRIETARY:
             continue
 
         update_zipfile(po_directory, filename, project_dto.filename, out_directory)
