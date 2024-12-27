@@ -157,7 +157,7 @@ class GenerateQualityReports:
             return
 
         if os.stat(txt_file).st_size == 0:
-            logging.info("No translations in file:" + txt_file)
+            logging.debug("No translations in file:" + txt_file)
             return
 
         start_time = time.time()
