@@ -52,15 +52,16 @@ class GenerateQualityReports:
 
         if LOGSTDOUT == "0":
             console = logging.StreamHandler()  # By default uses stderr
+            if LOGLEVEL != "INFO":
+                console.setFormatter(formatter)
         else:
             console = logging.StreamHandler(stream=sys.stdout)
+            console.setFormatter(formatter)
 
         logging.basicConfig(filename=logfile, level=logging.DEBUG)
         logger = logging.getLogger("")
         console.setLevel(LOGLEVEL)
 
-        if LOGLEVEL != "INFO":
-            console.setFormatter(formatter)
 
         logger.addHandler(console)
 
