@@ -20,3 +20,9 @@ docker-run-builder: docker-build-builder docker-build-lt
 	docker build -t tmt-data . -f docker/dockerfile-data;
 	./docker/stop-docker.sh;
 
+install-dev-tool:
+	pip install black==24.10.0 flake8==7.1.1
+
+run-dev-tool:
+	flake8 src/builder/ --ignore E501,W503,E203,E722,E402
+	black src/

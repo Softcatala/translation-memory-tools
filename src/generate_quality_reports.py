@@ -62,7 +62,6 @@ class GenerateQualityReports:
         logger = logging.getLogger("")
         console.setLevel(LOGLEVEL)
 
-
         logger.addHandler(console)
 
         fh = logging.FileHandler(logfile_error)

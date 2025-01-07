@@ -20,7 +20,7 @@ jobs:
         python --version
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install black flake8
+        make install-dev-tool
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
@@ -34,9 +34,6 @@ jobs:
     - name: Test
       run: |
         cd src && nose2
-    - name: black
+    - name: dev tools
       run: |
-        black --check src/
-    - name: flake8
-      run: |
-        flake8 src/builder/ --ignore E501,W503,E203,E722,E402
+        make run-dev-tool
