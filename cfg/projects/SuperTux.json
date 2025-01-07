@@ -7,36 +7,6 @@
             "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/locale/ca.po",
             "type": "file",
             "target": "supertux-ca.po"
-        },
-        "SuperTux-bonus1": {
-            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/levels/bonus1/ca.po",
-            "type": "file",
-            "target": "supertux-bonus1-ca.po"
-        },
-        "SuperTux-bonus2": {
-            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/levels/bonus2/ca.po",
-            "type": "file",
-            "target": "supertux-bonus2-ca.po"
-        },
-        "SuperTux-bonus3": {
-            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/levels/bonus3/ca.po",
-            "type": "file",
-            "target": "supertux-bonus3-ca.po"
-        },
-        "SuperTux-world1": {
-            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/levels/world1/ca.po",
-            "type": "file",
-            "target": "supertux-world1-ca.po"
-        },
-        "SuperTux-world2": {
-            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/levels/world2/ca.po",
-            "type": "file",
-            "target": "supertux-world2-ca.po"
-        },
-        "SuperTux-halloween2014": {
-            "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/data/levels/halloween2014/ca.po",
-            "type": "file",
-            "target": "supertux-halloween2014-ca.po"
         }
     }
 }
