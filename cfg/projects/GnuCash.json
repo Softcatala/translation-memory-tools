@@ -1,7 +1,7 @@
 {
     "project": "GNUCash",
     "license": "GPL-3.0-or-later",
-    "projectweb": "https://github.com/Gnucash/gnucash/blob/stable/po/README",
+    "projectweb": "https://wiki.gnucash.org/wiki/Translation",
     "fileset": {
         "GNUCash": {
             "url": "https://raw.githubusercontent.com/Gnucash/gnucash/refs/heads/stable/po/ca.po",
