@@ -3,10 +3,20 @@
     "license": "BSD-3-Clause",
     "projectweb": "http://trac.edgewall.org/ticket/7353",
     "fileset": {
-        "main": {
-            "url": "http://trac.edgewall.org/export/HEAD/trunk/trac/locale/ca/LC_MESSAGES/messages.po",
+        "messages": {
+            "url": "https://raw.githubusercontent.com/edgewall/trac/refs/heads/trunk/trac/locale/ca/LC_MESSAGES/messages.po",
             "type": "file",
-            "target": "main-ca.po"
+            "target": "messages.po"
+        },
+        "messages-js": {
+            "url": "https://raw.githubusercontent.com/edgewall/trac/refs/heads/trunk/trac/locale/ca/LC_MESSAGES/messages-js.po",
+            "type": "file",
+            "target": "messages-js.po"
+        },
+        "tracini": {
+            "url": "https://raw.githubusercontent.com/edgewall/trac/refs/heads/trunk/trac/locale/ca/LC_MESSAGES/tracini.po",
+            "type": "file",
+            "target": "tracini.po"
         }
     }
 }
