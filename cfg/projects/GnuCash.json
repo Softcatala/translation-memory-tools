@@ -1,12 +1,12 @@
 {
     "project": "GNUCash",
     "license": "GPL-3.0-or-later",
-    "projectweb": "https://www.gnucash.org/",
+    "projectweb": "https://github.com/Gnucash/gnucash/blob/stable/po/README",
     "fileset": {
         "GNUCash": {
-            "url": "https://hosted.weblate.org/",
-            "retrieval_pattern": "gnucash",
-            "type": "weblate"
+            "url": "https://raw.githubusercontent.com/Gnucash/gnucash/refs/heads/stable/po/ca.po",
+            "type": "file",
+            "target": "gnucash-ca.po"
         }
     }
 }
