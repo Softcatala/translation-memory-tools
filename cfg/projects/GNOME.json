@@ -5,12 +5,12 @@
     "softcatala": true,
     "fileset": {
         "gnome-ui": {
-            "url": "https://l10n.gnome.org/languages/ca/gnome-47/ui.tar.gz",
+            "url": "https://l10n.gnome.org/languages/ca/gnome-48/ui.tar.gz",
             "type": "compressed",
             "target": "gnome-ui.tar.gz"
         },
         "gnome-doc": {
-            "url": "https://l10n.gnome.org/languages/ca/gnome-47/doc.tar.gz",
+            "url": "https://l10n.gnome.org/languages/ca/gnome-48/doc.tar.gz",
             "type": "compressed",
             "target": "gnome-doc.tar.gz"
         },
