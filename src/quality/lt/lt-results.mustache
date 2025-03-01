@@ -1,7 +1,7 @@
 <a id="inici{{uuid}}"></a>
 <h1>Fitxer analitzat: {{filename}}</h1>
 {{#hasunknownwords}}
-<hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
+<hr/>Ves a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
 <h2>Paraules desconegudes ({{.}})</h2>
 <!--<p>{{#unknownwords}}{{.}}, {{/unknownwords}}</p>-->
 {{/hasunknownwords}}
@@ -20,7 +20,7 @@
 {{#has_uw_symbol}}<p><b>Amb símbol:</b> {{#uw_symbol}}<span title="{{replacements}}">{{{context_error}}}</span>, {{/uw_symbol}}</p>{{/has_uw_symbol}}
 
 <a id="indexregles{{uuid}}"></a>
-<hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
+<hr/>Ves a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
 <h2>Regles ordenades per freqüència</h2>
 <div class="twocolumns">
     <table class="table">
@@ -32,7 +32,7 @@
 <h2>Errors trobats per regla</h2>
 {{#rulelist}}
 <a id="{{ruleId}}{{uuid}}"></a>
-<hr/>Vés a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
+<hr/>Ves a: [<a href="#inici{{uuid}}">Inici</a>] [<a href="#indexregles{{uuid}}">Índex de regles</a>]<hr/>
 <b>Regla: {{ruleId}} ({{count}}) {{#truncated}}(Només es mostren els 100 primers!){{/truncated}}</b>
 <br/><br/>
 {{#rule_matches}}
