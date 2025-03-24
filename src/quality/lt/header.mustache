@@ -4,34 +4,7 @@
         <title>Anàlisi LanguageTool i Pology</title>
         <meta charset="UTF-8"/>
         <meta name="robots" content="noindex">
-        <style type="text/css"> 
-            .twocolumns {
-            -webkit-column-count: 2; /* Chrome, Safari, Opera */
-            -moz-column-count: 2; /* Firefox */
-            column-count: 2;
-            }
-            .hiddenSpellError {
-	    padding-bottom: 2px;
-	    background-image: url("img/squiggle_red.png");
-	    background-repeat: repeat-x;
-	    background-position: left bottom;
-	    cursor: default;
-	    }
-	    .hiddenGrammarError {
-	    padding-bottom: 2px;
-	    background-image: url("img/squiggle_blue.png");
-	    background-repeat: repeat-x;
-	    background-position: left bottom;
-	    cursor: default;
-	    }
-	    .hiddenGreenError {
-	    padding-bottom: 2px;
-	    background-image: url("img/squiggle_green.png");
-	    background-repeat: repeat-x;
-	    background-position: left bottom;
-	    cursor: default;
-	    }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/report.css">
     </head>
     <body>
     <p>Aquest informe és generat el {{date}} amb les eines {{languagetool}} i Pology (amb aquestes <a href='https://github.com/Softcatala/translation-memory-tools/blob/main/cfg/quality/parameters.yaml'>regles</a>). El seu contingut és orientatiu i cal que useu el vostre propi criteri a l'hora d'aplicar les esmenes que considereu adients. Tingueu en compte que les eines poden donar falsos positius i pot haver-hi qüestions estilístiques o terminològiques en les quals vulgueu aplicar altres criteris. Aquest informe es generà setmanalment.

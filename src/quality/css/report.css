@@ -1,0 +1,91 @@
+.twocolumns {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+.hiddenSpellError {
+    padding-bottom: 2px;
+    background-image: url("../img/squiggle_red.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    cursor: default;
+}
+
+.hiddenGrammarError {
+    padding-bottom: 2px;
+    background-image: url("../img/squiggle_blue.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    cursor: default;
+}
+
+.hiddenGreenError {
+    padding-bottom: 2px;
+    background-image: url("../img/squiggle_green.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    cursor: default;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+
+.table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.twocolumns {
+    display: flex;
+    gap: 20px;
+}
+
+.error-highlight {
+    background-color: #ffdddd;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
