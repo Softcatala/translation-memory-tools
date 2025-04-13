@@ -1,0 +1,32 @@
+{
+    "project": "MetaBrainz",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://metabrainz.org/",
+    "fileset": {
+        "musicbrainz-server": {
+            "url": "https://github.com/metabrainz/musicbrainz-server",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "picard": {
+            "url": "https://github.com/metabrainz/picard",
+            "type": "git",
+            "pattern": ".*?ca.po"
+        },
+        "picard-website": {
+            "url": "https://github.com/metabrainz/picard-website",
+            "type": "git",
+            "pattern": ".*?/ca/LC_MESSAGES/.*\\.po"
+        },
+        "picard-docs": {
+            "url": "https://github.com/metabrainz/picard-docs",
+            "type": "git",
+            "pattern": ".*?/ca/LC_MESSAGES/.*\\.po"
+        },
+        "critiquebrainz": {
+            "url": "https://github.com/metabrainz/critiquebrainz",
+            "type": "git",
+            "pattern": ".*?/ca/LC_MESSAGES/.*\\.po"
+        }
+    }
+}
