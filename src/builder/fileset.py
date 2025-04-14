@@ -216,5 +216,5 @@ class FileSet:
         findFiles = FindFiles()
 
         for filename in findFiles.find_recursive(self.temp_dir, "*"):
-            if re.match(self.pattern, filename) is None and os.path.exists(filename):
+            if re.match(self.pattern, filename) is None and os.path.lexists(filename):
                 os.remove(filename)
