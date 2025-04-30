@@ -1,0 +1,12 @@
+{
+    "project": "KLog",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://www.klog.xyz",
+    "fileset": {
+        "klog": {
+            "url": "https://raw.githubusercontent.com/ea4k/klog/master/src/translations/klog_ca.ts",
+            "type": "file",
+            "target": "klog-ca.ts"
+        }
+    }
+}
