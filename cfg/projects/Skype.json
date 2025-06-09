@@ -1,0 +1,14 @@
+{
+    "project": "Skype",
+    "projectweb": "https://ca.wikipedia.org/wiki/Skype",
+    "license": "propietària",
+    "quality_report": false,
+    "fileset": {
+        "Skype": {
+            "url": "https://github.com/pereorga/software-translations.git",
+            "type": "git",
+            "duplicates": "msgctxt",
+            "pattern": ".*?/skype/.*?"
+        }
+    }
+}

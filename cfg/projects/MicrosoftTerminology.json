@@ -1,19 +1,14 @@
 {
     "project": "Microsoft Terminology",
-    "projectweb": "https://www.microsoft.com/language/",
+    "projectweb": "https://learn.microsoft.com/en-us/globalization/reference/microsoft-terminology",
     "license": "propietària",
     "quality_report": false,
     "fileset": {
         "Microsoft Terminology": {
             "url": "../source-pos/microsoft/microsoft-terms.po",
             "type": "local-file",
-            "target": "microsoft-terms.po"
-        },
-        "Skype": {
-            "url": "https://github.com/pereorga/software-translations.git",
-            "type": "git",
-            "duplicates": "msgctxt",
-            "pattern": ".*?/skype/.*?"
+            "target": "microsoft-terms.po",
+            "duplicates": "msgctxt"
         }
     }
 }
