@@ -19,9 +19,6 @@
 
 from builder.weblatefileset import WeblateFileSet
 import unittest
-import polib
-import tempfile
-import hashlib
 from unittest.mock import patch
 
 
