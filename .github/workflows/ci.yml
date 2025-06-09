@@ -9,18 +9,22 @@ jobs:
 
     runs-on: ubuntu-22.04
 
+    container:
+      image: python:3.12.2-slim-bullseye
+
     steps:
     - uses: actions/checkout@v4
     - name: Install dependencies
       run: |
         export DEBIAN_FRONTEND=noninteractive
         sudo apt-get clean && sudo apt-get update
-        sudo apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git wget g++ curl subversion python3 python3-pip -y
-        sudo gem install i18n-translators-tools
+        apt-get update && apt-get install python3-dev libhunspell-dev libyaml-dev gettext zip mercurial bzr ruby git curl wget g++ subversion bzip2 make -y
+        gem install i18n-translators-tools
         python --version
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         make install-dev-tool
+
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
