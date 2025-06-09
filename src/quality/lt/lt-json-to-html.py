@@ -72,7 +72,6 @@ def getRuleById(rulelist, ruleId):
     for x in rulelist:
         if x.ruleId == ruleId:
             return x
-            break
 
 
 _digits = re.compile(r"\d")
