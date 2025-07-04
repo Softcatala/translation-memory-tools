@@ -4,21 +4,69 @@
     "projectweb": "https://jellyfin.org/",
     "fileset": {
         "Jellyfin": {
-            "url": "https://github.com/jellyfin/jellyfin.git",
-            "type": "git"
-        },
-        "Jellyfin-android": {
-            "url": "https://github.com/jellyfin/jellyfin-android.git",
-            "type": "git"
-        },
-        "Jellyfin-androidtv": {
-            "url": "https://github.com/jellyfin/jellyfin-androidtv.git",
-            "type": "git"
-        },
-        "Jellyfin-mpv-shim": {
-            "url": "https://raw.githubusercontent.com/jellyfin/jellyfin-mpv-shim/master/jellyfin_mpv_shim/messages/ca/LC_MESSAGES/base.po",
+            "url": "https://translate.jellyfin.org/download/jellyfin/jellyfin-core/ca/?format=po",
             "type": "file",
-            "target": "ca.po"
+            "target": "jellyfin-core-ca.po"
+        },
+        "Jellyfin Desktop": {
+            "url": "https://translate.jellyfin.org/download/jellyfin/jellyfin-desktop/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-desktop-ca.po"
+        },
+        "Jellyfin Expo": {
+            "url": "https://translate.jellyfin.org/download/jellyfin/jellyfin-expo/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-expo-ca.po"
+        },
+        "Jellyfin Kodi": {
+            "url": "https://translate.jellyfin.org/download/jellyfin/jellyfin-kodi/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-desktop-ca.po"
+        },
+        "Jellyfin Web": {
+            "url": "https://translate.jellyfin.org/download/jellyfin/jellyfin-web/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-web-ca.po"
+        },
+        "Jellyfin Jellycon": {
+            "url": "https://translate.jellyfin.org/download/jellycon/jellycon/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-jellycon-ca.po"
+        },
+        "Jellyfin Android": {
+            "url": "https://translate.jellyfin.org/download/jellyfin-android/jellyfin-android/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-android-ca.po"
+        },
+        "Jellyfin Android Fastlane": {
+            "url": "https://translate.jellyfin.org/download/jellyfin-android/jellyfin-android-fastlane/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-android-fastlane-ca.po"
+        },
+        "Jellyfin Android TV": {
+            "url": "https://translate.jellyfin.org/download/jellyfin-android/jellyfin-androidtv/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-androidtv-ca.po"
+        },
+        "Jellyfin Android TV Fastlane": {
+            "url": "https://translate.jellyfin.org/download/jellyfin-android/jellyfin-androidtv-fastlane/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-androidtv-fastlane-ca.po"
+        },
+        "Jellyfin Roku": {
+            "url": "https://translate.jellyfin.org/download/jellyfin-roku/jellyfin-roku/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-roku-ca.po"
+        },
+        "Jellyfin Vue": {
+            "url": "https://translate.jellyfin.org/download/jellyfin-vue/jellyfin-vue/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-vue-ca.po"
+        },
+        "Jellyfin Swiftfin": {
+            "url": "https://translate.jellyfin.org/download/swiftfin/swiftfin/ca/?format=po",
+            "type": "file",
+            "target": "jellyfin-swiftfin-ca.po"
         }
     }
 }
