@@ -5,7 +5,8 @@
     "fileset": {
         "PioneerSpaceSimulator": {
             "url": "https://github.com/pioneerspacesim/pioneer",
-            "type": "git"
+            "type": "git",
+            "po_preprocessing": "remove_untranslated"
         }
     }
 }
