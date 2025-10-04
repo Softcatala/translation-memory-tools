@@ -103,7 +103,7 @@ class WeblateFileSet(FileSet):
 
     def _get_headers(self):
         token = self._get_auth_api_token()
-        headers = {"Authorization": f"Token {token}", "User-Agent": "Mozilla/5.0"}
+        headers = {"Authorization": f"Token {token}"}
         return headers
 
     def _get_projects_slugs(self):
