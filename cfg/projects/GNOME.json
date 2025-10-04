@@ -39,6 +39,11 @@
             "type": "compressed",
             "target": "incubator.ui.tar.gz"
         },
+        "librem": {
+            "url": "https://l10n.gnome.org/languages/ca/librem5/ui.tar.gz",
+            "type": "compressed",
+            "target": "librem5.ui.tar.gz"
+        },
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
             "type": "compressed",
@@ -93,11 +98,6 @@
             "url": "https://raw.githubusercontent.com/dialect-app/po/master/ui/ca.po",
             "type": "file",
             "target": "dialect-ca.po"
-        },
-        "Drawing": {
-            "url": "https://raw.githubusercontent.com/maoschanz/drawing/master/po/ca.po",
-            "type": "file",
-            "target": "drawing-ca.po"
         },
         "FontDownloader": {
             "url": "https://raw.githubusercontent.com/GustavoPeredo/Font-Downloader/master/po/ca.po",
@@ -175,7 +175,7 @@
             "target": "bottles-ca.po"
         },
         "EasyEffects": {
-            "url": "https://raw.githubusercontent.com/wwmm/easyeffects/master/po/ca.po",
+            "url": "https://raw.githubusercontent.com/wwmm/easyeffects/refs/heads/master/po/ca/easyeffects.po",
             "type": "file",
             "target": "easyeffects-ca.po"
         },
