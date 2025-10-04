@@ -32,11 +32,15 @@ class DownloadFile(object):
         timeout = TIMEOUT
         for ntry in range(NTRIES):
             try:
+                if "hosted.weblate.org" in url:
+                    headers = {}
+                else:
+                    headers = {
+                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox"
+                    }
                 req = Request(
                     url,
-                    headers={
-                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64;) Gecko Firefox"
-                    },
+                    headers=headers,
                 )
                 return urlopen(req, timeout=timeout)
             except HTTPError as e:
