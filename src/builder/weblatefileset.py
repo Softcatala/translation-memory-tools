@@ -111,8 +111,9 @@ class WeblateFileSet(FileSet):
         url = urllib.parse.urljoin(self.url, "/api/projects/")
         while url is not None:
             projects = self._api_json_call(url)
+            _len = "unknown" if "count" not in projects else projects["count"]
             logging.debug(
-                f"WeblateFileSet._get_projects_slugs got {len(projects)} projects"
+                f"WeblateFileSet._get_projects_slugs got {_len} in {len(projects)} pages"
             )
             for project_dict in projects["results"]:
                 slug = project_dict["slug"]
