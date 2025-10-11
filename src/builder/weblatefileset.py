@@ -181,5 +181,5 @@ class WeblateFileSet(FileSet):
 
         self.build()
         logging.info(
-            f"WeblateFileSet. do {self.cached} cached API requests, done {self.requests}"
+            f"WeblateFileSet. do. cached API requests: {self.cached}, requests done: {self.requests}"
         )
