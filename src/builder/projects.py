@@ -84,9 +84,8 @@ class Projects(object):
             single_thread = True
 
         if single_thread:
-            with ProcessPoolExecutor() as executor:
-                for project in self.projects:
-                    project.do()
+            for project in self.projects:
+                project.do()
         else:
             # We use Processes instead of Threads because some filesets (e.g. transifex) need to
             # to change the process directory to work.
