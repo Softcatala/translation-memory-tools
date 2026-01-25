@@ -89,9 +89,9 @@ class WeblateFileSet(FileSet):
         return None
 
     def _get_components(self, url):
+        components = []
         while url is not None:
             json = self._api_json_call(url)
-            components = []
 
             for component_dict in json["results"]:
                 slug = component_dict["slug"]
