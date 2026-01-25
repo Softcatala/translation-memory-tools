@@ -69,11 +69,9 @@ class DownloadFile(object):
         try:
             msg = "Downloading file '{0}' to {1}".format(url, filename)
             logging.info(msg)
-
-            infile = self.urlopen_with_retry(url)
-            output = open(filename, "wb")
-            output.write(infile.read())
-            output.close()
+            with self.urlopen_with_retry(url) as infile:
+                with open(filename, "wb") as output:
+                    output.write(infile.read())
         except Exception:
             msg = "Error downloading file '{0}' to {1}".format(url, filename)
             logging.error(msg)
