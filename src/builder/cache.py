@@ -60,4 +60,4 @@ class Cache:
         filename = os.path.join(self.directory, self._get_cache_filename(url))
 
         with open(filename, "w") as stream:
-            content = stream.write(content)
+            stream.write(content)
