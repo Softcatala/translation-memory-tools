@@ -19,6 +19,7 @@
 
 import json
 import logging
+
 from .downloadfile import DownloadFile
 from .fileset import FileSet
 from .filefileset import FileFileSet
@@ -34,43 +35,39 @@ class PontoonFileSet(FileSet):
         self.project = project
 
     def expand_dynamic(self):
-        # Download JSON file
-        url = (
-            self.url
-            + 'graphql?query={locale(code:"ca"){name,localizations{project{name,slug}}}}'
-        )
+        url = self.url + "api/v2/locales/ca/"
+
         download = DownloadFile()
         download.get_file(url, self.filename)
 
         # The Pontoon project has a single fileset assigned (this)
-        # We empty the fileset and add dynamically the ones referenced by Gerrit
+        # We empty the fileset and add dynamically the ones referenced
         self.project.filesets = []
 
         with open(self.filename) as json_data:
             data = json.load(json_data)
 
-            # Get every project entry
-            # print(data['data']['locale'])
-            for value in data["data"]["locale"]["localizations"]:
-                value = value["project"]
-                name = None
-                slug = None
+            localizations = data.get("localizations", [])
 
-                for prj_attribute, prj_value in value.items():
-                    if prj_attribute == "name":
-                        name = prj_value
-                    elif prj_attribute == "slug":
-                        slug = prj_value
+            for localization in localizations:
+                project_data = localization.get("project", {})
+                name = project_data.get("name")
+                slug = project_data.get("slug")
 
-                url = self.url + "translation-memory/ca.{0}.tmx".format(slug)
-                fileset = FileFileSet(
-                    self.project_name, self.project_id, name, url, slug + ".tmx", self
-                )
-
-                logging.debug(
-                    "PontoonFileSet. Adding {0}-{1}".format(self.project_name, name)
-                )
-                self.project.add_fileset(fileset)
+                if name and slug:
+                    tmx_url = self.url + "translation-memory/ca.{0}.tmx".format(slug)
+                    fileset = FileFileSet(
+                        self.project_name,
+                        self.project_id,
+                        name,
+                        tmx_url,
+                        slug + ".tmx",
+                        self,
+                    )
+                    logging.debug(
+                        "PontoonFileSet. Adding {0}-{1}".format(self.project_name, name)
+                    )
+                    self.project.add_fileset(fileset)
 
         # All the new filesets have been added re-process project now
         logging.info(
@@ -78,5 +75,4 @@ class PontoonFileSet(FileSet):
                 len(self.project.filesets)
             )
         )
-
         self.project.report_errors = False
