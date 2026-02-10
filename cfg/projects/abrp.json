@@ -1,0 +1,11 @@
+{
+    "project": "ABRP",
+    "license": "Apache-2.0",
+    "projectweb": "https://github.com/Iternio-Planning-AB/abrp-translations",
+    "fileset": {
+        "ABRP": {
+            "url": "https://github.com/Iternio-Planning-AB/abrp-translations",
+            "type": "git"
+        }
+    }
+}
