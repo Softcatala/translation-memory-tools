@@ -14,7 +14,6 @@ WORKDIR pology
 # Pology does not do releases. We do not fix a version and rollout automatically the latest rules fixes
 RUN mkdir build && cd build && cmake .. && make && make install
 
-
 # Locale ca-ES
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales
 

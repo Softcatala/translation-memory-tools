@@ -19,6 +19,7 @@
 
 import logging
 import os
+
 from .converttmx import ConvertTmx
 from .findfiles import FindFiles
 from .convertini import ConvertIni
