@@ -4,7 +4,7 @@
     "projectweb": "https://hosted.weblate.org/engage/tt-rss/",
     "fileset": {
         "tt-rss": {
-            "url": "https://git.tt-rss.org/fox/tt-rss.git/plain/locale/ca_CA/LC_MESSAGES/messages.po",
+            "url": "https://raw.githubusercontent.com/tt-rss/tt-rss/refs/heads/main/locale/ca_CA/LC_MESSAGES/messages.po",
             "type": "file",
             "target": "tt-rss-ca.po"
         }

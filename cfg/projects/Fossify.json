@@ -76,11 +76,15 @@
             "type": "git"
         },
         "Fossify-App-Launcher": {
-            "url": "https://github.com/FossifyOrg/App-Launcher.git",
+            "url": "https://github.com/FossifyOrg/Launcher.git",
             "type": "git"
         },
         "Fossify-reprint": {
             "url": "https://github.com/FossifyOrg/reprint.git",
+            "type": "git"
+        },
+        "Fossify-paint": {
+            "url": "https://github.com/FossifyOrg/Paint.git",
             "type": "git"
         }
     }

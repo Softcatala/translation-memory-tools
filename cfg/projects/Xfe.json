@@ -4,7 +4,7 @@
     "projectweb": "http://roland65.free.fr/xfe/",
     "fileset": {
         "xfe": {
-            "url": "https://fossies.org/linux/xfe/po/ca.po?m=b",
+            "url": "https://raw.githubusercontent.com/roland65/xfe/refs/heads/main/po/ca.po",
             "type": "file",
             "target": "xfe-ca.po"
         }
