@@ -5,9 +5,9 @@
     "softcatala": true,
     "fileset": {
         "Pidgin": {
-            "url": "https://keep.imfreedom.org/pidgin/pidgin/",
-            "type": "mercurial",
-            "pattern": ".*/ca\\.po.*"
+            "url": "https://keep.imfreedom.org/pidgin/pidgin/raw-file/v2.14.14/po/ca.po",
+            "type": "file",
+            "target": "pidgin-ca.po"
         }
     }
 }

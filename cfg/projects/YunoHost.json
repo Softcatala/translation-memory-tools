@@ -4,34 +4,24 @@
     "projectweb": "https://translate.yunohost.org/projects/yunohost/",
     "fileset": {
         "yunohost-admin": {
-            "url": "https://translate.yunohost.org/download/yunohost/admin/ca/?format=po",
-            "type": "file",
-            "target": "yunohost-admin-ca.po"
+            "url": "https://github.com/YunoHost/yunohost-admin",
+            "type": "git"
         },
         "yunohost-core": {
-            "url": "https://translate.yunohost.org/download/yunohost/core/ca/?format=po",
-            "type": "file",
-            "target": "yunohost-core-ca.po"
+            "url": "https://github.com/YunoHost/yunohost",
+            "type": "git"
         },
         "yunohost-moulinette": {
-            "url": "https://translate.yunohost.org/download/yunohost/moulinette/ca/?format=po",
-            "type": "file",
-            "target": "yunohost-moulinette-ca.po"
+            "url": "https://github.com/YunoHost/moulinette",
+            "type": "git"
         },
         "yunohost-portal": {
-            "url": "https://translate.yunohost.org/download/yunohost/portal/ca/?format=po",
-            "type": "file",
-            "target": "yunohost-portal-ca.po"
+            "url": "https://github.com/YunoHost/yunohost-portal",
+            "type": "git"
         },
-        "yunohost-readme-generator": {
-            "url": "https://translate.yunohost.org/download/yunohost/readme-generator/ca/?format=po",
-            "type": "file",
-            "target": "yunohost-readme-generator-ca.po"
-        },
-        "yunohost-store": {
-            "url": "https://translate.yunohost.org/download/yunohost/store/ca/?format=po",
-            "type": "file",
-            "target": "yunohost-store-ca.po"
+        "yunohost-apps": {
+            "url": "https://github.com/YunoHost/apps_translations",
+            "type": "git"
         }
     }
 }
