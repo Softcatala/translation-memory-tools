@@ -1,0 +1,11 @@
+{
+    "project": "Anki",
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://apps.ankiweb.net/",
+    "fileset": {
+        "Anki": {
+            "url": "https://github.com/ankitects/anki-core-i18n",
+            "type": "git"
+        }
+    }
+}

@@ -181,6 +181,19 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEqual("%1$@|New message", po_file[1].msgid)
         self.assertEqual("%1$@|Missatge nou", po_file[1].msgstr)
 
+    def test_convert_fluent_files_to_po(self):
+        fluent_dir = path.dirname(path.realpath(__file__))
+        fluent_dir += "/data/conversions/fluent/"
+        convert = ConvertFiles(fluent_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(fluent_dir)
+        self._clean_pos(fluent_dir)
+
+        self.assertEqual(entries, 3)
+        self.assertEqual("My Application", po_file[0].msgid)
+        self.assertEqual("La meva aplicació", po_file[0].msgstr)
+
     def test_add_conversor_setup_to_cmd(self):
         CMD = "prop2po -t template.txt -i in.txt -o out.txt"
         COMMAND = " --encoding utf-16"

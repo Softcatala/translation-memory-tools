@@ -1,0 +1,11 @@
+{
+    "project": "Ruffle",
+    "license": "Apache-2.0",
+    "projectweb": "https://ruffle.rs/",
+    "fileset": {
+        "Ruffle": {
+            "url": "https://github.com/ruffle-rs/ruffle",
+            "type": "git"
+        }
+    }
+}
