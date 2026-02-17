@@ -54,7 +54,7 @@
             "target": "fwupd_ca.po"
         },
         "pipewire": {
-            "url": "https://gitlab.freedesktop.org/pipewire/pipewire/-/raw/master/po/ca.po",
+            "url": "https://raw.githubusercontent.com/PipeWire/pipewire/refs/heads/master/po/ca.po",
             "type": "file",
             "target": "pipewire_ca.po"
         }
