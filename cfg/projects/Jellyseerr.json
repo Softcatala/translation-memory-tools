@@ -1,0 +1,11 @@
+{
+    "project": "Jellyseerr",
+    "license": "MIT",
+    "projectweb": "https://github.com/Fallenbagel/jellyseerr",
+    "fileset": {
+        "Jellyseerr": {
+            "url": "https://github.com/Fallenbagel/jellyseerr",
+            "type": "git"
+        }
+    }
+}

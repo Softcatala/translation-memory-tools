@@ -1,0 +1,11 @@
+{
+    "project": "Invidious",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://invidious.io/",
+    "fileset": {
+        "Invidious": {
+            "url": "https://github.com/iv-org/invidious",
+            "type": "git"
+        }
+    }
+}
