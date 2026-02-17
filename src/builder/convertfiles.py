@@ -36,6 +36,7 @@ class ConversorID(str, Enum):
     Csv = "csv"
     Apple = "apple"
     Fluent = "fluent"
+    Arb = "arb"
 
 
 class ConvertFiles:
@@ -60,6 +61,7 @@ class ConvertFiles:
         self._convert_csv_files_to_po()
         self._convert_xliff_file_to_po()
         self._convert_fluent_files_to_po()
+        self._convert_arb_files_to_po()
 
     def _add_conversor_setup_to_cmd(self, cmd, conversor_id=None):
         if (
@@ -407,3 +409,32 @@ class ConvertFiles:
                 continue
 
             self._convert_fluent_file_to_po(src_file, ftl_file)
+
+    def _convert_arb_file_to_po(self, src_file, tgt_file, directory):
+        output_file = os.path.join(directory, "arb-ca.po")
+        if os.path.exists(output_file):
+            return
+        logging.info("convert arb file: {0}".format(tgt_file))
+        cmd = f"arb2po -t {src_file} -i {tgt_file} -o {output_file}"
+        cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Arb)
+        os.system(cmd)
+
+    def _convert_arb_files_to_po(self):
+        patterns = [
+            ("app_ca.arb", "app_en.arb"),
+            ("intl_ca.arb", "intl_en.arb"),
+        ]
+
+        dirs = set()
+        for ca_pattern, en_pattern in patterns:
+            for ca_file in self.findFiles.find_recursive(self.convert_dir, ca_pattern):
+                dirName = os.path.dirname(ca_file)
+                if dirName in dirs:
+                    continue
+
+                src_file = os.path.join(dirName, en_pattern)
+                if not os.path.exists(src_file):
+                    continue
+
+                dirs.add(dirName)
+                self._convert_arb_file_to_po(src_file, ca_file, dirName)

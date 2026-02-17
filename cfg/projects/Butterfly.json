@@ -1,0 +1,11 @@
+{
+    "project": "Butterfly",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://github.com/LinwoodDev/Butterfly",
+    "fileset": {
+        "Butterfly": {
+            "url": "https://github.com/LinwoodDev/Butterfly",
+            "type": "git"
+        }
+    }
+}
