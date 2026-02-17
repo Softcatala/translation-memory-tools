@@ -19,7 +19,6 @@
 
 import logging
 import os
-import shutil
 
 from .converttmx import ConvertTmx
 from .findfiles import FindFiles
@@ -290,31 +289,19 @@ class ConvertFiles:
                 self._convert_json_file_to_po(jsonfile, src, tgt)
 
     def _convert_yml_files_to_po(self):
-        EXPECTED_SRC = "en.yml"
-        EXPECTED_TRG = "ca.yml"
-
         for trgfile in self.findFiles.find_recursive(self.convert_dir, "*ca.yml"):
             srcfile = trgfile.replace("ca.yml", "en.yml")
 
             if os.path.isfile(srcfile) is False:
                 continue
 
-            dirName = os.path.dirname(srcfile)
-            src_base = os.path.basename(srcfile)
-            if src_base != EXPECTED_SRC:
-                new = os.path.join(dirName, EXPECTED_SRC)
-                shutil.copyfile(srcfile, new)
+            dirName = os.path.dirname(trgfile)
+            pofile = os.path.join(dirName, "yml-ca.po")
 
-            trg_base = os.path.basename(trgfile)
-            if trg_base != EXPECTED_TRG:
-                new = os.path.join(dirName, EXPECTED_TRG)
-                shutil.copyfile(trgfile, new)
-
-            logging.info("convert yml file: {0}".format(dirName))
-            cmd = "i18n-translate convert --locale_dir {0} -f yml -l ca -t po -d en".format(
-                dirName
+            logging.info("convert yml file: {0}".format(trgfile))
+            cmd = "yaml2po --personality=ruby -t {0} -i {1} -o {2}".format(
+                srcfile, trgfile, pofile
             )
-            cmd = self._add_conversor_setup_to_cmd(cmd)
             os.system(cmd)
 
     def _convert_xliff_file_to_po(self):
