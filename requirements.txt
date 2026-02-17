@@ -4,7 +4,8 @@ pystache
 peewee==3.17.3
 hunspell
 phply # required by translate-toolkit to process php files
-translate-toolkit==3.19.0
+git+https://github.com/translate/translate.git
+ruamel.yaml # required by translate-toolkit to process yaml files
 lxml
 pyyaml >= 5.1
 babel >= 2.12
