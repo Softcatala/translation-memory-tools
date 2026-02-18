@@ -1,0 +1,11 @@
+{
+    "project": "Kavita",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://www.kavitareader.com/",
+    "fileset": {
+        "Kavita": {
+            "url": "https://github.com/Kareadita/Kavita",
+            "type": "git"
+        }
+    }
+}

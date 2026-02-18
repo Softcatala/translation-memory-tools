@@ -1,0 +1,12 @@
+{
+    "project": "RPCS3",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://rpcs3.net/",
+    "fileset": {
+        "RPCS3": {
+            "url": "https://raw.githubusercontent.com/RPCS3/rpcs3_translations/master/translations/rpcs3_ca_ES.ts",
+            "type": "file",
+            "target": "rpcs3_ca_ES.ts"
+        }
+    }
+}

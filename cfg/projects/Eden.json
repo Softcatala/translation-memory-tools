@@ -1,0 +1,12 @@
+{
+    "project": "Eden",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://eden-emu.dev/",
+    "fileset": {
+        "Eden": {
+            "url": "https://git.eden-emu.dev/eden-emu/eden/raw/branch/master/dist/languages/ca.ts",
+            "type": "file",
+            "target": "eden-ca.ts"
+        }
+    }
+}

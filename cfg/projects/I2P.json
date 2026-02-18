@@ -1,0 +1,12 @@
+{
+    "project": "I2P",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://geti2p.net/",
+    "fileset": {
+        "I2P": {
+            "url": "https://github.com/i2p/i2p.i2p",
+            "type": "git",
+            "pattern": ".*messages_ca\\.po"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "project": "AppFlowy",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://appflowy.io/",
+    "fileset": {
+        "AppFlowy": {
+            "url": "https://github.com/AppFlowy-IO/AppFlowy.git",
+            "type": "git",
+            "pattern": ".*frontend/resources/translations/json-ca\\.po"
+        }
+    }
+}

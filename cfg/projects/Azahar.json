@@ -1,0 +1,12 @@
+{
+    "project": "Azahar",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://azahar-emu.org/",
+    "fileset": {
+        "Azahar": {
+            "url": "https://raw.githubusercontent.com/azahar-emu/azahar/master/dist/languages/ca_ES_valencia.ts",
+            "type": "file",
+            "target": "azahar-ca.ts"
+        }
+    }
+}

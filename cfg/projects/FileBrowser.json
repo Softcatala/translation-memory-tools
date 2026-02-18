@@ -1,0 +1,12 @@
+{
+    "project": "File Browser",
+    "license": "Apache-2.0",
+    "projectweb": "https://filebrowser.org/",
+    "fileset": {
+        "FileBrowser": {
+            "url": "https://github.com/filebrowser/filebrowser.git",
+            "type": "git",
+            "pattern": ".*frontend/src/i18n/json-ca\\.po"
+        }
+    }
+}
