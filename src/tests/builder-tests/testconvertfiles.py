@@ -235,6 +235,27 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEqual("Add condition", po_file[0].msgid)
         self.assertEqual("Afegeix una condició", po_file[0].msgstr)
 
+    def test_convert_ts_files_to_po(self):
+        ts_dir = path.dirname(path.realpath(__file__))
+        ts_dir += "/data/conversions/ts/"
+        convert = ConvertFiles(ts_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(ts_dir)
+        self._clean_pos(ts_dir)
+
+        self.assertEqual(entries, 2)
+        self.assertEqual("Hello World", po_file[0].msgid)
+        self.assertEqual("Hola Món", po_file[0].msgstr)
+
+    def test_is_qt_ts_file(self):
+        ts_dir = path.dirname(path.realpath(__file__))
+        ts_dir += "/data/conversions/ts/"
+        convert = ConvertFiles(ts_dir, None)
+
+        self.assertTrue(convert._is_qt_ts_file(ts_dir + "qt-translation.ts"))
+        self.assertFalse(convert._is_qt_ts_file(ts_dir + "typescript-source.ts"))
+
 
 if __name__ == "__main__":
     unittest.main()
