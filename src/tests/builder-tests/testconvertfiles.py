@@ -194,6 +194,19 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEqual("My Application", po_file[0].msgid)
         self.assertEqual("La meva aplicació", po_file[0].msgstr)
 
+    def test_convert_arb_files_to_po(self):
+        arb_dir = path.dirname(path.realpath(__file__))
+        arb_dir += "/data/conversions/arb/"
+        convert = ConvertFiles(arb_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(arb_dir)
+        self._clean_pos(arb_dir)
+
+        self.assertEqual(entries, 3)
+        self.assertEqual("Test App", po_file[0].msgid)
+        self.assertEqual("Aplicació de prova", po_file[0].msgstr)
+
     def test_add_conversor_setup_to_cmd(self):
         CMD = "prop2po -t template.txt -i in.txt -o out.txt"
         COMMAND = " --encoding utf-16"

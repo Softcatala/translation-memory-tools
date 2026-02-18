@@ -1,0 +1,9 @@
+{
+  "@@locale": "ca",
+  "appName": "Aplicació de prova",
+  "@appName": {},
+  "greeting": "Hola",
+  "@greeting": {},
+  "farewell": "Adéu",
+  "@farewell": {}
+}

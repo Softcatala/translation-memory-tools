@@ -1,0 +1,11 @@
+{
+    "project": "Open Food Facts",
+    "license": "Apache-2.0",
+    "projectweb": "https://world.openfoodfacts.org/",
+    "fileset": {
+        "OpenFoodFacts": {
+            "url": "https://github.com/openfoodfacts/smooth-app",
+            "type": "git"
+        }
+    }
+}

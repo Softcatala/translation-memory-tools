@@ -1,0 +1,11 @@
+{
+    "project": "Fritter",
+    "license": "MIT",
+    "projectweb": "https://github.com/jonjomckay/fritter",
+    "fileset": {
+        "Fritter": {
+            "url": "https://github.com/jonjomckay/fritter",
+            "type": "git"
+        }
+    }
+}
