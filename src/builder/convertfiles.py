@@ -35,6 +35,7 @@ class ConversorID(str, Enum):
     Json = "json"
     Csv = "csv"
     Apple = "apple"
+    Fluent = "fluent"
 
 
 class ConvertFiles:
@@ -58,6 +59,7 @@ class ConvertFiles:
         self._convert_yml_files_to_po()
         self._convert_csv_files_to_po()
         self._convert_xliff_file_to_po()
+        self._convert_fluent_files_to_po()
 
     def _add_conversor_setup_to_cmd(self, cmd, conversor_id=None):
         if (
@@ -355,3 +357,52 @@ class ConvertFiles:
                         self._convert_apple_file(src, tgt, dir)
 
         logging.info("convert Apple directory: {0}".format(self.convert_dir))
+
+    def _convert_fluent_file_to_po(self, src_file, tgt_file):
+        stem = os.path.splitext(os.path.basename(tgt_file))[0]
+        dirName = os.path.dirname(tgt_file)
+        output_file = os.path.join(dirName, f"{stem}-fluent-ca.po")
+        if os.path.exists(output_file):
+            return
+        logging.info("convert fluent file: {0}".format(tgt_file))
+        cmd = f"fluent2po -t {src_file} -i {tgt_file} -o {output_file}"
+        cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Fluent)
+        os.system(cmd)
+
+    def _convert_fluent_files_to_po(self):
+        ca_en_pairs = [
+            ("ca", ["en-GB", "en-US", "en"]),
+            ("ca-ES", ["en-US", "en-GB", "en"]),
+        ]
+
+        for ftl_file in self.findFiles.find_recursive(self.convert_dir, "*.ftl"):
+            ca_dir = os.path.dirname(ftl_file)
+            ca_dir_name = os.path.basename(ca_dir)
+
+            en_dir_names = None
+            for ca_name, en_names in ca_en_pairs:
+                if ca_dir_name == ca_name:
+                    en_dir_names = en_names
+                    break
+
+            if en_dir_names is None:
+                continue
+
+            parent_dir = os.path.dirname(ca_dir)
+
+            src_dir = None
+            for en_dir_name in en_dir_names:
+                candidate = os.path.join(parent_dir, en_dir_name)
+                if os.path.isdir(candidate):
+                    src_dir = candidate
+                    break
+
+            if src_dir is None:
+                continue
+
+            filename = os.path.basename(ftl_file)
+            src_file = os.path.join(src_dir, filename)
+            if not os.path.exists(src_file):
+                continue
+
+            self._convert_fluent_file_to_po(src_file, ftl_file)
