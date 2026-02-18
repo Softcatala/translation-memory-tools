@@ -1,0 +1,12 @@
+{
+    "project": "Mattermost",
+    "license": "MIT",
+    "projectweb": "https://mattermost.com/",
+    "fileset": {
+        "Mattermost": {
+            "url": "https://github.com/mattermost/mattermost.git",
+            "type": "git",
+            "pattern": ".*(server/i18n/json-ca\\.po|webapp/channels/src/i18n/json-ca\\.po)"
+        }
+    }
+}

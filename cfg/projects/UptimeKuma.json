@@ -1,0 +1,11 @@
+{
+    "project": "Uptime Kuma",
+    "license": "MIT",
+    "projectweb": "https://github.com/louislam/uptime-kuma",
+    "fileset": {
+        "UptimeKuma": {
+            "url": "https://github.com/louislam/uptime-kuma",
+            "type": "git"
+        }
+    }
+}

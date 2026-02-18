@@ -1,0 +1,12 @@
+{
+    "project": "Decidim",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://decidim.org/",
+    "fileset": {
+        "Decidim": {
+            "url": "https://github.com/decidim/decidim",
+            "type": "git",
+            "pattern": ".*?/config/locales/yml-ca\\.po"
+        }
+    }
+}

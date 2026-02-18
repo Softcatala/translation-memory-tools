@@ -1,0 +1,12 @@
+{
+    "project": "Luanti",
+    "license": "LGPL-2.1-or-later",
+    "projectweb": "https://www.luanti.org/",
+    "fileset": {
+        "Luanti": {
+            "url": "https://raw.githubusercontent.com/luanti-org/luanti/master/po/ca/luanti.po",
+            "type": "file",
+            "target": "luanti-ca.po"
+        }
+    }
+}

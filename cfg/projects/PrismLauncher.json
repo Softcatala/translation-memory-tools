@@ -1,0 +1,12 @@
+{
+    "project": "Prism Launcher",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://prismlauncher.org/",
+    "fileset": {
+        "PrismLauncher": {
+            "url": "https://raw.githubusercontent.com/PrismLauncher/Translations/master/ca.ts",
+            "type": "file",
+            "target": "ca.ts"
+        }
+    }
+}

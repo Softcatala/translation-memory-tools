@@ -1,0 +1,11 @@
+{
+    "project": "PPSSPP",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.ppsspp.org/",
+    "fileset": {
+        "PPSSPP": {
+            "url": "https://github.com/hrydgard/ppsspp",
+            "type": "git"
+        }
+    }
+}

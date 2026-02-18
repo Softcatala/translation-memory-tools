@@ -1,0 +1,12 @@
+{
+    "project": "Zulip",
+    "license": "Apache-2.0",
+    "projectweb": "https://zulip.com/",
+    "fileset": {
+        "Zulip": {
+            "url": "https://github.com/zulip/zulip.git",
+            "type": "git",
+            "pattern": ".*locale/ca/LC_MESSAGES/.*\\.po"
+        }
+    }
+}

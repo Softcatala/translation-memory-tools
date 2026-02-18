@@ -167,7 +167,7 @@ class ConvertFiles:
                     break
 
             src = None
-            for filename in ["en.ini", "EN.ini", "en_GB.ini", "en-US.ini"]:
+            for filename in ["en.ini", "EN.ini", "en_GB.ini", "en_US.ini", "en-US.ini"]:
                 fullName = "{0}/{1}".format(dirName, filename)
                 if os.path.isfile(fullName):
                     src = fullName
@@ -282,6 +282,7 @@ class ConvertFiles:
             ("ca.json", "en.json", "ca.json"),
             ("ca_ES.json", "en.json", "ca_ES.json"),
             ("ca.json", "en-US.json", "ca.json"),
+            ("ca-ES.json", "en-US.json", "ca-ES.json"),
             ("ca.i18n.json", "en.i18n.json", "ca.i18n.json"),
             ("main-ca.json", "main.json", "main-ca.json"),
             ("strings_ca.i18n.json", "strings.i18n.json", "strings_ca.i18n.json"),
