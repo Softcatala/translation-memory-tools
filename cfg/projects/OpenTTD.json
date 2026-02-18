@@ -1,0 +1,12 @@
+{
+    "project": "OpenTTD",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.openttd.org/",
+    "fileset": {
+        "OpenTTD": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openttd/translations/openttd.po",
+            "type": "file",
+            "target": "openttd-ca.po"
+        }
+    }
+}

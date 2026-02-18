@@ -1,0 +1,12 @@
+{
+    "project": "RustDesk",
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://rustdesk.com/",
+    "fileset": {
+        "RustDesk": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/rustdesk/translations/rustdesk.po",
+            "type": "file",
+            "target": "rustdesk-ca.po"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "project": "Logseq",
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://logseq.com/",
+    "fileset": {
+        "Logseq": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/logseq/translations/logseq.po",
+            "type": "file",
+            "target": "logseq-ca.po"
+        }
+    }
+}

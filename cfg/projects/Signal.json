@@ -10,6 +10,11 @@
         "android": {
             "url": "https://github.com/signalapp/Signal-Android",
             "type": "git"
+        },
+        "desktop": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/signal-desktop/translations/signal-desktop.po",
+            "type": "file",
+            "target": "signal-desktop-ca.po"
         }
     }
 }
