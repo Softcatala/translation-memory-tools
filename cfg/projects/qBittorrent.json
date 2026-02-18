@@ -1,0 +1,12 @@
+{
+    "project": "qBittorrent",
+    "license": "GPL-2.0-or-later",
+    "projectweb": "https://www.qbittorrent.org/",
+    "fileset": {
+        "qBittorrent": {
+            "url": "https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/lang/qbittorrent_ca.ts",
+            "type": "file",
+            "target": "qbittorrent_ca.ts"
+        }
+    }
+}

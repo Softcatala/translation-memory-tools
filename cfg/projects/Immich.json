@@ -1,0 +1,11 @@
+{
+    "project": "Immich",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://immich.app/",
+    "fileset": {
+        "Immich": {
+            "url": "https://github.com/immich-app/immich",
+            "type": "git"
+        }
+    }
+}
