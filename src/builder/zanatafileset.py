@@ -25,6 +25,7 @@ import os
 import yaml
 
 from .fileset import FileSet
+from .downloadfile import DownloadFile
 
 
 class ZanataFileSet(FileSet):
@@ -86,15 +87,8 @@ class ZanataFileSet(FileSet):
         try:
             filename = "{0}-ca.tmx".format(project_id)
             filename = os.path.join(self.temp_dir, filename)
-            req = urllib.request.Request(url, headers=headers)
 
-            msg = "Download file '{0}' to {1}".format(url, filename)
-            logging.info(msg)
-
-            infile = urllib.request.urlopen(req, timeout=self.TIMEOUT)
-            output = open(filename, "wb")
-            output.write(infile.read())
-            output.close()
+            DownloadFile().get_file(url, filename, headers)
             return True
 
         except Exception as detail:
