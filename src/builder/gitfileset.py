@@ -19,6 +19,7 @@
 
 import os
 import shutil
+import logging
 
 from .fileset import FileSet
 
@@ -36,14 +37,18 @@ class GitFileSet(FileSet):
 
     def download(self):
         self._remove_git_directory()
-        cmd = "cd {0} && git clone --depth=1 {1} {2}".format(
+        cmd = "cd {0} && git clone --quiet --depth=1 {1} {2}".format(
             self.temp_dir, self.url, self.git_dir
         )
+        logging.info(f"Git clone '{self.url}'")
         os.system(cmd)
 
         # Move it to the root to avoid git default behavior to clone
         # into a subdirectory
-        cmd = "cd {0} && mv {1}/* . && rm -r -f {1}".format(self.temp_dir, self.git_dir)
+        cmd = "cd {0} && [ -d {1} ] && mv {1}/* {1}/.[!.]* {1}/..?* . 2>/dev/null && rm -rf {1}".format(
+            self.temp_dir, self.git_dir
+        )
+
         os.system(cmd)
 
     def do(self):
