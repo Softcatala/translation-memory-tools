@@ -1,0 +1,12 @@
+{
+    "project": "RetroArch",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://www.retroarch.com/",
+    "fileset": {
+        "RetroArch": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/retroarch/translations/retroarch.po",
+            "type": "file",
+            "target": "retroarch-ca.po"
+        }
+    }
+}

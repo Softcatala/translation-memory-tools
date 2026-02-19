@@ -1,0 +1,12 @@
+{
+    "project": "Notepad++",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://notepad-plus-plus.org/",
+    "fileset": {
+        "NotepadPlusPlus": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/notepad-plus-plus/translations/notepad-plus-plus.po",
+            "type": "file",
+            "target": "notepad-plus-plus-ca.po"
+        }
+    }
+}

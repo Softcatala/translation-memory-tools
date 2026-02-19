@@ -1,0 +1,12 @@
+{
+    "project": "eMule",
+    "license": "GPL-2.0-only",
+    "projectweb": "https://www.emule-project.com/",
+    "fileset": {
+        "eMule": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/emule/translations/emule.po",
+            "type": "file",
+            "target": "emule-ca.po"
+        }
+    }
+}

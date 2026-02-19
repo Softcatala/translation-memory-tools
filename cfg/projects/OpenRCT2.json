@@ -1,0 +1,12 @@
+{
+    "project": "OpenRCT2",
+    "license": "GPL-3.0-or-later",
+    "projectweb": "https://openrct2.io/",
+    "fileset": {
+        "OpenRCT2": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/openrct2/translations/openrct2.po",
+            "type": "file",
+            "target": "openrct2-ca.po"
+        }
+    }
+}

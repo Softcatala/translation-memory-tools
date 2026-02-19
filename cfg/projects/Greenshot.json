@@ -1,0 +1,12 @@
+{
+    "project": "Greenshot",
+    "license": "GPL-3.0-only",
+    "projectweb": "https://getgreenshot.org/",
+    "fileset": {
+        "Greenshot": {
+            "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/greenshot/translations/greenshot.po",
+            "type": "file",
+            "target": "greenshot-ca.po"
+        }
+    }
+}
