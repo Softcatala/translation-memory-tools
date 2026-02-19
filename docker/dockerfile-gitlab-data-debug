@@ -1,6 +1,6 @@
 FROM registry.softcatala.org/github/translation-memory-tools/tmt-data:main as build-data
 
-FROM FROM python:3.12.2-slim-bullseye
+FROM python:3.12.2-slim-bullseye
 
 COPY --from=build-data /static/ /static/
 
