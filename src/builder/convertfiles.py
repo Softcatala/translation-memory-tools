@@ -80,8 +80,20 @@ class ConvertFiles:
 
         return cmd
 
+    def _is_qt_ts_file(self, filepath):
+        """Check if a .ts file is a Qt Linguist translation file (not TypeScript source)."""
+        try:
+            with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read(512)
+                return "<TS" in content
+        except Exception:
+            return False
+
     def _convert_ts_files_to_po(self):
         for tsfile in self.findFiles.find_recursive(self.convert_dir, "*.ts"):
+            if not self._is_qt_ts_file(tsfile):
+                logging.info("skipping non-Qt ts file: {0}".format(tsfile))
+                continue
             fileName, fileExtension = os.path.splitext(tsfile)
             logging.info("convert ts file: {0}".format(tsfile))
             cmd = self._add_conversor_setup_to_cmd(
