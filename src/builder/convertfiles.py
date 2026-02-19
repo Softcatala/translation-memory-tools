@@ -85,7 +85,8 @@ class ConvertFiles:
             fileName, fileExtension = os.path.splitext(tsfile)
             logging.info("convert ts file: {0}".format(tsfile))
             cmd = self._add_conversor_setup_to_cmd(
-                "ts2po {0} -o {1}.po".format(tsfile, fileName), ConversorID.Ts
+                "ts2po --progress=none {0} -o {1}.po".format(tsfile, fileName),
+                ConversorID.Ts,
             )
             os.system(cmd)
 
@@ -96,7 +97,7 @@ class ConvertFiles:
             filename = "{0}/strings-ca.po".format(dirName)
             # Allow process files with duplicated entries
             cmd = (
-                "prop2po -t {0}/en.strings {0}/ca.strings "
+                "prop2po --progress=none -t {0}/en.strings {0}/ca.strings "
                 "--personality strings --duplicates merge -o {1}"
             )
             cmd = self._add_conversor_setup_to_cmd(
@@ -122,7 +123,7 @@ class ConvertFiles:
         for csvfile in self.findFiles.find_recursive(self.convert_dir, "ca.csv"):
             dirName = os.path.dirname(csvfile)
             pofile = dirName + "/ca.po"
-            cmd = "csv2po -i {0} -o {1}".format(csvfile, pofile)
+            cmd = "csv2po --progress=none -i {0} -o {1}".format(csvfile, pofile)
             cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Csv)
             os.system(cmd)
             logging.info("convert csv file: {0}".format(csvfile))
@@ -147,7 +148,7 @@ class ConvertFiles:
             po_filename = "{0}/properties-ca.po".format(dirName)
             # Allow process files with duplicated entries
             cmd = (
-                f"prop2po -t {dirName}/{en_file} {dirName}/{prop_filename} "
+                f"prop2po --progress=none -t {dirName}/{en_file} {dirName}/{prop_filename} "
                 f"--personality java --duplicates merge -o {po_filename}"
             )
 
@@ -187,7 +188,7 @@ class ConvertFiles:
         logging.info("convert php directory: {0}".format(self.convert_dir))
         # Name arbitrary choosen (not sepecific to an expected dir structure)
         OUT_DIRNAME = "po-files"
-        cmd = "cd {0} && php2po -t en -i ca " "-o {1}".format(
+        cmd = "cd {0} && php2po --progress=none -t en -i ca " "-o {1}".format(
             self.convert_dir, OUT_DIRNAME
         )
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Php)
@@ -195,7 +196,7 @@ class ConvertFiles:
 
     def _convert_android_file(self, src_file, tgt_file, dir):
         output_file = os.path.join(dir, "ca.po")
-        cmd = f"android2po -t {src_file} -i {tgt_file} -o {output_file}"
+        cmd = f"android2po --progress=none -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Android)
         os.system(cmd)
 
@@ -257,7 +258,7 @@ class ConvertFiles:
             return
 
         logging.info("convert json file: {0}".format(dirName))
-        cmd = f"json2po -t {source} -i {target} -o {filename}"
+        cmd = f"json2po --progress=none -t {source} -i {target} -o {filename}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Json)
         os.system(cmd)
 
@@ -305,7 +306,7 @@ class ConvertFiles:
             pofile = os.path.join(dirName, "yml-ca.po")
 
             logging.info("convert yml file: {0}".format(trgfile))
-            cmd = "yaml2po --personality=ruby -t {0} -i {1} -o {2}".format(
+            cmd = "yaml2po --progress=none --personality=ruby -t {0} -i {1} -o {2}".format(
                 srcfile, trgfile, pofile
             )
             os.system(cmd)
@@ -314,13 +315,13 @@ class ConvertFiles:
         for xlfile in self.findFiles.find_recursive(self.convert_dir, "*.xliff"):
             fileName, fileExtension = os.path.splitext(xlfile)
             pofile = xlfile.replace(".xliff", ".po")
-            cmd = f'xliff2po -i "{xlfile}" -o "{pofile}" --duplicates=merge'
+            cmd = f'xliff2po --progress=none -i "{xlfile}" -o "{pofile}" --duplicates=merge'
             cmd = self._add_conversor_setup_to_cmd(cmd)
             os.system(cmd)
 
     def _convert_apple_file(self, src_file, tgt_file, directory):
         output_file = os.path.join(directory, "ca-apple.po")
-        cmd = f"prop2po -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge"
+        cmd = f"prop2po --progress=none -t {src_file} -i {tgt_file} -o {output_file} --personality strings --duplicates merge"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Apple)
         if "--encoding" not in cmd:
             cmd += " --encoding utf-8"
@@ -369,7 +370,7 @@ class ConvertFiles:
         if os.path.exists(output_file):
             return
         logging.info("convert fluent file: {0}".format(tgt_file))
-        cmd = f"fluent2po -t {src_file} -i {tgt_file} -o {output_file}"
+        cmd = f"fluent2po --progress=none -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Fluent)
         os.system(cmd)
 
@@ -416,7 +417,7 @@ class ConvertFiles:
         if os.path.exists(output_file):
             return
         logging.info("convert arb file: {0}".format(tgt_file))
-        cmd = f"arb2po -t {src_file} -i {tgt_file} -o {output_file}"
+        cmd = f"arb2po --progress=none -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Arb)
         os.system(cmd)
 
