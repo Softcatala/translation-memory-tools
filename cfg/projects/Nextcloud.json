@@ -7,6 +7,18 @@
             "url": "https://app.transifex.com/nextcloud/nextcloud/",
             "type": "transifex",
             "po_preprocessing": "remove_untranslated"
+        },
+        "NextcloudNotes": {
+            "url": "https://github.com/nextcloud/notes-android",
+            "type": "git"
+        },
+        "NextcloudTalk": {
+            "url": "https://github.com/nextcloud/talk-android",
+            "type": "git"
+        },
+        "NextcloudCookbook": {
+            "url": "https://github.com/lneugebauer/nextcloud-cookbook",
+            "type": "git"
         }
     }
 }
