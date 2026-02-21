@@ -1,0 +1,11 @@
+{
+    "project": "Komikku",
+    "license": "Apache-2.0",
+    "projectweb": "https://github.com/komikku-app/komikku",
+    "fileset": {
+        "Komikku": {
+            "url": "https://github.com/komikku-app/komikku.git",
+            "type": "git"
+        }
+    }
+}
