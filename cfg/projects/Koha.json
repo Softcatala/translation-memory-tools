@@ -1,14 +1,13 @@
 {
     "project": "Koha",
-    "disabled": true,
     "license": "GPL-3.0-or-later",
     "projectweb": "https://translate.koha-community.org/",
     "fileset": {
         "Koha": {
-            "url": "https://github.com/Koha-Community/Koha.git",
+            "url": "https://gitlab.com/koha-community/koha-l10n.git",
             "type": "git",
             "duplicates": "msgctxt",
-            "pattern": ".*/po/ca-ES.*\\.po"
+            "pattern": ".*/ca-ES.*\\.po"
         }
     }
 }
