@@ -254,6 +254,12 @@ class ConvertFiles:
                     if os.path.exists(src) and os.path.exists(tgt):
                         self._convert_android_file(src, tgt, dir)
 
+                # MOKO resources structure: base/strings.xml + ca/strings.xml
+                moko_src = os.path.join(dir, "base/strings.xml")
+                moko_tgt = os.path.join(dir, "ca/strings.xml")
+                if os.path.exists(moko_src) and os.path.exists(moko_tgt):
+                    self._convert_android_file(moko_src, moko_tgt, dir)
+
         logging.info("convert Android directory: {0}".format(self.convert_dir))
 
     def _convert_json_file_to_po(self, jsonfile, source, target):

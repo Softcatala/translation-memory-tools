@@ -155,6 +155,19 @@ class ConvertFilesTest(unittest.TestCase):
         self.assertEqual("Name is too long", po_file[14].msgid)
         self.assertEqual("El nom és massa llarg", po_file[14].msgstr)
 
+    def test_convert_moko_files_to_po(self):
+        moko_dir = path.dirname(path.realpath(__file__))
+        moko_dir += "/data/conversions/moko/"
+        convert = ConvertFiles(moko_dir, None)
+        convert.convert()
+
+        po_file, entries = self._get_po_entries(moko_dir)
+        self._clean_pos(moko_dir)
+
+        self.assertEqual(entries, 3)
+        self.assertEqual("Search", po_file[0].msgid)
+        self.assertEqual("Cercar", po_file[0].msgstr)
+
     def test_convert_xliff_file_to_po(self):
         xliff_dir = path.dirname(path.realpath(__file__))
         xliff_dir += "/data/conversions/xliff"
