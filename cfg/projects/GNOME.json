@@ -110,7 +110,7 @@
             "target": "gaphor-ca.po"
         },
         "Komikku": {
-            "url": "https://gitlab.com/valos/Komikku/-/raw/main/po/ca.po",
+            "url": "https://codeberg.org/valos/Komikku/raw/branch/main/po/ca.po",
             "type": "file",
             "target": "komikku-ca.po"
         },
