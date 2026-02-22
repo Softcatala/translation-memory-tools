@@ -7,11 +7,6 @@
             "url": "https://github.com/organicmaps/organicmaps.git",
             "type": "git"
         },
-        "organicmaps-website": {
-            "url": "https://raw.githubusercontent.com/organicmaps/organicmaps.github.io/master/po/content.ca.po",
-            "type": "file",
-            "target": "organicmaps-website-ca.po"
-        },
         "organicmaps-strings": {
             "url": "https://raw.githubusercontent.com/pereorga/software-translations/master/organicmaps/translations/strings.po",
             "type": "file",
