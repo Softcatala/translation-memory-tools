@@ -1,4 +1,4 @@
-image:  docker/compose:latest
+image: docker:cli
 services:
   - docker:dind
 
@@ -8,8 +8,8 @@ stages:
   - deploy
 
 before_script:
+  - apk add --no-cache bash docker-cli-compose
   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-  - apk add bash
 
 build:
   stage: build
@@ -47,9 +47,9 @@ run:
     - set
     - export REPO_NAME=$CI_REGISTRY_IMAGE/tmt-data
     - export IMAGE_NAME=$REPO_NAME:$CI_COMMIT_REF_NAME
-    - docker-compose -f docker/docker-compose-run-job.yml pull
-    - docker-compose -f docker/docker-compose-run-job.yml run -d --use-aliases --name translation-memory-tools-lt tmt-languagetool
-    - docker-compose -f docker/docker-compose-run-job.yml run -v /srv/volumes/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder
+    - docker compose -f docker/docker-compose-run-job.yml pull
+    - docker compose -f docker/docker-compose-run-job.yml run -d --use-aliases --name translation-memory-tools-lt tmt-languagetool
+    - docker compose -f docker/docker-compose-run-job.yml run -v /srv/volumes/tmt-files:/srv/tmt-files --use-aliases --name translation-memory-tools tmt-builder
     - docker cp translation-memory-tools:/srv/web-docker web-docker
     - docker container rm translation-memory-tools
     - docker build -t $IMAGE_NAME . -f docker/dockerfile-data
