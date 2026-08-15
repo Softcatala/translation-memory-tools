@@ -39,10 +39,10 @@
             "type": "compressed",
             "target": "incubator.ui.tar.gz"
         },
-        "librem": {
-            "url": "https://l10n.gnome.org/languages/ca/librem5/ui.tar.gz",
+        "phosh": {
+            "url": "https://l10n.gnome.org/languages/ca/phosh/ui.tar.gz",
             "type": "compressed",
-            "target": "librem5.ui.tar.gz"
+            "target": "phosh.ui.tar.gz"
         },
         "gnome-infrastructure-doc": {
             "url": "https://l10n.gnome.org/languages/ca/gnome-infrastructure/doc.tar.gz",
