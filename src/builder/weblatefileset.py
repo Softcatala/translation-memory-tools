@@ -118,12 +118,12 @@ class WeblateFileSet(FileSet):
             for project_dict in projects["results"]:
                 slug = project_dict["slug"]
 
-                language = self._get_catalan_language(project_dict["languages_url"])
-                if not language:
-                    continue
-
                 name_to_match = project_dict["name"].lower()
                 if not self.is_retrieval_pattern(name_to_match):
+                    continue
+
+                language = self._get_catalan_language(project_dict["languages_url"])
+                if not language:
                     continue
 
                 components = self._get_components(project_dict["components_list_url"])
