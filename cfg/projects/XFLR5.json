@@ -5,7 +5,7 @@
     "softcatala": true,
     "fileset": {
         "XFLR5": {
-            "url": "https://sourceforge.net/p/xflr5/code/HEAD/tree/trunk/xflr5/translations/xflr5v6_ca.ts?format=raw",
+            "url": "https://svn.code.sf.net/p/xflr5/code/trunk/xflr5/translations/xflr5v6_ca.ts",
             "type": "file",
             "target": "xflr5v6_ca.ts"
         }
