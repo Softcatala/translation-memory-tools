@@ -76,7 +76,7 @@ class POCatalog(object):
         if len(pofiles) == 0:
             return
 
-        if os.path.isfile(self.filename) is False:
+        if not os.path.isfile(self.filename):
             shutil.copy(pofiles[0], self.filename)
             pofiles = pofiles[1:]
 
@@ -86,7 +86,7 @@ class POCatalog(object):
                 backup = tmp.name
                 shutil.copy(self.filename, backup)
                 inputs = " ".join(shlex.quote(path) for path in [backup] + chunk)
-                cmd = f"msgcat -tutf-8 --use-first -o {self.filename} {inputs} 2> /dev/null"
+                cmd = f"msgcat -tutf-8 --use-first -o {shlex.quote(self.filename)} {inputs} 2> /dev/null"
                 if self._run_command(cmd):
                     logging.debug(
                         f"POCatalog.add_pofiles. Unable to add {len(chunk)} files with msgcat"
