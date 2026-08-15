@@ -1,0 +1,22 @@
+{
+    "project": "Twenty",
+    "license": "AGPL-3.0-only",
+    "projectweb": "https://twenty.com/",
+    "fileset": {
+        "Twenty-emails": {
+            "url": "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-emails/src/locales/ca-ES.po",
+            "type": "file",
+            "target": "twenty-emails-ca.po"
+        },
+        "Twenty-frontend": {
+            "url": "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-front/src/locales/ca-ES.po",
+            "type": "file",
+            "target": "twenty-frontend-ca.po"
+        },
+        "Twenty-server": {
+            "url": "https://raw.githubusercontent.com/twentyhq/twenty/main/packages/twenty-server/src/engine/core-modules/i18n/locales/ca-ES.po",
+            "type": "file",
+            "target": "twenty-server-ca.po"
+        }
+    }
+}
