@@ -35,6 +35,7 @@ class WeblateFileSet(FileSet):
     cache = None
     cached = 0
     requests = 0
+    errors_404 = 0
 
     def _get_auth_api_token(self):
         try:
@@ -155,6 +156,7 @@ class WeblateFileSet(FileSet):
 
         except HTTPError as detail:
             if detail.code == 404:
+                self.errors_404 += 1
                 logging.info(
                     "WeblateFileSet._get_file {0} - info: {1}".format(url, detail)
                 )
@@ -181,5 +183,5 @@ class WeblateFileSet(FileSet):
 
         self.build()
         logging.info(
-            f"WeblateFileSet. do. cached API requests: {self.cached}, requests done: {self.requests}"
+            f"WeblateFileSet. do. cached API requests: {self.cached}, requests done: {self.requests}, 404 errors: {self.errors_404}"
         )
