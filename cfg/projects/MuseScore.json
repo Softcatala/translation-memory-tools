@@ -4,12 +4,12 @@
     "projectweb": "https://musescore.org/ca",
     "fileset": {
         "core": {
-            "url": "https://raw.githubusercontent.com/musescore/MuseScore/master/share/locale/musescore_ca.ts",
+            "url": "https://raw.githubusercontent.com/musescore/MuseScore/main/share/locale/musescore_ca.ts",
             "type": "file",
             "target": "core.ts"
         },
         "instruments": {
-            "url": "https://raw.githubusercontent.com/musescore/MuseScore/master/share/locale/instruments_ca.ts",
+            "url": "https://raw.githubusercontent.com/musescore/MuseScore/main/share/locale/instruments_ca.ts",
             "type": "file",
             "target": "instruments.ts"
         }

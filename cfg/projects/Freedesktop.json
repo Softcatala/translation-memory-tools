@@ -4,7 +4,7 @@
     "projectweb": "https://freedesktop.org/wiki/Software/",
     "fileset": {
         "accounts-service": {
-            "url": "https://cgit.freedesktop.org/accountsservice/plain/po/ca.po",
+            "url": "https://gitlab.freedesktop.org/accountsservice/accountsservice/-/raw/main/po/ca.po",
             "type": "file",
             "target": "accounts-service.po"
         },
