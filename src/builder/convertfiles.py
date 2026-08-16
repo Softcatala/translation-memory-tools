@@ -95,7 +95,7 @@ class ConvertFiles:
                 logging.debug("skipping non-Qt ts file: {0}".format(tsfile))
                 continue
             fileName, fileExtension = os.path.splitext(tsfile)
-            logging.info("convert ts file: {0}".format(tsfile))
+            logging.debug("convert ts file: {0}".format(tsfile))
             cmd = self._add_conversor_setup_to_cmd(
                 "ts2po --progress=none {0} -o {1}.po".format(tsfile, fileName),
                 ConversorID.Ts,
@@ -105,7 +105,7 @@ class ConvertFiles:
     def _convert_strings_files_to_po(self):
         for tsfile in self.findFiles.find_recursive(self.convert_dir, "ca.strings"):
             dirName = os.path.dirname(tsfile)
-            logging.info("convert strings file: {0}".format(dirName))
+            logging.debug("convert strings file: {0}".format(dirName))
             filename = "{0}/strings-ca.po".format(dirName)
             # Allow process files with duplicated entries
             cmd = (
@@ -129,7 +129,7 @@ class ConvertFiles:
             fileName, fileExtension = os.path.splitext(tmxfile)
             tmx = ConvertTmx(tmxfile, fileName + ".po")
             tmx.convert()
-            logging.info("convert tmx file: {0}".format(tmxfile))
+            logging.debug("convert tmx file: {0}".format(tmxfile))
 
     def _convert_csv_files_to_po(self):
         for csvfile in self.findFiles.find_recursive(self.convert_dir, "ca.csv"):
@@ -138,7 +138,7 @@ class ConvertFiles:
             cmd = "csv2po --progress=none -i {0} -o {1}".format(csvfile, pofile)
             cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Csv)
             os.system(cmd)
-            logging.info("convert csv file: {0}".format(csvfile))
+            logging.debug("convert csv file: {0}".format(csvfile))
 
     def _convert_properties_files_to_po(self):
         en_file = "en.properties"
@@ -156,7 +156,7 @@ class ConvertFiles:
         for propfile in files:
             dirName = os.path.dirname(propfile)
             prop_filename = os.path.basename(propfile)
-            logging.info("convert properties file: {0}".format(dirName))
+            logging.debug("convert properties file: {0}".format(dirName))
             po_filename = "{0}/properties-ca.po".format(dirName)
             # Allow process files with duplicated entries
             cmd = (
@@ -189,7 +189,7 @@ class ConvertFiles:
             if src is None or trg is None:
                 continue
 
-            logging.info("convert ini file: {0}".format(inifile))
+            logging.debug("convert ini file: {0}".format(inifile))
             filename = "{0}/strings-ca.po".format(dirName)
             ConvertIni(src, trg, filename).convert()
 
@@ -197,7 +197,7 @@ class ConvertFiles:
         if len(self.findFiles.find_recursive(self.convert_dir, "*.php")) == 0:
             return
 
-        logging.info("convert php directory: {0}".format(self.convert_dir))
+        logging.debug("convert php directory: {0}".format(self.convert_dir))
         # Name arbitrary choosen (not sepecific to an expected dir structure)
         OUT_DIRNAME = "po-files"
         cmd = "cd {0} && php2po --progress=none -t en -i ca " "-o {1}".format(
@@ -260,7 +260,7 @@ class ConvertFiles:
                 if os.path.exists(moko_src) and os.path.exists(moko_tgt):
                     self._convert_android_file(moko_src, moko_tgt, dir)
 
-        logging.info("convert Android directory: {0}".format(self.convert_dir))
+        logging.debug("convert Android directory: {0}".format(self.convert_dir))
 
     def _convert_json_file_to_po(self, jsonfile, source, target):
         dirName = os.path.dirname(jsonfile)
@@ -275,7 +275,7 @@ class ConvertFiles:
         ):
             return
 
-        logging.info("convert json file: {0}".format(dirName))
+        logging.debug("convert json file: {0}".format(dirName))
         cmd = f"json2po --progress=none -t {source} -i {target} -o {filename}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Json)
         os.system(cmd)
@@ -323,7 +323,7 @@ class ConvertFiles:
             dirName = os.path.dirname(trgfile)
             pofile = os.path.join(dirName, "yml-ca.po")
 
-            logging.info("convert yml file: {0}".format(trgfile))
+            logging.debug("convert yml file: {0}".format(trgfile))
             cmd = "yaml2po --progress=none --personality=ruby -t {0} -i {1} -o {2}".format(
                 srcfile, trgfile, pofile
             )
@@ -379,7 +379,7 @@ class ConvertFiles:
                     if os.path.exists(src) and os.path.exists(tgt):
                         self._convert_apple_file(src, tgt, dir)
 
-        logging.info("convert Apple directory: {0}".format(self.convert_dir))
+        logging.debug("convert Apple directory: {0}".format(self.convert_dir))
 
     def _convert_fluent_file_to_po(self, src_file, tgt_file):
         stem = os.path.splitext(os.path.basename(tgt_file))[0]
@@ -387,7 +387,7 @@ class ConvertFiles:
         output_file = os.path.join(dirName, f"{stem}-fluent-ca.po")
         if os.path.exists(output_file):
             return
-        logging.info("convert fluent file: {0}".format(tgt_file))
+        logging.debug("convert fluent file: {0}".format(tgt_file))
         cmd = f"fluent2po --progress=none -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Fluent)
         os.system(cmd)
@@ -434,7 +434,7 @@ class ConvertFiles:
         output_file = os.path.join(directory, "arb-ca.po")
         if os.path.exists(output_file):
             return
-        logging.info("convert arb file: {0}".format(tgt_file))
+        logging.debug("convert arb file: {0}".format(tgt_file))
         cmd = f"arb2po --progress=none -t {src_file} -i {tgt_file} -o {output_file}"
         cmd = self._add_conversor_setup_to_cmd(cmd, ConversorID.Arb)
         os.system(cmd)
