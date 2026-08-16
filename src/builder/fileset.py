@@ -134,7 +134,8 @@ class FileSet:
             words = pofile.get_statistics()
             msg = f"Adding file: {filename} to translation memory with {words} words"
             logging.info(msg)
-            self.po_catalog.add_pofile(filename)
+
+        self.po_catalog.add_pofiles(files)
 
     def _add_tm_for_fileset_to_project_tm(self, fileset_tm):
         filename = os.path.join(self.out_directory, self.tm_file)

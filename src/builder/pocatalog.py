@@ -21,6 +21,7 @@ import os
 import shutil
 import tempfile
 import logging
+import shlex
 
 
 class POCatalog(object):
@@ -69,6 +70,30 @@ class POCatalog(object):
         else:
             if os.path.isfile(pofile):
                 shutil.copy(pofile, self.filename)
+
+    def add_pofiles(self, pofiles, chunk_size=100):
+        pofiles = [pofile for pofile in pofiles if os.path.isfile(pofile)]
+        if len(pofiles) == 0:
+            return
+
+        if not os.path.isfile(self.filename):
+            shutil.copy(pofiles[0], self.filename)
+            pofiles = pofiles[1:]
+
+        for idx in range(0, len(pofiles), chunk_size):
+            chunk = pofiles[idx : idx + chunk_size]
+            with tempfile.NamedTemporaryFile() as tmp:
+                backup = tmp.name
+                shutil.copy(self.filename, backup)
+                inputs = " ".join(shlex.quote(path) for path in [backup] + chunk)
+                cmd = f"msgcat -tutf-8 --use-first -o {shlex.quote(self.filename)} {inputs} 2> /dev/null"
+                if self._run_command(cmd):
+                    logging.debug(
+                        f"POCatalog.add_pofiles. Unable to add {len(chunk)} files with msgcat"
+                    )
+                    shutil.copy(backup, self.filename)
+                    for pofile in chunk:
+                        self.add_pofile(pofile)
 
     def cleanup(self):
         if os.path.isfile(self.filename) is False:

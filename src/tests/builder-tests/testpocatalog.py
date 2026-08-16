@@ -26,6 +26,10 @@ from polib import pofile
 
 
 class POCatalogTest(unittest.TestCase):
+    def _catalog_files(self):
+        catalog_dir = os.path.dirname(os.path.realpath(__file__)) + "/data/catalog/"
+        return [os.path.join(catalog_dir, filename) for filename in ("ca1.po", "ca2.po")]
+
     def test_pocatalog_onefile(self):
         catalog_dir = os.path.dirname(os.path.realpath(__file__))
         catalog_dir += "/data/catalog/"
@@ -58,6 +62,36 @@ class POCatalogTest(unittest.TestCase):
         self.assertEqual(3, len(entries))
         self.assertEqual("Clock rotation", po_file[0].msgid)
         self.assertEqual("Rotació del rellotge", po_file[0].msgstr)
+
+    def test_pocatalog_add_pofiles(self):
+        with tempfile.NamedTemporaryFile() as tmp:
+            catalog = POCatalog(tmp.name)
+            catalog.add_pofiles(self._catalog_files(), chunk_size=1)
+            po_file = pofile(tmp.name)
+
+        self.assertEqual(3, len(po_file.translated_entries()))
+        self.assertEqual("Clock rotation", po_file[0].msgid)
+        self.assertEqual("Rotació del rellotge", po_file[0].msgstr)
+
+    def test_pocatalog_add_pofiles_fallback(self):
+        with tempfile.NamedTemporaryFile() as expected_tmp, tempfile.NamedTemporaryFile() as actual_tmp:
+            expected_catalog = POCatalog(expected_tmp.name)
+            for filename in self._catalog_files():
+                expected_catalog.add_pofile(filename)
+
+            actual_catalog = POCatalog(actual_tmp.name)
+            original_run_command = actual_catalog._run_command
+
+            def fail_first_command(cmd):
+                actual_catalog._run_command = original_run_command
+                return True
+
+            actual_catalog._run_command = fail_first_command
+            actual_catalog.add_pofiles(self._catalog_files(), chunk_size=1)
+
+            expected = [(entry.msgid, entry.msgstr) for entry in pofile(expected_tmp.name)]
+            actual = [(entry.msgid, entry.msgstr) for entry in pofile(actual_tmp.name)]
+        self.assertEqual(expected, actual)
 
     def test_pocatalog_cleanup(self):
         catalog_dir = os.path.dirname(os.path.realpath(__file__))
