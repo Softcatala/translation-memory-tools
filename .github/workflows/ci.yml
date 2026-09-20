@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     container:
-      image: python:3.12.2-slim-bullseye
+      image: python:3.12.2-slim-bookworm
 
     steps:
     - uses: actions/checkout@v4
