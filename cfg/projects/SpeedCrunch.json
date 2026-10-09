@@ -4,7 +4,7 @@
     "projectweb": "https://heldercorreia.bitbucket.io/speedcrunch/",
     "fileset": {
         "speedcrunch": {
-            "url": "https://bitbucket.org/heldercorreia/speedcrunch/raw/master/src/resources/locale/ca_ES.ts",
+            "url": "https://github.com/heldercorreia/speedcrunch/tree/main/src/resources/locale/ca.ts",
             "type": "file",
             "target": "speedcrunch-ca.ts"
         }
