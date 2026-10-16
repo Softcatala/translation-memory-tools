@@ -1,0 +1,38 @@
+{
+    "project": "PeerTube",
+    "license": "AGPL-3.0-or-later",
+    "projectweb": "https://joinpeertube.org",
+    "softcatala": false,
+    "fileset": {
+        "Android": {
+            "url": "https://hosted.weblate.org/download/peertube/-/ca/?format=po",
+            "type": "file",
+            "target": "peertube-android-ca.po"
+        },
+        "PlayStoreMeta": {
+            "url": "https://hosted.weblate.org/download/peertube/PlayStoreMeta/ca/?format=po",
+            "type": "file",
+            "target": "peertube-playstoremeta-ca.po"
+        },
+        "angular": {
+            "url": "https://weblate.framasoft.org/download/peertube/angular/ca/?format=po",
+            "type": "file",
+            "target": "peertube-angular-ca.po"
+        },
+        "player": {
+            "url": "https://weblate.framasoft.org/download/peertube/player/ca/?format=po",
+            "type": "file",
+            "target": "peertube-player-ca.po"
+        },
+        "server": {
+            "url": "https://weblate.framasoft.org/download/peertube/server/ca/?format=po",
+            "type": "file",
+            "target": "peertube-server-ca.po"
+        },
+        "server-internal": {
+            "url": "https://weblate.framasoft.org/download/peertube/server-internal/ca/?format=po",
+            "type": "file",
+            "target": "peertube-server-internal-ca.po"
+        }
+    }
+}
