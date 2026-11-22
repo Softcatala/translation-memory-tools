@@ -3,21 +3,15 @@
     "license": "GPL-2.0-or-later",
     "projectweb": "https://cat.kde.org/",
     "fileset": {
-        "gui-kf5": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/messages/",
-            "type": "subversion"
+        "trunk5": {
+            "url": "https://invent.kde.org/localization/l10n-ca/",
+            "type": "git",
+            "pattern": ".*?/trunk5/.*?"
         },
-        "documentation-kf5": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/ca/docmessages/",
-            "type": "subversion"
-        },
-        "gui-kf6": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf6/ca/messages/",
-            "type": "subversion"
-        },
-        "documentation-kf6": {
-            "url": "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf6/ca/docmessages/",
-            "type": "subversion"
+        "trunk6": {
+            "url": "https://invent.kde.org/localization/l10n-ca/",
+            "type": "git",
+            "pattern": ".*?/trunk6/.*?"
         }
     }
 }
